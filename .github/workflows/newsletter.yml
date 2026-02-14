@@ -1,0 +1,75 @@
+name: Daily Newsletter
+
+on:
+  schedule:
+    - cron: '0 7 * * *'  # 7 AM UTC daily
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Restore site archive
+        run: |
+          git fetch origin gh-pages --depth=1 || true
+          git checkout origin/gh-pages -- site/ 2>/dev/null || echo "No existing site archive"
+
+      - name: Run newsletter
+        env:
+          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python -m src.newsletter
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Commit site to gh-pages branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add site/
+          git stash
+          git checkout gh-pages 2>/dev/null || git checkout --orphan gh-pages
+          git rm -rf . 2>/dev/null || true
+          git stash pop 2>/dev/null || true
+          git checkout stash -- site/ 2>/dev/null || git checkout main -- site/ 2>/dev/null || true
+          cp -r site/* . 2>/dev/null || true
+          git add -A
+          git commit -m "Update newsletter site $(date +%Y-%m-%d)" || echo "No changes"
+          git push origin gh-pages --force

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; margin: 0; padding: 0; color: #1a1a1a; }
+  .container { max-width: 640px; margin: 0 auto; background: #fff; }
+  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 32px 24px; text-align: center; }
+  .header h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .header .date { margin-top: 8px; font-size: 14px; opacity: 0.8; }
+  .section { padding: 24px; border-bottom: 1px solid #eee; }
+  .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #6c63ff; margin: 0 0 16px 0; }
+  .weather-card { background: #f0f4ff; border-radius: 12px; padding: 20px; text-align: center; }
+  .weather-temp { font-size: 48px; font-weight: 700; color: #1a1a2e; }
+  .weather-conditions { font-size: 16px; color: #555; margin: 4px 0; }
+  .weather-range { font-size: 14px; color: #888; }
+  .weather-forecast { font-size: 13px; color: #666; margin-top: 12px; line-height: 1.5; }
+  .news-item { margin-bottom: 16px; }
+  .news-item h3 { margin: 0 0 4px 0; font-size: 16px; }
+  .news-item h3 a { color: #1a1a2e; text-decoration: none; }
+  .news-item h3 a:hover { color: #6c63ff; }
+  .news-item .source { font-size: 12px; color: #888; }
+  .news-summary { font-size: 13px; color: #666; line-height: 1.5; margin-top: 4px; }
+  .podcast-item { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #f0f0f0; }
+  .podcast-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .podcast-name { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #6c63ff; }
+  .podcast-item h3 { margin: 4px 0 8px 0; font-size: 15px; }
+  .podcast-item h3 a { color: #1a1a2e; text-decoration: none; }
+  .podcast-item .summary { font-size: 13px; color: #555; line-height: 1.5; }
+  .paper-item { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #f0f0f0; }
+  .paper-item:last-child { border-bottom: none; }
+  .paper-item h3 { margin: 0 0 6px 0; font-size: 15px; }
+  .paper-item h3 a { color: #1a1a2e; text-decoration: none; }
+  .paper-meta { font-size: 12px; color: #888; margin-bottom: 6px; }
+  .paper-abstract { font-size: 13px; color: #555; line-height: 1.5; }
+  .footer { padding: 24px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; }
+  .no-items { font-size: 14px; color: #888; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>Your Daily Briefing</h1>
+    <div class="date">{{ date }}</div>
+  </div>
+
+  <!-- Weather -->
+  <div class="section">
+    <div class="section-title">Weather in NYC</div>
+    <div class="weather-card">
+      <div class="weather-temp">{{ weather.current_temp }}&deg;{{ weather.unit }}</div>
+      <div class="weather-conditions">{{ weather.conditions }}</div>
+      <div class="weather-range">H: {{ weather.high }}&deg; &nbsp; L: {{ weather.low }}&deg;</div>
+      <div class="weather-forecast">{{ weather.forecast }}</div>
+    </div>
+  </div>
+
+  <!-- Top News -->
+  <div class="section">
+    <div class="section-title">Top News</div>
+    {% for story in news %}
+    <div class="news-item">
+      <h3><a href="{{ story.link }}">{{ story.title }}</a></h3>
+      <div class="source">{{ story.source }}{% if story.published %} &middot; {{ story.published }}{% endif %}</div>
+      {% if story.summary %}<div class="news-summary">{{ story.summary }}</div>{% endif %}
+    </div>
+    {% endfor %}
+    {% if not news %}<div class="no-items">No news available today.</div>{% endif %}
+  </div>
+
+  <!-- Podcasts -->
+  <div class="section">
+    <div class="section-title">Podcast Episodes This Week</div>
+    {% for ep in podcasts %}
+    <div class="podcast-item">
+      <div class="podcast-name">{{ ep.podcast }}</div>
+      <h3><a href="{{ ep.link }}">{{ ep.title }}</a></h3>
+      <div class="summary">{{ ep.summary }}</div>
+    </div>
+    {% endfor %}
+    {% if not podcasts %}<div class="no-items">No new episodes this week.</div>{% endif %}
+  </div>
+
+  <!-- AI Security Papers -->
+  <div class="section">
+    <div class="section-title">AI Security &amp; Red Teaming Papers</div>
+    {% for paper in papers %}
+    <div class="paper-item">
+      <h3><a href="{{ paper.link }}">{{ paper.title }}</a></h3>
+      <div class="paper-meta">
+        {{ paper.authors[:3] | join(", ") }}{% if paper.authors | length > 3 %} et al.{% endif %}
+        &middot; {{ paper.published }}
+        {% if paper.citation_count is not none and paper.citation_count %} &middot; {{ paper.citation_count }} citations{% endif %}
+      </div>
+      <div class="paper-abstract">{% if paper.quick_summary %}{{ paper.quick_summary }}{% else %}{{ paper.abstract[:300] }}{% if paper.abstract | length > 300 %}...{% endif %}{% endif %}</div>
+    </div>
+    {% endfor %}
+    {% if not papers %}<div class="no-items">No relevant papers found this week.</div>{% endif %}
+  </div>
+
+  <div class="footer">
+    Generated automatically &middot; Daily Newsletter
+  </div>
+</div>
+</body>
+</html>

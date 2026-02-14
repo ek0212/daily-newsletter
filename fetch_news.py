@@ -46,7 +46,7 @@ if __name__ == "__main__":
     stories = fetch_top_news(3)
     for i, story in enumerate(stories, 1):
         print(f"\n{'='*60}")
-        print(f"Story #{i}: {story.title}")
+        print(f"#{i}: {story.title}")
         print(f"Source: {story.source}")
         print(f"Published: {story.published}")
         print(f"Link: {story.link}")
