@@ -41,6 +41,7 @@ jobs:
       - name: Run newsletter
         env:
           SITE_URL: ${{ vars.SITE_URL }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python -m src.newsletter
 
       - name: Upload Pages artifact
