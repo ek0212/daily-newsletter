@@ -2,211 +2,174 @@
 
 ## What This Is
 
-An automated daily newsletter that fetches, summarizes, and delivers five sections:
+Automated daily newsletter with five sections, published to GitHub Pages + RSS feed, delivered to inbox via Blogtrottr:
 
 1. **NYC Weather** — current conditions, high/low, forecast
-2. **Top 3 News** — headlines with extractive article summaries
-3. **Podcast Episodes** — recent episodes from configured feeds with YouTube transcript summaries
+2. **Top 3 News** — headlines with LLM or extractive summaries
+3. **Podcast Episodes** — recent episodes with YouTube transcript summaries
 4. **AI Security Papers** — trending arxiv papers on prompt injection, red/blue teaming, jailbreaking, LLM security
-
-The newsletter is published to a GitHub Pages static site with RSS feed (subscribed via Blogtrottr for inbox delivery), and archived as JSON + HTML.
 
 ## Project Structure
 
 ```
 src/
-  newsletter.py      # Main entry point — orchestrates fetch, render, and site update
+  newsletter.py      # Main entry — orchestrates fetch, summarize, render, site update
   weather.py         # NWS API (free, no key) for NYC weather
-  news.py            # Google News RSS + trafilatura article extraction + summarization
-  podcasts.py        # RSS feeds + YouTube transcript API for episode summaries
-  papers.py          # arxiv API + HuggingFace Daily Papers + Semantic Scholar citations
-  summarizer.py      # Extractive summarizer (sumy LexRank), no LLM/AI API
+  news.py            # Google News RSS + googlenewsdecoder + trafilatura extraction
+  podcasts.py        # RSS feeds + YouTube transcript API
+  papers.py          # arxiv API + HuggingFace Daily Papers + Semantic Scholar
+  llm.py             # Gemini batch summarization (single API call for all content)
+  summarizer.py      # Extractive fallback (sumy LexRank), also bolds key terms
   site_generator.py  # Static site: archive JSON, post HTML, index.html, feed.xml
 templates/
-  newsletter.html    # Jinja2 HTML email template
+  newsletter.html    # Jinja2 HTML template (all inline CSS)
 site/                # Generated output (gitignored) — deployed to GitHub Pages
-  index.html         # Landing page with archive + RSS subscribe button
-  feed.xml           # RSS 2.0 feed
-  posts/             # Per-day JSON data + HTML pages
 .github/workflows/
-  newsletter.yml     # Daily cron at 7AM UTC, deploys to GitHub Pages
+  newsletter.yml     # Daily cron at 12PM UTC (7AM EST), deploys to GitHub Pages
 ```
 
 ## Tech Stack
 
 - **Language:** Python 3.11+
-- **Template engine:** Jinja2
-- **Summarization:** sumy (LexRank extractive), NOT any LLM API
-- **Article extraction:** trafilatura
+- **Template:** Jinja2 (all CSS inline for email/RSS compatibility)
+- **Summarization:** Gemini 2.0 Flash (single batched call), sumy LexRank fallback
+- **Article extraction:** trafilatura + googlenewsdecoder (resolves Google News URLs)
 - **Podcast transcripts:** youtube-transcript-api
 - **RSS parsing:** feedparser
-- **HTTP:** requests (news, weather), urllib (arxiv, Semantic Scholar, HuggingFace)
-- **Scheduling:** macOS launchd (local) or GitHub Actions cron (production)
-- **Delivery:** RSS feed (published to GitHub Pages, subscribed via Blogtrottr)
-- **Site hosting:** GitHub Pages via actions/deploy-pages
+- **Delivery:** GitHub Pages → RSS feed → Blogtrottr → inbox
+- **Logging:** Python logging module, every module has its own logger
 
 ## Critical Rules
 
-### APIs — No Keys Required
-- NWS API: free, only needs User-Agent header. NYC grid: OKX/33,35.
-- Google News RSS: no limits, no key.
-- arxiv API: no key. Use focused single-keyword queries (not giant OR queries — they timeout).
-- Semantic Scholar: no key for basic citation lookups. Rate-limited, best-effort.
-- HuggingFace Daily Papers: simple JSON endpoint, no key.
-- YouTube channel RSS + youtube-transcript-api: no key.
-- Delivery is via RSS feed published to GitHub Pages, subscribed via Blogtrottr for inbox delivery.
+### Card Format (template)
+Every card in every section follows the same visual structure:
+1. **Date line first** — always prominent, 12px, uppercase, section-colored, with metadata (source/podcast name/authors)
+2. **Title** — 17px, bold 700, dark, clickable link
+3. **Badges** (papers only) — topic pills after title
+4. **Summary** — 14px, #555, 1.6 line-height. KEY: takeaway in colored box if present.
+
+Cards are white with 1px #eee border, 10px border-radius, 20px padding, 4px colored left border. This is standardized — do not deviate.
 
 ### Summarization
-- NEVER use an LLM or AI API for summaries. Use sumy LexRank (extractive) only.
-- `summarize(text, num_sentences)` in `src/summarizer.py` is the single summarization interface.
-- News: 3-sentence summary from fetched article text.
-- Papers: 2-sentence quick_summary from abstract.
-- Podcasts: 4-sentence summary from YouTube transcript, fallback to RSS description.
+- Gemini 2.0 Flash via `src/llm.py` — ONE API call for all summaries (news + podcasts + papers batched together)
+- Fallback to sumy LexRank if no GEMINI_API_KEY or API error
+- `src/summarizer.py` bolds numbers, stats, proper nouns, quoted text in fallback mode
+- Gemini prompt requests `<strong>` bolding of key terms and `KEY:` prefix takeaways
+
+### APIs
+- NWS: free, no key. NYC grid: OKX/33,35
+- Google News RSS: free. URLs decoded via googlenewsdecoder (protobuf → real URL)
+- arxiv: no key. Focused single-keyword queries (avoid timeouts)
+- Semantic Scholar: no key, rate-limited, best-effort citations
+- HuggingFace Daily Papers: no key
+- YouTube transcripts: no key
+- Gemini: requires GEMINI_API_KEY (free tier available)
 
 ### Imports
-- All `src/` modules use `from src.module import thing` (package-style imports).
-- Never use bare `from module import thing` — it breaks when run from project root.
+- All modules: `from src.module import thing` (package-style). Never bare imports.
 
 ### Error Handling
-- Every data source must have try/except so one failure doesn't crash the whole newsletter.
-- Weather, news, podcasts, papers each fail independently and show fallback content.
-- arxiv queries run as separate small requests (one per keyword) to avoid timeouts.
+- Every data source has try/except — one failure never crashes the whole build
+- Each section fails independently with fallback content
+- Logging captures all errors with context
 
 ### Generated Output
-- `site/` is gitignored — it's rebuilt on every run.
-- `output.html` is gitignored — local test output.
-- `site/posts/*.json` archives are persisted on gh-pages branch (restored before each run in CI).
+- `site/` and `output.html` are gitignored
+- `site/posts/*.json` archives persisted on gh-pages branch
 
 ## Validation
 
-Run these checks after ANY code change. All must pass before committing.
+Run ALL of these after ANY code change. All must pass before committing.
 
-### 1. Newsletter generates without errors
+### 1. Full build succeeds
 ```bash
 source venv/bin/activate
-python3 src/newsletter.py
+python3 src/newsletter.py 2>&1 | tee /tmp/newsletter-build.log
+echo "Exit code: $?"
 ```
-**Expected:** Prints status lines for each section, ends with "Site updated successfully" and "saved to output.html". Exit code 0.
+**Expected:** Exit code 0, output.html and site/ files generated.
 
-### 2. Check build logs
-```bash
-source venv/bin/activate
-python3 src/newsletter.py 2>&1 | tail -30
-```
-**Expected:** See timestamped log lines for each section, no ERROR lines, ends with "Build Complete".
-
-### 3. Output HTML is valid and has all sections
+### 2. HTML structure check
 ```bash
 python3 -c "
 from pathlib import Path
 html = Path('output.html').read_text()
 checks = [
+    ('Header + date', 'Your Daily Briefing' in html),
     ('Weather section', 'Weather in NYC' in html),
-    ('Top News section', 'Top News' in html),
+    ('News section', 'Top News' in html),
     ('Podcast section', 'Podcast Episodes' in html),
     ('Papers section', 'AI Security' in html),
-    ('Has temperature', '°' in html),
-    ('Has news links', '<a href=' in html),
-    ('Header present', 'Your Daily Briefing' in html),
-    ('Footer present', 'Generated automatically' in html),
+    ('Has links', '<a href=' in html),
+    ('RSS footer', 'Subscribe via RSS' in html),
 ]
 for name, ok in checks:
-    status = 'PASS' if ok else 'FAIL'
-    print(f'  [{status}] {name}')
-all_pass = all(ok for _, ok in checks)
-print(f'\n{'All checks passed.' if all_pass else 'SOME CHECKS FAILED.'}')
-exit(0 if all_pass else 1)
+    print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
+exit(0 if all(ok for _, ok in checks) else 1)
 "
 ```
 
-### 4. Site files are generated correctly
+### 3. Site files check
 ```bash
 python3 -c "
 from pathlib import Path
 import json, xml.etree.ElementTree as ET
 checks = []
-
-# Index exists and has RSS link
 idx = Path('site/index.html')
-checks.append(('site/index.html exists', idx.exists()))
+checks.append(('index.html exists', idx.exists()))
 if idx.exists():
-    t = idx.read_text()
-    checks.append(('Index has RSS link', 'feed.xml' in t))
-    checks.append(('Index has archive', 'Archive' in t))
-
-# Feed is valid XML
+    checks.append(('Index has RSS link', 'feed.xml' in idx.read_text()))
 feed = Path('site/feed.xml')
-checks.append(('site/feed.xml exists', feed.exists()))
+checks.append(('feed.xml exists', feed.exists()))
 if feed.exists():
-    try:
-        ET.parse(str(feed))
-        checks.append(('Feed is valid XML', True))
-    except:
-        checks.append(('Feed is valid XML', False))
-
-# At least one post exists
+    try: ET.parse(str(feed)); checks.append(('Feed valid XML', True))
+    except: checks.append(('Feed valid XML', False))
 posts = list(Path('site/posts').glob('*.json'))
 checks.append(('Archive JSON exists', len(posts) > 0))
 if posts:
-    data = json.loads(posts[0].read_text())
-    checks.append(('Archive has weather', 'weather' in data))
-    checks.append(('Archive has news', 'news' in data))
-    checks.append(('Archive has podcasts', 'podcasts' in data))
-    checks.append(('Archive has papers', 'papers' in data))
-
-html_posts = list(Path('site/posts').glob('*.html'))
-checks.append(('Archive HTML exists', len(html_posts) > 0))
-
+    d = json.loads(posts[-1].read_text())
+    for k in ['weather','news','podcasts','papers']:
+        checks.append((f'Archive has {k}', k in d))
 for name, ok in checks:
     print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
-all_pass = all(ok for _, ok in checks)
-print(f'\n{\"All checks passed.\" if all_pass else \"SOME CHECKS FAILED.\"}')
-exit(0 if all_pass else 1)
+exit(0 if all(ok for _, ok in checks) else 1)
 "
 ```
 
-### 5. Visual validation (open in browser)
+### 4. Visual check
 ```bash
 open output.html
 open site/index.html
 ```
-Check manually:
-- Dark gradient header renders correctly
-- Weather card shows temperature with blue background
-- News items have headlines with gray source text and summary underneath
-- Podcast items show podcast name in purple caps, title, and summary
-- Papers show title, author list, date, and 2-sentence quick summary
-- All links are clickable
-- Layout is single-column, max 640px, centered
-- No broken styling or overlapping elements
+Verify: date is prominent in header, every card has date first → title → summary, cards look uniform, badges render, links work, no broken layout.
 
-### 6. Individual module smoke tests
-```bash
-python3 -c "from src.weather import get_nyc_weather; w = get_nyc_weather(); print(f'Weather: {w[\"current_temp\"]}°{w[\"unit\"]}, {w[\"conditions\"]}')"
-python3 -c "from src.news import get_top_news; n = get_top_news(1); print(f'News: {n[0][\"title\"]}')"
-python3 -c "from src.podcasts import get_recent_episodes; eps = get_recent_episodes(30); print(f'Podcasts: {len(eps)} episodes')"
-python3 -c "from src.papers import get_ai_security_papers; p = get_ai_security_papers(top_n=2); print(f'Papers: {len(p)} found')"
-python3 -c "from src.summarizer import summarize; print(summarize('The quick brown fox jumps over the lazy dog. It was a sunny day. The birds were singing loudly in the trees. Everyone was happy.', 2))"
-```
-Each must exit 0 and print sensible output.
-
-### 7. Template rendering check
+### 5. Build log validation (ALWAYS run last)
 ```bash
 python3 -c "
-from jinja2 import Environment, FileSystemLoader
-env = Environment(loader=FileSystemLoader('templates'))
-t = env.get_template('newsletter.html')
-html = t.render(
-    date='Test Date',
-    weather={'current_temp': 42, 'unit': 'F', 'conditions': 'Cloudy', 'high': 50, 'low': 35, 'forecast': 'Test'},
-    news=[{'title': 'Test', 'source': 'Src', 'link': '#', 'published': 'today', 'summary': 'A summary.'}],
-    podcasts=[{'podcast': 'Test Pod', 'title': 'Ep 1', 'link': '#', 'summary': 'Pod summary.'}],
-    papers=[{'title': 'Paper', 'authors': ['Auth'], 'link': '#', 'published': 'today', 'citation_count': 5, 'quick_summary': 'Quick.', 'abstract': 'Full abstract.'}],
-)
-assert 'Test Date' in html
-assert 'A summary.' in html
-assert 'Pod summary.' in html
-assert 'Quick.' in html
-print('Template renders correctly.')
+log = open('/tmp/newsletter-build.log').read()
+checks = [
+    ('Build started', '=== Daily Newsletter Build Started ===' in log),
+    ('Build completed', '=== Build Complete ===' in log),
+    ('No ERROR lines', 'ERROR' not in log),
+    ('Weather fetched', 'NYC weather fetched' in log),
+    ('News fetched', 'News fetch complete' in log),
+    ('Podcasts fetched', 'Podcasts complete' in log),
+    ('Papers fetched', 'Papers complete' in log),
+    ('HTML rendered', 'HTML rendered' in log),
+    ('Site updated', 'Regenerating feed.xml' in log),
+    ('News articles extracted', 'with article text' in log),
+]
+for name, ok in checks:
+    print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
+failed = [n for n, ok in checks if not ok]
+if failed:
+    print(f'\nFAILED: {failed}')
+    print('\nRelevant log lines:')
+    for line in log.splitlines():
+        if any(x in line for x in ['ERROR', 'WARNING', 'FAIL']):
+            print(f'  {line}')
+    exit(1)
+print('\nAll build log checks passed.')
 "
 ```
+This is the final gate. It verifies every section produced data, no errors occurred, and the full pipeline ran end-to-end. If any check fails, it prints the relevant WARNING/ERROR log lines for debugging.
