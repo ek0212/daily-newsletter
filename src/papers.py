@@ -1,10 +1,13 @@
 """Fetch trending AI security papers from arxiv + HuggingFace Daily Papers."""
 
+import logging
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
 import json
 from datetime import datetime, timedelta
+
+logger = logging.getLogger(__name__)
 
 ARXIV_API = "http://export.arxiv.org/api/query"
 S2_API = "https://api.semanticscholar.org/graph/v1"
@@ -63,6 +66,7 @@ def _parse_arxiv_xml(xml_data: bytes) -> list[dict]:
 
 def fetch_arxiv_papers(max_per_query: int = 5) -> list[dict]:
     """Run several focused arxiv queries and merge results."""
+    logger.info("Searching arxiv for AI security papers...")
     seen_ids = set()
     all_papers = []
 
@@ -72,17 +76,23 @@ def fetch_arxiv_papers(max_per_query: int = 5) -> list[dict]:
             req = urllib.request.Request(url, headers={"User-Agent": "DailyNewsletter/1.0"})
             with urllib.request.urlopen(req, timeout=15) as resp:
                 xml_data = resp.read()
-            for p in _parse_arxiv_xml(xml_data):
+            new_papers = _parse_arxiv_xml(xml_data)
+            count_new = 0
+            for p in new_papers:
                 if p["arxiv_id"] not in seen_ids:
                     seen_ids.add(p["arxiv_id"])
                     all_papers.append(p)
+                    count_new += 1
+            logger.debug("Query: %s -> %d results", kw, count_new)
         except Exception:
             continue
 
+    logger.info("Total arxiv papers found: %d", len(all_papers))
     return all_papers
 
 
 def enrich_citations(papers: list[dict]) -> list[dict]:
+    logger.debug("Enriching citations from Semantic Scholar...")
     for paper in papers[:10]:
         if not paper.get("arxiv_id"):
             continue
@@ -92,12 +102,14 @@ def enrich_citations(papers: list[dict]) -> list[dict]:
             with urllib.request.urlopen(req, timeout=10) as resp:
                 data = json.loads(resp.read())
             paper["citation_count"] = data.get("citationCount", 0)
+            logger.debug("Paper '%s': %d citations", paper["title"][:60], paper["citation_count"])
         except Exception:
             pass
     return papers
 
 
 def fetch_hf_daily_papers() -> list[dict]:
+    logger.debug("Checking HuggingFace Daily Papers...")
     try:
         url = f"{HF_DAILY_API}?limit=50"
         req = urllib.request.Request(url, headers={"User-Agent": "DailyNewsletter/1.0"})
@@ -121,6 +133,7 @@ def fetch_hf_daily_papers() -> list[dict]:
                 "published": paper.get("publishedAt", "")[:10],
                 "arxiv_id": "", "citation_count": None,
             })
+    logger.info("HF papers found: %d relevant", len(results))
     return results
 
 
@@ -152,4 +165,5 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
     for p in top_papers:
         p["quick_summary"] = ""
         p["raw_text"] = p.get("abstract", "")
+    logger.info("Papers complete: top %d selected", len(top_papers))
     return top_papers

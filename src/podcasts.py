@@ -1,9 +1,12 @@
 """Fetch recent podcast episodes from RSS feeds with YouTube transcript summaries."""
 
+import logging
 import re
 import feedparser
 from datetime import datetime, timedelta
 from difflib import SequenceMatcher
+
+logger = logging.getLogger(__name__)
 
 from youtube_transcript_api import YouTubeTranscriptApi
 
@@ -52,17 +55,24 @@ def _find_matching_video(episode_title: str, videos: list[dict], threshold: floa
             best_ratio = ratio
             best_id = video["video_id"]
 
-    return best_id if best_ratio >= threshold else None
+    if best_ratio >= threshold:
+        logger.info("YouTube match found: video_id=%s", best_id)
+        return best_id
+    else:
+        logger.debug("No YouTube match for '%s'", episode_title)
+        return None
 
 
 def _get_transcript_text(video_id: str) -> str | None:
     """Fetch YouTube transcript and return full text."""
+    logger.debug("Fetching transcript for video %s...", video_id)
     try:
         ytt_api = YouTubeTranscriptApi()
         transcript = ytt_api.fetch(video_id, languages=["en"])
         full_text = " ".join(snippet.text for snippet in transcript)
         if len(full_text) < 100:
             return None
+        logger.info("Transcript fetched: %d chars", len(full_text))
         return full_text
     except Exception:
         return None
@@ -70,6 +80,7 @@ def _get_transcript_text(video_id: str) -> str | None:
 
 def get_recent_episodes(days: int = 7) -> list[dict]:
     """Fetch podcast episodes from the last N days with YouTube transcript summaries."""
+    logger.info("Fetching episodes from %d podcast feeds (last %d days)", len(PODCAST_FEEDS), days)
     cutoff = datetime.now() - timedelta(days=days)
     all_episodes = []
 
@@ -80,6 +91,7 @@ def get_recent_episodes(days: int = 7) -> list[dict]:
 
     for name, url in PODCAST_FEEDS.items():
         try:
+            logger.debug("Parsing %s RSS...", name)
             feed = feedparser.parse(url)
             for entry in feed.entries:
                 published = None
@@ -88,14 +100,18 @@ def get_recent_episodes(days: int = 7) -> list[dict]:
 
                 if published and published >= cutoff:
                     title = entry.get("title", "Untitled")
+                    logger.debug("Found episode: %s (published %s)", title, published.strftime("%Y-%m-%d"))
 
                     # Try to get YouTube transcript text
                     raw_text = ""
                     videos = yt_videos_cache.get(name, [])
                     if videos:
+                        logger.debug("Searching YouTube for matching video...")
                         video_id = _find_matching_video(title, videos)
                         if video_id:
                             raw_text = _get_transcript_text(video_id) or ""
+                            if not raw_text:
+                                logger.warning("Transcript unavailable for %s", title)
 
                     # Fall back to RSS description as raw text
                     if not raw_text:
@@ -114,4 +130,6 @@ def get_recent_episodes(days: int = 7) -> list[dict]:
             continue
 
     all_episodes.sort(key=lambda x: x["published"], reverse=True)
+    with_transcripts = sum(1 for e in all_episodes if len(e.get("raw_text", "")) > 500)
+    logger.info("Podcasts complete: %d episodes, %d with transcripts", len(all_episodes), with_transcripts)
     return all_episodes

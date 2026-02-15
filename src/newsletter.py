@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Main newsletter generator: fetches all data, renders HTML, and updates the static site."""
 
+import logging
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -19,23 +21,32 @@ from src.papers import get_ai_security_papers
 from src.llm import batch_summarize
 from src.site_generator import update_site
 
+logger = logging.getLogger(__name__)
+
 
 def fetch_all_data() -> dict:
     """Fetch all newsletter sections, then batch-summarize via Gemini."""
-    print("Fetching NYC weather...")
+    fetch_start = time.time()
+
+    t0 = time.time()
     weather = get_nyc_weather()
+    logger.info("Weather fetched in %.1fs", time.time() - t0)
 
-    print("Fetching top news...")
+    t0 = time.time()
     news = get_top_news(count=3)
+    logger.info("News fetched in %.1fs", time.time() - t0)
 
-    print("Fetching podcast episodes...")
+    t0 = time.time()
     podcasts = get_recent_episodes(days=7)
+    logger.info("Podcasts fetched in %.1fs", time.time() - t0)
 
-    print("Fetching AI security papers...")
+    t0 = time.time()
     papers = get_ai_security_papers(days_back=7, top_n=5)
+    logger.info("Papers fetched in %.1fs", time.time() - t0)
+
+    logger.info("All data fetched in %.1fs", time.time() - fetch_start)
 
     # Batch summarize all sections in one Gemini call
-    print("Summarizing all content...")
     sections = {
         "news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in news],
         "podcasts": [{"title": p["title"], "podcast": p.get("podcast", ""), "raw_text": p.get("raw_text", "")} for p in podcasts],
@@ -80,10 +91,14 @@ def render_html(data: dict) -> str:
 
 
 def main():
+    logging.basicConfig(level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(name)s: %(message)s')
     load_dotenv(PROJECT_ROOT / ".env")
+
+    logger.info("=== Daily Newsletter Build Started ===")
 
     data = fetch_all_data()
     html = render_html(data)
+    logger.info("HTML rendered: %d chars", len(html))
 
     # Generate static site files (archive, index, RSS)
     update_site(data, html)
@@ -91,7 +106,8 @@ def main():
     # Save output.html for local testing
     output_path = PROJECT_ROOT / "output.html"
     output_path.write_text(html)
-    print(f"Site updated successfully. Newsletter saved to {output_path}")
+
+    logger.info("=== Build Complete ===")
 
 
 if __name__ == "__main__":

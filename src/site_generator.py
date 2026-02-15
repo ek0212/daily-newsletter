@@ -2,10 +2,13 @@
 """Generate static site files: archive JSON, post HTML, index, and RSS feed."""
 
 import json
+import logging
 import os
 from datetime import datetime
 from pathlib import Path
 from xml.etree.ElementTree import Element, SubElement, tostring, indent
+
+logger = logging.getLogger(__name__)
 
 PROJECT_ROOT = Path(__file__).parent.parent
 SITE_DIR = PROJECT_ROOT / "site"
@@ -128,15 +131,20 @@ def generate_feed():
 def update_site(data: dict, email_html: str):
     """Main entry point: save archive, generate post, rebuild index and feed."""
     date_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"Saving archive for {date_str}...")
-    save_archive_json(data, date_str)
-    print("Generating post page...")
-    generate_post_html(data, date_str, email_html)
-    print("Regenerating index...")
+    json_path = save_archive_json(data, date_str)
+    logger.info("Saving archive: %s", json_path.relative_to(PROJECT_ROOT))
+    html_path = generate_post_html(data, date_str, email_html)
+    logger.info("Generating post page: %s", html_path.relative_to(PROJECT_ROOT))
+    posts = _get_sorted_posts()
     generate_index()
-    print("Regenerating RSS feed...")
+    logger.info("Regenerating index.html (%d posts in archive)", len(posts))
     generate_feed()
-    print("Site updated successfully.")
+    logger.info("Regenerating feed.xml (%d entries)", min(len(posts), 30))
+    # Log file sizes
+    for name, fpath in [("index.html", SITE_DIR / "index.html"), ("feed.xml", SITE_DIR / "feed.xml"),
+                        (f"{date_str}.json", json_path), (f"{date_str}.html", html_path)]:
+        if fpath.exists():
+            logger.debug("File size %s: %d bytes", name, fpath.stat().st_size)
 
 
 def _get_sorted_posts():

@@ -33,8 +33,16 @@
     {% for story in news %}
     <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; border-left: 3px solid #f59e42;">
       <a href="{{ story.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.3;">{{ story.title }}</a>
-      <div style="font-size: 12px; color: #999; margin-top: 5px;">{{ story.source }}{% if story.published %} &middot; {{ story.published }}{% endif %}</div>
-      {% if story.summary %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #fffbf5; border-radius: 6px; padding: 10px 12px;">{{ story.summary }}</div>{% endif %}
+      <div style="font-size: 12px; color: #999; margin-top: 5px;">{% if story.source %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px; letter-spacing: 0.3px;">{{ story.source }}</span>{% endif %}{% if story.published %} &middot; {{ story.published }}{% endif %}</div>
+      {% if story.summary %}
+        {% set parts = story.summary.split('\n', 1) %}
+        {% if parts[0].startswith('KEY:') %}
+          <div style="font-size: 14px; color: #92400e; font-weight: 600; margin-top: 10px; padding: 8px 12px; background: #fef3c7; border-radius: 6px; line-height: 1.5;">{{ parts[0][4:] | safe }}</div>
+          {% if parts | length > 1 %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 6px; background: #fffbf5; border-radius: 6px; padding: 10px 12px;">{{ parts[1] | safe }}</div>{% endif %}
+        {% else %}
+          <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #fffbf5; border-radius: 6px; padding: 10px 12px;">{{ story.summary | safe }}</div>
+        {% endif %}
+      {% endif %}
     </div>
     {% endfor %}
     {% if not news %}<div style="font-size: 14px; color: #888; font-style: italic;">No news available today.</div>{% endif %}
@@ -50,7 +58,13 @@
     <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; border-left: 3px solid #a855f7;">
       <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #8b5cf6;">{{ ep.podcast }}</div>
       <a href="{{ ep.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.3; display: block; margin-top: 4px;">{{ ep.title }}</a>
-      <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #f9f5ff; border-radius: 6px; padding: 10px 12px;">{{ ep.summary }}</div>
+      {% set ep_parts = ep.summary.split('\n', 1) %}
+      {% if ep_parts[0].startswith('KEY:') %}
+        <div style="font-size: 14px; color: #5b21b6; font-weight: 600; margin-top: 10px; padding: 8px 12px; background: #ede9fe; border-radius: 6px; line-height: 1.5;">{{ ep_parts[0][4:] | safe }}</div>
+        {% if ep_parts | length > 1 %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 6px; background: #f9f5ff; border-radius: 6px; padding: 10px 12px;">{{ ep_parts[1] | safe }}</div>{% endif %}
+      {% else %}
+        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #f9f5ff; border-radius: 6px; padding: 10px 12px;">{{ ep.summary | safe }}</div>
+      {% endif %}
     </div>
     {% endfor %}
     {% if not podcasts %}<div style="font-size: 14px; color: #888; font-style: italic;">No new episodes this week.</div>{% endif %}
@@ -63,6 +77,7 @@
   <div style="padding: 28px 28px 24px 28px;">
     <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;">&#128196; AI Security Papers</div>
     {% for paper in papers %}
+    {% set title_lower = paper.title | lower %}
     <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; border-left: 3px solid #10b981;">
       <a href="{{ paper.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.3;">{{ paper.title }}</a>
       <div style="font-size: 12px; color: #999; margin-top: 5px;">
@@ -70,7 +85,25 @@
         &middot; {{ paper.published }}
         {% if paper.citation_count is not none and paper.citation_count %} &middot; {{ paper.citation_count }} citations{% endif %}
       </div>
-      <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #f0fdf6; border-radius: 6px; padding: 10px 12px;">{% if paper.quick_summary %}{{ paper.quick_summary }}{% else %}{{ paper.abstract[:300] }}{% if paper.abstract | length > 300 %}...{% endif %}{% endif %}</div>
+      <div style="margin-top: 8px;">
+        {% if 'prompt injection' in title_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">prompt injection</span>{% endif %}
+        {% if 'jailbreak' in title_lower %}<span style="display: inline-block; background: #fce7f3; color: #9d174d; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">jailbreak</span>{% endif %}
+        {% if 'red team' in title_lower %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">red teaming</span>{% endif %}
+        {% if 'adversarial' in title_lower %}<span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">adversarial</span>{% endif %}
+        {% if 'safety' in title_lower or 'alignment' in title_lower %}<span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">safety</span>{% endif %}
+        {% if 'security' in title_lower %}<span style="display: inline-block; background: #dbeafe; color: #1e40af; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">security</span>{% endif %}
+        {% if 'attack' in title_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">attack</span>{% endif %}
+        {% if 'guardrail' in title_lower %}<span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">guardrail</span>{% endif %}
+        {% if 'detection' in title_lower or 'detector' in title_lower %}<span style="display: inline-block; background: #ccfbf1; color: #115e59; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">detection</span>{% endif %}
+      </div>
+      {% set paper_summary = paper.quick_summary if paper.quick_summary else paper.abstract[:300] ~ ('...' if paper.abstract | length > 300 else '') %}
+      {% set p_parts = paper_summary.split('\n', 1) %}
+      {% if p_parts[0].startswith('KEY:') %}
+        <div style="font-size: 14px; color: #065f46; font-weight: 600; margin-top: 8px; padding: 8px 12px; background: #d1fae5; border-radius: 6px; line-height: 1.5;">{{ p_parts[0][4:] | safe }}</div>
+        {% if p_parts | length > 1 %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 6px; background: #f0fdf6; border-radius: 6px; padding: 10px 12px;">{{ p_parts[1] | safe }}</div>{% endif %}
+      {% else %}
+        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 8px; background: #f0fdf6; border-radius: 6px; padding: 10px 12px;">{{ paper_summary | safe }}</div>
+      {% endif %}
     </div>
     {% endfor %}
     {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic;">No relevant papers found this week.</div>{% endif %}

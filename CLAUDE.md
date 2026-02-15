@@ -88,7 +88,14 @@ python3 src/newsletter.py
 ```
 **Expected:** Prints status lines for each section, ends with "Site updated successfully" and "saved to output.html". Exit code 0.
 
-### 2. Output HTML is valid and has all sections
+### 2. Check build logs
+```bash
+source venv/bin/activate
+python3 src/newsletter.py 2>&1 | tail -30
+```
+**Expected:** See timestamped log lines for each section, no ERROR lines, ends with "Build Complete".
+
+### 3. Output HTML is valid and has all sections
 ```bash
 python3 -c "
 from pathlib import Path
@@ -112,7 +119,7 @@ exit(0 if all_pass else 1)
 "
 ```
 
-### 3. Site files are generated correctly
+### 4. Site files are generated correctly
 ```bash
 python3 -c "
 from pathlib import Path
@@ -158,7 +165,7 @@ exit(0 if all_pass else 1)
 "
 ```
 
-### 4. Visual validation (open in browser)
+### 5. Visual validation (open in browser)
 ```bash
 open output.html
 open site/index.html
@@ -173,7 +180,7 @@ Check manually:
 - Layout is single-column, max 640px, centered
 - No broken styling or overlapping elements
 
-### 5. Individual module smoke tests
+### 6. Individual module smoke tests
 ```bash
 python3 -c "from src.weather import get_nyc_weather; w = get_nyc_weather(); print(f'Weather: {w[\"current_temp\"]}°{w[\"unit\"]}, {w[\"conditions\"]}')"
 python3 -c "from src.news import get_top_news; n = get_top_news(1); print(f'News: {n[0][\"title\"]}')"
@@ -183,7 +190,7 @@ python3 -c "from src.summarizer import summarize; print(summarize('The quick bro
 ```
 Each must exit 0 and print sensible output.
 
-### 6. Template rendering check
+### 7. Template rendering check
 ```bash
 python3 -c "
 from jinja2 import Environment, FileSystemLoader

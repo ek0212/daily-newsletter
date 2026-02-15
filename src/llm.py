@@ -1,9 +1,12 @@
 """Batched LLM summarization using Google Gemini API with sumy fallback."""
 
 import json
+import logging
 import os
 
 from src.summarizer import summarize
+
+logger = logging.getLogger(__name__)
 
 
 def batch_summarize(sections: dict) -> dict:
@@ -19,10 +22,16 @@ def batch_summarize(sections: dict) -> dict:
     """
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
-        print("No GEMINI_API_KEY set, falling back to extractive summarizer.")
+        logger.warning("No GEMINI_API_KEY set, using extractive fallback")
         return _fallback_summarize(sections)
 
+    logger.info("Starting batch summarization via Gemini (gemini-2.0-flash)")
     prompt = _build_prompt(sections)
+    n_news = len(sections.get("news", []))
+    n_pods = len(sections.get("podcasts", []))
+    n_papers = len(sections.get("papers", []))
+    logger.debug("Prompt size: %d chars, %d items total (news: %d, podcasts: %d, papers: %d)",
+                 len(prompt), n_news + n_pods + n_papers, n_news, n_pods, n_papers)
 
     try:
         import google.generativeai as genai
@@ -30,11 +39,13 @@ def batch_summarize(sections: dict) -> dict:
         genai.configure(api_key=api_key)
         model = genai.GenerativeModel("gemini-2.0-flash")
         response = model.generate_content(prompt)
+        logger.info("Gemini API call successful, response: %d chars", len(response.text))
         result = _parse_response(response.text, sections)
-        print("Gemini batch summarization complete.")
+        logger.debug("Parsed summaries: news=%d, podcasts=%d, papers=%d",
+                     len(result.get("news", [])), len(result.get("podcasts", [])), len(result.get("papers", [])))
         return result
     except Exception as e:
-        print(f"Gemini API failed ({e}), falling back to extractive summarizer.")
+        logger.warning("Gemini call failed: %s, falling back to extractive summarizer", e)
         return _fallback_summarize(sections)
 
 
@@ -42,7 +53,15 @@ def _build_prompt(sections: dict) -> str:
     """Build the single prompt for batch summarization."""
     parts = [
         "Summarize the following content for a daily newsletter. "
-        "Return ONLY valid JSON with no markdown formatting or code blocks.\n"
+        "Return ONLY valid JSON with no markdown formatting or code blocks.\n\n"
+        "IMPORTANT FORMATTING RULES:\n"
+        "- Use <strong> tags to bold key terms, names, and numbers in every summary.\n"
+        "- For news: bold the most important fact or figure in each summary.\n"
+        "- For podcasts: bold guest names and key topics discussed.\n"
+        "- For papers: bold the technique name and key finding.\n"
+        '- Example: "Researchers at <strong>MIT</strong> found that <strong>prompt injection attacks</strong> succeed <strong>73% of the time</strong> against unguarded models."\n'
+        "- Also include a one-sentence key takeaway for each item, prefixed with 'KEY: '.\n"
+        "  This KEY sentence should be the single most important point, bolded entirely.\n\n"
     ]
 
     if sections.get("news"):
@@ -66,9 +85,9 @@ def _build_prompt(sections: dict) -> str:
     parts.append(
         '\nReturn JSON exactly like this (with the same number of items per section):\n'
         '{\n'
-        '  "news": ["2-3 sentence summary for article 1", ...],\n'
-        '  "podcasts": ["3-4 sentence summary for episode 1", ...],\n'
-        '  "papers": ["1-2 sentence summary for paper 1", ...]\n'
+        '  "news": ["KEY: <strong>Bold one-sentence takeaway.</strong>\\n2-3 sentence summary with <strong>key terms</strong> bolded.", ...],\n'
+        '  "podcasts": ["KEY: <strong>Bold one-sentence takeaway.</strong>\\n3-4 sentence summary with <strong>guest names</strong> and <strong>topics</strong> bolded.", ...],\n'
+        '  "papers": ["KEY: <strong>Bold one-sentence takeaway.</strong>\\n1-2 sentence summary with <strong>technique</strong> and <strong>findings</strong> bolded.", ...]\n'
         '}'
     )
 
@@ -95,7 +114,7 @@ def _parse_response(text: str, sections: dict) -> dict:
             result[key] = got
         else:
             # Count mismatch — fall back to sumy for this section
-            print(f"Gemini returned {len(got)} {key} summaries, expected {expected}. Using fallback.")
+            logger.warning("Gemini returned %d %s summaries, expected %d. Using fallback.", len(got), key, expected)
             result[key] = _fallback_section(sections.get(key, []), key)
 
     return result
@@ -113,4 +132,4 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     """Summarize a single section's items using sumy."""
     sentence_counts = {"news": 3, "podcasts": 4, "papers": 2}
     n = sentence_counts.get(section_type, 2)
-    return [summarize(item.get("raw_text", ""), num_sentences=n) for item in items]
+    return [summarize(item.get("raw_text", ""), num_sentences=n, title=item.get("title", "")) for item in items]
