@@ -161,11 +161,11 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <title>Daily Briefing - {display_date}</title>
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; }}
-  .site-nav {{ background: #1a1a2e; padding: 12px 24px; text-align: center; }}
-  .site-nav a {{ color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; }}
+  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; color: #1a1a1a; }}
+  .site-nav {{ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 14px 24px; text-align: center; }}
+  .site-nav a {{ color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; }}
   .site-nav a:hover {{ color: #fff; }}
-  .email-wrap {{ max-width: 680px; margin: 24px auto; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }}
+  .email-wrap {{ max-width: 680px; margin: 28px auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }}
 </style>
 </head>
 <body>
@@ -203,7 +203,8 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
         display_date = latest_data.get("date", latest_date)
         latest_section = f"""
     <div class="latest">
-      <h2>Latest: {display_date}</h2>
+      <h2>Latest Issue</h2>
+      <div class="date-label">{display_date}</div>
       <a href="posts/{latest_date}.html" class="read-btn">Read Latest Newsletter &rarr;</a>
     </div>"""
 
@@ -216,26 +217,27 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
 <link rel="alternate" type="application/rss+xml" title="Daily Briefing RSS" href="feed.xml">
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #1a1a1a; min-height: 100vh; }}
-  .header {{ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 24px; text-align: center; }}
-  .header h1 {{ font-size: 32px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 8px; }}
-  .header p {{ font-size: 15px; opacity: 0.8; }}
-  .rss-btn {{ display: inline-block; margin-top: 20px; padding: 10px 24px; background: rgba(255,255,255,0.15); color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,0.25); transition: background 0.2s; }}
-  .rss-btn:hover {{ background: rgba(255,255,255,0.25); }}
-  .content {{ max-width: 640px; margin: 0 auto; padding: 32px 20px; }}
-  .latest {{ background: #fff; border-radius: 8px; padding: 24px; margin-bottom: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
-  .latest h2 {{ font-size: 18px; margin-bottom: 12px; color: #1a1a2e; }}
-  .read-btn {{ display: inline-block; padding: 8px 18px; background: #6c63ff; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 500; }}
+  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; color: #1a1a1a; min-height: 100vh; }}
+  .header {{ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 56px 24px 48px; text-align: center; }}
+  .header h1 {{ font-size: 34px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 10px; }}
+  .header p {{ font-size: 15px; opacity: 0.75; max-width: 400px; margin: 0 auto; line-height: 1.5; }}
+  .rss-btn {{ display: inline-block; margin-top: 24px; padding: 11px 28px; background: rgba(255,255,255,0.12); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,0.2); transition: background 0.2s; }}
+  .rss-btn:hover {{ background: rgba(255,255,255,0.22); }}
+  .content {{ max-width: 640px; margin: 0 auto; padding: 36px 20px; }}
+  .latest {{ background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #e8e8ee; }}
+  .latest h2 {{ font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #6c63ff; margin-bottom: 14px; }}
+  .latest .date-label {{ font-size: 20px; font-weight: 600; color: #1a1a2e; margin-bottom: 16px; }}
+  .read-btn {{ display: inline-block; padding: 10px 22px; background: #6c63ff; color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600; }}
   .read-btn:hover {{ background: #5a52e0; }}
-  .archive {{ background: #fff; border-radius: 8px; padding: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }}
-  .archive h2 {{ font-size: 18px; margin-bottom: 16px; color: #1a1a2e; }}
+  .archive {{ background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #e8e8ee; }}
+  .archive h2 {{ font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #1a1a2e; margin-bottom: 18px; }}
   .archive ul {{ list-style: none; }}
-  .archive li {{ padding: 8px 0; border-bottom: 1px solid #f0f0f0; }}
+  .archive li {{ padding: 10px 0; border-bottom: 1px solid #f0f0f0; }}
   .archive li:last-child {{ border-bottom: none; }}
-  .archive a {{ color: #1a1a2e; text-decoration: none; font-size: 15px; }}
+  .archive a {{ color: #1a1a2e; text-decoration: none; font-size: 15px; font-weight: 500; }}
   .archive a:hover {{ color: #6c63ff; }}
   .no-items {{ color: #888; font-style: italic; font-size: 14px; }}
-  .footer {{ text-align: center; padding: 32px 20px; font-size: 12px; color: #aaa; }}
+  .footer {{ text-align: center; padding: 36px 20px; font-size: 12px; color: #aaa; }}
 </style>
 </head>
 <body>

@@ -125,9 +125,7 @@ def fetch_hf_daily_papers() -> list[dict]:
 
 
 def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
-    """Main entry: fetch, enrich, rank, return top AI security papers."""
-    from src.summarizer import summarize
-
+    """Main entry: fetch, enrich, rank, return top AI security papers with raw text."""
     papers = fetch_arxiv_papers()
     hf_papers = fetch_hf_daily_papers()
 
@@ -152,5 +150,6 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
     papers.sort(key=score, reverse=True)
     top_papers = papers[:top_n]
     for p in top_papers:
-        p["quick_summary"] = summarize(p.get("abstract", ""), num_sentences=2)
+        p["quick_summary"] = ""
+        p["raw_text"] = p.get("abstract", "")
     return top_papers

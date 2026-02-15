@@ -6,7 +6,6 @@ from datetime import datetime, timedelta
 from difflib import SequenceMatcher
 
 from youtube_transcript_api import YouTubeTranscriptApi
-from src.summarizer import summarize
 
 PODCAST_FEEDS = {
     "This Week in Startups": "https://anchor.fm/s/7c624c84/podcast/rss",
@@ -56,15 +55,15 @@ def _find_matching_video(episode_title: str, videos: list[dict], threshold: floa
     return best_id if best_ratio >= threshold else None
 
 
-def _get_transcript_summary(video_id: str, num_sentences: int = 4) -> str | None:
-    """Fetch YouTube transcript and summarize it."""
+def _get_transcript_text(video_id: str) -> str | None:
+    """Fetch YouTube transcript and return full text."""
     try:
         ytt_api = YouTubeTranscriptApi()
         transcript = ytt_api.fetch(video_id, languages=["en"])
         full_text = " ".join(snippet.text for snippet in transcript)
         if len(full_text) < 100:
             return None
-        return summarize(full_text, num_sentences=num_sentences)
+        return full_text
     except Exception:
         return None
 
@@ -90,26 +89,25 @@ def get_recent_episodes(days: int = 7) -> list[dict]:
                 if published and published >= cutoff:
                     title = entry.get("title", "Untitled")
 
-                    # Try to get YouTube transcript summary
-                    summary = None
+                    # Try to get YouTube transcript text
+                    raw_text = ""
                     videos = yt_videos_cache.get(name, [])
                     if videos:
                         video_id = _find_matching_video(title, videos)
                         if video_id:
-                            summary = _get_transcript_summary(video_id)
+                            raw_text = _get_transcript_text(video_id) or ""
 
-                    # Fall back to RSS description
-                    if not summary:
-                        summary = entry.get("summary", entry.get("description", "No description."))
-                        summary = re.sub(r"<[^>]+>", "", summary)
-                        if len(summary) > 400:
-                            summary = summary[:400] + "..."
+                    # Fall back to RSS description as raw text
+                    if not raw_text:
+                        raw_text = entry.get("summary", entry.get("description", ""))
+                        raw_text = re.sub(r"<[^>]+>", "", raw_text)
 
                     all_episodes.append({
                         "podcast": name,
                         "title": title,
                         "published": published.strftime("%Y-%m-%d"),
-                        "summary": summary,
+                        "summary": "",
+                        "raw_text": raw_text,
                         "link": entry.get("link", ""),
                     })
         except Exception:

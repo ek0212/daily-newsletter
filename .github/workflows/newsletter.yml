@@ -40,13 +40,6 @@ jobs:
 
       - name: Run newsletter
         env:
-          SMTP_SERVER: ${{ secrets.SMTP_SERVER }}
-          SMTP_PORT: ${{ secrets.SMTP_PORT }}
-          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
-          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
-          RECIPIENT_EMAIL: ${{ secrets.RECIPIENT_EMAIL }}
-          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
-          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: python -m src.newsletter
 

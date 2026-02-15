@@ -3,105 +3,84 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; margin: 0; padding: 0; color: #1a1a1a; }
-  .container { max-width: 640px; margin: 0 auto; background: #fff; }
-  .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 32px 24px; text-align: center; }
-  .header h1 { margin: 0; font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
-  .header .date { margin-top: 8px; font-size: 14px; opacity: 0.8; }
-  .section { padding: 24px; border-bottom: 1px solid #eee; }
-  .section-title { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #6c63ff; margin: 0 0 16px 0; }
-  .weather-card { background: #f0f4ff; border-radius: 12px; padding: 20px; text-align: center; }
-  .weather-temp { font-size: 48px; font-weight: 700; color: #1a1a2e; }
-  .weather-conditions { font-size: 16px; color: #555; margin: 4px 0; }
-  .weather-range { font-size: 14px; color: #888; }
-  .weather-forecast { font-size: 13px; color: #666; margin-top: 12px; line-height: 1.5; }
-  .news-item { margin-bottom: 16px; }
-  .news-item h3 { margin: 0 0 4px 0; font-size: 16px; }
-  .news-item h3 a { color: #1a1a2e; text-decoration: none; }
-  .news-item h3 a:hover { color: #6c63ff; }
-  .news-item .source { font-size: 12px; color: #888; }
-  .news-summary { font-size: 13px; color: #666; line-height: 1.5; margin-top: 4px; }
-  .podcast-item { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #f0f0f0; }
-  .podcast-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-  .podcast-name { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #6c63ff; }
-  .podcast-item h3 { margin: 4px 0 8px 0; font-size: 15px; }
-  .podcast-item h3 a { color: #1a1a2e; text-decoration: none; }
-  .podcast-item .summary { font-size: 13px; color: #555; line-height: 1.5; }
-  .paper-item { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid #f0f0f0; }
-  .paper-item:last-child { border-bottom: none; }
-  .paper-item h3 { margin: 0 0 6px 0; font-size: 15px; }
-  .paper-item h3 a { color: #1a1a2e; text-decoration: none; }
-  .paper-meta { font-size: 12px; color: #888; margin-bottom: 6px; }
-  .paper-abstract { font-size: 13px; color: #555; line-height: 1.5; }
-  .footer { padding: 24px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; }
-  .no-items { font-size: 14px; color: #888; font-style: italic; }
-</style>
 </head>
-<body>
-<div class="container">
-  <div class="header">
-    <h1>Your Daily Briefing</h1>
-    <div class="date">{{ date }}</div>
+<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; margin: 0; padding: 0; color: #1a1a1a;">
+<div style="max-width: 640px; margin: 0 auto; background: #fff;">
+
+  <!-- Header -->
+  <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 40px 32px; text-align: center;">
+    <h1 style="margin: 0; font-size: 30px; font-weight: 700; letter-spacing: -0.5px;">Your Daily Briefing</h1>
+    <div style="margin-top: 8px; font-size: 14px; opacity: 0.75;">{{ date }}</div>
   </div>
 
   <!-- Weather -->
-  <div class="section">
-    <div class="section-title">Weather in NYC</div>
-    <div class="weather-card">
-      <div class="weather-temp">{{ weather.current_temp }}&deg;{{ weather.unit }}</div>
-      <div class="weather-conditions">{{ weather.conditions }}</div>
-      <div class="weather-range">H: {{ weather.high }}&deg; &nbsp; L: {{ weather.low }}&deg;</div>
-      <div class="weather-forecast">{{ weather.forecast }}</div>
+  <div style="padding: 32px 28px 24px 28px;">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;">&#9728;&#65039; Weather in NYC</div>
+    <div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;">
+      <div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;">{{ weather.current_temp }}&deg;{{ weather.unit }}</div>
+      <div style="font-size: 16px; color: #444; margin: 6px 0;">{{ weather.conditions }}</div>
+      <div style="font-size: 14px; color: #6a9ec7;">H: {{ weather.high }}&deg; &nbsp;&bull;&nbsp; L: {{ weather.low }}&deg;</div>
+      <div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;">{{ weather.forecast }}</div>
     </div>
   </div>
+
+  <!-- Divider -->
+  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #f59e42, #fbbf24, #f59e42); border-radius: 2px;"></div></div>
 
   <!-- Top News -->
-  <div class="section">
-    <div class="section-title">Top News</div>
+  <div style="padding: 28px 28px 24px 28px;">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;">&#128240; Top News</div>
     {% for story in news %}
-    <div class="news-item">
-      <h3><a href="{{ story.link }}">{{ story.title }}</a></h3>
-      <div class="source">{{ story.source }}{% if story.published %} &middot; {{ story.published }}{% endif %}</div>
-      {% if story.summary %}<div class="news-summary">{{ story.summary }}</div>{% endif %}
+    <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; border-left: 3px solid #f59e42;">
+      <a href="{{ story.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.3;">{{ story.title }}</a>
+      <div style="font-size: 12px; color: #999; margin-top: 5px;">{{ story.source }}{% if story.published %} &middot; {{ story.published }}{% endif %}</div>
+      {% if story.summary %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #fffbf5; border-radius: 6px; padding: 10px 12px;">{{ story.summary }}</div>{% endif %}
     </div>
     {% endfor %}
-    {% if not news %}<div class="no-items">No news available today.</div>{% endif %}
+    {% if not news %}<div style="font-size: 14px; color: #888; font-style: italic;">No news available today.</div>{% endif %}
   </div>
+
+  <!-- Divider -->
+  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #a855f7, #c084fc, #a855f7); border-radius: 2px;"></div></div>
 
   <!-- Podcasts -->
-  <div class="section">
-    <div class="section-title">Podcast Episodes This Week</div>
+  <div style="padding: 28px 28px 24px 28px;">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;">&#127897;&#65039; Podcast Episodes</div>
     {% for ep in podcasts %}
-    <div class="podcast-item">
-      <div class="podcast-name">{{ ep.podcast }}</div>
-      <h3><a href="{{ ep.link }}">{{ ep.title }}</a></h3>
-      <div class="summary">{{ ep.summary }}</div>
+    <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; border-left: 3px solid #a855f7;">
+      <div style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #8b5cf6;">{{ ep.podcast }}</div>
+      <a href="{{ ep.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.3; display: block; margin-top: 4px;">{{ ep.title }}</a>
+      <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #f9f5ff; border-radius: 6px; padding: 10px 12px;">{{ ep.summary }}</div>
     </div>
     {% endfor %}
-    {% if not podcasts %}<div class="no-items">No new episodes this week.</div>{% endif %}
+    {% if not podcasts %}<div style="font-size: 14px; color: #888; font-style: italic;">No new episodes this week.</div>{% endif %}
   </div>
 
+  <!-- Divider -->
+  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #10b981, #6ee7b7, #10b981); border-radius: 2px;"></div></div>
+
   <!-- AI Security Papers -->
-  <div class="section">
-    <div class="section-title">AI Security &amp; Red Teaming Papers</div>
+  <div style="padding: 28px 28px 24px 28px;">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;">&#128196; AI Security Papers</div>
     {% for paper in papers %}
-    <div class="paper-item">
-      <h3><a href="{{ paper.link }}">{{ paper.title }}</a></h3>
-      <div class="paper-meta">
+    <div style="background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 18px 20px; margin-bottom: 14px; border-left: 3px solid #10b981;">
+      <a href="{{ paper.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.3;">{{ paper.title }}</a>
+      <div style="font-size: 12px; color: #999; margin-top: 5px;">
         {{ paper.authors[:3] | join(", ") }}{% if paper.authors | length > 3 %} et al.{% endif %}
         &middot; {{ paper.published }}
         {% if paper.citation_count is not none and paper.citation_count %} &middot; {{ paper.citation_count }} citations{% endif %}
       </div>
-      <div class="paper-abstract">{% if paper.quick_summary %}{{ paper.quick_summary }}{% else %}{{ paper.abstract[:300] }}{% if paper.abstract | length > 300 %}...{% endif %}{% endif %}</div>
+      <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 10px; background: #f0fdf6; border-radius: 6px; padding: 10px 12px;">{% if paper.quick_summary %}{{ paper.quick_summary }}{% else %}{{ paper.abstract[:300] }}{% if paper.abstract | length > 300 %}...{% endif %}{% endif %}</div>
     </div>
     {% endfor %}
-    {% if not papers %}<div class="no-items">No relevant papers found this week.</div>{% endif %}
+    {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic;">No relevant papers found this week.</div>{% endif %}
   </div>
 
-  <div class="footer">
-    Generated automatically &middot; Daily Newsletter
+  <!-- Footer -->
+  <div style="padding: 28px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0;">
+    Generated automatically &middot; <a href="feed.xml" style="color: #6c63ff; text-decoration: none;">Subscribe via RSS</a>
   </div>
+
 </div>
 </body>
 </html>

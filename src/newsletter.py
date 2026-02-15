@@ -1,11 +1,7 @@
 #!/usr/bin/env python3
-"""Main newsletter generator: fetches all data, renders HTML, sends email."""
+"""Main newsletter generator: fetches all data, renders HTML, and updates the static site."""
 
-import os
 import sys
-import smtplib
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
 from datetime import datetime
 from pathlib import Path
 
@@ -20,11 +16,12 @@ from src.weather import get_nyc_weather
 from src.news import get_top_news
 from src.podcasts import get_recent_episodes
 from src.papers import get_ai_security_papers
+from src.llm import batch_summarize
 from src.site_generator import update_site
 
 
 def fetch_all_data() -> dict:
-    """Fetch all newsletter sections in sequence."""
+    """Fetch all newsletter sections, then batch-summarize via Gemini."""
     print("Fetching NYC weather...")
     weather = get_nyc_weather()
 
@@ -36,6 +33,34 @@ def fetch_all_data() -> dict:
 
     print("Fetching AI security papers...")
     papers = get_ai_security_papers(days_back=7, top_n=5)
+
+    # Batch summarize all sections in one Gemini call
+    print("Summarizing all content...")
+    sections = {
+        "news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in news],
+        "podcasts": [{"title": p["title"], "podcast": p.get("podcast", ""), "raw_text": p.get("raw_text", "")} for p in podcasts],
+        "papers": [{"title": p["title"], "raw_text": p.get("raw_text", "")} for p in papers],
+    }
+    summaries = batch_summarize(sections)
+
+    # Distribute summaries back
+    for i, item in enumerate(news):
+        if i < len(summaries.get("news", [])):
+            item["summary"] = summaries["news"][i]
+        if not item["summary"]:
+            item["summary"] = f"Read more at {item['source']}" if item.get("source") else ""
+
+    for i, item in enumerate(podcasts):
+        if i < len(summaries.get("podcasts", [])):
+            item["summary"] = summaries["podcasts"][i]
+        if not item["summary"]:
+            item["summary"] = (item.get("raw_text", "") or "")[:400]
+
+    for i, item in enumerate(papers):
+        if i < len(summaries.get("papers", [])):
+            item["quick_summary"] = summaries["papers"][i]
+        if not item.get("quick_summary"):
+            item["quick_summary"] = item.get("abstract", "")[:200]
 
     return {
         "date": datetime.now().strftime("%A, %B %d, %Y"),
@@ -54,35 +79,6 @@ def render_html(data: dict) -> str:
     return template.render(**data)
 
 
-def send_email(html: str, to_email: str):
-    """Send the newsletter via SMTP."""
-    smtp_server = os.getenv("SMTP_SERVER", "smtp.gmail.com")
-    smtp_port = int(os.getenv("SMTP_PORT", "587"))
-    from_email = os.getenv("EMAIL_ADDRESS")
-    password = os.getenv("EMAIL_PASSWORD")
-
-    if not from_email or not password:
-        print("ERROR: EMAIL_ADDRESS and EMAIL_PASSWORD must be set in .env")
-        print("Saving newsletter to output.html instead...")
-        output_path = PROJECT_ROOT / "output.html"
-        output_path.write_text(html)
-        print(f"Saved to {output_path}")
-        return
-
-    msg = MIMEMultipart("alternative")
-    msg["Subject"] = f"Your Daily Briefing - {datetime.now().strftime('%B %d, %Y')}"
-    msg["From"] = from_email
-    msg["To"] = to_email
-    msg.attach(MIMEText(html, "html"))
-
-    with smtplib.SMTP(smtp_server, smtp_port) as server:
-        server.starttls()
-        server.login(from_email, password)
-        server.sendmail(from_email, to_email, msg.as_string())
-
-    print(f"Newsletter sent to {to_email}")
-
-
 def main():
     load_dotenv(PROJECT_ROOT / ".env")
 
@@ -92,13 +88,10 @@ def main():
     # Generate static site files (archive, index, RSS)
     update_site(data, html)
 
-    to_email = os.getenv("RECIPIENT_EMAIL", os.getenv("EMAIL_ADDRESS", ""))
-    if to_email:
-        send_email(html, to_email)
-    else:
-        output_path = PROJECT_ROOT / "output.html"
-        output_path.write_text(html)
-        print(f"No email configured. Newsletter saved to {output_path}")
+    # Save output.html for local testing
+    output_path = PROJECT_ROOT / "output.html"
+    output_path.write_text(html)
+    print(f"Site updated successfully. Newsletter saved to {output_path}")
 
 
 if __name__ == "__main__":

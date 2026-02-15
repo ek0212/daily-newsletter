@@ -9,13 +9,13 @@ An automated daily newsletter that fetches, summarizes, and delivers five sectio
 3. **Podcast Episodes** — recent episodes from configured feeds with YouTube transcript summaries
 4. **AI Security Papers** — trending arxiv papers on prompt injection, red/blue teaming, jailbreaking, LLM security
 
-The newsletter is sent as an HTML email, published to a GitHub Pages static site with RSS feed, and archived as JSON + HTML.
+The newsletter is published to a GitHub Pages static site with RSS feed (subscribed via Blogtrottr for inbox delivery), and archived as JSON + HTML.
 
 ## Project Structure
 
 ```
 src/
-  newsletter.py      # Main entry point — orchestrates fetch, render, email, site
+  newsletter.py      # Main entry point — orchestrates fetch, render, and site update
   weather.py         # NWS API (free, no key) for NYC weather
   news.py            # Google News RSS + trafilatura article extraction + summarization
   podcasts.py        # RSS feeds + YouTube transcript API for episode summaries
@@ -41,20 +41,20 @@ site/                # Generated output (gitignored) — deployed to GitHub Page
 - **Podcast transcripts:** youtube-transcript-api
 - **RSS parsing:** feedparser
 - **HTTP:** requests (news, weather), urllib (arxiv, Semantic Scholar, HuggingFace)
-- **Email:** smtplib (SMTP/TLS, Gmail app passwords)
 - **Scheduling:** macOS launchd (local) or GitHub Actions cron (production)
+- **Delivery:** RSS feed (published to GitHub Pages, subscribed via Blogtrottr)
 - **Site hosting:** GitHub Pages via actions/deploy-pages
 
 ## Critical Rules
 
-### APIs — No Keys Required (except email)
+### APIs — No Keys Required
 - NWS API: free, only needs User-Agent header. NYC grid: OKX/33,35.
 - Google News RSS: no limits, no key.
 - arxiv API: no key. Use focused single-keyword queries (not giant OR queries — they timeout).
 - Semantic Scholar: no key for basic citation lookups. Rate-limited, best-effort.
 - HuggingFace Daily Papers: simple JSON endpoint, no key.
 - YouTube channel RSS + youtube-transcript-api: no key.
-- The ONLY credentials needed are SMTP email credentials in `.env`.
+- Delivery is via RSS feed published to GitHub Pages, subscribed via Blogtrottr for inbox delivery.
 
 ### Summarization
 - NEVER use an LLM or AI API for summaries. Use sumy LexRank (extractive) only.
@@ -86,7 +86,7 @@ Run these checks after ANY code change. All must pass before committing.
 source venv/bin/activate
 python3 src/newsletter.py
 ```
-**Expected:** Prints status lines for each section, ends with "Site updated successfully" and either "Newsletter sent" or "saved to output.html". Exit code 0.
+**Expected:** Prints status lines for each section, ends with "Site updated successfully" and "saved to output.html". Exit code 0.
 
 ### 2. Output HTML is valid and has all sections
 ```bash
