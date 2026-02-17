@@ -5,8 +5,336 @@
     <link />
     <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 16 Feb 2026 12:42:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 01:29:10 +0000</lastBuildDate>
     <ns0:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Briefing - Tuesday, February 17, 2026</title>
+      <link>/posts/2026-02-17.html</link>
+      <guid>/posts/2026-02-17.html</guid>
+      <description>Weather: 39°F - Partly Cloudy | 3 top news stories | 4 podcast episodes | 5 AI security papers</description>
+      <ns1:encoded>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;Daily Briefing - Tuesday, February 17, 2026&lt;/title&gt;
+&lt;style&gt;
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; color: #1a1a1a; }
+  .site-nav { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 14px 24px; text-align: center; }
+  .site-nav a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; }
+  .site-nav a:hover { color: #fff; }
+  .email-wrap { max-width: 680px; margin: 28px auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="site-nav"&gt;
+  &lt;a href="../index.html"&gt;&amp;larr; Back to Daily Briefing&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class="email-wrap"&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; margin: 0; padding: 0; color: #1a1a1a;"&gt;
+&lt;div style="max-width: 640px; margin: 0 auto; background: #fff;"&gt;
+
+  &lt;!-- Header --&gt;
+  &lt;div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 32px; text-align: center;"&gt;
+    &lt;h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px;"&gt;Your Daily Briefing&lt;/h1&gt;
+    &lt;div style="margin-top: 12px; font-size: 20px; font-weight: 500; opacity: 0.95;"&gt;Tuesday, February 17, 2026&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Weather --&gt;
+  &lt;div style="padding: 32px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;"&gt;&amp;#9728;&amp;#65039; Weather in NYC&lt;/div&gt;
+    &lt;div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;"&gt;
+      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;39&amp;deg;F&lt;/div&gt;
+      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Partly Cloudy&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 46&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 37&amp;deg;&lt;/div&gt;
+      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;A slight chance of rain after 1am. Mostly cloudy, with a low around 37. Southwest wind 3 to 7 mph. Chance of precipitation is 20%.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #f59e42, #fbbf24, #f59e42); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Top News --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;"&gt;&amp;#128240; Top News&lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Mon, 16 Feb 2026 21:09:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;AP News&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOdU9KcTluVUp5cU54V2FibWZEd0dBTkJpMVhhSXFUbnh2ZDlOLXUwTFlFZmx6T0JSeC1RN2Z1SVRwMlc3R3RCWXRDR2tUUmhndG9WX3RPcENwT2N2OUk0WWpoRmF2QmF4cGJGd1ctVFE0M3RjdGloZ0pGV0s2V1hmc002OVJNTVB5dWlXLXJOeGZSZw?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Iran meets UN nuclear watchdog in Geneva ahead of a second round of US talks&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Iran&lt;/strong&gt; meets UN nuclear watchdog in &lt;strong&gt;Geneva&lt;/strong&gt; ahead of more US talks
+&lt;strong&gt;Iran&lt;/strong&gt; meets UN nuclear watchdog in &lt;strong&gt;Geneva&lt;/strong&gt; ahead of more US talks
+GENEVA (AP) — &lt;strong&gt;Iran&lt;/strong&gt;’s top diplomat met with the head of the U. N. nuclear watchdog agency Monday, ahead of a second round of negotiations with the United States over Tehran’s nuclear program.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Mon, 16 Feb 2026 13:12:11 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;FOX Weather&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxOM2psQ3JrRkIzRGE2LVllWGl2QW8wRUpqY05fQTZlSDJ0ck9ad3dEWUFHamRxZ3MtSlZGemtUbjFoVmlIREdTVkhWSUwzSEU4MDFnTzRzZk9LTHNNdEFtaWhUQU5CVUpLLWRidThKblZwRzRZbjZDaTJianNmM0RlcVBZbUJHelZTMXJsSm9uMzFoUnd0WnZESW1Kd0FjSlllZ3pEbEFGYU1lWG1oUDJ4MUpjR3JaZEhrUFBkdGdXN1cteDlVaUNCclpn0gHPAUFVX3lxTE81c010OUZzYV9uZzBzV081VFg4UGxpSWJNMXUzZUlhSkhPc1phREpENDkwNzk3NTc0U0FxR2wzTWlQcnhXWlZJSzVKYV9YQzAzcEJWeEd1VmdfOC1XR19tTXJCNVFtcE81MXlLdFI0VHFQNGwxT2JHTjA0SnM3OXBEZ0NPZUd2RlBVNW5pNDZYVVB6NXdRb19HNVQ4bHBaWEZfSi1xWWMtRVF5OGJTdVA3MmN1c1E2bjZWRnd5THdhQTFCeFJjUDhVcUxLNEN3OA?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Live updates: California slammed by 'dangerous' storm, 8 feet of snow and life-threatening floods&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Live&lt;/strong&gt; updates: &lt;strong&gt;California&lt;/strong&gt; slammed by 'dangerous' storm, 8 feet of snow and life-threatening floods
+A dangerous storm is slamming &lt;strong&gt;California&lt;/strong&gt; with life-threatening flash floods, mudslides, and up to 8 feet of Sierra snow. Stay informed with real-time radar, Los Angeles evacuation warnings, and major travel disruptions across the Golden State. - Life-threatening flooding risk: Back-to-back storms are dumping heavy rain across the state, with forecasters warning of flash flooding, rockslides, and mudslides near steep terrain.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Mon, 16 Feb 2026 18:17:18 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;BBC&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE9nNVVINWRwQkp3dGxzVmVhVXVTTlg4TUpkUjBZWEhwbEdWQWhubEZybjhPVWdEVVhSUTA5VTNSU0FvanZ1SndMeWhHdWV3SFN2RUtxWFduNGJJQdIBX0FVX3lxTE5kZ0lHSnlYQjcwQTUwd0R1SWVOREFDSmRzd0FnUnFiMGx2M2xaZE4xTU1EYUZaX2tteG1pYmRkS1ozMUVGNkNDckZhZFZqa3k2VmZIbHZOclZLUk1KTk40?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;US build-up of warships and fighter jets tracked near Iran&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;US build-up of warships and fighter jets tracked near &lt;strong&gt;Iran&lt;/strong&gt;
+BBC Verify has confirmed the location of US aircraft carrier the USS Abraham Lincoln near &lt;strong&gt;Iran&lt;/strong&gt; using satellite imagery, as Washington continues to put pressure on the country over its military program and recent deadly crackdown on protesters. US and Iranian officials are set to meet in Swizerland on Tuesday for a second round of talks. &lt;strong&gt;Iran&lt;/strong&gt; says the meeting will focus on its nuclear programme and the potential lifting of economic sanctions imposed by the US.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #a855f7, #c084fc, #a855f7); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Podcasts --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;"&gt;&amp;#127897;&amp;#65039; Podcast Episodes&lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-14 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/OpenClaw-is-Our-Friend-Now--E2250-e3f2r6p" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OpenClaw is Our Friend Now | E2250&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This Week In Startups is made possible by:Sentry - http://sentry. io/twistCircle - http://Circle. so/twistWispr Flow - https://wisprflow. ai/twistToday’s show: What makes &lt;strong&gt;OpenClaw&lt;/strong&gt; feel so much more ALIVE than other AI agents?On TWiST, we’re welcoming three amazing builders who are truly connecting with their &lt;strong&gt;OpenClaw&lt;/strong&gt; bots, not just using them for productivity but getting to know them and their personalities on a deeper level.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Why-J-Cal-Invested-to-200K-in-a-former-Employee--E2249-e3f16i1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Why J-Cal Invested to 200K in a former Employee | E2249&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This Week In Startups is made possible by:NetSuite - https://www. netsuite. com/twistLuma AI - https://lumalabs. ai/twistSquarespace - https://squarespace.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/How-These-3-Founders-are-building-on-Open-Claw--E2248-e3evo2n" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;How These 3 Founders are building on Open Claw | E2248&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This Week In Startups is made possible by:Hubspot - http://clickhubspot. com/twist2Deel - http://deel. com/twistIru - http://www. iru.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; Lex Fridman Podcast&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://lexfridman.com/peter-steinberger/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=peter-steinberger" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Peter&lt;/strong&gt; &lt;strong&gt;Steinberger&lt;/strong&gt; is the creator of &lt;strong&gt;OpenClaw&lt;/strong&gt;, an open-source AI agent framework that&amp;#8217;s the fastest-growing project in GitHub history. Thank you for listening ❤ Check out our sponsors: https://lexfridman. com/sponsors/ep491-sc
+See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript:
+https://lexfridman.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #10b981, #6ee7b7, #10b981); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- AI Security Papers --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;"&gt;&amp;#128196; AI Security Papers&lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; Bo Zhang, Jiaxuan Guo, Lijun Li et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.12092" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;DeepSight: An All-in-One LM Safety Toolkit&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;As the development of Large Models (LMs) progresses rapidly, their safety is also a priority. In current Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) safety workflow, evaluation, diagnosis, and alignment are often handled by separate tools.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; Aadarsh Sahoo, Georgia Gkioxari&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.13195v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Conversational Image Segmentation: Grounding Abstract Concepts with Scalable Supervision&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Conversational&lt;/strong&gt; image segmentation grounds abstract, intent-driven concepts into pixel-accurate masks. Prior work on referring image grounding focuses on categorical and spatial queries (e.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; Yiran Gao, Kim Hammar, Tao Li&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.13156v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;In-Context Autonomous Network Incident Response: An End-to-End Large Language Model Agent Approach&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Rapidly evolving cyberattacks demand incident response systems that can autonomously learn and adapt to changing threats. Prior work has extensively explored the reinforcement learning approach, which involves learning response strategies through extensive simulation of the incident.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; Dong Han, Yong Li, Joachim Denzler&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.13168v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Realistic Face Reconstruction from Facial Embeddings via Diffusion Models&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;With the advancement of face recognition (FR) systems, privacy-preserving face recognition (PPFR) systems have gained popularity for their accurate recognition, enhanced facial privacy protection, and robustness to various attacks. However, there are limited studies to further verify privacy risks by reconstructing realistic high-resolution face images from embeddings of these systems, especially for PPFR.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; Shlomi Dolev, Ehud Gudes, Daniel Shlomo&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.13167v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Bloom Filter Look-Up Tables for Private and Secure Distributed Databases in Web3 (Revised Version)&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The rapid growth of decentralized systems in theWeb3 ecosystem has introduced numerous challenges, particularly in ensuring data security, privacy, and scalability [3, 8]. These systems rely heavily on distributed architectures, requiring robust mechanisms to manage data and interactions among participants securely.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;div style="padding: 28px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0;"&gt;
+    Generated automatically &amp;middot; &lt;a href="feed.xml" style="color: #6c63ff; text-decoration: none;"&gt;Subscribe via RSS&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</ns1:encoded>
+      <pubDate>Tue, 17 Feb 2026 07:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Daily Briefing - Monday, February 16, 2026</title>
       <link>/posts/2026-02-16.html</link>
