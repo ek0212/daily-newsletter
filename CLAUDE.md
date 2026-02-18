@@ -32,7 +32,7 @@ site/                # Generated output (gitignored) — deployed to GitHub Page
 
 - **Language:** Python 3.11+
 - **Template:** Jinja2 (all CSS inline for email/RSS compatibility)
-- **Summarization:** Gemini 2.0 Flash (single batched call), sumy LexRank fallback
+- **Summarization:** Gemini 2.5 Flash (single batched call), sumy LexRank fallback
 - **Article extraction:** trafilatura + googlenewsdecoder (resolves Google News URLs)
 - **Podcast transcripts:** youtube-transcript-api
 - **RSS parsing:** feedparser
@@ -51,7 +51,7 @@ Every card in every section follows the same visual structure:
 Cards are white with 1px #eee border, 10px border-radius, 20px padding, 4px colored left border. This is standardized — do not deviate.
 
 ### Summarization
-- Gemini 2.0 Flash via `src/llm.py` — ONE API call for all summaries (news + podcasts + papers batched together)
+- Gemini 2.5 Flash via `src/llm.py` — ONE API call for all summaries (news + podcasts + papers batched together)
 - Fallback to sumy LexRank if no GEMINI_API_KEY or API error
 - `src/summarizer.py` bolds numbers, stats, proper nouns, quoted text in fallback mode
 - Gemini prompt requests `<strong>` bolding of key terms and `KEY:` prefix takeaways

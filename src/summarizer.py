@@ -60,7 +60,15 @@ def summarize(text: str, num_sentences: int = 2, title: str = "") -> str:
     if not text or not text.strip():
         return ""
 
+    # Skip obvious non-content (sponsor reads, URLs, short RSS descriptions)
+    if len(text) < 200 or text.count("http") > 3:
+        return ""
+
     logger.debug("Extractive summarize: input %d chars -> %d sentences", len(text), num_sentences)
+
+    # For long transcripts, skip the first 500 chars (usually sponsor/intro)
+    if len(text) > 2000:
+        text = text[500:]
 
     # If text is already short, return as-is
     sentences_rough = [s.strip() for s in text.replace("! ", ".\n").replace("? ", ".\n").split(".") if s.strip()]

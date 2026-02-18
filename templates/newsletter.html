@@ -38,13 +38,7 @@
       <a href="{{ story.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ story.title }}</a>
       <!-- Summary -->
       {% if story.summary %}
-        {% set parts = story.summary.split('\n', 1) %}
-        {% if parts[0].startswith('KEY:') %}
-          <div style="font-size: 14px; color: #92400e; font-weight: 600; margin-top: 12px; padding: 10px 14px; background: #fef3c7; border-radius: 8px; line-height: 1.5;">{{ parts[0][4:] | safe }}</div>
-          {% if parts | length > 1 %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 8px; padding: 0 2px;">{{ parts[1] | safe }}</div>{% endif %}
-        {% else %}
-          <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ story.summary | safe }}</div>
-        {% endif %}
+        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ story.summary | safe }}</div>
       {% endif %}
     </div>
     {% endfor %}
@@ -65,13 +59,7 @@
       <a href="{{ ep.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ ep.title }}</a>
       <!-- Summary -->
       {% if ep.summary %}
-        {% set ep_parts = ep.summary.split('\n', 1) %}
-        {% if ep_parts[0].startswith('KEY:') %}
-          <div style="font-size: 14px; color: #5b21b6; font-weight: 600; margin-top: 12px; padding: 10px 14px; background: #ede9fe; border-radius: 8px; line-height: 1.5;">{{ ep_parts[0][4:] | safe }}</div>
-          {% if ep_parts | length > 1 %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 8px; padding: 0 2px;">{{ ep_parts[1] | safe }}</div>{% endif %}
-        {% else %}
-          <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ ep.summary | safe }}</div>
-        {% endif %}
+        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ ep.summary | safe }}</div>
       {% endif %}
     </div>
     {% endfor %}
@@ -112,13 +100,7 @@
       </div>
       <!-- Summary -->
       {% set paper_summary = paper.quick_summary if paper.quick_summary else paper.abstract[:300] ~ ('...' if paper.abstract | length > 300 else '') %}
-      {% set p_parts = paper_summary.split('\n', 1) %}
-      {% if p_parts[0].startswith('KEY:') %}
-        <div style="font-size: 14px; color: #065f46; font-weight: 600; margin-top: 12px; padding: 10px 14px; background: #d1fae5; border-radius: 8px; line-height: 1.5;">{{ p_parts[0][4:] | safe }}</div>
-        {% if p_parts | length > 1 %}<div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 8px; padding: 0 2px;">{{ p_parts[1] | safe }}</div>{% endif %}
-      {% else %}
-        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ paper_summary | safe }}</div>
-      {% endif %}
+      <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ paper_summary | safe }}</div>
     </div>
     {% endfor %}
     {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic;">No relevant papers found this week.</div>{% endif %}
