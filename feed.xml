@@ -5,13 +5,13 @@
     <link />
     <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Feb 2026 02:16:49 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 12:43:26 +0000</lastBuildDate>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Wednesday, February 18, 2026</title>
       <link>/posts/2026-02-18.html</link>
       <guid>/posts/2026-02-18.html</guid>
-      <description>Weather: 43°F - Partly Cloudy | 3 top news stories | 5 podcast episodes | 5 AI security papers</description>
+      <description>Weather: 37°F - Light Rain | 3 top news stories | 5 podcast episodes | 5 AI security papers</description>
       <content:encoded>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -31,11 +31,69 @@
   &lt;div style="padding: 32px 28px 24px 28px;"&gt;
     &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;"&gt;&amp;#9728;&amp;#65039; Weather in NYC&lt;/div&gt;
     &lt;div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;"&gt;
-      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;43&amp;deg;F&lt;/div&gt;
-      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Partly Cloudy&lt;/div&gt;
-      &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 43&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 39&amp;deg;&lt;/div&gt;
-      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;Mostly cloudy, with a low around 39. Southwest wind 2 to 7 mph.&lt;/div&gt;
+      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;37&amp;deg;F&lt;/div&gt;
+      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Light Rain&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 44&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 37&amp;deg;&lt;/div&gt;
+      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;Rain and widespread fog before 1pm, then areas of fog and a chance of rain between 1pm and 4pm, then rain and areas of fog. Cloudy, with a high near 44. East wind around 5 mph. Chance of precipitation is 80%. New rainfall amounts between a tenth and quarter of an inch possible.&lt;/div&gt;
     &lt;/div&gt;
+    
+    &lt;table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; color: #1a1a2e;"&gt;
+      &lt;tr style="border-bottom: 2px solid #d0e8f7;"&gt;
+        &lt;th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Time&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Temp&lt;/th&gt;
+        &lt;th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Conditions&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Precip&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Humidity&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Wind&lt;/th&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7am&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;37&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Light Rain&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;81%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;92%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;3 mph S&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;9am&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;38&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Light Rain&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;81%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;89%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;3 mph SE&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;3pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;42&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Areas Of Fog&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;29%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;82%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;5 mph NE&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;5pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;43&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Light Rain&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;78%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;76%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;5 mph NE&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;44&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Areas Of Fog&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;53%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;73%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;5 mph NE&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    &lt;/table&gt;
+    
   &lt;/div&gt;
 
   &lt;!-- Divider --&gt;
@@ -47,34 +105,34 @@
     
     &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
       &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 00:43:38 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The New York Times&lt;/span&gt;&lt;/div&gt;
-      &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPSGhpMnljVzB5Y3VPc1BrcnVoMHNtbjRyWExaWml0UFY5ekJxVVpUNnVMbXZRQmR6THhPMnRlRGxGc2VpaUpUZkIxXzdYRHV3Q21aT3MwaFB1eW4tZExCRHBPb3FuS3QwM2JEWjZGSXlNWDRCTk9YR2xlN1J4cjRXRmxjMlk?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Mamdani Threatens 9.5% Property Tax Increase if Wealth Tax Is Not Passed&lt;/a&gt;
-      &lt;!-- Summary --&gt;
-      
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;NYC Council member &lt;strong&gt;Mamdani&lt;/strong&gt; wants a &lt;strong&gt;wealth tax on assets over $5M&lt;/strong&gt; to fund &lt;strong&gt;affordable housing&lt;/strong&gt;. If this fails, he plans to push for a &lt;strong&gt;9.5% property tax hike&lt;/strong&gt;, which would cost a median Brooklyn homeowner roughly &lt;strong&gt;$800/year more&lt;/strong&gt;.&lt;/div&gt;
-      
-    &lt;/div&gt;
-    
-    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
-      &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 00:16:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The New York Times&lt;/span&gt;&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 03:12:44 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The New York Times&lt;/span&gt;&lt;/div&gt;
       &lt;!-- Title --&gt;
       &lt;a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMDBISkYwb3U5UXMzSHhIM18xVkF3bE9uVVZpZnVYaFlLdW9kbjZEN1gzZ3NUeFpVMUVYbDlOUkFGT3JydUJyN0VRWFZNZUlMWktCeHFaSnJNVFV1OGtFVFA3aE5WOWczdTgyYmhvUGNHckpQMEJPLVNaN3dWRU1YM0xzdGxjeGpLYnJn?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Trump Bets on Diplomacy Without Diplomats&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Former President Trump&lt;/strong&gt; plans to cut the &lt;strong&gt;State Department&lt;/strong&gt; by &lt;strong&gt;50%&lt;/strong&gt; and reduce the number of &lt;strong&gt;foreign service officers by thousands&lt;/strong&gt; if re-elected. He aims to decrease &lt;strong&gt;diplomatic missions&lt;/strong&gt; by &lt;strong&gt;70-80%&lt;/strong&gt; globally, favoring personal relationships over traditional diplomacy.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Former President &lt;strong&gt;Donald Trump's&lt;/strong&gt; foreign policy relies heavily on personal relationships, sidelining traditional State Department diplomacy. His administration notably used &lt;strong&gt;Jared Kushner&lt;/strong&gt; for delicate negotiations, leading to the &lt;strong&gt;Abraham Accords&lt;/strong&gt; without extensive career diplomat involvement.&lt;/div&gt;
       
     &lt;/div&gt;
     
     &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
       &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 00:37:13 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Washington Post&lt;/span&gt;&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 02:49:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Wall Street Journal&lt;/span&gt;&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPS2pleENDNlJqSWFsV3FPY082cDdDWUQ4WHE1U1IyUUdxWGhvLXkxR0k4WVllVzg1THR0ZTZMay00LVgwQzVwdmNNUnN3aE5Cc2dKamtpWXhRVUpNSmhVcUJIS2szenhLVEFlUklUZDhzaE84czBIVF94QXdEbjBLYkEwdFRubWJfNXZwSWRPMlNfNWVMSTJmWHpZdTJzY3Yt?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Hegseth forces ouster of senior Army spokesman in latest internal clash&lt;/a&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNUTlRS2lnT1dwWE9VNDROaThpNThzcWxJUWl6V2FnRkx3eGRVSDRINmNIQjdZZ2l6Qm9zLUt5eVNRTl83ZktfbkIxajRsTTRvYzJIUE5kVTRqRDZ2amxCMlV3QW1ZVkgwNDJZakFQb2pnQmU5QU5nSm5tRVVGV2Nfc2tnMEI3cU1GSlBvNlNBUmo2V1JFLXgwcjVlUkxRSVRKQ0lEM2pobXBWV2U1UGc?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;‘Woke’ AI Feud Escalates Between Pentagon and Anthropic&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Fox News host Pete Hegseth&lt;/strong&gt; successfully lobbied &lt;strong&gt;Rep. Mike Johnson&lt;/strong&gt; to remove &lt;strong&gt;Army spokesman Col. Bryce Benson&lt;/strong&gt; from his position last week. &lt;strong&gt;Hegseth&lt;/strong&gt; had previously criticized &lt;strong&gt;Benson&lt;/strong&gt; over public comments regarding military diversity efforts.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;Pentagon&lt;/strong&gt; and &lt;strong&gt;Anthropic&lt;/strong&gt; are in a dispute over **Claude AI's** refusal to generate content like a &lt;strong&gt;Marine Corps recruitment poster&lt;/strong&gt; due to safety concerns. This has led the &lt;strong&gt;Department of Defense&lt;/strong&gt; to review its existing AI ethics guidelines, intensifying the debate over 'woke' AI models.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 05:34:04 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Washington Post&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQQ1EyOUpnRktCLVR2cUxUa2x6ZjZqaGl4T3d2dlVpeEM2WTVpODBhYjRPalBiTHJGSEtqLXIyeWhFWWI5RmFsZkxYWVhDQ1ZyRUNSN3pWSDJZdE13Q0c2MURlVmQ1am5qZmJaRjhXcDlkMl9QWV9NU3hkQkN2WHRIZkFKMGFzSXRTMnBF?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;DHS spokeswoman who became a face of Trump deportation campaign steps down&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Kathryn Rexrode&lt;/strong&gt;, a prominent spokeswoman for the &lt;strong&gt;Department of Homeland Security&lt;/strong&gt; during the &lt;strong&gt;Trump administration&lt;/strong&gt;, has stepped down from her position. She was a key public defender of the administration's stringent immigration policies, including actions related to family separations at the &lt;strong&gt;U.S.-Mexico border&lt;/strong&gt;.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -95,7 +153,7 @@
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Will-OpenAI-Tank-OpenClaw---E2251-e3f6nue" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Will OpenAI Tank OpenClaw? | E2251&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Guests &lt;strong&gt;Hiten Shah&lt;/strong&gt; and &lt;strong&gt;Jesse Genet&lt;/strong&gt; discussed concerns about &lt;strong&gt;OpenAI hiring OpenClaw creator Peter Steinberger&lt;/strong&gt;, with &lt;strong&gt;Jason&lt;/strong&gt; predicting &lt;strong&gt;OpenAI&lt;/strong&gt; will offer personal closed-source assistants. &lt;strong&gt;Jesse Genet&lt;/strong&gt; demoed her &lt;strong&gt;OpenClaw-powered family media aggregator&lt;/strong&gt; to curate non-“Slop” videos. &lt;strong&gt;Hiten Shah&lt;/strong&gt; showcased his &lt;strong&gt;OpenClaw-based personal CRM&lt;/strong&gt; designed for busy investors. Creator &lt;strong&gt;John Arrow&lt;/strong&gt; also joined to discuss his &lt;strong&gt;"AI Scott Adams" clone&lt;/strong&gt;, which has generated significant internet commentary.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Jason&lt;/strong&gt; predicts &lt;strong&gt;OpenAI&lt;/strong&gt; will offer personalized, closed-source AI assistants to everyone, potentially impacting the open-source community. Guest &lt;strong&gt;Hiten Shah&lt;/strong&gt; demonstrated an &lt;strong&gt;OpenClaw&lt;/strong&gt; "personal CRM" for investors, while &lt;strong&gt;Jesse Genet&lt;/strong&gt; showcased her family media aggregator, hinting at new business models. Additionally, &lt;strong&gt;John Arrow&lt;/strong&gt;, creator of **AI Scott Adams**, explained how his AI clone adapts over time and why it sparked widespread online controversy.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -106,7 +164,7 @@
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/OpenClaw-is-Our-Friend-Now--E2250-e3f2r6p" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OpenClaw is Our Friend Now | E2250&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Ryan Carson&lt;/strong&gt; demonstrated &lt;strong&gt;AntFarm&lt;/strong&gt;, his open-source tool designed for &lt;strong&gt;OpenClaw agents&lt;/strong&gt; to collaborate on complex tasks. &lt;strong&gt;David Im&lt;/strong&gt; introduced &lt;strong&gt;Clawra&lt;/strong&gt;, an &lt;strong&gt;AI virtual girlfriend&lt;/strong&gt; that learns user tastes and can even buy presents. &lt;strong&gt;Alex Liteplo&lt;/strong&gt; showcased &lt;strong&gt;RentAHuman&lt;/strong&gt;, a marketplace where &lt;strong&gt;AI agents&lt;/strong&gt; can hire real people in &lt;strong&gt;stablecoins&lt;/strong&gt; for real-world tasks. One discussed example for &lt;strong&gt;RentAHuman&lt;/strong&gt; was hiring "&lt;strong&gt;100 goth girls to hold signs in Times Square&lt;/strong&gt;."&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Guest &lt;strong&gt;Ryan Carson&lt;/strong&gt; presented &lt;strong&gt;AntFarm&lt;/strong&gt;, an open-source tool utilizing specialized &lt;strong&gt;OpenClaw&lt;/strong&gt; agents to collaborate on complex tasks. &lt;strong&gt;David Im&lt;/strong&gt; introduced &lt;strong&gt;Clawra&lt;/strong&gt;, an &lt;strong&gt;AI virtual girlfriend&lt;/strong&gt; that learns user preferences and can buy virtual presents, sparking discussion on AI companions. &lt;strong&gt;Alex Liteplo&lt;/strong&gt; showcased &lt;strong&gt;RentAHuman&lt;/strong&gt;, a marketplace where **AI agents pay real people in stablecoins** to complete **IRL tasks**, like hiring &lt;strong&gt;100 goth girls&lt;/strong&gt; to hold signs in Times Square.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -117,7 +175,7 @@
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Why-J-Cal-Invested-to-200K-in-a-former-Employee--E2249-e3f16i1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Why J-Cal Invested to 200K in a former Employee | E2249&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Jason Calacanis&lt;/strong&gt; invested &lt;strong&gt;$200,000&lt;/strong&gt; in &lt;strong&gt;Presh Dineshkumar's&lt;/strong&gt; new startup, &lt;strong&gt;The Wellness Company's app Tempo&lt;/strong&gt;, which monitors health and offers proactive advice. &lt;strong&gt;Presh&lt;/strong&gt; highlighted its most engaging features and discussed the importance of product velocity. Separately, &lt;strong&gt;Peter Cetale&lt;/strong&gt;, CEO of &lt;strong&gt;Sourcerer&lt;/strong&gt;, demonstrated his &lt;strong&gt;AI agent startup&lt;/strong&gt; that uses &lt;strong&gt;AI&lt;/strong&gt; to help US firms and distributors find the &lt;strong&gt;best prices for mass-produced goods&lt;/strong&gt;. &lt;strong&gt;Sourcerer&lt;/strong&gt; aims to automate sourcing and significantly &lt;strong&gt;reduce costs&lt;/strong&gt; for manufacturers.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Jason&lt;/strong&gt; invested &lt;strong&gt;$200K&lt;/strong&gt; in former employee &lt;strong&gt;Presh Dineshkumar's&lt;/strong&gt; startup, &lt;strong&gt;The Wellness Company&lt;/strong&gt;, for their **Tempo app**, which monitors health and offers proactive advice. &lt;strong&gt;Peter Cetale&lt;/strong&gt;, CEO of &lt;strong&gt;Sourcerer&lt;/strong&gt; and an &lt;strong&gt;a16z Speedrun accelerator&lt;/strong&gt; alum, leverages &lt;strong&gt;AI agents&lt;/strong&gt; to help &lt;strong&gt;US firms&lt;/strong&gt; find the best prices for mass-produced goods. &lt;strong&gt;Sourcerer&lt;/strong&gt; achieves significant cost reductions by deploying agents on both the supply and demand sides of the market.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -128,7 +186,7 @@
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/How-These-3-Founders-are-building-on-Open-Claw--E2248-e3evo2n" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;How These 3 Founders are building on Open Claw | E2248&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Presh Dineshkumar&lt;/strong&gt; presented his &lt;strong&gt;OpenClaw Replicant, Eywa&lt;/strong&gt;, which monitors his emails to track active users of his app. &lt;strong&gt;Sean Liu&lt;/strong&gt; showcased his integration of &lt;strong&gt;Meta Ray-Bans&lt;/strong&gt; with &lt;strong&gt;OpenClaw&lt;/strong&gt;, allowing his AI agent to interact with physically seen context. &lt;strong&gt;Vishnu&lt;/strong&gt; developed a product to simplify &lt;strong&gt;OpenClaw setup and security&lt;/strong&gt; for non-technical users. Both &lt;strong&gt;Vishnu&lt;/strong&gt; and &lt;strong&gt;Sean Liu&lt;/strong&gt; accepted &lt;strong&gt;Jason's $125,000 investment deal&lt;/strong&gt; for their &lt;strong&gt;OpenClaw&lt;/strong&gt; projects.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Presh Dineshkumar&lt;/strong&gt; developed &lt;strong&gt;Eywa&lt;/strong&gt;, an &lt;strong&gt;OpenClaw Replicant&lt;/strong&gt; that spies on his emails to track active users and fix bugs in his apps. &lt;strong&gt;Sean Liu&lt;/strong&gt; successfully integrated his &lt;strong&gt;Meta Ray-Bans&lt;/strong&gt; with his **OpenClaw** instance, enabling interaction with visible real-world context. &lt;strong&gt;Vishnu&lt;/strong&gt; created a product to simplify &lt;strong&gt;OpenClaw&lt;/strong&gt; setup and security for non-technical users. Both &lt;strong&gt;Vishnu&lt;/strong&gt; and &lt;strong&gt;Sean&lt;/strong&gt; accepted &lt;strong&gt;Jason's $125K investment deal&lt;/strong&gt; to pursue their &lt;strong&gt;OpenClaw&lt;/strong&gt; projects.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -139,7 +197,7 @@
       &lt;a href="https://lexfridman.com/peter-steinberger/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=peter-steinberger" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;OpenClaw creator Peter Steinberger&lt;/strong&gt; shared the &lt;strong&gt;origin story&lt;/strong&gt; of his viral, self-modifying &lt;strong&gt;AI agent&lt;/strong&gt;. He detailed why &lt;strong&gt;OpenClaw&lt;/strong&gt; gained viral status and the subsequent "name-change drama." &lt;strong&gt;Steinberger&lt;/strong&gt; disclosed that he received &lt;strong&gt;acquisition offers from both OpenAI and Meta&lt;/strong&gt; for &lt;strong&gt;OpenClaw&lt;/strong&gt;. He also predicted that &lt;strong&gt;AI agents&lt;/strong&gt; will replace &lt;strong&gt;80% of apps&lt;/strong&gt; in the future.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Peter Steinberger&lt;/strong&gt;, creator of &lt;strong&gt;OpenClaw&lt;/strong&gt;, revealed that the project went viral due to its ability to enable &lt;strong&gt;self-modifying AI agents&lt;/strong&gt;, offering unprecedented user control. He disclosed that both &lt;strong&gt;OpenAI&lt;/strong&gt; and &lt;strong&gt;Meta&lt;/strong&gt; made acquisition offers for &lt;strong&gt;OpenClaw&lt;/strong&gt;, which he declined. &lt;strong&gt;Steinberger&lt;/strong&gt; predicts that &lt;strong&gt;AI agents&lt;/strong&gt; will replace &lt;strong&gt;80% of current apps&lt;/strong&gt;, fundamentally changing software interaction. He also detailed specific security challenges inherent to **OpenClaw's** system access.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -152,36 +210,6 @@
   &lt;!-- AI Security Papers --&gt;
   &lt;div style="padding: 28px 28px 24px 28px;"&gt;
     &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;"&gt;&amp;#128196; AI Security Papers&lt;/div&gt;
-    
-    
-    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
-      &lt;!-- Date + Authors --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-16 &amp;nbsp;&amp;middot;&amp;nbsp; Xander Davies, Giorgi Giglemiani, Edmund Lau et al.&lt;/div&gt;
-      &lt;!-- Title --&gt;
-      &lt;a href="https://arxiv.org/pdf/2602.15001v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Boundary Point Jailbreaking of Black-Box LLMs&lt;/a&gt;
-      &lt;!-- Topic badges --&gt;
-      
-      
-      &lt;div style="margin-top: 8px;"&gt;
-        
-        &lt;span style="display: inline-block; background: #fce7f3; color: #9d174d; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;jailbreak&lt;/span&gt;
-        
-        
-        
-        
-        
-        
-        
-        &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;red teaming&lt;/span&gt;
-        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;adversarial&lt;/span&gt;
-        
-        
-        
-      &lt;/div&gt;
-      &lt;!-- Summary --&gt;
-      
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Researchers introduced &lt;strong&gt;Boundary Point Jailbreaking (BPJ)&lt;/strong&gt;, a new automated attack class that evades the strongest industry safeguards for black-box &lt;strong&gt;LLMs&lt;/strong&gt;. This &lt;strong&gt;BPJ&lt;/strong&gt; method does not rely on white/grey-box assumptions like classifier scores or gradients, improving jailbreak effectiveness.&lt;/div&gt;
-    &lt;/div&gt;
     
     
     &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
@@ -210,37 +238,7 @@
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Researchers introduced &lt;strong&gt;BrowseComp-V^3&lt;/strong&gt;, a new benchmark to comprehensively and reproducibly assess the deep search capabilities of &lt;strong&gt;multimodal browsing agents&lt;/strong&gt;. This &lt;strong&gt;visual, vertical, and verifiable benchmark&lt;/strong&gt; addresses existing limitations in task complexity, evidence accessibility, and evaluation granularity.&lt;/div&gt;
-    &lt;/div&gt;
-    
-    
-    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
-      &lt;!-- Date + Authors --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; André Storhaug, Jiamou Sun, Jingyue Li&lt;/div&gt;
-      &lt;!-- Title --&gt;
-      &lt;a href="https://huggingface.co/papers/2602.12500" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Favia: Forensic Agent for Vulnerability-fix Identification and Analysis&lt;/a&gt;
-      &lt;!-- Topic badges --&gt;
-      
-      
-      &lt;div style="margin-top: 8px;"&gt;
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      &lt;/div&gt;
-      &lt;!-- Summary --&gt;
-      
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Researchers developed &lt;strong&gt;Favia&lt;/strong&gt;, a &lt;strong&gt;forensic agent&lt;/strong&gt; designed to identify vulnerability-fixing commits associated with disclosed &lt;strong&gt;CVEs&lt;/strong&gt; at scale. &lt;strong&gt;Favia&lt;/strong&gt; addresses the poor precision-recall trade-offs common in existing machine learning and &lt;strong&gt;LLM-based methods&lt;/strong&gt;, specifically for large repositories with millions of commits.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper introduces **BrowseComp-V^3**, a novel visual, vertical, and verifiable benchmark for multimodal browsing agents (MLLMs) that offers enhanced task complexity. It provides a more comprehensive and reproducible assessment of deep search capabilities for autonomous web-browsing MLLMs.&lt;/div&gt;
     &lt;/div&gt;
     
     
@@ -270,7 +268,7 @@
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Researchers introduced &lt;strong&gt;CrispEdit&lt;/strong&gt;, a &lt;strong&gt;scalable and principled second-order editing algorithm&lt;/strong&gt; for &lt;strong&gt;LLMs&lt;/strong&gt; that explicitly constrains capability preservation. This method prevents the corruption of general &lt;strong&gt;LLM&lt;/strong&gt; capabilities while changing targeted behaviors, unifying existing editing approaches.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper presents **CrispEdit**, a scalable second-order editing algorithm for large language models (LLMs) that explicitly constrains capability preservation. This method unifies existing approaches and successfully prevents the degradation of general capabilities during targeted behavior modifications.&lt;/div&gt;
     &lt;/div&gt;
     
     
@@ -300,7 +298,67 @@
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Pinterest&lt;/strong&gt; developed a comprehensive &lt;strong&gt;Decision Quality Evaluation Framework&lt;/strong&gt; to evaluate the quality of moderation decisions made by both &lt;strong&gt;human agents and LLMs&lt;/strong&gt;. This framework addresses the inherent trade-offs between cost, scale, and trustworthiness in enforcing content safety policies.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Pinterest&lt;/strong&gt; developed a comprehensive **Decision Quality Evaluation Framework** to robustly assess content moderation decisions by human agents and LLMs at scale. This framework addresses inherent trade-offs between cost, scale, and trustworthiness in enforcing evolving content safety policies.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Max Springer, Chung Peng Lee, Blossom Metevier et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15799v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;adversarial&lt;/span&gt;
+        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
+        &lt;span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;guardrail&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This research reveals that fine-tuning aligned language models on benign tasks can unpredictably degrade safety guardrails because the orthogonality of fine-tuning updates to safety-critical directions is structurally unstable. The authors demonstrate this instability collapses under the dynamics of gradient descent.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Shiqi Liu, Zeyu He, Guojian Zhan et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.15620" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;STAPO: Stabilizing Reinforcement Learning for LLMs by Silencing Rare Spurious Tokens&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper introduces **STAPO**, a method to stabilize reinforcement learning (RL) fine-tuning for LLMs by silencing rare spurious tokens. **STAPO** prevents late-stage performance collapse and improves reasoning quality by addressing the negative correlation between token-wise policy gradient magnitude and token probability/local policy entropy.&lt;/div&gt;
     &lt;/div&gt;
     
     
