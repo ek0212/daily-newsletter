@@ -13,30 +13,35 @@ ARXIV_API = "http://export.arxiv.org/api/query"
 S2_API = "https://api.semanticscholar.org/graph/v1"
 HF_DAILY_API = "https://huggingface.co/api/daily_papers"
 
-# Focused search terms — AI security, declarative agents, autonomous agents only
+# Focused search terms — AI/LLM security, agents, and AI safety
 ARXIV_QUERIES = [
     "prompt+injection+jailbreak+LLM",
     "red+teaming+language+model",
     "adversarial+attack+large+language+model",
     "LLM+guardrail+bypass",
-    "AI+agent+security+vulnerability",
-    "autonomous+AI+agent+safety",
-    "declarative+agent+LLM",
-    "agentic+AI+safety+autonomous",
-    "LLM+alignment+attack",
+    "LLM+safety+alignment",
     "AI+model+extraction+attack",
+    "agentic+AI+safety+autonomous",
+    "declarative+agent+LLM",
     "multi+agent+LLM+security",
     "AI+agent+tool+use+safety",
+    "LLM+hallucination+detection",
+    "AI+bias+fairness+language+model",
+    "machine+learning+adversarial+robustness",
+    "LLM+watermarking+detection",
+    "AI+deepfake+detection",
 ]
 
 RELEVANCE_TERMS = [
-    "prompt injection", "jailbreak", "red team", "adversarial attack",
-    "guardrail bypass", "llm security", "ai safety", "ai alignment",
+    "prompt injection", "jailbreak", "red team", "adversarial",
+    "guardrail", "llm security", "ai safety", "ai alignment",
     "autonomous agent", "declarative agent", "agentic ai", "multi-agent",
-    "agent safety", "tool use", "model extraction", "ai vulnerability",
-    "ai red team", "language model attack", "llm attack", "ai agent",
+    "agent safety", "tool use", "model extraction", "language model",
+    "llm", "ai vulnerability", "ai red team", "llm attack",
     "ai governance", "ai risk", "responsible ai", "ai threat",
-    "machine learning security", "neural network attack", "ai robustness",
+    "machine learning", "neural network", "ai robustness",
+    "hallucination", "deepfake", "ai bias", "watermark",
+    "large language model", "generative ai", "foundation model",
 ]
 
 
@@ -133,8 +138,9 @@ def fetch_hf_daily_papers() -> list[dict]:
                  "prompt injection", "red team", "adversarial", "guardrail",
                  "autonomous agent", "declarative agent", "agentic ai",
                  "ai agent", "multi-agent", "agent safety", "model extraction",
-                 "language model attack", "ai vulnerability", "ai robustness",
-                 "ai threat", "ai governance", "ai risk"]
+                 "language model", "ai vulnerability", "ai robustness",
+                 "ai threat", "ai governance", "llm attack", "hallucination",
+                 "deepfake", "ai bias", "watermark", "foundation model"]
     results = []
     for item in data:
         paper = item.get("paper", item)

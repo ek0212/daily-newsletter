@@ -17,14 +17,16 @@ AI_SECURITY_KEYWORDS = [
     "jailbreak LLM",
     "red teaming language model",
     "adversarial attack LLM",
-    "AI agent security",
+    "AI safety alignment",
     "guardrail bypass",
-    "AI alignment",
     "LLM security",
     "autonomous agent safety",
     "declarative agent LLM",
     "agentic AI safety",
-    "multi-agent LLM security",
+    "LLM hallucination detection",
+    "AI deepfake detection",
+    "machine learning adversarial robustness",
+    "LLM watermarking",
 ]
 
 ARXIV_CATEGORIES = ["cs.CR", "cs.AI", "cs.CL", "cs.LG"]
@@ -141,7 +143,9 @@ def fetch_hf_daily_papers(limit: int = 50) -> list[dict]:
         "llm security", "ai safety", "ai alignment", "jailbreak",
         "prompt injection", "red team", "adversarial", "guardrail",
         "autonomous agent", "declarative agent", "agentic ai",
-        "ai agent", "multi-agent", "agent safety", "ai vulnerability",
+        "ai agent", "multi-agent", "agent safety", "language model",
+        "hallucination", "deepfake", "ai bias", "watermark",
+        "foundation model", "llm attack", "ai vulnerability",
     ]
     results = []
     for item in data:
