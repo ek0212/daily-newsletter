@@ -173,3 +173,38 @@ print('\nAll build log checks passed.')
 "
 ```
 This is the final gate. It verifies every section produced data, no errors occurred, and the full pipeline ran end-to-end. If any check fails, it prints the relevant WARNING/ERROR log lines for debugging.
+
+### 6. RSS feed email formatting check
+```bash
+python3 -c "
+import xml.etree.ElementTree as ET
+from pathlib import Path
+ns = {'content': 'http://purl.org/rss/1.0/modules/content/'}
+tree = ET.parse('site/feed.xml')
+items = tree.getroot().findall('.//item')
+checks = []
+checks.append(('Feed has items', len(items) > 0))
+# Verify no site wrapper leaked into content:encoded
+all_clean = True
+for item in items:
+    encoded = item.find('content:encoded', ns)
+    if encoded is not None and encoded.text:
+        if 'site-nav' in encoded.text or 'email-wrap' in encoded.text:
+            all_clean = False
+            break
+checks.append(('No site wrapper in content:encoded', all_clean))
+# Verify today's entry has inline styles (email-compatible)
+if items:
+    latest = items[0].find('content:encoded', ns)
+    checks.append(('Latest entry has inline styles', latest is not None and 'style=' in (latest.text or '')))
+# Verify .email.html files exist for recent posts
+from datetime import datetime
+today = datetime.now().strftime('%Y-%m-%d')
+email_path = Path(f'site/posts/{today}.email.html')
+checks.append(('Today email.html exists', email_path.exists()))
+for name, ok in checks:
+    print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
+exit(0 if all(ok for _, ok in checks) else 1)
+"
+```
+Verifies that the RSS feed's `content:encoded` contains clean email HTML (no site navigation wrappers), has inline styles for email client compatibility, and that `.email.html` files are generated alongside post pages.

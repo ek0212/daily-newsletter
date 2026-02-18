@@ -41,6 +41,9 @@ def generate_post_html(data: dict, date_str: str, email_html: str):
     html = _post_page(data, date_str, email_html)
     path = POSTS_DIR / f"{date_str}.html"
     path.write_text(html)
+    # Save raw email HTML for RSS feed (no site wrapper)
+    email_path = POSTS_DIR / f"{date_str}.email.html"
+    email_path.write_text(email_html)
     return path
 
 
@@ -113,8 +116,13 @@ def generate_feed():
 
         SubElement(item, "description").text = " | ".join(summary_parts) if summary_parts else "Daily newsletter"
 
-        # Include full HTML content if available
-        if html_path.exists():
+        # Include email-formatted HTML content for RSS readers
+        email_path = POSTS_DIR / f"{date_str}.email.html"
+        if email_path.exists():
+            content = email_path.read_text()
+            encoded = SubElement(item, "{http://purl.org/rss/1.0/modules/content/}encoded")
+            encoded.text = content
+        elif html_path.exists():
             content = html_path.read_text()
             encoded = SubElement(item, "{http://purl.org/rss/1.0/modules/content/}encoded")
             encoded.text = content
