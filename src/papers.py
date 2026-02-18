@@ -13,19 +13,30 @@ ARXIV_API = "http://export.arxiv.org/api/query"
 S2_API = "https://api.semanticscholar.org/graph/v1"
 HF_DAILY_API = "https://huggingface.co/api/daily_papers"
 
-# Focused search terms (URL-safe, no spaces)
+# Focused search terms — AI security, declarative agents, autonomous agents only
 ARXIV_QUERIES = [
-    "prompt+injection",
-    "jailbreak+LLM",
+    "prompt+injection+jailbreak+LLM",
     "red+teaming+language+model",
-    "adversarial+attack+LLM",
-    "LLM+security",
-    "AI+safety+alignment",
+    "adversarial+attack+large+language+model",
+    "LLM+guardrail+bypass",
+    "AI+agent+security+vulnerability",
+    "autonomous+AI+agent+safety",
+    "declarative+agent+LLM",
+    "agentic+AI+safety+autonomous",
+    "LLM+alignment+attack",
+    "AI+model+extraction+attack",
+    "multi+agent+LLM+security",
+    "AI+agent+tool+use+safety",
 ]
 
 RELEVANCE_TERMS = [
-    "prompt injection", "jailbreak", "red team", "adversarial",
-    "guardrail", "attack", "safety", "alignment", "security",
+    "prompt injection", "jailbreak", "red team", "adversarial attack",
+    "guardrail bypass", "llm security", "ai safety", "ai alignment",
+    "autonomous agent", "declarative agent", "agentic ai", "multi-agent",
+    "agent safety", "tool use", "model extraction", "ai vulnerability",
+    "ai red team", "language model attack", "llm attack", "ai agent",
+    "ai governance", "ai risk", "responsible ai", "ai threat",
+    "machine learning security", "neural network attack", "ai robustness",
 ]
 
 
@@ -118,8 +129,12 @@ def fetch_hf_daily_papers() -> list[dict]:
     except Exception:
         return []
 
-    keywords = ["security", "safety", "adversarial", "jailbreak", "red team",
-                 "alignment", "guardrail", "injection", "attack", "robustness"]
+    keywords = ["llm security", "ai safety", "ai alignment", "jailbreak",
+                 "prompt injection", "red team", "adversarial", "guardrail",
+                 "autonomous agent", "declarative agent", "agentic ai",
+                 "ai agent", "multi-agent", "agent safety", "model extraction",
+                 "language model attack", "ai vulnerability", "ai robustness",
+                 "ai threat", "ai governance", "ai risk"]
     results = []
     for item in data:
         paper = item.get("paper", item)

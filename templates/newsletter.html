@@ -92,16 +92,23 @@
       <!-- Title -->
       <a href="{{ paper.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ paper.title }}</a>
       <!-- Topic badges -->
+      {% set abstract_lower = (paper.abstract | default('')) | lower %}
+      {% set text_lower = title_lower ~ ' ' ~ abstract_lower %}
       <div style="margin-top: 8px;">
-        {% if 'prompt injection' in title_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">prompt injection</span>{% endif %}
-        {% if 'jailbreak' in title_lower %}<span style="display: inline-block; background: #fce7f3; color: #9d174d; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">jailbreak</span>{% endif %}
-        {% if 'red team' in title_lower %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">red teaming</span>{% endif %}
-        {% if 'adversarial' in title_lower %}<span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">adversarial</span>{% endif %}
-        {% if 'safety' in title_lower or 'alignment' in title_lower %}<span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">safety</span>{% endif %}
-        {% if 'security' in title_lower %}<span style="display: inline-block; background: #dbeafe; color: #1e40af; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">security</span>{% endif %}
-        {% if 'attack' in title_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">attack</span>{% endif %}
-        {% if 'guardrail' in title_lower %}<span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">guardrail</span>{% endif %}
-        {% if 'detection' in title_lower or 'detector' in title_lower %}<span style="display: inline-block; background: #ccfbf1; color: #115e59; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">detection</span>{% endif %}
+        {% if 'prompt injection' in text_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">prompt injection</span>{% endif %}
+        {% if 'jailbreak' in text_lower %}<span style="display: inline-block; background: #fce7f3; color: #9d174d; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">jailbreak</span>{% endif %}
+        {% if 'model extraction' in text_lower or 'distillation attack' in text_lower %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">model extraction</span>{% endif %}
+        {% if 'phishing' in text_lower or 'social engineering' in text_lower or 'clickfix' in text_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">social engineering</span>{% endif %}
+        {% if 'malware' in text_lower or 'obfuscat' in text_lower %}<span style="display: inline-block; background: #1f2937; color: #f9fafb; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">malware</span>{% endif %}
+        {% if 'agentic' in text_lower or 'autonomous agent' in text_lower %}<span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">agentic AI</span>{% endif %}
+        {% if 'llm-as-a-judge' in text_lower or 'agent-as-a-judge' in text_lower or 'llm as judge' in text_lower %}<span style="display: inline-block; background: #dbeafe; color: #1e40af; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">LLM-as-judge</span>{% endif %}
+        {% if 'sycophancy' in text_lower or 'sabotage' in text_lower or 'behavioral evaluation' in text_lower %}<span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">behavioral eval</span>{% endif %}
+        {% if 'privacy' in text_lower %}<span style="display: inline-block; background: #ccfbf1; color: #115e59; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">privacy</span>{% endif %}
+        {% if 'red team' in text_lower %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">red teaming</span>{% endif %}
+        {% if 'adversarial' in text_lower %}<span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">adversarial</span>{% endif %}
+        {% if 'safety' in text_lower or 'alignment' in text_lower %}<span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">safety</span>{% endif %}
+        {% if 'nist' in text_lower or 'taxonomy' in text_lower %}<span style="display: inline-block; background: #f1f5f9; color: #334155; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">NIST taxonomy</span>{% endif %}
+        {% if 'guardrail' in text_lower %}<span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">guardrail</span>{% endif %}
       </div>
       <!-- Summary -->
       {% set paper_summary = paper.quick_summary if paper.quick_summary else paper.abstract[:300] ~ ('...' if paper.abstract | length > 300 else '') %}

@@ -6,7 +6,11 @@ import logging
 import os
 from datetime import datetime
 from pathlib import Path
+import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import Element, SubElement, tostring, indent
+
+ET.register_namespace("atom", "http://www.w3.org/2005/Atom")
+ET.register_namespace("content", "http://purl.org/rss/1.0/modules/content/")
 
 logger = logging.getLogger(__name__)
 
@@ -15,7 +19,7 @@ SITE_DIR = PROJECT_ROOT / "site"
 POSTS_DIR = SITE_DIR / "posts"
 
 # Configurable base URL for GitHub Pages
-SITE_URL = os.getenv("SITE_URL", "https://your-username.github.io/daily-newsletter")
+SITE_URL = os.getenv("SITE_URL", "https://ek0212.github.io/daily-newsletter")
 
 
 def ensure_dirs():
@@ -66,7 +70,7 @@ def generate_feed():
     ensure_dirs()
     posts = _get_sorted_posts()
 
-    rss = Element("rss", version="2.0", attrib={"xmlns:atom": "http://www.w3.org/2005/Atom"})
+    rss = Element("rss", version="2.0")
     channel = SubElement(rss, "channel")
     SubElement(channel, "title").text = "Daily Briefing Newsletter"
     SubElement(channel, "link").text = SITE_URL

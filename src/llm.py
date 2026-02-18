@@ -34,11 +34,13 @@ def batch_summarize(sections: dict) -> dict:
                  len(prompt), n_news + n_pods + n_papers, n_news, n_pods, n_papers)
 
     try:
-        import google.generativeai as genai
+        from google import genai
 
-        genai.configure(api_key=api_key)
-        model = genai.GenerativeModel("gemini-2.0-flash")
-        response = model.generate_content(prompt)
+        client = genai.Client(api_key=api_key)
+        response = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents=prompt,
+        )
         logger.info("Gemini API call successful, response: %d chars", len(response.text))
         result = _parse_response(response.text, sections)
         logger.debug("Parsed summaries: news=%d, podcasts=%d, papers=%d",
