@@ -1,18 +1,368 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:ns0="http://www.w3.org/2005/Atom" xmlns:ns1="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
     <title>Daily Briefing Newsletter</title>
     <link />
     <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Feb 2026 12:41:37 +0000</lastBuildDate>
-    <ns0:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 18 Feb 2026 01:44:51 +0000</lastBuildDate>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Briefing - Wednesday, February 18, 2026</title>
+      <link>/posts/2026-02-18.html</link>
+      <guid>/posts/2026-02-18.html</guid>
+      <description>Weather: 43°F - Partly Cloudy | 3 top news stories | 5 podcast episodes | 5 AI security papers</description>
+      <content:encoded>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; margin: 0; padding: 0; color: #1a1a1a;"&gt;
+&lt;div style="max-width: 640px; margin: 0 auto; background: #fff;"&gt;
+
+  &lt;!-- Header --&gt;
+  &lt;div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 32px; text-align: center;"&gt;
+    &lt;h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px;"&gt;Your Daily Briefing&lt;/h1&gt;
+    &lt;div style="margin-top: 12px; font-size: 20px; font-weight: 500; opacity: 0.95;"&gt;Wednesday, February 18, 2026&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Weather --&gt;
+  &lt;div style="padding: 32px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;"&gt;&amp;#9728;&amp;#65039; Weather in NYC&lt;/div&gt;
+    &lt;div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;"&gt;
+      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;43&amp;deg;F&lt;/div&gt;
+      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Partly Cloudy&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 43&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 39&amp;deg;&lt;/div&gt;
+      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;Mostly cloudy, with a low around 39. Southwest wind 2 to 7 mph.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #f59e42, #fbbf24, #f59e42); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Top News --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;"&gt;&amp;#128240; Top News&lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 00:43:38 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The New York Times&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPSGhpMnljVzB5Y3VPc1BrcnVoMHNtbjRyWExaWml0UFY5ekJxVVpUNnVMbXZRQmR6THhPMnRlRGxGc2VpaUpUZkIxXzdYRHV3Q21aT3MwaFB1eW4tZExCRHBPb3FuS3QwM2JEWjZGSXlNWDRCTk9YR2xlN1J4cjRXRmxjMlk?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Mamdani Threatens 9.5% Property Tax Increase if Wealth Tax Is Not Passed&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at The New York Times&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Tue, 17 Feb 2026 21:41:59 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;ABC7 San Francisco&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMi0wFBVV95cUxOUXpJZU5qRUlBa1liTlpPcEd0ZEJCRTJROXNSTVRVVFFXLUJxaWk2V3F4WVVnQ2swSG9IT3BqaG9KYlJUX0Z4YTROTjk0bjRHZGNENlVSRFR1bUtHMWt5aER4aUd0czdpNnIwbDhUbDZhamZ4YWhYSnBuV2NFR0QtY2ZLTFJiMWFqempEdDFmeDBkbDZUaGJ4MEZnS1dvaGNOYzdzazVLZ1hvbzFOVmExd0E3SVFTMUw2OHZ2N01uNFJtVF8zNENucmpDQXdXNHRodVZn0gHYAUFVX3lxTFBDeHF4d3dCTGJoQ21EdUl6VGVnT0Q0eVBicjZpaTdleXBvRDRONHdKam5NUk40TmRWUHZIS1FQRDZnM0lpdXIwSGtBQUtvR3lhZms0cFVZZ0ZkU0pGenZIV0pXNGlyM2Q3QzltSlZNNlZsRmtRRm8tTUZTUUdoR1h0clZuLTZ6MWljMGQ4VlBDY0RMLXJVZmV0TlRmOFphTFlFVy1xS1ZZVExWYUNyc0l0Zm1pUE1SNzV1T25sbndxTzFFdDA3OXhoZXh0UzJjUjJtSElTT0ZhOQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Rescue underway for missing skiers after avalanche in Castle Peak area in Sierra Nevada, California, sheriff's office says&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;NEVADA CITY, Calif. -- Six backcountry skiers were found alive and 10 others were missing Tuesday after an avalanche in Northern &lt;strong&gt;California&lt;/strong&gt; as a powerful winter storm moved through the state. Search and rescue crews were dispatched to Frog Lake in the &lt;strong&gt;Castle&lt;/strong&gt; &lt;strong&gt;Peak&lt;/strong&gt; area, northwest of Lake Tahoe, after someone called 911 at about 11:30 a.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Tue, 17 Feb 2026 23:07:13 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Washington Post&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPS2pleENDNlJqSWFsV3FPY082cDdDWUQ4WHE1U1IyUUdxWGhvLXkxR0k4WVllVzg1THR0ZTZMay00LVgwQzVwdmNNUnN3aE5Cc2dKamtpWXhRVUpNSmhVcUJIS2szenhLVEFlUklUZDhzaE84czBIVF94QXdEbjBLYkEwdFRubWJfNXZwSWRPMlNfNWVMSTJmWHpZdTJzY3Yt?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Hegseth forces ouster of senior Army spokesman in latest internal clash&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at The Washington Post&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #a855f7, #c084fc, #a855f7); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Podcasts --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;"&gt;&amp;#127897;&amp;#65039; Podcast Episodes&lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Will-OpenAI-Tank-OpenClaw---E2251-e3f6nue" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Will OpenAI Tank OpenClaw? | E2251&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Will &lt;strong&gt;OpenAI&lt;/strong&gt; &lt;strong&gt;Tank&lt;/strong&gt; &lt;strong&gt;OpenClaw&lt;/strong&gt;. | E2251This Week In Startups is made possible by:Northwest Registered Agent - https://www. northwestregisteredagent. com/twistLemon IO - https://lemon.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-14 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/OpenClaw-is-Our-Friend-Now--E2250-e3f2r6p" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OpenClaw is Our Friend Now | E2250&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This Week In Startups is made possible by:Sentry - http://sentry. io/twistCircle - http://Circle. so/twistWispr Flow - https://wisprflow. ai/twistToday’s show: What makes &lt;strong&gt;OpenClaw&lt;/strong&gt; feel so much more ALIVE than other AI agents?On TWiST, we’re welcoming three amazing builders who are truly connecting with their &lt;strong&gt;OpenClaw&lt;/strong&gt; bots, not just using them for productivity but getting to know them and their personalities on a deeper level.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Why-J-Cal-Invested-to-200K-in-a-former-Employee--E2249-e3f16i1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Why J-Cal Invested to 200K in a former Employee | E2249&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This Week In Startups is made possible by:NetSuite - https://www. netsuite. com/twistLuma AI - https://lumalabs. ai/twistSquarespace - https://squarespace.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/How-These-3-Founders-are-building-on-Open-Claw--E2248-e3evo2n" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;How These 3 Founders are building on Open Claw | E2248&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This Week In Startups is made possible by:Hubspot - http://clickhubspot. com/twist2Deel - http://deel. com/twistIru - http://www. iru.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; Lex Fridman Podcast&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://lexfridman.com/peter-steinberger/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=peter-steinberger" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        
+        
+          &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Peter&lt;/strong&gt; &lt;strong&gt;Steinberger&lt;/strong&gt; is the creator of &lt;strong&gt;OpenClaw&lt;/strong&gt;, an open-source AI agent framework that&amp;#8217;s the fastest-growing project in GitHub history. Thank you for listening ❤ Check out our sponsors: https://lexfridman. com/sponsors/ep491-sc
+See below for timestamps, transcript, and to give feedback, submit questions, contact Lex, etc. Transcript:
+https://lexfridman.&lt;/div&gt;
+        
+      
+    &lt;/div&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #10b981, #6ee7b7, #10b981); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- AI Security Papers --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;"&gt;&amp;#128196; AI Security Papers&lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-16 &amp;nbsp;&amp;middot;&amp;nbsp; Xander Davies, Giorgi Giglemiani, Edmund Lau et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15001v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Boundary Point Jailbreaking of Black-Box LLMs&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        &lt;span style="display: inline-block; background: #fce7f3; color: #9d174d; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;jailbreak&lt;/span&gt;
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;red teaming&lt;/span&gt;
+        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;adversarial&lt;/span&gt;
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Frontier &lt;strong&gt;LLMs&lt;/strong&gt; are safeguarded against attempts to extract harmful information via adversarial prompts known as "&lt;strong&gt;jailbreaks&lt;/strong&gt;". Recently, defenders have developed classifier-based systems that have survived thousands of hours of human red teaming.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; Huanyao Zhang, Jiepeng Zhou, Bo Li et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.12876" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;BrowseComp-V^3: A Visual, Vertical, and Verifiable Benchmark for Multimodal Browsing Agents&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;agentic AI&lt;/span&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Multimodal&lt;/strong&gt; large language models (MLLMs), equipped with increasingly advanced planning and tool-use capabilities, are evolving into autonomous agents capable of performing multimodal web browsing and deep search in open-world environments. However, existing benchmarks for multimodal browsing remain limited in task complexity, evidence accessibility, and evaluation granularity, hindering comprehensive and reproducible assessments of deep search capabilities.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-13 &amp;nbsp;&amp;middot;&amp;nbsp; André Storhaug, Jiamou Sun, Jingyue Li&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.12500" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Favia: Forensic Agent for Vulnerability-fix Identification and Analysis&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Identifying vulnerability-fixing commits corresponding to disclosed CVEs is essential for secure software maintenance but remains challenging at scale, as large repositories contain millions of commits of which only a small fraction address security issues. Existing automated approaches, including traditional machine learning techniques and recent large language model (LLM)-based methods, often suffer from poor precision-recall trade-offs.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-16 &amp;nbsp;&amp;middot;&amp;nbsp; Shangding Gu&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15028v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Long Context, Less Focus: A Scaling Gap in LLMs Revealed through Privacy and Personalization&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #ccfbf1; color: #115e59; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;privacy&lt;/span&gt;
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Large language models (&lt;strong&gt;LLMs&lt;/strong&gt;) are increasingly deployed in privacy-critical and personalization-oriented scenarios, yet the role of context length in shaping privacy leakage and personalization effectiveness remains largely unexplored. We introduce a large-scale benchmark, PAPerBench, to systematically study how increasing context length influences both personalization quality and privacy protection in &lt;strong&gt;LLMs&lt;/strong&gt;.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    &lt;div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-16 &amp;nbsp;&amp;middot;&amp;nbsp; Ruoxi Liu, Philipp Koehn&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15013v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Text Style Transfer with Parameter-efficient LLM Finetuning and Round-trip Translation&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper proposes a novel method for &lt;strong&gt;Text&lt;/strong&gt; &lt;strong&gt;Style&lt;/strong&gt; &lt;strong&gt;Transfer&lt;/strong&gt; (TST) based on parameter-efficient fine-tuning of Large Language Models (LLMs). Addressing the scarcity of parallel corpora that map between styles, the study employs roundtrip translation to synthesize such parallel datasets from monolingual corpora.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;div style="padding: 28px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0;"&gt;
+    Generated automatically &amp;middot; &lt;a href="feed.xml" style="color: #6c63ff; text-decoration: none;"&gt;Subscribe via RSS&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content:encoded>
+      <pubDate>Wed, 18 Feb 2026 07:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Daily Briefing - Tuesday, February 17, 2026</title>
       <link>/posts/2026-02-17.html</link>
       <guid>/posts/2026-02-17.html</guid>
       <description>Weather: 36°F - Cloudy | 3 top news stories | 5 podcast episodes | 5 AI security papers</description>
-      <ns1:encoded>&lt;!DOCTYPE html&gt;
+      <content:encoded>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
 &lt;meta charset="utf-8"&gt;
@@ -342,7 +692,7 @@ https://lexfridman.&lt;/div&gt;
 &lt;/html&gt;
 &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</ns1:encoded>
+&lt;/html&gt;</content:encoded>
       <pubDate>Tue, 17 Feb 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
@@ -350,7 +700,7 @@ https://lexfridman.&lt;/div&gt;
       <link>/posts/2026-02-16.html</link>
       <guid>/posts/2026-02-16.html</guid>
       <description>Weather: 34°F - Chance Light Snow | 3 top news stories | 5 podcast episodes | 5 AI security papers</description>
-      <ns1:encoded>&lt;!DOCTYPE html&gt;
+      <content:encoded>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;head&gt;
 &lt;meta charset="utf-8"&gt;
@@ -682,7 +1032,7 @@ https://lexfridman.&lt;/div&gt;
 &lt;/html&gt;
 &lt;/div&gt;
 &lt;/body&gt;
-&lt;/html&gt;</ns1:encoded>
+&lt;/html&gt;</content:encoded>
       <pubDate>Mon, 16 Feb 2026 07:00:00 +0000</pubDate>
     </item>
   </channel>
