@@ -5,13 +5,13 @@
     <link />
     <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 19 Feb 2026 01:52:50 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 11:41:21 +0000</lastBuildDate>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Thursday, February 19, 2026</title>
       <link>/posts/2026-02-19.html</link>
       <guid>/posts/2026-02-19.html</guid>
-      <description>Weather: 43°F - Light Rain Likely | 5 top news stories | 4 podcast episodes | 5 AI security papers | 4 AI security news</description>
+      <description>Weather: 39°F - Cloudy | 5 top news stories | 4 podcast episodes | 5 AI security papers | 4 AI security news</description>
       <content:encoded>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
 &lt;head&gt;
@@ -31,10 +31,10 @@
   &lt;div style="padding: 32px 28px 24px 28px;"&gt;
     &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;"&gt;&amp;#9728;&amp;#65039; Weather in NYC&lt;/div&gt;
     &lt;div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;"&gt;
-      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;43&amp;deg;F&lt;/div&gt;
-      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Light Rain Likely&lt;/div&gt;
+      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;39&amp;deg;F&lt;/div&gt;
+      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Cloudy&lt;/div&gt;
       &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 42&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 38&amp;deg;&lt;/div&gt;
-      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;Rain likely before 1am. Cloudy. Low around 38, with temperatures rising to around 40 overnight. Northeast wind 5 to 9 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible.&lt;/div&gt;
+      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;Areas of fog before 4am. Cloudy, with a low around 38. Northeast wind around 9 mph.&lt;/div&gt;
     &lt;/div&gt;
     
     &lt;table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; color: #1a1a2e;"&gt;
@@ -49,17 +49,17 @@
       
       &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
         &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7am&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;40&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;38&amp;deg;F&lt;/td&gt;
         &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center;"&gt;76%&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;9 mph NE&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;79%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph NE&lt;/td&gt;
       &lt;/tr&gt;
       
       &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
         &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;9am&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;39&amp;deg;F&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;38&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center;"&gt;73%&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph NE&lt;/td&gt;
@@ -67,27 +67,27 @@
       
       &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
         &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;3pm&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;40&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;41&amp;deg;F&lt;/td&gt;
         &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center;"&gt;67%&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;9 mph E&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;62%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph E&lt;/td&gt;
       &lt;/tr&gt;
       
       &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
         &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;5pm&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;42&amp;deg;F&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Cloudy&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center;"&gt;62%&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;9 mph E&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;1%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;60%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph E&lt;/td&gt;
       &lt;/tr&gt;
       
       &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
         &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7pm&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;41&amp;deg;F&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; color: #555;"&gt;Chance Light Rain&lt;/td&gt;
-        &lt;td style="padding: 8px 6px; text-align: center;"&gt;34%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;40&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;5%&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center;"&gt;67%&lt;/td&gt;
         &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph E&lt;/td&gt;
       &lt;/tr&gt;
@@ -105,26 +105,21 @@
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
       &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 00:33:45 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Al Jazeera&lt;/span&gt;&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 08:52:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Associated Press News&lt;/span&gt;&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQVUxrMlFucGVfbzREUGRZWS1sMW9kbG5OQlhHWXJyenc1cFRrNk41LU10SkR1cGo4enF0OUtITUxlRkNvMTNwV29PRjVhemdyV3JXUFMtb2xISUQ2RVA2dTNJbjRfWExDUndNbzAtUG5XWll1RmU4akRDajFHV1AyZjR4ajI3bkVmTVFUblhGNWxRNV9GN0RYRjVR0gGfAUFVX3lxTE9fRk53M2hSNkZycTBmSllXbTJnTkRTV05FT25mSkJDYm9DMVRHLW1ELTV5Z0J1QXlkWC1JOWJ5SXFOVXhJc1J0aXdtamtha3JRN3VfSFhuM1UzaFhfX0pVQ0tFaW5mak9CS1NBLWoxVDZ5Z05UdXNsYm5seWdiYXZMbEstX0NQcEE2bnlPZHdZNUtUal9kMS1hb0NvYjkyMA?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Trump says UK’s Starmer making ‘a big mistake’ with Chagos Islands deal&lt;/a&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxPNHJlZXhVbWRQN0tzOHJEMll1cGVWN3FpMUxxT2xfWXpCWC1UNE5iMjQ5Uno3WmdPRGtYYTdGNElsMUU1cWZpM1FlM2xUMzR1UTE1eGI0ZThJWjNWdU5qQ2VrSXdhUVI3dXVIN09lRmx2U01LeUZpV0NySTAtdUZCQ0VNUUxxTnQ2TlBKQ0h0UmZ6UFEzYkVVdnJWVzRHZHVOakVjZ3lSdWo2anAweEM3WW5kQ0R3QQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Former South Korean President Yoon receives life sentence for imposing martial law&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;ereignty of the archipelago to Mauritius, and lease back the island of Diego Garcia, which is home to a UK-US military base. Recommended Stories
-list of 3 items- list 1 of 3UK’s &lt;strong&gt;Starmer&lt;/strong&gt; announces crackdown on AI chatbots in child safety push
-- list 2 of 3India beat Netherlands to clean sweep group before T20 World Cup Super 8s
-- list 3 of 3Leila Shahid, Palestinian diplomat, dies in France aged 76
-He warned in a Truth Social post that &lt;strong&gt;Starmer&lt;/strong&gt; was “losing control of this important Island by claims of entities never known of before”, adding: “In our opinion, they are fictitious in nature. ”
-The Indian Ocean archipelago became part of British territory in 1814, with the UK detaching it from Mauritius before it gained independence in the 1960s.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;ng martial law and sending troops to surround the National Assembly on Dec. 3, 2024. Judge Jee Kui-youn of the Seoul Central District Court said he found &lt;strong&gt;Yoon&lt;/strong&gt; guilty of rebellion for mobilizing military and police forces in an illegal attempt to seize the liberal-led Assembly, arrest politicians and establish unchecked power for a “considerable” time.&lt;/div&gt;
       
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
       &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 23:46:25 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Washington Post&lt;/span&gt;&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 06:37:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Washington Post&lt;/span&gt;&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT0V1aVhSeDducEYtMWFDUEVFYkZvWDdtUXJYeXZzVDBFRW80QloxdWhNaDZyTEtkSkF2YUNkcV9GX0FtcElXcmFqMzI5NkJzV0pQWnIwYi1Yam0xbUp6Tnh5OVV5dkl0OUNBUHNZbXdrTmxBZ1Fqa2pCN0NCQl9DbG9RUmppdzZF?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;White House taps Jay Bhattacharya, CDC critic, to lead agency for now&lt;/a&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOZlFOVUM0V1o1VXFONGhCRmd0OG9WSURmMTZ0NHpoMnpNcHc3ZHlGVGt2YkZmSTctTEJHVHBadVlTM3JfQlpsR05FUTZLZkhqQk9Edi16cFNlYWhLSWgySFItT2pRWWw0aDRoY01FV3Itc0JZaENlVXRaME9XWE91dUxTS3E0ZGs1RUs3ek9aR3kzZGV2R0E?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Bowser declares Potomac sewage spill an emergency, seeks federal aid for cleanup&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
         &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at The Washington Post&lt;/div&gt;
@@ -134,36 +129,36 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
       &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 23:14:17 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The New York Times&lt;/span&gt;&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 04:03:49 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Politico&lt;/span&gt;&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPZGlHMjdJZ2l2cVdrbHowN2hOQmZJS051eFZwWnhNV0QxVm5pZVJudVJrcGszWVJpd0Rud3dJdGg1SkZJSGViNWhZNkhEaEVGRUZ2cjhmYUUzbnk1ZThqQTVGd2VMQ0p6Qnp4UzZaTGJIRF9oVFZzR3ZzUTBzYkNmNG8wZzY?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Lake Tahoe Avalanche Live Updates: 8 Skiers Found Dead, Authorities Say - The New York Times&lt;/a&gt;
-      &lt;!-- Summary --&gt;
-      
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at The New York Times&lt;/div&gt;
-      
-    &lt;/div&gt;
-    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-    
-    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
-      &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 22:33:48 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;BBC&lt;/span&gt;&lt;/div&gt;
-      &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE10TlRjZTFxT3ZSbF9TQm52SWlVZXB3M0x2ZThJcXhjcEdMN25SYUMtVXVKSl9JaTZPbklzTkJfX3BTMmR3VkFNbjg3VzR5Z2pXTW01dEIzZ2tBUQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;'Difficult' Russia-Ukraine peace talks end without breakthrough&lt;/a&gt;
-      &lt;!-- Summary --&gt;
-      
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;lin negotiator Vladimir Medinsky returned to the venue and held a closed-door meeting with the Ukrainian side for about an hour and a half. No details from that meeting have emerged. Some progress was made on "&lt;strong&gt;military issues&lt;/strong&gt;", including the location of the front line and ceasefire monitoring, according to a Ukrainian diplomatic source.&lt;/div&gt;
-      
-    &lt;/div&gt;
-    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-    
-    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
-      &lt;!-- Date --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 17:25:47 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Politico&lt;/span&gt;&lt;/div&gt;
-      &lt;!-- Title --&gt;
-      &lt;a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOWlhYNzRRWHNtUkxpRmhtYzVQM1NtdE1taGE3Z2pObW9STjJGRFNzZS1PQWRqdGJodlJaUmNLLVFUSmFlMDRENjRFeV9zSmZjdnd4UHNrWHpuUG9Hb2lqU1dsM0JNZzhTQkhaLU5TUFNjeVJGSGd2TWlwTWNDaUNhTHA0UjFQVkI2Nm9MX2FB?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Trump administration releases remaining Gateway funds — and then some&lt;/a&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPbjJQcDBfV1pWQ0w5Z1BnNFdPVnFkSVpMSXBUSl9rRng2Rm5xNmlxa29JOUNLTjM2TE5nUVkxcWVHazhVQTBKdE1xc0E5OVhIRkdKemhRcW93T1JRTzJWU2NZODRKQ3drYlVaZE92WG0wR19BX0ROcG81YWI4ZUVabktGTXoxY3I5cDVZZnF3azBOcGZfZTU5cmRkcXplYVQ2MVZaQjBYNDdXaVNFb3c?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Bernie Sanders rallies support for wealth tax in California: ‘Enough is enough’&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
         &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at Politico&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 03:59:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;CBS News&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQdjcyc0dqYVBkVDNkWk9PSUdkVTEwRllGYXNuR1l2T0xvZS1ubWJvSDJESnVJZ0RtWWQ5eG43dnpTa2RrTW56Y0Q3RnZRRk9yR2ZxbmpuYmc5eTB3WkgxQnBlT2JkZF9naGdlMXg4eEQwOVF4UXdleXRkYWNrN1lucE1VdUdxaUFZR1pOTTdVOGhRcklSMTl1WS11aVRoc19Vc1V2UmVrcDI3ZEsxOFpvbmlyWjBqQ2xqdkdGT2lublNYb2PSAcgBQVVfeXFMTjVpbTFuTnVaN0lTREpndGRtRy1IUW9ncjV6WjhKQ2pGeExHMHo0WXNWbVlCYzFYYXlXVE9tQ1h2Zjd6OFZwRTBTYVhLVTk1V3dGZ2JuLWt1SnI1cFZycHhoUGZZcjNoN09JZ01scUtQUG8xWEIzWHFBblhGX0dlUTdESTZTSXJtNVNZSm1sdmxlSVAwc2Y0VTlBbG9GWXJPdWZKa3ZqNm1MVnV4TF83VXkweVliTU9ENDN3X2xyOFFSVnJ2TGVMTnY?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Trump administration gives ICE broader powers to detain legal refugees, citing security concerns&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;al court filing on Wednesday, instructs &lt;strong&gt;ICE&lt;/strong&gt; to detain refugees who entered the U. S. lawfully but who have not formally obtained permanent residency — also known as green card — a year after their admission.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 00:49:46 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;STLPR&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQUjBZSXFPbmdCMWxKYlNfZFlMZTFZcFNLeG43RHVKeWhsNzBIb2VWRWNJVEFyMjQ1MWZmLW5kSFFVcjl6Vm5KNml5UXlvMjlDSEo5ODl6TFFnejZoU2JFZGZGZHRXT1VTTnFrbTBMQVdaZzhfNkVPV2NlSUNlS21zTEVxamtDQ3owbGh6MG12UE14aUZ5WTNPdQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Boeing defense headquarters to return to St. Louis after leaving the area in 2017&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;ith teammates in the area. “The headquarters move, coupled with our senior leaders being based at and spending their time at major engineering, production and manufacturing centers across the U. S.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -180,12 +175,24 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
       &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-19 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/When-Will-Openclaw-go-Mainstream---E2252-e3f9rua" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;When Will Openclaw go Mainstream? | E2252&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Matthew&lt;/strong&gt; believes &lt;strong&gt;Openclaw&lt;/strong&gt; isn't ready for consumers, estimating only &lt;strong&gt;10%&lt;/strong&gt; of people are technical enough to install it, while &lt;strong&gt;Ryan&lt;/strong&gt; sees it opening new opportunities. &lt;strong&gt;Jason&lt;/strong&gt; demonstrated his "Clawpod" workflow and expressed skepticism about the &lt;strong&gt;Openclaw foundation&lt;/strong&gt;, hoping for a multi-model future despite a lack of progress. &lt;strong&gt;Anthropic&lt;/strong&gt; has patched the ability to use &lt;strong&gt;Openclaw&lt;/strong&gt; through its pro plan, and &lt;strong&gt;Ryan&lt;/strong&gt; predicts a new &lt;strong&gt;Openclaw fork&lt;/strong&gt; will emerge. The hosts discussed whether &lt;strong&gt;Openclaw&lt;/strong&gt; would be better as a baked-in feature or an app, with the &lt;strong&gt;killer use case&lt;/strong&gt; still undefined, and the impact of &lt;strong&gt;Peter Steinberger&lt;/strong&gt; going to &lt;strong&gt;OpenAI&lt;/strong&gt;.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
       &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
       &lt;!-- Title --&gt;
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Will-OpenAI-Tank-OpenClaw---E2251-e3f6nue" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Will OpenAI Tank OpenClaw? | E2251&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Guests &lt;strong&gt;Hiten Shah&lt;/strong&gt; and &lt;strong&gt;Jesse Genet&lt;/strong&gt; discussed concerns about &lt;strong&gt;OpenAI&lt;/strong&gt; hiring &lt;strong&gt;OpenClaw creator Peter Steinberger&lt;/strong&gt;, fearing it could centralize development and negatively impact the open-source project. &lt;strong&gt;Hiten Shah&lt;/strong&gt; demonstrated a "personal CRM" built with &lt;strong&gt;OpenClaw&lt;/strong&gt;, designed for busy investors, which utilizes &lt;strong&gt;markdown files (.md)&lt;/strong&gt; for efficient AI agent data interaction. &lt;strong&gt;Jesse Genet&lt;/strong&gt; showcased her "vibe-coded" &lt;strong&gt;OpenClaw&lt;/strong&gt; app, a family media aggregator for non-Slop videos, and noted her &lt;strong&gt;Mac Minis&lt;/strong&gt; now outnumber her children. &lt;strong&gt;John Arrow&lt;/strong&gt;, creator of "AI Scott Adams," explained his inspiration for the AI clone and addressed the internet controversy it sparked.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Guests &lt;strong&gt;Hiten Shah&lt;/strong&gt; and &lt;strong&gt;Jesse Genet&lt;/strong&gt; discussed concerns about &lt;strong&gt;OpenAI&lt;/strong&gt; hiring &lt;strong&gt;OpenClaw&lt;/strong&gt; creator &lt;strong&gt;Peter Steinberger&lt;/strong&gt;, with &lt;strong&gt;Jason&lt;/strong&gt; offering optimistic and pessimistic takes on the acquisition. &lt;strong&gt;Jesse&lt;/strong&gt; shared her app, which "vibe-coded" non-Slop videos for her family, and &lt;strong&gt;Hiten&lt;/strong&gt; demonstrated a "personal CRM" he built using &lt;strong&gt;OpenClaw&lt;/strong&gt; to train a skill based on Jason's book &lt;strong&gt;"Angel."&lt;/strong&gt; &lt;strong&gt;John Arrow&lt;/strong&gt;, creator of &lt;strong&gt;AI Scott Adams&lt;/strong&gt;, explained his inspiration and discussed the legal and ethical considerations of posthumous &lt;strong&gt;AI clones&lt;/strong&gt;. The panel emphasized being in an "appless world" where markdown files are ideal for humans and &lt;strong&gt;AI agents&lt;/strong&gt;, and discussed how companies might "hijack" &lt;strong&gt;OpenClaw&lt;/strong&gt; via hosting and skills.&lt;/div&gt;
       
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -197,7 +204,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/OpenClaw-is-Our-Friend-Now--E2250-e3f2r6p" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OpenClaw is Our Friend Now | E2250&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Ryan Carson&lt;/strong&gt; demonstrated &lt;strong&gt;AntFarm&lt;/strong&gt;, his open-source &lt;strong&gt;OpenClaw&lt;/strong&gt; tool that creates multiple AI agents with specialized roles to collaboratively complete complex tasks. &lt;strong&gt;David Im&lt;/strong&gt; showcased &lt;strong&gt;Clawra&lt;/strong&gt;, an AI virtual girlfriend that learns user preferences and can even "buy presents," sparking discussion on programming AI companions. &lt;strong&gt;Alex Liteplo&lt;/strong&gt; presented &lt;strong&gt;RentAHuman&lt;/strong&gt;, a marketplace where AI bots pay real people in &lt;strong&gt;stablecoins&lt;/strong&gt; to complete "IRL tasks," providing examples like hiring &lt;strong&gt;100 goth girls&lt;/strong&gt; to hold signs in &lt;strong&gt;Times Square&lt;/strong&gt;. The episode explored a future where humans and AIs work, socialize, and learn from one another, highlighting new possibilities for AI agent interaction.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Ryan Carson&lt;/strong&gt; introduced &lt;strong&gt;AntFarm&lt;/strong&gt;, his open-source tool for collaborative &lt;strong&gt;AI agents&lt;/strong&gt; with specialized roles working together on complex tasks. &lt;strong&gt;David Im&lt;/strong&gt; showcased &lt;strong&gt;Clawra&lt;/strong&gt;, an &lt;strong&gt;AI virtual girlfriend&lt;/strong&gt; that learns preferences, buys presents, and raises questions about introducing it to an &lt;strong&gt;IRL girlfriend&lt;/strong&gt;. &lt;strong&gt;Alex Liteplo&lt;/strong&gt; presented &lt;strong&gt;RentAHuman&lt;/strong&gt;, a marketplace where &lt;strong&gt;AI agents&lt;/strong&gt; pay real people in &lt;strong&gt;stablecoins&lt;/strong&gt; to complete IRL tasks, such as hiring &lt;strong&gt;100 goth girls&lt;/strong&gt; to hold signs in &lt;strong&gt;Times Square&lt;/strong&gt;. The hosts also discussed the security implications of &lt;strong&gt;AI companions&lt;/strong&gt; and pondered whether robots could be better bosses than humans.&lt;/div&gt;
       
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -209,19 +216,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Why-J-Cal-Invested-to-200K-in-a-former-Employee--E2249-e3f16i1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Why J-Cal Invested to 200K in a former Employee | E2249&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Jason Calacanis&lt;/strong&gt; invested &lt;strong&gt;$200,000&lt;/strong&gt; in &lt;strong&gt;Presh's&lt;/strong&gt; startup, &lt;strong&gt;The Wellness Company&lt;/strong&gt;, which developed the &lt;strong&gt;Tempo&lt;/strong&gt; app for health monitoring and proactive advice. &lt;strong&gt;Presh&lt;/strong&gt; detailed how the &lt;strong&gt;Tempo&lt;/strong&gt; app gains engagement through consistent health monitoring and personalized guidance, with &lt;strong&gt;Jason&lt;/strong&gt; suggesting a group or family feature to increase stickiness. &lt;strong&gt;Peter Cetale&lt;/strong&gt;, CEO and co-founder of &lt;strong&gt;Sourcerer&lt;/strong&gt;, presented his &lt;strong&gt;AI agent platform&lt;/strong&gt; that helps &lt;strong&gt;US firms and distributors&lt;/strong&gt; find the best prices for mass-produced goods, successfully reducing customer costs. &lt;strong&gt;Sourcerer&lt;/strong&gt; utilizes &lt;strong&gt;AI agents&lt;/strong&gt; on both the supply and demand sides, and &lt;strong&gt;Peter Cetale&lt;/strong&gt; shared his experience in &lt;strong&gt;Andreesen Horowitz's Speedrun accelerator program&lt;/strong&gt;.&lt;/div&gt;
-      
-    &lt;/div&gt;
-    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-    
-    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
-      &lt;!-- Date + Podcast name --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; Lex Fridman Podcast&lt;/div&gt;
-      &lt;!-- Title --&gt;
-      &lt;a href="https://lexfridman.com/peter-steinberger/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=peter-steinberger" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger&lt;/a&gt;
-      &lt;!-- Summary --&gt;
-      
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Peter Steinberger&lt;/strong&gt;, the creator of &lt;strong&gt;OpenClaw&lt;/strong&gt;, discussed the viral &lt;strong&gt;AI agent's origin story&lt;/strong&gt; and the factors that contributed to its rapid spread across the internet. He explained how &lt;strong&gt;OpenClaw&lt;/strong&gt; functions as a &lt;strong&gt;self-modifying AI agent&lt;/strong&gt;, capable of altering its own code and behavior to achieve complex tasks. &lt;strong&gt;Steinberger&lt;/strong&gt; addressed the security concerns surrounding &lt;strong&gt;OpenClaw&lt;/strong&gt;, particularly given its autonomous capabilities and potential for unvetted components within its system. He predicted that &lt;strong&gt;AI agents&lt;/strong&gt; like &lt;strong&gt;OpenClaw&lt;/strong&gt; could ultimately replace up to &lt;strong&gt;80%&lt;/strong&gt; of current applications, fundamentally changing user interaction with software.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Jason&lt;/strong&gt; invested &lt;strong&gt;$200,000&lt;/strong&gt; in &lt;strong&gt;Presh’s&lt;/strong&gt; startup, &lt;strong&gt;The Wellness Company&lt;/strong&gt;, which developed the &lt;strong&gt;Tempo&lt;/strong&gt; app for monitoring health and offering proactive advice. &lt;strong&gt;Presh&lt;/strong&gt; detailed how &lt;strong&gt;Tempo&lt;/strong&gt; finds engagement and emphasized the importance of &lt;strong&gt;Product Velocity&lt;/strong&gt; and &lt;strong&gt;World-Class Design&lt;/strong&gt;. &lt;strong&gt;Peter Cetale&lt;/strong&gt; presented &lt;strong&gt;Sourcerer&lt;/strong&gt;, a company that uses &lt;strong&gt;AI agents&lt;/strong&gt; to help &lt;strong&gt;U.S. firms&lt;/strong&gt; and distributors find better prices for mass-produced goods, successfully bringing costs down. &lt;strong&gt;Peter&lt;/strong&gt; discussed his experience in &lt;strong&gt;a16z’s Speedrun accelerator&lt;/strong&gt;, noting the impact of &lt;strong&gt;Tariff Mania&lt;/strong&gt; on his business and his belief in leaner startups with cheaper compute.&lt;/div&gt;
       
     &lt;/div&gt;
     
@@ -239,9 +234,9 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
       &lt;!-- Date + Authors --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Zarif Ikram, Arad Firouzkouhi, Stephen Tu et al.&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-18 &amp;nbsp;&amp;middot;&amp;nbsp; Shen Zhou Hong, Alex Kleinman, Alyssa Mathiowetz et al.&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://arxiv.org/pdf/2602.15823v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing&lt;/a&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.16703v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Measuring Mid-2025 LLM-Assistance on Novice Performance in Biology&lt;/a&gt;
       &lt;!-- Topic badges --&gt;
       
       
@@ -263,16 +258,16 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;CrispEdit&lt;/strong&gt; method introduces a scalable and principled &lt;strong&gt;second-order editing algorithm&lt;/strong&gt; that explicitly constrains capability preservation during LLM editing. It achieves this by employing &lt;strong&gt;low-curvature projections&lt;/strong&gt;, unifying and generalizing existing approaches to prevent the corruption of general capabilities while changing targeted behaviors.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;A pre-registered, investigator-blinded, randomized controlled trial (&lt;strong&gt;June-August 2025; n = 153&lt;/strong&gt;) evaluated whether &lt;strong&gt;LLMs&lt;/strong&gt; improve novice performance in tasks modeling a viral reverse genetics workflow.&lt;/div&gt;
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
       &lt;!-- Date + Authors --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Yuqi Tian, Robert Paine, Attila Dobi et al.&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-18 &amp;nbsp;&amp;middot;&amp;nbsp; Mingjia Shi, Yinhan He, Yaochen Zhu et al.&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://arxiv.org/pdf/2602.15809v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Decision Quality Evaluation Framework at Pinterest&lt;/a&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.16702v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Saliency-Aware Multi-Route Thinking: Revisiting Vision-Language Reasoning&lt;/a&gt;
       &lt;!-- Topic badges --&gt;
       
       
@@ -288,22 +283,22 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
         
         
         
-        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
         
         
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper presents a comprehensive &lt;strong&gt;Decision Quality Evaluation Framework&lt;/strong&gt; developed at &lt;strong&gt;Pinterest&lt;/strong&gt; to address the challenges of assessing content moderation decisions. The framework evaluates the quality of moderation made by both &lt;strong&gt;human agents&lt;/strong&gt; and &lt;strong&gt;LLMs&lt;/strong&gt; at scale, balancing trade-offs between cost, scale, and trustworthiness given evolving policies.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper highlights that while additional inference computation helps &lt;strong&gt;LLMs&lt;/strong&gt;, similar scaling is challenging in &lt;strong&gt;VLMs&lt;/strong&gt; because visual inputs are typically provided only once, leading to increasingly text-dominated reasoning.&lt;/div&gt;
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     
     
     &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
       &lt;!-- Date + Authors --&gt;
-      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Max Springer, Chung Peng Lee, Blossom Metevier et al.&lt;/div&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-18 &amp;nbsp;&amp;middot;&amp;nbsp; Shruti Joshi, Aaron Mueller, David Klindt et al.&lt;/div&gt;
       &lt;!-- Title --&gt;
-      &lt;a href="https://arxiv.org/pdf/2602.15799v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety&lt;/a&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.16698v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Causality is Key for Interpretability Claims to Generalise&lt;/a&gt;
       &lt;!-- Topic badges --&gt;
       
       
@@ -318,14 +313,14 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
         
         
         
-        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;adversarial&lt;/span&gt;
-        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
         
-        &lt;span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;guardrail&lt;/span&gt;
+        
+        
+        
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper analyzes how fine-tuning aligned language models on benign tasks unpredictably degrades safety guardrails, despite training data containing no harmful content. It demonstrates that the prevailing explanation of orthogonality is structurally unstable and **collapses under gradient descent dynamics**, offering a resolution to this **alignment collapse** phenomenon.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper posits that &lt;strong&gt;causal inference&lt;/strong&gt; is crucial for validating claims of interpretability in &lt;strong&gt;LLMs&lt;/strong&gt;, specifically using &lt;strong&gt;Pearl's causal hierarchy&lt;/strong&gt; to define valid mappings from model activations to invariant high-level structures.&lt;/div&gt;
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     
@@ -356,7 +351,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper proposes &lt;strong&gt;The Vision Wormhole&lt;/strong&gt;, a method for &lt;strong&gt;latent-space communication&lt;/strong&gt; in heterogeneous multi-agent systems to overcome the inefficiencies of discrete text communication. It enables efficient, high-bandwidth communication by transferring &lt;strong&gt;latent states&lt;/strong&gt; between agents without requiring homogeneous architectures or pair-specific learned translators, improving scalability and modularity.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper introduces a method for &lt;strong&gt;latent state transfer&lt;/strong&gt; in heterogeneous &lt;strong&gt;Multi-Agent Systems (MAS)&lt;/strong&gt;, addressing the inefficiency of discrete text communication by enabling high-bandwidth, scalable, and modular communication across diverse architectures.&lt;/div&gt;
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
     
@@ -387,7 +382,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;/div&gt;
       &lt;!-- Summary --&gt;
       
-      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper defines &lt;strong&gt;token overflow&lt;/strong&gt; as a regime where compressed token representations exceed their expressive limits in soft compression architectures for LLMs. The method detects when compression begins to erase task-relevant content, which is crucial for efficient long-context processing in resource-constrained environments.&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper defines &lt;strong&gt;token overflow&lt;/strong&gt; in soft compression architectures for &lt;strong&gt;LLMs&lt;/strong&gt; as the point where compression begins to erase task-relevant content, identifying a critical limit for extending effective context length in resource-constrained environments.&lt;/div&gt;
     &lt;/div&gt;
     
     
@@ -408,7 +403,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPUEV6ejV0S1poOW45aU1CQ1R6a3o5V01BSnFRZUZKNWZsd1lxMEwxTzhoaGJZZkxicVpaNDFlYTVUYk1DZ3FEMVFLNmFyLWg1cGN6T2tlZDFtMEt6RUZOLUV4RjhTTUJpblpmNHNWdnF3NUtLZk91Sjd6YlpEdGNMSA?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;⚡ Weekly Recap: AI Skill Malware, 31Tbps DDoS, Notepad++ Hack, LLM Backdoors and More&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;OpenClaw&lt;/strong&gt; announced a partnership with &lt;strong&gt;Google's VirusTotal&lt;/strong&gt; to scan skills uploaded to &lt;strong&gt;ClawHub&lt;/strong&gt;, aiming to improve security against risks like prompt injections and data exfiltration in the agentic ecosystem. &lt;strong&gt;Trend Micro&lt;/strong&gt; disclosed that malicious actors on the &lt;strong&gt;Exploit.in forum&lt;/strong&gt; are actively discussing deploying &lt;strong&gt;OpenClaw skills&lt;/strong&gt; for &lt;strong&gt;botnet operations&lt;/strong&gt;, demonstrating the misuse of autonomous AI tools. The number of packages on &lt;strong&gt;npm&lt;/strong&gt; and &lt;strong&gt;PyPI&lt;/strong&gt; with "claw" has exponentially increased to over &lt;strong&gt;1,000&lt;/strong&gt; by early &lt;strong&gt;February 2026&lt;/strong&gt;, creating new avenues for malicious typosquatting.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;OpenClaw&lt;/strong&gt; partnered with &lt;strong&gt;Google's VirusTotal&lt;/strong&gt; to scan skills uploaded to &lt;strong&gt;ClawHub&lt;/strong&gt; after cybersecurity concerns rose regarding prompt injections and data exfiltration in autonomous &lt;strong&gt;AI tools&lt;/strong&gt;. &lt;strong&gt;Trend Micro&lt;/strong&gt; reported malicious actors on &lt;strong&gt;Exploit.in&lt;/strong&gt; discussing using &lt;strong&gt;OpenClaw skills&lt;/strong&gt; for botnet operations, and &lt;strong&gt;Veracode&lt;/strong&gt; found over &lt;strong&gt;1,000 "claw" packages&lt;/strong&gt; on &lt;strong&gt;npm&lt;/strong&gt; and &lt;strong&gt;PyPI&lt;/strong&gt; by &lt;strong&gt;early February 2026&lt;/strong&gt;. These developments highlight how attackers are abusing trusted updates, marketplaces, and &lt;strong&gt;AI workflows&lt;/strong&gt;, leading to an expanding threat surface.&lt;/div&gt;
       
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -420,7 +415,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOMEZENGlDc2hpdXQ0Tm1XSG8zTWVtNHMwX3dOeUFTOUhjeXdnOExEZkZZbHlSWHlod2Q1VGY0R2VHZlg2RURSQklKUUNsNU9pOUJkTHdWLXNMTldudDdHejdLeGd4ejhfWWdiMDR6WWVYNDBwQmNRbXN6blpGb1ZhT3dEMzdzVms1aHNlMzJPRXNpelZtVWJ3eU5WT204SlY4b25tZEZZbFEta3dtN2ktMXBLQmZZWDg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;LLM Security | Prevent Vulnerabilities &amp; Boost Application Security | Qualys&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The global &lt;strong&gt;LLM market&lt;/strong&gt; is projected to grow from &lt;strong&gt;$1,590 million&lt;/strong&gt; in &lt;strong&gt;2023&lt;/strong&gt; to &lt;strong&gt;$259,800 million&lt;/strong&gt; by &lt;strong&gt;2030&lt;/strong&gt;, representing a &lt;strong&gt;79.80% CAGR&lt;/strong&gt;, indicating rapid adoption and increasing security risks. &lt;strong&gt;LLMs&lt;/strong&gt; are susceptible to attacks like &lt;strong&gt;data poisoning&lt;/strong&gt;, where manipulated training data introduces biases, and &lt;strong&gt;prompt injection&lt;/strong&gt;, which can lead to data exfiltration or unauthorized actions. By &lt;strong&gt;2025&lt;/strong&gt;, an estimated &lt;strong&gt;750 million apps&lt;/strong&gt; will integrate &lt;strong&gt;LLMs&lt;/strong&gt;, underscoring the critical need for robust security measures to protect sensitive information and ensure reliability.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The global &lt;strong&gt;LLM market&lt;/strong&gt; is projected to surge from &lt;strong&gt;$1,590 million in 2023&lt;/strong&gt; to &lt;strong&gt;$259,800 million by 2030&lt;/strong&gt;, with &lt;strong&gt;750 million apps&lt;/strong&gt; expected to integrate &lt;strong&gt;LLMs by 2025&lt;/strong&gt;. Despite rapid adoption, &lt;strong&gt;LLMs&lt;/strong&gt; face security risks like &lt;strong&gt;data poisoning&lt;/strong&gt;, targeted attacks, and response manipulation due to their complexity and openness to external inputs. These vulnerabilities threaten the reliability of &lt;strong&gt;LLMs&lt;/strong&gt; and the protection of sensitive information across industries like healthcare and finance.&lt;/div&gt;
       
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -432,7 +427,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYlRodUFtZU0ybXVnVVVIaFlLdzF2YWhVS21aUFo4d1VnWDdUWTdreS1oQVRTMTF6bE5Xd2VGWFZReWJfem1jdEExeGFYUjZTWVdTLUw0ZFd6dlBHcXhnM3Z5SUdrcjNWOUJLWGNmNEE4clNZNk8wc2daQXhXcC11ZVI2LTBsampzbng2UVNoaHJ0V0V2c1NCTl9ubmpoYnplcDllN3ZCdGZmdC1ob01YUHJVMHlud3B3bkVMY29OOUFxSEFtOWNjVU40N00zNldoNktnRg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OWASP Top 10 LLM Risks 2025: Key AI Security Updates&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;OWASP Top 10 for LLM Applications 2025&lt;/strong&gt; list, finalized in &lt;strong&gt;late 2024&lt;/strong&gt;, maintained &lt;strong&gt;Prompt Injection&lt;/strong&gt; as the top risk, with &lt;strong&gt;Sensitive Information Disclosure&lt;/strong&gt; and &lt;strong&gt;Supply Chain&lt;/strong&gt; ranking second and third respectively. New entries include &lt;strong&gt;System Prompt Leakage&lt;/strong&gt;, addressing exploits where embedded prompt information compromises confidentiality, and &lt;strong&gt;Vector and Embedding Weaknesses&lt;/strong&gt; for vulnerabilities in &lt;strong&gt;RAG&lt;/strong&gt; and embedding-based methods. Revisions expanded &lt;strong&gt;Misinformation&lt;/strong&gt; to include &lt;strong&gt;Overreliance&lt;/strong&gt; on LLM outputs and &lt;strong&gt;Unbounded Consumption&lt;/strong&gt; (formerly Denial of Service) to cover unexpected operational costs and system strain.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;OWASP Top 10 for LLM Applications 2025&lt;/strong&gt;, finalized in &lt;strong&gt;late 2024&lt;/strong&gt;, updates and adds entries to address emerging &lt;strong&gt;AI security risks&lt;/strong&gt;, with &lt;strong&gt;Prompt Injection&lt;/strong&gt; remaining at number &lt;strong&gt;one&lt;/strong&gt;. &lt;strong&gt;Sensitive Information Disclosure&lt;/strong&gt; and &lt;strong&gt;Supply Chain&lt;/strong&gt; jumped to &lt;strong&gt;second&lt;/strong&gt; and &lt;strong&gt;third&lt;/strong&gt; place, while new entries include &lt;strong&gt;System Prompt Leakage&lt;/strong&gt; and &lt;strong&gt;Vector and Embedding Weaknesses&lt;/strong&gt;. Categories like &lt;strong&gt;Misinformation&lt;/strong&gt; and &lt;strong&gt;Unbounded Consumption&lt;/strong&gt; were expanded, and &lt;strong&gt;Excessive Agency&lt;/strong&gt; now highlights risks from unchecked permissions in autonomous &lt;strong&gt;AI systems&lt;/strong&gt;.&lt;/div&gt;
       
     &lt;/div&gt;
     &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
@@ -444,7 +439,7 @@ The Indian Ocean archipelago became part of British territory in 1814, with the 
       &lt;a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOOFAtTlEydlhzX25xaDFOaE1hV3JhVDBNX2N2b0owWDNrOC1rY1JjTE1tck5EODJqeWdfd3V6eFZYRG83aXQ5Mk1WWHdUQjMzLTRlMmpCYi0zR1gzMHhHNzVfMnpka0xWcVhzMUUzTWZVeElMRFJSWnA1dHpmazRkTXlKNE1PV1UwZ2VQQTFpZ1F4UC00a3B0Z3pLTUF3Wjd2OG11OHR1aEdLMlV1NzdBLQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Next-generation security through AI agent collaboration: Proactively addressing vulnerabilities and emerging threats&lt;/a&gt;
       &lt;!-- Summary --&gt;
       
-        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Fujitsu&lt;/strong&gt; developed new &lt;strong&gt;Multi-AI agent security technology&lt;/strong&gt;, published on &lt;strong&gt;July 28, 2025&lt;/strong&gt;, which employs multiple autonomous &lt;strong&gt;AI agents&lt;/strong&gt; to proactively counter cyberattacks and vulnerabilities in generative AI apps. The "System-Protecting" Security AI Agent Technology uses an &lt;strong&gt;Attack AI agent&lt;/strong&gt; to create attack scenarios, a &lt;strong&gt;Defense AI agent&lt;/strong&gt; to propose countermeasures, and a &lt;strong&gt;Test AI agent&lt;/strong&gt; to simulate attacks and validate defenses in a virtual environment. This collaborative approach allows system administrators without specialized security expertise to implement appropriate measures against new IT system vulnerabilities and increasingly sophisticated AI-powered attacks.&lt;/div&gt;
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Fujitsu&lt;/strong&gt; developed &lt;strong&gt;Multi-AI agent security technology&lt;/strong&gt;, published on &lt;strong&gt;July 28, 2025&lt;/strong&gt;, which uses multiple autonomously operating &lt;strong&gt;AI agents&lt;/strong&gt; to proactively counter cyberattacks and address vulnerabilities in &lt;strong&gt;generative AI apps&lt;/strong&gt;. The &lt;strong&gt;System-Protecting Security AI Agent Technology&lt;/strong&gt; includes an &lt;strong&gt;Attack AI agent&lt;/strong&gt; creating scenarios, a &lt;strong&gt;Defense AI agent&lt;/strong&gt; proposing countermeasures, and a &lt;strong&gt;Test AI agent&lt;/strong&gt; simulating attacks and validating defenses. This technology enables system administrators without specialized security expertise to implement appropriate measures against complex system configurations and an increasing number of vulnerabilities.&lt;/div&gt;
       
     &lt;/div&gt;
     
