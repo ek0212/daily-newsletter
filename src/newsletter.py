@@ -18,6 +18,7 @@ from src.weather import get_nyc_weather
 from src.news import get_top_news
 from src.podcasts import get_recent_episodes
 from src.papers import get_ai_security_papers
+from src.ai_news import get_ai_security_news
 from src.llm import batch_summarize
 from src.site_generator import update_site
 
@@ -33,7 +34,7 @@ def fetch_all_data() -> dict:
     logger.info("Weather fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    news = get_top_news(count=3)
+    news = get_top_news(count=5)
     logger.info("News fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
@@ -44,11 +45,16 @@ def fetch_all_data() -> dict:
     papers = get_ai_security_papers(days_back=7, top_n=5)
     logger.info("Papers fetched in %.1fs", time.time() - t0)
 
+    t0 = time.time()
+    ai_security_news = get_ai_security_news(count=4)
+    logger.info("AI security news fetched in %.1fs", time.time() - t0)
+
     logger.info("All data fetched in %.1fs", time.time() - fetch_start)
 
     # Batch summarize all sections in one Gemini call
     sections = {
         "news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in news],
+        "ai_security_news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in ai_security_news],
         "podcasts": [{"title": p["title"], "podcast": p.get("podcast", ""), "raw_text": p.get("raw_text", "")} for p in podcasts],
         "papers": [{"title": p["title"], "raw_text": p.get("raw_text", "")} for p in papers],
     }
@@ -73,12 +79,19 @@ def fetch_all_data() -> dict:
         if not item.get("quick_summary"):
             item["quick_summary"] = item.get("abstract", "")[:200]
 
+    for i, item in enumerate(ai_security_news):
+        if i < len(summaries.get("ai_security_news", [])):
+            item["summary"] = summaries["ai_security_news"][i]
+        if not item["summary"]:
+            item["summary"] = f"Read more at {item['source']}" if item.get("source") else ""
+
     return {
         "date": datetime.now().strftime("%A, %B %d, %Y"),
         "weather": weather,
         "news": news,
         "podcasts": podcasts,
         "papers": papers,
+        "ai_security_news": ai_security_news,
     }
 
 

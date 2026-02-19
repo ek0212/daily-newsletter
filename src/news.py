@@ -1,6 +1,9 @@
 """Fetch top news headlines from Google News RSS (no API key needed)."""
 
 import logging
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+
 import feedparser
 import trafilatura
 from googlenewsdecoder import new_decoderv1
@@ -40,7 +43,15 @@ def _fetch_article_text(url: str) -> str:
     return ""
 
 
-def get_top_news(count: int = 3) -> list[dict]:
+def _parse_pub_date(s: str) -> datetime:
+    """Parse RSS published date string, returning a timezone-aware datetime."""
+    try:
+        return parsedate_to_datetime(s)
+    except Exception:
+        return datetime.min.replace(tzinfo=timezone.utc)
+
+
+def get_top_news(count: int = 5) -> list[dict]:
     """Return top news stories from Google News RSS with raw article text."""
     logger.info("Fetching top %d news from Google News RSS", count)
     try:
@@ -62,6 +73,7 @@ def get_top_news(count: int = 3) -> list[dict]:
                 "summary": "",
                 "raw_text": raw_text,
             })
+        stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
         with_text = sum(1 for s in stories if s["raw_text"])
         logger.info("News fetch complete: %d stories, %d with article text", len(stories), with_text)
         return stories

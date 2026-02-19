@@ -53,7 +53,7 @@
   <div style="padding: 28px 28px 24px 28px;">
     <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;">&#128240; Top News</div>
     {% for story in news %}
-    <div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #f59e42;">
+    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;">
       <!-- Date -->
       <div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{% if story.published %}{{ story.published }}{% else %}Today{% endif %}{% if story.source %} &nbsp;&middot;&nbsp; <span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;">{{ story.source }}</span>{% endif %}</div>
       <!-- Title -->
@@ -63,6 +63,7 @@
         <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ story.summary | safe }}</div>
       {% endif %}
     </div>
+    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
     {% if not news %}<div style="font-size: 14px; color: #888; font-style: italic;">No news available today.</div>{% endif %}
   </div>
@@ -74,7 +75,7 @@
   <div style="padding: 28px 28px 24px 28px;">
     <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;">&#127897;&#65039; Podcast Episodes</div>
     {% for ep in podcasts %}
-    <div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #a855f7;">
+    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;">
       <!-- Date + Podcast name -->
       <div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{{ ep.published }} &nbsp;&middot;&nbsp; {{ ep.podcast }}</div>
       <!-- Title -->
@@ -84,6 +85,7 @@
         <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ ep.summary | safe }}</div>
       {% endif %}
     </div>
+    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
     {% if not podcasts %}<div style="font-size: 14px; color: #888; font-style: italic;">No new episodes this week.</div>{% endif %}
   </div>
@@ -96,7 +98,7 @@
     <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;">&#128196; AI Security Papers</div>
     {% for paper in papers %}
     {% set title_lower = paper.title | lower %}
-    <div style="background: #fff; border: 1px solid #eee; border-radius: 10px; padding: 20px; margin-bottom: 14px; border-left: 4px solid #10b981;">
+    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;">
       <!-- Date + Authors -->
       <div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{{ paper.published }} &nbsp;&middot;&nbsp; {{ paper.authors[:3] | join(", ") }}{% if paper.authors | length > 3 %} et al.{% endif %}{% if paper.citation_count is not none and paper.citation_count %} &nbsp;&middot;&nbsp; {{ paper.citation_count }} citations{% endif %}</div>
       <!-- Title -->
@@ -124,8 +126,31 @@
       {% set paper_summary = paper.quick_summary if paper.quick_summary else paper.abstract[:300] ~ ('...' if paper.abstract | length > 300 else '') %}
       <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ paper_summary | safe }}</div>
     </div>
+    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
     {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic;">No relevant papers found this week.</div>{% endif %}
+  </div>
+
+  <!-- Divider -->
+  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #dc2626, #f87171, #dc2626); border-radius: 2px;"></div></div>
+
+  <!-- AI Security News -->
+  <div style="padding: 28px 28px 24px 28px;">
+    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #dc2626; margin: 0 0 20px 0;">&#128737; AI Security News</div>
+    {% for item in ai_security_news %}
+    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;">
+      <!-- Date -->
+      <div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{% if item.published %}{{ item.published }}{% else %}Today{% endif %}{% if item.source %} &nbsp;&middot;&nbsp; <span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;">{{ item.source }}</span>{% endif %}</div>
+      <!-- Title -->
+      <a href="{{ item.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ item.title }}</a>
+      <!-- Summary -->
+      {% if item.summary %}
+        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ item.summary | safe }}</div>
+      {% endif %}
+    </div>
+    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
+    {% endfor %}
+    {% if not ai_security_news %}<div style="font-size: 14px; color: #888; font-style: italic;">No AI security news today.</div>{% endif %}
   </div>
 
   <!-- Footer -->

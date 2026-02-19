@@ -113,6 +113,9 @@ def generate_feed():
         papers = data.get("papers", [])
         if papers:
             summary_parts.append(f"{len(papers)} AI security papers")
+        ai_news = data.get("ai_security_news", [])
+        if ai_news:
+            summary_parts.append(f"{len(ai_news)} AI security news")
 
         SubElement(item, "description").text = " | ".join(summary_parts) if summary_parts else "Daily newsletter"
 

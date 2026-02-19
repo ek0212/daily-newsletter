@@ -183,6 +183,7 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
 
     papers.sort(key=score, reverse=True)
     top_papers = papers[:top_n]
+    top_papers.sort(key=lambda p: p.get("published", ""), reverse=True)
     for p in top_papers:
         p["quick_summary"] = ""
         p["raw_text"] = p.get("abstract", "")

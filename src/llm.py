@@ -28,10 +28,11 @@ def batch_summarize(sections: dict) -> dict:
     logger.info("Starting batch summarization via Gemini (gemini-2.5-flash)")
     prompt = _build_prompt(sections)
     n_news = len(sections.get("news", []))
+    n_sec = len(sections.get("ai_security_news", []))
     n_pods = len(sections.get("podcasts", []))
     n_papers = len(sections.get("papers", []))
-    logger.debug("Prompt size: %d chars, %d items total (news: %d, podcasts: %d, papers: %d)",
-                 len(prompt), n_news + n_pods + n_papers, n_news, n_pods, n_papers)
+    logger.debug("Prompt size: %d chars, %d items total (news: %d, ai_security_news: %d, podcasts: %d, papers: %d)",
+                 len(prompt), n_news + n_sec + n_pods + n_papers, n_news, n_sec, n_pods, n_papers)
 
     try:
         from google import genai
@@ -43,8 +44,9 @@ def batch_summarize(sections: dict) -> dict:
         )
         logger.info("Gemini API call successful, response: %d chars", len(response.text))
         result = _parse_response(response.text, sections)
-        logger.debug("Parsed summaries: news=%d, podcasts=%d, papers=%d",
-                     len(result.get("news", [])), len(result.get("podcasts", [])), len(result.get("papers", [])))
+        logger.debug("Parsed summaries: news=%d, ai_security_news=%d, podcasts=%d, papers=%d",
+                     len(result.get("news", [])), len(result.get("ai_security_news", [])),
+                     len(result.get("podcasts", [])), len(result.get("papers", [])))
         return result
     except Exception as e:
         logger.warning("Gemini call failed: %s, falling back to extractive summarizer", e)
@@ -100,10 +102,17 @@ def _build_prompt(sections: dict) -> str:
             text = (item.get("raw_text") or "")[:1500]
             parts.append(f"{i}. [{item['title']}]: {text}")
 
+    if sections.get("ai_security_news"):
+        parts.append("\nAI SECURITY NEWS ARTICLES:")
+        for i, item in enumerate(sections["ai_security_news"], 1):
+            text = (item.get("raw_text") or "")[:3000]
+            parts.append(f"{i}. [{item['title']}]: {text}")
+
     parts.append(
         '\nReturn JSON exactly like this (with the same number of items per section):\n'
         '{\n'
         '  "news": ["2-3 sentence summary with <strong>key terms</strong> bolded.", ...],\n'
+        '  "ai_security_news": ["2-3 sentence summary with <strong>key terms</strong> bolded.", ...],\n'
         '  "podcasts": ["3-4 sentence summary with <strong>guest names</strong> and <strong>topics</strong> bolded.", ...],\n'
         '  "papers": ["1-2 sentence summary with <strong>technique</strong> and <strong>findings</strong> bolded.", ...]\n'
         '}'
@@ -125,7 +134,7 @@ def _parse_response(text: str, sections: dict) -> dict:
     data = json.loads(cleaned)
 
     result = {}
-    for key in ("news", "podcasts", "papers"):
+    for key in ("news", "ai_security_news", "podcasts", "papers"):
         expected = len(sections.get(key, []))
         got = data.get(key, [])
         if len(got) == expected:
@@ -142,12 +151,12 @@ def _fallback_summarize(sections: dict) -> dict:
     """Summarize all sections using sumy extractive summarizer."""
     return {
         key: _fallback_section(sections.get(key, []), key)
-        for key in ("news", "podcasts", "papers")
+        for key in ("news", "ai_security_news", "podcasts", "papers")
     }
 
 
 def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     """Summarize a single section's items using sumy."""
-    sentence_counts = {"news": 3, "podcasts": 4, "papers": 2}
+    sentence_counts = {"news": 3, "ai_security_news": 3, "podcasts": 4, "papers": 2}
     n = sentence_counts.get(section_type, 2)
     return [summarize(item.get("raw_text", ""), num_sentences=n, title=item.get("title", "")) for item in items]
