@@ -13,7 +13,7 @@ echo "Setting up daily newsletter schedule..."
 echo "  Python:     $PYTHON_PATH"
 echo "  Script:     $NEWSLETTER_SCRIPT"
 echo "  Log file:   $LOG_FILE"
-echo "  Schedule:   Every day at 7:00 AM"
+echo "  Schedule:   Every day at 6:00 AM EST"
 
 cat > "$PLIST_PATH" << EOF
 <?xml version="1.0" encoding="UTF-8"?>
@@ -32,7 +32,7 @@ cat > "$PLIST_PATH" << EOF
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
-        <integer>7</integer>
+        <integer>6</integer>
         <key>Minute</key>
         <integer>0</integer>
     </dict>
@@ -53,7 +53,7 @@ launchctl unload "$PLIST_PATH" 2>/dev/null
 launchctl load "$PLIST_PATH"
 
 echo ""
-echo "Done! Newsletter scheduled daily at 7:00 AM."
+echo "Done! Newsletter scheduled daily at 6:00 AM EST."
 echo ""
 echo "Commands:"
 echo "  Test now:    python3 ${NEWSLETTER_SCRIPT}"

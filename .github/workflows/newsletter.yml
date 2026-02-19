@@ -2,7 +2,7 @@ name: Daily Newsletter
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # 12 PM UTC = 7 AM EST daily
+    - cron: '0 11 * * *'  # 11 AM UTC = 6 AM EST daily
   workflow_dispatch:
 
 permissions:
