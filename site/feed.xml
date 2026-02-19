@@ -5,8 +5,463 @@
     <link />
     <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Feb 2026 12:43:26 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Feb 2026 01:52:50 +0000</lastBuildDate>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Briefing - Thursday, February 19, 2026</title>
+      <link>/posts/2026-02-19.html</link>
+      <guid>/posts/2026-02-19.html</guid>
+      <description>Weather: 43°F - Light Rain Likely | 5 top news stories | 4 podcast episodes | 5 AI security papers | 4 AI security news</description>
+      <content:encoded>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; margin: 0; padding: 0; color: #1a1a1a;"&gt;
+&lt;div style="max-width: 640px; margin: 0 auto; background: #fff;"&gt;
+
+  &lt;!-- Header --&gt;
+  &lt;div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 32px; text-align: center;"&gt;
+    &lt;h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px;"&gt;Your Daily Briefing&lt;/h1&gt;
+    &lt;div style="margin-top: 12px; font-size: 20px; font-weight: 500; opacity: 0.95;"&gt;Thursday, February 19, 2026&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Weather --&gt;
+  &lt;div style="padding: 32px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;"&gt;&amp;#9728;&amp;#65039; Weather in NYC&lt;/div&gt;
+    &lt;div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;"&gt;
+      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;43&amp;deg;F&lt;/div&gt;
+      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Light Rain Likely&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 42&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 38&amp;deg;&lt;/div&gt;
+      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;Rain likely before 1am. Cloudy. Low around 38, with temperatures rising to around 40 overnight. Northeast wind 5 to 9 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; color: #1a1a2e;"&gt;
+      &lt;tr style="border-bottom: 2px solid #d0e8f7;"&gt;
+        &lt;th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Time&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Temp&lt;/th&gt;
+        &lt;th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Conditions&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Precip&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Humidity&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Wind&lt;/th&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7am&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;40&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;76%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;9 mph NE&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;9am&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;39&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;73%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph NE&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;3pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;40&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;67%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;9 mph E&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;5pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;42&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;62%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;9 mph E&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;41&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Chance Light Rain&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;34%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;67%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph E&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    &lt;/table&gt;
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #f59e42, #fbbf24, #f59e42); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Top News --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;"&gt;&amp;#128240; Top News&lt;/div&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 19 Feb 2026 00:33:45 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Al Jazeera&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQVUxrMlFucGVfbzREUGRZWS1sMW9kbG5OQlhHWXJyenc1cFRrNk41LU10SkR1cGo4enF0OUtITUxlRkNvMTNwV29PRjVhemdyV3JXUFMtb2xISUQ2RVA2dTNJbjRfWExDUndNbzAtUG5XWll1RmU4akRDajFHV1AyZjR4ajI3bkVmTVFUblhGNWxRNV9GN0RYRjVR0gGfAUFVX3lxTE9fRk53M2hSNkZycTBmSllXbTJnTkRTV05FT25mSkJDYm9DMVRHLW1ELTV5Z0J1QXlkWC1JOWJ5SXFOVXhJc1J0aXdtamtha3JRN3VfSFhuM1UzaFhfX0pVQ0tFaW5mak9CS1NBLWoxVDZ5Z05UdXNsYm5seWdiYXZMbEstX0NQcEE2bnlPZHdZNUtUal9kMS1hb0NvYjkyMA?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Trump says UK’s Starmer making ‘a big mistake’ with Chagos Islands deal&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;ereignty of the archipelago to Mauritius, and lease back the island of Diego Garcia, which is home to a UK-US military base. Recommended Stories
+list of 3 items- list 1 of 3UK’s &lt;strong&gt;Starmer&lt;/strong&gt; announces crackdown on AI chatbots in child safety push
+- list 2 of 3India beat Netherlands to clean sweep group before T20 World Cup Super 8s
+- list 3 of 3Leila Shahid, Palestinian diplomat, dies in France aged 76
+He warned in a Truth Social post that &lt;strong&gt;Starmer&lt;/strong&gt; was “losing control of this important Island by claims of entities never known of before”, adding: “In our opinion, they are fictitious in nature. ”
+The Indian Ocean archipelago became part of British territory in 1814, with the UK detaching it from Mauritius before it gained independence in the 1960s.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 23:46:25 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Washington Post&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxPT0V1aVhSeDducEYtMWFDUEVFYkZvWDdtUXJYeXZzVDBFRW80QloxdWhNaDZyTEtkSkF2YUNkcV9GX0FtcElXcmFqMzI5NkJzV0pQWnIwYi1Yam0xbUp6Tnh5OVV5dkl0OUNBUHNZbXdrTmxBZ1Fqa2pCN0NCQl9DbG9RUmppdzZF?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;White House taps Jay Bhattacharya, CDC critic, to lead agency for now&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at The Washington Post&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 23:14:17 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The New York Times&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPZGlHMjdJZ2l2cVdrbHowN2hOQmZJS051eFZwWnhNV0QxVm5pZVJudVJrcGszWVJpd0Rud3dJdGg1SkZJSGViNWhZNkhEaEVGRUZ2cjhmYUUzbnk1ZThqQTVGd2VMQ0p6Qnp4UzZaTGJIRF9oVFZzR3ZzUTBzYkNmNG8wZzY?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Lake Tahoe Avalanche Live Updates: 8 Skiers Found Dead, Authorities Say - The New York Times&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at The New York Times&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 22:33:48 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;BBC&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE10TlRjZTFxT3ZSbF9TQm52SWlVZXB3M0x2ZThJcXhjcEdMN25SYUMtVXVKSl9JaTZPbklzTkJfX3BTMmR3VkFNbjg3VzR5Z2pXTW01dEIzZ2tBUQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;'Difficult' Russia-Ukraine peace talks end without breakthrough&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;lin negotiator Vladimir Medinsky returned to the venue and held a closed-door meeting with the Ukrainian side for about an hour and a half. No details from that meeting have emerged. Some progress was made on "&lt;strong&gt;military issues&lt;/strong&gt;", including the location of the front line and ceasefire monitoring, according to a Ukrainian diplomatic source.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Wed, 18 Feb 2026 17:25:47 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Politico&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOWlhYNzRRWHNtUkxpRmhtYzVQM1NtdE1taGE3Z2pObW9STjJGRFNzZS1PQWRqdGJodlJaUmNLLVFUSmFlMDRENjRFeV9zSmZjdnd4UHNrWHpuUG9Hb2lqU1dsM0JNZzhTQkhaLU5TUFNjeVJGSGd2TWlwTWNDaUNhTHA0UjFQVkI2Nm9MX2FB?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Trump administration releases remaining Gateway funds — and then some&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Read more at Politico&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #a855f7, #c084fc, #a855f7); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Podcasts --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;"&gt;&amp;#127897;&amp;#65039; Podcast Episodes&lt;/div&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Will-OpenAI-Tank-OpenClaw---E2251-e3f6nue" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Will OpenAI Tank OpenClaw? | E2251&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Guests &lt;strong&gt;Hiten Shah&lt;/strong&gt; and &lt;strong&gt;Jesse Genet&lt;/strong&gt; discussed concerns about &lt;strong&gt;OpenAI&lt;/strong&gt; hiring &lt;strong&gt;OpenClaw creator Peter Steinberger&lt;/strong&gt;, fearing it could centralize development and negatively impact the open-source project. &lt;strong&gt;Hiten Shah&lt;/strong&gt; demonstrated a "personal CRM" built with &lt;strong&gt;OpenClaw&lt;/strong&gt;, designed for busy investors, which utilizes &lt;strong&gt;markdown files (.md)&lt;/strong&gt; for efficient AI agent data interaction. &lt;strong&gt;Jesse Genet&lt;/strong&gt; showcased her "vibe-coded" &lt;strong&gt;OpenClaw&lt;/strong&gt; app, a family media aggregator for non-Slop videos, and noted her &lt;strong&gt;Mac Minis&lt;/strong&gt; now outnumber her children. &lt;strong&gt;John Arrow&lt;/strong&gt;, creator of "AI Scott Adams," explained his inspiration for the AI clone and addressed the internet controversy it sparked.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-14 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/OpenClaw-is-Our-Friend-Now--E2250-e3f2r6p" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OpenClaw is Our Friend Now | E2250&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Ryan Carson&lt;/strong&gt; demonstrated &lt;strong&gt;AntFarm&lt;/strong&gt;, his open-source &lt;strong&gt;OpenClaw&lt;/strong&gt; tool that creates multiple AI agents with specialized roles to collaboratively complete complex tasks. &lt;strong&gt;David Im&lt;/strong&gt; showcased &lt;strong&gt;Clawra&lt;/strong&gt;, an AI virtual girlfriend that learns user preferences and can even "buy presents," sparking discussion on programming AI companions. &lt;strong&gt;Alex Liteplo&lt;/strong&gt; presented &lt;strong&gt;RentAHuman&lt;/strong&gt;, a marketplace where AI bots pay real people in &lt;strong&gt;stablecoins&lt;/strong&gt; to complete "IRL tasks," providing examples like hiring &lt;strong&gt;100 goth girls&lt;/strong&gt; to hold signs in &lt;strong&gt;Times Square&lt;/strong&gt;. The episode explored a future where humans and AIs work, socialize, and learn from one another, highlighting new possibilities for AI agent interaction.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Why-J-Cal-Invested-to-200K-in-a-former-Employee--E2249-e3f16i1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Why J-Cal Invested to 200K in a former Employee | E2249&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Jason Calacanis&lt;/strong&gt; invested &lt;strong&gt;$200,000&lt;/strong&gt; in &lt;strong&gt;Presh's&lt;/strong&gt; startup, &lt;strong&gt;The Wellness Company&lt;/strong&gt;, which developed the &lt;strong&gt;Tempo&lt;/strong&gt; app for health monitoring and proactive advice. &lt;strong&gt;Presh&lt;/strong&gt; detailed how the &lt;strong&gt;Tempo&lt;/strong&gt; app gains engagement through consistent health monitoring and personalized guidance, with &lt;strong&gt;Jason&lt;/strong&gt; suggesting a group or family feature to increase stickiness. &lt;strong&gt;Peter Cetale&lt;/strong&gt;, CEO and co-founder of &lt;strong&gt;Sourcerer&lt;/strong&gt;, presented his &lt;strong&gt;AI agent platform&lt;/strong&gt; that helps &lt;strong&gt;US firms and distributors&lt;/strong&gt; find the best prices for mass-produced goods, successfully reducing customer costs. &lt;strong&gt;Sourcerer&lt;/strong&gt; utilizes &lt;strong&gt;AI agents&lt;/strong&gt; on both the supply and demand sides, and &lt;strong&gt;Peter Cetale&lt;/strong&gt; shared his experience in &lt;strong&gt;Andreesen Horowitz's Speedrun accelerator program&lt;/strong&gt;.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; Lex Fridman Podcast&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://lexfridman.com/peter-steinberger/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=peter-steinberger" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;#491 – OpenClaw: The Viral AI Agent that Broke the Internet – Peter Steinberger&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Peter Steinberger&lt;/strong&gt;, the creator of &lt;strong&gt;OpenClaw&lt;/strong&gt;, discussed the viral &lt;strong&gt;AI agent's origin story&lt;/strong&gt; and the factors that contributed to its rapid spread across the internet. He explained how &lt;strong&gt;OpenClaw&lt;/strong&gt; functions as a &lt;strong&gt;self-modifying AI agent&lt;/strong&gt;, capable of altering its own code and behavior to achieve complex tasks. &lt;strong&gt;Steinberger&lt;/strong&gt; addressed the security concerns surrounding &lt;strong&gt;OpenClaw&lt;/strong&gt;, particularly given its autonomous capabilities and potential for unvetted components within its system. He predicted that &lt;strong&gt;AI agents&lt;/strong&gt; like &lt;strong&gt;OpenClaw&lt;/strong&gt; could ultimately replace up to &lt;strong&gt;80%&lt;/strong&gt; of current applications, fundamentally changing user interaction with software.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #10b981, #6ee7b7, #10b981); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- AI Security Papers --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;"&gt;&amp;#128196; AI Security Papers&lt;/div&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Zarif Ikram, Arad Firouzkouhi, Stephen Tu et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15823v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;CrispEdit&lt;/strong&gt; method introduces a scalable and principled &lt;strong&gt;second-order editing algorithm&lt;/strong&gt; that explicitly constrains capability preservation during LLM editing. It achieves this by employing &lt;strong&gt;low-curvature projections&lt;/strong&gt;, unifying and generalizing existing approaches to prevent the corruption of general capabilities while changing targeted behaviors.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Yuqi Tian, Robert Paine, Attila Dobi et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15809v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Decision Quality Evaluation Framework at Pinterest&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper presents a comprehensive &lt;strong&gt;Decision Quality Evaluation Framework&lt;/strong&gt; developed at &lt;strong&gt;Pinterest&lt;/strong&gt; to address the challenges of assessing content moderation decisions. The framework evaluates the quality of moderation made by both &lt;strong&gt;human agents&lt;/strong&gt; and &lt;strong&gt;LLMs&lt;/strong&gt; at scale, balancing trade-offs between cost, scale, and trustworthiness given evolving policies.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Max Springer, Chung Peng Lee, Blossom Metevier et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://arxiv.org/pdf/2602.15799v1" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;adversarial&lt;/span&gt;
+        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
+        &lt;span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;guardrail&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper analyzes how fine-tuning aligned language models on benign tasks unpredictably degrades safety guardrails, despite training data containing no harmful content. It demonstrates that the prevailing explanation of orthogonality is structurally unstable and **collapses under gradient descent dynamics**, offering a resolution to this **alignment collapse** phenomenon.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Xiaoze Liu, Ruowang Zhang, Weichen Yu et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.15382" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;The Vision Wormhole: Latent-Space Communication in Heterogeneous Multi-Agent Systems&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper proposes &lt;strong&gt;The Vision Wormhole&lt;/strong&gt;, a method for &lt;strong&gt;latent-space communication&lt;/strong&gt; in heterogeneous multi-agent systems to overcome the inefficiencies of discrete text communication. It enables efficient, high-bandwidth communication by transferring &lt;strong&gt;latent states&lt;/strong&gt; between agents without requiring homogeneous architectures or pair-specific learned translators, improving scalability and modularity.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-12 &amp;nbsp;&amp;middot;&amp;nbsp; Julia Belikova, Danila Rozhevskii, Dennis Svirin et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.12235" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Detecting Overflow in Compressed Token Representations for Retrieval-Augmented Generation&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This paper defines &lt;strong&gt;token overflow&lt;/strong&gt; as a regime where compressed token representations exceed their expressive limits in soft compression architectures for LLMs. The method detects when compression begins to erase task-relevant content, which is crucial for efficient long-context processing in resource-constrained environments.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #dc2626, #f87171, #dc2626); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- AI Security News --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #dc2626; margin: 0 0 20px 0;"&gt;&amp;#128737; AI Security News&lt;/div&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Mon, 09 Feb 2026 08:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;The Hacker News&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPUEV6ejV0S1poOW45aU1CQ1R6a3o5V01BSnFRZUZKNWZsd1lxMEwxTzhoaGJZZkxicVpaNDFlYTVUYk1DZ3FEMVFLNmFyLWg1cGN6T2tlZDFtMEt6RUZOLUV4RjhTTUJpblpmNHNWdnF3NUtLZk91Sjd6YlpEdGNMSA?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;⚡ Weekly Recap: AI Skill Malware, 31Tbps DDoS, Notepad++ Hack, LLM Backdoors and More&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;OpenClaw&lt;/strong&gt; announced a partnership with &lt;strong&gt;Google's VirusTotal&lt;/strong&gt; to scan skills uploaded to &lt;strong&gt;ClawHub&lt;/strong&gt;, aiming to improve security against risks like prompt injections and data exfiltration in the agentic ecosystem. &lt;strong&gt;Trend Micro&lt;/strong&gt; disclosed that malicious actors on the &lt;strong&gt;Exploit.in forum&lt;/strong&gt; are actively discussing deploying &lt;strong&gt;OpenClaw skills&lt;/strong&gt; for &lt;strong&gt;botnet operations&lt;/strong&gt;, demonstrating the misuse of autonomous AI tools. The number of packages on &lt;strong&gt;npm&lt;/strong&gt; and &lt;strong&gt;PyPI&lt;/strong&gt; with "claw" has exponentially increased to over &lt;strong&gt;1,000&lt;/strong&gt; by early &lt;strong&gt;February 2026&lt;/strong&gt;, creating new avenues for malicious typosquatting.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Sun, 07 Dec 2025 08:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Qualys&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMitwFBVV95cUxOMEZENGlDc2hpdXQ0Tm1XSG8zTWVtNHMwX3dOeUFTOUhjeXdnOExEZkZZbHlSWHlod2Q1VGY0R2VHZlg2RURSQklKUUNsNU9pOUJkTHdWLXNMTldudDdHejdLeGd4ejhfWWdiMDR6WWVYNDBwQmNRbXN6blpGb1ZhT3dEMzdzVms1aHNlMzJPRXNpelZtVWJ3eU5WT204SlY4b25tZEZZbFEta3dtN2ktMXBLQmZZWDg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;LLM Security | Prevent Vulnerabilities &amp; Boost Application Security | Qualys&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The global &lt;strong&gt;LLM market&lt;/strong&gt; is projected to grow from &lt;strong&gt;$1,590 million&lt;/strong&gt; in &lt;strong&gt;2023&lt;/strong&gt; to &lt;strong&gt;$259,800 million&lt;/strong&gt; by &lt;strong&gt;2030&lt;/strong&gt;, representing a &lt;strong&gt;79.80% CAGR&lt;/strong&gt;, indicating rapid adoption and increasing security risks. &lt;strong&gt;LLMs&lt;/strong&gt; are susceptible to attacks like &lt;strong&gt;data poisoning&lt;/strong&gt;, where manipulated training data introduces biases, and &lt;strong&gt;prompt injection&lt;/strong&gt;, which can lead to data exfiltration or unauthorized actions. By &lt;strong&gt;2025&lt;/strong&gt;, an estimated &lt;strong&gt;750 million apps&lt;/strong&gt; will integrate &lt;strong&gt;LLMs&lt;/strong&gt;, underscoring the critical need for robust security measures to protect sensitive information and ensure reliability.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Fri, 19 Sep 2025 07:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Qualys&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYlRodUFtZU0ybXVnVVVIaFlLdzF2YWhVS21aUFo4d1VnWDdUWTdreS1oQVRTMTF6bE5Xd2VGWFZReWJfem1jdEExeGFYUjZTWVdTLUw0ZFd6dlBHcXhnM3Z5SUdrcjNWOUJLWGNmNEE4clNZNk8wc2daQXhXcC11ZVI2LTBsampzbng2UVNoaHJ0V0V2c1NCTl9ubmpoYnplcDllN3ZCdGZmdC1ob01YUHJVMHlud3B3bkVMY29OOUFxSEFtOWNjVU40N00zNldoNktnRg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OWASP Top 10 LLM Risks 2025: Key AI Security Updates&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;OWASP Top 10 for LLM Applications 2025&lt;/strong&gt; list, finalized in &lt;strong&gt;late 2024&lt;/strong&gt;, maintained &lt;strong&gt;Prompt Injection&lt;/strong&gt; as the top risk, with &lt;strong&gt;Sensitive Information Disclosure&lt;/strong&gt; and &lt;strong&gt;Supply Chain&lt;/strong&gt; ranking second and third respectively. New entries include &lt;strong&gt;System Prompt Leakage&lt;/strong&gt;, addressing exploits where embedded prompt information compromises confidentiality, and &lt;strong&gt;Vector and Embedding Weaknesses&lt;/strong&gt; for vulnerabilities in &lt;strong&gt;RAG&lt;/strong&gt; and embedding-based methods. Revisions expanded &lt;strong&gt;Misinformation&lt;/strong&gt; to include &lt;strong&gt;Overreliance&lt;/strong&gt; on LLM outputs and &lt;strong&gt;Unbounded Consumption&lt;/strong&gt; (formerly Denial of Service) to cover unexpected operational costs and system strain.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Mon, 28 Jul 2025 07:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Fujitsu Global&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOOFAtTlEydlhzX25xaDFOaE1hV3JhVDBNX2N2b0owWDNrOC1rY1JjTE1tck5EODJqeWdfd3V6eFZYRG83aXQ5Mk1WWHdUQjMzLTRlMmpCYi0zR1gzMHhHNzVfMnpka0xWcVhzMUUzTWZVeElMRFJSWnA1dHpmazRkTXlKNE1PV1UwZ2VQQTFpZ1F4UC00a3B0Z3pLTUF3Wjd2OG11OHR1aEdLMlV1NzdBLQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Next-generation security through AI agent collaboration: Proactively addressing vulnerabilities and emerging threats&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Fujitsu&lt;/strong&gt; developed new &lt;strong&gt;Multi-AI agent security technology&lt;/strong&gt;, published on &lt;strong&gt;July 28, 2025&lt;/strong&gt;, which employs multiple autonomous &lt;strong&gt;AI agents&lt;/strong&gt; to proactively counter cyberattacks and vulnerabilities in generative AI apps. The "System-Protecting" Security AI Agent Technology uses an &lt;strong&gt;Attack AI agent&lt;/strong&gt; to create attack scenarios, a &lt;strong&gt;Defense AI agent&lt;/strong&gt; to propose countermeasures, and a &lt;strong&gt;Test AI agent&lt;/strong&gt; to simulate attacks and validate defenses in a virtual environment. This collaborative approach allows system administrators without specialized security expertise to implement appropriate measures against new IT system vulnerabilities and increasingly sophisticated AI-powered attacks.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;div style="padding: 28px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0;"&gt;
+    Generated automatically &amp;middot; &lt;a href="feed.xml" style="color: #6c63ff; text-decoration: none;"&gt;Subscribe via RSS&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content:encoded>
+      <pubDate>Thu, 19 Feb 2026 07:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Daily Briefing - Wednesday, February 18, 2026</title>
       <link>/posts/2026-02-18.html</link>
