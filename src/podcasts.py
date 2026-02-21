@@ -14,6 +14,8 @@ PODCAST_FEEDS = {
     "This Week in Startups": "https://anchor.fm/s/7c624c84/podcast/rss",
     "Dwarkesh Podcast": "https://api.substack.com/feed/podcast/69345.rss",
     "Lex Fridman Podcast": "https://lexfridman.com/feed/podcast/",
+    "AI Daily Brief": "https://anchor.fm/s/f7cac464/podcast/rss",
+    "Morning Brew Daily": "https://feeds.megaphone.fm/business-casual",
 }
 
 YOUTUBE_CHANNELS = {
@@ -21,6 +23,8 @@ YOUTUBE_CHANNELS = {
     "Dwarkesh Podcast": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1SfmNb5y0eT4hEZyNh7OHg",
     "Lex Fridman Podcast": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
 }
+
+MAX_EPISODES = 5
 
 
 def _fetch_youtube_videos(channel_feed_url: str) -> list[dict]:
@@ -130,6 +134,7 @@ def get_recent_episodes(days: int = 7) -> list[dict]:
             continue
 
     all_episodes.sort(key=lambda x: x["published"], reverse=True)
+    all_episodes = all_episodes[:MAX_EPISODES]
     with_transcripts = sum(1 for e in all_episodes if len(e.get("raw_text", "")) > 500)
     logger.info("Podcasts complete: %d episodes, %d with transcripts", len(all_episodes), with_transcripts)
     return all_episodes

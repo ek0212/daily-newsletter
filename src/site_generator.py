@@ -181,14 +181,14 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing - {display_date}</title>
+<title>Daily Briefing &mdash; {display_date}</title>
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; color: #1a1a1a; }}
-  .site-nav {{ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 14px 24px; text-align: center; }}
-  .site-nav a {{ color: rgba(255,255,255,0.8); text-decoration: none; font-size: 14px; font-weight: 500; }}
+  body {{ font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }}
+  .site-nav {{ background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }}
+  .site-nav a {{ color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }}
   .site-nav a:hover {{ color: #fff; }}
-  .email-wrap {{ max-width: 680px; margin: 28px auto; background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }}
+  .email-wrap {{ max-width: 680px; margin: 28px auto; background: #fffdf7; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }}
 </style>
 </head>
 <body>
@@ -240,31 +240,33 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
 <link rel="alternate" type="application/rss+xml" title="Daily Briefing RSS" href="feed.xml">
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; color: #1a1a1a; min-height: 100vh; }}
-  .header {{ background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 56px 24px 48px; text-align: center; }}
-  .header h1 {{ font-size: 34px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 10px; }}
-  .header p {{ font-size: 15px; opacity: 0.75; max-width: 400px; margin: 0 auto; line-height: 1.5; }}
-  .rss-btn {{ display: inline-block; margin-top: 24px; padding: 11px 28px; background: rgba(255,255,255,0.12); color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 500; border: 1px solid rgba(255,255,255,0.2); transition: background 0.2s; }}
-  .rss-btn:hover {{ background: rgba(255,255,255,0.22); }}
+  body {{ font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; min-height: 100vh; }}
+  .header {{ background: #fffdf7; color: #1a1a1a; padding: 56px 24px 40px; text-align: center; border-bottom: 3px double #1a1a1a; }}
+  .header .kicker {{ font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; margin-bottom: 10px; }}
+  .header h1 {{ font-size: 44px; font-weight: 700; letter-spacing: -1px; margin-bottom: 8px; font-family: 'Times New Roman', Times, Georgia, serif; line-height: 1.1; }}
+  .header p {{ font-size: 15px; font-style: italic; color: #666; max-width: 400px; margin: 0 auto; line-height: 1.5; }}
+  .rss-btn {{ display: inline-block; margin-top: 24px; padding: 10px 28px; background: #1a1a1a; color: #fffdf7; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; transition: background 0.2s; }}
+  .rss-btn:hover {{ background: #333; }}
   .content {{ max-width: 640px; margin: 0 auto; padding: 36px 20px; }}
-  .latest {{ background: #fff; border-radius: 12px; padding: 28px; margin-bottom: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #e8e8ee; }}
-  .latest h2 {{ font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #6c63ff; margin-bottom: 14px; }}
-  .latest .date-label {{ font-size: 20px; font-weight: 600; color: #1a1a2e; margin-bottom: 16px; }}
-  .read-btn {{ display: inline-block; padding: 10px 22px; background: #6c63ff; color: #fff; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 600; }}
-  .read-btn:hover {{ background: #5a52e0; }}
-  .archive {{ background: #fff; border-radius: 12px; padding: 28px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); border: 1px solid #e8e8ee; }}
-  .archive h2 {{ font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #1a1a2e; margin-bottom: 18px; }}
+  .latest {{ background: #fffdf7; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; }}
+  .latest h2 {{ font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 14px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px; }}
+  .latest .date-label {{ font-size: 22px; font-weight: 600; color: #1a1a1a; margin-bottom: 16px; font-style: italic; }}
+  .read-btn {{ display: inline-block; padding: 10px 22px; background: #1a1a1a; color: #fffdf7; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }}
+  .read-btn:hover {{ background: #333; }}
+  .archive {{ background: #fffdf7; padding: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; }}
+  .archive h2 {{ font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 18px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px; }}
   .archive ul {{ list-style: none; }}
-  .archive li {{ padding: 10px 0; border-bottom: 1px solid #f0f0f0; }}
+  .archive li {{ padding: 10px 0; border-bottom: 1px solid #e0ddd5; }}
   .archive li:last-child {{ border-bottom: none; }}
-  .archive a {{ color: #1a1a2e; text-decoration: none; font-size: 15px; font-weight: 500; }}
-  .archive a:hover {{ color: #6c63ff; }}
+  .archive a {{ color: #1a1a1a; text-decoration: none; font-size: 16px; }}
+  .archive a:hover {{ color: #555; border-bottom: 1px solid #1a1a1a; }}
   .no-items {{ color: #888; font-style: italic; font-size: 14px; }}
-  .footer {{ text-align: center; padding: 36px 20px; font-size: 12px; color: #aaa; }}
+  .footer {{ text-align: center; padding: 36px 20px; font-size: 11px; color: #aaa; letter-spacing: 1px; text-transform: uppercase; }}
 </style>
 </head>
 <body>
 <div class="header">
+  <div class="kicker">Est. 2025 &middot; Automated Daily Intelligence</div>
   <h1>Daily Briefing</h1>
   <p>Weather, news, podcasts &amp; AI security papers &mdash; delivered daily.</p>
   <a href="feed.xml" class="rss-btn">Subscribe via RSS</a>

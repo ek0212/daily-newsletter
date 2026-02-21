@@ -172,7 +172,7 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
 
     # Filter to recent papers only
     cutoff = (datetime.utcnow() - timedelta(days=days_back)).strftime("%Y-%m-%d")
-    papers = [p for p in papers if p.get("published", "9999") >= cutoff] or papers
+    papers = [p for p in papers if p.get("published", "") >= cutoff]
 
     papers = enrich_citations(papers)
 

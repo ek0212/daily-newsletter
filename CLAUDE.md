@@ -1,5 +1,8 @@
 # Daily Briefing Newsletter
 
+## Frontend Design
+For any frontend/UI work, follow the frontend design skill guide: https://github.com/anthropics/claude-code/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md
+
 ## What This Is
 
 Automated daily newsletter with five sections, published to GitHub Pages + RSS feed, delivered to inbox via Blogtrottr:

@@ -4,158 +4,162 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; margin: 0; padding: 0; color: #1a1a1a;">
-<div style="max-width: 640px; margin: 0 auto; background: #fff;">
+<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
+<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
 
-  <!-- Header -->
-  <div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 32px; text-align: center;">
-    <h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px;">Your Daily Briefing</h1>
-    <div style="margin-top: 12px; font-size: 20px; font-weight: 500; opacity: 0.95;">{{ date }}</div>
+  <!-- Masthead -->
+  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Automated Daily Intelligence</div>
+    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
+    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ date }}</div>
+    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
+    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; News &middot; Podcasts &middot; Research</div>
   </div>
 
   <!-- Weather -->
-  <div style="padding: 32px 28px 24px 28px;">
-    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;">&#9728;&#65039; Weather in NYC</div>
-    <div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;">
-      <div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;">{{ weather.current_temp }}&deg;{{ weather.unit }}</div>
-      <div style="font-size: 16px; color: #444; margin: 6px 0;">{{ weather.conditions }}</div>
-      <div style="font-size: 14px; color: #6a9ec7;">H: {{ weather.high }}&deg; &nbsp;&bull;&nbsp; L: {{ weather.low }}&deg;</div>
-      <div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;">{{ weather.forecast }}</div>
+  <div style="padding: 28px 32px 20px 32px;">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">Weather in New York City</span>
     </div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">{{ weather.conditions }} &mdash; High {{ weather.high }}&deg; / Low {{ weather.low }}&deg;</div>
     {% if weather.hourly %}
-    <table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; color: #1a1a2e;">
-      <tr style="border-bottom: 2px solid #d0e8f7;">
-        <th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;">Time</th>
-        <th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;">Temp</th>
-        <th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;">Conditions</th>
-        <th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;">Precip</th>
-        <th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;">Humidity</th>
-        <th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;">Wind</th>
+    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
+      <tr style="border-bottom: 2px solid #1a1a1a;">
+        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Time</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Temp</th>
+        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Conditions</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Precip</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Humidity</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Wind</th>
       </tr>
       {% for h in weather.hourly %}
-      <tr style="border-bottom: 1px solid #e8f4fd;">
-        <td style="padding: 8px 6px; font-weight: 600;">{{ h.label }}</td>
-        <td style="padding: 8px 6px; text-align: center; font-weight: 700;">{{ h.temp }}&deg;F</td>
-        <td style="padding: 8px 6px; color: #555;">{{ h.conditions }}</td>
-        <td style="padding: 8px 6px; text-align: center;">{{ h.precip_chance }}</td>
-        <td style="padding: 8px 6px; text-align: center;">{{ h.humidity }}</td>
-        <td style="padding: 8px 6px; text-align: center; color: #555;">{{ h.wind }}</td>
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">{{ h.label }}</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">{{ h.temp }}&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">{{ h.conditions }}</td>
+        <td style="padding: 7px 6px; text-align: center;">{{ h.precip_chance }}</td>
+        <td style="padding: 7px 6px; text-align: center;">{{ h.humidity }}</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">{{ h.wind }}</td>
       </tr>
       {% endfor %}
     </table>
     {% endif %}
   </div>
 
-  <!-- Divider -->
-  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #f59e42, #fbbf24, #f59e42); border-radius: 2px;"></div></div>
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- Top News -->
-  <div style="padding: 28px 28px 24px 28px;">
-    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;">&#128240; Top News</div>
+  <div style="padding: 24px 32px 20px 32px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">Top News</span>
+    </div>
     {% for story in news %}
-    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;">
-      <!-- Date -->
-      <div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{% if story.published %}{{ story.published }}{% else %}Today{% endif %}{% if story.source %} &nbsp;&middot;&nbsp; <span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;">{{ story.source }}</span>{% endif %}</div>
+    <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{% if story.published %}{{ story.published }}{% else %}Today{% endif %}{% if story.source %} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ story.source }}</span>{% endif %}</div>
       <!-- Title -->
-      <a href="{{ story.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ story.title }}</a>
+      <a href="{{ story.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ story.title }}</a>
       <!-- Summary -->
       {% if story.summary %}
-        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ story.summary | safe }}</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ story.summary | safe }}</div>
       {% endif %}
     </div>
-    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
-    {% if not news %}<div style="font-size: 14px; color: #888; font-style: italic;">No news available today.</div>{% endif %}
+    {% if not news %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No news available today.</div>{% endif %}
   </div>
 
-  <!-- Divider -->
-  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #a855f7, #c084fc, #a855f7); border-radius: 2px;"></div></div>
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- Podcasts -->
-  <div style="padding: 28px 28px 24px 28px;">
-    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;">&#127897;&#65039; Podcast Episodes</div>
+  <div style="padding: 24px 32px 20px 32px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">Podcast Episodes</span>
+    </div>
     {% for ep in podcasts %}
-    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;">
-      <!-- Date + Podcast name -->
-      <div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{{ ep.published }} &nbsp;&middot;&nbsp; {{ ep.podcast }}</div>
+    <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
+      <!-- Date + Podcast -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ ep.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ ep.podcast }}</span></div>
       <!-- Title -->
-      <a href="{{ ep.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ ep.title }}</a>
+      <a href="{{ ep.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ ep.title }}</a>
       <!-- Summary -->
       {% if ep.summary %}
-        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ ep.summary | safe }}</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ ep.summary | safe }}</div>
       {% endif %}
     </div>
-    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
-    {% if not podcasts %}<div style="font-size: 14px; color: #888; font-style: italic;">No new episodes this week.</div>{% endif %}
+    {% if not podcasts %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new episodes this week.</div>{% endif %}
   </div>
 
-  <!-- Divider -->
-  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #10b981, #6ee7b7, #10b981); border-radius: 2px;"></div></div>
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- AI Security Papers -->
-  <div style="padding: 28px 28px 24px 28px;">
-    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;">&#128196; AI Security Papers</div>
+  <div style="padding: 24px 32px 20px 32px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">AI Security Papers</span>
+    </div>
     {% for paper in papers %}
     {% set title_lower = paper.title | lower %}
-    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;">
+    <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
       <!-- Date + Authors -->
-      <div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{{ paper.published }} &nbsp;&middot;&nbsp; {{ paper.authors[:3] | join(", ") }}{% if paper.authors | length > 3 %} et al.{% endif %}{% if paper.citation_count is not none and paper.citation_count %} &nbsp;&middot;&nbsp; {{ paper.citation_count }} citations{% endif %}</div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ paper.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ paper.authors[:3] | join(", ") }}{% if paper.authors | length > 3 %} et al.{% endif %}</span>{% if paper.citation_count is not none and paper.citation_count %} &nbsp;&bull;&nbsp; {{ paper.citation_count }} citations{% endif %}</div>
       <!-- Title -->
-      <a href="{{ paper.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ paper.title }}</a>
+      <a href="{{ paper.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ paper.title }}</a>
       <!-- Topic badges -->
       {% set abstract_lower = (paper.abstract | default('')) | lower %}
       {% set text_lower = title_lower ~ ' ' ~ abstract_lower %}
       <div style="margin-top: 8px;">
-        {% if 'prompt injection' in text_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">prompt injection</span>{% endif %}
-        {% if 'jailbreak' in text_lower %}<span style="display: inline-block; background: #fce7f3; color: #9d174d; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">jailbreak</span>{% endif %}
-        {% if 'model extraction' in text_lower or 'distillation attack' in text_lower %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">model extraction</span>{% endif %}
-        {% if 'phishing' in text_lower or 'social engineering' in text_lower or 'clickfix' in text_lower %}<span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">social engineering</span>{% endif %}
-        {% if 'malware' in text_lower or 'obfuscat' in text_lower %}<span style="display: inline-block; background: #1f2937; color: #f9fafb; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">malware</span>{% endif %}
-        {% if 'agentic' in text_lower or 'autonomous agent' in text_lower %}<span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">agentic AI</span>{% endif %}
-        {% if 'llm-as-a-judge' in text_lower or 'agent-as-a-judge' in text_lower or 'llm as judge' in text_lower %}<span style="display: inline-block; background: #dbeafe; color: #1e40af; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">LLM-as-judge</span>{% endif %}
-        {% if 'sycophancy' in text_lower or 'sabotage' in text_lower or 'behavioral evaluation' in text_lower %}<span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">behavioral eval</span>{% endif %}
-        {% if 'privacy' in text_lower %}<span style="display: inline-block; background: #ccfbf1; color: #115e59; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">privacy</span>{% endif %}
-        {% if 'red team' in text_lower %}<span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">red teaming</span>{% endif %}
-        {% if 'adversarial' in text_lower %}<span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">adversarial</span>{% endif %}
-        {% if 'safety' in text_lower or 'alignment' in text_lower %}<span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">safety</span>{% endif %}
-        {% if 'nist' in text_lower or 'taxonomy' in text_lower %}<span style="display: inline-block; background: #f1f5f9; color: #334155; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">NIST taxonomy</span>{% endif %}
-        {% if 'guardrail' in text_lower %}<span style="display: inline-block; background: #f3e8ff; color: #6b21a8; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;">guardrail</span>{% endif %}
+        {% if 'prompt injection' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #c0392b; color: #c0392b; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">prompt injection</span>{% endif %}
+        {% if 'jailbreak' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">jailbreak</span>{% endif %}
+        {% if 'model extraction' in text_lower or 'distillation attack' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #d35400; color: #d35400; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">model extraction</span>{% endif %}
+        {% if 'phishing' in text_lower or 'social engineering' in text_lower or 'clickfix' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #c0392b; color: #c0392b; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">social engineering</span>{% endif %}
+        {% if 'malware' in text_lower or 'obfuscat' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #1a1a1a; color: #1a1a1a; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">malware</span>{% endif %}
+        {% if 'agentic' in text_lower or 'autonomous agent' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">agentic AI</span>{% endif %}
+        {% if 'llm-as-a-judge' in text_lower or 'agent-as-a-judge' in text_lower or 'llm as judge' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2980b9; color: #2980b9; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">LLM-as-judge</span>{% endif %}
+        {% if 'sycophancy' in text_lower or 'sabotage' in text_lower or 'behavioral evaluation' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">behavioral eval</span>{% endif %}
+        {% if 'privacy' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #16a085; color: #16a085; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">privacy</span>{% endif %}
+        {% if 'red team' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #d35400; color: #d35400; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">red teaming</span>{% endif %}
+        {% if 'adversarial' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">adversarial</span>{% endif %}
+        {% if 'safety' in text_lower or 'alignment' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>{% endif %}
+        {% if 'nist' in text_lower or 'taxonomy' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">NIST taxonomy</span>{% endif %}
+        {% if 'guardrail' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">guardrail</span>{% endif %}
       </div>
       <!-- Summary -->
       {% set paper_summary = paper.quick_summary if paper.quick_summary else paper.abstract[:300] ~ ('...' if paper.abstract | length > 300 else '') %}
-      <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ paper_summary | safe }}</div>
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ paper_summary | safe }}</div>
     </div>
-    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
-    {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic;">No relevant papers found this week.</div>{% endif %}
+    {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No relevant papers found this week.</div>{% endif %}
   </div>
 
-  <!-- Divider -->
-  <div style="padding: 0 28px;"><div style="height: 2px; background: linear-gradient(to right, #dc2626, #f87171, #dc2626); border-radius: 2px;"></div></div>
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- AI Security News -->
-  <div style="padding: 28px 28px 24px 28px;">
-    <div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #dc2626; margin: 0 0 20px 0;">&#128737; AI Security News</div>
+  <div style="padding: 24px 32px 20px 32px;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">AI Security News</span>
+    </div>
     {% for item in ai_security_news %}
-    <div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;">
+    <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
       <!-- Date -->
-      <div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">{% if item.published %}{{ item.published }}{% else %}Today{% endif %}{% if item.source %} &nbsp;&middot;&nbsp; <span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;">{{ item.source }}</span>{% endif %}</div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{% if item.published %}{{ item.published }}{% else %}Today{% endif %}{% if item.source %} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ item.source }}</span>{% endif %}</div>
       <!-- Title -->
-      <a href="{{ item.link }}" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;">{{ item.title }}</a>
+      <a href="{{ item.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.title }}</a>
       <!-- Summary -->
       {% if item.summary %}
-        <div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;">{{ item.summary | safe }}</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.summary | safe }}</div>
       {% endif %}
     </div>
-    {% if not loop.last %}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"><tr><td style="height: 8px; line-height: 8px; font-size: 1px;">&nbsp;</td></tr></table>{% endif %}
     {% endfor %}
-    {% if not ai_security_news %}<div style="font-size: 14px; color: #888; font-style: italic;">No AI security news today.</div>{% endif %}
+    {% if not ai_security_news %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No AI security news today.</div>{% endif %}
   </div>
 
   <!-- Footer -->
-  <div style="padding: 28px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0;">
-    Generated automatically &middot; <a href="feed.xml" style="color: #6c63ff; text-decoration: none;">Subscribe via RSS</a>
+  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
+    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Generated automatically &middot; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
   </div>
 
 </div>
