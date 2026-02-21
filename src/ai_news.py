@@ -1,7 +1,7 @@
 """Fetch AI security news headlines from Google News RSS search."""
 
 import logging
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
 import feedparser
@@ -78,7 +78,7 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
 
         for query in SEARCH_QUERIES:
             try:
-                url = f"https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
+                url = f"https://news.google.com/rss/search?q={query}+when:7d&hl=en-US&gl=US&ceid=US:en"
                 feed = feedparser.parse(url)
                 for entry in feed.entries:
                     dedup_key = entry.title.lower()[:60]
@@ -127,6 +127,10 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
                 "raw_text": raw_text,
                 "_score": score,
             })
+
+        # Filter out articles older than 7 days
+        cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+        scored = [s for s in scored if _parse_pub_date(s.get("published", "")) >= cutoff]
 
         # Sort by relevance score desc, then by date desc
         scored.sort(key=lambda s: (s["_score"], _parse_pub_date(s.get("published", ""))), reverse=True)

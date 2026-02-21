@@ -70,9 +70,13 @@ def _build_prompt(sections: dict) -> str:
         "If it fails, he says he\\'ll push a <strong>9.5% property tax hike</strong> — roughly <strong>$800/year more</strong> for a median Brooklyn homeowner.'\n\n"
         "Return ONLY valid JSON with no markdown formatting or code blocks.\n\n"
         "FORMATTING RULES:\n"
-        "- Use <strong> tags to bold key terms, names, and numbers.\n"
+        "- Use <strong> tags to bold the phrases that hammer home the key takeaway — the part someone would highlight if skimming. "
+        "Bold multi-word phrases, not isolated keywords. E.g. '<strong>banned all new gas car sales starting 2035</strong>', "
+        "not '<strong>banned</strong> all new <strong>gas car</strong> sales starting <strong>2035</strong>'.\n"
         "- For news: 2-3 sentences of specific facts.\n"
-        "- For podcasts: 3-4 sentences. Pull out the most concrete claims, numbers, or predictions the speakers made.\n"
+        "- For podcasts: 3-4 sentences. Pull out the most concrete claims, numbers, or predictions the speakers made. "
+        "IGNORE all ads, sponsor reads, promo codes, and product pitches (e.g. 'brought to you by', 'use code', 'check out', 'sign up at'). "
+        "Never mention sponsors, advertisers, or promotional URLs in your summary.\n"
         "- For papers: 1-2 sentences. State what the method achieves and the specific result (e.g. accuracy, improvement percentage).\n\n"
     ]
 
@@ -80,6 +84,8 @@ def _build_prompt(sections: dict) -> str:
         parts.append("\nNEWS ARTICLES:")
         for i, item in enumerate(sections["news"], 1):
             text = (item.get("raw_text") or "")[:3000]
+            if len(text) < 100:
+                text = "(No article text available — write a brief, factual summary based on the headline.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
     if sections.get("podcasts"):
@@ -100,21 +106,25 @@ def _build_prompt(sections: dict) -> str:
         parts.append("\nARXIV PAPERS:")
         for i, item in enumerate(sections["papers"], 1):
             text = (item.get("raw_text") or "")[:1500]
+            if len(text) < 50:
+                text = "(No abstract available — summarize based on the paper title.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
     if sections.get("ai_security_news"):
         parts.append("\nAI SECURITY NEWS ARTICLES:")
         for i, item in enumerate(sections["ai_security_news"], 1):
             text = (item.get("raw_text") or "")[:3000]
+            if len(text) < 100:
+                text = "(No article text available — write a brief, factual summary based on the headline.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
     parts.append(
         '\nReturn JSON exactly like this (with the same number of items per section):\n'
         '{\n'
-        '  "news": ["2-3 sentence summary with <strong>key terms</strong> bolded.", ...],\n'
-        '  "ai_security_news": ["2-3 sentence summary with <strong>key terms</strong> bolded.", ...],\n'
-        '  "podcasts": ["3-4 sentence summary with <strong>guest names</strong> and <strong>topics</strong> bolded.", ...],\n'
-        '  "papers": ["1-2 sentence summary with <strong>technique</strong> and <strong>findings</strong> bolded.", ...]\n'
+        '  "news": ["2-3 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...],\n'
+        '  "ai_security_news": ["2-3 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...],\n'
+        '  "podcasts": ["3-4 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...],\n'
+        '  "papers": ["1-2 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...]\n'
         '}'
     )
 

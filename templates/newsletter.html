@@ -17,9 +17,9 @@
   </div>
 
   <!-- Weather -->
-  <div style="padding: 28px 32px 20px 32px;">
+  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
     <div style="text-align: center; margin-bottom: 16px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">Weather in New York City</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
     <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">{{ weather.conditions }} &mdash; High {{ weather.high }}&deg; / Low {{ weather.low }}&deg;</div>
     {% if weather.hourly %}
@@ -50,9 +50,9 @@
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- Top News -->
-  <div style="padding: 24px 32px 20px 32px;">
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">Top News</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">Top News</span>
     </div>
     {% for story in news %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
@@ -73,9 +73,9 @@
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- Podcasts -->
-  <div style="padding: 24px 32px 20px 32px;">
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">Podcast Episodes</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">Podcast Episodes</span>
     </div>
     {% for ep in podcasts %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
@@ -96,9 +96,9 @@
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- AI Security Papers -->
-  <div style="padding: 24px 32px 20px 32px;">
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">AI Security Papers</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security Papers</span>
     </div>
     {% for paper in papers %}
     {% set title_lower = paper.title | lower %}
@@ -138,9 +138,9 @@
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- AI Security News -->
-  <div style="padding: 24px 32px 20px 32px;">
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #d35400;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; font-weight: 700; border-bottom: 2px solid #1a1a1a; padding-bottom: 3px;">AI Security News</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #d35400; font-weight: 700; border-bottom: 2px solid #d35400; padding-bottom: 3px;">AI Security News</span>
     </div>
     {% for item in ai_security_news %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
