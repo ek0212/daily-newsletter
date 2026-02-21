@@ -69,41 +69,32 @@ def generate_index():
 
 
 def generate_feed():
-    """Regenerate the RSS 2.0 feed from all archived posts."""
+    """Regenerate the RSS 2.0 feed from all archived posts.
+
+    Uses CDATA sections for content:encoded so HTML is delivered raw
+    to RSS readers and email services like Blogtrottr (not XML-escaped).
+    """
     ensure_dirs()
     posts = _get_sorted_posts()
 
-    rss = Element("rss", version="2.0")
-    channel = SubElement(rss, "channel")
-    SubElement(channel, "title").text = "Daily Briefing Newsletter"
-    SubElement(channel, "link").text = SITE_URL
-    SubElement(channel, "description").text = "A daily curated newsletter with weather, news, podcasts, and AI security papers."
-    SubElement(channel, "language").text = "en-us"
-    SubElement(channel, "lastBuildDate").text = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    # We build the feed XML manually to support CDATA in content:encoded,
+    # since xml.etree.ElementTree doesn't support CDATA natively.
+    items_xml = []
 
-    atom_link = SubElement(channel, "{http://www.w3.org/2005/Atom}link")
-    atom_link.set("href", f"{SITE_URL}/feed.xml")
-    atom_link.set("rel", "self")
-    atom_link.set("type", "application/rss+xml")
-
-    for date_str in posts[:30]:  # last 30 entries
+    for date_str in posts[:30]:
         json_path = POSTS_DIR / f"{date_str}.json"
-        html_path = POSTS_DIR / f"{date_str}.html"
         if not json_path.exists():
             continue
 
         data = json.loads(json_path.read_text())
-        item = SubElement(channel, "item")
-        SubElement(item, "title").text = f"Daily Briefing - {data.get('date', date_str)}"
+        title = f"Daily Briefing - {data.get('date', date_str)}"
         link = f"{SITE_URL}/posts/{date_str}.html"
-        SubElement(item, "link").text = link
-        SubElement(item, "guid").text = link
 
         # Build a summary from the data
         summary_parts = []
         if data.get("weather"):
             w = data["weather"]
-            summary_parts.append(f"Weather: {w.get('current_temp', '?')}°{w.get('unit', 'F')} - {w.get('conditions', '')}")
+            summary_parts.append(f"Weather: {w.get('current_temp', '?')}\u00b0{w.get('unit', 'F')} - {w.get('conditions', '')}")
         news = data.get("news", [])
         if news:
             summary_parts.append(f"{len(news)} top news stories")
@@ -116,31 +107,64 @@ def generate_feed():
         ai_news = data.get("ai_security_news", [])
         if ai_news:
             summary_parts.append(f"{len(ai_news)} AI security news")
+        description = _xml_escape(" | ".join(summary_parts)) if summary_parts else "Daily newsletter"
 
-        SubElement(item, "description").text = " | ".join(summary_parts) if summary_parts else "Daily newsletter"
-
-        # Include email-formatted HTML content for RSS readers
+        # Get email HTML content
         email_path = POSTS_DIR / f"{date_str}.email.html"
+        html_path = POSTS_DIR / f"{date_str}.html"
+        html_content = ""
         if email_path.exists():
-            content = email_path.read_text()
-            encoded = SubElement(item, "{http://purl.org/rss/1.0/modules/content/}encoded")
-            encoded.text = content
+            html_content = email_path.read_text()
         elif html_path.exists():
-            content = html_path.read_text()
-            encoded = SubElement(item, "{http://purl.org/rss/1.0/modules/content/}encoded")
-            encoded.text = content
+            html_content = html_path.read_text()
 
-        # Parse date for pubDate
+        # pubDate
+        pub_date = ""
         try:
             dt = datetime.strptime(date_str, "%Y-%m-%d")
-            SubElement(item, "pubDate").text = dt.strftime("%a, %d %b %Y 07:00:00 +0000")
+            pub_date = dt.strftime("%a, %d %b %Y 07:00:00 +0000")
         except ValueError:
             pass
 
-    indent(rss, space="  ")
-    xml_bytes = tostring(rss, encoding="unicode", xml_declaration=False)
-    feed_content = '<?xml version="1.0" encoding="UTF-8"?>\n' + xml_bytes
+        item_parts = [
+            "    <item>",
+            f"      <title>{_xml_escape(title)}</title>",
+            f"      <link>{_xml_escape(link)}</link>",
+            f"      <guid>{_xml_escape(link)}</guid>",
+            f"      <description>{description}</description>",
+        ]
+        if html_content:
+            item_parts.append(f"      <content:encoded><![CDATA[{html_content}]]></content:encoded>")
+        if pub_date:
+            item_parts.append(f"      <pubDate>{pub_date}</pubDate>")
+        item_parts.append("    </item>")
+        items_xml.append("\n".join(item_parts))
+
+    build_date = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    feed_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Daily Briefing Newsletter</title>
+    <link>{SITE_URL}</link>
+    <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
+    <language>en-us</language>
+    <lastBuildDate>{build_date}</lastBuildDate>
+    <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
+{chr(10).join(items_xml)}
+  </channel>
+</rss>"""
+
     (SITE_DIR / "feed.xml").write_text(feed_content)
+
+
+def _xml_escape(text: str) -> str:
+    """Escape special XML characters in text content."""
+    return (text
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+            .replace('"', "&quot;")
+            .replace("'", "&apos;"))
 
 
 def update_site(data: dict, email_html: str):
