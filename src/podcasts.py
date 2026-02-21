@@ -22,6 +22,7 @@ YOUTUBE_CHANNELS = {
     "This Week in Startups": "https://www.youtube.com/feeds/videos.xml?channel_id=UCCjyq_K1Xwfg8Lndy7lKMpA",
     "Dwarkesh Podcast": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1SfmNb5y0eT4hEZyNh7OHg",
     "Lex Fridman Podcast": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
+    "AI Daily Brief": "https://www.youtube.com/feeds/videos.xml?channel_id=UCmc5j3MNKe4JKMCW6ukvmiQ",
 }
 
 MAX_EPISODES = 5
