@@ -4,6 +4,7 @@
 import json
 import logging
 import os
+import shutil
 from datetime import datetime
 from pathlib import Path
 import xml.etree.ElementTree as ET
@@ -17,6 +18,7 @@ logger = logging.getLogger(__name__)
 PROJECT_ROOT = Path(__file__).parent.parent
 SITE_DIR = PROJECT_ROOT / "site"
 POSTS_DIR = SITE_DIR / "posts"
+STATIC_DIR = PROJECT_ROOT / "static"
 
 # Configurable base URL for GitHub Pages
 SITE_URL = os.getenv("SITE_URL", "https://ek0212.github.io/daily-newsletter")
@@ -25,6 +27,11 @@ SITE_URL = os.getenv("SITE_URL", "https://ek0212.github.io/daily-newsletter")
 def ensure_dirs():
     SITE_DIR.mkdir(exist_ok=True)
     POSTS_DIR.mkdir(exist_ok=True)
+    # Copy static assets (favicon, etc.) into site dir
+    if STATIC_DIR.exists():
+        for f in STATIC_DIR.iterdir():
+            if f.is_file():
+                shutil.copy2(f, SITE_DIR / f.name)
 
 
 def save_archive_json(data: dict, date_str: str):
@@ -206,6 +213,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily Briefing &mdash; {display_date}</title>
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
   body {{ font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }}
@@ -261,6 +269,7 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daily Briefing</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="alternate" type="application/rss+xml" title="Daily Briefing RSS" href="feed.xml">
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
