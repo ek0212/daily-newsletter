@@ -5,8 +5,446 @@
     <link />
     <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Feb 2026 11:34:22 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Feb 2026 11:22:28 +0000</lastBuildDate>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Briefing - Saturday, February 21, 2026</title>
+      <link>/posts/2026-02-21.html</link>
+      <guid>/posts/2026-02-21.html</guid>
+      <description>Weather: 39°F - Slight Chance Light Rain | 5 top news stories | 3 podcast episodes | 5 AI security papers | 4 AI security news</description>
+      <content:encoded>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset="utf-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;/head&gt;
+&lt;body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f0f0f5; margin: 0; padding: 0; color: #1a1a1a;"&gt;
+&lt;div style="max-width: 640px; margin: 0 auto; background: #fff;"&gt;
+
+  &lt;!-- Header --&gt;
+  &lt;div style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); color: #fff; padding: 48px 32px; text-align: center;"&gt;
+    &lt;h1 style="margin: 0; font-size: 32px; font-weight: 700; letter-spacing: -0.5px;"&gt;Your Daily Briefing&lt;/h1&gt;
+    &lt;div style="margin-top: 12px; font-size: 20px; font-weight: 500; opacity: 0.95;"&gt;Saturday, February 21, 2026&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- Weather --&gt;
+  &lt;div style="padding: 32px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #2b7de9; margin: 0 0 16px 0;"&gt;&amp;#9728;&amp;#65039; Weather in NYC&lt;/div&gt;
+    &lt;div style="background: #e8f4fd; border-radius: 12px; padding: 24px; text-align: center; border: 1px solid #d0e8f7;"&gt;
+      &lt;div style="font-size: 52px; font-weight: 700; color: #1a1a2e; line-height: 1;"&gt;39&amp;deg;F&lt;/div&gt;
+      &lt;div style="font-size: 16px; color: #444; margin: 6px 0;"&gt;Slight Chance Light Rain&lt;/div&gt;
+      &lt;div style="font-size: 14px; color: #6a9ec7;"&gt;H: 47&amp;deg; &amp;nbsp;&amp;bull;&amp;nbsp; L: 38&amp;deg;&lt;/div&gt;
+      &lt;div style="font-size: 13px; color: #555; margin-top: 14px; line-height: 1.6; text-align: left; background: rgba(255,255,255,0.6); border-radius: 8px; padding: 12px 14px;"&gt;A slight chance of rain. Mostly cloudy, with a low around 38. West wind around 10 mph. Chance of precipitation is 20%.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;table style="width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 13px; color: #1a1a2e;"&gt;
+      &lt;tr style="border-bottom: 2px solid #d0e8f7;"&gt;
+        &lt;th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Time&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Temp&lt;/th&gt;
+        &lt;th style="text-align: left; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Conditions&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Precip&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Humidity&lt;/th&gt;
+        &lt;th style="text-align: center; padding: 8px 6px; color: #2b7de9; font-weight: 700;"&gt;Wind&lt;/th&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7am&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;39&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Sunny&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;2%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;76%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;10 mph W&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;9am&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;41&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Sunny&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;2%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;70%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;10 mph W&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;3pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;46&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Partly Sunny&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;5%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;55%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;8 mph NW&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;5pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;46&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Partly Sunny&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;0%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;55%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;7 mph NW&lt;/td&gt;
+      &lt;/tr&gt;
+      
+      &lt;tr style="border-bottom: 1px solid #e8f4fd;"&gt;
+        &lt;td style="padding: 8px 6px; font-weight: 600;"&gt;7pm&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; font-weight: 700;"&gt;45&amp;deg;F&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; color: #555;"&gt;Mostly Cloudy&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;1%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center;"&gt;62%&lt;/td&gt;
+        &lt;td style="padding: 8px 6px; text-align: center; color: #555;"&gt;6 mph NW&lt;/td&gt;
+      &lt;/tr&gt;
+      
+    &lt;/table&gt;
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #f59e42, #fbbf24, #f59e42); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Top News --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #d97706; margin: 0 0 20px 0;"&gt;&amp;#128240; Top News&lt;/div&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Sat, 21 Feb 2026 10:09:28 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;BBC&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xY3MwVzZQWWwyeU9GYnA2eE1Ea1BZUUdrYzcxdXJhRzFhdGFwNHZJN1F3TExsVmhDTUFVbjVfNUwwaGxOV2lNWHpyRmdDWW5LR3kweXY4TXQ4Zw?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Government considers removing Andrew from royal line of succession&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Defence Minister &lt;strong&gt;Luke Pollard&lt;/strong&gt; confirmed the government is "absolutely" working with &lt;strong&gt;Buckingham Palace&lt;/strong&gt; on legislation to remove &lt;strong&gt;Andrew Mountbatten-Windsor&lt;/strong&gt; from the royal line of succession, saying it's the "right thing to do" irrespective of the police investigation. &lt;strong&gt;Andrew&lt;/strong&gt; was arrested on &lt;strong&gt;Thursday evening&lt;/strong&gt;, released &lt;strong&gt;11 hours later&lt;/strong&gt; under investigation for misconduct in public office, and police are expected to continue searching his &lt;strong&gt;Royal Lodge&lt;/strong&gt; until &lt;strong&gt;Monday&lt;/strong&gt;.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Sat, 21 Feb 2026 05:25:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;6abc Philadelphia&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQUElVNjVlMkhac1M1RlRuVmRXTy1hZUpYelJBbmkwRlN3YmxlUGRmcXB3dlR5eFFmVkZEaGZFMmZmT0FkRm5hMXFpaW8wX3B5c0xnWFpUdzYxajAxQncwbkw3WmwyRkZEbUtKVGN2MXRHRm5OdVNuWFRrTEtGdnpQU0Mxc0dfZUhTeVlLaThKb1hxOXZqekU1dXh4RENWeWFWLWZNWmZNajdLM3duNXl0Wg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Tracking heavy snow in the Philadelphia; blizzard conditions possible near shore | Live Updates&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;A &lt;strong&gt;Winter Storm Watch&lt;/strong&gt; goes into effect &lt;strong&gt;Sunday&lt;/strong&gt; for the &lt;strong&gt;Philadelphia region&lt;/strong&gt;, with current models projecting &lt;strong&gt;8 to 12 inches&lt;/strong&gt; of snow for a large area and over &lt;strong&gt;12 inches&lt;/strong&gt; along some shore points in &lt;strong&gt;South Jersey&lt;/strong&gt; and &lt;strong&gt;Delaware&lt;/strong&gt;. Heaviest snowfall is expected &lt;strong&gt;Sunday evening through Monday morning&lt;/strong&gt;, potentially bringing blizzard conditions, thundersnow, and &lt;strong&gt;50 mph wind gusts&lt;/strong&gt; along the coast, with coastal flooding and beach erosion likely.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Sat, 21 Feb 2026 03:47:51 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Al Jazeera&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxOX29mYzBpWGN2UHRvUjRVS25Ddi1hLUNoMmxmYWFaX2RybGllOTNBeTZrQ0dtQXl5alNmTXZCSHhZRW82RTF2Znh0cFpfeGlIZHdiOTdqUVl3VS1VRUhpd25uVGwyUzJ3dTZtekNnRVFEQTE4Y0lQSnQ5OGxncm9HOTdjeGZxUTc2UE9SX1I4OTBWTHphdktHbVd0ck9OdWhuWUNiS1dyTEVIMkhZMk1KaVVuT2bSAboBQVVfeXFMTVlSN0hhMDIxWW13Z2lrcGlUaDlvV0ZLbWdZYUlkUnc1aEJnRXFlTGh2NEl4cVdMVlRYZU5iZEZjVnk3WjlnLVpmQzhBdU1aM0hqcUVFeG4yX1NrYjZOTnJzSG9ScDRwZkRCaGVCeGFjdVVxVkdwNVJtNm5sM3dDVGFidUFSaGc4WnBsRmU2U01DOHlKeEJ6eU03Nk9fanlXTUxBWXowaXNva3I4QnhYcTFUeHM0Vm9FcTdR?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;US military says it attacked vessel in Pacific Ocean, killing three people&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;US military's Southern Command (SOUTHCOM)&lt;/strong&gt; executed a "lethal kinetic strike" on a vessel in the eastern &lt;strong&gt;Pacific Ocean&lt;/strong&gt; on &lt;strong&gt;Friday&lt;/strong&gt;, killing &lt;strong&gt;three men&lt;/strong&gt; it claimed were involved in drug trafficking. This brings the death toll from &lt;strong&gt;Trump administration attacks&lt;/strong&gt; on vessels in the region to at least &lt;strong&gt;148 people&lt;/strong&gt; killed across &lt;strong&gt;43 attacks&lt;/strong&gt; since early &lt;strong&gt;September&lt;/strong&gt;. &lt;strong&gt;Ben Saul&lt;/strong&gt;, the &lt;strong&gt;UN special rapporteur on human rights and counterterrorism&lt;/strong&gt;, criticized these actions as confessions to "murder of civilians at sea" and called for accountability.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Fri, 20 Feb 2026 23:14:09 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Ars Technica&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQSVh5UktIRXhaQmhaWURULVZEZ3M4UGhfRkhpNlJhMjBUenBwd1dOVlBGNXVEeE53bTQzYnZNblBKMW1CVXJoZDFvZUxFYnF2NXpxY21pNk5OS3VBUEtfalJRZ2tmeGVnTFlBVUZEMVZudHY3WU9nNDJEcEZJdE02NGgtdzJpOE40b1VER040RXRyTHVyVjhfa0lCY2NDQWo5eFMyRXF4UDh3WG83NEwzQg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;MAHA moms threaten to turn this car around as RFK Jr. flips on pesticide&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;US Health Secretary Robert F. Kennedy Jr.&lt;/strong&gt; publicly backed &lt;strong&gt;President Trump’s executive order Wednesday&lt;/strong&gt; to increase domestic production of &lt;strong&gt;glyphosate&lt;/strong&gt;, the active ingredient in &lt;strong&gt;Bayer’s Roundup&lt;/strong&gt;, invoking the &lt;strong&gt;Defense Production Act&lt;/strong&gt;. This reverses &lt;strong&gt;Kennedy’s 2024 presidential campaign&lt;/strong&gt; stance where he advocated banning &lt;strong&gt;glyphosate&lt;/strong&gt;, which he called a "likely culprit in America's chronic disease epidemic." &lt;strong&gt;Vani Hari&lt;/strong&gt;, known as "Food Babe" and an ally of &lt;strong&gt;Kennedy’s Make America Health Again (MAHA) movement&lt;/strong&gt;, expressed her speechlessness to &lt;strong&gt;The Washington Post&lt;/strong&gt; over his policy shift.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #f59e42;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #b45309; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Fri, 20 Feb 2026 22:24:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fef3c7; color: #92400e; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;CBS News&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiekFVX3lxTE5OWS1UODVzTWFvbmJ0MjFtSGh3QUdNQWNtZkg4NXVlOEJjUUFrMGNYa2x3bWtjWXE3OThpYmFpMnZKZ1JDR0tBSTFoWFFBbkx3QjJNUW85cjRnb3FGWFdXZHdpMlg2Wk1OZ0REREN6M2hEUThiUTNDaVV3?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Potential blizzard in Boston could drop a foot of snow or more Monday, weather forecast maps show&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;A major nor'easter, expected to undergo "bombogenesis" off the &lt;strong&gt;North Carolina coastline&lt;/strong&gt;, is forecast to bring &lt;strong&gt;10-16 inches&lt;/strong&gt; of snow to all of &lt;strong&gt;eastern Massachusetts&lt;/strong&gt;, including the &lt;strong&gt;Boston Metro&lt;/strong&gt; area, along and east of &lt;strong&gt;I-95&lt;/strong&gt;. The storm will begin after sunset &lt;strong&gt;Sunday&lt;/strong&gt;, with the heaviest snow falling from &lt;strong&gt;Sunday night through Monday afternoon&lt;/strong&gt;, potentially exceeding &lt;strong&gt;1 inch per hour&lt;/strong&gt;. Northeast wind gusts could reach &lt;strong&gt;55-70 mph or higher&lt;/strong&gt; across southeastern &lt;strong&gt;Massachusetts&lt;/strong&gt;, &lt;strong&gt;Cape Cod&lt;/strong&gt;, and the &lt;strong&gt;Islands&lt;/strong&gt;, causing widespread power outages, roof collapse risk, and coastal flooding.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #a855f7, #c084fc, #a855f7); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- Podcasts --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #8b5cf6; margin: 0 0 20px 0;"&gt;&amp;#127897;&amp;#65039; Podcast Episodes&lt;/div&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-21 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/We-Asked-3-Experts-How-to-Get-More-Value-out-of-OpenClaw--E2253-e3fcqp4" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;We Asked 3 Experts How to Get More Value out of OpenClaw | E2253&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;In this episode, &lt;strong&gt;Jordy Coltman&lt;/strong&gt;, creator of &lt;strong&gt;WeeklyClaw newsletter&lt;/strong&gt;, highlighted top time-wasting mistakes for new users and recommended new hardware as the ideal home for &lt;strong&gt;OpenClaw&lt;/strong&gt; agents. &lt;strong&gt;Tremaine Grant&lt;/strong&gt;, &lt;strong&gt;Founder/CEO of PulsePLUS&lt;/strong&gt;, demonstrated his "virtual office" interface and the "Heartbeat Protocol." &lt;strong&gt;Jesse Leimgruber&lt;/strong&gt;, creator of the &lt;strong&gt;OpenHome.com&lt;/strong&gt; smart speaker, showcased his &lt;strong&gt;OpenHome AI smart speakers&lt;/strong&gt;, designed to liberate agents from screens and make them proactive.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-19 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/When-Will-Openclaw-go-Mainstream---E2252-e3f9rua" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;When Will Openclaw go Mainstream? | E2252&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;In this episode, &lt;strong&gt;Matthew&lt;/strong&gt; asserted that &lt;strong&gt;OpenClaw&lt;/strong&gt; is not yet ready for the consumer mainstream, contrasting with &lt;strong&gt;Ryan's&lt;/strong&gt; view that it will give consumers new opportunities. Currently, only &lt;strong&gt;10%&lt;/strong&gt; of individuals possess the technical skills to install &lt;strong&gt;OpenClaw&lt;/strong&gt;, and &lt;strong&gt;Anthropic&lt;/strong&gt; has reportedly patched its pro plan to prevent &lt;strong&gt;OpenClaw&lt;/strong&gt; usage. &lt;strong&gt;Ryan&lt;/strong&gt; predicts a new &lt;strong&gt;OpenClaw fork&lt;/strong&gt; will emerge from the shadows, while &lt;strong&gt;Jason&lt;/strong&gt; expressed skepticism about the &lt;strong&gt;OpenClaw foundation's&lt;/strong&gt; future.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #a855f7;"&gt;
+      &lt;!-- Date + Podcast name --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #7c3aed; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; This Week in Startups&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Will-OpenAI-Tank-OpenClaw---E2251-e3f6nue" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Will OpenAI Tank OpenClaw? | E2251&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;Guests &lt;strong&gt;Hiten Shah&lt;/strong&gt; and &lt;strong&gt;Jesse Genet&lt;/strong&gt; discussed concerns about &lt;strong&gt;OpenAI's&lt;/strong&gt; hiring of &lt;strong&gt;OpenClaw&lt;/strong&gt; creator &lt;strong&gt;Peter Steinberger&lt;/strong&gt;. &lt;strong&gt;Jason Calacanis&lt;/strong&gt; predicted &lt;strong&gt;OpenAI&lt;/strong&gt; will offer everyone personalized closed-source assistants, while &lt;strong&gt;Jesse Genet&lt;/strong&gt; revealed her "non-Slop videos" aggregator app, and that her &lt;strong&gt;Mac Minis&lt;/strong&gt; now outnumber her children due to running agents. &lt;strong&gt;Hiten Shah&lt;/strong&gt; demonstrated live-training an &lt;strong&gt;OpenClaw skill&lt;/strong&gt; based on &lt;strong&gt;Jason’s book "Angel"&lt;/strong&gt; and showcased his &lt;strong&gt;OpenClaw-built "personal CRM,"&lt;/strong&gt; and &lt;strong&gt;John Arrow&lt;/strong&gt; discussed his &lt;strong&gt;AI Scott Adams&lt;/strong&gt; clone.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #10b981, #6ee7b7, #10b981); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- AI Security Papers --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #059669; margin: 0 0 20px 0;"&gt;&amp;#128196; AI Security Papers&lt;/div&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-18 &amp;nbsp;&amp;middot;&amp;nbsp; Johannes Bertram, Jonas Geiping&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.16756" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;NESSiE: The Necessary Safety Benchmark -- Identifying Errors that should not Exist&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper introduces &lt;strong&gt;NESSiE&lt;/strong&gt;, the &lt;strong&gt;NEceSsary SafEty benchmark&lt;/strong&gt; for LLMs, designed to reveal safety-relevant failures that should not exist given the low complexity of tasks. This benchmark offers minimal test cases for information and access security, acting as a lightweight sanity check that is a necessary prerequisite for any LLM deployment.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-18 &amp;nbsp;&amp;middot;&amp;nbsp; Sasha Behrouzi, Lichao Wu, Mohamadreza Rostami et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.16835" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;NeST: Neuron Selective Tuning for LLM Safety&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #d1fae5; color: #065f46; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;safety&lt;/span&gt;
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper introduces &lt;strong&gt;NeST (Neuron Selective Tuning)&lt;/strong&gt;, a method for &lt;strong&gt;LLM safety alignment&lt;/strong&gt; that aims to reduce the computational and storage overhead of full fine-tuning while offering more consistent safety gains than parameter-efficient methods like &lt;strong&gt;LoRA&lt;/strong&gt;. &lt;strong&gt;NeST&lt;/strong&gt; achieves this by selectively tuning specific neurons, providing a targeted and efficient approach to improving LLM safety.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-17 &amp;nbsp;&amp;middot;&amp;nbsp; Zarif Ikram, Arad Firouzkouhi, Stephen Tu et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.15823" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;CrispEdit: Low-Curvature Projections for Scalable Non-Destructive LLM Editing&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper introduces &lt;strong&gt;CrispEdit&lt;/strong&gt;, a scalable and principled &lt;strong&gt;second-order editing algorithm&lt;/strong&gt; for LLMs that addresses capability preservation by treating it as an explicit constraint. &lt;strong&gt;CrispEdit&lt;/strong&gt; formulates editing through low-curvature projections, unifying and generalizing existing methods to prevent the corruption of general LLM capabilities while making targeted behavioral changes.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-16 &amp;nbsp;&amp;middot;&amp;nbsp; Dongrui Liu, Yi Yu, Jie Zhang et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.14457" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Frontier AI Risk Management Framework in Practice: A Risk Analysis Technical Report v1.5&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        &lt;span style="display: inline-block; background: #e0e7ff; color: #3730a3; font-size: 10px; font-weight: 600; padding: 2px 8px; border-radius: 10px; margin-right: 4px;"&gt;agentic AI&lt;/span&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;This technical report, &lt;strong&gt;v1.5&lt;/strong&gt;, provides an updated and granular assessment of &lt;strong&gt;frontier AI risks&lt;/strong&gt;, focusing on the evolving capabilities of &lt;strong&gt;LLMs&lt;/strong&gt; and agentic AI. It analyzes risks across five critical dimensions: &lt;strong&gt;cyber offense, persuasion and manipulation, social engineering, autonomous replication and adaptation, and misuse&lt;/strong&gt;, aiming to identify unprecedented threats from advanced AI models.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #10b981;"&gt;
+      &lt;!-- Date + Authors --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #047857; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;2026-02-16 &amp;nbsp;&amp;middot;&amp;nbsp; Yixin Zhang, Ziyi Wang, Yiming Rong et al.&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://huggingface.co/papers/2602.14857" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;World Models for Policy Refinement in StarCraft II&lt;/a&gt;
+      &lt;!-- Topic badges --&gt;
+      
+      
+      &lt;div style="margin-top: 8px;"&gt;
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      &lt;/div&gt;
+      &lt;!-- Summary --&gt;
+      
+      &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The paper proposes &lt;strong&gt;StaR&lt;/strong&gt; (StarCraft II Agents with Refinement), an LLM-based agent for &lt;strong&gt;StarCraft II (SC2)&lt;/strong&gt; that integrates a learnable, action-conditioned transition model into its decision loop. This method bridges a gap by using a &lt;strong&gt;world model&lt;/strong&gt; for policy refinement in &lt;strong&gt;SC2's&lt;/strong&gt; complex, partially observable environment, unlike existing LLM-based agents that solely focus on policy improvement.&lt;/div&gt;
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Divider --&gt;
+  &lt;div style="padding: 0 28px;"&gt;&lt;div style="height: 2px; background: linear-gradient(to right, #dc2626, #f87171, #dc2626); border-radius: 2px;"&gt;&lt;/div&gt;&lt;/div&gt;
+
+  &lt;!-- AI Security News --&gt;
+  &lt;div style="padding: 28px 28px 24px 28px;"&gt;
+    &lt;div style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: #dc2626; margin: 0 0 20px 0;"&gt;&amp;#128737; AI Security News&lt;/div&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Sun, 12 Oct 2025 07:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;wiz.io&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMiYEFVX3lxTE1INGZJTUVtQUxoOHRpZ2VidDBvSVlqVWY1X25CS19IVHFqbmdjSThaSU1yNmdaUlMwU3J6ZjdmYW1NbllfYUZVYUNrdmFTV1pMS3ZmWTZPWlA3a1dGQzAxWQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;LLM Security for Enterprises: Risks and Best Practices&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;LLM security&lt;/strong&gt; is a full-stack discipline protecting models, data pipelines, infrastructure, and interfaces across the &lt;strong&gt;AI lifecycle&lt;/strong&gt;, with risks like prompt injection, training data poisoning, and model theft outlined by the &lt;strong&gt;OWASP Top 10 for LLM Applications&lt;/strong&gt;. Effective security requires best practices such as adversarial training, input validation, strict access control, and secure model deployment to mitigate evolving threats. &lt;strong&gt;AI Security Posture Management (AI-SPM) tools&lt;/strong&gt; are crucial for enterprises to gain visibility, assess risk, and manage the security of their AI assets at scale.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Fri, 19 Sep 2025 07:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Qualys&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxOYlRodUFtZU0ybXVnVVVIaFlLdzF2YWhVS21aUFo4d1VnWDdUWTdreS1oQVRTMTF6bE5Xd2VGWFZReWJfem1jdEExeGFYUjZTWVdTLUw0ZFd6dlBHcXhnM3Z5SUdrcjNWOUJLWGNmNEE4clNZNk8wc2daQXhXcC11ZVI2LTBsampzbng2UVNoaHJ0V0V2c1NCTl9ubmpoYnplcDllN3ZCdGZmdC1ob01YUHJVMHlud3B3bkVMY29OOUFxSEFtOWNjVU40N00zNldoNktnRg?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;OWASP Top 10 LLM Risks 2025: Key AI Security Updates&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;OWASP Top 10 for LLM Applications 2025&lt;/strong&gt;, finalized in late &lt;strong&gt;2024&lt;/strong&gt;, maintains &lt;strong&gt;Prompt Injection&lt;/strong&gt; as the top risk, while &lt;strong&gt;Sensitive Information Disclosure&lt;/strong&gt; and &lt;strong&gt;Supply Chain&lt;/strong&gt; notably climbed the list. New vulnerabilities added include &lt;strong&gt;System Prompt Leakage&lt;/strong&gt; and &lt;strong&gt;Vector and Embedding Weaknesses&lt;/strong&gt;, specifically addressing RAG and embedding-based methods. The list also expanded &lt;strong&gt;Misinformation&lt;/strong&gt; to include overreliance, &lt;strong&gt;Unbounded Consumption&lt;/strong&gt; to cover resource management and operational costs, and &lt;strong&gt;Excessive Agency&lt;/strong&gt; to address risks from unchecked permissions in autonomous AI systems.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Mon, 28 Jul 2025 07:00:00 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;Fujitsu Global&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxOOFAtTlEydlhzX25xaDFOaE1hV3JhVDBNX2N2b0owWDNrOC1rY1JjTE1tck5EODJqeWdfd3V6eFZYRG83aXQ5Mk1WWHdUQjMzLTRlMmpCYi0zR1gzMHhHNzVfMnpka0xWcVhzMUUzTWZVeElMRFJSWnA1dHpmazRkTXlKNE1PV1UwZ2VQQTFpZ1F4UC00a3B0Z3pLTUF3Wjd2OG11OHR1aEdLMlV1NzdBLQ?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Next-generation security through AI agent collaboration: Proactively addressing vulnerabilities and emerging threats&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;&lt;strong&gt;Fujitsu&lt;/strong&gt; introduced &lt;strong&gt;Multi-AI agent security technology&lt;/strong&gt; on &lt;strong&gt;July 28, 2025&lt;/strong&gt;, featuring autonomous AI agents that collaborate to proactively address IT system vulnerabilities and generative AI app security. The "System-Protecting" technology deploys an &lt;strong&gt;Attack AI agent&lt;/strong&gt;, a &lt;strong&gt;Defense AI agent&lt;/strong&gt;, and a &lt;strong&gt;Test AI agent&lt;/strong&gt;, which collaboratively suggest and validate countermeasures in a virtual environment. This approach aims to allow system administrators without specialized security expertise to implement appropriate measures, reducing IT teams’ security workload.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    &lt;table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: collapse;"&gt;&lt;tr&gt;&lt;td style="height: 8px; line-height: 8px; font-size: 1px;"&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+    
+    &lt;div style="background: #fafafa; border: 2px solid #e5e5e5; border-radius: 10px; padding: 20px; margin-bottom: 24px; border-left: 6px solid #dc2626;"&gt;
+      &lt;!-- Date --&gt;
+      &lt;div style="font-size: 12px; font-weight: 600; color: #991b1b; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;"&gt;Thu, 12 Jun 2025 01:15:38 GMT &amp;nbsp;&amp;middot;&amp;nbsp; &lt;span style="display: inline-block; background: #fee2e2; color: #991b1b; font-size: 11px; font-weight: 600; padding: 2px 8px; border-radius: 10px;"&gt;TrendMicro&lt;/span&gt;&lt;/div&gt;
+      &lt;!-- Title --&gt;
+      &lt;a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxQVG9jVEJxcUhDdGtUaWF6MnZWT28zVEJ0N3BWeVBxbmY4cWJESlRQYjFHNEhBaEQweGNNZGpxbUUzS216allDcjMyLTNGNXY5djJkUTRmYWJjSVctbjlmdlNMVDNTZ2t4VkRObjJVeEx2Z2pNbG16bW1hNWFob29rdHROdTQyMUZPZHVjaXFqUTVRUHlxUEpmd196UkF4SFcycVZ2OWgxRTdxa1hxWFZYaEtRUVdoX3ZKbUZVN2FGeHh6MzM1SHQ1NnVZeGpqYjNoV1BKaUYzMA?oc=5" style="color: #1a1a2e; text-decoration: none; font-size: 17px; font-weight: 700; line-height: 1.35; display: block;"&gt;Stay Ahead of AI Threats: Secure LLM Applications With Trend Vision One&lt;/a&gt;
+      &lt;!-- Summary --&gt;
+      
+        &lt;div style="font-size: 14px; color: #555; line-height: 1.6; margin-top: 12px; padding: 0 2px;"&gt;The &lt;strong&gt;World Economic Forum's Global Cybersecurity Outlook 2025&lt;/strong&gt; reports that only &lt;strong&gt;37%&lt;/strong&gt; of organizations assess AI tools' security before deployment, indicating a major security gap. &lt;strong&gt;Trend Micro's Trend Vision One™&lt;/strong&gt; platform offers integrated protection addressing &lt;strong&gt;nine&lt;/strong&gt; of the &lt;strong&gt;OWASP Top 10 LLM risks (2025)&lt;/strong&gt; across various environments. Its components include &lt;strong&gt;ZTSA AI Secure Access&lt;/strong&gt; to control and inspect traffic to AI services, and &lt;strong&gt;AI Security Posture Management (AI-SPM)&lt;/strong&gt; for detecting misconfigurations and unauthorized access in AI-related cloud assets.&lt;/div&gt;
+      
+    &lt;/div&gt;
+    
+    
+    
+  &lt;/div&gt;
+
+  &lt;!-- Footer --&gt;
+  &lt;div style="padding: 28px; text-align: center; font-size: 12px; color: #aaa; background: #fafafa; border-top: 1px solid #f0f0f0;"&gt;
+    Generated automatically &amp;middot; &lt;a href="feed.xml" style="color: #6c63ff; text-decoration: none;"&gt;Subscribe via RSS&lt;/a&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content:encoded>
+      <pubDate>Sat, 21 Feb 2026 07:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Daily Briefing - Friday, February 20, 2026</title>
       <link>/posts/2026-02-20.html</link>
