@@ -22,7 +22,8 @@ YOUTUBE_CHANNELS = {
     "This Week in Startups": "https://www.youtube.com/feeds/videos.xml?channel_id=UCCjyq_K1Xwfg8Lndy7lKMpA",
     "Dwarkesh Podcast": "https://www.youtube.com/feeds/videos.xml?channel_id=UC1SfmNb5y0eT4hEZyNh7OHg",
     "Lex Fridman Podcast": "https://www.youtube.com/feeds/videos.xml?channel_id=UCSHZKyawb77ixDdsGog4iWA",
-    "AI Daily Brief": "https://www.youtube.com/feeds/videos.xml?channel_id=UCmc5j3MNKe4JKMCW6ukvmiQ",
+    "AI Daily Brief": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKelCK4ZaO6HeEI1KQjqzWA",
+    "Morning Brew Daily": "https://www.youtube.com/feeds/videos.xml?channel_id=UCJGeBpBh9_Q0B_EKPmj14Pg",
 }
 
 MAX_EPISODES = 5
@@ -47,24 +48,58 @@ def _fetch_youtube_videos(channel_feed_url: str) -> list[dict]:
         return []
 
 
+def _title_words(text: str) -> set[str]:
+    """Extract meaningful words from a title (3+ chars, lowercased)."""
+    return {w for w in re.sub(r"[^\w\s]", "", text.lower()).split() if len(w) >= 3}
+
+
 def _find_matching_video(episode_title: str, videos: list[dict], threshold: float = 0.4) -> str | None:
-    """Find the best matching YouTube video for an episode title. Returns video_id or None."""
-    episode_clean = re.sub(r"[^\w\s]", "", episode_title.lower())
-    best_ratio = 0.0
+    """Find the best matching YouTube video for an episode title. Returns video_id or None.
+
+    Uses a hybrid approach: SequenceMatcher ratio + word overlap (Jaccard).
+    For compound RSS titles like "Topic A & Topic B", also checks if either
+    half matches a YouTube title.
+    """
+    # Split compound titles (e.g. "X & Y", "X | Y") into parts
+    parts = re.split(r"\s*[&|]\s*", episode_title)
+    candidates = [episode_title] + ([p.strip() for p in parts] if len(parts) > 1 else [])
+
+    best_score = 0.0
     best_id = None
 
-    for video in videos:
-        video_clean = re.sub(r"[^\w\s]", "", video["title"].lower())
-        ratio = SequenceMatcher(None, episode_clean, video_clean).ratio()
-        if ratio > best_ratio:
-            best_ratio = ratio
-            best_id = video["video_id"]
+    for candidate in candidates:
+        cand_clean = re.sub(r"[^\w\s]", "", candidate.lower())
+        cand_words = _title_words(candidate)
+        if not cand_words:
+            continue
 
-    if best_ratio >= threshold:
-        logger.info("YouTube match found: video_id=%s", best_id)
+        for video in videos:
+            video_clean = re.sub(r"[^\w\s]", "", video["title"].lower())
+            video_words = _title_words(video["title"])
+
+            # Sequence similarity
+            seq_ratio = SequenceMatcher(None, cand_clean, video_clean).ratio()
+
+            # Word overlap (Jaccard)
+            if cand_words and video_words:
+                intersection = cand_words & video_words
+                union = cand_words | video_words
+                jaccard = len(intersection) / len(union)
+            else:
+                jaccard = 0.0
+
+            # Combined score — weighted toward word overlap to reduce false positives
+            score = 0.4 * seq_ratio + 0.6 * jaccard
+
+            if score > best_score:
+                best_score = score
+                best_id = video["video_id"]
+
+    if best_score >= threshold:
+        logger.info("YouTube match found: video_id=%s (score=%.2f)", best_id, best_score)
         return best_id
     else:
-        logger.debug("No YouTube match for '%s'", episode_title)
+        logger.debug("No YouTube match for '%s' (best=%.2f)", episode_title, best_score)
         return None
 
 
