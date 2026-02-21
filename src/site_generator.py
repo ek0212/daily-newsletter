@@ -21,7 +21,7 @@ POSTS_DIR = SITE_DIR / "posts"
 STATIC_DIR = PROJECT_ROOT / "static"
 
 # Configurable base URL for GitHub Pages
-SITE_URL = os.getenv("SITE_URL", "https://ek0212.github.io/daily-newsletter")
+SITE_URL = os.getenv("SITE_URL", "").strip() or "https://ek0212.github.io/daily-newsletter"
 
 
 def ensure_dirs():
