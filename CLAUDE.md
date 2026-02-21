@@ -187,6 +187,10 @@ tree = ET.parse('site/feed.xml')
 items = tree.getroot().findall('.//item')
 checks = []
 checks.append(('Feed has items', len(items) > 0))
+# Verify CDATA wrapping (critical for Blogtrottr email rendering)
+raw_feed = Path('site/feed.xml').read_text()
+checks.append(('content:encoded uses CDATA', '<![CDATA[' in raw_feed))
+checks.append(('No escaped HTML in content:encoded', '&lt;body style=' not in raw_feed))
 # Verify no site wrapper leaked into content:encoded
 all_clean = True
 for item in items:
@@ -210,4 +214,4 @@ for name, ok in checks:
 exit(0 if all(ok for _, ok in checks) else 1)
 "
 ```
-Verifies that the RSS feed's `content:encoded` contains clean email HTML (no site navigation wrappers), has inline styles for email client compatibility, and that `.email.html` files are generated alongside post pages.
+Verifies that the RSS feed's `content:encoded` uses CDATA wrapping (critical — without CDATA, Blogtrottr renders plain text instead of styled HTML), contains clean email HTML (no site navigation wrappers), has inline styles for email client compatibility, and that `.email.html` files are generated alongside post pages.
