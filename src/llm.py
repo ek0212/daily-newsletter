@@ -56,31 +56,30 @@ def batch_summarize(sections: dict) -> dict:
 def _build_prompt(sections: dict) -> str:
     """Build the single prompt for batch summarization."""
     parts = [
-        "You are an expert editor at Axios or a top tech newsletter like Techpresso. "
-        "Distill each item into exactly 3 ultra-concise, high-impact bullet points that capture the absolute core takeaways.\n\n"
-        "STRICT STYLE RULES — follow every one:\n"
-        "- Each bullet starts with a relevant, vibe-matching emoji (e.g. 📈 💰 🚨 ⚡ 📉 🛡️ 🔥 🔍 🎯 🤖 🧠).\n"
-        "- After the emoji: a <strong>bolded, ultra-short headline phrase</strong> (3–8 words max) that states a SPECIFIC fact.\n"
-        "- Then: 1 short sentence with the KEY DETAIL — a name, number, dollar amount, percentage, date, decision, or concrete outcome.\n"
-        "- The reader should NOT need to click the article. Your bullets ARE the article. They must contain the actual information.\n"
-        "- Use active voice, strong verbs, and ALWAYS include numbers/stats/names when they exist in the source.\n"
-        "- DO NOT restate or paraphrase the headline.\n"
-        "- NEVER write vague commentary like 'challenges common perceptions', 'highlights potential', 'significant implications', 'raising questions about', 'could revolutionize'. "
-        "If you can't state a SPECIFIC fact, skip that bullet and find one you can.\n"
-        "- NEVER include a heading like 'Key Takeaways' — just the bullets.\n"
-        "- IGNORE all ads, sponsor reads, promo codes in podcasts.\n\n"
-        "BAD (vague, useless): '🛠️ <strong>Enhancing hands-on professions</strong> — AI tools can optimize complex physical tasks, providing significant efficiency gains in fields like plumbing.'\n"
-        "GOOD (specific, I learned something): '🛠️ <strong>Plumbers can scale without hiring</strong> — Agentic AI handles scheduling, invoicing, and customer follow-ups, letting a solo plumber run a $500K/yr operation that previously needed 3 office staff.'\n\n"
-        "BAD (restates headline): '📉 <strong>Stock futures decline</strong> — Markets fell amid uncertainty about new tariff policies.'\n"
-        "GOOD (tells me what happened): '📉 <strong>S&P futures down 0.8% pre-market</strong> — Trump\\'s proposed 25% tariff on EU auto imports rattled exporters; BMW and Mercedes dropped 3-4% in Frankfurt trading.'\n\n"
-        "FORMATTING:\n"
-        "- Each summary is a single HTML string with bullet points separated by <br> tags.\n"
-        "- Format each bullet as: EMOJI <strong>Bold headline phrase</strong> — Detail sentence.<br>\n"
-        "- For news: exactly 3 bullets.\n"
-        "- For podcasts: exactly 3 bullets.\n"
-        "- For papers: exactly 3 bullets.\n\n"
-        "CRITICAL: Every item MUST get a summary. If the article text is short or missing, infer from the headline. Never return an empty string.\n\n"
-        "Return ONLY valid JSON with no markdown formatting or code blocks.\n\n"
+        "You are a senior Axios editor. For each item, write 2-4 bullet points — only as many as there are distinct, concrete facts worth reporting.\n\n"
+        "FORMAT: EMOJI <strong>Bold 3-8 word fact</strong> — One sentence with the KEY specifics (names, numbers, dates, amounts, outcomes).<br>\n\n"
+        "RULES:\n"
+        "- Every bullet MUST contain a concrete detail: a number, dollar figure, name, date, percentage, or specific outcome. NO exceptions.\n"
+        "- GOAL: A reader skimming these bullets should learn everything important WITHOUT reading the article, watching the episode, or reading the paper. Your summary IS the content — not a teaser.\n"
+        "- DO NOT restate the headline. Each bullet must add new information beyond what the title says.\n"
+        "- NEVER use meta-descriptions like 'the episode discusses', 'the paper proposes', 'the article explores', 'the discussion highlights'. State the FACT directly as if you are reporting it, not describing someone else's content.\n"
+        "- NEVER write vague filler like 'raises questions', 'significant implications', 'could revolutionize', 'demands attention', 'is key', 'offers promise', 'empowering operators', 'unlocking scale'.\n"
+        "- NEVER summarize ads, sponsors, promos, discount codes, or partner events. Replace with a substantive point.\n"
+        "- For PODCASTS: Extract the actual claims, data points, and news reported. If a host says 'GPT-5 can now do X', your bullet is about GPT-5 doing X — not about 'the host discusses GPT-5'.\n"
+        "- For PAPERS: What did they FIND? What % improvement? What benchmark score? If the abstract only describes methodology, extract the most concrete technical detail.\n\n"
+        "EXAMPLE — BAD vs GOOD:\n"
+        "BAD: '📈 <strong>AI growth creates new challenges</strong> — The rapid exponential growth of AI introduces complex societal and technical hurdles that demand attention.'\n"
+        "WHY BAD: Zero facts. What challenges? What growth? This tells the reader nothing.\n"
+        "GOOD: '📈 <strong>GPT-5 costs $3B to train</strong> — OpenAI spent 3x more than GPT-4, using 50,000 H100 GPUs over 90 days, pushing total 2024 compute spend past $7B.'\n"
+        "WHY GOOD: Specific dollar amounts, hardware, timeframes. Reader learned something.\n\n"
+        "PODCAST BAD: '🛠️ <strong>AI benefits plumbers over programmers</strong> — The episode suggests that AI could be more beneficial for skilled trades by reducing operational friction.'\n"
+        "WHY BAD: 'The episode suggests' is meta. 'Reducing operational friction' is corporate filler. WHAT specifically does AI do for plumbers?\n"
+        "PODCAST GOOD: '🛠️ <strong>Solo plumber now handles 40 jobs/week</strong> — A one-person plumbing business used AI scheduling and invoicing agents to go from 15 to 40 jobs per week without hiring, tripling revenue to $300K.'\n"
+        "WHY GOOD: Specific person, specific numbers, specific tools. Reader learned the actual claim.\n\n"
+        "PAPER BAD: '🧠 <strong>Framework bridges reasoning gap</strong> — The paper proposes a hybrid framework to bridge the gap between two types of models.'\n"
+        "PAPER GOOD: '🧠 <strong>Hybrid approach boosts accuracy 12%</strong> — Injecting domain knowledge from fine-tuned time-series models into GPT-4 improved diagnostic accuracy from 61% to 73% on SenTSR-Bench.'\n\n"
+        "SELF-CHECK: Before returning, re-read each bullet. If it contains NO specific fact (name/number/date/outcome), rewrite it with one from the source text. If the source lacks specifics, state the most concrete claim available.\n\n"
+        "Return ONLY valid JSON, no markdown code blocks. Every item MUST get a summary; infer from headline if text is missing.\n\n"
     ]
 
     if sections.get("news"):
@@ -96,8 +95,14 @@ def _build_prompt(sections: dict) -> str:
         for i, item in enumerate(sections["podcasts"], 1):
             text = (item.get("raw_text") or "").strip()
             if len(text) > 1000:
-                # Skip sponsor reads / intros at the start of transcripts
-                text = text[500:5500]
+                # Strip sponsor/ad blocks before sending to LLM
+                import re
+                text = re.sub(
+                    r'(?i)(?:brought to you by|sponsored by|use code|promo code|sign up at|download it at|learn more at|check out|our sponsor|this episode is|discount|coupon|free trial|special offer|percent off|dollars off|\bpromo\b|partner event|go to \w+\.\w+)[^\n]{0,300}',
+                    '', text
+                )
+                # Skip intros, take substantive middle
+                text = text[200:8000].strip()
             elif len(text) < 200:
                 # No real transcript — tell Gemini to infer from title
                 text = "(No transcript available — summarize based on the episode title and podcast context.)"
@@ -135,6 +140,53 @@ def _build_prompt(sections: dict) -> str:
     return "\n".join(parts)
 
 
+def _extract_arrays_fallback(text: str, sections: dict) -> dict | None:
+    """Extract summary arrays from malformed JSON using regex."""
+    import re
+    data = {}
+    for key in ("news", "ai_security_news", "podcasts", "papers"):
+        # Find the array for this key: "key": [...]
+        pattern = rf'"{key}"\s*:\s*\['
+        match = re.search(pattern, text)
+        if not match:
+            continue
+        # Find matching closing bracket
+        start = match.end()
+        depth = 1
+        i = start
+        while i < len(text) and depth > 0:
+            if text[i] == '[':
+                depth += 1
+            elif text[i] == ']':
+                depth -= 1
+            i += 1
+        array_content = text[start:i - 1]
+        # Split on '", "' pattern (between array items) — items are quoted strings
+        # Use a pattern that finds string boundaries
+        items = []
+        in_str = False
+        current = []
+        for j, ch in enumerate(array_content):
+            if ch == '"' and (j == 0 or array_content[j - 1] != '\\'):
+                in_str = not in_str
+                if in_str and not current:
+                    continue  # opening quote
+                elif not in_str:
+                    items.append(''.join(current))
+                    current = []
+                    continue
+            if in_str:
+                current.append(ch)
+        if current:
+            items.append(''.join(current))
+        data[key] = items
+    if data:
+        logger.info("Fallback JSON extraction recovered: %s",
+                     {k: len(v) for k, v in data.items()})
+        return data
+    return None
+
+
 def _parse_response(text: str, sections: dict) -> dict:
     """Parse Gemini's JSON response, validating item counts."""
     # Strip markdown code blocks if present
@@ -145,18 +197,42 @@ def _parse_response(text: str, sections: dict) -> dict:
             cleaned = cleaned[:-3]
         cleaned = cleaned.strip()
 
-    data = json.loads(cleaned)
+    try:
+        data = json.loads(cleaned)
+    except json.JSONDecodeError as e:
+        logger.warning("Initial JSON parse failed: %s. Attempting repair.", e)
+        import re
+        # Fix trailing commas
+        fixed = re.sub(r',\s*([}\]])', r'\1', cleaned)
+        # Fix unescaped double quotes inside strings by replacing inner quotes
+        # Strategy: extract each array value between outer quotes, escape inner quotes
+        try:
+            data = json.loads(fixed)
+        except json.JSONDecodeError:
+            # Last resort: extract arrays manually using bracket matching
+            data = _extract_arrays_fallback(fixed, sections)
+            if data is None:
+                raise
 
     result = {}
     for key in ("news", "ai_security_news", "podcasts", "papers"):
         expected = len(sections.get(key, []))
         got = data.get(key, [])
-        if len(got) == expected:
-            result[key] = got
-        else:
-            # Count mismatch — fall back to sumy for this section
-            logger.warning("Gemini returned %d %s summaries, expected %d. Using fallback.", len(got), key, expected)
-            result[key] = _fallback_section(sections.get(key, []), key)
+        if len(got) > expected:
+            logger.warning("Gemini returned %d %s summaries, expected %d. Truncating.", len(got), key, expected)
+            got = got[:expected]
+        elif len(got) < expected:
+            logger.warning("Gemini returned %d %s summaries, expected %d. Padding with fallback.", len(got), key, expected)
+            missing = sections.get(key, [])[len(got):]
+            got.extend(_fallback_section(missing, key))
+        # Replace any empty/blank summaries with fallback for that item
+        items = sections.get(key, [])
+        for i, summary in enumerate(got):
+            if not summary or len(summary.strip()) < 10:
+                logger.warning("Gemini returned empty/short summary for %s item %d (%s): %r. Using fallback.",
+                               key, i, items[i].get("title", ""), summary[:50] if summary else "")
+                got[i] = _fallback_section([items[i]], key)[0]
+        result[key] = got
 
     return result
 
