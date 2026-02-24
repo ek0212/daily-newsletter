@@ -56,28 +56,31 @@ def batch_summarize(sections: dict) -> dict:
 def _build_prompt(sections: dict) -> str:
     """Build the single prompt for batch summarization."""
     parts = [
-        "You are writing summaries for a daily newsletter read by a busy professional. "
-        "Your job is to give them the specific facts so they don't have to read/listen to the original.\n\n"
-        "CRITICAL RULES:\n"
-        "- Every sentence must contain a SPECIFIC fact: a name, number, dollar amount, date, decision, or outcome.\n"
-        "- NEVER end with vague commentary like 'this could have significant implications' or 'raising questions about'. "
-        "If you can't state a concrete implication with specifics, don't include it.\n"
-        "- DO NOT restate or paraphrase the headline. Start with the most important detail NOT in the headline.\n"
-        "- Write like you're telling a coworker in 15 seconds what actually happened. "
-        "They should walk away knowing the key facts, not wondering what the article said.\n\n"
-        "BAD example: 'This links two major fiscal policies and could lead to a significant financial impact on property owners.'\n"
-        "GOOD example: 'NYC Council member <strong>Mamdani</strong> wants a <strong>wealth tax on assets over $5M</strong> to fund affordable housing. "
-        "If it fails, he says he\\'ll push a <strong>9.5% property tax hike</strong> — roughly <strong>$800/year more</strong> for a median Brooklyn homeowner.'\n\n"
+        "You are an expert editor at Axios or a top tech newsletter like Techpresso. "
+        "Distill each item into exactly 3 ultra-concise, high-impact bullet points that capture the absolute core takeaways.\n\n"
+        "STRICT STYLE RULES — follow every one:\n"
+        "- Each bullet starts with a relevant, vibe-matching emoji (e.g. 📈 💰 🚨 ⚡ 📉 🛡️ 🔥 🔍 🎯 🤖 🧠).\n"
+        "- After the emoji: a <strong>bolded, ultra-short headline phrase</strong> (3–8 words max) that states a SPECIFIC fact.\n"
+        "- Then: 1 short sentence with the KEY DETAIL — a name, number, dollar amount, percentage, date, decision, or concrete outcome.\n"
+        "- The reader should NOT need to click the article. Your bullets ARE the article. They must contain the actual information.\n"
+        "- Use active voice, strong verbs, and ALWAYS include numbers/stats/names when they exist in the source.\n"
+        "- DO NOT restate or paraphrase the headline.\n"
+        "- NEVER write vague commentary like 'challenges common perceptions', 'highlights potential', 'significant implications', 'raising questions about', 'could revolutionize'. "
+        "If you can't state a SPECIFIC fact, skip that bullet and find one you can.\n"
+        "- NEVER include a heading like 'Key Takeaways' — just the bullets.\n"
+        "- IGNORE all ads, sponsor reads, promo codes in podcasts.\n\n"
+        "BAD (vague, useless): '🛠️ <strong>Enhancing hands-on professions</strong> — AI tools can optimize complex physical tasks, providing significant efficiency gains in fields like plumbing.'\n"
+        "GOOD (specific, I learned something): '🛠️ <strong>Plumbers can scale without hiring</strong> — Agentic AI handles scheduling, invoicing, and customer follow-ups, letting a solo plumber run a $500K/yr operation that previously needed 3 office staff.'\n\n"
+        "BAD (restates headline): '📉 <strong>Stock futures decline</strong> — Markets fell amid uncertainty about new tariff policies.'\n"
+        "GOOD (tells me what happened): '📉 <strong>S&P futures down 0.8% pre-market</strong> — Trump\\'s proposed 25% tariff on EU auto imports rattled exporters; BMW and Mercedes dropped 3-4% in Frankfurt trading.'\n\n"
+        "FORMATTING:\n"
+        "- Each summary is a single HTML string with bullet points separated by <br> tags.\n"
+        "- Format each bullet as: EMOJI <strong>Bold headline phrase</strong> — Detail sentence.<br>\n"
+        "- For news: exactly 3 bullets.\n"
+        "- For podcasts: exactly 3 bullets.\n"
+        "- For papers: exactly 3 bullets.\n\n"
+        "CRITICAL: Every item MUST get a summary. If the article text is short or missing, infer from the headline. Never return an empty string.\n\n"
         "Return ONLY valid JSON with no markdown formatting or code blocks.\n\n"
-        "FORMATTING RULES:\n"
-        "- Use <strong> tags to bold the phrases that hammer home the key takeaway — the part someone would highlight if skimming. "
-        "Bold multi-word phrases, not isolated keywords. E.g. '<strong>banned all new gas car sales starting 2035</strong>', "
-        "not '<strong>banned</strong> all new <strong>gas car</strong> sales starting <strong>2035</strong>'.\n"
-        "- For news: 2-3 sentences of specific facts.\n"
-        "- For podcasts: 3-4 sentences. Pull out the most concrete claims, numbers, or predictions the speakers made. "
-        "IGNORE all ads, sponsor reads, promo codes, and product pitches (e.g. 'brought to you by', 'use code', 'check out', 'sign up at'). "
-        "Never mention sponsors, advertisers, or promotional URLs in your summary.\n"
-        "- For papers: 1-2 sentences. State what the method achieves and the specific result (e.g. accuracy, improvement percentage).\n\n"
     ]
 
     if sections.get("news"):
@@ -121,11 +124,12 @@ def _build_prompt(sections: dict) -> str:
     parts.append(
         '\nReturn JSON exactly like this (with the same number of items per section):\n'
         '{\n'
-        '  "news": ["2-3 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...],\n'
-        '  "ai_security_news": ["2-3 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...],\n'
-        '  "podcasts": ["3-4 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...],\n'
-        '  "papers": ["1-2 sentence summary with <strong>key takeaway phrases</strong> bolded.", ...]\n'
-        '}'
+        '  "news": ["📈 <strong>Bold headline</strong> — detail.<br>💰 <strong>Another point</strong> — detail.<br>🔍 <strong>Third point</strong> — detail.", ...],\n'
+        '  "ai_security_news": ["🛡️ <strong>Bold headline</strong> — detail.<br>🔍 <strong>Another point</strong> — detail.", ...],\n'
+        '  "podcasts": ["🎯 <strong>Bold headline</strong> — detail.<br>⚡ <strong>Another point</strong> — detail.", ...],\n'
+        '  "papers": ["🧠 <strong>Bold headline</strong> — detail.<br>📊 <strong>Another point</strong> — detail.", ...]\n'
+        '}\n\n'
+        'IMPORTANT: Every array must have EXACTLY the same number of items as the input. Never return an empty string for any item.'
     )
 
     return "\n".join(parts)

@@ -62,28 +62,30 @@ def fetch_all_data() -> dict:
 
     # Distribute summaries back
     for i, item in enumerate(news):
-        if i < len(summaries.get("news", [])):
+        if i < len(summaries.get("news", [])) and summaries["news"][i]:
             item["summary"] = summaries["news"][i]
-        if not item["summary"]:
-            item["summary"] = f"Read more at {item['source']}" if item.get("source") else ""
+        if not item.get("summary"):
+            item["summary"] = f"📰 <strong>Breaking</strong> — Read the full story at {item['source']}." if item.get("source") else "📰 <strong>Developing story</strong> — Click the headline for full details."
 
     for i, item in enumerate(podcasts):
-        if i < len(summaries.get("podcasts", [])):
+        if i < len(summaries.get("podcasts", [])) and summaries["podcasts"][i]:
             item["summary"] = summaries["podcasts"][i]
-        if not item["summary"]:
-            item["summary"] = (item.get("raw_text", "") or "")[:400]
+        if not item.get("summary"):
+            raw = (item.get("raw_text", "") or "")[:400]
+            item["summary"] = raw if raw else "🎙️ <strong>New episode</strong> — Click the headline to listen."
 
     for i, item in enumerate(papers):
-        if i < len(summaries.get("papers", [])):
+        if i < len(summaries.get("papers", [])) and summaries["papers"][i]:
             item["quick_summary"] = summaries["papers"][i]
         if not item.get("quick_summary"):
-            item["quick_summary"] = item.get("abstract", "")[:200]
+            abstract = item.get("abstract", "")[:200]
+            item["quick_summary"] = abstract if abstract else "🧠 <strong>New research</strong> — Click the headline to read the paper."
 
     for i, item in enumerate(ai_security_news):
-        if i < len(summaries.get("ai_security_news", [])):
+        if i < len(summaries.get("ai_security_news", [])) and summaries["ai_security_news"][i]:
             item["summary"] = summaries["ai_security_news"][i]
-        if not item["summary"]:
-            item["summary"] = f"Read more at {item['source']}" if item.get("source") else ""
+        if not item.get("summary"):
+            item["summary"] = f"🛡️ <strong>Security alert</strong> — Read the full story at {item['source']}." if item.get("source") else "🛡️ <strong>Security update</strong> — Click the headline for full details."
 
     return {
         "date": datetime.now().strftime("%A, %B %d, %Y"),
