@@ -57,7 +57,25 @@ Cards are white with 1px #eee border, 10px border-radius, 20px padding, 4px colo
 - Gemini 2.5 Flash via `src/llm.py` — ONE API call for all summaries (news + podcasts + papers batched together)
 - Fallback to sumy LexRank if no GEMINI_API_KEY or API error
 - `src/summarizer.py` bolds numbers, stats, proper nouns, quoted text in fallback mode
-- Gemini prompt requests `<strong>` bolding of key terms and `KEY:` prefix takeaways
+- Each summary = exactly 3 emoji bullet points, no bold tags, no dash prefix
+- `_validate_summary()` rejects bad summaries at runtime (see below)
+
+### Summary Quality Rules (NEVER violate)
+The #1 goal: a reader skims the bullets and learns all key facts WITHOUT clicking through.
+
+**Vague bullets are the most common Gemini failure.** They pass structural checks but are useless. Examples of what MUST NEVER appear in output:
+- `"⚠️ The podcast discussed the idea that X might pose inherent problems."` — Meta-description ("the podcast discussed") + vague claim ("might pose problems"). Says nothing.
+- `"📊 Viewership experienced a significant increase."` — No number. Significant how?
+- `"🛠️ AI benefits skilled trades by reducing operational friction."` — Corporate filler. What friction? What trades? What happened?
+- `"🧠 The paper proposes a framework to bridge the gap."` — Describes the paper instead of reporting findings.
+
+**Why this happens:** Gemini defaults to safe, generic language when the source text is editorial/thin on facts. The prompt explicitly bans this, but Gemini sometimes ignores it. The `_validate_summary()` function in `llm.py` catches these patterns at runtime and falls back to extractive summarization.
+
+**Runtime validation catches:**
+1. Structural: missing emoji bullets, fragments, cut-offs, raw text leaks
+2. Semantic: meta-descriptions ("the podcast discussed"), vague filler ("might pose problems", "significant increase", "remains challenging")
+
+**If you modify the prompt or validation:** Always rebuild and run check #6 from Validation to verify no vague bullets slip through.
 
 ### APIs
 - NWS: free, no key. NYC grid: OKX/33,35
@@ -184,27 +202,43 @@ import re
 from pathlib import Path
 html = Path('output.html').read_text()
 summaries = re.findall(r'font-size: 14\.5px.*?>(.*?)</div>', html, re.DOTALL)
-emoji_re = re.compile(r'[\U0001F300-\U0001F9FF\U00002600-\U000027BF\U0001FA00-\U0001FAFF]')
+emoji_re = re.compile(r'[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U00002702-\U000027B0]')
+vague_res = [
+    re.compile(r'(?i)the (?:podcast|episode|article|paper|discussion) (?:discussed|explores?|highlights?|focused on|suggests?|argues?)'),
+    re.compile(r'(?i)(?:might|could|may) (?:pose|create|introduce|present) (?:inherent |potential |new )?(?:problems|challenges|issues|concerns)'),
+    re.compile(r'(?i)(?:significant|substantial|considerable) (?:increase|decrease|impact|implications)'),
+    re.compile(r'(?i)(?:is (?:critical|essential|important|key|crucial)|remains challenging)'),
+    re.compile(r'(?i)experienced a (?:significant|notable|substantial) (?:increase|decrease|growth|decline)'),
+]
 checks = []
 bad_items = []
 for i, s in enumerate(summaries):
     clean = re.sub(r'<[^>]+>', '', s).strip()
+    if not clean: continue
     emojis = len(emoji_re.findall(clean))
-    starts_lower = clean[0].islower() if clean else True
-    has_raw = any(x in s for x in ['made possible by:', 'Today\\'s show:', 'https://Gusto', 'calderalab.com'])
-    cut_off = clean.rstrip()[-1] not in '.!?)\"\\'…>0123456789%' if clean.rstrip() else True
-    ok = emojis >= 2 and not starts_lower and not has_raw and not cut_off
+    bullets = len(s.split('<br>'))
+    has_bullets = emojis >= 2 or bullets >= 2
+    starts_lower = clean[0].islower()
+    has_raw = any(x in s for x in ['made possible by:', \"Today's show:\", 'https://Gusto', 'calderalab.com'])
+    last = clean.rstrip()[-1] if clean.rstrip() else ''
+    cut_off = last not in '.!?)\"' + \"'\" + '…>0123456789%'
+    vague_matches = [p.search(clean) for p in vague_res]
+    is_vague = any(vague_matches)
+    ok = has_bullets and not starts_lower and not has_raw and not cut_off and not is_vague
     if not ok:
         reasons = []
-        if emojis < 2: reasons.append(f'only {emojis} emoji bullets')
+        if not has_bullets: reasons.append(f'only {emojis} emojis, {bullets} segments')
         if starts_lower: reasons.append('starts lowercase (fragment)')
         if has_raw: reasons.append('contains raw text/sponsors')
-        if cut_off: reasons.append(f'cut off mid-sentence')
-        bad_items.append((i+1, reasons, clean[:100]))
-checks.append(('All summaries have emoji bullets', all(len(emoji_re.findall(re.sub(r'<[^>]+>', '', s).strip())) >= 2 for s in summaries)))
-checks.append(('No summaries start with lowercase', not any(re.sub(r'<[^>]+>', '', s).strip()[0].islower() for s in summaries if re.sub(r'<[^>]+>', '', s).strip())))
-checks.append(('No raw text leaks', not any(any(x in s for x in ['made possible by:', 'Today\\'s show:']) for s in summaries)))
-checks.append(('No cut-off summaries', not any(re.sub(r'<[^>]+>', '', s).strip().rstrip()[-1] not in '.!?)\"\\'…>0123456789%' for s in summaries if re.sub(r'<[^>]+>', '', s).strip())))
+        if cut_off: reasons.append('cut off mid-sentence')
+        if is_vague:
+            for m in vague_matches:
+                if m: reasons.append(f'vague: \"{m.group()}\"')
+        bad_items.append((i+1, reasons, clean[:120]))
+checks.append(('All summaries have bullet format', not any(r for _, r, _ in bad_items if any('emojis' in x for x in r))))
+checks.append(('No fragments or cut-offs', not any(r for _, r, _ in bad_items if any('lowercase' in x or 'cut off' in x for x in r))))
+checks.append(('No raw text leaks', not any(r for _, r, _ in bad_items if any('raw text' in x for x in r))))
+checks.append(('No vague filler bullets', not any(r for _, r, _ in bad_items if any('vague' in x for x in r))))
 for name, ok in checks:
     print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
 if bad_items:

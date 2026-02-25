@@ -249,13 +249,18 @@ def _validate_summary(summary: str) -> str | None:
         return "empty or too short"
 
     # Must contain emoji characters (at least 2 — expect 3 bullets)
+    # Count <br> separated segments that start with emoji-like chars
     emoji_pattern = re.compile(
-        r'[\U0001F300-\U0001F9FF\U00002600-\U000027BF\U0001FA00-\U0001FAFF'
-        r'\U00002702-\U000027B0\U0000FE00-\U0000FE0F\U0000200D]'
+        r'[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U00002702-\U000027B0'
+        r'\U0000FE00-\U0000FE0F\U0000200D\U00002194-\U00002199'
+        r'\U000023E9-\U000023F3\U000025AA-\U000025FE\U00002934-\U00002935'
+        r'\U0000203C\U00002049\U00002122\U00002139\U00002328\U000023CF]'
     )
     emoji_count = len(emoji_pattern.findall(summary))
-    if emoji_count < 2:
-        return f"only {emoji_count} emoji bullets (need at least 2)"
+    # Also count <br>-separated bullet segments as a secondary check
+    bullet_count = len(summary.split('<br>'))
+    if emoji_count < 2 and bullet_count < 2:
+        return f"only {emoji_count} emoji bullets and {bullet_count} segments (need at least 2)"
 
     # Must not start with lowercase or a fragment (sign of misaligned extraction)
     stripped = summary.strip()
@@ -280,6 +285,19 @@ def _validate_summary(summary: str) -> str | None:
     if last_char not in ".!?)\"'…>0123456789%":
         return f"appears cut off (ends with '{last_char}')"
 
+    # Check for semantically vague bullets — meta-descriptions that say nothing
+    vague_patterns = [
+        r'(?i)the (?:podcast|episode|article|paper|discussion) (?:discussed|explores?|highlights?|focused on|suggests?|argues?)',
+        r'(?i)(?:might|could|may) (?:pose|create|introduce|present) (?:inherent |potential |new )?(?:problems|challenges|issues|concerns)',
+        r'(?i)(?:significant|substantial|considerable) (?:increase|decrease|impact|implications)',
+        r'(?i)(?:is (?:critical|essential|important|key|crucial)|remains challenging)',
+        r'(?i)experienced a (?:significant|notable|substantial) (?:increase|decrease|growth|decline)',
+    ]
+    for pattern in vague_patterns:
+        match = re.search(pattern, stripped)
+        if match:
+            return f"vague filler detected: '{match.group()}'"
+
     return None
 
 
@@ -292,7 +310,27 @@ def _fallback_summarize(sections: dict) -> dict:
 
 
 def _fallback_section(items: list[dict], section_type: str) -> list[str]:
-    """Summarize a single section's items using sumy."""
-    sentence_counts = {"news": 3, "ai_security_news": 3, "podcasts": 4, "papers": 2}
-    n = sentence_counts.get(section_type, 2)
-    return [summarize(item.get("raw_text", ""), num_sentences=n, title=item.get("title", "")) for item in items]
+    """Summarize a single section's items using sumy, formatted as emoji bullets."""
+    emojis = {
+        "news": ["📰", "📢", "🔍"],
+        "ai_security_news": ["🛡️", "🔍", "⚠️"],
+        "podcasts": ["🎯", "⚡", "📊"],
+        "papers": ["🧠", "📊", "⚙️"],
+    }
+    section_emojis = emojis.get(section_type, ["📌", "📎", "🔹"])
+    results = []
+    for item in items:
+        raw = summarize(item.get("raw_text", ""), num_sentences=3, title=item.get("title", ""))
+        if not raw or len(raw.strip()) < 20:
+            # Minimal fallback from title
+            results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
+            continue
+        # Split extractive summary into sentences and format as emoji bullets
+        sentences = [s.strip() for s in raw.replace('<br>', ' ').split('. ') if s.strip()]
+        bullets = []
+        for j, sent in enumerate(sentences[:3]):
+            emoji = section_emojis[j % len(section_emojis)]
+            sent = sent.rstrip('.')
+            bullets.append(f"{emoji} {sent}.")
+        results.append("<br>".join(bullets) if bullets else f"{section_emojis[0]} {raw}")
+    return results
