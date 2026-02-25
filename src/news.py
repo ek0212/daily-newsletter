@@ -175,25 +175,51 @@ def _deduplicate(stories: list[dict]) -> list[dict]:
 
 
 def get_top_news(count: int = 5) -> list[dict]:
-    """Return top news stories ranked by relevance and recency."""
+    """Return a mix of top tech/AI stories and top general headlines.
+
+    Ensures the reader gets both personally-relevant tech news AND
+    the biggest stories everyone is talking about today.
+    """
     feed_names = ", ".join(f["name"] for f in NEWS_FEEDS)
     logger.info("Fetching top %d news from %s", count, feed_names)
     all_stories = []
     for feed_cfg in NEWS_FEEDS:
-        all_stories.extend(_fetch_feed(feed_cfg, limit=count * 2))
+        all_stories.extend(_fetch_feed(feed_cfg, limit=count * 3))
 
-    # Sort by recency first, deduplicate
+    # Sort by recency, deduplicate
     all_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
     unique = _deduplicate(all_stories)
 
-    # Score by relevance (title-only, before fetching article text)
+    # Score by relevance
     for story in unique:
         story["_relevance"] = _relevance_score(story)
 
-    # Take top candidates by relevance, with recency as tiebreaker
-    # Consider more candidates than needed so we have room after scoring
-    candidates = sorted(unique, key=lambda s: (s["_relevance"], _parse_pub_date(s.get("published", ""))), reverse=True)
-    selected = candidates[:count]
+    # Split: pick top stories by relevance, then fill remaining slots
+    # with the most recent general headlines (ensuring broad awareness)
+    by_relevance = sorted(unique, key=lambda s: (s["_relevance"], _parse_pub_date(s.get("published", ""))), reverse=True)
+    by_recency = sorted(unique, key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
+
+    # Take ceil(count/2) relevant + floor(count/2) most-recent general
+    n_relevant = (count + 1) // 2  # 3 if count=5
+    n_general = count - n_relevant  # 2 if count=5
+
+    selected = []
+    selected_titles = set()
+
+    # First: top relevant stories
+    for s in by_relevance:
+        if len(selected) >= n_relevant:
+            break
+        selected.append(s)
+        selected_titles.add(s["title"])
+
+    # Then: most recent stories not already selected (general awareness)
+    for s in by_recency:
+        if len(selected) >= count:
+            break
+        if s["title"] not in selected_titles:
+            selected.append(s)
+            selected_titles.add(s["title"])
 
     # Fetch article text for the selected stories
     for i, story in enumerate(selected, 1):
@@ -203,5 +229,6 @@ def get_top_news(count: int = 5) -> list[dict]:
         del story["_relevance"]
 
     with_text = sum(1 for s in selected if s["raw_text"])
-    logger.info("News fetch complete: %d stories, %d with article text", len(selected), with_text)
+    logger.info("News fetch complete: %d stories (%d relevant + %d general), %d with article text",
+                len(selected), n_relevant, len(selected) - n_relevant, with_text)
     return selected if selected else [{"title": "No news available", "source": "", "link": "", "published": "", "summary": "", "raw_text": ""}]
