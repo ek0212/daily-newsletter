@@ -177,7 +177,47 @@ print('\nAll build log checks passed.')
 ```
 This is the final gate. It verifies every section produced data, no errors occurred, and the full pipeline ran end-to-end. If any check fails, it prints the relevant WARNING/ERROR log lines for debugging.
 
-### 6. RSS feed email formatting check
+### 6. Summary quality validation
+```bash
+python3 -c "
+import re
+from pathlib import Path
+html = Path('output.html').read_text()
+summaries = re.findall(r'font-size: 14\.5px.*?>(.*?)</div>', html, re.DOTALL)
+emoji_re = re.compile(r'[\U0001F300-\U0001F9FF\U00002600-\U000027BF\U0001FA00-\U0001FAFF]')
+checks = []
+bad_items = []
+for i, s in enumerate(summaries):
+    clean = re.sub(r'<[^>]+>', '', s).strip()
+    emojis = len(emoji_re.findall(clean))
+    starts_lower = clean[0].islower() if clean else True
+    has_raw = any(x in s for x in ['made possible by:', 'Today\\'s show:', 'https://Gusto', 'calderalab.com'])
+    cut_off = clean.rstrip()[-1] not in '.!?)\"\\'…>0123456789%' if clean.rstrip() else True
+    ok = emojis >= 2 and not starts_lower and not has_raw and not cut_off
+    if not ok:
+        reasons = []
+        if emojis < 2: reasons.append(f'only {emojis} emoji bullets')
+        if starts_lower: reasons.append('starts lowercase (fragment)')
+        if has_raw: reasons.append('contains raw text/sponsors')
+        if cut_off: reasons.append(f'cut off mid-sentence')
+        bad_items.append((i+1, reasons, clean[:100]))
+checks.append(('All summaries have emoji bullets', all(len(emoji_re.findall(re.sub(r'<[^>]+>', '', s).strip())) >= 2 for s in summaries)))
+checks.append(('No summaries start with lowercase', not any(re.sub(r'<[^>]+>', '', s).strip()[0].islower() for s in summaries if re.sub(r'<[^>]+>', '', s).strip())))
+checks.append(('No raw text leaks', not any(any(x in s for x in ['made possible by:', 'Today\\'s show:']) for s in summaries)))
+checks.append(('No cut-off summaries', not any(re.sub(r'<[^>]+>', '', s).strip().rstrip()[-1] not in '.!?)\"\\'…>0123456789%' for s in summaries if re.sub(r'<[^>]+>', '', s).strip())))
+for name, ok in checks:
+    print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
+if bad_items:
+    print(f'\n  {len(bad_items)} bad summaries:')
+    for idx, reasons, preview in bad_items:
+        print(f'    Item {idx}: {\", \".join(reasons)}')
+        print(f'      {preview}...')
+exit(0 if all(ok for _, ok in checks) else 1)
+"
+```
+Verifies every summary in the output has proper emoji bullet format (at least 2 emoji bullets), doesn't start with a lowercase fragment (sign of misaligned JSON extraction), contains no raw text/sponsor leaks, and isn't cut off mid-sentence. These are the most common failure modes when Gemini returns malformed JSON.
+
+### 7. RSS feed email formatting check
 ```bash
 python3 -c "
 import xml.etree.ElementTree as ET

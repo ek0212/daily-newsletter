@@ -226,16 +226,61 @@ def _parse_response(text: str, sections: dict) -> dict:
             logger.warning("Gemini returned %d %s summaries, expected %d. Padding with fallback.", len(got), key, expected)
             missing = sections.get(key, [])[len(got):]
             got.extend(_fallback_section(missing, key))
-        # Replace any empty/blank summaries with fallback for that item
+        # Validate every summary — replace bad ones with fallback
         items = sections.get(key, [])
         for i, summary in enumerate(got):
-            if not summary or len(summary.strip()) < 10:
-                logger.warning("Gemini returned empty/short summary for %s item %d (%s): %r. Using fallback.",
-                               key, i, items[i].get("title", ""), summary[:50] if summary else "")
+            issue = _validate_summary(summary)
+            if issue:
+                logger.warning("Bad summary for %s item %d (%s): %s. Using fallback.",
+                               key, i, items[i].get("title", ""), issue)
                 got[i] = _fallback_section([items[i]], key)[0]
         result[key] = got
 
     return result
+
+
+def _validate_summary(summary: str) -> str | None:
+    """Validate a summary meets quality standards.
+
+    Returns None if valid, or a string describing the issue.
+    """
+    import re
+    if not summary or len(summary.strip()) < 10:
+        return "empty or too short"
+
+    # Must contain emoji characters (at least 2 — expect 3 bullets)
+    emoji_pattern = re.compile(
+        r'[\U0001F300-\U0001F9FF\U00002600-\U000027BF\U0001FA00-\U0001FAFF'
+        r'\U00002702-\U000027B0\U0000FE00-\U0000FE0F\U0000200D]'
+    )
+    emoji_count = len(emoji_pattern.findall(summary))
+    if emoji_count < 2:
+        return f"only {emoji_count} emoji bullets (need at least 2)"
+
+    # Must not start with lowercase or a fragment (sign of misaligned extraction)
+    stripped = summary.strip()
+    if stripped[0].islower():
+        return "starts with lowercase (likely a fragment)"
+
+    # Must not contain raw URLs as main content (sign of raw text leak)
+    if re.match(r'^https?://', stripped):
+        return "starts with URL (raw text leak)"
+
+    # Must not contain common raw-text indicators
+    raw_indicators = [
+        "This episode", "Today's show:", "made possible by:",
+        "https://Gusto.com", "calderalab.com", "circle.so",
+    ]
+    for indicator in raw_indicators:
+        if indicator in summary:
+            return f"contains raw text indicator: '{indicator}'"
+
+    # Check for cut-off mid-sentence (ends without punctuation)
+    last_char = stripped.rstrip()[-1] if stripped.rstrip() else ""
+    if last_char not in ".!?)\"'…>0123456789%":
+        return f"appears cut off (ends with '{last_char}')"
+
+    return None
 
 
 def _fallback_summarize(sections: dict) -> dict:
