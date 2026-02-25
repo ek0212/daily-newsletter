@@ -1,6 +1,7 @@
-"""Fetch top news headlines from Google News, CNN, BBC News, and NPR RSS feeds."""
+"""Fetch top news headlines from tech, general, and AI-focused RSS feeds."""
 
 import logging
+import re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
@@ -10,8 +11,25 @@ from googlenewsdecoder import new_decoderv1
 
 logger = logging.getLogger(__name__)
 
-# RSS sources — order matters for priority when deduplicating
+# RSS sources — mix of tech-focused and general news
 NEWS_FEEDS = [
+    # Tech / AI focused
+    {
+        "url": "https://feeds.arstechnica.com/arstechnica/index",
+        "name": "Ars Technica",
+        "is_google": False,
+    },
+    {
+        "url": "https://www.theverge.com/rss/index.xml",
+        "name": "The Verge",
+        "is_google": False,
+    },
+    {
+        "url": "https://techcrunch.com/feed/",
+        "name": "TechCrunch",
+        "is_google": False,
+    },
+    # General news (US-focused)
     {
         "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
         "name": "Google News",
@@ -23,16 +41,44 @@ NEWS_FEEDS = [
         "is_google": False,
     },
     {
-        "url": "https://feeds.bbci.co.uk/news/rss.xml",
-        "name": "BBC News",
-        "is_google": False,
-    },
-    {
         "url": "https://feeds.npr.org/1001/rss.xml",
         "name": "NPR",
         "is_google": False,
     },
 ]
+
+# Keywords that boost relevance for the reader:
+# 26yo female SWE in big tech, NYC, AI security researcher
+_BOOST_KEYWORDS = re.compile(
+    r'(?i)\b(?:'
+    r'ai|artificial intelligence|machine learning|llm|gpt|openai|anthropic|claude|gemini|'
+    r'cyber|security|hack|breach|vulnerability|exploit|'
+    r'tech|software|engineer|developer|coding|startup|big tech|silicon valley|'
+    r'google|apple|meta|microsoft|amazon|nvidia|'
+    r'new york|nyc|manhattan|brooklyn|'
+    r'economy|inflation|housing|rent|salary|layoff|hiring|job|remote work|'
+    r'tariff|tax|regulation|policy|scotus|supreme court|congress|'
+    r'health|climate|education'
+    r')\b'
+)
+
+# Topics to deprioritize — celebrity gossip, sports entertainment, reality TV
+_DEMOTE_KEYWORDS = re.compile(
+    r'(?i)\b(?:'
+    r'love island|kardashian|bachelor|bachelorette|real housewives|'
+    r'celebrity|gossip|red carpet|grammy|oscar|emmy|golden globe|'
+    r'nfl draft|nba trade|mlb|nhl|premier league|fifa|'
+    r'flamingo land|loch lomond|bone cement'
+    r')\b'
+)
+
+
+def _relevance_score(story: dict) -> float:
+    """Score a story's relevance. Higher = more relevant to the reader."""
+    text = f"{story.get('title', '')} {story.get('raw_text', '')[:500]}"
+    boosts = len(_BOOST_KEYWORDS.findall(text))
+    demotes = len(_DEMOTE_KEYWORDS.findall(text))
+    return boosts - (demotes * 3)
 
 
 def _decode_google_news_url(url: str) -> str:
@@ -129,22 +175,33 @@ def _deduplicate(stories: list[dict]) -> list[dict]:
 
 
 def get_top_news(count: int = 5) -> list[dict]:
-    """Return top news stories from multiple RSS sources with raw article text."""
-    logger.info("Fetching top %d news from Google News, CNN, BBC News, NPR", count)
+    """Return top news stories ranked by relevance and recency."""
+    feed_names = ", ".join(f["name"] for f in NEWS_FEEDS)
+    logger.info("Fetching top %d news from %s", count, feed_names)
     all_stories = []
     for feed_cfg in NEWS_FEEDS:
         all_stories.extend(_fetch_feed(feed_cfg, limit=count * 2))
 
-    # Sort by recency, deduplicate, take top N
+    # Sort by recency first, deduplicate
     all_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
-    unique = _deduplicate(all_stories)[:count]
+    unique = _deduplicate(all_stories)
+
+    # Score by relevance (title-only, before fetching article text)
+    for story in unique:
+        story["_relevance"] = _relevance_score(story)
+
+    # Take top candidates by relevance, with recency as tiebreaker
+    # Consider more candidates than needed so we have room after scoring
+    candidates = sorted(unique, key=lambda s: (s["_relevance"], _parse_pub_date(s.get("published", ""))), reverse=True)
+    selected = candidates[:count]
 
     # Fetch article text for the selected stories
-    for i, story in enumerate(unique, 1):
-        logger.debug("News #%d: '%s' (%s)", i, story["title"], story["source"])
+    for i, story in enumerate(selected, 1):
+        logger.debug("News #%d (relevance=%.1f): '%s' (%s)", i, story["_relevance"], story["title"], story["source"])
         story["raw_text"] = _fetch_article_text(story["link"])
         story["summary"] = ""
+        del story["_relevance"]
 
-    with_text = sum(1 for s in unique if s["raw_text"])
-    logger.info("News fetch complete: %d stories, %d with article text", len(unique), with_text)
-    return unique if unique else [{"title": "No news available", "source": "", "link": "", "published": "", "summary": "", "raw_text": ""}]
+    with_text = sum(1 for s in selected if s["raw_text"])
+    logger.info("News fetch complete: %d stories, %d with article text", len(selected), with_text)
+    return selected if selected else [{"title": "No news available", "source": "", "link": "", "published": "", "summary": "", "raw_text": ""}]
