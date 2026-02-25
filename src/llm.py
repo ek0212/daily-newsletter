@@ -57,9 +57,9 @@ def _build_prompt(sections: dict) -> str:
     """Build the single prompt for batch summarization."""
     parts = [
         "You are writing a daily briefing newsletter. The reader should NEVER need to click through, read the article, watch the episode, or read the paper. Your bullets ARE the content.\n\n"
-        "MINIMUM 3 bullets per item, maximum 4. Each bullet is a SEPARATE fact from the source. One-bullet summaries are FAILURES.\n\n"
-        "FORMAT: EMOJI <strong>Bold 3-8 word fact</strong> — One sentence with KEY specifics (names, numbers, dates, amounts, outcomes).<br>\n"
-        "Separate bullets with <br> within each item's string.\n\n"
+        "Write exactly 3 bullet points per item — the top 3 key takeaways. Each bullet is a SEPARATE fact.\n\n"
+        "FORMAT: EMOJI followed by one concise sentence with specific details (names, numbers, dates, outcomes).<br>\n"
+        "Separate bullets with <br> within each item's string. No bold tags, no dash prefix, no lead-in phrase.\n\n"
         "HARD RULES:\n"
         "- Each bullet = one distinct, concrete fact with a specific detail (number, name, date, dollar figure, percentage, outcome).\n"
         "- DO NOT restate the headline. Each bullet adds NEW information.\n"
@@ -69,9 +69,9 @@ def _build_prompt(sections: dict) -> str:
         "- For PODCASTS: Report the actual news/claims/data from the episode as facts. 'Opus 4.6 achieves 14.5-hour time horizon' NOT 'the episode discussed AI capabilities'.\n"
         "- For PAPERS: Report findings, results, benchmark scores. NOT 'the paper proposes a framework'. If no results, report the most specific technical detail (dataset size, model, task).\n\n"
         "EXAMPLE:\n"
-        "BAD (1 vague bullet): '📈 <strong>AI growth creates challenges</strong> — AI introduces complex hurdles that demand attention.'\n"
-        "GOOD (3 specific bullets): '📈 <strong>GPT-5 costs $3B to train</strong> — OpenAI spent 3x more than GPT-4, using 50,000 H100 GPUs over 90 days.<br>💰 <strong>2024 compute spend hit $7B</strong> — Total compute spending passed $7B, doubling from 2023 levels.<br>⚡ <strong>Training used 50MW data center</strong> — The run occupied an entire 50-megawatt data center in Texas for the full 90 days.'\n\n"
-        "SELF-CHECK before returning: Count bullets per item. If any item has fewer than 3 bullets, add more facts from the source. If any bullet lacks a specific detail, rewrite it.\n\n"
+        "BAD: '📈 <strong>AI growth creates challenges</strong> — AI introduces complex hurdles that demand attention.'\n"
+        "GOOD: '📈 OpenAI spent $3B training GPT-5, 3x more than GPT-4, using 50,000 H100 GPUs over 90 days.<br>💰 Total 2024 compute spending passed $7B, doubling from 2023.<br>⚡ The training run occupied an entire 50MW data center in Texas for the full 90 days.'\n\n"
+        "SELF-CHECK: Every item must have exactly 3 bullets separated by <br>. Each bullet starts with an emoji and states a concrete fact.\n\n"
         "Return ONLY valid JSON, no markdown code blocks.\n\n"
     ]
 
@@ -120,14 +120,14 @@ def _build_prompt(sections: dict) -> str:
             parts.append(f"{i}. [{item['title']}]: {text}")
 
     parts.append(
-        '\nReturn JSON exactly like this (same number of items per section, MINIMUM 3 bullets per item):\n'
+        '\nReturn JSON exactly like this (same number of items per section, exactly 3 emoji bullets per item):\n'
         '{\n'
-        '  "news": ["📈 <strong>Fact one</strong> — detail with specifics.<br>💰 <strong>Fact two</strong> — detail with specifics.<br>🔍 <strong>Fact three</strong> — detail with specifics.", ...],\n'
-        '  "ai_security_news": ["🛡️ <strong>Fact one</strong> — detail.<br>🔍 <strong>Fact two</strong> — detail.<br>⚠️ <strong>Fact three</strong> — detail.", ...],\n'
-        '  "podcasts": ["🎯 <strong>Fact one</strong> — detail.<br>⚡ <strong>Fact two</strong> — detail.<br>📊 <strong>Fact three</strong> — detail.", ...],\n'
-        '  "papers": ["🧠 <strong>Finding one</strong> — detail.<br>📊 <strong>Finding two</strong> — detail.<br>⚙️ <strong>Finding three</strong> — detail.", ...]\n'
+        '  "news": ["📈 First key fact with specifics.<br>💰 Second key fact.<br>🔍 Third key fact.", ...],\n'
+        '  "ai_security_news": ["🛡️ First fact.<br>🔍 Second fact.<br>⚠️ Third fact.", ...],\n'
+        '  "podcasts": ["🎯 First takeaway.<br>⚡ Second takeaway.<br>📊 Third takeaway.", ...],\n'
+        '  "papers": ["🧠 First finding.<br>📊 Second finding.<br>⚙️ Third finding.", ...]\n'
         '}\n\n'
-        'CRITICAL: Every array must have EXACTLY the same number of items as the input. Every item MUST have at least 3 bullet points separated by <br>. Never return an empty string.'
+        'CRITICAL: Every array must have EXACTLY the same number of items as the input. Every item MUST have exactly 3 bullets separated by <br>. Never return an empty string.'
     )
 
     return "\n".join(parts)
