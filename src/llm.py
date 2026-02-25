@@ -56,30 +56,23 @@ def batch_summarize(sections: dict) -> dict:
 def _build_prompt(sections: dict) -> str:
     """Build the single prompt for batch summarization."""
     parts = [
-        "You are a senior Axios editor. For each item, write 2-4 bullet points — only as many as there are distinct, concrete facts worth reporting.\n\n"
-        "FORMAT: EMOJI <strong>Bold 3-8 word fact</strong> — One sentence with the KEY specifics (names, numbers, dates, amounts, outcomes).<br>\n\n"
-        "RULES:\n"
-        "- Every bullet MUST contain a concrete detail: a number, dollar figure, name, date, percentage, or specific outcome. NO exceptions.\n"
-        "- GOAL: A reader skimming these bullets should learn everything important WITHOUT reading the article, watching the episode, or reading the paper. Your summary IS the content — not a teaser.\n"
-        "- DO NOT restate the headline. Each bullet must add new information beyond what the title says.\n"
-        "- NEVER use meta-descriptions like 'the episode discusses', 'the paper proposes', 'the article explores', 'the discussion highlights'. State the FACT directly as if you are reporting it, not describing someone else's content.\n"
-        "- NEVER write vague filler like 'raises questions', 'significant implications', 'could revolutionize', 'demands attention', 'is key', 'offers promise', 'empowering operators', 'unlocking scale'.\n"
-        "- NEVER summarize ads, sponsors, promos, discount codes, or partner events. Replace with a substantive point.\n"
-        "- For PODCASTS: Extract the actual claims, data points, and news reported. If a host says 'GPT-5 can now do X', your bullet is about GPT-5 doing X — not about 'the host discusses GPT-5'.\n"
-        "- For PAPERS: What did they FIND? What % improvement? What benchmark score? If the abstract only describes methodology, extract the most concrete technical detail.\n\n"
-        "EXAMPLE — BAD vs GOOD:\n"
-        "BAD: '📈 <strong>AI growth creates new challenges</strong> — The rapid exponential growth of AI introduces complex societal and technical hurdles that demand attention.'\n"
-        "WHY BAD: Zero facts. What challenges? What growth? This tells the reader nothing.\n"
-        "GOOD: '📈 <strong>GPT-5 costs $3B to train</strong> — OpenAI spent 3x more than GPT-4, using 50,000 H100 GPUs over 90 days, pushing total 2024 compute spend past $7B.'\n"
-        "WHY GOOD: Specific dollar amounts, hardware, timeframes. Reader learned something.\n\n"
-        "PODCAST BAD: '🛠️ <strong>AI benefits plumbers over programmers</strong> — The episode suggests that AI could be more beneficial for skilled trades by reducing operational friction.'\n"
-        "WHY BAD: 'The episode suggests' is meta. 'Reducing operational friction' is corporate filler. WHAT specifically does AI do for plumbers?\n"
-        "PODCAST GOOD: '🛠️ <strong>Solo plumber now handles 40 jobs/week</strong> — A one-person plumbing business used AI scheduling and invoicing agents to go from 15 to 40 jobs per week without hiring, tripling revenue to $300K.'\n"
-        "WHY GOOD: Specific person, specific numbers, specific tools. Reader learned the actual claim.\n\n"
-        "PAPER BAD: '🧠 <strong>Framework bridges reasoning gap</strong> — The paper proposes a hybrid framework to bridge the gap between two types of models.'\n"
-        "PAPER GOOD: '🧠 <strong>Hybrid approach boosts accuracy 12%</strong> — Injecting domain knowledge from fine-tuned time-series models into GPT-4 improved diagnostic accuracy from 61% to 73% on SenTSR-Bench.'\n\n"
-        "SELF-CHECK: Before returning, re-read each bullet. If it contains NO specific fact (name/number/date/outcome), rewrite it with one from the source text. If the source lacks specifics, state the most concrete claim available.\n\n"
-        "Return ONLY valid JSON, no markdown code blocks. Every item MUST get a summary; infer from headline if text is missing.\n\n"
+        "You are writing a daily briefing newsletter. The reader should NEVER need to click through, read the article, watch the episode, or read the paper. Your bullets ARE the content.\n\n"
+        "MINIMUM 3 bullets per item, maximum 4. Each bullet is a SEPARATE fact from the source. One-bullet summaries are FAILURES.\n\n"
+        "FORMAT: EMOJI <strong>Bold 3-8 word fact</strong> — One sentence with KEY specifics (names, numbers, dates, amounts, outcomes).<br>\n"
+        "Separate bullets with <br> within each item's string.\n\n"
+        "HARD RULES:\n"
+        "- Each bullet = one distinct, concrete fact with a specific detail (number, name, date, dollar figure, percentage, outcome).\n"
+        "- DO NOT restate the headline. Each bullet adds NEW information.\n"
+        "- NEVER write meta-descriptions: 'the episode discusses', 'the paper proposes', 'the article explores'. Report the fact directly.\n"
+        "- NEVER write filler: 'raises questions', 'significant implications', 'could revolutionize', 'demands attention', 'is critical', 'remains challenging'.\n"
+        "- NEVER include ads, sponsors, promos, or discount codes.\n"
+        "- For PODCASTS: Report the actual news/claims/data from the episode as facts. 'Opus 4.6 achieves 14.5-hour time horizon' NOT 'the episode discussed AI capabilities'.\n"
+        "- For PAPERS: Report findings, results, benchmark scores. NOT 'the paper proposes a framework'. If no results, report the most specific technical detail (dataset size, model, task).\n\n"
+        "EXAMPLE:\n"
+        "BAD (1 vague bullet): '📈 <strong>AI growth creates challenges</strong> — AI introduces complex hurdles that demand attention.'\n"
+        "GOOD (3 specific bullets): '📈 <strong>GPT-5 costs $3B to train</strong> — OpenAI spent 3x more than GPT-4, using 50,000 H100 GPUs over 90 days.<br>💰 <strong>2024 compute spend hit $7B</strong> — Total compute spending passed $7B, doubling from 2023 levels.<br>⚡ <strong>Training used 50MW data center</strong> — The run occupied an entire 50-megawatt data center in Texas for the full 90 days.'\n\n"
+        "SELF-CHECK before returning: Count bullets per item. If any item has fewer than 3 bullets, add more facts from the source. If any bullet lacks a specific detail, rewrite it.\n\n"
+        "Return ONLY valid JSON, no markdown code blocks.\n\n"
     ]
 
     if sections.get("news"):
@@ -127,14 +120,14 @@ def _build_prompt(sections: dict) -> str:
             parts.append(f"{i}. [{item['title']}]: {text}")
 
     parts.append(
-        '\nReturn JSON exactly like this (with the same number of items per section):\n'
+        '\nReturn JSON exactly like this (same number of items per section, MINIMUM 3 bullets per item):\n'
         '{\n'
-        '  "news": ["📈 <strong>Bold headline</strong> — detail.<br>💰 <strong>Another point</strong> — detail.<br>🔍 <strong>Third point</strong> — detail.", ...],\n'
-        '  "ai_security_news": ["🛡️ <strong>Bold headline</strong> — detail.<br>🔍 <strong>Another point</strong> — detail.", ...],\n'
-        '  "podcasts": ["🎯 <strong>Bold headline</strong> — detail.<br>⚡ <strong>Another point</strong> — detail.", ...],\n'
-        '  "papers": ["🧠 <strong>Bold headline</strong> — detail.<br>📊 <strong>Another point</strong> — detail.", ...]\n'
+        '  "news": ["📈 <strong>Fact one</strong> — detail with specifics.<br>💰 <strong>Fact two</strong> — detail with specifics.<br>🔍 <strong>Fact three</strong> — detail with specifics.", ...],\n'
+        '  "ai_security_news": ["🛡️ <strong>Fact one</strong> — detail.<br>🔍 <strong>Fact two</strong> — detail.<br>⚠️ <strong>Fact three</strong> — detail.", ...],\n'
+        '  "podcasts": ["🎯 <strong>Fact one</strong> — detail.<br>⚡ <strong>Fact two</strong> — detail.<br>📊 <strong>Fact three</strong> — detail.", ...],\n'
+        '  "papers": ["🧠 <strong>Finding one</strong> — detail.<br>📊 <strong>Finding two</strong> — detail.<br>⚙️ <strong>Finding three</strong> — detail.", ...]\n'
         '}\n\n'
-        'IMPORTANT: Every array must have EXACTLY the same number of items as the input. Never return an empty string for any item.'
+        'CRITICAL: Every array must have EXACTLY the same number of items as the input. Every item MUST have at least 3 bullet points separated by <br>. Never return an empty string.'
     )
 
     return "\n".join(parts)
