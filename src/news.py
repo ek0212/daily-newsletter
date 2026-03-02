@@ -194,27 +194,30 @@ def get_top_news(count: int = 5) -> list[dict]:
     for story in unique:
         story["_relevance"] = _relevance_score(story)
 
-    # Split: pick top stories by relevance, then fill remaining slots
-    # with the most recent general headlines (ensuring broad awareness)
+    # Split: top stories by relevance (tech/AI) + CNN/general top headlines
     by_relevance = sorted(unique, key=lambda s: (s["_relevance"], _parse_pub_date(s.get("published", ""))), reverse=True)
-    by_recency = sorted(unique, key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
 
-    # Take ceil(count/2) relevant + floor(count/2) most-recent general
+    # General sources for "what everyone is talking about today"
+    general_sources = {"CNN", "Google News", "NPR"}
+    general_stories = [s for s in unique if s["source"] in general_sources]
+    general_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
+
+    # Take ceil(count/2) relevant + floor(count/2) general headlines
     n_relevant = (count + 1) // 2  # 3 if count=5
     n_general = count - n_relevant  # 2 if count=5
 
     selected = []
     selected_titles = set()
 
-    # First: top relevant stories
+    # First: top relevant stories (tech/AI/security)
     for s in by_relevance:
         if len(selected) >= n_relevant:
             break
         selected.append(s)
         selected_titles.add(s["title"])
 
-    # Then: most recent stories not already selected (general awareness)
-    for s in by_recency:
+    # Then: top CNN/general headlines not already selected
+    for s in general_stories:
         if len(selected) >= count:
             break
         if s["title"] not in selected_titles:

@@ -18,6 +18,37 @@ EST = timezone(timedelta(hours=-5))
 TARGET_HOURS = [7, 9, 15, 17, 19]
 
 
+def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
+    """Calculate feels-like temperature using wind chill or heat index.
+
+    Wind chill: valid for temp <= 50°F and wind >= 3 mph (NWS formula).
+    Heat index: valid for temp >= 80°F and humidity >= 40%.
+    Otherwise returns the actual temperature.
+    """
+    import re
+    # Extract numeric wind speed (e.g. "15 mph" -> 15, "10 to 20 mph" -> 15)
+    wind_nums = re.findall(r'\d+', wind_speed_str)
+    if wind_nums:
+        wind_mph = sum(int(n) for n in wind_nums) / len(wind_nums)
+    else:
+        wind_mph = 0
+
+    t = float(temp_f)
+    if t <= 50 and wind_mph >= 3:
+        # NWS wind chill formula
+        wc = 35.74 + 0.6215 * t - 35.75 * (wind_mph ** 0.16) + 0.4275 * t * (wind_mph ** 0.16)
+        return round(wc)
+    elif t >= 80 and humidity is not None and humidity >= 40:
+        # Simplified heat index (Rothfusz regression)
+        h = float(humidity)
+        hi = (-42.379 + 2.04901523 * t + 10.14333127 * h
+              - 0.22475541 * t * h - 0.00683783 * t * t
+              - 0.05481717 * h * h + 0.00122874 * t * t * h
+              + 0.00085282 * t * h * h - 0.00000199 * t * t * h * h)
+        return round(hi)
+    return round(t)
+
+
 def _parse_hourly_periods(periods: list) -> list[dict]:
     """Extract weather data for TARGET_HOURS (EST) from NWS hourly periods."""
     now_est = datetime.now(EST)
@@ -36,17 +67,22 @@ def _parse_hourly_periods(periods: list) -> list[dict]:
             continue
         matched.add(start.hour)
 
-        wind_speed = p.get("windSpeed", "")
+        wind_speed_str = p.get("windSpeed", "")
         wind_dir = p.get("windDirection", "")
         humidity = p.get("relativeHumidity", {}).get("value")
         precip_chance = p.get("probabilityOfPrecipitation", {}).get("value") or 0
+        temp = p["temperature"]
+
+        # Calculate feels-like (wind chill for cold, heat index for hot)
+        feels_like = _calc_feels_like(temp, wind_speed_str, humidity)
 
         hourly_data.append({
             "label": start.strftime("%-I%p").lower(),  # e.g. "7am"
             "hour": start.hour,
-            "temp": p["temperature"],
+            "temp": temp,
+            "feels_like": feels_like,
             "conditions": p["shortForecast"],
-            "wind": f"{wind_speed} {wind_dir}".strip(),
+            "wind": f"{wind_speed_str} {wind_dir}".strip(),
             "humidity": f"{humidity}%" if humidity is not None else "N/A",
             "precip_chance": f"{precip_chance}%",
         })
