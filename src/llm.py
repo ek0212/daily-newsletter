@@ -1,61 +1,98 @@
-"""Batched LLM summarization using Google Gemini API with sumy fallback."""
+"""Parallel LLM summarization using Google Gemini API with sumy fallback.
+
+Each section (news, ai_security_news, podcasts, papers) gets its own Gemini
+API call on a separate API key, running in parallel to avoid timeouts.
+"""
 
 import json
 import logging
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from src.summarizer import summarize
 
 logger = logging.getLogger(__name__)
 
+# Section keys in processing order — each gets its own API key
+SECTION_KEYS = ["news", "ai_security_news", "podcasts", "papers"]
+
+# API keys: primary env var + 3 hardcoded backup keys (free-tier Gemini)
+_EXTRA_KEYS = [
+    "AIzaSyAfTkR8tp28_Mq86vfe6icxxYV-tat072M",
+    "AIzaSyAnjYVH5I9urCvKAEEWfzfTNiL21dvILDg",
+    "AIzaSyDpAZXVGHg18-xwRG_26blnU8n401CVss8",
+]
+
+
+def _get_api_keys() -> list[str]:
+    """Collect all available Gemini API keys (up to 4)."""
+    keys = []
+    primary = os.getenv("GEMINI_API_KEY")
+    if primary:
+        keys.append(primary)
+    keys.extend(_EXTRA_KEYS)
+    return keys[:4]
+
 
 def batch_summarize(sections: dict) -> dict:
-    """Summarize all newsletter content in a single Gemini API call.
+    """Summarize all newsletter sections via parallel Gemini API calls.
 
-    Args:
-        sections: dict with keys 'news', 'podcasts', 'papers', each a list of
-                  dicts containing 'title' and 'raw_text' fields.
-
-    Returns:
-        dict with same keys, each containing a list of summary strings.
-        Falls back to sumy extractive summarizer if Gemini fails.
+    Each section gets its own API key and runs concurrently. Sections that
+    fail fall back to sumy extractive summarizer independently.
     """
-    api_key = os.getenv("GEMINI_API_KEY")
-    if not api_key:
-        logger.warning("No GEMINI_API_KEY set, using extractive fallback")
+    api_keys = _get_api_keys()
+    if not api_keys:
+        logger.warning("No Gemini API keys available, using extractive fallback")
         return _fallback_summarize(sections)
 
-    logger.info("Starting batch summarization via Gemini (gemini-2.5-flash)")
-    prompt = _build_prompt(sections)
-    n_news = len(sections.get("news", []))
-    n_sec = len(sections.get("ai_security_news", []))
-    n_pods = len(sections.get("podcasts", []))
-    n_papers = len(sections.get("papers", []))
-    logger.debug("Prompt size: %d chars, %d items total (news: %d, ai_security_news: %d, podcasts: %d, papers: %d)",
-                 len(prompt), n_news + n_sec + n_pods + n_papers, n_news, n_sec, n_pods, n_papers)
+    # Determine which sections have content
+    active = [(key, sections[key]) for key in SECTION_KEYS if sections.get(key)]
+    if not active:
+        return {key: [] for key in SECTION_KEYS}
 
-    try:
+    logger.info("Starting parallel summarization: %d sections across %d API keys",
+                len(active), min(len(active), len(api_keys)))
+
+    result = {key: [] for key in SECTION_KEYS}
+
+    def _summarize_section(section_key: str, items: list[dict], api_key: str) -> tuple[str, list[str]]:
+        """Summarize one section with one API key. Returns (section_key, summaries)."""
         from google import genai
-
+        prompt = _build_section_prompt(section_key, items)
+        logger.info("Gemini call for %s (%d items, %d chars) using key ...%s",
+                     section_key, len(items), len(prompt), api_key[-6:])
         client = genai.Client(api_key=api_key)
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=prompt,
         )
-        logger.info("Gemini API call successful, response: %d chars", len(response.text))
-        result = _parse_response(response.text, sections)
-        logger.debug("Parsed summaries: news=%d, ai_security_news=%d, podcasts=%d, papers=%d",
-                     len(result.get("news", [])), len(result.get("ai_security_news", [])),
-                     len(result.get("podcasts", [])), len(result.get("papers", [])))
-        return result
-    except Exception as e:
-        logger.warning("Gemini call failed: %s, falling back to extractive summarizer", e)
-        return _fallback_summarize(sections)
+        logger.info("Gemini %s response: %d chars", section_key, len(response.text))
+        summaries = _parse_section_response(response.text, section_key, items)
+        return section_key, summaries
+
+    with ThreadPoolExecutor(max_workers=min(len(active), len(api_keys))) as pool:
+        futures = {}
+        for i, (section_key, items) in enumerate(active):
+            api_key = api_keys[i % len(api_keys)]
+            fut = pool.submit(_summarize_section, section_key, items, api_key)
+            futures[fut] = section_key
+
+        for fut in as_completed(futures):
+            section_key = futures[fut]
+            try:
+                key, summaries = fut.result()
+                result[key] = summaries
+                logger.info("Section %s: got %d summaries", key, len(summaries))
+            except Exception as e:
+                logger.warning("Gemini failed for %s: %s. Using extractive fallback.", section_key, e)
+                result[section_key] = _fallback_section(sections.get(section_key, []), section_key)
+
+    return result
 
 
-def _build_prompt(sections: dict) -> str:
-    """Build the single prompt for batch summarization."""
-    parts = [
+def _base_instructions() -> str:
+    """Shared prompt instructions for all sections."""
+    return (
         "You are writing a daily briefing newsletter. The reader should NEVER need to click through, read the article, watch the episode, or read the paper. Your bullets ARE the content.\n\n"
         "Write exactly 3 bullet points per item — the top 3 key takeaways. Each bullet is a SEPARATE fact.\n\n"
         "FORMAT: EMOJI followed by one concise sentence with specific details (names, numbers, dates, outcomes).<br>\n"
@@ -80,117 +117,74 @@ def _build_prompt(sections: dict) -> str:
         "- '📉 Claude Opus 4.6 repeated the same 16-character password 18 out of 50 times, yielding only 27 bits of entropy vs. 98 expected.'\n\n"
         "If the source text lacks specific numbers or names, state the most concrete claim available — but NEVER pad with vague filler.\n\n"
         "SELF-CHECK: Re-read every bullet. Ask: 'Could this sentence apply to 10 different articles?' If yes, it's too vague — rewrite with a specific detail from the source.\n\n"
-        "Return ONLY valid JSON, no markdown code blocks.\n\n"
-    ]
+        "Return ONLY a valid JSON array, no markdown code blocks.\n\n"
+    )
 
-    if sections.get("news"):
-        parts.append("\nNEWS ARTICLES:")
-        for i, item in enumerate(sections["news"], 1):
+
+def _build_section_prompt(section_key: str, items: list[dict]) -> str:
+    """Build a prompt for a single section."""
+    import re
+    parts = [_base_instructions()]
+
+    if section_key == "news":
+        parts.append("NEWS ARTICLES:")
+        for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "")[:3000]
             if len(text) < 100:
                 text = "(No article text available — write a brief, factual summary based on the headline.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
-    if sections.get("podcasts"):
-        parts.append("\nPODCAST EPISODES:")
-        for i, item in enumerate(sections["podcasts"], 1):
+    elif section_key == "ai_security_news":
+        parts.append("AI SECURITY NEWS ARTICLES:")
+        for i, item in enumerate(items, 1):
+            text = (item.get("raw_text") or "")[:3000]
+            if len(text) < 100:
+                text = "(No article text available — write a brief, factual summary based on the headline.)"
+            parts.append(f"{i}. [{item['title']}]: {text}")
+
+    elif section_key == "podcasts":
+        parts.append("PODCAST EPISODES:")
+        for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "").strip()
             if len(text) > 1000:
-                # Strip sponsor/ad blocks before sending to LLM
-                import re
                 text = re.sub(
                     r'(?i)(?:brought to you by|sponsored by|use code|promo code|sign up at|download it at|learn more at|check out|our sponsor|this episode is|discount|coupon|free trial|special offer|percent off|dollars off|\bpromo\b|partner event|go to \w+\.\w+)[^\n]{0,300}',
                     '', text
                 )
-                # Skip intros, take substantive middle
                 text = text[200:8000].strip()
             elif len(text) < 200:
-                # No real transcript — tell Gemini to infer from title
                 text = "(No transcript available — summarize based on the episode title and podcast context.)"
             else:
                 text = text[:5000]
             parts.append(f"{i}. [{item.get('podcast', '')} - {item['title']}]: {text}")
 
-    if sections.get("papers"):
-        parts.append("\nARXIV PAPERS:")
-        for i, item in enumerate(sections["papers"], 1):
+    elif section_key == "papers":
+        parts.append("ARXIV PAPERS:")
+        for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "")[:1500]
             if len(text) < 50:
                 text = "(No abstract available — summarize based on the paper title.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
-    if sections.get("ai_security_news"):
-        parts.append("\nAI SECURITY NEWS ARTICLES:")
-        for i, item in enumerate(sections["ai_security_news"], 1):
-            text = (item.get("raw_text") or "")[:3000]
-            if len(text) < 100:
-                text = "(No article text available — write a brief, factual summary based on the headline.)"
-            parts.append(f"{i}. [{item['title']}]: {text}")
+    example_emojis = {
+        "news": '📈 First key fact.<br>💰 Second key fact.<br>🔍 Third key fact.',
+        "ai_security_news": '🛡️ First fact.<br>🔍 Second fact.<br>⚠️ Third fact.',
+        "podcasts": '🎯 First takeaway.<br>⚡ Second takeaway.<br>📊 Third takeaway.',
+        "papers": '🧠 First finding.<br>📊 Second finding.<br>⚙️ Third finding.',
+    }
 
     parts.append(
-        '\nReturn JSON exactly like this (same number of items per section, exactly 3 emoji bullets per item):\n'
-        '{\n'
-        '  "news": ["📈 First key fact with specifics.<br>💰 Second key fact.<br>🔍 Third key fact.", ...],\n'
-        '  "ai_security_news": ["🛡️ First fact.<br>🔍 Second fact.<br>⚠️ Third fact.", ...],\n'
-        '  "podcasts": ["🎯 First takeaway.<br>⚡ Second takeaway.<br>📊 Third takeaway.", ...],\n'
-        '  "papers": ["🧠 First finding.<br>📊 Second finding.<br>⚙️ Third finding.", ...]\n'
-        '}\n\n'
-        'CRITICAL: Every array must have EXACTLY the same number of items as the input. Every item MUST have exactly 3 bullets separated by <br>. Never return an empty string.'
+        f'\nReturn a JSON array with EXACTLY {len(items)} strings, one per item above. '
+        f'Each string has exactly 3 emoji bullets separated by <br>.\n'
+        f'Example: ["{example_emojis.get(section_key, example_emojis["news"])}", ...]\n\n'
+        f'CRITICAL: Return EXACTLY {len(items)} items. Never return an empty string.'
     )
 
     return "\n".join(parts)
 
 
-def _extract_arrays_fallback(text: str, sections: dict) -> dict | None:
-    """Extract summary arrays from malformed JSON using regex."""
-    import re
-    data = {}
-    for key in ("news", "ai_security_news", "podcasts", "papers"):
-        # Find the array for this key: "key": [...]
-        pattern = rf'"{key}"\s*:\s*\['
-        match = re.search(pattern, text)
-        if not match:
-            continue
-        # Find matching closing bracket
-        start = match.end()
-        depth = 1
-        i = start
-        while i < len(text) and depth > 0:
-            if text[i] == '[':
-                depth += 1
-            elif text[i] == ']':
-                depth -= 1
-            i += 1
-        array_content = text[start:i - 1]
-        # Split on '", "' pattern (between array items) — items are quoted strings
-        # Use a pattern that finds string boundaries
-        items = []
-        in_str = False
-        current = []
-        for j, ch in enumerate(array_content):
-            if ch == '"' and (j == 0 or array_content[j - 1] != '\\'):
-                in_str = not in_str
-                if in_str and not current:
-                    continue  # opening quote
-                elif not in_str:
-                    items.append(''.join(current))
-                    current = []
-                    continue
-            if in_str:
-                current.append(ch)
-        if current:
-            items.append(''.join(current))
-        data[key] = items
-    if data:
-        logger.info("Fallback JSON extraction recovered: %s",
-                     {k: len(v) for k, v in data.items()})
-        return data
-    return None
-
-
-def _parse_response(text: str, sections: dict) -> dict:
-    """Parse Gemini's JSON response, validating item counts."""
-    # Strip markdown code blocks if present
+def _parse_section_response(text: str, section_key: str, items: list[dict]) -> list[str]:
+    """Parse Gemini's JSON array response for a single section."""
     cleaned = text.strip()
     if cleaned.startswith("```"):
         cleaned = cleaned.split("\n", 1)[1] if "\n" in cleaned else cleaned[3:]
@@ -198,45 +192,59 @@ def _parse_response(text: str, sections: dict) -> dict:
             cleaned = cleaned[:-3]
         cleaned = cleaned.strip()
 
+    import re
+
     try:
         data = json.loads(cleaned)
-    except json.JSONDecodeError as e:
-        logger.warning("Initial JSON parse failed: %s. Attempting repair.", e)
-        import re
-        # Fix trailing commas
+    except json.JSONDecodeError:
+        # Try fixing trailing commas
         fixed = re.sub(r',\s*([}\]])', r'\1', cleaned)
-        # Fix unescaped double quotes inside strings by replacing inner quotes
-        # Strategy: extract each array value between outer quotes, escape inner quotes
         try:
             data = json.loads(fixed)
         except json.JSONDecodeError:
-            # Last resort: extract arrays manually using bracket matching
-            data = _extract_arrays_fallback(fixed, sections)
-            if data is None:
-                raise
+            # Try extracting array from wrapper object
+            match = re.search(r'\[', cleaned)
+            if match:
+                try:
+                    data = json.loads(cleaned[match.start():])
+                except json.JSONDecodeError:
+                    logger.warning("Cannot parse %s response, using fallback", section_key)
+                    return _fallback_section(items, section_key)
+            else:
+                return _fallback_section(items, section_key)
 
-    result = {}
-    for key in ("news", "ai_security_news", "podcasts", "papers"):
-        expected = len(sections.get(key, []))
-        got = data.get(key, [])
-        if len(got) > expected:
-            logger.warning("Gemini returned %d %s summaries, expected %d. Truncating.", len(got), key, expected)
-            got = got[:expected]
-        elif len(got) < expected:
-            logger.warning("Gemini returned %d %s summaries, expected %d. Padding with fallback.", len(got), key, expected)
-            missing = sections.get(key, [])[len(got):]
-            got.extend(_fallback_section(missing, key))
-        # Validate every summary — replace bad ones with fallback
-        items = sections.get(key, [])
-        for i, summary in enumerate(got):
-            issue = _validate_summary(summary)
-            if issue:
-                logger.warning("Bad summary for %s item %d (%s): %s. Using fallback.",
-                               key, i, items[i].get("title", ""), issue)
-                got[i] = _fallback_section([items[i]], key)[0]
-        result[key] = got
+    # Handle dict wrapper: {"news": [...]} or {"items": [...]}
+    if isinstance(data, dict):
+        if section_key in data:
+            data = data[section_key]
+        else:
+            # Take the first array value
+            for v in data.values():
+                if isinstance(v, list):
+                    data = v
+                    break
 
-    return result
+    if not isinstance(data, list):
+        logger.warning("Gemini %s response is not a list, using fallback", section_key)
+        return _fallback_section(items, section_key)
+
+    # Truncate or pad
+    if len(data) > len(items):
+        data = data[:len(items)]
+    elif len(data) < len(items):
+        logger.warning("Gemini returned %d %s summaries, expected %d. Padding.", len(data), section_key, len(items))
+        data.extend(_fallback_section(items[len(data):], section_key))
+
+    # Validate each summary
+    for i, summary in enumerate(data):
+        issue = _validate_summary(summary)
+        if issue:
+            logger.warning("Bad summary for %s item %d (%s): %s. Using fallback.",
+                           section_key, i, items[i].get("title", ""), issue)
+            data[i] = _fallback_section([items[i]], section_key)[0]
+
+    return data
+
 
 
 def _validate_summary(summary: str) -> str | None:
