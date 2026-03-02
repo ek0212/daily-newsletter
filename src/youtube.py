@@ -1,13 +1,22 @@
-"""Fetch recent YouTube videos from channel feeds with transcript extraction."""
+"""Fetch recent YouTube videos from channel feeds with transcript extraction.
+
+Uses a tiered approach for getting episode text:
+1. Podcast RSS descriptions / website transcripts (free, works everywhere)
+2. YouTube transcript API via Tor proxy (free, unreliable in CI)
+3. YouTube transcript API direct (works locally, blocked in CI)
+"""
 
 import logging
 import os
+import re
 import socket
 import time
 from datetime import datetime, timedelta, timezone
+from difflib import SequenceMatcher
 
 import feedparser
 import requests as _requests
+import trafilatura
 
 logger = logging.getLogger(__name__)
 
@@ -24,8 +33,27 @@ YOUTUBE_CHANNELS = {
     "Jeff Su": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwAnu01qlnVg1Ai2AbtTMaA",
 }
 
+# Podcast RSS feeds with substantial episode descriptions or transcripts.
+# These are tried BEFORE YouTube transcripts — they work from any IP.
+PODCAST_RSS_FEEDS = {
+    "This Week in Startups": "https://anchor.fm/s/7c624c84/podcast/rss",
+    "Dwarkesh Podcast": "https://api.substack.com/feed/podcast/69345.rss",
+    "Lex Fridman Podcast": "https://lexfridman.com/feed/podcast/",
+    "AI Daily Brief": "https://anchor.fm/s/f7cac464/podcast/rss",
+    "Morning Brew Daily": "https://feeds.megaphone.fm/business-casual",
+    "Matt Wolfe": "https://feeds.megaphone.fm/thenextwave",
+}
+
+# Channels where full transcripts are published on their website.
+# Map: channel name -> URL pattern (use {slug} for episode slug).
+TRANSCRIPT_WEBSITES = {
+    "Dwarkesh Podcast": "https://dwarkesh.com",
+    "Lex Fridman Podcast": "https://lexfridman.com",
+}
+
 MAX_VIDEOS = 8
-_TOR_MAX_RETRIES = 5
+_TOR_MAX_RETRIES = 12
+_TOR_SLEEP = 5
 
 
 def _rotate_tor_circuit(control_port: int = 9051) -> bool:
@@ -70,6 +98,127 @@ def _make_tor_session() -> _requests.Session:
     return session
 
 
+def _title_similarity(a: str, b: str) -> float:
+    """Fuzzy title match using keyword overlap, tuned for YT vs podcast titles.
+
+    YouTube title: "The AI Industry Will Hit Trillions by 2030 - Dario Amodei"
+    Podcast title: 'Dario Amodei — "We are near the end of the exponential"'
+    These share "Dario Amodei" which is the key match signal.
+    """
+    def _keywords(s: str) -> set[str]:
+        s = s.lower()
+        # Remove episode markers, podcast names, punctuation
+        s = re.sub(r'[|\-–—].*(?:podcast|lex fridman|dwarkesh|morning brew).*$', '', s, flags=re.IGNORECASE)
+        s = re.sub(r'[#|"\'\-–—:,.()\[\]]', ' ', s)
+        s = re.sub(r'\b(the|a|an|in|of|and|or|is|to|for|with|on|at|by|from|that|this|it)\b', '', s)
+        words = {w for w in s.split() if len(w) >= 3}
+        return words
+
+    kw_a = _keywords(a)
+    kw_b = _keywords(b)
+    if not kw_a or not kw_b:
+        return 0.0
+    overlap = kw_a & kw_b
+    # Jaccard-ish but weighted toward shorter set (the query title)
+    smaller = min(len(kw_a), len(kw_b))
+    return len(overlap) / smaller if smaller else 0.0
+
+
+def _get_podcast_text(channel: str, video_title: str) -> str:
+    """Try to get episode text from podcast RSS feed for a given channel/title.
+
+    Returns episode description text if a matching episode is found, else "".
+    """
+    feed_url = PODCAST_RSS_FEEDS.get(channel)
+    if not feed_url:
+        return ""
+
+    try:
+        feed = feedparser.parse(feed_url)
+        best_match = ""
+        best_score = 0.0
+
+        for entry in feed.entries[:20]:  # Only check recent episodes
+            ep_title = entry.get("title", "")
+            score = _title_similarity(video_title, ep_title)
+            if score > best_score:
+                best_score = score
+                # Prefer content:encoded > description > summary
+                text = ""
+                if hasattr(entry, "content") and entry.content:
+                    text = entry.content[0].get("value", "")
+                if not text or len(text) < 200:
+                    text = entry.get("description", "") or entry.get("summary", "")
+                # Strip HTML tags
+                text = re.sub(r'<[^>]+>', ' ', text)
+                text = re.sub(r'\s+', ' ', text).strip()
+                best_match = text
+
+        if best_score >= 0.3 and len(best_match) >= 200:
+            logger.info("Podcast RSS match for '%s' (score=%.2f): %d chars from %s",
+                        video_title[:50], best_score, len(best_match), channel)
+            return best_match
+
+        logger.debug("No good podcast RSS match for '%s' in %s (best=%.2f)",
+                     video_title[:50], channel, best_score)
+    except Exception as e:
+        logger.debug("Podcast RSS fetch failed for %s: %s", channel, e)
+
+    return ""
+
+
+def _get_website_transcript(channel: str, video_title: str) -> str:
+    """Try to fetch a full transcript from the channel's website.
+
+    Works for Dwarkesh (Substack) and Lex Fridman (lexfridman.com).
+    """
+    base_url = TRANSCRIPT_WEBSITES.get(channel)
+    if not base_url:
+        return ""
+
+    try:
+        if channel == "Lex Fridman Podcast":
+            # Lex publishes transcripts at lexfridman.com/GUEST-NAME-transcript
+            # Try to find the transcript link from the podcast RSS entry
+            feed = feedparser.parse(PODCAST_RSS_FEEDS[channel])
+            for entry in feed.entries[:10]:
+                score = _title_similarity(video_title, entry.get("title", ""))
+                if score >= 0.3:
+                    # Look for transcript URL in description
+                    desc = entry.get("description", "") + entry.get("summary", "")
+                    match = re.search(r'(https://lexfridman\.com/[a-z0-9-]+-transcript)', desc, re.IGNORECASE)
+                    if match:
+                        url = match.group(1)
+                        downloaded = trafilatura.fetch_url(url)
+                        if downloaded:
+                            text = trafilatura.extract(downloaded)
+                            if text and len(text) > 500:
+                                logger.info("Lex transcript fetched: %d chars from %s", len(text), url)
+                                return text
+                    break
+
+        elif channel == "Dwarkesh Podcast":
+            # Dwarkesh publishes on Substack — full transcripts in post body
+            feed = feedparser.parse(PODCAST_RSS_FEEDS[channel])
+            for entry in feed.entries[:10]:
+                score = _title_similarity(video_title, entry.get("title", ""))
+                if score >= 0.3:
+                    link = entry.get("link", "")
+                    if link:
+                        downloaded = trafilatura.fetch_url(link)
+                        if downloaded:
+                            text = trafilatura.extract(downloaded)
+                            if text and len(text) > 500:
+                                logger.info("Dwarkesh transcript fetched: %d chars from %s", len(text), link)
+                                return text
+                    break
+
+    except Exception as e:
+        logger.debug("Website transcript fetch failed for %s: %s", channel, e)
+
+    return ""
+
+
 def _get_transcript_text(video_id: str, use_tor: bool = False) -> str:
     """Fetch YouTube transcript. With Tor, retries with circuit rotation on failure."""
     from youtube_transcript_api import YouTubeTranscriptApi
@@ -91,7 +240,7 @@ def _get_transcript_text(video_id: str, use_tor: bool = False) -> str:
                              type(e).__name__)
             # Rotate to a new exit node and wait for new circuit
             _rotate_tor_circuit(control_port)
-            time.sleep(3)
+            time.sleep(_TOR_SLEEP)
 
     # Direct fallback (works locally, may fail in CI)
     try:
@@ -156,14 +305,37 @@ def get_recent_videos(days: int = 3) -> list[dict]:
     all_videos.sort(key=lambda v: v["published_dt"], reverse=True)
     selected = all_videos[:MAX_VIDEOS]
 
-    # Check if Tor is available (once, not per-video)
-    use_tor = _tor_available()
-
-    # Fetch transcripts
+    # Phase 1: Try podcast RSS / website transcripts (free, reliable from any IP)
     for video in selected:
-        video["raw_text"] = _get_transcript_text(video["video_id"], use_tor=use_tor)
-        del video["published_dt"]
+        # Try website transcripts first (fullest text)
+        text = _get_website_transcript(video["channel"], video["title"])
+        if not text or len(text) < 200:
+            # Try podcast RSS descriptions
+            text = _get_podcast_text(video["channel"], video["title"])
+        if text and len(text) >= 200:
+            video["raw_text"] = text
+            video["_text_source"] = "podcast"
 
-    with_transcripts = sum(1 for v in selected if len(v.get("raw_text", "")) > 500)
-    logger.info("YouTube complete: %d videos, %d with transcripts", len(selected), with_transcripts)
+    needs_yt = [v for v in selected if not v.get("raw_text")]
+    podcast_hits = len(selected) - len(needs_yt)
+    logger.info("Podcast/website text: %d/%d videos covered. %d need YouTube transcripts.",
+                podcast_hits, len(selected), len(needs_yt))
+
+    # Phase 2: YouTube transcripts for remaining videos
+    if needs_yt:
+        use_tor = _tor_available()
+        for video in needs_yt:
+            video["raw_text"] = _get_transcript_text(video["video_id"], use_tor=use_tor)
+            if video["raw_text"]:
+                video["_text_source"] = "youtube"
+
+    # Clean up and log
+    for video in selected:
+        video.pop("published_dt", None)
+        video.pop("_text_source", None)
+
+    with_text = sum(1 for v in selected if len(v.get("raw_text", "")) > 200)
+    logger.info("YouTube complete: %d videos, %d with text content (podcast: %d, youtube: %d)",
+                len(selected), with_text, podcast_hits,
+                with_text - podcast_hits)
     return selected

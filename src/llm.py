@@ -7,7 +7,7 @@ API call on a separate API key, running in parallel to avoid timeouts.
 import json
 import logging
 import os
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import time as _time
 
 from src.summarizer import summarize
 
@@ -48,36 +48,74 @@ def batch_summarize(sections: dict) -> dict:
     result = {key: [] for key in SECTION_KEYS}
 
     def _summarize_section(section_key: str, items: list[dict], api_key: str) -> tuple[str, list[str]]:
-        """Summarize one section with one API key. Returns (section_key, summaries)."""
+        """Summarize one section with one API key. Retries on 429 rate limits."""
         from google import genai
         prompt = _build_section_prompt(section_key, items)
         logger.info("Gemini call for %s (%d items, %d chars) using key ...%s",
                      section_key, len(items), len(prompt), api_key[-6:])
         client = genai.Client(api_key=api_key)
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt,
-        )
-        logger.info("Gemini %s response: %d chars", section_key, len(response.text))
-        summaries = _parse_section_response(response.text, section_key, items)
-        return section_key, summaries
-
-    with ThreadPoolExecutor(max_workers=min(len(active), len(api_keys))) as pool:
-        futures = {}
-        for i, (section_key, items) in enumerate(active):
-            api_key = api_keys[i % len(api_keys)]
-            fut = pool.submit(_summarize_section, section_key, items, api_key)
-            futures[fut] = section_key
-
-        for fut in as_completed(futures):
-            section_key = futures[fut]
+        max_retries = 3
+        for attempt in range(max_retries):
             try:
-                key, summaries = fut.result()
+                response = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents=prompt,
+                )
+                logger.info("Gemini %s response: %d chars", section_key, len(response.text))
+                summaries = _parse_section_response(response.text, section_key, items)
+                return section_key, summaries
+            except Exception as e:
+                err_str = str(e)
+                if "429" in err_str:
+                    # Daily quota exhaustion — retrying same key won't help
+                    if "PerDay" in err_str:
+                        logger.warning("Daily quota exhausted for key ...%s on %s",
+                                       api_key[-6:], section_key)
+                        raise
+                    # Per-minute rate limit — retry after delay
+                    if attempt < max_retries - 1:
+                        import re as _re
+                        delay_match = _re.search(r'retry(?:\s+after)?\s+(\d+(?:\.\d+)?)\s*s', err_str, _re.IGNORECASE)
+                        if delay_match:
+                            wait = float(delay_match.group(1)) + 1
+                        else:
+                            wait = 6 * (attempt + 1)
+                        logger.info("Rate limited on %s (attempt %d), retrying in %.1fs...",
+                                    section_key, attempt + 1, wait)
+                        _time.sleep(wait)
+                    else:
+                        raise
+                else:
+                    raise
+
+    # Run sections sequentially, assigning keys via round-robin so each section
+    # gets a different key when possible (avoids two sections sharing one key).
+    for idx, (section_key, items) in enumerate(active):
+        # Round-robin: section 0 → key 0, section 1 → key 1, etc.
+        assigned_keys = [api_keys[(idx + offset) % len(api_keys)] for offset in range(len(api_keys))]
+        last_exc = None
+        section_done = False
+        for api_key in assigned_keys:
+            try:
+                key, summaries = _summarize_section(section_key, items, api_key)
                 result[key] = summaries
                 logger.info("Section %s: got %d summaries", key, len(summaries))
+                section_done = True
+                break
             except Exception as e:
-                logger.warning("Gemini failed for %s: %s. Using extractive fallback.", section_key, e)
-                result[section_key] = _fallback_section(sections.get(section_key, []), section_key)
+                err_str = str(e)
+                last_exc = e
+                # Expired, invalid, or daily-quota-exhausted key — try the next key
+                if any(x in err_str.lower() for x in ["expired", "api key", "invalid"]) or "PerDay" in err_str:
+                    logger.warning("Key ...%s unusable for %s (%s), trying next key.",
+                                   api_key[-6:], section_key,
+                                   "daily quota" if "PerDay" in err_str else "expired/invalid")
+                    continue
+                # Any other error (500, network, etc.) — stop trying keys
+                break
+        if not section_done:
+            logger.warning("All keys failed for %s: %s. Using extractive fallback.", section_key, last_exc)
+            result[section_key] = _fallback_section(sections.get(section_key, []), section_key)
 
     return result
 
@@ -156,7 +194,7 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
                 # Sample from beginning, middle, and end to capture key content
                 text = text[200:]  # skip intro
                 total = len(text)
-                chunk = 4000
+                chunk = 2500
                 if total <= chunk * 2:
                     text = text[:chunk * 2].strip()
                 else:
@@ -313,8 +351,10 @@ def _validate_summary(summary: str) -> str | None:
 
     # Check for verbatim transcript quotes (conversational speech patterns)
     conversational_patterns = [
-        r'(?i)^[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U00002702-\U000027B0]+ (?:I would say|I think|So (?:speaking|basically|like)|You know|And so|About that|Not something)',
-        r'(?i)(?:uh |um |like (?:three|two|a lot)|you know,)',
+        r'(?i)^[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U00002702-\U000027B0]+ (?:I would say|I think|So (?:speaking|basically|like|I\'m)|You know|And so|About that|Not something|come from|orrow )',
+        r'(?i)(?:uh |um |like (?:three|two|a lot|\d)|you know,)',
+        r'(?i)(?:but it it |and then |So I\'m out |I\'m out there)',
+        r'(?i)(?:into like \d|feet one day|really dumping|middle of the)',
     ]
     for pattern in conversational_patterns:
         match = re.search(pattern, stripped)
@@ -346,7 +386,11 @@ def _fallback_summarize(sections: dict) -> dict:
 
 
 def _fallback_section(items: list[dict], section_type: str) -> list[str]:
-    """Summarize a single section's items using sumy, formatted as emoji bullets."""
+    """Summarize a single section's items using sumy, formatted as emoji bullets.
+
+    YouTube transcripts are conversational text that LexRank cannot meaningfully
+    summarize, so YouTube items fall back to title-only display.
+    """
     emojis = {
         "news": ["📰", "📢", "🔍"],
         "youtube": ["🎬", "⚡", "📊"],
@@ -355,6 +399,11 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     section_emojis = emojis.get(section_type, ["📌", "📎", "🔹"])
     results = []
     for item in items:
+        # YouTube: LexRank on spoken transcripts produces verbatim gibberish.
+        # Use title-only fallback instead.
+        if section_type == "youtube":
+            results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
+            continue
         raw = summarize(item.get("raw_text", ""), num_sentences=3, title=item.get("title", ""))
         if not raw or len(raw.strip()) < 20:
             # Minimal fallback from title
