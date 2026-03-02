@@ -16,23 +16,14 @@ logger = logging.getLogger(__name__)
 # Section keys in processing order — each gets its own API key
 SECTION_KEYS = ["news", "youtube", "ai_security"]
 
-# API keys: primary env var + 3 hardcoded backup keys (free-tier Gemini)
-_EXTRA_KEYS = [
-    "AIzaSyAfTkR8tp28_Mq86vfe6icxxYV-tat072M",
-    "AIzaSyAnjYVH5I9urCvKAEEWfzfTNiL21dvILDg",
-    "AIzaSyDpAZXVGHg18-xwRG_26blnU8n401CVss8",
-]
-
-
 def _get_api_keys() -> list[str]:
-    """Collect all available Gemini API keys (up to 4)."""
+    """Collect all available Gemini API keys from environment variables."""
     keys = []
     for var in ["GEMINI_API_KEY", "GEMINI_API_KEY_2"]:
         k = os.getenv(var)
         if k:
             keys.append(k)
-    keys.extend(_EXTRA_KEYS)
-    return keys[:4]
+    return keys
 
 
 def batch_summarize(sections: dict) -> dict:
