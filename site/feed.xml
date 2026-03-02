@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 Mar 2026 19:37:55 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Mar 2026 21:19:40 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Monday, March 02, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-02.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-02.html</guid>
-      <description>Weather: 29°F - Mostly Cloudy | Illness level: LOW | 2 major events this week | 5 top news stories | 8 YouTube videos | 8 AI security updates</description>
+      <description>Weather: 31°F - Mostly Sunny | Illness level: LOW | 2 major events this week | 5 top news stories | 8 YouTube videos | 8 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Cloudy &mdash; High 31&deg; / Low 27&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 32&deg; / Low 31&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -119,10 +119,22 @@
       <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 02 Mar 2026 17:18:34 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Tech workers urge DOD, Congress to withdraw Anthropic label as a supply chain risk</a>
+      <a href="https://techcrunch.com/2026/03/02/tech-workers-urge-dod-congress-to-withdraw-anthropic-label-as-a-supply-chain-risk/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Tech workers urge DOD, Congress to withdraw Anthropic label as a supply-chain risk</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 OD and <strong>Anthropic</strong> after the AI lab last week refused to give the military unrestricted access to its AI systems.<br>📢 <strong>Anthropic</strong>’s two red lines in its negotiations with the Pentagon were that it didn’t want its technology to be used for mass surveillance on Americans or to power autonomous weapons that made targeting and firing decisions without a human in the loop.<br>🔍 The <strong>DOD</strong> said it had no plans to do either of those things, but that it didn’t believe it should be limited by the rules of a vendor.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 <strong>DOD</strong> and <strong>Anthropic</strong> after the AI lab last week refused to give the military unrestricted access to its AI systems.<br>📢 <strong>Anthropic</strong>’s two red lines in its negotiations with the Pentagon were that it didn’t want its technology to be used for mass surveillance of Americans or to power autonomous weapons that could target and fire without a human in the loop.<br>🔍 The <strong>DOD</strong> said it had no plans to do either of those things but that it didn’t believe it should be limited by the rules of a vendor.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-02T15:22:33-05:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <!-- Title -->
+      <a href="https://www.theverge.com/tech/887802/apple-ai-siri-google-servers" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Apple might use Google servers to store data for its upgraded AI Siri</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 <strong>Apple</strong> has asked <strong>Google</strong> to look into “setting up servers” for a new version of <strong>Siri</strong> that’s Gemini-powered and meets <strong>Apple</strong>’s privacy requirements, The Information reports.<br>📢 <strong>Apple</strong> had already announced in January that <strong>Google</strong>’s Gemini AI models would help power the upgraded version of <strong>Siri</strong> it delayed last year, but The Information’s report indicates <strong>Apple</strong> might lean even more on <strong>Google</strong> so it can catch up in AI.<br>🔍 <strong>Apple</strong> might use <strong>Google</strong> servers to store data for its upgraded AI <strong>Siri</strong>
+<strong>Apple</strong> may be leaning even more on <strong>Google</strong> as it tries to catch up in AI.</div>
       
     </div>
     
@@ -139,34 +151,23 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 02 Mar 2026 13:31:49 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/02/anthropics-claude-reports-widespread-outage/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Anthropic’s Claude reports widespread outage</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 <strong>Anthropic</strong> experienced widespread disruptions on Monday morning, with thousands of users reporting problems accessing <strong>Claude</strong> services.<br>📢 The outage seems to be affecting <strong>Claude</strong>.<br>🔍 ai as well as <strong>Claude</strong> Code, though the company said the <strong>Claude</strong> API is working as intended.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 02 Mar 2026 14:29:03 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
       <a href="https://www.npr.org/2026/03/02/nx-s1-5732784/iran-war-flights-travelers-stranded" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Some Middle East flights resume, but thousands of travelers are still stranded by war</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Our flights keep getting canceled," said Kristy Ellmer of Portsmouth, N.<br>📢 H.<br>🔍 She traveled to Dubai last week for business meetings, and is now unsure when she'll be able to leave.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 e waiting to fly out.<br>📢 Our flights keep getting canceled," said Kristy Ellmer of Portsmouth, N.<br>🔍 H.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 02 Mar 2026 19:24:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 02 Mar 2026 09:42:13 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxQOTBRcE5PSkxwWlR6RElwUlBoX2dpMzVsYUpDbWtiTWlxOFg2NmNoWmRmOGpEbldkTnI2LXlnTXp5Y0ExWHVxMEFsRFVmbFJjYWdVSU9JNk93QXdfZjJrWGNmMk02Nm4xa0J1cFcwM0NkLUo0RTgzMWpQQUpjcHNhaw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Live updates: Trump warns Iran about larger strikes as war spirals in Middle East</a>
+      <a href="https://www.npr.org/2026/03/02/nx-s1-5732287/iran-war-oil-gasoline-prices" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Oil prices surge amid fears over Iran war</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 ng war: Israel and Hezbollah are trading blows as the conflict widens, while explosions have been heard in Gulf cities including Dubai, Abu Dhabi and Doha.<br>📢 • Fighter jets shot down: Three US fighter jets were accidentally shot down by Kuwaiti air defenses in an apparent “friendly fire incident,” according to the US military.<br>🔍 All crews are in stable condition.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 period of time, or if the war spills over into neighboring countries and destroys oil infrastructure.<br>📢 Saudi Arabia says it has shot down drones targeting an oil refinery, while Qatar Energy says two natural gas facilities have been attacked.<br>🔍 Meanwhile, stock markets declined initially but pared losses by midday as investors shifted to wait-and-see mode.</div>
       
     </div>
     
@@ -184,23 +185,12 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-02 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-02 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Dwarkesh Podcast</span></div>
       <!-- Title -->
-      <a href="https://youtube.com/watch?v=8hnh_ZqNn4Q" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenClaw Board Member Reveals Plan for AI Domination (w/ Dave Morin)</a>
+      <a href="https://youtube.com/watch?v=mlDw7ZZhlFk" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The AI Industry Will Hit Trillions by 2030 - Dario Amodei</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 coming down consistently, but it it was really dumping.<br>⚡ into like 3 feet one day and then two feet the next.<br>📊 So I'm out there in that like middle of the two feet thing, <strong>Dave</strong>.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-02 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=VCbNhwORE3g" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenClaw Board Member Reveals Plan for AI Domination (w/ Dave Morin)</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 OpenClaw Board Member Reveals Plan for AI Domination (w/ Dave Morin)</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 Expect the AI industry to generate trillions of dollars in revenue before 2030, driven by exponential growth and diffusion.<br>💰 Anthropic experienced a 10x annual revenue increase from $0 in 2023 to $9-10 billion in 2025, with billions added in January 2026 alone.<br>🤖 Envision a "country of geniuses in a data center" by 2028 as a key driver, accelerating AI revenue from hundreds of billions to trillions.</div>
       
     </div>
     
@@ -211,7 +201,7 @@
       <a href="https://youtube.com/watch?v=OkuE84VSReY" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Nano Banana 2 Is Here</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 o <strong>Banana</strong> has been a huge leap forward.<br>⚡ The original release last October was the first time users were able to reliably edit an image with natural language prompts.<br>📊 This was a huge deal and even inspired me to think that we should probably have a different way to benchmark things based on how many new capabilities they unlock rather than buy traditional benchmarks.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Nano Banana 2, a new compact AI model, is now available, designed for enhanced efficiency in on-device applications.<br>💡 The model delivers improved performance over its predecessor, Nano Banana 1, with faster inference speeds for mobile and edge computing.<br>🔋 Nano Banana 2 optimizes resource utilization, enabling developers to integrate advanced AI capabilities into power-constrained environments.</div>
       
     </div>
     
@@ -222,7 +212,7 @@
       <a href="https://youtube.com/watch?v=j13nw6vQ0es" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">There is an insurance angle to what's happening in the Strait of Hormuz</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 This waterway could determine the fate of the global economy.<br>⚡ With the war ongoing in the Middle East, all eyes are on the straight of <strong>Hormuz</strong>, which is the most important maritime choke point globally.<br>📊 One out of every five barrels of oil in the world flows through the straight and a prolonged closure to tankers could send crude prices spiking, which would reignite inflation.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚢 The Strait of Hormuz, a critical global maritime choke point, has seen commercial ship traffic essentially halt due to increased conflict risk.<br>⛽ One out of every five barrels of the world's oil flows through the Strait of Hormuz, making its closure a potential trigger for global crude price spikes and inflation.<br>💰 Insurance costs for a single tanker transiting the Strait have surged from $250,000 to $375,000 per voyage, as reported by the Kabesi letter.</div>
       
     </div>
     
@@ -233,7 +223,7 @@
       <a href="https://youtube.com/watch?v=P2fd8j_58wA" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">US-Iran War threatens global economy</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 orrow morning, which will render the moon a deep and coppery red as the full moon falls behind the Earth's shadow.<br>⚡ And by rare, I mean this is the last time the phenomenon will happen for another 3 years.<br>📊 Toby, are you feeling the disturbance.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ The US-Iran conflict has erupted, causing significant shake-ups across the global economy.<br>🤝 OpenAI has reached an AI agreement with the US Defense Department, while competitor Anthropic has notably refused similar access.<br>🎮 Pokémon is celebrating its 30th anniversary, maintaining its status as one of the world's most valuable entertainment brands.</div>
       
     </div>
     
@@ -244,7 +234,7 @@
       <a href="https://youtube.com/watch?v=MqarkPmYI9Y" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Three Types of Programmers in 2026 - Andrej Karpathy</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 I would say there's like three major classes of how people interact with code right now.<br>⚡ Some people completely reject all of LLMs and they are just uh writing by scratch.<br>📊 The intermediate part which is where I am is you still write a lot of things from scratch but you use the autocomplete uh that's basically available now from these models but you're still very much the architect of what you're writing.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">👨‍💻 Consider adopting Andrej Karpathy's programming approach: actively architect your code while leveraging LLM autocomplete for repetitive patterns and boilerplate.<br>⚙️ Utilize AI agents for highly repetitive, boilerplate coding tasks or patterns frequently found in internet codebases, where they perform best.<br>🚫 Avoid over-reliance on AI agents for complex architectural decisions or novel problems, as they excel primarily in areas with abundant training data.</div>
       
     </div>
     
@@ -255,18 +245,29 @@
       <a href="https://youtube.com/watch?v=M14ArIseaR8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Sam Altman Compares Training AI To Raising Kids</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 This video has been circulating this week from <strong>Sam</strong> Alman where he compares training an AI model to raising a human in one of the more dystopian takes I've heard.<br>⚡ One of the things that is always unfair in this comparison is people talk about how much energy it takes to train an AI model relative to how much it costs a human to do one inference query.<br>📊 But it also takes a lot of energy to train a human.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Be aware of OpenAI's "Code Red" and the intensified competition from models like Google Gemini 3 and Nano Banana Pro for market dominance.<br>🧠 Evaluate next-gen AI models such as Claude Opus 4.5, Gemini 3, and GPT-5.1 for specific use cases, as some tools are reportedly experiencing a decline in performance.<br>🎨 Explore new creative AI tools for video generation, noting Runway Gen 4.5's preference dominance, and be mindful of the rise of "AI slop" in generative content.</div>
       
     </div>
     
-    <div style="padding: 16px 0; ">
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-01 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=73F6ZURl1MQ" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Cursor, Claude Code and Codex all have a BIG problem</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 come from an era where the tools we use were so carefully finely crafted to behave super well and I long for the days of sublime text almost every day where I open up cursor and watch it shift around my UI a whole bunch whenever I click anything and then nothing does what it's supposed to do.<br>⚡ You'd think with all of these AI tools making it easier than ever to write code that we'd have things that work better, right.<br>📊 About that.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏗️ Prioritize optimizing your codebase for ease, clarity, and speed from the start, ensuring small changes affect few files to maintain long-term quality and developer experience.<br>💡 Consider using AI coding tools like Cursor, Claude Code, or Codex primarily for quickly vetting ideas and generating initial drafts, but meticulously craft the final production code yourself.<br>🧹 Avoid merging "cheap code" directly from AI tools; instead, treat AI outputs as exploratory and commit to a philosophy of "file twice, merge once" to prevent future codebase degradation.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-01 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Lex Fridman Podcast</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=1SJiTwbSI58" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Rick Beato: Greatest Guitarists of All Time, History & Future of Music | Lex Fridman Podcast #492</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎸 To learn guitar, start with iconic solos like Jimi Hendrix's "Hey Joe" to grasp foundational scales such as the E minor pentatonic.<br>🧠 If you're a jazz improviser, prioritize experimentation and novelty before age 30, as that period is often when musicians produce their most innovative work.<br>🤝 Cultivate and maintain strong friendships and family connections, as these relationships are paramount for a fulfilling life, according to Beato.</div>
       
     </div>
     
