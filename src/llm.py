@@ -27,9 +27,10 @@ _EXTRA_KEYS = [
 def _get_api_keys() -> list[str]:
     """Collect all available Gemini API keys (up to 4)."""
     keys = []
-    primary = os.getenv("GEMINI_API_KEY")
-    if primary:
-        keys.append(primary)
+    for var in ["GEMINI_API_KEY", "GEMINI_API_KEY_2"]:
+        k = os.getenv(var)
+        if k:
+            keys.append(k)
     keys.extend(_EXTRA_KEYS)
     return keys[:4]
 
@@ -135,15 +136,44 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
             parts.append(f"{i}. [{item['title']}]: {text}")
 
     elif section_key == "youtube":
-        parts.append("YOUTUBE VIDEOS:")
+        parts.append(
+            "YOUTUBE VIDEOS — These are transcripts from tech/AI/business YouTubers.\n"
+            "Your job: extract ACTIONABLE ADVICE the reader can apply TODAY.\n"
+            "Think: 'If my friend watched this, what would they actually DO differently tomorrow?'\n\n"
+            "PRIORITY ORDER for each bullet:\n"
+            "1. A specific TIP, TECHNIQUE, or RECOMMENDATION the viewer should try (best)\n"
+            "2. A surprising fact or number that changes how you think about something (good)\n"
+            "3. A concrete claim or finding (acceptable)\n\n"
+            "Frame bullets as advice when possible. Use 'Try...', 'Consider...', 'Use...', or state the tip directly.\n"
+            "DO NOT quote the transcript verbatim. DO NOT just describe what the speaker said.\n\n"
+            "Examples of BAD → GOOD:\n"
+            "BAD: '🛠️ Karpathy himself operates in the autocomplete-assisted category.'\n"
+            "GOOD: '🛠️ Try Karpathy\\'s middle-ground approach: write architecture yourself but let LLM autocomplete handle boilerplate — he finds agents work best for repetitive patterns already in training data.'\n\n"
+            "BAD: '📱 Claude Code introduced a remote control feature that allows users to approve commands via phone.'\n"
+            "GOOD: '📱 Enable Claude Code\\'s new remote control mode to approve terminal commands from your phone — lets you kick off long tasks and walk away from your desk.'\n\n"
+            "BAD: '🧠 Beato theorizes that jazz improvisers achieve their best output before turning 30.'\n"
+            "GOOD: '🧠 Beato\\'s observation: jazz musicians peak in novelty before 30 — if you\\'re learning an instrument, prioritize wild experimentation now over perfecting technique later.'\n"
+        )
         for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "").strip()
             if len(text) > 1000:
+                # Strip sponsor/ad segments
                 text = re.sub(
                     r'(?i)(?:brought to you by|sponsored by|use code|promo code|sign up at|download it at|learn more at|check out|our sponsor|this episode is|discount|coupon|free trial|special offer|percent off|dollars off|\bpromo\b|partner event|go to \w+\.\w+)[^\n]{0,300}',
                     '', text
                 )
-                text = text[200:8000].strip()
+                # Sample from beginning, middle, and end to capture key content
+                text = text[200:]  # skip intro
+                total = len(text)
+                chunk = 4000
+                if total <= chunk * 2:
+                    text = text[:chunk * 2].strip()
+                else:
+                    beginning = text[:chunk]
+                    mid_start = total // 2 - chunk // 2
+                    middle = text[mid_start:mid_start + chunk]
+                    end = text[-chunk:]
+                    text = f"{beginning}\n[...]\n{middle}\n[...]\n{end}"
             elif len(text) < 200:
                 text = "(No transcript available — summarize based on the episode title and podcast context.)"
             else:
@@ -289,6 +319,16 @@ def _validate_summary(summary: str) -> str | None:
     last_char = stripped.rstrip()[-1] if stripped.rstrip() else ""
     if last_char not in ".!?)\"'…>0123456789%":
         return f"appears cut off (ends with '{last_char}')"
+
+    # Check for verbatim transcript quotes (conversational speech patterns)
+    conversational_patterns = [
+        r'(?i)^[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U00002702-\U000027B0]+ (?:I would say|I think|So (?:speaking|basically|like)|You know|And so|About that|Not something)',
+        r'(?i)(?:uh |um |like (?:three|two|a lot)|you know,)',
+    ]
+    for pattern in conversational_patterns:
+        match = re.search(pattern, stripped)
+        if match:
+            return f"verbatim transcript quote detected: '{match.group()[:50]}'"
 
     # Check for semantically vague bullets — meta-descriptions that say nothing
     vague_patterns = [
