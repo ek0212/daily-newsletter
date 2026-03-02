@@ -56,6 +56,21 @@ _TOR_MAX_RETRIES = 12
 _TOR_SLEEP = 5
 
 
+def _is_short(video_id: str) -> bool:
+    """Check if a YouTube video is a Short by probing the /shorts/ URL.
+
+    YouTube returns 200 for actual Shorts and redirects to /watch?v= for regular videos.
+    """
+    try:
+        r = _requests.head(
+            f"https://www.youtube.com/shorts/{video_id}",
+            allow_redirects=False, timeout=5,
+        )
+        return r.status_code == 200
+    except Exception:
+        return False
+
+
 def _rotate_tor_circuit(control_port: int = 9051) -> bool:
     """Send NEWNYM signal to Tor to get a new exit node."""
     try:
@@ -301,9 +316,22 @@ def get_recent_videos(days: int = 3) -> list[dict]:
             logger.warning("Failed to fetch %s: %s", name, e)
             continue
 
-    # Sort by recency, take top MAX_VIDEOS
+    # Sort by recency
     all_videos.sort(key=lambda v: v["published_dt"], reverse=True)
-    selected = all_videos[:MAX_VIDEOS]
+
+    # Filter out YouTube Shorts (too short for meaningful summaries)
+    selected = []
+    shorts_skipped = 0
+    for video in all_videos:
+        if len(selected) >= MAX_VIDEOS:
+            break
+        if _is_short(video["video_id"]):
+            shorts_skipped += 1
+            logger.debug("Skipping Short: %s (%s)", video["title"][:50], video["video_id"])
+            continue
+        selected.append(video)
+    if shorts_skipped:
+        logger.info("Skipped %d YouTube Shorts", shorts_skipped)
 
     # Phase 1: Try podcast RSS / website transcripts (free, reliable from any IP)
     for video in selected:
