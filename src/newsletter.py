@@ -19,6 +19,8 @@ from src.news import get_top_news
 from src.youtube import get_recent_videos
 from src.papers import get_ai_security_papers
 from src.ai_news import get_ai_security_news
+from src.events import get_nyc_events
+from src.health import get_nyc_health_status
 from src.llm import batch_summarize
 from src.site_generator import update_site
 
@@ -32,6 +34,14 @@ def fetch_all_data() -> dict:
     t0 = time.time()
     weather = get_nyc_weather()
     logger.info("Weather fetched in %.1fs", time.time() - t0)
+
+    t0 = time.time()
+    health = get_nyc_health_status()
+    logger.info("Health status fetched in %.1fs", time.time() - t0)
+
+    t0 = time.time()
+    events = get_nyc_events()
+    logger.info("Events fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
     news = get_top_news(count=5)
@@ -97,6 +107,8 @@ def fetch_all_data() -> dict:
     return {
         "date": datetime.now().strftime("%A, %B %d, %Y"),
         "weather": weather,
+        "health": health,
+        "events": events,
         "news": news,
         "youtube": youtube,
         "ai_security": ai_security,

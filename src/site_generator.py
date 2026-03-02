@@ -102,6 +102,11 @@ def generate_feed():
         if data.get("weather"):
             w = data["weather"]
             summary_parts.append(f"Weather: {w.get('current_temp', '?')}\u00b0{w.get('unit', 'F')} - {w.get('conditions', '')}")
+        if data.get("health") and data["health"].get("status") != "UNKNOWN":
+            summary_parts.append(f"Illness level: {data['health']['status']}")
+        events = data.get("events", [])
+        if events:
+            summary_parts.append(f"{len(events)} major events this week")
         news = data.get("news", [])
         if news:
             summary_parts.append(f"{len(news)} top news stories")

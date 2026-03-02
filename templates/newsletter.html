@@ -13,7 +13,7 @@
     <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
     <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ date }}</div>
     <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; News &middot; YouTube &middot; AI Security</div>
+    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; Health &middot; Events &middot; News &middot; YouTube &middot; AI Security</div>
   </div>
 
   <!-- Weather -->
@@ -44,6 +44,37 @@
       {% endfor %}
     </table>
     {% endif %}
+  </div>
+
+  <!-- Health Alert -->
+  {% if health and health.status != 'UNKNOWN' %}
+  <div style="padding: 16px 32px; border-left: 4px solid {% if health.status == 'HIGH' %}#e74c3c{% elif health.status == 'LOW' %}#2980b9{% else %}#27ae60{% endif %}; background: {% if health.status == 'HIGH' %}#fdf2f2{% elif health.status == 'LOW' %}#f0f7fc{% else %}#f0faf0{% endif %};">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: {% if health.status == 'HIGH' %}#e74c3c{% elif health.status == 'LOW' %}#2980b9{% else %}#27ae60{% endif %}; font-weight: 700; margin-bottom: 6px;">
+      {% if health.status == 'HIGH' %}&#x1F6A8;{% elif health.status == 'LOW' %}&#x2705;{% else %}&#x1F7E2;{% endif %} NYC Illness Level: {{ health.status }}
+    </div>
+    <div style="font-size: 14px; color: #444; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">{{ health.detail }}</div>
+    <div style="font-size: 10px; color: #999; margin-top: 4px;">Week ending {{ health.week_ending }} · Source: NYC Dept. of Health</div>
+  </div>
+  {% elif health and health.status == 'UNKNOWN' %}
+  <div style="padding: 16px 32px; border-left: 4px solid #bbb; background: #f9f9f7;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #999; font-weight: 700;">NYC Illness Level</div>
+    <div style="font-size: 13px; color: #888; margin-top: 4px; font-style: italic;">{{ health.detail }}</div>
+  </div>
+  {% endif %}
+
+  <!-- NYC Events -->
+  <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F4C5; NYC Major Events This Week</div>
+    {% if events %}
+    {% for event in events %}
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; {% if not loop.last %}margin-bottom: 4px;{% endif %}">
+      <strong>{{ event.name }}</strong> &mdash; {{ event.date }}{% if event.borough %}, {{ event.borough }}{% endif %}
+    </div>
+    {% endfor %}
+    {% else %}
+    <div style="font-size: 13px; color: #888; font-style: italic;">No major events scheduled this week.</div>
+    {% endif %}
+    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: NYC Open Data — Permitted Events</div>
   </div>
 
   <!-- Section Rule -->
