@@ -1,6 +1,7 @@
 """Fetch major NYC events from NYC Open Data (Socrata API, no key required)."""
 
 import logging
+import re
 from datetime import datetime, timedelta
 
 import requests
@@ -14,6 +15,42 @@ ALWAYS_MAJOR_TYPES = {"Parade", "Athletic Race / Tour"}
 
 # For "Special Event" type, only include if it has a full street closure
 # (filters out lawn closures, picnics, small park events)
+
+
+def _clean_location(raw: str) -> str:
+    """Extract a concise location from verbose street-segment data.
+
+    Turns 'EAST 43 STREET between LEXINGTON AVENUE and 3 AVENUE, ...'
+    into something like 'E 43rd St & Lexington Ave'.
+    """
+    if not raw:
+        return ""
+    # Take only the first segment (before first comma that starts a new segment)
+    first = raw.split(",")[0].strip()
+    # Extract "X between Y and Z" → "X & Y"
+    m = re.match(r"(.+?)\s+between\s+(.+?)\s+and\s+", first, re.IGNORECASE)
+    if m:
+        street, cross = m.group(1).strip(), m.group(2).strip()
+        return f"{_title_street(street)} & {_title_street(cross)}"
+    # If it's a park/venue format like "Central Park: East Meadow", keep as-is
+    return _title_street(first)
+
+
+def _title_street(s: str) -> str:
+    """Normalize ALL-CAPS street names to title case with ordinals."""
+    s = " ".join(s.split())  # collapse whitespace
+    s = s.title()
+    # Fix ordinals: "43 Street" → "43rd St"
+    s = re.sub(r"\b(\d+)\s+Street\b", lambda m: _ordinal(m.group(1)) + " St", s)
+    s = re.sub(r"\b(\d+)\s+Avenue\b", lambda m: _ordinal(m.group(1)) + " Ave", s)
+    s = s.replace("Avenue", "Ave").replace("Boulevard", "Blvd")
+    return s
+
+
+def _ordinal(n: str) -> str:
+    num = int(n)
+    suffix = {1: "st", 2: "nd", 3: "rd"}.get(num % 10 if num % 100 not in (11, 12, 13) else 0, "th")
+    return f"{num}{suffix}"
 
 
 def get_nyc_events() -> list[dict]:
@@ -70,12 +107,13 @@ def get_nyc_events() -> list[dict]:
                 "name": name,
                 "date": date_str,
                 "borough": item.get("event_borough", ""),
-                "location": item.get("event_location", ""),
+                "location": _clean_location(item.get("event_location", "")),
                 "event_type": item.get("event_type", ""),
             }
 
-        events = list(seen.values())
-        logger.info("Found %d major NYC events this week", len(events))
+        # Only include Brooklyn and Manhattan events
+        events = [e for e in seen.values() if e["borough"] in ("Manhattan", "Brooklyn")]
+        logger.info("Found %d major NYC events this week (Brooklyn/Manhattan only)", len(events))
         return events
 
     except Exception as e:

@@ -68,7 +68,7 @@
     {% if events %}
     {% for event in events %}
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; {% if not loop.last %}margin-bottom: 4px;{% endif %}">
-      <strong>{{ event.name }}</strong> &mdash; {{ event.date }}{% if event.borough %}, {{ event.borough }}{% endif %}
+      <a href="https://www.google.com/search?q={{ (event.name + ' NYC ' + event.date) | urlencode }}" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">{{ event.name }}</a> &mdash; {{ event.date }}, {{ event.borough }}{% if event.location %} <span style="color: #888;">({{ event.location }})</span>{% endif %}
     </div>
     {% endfor %}
     {% else %}
