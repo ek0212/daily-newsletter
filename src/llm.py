@@ -1,6 +1,6 @@
 """Parallel LLM summarization using Google Gemini API with sumy fallback.
 
-Each section (news, ai_security_news, podcasts, papers) gets its own Gemini
+Each section (news, youtube, ai_security) gets its own Gemini
 API call on a separate API key, running in parallel to avoid timeouts.
 """
 
@@ -14,7 +14,7 @@ from src.summarizer import summarize
 logger = logging.getLogger(__name__)
 
 # Section keys in processing order — each gets its own API key
-SECTION_KEYS = ["news", "ai_security_news", "podcasts", "papers"]
+SECTION_KEYS = ["news", "youtube", "ai_security"]
 
 # API keys: primary env var + 3 hardcoded backup keys (free-tier Gemini)
 _EXTRA_KEYS = [
@@ -134,16 +134,8 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
                 text = "(No article text available — write a brief, factual summary based on the headline.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
-    elif section_key == "ai_security_news":
-        parts.append("AI SECURITY NEWS ARTICLES:")
-        for i, item in enumerate(items, 1):
-            text = (item.get("raw_text") or "")[:3000]
-            if len(text) < 100:
-                text = "(No article text available — write a brief, factual summary based on the headline.)"
-            parts.append(f"{i}. [{item['title']}]: {text}")
-
-    elif section_key == "podcasts":
-        parts.append("PODCAST EPISODES:")
+    elif section_key == "youtube":
+        parts.append("YOUTUBE VIDEOS:")
         for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "").strip()
             if len(text) > 1000:
@@ -156,21 +148,26 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
                 text = "(No transcript available — summarize based on the episode title and podcast context.)"
             else:
                 text = text[:5000]
-            parts.append(f"{i}. [{item.get('podcast', '')} - {item['title']}]: {text}")
+            parts.append(f"{i}. [{item.get('channel', '')} - {item['title']}]: {text}")
 
-    elif section_key == "papers":
-        parts.append("ARXIV PAPERS:")
+    elif section_key == "ai_security":
+        parts.append("AI SECURITY (papers and news articles):")
         for i, item in enumerate(items, 1):
-            text = (item.get("raw_text") or "")[:1500]
-            if len(text) < 50:
-                text = "(No abstract available — summarize based on the paper title.)"
-            parts.append(f"{i}. [{item['title']}]: {text}")
+            if item.get("type") == "paper":
+                text = (item.get("raw_text") or "")[:1500]
+                if len(text) < 50:
+                    text = "(No abstract available — summarize based on the paper title.)"
+                parts.append(f"{i}. [PAPER: {item['title']}]: {text}")
+            else:
+                text = (item.get("raw_text") or "")[:3000]
+                if len(text) < 100:
+                    text = "(No article text available — write a brief, factual summary based on the headline.)"
+                parts.append(f"{i}. [NEWS: {item['title']}]: {text}")
 
     example_emojis = {
         "news": '📈 First key fact.<br>💰 Second key fact.<br>🔍 Third key fact.',
-        "ai_security_news": '🛡️ First fact.<br>🔍 Second fact.<br>⚠️ Third fact.',
-        "podcasts": '🎯 First takeaway.<br>⚡ Second takeaway.<br>📊 Third takeaway.',
-        "papers": '🧠 First finding.<br>📊 Second finding.<br>⚙️ Third finding.',
+        "youtube": '🎬 First takeaway.<br>⚡ Second takeaway.<br>📊 Third takeaway.',
+        "ai_security": '🛡️ First finding.<br>🔍 Second finding.<br>⚠️ Third finding.',
     }
 
     parts.append(
@@ -313,7 +310,7 @@ def _fallback_summarize(sections: dict) -> dict:
     """Summarize all sections using sumy extractive summarizer."""
     return {
         key: _fallback_section(sections.get(key, []), key)
-        for key in ("news", "ai_security_news", "podcasts", "papers")
+        for key in ("news", "youtube", "ai_security")
     }
 
 
@@ -321,9 +318,8 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     """Summarize a single section's items using sumy, formatted as emoji bullets."""
     emojis = {
         "news": ["📰", "📢", "🔍"],
-        "ai_security_news": ["🛡️", "🔍", "⚠️"],
-        "podcasts": ["🎯", "⚡", "📊"],
-        "papers": ["🧠", "📊", "⚙️"],
+        "youtube": ["🎬", "⚡", "📊"],
+        "ai_security": ["🛡️", "🔍", "⚠️"],
     }
     section_emojis = emojis.get(section_type, ["📌", "📎", "🔹"])
     results = []

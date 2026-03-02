@@ -13,7 +13,7 @@
     <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
     <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ date }}</div>
     <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; News &middot; Podcasts &middot; Research</div>
+    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; News &middot; YouTube &middot; AI Security</div>
   </div>
 
   <!-- Weather -->
@@ -72,43 +72,44 @@
   <!-- Section Rule -->
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
-  <!-- Podcasts -->
+  <!-- YouTube -->
   <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">Podcast Episodes</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
     </div>
-    {% for ep in podcasts %}
+    {% for vid in youtube %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
-      <!-- Date + Podcast -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ ep.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ ep.podcast }}</span></div>
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ vid.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ vid.channel }}</span></div>
       <!-- Title -->
-      <a href="{{ ep.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ ep.title }}</a>
+      <a href="{{ vid.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ vid.title }}</a>
       <!-- Summary -->
-      {% if ep.summary %}
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ ep.summary | safe }}</div>
+      {% if vid.summary %}
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ vid.summary | safe }}</div>
       {% endif %}
     </div>
     {% endfor %}
-    {% if not podcasts %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new episodes this week.</div>{% endif %}
+    {% if not youtube %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>{% endif %}
   </div>
 
   <!-- Section Rule -->
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
-  <!-- AI Security Papers -->
+  <!-- AI Security -->
   <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
     <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security Papers</span>
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security</span>
     </div>
-    {% for paper in papers %}
-    {% set title_lower = paper.title | lower %}
+    {% for item in ai_security %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
+      {% if item.type == 'paper' %}
       <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ paper.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ paper.authors[:3] | join(", ") }}{% if paper.authors | length > 3 %} et al.{% endif %}</span>{% if paper.citation_count is not none and paper.citation_count %} &nbsp;&bull;&nbsp; {{ paper.citation_count }} citations{% endif %}</div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ item.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ item.authors[:3] | join(", ") }}{% if item.authors | length > 3 %} et al.{% endif %}</span>{% if item.citation_count is not none and item.citation_count %} &nbsp;&bull;&nbsp; {{ item.citation_count }} citations{% endif %}</div>
       <!-- Title -->
-      <a href="{{ paper.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ paper.title }}</a>
+      <a href="{{ item.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.title }}</a>
       <!-- Topic badges -->
-      {% set abstract_lower = (paper.abstract | default('')) | lower %}
+      {% set title_lower = item.title | lower %}
+      {% set abstract_lower = (item.abstract | default('')) | lower %}
       {% set text_lower = title_lower ~ ' ' ~ abstract_lower %}
       <div style="margin-top: 8px;">
         {% if 'prompt injection' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #c0392b; color: #c0392b; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">prompt injection</span>{% endif %}
@@ -127,24 +128,10 @@
         {% if 'guardrail' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">guardrail</span>{% endif %}
       </div>
       <!-- Summary -->
-      {% set paper_summary = paper.quick_summary if paper.quick_summary else paper.abstract[:300] ~ ('...' if paper.abstract | length > 300 else '') %}
+      {% set paper_summary = item.quick_summary if item.quick_summary else item.abstract[:300] ~ ('...' if item.abstract | length > 300 else '') %}
       <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ paper_summary | safe }}</div>
-    </div>
-    {% endfor %}
-    {% if not papers %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No relevant papers found this week.</div>{% endif %}
-  </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- AI Security News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #d35400;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #d35400; font-weight: 700; border-bottom: 2px solid #d35400; padding-bottom: 3px;">AI Security News</span>
-    </div>
-    {% for item in ai_security_news %}
-    <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
-      <!-- Date -->
+      {% else %}
+      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{% if item.published %}{{ item.published }}{% else %}Today{% endif %}{% if item.source %} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ item.source }}</span>{% endif %}</div>
       <!-- Title -->
       <a href="{{ item.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.title }}</a>
@@ -152,9 +139,10 @@
       {% if item.summary %}
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.summary | safe }}</div>
       {% endif %}
+      {% endif %}
     </div>
     {% endfor %}
-    {% if not ai_security_news %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No AI security news today.</div>{% endif %}
+    {% if not ai_security %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No AI security updates today.</div>{% endif %}
   </div>
 
   <!-- Footer -->

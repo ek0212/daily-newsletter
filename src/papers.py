@@ -32,16 +32,24 @@ ARXIV_QUERIES = [
     "AI+deepfake+detection",
 ]
 
+# High-relevance terms (must match at least one to be included)
+# These correspond to the badge keywords in the newsletter template
+REQUIRED_TERMS = [
+    "prompt injection", "jailbreak", "red team", "blue team", "purple team",
+    "adversarial", "guardrail", "model extraction", "distillation attack",
+    "phishing", "social engineering", "malware", "obfuscat",
+    "agentic", "autonomous agent", "llm-as-a-judge", "agent-as-a-judge",
+    "sycophancy", "sabotage", "behavioral evaluation",
+    "privacy", "red teaming", "safety", "alignment",
+    "nist", "taxonomy",
+]
+
+# Bonus scoring terms
 RELEVANCE_TERMS = [
     "prompt injection", "jailbreak", "red team", "adversarial",
     "guardrail", "llm security", "ai safety", "ai alignment",
-    "autonomous agent", "declarative agent", "agentic ai", "multi-agent",
-    "agent safety", "tool use", "model extraction", "language model",
-    "llm", "ai vulnerability", "ai red team", "llm attack",
-    "ai governance", "ai risk", "responsible ai", "ai threat",
-    "machine learning", "neural network", "ai robustness",
-    "hallucination", "deepfake", "ai bias", "watermark",
-    "large language model", "generative ai", "foundation model",
+    "model extraction", "ai vulnerability", "llm attack",
+    "ai threat", "ai robustness", "ai agent", "agentic",
 ]
 
 
@@ -173,6 +181,14 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
     # Filter to recent papers only
     cutoff = (datetime.utcnow() - timedelta(days=days_back)).strftime("%Y-%m-%d")
     papers = [p for p in papers if p.get("published", "") >= cutoff]
+
+    # Only keep papers matching at least one required AI security term
+    def has_required_term(p):
+        text = (p["title"] + " " + p["abstract"]).lower()
+        return any(t in text for t in REQUIRED_TERMS)
+
+    papers = [p for p in papers if has_required_term(p)]
+    logger.info("Papers after AI security filter: %d", len(papers))
 
     papers = enrich_citations(papers)
 

@@ -105,15 +105,12 @@ def generate_feed():
         news = data.get("news", [])
         if news:
             summary_parts.append(f"{len(news)} top news stories")
-        pods = data.get("podcasts", [])
-        if pods:
-            summary_parts.append(f"{len(pods)} podcast episodes")
-        papers = data.get("papers", [])
-        if papers:
-            summary_parts.append(f"{len(papers)} AI security papers")
-        ai_news = data.get("ai_security_news", [])
-        if ai_news:
-            summary_parts.append(f"{len(ai_news)} AI security news")
+        vids = data.get("youtube", [])
+        if vids:
+            summary_parts.append(f"{len(vids)} YouTube videos")
+        ai_sec = data.get("ai_security", [])
+        if ai_sec:
+            summary_parts.append(f"{len(ai_sec)} AI security updates")
         description = _xml_escape(" | ".join(summary_parts)) if summary_parts else "Daily newsletter"
 
         # Get email HTML content
@@ -153,7 +150,7 @@ def generate_feed():
   <channel>
     <title>Daily Briefing Newsletter</title>
     <link>{SITE_URL}</link>
-    <description>A daily curated newsletter with weather, news, podcasts, and AI security papers.</description>
+    <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
     <lastBuildDate>{build_date}</lastBuildDate>
     <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
@@ -301,7 +298,7 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
 <div class="header">
   <div class="kicker">Est. 2025 &middot; Automated Daily Intelligence</div>
   <h1>Daily Briefing</h1>
-  <p>Weather, news, podcasts &amp; AI security papers &mdash; delivered daily.</p>
+  <p>Weather, news, YouTube &amp; AI security &mdash; delivered daily.</p>
   <a href="feed.xml" class="rss-btn">Subscribe via RSS</a>
 </div>
 <div class="content">

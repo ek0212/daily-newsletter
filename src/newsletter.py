@@ -16,7 +16,7 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.weather import get_nyc_weather
 from src.news import get_top_news
-from src.podcasts import get_recent_episodes
+from src.youtube import get_recent_videos
 from src.papers import get_ai_security_papers
 from src.ai_news import get_ai_security_news
 from src.llm import batch_summarize
@@ -38,11 +38,11 @@ def fetch_all_data() -> dict:
     logger.info("News fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    podcasts = get_recent_episodes(days=7)
-    logger.info("Podcasts fetched in %.1fs", time.time() - t0)
+    youtube = get_recent_videos(days=3)
+    logger.info("YouTube videos fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    papers = get_ai_security_papers(days_back=7, top_n=5)
+    papers = get_ai_security_papers(days_back=3, top_n=5)
     logger.info("Papers fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
@@ -51,12 +51,22 @@ def fetch_all_data() -> dict:
 
     logger.info("All data fetched in %.1fs", time.time() - fetch_start)
 
+    # Merge papers and ai_security_news into a single list sorted by date
+    for p in papers:
+        p["type"] = "paper"
+    for n in ai_security_news:
+        n["type"] = "news"
+    ai_security = sorted(
+        papers + ai_security_news,
+        key=lambda x: x.get("published", ""),
+        reverse=True,
+    )
+
     # Batch summarize all sections in one Gemini call
     sections = {
         "news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in news],
-        "ai_security_news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in ai_security_news],
-        "podcasts": [{"title": p["title"], "podcast": p.get("podcast", ""), "raw_text": p.get("raw_text", "")} for p in podcasts],
-        "papers": [{"title": p["title"], "raw_text": p.get("raw_text", "")} for p in papers],
+        "youtube": [{"title": v["title"], "channel": v.get("channel", ""), "raw_text": v.get("raw_text", "")} for v in youtube],
+        "ai_security": [{"title": item["title"], "raw_text": item.get("raw_text", "")} for item in ai_security],
     }
     summaries = batch_summarize(sections)
 
@@ -67,33 +77,29 @@ def fetch_all_data() -> dict:
         if not item.get("summary"):
             item["summary"] = f"📰 <strong>Breaking</strong> — Read the full story at {item['source']}." if item.get("source") else "📰 <strong>Developing story</strong> — Click the headline for full details."
 
-    for i, item in enumerate(podcasts):
-        if i < len(summaries.get("podcasts", [])) and summaries["podcasts"][i]:
-            item["summary"] = summaries["podcasts"][i]
+    for i, item in enumerate(youtube):
+        if i < len(summaries.get("youtube", [])) and summaries["youtube"][i]:
+            item["summary"] = summaries["youtube"][i]
         if not item.get("summary"):
-            raw = (item.get("raw_text", "") or "")[:400]
-            item["summary"] = raw if raw else "🎙️ <strong>New episode</strong> — Click the headline to listen."
+            item["summary"] = "🎬 New video — Click to watch."
 
-    for i, item in enumerate(papers):
-        if i < len(summaries.get("papers", [])) and summaries["papers"][i]:
-            item["quick_summary"] = summaries["papers"][i]
-        if not item.get("quick_summary"):
-            abstract = item.get("abstract", "")[:200]
-            item["quick_summary"] = abstract if abstract else "🧠 <strong>New research</strong> — Click the headline to read the paper."
-
-    for i, item in enumerate(ai_security_news):
-        if i < len(summaries.get("ai_security_news", [])) and summaries["ai_security_news"][i]:
-            item["summary"] = summaries["ai_security_news"][i]
-        if not item.get("summary"):
-            item["summary"] = f"🛡️ <strong>Security alert</strong> — Read the full story at {item['source']}." if item.get("source") else "🛡️ <strong>Security update</strong> — Click the headline for full details."
+    for i, item in enumerate(ai_security):
+        if i < len(summaries.get("ai_security", [])) and summaries["ai_security"][i]:
+            if item["type"] == "paper":
+                item["quick_summary"] = summaries["ai_security"][i]
+            else:
+                item["summary"] = summaries["ai_security"][i]
+        if item["type"] == "paper" and not item.get("quick_summary"):
+            item["quick_summary"] = "🧠 New research — Click to read."
+        if item["type"] == "news" and not item.get("summary"):
+            item["summary"] = "🛡️ Security update — Click for details."
 
     return {
         "date": datetime.now().strftime("%A, %B %d, %Y"),
         "weather": weather,
         "news": news,
-        "podcasts": podcasts,
-        "papers": papers,
-        "ai_security_news": ai_security_news,
+        "youtube": youtube,
+        "ai_security": ai_security,
     }
 
 
