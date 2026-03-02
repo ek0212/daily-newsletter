@@ -35,6 +35,16 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Start Tor proxy
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq tor > /dev/null
+          # Enable control port for circuit rotation (no auth needed in CI)
+          echo -e "ControlPort 9051\nCookieAuthentication 0" | sudo tee -a /etc/tor/torrc > /dev/null
+          sudo service tor restart
+          sleep 8
+          # Verify Tor is working
+          curl -s --socks5-hostname 127.0.0.1:9050 https://check.torproject.org/api/ip || echo "Tor check failed, continuing anyway"
+
       - name: Restore site archive
         run: |
           git fetch origin gh-pages --depth=1 || true
