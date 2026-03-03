@@ -9,6 +9,13 @@ import feedparser
 import trafilatura
 from googlenewsdecoder import new_decoderv1
 
+from src.constants import (
+    DEDUP_OVERLAP_THRESHOLD,
+    DEMOTE_MULTIPLIER,
+    MIN_TEXT_LENGTH_SHORT,
+    NEWS_FEED_LIMIT_MULTIPLIER,
+)
+
 logger = logging.getLogger(__name__)
 
 # RSS sources — mix of tech-focused and general news
@@ -78,7 +85,7 @@ def _relevance_score(story: dict) -> float:
     text = f"{story.get('title', '')} {story.get('raw_text', '')[:500]}"
     boosts = len(_BOOST_KEYWORDS.findall(text))
     demotes = len(_DEMOTE_KEYWORDS.findall(text))
-    return boosts - (demotes * 3)
+    return boosts - (demotes * DEMOTE_MULTIPLIER)
 
 
 def _decode_google_news_url(url: str) -> str:
@@ -104,7 +111,7 @@ def _fetch_article_text(url: str) -> str:
         downloaded = trafilatura.fetch_url(url)
         if downloaded:
             text = trafilatura.extract(downloaded)
-            if text and len(text) > 100:
+            if text and len(text) > MIN_TEXT_LENGTH_SHORT:
                 logger.info("Article text extracted: %d chars from %s", len(text), url[:80])
                 return text
     except Exception as e:
@@ -165,7 +172,7 @@ def _deduplicate(stories: list[dict]) -> list[dict]:
             if not title_words or not seen_words:
                 continue
             overlap = len(title_words & seen_words) / min(len(title_words), len(seen_words))
-            if overlap > 0.6:
+            if overlap > DEDUP_OVERLAP_THRESHOLD:
                 is_dup = True
                 break
         if not is_dup:
@@ -184,7 +191,7 @@ def get_top_news(count: int = 5) -> list[dict]:
     logger.info("Fetching top %d news from %s", count, feed_names)
     all_stories = []
     for feed_cfg in NEWS_FEEDS:
-        all_stories.extend(_fetch_feed(feed_cfg, limit=count * 3))
+        all_stories.extend(_fetch_feed(feed_cfg, limit=count * NEWS_FEED_LIMIT_MULTIPLIER))
 
     # Sort by recency, deduplicate
     all_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)

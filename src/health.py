@@ -7,9 +7,15 @@ from datetime import datetime, timedelta
 
 import requests
 
+from src.constants import (
+    HEALTH_DEVIATION_THRESHOLD,
+    HTTP_TIMEOUT_MEDIUM,
+    NYC_HEALTH_BASE_URL,
+)
+
 logger = logging.getLogger(__name__)
 
-BASE_URL = "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+BASE_URL = NYC_HEALTH_BASE_URL
 CSVS = {
     "flu": f"{BASE_URL}/Case_data_influenza.csv",
     "covid": f"{BASE_URL}/Case_data_COVID-19.csv",
@@ -26,7 +32,7 @@ CASE_COLUMNS = {
 
 def _fetch_csv(url: str) -> list[dict]:
     """Fetch a CSV and return rows as list of dicts."""
-    resp = requests.get(url, timeout=15)
+    resp = requests.get(url, timeout=HTTP_TIMEOUT_MEDIUM)
     resp.raise_for_status()
     reader = csv.DictReader(io.StringIO(resp.text))
     return list(reader)
@@ -110,9 +116,9 @@ def get_nyc_health_status() -> dict:
         avg = sum(historical_totals) / len(historical_totals)
         pct_change = ((current_total - avg) / avg) * 100 if avg > 0 else 0
 
-        if pct_change > 25:
+        if pct_change > HEALTH_DEVIATION_THRESHOLD:
             status = "HIGH"
-        elif pct_change < -25:
+        elif pct_change < -HEALTH_DEVIATION_THRESHOLD:
             status = "LOW"
         else:
             status = "NORMAL"

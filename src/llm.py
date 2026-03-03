@@ -9,6 +9,21 @@ import logging
 import os
 import time as _time
 
+from src.constants import (
+    GEMINI_MAX_RETRIES,
+    GEMINI_MODEL,
+    GEMINI_RETRY_BASE_DELAY,
+    MIN_EMOJI_BULLETS,
+    MIN_BULLET_SEGMENTS,
+    MIN_SUMMARY_LENGTH,
+    MIN_TEXT_LENGTH_MEDIUM,
+    MIN_TEXT_LENGTH_SHORT,
+    TEXT_SAMPLE_CHUNK,
+    TEXT_SKIP_INTRO,
+    TEXT_TRUNCATE_NEWS,
+    TEXT_TRUNCATE_PAPER,
+    TEXT_TRUNCATE_YOUTUBE,
+)
 from src.summarizer import summarize
 
 logger = logging.getLogger(__name__)
@@ -54,11 +69,10 @@ def batch_summarize(sections: dict) -> dict:
         logger.info("Gemini call for %s (%d items, %d chars) using key ...%s",
                      section_key, len(items), len(prompt), api_key[-6:])
         client = genai.Client(api_key=api_key)
-        max_retries = 3
-        for attempt in range(max_retries):
+        for attempt in range(GEMINI_MAX_RETRIES):
             try:
                 response = client.models.generate_content(
-                    model="gemini-2.5-flash",
+                    model=GEMINI_MODEL,
                     contents=prompt,
                 )
                 logger.info("Gemini %s response: %d chars", section_key, len(response.text))
@@ -73,13 +87,13 @@ def batch_summarize(sections: dict) -> dict:
                                        api_key[-6:], section_key)
                         raise
                     # Per-minute rate limit — retry after delay
-                    if attempt < max_retries - 1:
+                    if attempt < GEMINI_MAX_RETRIES - 1:
                         import re as _re
                         delay_match = _re.search(r'retry(?:\s+after)?\s+(\d+(?:\.\d+)?)\s*s', err_str, _re.IGNORECASE)
                         if delay_match:
                             wait = float(delay_match.group(1)) + 1
                         else:
-                            wait = 6 * (attempt + 1)
+                            wait = GEMINI_RETRY_BASE_DELAY * (attempt + 1)
                         logger.info("Rate limited on %s (attempt %d), retrying in %.1fs...",
                                     section_key, attempt + 1, wait)
                         _time.sleep(wait)
@@ -159,8 +173,8 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
     if section_key == "news":
         parts.append("NEWS ARTICLES:")
         for i, item in enumerate(items, 1):
-            text = (item.get("raw_text") or "")[:3000]
-            if len(text) < 100:
+            text = (item.get("raw_text") or "")[:TEXT_TRUNCATE_NEWS]
+            if len(text) < MIN_TEXT_LENGTH_SHORT:
                 text = "(No article text available — write a brief, factual summary based on the headline.)"
             parts.append(f"{i}. [{item['title']}]: {text}")
 
@@ -185,16 +199,16 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
         )
         for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "").strip()
-            if len(text) > 1000:
+            if len(text) > 1000:  # long enough to warrant sponsor stripping + sampling
                 # Strip sponsor/ad segments
                 text = re.sub(
                     r'(?i)(?:brought to you by|sponsored by|use code|promo code|sign up at|download it at|learn more at|check out|our sponsor|this episode is|discount|coupon|free trial|special offer|percent off|dollars off|\bpromo\b|partner event|go to \w+\.\w+)[^\n]{0,300}',
                     '', text
                 )
                 # Sample from beginning, middle, and end to capture key content
-                text = text[200:]  # skip intro
+                text = text[TEXT_SKIP_INTRO:]  # skip intro
                 total = len(text)
-                chunk = 2500
+                chunk = TEXT_SAMPLE_CHUNK
                 if total <= chunk * 2:
                     text = text[:chunk * 2].strip()
                 else:
@@ -203,23 +217,23 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
                     middle = text[mid_start:mid_start + chunk]
                     end = text[-chunk:]
                     text = f"{beginning}\n[...]\n{middle}\n[...]\n{end}"
-            elif len(text) < 200:
+            elif len(text) < MIN_TEXT_LENGTH_MEDIUM:
                 text = "(No transcript available — summarize based on the episode title and podcast context.)"
             else:
-                text = text[:5000]
+                text = text[:TEXT_TRUNCATE_YOUTUBE]
             parts.append(f"{i}. [{item.get('channel', '')} - {item['title']}]: {text}")
 
     elif section_key == "ai_security":
         parts.append("AI SECURITY (papers and news articles):")
         for i, item in enumerate(items, 1):
             if item.get("type") == "paper":
-                text = (item.get("raw_text") or "")[:1500]
+                text = (item.get("raw_text") or "")[:TEXT_TRUNCATE_PAPER]
                 if len(text) < 50:
                     text = "(No abstract available — summarize based on the paper title.)"
                 parts.append(f"{i}. [PAPER: {item['title']}]: {text}")
             else:
-                text = (item.get("raw_text") or "")[:3000]
-                if len(text) < 100:
+                text = (item.get("raw_text") or "")[:TEXT_TRUNCATE_NEWS]
+                if len(text) < MIN_TEXT_LENGTH_SHORT:
                     text = "(No article text available — write a brief, factual summary based on the headline.)"
                 parts.append(f"{i}. [NEWS: {item['title']}]: {text}")
 
@@ -309,7 +323,7 @@ def _validate_summary(summary: str) -> str | None:
     Returns None if valid, or a string describing the issue.
     """
     import re
-    if not summary or len(summary.strip()) < 10:
+    if not summary or len(summary.strip()) < MIN_SUMMARY_LENGTH:
         return "empty or too short"
 
     # Must contain emoji characters (at least 2 — expect 3 bullets)
@@ -323,7 +337,7 @@ def _validate_summary(summary: str) -> str | None:
     emoji_count = len(emoji_pattern.findall(summary))
     # Also count <br>-separated bullet segments as a secondary check
     bullet_count = len(summary.split('<br>'))
-    if emoji_count < 2 and bullet_count < 2:
+    if emoji_count < MIN_EMOJI_BULLETS and bullet_count < MIN_BULLET_SEGMENTS:
         return f"only {emoji_count} emoji bullets and {bullet_count} segments (need at least 2)"
 
     # Must not start with lowercase or a fragment (sign of misaligned extraction)

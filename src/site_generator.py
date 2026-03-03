@@ -20,8 +20,15 @@ SITE_DIR = PROJECT_ROOT / "site"
 POSTS_DIR = SITE_DIR / "posts"
 STATIC_DIR = PROJECT_ROOT / "static"
 
+from src.constants import (
+    DEFAULT_SITE_URL,
+    MAX_FEED_ITEMS,
+    RSS_BUILD_DATE_FORMAT,
+    RSS_PUB_DATE_FORMAT,
+)
+
 # Configurable base URL for GitHub Pages
-SITE_URL = os.getenv("SITE_URL", "").strip() or "https://ek0212.github.io/daily-newsletter"
+SITE_URL = os.getenv("SITE_URL", "").strip() or DEFAULT_SITE_URL
 
 
 def ensure_dirs():
@@ -88,7 +95,7 @@ def generate_feed():
     # since xml.etree.ElementTree doesn't support CDATA natively.
     items_xml = []
 
-    for date_str in posts[:30]:
+    for date_str in posts[:MAX_FEED_ITEMS]:
         json_path = POSTS_DIR / f"{date_str}.json"
         if not json_path.exists():
             continue
@@ -131,7 +138,7 @@ def generate_feed():
         pub_date = ""
         try:
             dt = datetime.strptime(date_str, "%Y-%m-%d")
-            pub_date = dt.strftime("%a, %d %b %Y 07:00:00 +0000")
+            pub_date = dt.strftime(RSS_PUB_DATE_FORMAT)
         except ValueError:
             pass
 
@@ -149,7 +156,7 @@ def generate_feed():
         item_parts.append("    </item>")
         items_xml.append("\n".join(item_parts))
 
-    build_date = datetime.utcnow().strftime("%a, %d %b %Y %H:%M:%S +0000")
+    build_date = datetime.utcnow().strftime(RSS_BUILD_DATE_FORMAT)
     feed_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
@@ -187,7 +194,7 @@ def update_site(data: dict, email_html: str):
     generate_index()
     logger.info("Regenerating index.html (%d posts in archive)", len(posts))
     generate_feed()
-    logger.info("Regenerating feed.xml (%d entries)", min(len(posts), 30))
+    logger.info("Regenerating feed.xml (%d entries)", min(len(posts), MAX_FEED_ITEMS))
     # Log file sizes
     for name, fpath in [("index.html", SITE_DIR / "index.html"), ("feed.xml", SITE_DIR / "feed.xml"),
                         (f"{date_str}.json", json_path), (f"{date_str}.html", html_path)]:

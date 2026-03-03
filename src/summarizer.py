@@ -5,6 +5,12 @@ import re
 
 from sumy.parsers.plaintext import PlaintextParser
 
+from src.constants import (
+    SUMMARIZER_MIN_TEXT,
+    SUMMARIZER_SKIP_INTRO,
+    SUMMARIZER_URL_THRESHOLD,
+)
+
 logger = logging.getLogger(__name__)
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lex_rank import LexRankSummarizer
@@ -61,14 +67,14 @@ def summarize(text: str, num_sentences: int = 2, title: str = "") -> str:
         return ""
 
     # Skip obvious non-content (sponsor reads, URLs, short RSS descriptions)
-    if len(text) < 200 or text.count("http") > 3:
+    if len(text) < SUMMARIZER_MIN_TEXT or text.count("http") > SUMMARIZER_URL_THRESHOLD:
         return ""
 
     logger.debug("Extractive summarize: input %d chars -> %d sentences", len(text), num_sentences)
 
     # For long transcripts, skip the first 500 chars (usually sponsor/intro)
-    if len(text) > 2000:
-        text = text[500:]
+    if len(text) > SUMMARIZER_MIN_TEXT * 10:
+        text = text[SUMMARIZER_SKIP_INTRO:]
 
     # If text is already short, return as-is
     sentences_rough = [s.strip() for s in text.replace("! ", ".\n").replace("? ", ".\n").split(".") if s.strip()]

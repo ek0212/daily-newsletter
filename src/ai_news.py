@@ -8,6 +8,13 @@ import feedparser
 import trafilatura
 from googlenewsdecoder import new_decoderv1
 
+from src.constants import (
+    AI_NEWS_CANDIDATE_MULTIPLIER,
+    AI_NEWS_DAYS_CUTOFF,
+    GOOGLE_NEWS_SEARCH_URL,
+    MIN_TEXT_LENGTH_SHORT,
+)
+
 logger = logging.getLogger(__name__)
 
 SEARCH_QUERIES = [
@@ -46,7 +53,7 @@ def _fetch_article_text(url: str) -> str:
         downloaded = trafilatura.fetch_url(url)
         if downloaded:
             text = trafilatura.extract(downloaded)
-            if text and len(text) > 100:
+            if text and len(text) > MIN_TEXT_LENGTH_SHORT:
                 logger.info("Article text extracted: %d chars from %s", len(text), url[:80])
                 return text
     except Exception as e:
@@ -78,7 +85,7 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
 
         for query in SEARCH_QUERIES:
             try:
-                url = f"https://news.google.com/rss/search?q={query}+when:7d&hl=en-US&gl=US&ceid=US:en"
+                url = f"{GOOGLE_NEWS_SEARCH_URL}?q={query}+when:{AI_NEWS_DAYS_CUTOFF}d&hl=en-US&gl=US&ceid=US:en"
                 feed = feedparser.parse(url)
                 for entry in feed.entries:
                     dedup_key = entry.title.lower()[:60]
@@ -99,7 +106,7 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
             if _relevance_score(title, "") >= 1:
                 candidates.append(entry)
         # Limit to 3x count to avoid excessive fetching
-        candidates = candidates[:count * 3]
+        candidates = candidates[:count * AI_NEWS_CANDIDATE_MULTIPLIER]
         logger.info("Pre-filtered to %d candidates by title relevance", len(candidates))
 
         # Process candidates: extract text and score relevance
@@ -129,7 +136,7 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
             })
 
         # Filter out articles older than 7 days
-        cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+        cutoff = datetime.now(timezone.utc) - timedelta(days=AI_NEWS_DAYS_CUTOFF)
         scored = [s for s in scored if _parse_pub_date(s.get("published", "")) >= cutoff]
 
         # Sort by relevance score desc, then by date desc

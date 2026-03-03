@@ -5,17 +5,27 @@ from datetime import datetime, timedelta, timezone
 
 import requests
 
+from src.constants import (
+    EST_OFFSET_HOURS,
+    HEAT_INDEX_HUMIDITY_THRESHOLD,
+    HEAT_INDEX_TEMP_THRESHOLD,
+    HTTP_TIMEOUT_DEFAULT,
+    NWS_FORECAST_URL,
+    NWS_HOURLY_URL,
+    TARGET_HOURS,
+    USER_AGENT,
+    WIND_CHILL_TEMP_THRESHOLD,
+    WIND_CHILL_WIND_THRESHOLD,
+)
+
 logger = logging.getLogger(__name__)
 
-NWS_HEADERS = {"User-Agent": "DailyNewsletter/1.0 (daily-newsletter)"}
-FORECAST_URL = "https://api.weather.gov/gridpoints/OKX/33,35/forecast"
-HOURLY_URL = "https://api.weather.gov/gridpoints/OKX/33,35/forecast/hourly"
+NWS_HEADERS = {"User-Agent": f"{USER_AGENT} (daily-newsletter)"}
+FORECAST_URL = NWS_FORECAST_URL
+HOURLY_URL = NWS_HOURLY_URL
 
-# EST timezone (UTC-5)
-EST = timezone(timedelta(hours=-5))
-
-# Hours (EST) to include in the hourly breakdown
-TARGET_HOURS = [7, 9, 15, 17, 19]
+# EST timezone
+EST = timezone(timedelta(hours=EST_OFFSET_HOURS))
 
 
 def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
@@ -34,11 +44,11 @@ def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
         wind_mph = 0
 
     t = float(temp_f)
-    if t <= 50 and wind_mph >= 3:
+    if t <= WIND_CHILL_TEMP_THRESHOLD and wind_mph >= WIND_CHILL_WIND_THRESHOLD:
         # NWS wind chill formula
         wc = 35.74 + 0.6215 * t - 35.75 * (wind_mph ** 0.16) + 0.4275 * t * (wind_mph ** 0.16)
         return round(wc)
-    elif t >= 80 and humidity is not None and humidity >= 40:
+    elif t >= HEAT_INDEX_TEMP_THRESHOLD and humidity is not None and humidity >= HEAT_INDEX_HUMIDITY_THRESHOLD:
         # Simplified heat index (Rothfusz regression)
         h = float(humidity)
         hi = (-42.379 + 2.04901523 * t + 10.14333127 * h
@@ -95,12 +105,12 @@ def get_nyc_weather() -> dict:
     """Return current NYC weather with high/low, forecast, and hourly breakdown."""
     try:
         logger.debug("Fetching hourly forecast from %s", HOURLY_URL)
-        hourly = requests.get(HOURLY_URL, headers=NWS_HEADERS, timeout=10).json()
+        hourly = requests.get(HOURLY_URL, headers=NWS_HEADERS, timeout=HTTP_TIMEOUT_DEFAULT).json()
         hourly_periods = hourly["properties"]["periods"]
         current = hourly_periods[0]
 
         logger.debug("Fetching daily forecast from %s", FORECAST_URL)
-        daily = requests.get(FORECAST_URL, headers=NWS_HEADERS, timeout=10).json()
+        daily = requests.get(FORECAST_URL, headers=NWS_HEADERS, timeout=HTTP_TIMEOUT_DEFAULT).json()
         periods = daily["properties"]["periods"]
 
         today = periods[0]

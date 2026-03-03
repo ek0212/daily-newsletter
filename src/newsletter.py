@@ -14,6 +14,14 @@ from jinja2 import Environment, FileSystemLoader
 PROJECT_ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
+from src.constants import (
+    DEFAULT_AI_NEWS_COUNT,
+    DEFAULT_NEWS_COUNT,
+    DEFAULT_PAPERS_DAYS_BACK,
+    DEFAULT_PAPERS_TOP_N,
+    DEFAULT_YOUTUBE_DAYS,
+    DATE_DISPLAY_FORMAT,
+)
 from src.weather import get_nyc_weather
 from src.news import get_top_news
 from src.youtube import get_recent_videos
@@ -44,19 +52,19 @@ def fetch_all_data() -> dict:
     logger.info("Events fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    news = get_top_news(count=5)
+    news = get_top_news(count=DEFAULT_NEWS_COUNT)
     logger.info("News fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    youtube = get_recent_videos(days=3)
+    youtube = get_recent_videos(days=DEFAULT_YOUTUBE_DAYS)
     logger.info("YouTube videos fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    papers = get_ai_security_papers(days_back=3, top_n=5)
+    papers = get_ai_security_papers(days_back=DEFAULT_PAPERS_DAYS_BACK, top_n=DEFAULT_PAPERS_TOP_N)
     logger.info("Papers fetched in %.1fs", time.time() - t0)
 
     t0 = time.time()
-    ai_security_news = get_ai_security_news(count=4)
+    ai_security_news = get_ai_security_news(count=DEFAULT_AI_NEWS_COUNT)
     logger.info("AI security news fetched in %.1fs", time.time() - t0)
 
     logger.info("All data fetched in %.1fs", time.time() - fetch_start)
@@ -105,7 +113,7 @@ def fetch_all_data() -> dict:
             item["summary"] = "🛡️ Security update — Click for details."
 
     return {
-        "date": datetime.now().strftime("%A, %B %d, %Y"),
+        "date": datetime.now().strftime(DATE_DISPLAY_FORMAT),
         "weather": weather,
         "health": health,
         "events": events,

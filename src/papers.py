@@ -7,11 +7,25 @@ import xml.etree.ElementTree as ET
 import json
 from datetime import datetime, timedelta
 
+from src.constants import (
+    ARXIV_API_URL,
+    CITATION_SCORE_CAP,
+    HF_DAILY_LIMIT,
+    HF_DAILY_PAPERS_API_URL,
+    HTTP_TIMEOUT_DEFAULT,
+    HTTP_TIMEOUT_MEDIUM,
+    MAX_AUTHORS_DISPLAY,
+    MAX_PAPERS_ENRICH,
+    RELEVANCE_TERM_SCORE,
+    SEMANTIC_SCHOLAR_API_URL,
+    USER_AGENT,
+)
+
 logger = logging.getLogger(__name__)
 
-ARXIV_API = "http://export.arxiv.org/api/query"
-S2_API = "https://api.semanticscholar.org/graph/v1"
-HF_DAILY_API = "https://huggingface.co/api/daily_papers"
+ARXIV_API = ARXIV_API_URL
+S2_API = SEMANTIC_SCHOLAR_API_URL
+HF_DAILY_API = HF_DAILY_PAPERS_API_URL
 
 # Focused search terms — AI/LLM security, agents, and AI safety
 ARXIV_QUERIES = [
@@ -82,7 +96,7 @@ def _parse_arxiv_xml(xml_data: bytes) -> list[dict]:
         arxiv_id = id_el.text.split("/abs/")[-1] if id_el is not None and id_el.text else ""
 
         papers.append({
-            "title": title, "authors": authors[:5], "abstract": abstract[:500],
+            "title": title, "authors": authors[:MAX_AUTHORS_DISPLAY], "abstract": abstract[:500],
             "link": link, "published": pub_date, "arxiv_id": arxiv_id, "citation_count": None,
         })
     return papers
@@ -97,8 +111,8 @@ def fetch_arxiv_papers(max_per_query: int = 5) -> list[dict]:
     for kw in ARXIV_QUERIES:
         try:
             url = f"{ARXIV_API}?search_query=all:{kw}&start=0&max_results={max_per_query}&sortBy=submittedDate&sortOrder=descending"
-            req = urllib.request.Request(url, headers={"User-Agent": "DailyNewsletter/1.0"})
-            with urllib.request.urlopen(req, timeout=15) as resp:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT_MEDIUM) as resp:
                 xml_data = resp.read()
             new_papers = _parse_arxiv_xml(xml_data)
             count_new = 0
@@ -117,13 +131,13 @@ def fetch_arxiv_papers(max_per_query: int = 5) -> list[dict]:
 
 def enrich_citations(papers: list[dict]) -> list[dict]:
     logger.debug("Enriching citations from Semantic Scholar...")
-    for paper in papers[:10]:
+    for paper in papers[:MAX_PAPERS_ENRICH]:
         if not paper.get("arxiv_id"):
             continue
         try:
             url = f"{S2_API}/paper/ARXIV:{paper['arxiv_id']}?fields=citationCount"
-            req = urllib.request.Request(url, headers={"User-Agent": "DailyNewsletter/1.0"})
-            with urllib.request.urlopen(req, timeout=10) as resp:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT_DEFAULT) as resp:
                 data = json.loads(resp.read())
             paper["citation_count"] = data.get("citationCount", 0)
             logger.debug("Paper '%s': %d citations", paper["title"][:60], paper["citation_count"])
@@ -135,9 +149,9 @@ def enrich_citations(papers: list[dict]) -> list[dict]:
 def fetch_hf_daily_papers() -> list[dict]:
     logger.debug("Checking HuggingFace Daily Papers...")
     try:
-        url = f"{HF_DAILY_API}?limit=50"
-        req = urllib.request.Request(url, headers={"User-Agent": "DailyNewsletter/1.0"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
+        url = f"{HF_DAILY_API}?limit={HF_DAILY_LIMIT}"
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT_MEDIUM) as resp:
             data = json.loads(resp.read())
     except Exception:
         return []
@@ -156,7 +170,7 @@ def fetch_hf_daily_papers() -> list[dict]:
         summary = paper.get("summary", paper.get("abstract", ""))
         if any(kw in (title + " " + summary).lower() for kw in keywords):
             results.append({
-                "title": title, "authors": [a.get("name", "") for a in paper.get("authors", [])][:5],
+                "title": title, "authors": [a.get("name", "") for a in paper.get("authors", [])][:MAX_AUTHORS_DISPLAY],
                 "abstract": (summary or "")[:500],
                 "link": f"https://huggingface.co/papers/{paper.get('id', '')}",
                 "published": paper.get("publishedAt", "")[:10],
@@ -195,7 +209,7 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
     # Rank
     def score(p):
         text = (p["title"] + " " + p["abstract"]).lower()
-        return sum(2 for t in RELEVANCE_TERMS if t in text) + min((p.get("citation_count") or 0), 20)
+        return sum(RELEVANCE_TERM_SCORE for t in RELEVANCE_TERMS if t in text) + min((p.get("citation_count") or 0), CITATION_SCORE_CAP)
 
     papers.sort(key=score, reverse=True)
     top_papers = papers[:top_n]

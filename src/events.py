@@ -6,9 +6,15 @@ from datetime import datetime, timedelta
 
 import requests
 
+from src.constants import (
+    EVENTS_API_LIMIT,
+    HTTP_TIMEOUT_MEDIUM,
+    NYC_EVENTS_API_URL,
+)
+
 logger = logging.getLogger(__name__)
 
-API_URL = "https://data.cityofnewyork.us/resource/tvpp-9vvx.json"
+API_URL = NYC_EVENTS_API_URL
 
 # Event types that are always major (parades/races impact streets by definition)
 ALWAYS_MAJOR_TYPES = {"Parade", "Athletic Race / Tour"}
@@ -80,8 +86,8 @@ def get_nyc_events() -> list[dict]:
 
         resp = requests.get(
             API_URL,
-            params={"$where": query, "$limit": 50, "$order": "start_date_time ASC"},
-            timeout=15,
+            params={"$where": query, "$limit": EVENTS_API_LIMIT, "$order": "start_date_time ASC"},
+            timeout=HTTP_TIMEOUT_MEDIUM,
         )
         resp.raise_for_status()
         raw = resp.json()

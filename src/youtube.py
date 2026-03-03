@@ -18,6 +18,21 @@ import feedparser
 import requests as _requests
 import trafilatura
 
+from src.constants import (
+    HTTP_TIMEOUT_DEFAULT,
+    HTTP_TIMEOUT_SHORT,
+    MAX_PODCAST_ENTRIES,
+    MAX_VIDEOS,
+    MIN_TEXT_LENGTH_LONG,
+    MIN_TEXT_LENGTH_MEDIUM,
+    MIN_TEXT_LENGTH_SHORT,
+    PODCAST_MATCH_THRESHOLD,
+    TOR_CONTROL_PORT_DEFAULT,
+    TOR_MAX_RETRIES,
+    TOR_SLEEP_SECONDS,
+    TOR_SOCKS_PORT_DEFAULT,
+)
+
 logger = logging.getLogger(__name__)
 
 # YouTube channel RSS feeds
@@ -51,9 +66,8 @@ TRANSCRIPT_WEBSITES = {
     "Lex Fridman Podcast": "https://lexfridman.com",
 }
 
-MAX_VIDEOS = 8
-_TOR_MAX_RETRIES = 12
-_TOR_SLEEP = 5
+_TOR_MAX_RETRIES = TOR_MAX_RETRIES
+_TOR_SLEEP = TOR_SLEEP_SECONDS
 
 
 def _is_short(video_id: str) -> bool:
@@ -64,7 +78,7 @@ def _is_short(video_id: str) -> bool:
     try:
         r = _requests.head(
             f"https://www.youtube.com/shorts/{video_id}",
-            allow_redirects=False, timeout=5,
+            allow_redirects=False, timeout=HTTP_TIMEOUT_SHORT,
         )
         return r.status_code == 200
     except Exception:
@@ -74,7 +88,7 @@ def _is_short(video_id: str) -> bool:
 def _rotate_tor_circuit(control_port: int = 9051) -> bool:
     """Send NEWNYM signal to Tor to get a new exit node."""
     try:
-        with socket.create_connection(("127.0.0.1", control_port), timeout=5) as s:
+        with socket.create_connection(("127.0.0.1", control_port), timeout=HTTP_TIMEOUT_SHORT) as s:
             s.sendall(b"AUTHENTICATE\r\n")
             s.recv(256)
             s.sendall(b"SIGNAL NEWNYM\r\n")
@@ -86,14 +100,14 @@ def _rotate_tor_circuit(control_port: int = 9051) -> bool:
 
 def _tor_available() -> bool:
     """Check if Tor SOCKS proxy is running and reachable."""
-    tor_port = int(os.getenv("TOR_SOCKS_PORT", "9050"))
+    tor_port = int(os.getenv("TOR_SOCKS_PORT", str(TOR_SOCKS_PORT_DEFAULT)))
     try:
         session = _requests.Session()
         session.proxies = {
             "http": f"socks5h://127.0.0.1:{tor_port}",
             "https": f"socks5h://127.0.0.1:{tor_port}",
         }
-        r = session.get("https://check.torproject.org/api/ip", timeout=10)
+        r = session.get("https://check.torproject.org/api/ip", timeout=HTTP_TIMEOUT_DEFAULT)
         if r.status_code == 200 and r.json().get("IsTor"):
             logger.info("Tor proxy active (IP: %s)", r.json().get("IP"))
             return True
@@ -104,7 +118,7 @@ def _tor_available() -> bool:
 
 def _make_tor_session() -> _requests.Session:
     """Create a fresh requests session routed through Tor."""
-    tor_port = int(os.getenv("TOR_SOCKS_PORT", "9050"))
+    tor_port = int(os.getenv("TOR_SOCKS_PORT", str(TOR_SOCKS_PORT_DEFAULT)))
     session = _requests.Session()
     session.proxies = {
         "http": f"socks5h://127.0.0.1:{tor_port}",
@@ -153,7 +167,7 @@ def _get_podcast_text(channel: str, video_title: str) -> str:
         best_match = ""
         best_score = 0.0
 
-        for entry in feed.entries[:20]:  # Only check recent episodes
+        for entry in feed.entries[:MAX_PODCAST_ENTRIES]:
             ep_title = entry.get("title", "")
             score = _title_similarity(video_title, ep_title)
             if score > best_score:
@@ -162,14 +176,14 @@ def _get_podcast_text(channel: str, video_title: str) -> str:
                 text = ""
                 if hasattr(entry, "content") and entry.content:
                     text = entry.content[0].get("value", "")
-                if not text or len(text) < 200:
+                if not text or len(text) < MIN_TEXT_LENGTH_MEDIUM:
                     text = entry.get("description", "") or entry.get("summary", "")
                 # Strip HTML tags
                 text = re.sub(r'<[^>]+>', ' ', text)
                 text = re.sub(r'\s+', ' ', text).strip()
                 best_match = text
 
-        if best_score >= 0.3 and len(best_match) >= 200:
+        if best_score >= PODCAST_MATCH_THRESHOLD and len(best_match) >= MIN_TEXT_LENGTH_MEDIUM:
             logger.info("Podcast RSS match for '%s' (score=%.2f): %d chars from %s",
                         video_title[:50], best_score, len(best_match), channel)
             return best_match
@@ -198,7 +212,7 @@ def _get_website_transcript(channel: str, video_title: str) -> str:
             feed = feedparser.parse(PODCAST_RSS_FEEDS[channel])
             for entry in feed.entries[:10]:
                 score = _title_similarity(video_title, entry.get("title", ""))
-                if score >= 0.3:
+                if score >= PODCAST_MATCH_THRESHOLD:
                     # Look for transcript URL in description
                     desc = entry.get("description", "") + entry.get("summary", "")
                     match = re.search(r'(https://lexfridman\.com/[a-z0-9-]+-transcript)', desc, re.IGNORECASE)
@@ -207,7 +221,7 @@ def _get_website_transcript(channel: str, video_title: str) -> str:
                         downloaded = trafilatura.fetch_url(url)
                         if downloaded:
                             text = trafilatura.extract(downloaded)
-                            if text and len(text) > 500:
+                            if text and len(text) > MIN_TEXT_LENGTH_LONG:
                                 logger.info("Lex transcript fetched: %d chars from %s", len(text), url)
                                 return text
                     break
@@ -217,13 +231,13 @@ def _get_website_transcript(channel: str, video_title: str) -> str:
             feed = feedparser.parse(PODCAST_RSS_FEEDS[channel])
             for entry in feed.entries[:10]:
                 score = _title_similarity(video_title, entry.get("title", ""))
-                if score >= 0.3:
+                if score >= PODCAST_MATCH_THRESHOLD:
                     link = entry.get("link", "")
                     if link:
                         downloaded = trafilatura.fetch_url(link)
                         if downloaded:
                             text = trafilatura.extract(downloaded)
-                            if text and len(text) > 500:
+                            if text and len(text) > MIN_TEXT_LENGTH_LONG:
                                 logger.info("Dwarkesh transcript fetched: %d chars from %s", len(text), link)
                                 return text
                     break
@@ -239,14 +253,14 @@ def _get_transcript_text(video_id: str, use_tor: bool = False) -> str:
     from youtube_transcript_api import YouTubeTranscriptApi
 
     if use_tor:
-        control_port = int(os.getenv("TOR_CONTROL_PORT", "9051"))
+        control_port = int(os.getenv("TOR_CONTROL_PORT", str(TOR_CONTROL_PORT_DEFAULT)))
         for attempt in range(_TOR_MAX_RETRIES):
             session = _make_tor_session()
             try:
                 ytt = YouTubeTranscriptApi(http_client=session)
                 transcript = ytt.fetch(video_id, languages=["en"])
                 full_text = " ".join(snippet.text for snippet in transcript)
-                if len(full_text) >= 100:
+                if len(full_text) >= MIN_TEXT_LENGTH_SHORT:
                     logger.info("Transcript via Tor (attempt %d): %d chars for %s",
                                 attempt + 1, len(full_text), video_id)
                     return full_text
@@ -262,7 +276,7 @@ def _get_transcript_text(video_id: str, use_tor: bool = False) -> str:
         ytt = YouTubeTranscriptApi()
         transcript = ytt.fetch(video_id, languages=["en"])
         full_text = " ".join(snippet.text for snippet in transcript)
-        if len(full_text) >= 100:
+        if len(full_text) >= MIN_TEXT_LENGTH_SHORT:
             logger.info("Transcript via direct: %d chars for %s", len(full_text), video_id)
             return full_text
     except Exception as e:
@@ -337,10 +351,10 @@ def get_recent_videos(days: int = 3) -> list[dict]:
     for video in selected:
         # Try website transcripts first (fullest text)
         text = _get_website_transcript(video["channel"], video["title"])
-        if not text or len(text) < 200:
+        if not text or len(text) < MIN_TEXT_LENGTH_MEDIUM:
             # Try podcast RSS descriptions
             text = _get_podcast_text(video["channel"], video["title"])
-        if text and len(text) >= 200:
+        if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
             video["raw_text"] = text
             video["_text_source"] = "podcast"
 
@@ -362,7 +376,7 @@ def get_recent_videos(days: int = 3) -> list[dict]:
         video.pop("published_dt", None)
         video.pop("_text_source", None)
 
-    with_text = sum(1 for v in selected if len(v.get("raw_text", "")) > 200)
+    with_text = sum(1 for v in selected if len(v.get("raw_text", "")) > MIN_TEXT_LENGTH_MEDIUM)
     logger.info("YouTube complete: %d videos, %d with text content (podcast: %d, youtube: %d)",
                 len(selected), with_text, podcast_hits,
                 with_text - podcast_hits)
