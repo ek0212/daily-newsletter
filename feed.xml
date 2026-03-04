@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Mar 2026 11:36:53 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Mar 2026 19:35:49 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Wednesday, March 04, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-04.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-04.html</guid>
-      <description>Weather: 38°F - Patchy Fog | Illness level: LOW | 2 major events this week | 5 top news stories | 8 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 46°F - Chance Light Rain | Illness level: LOW | 2 major events this week | 5 top news stories | 8 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Patchy Fog &mdash; High 47&deg; / Low 35&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Chance Light Rain &mdash; High 46&deg; / Low 38&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,30 +48,12 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">40&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(36&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Patchy Fog</td>
-        <td style="padding: 7px 6px; text-align: center;">7%</td>
-        <td style="padding: 7px 6px; text-align: center;">89%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph W</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(35&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">7%</td>
-        <td style="padding: 7px 6px; text-align: center;">96%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph N</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(46&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">7%</td>
-        <td style="padding: 7px 6px; text-align: center;">71%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">3 mph NE</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(42&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Light Rain</td>
+        <td style="padding: 7px 6px; text-align: center;">28%</td>
+        <td style="padding: 7px 6px; text-align: center;">76%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
@@ -80,16 +62,16 @@
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">9%</td>
         <td style="padding: 7px 6px; text-align: center;">71%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">3 mph E</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">3 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">44&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(43&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">8%</td>
-        <td style="padding: 7px 6px; text-align: center;">73%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">2 mph SE</td>
+        <td style="padding: 7px 6px; text-align: center;">10%</td>
+        <td style="padding: 7px 6px; text-align: center;">76%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">3 mph SE</td>
       </tr>
       
     </table>
@@ -135,56 +117,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 12:00:30 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 18:50:58 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://arstechnica.com/gadgets/2026/03/with-developer-verification-googles-apple-envy-threatens-to-dismantle-androids-open-legacy/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">With developer verification, Google's Apple envy threatens to dismantle Android's open legacy</a>
+      <a href="https://techcrunch.com/2026/03/04/googles-gemini-rolls-out-canvas-in-ai-mode-to-all-us-users/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Google’s Gemini rolls out Canvas in AI Mode to all US users</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📱 Google plans to debut Android developer verification in the coming weeks.<br>✍️ App makers outside the Play Store must register with real names and pay a fee to Google.<br>🚫 Failure to register will block sideloaded apps from installation on virtually all Android devices.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗺️ Google has expanded Canvas in AI Mode to all U.S. users in English, following its initial launch as a Google Labs experiment last year.<br>🎨 The feature generates code for shareable apps or games from user ideas and transforms research reports into web pages, quizzes, or audio overviews.<br>🔍 Users access Canvas via a tool menu (+) in AI Mode and can integrate information from the web and Google’s Knowledge Graph for projects.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 05:00:00 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 17:32:03 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Washington Post</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/04/nx-s1-5703574/home-rent-housing-crisis-ownership" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">America has a housing affordability crisis. Building houses for rent can help</a>
+      <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxQQ1kxdkh1ZFdjdlJpRDk3MVc0Ump2VXgyWUV0RjVjQ0J1Q01meVlCblA4SXhFR0RnOG9tUTVKLVpscUFuWFNZRmxvRjNuMW5hSDQya1EwWGhQODQ5YmZIVmR4a0ZSdFMzYXZqSU5iRUFQYmdqdVMwTVhLY2NnU2pia3FDY1ZqWE0?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Anthropic’s AI tool Claude central to U.S. campaign in Iran, amid a bitter feud</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏠 Approximately 7% of new single-family houses are now built for rent, not for sale.<br>📈 The U.S. completed over 10 times as many "build-to-rent" homes in 2024 compared to a decade earlier.<br>💰 An American family needs to earn $110,000 annually to afford a typical home, which is 29% higher than the median household income.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🇺🇸 Anthropic’s AI tool, Claude, is central to the ongoing U.S. campaign in Iran.<br>⚔️ The deployment of Claude occurs amid a bitter feud surrounding the AI company.<br>🇮🇷 Claude’s specific role in the U.S. military operations against Iran is a key point of ongoing discussion.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 23:16:36 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 17:20:01 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/03/alibabas-qwen-tech-lead-steps-down-after-major-ai-push/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Alibaba’s Qwen tech lead steps down after major AI push</a>
+      <a href="https://techcrunch.com/2026/03/04/the-us-military-is-still-using-claude-but-defense-tech-clients-are-fleeing/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The US military is still using Claude — but defense-tech clients are fleeing</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">👋 Junyang Lin, a central technical leader on Alibaba’s Qwen team, announced his departure from the project on Tuesday via X.<br>🗓️ Lin joined Alibaba in July 2019 and began working with the Qwen team in April 2023.<br>🤖 Alibaba launched its Qwen 3.5 Small Model series on Monday, featuring four models from 0.8B to 9B parameters.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎯 Anthropic’s Claude AI is actively used for targeting decisions in the ongoing U.S. aerial attack on Iran.<br>🛰️ Claude, paired with Palantir’s Maven system, suggested hundreds of targets, issued precise coordinates, and prioritized them for strikes in Tehran.<br>🚪 Lockheed Martin and at least 10 portfolio companies from J2 Ventures have already replaced Claude models for their defense use cases this week.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 06:02:44 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 13:53:01 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/04/nx-s1-5734543/israel-new-strikes-tehran" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel launches new strikes in Tehran as public farewell for Khamenei begins</a>
+      <a href="https://www.npr.org/2026/03/04/nx-s1-5704318/colossal-woolly-mammoth-dire-wolf" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Colossal Biosciences breeds controversy while trying to revive mammoths</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💥 Israel launched a "broad wave of strikes" in Tehran on Wednesday, targeting internal security command centers and missile launchers.<br>🗓️ Iranian authorities postponed three days of funeral ceremonies for Ayatollah Ali Khamenei due to an "overwhelming response," with no new date specified.<br>🛡️ U.S. Central Command stated Tuesday that U.S. and Israeli strikes on 2,000 targets "severely degraded" Iran's air defenses and ballistic missile launchers.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🐘 Colossal Biosciences aims to resurrect extinct species such as the woolly mammoth, Tasmanian tiger, and dodo bird.<br>🔬 The company opened its new 55,000-square-foot lab in Dallas, employing 260 geneticists, reproductive biologists, and ecologists.<br>🧬 Chief Science Officer Beth Shapiro demonstrated extracting DNA from a 2-foot mammoth tusk to compare with living elephant genetic material.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 05:00:00 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 04 Mar 2026 13:10:36 -0500 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/04/nx-s1-5717031/ice-dhs-immigrants-surveillance-confrontation-deportation-mobile-fortify" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">ICE has spun a massive surveillance web. We talked to people caught in it</a>
+      <a href="https://www.npr.org/2026/03/04/g-s1-112476/tony-gonzales-texas-republican-runoff-ethics" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">GOP Rep. Tony Gonzales heads to a runoff in Texas amid a new ethics probe in the House</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">👮‍♀️ An ICE agent addressed Emily by name and recited her home address during a January encounter in Minneapolis.<br>⚖️ Over 30 people have submitted sworn statements in an ACLU lawsuit in Minnesota describing similar intimidating encounters with immigration agents.<br>💸 The Department of Homeland Security's budget has grown, allowing it to acquire a broad network of surveillance tools.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗳️ Rep. Tony Gonzales (R-Texas) advanced to a May 26 Republican primary runoff against challenger Brandon Herrera.<br>⚖️ The House Ethics Committee launched a formal probe into allegations of sexual misconduct or unfair discrimination towards a congressional office employee.<br>✉️ The investigation follows published explicit text messages between Gonzales and his former employee Regina Santos-Aviles, who died by suicide last September.</div>
       
     </div>
     
@@ -202,12 +184,45 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-04 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=GLs2QsvEUe4" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Why Venice AI was the “Go-To” for OpenClaw</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛠️ OpenClaw selected Venice AI as its primary development partner for building sophisticated AI agents.<br>📈 Venice AI facilitated rapid scaling and efficient deployment of OpenClaw's autonomous AI systems.<br>🌟 Venice AI secured its "go-to" status by offering specialized AI infrastructure tailored for emergent agentic startups like OpenClaw.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-04 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=at_Fng0Lbow" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Rise of the Zero Human Company</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 The cost of execution for new businesses is dramatically falling due to the rise of autonomous, zero-human AI startups.<br>💰 Cursor, an AI company, achieved $2 billion in Annual Recurring Revenue (ARR) after doubling its revenue in just three months.<br>⚠️ Recent outages for Claude AI indicate a significant surge in demand for its services.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-04 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=vw3NE8_hAuk" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Gas prices spike the most in 4 years</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⏰ British Columbia is adopting year-round Daylight Saving Time, citing 93% public support from a 2019 report to reduce disruptions.<br>⚽ The upcoming World Cup, hosted by the US, Mexico, and Canada, is projected to attract 6 billion viewers, three-quarters of the world's population.<br>🎻 Lufthansa changed its carry-on policy for musical instruments after concert violinist Carolyn Whitman's 1782 Italian violin was almost denied on a flight from Helsinki.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-04 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=sFEDAkJy9Dc" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">I can't believe nobody's done this before...</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 Understand OpenAI's API shift to WebSockets, which offers 90+% bandwidth reduction and 20-30% speed improvements over REST/SSE.<br>⚡ Prioritize using the new WebSocket APIs for agentic runs with 20+ tool calls, as it maintains in-memory state and speeds them up by 20-40% by sending only new inputs.<br>🛠️ Rethink your application's networking and request patterns, as this OpenAI change indicates a broader shift that can improve efficiency across the stack.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚡ OpenAI is transitioning its APIs from REST calls to WebSockets, a significant shift for developers using their models.<br>🚀 Implement OpenAI's new WebSocket APIs to reduce bandwidth by over 90% and improve speed by 20-30% for agentic runs.<br>⚙️ Utilize WebSocket's persistent connection to avoid re-sending full context on every turn, speeding up agentic runs with 20+ tool calls by 20-40%.</div>
       
     </div>
     
@@ -215,10 +230,10 @@
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-04 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
       <!-- Title -->
-      <a href="https://youtube.com/watch?v=4dZ0VYjB8N8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">This AI Model Runs On Your Phone (With No Internet)!</a>
+      <a href="https://youtube.com/watch?v=4dZ0VYjB8N8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">This Free App Runs AI Offline On Your iPhone</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Create a digital AI clone of yourself or an expert using tools like Delphi, trained to mimic speech and thought patterns to answer questions.<br>💡 Implement AI clones to automate repetitive tasks like fielding common questions or handling lead generation, freeing up significant time for creators and businesses.<br>📈 Explore monetizing your expertise or personal brand by deploying a custom AI digital twin to engage clients and provide scaled interactions.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📱 Download the free "Locally AI" app to run open-weight AI models like Qwen 3.5 directly on your iPhone without an internet connection.<br>🔒 Use Locally AI to ensure privacy, as all prompts and data remain on your device and are not sent to cloud services like OpenAI or Google.<br>🧠 Leverage Locally AI's "thinking mode" for chain-of-thought processing on device, allowing models like the Qwen 3.5 2B parameter to generate brainstorming ideas quickly and offline.</div>
       
     </div>
     
@@ -229,7 +244,7 @@
       <a href="https://youtube.com/watch?v=6QuusFe4KIY" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Why sweetgreen is becoming millennial cringe</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Pixar's new film "Hoppers" debuted with a 97% Rotten Tomatoes score, marking its highest rating in a decade.<br>📉 Middle East conflict expansion after US/Israel attacked Iran Saturday led to S&P futures dropping 1.8% and Nasdaq tumbling over 2.3% on Tuesday.<br>📺 Paramount and Warner Bros. Discovery will merge Paramount Plus and HBO Max into a single platform by Q3, aiming for 200 million subscribers and $69 billion in revenue.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Pixar's new film "Hoppers" achieved a 97% Rotten Tomatoes score, marking its highest-rated movie in a decade ahead of its Friday release.<br>📺 Paramount Plus and HBO Max are set to merge into a single streaming platform under David Ellison, aiming for over 200 million subscribers and $69 billion in revenue.<br>🏁 Michael Jordan is finding success as a NASCAR team owner, a role where he provides funding and sponsorship without direct team management, unlike his NBA executive positions.</div>
       
     </div>
     
@@ -240,51 +255,18 @@
       <a href="https://youtube.com/watch?v=ZpXN9M0WLQ4" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Top 1% Build AI Presentations Differently. Here's How.</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 Utilize AI presentation tools to rapidly generate initial slide decks, focusing on content refinement and narrative structuring rather than manual slide creation.<br>📊 Integrate real-time data visualization and interactive elements using AI plugins within your presentation software to enhance audience engagement and comprehension.<br>✍️ Employ AI large language models to refine presentation scripts, ensuring concise, compelling language and a polished delivery for key messages.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 Combine AI tools: Use LLMs like ChatGPT for analytically sharp text content and AI presentation tools like Gamma for polished visuals in your presentations.<br>✍️ When drafting presentations in Gamma, use three dashes (---) to delineate separate slides in your text outline and use the "preserve this exact text" option to maintain strong custom titles.<br>📊 Streamline presentation updates by using Gamma's built-in AI agent to search the web for current data, automatically update statistics, and convert text-heavy slides into visual charts like waterfall charts.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-03 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=h6ukrWyqOm4" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">I'm so f***ing tired of Obsidian.</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚙️ Evaluate your current note-taking workflow to identify specific pain points with Obsidian, such as sync issues, plugin dependency, or performance bottlenecks.<br>📝 Consider exploring alternative knowledge management systems that offer built-in robust features like collaborative editing or simpler plain-text file structures if Obsidian's complexity is a hinderance.<br>🚀 Streamline your digital organization by consolidating scattered information, potentially moving away from highly customized, local-first solutions if seeking universal accessibility and stability.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-03 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=-FJ7HiPBkCM" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Month AI Woke Up</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Agentic AI, the "SaaS apocalypse," and the Anthropic-Pentagon conflict are key themes defining a sweeping shift in the AI landscape.<br>⚖️ The conflict between Anthropic and the US government includes reports of Claude's involvement in recent Iran strikes.<br>💰 OpenAI completed a record $110 billion fundraise, signifying substantial investment in the AI sector.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-03 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=KEHMoI00q3w" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How the OpenClaw foundation bullet-proofed its future (w/Dave Morin) | E2257</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛠️ To sustain an open-source project long-term, establish a corporate entity with well-heeled sponsors and dedicated maintainers, as seen with the OpenClaw Foundation.<br>📈 Prioritize cost-effectiveness when selecting agentic services, as demonstrated in a comparison of OpenClaw with Claude's Chrome plugin.<br>💡 Explore innovative interfaces like Runtools' 3D environment for OpenClaw to visualize and monitor AI agents in real time, enhancing transparency and control.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-02 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=OkuE84VSReY" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Nano Banana 2 Is Here</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Anticipate the release of Nano Banana 2, a significant update to a specialized AI model, indicating progress in compact or niche AI capabilities.<br>💡 Investigate Nano Banana 2 for potential new features such as enhanced performance on edge devices or specialized data processing improvements.<br>🔬 Explore the technical specifications of Nano Banana 2 to understand its architectural advancements and specific use cases it targets.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">❌ Do not consider Obsidian as a viable replacement for Notion if your workflow involves team collaboration or complex system management beyond simple markdown files.<br>📱 Be aware that Obsidian Sync functionality is limited, often struggling between individual devices and largely failing to support multi-user environments for shared projects.<br>💡 Understand that Notion's value for complex operations, like managing video production (topics, research, sponsors), lies in its infrastructure and document relationships, which file-based systems like Obsidian cannot easily replicate.</div>
       
     </div>
     
@@ -308,7 +290,21 @@
       <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQQTVOa211MGFuUVVXMHBHRzllMWJyNGdvZXJDZnRSLW40bWdGa29rWEQ3T3l2QkxjVzVXLXRjZi1ITWNIcDdLMDB2aFFGUm91eURwNERYUUhEOElnQ3pFUDktR3AxTWRMMlV2QWpSWFhmaTNubVRZQkRYUmszbUsydDFmamFXOWtDYlNEbVhuTFRIT2ZzS3FxRGpJVHNNZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">LLM firewalls emerge as a new AI security layer</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ LLM firewalls counter prompt injection attacks, data leaks, malicious code generation, and model overuse by monitoring user input and model interactions.<br>⚙️ These firewalls analyze the semantics, intent, and context of natural language in prompts and responses, unlike traditional WAFs or network firewalls.<br>🧱 Rik Turner notes LLM firewalls typically have three components: a prompt firewall, a retrieval firewall for RAG, and a response firewall for outbound model text.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ risks.<br>🔍 Among the most visible of these emerging technologies are so-called <strong>LLM</strong> firewalls.<br>⚠️ What's an <strong>LLM</strong> firewall?
+With the coupling of AI and operational systems come the risks of prompt injection attacks, model poisoning, data leaks and dangerous misconfigurations.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 19:34:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">IBM</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zQmwwUDdwVUFxWm8xZzVvUHduYWc5YjdnRi1YRjcxS1JUWm5zNlh5eHFLcmJGNmJ0ZGJ2Wm5GNTBWY0V3UURSbXdqY3UyUWt1Z0xBOUlEWFRvQ19yR1lpNFdoMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Agent Security Best Practices and Tutorial</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ pt injection attacks.<br>🔍 This AI agent security best practices guide covers authentication, access controls, data safeguards and secure multi‑agent automation.<br>⚠️ As AI models increasingly automate decision‑making workflows, the need for anomaly detection and risk‑mitigating controls becomes critical.</div>
       
       
     </div>
@@ -321,7 +317,7 @@
       <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE81b0QxYzZmNUZ1Z0pmVjMyeFgtVkZxZUZoUFBwUjJtX3F2MklKQ21MbDlOSGN2eG5Hb3VPSlduTk1qczVKVHRsNzlGRUFxZkVycXVramF2ZFp2QkIzVjJ2ZElkMjhldllzeGJsdkZjZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🕵️‍♀️ Indirect prompt injection (IDPI) involves attackers embedding hidden instructions within website content that AI agents later ingest, causing unintended actions.<br>🚨 Large-scale real-world telemetry confirms that IDPI is no longer theoretical but actively weaponized by adversaries.<br>🎯 Observed IDPI attacker intents include AI-based ad review evasion, SEO manipulation for phishing, data destruction, and sensitive information leakage.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ AI agents are becoming deeply integrated into web browsers, search engines and automated content-processing pipelines.<br>🔍 While these integrations can expand functionality, they also introduce a new and largely underexplored attack surface.<br>⚠️ One particularly concerning class of threats is indirect prompt injection (IDPI), in which adversaries embed hidden or manipulated instructions within website content that is later ingested by an LLM.</div>
       
       
     </div>
@@ -334,20 +330,8 @@
       <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9FTFdPVTlqRjZxWlVhQzctVTZrQ3p5NEFMUE5XTnMwWGd2QmVCZWNwaVhTTS1vd1ZaZ2tzdHJTcS1sYm1ncmhTT3JkbElJTnh4RGFvWGZxTUdaUklCbDFJU2pDWUNXUkMzWmc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What is AI Security? Securing Models, Agents & Data</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔒 AI security encompasses using AI to enhance defense capabilities and protecting AI systems like models, pipelines, and data from emerging threats.<br>💸 The stand-alone AI security market segment is projected to reach $255 million by 2027, highlighting its accelerating adoption and importance.<br>⚠️ Major risks to AI systems often reside in over-permissioned identities, public notebooks, weak API authentication, and misconfigured storage.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 27 Feb 2026 10:07:58 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxOQ2ZWaXZVWkNGNGJHajNVUzhTZEM3X0Q1NF9TRWRjaEdobGs4RHl5aDktQXA3Y254V3NyRGtPY0FVR3NfOHVkcHhzMFRDY0RWcG1fMTAtTXhPdWhOR2s4UXVvS1JaUEp2TzNOVDllNVlXbWE0QmtCR21KS0RMTXRGRy1Bejl4RE4tUXpQcE56Z0xubmJtZWtfY3VRRXNlMUQ2anJNWHdlQmFVdmlzeV9jNWJmWnhabmJONTdkMW1BRmc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How to make LLMs a defensive advantage without creating a new attack surface</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 LLMs can enhance security operations by summarizing incidents and drafting detection logic, but also pose risks like generating spear phishing pretexts or leaking sensitive data.<br>⛔ A critical operating rule for LLM deployment in security is to treat all model output as untrusted, assuming potential for hallucination or social engineering.<br>🚀 High-value early use cases for LLMs in security include alert triage summaries, investigation copilots, and detection engineering assistance.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ inventory and guardrails: map every AI service and integration, set baseline configs, then monitor for drift and suspicious access patterns.<br>🔍 How Wiz helps: Wiz AI-SPM brings AI services, identities, and data into one risk view so teams can find the few AI issues that can actually lead to impact, then route fixes to the right owners.<br>⚠️ What is AI security?
+AI security is the practice of defending systems using AI-powered capabilities while simultaneously protecting AI assets from emerging threats.</div>
       
       
     </div>
@@ -380,7 +364,7 @@
       </div>
       <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔄 Contrastive steering adjusts LLM generative behavior at inference time by shifting intermediate activation layers based on trait examples.<br>🔬 The robustness of contrastive steering to noisy or adversarial data corruption in datasets remains poorly understood.<br>📝 This paper initiates a study into understanding and mitigating dataset corruption specifically within LLM steering mechanisms.</div>
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Contrastive steering has been shown as a simple and effective method to adjust the generative behavior of LLMs at inference time.<br>🔍 It uses examples of prompt responses with and without a trait to identify a direction in an intermediate activation layer, and then shifts activations in this 1-dimensional subspace.<br>⚠️ However, despite its growing use in AI safety applications, the robustness of contrastive steering to noisy or adversarial data corruption is poorly understood.</div>
       
     </div>
     
@@ -412,7 +396,7 @@
       </div>
       <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Agentic language models pose unique safety challenges compared to chat models due to their ability to plan, call tools, and execute long-horizon actions.<br>💥 A single misstep by an agentic model, such as unauthorized file access or credential entry, can lead to irreversible harm.<br>❌ Existing alignment methods, designed for static generation, are insufficient for agentic models due to their sequential decision-making and adversarial tool feedback.</div>
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Agentic language models operate in a fundamentally different safety regime than chat models: they must plan, call tools, and execute long-horizon actions where a single misstep, such as accessing files or entering credentials, can cause irreversible harm.<br>🔍 Existing alignment methods, largely optimized for static generation and task completion, break down in these settings due to sequential decision-making, adversarial tool feedback, and overconfident intermediate reasoning.<br>⚠️ We introduce MOSAIC, a.</div>
       
     </div>
     
@@ -444,7 +428,7 @@
       </div>
       <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎯 Goal drift describes an agentic language model's tendency to deviate from its initial objective during long-context tasks.<br>⏳ Previous language model agents were known to be susceptible to this goal drift phenomenon.<br>📝 This work characterizes the extent and causes of goal drift specifically in state-of-the-art agentic models.</div>
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ The accelerating adoption of language models (LMs) as agents for deployment in long-context tasks motivates a thorough understanding of goal drift: agents' tendency to deviate from an original objective.<br>🔍 While prior-generation language model agents have been shown to be susceptible to drift, the extent to which drift affects more recent models remains unclear.<br>⚠️ In this work, we provide an updated characterization of the extent and causes of goal drift.</div>
       
     </div>
     
@@ -476,7 +460,7 @@
       </div>
       <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🧪 LLMs automating scientific code generation face challenges in reliability and error propagation within multi-agent workflows.<br>💻 A Bayesian adversarial multi-agent framework, presented as a Low-code Platform (LCP), is introduced for AI for Science (AI4S) tasks.<br>🤖 The platform coordinates three LLM-based agents under a Bayesian framework, with a Task Manager structuring user inputs.</div>
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Large Language Models (LLMs) demonstrate potentials for automating scientific code generation but face challenges in reliability, error propagation in multi-agent workflows, and evaluation in domains with ill-defined success metrics.<br>🔍 We present a Bayesian adversarial multi-agent framework specifically designed for AI for Science (AI4S) tasks in the form of a Low-code Platform (LCP).<br>⚠️ Three LLM-based agents are coordinated under the Bayesian framework: a Task Manager that structures user inputs in.</div>
       
     </div>
     
@@ -508,7 +492,7 @@
       </div>
       <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 A significant bottleneck for LLMs advancing to IMO-level math capabilities is the scarcity of challenging, high-quality problems for training and evaluation.<br>💻 Code agents, with their sophisticated coding and reasoning skills, suggest that code execution can be a scalable environment for mathematical experimentation.<br>💡 This paper specifically investigates the potential for code agents to autonomously evolve math problems through exploration.</div>
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ As large language models (LLMs) advance their mathematical capabilities toward the IMO level, the scarcity of challenging, high-quality problems for training and evaluation has become a significant bottleneck.<br>🔍 Simultaneously, recent code agents have demonstrated sophisticated skills in agentic coding and reasoning, suggesting that code execution can serve as a scalable environment for mathematical experimentation.<br>⚠️ In this paper, we investigate the potential of code agents to autonomously evolve.</div>
       
     </div>
     
