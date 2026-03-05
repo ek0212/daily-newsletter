@@ -355,6 +355,77 @@ exit(0 if all(ok for _, ok in checks) else 1)
 "
 ```
 
+## 13. Paper metadata quality (CRITICAL — catches missing affiliations, citations, truncated abstracts)
+
+This catches the recurring problem where papers display without author affiliations, citation stats, or with truncated abstracts. Semantic Scholar enrichment can silently fail due to rate limiting (429), and abstracts can get accidentally truncated. This check verifies that paper metadata is actually populated.
+
+```bash
+python3 -c "
+import json
+from pathlib import Path
+from datetime import datetime
+
+today = datetime.now().strftime('%Y-%m-%d')
+archive = Path(f'site/posts/{today}.json')
+if not archive.exists():
+    archives = sorted(Path('site/posts').glob('*.json'))
+    archive = archives[-1] if archives else None
+if not archive:
+    print('  [FAIL] No archive JSON found'); exit(1)
+
+data = json.loads(archive.read_text())
+items = data.get('ai_security', [])
+papers = [i for i in items if i.get('type') == 'paper']
+if not papers:
+    print('  [FAIL] No papers in archive'); exit(1)
+
+total = len(papers)
+with_citations = sum(1 for p in papers if p.get('citation_count') is not None)
+with_affiliations = sum(1 for p in papers if any(a for a in p.get('affiliations', []) if a))
+with_full_abstract = sum(1 for p in papers if len(p.get('abstract', '')) > 500)
+with_authors = sum(1 for p in papers if p.get('authors'))
+
+checks = [
+    ('All papers have authors', with_authors == total),
+    ('At least 1 paper has citation data', with_citations >= 1),
+    ('No abstracts truncated at 500 chars', not any(len(p.get('abstract','')) == 500 for p in papers)),
+]
+for name, ok in checks:
+    print(f'  [{\"PASS\" if ok else \"FAIL\"}] {name}')
+
+print(f'\n  Paper metadata coverage ({total} papers):')
+print(f'    Authors: {with_authors}/{total}')
+print(f'    Citation data: {with_citations}/{total}')
+print(f'    Affiliations: {with_affiliations}/{total}')
+print(f'    Full abstracts (>500 chars): {with_full_abstract}/{total}')
+
+# Show detail for papers missing enrichment
+for p in papers:
+    issues = []
+    if p.get('citation_count') is None:
+        issues.append('no citations')
+    if not any(a for a in p.get('affiliations', []) if a):
+        issues.append('no affiliations')
+    if len(p.get('abstract', '')) == 500:
+        issues.append('abstract truncated')
+    if issues:
+        print(f'    [{p.get(\"title\",\"?\")[:50]}]: {\", \".join(issues)}')
+
+# Also check the build log for S2 enrichment stats
+try:
+    log = open('/tmp/newsletter-build.log').read()
+    import re
+    m = re.search(r'S2 enrichment complete: (\d+)/(\d+)', log)
+    if m:
+        print(f'    S2 enrichment: {m.group(1)}/{m.group(2)} papers')
+    if 'rate limited' in log.lower() or '429' in log:
+        print(f'    WARNING: S2 rate limiting detected in build log')
+except: pass
+
+exit(0 if all(ok for _, ok in checks) else 1)
+"
+```
+
 ## 12. CI simulation (catches problems that only appear in GitHub Actions)
 
 Run this to simulate the CI environment: no Tor, no local YouTube transcript access. Verifies that podcast RSS alone provides enough text content.

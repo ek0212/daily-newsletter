@@ -1,6 +1,8 @@
 """Fetch trending AI security papers from arxiv + HuggingFace Daily Papers."""
 
 import logging
+import time
+import urllib.error
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -104,7 +106,7 @@ def _parse_arxiv_xml(xml_data: bytes) -> list[dict]:
         arxiv_id = id_el.text.split("/abs/")[-1] if id_el is not None and id_el.text else ""
 
         papers.append({
-            "title": title, "authors": authors[:MAX_AUTHORS_DISPLAY], "abstract": abstract[:500],
+            "title": title, "authors": authors[:MAX_AUTHORS_DISPLAY], "abstract": abstract,
             "link": link, "published": pub_date, "arxiv_id": arxiv_id, "citation_count": None,
             "affiliations": affiliations[:MAX_AUTHORS_DISPLAY],
             "influential_citations": None,
@@ -140,28 +142,66 @@ def fetch_arxiv_papers(max_per_query: int = 5) -> list[dict]:
 
 
 def enrich_citations(papers: list[dict]) -> list[dict]:
-    logger.debug("Enriching citations from Semantic Scholar...")
-    for paper in papers[:MAX_PAPERS_ENRICH]:
-        if not paper.get("arxiv_id"):
-            continue
+    """Enrich papers with citation counts and author affiliations from Semantic Scholar batch API."""
+    candidates = [p for p in papers[:MAX_PAPERS_ENRICH] if p.get("arxiv_id")]
+    if not candidates:
+        return papers
+    logger.info("Enriching %d papers from Semantic Scholar (batch API)...", len(candidates))
+
+    # Strip version suffix (e.g., "2603.04390v1" -> "2603.04390") — S2 rejects versioned IDs
+    ids = [f"ARXIV:{p['arxiv_id'].split('v')[0]}" for p in candidates]
+    fields = "citationCount,influentialCitationCount,authors.name,authors.affiliations"
+    url = f"{S2_API}/paper/batch?fields={fields}"
+    payload = json.dumps({"ids": ids}).encode()
+
+    for attempt in range(3):
         try:
-            url = f"{S2_API}/paper/ARXIV:{paper['arxiv_id']}?fields=citationCount,influentialCitationCount,authors.name,authors.affiliations"
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT_DEFAULT) as resp:
-                data = json.loads(resp.read())
-            paper["citation_count"] = data.get("citationCount", 0)
-            paper["influential_citations"] = data.get("influentialCitationCount", 0)
-            # Backfill affiliations from S2 if arXiv didn't provide them
-            s2_authors = data.get("authors", [])
-            if s2_authors and not any(paper.get("affiliations", [])):
-                affs = []
-                for s2a in s2_authors[:MAX_AUTHORS_DISPLAY]:
-                    aff_list = s2a.get("affiliations") or []
-                    affs.append(", ".join(aff_list) if aff_list else "")
-                paper["affiliations"] = affs
-            logger.debug("Paper '%s': %d citations (%d influential)", paper["title"][:60], paper["citation_count"], paper.get("influential_citations", 0))
-        except Exception:
-            pass
+            req = urllib.request.Request(url, data=payload,
+                headers={"User-Agent": USER_AGENT, "Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT_MEDIUM) as resp:
+                results = json.loads(resp.read())
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429:
+                wait = 10 * (attempt + 1)
+                logger.warning("S2 batch rate limited, waiting %ds (attempt %d/3)...", wait, attempt + 1)
+                time.sleep(wait)
+            else:
+                logger.warning("S2 batch error %d", e.code)
+                return papers
+        except Exception as e:
+            logger.warning("S2 batch request failed: %s", str(e)[:80])
+            return papers
+    else:
+        logger.warning("S2 batch failed after 3 attempts")
+        return papers
+
+    enriched = 0
+    for paper, s2_data in zip(candidates, results):
+        if not s2_data:
+            continue
+        paper["citation_count"] = s2_data.get("citationCount", 0)
+        paper["influential_citations"] = s2_data.get("influentialCitationCount", 0)
+        # Backfill affiliations from S2 if arXiv didn't provide real ones
+        # (arXiv sometimes returns garbage like single words in affiliation tags)
+        s2_authors = s2_data.get("authors", [])
+        current_affs = paper.get("affiliations", [])
+        has_real_affs = any(a for a in current_affs if a and len(a) > 5)
+        if s2_authors and not has_real_affs:
+            s2_affs = [
+                ", ".join(s2a.get("affiliations") or []) or ""
+                for s2a in s2_authors[:MAX_AUTHORS_DISPLAY]
+            ]
+            # Only use S2 affiliations if they actually have content
+            if any(a for a in s2_affs if a):
+                paper["affiliations"] = s2_affs
+        enriched += 1
+        logger.debug("Paper '%s': %d citations (%d influential), affiliations: %s",
+                     paper["title"][:60], paper["citation_count"],
+                     paper.get("influential_citations", 0),
+                     [a for a in paper.get("affiliations", []) if a])
+
+    logger.info("S2 enrichment complete: %d/%d papers enriched", enriched, len(candidates))
     return papers
 
 
@@ -191,7 +231,7 @@ def fetch_hf_daily_papers() -> list[dict]:
             hf_authors = [a.get("name", "") for a in paper.get("authors", [])][:MAX_AUTHORS_DISPLAY]
             results.append({
                 "title": title, "authors": hf_authors,
-                "abstract": (summary or "")[:500],
+                "abstract": summary or "",
                 "link": f"https://huggingface.co/papers/{paper.get('id', '')}",
                 "published": paper.get("publishedAt", "")[:10],
                 "arxiv_id": "", "citation_count": None,
