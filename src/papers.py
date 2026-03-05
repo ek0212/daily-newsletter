@@ -68,7 +68,7 @@ RELEVANCE_TERMS = [
 
 
 def _parse_arxiv_xml(xml_data: bytes) -> list[dict]:
-    ns = {"atom": "http://www.w3.org/2005/Atom"}
+    ns = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
     root = ET.fromstring(xml_data)
     papers = []
     for entry in root.findall("atom:entry", ns):
@@ -78,7 +78,15 @@ def _parse_arxiv_xml(xml_data: bytes) -> list[dict]:
         title = " ".join(title_el.text.strip().split())
         abstract_el = entry.find("atom:summary", ns)
         abstract = " ".join(abstract_el.text.strip().split()) if abstract_el is not None else ""
-        authors = [a.find("atom:name", ns).text for a in entry.findall("atom:author", ns) if a.find("atom:name", ns) is not None]
+        authors = []
+        affiliations = []
+        for a in entry.findall("atom:author", ns):
+            name_el = a.find("atom:name", ns)
+            if name_el is None:
+                continue
+            authors.append(name_el.text)
+            affs = [aff.text for aff in a.findall("arxiv:affiliation", ns) if aff.text]
+            affiliations.append(", ".join(affs) if affs else "")
 
         link = ""
         for l in entry.findall("atom:link", ns):
@@ -98,6 +106,8 @@ def _parse_arxiv_xml(xml_data: bytes) -> list[dict]:
         papers.append({
             "title": title, "authors": authors[:MAX_AUTHORS_DISPLAY], "abstract": abstract[:500],
             "link": link, "published": pub_date, "arxiv_id": arxiv_id, "citation_count": None,
+            "affiliations": affiliations[:MAX_AUTHORS_DISPLAY],
+            "influential_citations": None,
         })
     return papers
 
@@ -135,12 +145,21 @@ def enrich_citations(papers: list[dict]) -> list[dict]:
         if not paper.get("arxiv_id"):
             continue
         try:
-            url = f"{S2_API}/paper/ARXIV:{paper['arxiv_id']}?fields=citationCount"
+            url = f"{S2_API}/paper/ARXIV:{paper['arxiv_id']}?fields=citationCount,influentialCitationCount,authors.name,authors.affiliations"
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT_DEFAULT) as resp:
                 data = json.loads(resp.read())
             paper["citation_count"] = data.get("citationCount", 0)
-            logger.debug("Paper '%s': %d citations", paper["title"][:60], paper["citation_count"])
+            paper["influential_citations"] = data.get("influentialCitationCount", 0)
+            # Backfill affiliations from S2 if arXiv didn't provide them
+            s2_authors = data.get("authors", [])
+            if s2_authors and not any(paper.get("affiliations", [])):
+                affs = []
+                for s2a in s2_authors[:MAX_AUTHORS_DISPLAY]:
+                    aff_list = s2a.get("affiliations") or []
+                    affs.append(", ".join(aff_list) if aff_list else "")
+                paper["affiliations"] = affs
+            logger.debug("Paper '%s': %d citations (%d influential)", paper["title"][:60], paper["citation_count"], paper.get("influential_citations", 0))
         except Exception:
             pass
     return papers
@@ -169,12 +188,15 @@ def fetch_hf_daily_papers() -> list[dict]:
         title = paper.get("title", "")
         summary = paper.get("summary", paper.get("abstract", ""))
         if any(kw in (title + " " + summary).lower() for kw in keywords):
+            hf_authors = [a.get("name", "") for a in paper.get("authors", [])][:MAX_AUTHORS_DISPLAY]
             results.append({
-                "title": title, "authors": [a.get("name", "") for a in paper.get("authors", [])][:MAX_AUTHORS_DISPLAY],
+                "title": title, "authors": hf_authors,
                 "abstract": (summary or "")[:500],
                 "link": f"https://huggingface.co/papers/{paper.get('id', '')}",
                 "published": paper.get("publishedAt", "")[:10],
                 "arxiv_id": "", "citation_count": None,
+                "affiliations": [""] * len(hf_authors),
+                "influential_citations": None,
             })
     logger.info("HF papers found: %d relevant", len(results))
     return results

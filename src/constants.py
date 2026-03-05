@@ -2,7 +2,7 @@
 
 # ── Fetch defaults (newsletter.py orchestration) ────────────────────────
 DEFAULT_NEWS_COUNT = 5
-DEFAULT_YOUTUBE_DAYS = 3
+DEFAULT_YOUTUBE_DAYS = 1
 DEFAULT_PAPERS_DAYS_BACK = 3
 DEFAULT_PAPERS_TOP_N = 5
 DEFAULT_AI_NEWS_COUNT = 4

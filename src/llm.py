@@ -65,6 +65,7 @@ def batch_summarize(sections: dict) -> dict:
     def _summarize_section(section_key: str, items: list[dict], api_key: str) -> tuple[str, list[str]]:
         """Summarize one section with one API key. Retries on 429 rate limits."""
         from google import genai
+        from google.genai import types
         prompt = _build_section_prompt(section_key, items)
         logger.info("Gemini call for %s (%d items, %d chars) using key ...%s",
                      section_key, len(items), len(prompt), api_key[-6:])
@@ -74,6 +75,9 @@ def batch_summarize(sections: dict) -> dict:
                 response = client.models.generate_content(
                     model=GEMINI_MODEL,
                     contents=prompt,
+                    config=types.GenerateContentConfig(
+                        tools=[types.Tool(google_search=types.GoogleSearch())],
+                    ),
                 )
                 logger.info("Gemini %s response: %d chars", section_key, len(response.text))
                 summaries = _parse_section_response(response.text, section_key, items)
@@ -180,6 +184,7 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
 
     elif section_key == "youtube":
         parts.append(
+            "CRITICAL: Cover ALL major topics discussed in the episode, not just one. Many podcasts cover 3-5 different stories. Your 3 bullets should capture the BREADTH of the episode — pick the top 3 most important/interesting topics, one bullet per topic. Do NOT write 3 bullets about the same topic.\n\n"
             "YOUTUBE VIDEOS — These are transcripts from tech/AI/business YouTubers.\n"
             "Your job: extract ACTIONABLE ADVICE the reader can apply TODAY.\n"
             "Think: 'If my friend watched this, what would they actually DO differently tomorrow?'\n\n"
@@ -199,26 +204,27 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
         )
         for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "").strip()
-            if len(text) > 1000:  # long enough to warrant sponsor stripping + sampling
+            if len(text) > 1500:  # long enough to warrant sponsor stripping + sampling
                 # Strip sponsor/ad segments
                 text = re.sub(
                     r'(?i)(?:brought to you by|sponsored by|use code|promo code|sign up at|download it at|learn more at|check out|our sponsor|this episode is|discount|coupon|free trial|special offer|percent off|dollars off|\bpromo\b|partner event|go to \w+\.\w+)[^\n]{0,300}',
                     '', text
                 )
-                # Sample from beginning, middle, and end to capture key content
+                # Sample from beginning, 1/3, 2/3, and end to capture breadth of content
                 text = text[TEXT_SKIP_INTRO:]  # skip intro
                 total = len(text)
                 chunk = TEXT_SAMPLE_CHUNK
-                if total <= chunk * 2:
-                    text = text[:chunk * 2].strip()
+                if total <= chunk * 3:
+                    text = text[:chunk * 3].strip()
                 else:
                     beginning = text[:chunk]
-                    mid_start = total // 2 - chunk // 2
-                    middle = text[mid_start:mid_start + chunk]
+                    third = total // 3
+                    mid1 = text[third:third + chunk]
+                    mid2 = text[2 * third:2 * third + chunk]
                     end = text[-chunk:]
-                    text = f"{beginning}\n[...]\n{middle}\n[...]\n{end}"
+                    text = f"{beginning}\n[...]\n{mid1}\n[...]\n{mid2}\n[...]\n{end}"
             elif len(text) < MIN_TEXT_LENGTH_MEDIUM:
-                text = "(No transcript available — summarize based on the episode title and podcast context.)"
+                text = "(No transcript available. Use your knowledge and web search to find what this episode covered and summarize the key topics.)"
             else:
                 text = text[:TEXT_TRUNCATE_YOUTUBE]
             parts.append(f"{i}. [{item.get('channel', '')} - {item['title']}]: {text}")

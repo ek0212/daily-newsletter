@@ -55,7 +55,7 @@ PODCAST_RSS_FEEDS = {
     "Dwarkesh Podcast": "https://api.substack.com/feed/podcast/69345.rss",
     "Lex Fridman Podcast": "https://lexfridman.com/feed/podcast/",
     "AI Daily Brief": "https://anchor.fm/s/f7cac464/podcast/rss",
-    "Morning Brew Daily": "https://feeds.megaphone.fm/business-casual",
+    "Morning Brew Daily": "https://feeds.megaphone.fm/MOBI8777994188",
     "Matt Wolfe": "https://feeds.megaphone.fm/thenextwave",
 }
 
@@ -153,19 +153,20 @@ def _title_similarity(a: str, b: str) -> float:
     return len(overlap) / smaller if smaller else 0.0
 
 
-def _get_podcast_text(channel: str, video_title: str) -> str:
+def _get_podcast_text(channel: str, video_title: str) -> tuple[str, str]:
     """Try to get episode text from podcast RSS feed for a given channel/title.
 
-    Returns episode description text if a matching episode is found, else "".
+    Returns (episode_text, episode_url) tuple.
     """
     feed_url = PODCAST_RSS_FEEDS.get(channel)
     if not feed_url:
-        return ""
+        return "", ""
 
     try:
         feed = feedparser.parse(feed_url)
         best_match = ""
         best_score = 0.0
+        best_url = ""
 
         for entry in feed.entries[:MAX_PODCAST_ENTRIES]:
             ep_title = entry.get("title", "")
@@ -182,28 +183,30 @@ def _get_podcast_text(channel: str, video_title: str) -> str:
                 text = re.sub(r'<[^>]+>', ' ', text)
                 text = re.sub(r'\s+', ' ', text).strip()
                 best_match = text
+                best_url = entry.get("link", "")
 
         if best_score >= PODCAST_MATCH_THRESHOLD and len(best_match) >= MIN_TEXT_LENGTH_MEDIUM:
             logger.info("Podcast RSS match for '%s' (score=%.2f): %d chars from %s",
                         video_title[:50], best_score, len(best_match), channel)
-            return best_match
+            return best_match, best_url
 
         logger.debug("No good podcast RSS match for '%s' in %s (best=%.2f)",
                      video_title[:50], channel, best_score)
     except Exception as e:
         logger.debug("Podcast RSS fetch failed for %s: %s", channel, e)
 
-    return ""
+    return "", ""
 
 
-def _get_website_transcript(channel: str, video_title: str) -> str:
+def _get_website_transcript(channel: str, video_title: str) -> tuple[str, str]:
     """Try to fetch a full transcript from the channel's website.
 
     Works for Dwarkesh (Substack) and Lex Fridman (lexfridman.com).
+    Returns (text, source_url) tuple.
     """
     base_url = TRANSCRIPT_WEBSITES.get(channel)
     if not base_url:
-        return ""
+        return "", ""
 
     try:
         if channel == "Lex Fridman Podcast":
@@ -223,7 +226,9 @@ def _get_website_transcript(channel: str, video_title: str) -> str:
                             text = trafilatura.extract(downloaded)
                             if text and len(text) > MIN_TEXT_LENGTH_LONG:
                                 logger.info("Lex transcript fetched: %d chars from %s", len(text), url)
-                                return text
+                                # Link to the episode page (without -transcript suffix)
+                                episode_url = url.replace("-transcript", "")
+                                return text, episode_url
                     break
 
         elif channel == "Dwarkesh Podcast":
@@ -239,13 +244,105 @@ def _get_website_transcript(channel: str, video_title: str) -> str:
                             text = trafilatura.extract(downloaded)
                             if text and len(text) > MIN_TEXT_LENGTH_LONG:
                                 logger.info("Dwarkesh transcript fetched: %d chars from %s", len(text), link)
-                                return text
+                                return text, link
                     break
 
     except Exception as e:
         logger.debug("Website transcript fetch failed for %s: %s", channel, e)
 
-    return ""
+    return "", ""
+
+
+def _get_morning_brew_text(video_title: str) -> tuple[str, str]:
+    """Fetch today's Morning Brew stories from their RSS feed and archive.
+
+    Returns (concatenated_text, issue_url) tuple.
+    """
+    try:
+        today_prefix = datetime.now(timezone.utc).strftime("%a, %d %b %Y")
+        feed = feedparser.parse("https://www.morningbrew.com/feed")
+        stories = []
+        for entry in feed.entries:
+            pub = entry.get("published", "")
+            if not pub.startswith(today_prefix):
+                continue
+            url = entry.get("link", "")
+            title = entry.get("title", "")
+            if not url:
+                continue
+            try:
+                resp = _requests.get(
+                    url,
+                    headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"},
+                    timeout=15,
+                )
+                text = trafilatura.extract(resp.text)
+                if text:
+                    stories.append(f"## {title}\n\n{text}")
+            except Exception as e:
+                logger.debug("Morning Brew story fetch failed for %s: %s", url, e)
+
+        # Try to find today's issue URL from the archive page
+        issue_url = ""
+        try:
+            resp = _requests.get(
+                "https://www.morningbrew.com/archive",
+                headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"},
+                timeout=15,
+            )
+            match = re.search(r'href="(/issues/[^"]+)"', resp.text)
+            if match:
+                issue_url = f"https://www.morningbrew.com{match.group(1)}"
+        except Exception as e:
+            logger.debug("Morning Brew archive fetch failed: %s", e)
+
+        if stories:
+            combined = "\n\n---\n\n".join(stories)
+            logger.info("Morning Brew website: %d stories, %d chars", len(stories), len(combined))
+            return combined, issue_url
+
+    except Exception as e:
+        logger.debug("Morning Brew text fetch failed: %s", e)
+
+    return "", ""
+
+
+def _get_jeffsu_text(video_title: str) -> tuple[str, str]:
+    """Fetch matching blog post text from Jeff Su's RSS feed.
+
+    Returns (text, blog_url) tuple.
+    """
+    try:
+        feed = feedparser.parse("https://www.jeffsu.org/rss/")
+        best_score = 0.0
+        best_url = ""
+        best_title = ""
+
+        for entry in feed.entries[:MAX_PODCAST_ENTRIES]:
+            ep_title = entry.get("title", "")
+            score = _title_similarity(video_title, ep_title)
+            if score > best_score:
+                best_score = score
+                best_url = entry.get("link", "")
+                best_title = ep_title
+
+        if best_score >= PODCAST_MATCH_THRESHOLD and best_url:
+            resp = _requests.get(
+                best_url,
+                headers={"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36"},
+                timeout=15,
+            )
+            text = trafilatura.extract(resp.text)
+            if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
+                logger.info("Jeff Su blog match for '%s' (score=%.2f): %d chars from %s",
+                            video_title[:50], best_score, len(text), best_url)
+                return text, best_url
+
+        logger.debug("No Jeff Su blog match for '%s' (best=%.2f)", video_title[:50], best_score)
+    except Exception as e:
+        logger.debug("Jeff Su blog fetch failed: %s", e)
+
+    return "", ""
 
 
 def _get_transcript_text(video_id: str, use_tor: bool = False) -> str:
@@ -349,14 +446,40 @@ def get_recent_videos(days: int = 3) -> list[dict]:
 
     # Phase 1: Try podcast RSS / website transcripts (free, reliable from any IP)
     for video in selected:
+        # Channel-specific sources first
+        if video["channel"] == "Morning Brew Daily":
+            text, issue_url = _get_morning_brew_text(video["title"])
+            if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
+                video["raw_text"] = text
+                video["_text_source"] = "podcast"
+                if issue_url:
+                    video["source_url"] = issue_url
+                continue
+
+        if video["channel"] == "Jeff Su":
+            text, blog_url = _get_jeffsu_text(video["title"])
+            if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
+                video["raw_text"] = text
+                video["_text_source"] = "podcast"
+                if blog_url:
+                    video["source_url"] = blog_url
+                continue
+
         # Try website transcripts first (fullest text)
-        text = _get_website_transcript(video["channel"], video["title"])
+        text, source_url = _get_website_transcript(video["channel"], video["title"])
         if not text or len(text) < MIN_TEXT_LENGTH_MEDIUM:
-            # Try podcast RSS descriptions
-            text = _get_podcast_text(video["channel"], video["title"])
+            # Try podcast RSS descriptions — only use if substantial (3000+ chars)
+            text, source_url = _get_podcast_text(video["channel"], video["title"])
+            if text and len(text) < 3000:
+                logger.debug("Podcast text too short (%d chars) for '%s', skipping",
+                             len(text), video["title"][:50])
+                text = ""
+                source_url = ""
         if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
             video["raw_text"] = text
             video["_text_source"] = "podcast"
+            if source_url:
+                video["source_url"] = source_url
 
     needs_yt = [v for v in selected if not v.get("raw_text")]
     podcast_hits = len(selected) - len(needs_yt)

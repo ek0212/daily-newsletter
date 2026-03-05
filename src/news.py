@@ -197,6 +197,10 @@ def get_top_news(count: int = 5) -> list[dict]:
     all_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
     unique = _deduplicate(all_stories)
 
+    # Filter to today-only stories (keep unparseable dates as fallback)
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    unique = [s for s in unique if _parse_pub_date(s.get("published", "")).strftime("%Y-%m-%d") == today_str or _parse_pub_date(s.get("published", "")) == datetime.min.replace(tzinfo=timezone.utc)]
+
     # Score by relevance
     for story in unique:
         story["_relevance"] = _relevance_score(story)

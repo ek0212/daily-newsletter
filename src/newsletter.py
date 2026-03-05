@@ -84,7 +84,7 @@ def fetch_all_data() -> dict:
     sections = {
         "news": [{"title": n["title"], "raw_text": n.get("raw_text", "")} for n in news],
         "youtube": [{"title": v["title"], "channel": v.get("channel", ""), "raw_text": v.get("raw_text", "")} for v in youtube],
-        "ai_security": [{"title": item["title"], "raw_text": item.get("raw_text", "")} for item in ai_security],
+        "ai_security": [{"title": item["title"], "raw_text": item.get("raw_text", "")} for item in ai_security if item.get("type") == "news"],
     }
     summaries = batch_summarize(sections)
 
@@ -100,17 +100,19 @@ def fetch_all_data() -> dict:
             item["summary"] = summaries["youtube"][i]
         if not item.get("summary"):
             item["summary"] = "🎬 New video — Click to watch."
+        # Prefer source URL (newsletter/blog) over YouTube link
+        if item.get("source_url"):
+            item["link"] = item["source_url"]
 
-    for i, item in enumerate(ai_security):
+    ai_security_news_items = [item for item in ai_security if item.get("type") == "news"]
+    for i, item in enumerate(ai_security_news_items):
         if i < len(summaries.get("ai_security", [])) and summaries["ai_security"][i]:
-            if item["type"] == "paper":
-                item["quick_summary"] = summaries["ai_security"][i]
-            else:
-                item["summary"] = summaries["ai_security"][i]
-        if item["type"] == "paper" and not item.get("quick_summary"):
-            item["quick_summary"] = "🧠 New research — Click to read."
-        if item["type"] == "news" and not item.get("summary"):
+            item["summary"] = summaries["ai_security"][i]
+        if not item.get("summary"):
             item["summary"] = "🛡️ Security update — Click for details."
+    for item in ai_security:
+        if item["type"] == "paper":
+            item["quick_summary"] = item.get("abstract", "")
 
     return {
         "date": datetime.now().strftime(DATE_DISPLAY_FORMAT),

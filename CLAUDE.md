@@ -373,9 +373,9 @@ for name, yt_url in YOUTUBE_CHANNELS.items():
         continue
     title = feed.entries[0].title
     total += 1
-    text = _get_website_transcript(name, title)
+    text, _url = _get_website_transcript(name, title)
     if not text or len(text) < 200:
-        text = _get_podcast_text(name, title)
+        text, _url = _get_podcast_text(name, title)
     if text and len(text) >= 200:
         covered += 1
         print(f'  [OK] {name}: {len(text)} chars from podcast/website')

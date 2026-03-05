@@ -134,8 +134,10 @@
     {% for item in ai_security %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
       {% if item.type == 'paper' %}
-      <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ item.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ item.authors[:3] | join(", ") }}{% if item.authors | length > 3 %} et al.{% endif %}</span>{% if item.citation_count is not none and item.citation_count %} &nbsp;&bull;&nbsp; {{ item.citation_count }} citations{% endif %}</div>
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">{{ item.published }}{% if item.citation_count is not none and item.citation_count %} &nbsp;&bull;&nbsp; {{ item.citation_count }} citations{% endif %}{% if item.influential_citations is not none and item.influential_citations %} &nbsp;&bull;&nbsp; {{ item.influential_citations }} influential{% endif %}</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">{% for author in item.authors[:3] %}{% if not loop.first %}, {% endif %}{{ author }}{% if item.affiliations is defined and item.affiliations[loop.index0] is defined and item.affiliations[loop.index0] %} <span style="color: #999; font-style: normal; font-size: 10px;">({{ item.affiliations[loop.index0] }})</span>{% endif %}{% endfor %}{% if item.authors | length > 3 %} et al.{% endif %}</div>
       <!-- Title -->
       <a href="{{ item.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.title }}</a>
       <!-- Topic badges -->
@@ -159,7 +161,7 @@
         {% if 'guardrail' in text_lower %}<span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">guardrail</span>{% endif %}
       </div>
       <!-- Summary -->
-      {% set paper_summary = item.quick_summary if item.quick_summary else item.abstract[:300] ~ ('...' if item.abstract | length > 300 else '') %}
+      {% set paper_summary = item.abstract if item.abstract else 'No abstract available.' %}
       <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ paper_summary | safe }}</div>
       {% else %}
       <!-- Date + Source -->
