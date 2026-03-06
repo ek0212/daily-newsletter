@@ -229,12 +229,13 @@ def fetch_hf_daily_papers() -> list[dict]:
         summary = paper.get("summary", paper.get("abstract", ""))
         if any(kw in (title + " " + summary).lower() for kw in keywords):
             hf_authors = [a.get("name", "") for a in paper.get("authors", [])][:MAX_AUTHORS_DISPLAY]
+            paper_id = paper.get("id", "")
             results.append({
                 "title": title, "authors": hf_authors,
                 "abstract": summary or "",
-                "link": f"https://huggingface.co/papers/{paper.get('id', '')}",
+                "link": f"https://huggingface.co/papers/{paper_id}",
                 "published": paper.get("publishedAt", "")[:10],
-                "arxiv_id": "", "citation_count": None,
+                "arxiv_id": paper_id, "citation_count": None,
                 "affiliations": [""] * len(hf_authors),
                 "influential_citations": None,
             })

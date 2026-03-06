@@ -311,6 +311,16 @@ def _parse_section_response(text: str, section_key: str, items: list[dict]) -> l
         logger.warning("Gemini returned %d %s summaries, expected %d. Padding.", len(data), section_key, len(items))
         data.extend(_fallback_section(items[len(data):], section_key))
 
+    # Coerce items to strings — Gemini sometimes returns dicts instead of strings
+    for i, item in enumerate(data):
+        if isinstance(item, dict):
+            # Extract the summary string from common dict shapes
+            data[i] = item.get("summary") or item.get("text") or item.get("content") or "<br>".join(
+                str(v) for v in item.values() if isinstance(v, str)
+            ) or str(item)
+        elif not isinstance(item, str):
+            data[i] = str(item)
+
     # Validate each summary
     for i, summary in enumerate(data):
         issue = _validate_summary(summary)
