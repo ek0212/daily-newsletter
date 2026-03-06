@@ -239,6 +239,140 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <div class="email-wrap">
 {email_html}
 </div>
+<script>
+(function() {{
+  var STORAGE_KEY = 'newsletter_likes';
+  var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
+
+  function getStore() {{
+    try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {{version:1,items:[]}}; }}
+    catch(e) {{ return {{version:1,items:[]}}; }}
+  }}
+  function saveStore(store) {{ localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); }}
+
+  function getDateFromURL() {{
+    var m = window.location.pathname.match(/(\\d{{4}}-\\d{{2}}-\\d{{2}})/);
+    return m ? m[1] : '';
+  }}
+
+  async function hashLink(link) {{
+    var enc = new TextEncoder().encode(link);
+    var buf = await crypto.subtle.digest('SHA-256', enc);
+    return Array.from(new Uint8Array(buf)).map(function(b){{ return b.toString(16).padStart(2,'0'); }}).join('');
+  }}
+
+  function detectSection(el) {{
+    var node = el;
+    while (node && node !== document.body) {{
+      var style = node.getAttribute('style') || '';
+      for (var color in sectionMap) {{
+        if (style.indexOf(color) !== -1) return sectionMap[color];
+      }}
+      node = node.parentElement;
+    }}
+    return 'other';
+  }}
+
+  function findCards() {{
+    var cards = [];
+    var wraps = document.querySelectorAll('.email-wrap div[style]');
+    wraps.forEach(function(div) {{
+      var a = div.querySelector('a[href]');
+      if (!a) return;
+      var style = div.getAttribute('style') || '';
+      if (style.indexOf('margin-bottom') === -1 && style.indexOf('padding') === -1) return;
+      var summaryDiv = div.querySelector('div[style*="font-size"]');
+      var sourceEl = div.querySelector('span[style*="italic"], i, em');
+      if (!summaryDiv) return;
+      cards.push({{
+        el: div,
+        title: a.textContent.trim(),
+        link: a.href,
+        source: sourceEl ? sourceEl.textContent.trim() : '',
+        summary: summaryDiv.innerHTML,
+        section: detectSection(div)
+      }});
+    }});
+    return cards;
+  }}
+
+  function updateExportBtn() {{
+    var store = getStore();
+    var btn = document.getElementById('export-likes-btn');
+    if (store.items.length > 0) {{
+      btn.style.display = 'block';
+      btn.textContent = 'Export Likes (' + store.items.length + ')';
+    }} else {{
+      btn.style.display = 'none';
+    }}
+  }}
+
+  function createExportBtn() {{
+    var btn = document.createElement('button');
+    btn.id = 'export-likes-btn';
+    btn.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#1a1a1a;color:#fff;border:none;padding:8px 14px;font-family:Times New Roman,serif;font-size:13px;cursor:pointer;z-index:9999;display:none;';
+    btn.addEventListener('click', function() {{
+      var store = getStore();
+      var blob = new Blob([JSON.stringify(store, null, 2)], {{type:'application/json'}});
+      var a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'likes.json';
+      a.click();
+    }});
+    document.body.appendChild(btn);
+  }}
+
+  async function init() {{
+    var store = getStore();
+    var savedIds = new Set(store.items.map(function(i){{ return i.id; }}));
+    var ndate = getDateFromURL();
+    var cards = findCards();
+
+    createExportBtn();
+
+    for (var idx = 0; idx < cards.length; idx++) {{
+      var c = cards[idx];
+      var id = await hashLink(c.link);
+      c.el.style.position = 'relative';
+      var btn = document.createElement('button');
+      btn.className = 'like-btn';
+      btn.style.cssText = 'position:absolute;top:4px;right:4px;font-size:16px;cursor:pointer;border:none;background:none;color:#1a1a1a;padding:2px;line-height:1;';
+      btn.dataset.id = id;
+      btn.dataset.idx = idx;
+      btn.textContent = savedIds.has(id) ? '\\u2713 saved' : '\\uD83D\\uDD16';
+      btn.addEventListener('click', (function(cardData, itemId, button) {{
+        return async function() {{
+          var st = getStore();
+          var exists = st.items.findIndex(function(i){{ return i.id === itemId; }});
+          if (exists >= 0) {{
+            st.items.splice(exists, 1);
+            button.textContent = '\\uD83D\\uDD16';
+          }} else {{
+            st.items.push({{
+              id: itemId,
+              title: cardData.title,
+              link: cardData.link,
+              source: cardData.source,
+              section: cardData.section,
+              summary: cardData.summary,
+              newsletter_date: '{date_str}',
+              saved_at: new Date().toISOString()
+            }});
+            button.textContent = '\\u2713 saved';
+          }}
+          saveStore(st);
+          updateExportBtn();
+        }};
+      }})(c, id, btn));
+      c.el.appendChild(btn);
+    }}
+    updateExportBtn();
+  }}
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+}})();
+</script>
 </body>
 </html>"""
 
@@ -271,6 +405,25 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
       <div class="date-label">{display_date}</div>
       <a href="posts/{latest_date}.html" class="read-btn">Read Latest Newsletter &rarr;</a>
     </div>"""
+
+    # Build learnings section if available
+    learnings_section = ""
+    learnings_path = SITE_DIR / "learnings.json"
+    if learnings_path.exists():
+        try:
+            learnings = json.loads(learnings_path.read_text())
+            l_content = learnings.get("content_html", "")
+            l_count = learnings.get("based_on_count", 0)
+            l_date = learnings.get("generated_at", "")[:10]
+            if l_content:
+                learnings_section = f"""
+    <div class="learnings" style="background: #fffdf7; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; border-left: 4px solid #e67e22;">
+      <h2 style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 14px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px;">Learnings from Your Likes</h2>
+      <div style="font-size: 15px; color: #444; line-height: 1.8; font-family: 'Times New Roman', Times, Georgia, serif;">{l_content}</div>
+      <div style="font-size: 11px; color: #999; margin-top: 12px; font-style: italic;">Based on {l_count} liked items &middot; Generated {l_date}</div>
+    </div>"""
+        except Exception:
+            pass
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -315,6 +468,7 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
 </div>
 <div class="content">
   {latest_section}
+  {learnings_section}
   <div class="archive">
     <h2>Archive</h2>
     <ul>
