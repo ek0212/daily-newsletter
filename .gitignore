@@ -107,3 +107,17 @@ dmypy.json
 *.swp
 *.swo
 *~
+
+# Node (puppeteer testing)
+node_modules/
+package.json
+package-lock.json
+
+# Test scripts
+check_site.js
+screenshot.js
+test_puppeteer.js
+screenshots/
+
+# Runtime data
+data/

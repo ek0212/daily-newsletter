@@ -48,7 +48,7 @@
 
   <!-- Health Alert -->
   {% if health and health.status != 'UNKNOWN' %}
-  <div style="padding: 16px 32px; border-left: 4px solid {% if health.status == 'HIGH' %}#e74c3c{% elif health.status == 'LOW' %}#2980b9{% else %}#27ae60{% endif %}; background: {% if health.status == 'HIGH' %}#fdf2f2{% elif health.status == 'LOW' %}#f0f7fc{% else %}#f0faf0{% endif %};">
+  <div style="padding: 16px 32px; border-left: 4px solid {% if health.status == 'HIGH' %}#e74c3c{% elif health.status == 'LOW' %}#2980b9{clear else %}#27ae60{% endif %}; background: {% if health.status == 'HIGH' %}#fdf2f2{% elif health.status == 'LOW' %}#f0f7fc{% else %}#f0faf0{% endif %};">
     <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: {% if health.status == 'HIGH' %}#e74c3c{% elif health.status == 'LOW' %}#2980b9{% else %}#27ae60{% endif %}; font-weight: 700; margin-bottom: 6px;">
       {% if health.status == 'HIGH' %}&#x1F6A8;{% elif health.status == 'LOW' %}&#x2705;{% else %}&#x1F7E2;{% endif %} NYC Illness Level: {{ health.status }}
     </div>

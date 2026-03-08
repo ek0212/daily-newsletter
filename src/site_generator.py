@@ -239,27 +239,36 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <div class="email-wrap">
 {email_html}
 </div>
+<style>
+  .like-btn {{ background:none; border:none; cursor:pointer; font-size:16px; padding:0 4px; opacity:0.4; transition:opacity 0.15s; vertical-align:middle; }}
+  .like-btn:hover {{ opacity:1; }}
+  .like-btn.liked {{ opacity:1; }}
+  .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:8px 14px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.95); border-bottom-left-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,0.1); }}
+  .login-bar input {{ font-family:inherit; font-size:12px; padding:4px 8px; border:1px solid #ccc; }}
+  .login-bar button {{ font-family:inherit; font-size:12px; padding:4px 12px; background:#1a1a1a; color:#fff; border:none; cursor:pointer; }}
+  .stash-overlay {{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; display:none; justify-content:center; align-items:center; }}
+  .stash-overlay.open {{ display:flex; }}
+  .stash-panel {{ background:#fffdf7; width:90%; max-width:600px; max-height:80vh; overflow-y:auto; padding:28px; font-family:'Times New Roman',serif; box-shadow:0 4px 20px rgba(0,0,0,0.2); position:relative; }}
+  .stash-panel h2 {{ font-size:11px; text-transform:uppercase; letter-spacing:2.5px; font-weight:700; margin-bottom:16px; border-bottom:2px solid #1a1a1a; display:inline-block; padding-bottom:3px; }}
+  .stash-item {{ padding:10px 0; border-bottom:1px solid #e0ddd5; display:flex; align-items:flex-start; gap:10px; }}
+  .stash-item label {{ font-size:14px; color:#333; line-height:1.6; cursor:pointer; flex:1; }}
+  .stash-item input[type=checkbox] {{ margin-top:5px; }}
+  .stash-actions {{ margin-top:16px; display:flex; gap:8px; flex-wrap:wrap; }}
+  .stash-actions button {{ font-family:'Times New Roman',serif; font-size:12px; padding:8px 16px; cursor:pointer; border:none; letter-spacing:1px; text-transform:uppercase; }}
+  .stash-actions .primary {{ background:#1a1a1a; color:#fff; }}
+  .stash-actions .secondary {{ background:#e0ddd5; color:#1a1a1a; }}
+  .script-output {{ margin-top:16px; padding:16px; background:#f5f0e8; font-size:14.5px; line-height:1.7; color:#333; white-space:pre-wrap; }}
+  .close-btn {{ position:absolute; top:12px; right:16px; font-size:20px; cursor:pointer; background:none; border:none; color:#888; }}
+  .stash-empty {{ font-size:14px; color:#888; font-style:italic; padding:20px 0; }}
+  .spinner {{ display:inline-block; width:16px; height:16px; border:2px solid #ccc; border-top-color:#1a1a1a; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:6px; }}
+  @keyframes spin {{ to {{ transform:rotate(360deg); }} }}
+</style>
 <script>
 (function() {{
-  var STORAGE_KEY = 'newsletter_likes';
+  var API = window.location.origin + '/api';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
-
-  function getStore() {{
-    try {{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {{version:1,items:[]}}; }}
-    catch(e) {{ return {{version:1,items:[]}}; }}
-  }}
-  function saveStore(store) {{ localStorage.setItem(STORAGE_KEY, JSON.stringify(store)); }}
-
-  function getDateFromURL() {{
-    var m = window.location.pathname.match(/(\\d{{4}}-\\d{{2}}-\\d{{2}})/);
-    return m ? m[1] : '';
-  }}
-
-  async function hashLink(link) {{
-    var enc = new TextEncoder().encode(link);
-    var buf = await crypto.subtle.digest('SHA-256', enc);
-    return Array.from(new Uint8Array(buf)).map(function(b){{ return b.toString(16).padStart(2,'0'); }}).join('');
-  }}
+  var currentUser = null;
+  var likedTexts = new Set();
 
   function detectSection(el) {{
     var node = el;
@@ -273,100 +282,244 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     return 'other';
   }}
 
-  function findCards() {{
-    var cards = [];
-    var wraps = document.querySelectorAll('.email-wrap div[style]');
-    wraps.forEach(function(div) {{
-      var a = div.querySelector('a[href]');
-      if (!a) return;
-      var style = div.getAttribute('style') || '';
-      if (style.indexOf('margin-bottom') === -1 && style.indexOf('padding') === -1) return;
-      var summaryDiv = div.querySelector('div[style*="font-size"]');
-      var sourceEl = div.querySelector('span[style*="italic"], i, em');
-      if (!summaryDiv) return;
-      cards.push({{
-        el: div,
-        title: a.textContent.trim(),
-        link: a.href,
-        source: sourceEl ? sourceEl.textContent.trim() : '',
-        summary: summaryDiv.innerHTML,
-        section: detectSection(div)
+  function getDateFromURL() {{
+    var m = window.location.pathname.match(/(\\d{{4}}-\\d{{2}}-\\d{{2}})/);
+    return m ? m[1] : '';
+  }}
+
+  async function apiCall(path, opts) {{
+    opts = opts || {{}};
+    opts.credentials = 'include';
+    opts.headers = opts.headers || {{}};
+    if (opts.body) opts.headers['Content-Type'] = 'application/json';
+    var res = await fetch(API + path, opts);
+    return res.json();
+  }}
+
+  // --- Login bar ---
+  function renderLoginBar() {{
+    var existing = document.querySelector('.login-bar');
+    if (existing) existing.remove();
+    var bar = document.createElement('div');
+    bar.className = 'login-bar';
+    if (currentUser) {{
+      bar.innerHTML = '<span>' + currentUser + '</span>'
+        + '<button onclick="window._openStash()">My Stash</button>'
+        + '<button onclick="window._logout()">Logout</button>';
+    }} else {{
+      bar.innerHTML = '<input id="lb-user" placeholder="username">'
+        + '<input id="lb-pass" type="password" placeholder="password">'
+        + '<button onclick="window._login()">Login</button>'
+        + '<button onclick="window._register()">Register</button>';
+    }}
+    document.body.appendChild(bar);
+  }}
+
+  window._login = async function() {{
+    var u = document.getElementById('lb-user').value;
+    var p = document.getElementById('lb-pass').value;
+    var r = await apiCall('/login', {{ method: 'POST', body: JSON.stringify({{ username: u, password: p }}) }});
+    if (r.error) {{ alert(r.error); return; }}
+    currentUser = r.username;
+    renderLoginBar();
+    await loadLikes();
+    refreshAllButtons();
+  }};
+
+  window._register = async function() {{
+    var u = document.getElementById('lb-user').value;
+    var p = document.getElementById('lb-pass').value;
+    var r = await apiCall('/register', {{ method: 'POST', body: JSON.stringify({{ username: u, password: p }}) }});
+    if (r.error) {{ alert(r.error); return; }}
+    currentUser = r.username;
+    renderLoginBar();
+    await loadLikes();
+    refreshAllButtons();
+  }};
+
+  window._logout = async function() {{
+    await apiCall('/logout', {{ method: 'POST' }});
+    currentUser = null;
+    likedTexts = new Set();
+    renderLoginBar();
+    refreshAllButtons();
+  }};
+
+  // --- Likes ---
+  var allLikes = [];
+  async function loadLikes() {{
+    if (!currentUser) {{ allLikes = []; likedTexts = new Set(); return; }}
+    var r = await apiCall('/likes');
+    allLikes = r.likes || [];
+    likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+  }}
+
+  function refreshAllButtons() {{
+    document.querySelectorAll('.like-btn').forEach(function(btn) {{
+      var text = btn.dataset.bulletText;
+      if (likedTexts.has(text)) {{
+        btn.textContent = '\\uD83D\\uDC4D';
+        btn.classList.add('liked');
+      }} else {{
+        btn.textContent = '\\uD83D\\uDC4D';
+        btn.classList.remove('liked');
+      }}
+    }});
+  }}
+
+  async function toggleLike(btn, bulletText, articleTitle, section) {{
+    if (!currentUser) {{ alert('Please login first'); return; }}
+    if (likedTexts.has(bulletText)) {{
+      var item = allLikes.find(function(l) {{ return l.bullet_text === bulletText; }});
+      if (item) {{
+        await apiCall('/likes/' + item.id, {{ method: 'DELETE' }});
+      }}
+      likedTexts.delete(bulletText);
+      btn.classList.remove('liked');
+    }} else {{
+      await apiCall('/likes', {{
+        method: 'POST',
+        body: JSON.stringify({{
+          bullet_text: bulletText,
+          article_title: articleTitle,
+          section: section,
+          newsletter_date: getDateFromURL()
+        }})
+      }});
+      likedTexts.add(bulletText);
+      btn.classList.add('liked');
+    }}
+    await loadLikes();
+  }}
+
+  // --- Add thumbs up to each bullet ---
+  function addThumbsToSummaries() {{
+    var summaryDivs = document.querySelectorAll('.email-wrap div[style*="font-size: 14.5px"]');
+    summaryDivs.forEach(function(div) {{
+      var html = div.innerHTML;
+      var cardEl = div.closest('div[style*="padding"]');
+      var titleEl = cardEl ? cardEl.querySelector('a[href]') : null;
+      var articleTitle = titleEl ? titleEl.textContent.trim() : '';
+      var section = detectSection(div);
+
+      // Split on <br> to get individual bullets
+      var parts = html.split(/<br\s*\/?>/i);
+      if (parts.length < 2) return; // not a bullet-point summary
+
+      var newHtml = parts.map(function(part) {{
+        var cleanText = part.replace(/<[^>]*>/g, '').trim();
+        if (!cleanText) return part;
+        var isLiked = likedTexts.has(cleanText);
+        return '<span style="display:flex;align-items:flex-start;gap:2px;margin-bottom:2px;">'
+          + '<span style="flex:1;">' + part + '</span>'
+          + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
+          + 'data-bullet-text="' + cleanText.replace(/"/g, '&quot;') + '" '
+          + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
+          + 'data-section="' + section + '" '
+          + 'title="Like this bullet">\\uD83D\\uDC4D</button>'
+          + '</span>';
+      }}).join('');
+
+      div.innerHTML = newHtml;
+
+      // Attach click handlers
+      div.querySelectorAll('.like-btn').forEach(function(btn) {{
+        btn.addEventListener('click', function(e) {{
+          e.preventDefault();
+          e.stopPropagation();
+          toggleLike(btn, btn.dataset.bulletText, btn.dataset.articleTitle, btn.dataset.section);
+        }});
       }});
     }});
-    return cards;
   }}
 
-  function updateExportBtn() {{
-    var store = getStore();
-    var btn = document.getElementById('export-likes-btn');
-    if (store.items.length > 0) {{
-      btn.style.display = 'block';
-      btn.textContent = 'Export Likes (' + store.items.length + ')';
+  // --- Stash modal ---
+  window._openStash = async function() {{
+    if (!currentUser) return;
+    await loadLikes();
+    var overlay = document.getElementById('stash-overlay');
+    if (overlay) overlay.remove();
+
+    overlay = document.createElement('div');
+    overlay.id = 'stash-overlay';
+    overlay.className = 'stash-overlay open';
+    var panel = document.createElement('div');
+    panel.className = 'stash-panel';
+
+    var html = '<button class="close-btn" onclick="document.getElementById(\\x27stash-overlay\\x27).remove()">&times;</button>';
+    html += '<h2>My Stash</h2>';
+
+    if (allLikes.length === 0) {{
+      html += '<div class="stash-empty">No liked bullets yet. Like some bullet points to see them here.</div>';
     }} else {{
-      btn.style.display = 'none';
+      html += '<div id="stash-items">';
+      allLikes.forEach(function(like) {{
+        html += '<div class="stash-item">'
+          + '<input type="checkbox" value="' + like.id + '" data-text="' + like.bullet_text.replace(/"/g, '&quot;') + '">'
+          + '<label>' + like.bullet_text + '</label>'
+          + '</div>';
+      }});
+      html += '</div>';
+      html += '<div class="stash-actions">'
+        + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
+        + '<button class="secondary" onclick="window._stashSelectNone()">Select None</button>'
+        + '<button class="primary" id="generate-script-btn" onclick="window._generateScript()">Generate Script</button>'
+        + '</div>';
+      html += '<div id="script-result"></div>';
     }}
-  }}
 
-  function createExportBtn() {{
-    var btn = document.createElement('button');
-    btn.id = 'export-likes-btn';
-    btn.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#1a1a1a;color:#fff;border:none;padding:8px 14px;font-family:Times New Roman,serif;font-size:13px;cursor:pointer;z-index:9999;display:none;';
-    btn.addEventListener('click', function() {{
-      var store = getStore();
-      var blob = new Blob([JSON.stringify(store, null, 2)], {{type:'application/json'}});
-      var a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = 'likes.json';
-      a.click();
+    panel.innerHTML = html;
+    overlay.appendChild(panel);
+    overlay.addEventListener('click', function(e) {{
+      if (e.target === overlay) overlay.remove();
     }});
-    document.body.appendChild(btn);
-  }}
+    document.body.appendChild(overlay);
+  }};
 
-  async function init() {{
-    var store = getStore();
-    var savedIds = new Set(store.items.map(function(i){{ return i.id; }}));
-    var ndate = getDateFromURL();
-    var cards = findCards();
+  window._stashSelectAll = function() {{
+    document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) {{ cb.checked = true; }});
+  }};
 
-    createExportBtn();
+  window._stashSelectNone = function() {{
+    document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) {{ cb.checked = false; }});
+  }};
 
-    for (var idx = 0; idx < cards.length; idx++) {{
-      var c = cards[idx];
-      var id = await hashLink(c.link);
-      c.el.style.position = 'relative';
-      var btn = document.createElement('button');
-      btn.className = 'like-btn';
-      btn.style.cssText = 'position:absolute;top:4px;right:4px;font-size:16px;cursor:pointer;border:none;background:none;color:#1a1a1a;padding:2px;line-height:1;';
-      btn.dataset.id = id;
-      btn.dataset.idx = idx;
-      btn.textContent = savedIds.has(id) ? '\\u2713 saved' : '\\uD83D\\uDD16';
-      btn.addEventListener('click', (function(cardData, itemId, button) {{
-        return async function() {{
-          var st = getStore();
-          var exists = st.items.findIndex(function(i){{ return i.id === itemId; }});
-          if (exists >= 0) {{
-            st.items.splice(exists, 1);
-            button.textContent = '\\uD83D\\uDD16';
-          }} else {{
-            st.items.push({{
-              id: itemId,
-              title: cardData.title,
-              link: cardData.link,
-              source: cardData.source,
-              section: cardData.section,
-              summary: cardData.summary,
-              newsletter_date: '{date_str}',
-              saved_at: new Date().toISOString()
-            }});
-            button.textContent = '\\u2713 saved';
-          }}
-          saveStore(st);
-          updateExportBtn();
-        }};
-      }})(c, id, btn));
-      c.el.appendChild(btn);
+  window._generateScript = async function() {{
+    var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
+    if (checked.length === 0) {{ alert('Select at least one bullet'); return; }}
+    var bullets = [];
+    checked.forEach(function(cb) {{ bullets.push(cb.dataset.text); }});
+
+    var btn = document.getElementById('generate-script-btn');
+    btn.disabled = true;
+    btn.innerHTML = 'Generating<span class="spinner"></span>';
+    var resultDiv = document.getElementById('script-result');
+    resultDiv.innerHTML = '';
+
+    var r = await apiCall('/generate-script', {{
+      method: 'POST',
+      body: JSON.stringify({{ bullets: bullets }})
+    }});
+
+    btn.disabled = false;
+    btn.textContent = 'Generate Script';
+
+    if (r.error) {{
+      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + r.error + '</div>';
+    }} else {{
+      resultDiv.innerHTML = '<div class="script-output">' + r.script + '</div>';
     }}
-    updateExportBtn();
+  }};
+
+  // --- Init ---
+  async function init() {{
+    var r = await apiCall('/me');
+    if (r.user) {{
+      currentUser = r.user.username;
+      await loadLikes();
+    }}
+    renderLoginBar();
+    addThumbsToSummaries();
   }}
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
