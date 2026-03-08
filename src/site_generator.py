@@ -260,15 +260,39 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   .script-output {{ margin-top:16px; padding:16px; background:#f5f0e8; font-size:14.5px; line-height:1.7; color:#333; white-space:pre-wrap; }}
   .close-btn {{ position:absolute; top:12px; right:16px; font-size:20px; cursor:pointer; background:none; border:none; color:#888; }}
   .stash-empty {{ font-size:14px; color:#888; font-style:italic; padding:20px 0; }}
+  .delete-like-btn {{ background:none; border:none; color:#c0392b; font-size:18px; cursor:pointer; padding:0 4px; opacity:0.5; flex-shrink:0; }}
+  .delete-like-btn:hover {{ opacity:1; }}
+  .copy-script-btn {{ display:block; margin-bottom:8px; padding:6px 16px; background:#1a1a1a; color:#fff; border:none; font-family:'Times New Roman',serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; cursor:pointer; }}
   .spinner {{ display:inline-block; width:16px; height:16px; border:2px solid #ccc; border-top-color:#1a1a1a; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:6px; }}
   @keyframes spin {{ to {{ transform:rotate(360deg); }} }}
 </style>
 <script>
 (function() {{
-  var API = window.location.origin + '/api';
+  var STORAGE_KEY = 'newsletter_user';
+  var GEMINI_KEY_STORAGE = 'gemini_api_key';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
   var likedTexts = new Set();
+  var allLikes = [];
+  var nextId = 1;
+
+  // --- Storage helpers ---
+  function getStoredData() {{
+    try {{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    }} catch(e) {{ return null; }}
+  }}
+
+  function saveStoredData(data) {{
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }}
+
+  async function hashPassword(password) {{
+    var enc = new TextEncoder().encode(password);
+    var buf = await crypto.subtle.digest('SHA-256', enc);
+    return Array.from(new Uint8Array(buf)).map(function(b) {{ return b.toString(16).padStart(2, '0'); }}).join('');
+  }}
 
   function detectSection(el) {{
     var node = el;
@@ -284,19 +308,24 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 
   function getDateFromURL() {{
     var m = window.location.pathname.match(/(\\d{{4}}-\\d{{2}}-\\d{{2}})/);
-    return m ? m[1] : '';
+    return m ? m[1] : '{date_str}';
   }}
 
-  async function apiCall(path, opts) {{
-    opts = opts || {{}};
-    opts.credentials = 'include';
-    opts.headers = opts.headers || {{}};
-    if (opts.body) opts.headers['Content-Type'] = 'application/json';
-    var res = await fetch(API + path, opts);
-    return res.json();
+  // --- Auth (localStorage) ---
+  function loadSession() {{
+    var data = getStoredData();
+    if (data && data.session_active) {{
+      currentUser = data.username;
+      allLikes = data.likes || [];
+      nextId = allLikes.reduce(function(mx, l) {{ return Math.max(mx, l.id + 1); }}, 1);
+      likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+    }} else {{
+      currentUser = null;
+      allLikes = [];
+      likedTexts = new Set();
+    }}
   }}
 
-  // --- Login bar ---
   function renderLoginBar() {{
     var existing = document.querySelector('.login-bar');
     if (existing) existing.remove();
@@ -316,80 +345,93 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   }}
 
   window._login = async function() {{
-    var u = document.getElementById('lb-user').value;
+    var u = document.getElementById('lb-user').value.trim();
     var p = document.getElementById('lb-pass').value;
-    var r = await apiCall('/login', {{ method: 'POST', body: JSON.stringify({{ username: u, password: p }}) }});
-    if (r.error) {{ alert(r.error); return; }}
-    currentUser = r.username;
+    if (!u || !p) {{ alert('Username and password required'); return; }}
+    var data = getStoredData();
+    if (!data || data.username !== u) {{ alert('User not found. Please register first.'); return; }}
+    var hash = await hashPassword(p);
+    if (data.password_hash !== hash) {{ alert('Incorrect password'); return; }}
+    data.session_active = true;
+    saveStoredData(data);
+    loadSession();
     renderLoginBar();
-    await loadLikes();
     refreshAllButtons();
   }};
 
   window._register = async function() {{
-    var u = document.getElementById('lb-user').value;
+    var u = document.getElementById('lb-user').value.trim();
     var p = document.getElementById('lb-pass').value;
-    var r = await apiCall('/register', {{ method: 'POST', body: JSON.stringify({{ username: u, password: p }}) }});
-    if (r.error) {{ alert(r.error); return; }}
-    currentUser = r.username;
+    if (!u || !p) {{ alert('Username and password required'); return; }}
+    var existing = getStoredData();
+    if (existing && existing.username === u) {{ alert('User already exists. Please login.'); return; }}
+    var hash = await hashPassword(p);
+    var data = {{ version: 1, username: u, password_hash: hash, likes: [], session_active: true }};
+    saveStoredData(data);
+    loadSession();
     renderLoginBar();
-    await loadLikes();
     refreshAllButtons();
   }};
 
-  window._logout = async function() {{
-    await apiCall('/logout', {{ method: 'POST' }});
+  window._logout = function() {{
+    var data = getStoredData();
+    if (data) {{
+      data.session_active = false;
+      saveStoredData(data);
+    }}
     currentUser = null;
+    allLikes = [];
     likedTexts = new Set();
     renderLoginBar();
     refreshAllButtons();
   }};
 
-  // --- Likes ---
-  var allLikes = [];
-  async function loadLikes() {{
-    if (!currentUser) {{ allLikes = []; likedTexts = new Set(); return; }}
-    var r = await apiCall('/likes');
-    allLikes = r.likes || [];
+  // --- Likes (localStorage) ---
+  function loadLikes() {{
+    var data = getStoredData();
+    if (!data || !data.session_active) {{ allLikes = []; likedTexts = new Set(); return; }}
+    allLikes = data.likes || [];
+    nextId = allLikes.reduce(function(mx, l) {{ return Math.max(mx, l.id + 1); }}, 1);
     likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+  }}
+
+  function saveLikes() {{
+    var data = getStoredData();
+    if (!data) return;
+    data.likes = allLikes;
+    saveStoredData(data);
   }}
 
   function refreshAllButtons() {{
     document.querySelectorAll('.like-btn').forEach(function(btn) {{
       var text = btn.dataset.bulletText;
       if (likedTexts.has(text)) {{
-        btn.textContent = '\\uD83D\\uDC4D';
         btn.classList.add('liked');
       }} else {{
-        btn.textContent = '\\uD83D\\uDC4D';
         btn.classList.remove('liked');
       }}
     }});
   }}
 
-  async function toggleLike(btn, bulletText, articleTitle, section) {{
+  function toggleLike(btn, bulletText, articleTitle, section) {{
     if (!currentUser) {{ alert('Please login first'); return; }}
     if (likedTexts.has(bulletText)) {{
-      var item = allLikes.find(function(l) {{ return l.bullet_text === bulletText; }});
-      if (item) {{
-        await apiCall('/likes/' + item.id, {{ method: 'DELETE' }});
-      }}
+      allLikes = allLikes.filter(function(l) {{ return l.bullet_text !== bulletText; }});
       likedTexts.delete(bulletText);
       btn.classList.remove('liked');
     }} else {{
-      await apiCall('/likes', {{
-        method: 'POST',
-        body: JSON.stringify({{
-          bullet_text: bulletText,
-          article_title: articleTitle,
-          section: section,
-          newsletter_date: getDateFromURL()
-        }})
+      allLikes.push({{
+        id: nextId++,
+        bullet_text: bulletText,
+        article_title: articleTitle,
+        section: section,
+        newsletter_date: getDateFromURL(),
+        created_at: new Date().toISOString()
       }});
       likedTexts.add(bulletText);
       btn.classList.add('liked');
     }}
-    await loadLikes();
+    saveLikes();
   }}
 
   // --- Add thumbs up to each bullet ---
@@ -402,27 +444,40 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       var articleTitle = titleEl ? titleEl.textContent.trim() : '';
       var section = detectSection(div);
 
-      // Split on <br> to get individual bullets
       var parts = html.split(/<br\s*\/?>/i);
-      if (parts.length < 2) return; // not a bullet-point summary
 
-      var newHtml = parts.map(function(part) {{
-        var cleanText = part.replace(/<[^>]*>/g, '').trim();
-        if (!cleanText) return part;
-        var isLiked = likedTexts.has(cleanText);
-        return '<span style="display:flex;align-items:flex-start;gap:2px;margin-bottom:2px;">'
-          + '<span style="flex:1;">' + part + '</span>'
+      if (parts.length < 2) {{
+        // Single block of text (e.g. paper abstract) — add one button for the whole thing
+        var cleanText = html.replace(/<[^>]*>/g, '').trim();
+        if (!cleanText) return;
+        var truncated = cleanText.length > 200 ? cleanText.substring(0, 200) + '...' : cleanText;
+        var isLiked = likedTexts.has(truncated);
+        div.style.position = 'relative';
+        var newHtml = '<span style="display:block;padding-right:28px;">' + html + '</span>'
           + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
-          + 'data-bullet-text="' + cleanText.replace(/"/g, '&quot;') + '" '
+          + 'style="position:absolute;top:0;right:0;" '
+          + 'data-bullet-text="' + truncated.replace(/"/g, '&quot;') + '" '
           + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
           + 'data-section="' + section + '" '
-          + 'title="Like this bullet">\\uD83D\\uDC4D</button>'
-          + '</span>';
-      }}).join('');
+          + 'title="Like this">\\uD83D\\uDC4D</button>';
+        div.innerHTML = newHtml;
+      }} else {{
+        var newHtml = parts.map(function(part) {{
+          var cleanText = part.replace(/<[^>]*>/g, '').trim();
+          if (!cleanText) return part;
+          var isLiked = likedTexts.has(cleanText);
+          return '<span style="display:flex;align-items:flex-start;gap:2px;margin-bottom:2px;">'
+            + '<span style="flex:1;">' + part + '</span>'
+            + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
+            + 'data-bullet-text="' + cleanText.replace(/"/g, '&quot;') + '" '
+            + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
+            + 'data-section="' + section + '" '
+            + 'title="Like this bullet">\\uD83D\\uDC4D</button>'
+            + '</span>';
+        }}).join('');
+        div.innerHTML = newHtml;
+      }}
 
-      div.innerHTML = newHtml;
-
-      // Attach click handlers
       div.querySelectorAll('.like-btn').forEach(function(btn) {{
         btn.addEventListener('click', function(e) {{
           e.preventDefault();
@@ -434,9 +489,9 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   }}
 
   // --- Stash modal ---
-  window._openStash = async function() {{
+  window._openStash = function() {{
     if (!currentUser) return;
-    await loadLikes();
+    loadLikes();
     var overlay = document.getElementById('stash-overlay');
     if (overlay) overlay.remove();
 
@@ -446,6 +501,8 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     var panel = document.createElement('div');
     panel.className = 'stash-panel';
 
+    var geminiKey = localStorage.getItem(GEMINI_KEY_STORAGE) || '';
+
     var html = '<button class="close-btn" onclick="document.getElementById(\\x27stash-overlay\\x27).remove()">&times;</button>';
     html += '<h2>My Stash</h2>';
 
@@ -454,12 +511,25 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     }} else {{
       html += '<div id="stash-items">';
       allLikes.forEach(function(like) {{
-        html += '<div class="stash-item">'
+        html += '<div class="stash-item" data-like-id="' + like.id + '">'
           + '<input type="checkbox" value="' + like.id + '" data-text="' + like.bullet_text.replace(/"/g, '&quot;') + '">'
           + '<label>' + like.bullet_text + '</label>'
+          + '<button class="delete-like-btn" onclick="window._deleteLike(' + like.id + ',this)" title="Delete">&times;</button>'
           + '</div>';
       }});
       html += '</div>';
+      html += '<div style="margin-top:16px;">'
+        + '<label style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;display:block;margin-bottom:6px;">Custom prompt (optional)</label>'
+        + '<textarea id="custom-prompt" rows="3" style="width:100%;font-family:inherit;font-size:13px;padding:8px;border:1px solid #ccc;resize:vertical;" placeholder="e.g. Make it funny and casual, focus on practical takeaways, explain like I&#39;m 5..."></textarea>'
+        + '</div>';
+      if (!geminiKey) {{
+        html += '<div style="margin-top:12px;">'
+          + '<label style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;display:block;margin-bottom:6px;">Gemini API Key</label>'
+          + '<div style="display:flex;gap:6px;">'
+          + '<input id="gemini-key-input" type="password" style="flex:1;font-family:inherit;font-size:12px;padding:4px 8px;border:1px solid #ccc;" placeholder="Enter your Gemini API key">'
+          + '<button class="primary" style="font-family:inherit;font-size:12px;padding:4px 12px;background:#1a1a1a;color:#fff;border:none;cursor:pointer;" onclick="window._saveGeminiKey()">Save</button>'
+          + '</div></div>';
+      }}
       html += '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
         + '<button class="secondary" onclick="window._stashSelectNone()">Select None</button>'
@@ -476,6 +546,14 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     document.body.appendChild(overlay);
   }};
 
+  window._saveGeminiKey = function() {{
+    var key = document.getElementById('gemini-key-input').value.trim();
+    if (!key) {{ alert('Please enter a key'); return; }}
+    localStorage.setItem(GEMINI_KEY_STORAGE, key);
+    alert('API key saved');
+    window._openStash();
+  }};
+
   window._stashSelectAll = function() {{
     document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) {{ cb.checked = true; }});
   }};
@@ -484,11 +562,32 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) {{ cb.checked = false; }});
   }};
 
+  window._deleteLike = function(likeId, btnEl) {{
+    allLikes = allLikes.filter(function(l) {{ return l.id !== likeId; }});
+    saveLikes();
+    likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+    var row = btnEl.closest('.stash-item');
+    if (row) row.remove();
+    refreshAllButtons();
+    if (allLikes.length === 0) {{
+      var items = document.getElementById('stash-items');
+      if (items) items.parentElement.innerHTML = '<div class="stash-empty">No liked bullets yet.</div>';
+    }}
+  }};
+
   window._generateScript = async function() {{
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
     if (checked.length === 0) {{ alert('Select at least one bullet'); return; }}
+    var apiKey = localStorage.getItem(GEMINI_KEY_STORAGE);
+    if (!apiKey) {{ alert('Please save your Gemini API key first'); return; }}
+
     var bullets = [];
     checked.forEach(function(cb) {{ bullets.push(cb.dataset.text); }});
+    var customPrompt = (document.getElementById('custom-prompt') || {{}}).value || '';
+
+    var prompt = 'You are a YouTube script writer. Write an engaging, conversational YouTube Shorts script (under 60 seconds) based on these bullet points:\\n\\n';
+    bullets.forEach(function(b) {{ prompt += '- ' + b + '\\n'; }});
+    if (customPrompt) {{ prompt += '\\nAdditional instructions: ' + customPrompt; }}
 
     var btn = document.getElementById('generate-script-btn');
     btn.disabled = true;
@@ -496,28 +595,38 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     var resultDiv = document.getElementById('script-result');
     resultDiv.innerHTML = '';
 
-    var r = await apiCall('/generate-script', {{
-      method: 'POST',
-      body: JSON.stringify({{ bullets: bullets }})
-    }});
+    try {{
+      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + encodeURIComponent(apiKey), {{
+        method: 'POST',
+        headers: {{ 'Content-Type': 'application/json' }},
+        body: JSON.stringify({{ contents: [{{ parts: [{{ text: prompt }}] }}] }})
+      }});
+      var data = await res.json();
+      if (data.error) {{
+        throw new Error(data.error.message || 'API error');
+      }}
+      var script = data.candidates[0].content.parts[0].text;
+      resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
+        + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+    }} catch(e) {{
+      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+    }}
 
     btn.disabled = false;
     btn.textContent = 'Generate Script';
+  }};
 
-    if (r.error) {{
-      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + r.error + '</div>';
-    }} else {{
-      resultDiv.innerHTML = '<div class="script-output">' + r.script + '</div>';
-    }}
+  window._copyScript = function(btn) {{
+    var text = document.getElementById('script-text').innerText;
+    navigator.clipboard.writeText(text).then(function() {{
+      btn.textContent = 'Copied!';
+      setTimeout(function() {{ btn.textContent = 'Copy Script'; }}, 2000);
+    }});
   }};
 
   // --- Init ---
-  async function init() {{
-    var r = await apiCall('/me');
-    if (r.user) {{
-      currentUser = r.user.username;
-      await loadLikes();
-    }}
+  function init() {{
+    loadSession();
     renderLoginBar();
     addThumbsToSummaries();
   }}

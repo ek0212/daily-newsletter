@@ -189,7 +189,9 @@ def generate_script():
         return jsonify({"error": "No bullets selected"}), 400
 
     # Build prompt
+    custom_prompt = (data.get("custom_prompt") or "").strip()
     bullets_block = "\n".join(f"- {b}" for b in bullet_texts)
+    custom_section = f"\n\nAdditional instructions from the user: {custom_prompt}" if custom_prompt else ""
     prompt = textwrap.dedent(f"""\
         You are an educational content writer. The user liked these bullet points from a daily newsletter:
 
@@ -201,7 +203,7 @@ def generate_script():
         3. The script should be conversational but informative — imagine explaining these topics to a smart friend over coffee.
         4. Add context, background, and "why it matters" for each topic.
         5. Weave the topics together naturally if they're related, otherwise use clear transitions.
-        6. Start with a brief hook, end with a takeaway.
+        6. Start with a brief hook, end with a takeaway.{custom_section}
 
         Return ONLY the script text, ready to be read aloud. No stage directions, no markdown formatting.
     """)
