@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Mar 2026 12:58:21 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Mar 2026 19:15:57 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Sunday, March 08, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-08.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-08.html</guid>
-      <description>Weather: 55°F - Chance Rain Showers | Illness level: LOW | 1 major events this week | 5 top news stories | 2 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 65°F - Mostly Cloudy | Illness level: LOW | 1 major events this week | 5 top news stories | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Chance Rain Showers &mdash; High 65&deg; / Low 47&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Cloudy &mdash; High 69&deg; / Low 47&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">55&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">22%</td>
-        <td style="padding: 7px 6px; text-align: center;">90%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">56&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">22%</td>
-        <td style="padding: 7px 6px; text-align: center;">90%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">63&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">66&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
         <td style="padding: 7px 6px; text-align: center;">11%</td>
-        <td style="padding: 7px 6px; text-align: center;">58%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph W</td>
+        <td style="padding: 7px 6px; text-align: center;">63%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph W</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">63&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">3%</td>
-        <td style="padding: 7px 6px; text-align: center;">54%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph W</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">60%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph W</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">59&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
         <td style="padding: 7px 6px; text-align: center;">60%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph W</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph W</td>
       </tr>
       
     </table>
@@ -131,12 +113,23 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 11:32:17 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AP News</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 18:23:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Guardian</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPM2VBVy1xdnNKN0dodE11N1htLUoxY3QyXzR3eXhZNDc3MFlXbXE1VWFSMVZVLUlhdTRHNUdwQlpzZ0JzQjdVTXRPZ005clBwRngwYlhKSXNxUU4tUUQ0NzVhQjB3OFg1YXhweGhvQ0FSWUFPSnZodUlhdi1qUWMwUHpUdnhGaWZrYTVReU5pcU4yNHlyVmJXVm9JMndSQW80blRBXy1LMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump’s ‘roaring’ economy meets a rough start to 2026: What the latest numbers show</a>
+      <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNNy01aVh2UFlsR2c1OTJUcFF1cXJvVHpVZDg1aGdDZXNaTGdOcmpZS05IU2ZIT05yRHQ2TVJidjI4Nm9uVFNNMU9yZlJUNTZmWVJxZUJ1NWZfMmVrRXhUNUdKTnlidlkwRFdNcHdVTkgyTTRaTE5obUZxNFhMb2VYb0RKLU5rRXc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Police investigating after device thrown at anti-Islam protest in New York City</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📉 The U.S. economy experienced job losses of 92,000 in February 2026. <br>📊 The unemployment rate for U.S.-born individuals rose to 4.7% over the past 12 months, up from 4.4%. <br>⛽ Gasoline prices at the pump jumped 19% following the strikes against Iran that began February 28, 2026.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 death.<br>📢 Further analysis will be conducted, including on a second device,” Tisch said in a social media post.<br>🔍 The commissioner added that two men, Emir Balat and Ibrahim Kayumi, who were arrested on scene, are in custody in connection with the incident and that New <strong>York</strong> police are working with federal prosecutors and the FBI through a terrorism taskforce.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 16:30:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
+      <!-- Title -->
+      <a href="https://techcrunch.com/2026/03/08/owner-of-ice-detention-facility-sees-big-opportunity-in-ai-man-camps/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Owner of ICE detention facility sees big opportunity in AI man camps</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 To house the hundreds or thousands of temporary workers needed to build an AI data center, developers are increasingly relying on temporary villages known as man camps.<br>📢 This style of camp was popularized as housing for men working in remote oil fields.<br>🔍 For example, as a Bitcoin mining facility in rural Dickens County, Texas is converted into a 1.</div>
       
     </div>
     
@@ -147,40 +140,30 @@
       <a href="https://techcrunch.com/2026/03/07/a-roadmap-for-ai-if-anyone-will-listen/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">A roadmap for AI, if anyone will listen</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📝 The Pro-Human Declaration, signed by hundreds of experts, proposes that AI development should expand human potential. <br>🚫 The declaration prohibits superintelligence development without scientific consensus on safety and genuine democratic buy-in. <br>🛡️ Defense Secretary Pete Hegseth designated Anthropic a “supply chain risk” on the last Friday in February 2026, after it refused the Pentagon unlimited use of its technology.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 at has happened in America just in the last four months,” said Max Tegmark, the MIT physicist and AI researcher who helped organize the effort, in conversation with this editor.<br>📢 “Polling suddenly [is showing] that <strong>95%</strong> of all Americans oppose an unregulated race to superintelligence.<br>🔍 ”
+The newly published document, signed by hundreds of experts, former officials, and public figures, opens with the no-nonsense observation that humanity is at a fork in the road.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 00:20:10 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 14:20:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/07/google-just-gave-sundar-pichai-a-692m-pay-package/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Google just gave Sundar Pichai a $692M pay package</a>
+      <a href="https://www.npr.org/sections/the-picture-show/2026/03/08/g-s1-112915/photos-scenes-from-jesse-jacksons-homegoing-services" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Photos: Scenes from Jesse Jackson's homegoing services</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Sundar Pichai's new three-year pay package could be worth $692 million, structured primarily with performance-tied stock incentives. <br>🚗 Part of Pichai's new stock incentives are linked to Google's Waymo and Wing drone delivery venture. <br>🏡 Larry Page recently spent over $173 million on two mansions in Coconut Grove, Florida, in response to California's proposed Billionaire Tax Act.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 07:57:12 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/08/g-s1-112521/photos-international-womens-day-justice-rights-action" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Photos: These bold women stand up for justice, rights ... and freedom</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗓️ March 8 is International Women's Day, commemorating a Russian protest that began on February 23, 1917, Julian calendar. <br>✊ The 1917 Russian women's protest, demanding "bread and peace," led to the Czar's abdication and women gaining the right to vote. <br>🎭 Photographer Annice Lyn documented 72-year-old Jean preparing for a Chinese opera performance in Kuala Lumpur's Chinatown in August 2024.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 l, a homegoing service on Friday at House of Hope megachurch that drew thousands of attendees, including former presidents Bill Clinton, Barack Obama, and Joe Biden.<br>📢 Services for the civil rights leader, who died last month at the age of 84, culminated with a final private ceremony on Saturday at Rainbow PUSH headquarters on Chicago's south side.<br>🔍 <strong>Jesse</strong> <strong>Jackson</strong> Jr.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 07:49:02 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 08 Mar 2026 13:42:46 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/08/nx-s1-5741654/israel-iran-oil-ayatollah-successor" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel hits Iran's oil depots as clerics say consensus reached on Ayatollah successor</a>
+      <a href="https://www.npr.org/2026/03/08/nx-s1-5741742/five-key-takeaways-from-an-annual-briefing-by-chinas-foreign-minister" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Five key takeaways from an annual briefing by China's foreign minister</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💥 Israel targeted Iran's civilian oil facilities for the first time early Sunday, March 7, 2026, killing at least four tanker drivers. <br>💧 Iran responded to attacks on its infrastructure by hitting a desalination plant in Bahrain for the first time with a drone attack. <br>👑 Iranian state media reported that the Assembly of Experts reached a majority consensus on an unnamed successor for Ayatollah Ali Khamenei.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Beijing, Wang did not confirm a meeting date but said <strong>China</strong> is open to dialogue with the United States.<br>📢 He said the world cannot afford for the two biggest economies to engage in conflict.<br>🔍 Here is a summary of what Wang said on five key international issues.</div>
       
     </div>
     
@@ -196,29 +179,7 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-07 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-OpenClaw-ification-of-AI-e3fluoh" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Jensen Huang Calls OpenClaw "Most Important Software Release Ever"</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛠️ OpenClaw signifies the emergence of new agent-era primitives, including persistent work, multimodal orchestration, scheduled autonomy, and AI that follows users across devices.<br>💰 Nvidia posted another monster earnings report, indicating continued strong financial performance in the AI sector.<br>💡 Consider attending Claw Camp to learn how to build with OpenClaw and leverage its capabilities in agentic workflows.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-07 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Dr. Izzy Sealey</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=U6bd9VM4AgU" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Be Better than AI: 8 Highest Value Skills to Learn Now</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⏳ Recognize that the half-life of technical skills has drastically shortened from approximately 15 years a few decades ago, demanding continuous learning to stay relevant.<br>🗣️ Employ Non-Violent Communication by first observing without judgment, then naming the feeling, identifying the unmet need, and finally making a clear, actionable request.<br>📈 Cultivate a personal brand through founder content, as CEO-produced material generates 46% more engagement and builds trust, attracting inbound leads like for Alex and Leyla Hormozi.</div>
-      
-    </div>
-    
-    
+    <div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>
   </div>
 
   <!-- Section Rule -->
@@ -233,25 +194,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 19:34:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">IBM</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zQmwwUDdwVUFxWm8xZzVvUHduYWc5YjdnRi1YRjcxS1JUWm5zNlh5eHFLcmJGNmJ0ZGJ2Wm5GNTBWY0V3UURSbXdqY3UyUWt1Z0xBOUlEWFRvQ19yR1lpNFdoMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Agent Security Best Practices and Tutorial</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 AI agents are moving from experimental demos to autonomous systems embedded in daily workflows, significantly expanding the attack surface for organizations using LLMs.<br>🚨 Misconfigured AI agents can leak sensitive data, trigger unauthorized API calls, or expose datasets through subtle prompt injection attacks.<br>🛡️ The IBM BeeAI framework provides strategies like permissions, role-based access control (RBAC), guardrails, and observability to mitigate security risks in AI agent systems.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 11:09:30 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Unit 42</span></div>
       <!-- Title -->
       <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE81b0QxYzZmNUZ1Z0pmVjMyeFgtVkZxZUZoUFBwUjJtX3F2MklKQ21MbDlOSGN2eG5Hb3VPSlduTk1qczVKVHRsNzlGRUFxZkVycXVramF2ZFp2QkIzVjJ2ZElkMjhldllzeGJsdkZjZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Indirect prompt injection (IDPI) is no longer theoretical but actively weaponized, as observed in real-world telemetry.<br>🛠️ Researchers identified 22 distinct techniques attackers used in the wild to create web-based IDPI payloads.<br>💥 Observed attacker intents for IDPI include AI-based ad review evasion, SEO manipulation for phishing, data destruction, and unauthorized transactions.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Indirect prompt injection (IDPI) is actively being weaponized, moving beyond theoretical risks.<br>💥 In-the-wild IDPI attacks include AI-based ad review evasion, SEO manipulation, data destruction, and unauthorized transactions.<br>👾 Researchers identified 22 distinct techniques used by attackers for web-based IDPI payloads in observed incidents.</div>
       
       
     </div>
@@ -259,12 +207,25 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 07 Mar 2026 14:07:35 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">StartupHub.ai</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 05 Mar 2026 13:37:58 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">OpenTools</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOM2VYQ2djYTF5MzV6amoxM3UwQ294MUhOMGw3Ty05UEVubFRzQW5UNEhiTHZxLUpkanpfbHo4MXRnM3Q3UXZ6bFZNaUFlcUVsQWhzOUNmTmxNTnYzckczN0x6TllwTW4wNWhrQlhLU3pMcUdiSVNQMzU4Z1VXTXRIZU5XYlVWcFpSbHdESnBhLUNFeVh1UlI0NDkxcw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OWASP Top 10 LLM Risks Explained</a>
+      <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPS1d3STJ6Q1loZVFJYUQxTjN6U0hEaGRoVmptTTM1c0tocWtPd01EUWJtSXBhMXVQWHFlc2JDWFJjVVFBWGpWaTY2a3dGeHczWWdLTnZNa3VYbkpLVExaN08xUWhvT2VYa1U1djJ6OGVZajBENnl5Y01ZcWJlQUpKWFFNQ21DQk1yZ1NnMExmTEM1enY0RWpzUzBRQko2QnhWUk9za2ljdmJfZVd6bzA0?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Critical Vulnerability Exposes Perplexity's Comet Browser to Prompt Injection Attacks</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">👨‍💻 IBM Distinguished Engineer Jeff Crume highlights the OWASP Top 10 for LLM Applications, addressing critical security risks for deploying AI systems.<br>💉 Prompt Injection is identified as the most prevalent threat, enabling attackers to manipulate LLMs to leak data or execute harmful commands.<br>⚠️ Other top LLM risks include Sensitive Information Disclosure, Supply Chain Vulnerabilities, Data/Model Poisoning, and Excessive Agency.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Perplexity's Comet AI browser had a critical vulnerability, dubbed 'PleaseFix,' allowing indirect prompt injection attacks.<br>🔓 The 'PleaseFix' flaw permitted zero-click exploits, enabling the leakage of user files and sensitive data.<br>🔬 Researchers from Zenity Labs identified the 'PleaseFix' vulnerability in Perplexity's Comet AI browser.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 05 Mar 2026 05:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE8ydmJ4eVR1aVRkdHdnOXQwaEZQVUtTU1dtc0VJTW5ybnYxZk54ZU83MkpBM1NJNkg1eVhnMERFdjU0Rkk5ckZOcjZGMnY1ZDdHMU0ySkVvNFdVWFIxWHZyZXlfVEN5VDJHLTRWN21xcWNUS3RZYzNUQWh1WVFkQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Engineering trust: A security blueprint for autonomous AI agents</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏥 AI agents accessing sensitive data, like health records, are vulnerable to malicious instructions hidden in webpages they process.<br>🛡️ The most significant security risk for autonomous AI agents, including prompt injection, lies primarily at the application layer.<br>🔒 A secure-by-design blueprint for AI agents recommends an adversarial threat model and isolated sandboxed environments for code execution.</div>
       
       
     </div>
@@ -277,7 +238,7 @@
       <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lhTFNUZGNsSjZiaGtrNE4xTXRLXzZzYzliOGlYdGtXbVlxYVptTHY0VnhRSEdSNTFjNjhZcWc5MHJVUlFhWW5yTmhwXzVBOWRpaEhZWElCMzNVcExSYS1ITHpKMmRPRE16YnRBY2RoWkZrXzdhTDU0eUNNR0FfOHZxamwtQXAtQVpLQ1cwY0ZZZTM5TDFrTTUxNzZwZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What is AI Security? Top Security Risks in LLM Applications</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 McKinsey’s 2023 Global AI Survey reports 55% of organizations now use AI in at least one business function.<br>📉 Research reveals 45% of AI-generated code contains security vulnerabilities.<br>🔓 Prompt injection attacks successfully bypass safeguards in many LLM applications, and data leakage from generative AI tools has been reported by enterprises.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 55% of organizations reported using AI in at least one business function in McKinsey’s 2023 Global AI Survey.<br>📉 Research shows 45% of AI-generated code contains security vulnerabilities.<br>⚠️ Prompt injection attacks effectively bypass safeguards in many LLM applications, leading to reported data leakage from generative AI tools.</div>
       
       
     </div>
