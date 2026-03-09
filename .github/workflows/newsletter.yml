@@ -55,6 +55,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
         run: python -m src.newsletter 2>&1 | tee /tmp/newsletter-build.log
 
       - name: Validate transcript quality
