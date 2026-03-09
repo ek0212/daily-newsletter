@@ -1,3 +1,29 @@
+# Security Rules
+
+**NEVER embed API keys, secrets, or credentials in generated HTML, JavaScript, or any file that ends up in the `site/` directory or git history.** This includes:
+- Do NOT use `os.getenv()` to inject keys into f-strings that produce HTML/JS
+- Do NOT bake API keys into client-side JavaScript variables
+- API keys must ONLY exist in `.env` (gitignored), GitHub Secrets, or server-side code that is never served to browsers
+- For client-side features needing API keys: let the user paste their key into localStorage (never committed, never in HTML source)
+- After ANY change involving API keys or secrets, grep the `site/` output for key prefixes (e.g. `AIzaSy`) to verify nothing leaked
+
+## Post-build security check
+```bash
+python3 -c "
+from pathlib import Path
+import sys
+patterns = ['AIzaSy', 'sk-', 'ghp_', 'AKIA']
+for f in Path('site').rglob('*'):
+    if f.is_file() and f.suffix in ['.html', '.js', '.json', '.xml']:
+        content = f.read_text(errors='ignore')
+        for p in patterns:
+            if p in content:
+                print(f'LEAKED KEY: {p}... found in {f}')
+                sys.exit(1)
+print('No API keys found in site/ output.')
+"
+```
+
 # Validation
 
 Run ALL of these after ANY code change. All must pass before committing.

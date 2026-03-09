@@ -296,7 +296,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <script>
 (function() {{
   var STORAGE_KEY = 'newsletter_user';
-  var GEMINI_KEY = '';
+  var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
   var likedTexts = new Set();
@@ -583,12 +583,24 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       }});
       html += '</div>';
 
+      var hasKey = !!localStorage.getItem(GEMINI_KEY_STORAGE);
       html += '<div class="stash-footer">'
         + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
-        + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>'
-        + '<div class="stash-actions">'
+        + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>';
+      if (!hasKey) {{
+        html += '<div style="margin-top:12px;padding:12px;background:#f5f0e8;border-left:3px solid #e67e22;">'
+          + '<label class="stash-prompt-label" style="color:#e67e22;">Gemini API Key (saved locally, never uploaded)</label>'
+          + '<div style="display:flex;gap:6px;">'
+          + '<input id="gemini-key-input" type="password" class="stash-prompt" style="flex:1;padding:6px 10px;" placeholder="Paste your Gemini API key">'
+          + '<button class="primary" style="font-size:11px;padding:6px 14px;" onclick="window._saveGeminiKey()">Save</button>'
+          + '</div></div>';
+      }} else {{
+        html += '<div style="margin-top:8px;font-size:11px;color:#999;font-style:italic;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\\x27' + GEMINI_KEY_STORAGE + '\\x27);window._openStash();return false;" style="color:#888;">Change key</a></div>';
+      }}
+      html += '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
         + '<button class="secondary" onclick="window._stashSelectNone()">Select None</button>'
+        + '<button class="secondary" onclick="window._copySelection(this)">Copy Selection</button>'
         + '<span class="divider"></span>'
         + '<button class="primary" id="generate-script-btn" onclick="window._generateScript()">Generate Script</button>'
         + '</div>'
@@ -624,13 +636,57 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     }}
   }};
 
+  window._copySelection = function(btn) {{
+    var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
+    if (checked.length === 0) {{ alert('Select at least one item'); return; }}
+    var lines = [];
+    var currentDate = '';
+    checked.forEach(function(cb) {{
+      var item = allLikes.find(function(l) {{ return l.id === parseInt(cb.value); }});
+      if (!item) return;
+      var d = item.newsletter_date || '';
+      if (d !== currentDate) {{
+        if (lines.length > 0) lines.push('');
+        lines.push(d);
+        lines.push('');
+        currentDate = d;
+      }}
+      lines.push(item.bullet_text);
+      var source = item.article_title ? '  — ' + item.article_title + ' [' + (item.section || '').replace('_',' ') + ']' : '';
+      if (source) lines.push(source);
+      lines.push('');
+    }});
+    var text = lines.join('\\n').trim();
+    navigator.clipboard.writeText(text).then(function() {{
+      btn.textContent = 'Copied!';
+      setTimeout(function() {{ btn.textContent = 'Copy Selection'; }}, 2000);
+    }});
+  }};
+
+  window._saveGeminiKey = function() {{
+    var key = (document.getElementById('gemini-key-input') || {{}}).value || '';
+    key = key.trim();
+    if (!key) {{ alert('Please paste your API key'); return; }}
+    localStorage.setItem(GEMINI_KEY_STORAGE, key);
+    window._openStash();
+  }};
+
   window._generateScript = async function() {{
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
     if (checked.length === 0) {{ alert('Select at least one bullet'); return; }}
 
+    var apiKey = localStorage.getItem(GEMINI_KEY_STORAGE) || '';
+    if (!apiKey) {{ alert('Please save your Gemini API key first'); return; }}
+
     var bullets = [];
     checked.forEach(function(cb) {{ bullets.push(cb.dataset.text); }});
     var customPrompt = (document.getElementById('custom-prompt') || {{}}).value || '';
+
+    var prompt = 'You are an educational content writer. The user liked these bullet points from a daily newsletter:\\n\\n';
+    bullets.forEach(function(b) {{ prompt += '- ' + b + '\\n'; }});
+    prompt += '\\nYour task:\\n1. Research each topic in more depth.\\n2. Write a 2-3 minute spoken script (350-500 words) that explains these topics in an educational, engaging way.\\n3. Be conversational but informative.\\n4. Add context, background, and why it matters.\\n5. Start with a hook, end with a takeaway.';
+    if (customPrompt) {{ prompt += '\\n\\nAdditional instructions: ' + customPrompt; }}
+    prompt += '\\n\\nReturn ONLY the script text, ready to be read aloud. No stage directions, no markdown.';
 
     var btn = document.getElementById('generate-script-btn');
     btn.disabled = true;
@@ -639,30 +695,18 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     resultDiv.innerHTML = '';
 
     try {{
-      // Call local Flask server API (run: python3 src/server.py)
-      var res = await fetch('/api/generate-script', {{
+      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + encodeURIComponent(apiKey), {{
         method: 'POST',
         headers: {{ 'Content-Type': 'application/json' }},
-        credentials: 'include',
-        body: JSON.stringify({{ bullets: bullets, custom_prompt: customPrompt }})
+        body: JSON.stringify({{ contents: [{{ parts: [{{ text: prompt }}] }}] }})
       }});
-      if (!res.ok) {{
-        var err = await res.json().catch(function() {{ return {{}}; }});
-        if (res.status === 404 || res.status === 0) {{
-          throw new Error('Script generation requires the local server. Run: python3 src/server.py');
-        }}
-        throw new Error(err.error || 'Server error');
-      }}
       var data = await res.json();
-      if (data.error) throw new Error(data.error);
+      if (data.error) throw new Error(data.error.message || 'API error');
+      var script = data.candidates[0].content.parts[0].text;
       resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
-        + '<div class="script-output" id="script-text">' + data.script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+        + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
     }} catch(e) {{
-      if (e.message.indexOf('Failed to fetch') !== -1 || e.message.indexOf('NetworkError') !== -1) {{
-        resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Script generation requires the local server.<br>Run: <code>python3 src/server.py</code> then try again.</div>';
-      }} else {{
-        resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
-      }}
+      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
     }}
 
     btn.disabled = false;
