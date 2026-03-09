@@ -296,7 +296,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <script>
 (function() {{
   var STORAGE_KEY = 'newsletter_user';
-  var GEMINI_KEY = '{os.getenv("GEMINI_API_KEY", "")}';
+  var GEMINI_KEY = '{os.getenv("GEMINI_API_KEY_3", "")}';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
   var likedTexts = new Set();
