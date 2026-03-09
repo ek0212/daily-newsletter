@@ -240,36 +240,63 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 {email_html}
 </div>
 <style>
-  .like-btn {{ background:none; border:none; cursor:pointer; font-size:16px; padding:0 4px; opacity:0.4; transition:opacity 0.15s; vertical-align:middle; }}
-  .like-btn:hover {{ opacity:1; }}
+  .like-btn {{ background:none; border:none; cursor:pointer; font-size:16px; padding:0 4px; opacity:0.35; transition:opacity 0.2s, transform 0.15s; vertical-align:middle; }}
+  .like-btn:hover {{ opacity:1; transform:scale(1.2); }}
   .like-btn.liked {{ opacity:1; }}
-  .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:8px 14px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.95); border-bottom-left-radius:4px; box-shadow:0 1px 4px rgba(0,0,0,0.1); }}
-  .login-bar input {{ font-family:inherit; font-size:12px; padding:4px 8px; border:1px solid #ccc; }}
-  .login-bar button {{ font-family:inherit; font-size:12px; padding:4px 12px; background:#1a1a1a; color:#fff; border:none; cursor:pointer; }}
-  .stash-overlay {{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); z-index:9999; display:none; justify-content:center; align-items:center; }}
+  .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }}
+  .login-bar input {{ font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }}
+  .login-bar button {{ font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }}
+  .login-bar button:hover {{ background:#333; }}
+  .stash-overlay {{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,26,26,0.45); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }}
   .stash-overlay.open {{ display:flex; }}
-  .stash-panel {{ background:#fffdf7; width:90%; max-width:600px; max-height:80vh; overflow-y:auto; padding:28px; font-family:'Times New Roman',serif; box-shadow:0 4px 20px rgba(0,0,0,0.2); position:relative; }}
-  .stash-panel h2 {{ font-size:11px; text-transform:uppercase; letter-spacing:2.5px; font-weight:700; margin-bottom:16px; border-bottom:2px solid #1a1a1a; display:inline-block; padding-bottom:3px; }}
-  .stash-item {{ padding:10px 0; border-bottom:1px solid #e0ddd5; display:flex; align-items:flex-start; gap:10px; }}
-  .stash-item label {{ font-size:14px; color:#333; line-height:1.6; cursor:pointer; flex:1; }}
-  .stash-item input[type=checkbox] {{ margin-top:5px; }}
-  .stash-actions {{ margin-top:16px; display:flex; gap:8px; flex-wrap:wrap; }}
-  .stash-actions button {{ font-family:'Times New Roman',serif; font-size:12px; padding:8px 16px; cursor:pointer; border:none; letter-spacing:1px; text-transform:uppercase; }}
-  .stash-actions .primary {{ background:#1a1a1a; color:#fff; }}
-  .stash-actions .secondary {{ background:#e0ddd5; color:#1a1a1a; }}
-  .script-output {{ margin-top:16px; padding:16px; background:#f5f0e8; font-size:14.5px; line-height:1.7; color:#333; white-space:pre-wrap; }}
-  .close-btn {{ position:absolute; top:12px; right:16px; font-size:20px; cursor:pointer; background:none; border:none; color:#888; }}
-  .stash-empty {{ font-size:14px; color:#888; font-style:italic; padding:20px 0; }}
-  .delete-like-btn {{ background:none; border:none; color:#c0392b; font-size:18px; cursor:pointer; padding:0 4px; opacity:0.5; flex-shrink:0; }}
-  .delete-like-btn:hover {{ opacity:1; }}
-  .copy-script-btn {{ display:block; margin-bottom:8px; padding:6px 16px; background:#1a1a1a; color:#fff; border:none; font-family:'Times New Roman',serif; font-size:12px; letter-spacing:1px; text-transform:uppercase; cursor:pointer; }}
-  .spinner {{ display:inline-block; width:16px; height:16px; border:2px solid #ccc; border-top-color:#1a1a1a; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:6px; }}
+  .stash-panel {{ background:#fffdf7; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'Times New Roman',Times,Georgia,serif; box-shadow:0 8px 40px rgba(0,0,0,0.18); position:relative; border:1px solid #e0ddd5; }}
+  .stash-header {{ padding:28px 32px 20px; border-bottom:3px double #1a1a1a; position:sticky; top:0; background:#fffdf7; z-index:1; }}
+  .stash-header h2 {{ font-size:10px; text-transform:uppercase; letter-spacing:3px; font-weight:700; color:#1a1a1a; margin:0; }}
+  .stash-header .stash-count {{ font-size:12px; color:#999; font-style:italic; margin-top:4px; }}
+  .stash-close {{ position:absolute; top:20px; right:24px; font-size:24px; cursor:pointer; background:none; border:none; color:#aaa; transition:color 0.15s; line-height:1; }}
+  .stash-close:hover {{ color:#1a1a1a; }}
+  .stash-body {{ padding:0 32px; }}
+  .stash-date-group {{ margin-top:0; }}
+  .stash-date-label {{ font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; padding:18px 0 8px; border-bottom:1px solid #e8e5de; display:flex; align-items:center; gap:8px; }}
+  .stash-date-label::before {{ content:''; flex:1; height:1px; background:linear-gradient(to right, transparent, #e0ddd5); }}
+  .stash-date-label::after {{ content:''; flex:1; height:1px; background:linear-gradient(to left, transparent, #e0ddd5); }}
+  .stash-item {{ padding:14px 0; border-bottom:1px solid #f0ede6; display:flex; align-items:flex-start; gap:12px; transition:background 0.15s; }}
+  .stash-item:last-child {{ border-bottom:none; }}
+  .stash-item input[type=checkbox] {{ margin-top:4px; accent-color:#1a1a1a; flex-shrink:0; width:16px; height:16px; cursor:pointer; }}
+  .stash-item-content {{ flex:1; min-width:0; }}
+  .stash-item-text {{ font-size:14px; color:#333; line-height:1.65; cursor:pointer; }}
+  .stash-item-meta {{ display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#aaa; letter-spacing:0.3px; }}
+  .stash-item-source {{ font-style:italic; color:#888; max-width:250px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
+  .stash-item-section {{ text-transform:uppercase; letter-spacing:1px; font-weight:600; font-size:9px; padding:1px 6px; border:1px solid; border-radius:1px; }}
+  .stash-item-section.news {{ color:#c0392b; border-color:#c0392b; }}
+  .stash-item-section.youtube {{ color:#8e44ad; border-color:#8e44ad; }}
+  .stash-item-section.ai_security {{ color:#27ae60; border-color:#27ae60; }}
+  .stash-item-section.other {{ color:#888; border-color:#ccc; }}
+  .stash-delete {{ background:none; border:none; color:#ccc; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }}
+  .stash-delete:hover {{ color:#c0392b; }}
+  .stash-footer {{ padding:20px 32px 28px; border-top:1px solid #e8e5de; position:sticky; bottom:0; background:#fffdf7; z-index:1; }}
+  .stash-prompt-label {{ font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; display:block; margin-bottom:8px; }}
+  .stash-prompt {{ width:100%; font-family:'Times New Roman',Times,Georgia,serif; font-size:13.5px; padding:10px 12px; border:1px solid #e0ddd5; background:#faf8f2; resize:vertical; line-height:1.5; color:#333; }}
+  .stash-prompt:focus {{ outline:none; border-color:#1a1a1a; }}
+  .stash-actions {{ margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }}
+  .stash-actions button {{ font-family:'Times New Roman',Times,serif; font-size:11px; padding:8px 18px; cursor:pointer; border:none; letter-spacing:1.5px; text-transform:uppercase; transition:background 0.2s, color 0.2s; }}
+  .stash-actions .primary {{ background:#1a1a1a; color:#fffdf7; }}
+  .stash-actions .primary:hover {{ background:#333; }}
+  .stash-actions .primary:disabled {{ background:#bbb; cursor:wait; }}
+  .stash-actions .secondary {{ background:transparent; color:#888; border:1px solid #d0cdc5; }}
+  .stash-actions .secondary:hover {{ color:#1a1a1a; border-color:#1a1a1a; }}
+  .stash-actions .divider {{ flex:1; }}
+  .script-output {{ margin-top:16px; padding:20px; background:#f5f0e8; font-size:14.5px; line-height:1.75; color:#333; white-space:pre-wrap; border-left:3px solid #1a1a1a; }}
+  .copy-script-btn {{ display:inline-block; margin-bottom:10px; padding:7px 18px; background:#1a1a1a; color:#fffdf7; border:none; font-family:'Times New Roman',serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; transition:background 0.2s; }}
+  .copy-script-btn:hover {{ background:#333; }}
+  .stash-empty {{ font-size:15px; color:#999; font-style:italic; padding:40px 32px; text-align:center; line-height:1.6; }}
+  .spinner {{ display:inline-block; width:14px; height:14px; border:2px solid rgba(255,253,247,0.3); border-top-color:#fffdf7; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }}
   @keyframes spin {{ to {{ transform:rotate(360deg); }} }}
 </style>
 <script>
 (function() {{
   var STORAGE_KEY = 'newsletter_user';
-  var GEMINI_KEY_STORAGE = 'gemini_api_key';
+  var GEMINI_KEY = '{os.getenv("GEMINI_API_KEY", "")}';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
   var likedTexts = new Set();
@@ -489,6 +516,19 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   }}
 
   // --- Stash modal ---
+  function formatDateLabel(dateStr) {{
+    try {{
+      var parts = dateStr.split('-');
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      return months[parseInt(parts[1],10)-1] + ' ' + parseInt(parts[2],10) + ', ' + parts[0];
+    }} catch(e) {{ return dateStr; }}
+  }}
+
+  function sectionLabel(s) {{
+    var map = {{'news':'News','youtube':'YouTube','ai_security':'AI Security','other':'Other'}};
+    return map[s] || s;
+  }}
+
   window._openStash = function() {{
     if (!currentUser) return;
     loadLikes();
@@ -501,41 +541,59 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     var panel = document.createElement('div');
     panel.className = 'stash-panel';
 
-    var geminiKey = localStorage.getItem(GEMINI_KEY_STORAGE) || '';
-
-    var html = '<button class="close-btn" onclick="document.getElementById(\\x27stash-overlay\\x27).remove()">&times;</button>';
-    html += '<h2>My Stash</h2>';
+    var html = '<div class="stash-header">'
+      + '<button class="stash-close" onclick="document.getElementById(\\x27stash-overlay\\x27).remove()">&times;</button>'
+      + '<h2>My Stash</h2>';
 
     if (allLikes.length === 0) {{
-      html += '<div class="stash-empty">No liked bullets yet. Like some bullet points to see them here.</div>';
+      html += '</div><div class="stash-empty">Nothing here yet.<br>Like bullet points as you read &mdash; they\\x27ll appear here.</div>';
     }} else {{
-      html += '<div id="stash-items">';
+      html += '<div class="stash-count">' + allLikes.length + ' saved item' + (allLikes.length === 1 ? '' : 's') + '</div></div>';
+
+      // Group by newsletter_date, sorted newest first
+      var groups = {{}};
       allLikes.forEach(function(like) {{
-        html += '<div class="stash-item" data-like-id="' + like.id + '">'
-          + '<input type="checkbox" value="' + like.id + '" data-text="' + like.bullet_text.replace(/"/g, '&quot;') + '">'
-          + '<label>' + like.bullet_text + '</label>'
-          + '<button class="delete-like-btn" onclick="window._deleteLike(' + like.id + ',this)" title="Delete">&times;</button>'
-          + '</div>';
+        var d = like.newsletter_date || 'Unknown';
+        if (!groups[d]) groups[d] = [];
+        groups[d].push(like);
+      }});
+      var sortedDates = Object.keys(groups).sort(function(a,b) {{ return b.localeCompare(a); }});
+
+      html += '<div class="stash-body" id="stash-items">';
+      sortedDates.forEach(function(date) {{
+        html += '<div class="stash-date-group">';
+        html += '<div class="stash-date-label">' + formatDateLabel(date) + '</div>';
+        groups[date].forEach(function(like) {{
+          var escaped = like.bullet_text.replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          var displayText = like.bullet_text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          var titleDisplay = (like.article_title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          html += '<div class="stash-item" data-like-id="' + like.id + '">'
+            + '<input type="checkbox" value="' + like.id + '" data-text="' + escaped + '">'
+            + '<div class="stash-item-content">'
+            + '<div class="stash-item-text">' + displayText + '</div>'
+            + '<div class="stash-item-meta">'
+            + '<span class="stash-item-section ' + (like.section || 'other') + '">' + sectionLabel(like.section) + '</span>'
+            + (titleDisplay ? '<span class="stash-item-source">' + titleDisplay + '</span>' : '')
+            + '</div>'
+            + '</div>'
+            + '<button class="stash-delete" onclick="window._deleteLike(' + like.id + ',this)" title="Remove">&times;</button>'
+            + '</div>';
+        }});
+        html += '</div>';
       }});
       html += '</div>';
-      html += '<div style="margin-top:16px;">'
-        + '<label style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;display:block;margin-bottom:6px;">Custom prompt (optional)</label>'
-        + '<textarea id="custom-prompt" rows="3" style="width:100%;font-family:inherit;font-size:13px;padding:8px;border:1px solid #ccc;resize:vertical;" placeholder="e.g. Make it funny and casual, focus on practical takeaways, explain like I&#39;m 5..."></textarea>'
-        + '</div>';
-      if (!geminiKey) {{
-        html += '<div style="margin-top:12px;">'
-          + '<label style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;display:block;margin-bottom:6px;">Gemini API Key</label>'
-          + '<div style="display:flex;gap:6px;">'
-          + '<input id="gemini-key-input" type="password" style="flex:1;font-family:inherit;font-size:12px;padding:4px 8px;border:1px solid #ccc;" placeholder="Enter your Gemini API key">'
-          + '<button class="primary" style="font-family:inherit;font-size:12px;padding:4px 12px;background:#1a1a1a;color:#fff;border:none;cursor:pointer;" onclick="window._saveGeminiKey()">Save</button>'
-          + '</div></div>';
-      }}
-      html += '<div class="stash-actions">'
+
+      html += '<div class="stash-footer">'
+        + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
+        + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>'
+        + '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
         + '<button class="secondary" onclick="window._stashSelectNone()">Select None</button>'
+        + '<span class="divider"></span>'
         + '<button class="primary" id="generate-script-btn" onclick="window._generateScript()">Generate Script</button>'
+        + '</div>'
+        + '<div id="script-result"></div>'
         + '</div>';
-      html += '<div id="script-result"></div>';
     }}
 
     panel.innerHTML = html;
@@ -544,14 +602,6 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       if (e.target === overlay) overlay.remove();
     }});
     document.body.appendChild(overlay);
-  }};
-
-  window._saveGeminiKey = function() {{
-    var key = document.getElementById('gemini-key-input').value.trim();
-    if (!key) {{ alert('Please enter a key'); return; }}
-    localStorage.setItem(GEMINI_KEY_STORAGE, key);
-    alert('API key saved');
-    window._openStash();
   }};
 
   window._stashSelectAll = function() {{
@@ -570,16 +620,15 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     if (row) row.remove();
     refreshAllButtons();
     if (allLikes.length === 0) {{
-      var items = document.getElementById('stash-items');
-      if (items) items.parentElement.innerHTML = '<div class="stash-empty">No liked bullets yet.</div>';
+      window._openStash();
     }}
   }};
 
   window._generateScript = async function() {{
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
     if (checked.length === 0) {{ alert('Select at least one bullet'); return; }}
-    var apiKey = localStorage.getItem(GEMINI_KEY_STORAGE);
-    if (!apiKey) {{ alert('Please save your Gemini API key first'); return; }}
+    var apiKey = GEMINI_KEY;
+    if (!apiKey) {{ alert('Script generation is not available — no API key configured.'); return; }}
 
     var bullets = [];
     checked.forEach(function(cb) {{ bullets.push(cb.dataset.text); }});
