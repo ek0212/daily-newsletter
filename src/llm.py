@@ -186,6 +186,8 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
         parts.append(
             "CRITICAL: Cover ALL major topics discussed in the episode, not just one. Many podcasts cover 3-5 different stories. Your 3 bullets should capture the BREADTH of the episode — pick the top 3 most important/interesting topics, one bullet per topic. Do NOT write 3 bullets about the same topic.\n\n"
             "YOUTUBE VIDEOS — These are transcripts from tech/AI/business YouTubers.\n"
+            "CRITICAL: Each video's transcript is enclosed between '--- VIDEO N START ---' and '--- VIDEO N END ---' markers. "
+            "You MUST only use text within a video's markers to generate that video's summary. NEVER let content from one video leak into another video's summary.\n"
             "Your job: extract ACTIONABLE ADVICE the reader can apply TODAY.\n"
             "Think: 'If my friend watched this, what would they actually DO differently tomorrow?'\n\n"
             "PRIORITY ORDER for each bullet:\n"
@@ -227,7 +229,7 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
                 text = "(No transcript available. Use your knowledge and web search to find what this episode covered and summarize the key topics.)"
             else:
                 text = text[:TEXT_TRUNCATE_YOUTUBE]
-            parts.append(f"{i}. [{item.get('channel', '')} - {item['title']}]: {text}")
+            parts.append(f"\n--- VIDEO {i} START ---\n{i}. [{item.get('channel', '')} - {item['title']}]:\n{text}\n--- VIDEO {i} END ---")
 
     elif section_key == "ai_security":
         parts.append("AI SECURITY (papers and news articles):")
