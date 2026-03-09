@@ -208,9 +208,9 @@ def generate_script():
         Return ONLY the script text, ready to be read aloud. No stage directions, no markdown formatting.
     """)
 
-    # Use Gemini
+    # Use Gemini — prefer key 3 (dedicated to script gen) to avoid quota conflicts
     api_keys = []
-    for var in ["GEMINI_API_KEY", "GEMINI_API_KEY_2"]:
+    for var in ["GEMINI_API_KEY_3", "GEMINI_API_KEY", "GEMINI_API_KEY_2"]:
         k = os.getenv(var)
         if k:
             api_keys.append(k)

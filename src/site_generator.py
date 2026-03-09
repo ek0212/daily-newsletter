@@ -296,7 +296,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <script>
 (function() {{
   var STORAGE_KEY = 'newsletter_user';
-  var GEMINI_KEY = '{os.getenv("GEMINI_API_KEY_3", "")}';
+  var GEMINI_KEY = '';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
   var likedTexts = new Set();
@@ -627,16 +627,10 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   window._generateScript = async function() {{
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
     if (checked.length === 0) {{ alert('Select at least one bullet'); return; }}
-    var apiKey = GEMINI_KEY;
-    if (!apiKey) {{ alert('Script generation is not available — no API key configured.'); return; }}
 
     var bullets = [];
     checked.forEach(function(cb) {{ bullets.push(cb.dataset.text); }});
     var customPrompt = (document.getElementById('custom-prompt') || {{}}).value || '';
-
-    var prompt = 'You are a YouTube script writer. Write an engaging, conversational YouTube Shorts script (under 60 seconds) based on these bullet points:\\n\\n';
-    bullets.forEach(function(b) {{ prompt += '- ' + b + '\\n'; }});
-    if (customPrompt) {{ prompt += '\\nAdditional instructions: ' + customPrompt; }}
 
     var btn = document.getElementById('generate-script-btn');
     btn.disabled = true;
@@ -645,20 +639,30 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     resultDiv.innerHTML = '';
 
     try {{
-      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + encodeURIComponent(apiKey), {{
+      // Call local Flask server API (run: python3 src/server.py)
+      var res = await fetch('/api/generate-script', {{
         method: 'POST',
         headers: {{ 'Content-Type': 'application/json' }},
-        body: JSON.stringify({{ contents: [{{ parts: [{{ text: prompt }}] }}] }})
+        credentials: 'include',
+        body: JSON.stringify({{ bullets: bullets, custom_prompt: customPrompt }})
       }});
-      var data = await res.json();
-      if (data.error) {{
-        throw new Error(data.error.message || 'API error');
+      if (!res.ok) {{
+        var err = await res.json().catch(function() {{ return {{}}; }});
+        if (res.status === 404 || res.status === 0) {{
+          throw new Error('Script generation requires the local server. Run: python3 src/server.py');
+        }}
+        throw new Error(err.error || 'Server error');
       }}
-      var script = data.candidates[0].content.parts[0].text;
+      var data = await res.json();
+      if (data.error) throw new Error(data.error);
       resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
-        + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+        + '<div class="script-output" id="script-text">' + data.script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
     }} catch(e) {{
-      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+      if (e.message.indexOf('Failed to fetch') !== -1 || e.message.indexOf('NetworkError') !== -1) {{
+        resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Script generation requires the local server.<br>Run: <code>python3 src/server.py</code> then try again.</div>';
+      }} else {{
+        resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+      }}
     }}
 
     btn.disabled = false;
