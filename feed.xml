@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 09 Mar 2026 00:51:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2026 03:38:13 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Monday, March 09, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-09.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-09.html</guid>
-      <description>Weather: 59°F - Mostly Cloudy | Illness level: LOW | 2 major events this week | 4 top news stories | 1 YouTube videos | 4 AI security updates</description>
+      <description>Weather: 56°F - Partly Cloudy | Illness level: LOW | 2 major events this week | 4 top news stories | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Cloudy &mdash; High 63&deg; / Low 47&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Partly Cloudy &mdash; High 63&deg; / Low 47&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,12 +48,48 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">59&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">60%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph W</td>
+        <td style="padding: 7px 6px; text-align: center;">65%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">2 mph SW</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">51&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">61%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph SW</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">61&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">46%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph S</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">59&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">53%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph S</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">54&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">61%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph S</td>
       </tr>
       
     </table>
@@ -99,34 +135,36 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 02:13:11 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The New York Times</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPYTF6bmllcFg2cFpkXzVoWGMwRVkzNjJTUkVrSTdNVkExelM1Ukl2Y2F5S2pBQTRjTVJLUHZGZFNabU81cTRMaUszUGZsNGxNR1FkQXRfOWoxWGVHM0ZmMEJWLVFEamltUnRSYkI3M0N3ZlNRRURUUHFBdGp0cUY5YzUzcnNKaXFTSkxDVEF2VlRfM2xKWmUyUUhHRlpEZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Thousands Waited for Hours in Security Lines at Airports in New Orleans and Houston</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Thousands Waited for Hours in Security Lines at Airports in New Orleans and Houston</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-08T13:51:15-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
       <!-- Title -->
       <a href="https://www.theverge.com/tech/891151/apple-is-going-high-end-with-new-ultra-products-next" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Apple is going high-end with new ‘Ultra’ products next</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📱 Apple is reportedly preparing at least three new high-end “ultra” products. <br>💲 A rumored foldable iPhone is expected to cost approximately $2,000. <br>💻 A touchscreen MacBook Pro is reportedly slated for release in the fall.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Fresh off launching the low-cost MacBook Neo, <strong>Apple</strong> is reportedly preparing at least three new products that will fit into its highest-end “ultra” lineup.<br>📢 According to Bloomberg’s Mark Gruman, the next batch of releases may not bear the “ultra” name, like its Watch, but will all command price premiums over their mainline counterparts.<br>🔍 <strong>Apple</strong> is going high-end with new ‘<strong>Ultra</strong>’ products next
+With a budget MacBook out the door, it’s back to premium hardware.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-08T12:00:00-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 03:25:50 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/column/890713/mabe-fratti-sentir-que-no-sabes-review" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Listen to this: Mabe Fratti’s experimental cello pop</a>
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE9abmV0bWJidU5mbnBXbkJuTWk2T19ta3p3Vm83LVkwWHkxSEUwX0pIY3VtNjBiaG5WWDVpdjh1cEJCNTgzUzdpUVFqYVAydjdPNkJOZQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Nepal election 2026 results - follow live</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎶 Mabe Fratti’s 2024 record is titled *Sentir Que No Sabes*. <br>🎤 The album's opening track is named “Kravitz” and features her cello and paranoid Spanish lyrics. <br>🌍 Fratti was born in Guatemala and currently operates out of Mexico.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-08T11:00:00-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
-      <!-- Title -->
-      <a href="https://www.theverge.com/entertainment/891057/what-were-listening-to-watching-and-reading" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What we&#8217;re listening to, watching, and reading right now.</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎶 Laurie Spiegel's 1980 masterpiece is titled *The Expanding Universe*, blending synth experimentalism and algorithmic composition. <br>🎹 Tracks like “Patchwork” and “A Folk Study” feature bouncy arpeggios. <br>🌌 “Old Wave” and “East River Dawn” evoke early M83 or Boards of Canada.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Nepali Congress leader also loses his seatpublished at 03:25 GMT
+Gagan Thapa of the Nepali Congress lost to his rival Amaresh Kumar Singh in Sarlahi 4, local media report.<br>📢 Singh is a member of Balendra Shah's Rastriya Swatantra Party.<br>🔍 Thapa is from the country's largest party, the Nepali Congress.</div>
       
     </div>
     
@@ -137,7 +175,7 @@
       <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💸 Fox News agreed to pay $787.5 million to settle a defamation lawsuit with Dominion Voting Systems. <br>⚖️ The settlement was reached last-minute on Tuesday, avoiding testimony from Fox executives. <br>📁 Dominion still has pending lawsuits against Newsmax, OAN, Rudy Giuliani, Sidney Powell, and Mike Lindell.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 <strong>Dominion</strong> rep said.<br>📢 By settling, influential Fox executives and prominent on-air personalities will be spared from testifying about their 2020 election coverage, which was filled with lies about voter fraud.<br>🔍 <strong>Dominion</strong> also has pending lawsuits against right-wing networks Newsmax and OAN, as well as against Trump allies <strong>Rudy</strong> <strong>Giuliani</strong>, <strong>Sidney</strong> <strong>Powell</strong> and Mike Lindell.</div>
       
     </div>
     
@@ -153,18 +191,7 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
     </div>
     
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-08 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=09SNudBuoCE" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Gemini Can Now Write You a Song</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Gemini Can Now Write You a Song</div>
-      
-    </div>
-    
-    
+    <div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>
   </div>
 
   <!-- Section Rule -->
@@ -184,7 +211,7 @@
       <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zQmwwUDdwVUFxWm8xZzVvUHduYWc5YjdnRi1YRjcxS1JUWm5zNlh5eHFLcmJGNmJ0ZGJ2Wm5GNTBWY0V3UURSbXdqY3UyUWt1Z0xBOUlEWFRvQ19yR1lpNFdoMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Agent Security Best Practices and Tutorial</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ AI agents are vulnerable to prompt injection, misconfigurations leading to data leaks, and unauthorized API calls during real-time operations.<br>⚙️ IBM's BeeAI framework provides permissions, role-based access control (RBAC), guardrails, and observability to reduce AI agent security risks.<br>🏥 Secure AI agent systems are essential for regulated industries like healthcare, finance, and government to meet strict data protection and GDPR compliance.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ pt injection attacks.<br>🔍 This AI agent security best practices guide covers authentication, access controls, data safeguards and secure multi‑agent automation.<br>⚠️ As AI models increasingly automate decision‑making workflows, the need for anomaly detection and risk‑mitigating controls becomes critical.</div>
       
       
     </div>
@@ -197,7 +224,7 @@
       <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE81b0QxYzZmNUZ1Z0pmVjMyeFgtVkZxZUZoUFBwUjJtX3F2MklKQ21MbDlOSGN2eG5Hb3VPSlduTk1qczVKVHRsNzlGRUFxZkVycXVramF2ZFp2QkIzVjJ2ZElkMjhldllzeGJsdkZjZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Indirect prompt injection (IDPI) is being actively weaponized in the wild, evidenced by large-scale real-world telemetry.<br>💥 Palo Alto Networks identified 22 distinct techniques attackers used to construct payloads for web-based IDPI attacks.<br>💸 Attacker intents observed include AI-based ad review evasion, SEO manipulation promoting phishing sites, data destruction, and unauthorized transactions.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ AI agents are becoming deeply integrated into web browsers, search engines and automated content-processing pipelines.<br>🔍 While these integrations can expand functionality, they also introduce a new and largely underexplored attack surface.<br>⚠️ One particularly concerning class of threats is indirect prompt injection (IDPI), in which adversaries embed hidden or manipulated instructions within website content that is later ingested by an LLM.</div>
       
       
     </div>
@@ -210,12 +237,12 @@
       <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxOM2VYQ2djYTF5MzV6amoxM3UwQ294MUhOMGw3Ty05UEVubFRzQW5UNEhiTHZxLUpkanpfbHo4MXRnM3Q3UXZ6bFZNaUFlcUVsQWhzOUNmTmxNTnYzckczN0x6TllwTW4wNWhrQlhLU3pMcUdiSVNQMzU4Z1VXTXRIZU5XYlVWcFpSbHdESnBhLUNFeVh1UlI0NDkxcw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OWASP Top 10 LLM Risks Explained</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📝 IBM Distinguished Engineer Jeff Crume highlighted critical LLM security risks, drawing parallels to the OWASP Top 10 for Web Applications.<br>⚠️ Prompt Injection is ranked as the most prevalent threat (OWASP Risk 1), allowing attackers to manipulate LLMs to override instructions and leak data.<br>🔒 The OWASP Top 10 for LLM Applications lists key vulnerabilities such as Sensitive Information Disclosure (Risk 2), Supply Chain Vulnerabilities (Risk 3), and Data/Model Poisoning (Risk 4).</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ng ease with which LLMs can be compromised.<br>🔍 A cleverly crafted prompt, an exposed training file, or a malicious plugin can all lead to security incidents, steering the <strong>LLM</strong> to reveal information it shouldn't or execute actions the user never intended.<br>⚠️ This highlights a fundamental challenge: LLMs, while powerful, are not inherently secure and require careful consideration during deployment.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; ">
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 06 Mar 2026 14:30:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Boulevard</span></div>
@@ -223,8 +250,180 @@
       <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lhTFNUZGNsSjZiaGtrNE4xTXRLXzZzYzliOGlYdGtXbVlxYVptTHY0VnhRSEdSNTFjNjhZcWc5MHJVUlFhWW5yTmhwXzVBOWRpaEhZWElCMzNVcExSYS1ITHpKMmRPRE16YnRBY2RoWkZrXzdhTDU0eUNNR0FfOHZxamwtQXAtQVpLQ1cwY0ZZZTM5TDFrTTUxNzZwZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What is AI Security? Top Security Risks in LLM Applications</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📊 McKinsey’s 2023 Global AI Survey revealed that 55% of organizations reported using AI in at least one business function.<br>💻 Research indicates that 45% of AI-generated code contains identifiable security vulnerabilities.<br>🚫 Prompt injection attacks have successfully bypassed existing safeguards in numerous Large Language Model (LLM) applications.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ sions, to some extent or more!
+But this rapid adoption has created a new challenge.<br>🔍 So, as a response, arises the need for AI security.<br>⚠️ Introduction to AI <strong>Security</strong>
+AI systems interact with users through natural language, learn from massive datasets, and often connect with internal enterprise systems.</div>
       
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Anmol Gulati, Sahil Sen, Waqar Sarguroh et al.</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2603.06503v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Beyond Rows to Reasoning: Agentic Retrieval for Multimodal Spreadsheet Understanding and Editing</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <!-- Summary -->
+      
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Recent advances in multimodal Retrieval-Augmented Generation (RAG) enable Large Language Models (LLMs) to analyze enterprise spreadsheet workbooks containing millions of cells, cross-sheet dependencies, and embedded visual artifacts. However, state-of-the-art approaches exclude critical context through single-pass retrieval, lose data resolution through compression, and exceed LLM context windows through naive full-context injection, preventing reliable multi-step reasoning over complex enterprise workbooks. We introduce Beyond Rows to Reasoning (BRTR), a multimodal agentic framework for spreadsheet understanding that replaces single-pass retrieval with an iterative tool-calling loop, supporting end-to-end Excel workflows from complex analysis to structured editing. Supported by over 200 hours of expert human evaluation, BRTR achieves state-of-the-art performance across three frontier spreadsheet understanding benchmarks, surpassing prior methods by 25 percentage points on FRTR-Bench, 7 points on SpreadsheetLLM, and 32 points on FINCH. We evaluate five multimodal embedding models, identifying NVIDIA NeMo Retriever 1B as the top performer for mixed tabular and visual data, and vary nine LLMs. Ablation experiments confirm that the planner, retrieval, and iterative reasoning each contribute substantially, and cost analysis shows GPT-5.2 achieves the best efficiency-accuracy trade-off. Throughout all evaluations, BRTR maintains full auditability through explicit tool-call traces.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Thomas Monninger, Shaoyuan Xie, Qi Alfred Chen et al.</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2603.06576v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">BEVLM: Distilling Semantic Knowledge from LLMs into Bird's-Eye View Representations</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
+        
+        
+      </div>
+      <!-- Summary -->
+      
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">The integration of Large Language Models (LLMs) into autonomous driving has attracted growing interest for their strong reasoning and semantic understanding abilities, which are essential for handling complex decision-making and long-tail scenarios. However, existing methods typically feed LLMs with tokens from multi-view and multi-frame images independently, leading to redundant computation and limited spatial consistency. This separation in visual processing hinders accurate 3D spatial reasoning and fails to maintain geometric coherence across views. On the other hand, Bird's-Eye View (BEV) representations learned from geometrically annotated tasks (e.g., object detection) provide spatial structure but lack the semantic richness of foundation vision encoders. To bridge this gap, we propose BEVLM, a framework that connects a spatially consistent and semantically distilled BEV representation with LLMs. Through extensive experiments, we show that BEVLM enables LLMs to reason more effectively in cross-view driving scenes, improving accuracy by 46%, by leveraging BEV features as unified inputs. Furthermore, by distilling semantic knowledge from LLMs into BEV representations, BEVLM significantly improves closed-loop end-to-end driving performance by 29% in safety-critical scenarios.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Kartik Sharma, Rakshit S. Trivedi</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2603.06495v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">COLD-Steer: Steering Large Language Models via In-Context One-step Learning Dynamics</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
+        
+        
+      </div>
+      <!-- Summary -->
+      
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Activation steering methods enable inference-time control of large language model (LLM) behavior without retraining, but current approaches face a fundamental trade-off: sample-efficient methods suboptimally capture steering signals from labeled examples, while methods that better extract these signals require hundreds to thousands of examples. We introduce COLD-Steer, a training-free framework that steers LLM activations by approximating the representational changes that would result from gradient descent on in-context examples. Our key insight is that the effect of fine-tuning on a small set of examples can be efficiently approximated at inference time without actual parameter updates. We formalize this through two complementary approaches: (i) a unit kernel approximation method that updates the activations directly using gradients with respect to them, normalized across examples, and (ii) a finite-difference approximation requiring only two forward passes regardless of example count. Experiments across a variety of steering tasks and benchmarks demonstrate that COLD-Steer achieves upto 95% steering effectiveness while using 50 times fewer samples compared to the best baseline. COLD-Steer facilitates accommodating diverse perspectives without extensive demonstration data, which we validate through our experiments on pluralistic alignment tasks. Our framework opens new possibilities for adaptive, context-aware model control that can flexibly address varying loss-driven human preferences through principled approximation of learning dynamics rather than specialized training procedures.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Alejandra Perez, Anita Rau, Lee White et al.</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2603.06570v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">SUREON: A Benchmark and Vision-Language-Model for Surgical Reasoning</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
+        
+        
+      </div>
+      <!-- Summary -->
+      
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Surgeons don't just see -- they interpret. When an expert observes a surgical scene, they understand not only what instrument is being used, but why it was chosen, what risk it poses, and what comes next. Current surgical AI cannot answer such questions, largely because training data that explicitly encodes surgical reasoning is immensely difficult to annotate at scale. Yet surgical video lectures already contain exactly this -- explanations of intent, rationale, and anticipation, narrated by experts for the purpose of teaching. Though inherently noisy and unstructured, these narrations encode the reasoning that surgical AI currently lacks. We introduce SUREON, a large-scale video QA dataset that systematically harvests this training signal from surgical academic videos. SUREON defines 12 question categories covering safety assessment, decision rationale, and forecasting, and uses a multi-agent pipeline to extract and structure supervision at scale. Across 134.7K clips and 170 procedure types, SUREON yields 206.8k QA pairs and an expert-validated benchmark of 354 examples. To evaluate the extent to which this supervision translates to surgical reasoning ability, we introduce two models: SureonVLM, a vision-language model adapted through supervised fine-tuning, and SureonVLM-R1, a reasoning model trained with Group Relative Policy Optimization. Both models can answer complex questions about surgery and substantially outperform larger general-domain models, exceeding 84% accuracy on the SUREON benchmark while outperforming general-domain models on standard surgical perception tasks. Qualitative analysis of SureonVLM-R1 reveals explicit reasoning behavior, such as inferring operative intent from visual context.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Yonatan Tussa, Andy Heredia</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2603.06564v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Pen: Episodic Cognitive Assistance via an Ear-Worn Interface</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #16a085; color: #16a085; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">privacy</span>
+        
+        
+        
+        
+        
+      </div>
+      <!-- Summary -->
+      
+      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Wearable AI is often designed as always-available, yet continuous availability can conflict with how people work and socialize, creating discomfort around privacy, disruption, and unclear system boundaries. This paper explores episodic use of wearable AI, where assistance is intentionally invoked for short periods of focused activity and set aside when no longer needed, with a form factor that reflects this paradigm of wearing and taking off a device between sessions. We present The Pen, an ear-worn device resembling a pen, for episodic, situated cognitive assistance. The device supports short, on-demand assistance sessions using voice and visual context, with clear start/end boundaries and local processing. We report findings from an exploratory study showing how layered activation boundaries shape users' sense of agency, cognitive flow, and social comfort.</div>
       
     </div>
     
