@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 10 Mar 2026 11:35:26 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Mar 2026 19:41:57 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Tuesday, March 10, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-10.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-10.html</guid>
-      <description>Weather: 50°F - Mostly Sunny | Illness level: LOW | 2 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 71°F - Sunny | Illness level: LOW | 2 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 71&deg; / Low 47&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 71&deg; / Low 47&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">50&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(48&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">74%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">56&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">64%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">71&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
         <td style="padding: 7px 6px; text-align: center;">41%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">12 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">68&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">69&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
         <td style="padding: 7px 6px; text-align: center;">1%</td>
-        <td style="padding: 7px 6px; text-align: center;">45%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">42%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">60&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">66&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
-        <td style="padding: 7px 6px; text-align: center;">2%</td>
-        <td style="padding: 7px 6px; text-align: center;">60%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">1%</td>
+        <td style="padding: 7px 6px; text-align: center;">48%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph S</td>
       </tr>
       
     </table>
@@ -135,57 +117,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-09T16:45:24-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 18:21:07 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/ai-artificial-intelligence/891514/anthropic-pentagon-lawsuit-amicus-brief-openai-google" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Employees across OpenAI and Google support Anthropic’s lawsuit against the Pentagon</a>
+      <a href="https://techcrunch.com/2026/03/10/mandiants-founder-just-raised-190m-for-his-autonomous-ai-agent-security-startup/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Mandiant’s founder just raised $190M for his autonomous AI agent security startup</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 cus brief was the latest barb in negotiations with the Department of Defense.<br>📢 The amicus brief was the latest barb in negotiations with the Department of Defense.<br>🔍 The news follows a dramatic few weeks for <strong>Anthropic</strong>, in which the Trump administration labeled the company a supply chain risk — a designation typically reserved for foreign companies that the government deems a potential risk to national security in some way — after <strong>Anthropic</strong> stood firm on two red lines regarding acceptable use cases for military use of its technology: domestic mass surveillance and fully autonomous weapons (or AI systems with the power to kill with no human involvement).</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Kevin Mandia's new cybersecurity startup, Armadin, raised $189.9 million in combined seed and Series A funding.<br>🤝 The funding round for Armadin was led by Accel, with participation from GV, Kleiner Perkins, and the CIA’s venture arm, In-Q-Tel.<br>🛡️ Armadin aims to develop autonomous cybersecurity agents that learn and respond to threats without human intervention, combating AI-powered attacks that could take minutes instead of days.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 06:30:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 19:02:55 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/sections/planet-money/2026/03/10/g-s1-112700/pro-worker-ai-streaming-fatalities-and-other-fascinating-new-economic-studies" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">'Pro-worker AI,' streaming fatalities, and other fascinating new economic studies</a>
+      <a href="https://arstechnica.com/ai/2026/03/meta-acquires-moltbook-the-ai-agent-social-network/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Meta acquires Moltbook, the AI agent social network</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 world with "<strong>Pro-Worker Artificial Intelligence</strong>"
-Recently, Jack Dorsey, the co-founder and CEO of Block (and co-founder and former CEO of Twitter), announced that he was laying off 4,000 workers — or about <strong>40%</strong> of Block's workforce.<br>📢 And he suggested a big reason for the layoffs was AI had made many of the workers redundant.<br>🔍 Block's stock price surged on the news.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤝 Meta has acquired Moltbook, a simulated social network composed of AI agents that recently went viral.<br>🧠 Moltbook creators Matt Schlicht and Ben Parr will join Meta Superintelligence Labs to further develop "innovative, secure agentic experiences."<br>💻 Moltbook was built using OpenClaw, a wrapper for LLM coding agents, and OpenClaw's founder Peter Steinberger was hired by OpenAI in February.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 10:17:43 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Axios</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 18:37:12 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNVHNWZW03VFpJZ016VWpaQlNNdWxkZjAxUFhTSjc5MzNxdk5TeXRDODg1TnhESDAxOWtMVnpwMGthV25QZTFGbWtZeHdxNUZtRThjcFN4ZjlFQnZkRjBLclR1Y05KU1FJREU2aUlFTHJvTDZPR3VWR3J0UzNEb2szQVhR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Scoop: White House readies executive order to weed out Anthropic</a>
+      <a href="https://arstechnica.com/ai/2026/03/google-backtracks-on-ai-search-in-photos-adds-toggle-for-fast-classic-search/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">After complaints, Google will make it easier to disable gen AI search in Photos</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Scoop: White House readies executive order to weed out Anthropic</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📸 Google Photos will introduce a simple toggle allowing users to disable the Gemini-powered Ask Photos search experience.<br>🐌 The AI-driven Ask Photos, launched in beta in 2024, received negative user feedback for being slower and more error-prone than the traditional search.<br>⏸️ Google paused the full rollout of Ask Photos in summer 2025 to make improvements after widespread complaints about its performance.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 07:12:10 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 14:10:13 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/10/g-s1-113153/up-first-newsletter-iran-us-israel-lebanon-trump-new-york-protest-attack-epstein-lawsuit-immigration" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump gives mixed signals on Iran war. And, how Epstein built ties to scientists</a>
+      <a href="https://www.npr.org/2026/03/10/nx-s1-5743543/steve-emt-paralympics-wheelchair-curling" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Wheelchair curler Steve Emt's path from drunk driver to three-time Paralympian</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 e and delivered.<br>📢 <strong>Trump</strong> provided this update at a press conference where he answered reporters' questions for the first time since the U.<br>🔍 S.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏅 Wheelchair curler Steve Emt and Laura Dwyer reached the semifinals of the Winter Paralympics mixed doubles, marking the first U.S. medal round qualification since 2010.<br>🥉 Emt and Dwyer will compete against Latvia for the bronze medal on Tuesday in the Winter Paralympics mixed doubles event.<br>♿ Steve Emt, paralyzed at 25 due to a drunk driving incident, is a three-time Paralympian and the most decorated wheelchair curler in U.S. history.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 06:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 12:51:56 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/10/nx-s1-5739396/glp-1-ozempic-addiction-substance-use-disorders-weight-loss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">GLP-1s have transformed weight loss and diabetes. Is addiction next?</a>
+      <a href="https://www.npr.org/2026/03/10/g-s1-111238/immigration-detention-deaths-custody" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Immigration detention on track for deadliest fiscal year since 2004</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 e with a history of substance use disorder.<br>📢 They were less likely to experience an overdose, drug-related hospitalization, drug-related death or suicide attempt.<br>🔍 "<strong>The surprise was that it was working across various substances,</strong>" says Dr.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💀 Immigration and Customs Enforcement (ICE) custody has seen 23 deaths since October, making it the deadliest fiscal year for detainees since 2004.<br>📈 The number of people in ICE detention has reached nearly 70,000, the highest level in several years, contributing to overcrowding and health concerns.<br>🦠 Measles outbreaks were reported in January at the Florence Detention Center in Arizona and the Dilley Immigration Processing Center in Texas.</div>
       
     </div>
     
@@ -203,12 +184,23 @@ Recently, Jack Dorsey, the co-founder and CEO of Block (and co-founder and forme
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <!-- Title -->
+      <a href="https://www.morningbrew.com/issues/aria-of-ire" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Has the Chevy Bolt reached ‘McRib’ status for cars?</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⛽ Crude oil prices reached $119 a barrel after Iran choked off tanker traffic through the Strait of Hormuz, then dropped to $95 after G-7 discussions and President Trump's comments.<br>💰 GasBuddy estimates an 80% chance that the national average for gas prices will reach $4 per gallon this month if crude oil stays above $100 a barrel.<br>🤝 Novo Nordisk and Hims & Hers ended their legal dispute, with Hims now authorized to sell oral and injectable Ozempic and Wegovy later this month.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=njIDEpMolRA" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Is Frying Your Brain</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 AI Is Frying Your Brain</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🧠 Be aware that using AI tools can intensify your workload, pushing you to work faster and longer, which can lead to cognitive fatigue and burnout according to an 8-month Harvard Business Review study.<br>✍️ Avoid outsourcing all first-draft thinking to AI, as this can atrophy your critical reasoning skills, making it harder to solve problems independently without digital assistance.<br>📚 Consider using AI as a tool for deep dive research and learning new topics, rather than as a replacement for acquiring knowledge, to enhance rather than diminish your cognitive abilities.</div>
       
     </div>
     
@@ -219,29 +211,18 @@ Recently, Jack Dorsey, the co-founder and CEO of Block (and co-founder and forme
       <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Autoresearch--Agent-Loops-and-the-Future-of-Work-e3g6e7r" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Autoresearch, Agent Loops and the Future of Work</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Autoresearch, Agent Loops and the Future of Work</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔄 A significant shift is occurring across domains like software, sales, and finance, where the human's job increasingly becomes defining strategy while the agent handles iteration.<br>👤 Humans are increasingly responsible for writing strategic documents and defining what constitutes "better" outcomes in these new agent-driven work paradigms.<br>🤖 AI agents are taking on the iterative work, allowing humans to focus on higher-level strategic planning and goal setting across various industries.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=e3s0-RwPDVg" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How agents will change banking forever | E2260</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 How agents will change banking forever | E2260</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-09 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/aria-of-ire" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Oil prices soar past $100 a barrel as Middle East war widens</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Oil prices soar past $100 a barrel as Middle East war widens</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Andrej Karpathy developed "AutoResearch," a tool on GitHub allowing an AI agent to improve its own code through a stripped-down LLM training loop in five-minute increments.<br>⚙️ The AutoResearch system iteratively retests its code and keeps changes if the results are improved, demonstrating a simple, possible context for AI recursive self-improvement.<br>🏦 Consider using AI agents to automate personal financial chores, such as identifying better deals from banks for savings or drafting emails to negotiate improved interest rates.</div>
       
     </div>
     
@@ -260,13 +241,12 @@ Recently, Jack Dorsey, the co-founder and CEO of Block (and co-founder and forme
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 08:03:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">cyberpress.org</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 09:54:37 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">IBM</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhaFZLLVZkTTlaakY2RUFfRlcxdE1Gb2lHSVl2YnFsMURwcHNidFdrQlAtVF82XzRTSGhXcjA4X1NzdlpvZks2Y2hJQ2s3ZXdMZ3kzUXBQNG1JNE5WSEx1ay01ajgzUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Acquires Promptfoo to Strengthen AI Security and Fix System Vulnerabilities</a>
+      <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zQmwwUDdwVUFxWm8xZzVvUHduYWc5YjdnRi1YRjcxS1JUWm5zNlh5eHFLcmJGNmJ0ZGJ2Wm5GNTBWY0V3UURSbXdqY3UyUWt1Z0xBOUlEWFRvQ19yR1lpNFdoMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Agent Security Best Practices and Tutorial</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ nd unsafe autonomous actions.<br>🔍 By integrating <strong>Promptfoo</strong>’s technology into Frontier, <strong>OpenAI</strong> plans to give enterprises built-in tools to test, monitor, and secure AI applications during development and deployment.<br>⚠️ Strengthening AI <strong>Security</strong> and Testing
-<strong>Promptfoo</strong>, founded by Ian Webster and Michael D’Angelo, develops tools that help organizations evaluate and “red-team” AI systems.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 Misconfigured AI agents can leak sensitive data, trigger unauthorized API calls, or expose entire datasets through prompt injection attacks.<br>🛡️ The guide leverages IBM’s BeeAI framework to demonstrate applying permissions, role-based access control (RBAC), guardrails, and observability for reducing security risks.<br>⚠️ AI agents are susceptible to manipulation via malicious prompts or poisoned data sources, potentially bypassing safeguards or causing unpredictable behavior.</div>
       
       
     </div>
@@ -274,12 +254,12 @@ Recently, Jack Dorsey, the co-founder and CEO of Block (and co-founder and forme
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 19:34:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">IBM</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 08:03:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">cyberpress.org</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zQmwwUDdwVUFxWm8xZzVvUHduYWc5YjdnRi1YRjcxS1JUWm5zNlh5eHFLcmJGNmJ0ZGJ2Wm5GNTBWY0V3UURSbXdqY3UyUWt1Z0xBOUlEWFRvQ19yR1lpNFdoMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Agent Security Best Practices and Tutorial</a>
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhaFZLLVZkTTlaakY2RUFfRlcxdE1Gb2lHSVl2YnFsMURwcHNidFdrQlAtVF82XzRTSGhXcjA4X1NzdlpvZks2Y2hJQ2s3ZXdMZ3kzUXBQNG1JNE5WSEx1ay01ajgzUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Acquires Promptfoo to Strengthen AI Security and Fix System Vulnerabilities</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ pt injection attacks.<br>🔍 This AI agent security best practices guide covers authentication, access controls, data safeguards and secure multi‑agent automation.<br>⚠️ As AI models increasingly automate decision‑making workflows, the need for anomaly detection and risk‑mitigating controls becomes critical.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤝 OpenAI announced on March 9, 2026, its plan to acquire Promptfoo, an AI security testing platform, to enhance its enterprise platform, OpenAI Frontier.<br>🛠️ Promptfoo, founded by Ian Webster and Michael D’Angelo, develops tools that evaluate and "red-team" AI systems by simulating adversarial scenarios.<br>📊 Over 25% of Fortune 500 companies currently utilize Promptfoo's tools for testing their AI applications.</div>
       
       
     </div>
@@ -292,8 +272,7 @@ Recently, Jack Dorsey, the co-founder and CEO of Block (and co-founder and forme
       <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNWER1YnVna1A4TlNQWm9GbWdVZVN4eVUwMVJhVEhPc1hXS2cwLWlRaEJURGNPcUdnX3hJX0FicTczcEVfQWtULU10ZGZDRDE0Mm1zc01ETXR1eTZGd0pHRFFKWjloek5MOXo1bDhHSzJpU3ZMZ1Uzc3JJckw2OWhhYQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI’s Strategic Acquisition of Promptfoo: Fortifying the Future of Secure AI Agents</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ in large language models (LLMs) and the emerging class of independent AI agents.<br>🔍 Consequently, the frontier lab aims to integrate <strong>Promptfoo</strong>’s specialized testing technology into its enterprise-grade platform, <strong>OpenAI</strong> Frontier, signaling a major industry shift towards hardened, production-ready AI systems.<br>⚠️ <strong>OpenAI</strong> Acquires <strong>Promptfoo</strong> to Bolster Enterprise Security
-The development of sophisticated AI agents capable of performing complex digital tasks autonomously has generated immense excitement for potential productivity gains across industries.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗓️ OpenAI announced its acquisition of cybersecurity startup Promptfoo on Monday, March 9, 2026.<br>🏢 Promptfoo was founded in 2024 by security experts Ian Webster and Michael D’Angelo and is based in San Francisco, California.<br>💰 Promptfoo achieved an $86 million valuation after its most recent funding round in July 2025, according to Pitchbook data.</div>
       
       
     </div>
@@ -306,9 +285,7 @@ The development of sophisticated AI agents capable of performing complex digital
       <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lhTFNUZGNsSjZiaGtrNE4xTXRLXzZzYzliOGlYdGtXbVlxYVptTHY0VnhRSEdSNTFjNjhZcWc5MHJVUlFhWW5yTmhwXzVBOWRpaEhZWElCMzNVcExSYS1ITHpKMmRPRE16YnRBY2RoWkZrXzdhTDU0eUNNR0FfOHZxamwtQXAtQVpLQ1cwY0ZZZTM5TDFrTTUxNzZwZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What is AI Security? Top Security Risks in LLM Applications</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ sions, to some extent or more!
-But this rapid adoption has created a new challenge.<br>🔍 So, as a response, arises the need for AI security.<br>⚠️ Introduction to AI <strong>Security</strong>
-AI systems interact with users through natural language, learn from massive datasets, and often connect with internal enterprise systems.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔒 AI security protects AI models, training data, applications, and supporting infrastructure from manipulation, unauthorized access, and misuse.<br>📈 McKinsey’s 2023 Global AI Survey indicates that approximately 55% of organizations report using AI in at least one business function.<br>📉 Research has revealed that 45% of AI-generated code contains security vulnerabilities.</div>
       
       
     </div>
