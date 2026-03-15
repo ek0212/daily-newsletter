@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 15 Mar 2026 03:54:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Mar 2026 11:27:49 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Sunday, March 15, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-15.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-15.html</guid>
-      <description>Weather: 44°F - Mostly Clear | Illness level: LOW | 2 major events this week | 4 top news stories | 9 AI security updates</description>
+      <description>Weather: 40°F - Mostly Cloudy | Illness level: LOW | 2 major events this week | 4 top news stories | 2 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Clear &mdash; High 52&deg; / Low 38&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Cloudy &mdash; High 52&deg; / Low 44&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -49,19 +49,19 @@
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(33&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">9%</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">40&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(34&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">5%</td>
         <td style="padding: 7px 6px; text-align: center;">52%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph E</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph E</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">9am</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">40&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(34&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">9%</td>
-        <td style="padding: 7px 6px; text-align: center;">48%</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">5%</td>
+        <td style="padding: 7px 6px; text-align: center;">50%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph E</td>
       </tr>
       
@@ -76,20 +76,20 @@
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(41&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">46&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(39&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">2%</td>
-        <td style="padding: 7px 6px; text-align: center;">51%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph SE</td>
+        <td style="padding: 7px 6px; text-align: center;">1%</td>
+        <td style="padding: 7px 6px; text-align: center;">55%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph SE</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(42&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">29%</td>
-        <td style="padding: 7px 6px; text-align: center;">60%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">12 mph SE</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">44&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(37&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">3%</td>
+        <td style="padding: 7px 6px; text-align: center;">68%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">16 mph E</td>
       </tr>
       
     </table>
@@ -140,29 +140,29 @@
       <a href="https://www.theverge.com/business/895026/meta-laying-off-20-percent" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Meta is reportedly laying off up to 20 percent of its staff</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">✂️ Meta is reportedly planning to lay off up to 20% of its staff.<br>📉 These potential layoffs could eliminate approximately 15,800 positions within the company.<br>💰 The reported staff reductions aim to offset Meta's significant spending on AI development and data centers.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">✂️ Meta is reportedly considering laying off up to 20 percent of its staff, which would eliminate approximately 15,800 positions.<br>📉 This potential downsizing would be Meta's largest series of layoffs since it terminated 22,000 workers between November 2022 and early 2023.<br>💡 Meta is significantly investing in attracting AI talent, building data centers, and acquiring companies such as Moltbook.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 15 Mar 2026 02:42:11 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The New York Times</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 15 Mar 2026 11:11:47 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CBS News</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOenFqU2ZXMi04VEpDQnlDZDk5NktaVmV6VXN1MFBhRzMwV3lfcDAyaWVtV1VBTEs0Z0Frc2xfYWlacW5xVEZFbTR6UXRzMTlrenoxeWgxVXE3enRJSmhJTzdvYzdnd29RSjNTZF8zX3hYc1QxcmJ6NHUwRlpLSVd0QTFnTHQyaFJ5MTVGdFBveHk?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Three More Iranian Soccer Players Withdraw Bid for Asylum in Australia</a>
+      <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxOZjBHOEVBbmlqajFGcFBMeEJRRG54NGs1QnhhZ0RTWVdIMUNfa3YteDdLZnVhWXI4ZVBQMUgwMjRjenZUSHAzbXVVaGhfRkhqeGNvTXRrVlV3N2VkX20xWE1SNHlHSnl5cFdBeWh1VDBhcnRVRjJzRXFQandwel9DT2ZYa0EwRzFjUl84eWxsRW52ZzRs0gGaAUFVX3lxTE16N1lyYWpGajhla0lTRnNaeTMzVlh1dHlsaUNmNkJ6eC1pMnpEbWJ6YXVKU09SbnR4ZXJ3cHlnNHRyWExmSjdnSFR6N05sNVhHdUt0YVUwd0hPV3FhOTh5TnhGOTZrWXRHOFZpbWJZOC1qWldnekQtalJ1UmRpYzJhbjVjREdQd245clVQcUphVmhaWEhQem5XalE?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Major March snowstorm rolls across Minnesota</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Three More Iranian Soccer Players Withdraw Bid for Asylum in Australia</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">❄️ Minnesota Gov. Tim Walz signed an executive order authorizing the Minnesota National Guard to support emergency operations during the major snowstorm.<br>✈️ Over 600 flights scheduled for Sunday at Minneapolis-St. Paul International Airport were canceled as of Saturday 9:30 p.m.<br>🌬️ Many parts of Minnesota expect over 1 foot of snow, with isolated spots potentially receiving more than 18 inches, accompanied by 30 to 50 mph wind speeds.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 15 Mar 2026 02:37:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CBS News</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 15 Mar 2026 07:00:08 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxQdzBaVGdncUxuTExDUVVhX2k3RDNSWE1xYnVKNDNWYjF5cS1PNVVkSGtYbW9hd09YbXo3TUoxUl8xMDJWV2pmdTVmZVpFS3EydmZtMXlRMTFVaVVSWWZ5ZW1rcnVzdmNpamdoMkc4WjRpVjZweFZrczJjZS0yR1RNbXdTNC1RZHdXRE1nSWRmT3rSAZYBQVVfeXFMTVJ3Z3hOVGFoaHg3U0JQd3loRHBIUlI1QndvWGNjR3drS1pQUmlrWU5pRTRqSVZpOE54R1ZlYkJqZTJrdjVtUWRHVG9FLTlnZ2pkRXJzbzRxdTNsbU9nUkE1TENFQjdDTFBiSVRNTlZ3OFV4U3FfcGlQQjhXWjRCSXZWb282MWVvNXA3eU5yRG52OS1wWGd3?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">All 6 crew members killed in crash of American KC-135 refueling aircraft in Iraq, U.S. military confirms</a>
+      <a href="https://www.npr.org/2026/03/15/nx-s1-5748472/us-military-six-killed-iran-war" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">U.S. military names six killed in plane crash as Iran war enters third week</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">✈️ Six U.S. service members were killed when a KC-135 refueling aircraft crashed in western Iraq on Thursday.<br>🎖️ The Pentagon identified the deceased as Maj. John A. Klinner, Capt. Ariana G. Savino, Tech. Sgt. Ashley B. Pruitt, Capt. Seth R. Koval, Capt. Curtis J. Angst, and Tech. Sgt. Tyler H. Simmons.<br>🗓️ This incident brings the total number of U.S. service member deaths to 13 since the U.S. and Israel initiated war with Iran on February 28.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">✈️ The U.S. Defense Department identified six service members who died on March 12 when their KC-135 refueling plane crashed over Western Iraq.<br>🎖️ Three of the deceased were from MacDill Air Force Base: Maj. John A. Klinner (33), Capt. Ariana G. Savino (31), and Tech. Sgt. Ashley B. Pruitt (34).<br>🇮🇷 The conflict in the Middle East has entered its third week, with Israel announcing new strikes on western Iran on Sunday.</div>
       
     </div>
     
@@ -173,7 +173,7 @@
       <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💸 Fox News agreed to pay $787.5 million to settle a defamation lawsuit with Dominion Voting Systems.<br>⚖️ Dominion still has active defamation lawsuits against right-wing networks Newsmax and OAN.<br>🏛️ Separate pending lawsuits also target Trump allies Rudy Giuliani, Sidney Powell, and Mike Lindell for election-related claims.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Fox News agreed to pay $787.5 million to settle a defamation lawsuit with Dominion Voting Systems.<br>⚖️ Dominion Voting Systems still has pending lawsuits against right-wing networks Newsmax and OAN, as well as against Rudy Giuliani, Sidney Powell, and Mike Lindell.<br>📜 Delaware Superior Court Judge Eric Davis ruled on March 31 that Dominion had successfully proven all 20 statements mentioned in its lawsuit against Fox were false.</div>
       
     </div>
     
@@ -189,7 +189,29 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
     </div>
     
-    <div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-14 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=2Ws3YiSzCX0" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Social Network for Agents Just Got Acquired</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤝 Meta acquired Moltbook, an AI agent social network, integrating founders Matchlit and Ben Parr into its Super Intelligence Labs, which is run by Alexander Wang.<br>⚡ Thinking Machines Lab (TML) formed a multi-year strategic partnership with Nvidia to deploy at least 1 gigawatt of compute using Nvidia's Vera Rubin chips, approximately half of OpenAI's total compute as of last year.<br>⚖️ Amazon won a temporary injunction blocking Perplexity shopping agents from its marketplace, based on claims of fraudulent access and misrepresenting traffic.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-14 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=ArPVZZazQUA" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Pro Worker AI</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📉 Enterprise software company Atlassian cut 1,600 jobs (10% of its workforce), attributing the reduction to AI changing required skills and roles.<br>💰 Consider advocating for policies like employer tax credits tied to on-the-job training and tax code reforms that reward worker retention and penalize layoffs, encouraging companies to reinvest AI-driven savings into job creation.<br>🛠️ Explore the development of 'pro-worker AI' technologies, such as an electrician's assistant that reduced maintenance report times by half, to counterbalance automation and foster new task creation.</div>
+      
+    </div>
+    
+    
   </div>
 
   <!-- Section Rule -->
@@ -209,7 +231,7 @@
       <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5IemZtc0dpRVRndHV6NVFlNGpCb3BFY2tFM3dNZlltZnFkZEVBaXM1NjVEZDRiZ3VGTHQ3OU9oX2Z5d3dqNTVRZTVkYnNsMHgzeUliS001RnJ0aXB2empCeWZMeTR6d194RHBib2Z3?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What are the OWASP Top 10 risks for LLMs?</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗣️ OWASP launched its Generative AI Security Project in May 2023 to address emerging risks in large language models.<br>📅 The latest version of the OWASP Top 10 for LLM Applications & Generative AI was released in November 2024.<br>⛔ Prompt injection, the top risk for 2025, occurs when user inputs alter LLM behavior, leading to issues like guideline violations or unauthorized access.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ The Open Worldwide Application Security Project (OWASP) launched its Generative AI Security Project in May 2023 to address new risks in large language models.<br>📅 OWASP released Version 2025 of its Top 10 for LLM Applications & Generative AI in November 2024, outlining critical risks and mitigations.<br>✍️ Prompt injection is a critical risk where crafted user inputs unintentionally alter LLM behavior, potentially causing guideline violations or unauthorized access.</div>
       
       
     </div>
@@ -217,12 +239,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 20:17:21 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Cisco Blogs</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 10 Mar 2026 08:03:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">cyberpress.org</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxNemc0WjhPTkk0QjJpZk9HbnJIcFoxNHAwNENRYS1ZREg1Q2xIVnIxNHdRdk4wMmJjM2RWVEk0c2c2TC1OSk9JU0xDc2pPUmxhU0l2Qy1KZEJ5cmpZZTVVUmlIcVJ1QWxTbzYxdHFudjZiS2l2a1BKcTJtS2EtX3VWUHUzSkdkdmh4ck14Z0xDeEJDZndab3BvQ3FEZ28?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Prompt injection is the new SQL injection, and guardrails aren’t enough</a>
+      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTFBhaFZLLVZkTTlaakY2RUFfRlcxdE1Gb2lHSVl2YnFsMURwcHNidFdrQlAtVF82XzRTSGhXcjA4X1NzdlpvZks2Y2hJQ2s3ZXdMZ3kzUXBQNG1JNE5WSEx1ay01ajgzUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Acquires Promptfoo to Strengthen AI Security and Fix System Vulnerabilities</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🥇 OWASP ranked prompt injection as the No. 1 vulnerability in its Top 10 for LLM Applications for the second consecutive year in 2025.<br>📄 In late 2024, a job applicant used a hidden white-on-near-white text prompt injection to trick an AI screening tool into recommending them.<br>🛡️ Infrastructure defenses like micro-segmentation, east-west inspection, and zero-trust architecture are critical to limit damage when model defenses fail.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤝 OpenAI plans to acquire Promptfoo, an AI security testing platform, to bolster security capabilities within its enterprise platform, OpenAI Frontier.<br>📊 Promptfoo, founded by Ian Webster and Michael D’Angelo, helps organizations "red-team" AI systems to detect vulnerabilities like jailbreak prompts.<br>📈 More than 25% of Fortune 500 companies already utilize Promptfoo’s tools for testing their AI applications.</div>
       
       
     </div>
@@ -235,7 +257,7 @@
       <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNWER1YnVna1A4TlNQWm9GbWdVZVN4eVUwMVJhVEhPc1hXS2cwLWlRaEJURGNPcUdnX3hJX0FicTczcEVfQWtULU10ZGZDRDE0Mm1zc01ETXR1eTZGd0pHRFFKWjloek5MOXo1bDhHSzJpU3ZMZ1Uzc3JJckw2OWhhYQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI’s Strategic Acquisition of Promptfoo: Fortifying the Future of Secure AI Agents</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤝 OpenAI acquired San Francisco-based cybersecurity startup Promptfoo on Monday, March 9, 2026, to fortify secure AI agents.<br>🧑‍💻 Promptfoo, founded in 2024 by security experts Ian Webster and Michael D’Angelo, developed tools to probe LLMs for security weaknesses.<br>📈 Over 25% of Fortune 500 companies currently utilize Promptfoo's products to stress-test their AI implementations.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗓️ OpenAI acquired cybersecurity startup Promptfoo on Monday, March 9, 2026, to address escalating security concerns in autonomous AI.<br>💰 Promptfoo, founded in 2024 by Ian Webster and Michael D’Angelo, had previously raised $23 million in venture capital.<br>📈 Promptfoo reached an $86 million valuation after its most recent funding round in July 2025, according to Pitchbook data.</div>
       
       
     </div>
@@ -243,12 +265,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 13 Mar 2026 06:02:52 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">thelec.net</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 13 Mar 2026 09:00:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">ucstrategies.com</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiZkFVX3lxTE5jTDR2a3BaY2hrQWFxNWk1UU1jTTdxbEh2d1hTV1U4SWpvN3VVS0RJYmRQV0tqdm1UaWRrOExtMnZENXNPMl8wS0JRem9oUUhMMzBDdTZvVG1hdXV3d2VWd3hjY0lkdw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Acquires Promptfoo to Strengthen LLM Security Testing</a>
+      <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaE4tcUJDeVBoTGVPTEU0ZWJGblRRWmFfdjZhQnhmTHAxbEJiS3JqWHJZVVFmRG0tWlcwQl9fdXFFYWN4TVY3UnEyT3cxbWJEVFgzT2lWN1lscm9RamNHUGM0OTVZRHpidGJndlhkcGxFNm5CMDJUSE5TbUc3NGhmTVl1Mnloay0waFBhZnZfRzNmVEpHWXg0ZEJTREY4d0h6OVE?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What Is a Prompt Injection Attack? The Complete Guide to Securing LLMs</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Promptfoo secured $22.68 million in funding, reaching an $86 million valuation after its Series A round in July 2025.<br>🔄 All Promptfoo employees will join OpenAI, and its existing open-source tools will integrate into OpenAI’s new Frontier enterprise platform.<br>🔎 Promptfoo's platform automatically generates thousands of malicious prompts to simulate attacks like prompt injection and AI jailbreaking, then reports on system responses.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 Prompt injection exploits an architectural flaw in LLMs that lacks a separate control plane, treating both developer instructions and user data as equal tokens.<br>🚨 This vulnerability enables attackers to hijack an LLM's application logic, leading to outcomes like data exfiltration or unauthorized code execution.<br>🔑 Prompt injection differs from jailbreaking by focusing on hijacking an AI application's core logic or private data access, rather than just bypassing safety filters.</div>
       
       
     </div>
