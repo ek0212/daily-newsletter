@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2026 11:46:47 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2026 19:43:51 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Wednesday, March 18, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-18.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-18.html</guid>
-      <description>Weather: 28°F - Sunny | Illness level: LOW | 3 major events this week | 5 top news stories | 5 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 33°F - Sunny | Illness level: LOW | 3 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 37&deg; / Low 33&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 37&deg; / Low 30&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">28&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(19&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">40%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph NW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">30&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(21&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">35%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">37&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(30&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">34&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(27&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">27%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">36%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">35&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(27&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">35&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(28&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">32%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">38%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">34&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(26&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">38%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">34&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(27&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
+        <td style="padding: 7px 6px; text-align: center;">1%</td>
+        <td style="padding: 7px 6px; text-align: center;">47%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph SE</td>
       </tr>
       
     </table>
@@ -139,56 +121,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17T12:33:41-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 17:36:40 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/ai-artificial-intelligence/896107/google-expands-personal-intelligence" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Now everyone in the US is getting Google&#8217;s personalized Gemini AI</a>
+      <a href="https://arstechnica.com/information-technology/2026/03/federal-cyber-experts-called-microsofts-cloud-a-pile-of-shit-approved-it-anyway/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Federal cyber experts called Microsoft's cloud a "pile of shit," approved it anyway</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 Google announced that its Personal Intelligence feature is now available to all free-tier users across the US.<br>⚙️ This feature allows Gemini to personalize responses by connecting to Google apps like YouTube, Google Photos, and Gmail.<br>🚫 The personalized AI feature is currently only accessible to users with personal Google accounts, not business, enterprise, or education accounts.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">☁️ Federal cybersecurity evaluators delivered a troubling verdict on one of Microsoft’s biggest cloud computing offerings in late 2024.<br>📝 An internal government report stated that Microsoft's "lack of proper detailed security documentation" resulted in reviewers lacking confidence in the system's security.<br>✅ Despite significant security concerns, the Federal Risk and Authorization Management Program (FedRAMP) authorized Microsoft’s Government Community Cloud High.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 11:30:47 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 16:43:18 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://arstechnica.com/tech-policy/2026/03/after-discord-fiasco-age-check-tech-promises-privacy-by-running-locally-does-it-work/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">After Discord fiasco, age-check tech promises privacy by running locally. Does it work?</a>
+      <a href="https://techcrunch.com/2026/03/18/the-gemini-powered-features-in-google-workspace-that-are-worth-using/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Gemini-powered features in Google Workspace that are worth using</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 Discord reversed its global rollout of an age-verification system following widespread user backlash.<br>⚠️ A former age-check partner of Discord previously leaked government IDs of 70,000 users last fall.<br>💻 The age-check technology Discord was using was built by Privately SA, which partners with k-ID.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">✍️ Gemini in Google Docs can summarize long reports and generate first drafts from user descriptions, leveraging context from Drive, Gmail, and Chat.<br>📧 Gemini in Gmail features an "AI Inbox" to filter important messages and provides summary cards for lengthy email threads.<br>📊 Gemini in Google Sheets can create structured spreadsheets from information in Gmail, Chat, and Drive, and helps visualize data with charts and graphs.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 05:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 16:00:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/18/nx-s1-5749360/markwayne-mullin-dhs-confirmation-hearing" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Sen. Mullin faces confirmation hearing to lead Homeland Security Department</a>
+      <a href="https://techcrunch.com/2026/03/18/this-startup-wants-to-make-enterprise-software-look-more-like-a-prompt/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">This startup wants to make enterprise software look more like a prompt</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗓️ Oklahoma GOP Sen. Markwayne Mullin will undergo a confirmation hearing on Wednesday to become the second Secretary of the Department of Homeland Security in the Trump administration.<br>🔄 President Trump nominated Mullin after replacing DHS Secretary Kristi Noem, who will now serve as Special Envoy for The Shield of the Americas.<br>🏢 The Department of Homeland Security is currently shut down, leaving over 100,000 employees furloughed or working without pay.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Josh Sirota founded Eragon in August, raising $12 million at a $100 million post-money valuation to develop an agentic AI operating system for enterprise customers.<br>💬 Eragon aims to replace traditional software interfaces by offering a full suite of business applications, like Salesforce and Tableau, through an LLM prompt interface.<br>⚙️ Eragon post-trains open-source models like Qwen and Kimi on customer datasets, integrating with company emails to automate onboarding and other workflows.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 07:27:30 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 14:26:37 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/18/g-s1-114267/up-first-newsletter-iran-israel-war-fed-rate-cuts-markwayne-mullin-kalshi-arizona" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Fed to meet about interest rates. And, Sen. Mullin faces DHS confirmation hearing</a>
+      <a href="https://www.npr.org/2026/03/18/nx-s1-5752253/cesar-chavez-sexual-assault-dolores-huerta-united-farm-workers" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Cesar Chavez abused and raped women and girls, NYT investigation says</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Iran launched multiple-warhead missile attacks targeting the Tel Aviv area after confirming the deaths of high-ranking officials Ali Larijani and Gholamreza Soleimani.<br>📄 Joe Kent, head of the U.S. National Counterterrorism Center, resigned, citing that Israel pushed the U.S. into the conflict and Iran posed no imminent threat.<br>💰 Federal Reserve policymakers are expected to maintain the benchmark interest rate today amidst a softening job market and persistent inflation.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 t.<br>📢 One of the women said <strong>Chavez</strong> raped her in a motel room in 1975 when she was 15 years old and he was 47.<br>🔍 The other woman said <strong>Chavez</strong> began groping her in his office at the union's headquarters when she was 13.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 06:14:38 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 14:14:28 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/18/nx-s1-5751694/iran-retaliates-israel-kills-two-top-iranian-officials" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel says it killed Iran's intelligence chief in overnight strike</a>
+      <a href="https://www.npr.org/2026/03/18/nx-s1-5751765/kouri-richins-trial-murder-husband-book" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">A mom wrote a kids' book on grief. She was just convicted of her husband's murder</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔪 Israel's defense minister Israel Katz stated on Wednesday that Israel killed Iran's intelligence minister, Esmail Khatib, in an overnight strike.<br>🇮🇷 Iran confirmed the deaths of two top officials, Ali Larijani and Gholamreza Soleimani, before launching missile attacks on Israel.<br>casualties A man and woman were killed in their apartment in Ramat Gan, a suburb of Tel Aviv, during Iran's missile attack.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Kouri Richins, who authored a children's book on grief, was convicted on Monday in Summit County, Utah, of murdering her husband, Eric Richins.<br>💸 Prosecutors alleged Richins poisoned Eric with fentanyl in March 2022 over millions in debt and life insurance policies taken out without his knowledge.<br>🗓️ Richins faces sentencing on May 13 and also faces 26 other felony charges in a separate case for alleged financial wrongdoing, including mortgage fraud.</div>
       
     </div>
     
@@ -206,56 +188,45 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-18 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=1p4-12k_EbE" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How Robinhood became a $68B company w/ Vlad Tenev</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 How Robinhood became a $68B company w/ Vlad Tenev</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-18 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <!-- Title -->
+      <a href="https://www.morningbrew.com/issues/adult-mode" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Polymarket bettors threaten Israeli journalist over war story</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚨 Polymarket bettors attempted to intimidate Israeli journalist Emanuel Fabian into altering a March 10 war story, offering bribes in a market exceeding $14 million, leading to account bans.<br>🍝 Kraft Heinz launched PowerMac, a new mac and cheese with 17 grams of protein, aiming to regain market share after losing 6% since 2022 to competitors like Goodles.<br>🤖 OpenAI plans to launch a ChatGPT "adult mode" this year for "sexy chats" despite advisory council concerns about unhealthy emotional dependence and potential minor access, even with a 12% age-verification error rate.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-18 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
       <!-- Title -->
       <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Race-to-Put-AI-Agents-Everywhere-e3gjia2" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Race to Put AI Agents Everywhere</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Prepare for a rapid industry shift as major players, including OpenAI, push AI agents from experimental stages into production for enterprise and coding uses.<br>💰 Anticipate Nvidia's continued market dominance as Jensen Huang forecasts the company reaching a trillion dollars in revenue.<br>🇨🇳 Be aware of a trend in Chinese AI labs to keep their most advanced models closed source, impacting global AI development and accessibility.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 The AI industry is experiencing a rapid convergence, with major players actively working to move AI agents from experimental stages into widespread production.<br>💰 Jensen Huang forecasts Nvidia's revenue will reach one trillion dollars, highlighting significant growth expectations in the AI hardware sector.<br>🔒 Chinese AI laboratories are increasingly keeping their most advanced models closed source, indicating a shift towards proprietary development within the country.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=JKbVk6bIXvA" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">I did not expect this...</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 If using Vit Plus, avoid answering the "which agents are you using" question during setup, as the generated `agent.md` files are deemed "garbage" and can negatively impact model performance.<br>⚙️ Expect potential migration issues when moving existing projects to Vit Plus, as seen with Tanstack conflicts requiring manual updates to packages and cleaning stale directories.<br>💡 Consider Vit Plus for a streamlined web development workflow, as it aims to centralize package management, linting, type checking, and deployment under unified commands like `vpdev` to reduce decision fatigue.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/A-Guy-Used-AI-to-Cure-His-Dogs-Cancer-e3ghqmv" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">A Guy Used AI to Cure His Dog's Cancer</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 Recognize that we are in "AI's Second Moment," an agentic equivalent of the initial ChatGPT shock, characterized by enhanced capabilities and significant economic implications.<br>⚠️ Be aware that SEC filings are now including AI agents as a quietly listed material risk for companies.<br>⚖️ Note that ByteDance has shelved its video model project due to unresolved copyright disputes.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Jeff Su</span></div>
-      <!-- Title -->
-      <a href="https://www.jeffsu.org/notebooklm-changed-completely-heres-what-matters-in-2026/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">NotebookLM Changed Completely: Here's What Matters (in 2026)</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📝 Maximize NotebookLM's core functionality by uploading diverse source materials and asking comparative questions, enabling it to quickly pinpoint specific details like the best dental coverage across providers.<br>💬 Configure Chat for high-stakes tasks by adding custom instructions to frame every AI response around your specific goal, and delete chat history periodically to prevent AI bias from previous conversations.<br>🎨 When using Studio tools like Reports or Infographics, upload your brand guidelines as a source and explicitly instruct NotebookLM to apply them for consistent colors, fonts, and design styles.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/adult-mode" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Drone strikes causes chaos at Dubai airport</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Be cautious of prediction market influence on journalism, as a reporter received threats and bribe offers from Polymarket bettors trying to manipulate a news story about an Iranian missile strike for a $14 million market.<br>🍝 Look for Kraft Heinz's new PowerMac, offering 17 grams of protein, as the company invests $600 million in marketing and R&D to regain 6% lost market share to health-conscious competitors.<br>🤖 Anticipate OpenAI's planned "adult mode" for ChatGPT this year, which will allow "sexy chats" despite internal advisory council objections over concerns about emotional dependence and potential minor access.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💻 Try Vite Plus, now open-source under the MIT license, as it offers a unified toolchain to centralize package management, testing, and bundling for web development.<br>🗑️ If you use Vite Plus, immediately delete the auto-generated `agent.md` files during setup, as they are poorly configured and will degrade your AI model's performance.<br>✨ Consider consolidating various development commands into `vpdev` and moving linting and type-checking to `VPLint` to streamline workflows and reduce decision fatigue.</div>
       
     </div>
     
@@ -274,12 +245,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 11 Mar 2026 13:35:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Infosecurity Magazine</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 11:52:44 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Cybersecurity Insiders</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOdjZkVlZ3cDZHWGxJS0ZNNkpfWm9HYVY2cWp2RWpBdzA0V3NwLXpkWGVWUXE2b0tJYzZmY05ya1pGeTJPUUMxdVpUQ3htLWV1Qml2NEIxZm1vck51VkM3X3dyaVlEZmtSZ3FxcnQ2RHBsSUFFcnJ4aEI2THZrYWdjYzQxMjA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Researchers Discover Major Security Gaps in LLM Guardrails</a>
+      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQdVVwb1FkNmcyeVd0T1NESXVTMWtra29oaDY3cnFhbnltQklDdlMzWXJwcDdtSXh1M3ctQ09xTHZqLVAzU1ZSY0Fma0lYSGQ2NW1ndmlUZzQwRlRJM2d5T3dXaURJQzVUaGdCV20xdE5LTjBzU0lZMjRQOU55aU9CT205NGZwUW1TM1BVNUFCZ2RXbmZXa252UmJlQkNSQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Harness Introduces AI Security and Secure AI Coding Tools</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Researchers at Unit 42, Palo Alto Networks’ research lab, discovered that security guardrails in generative AI tools can be bypassed through a specific type of prompt injection.<br>🗓️ A report published on March 10 by Unit 42 detailed an attack method using AdvJudge-Zero, an automated fuzzer, to manipulate 'AI Judges' into authorizing policy violations.<br>📈 Unit 42’s attack technique achieved a 99% success rate by exploiting an LLM’s decision-making logic through subtle input sequences.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ reach production.<br>🔍 Runtime protection tools block attacks after applications are deployed, and the two rarely talk to each other.<br>⚠️ <strong>Harness</strong> was built on a different premise: real DevSecOps means connecting every stage of the software delivery lifecycle, and closing the loop between what you find in production and what you fix in code.</div>
       
       
     </div>
@@ -287,12 +258,13 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 11 Mar 2026 13:01:14 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Cloudflare Blog</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 19:38:54 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">blockchain.news</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VVkFKLUpzTFhuaXQ5SkxFbzhfTVJkeHBXWGdMMGVPejRYMUpSNEhGMU9iUkZzZ2FwdEZyT2FQeG5wRVh0bGJSZzhPWHRmc1Y2djNTUmZHMmo2NVkwUG9mMVNB?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Security for Apps is now generally available</a>
+      <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxQYXVwUWhFajFOYWU2WDZ1azJvOUlrWmJaeWQ5VmVhUkJxNG9hX0w3OU5fTkhpVWNNcmZ5a2I3SFVJVF9MUFdnQ0pzMlI5QUV3U0tOZVM0YUJ5MzdZamJOYjJHdUt1bXlsVmFQT3JBRlptZjZxXzljN1AwX2szQXN5MHVhaw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Reveals How ChatGPT Now Fights Prompt Injection Attacks</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Cloudflare’s AI Security for Apps is now generally available, offering new capabilities like detection for custom topics for AI-powered applications.<br>🔍 AI endpoint discovery, a feature of Cloudflare's AI Security for Apps, is now free for all Cloudflare customers, including Free, Pro, and Business plans.<br>🤝 Cloudflare expanded its collaboration with IBM to provide AI security to IBM cloud customers and partnered with Wiz for unified AI security posture views.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ks Have Evolved Beyond Simple Overrides
+Early prompt injection was crude—attackers would edit Wikipedia articles with direct instructions hoping AI agents would blindly follow them.<br>🔍 Those days are gone.<br>⚠️ <strong>OpenAI</strong> shared a real-world attack example reported by external security researchers at Radware.</div>
       
       
     </div>
@@ -305,7 +277,9 @@
       <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZVR3WGN2S3pCNGN3UmlXejRDUm1aeUxpY3hkYl95OFowM0lCRWtsMmhsLU5oRXJPREYwR3o3SGJMS0EzVGk3SUhTUnU5NU5LY2lBc3hncER4dGlHTGlPWThXZjJPQ2tQVjF2TExzZVJpTWZDNTNTVnpXdUM5cldQbXJRNG1PWWhWaG5tQUY0V1Y5TVpITGI1QVpIMUxocXkwSmQ4TTZpT1FfN3JQcERIMU93?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Checkmarx One embeds AI security in app development</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Checkmarx unveiled a new Checkmarx One platform, embedding agentic, AI-driven security across code, open-source dependencies, AI assets, and runtime.<br>🧠 The platform features Triage Assist, an autonomous AI agent prioritizing vulnerabilities based on real-world exploitability, and Remediation Assist, generating review-ready fixes before code merges.<br>🔗 Checkmarx One introduces AI Supply Chain Security for centralized governance of AI components and AI SAST for hybrid LLM-powered analysis across emerging programming languages.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ion
+At the core of the reimagined <strong>Checkmarx</strong> <strong>One</strong> platform is a new architecture powered by agentic security agents and AI-native intelligence across the software and AI supply chain.<br>🔍 Key innovations include:
+- Triage Assist, an autonomous AI agent that prioritises vulnerabilities in source control based on real-world exploitability and contextual risk, enabling teams to focus on what truly matters rather than static severity scores.<br>⚠️ - Remediation Assist, generates review-ready fixes for validated vulnerabilities before code merges, accelerating secure delivery and reducing manual remediation overhead.</div>
       
       
     </div>
@@ -313,12 +287,14 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 13 Mar 2026 09:00:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">ucstrategies.com</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 13:32:01 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Informed</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaE4tcUJDeVBoTGVPTEU0ZWJGblRRWmFfdjZhQnhmTHAxbEJiS3JqWHJZVVFmRG0tWlcwQl9fdXFFYWN4TVY3UnEyT3cxbWJEVFgzT2lWN1lscm9RamNHUGM0OTVZRHpidGJndlhkcGxFNm5CMDJUSE5TbUc3NGhmTVl1Mnloay0waFBhZnZfRzNmVEpHWXg0ZEJTREY4d0h6OVE?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What Is a Prompt Injection Attack? The Complete Guide to Securing LLMs</a>
+      <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPX21ybHcyTm9kdG56eDducTVTcWgzcnVpYy0xNzNBT2tWXzlxb3F0Y3V6elA2dXJKOUhhdWNNQzVQMXRfNWxNdE1vdDJ3aFI4d2d3bEllVGdJdWdDWXJiWlhxbHVKRm81OGtubWtRV1VsY2pxRmtVT0xxS0lJRUlVQTA0d245OFl2ZVc2aENLQjVQcG1nUGpjY1ZDaUd5Y2xfeFpLZ040Nng4ak5ZUGFR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Checkmarx One: AI Security For Software Development</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 Prompt injection attacks exploit a fundamental architectural flaw in LLMs where developer instructions and malicious user inputs are treated as equal tokens.<br>🧠 Large Language Models lack a dedicated, secure channel to separate developer commands from raw user data, processing both within the same computational layer.<br>⚠️ Unlike jailbreaking, prompt injection attacks specifically hijack an application’s logic or private data access, potentially forcing an AI agent to exfiltrate database records or send unauthorized emails.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ration aims to facilitate innovation while ensuring robust security from the outset.<br>🔍 Innovation in <strong>Security</strong> Architecture
+The heart of the <strong>Checkmarx</strong> <strong>One</strong> update lies in its novel architecture, which harnesses AI and agentic security agents to safeguard the software and AI supply chain.<br>⚠️ Key features introduced in this update include:
+- Triage Assist: An autonomous AI agent tasked with prioritizing vulnerabilities in source control by assessing real-world exploitability and contextual risk.</div>
       
       
     </div>
