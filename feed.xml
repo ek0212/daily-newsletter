@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Mar 2026 11:32:28 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Mar 2026 19:33:21 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Friday, March 20, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-20.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-20.html</guid>
-      <description>Weather: 41°F - Mostly Sunny | Illness level: LOW | 3 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 55°F - Slight Chance Rain Showers | Illness level: LOW | 3 major events this week | 5 top news stories | 5 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 58&deg; / Low 49&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Slight Chance Rain Showers &mdash; High 59&deg; / Low 49&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">41&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(38&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">1%</td>
-        <td style="padding: 7px 6px; text-align: center;">76%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">5 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(41&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">1%</td>
-        <td style="padding: 7px 6px; text-align: center;">65%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">56&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">9%</td>
-        <td style="padding: 7px 6px; text-align: center;">53%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph S</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Rain Showers</td>
+        <td style="padding: 7px 6px; text-align: center;">41%</td>
+        <td style="padding: 7px 6px; text-align: center;">49%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">56&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Light Rain</td>
-        <td style="padding: 7px 6px; text-align: center;">54%</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Rain Showers Likely</td>
+        <td style="padding: 7px 6px; text-align: center;">69%</td>
         <td style="padding: 7px 6px; text-align: center;">53%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph S</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">56&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Light Rain</td>
-        <td style="padding: 7px 6px; text-align: center;">76%</td>
-        <td style="padding: 7px 6px; text-align: center;">57%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph S</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Rain Showers</td>
+        <td style="padding: 7px 6px; text-align: center;">100%</td>
+        <td style="padding: 7px 6px; text-align: center;">66%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
       </tr>
       
     </table>
@@ -139,56 +121,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-19T14:20:05-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 16:38:06 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/ai-artificial-intelligence/897528/meta-rogue-ai-agent-security-incident" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">A rogue AI led to a serious security incident at Meta</a>
+      <a href="https://arstechnica.com/gadgets/2026/03/amazon-is-reportedly-developing-an-ai-centric-smartphone/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Amazon is reportedly developing an AI-centric smartphone</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 aw-like AI agent gave a <strong>Meta</strong> employee inaccurate technical advice, which led to exposing data.<br>📢 A <strong>Meta</strong> engineer was using an internal AI agent, which Clayton described as “similar in nature to OpenClaw within a secure development environment,” to analyze a technical question another employee posted on an internal company forum.<br>🔍 But the agent also independently publicly replied to the question after analyzing it, without getting approval first.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📱 Amazon is reportedly developing a new smartphone, codenamed Transformer, over a decade after the Fire Phone was discontinued. <br>💻 The new smartphone may use Alexa as its operating system, although this is not yet certain. <br>🛍️ The phone aims to make shopping via Amazon and partners like Grubhub, and streaming Prime Video and Prime Music content, easier.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 08:17:27 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Bloomberg.com</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 12:00:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOMXpQVm10R19fUWtkSG9pTFpkMUF5UmZsRkhESEZEZUUxVzB6UFlWTU1CZWhEQXdoN0JrSmhnM2E5ZFhUZmpXV243dy1mV0ZmbHlqbS1UZEJSS1ZSWHI2RDN3TEhLWmJ3V0lWTHJCMWtGbHd2M3RjMU4yRmt4UEdMeHVlQzVDaThUZHBuMFF4bkpOeFJQMFdFTXlwdW93Mk51cHVETW53WVl4QjdxVnpHdEFxeGlPUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Three Charged by US With Plot to Illegally Send AI Tech to China</a>
+      <a href="https://techcrunch.com/2026/03/20/the-best-ai-investment-might-be-in-energy-tech/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The best AI investment might be in energy tech</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Three Charged by US With Plot to Illegally Send AI Tech to China</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚡ Up to 50% of 190 gigawatts of announced data center projects may be delayed due to power access, with only 5 gigawatts currently under construction. <br>📈 Goldman Sachs projects AI will drive data center power consumption up 175% by 2030. <br>🔋 Startups like Amperesand, DG Matrix, and Heron Power are developing new power conversion technologies to address grid shortages.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 05:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-20T14:17:02-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/20/nx-s1-5707535/trump-immigration-detention-appeals-board-deportation" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">An immigration court few have heard of is quietly shaping policy behind the scenes</a>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/898055/trump-new-ai-policy-framework" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump takes another shot at dismantling state AI regulation</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 House has done that by shrinking the size of the board by nearly half — and stacking the remaining slate of 15 judges with President Trump's appointees.<br>📢 Last year, their decisions backed Department of Homeland Security lawyers in <strong>97%</strong> of publicly posted cases; that's at least <strong>30 percent</strong>age points higher than the average from the last 16 years.<br>🔍 Loading.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📜 The Trump administration's new seven-point AI regulation blueprint prioritizes federal AI acceleration and advises Congress to avoid most new regulations beyond child safety. <br>🚫 The blueprint suggests Congress should bar states from enacting their own AI laws to maintain a "national strategy to achieve global AI dominance." <br>🛑 It encourages laws similar to the Take It Down Act (signed May 2025), requiring rapid removal of nonconsensual AI-generated "intimate visual depictions."</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 06:21:36 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 15:21:52 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/20/nx-s1-5754550/israel-strikes-tehran-iran-attacks-gulf" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel launches more strikes on Tehran as Iran continues attacks on Gulf oil facilities</a>
+      <a href="https://www.npr.org/2026/03/20/nx-s1-5754964/cesar-chavez-sexual-assault-allegations-legacy" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The second death of Cesar Chavez and his legacy</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 multiple gas and oil facilities on Thursday, including Qatar's Ras Laffan, a major energy hub.<br>📢 Trump said Thursday he told Netanyahu to refrain from hitting Iranian energy sites again.<br>🔍 Netanyahu responded that <strong>Israel</strong> acted alone in hitting the site, and said <strong>Israel</strong> would "<strong>hold off on future attacks</strong>" at Trump's request.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🕊️ Cesar Chavez died of natural causes on April 23, 1993, at 66 years old, and was posthumously awarded the Presidential Medal of Freedom in 1994. <br>📰 A New York Times investigation revealed allegations of sexual abuse and rape against Cesar Chavez on Wednesday. <br>🗣️ Ana Murguia, Debra Rojas, and civil rights icon Dolores Huerta shared their experiences of sexual abuse with The New York Times.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 05:30:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 14:45:10 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/20/nx-s1-5745107/el-helicoides-venezuela-prison-torture" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">From mall to torture site: The debate over El Helicoide's future in Venezuela</a>
+      <a href="https://www.npr.org/2026/03/20/nx-s1-5754587/bachelorette-canceled-taylor-frankie-paul-mormon-wives" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Why is the 'Bachelorette' canceled? A guide to the Taylor Frankie Paul controversy</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 id the prison wardens never switched off the lights.<br>📢 "<strong>There was always artificial light, always</strong>" Armas said, during a rally outside the prison, which has become synonymous with torture.<br>🔍 "That makes you feel really anxious and kind of paranoid.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📺 Disney Entertainment canceled the 22nd season of "The Bachelorette" on Thursday, just before its scheduled Sunday premiere. <br>🎥 TMZ published a video on Thursday reportedly showing Taylor Frankie Paul physically attacking her then-boyfriend, Dakota Mortensen, in 2023. <br>⚖️ Taylor Frankie Paul is serving 36 months of probation after pleading guilty to a third-degree felony of aggravated assault from a February 2023 incident.</div>
       
     </div>
     
@@ -206,34 +188,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-19 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
       <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Use-Agent-Skills-e3glb09" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How to Use Claude Cowork on the Go</a>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/What-People-Really-Want-From-AI-e3gn965" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What People Really Want From AI</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📱 Enable Claude Cowork's new mobile control via Dispatch to manage your multi-agent AI teams or specific AI tasks on the go.<br>💡 Consider shifting your AI interactions from ad-hoc prompting to developing reusable and repeatable "skills" for your AI agents.<br>💸 Amazon CEO Andy Jassy projects that AI will double AWS's current revenue.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 Many AI users link their professional ambition and personal quality of life to their hopes for AI, expressing anxieties about reliability, autonomy, and job security.<br>🎭 Val Kilmer was brought back for a final film role using AI technology.<br>☁️ Anthropic's Cowork Dispatch now includes dedicated Claude Code sessions for users.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-19 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Dwarkesh Podcast</span></div>
       <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/terminally-online" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Energy prices spike as Fed holds rates steady</a>
+      <a href="https://youtube.com/watch?v=Q8Fkpi18QXU" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Terence Tao – Kepler, Newton, and the true nature of mathematical discovery</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🌍 Consider prioritizing offline activities and limited social media use, as excessive phone time, especially for youth, is linked to declining happiness in English-speaking countries.<br>🎤 BTS will make their first live performance in nearly four years tomorrow morning on Netflix at 7 am Eastern, from the Gyeongbokgung palace in South Korea.<br>💊 Expect generic versions of Ozempic and Wegovy to become available in countries like India and China, with approximately 50 generic semaglutide brands potentially entering India alone this weekend.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Terence Tao – Kepler, Newton, and the true nature of mathematical discovery</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=V4un_4uTEHs" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI News: Every Major Announcement From This Week</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 NVIDIA unveiled its Vera Rubin platform and OpenClaw for agentic AI, forecasting $1 trillion in orders for its Blackwell and Vera Rubin systems by 2027.<br>🤝 OpenAI acquired PromptFoo, an open-source red teaming tool used by 25% of Fortune 500 companies, to integrate automated red teaming into OpenAI Frontier.<br>⚙️ Anthropic launched Claude Code Review, a multi-agent system designed to scan pull requests for bugs and can be integrated into CI pipelines.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=QwShVo0zfuk" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Everything needs to change</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🖥️ Consider that current developer tools like CLIs and traditional IDEs are becoming insufficient, and the industry needs to evolve towards 'bigger' integrated development environments.<br>🌐 Experiment with emerging IDE concepts that offer infinitely nestable, multi-dimensional canvases integrating terminals, browsers, and agents for better multi-project workflows.<br>🚀 Recognize the massive opportunity to innovate in the developer tooling space, as the future of coding editors is still undefined and rapidly evolving with AI advancements.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-19 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
       <!-- Title -->
-      <a href="https://youtube.com/watch?v=mVKxygo5Sdo" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Vercel accuses Cloudflare of stealing</a>
+      <a href="https://www.morningbrew.com/issues/terminally-online" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">USPS chief says postal service is running out of cash</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛠️ Vercel's Malta publicly accused Cloudflare of forking his open-source project "just bash" and releasing it as "Cloudflare/Shell" without prior communication or contributions.<br>⚖️ The "just bash" project is under an Apache 2.0 license, which legally permits forking, but Malta argued the action violated established open-source etiquette.<br>🤝 Prioritize direct communication with colleagues and other companies before public disputes, as Theo suggests many tech dramas stem from a lack of good-faith assumptions and direct talks.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">😢 The World Happiness Report indicated that English-speaking countries, including the US (No. 23) and UK (No. 29), have seen a decline in youth happiness since 2012, partly due to extensive social media use.<br>🎤 K-pop group BTS made their highly anticipated return with a concert at the Gyeongbokgung palace, projected to generate approximately $177 million in economic impact for Seoul.<br>💊 Generic versions of semaglutide, used in Ozempic and Wegovy, are expected to flood markets in countries like India and China, with prices potentially dropping to $15 per month following patent expirations.</div>
       
     </div>
     
@@ -257,7 +261,7 @@
       <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQdVVwb1FkNmcyeVd0T1NESXVTMWtra29oaDY3cnFhbnltQklDdlMzWXJwcDdtSXh1M3ctQ09xTHZqLVAzU1ZSY0Fma0lYSGQ2NW1ndmlUZzQwRlRJM2d5T3dXaURJQzVUaGdCV20xdE5LTjBzU0lZMjRQOU55aU9CT205NGZwUW1TM1BVNUFCZ2RXbmZXa252UmJlQkNSQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Harness Introduces AI Security and Secure AI Coding Tools</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Harness launched two new offerings: AI Security to protect AI in applications and Secure AI Coding to secure AI-generated code.<br>🔍 AI Security includes AI Discovery (GA), AI Testing (Beta), and AI Firewall (Beta) to manage and defend against AI-specific vulnerabilities.<br>🛠️ Secure AI Coding integrates with AI coding assistants like Cursor, Windsurf, and Claude Code to scan for vulnerabilities at the moment of code generation.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ reach production.<br>🔍 Runtime protection tools block attacks after applications are deployed, and the two rarely talk to each other.<br>⚠️ <strong>Harness</strong> was built on a different premise: real DevSecOps means connecting every stage of the software delivery lifecycle, and closing the loop between what you find in production and what you fix in code.</div>
       
       
     </div>
@@ -270,7 +274,9 @@
       <a href="https://news.google.com/rss/articles/CBMisgFBVV95cUxQZVR3WGN2S3pCNGN3UmlXejRDUm1aeUxpY3hkYl95OFowM0lCRWtsMmhsLU5oRXJPREYwR3o3SGJMS0EzVGk3SUhTUnU5NU5LY2lBc3hncER4dGlHTGlPWThXZjJPQ2tQVjF2TExzZVJpTWZDNTNTVnpXdUM5cldQbXJRNG1PWWhWaG5tQUY0V1Y5TVpITGI1QVpIMUxocXkwSmQ4TTZpT1FfN3JQcERIMU93?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Checkmarx One embeds AI security in app development</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Checkmarx released an updated Checkmarx One platform designed for AI-driven security across the software development lifecycle.<br>🧠 The platform introduces Triage Assist, an autonomous AI agent that prioritizes vulnerabilities based on real-world exploitability and contextual risk.<br>💡 Checkmarx One features Remediation Assist, which automatically generates review-ready fixes for validated vulnerabilities before code merges.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ion
+At the core of the reimagined <strong>Checkmarx</strong> <strong>One</strong> platform is a new architecture powered by agentic security agents and AI-native intelligence across the software and AI supply chain.<br>🔍 Key innovations include:
+- Triage Assist, an autonomous AI agent that prioritises vulnerabilities in source control based on real-world exploitability and contextual risk, enabling teams to focus on what truly matters rather than static severity scores.<br>⚠️ - Remediation Assist, generates review-ready fixes for validated vulnerabilities before code merges, accelerating secure delivery and reducing manual remediation overhead.</div>
       
       
     </div>
@@ -283,7 +289,9 @@
       <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxPX21ybHcyTm9kdG56eDducTVTcWgzcnVpYy0xNzNBT2tWXzlxb3F0Y3V6elA2dXJKOUhhdWNNQzVQMXRfNWxNdE1vdDJ3aFI4d2d3bEllVGdJdWdDWXJiWlhxbHVKRm81OGtubWtRV1VsY2pxRmtVT0xxS0lJRUlVQTA0d245OFl2ZVc2aENLQjVQcG1nUGpjY1ZDaUd5Y2xfeFpLZ040Nng4ak5ZUGFR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Checkmarx One: AI Security For Software Development</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Checkmarx One features AI Supply Chain Security, a centralized governance layer for AI components like models, agents, and datasets embedded in applications.<br>⚙️ The platform includes AI SAST, a hybrid LLM-powered and query-based analysis engine for expanded vulnerability detection in emerging and AI-generated languages.<br>🚀 DAST for AI is a next-generation dynamic analysis engine that strengthens runtime protection for AI-accelerated applications across CI/CD and production environments.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ration aims to facilitate innovation while ensuring robust security from the outset.<br>🔍 Innovation in <strong>Security</strong> Architecture
+The heart of the <strong>Checkmarx</strong> <strong>One</strong> update lies in its novel architecture, which harnesses AI and agentic security agents to safeguard the software and AI supply chain.<br>⚠️ Key features introduced in this update include:
+- Triage Assist: An autonomous AI agent tasked with prioritizing vulnerabilities in source control by assessing real-world exploitability and contextual risk.</div>
       
       
     </div>
@@ -291,12 +299,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 07:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Boulevard</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 20 Mar 2026 13:41:15 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Boulevard</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNUGRnRHFYYkczRmlwMUtSZE4zRjdRaEowVXlTYVE1V1owS3JKd3ZCMmRmNVlyOTNrekpJMEVUTk9IUG9LaFBGSEp0VFlfV3lNLXpRcHB2WFcwLTZQcjhfdnNCMmVlWUNKazE0YW82U2Qzb3doUDVUcW1iZXgyNE4tdnMyMDhYUmxSSERVUTJlVndLaG43eDFhdUhySGZ6UTQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Security Horizon of Agentic AI: A Claude Code Case Study</a>
+      <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxQLThtekFjdWIyblZYTHNpSnQyb3lZQ2dUUXhGNmlkdDNLOW1RbVVvbkVsaUx3Ymc5TzBLTnpBV19mZDJ6enROU2k4MzFHSndZZ0drZGdkVDZTdFFndVFhTGVFRTVCeGFxWFRZVnk3LUs4aEJuMjVJeXFYVjFmd0E2RWtRYlloUDJWYzhBSmxvR245OTdkMDd1LVVsMXVyUDBLMWNreF85UGhpemtSTUlQeEJVdTlqdw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Inside AutoSecT: How AI Agents Are Transforming Software Composition Analysis</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🐛 A security researcher found CVE-2026-24052 in Claude Code, an open redirect vulnerability caused by insufficient URL validation using `startsWith()`.<br>🔓 This flaw allowed attackers to register domains like `modelcontextprotocol.io.attacker.com` to bypass verification and exfiltrate data without user consent.<br>🚨 Anthropic assigned the vulnerability CVE-2026-24052 and deployed a fix for Claude Code versions prior to 1.0.111.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ction to identify vulnerabilities in source code.<br>🔍 While effective for known issues, these approaches come with their own set of issues.<br>⚠️ They struggle with modern development realities like AI-generated code, complex microservices architectures, and rapidly evolving dependencies.</div>
       
       
     </div>
