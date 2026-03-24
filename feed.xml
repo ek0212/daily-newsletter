@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Mar 2026 11:47:30 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Mar 2026 19:49:24 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Tuesday, March 24, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-24.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-24.html</guid>
-      <description>Weather: 35°F - Sunny | Illness level: LOW | 5 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 47°F - Sunny | Illness level: LOW | 5 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 47&deg; / Low 40&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 49&deg; / Low 36&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">37&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(30&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">54%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph N</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(32&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">46%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(41&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">48&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(43&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">36%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph SW</td>
+        <td style="padding: 7px 6px; text-align: center;">27%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(42&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(38&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">37%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">33%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(39&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">43&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(36&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">45%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">12 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">38%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph S</td>
       </tr>
       
     </table>
@@ -147,56 +129,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 02:01:21 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 19:27:56 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE02RzN1bjBZQXBLZ3dFblJHb251eU5KeWY5YkxyUjJ3ZVllOUZGZGZsREs0N1ZmUXNXc2ZrYUFwZXhtb1ZqbkliZ1pnMERHdEpMRGRfR0JaUzJHQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Markwayne Mullin confirmed as Department of Homeland Security head</a>
+      <a href="https://techcrunch.com/2026/03/24/openais-plans-to-make-chatgpt-more-like-amazon-arent-going-so-well/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI’s plans to make ChatGPT more like Amazon aren’t going so well</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗳️ The US Senate confirmed Markwayne Mullin as the new Department of Homeland Security chief with a 54-45 vote.<br>🗓️ Mullin was nominated by President Donald Trump on March 5 and will oversee immigration enforcement, border protection, and airport security.<br>👤 Senator Rand Paul was the sole Republican to vote against Mullin's confirmation.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛍️ OpenAI announced on Tuesday it is scaling back its "Instant Checkout" feature, which allowed users to buy items directly from ChatGPT.<br>🛒 The "Instant Checkout" feature was launched last September to position ChatGPT as a shopping assistant.<br>📉 An October study showed e-commerce sites were not generating significant revenue from ChatGPT referral traffic.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-23T15:49:11-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 19:12:11 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/tech/898992/google-pixel-10-ads-moving-on-stalker-lying-beach-view-100-zoom" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Google’s new Pixel 10 ads made me go ‘Wait, WHAT are they trying to sell?’</a>
+      <a href="https://techcrunch.com/2026/03/24/google-tv-new-gemini-features-keep-fans-updated-on-sports-teams-deep-dives-visual-answers/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Google TV’s new Gemini features keep fans updated on sports teams and more</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📱 Google released two new ad spots for its six-month-old Pixel 10 phones.<br>🖼️ The "With 100x Zoom" ad implies users can make distant views appear close using the Pixel 10's camera.<br>⚠️ Google's ads disclose that the visuals are "simulated," "for illustrative purposes," and involved "additional hardware."</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📺 Google unveiled three Gemini-powered features for Google TV on Tuesday, including AI-powered visual responses.<br>🏀 New "sports briefs" provide timely narrated overviews of events in leagues like the NBA, NHL, and MLB for viewers.<br>🌍 These Gemini features are rolling out in the U.S. and Canada, with expansion planned for Australia, New Zealand, and the U.K. this spring.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-23T15:42:33-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 16:00:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/ai-artificial-intelligence/899086/jensen-huang-nvidia-agi" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Nvidia CEO Jensen Huang says &#8216;I think we&#8217;ve achieved AGI&#8217;</a>
+      <a href="https://techcrunch.com/2026/03/24/meet-the-former-apple-designer-building-a-new-ai-interface-at-hark/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Meet the former Apple designer building a new AI interface at Hark</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎤 Nvidia CEO Jensen Huang declared, "I think we’ve achieved AGI," during a Monday episode of the Lex Fridman podcast.<br>💼 Podcast host Lex Fridman defines AGI as an AI system capable of building a tech company worth over $1 billion.<br>📉 Huang later qualified his AGI claim, stating the probability of 100,000 AI agents building Nvidia is "zero percent."</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛠️ Hark, a secretive AI lab, plans to design multimodal end-to-end models, hardware, and interfaces in tandem.<br>📱 Abidur Chowdhury, who led the design team for the iPhone Air at Apple, joined Hark as Director of Design last fall.<br>🗓️ Hark anticipates releasing its first AI models to the public this summer.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 07:13:38 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 15:06:59 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/24/g-s1-114942/up-first-newsletter-iran-war-trump-ice-tsa-airports-markwayne-mullin-dhs" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Senate confirms Sen. Mullin as DHS secretary. And, Iran denies U.S. talks to end war</a>
+      <a href="https://www.npr.org/2026/03/24/g-s1-114956/trump-fraud-enforcement-justice-role" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Senate confirms Trump's pick for new role of fraud enforcement at Justice Department</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💬 President Trump stated that in-depth conversations are underway with Iran, postponing a threat to attack Iran's energy infrastructure until week's end.<br>⛔ Iran's Foreign Ministry denied any ongoing dialogue with Washington regarding the conflict.<br>✈️ Immigration and Customs Enforcement (ICE) agents were deployed to approximately a dozen U.S. airports due to a partial government shutdown.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚖️ The Senate confirmed Colin McDonald's nomination as assistant attorney general for fraud enforcement by a 52-47 vote on Tuesday.<br>🏛️ This new Justice Department role will focus on prosecuting fraud in government programs.<br>🤝 Vice President JD Vance will chair a White House anti-fraud task force, including a representative from the DOJ.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 07:08:10 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 14:42:30 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/24/nx-s1-5759000/iran-war-talks" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Iran fires more missiles at Israel, dismisses Trump's talk as 'fake news'</a>
+      <a href="https://www.npr.org/2026/03/24/nx-s1-5759317/israel-iran-war" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Israeli military wants several more weeks to fight Iran war, officials say</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Iran fired missiles at least eight times into Israel on Tuesday, with impacts reported in at least four locations including central Tel Aviv.<br>💥 One Iranian missile, containing a 220-pound warhead, hit Tel Aviv, injuring at least six people and damaging an apartment building.<br>🗣️ Iranian officials dismissed President Trump's assertions of "productive" conversations about ending the war as "fake news."</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🇮🇱 The Israeli military estimates it requires several more weeks of fighting to achieve its war goals in Iran, two officials stated on Tuesday.<br> missile evaded U.S. and Israeli air defenses, striking a residential neighborhood in Tel Aviv and lightly injuring several people.<br>🗣️ President Trump reported holding "productive" talks to end the Iran war, despite Iran denying direct negotiations.</div>
       
     </div>
     
@@ -214,34 +196,45 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-24 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-24 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
       <!-- Title -->
-      <a href="https://youtube.com/watch?v=RIkSlHgQYog" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">I need you guys to trust me on this (sorry Anthropic)</a>
+      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Compliance-Startup-Scandal----Is-Delve-Guilty---E2266-e3gtgav" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Compliance Startup Scandal... Is Delve Guilty? | E2266</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 Anthropic's terms of service prohibit customers from using their platform to develop competing products or train other AI models, a policy Theo characterized as "pathetic".<br>📉 Anthropic stands out among major AI labs for not releasing open-weight models and consistently failing to reduce prices for its services, unlike its competitors.<br>💡 Other AI models are quickly catching up to and surpassing Anthropic's capabilities, especially in areas like UI generation, which is causing their appeal to developers to wane rapidly.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📊 AI advancements mean founders may need less capital, potentially reducing their reliance on venture dollars over time.<br>🛑 Compliance startup Delve was publicly criticized for allegedly overselling its tool's capabilities and being dishonest with customers.<br>💡 Brick plans to reduce energy bills for buildings and data centers by combining physical hardware and AI, addressing high energy demands.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-23 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Lex Fridman Podcast</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-24 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
       <!-- Title -->
-      <a href="https://lexfridman.com/jensen-huang" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Jensen Huang: NVIDIA - The $4 Trillion Company & the AI Revolution | Lex Fridman Podcast #494</a>
+      <a href="https://youtube.com/watch?v=4u-c8TS-0qs" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Val Kilmer's AI Resurrection</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚙️ Realize that AI acceleration now requires extreme co-design across the entire rack, including GPU, CPU, memory, networking, and power, as problems exceed single-computer capabilities.<br>🤝 Foster strong relationships with supply chain partners by clearly communicating future demands, like NVIDIA's Jensen Huang does with multi-billion dollar capital investments, to ensure scaling without worry.<br>💡 Advocate for utilizing the power grid's 99% idle excess capacity, designed for worst-case scenarios, to power AI data centers, optimizing existing infrastructure for new demands.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🗣️ Val Kilmer's voice was recreated using AI for his role as Iceman in "Top Gun: Maverick" due to his throat cancer and tracheotomy.<br>🤖 Sonantic, a UK-based AI voice company, developed the proprietary Voice Engine technology that generated Kilmer's new dialogue.<br>🎤 The AI model was trained on archival audio recordings of Kilmer's voice, utilizing fewer than 30 minutes of footage due to licensing restraints to create a text-to-speech program.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-24 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <!-- Title -->
+      <a href="https://www.morningbrew.com/issues/bad-bet" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump’s TACO Trade Returns on Monday</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💸 OnlyFans owner Leonid Radvinsky, 43, died of cancer, having led the platform to $7.2 billion in revenue for the 2024 financial year.<br>🚫 A bipartisan Senate bill seeks to ban prediction markets like Kalshi and Polymarket from offering contracts on sports and casino games, closing a loophole that allowed federal CFTC regulation instead of state-level sports betting rules.<br>📱 Samsung's pilot program displaying banner ads on its $1,800+ Family Hub smart fridges has caused significant customer backlash, especially because disabling ads also removes news, weather, and calendar widgets.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-23 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-24 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
       <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/bad-bet" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">TSA Lines Reach Historic Wait Times</a>
+      <a href="https://youtube.com/watch?v=RIkSlHgQYog" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">I need you guys to trust me on this (sorry Anthropic)</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 OnlyFans generated $7.2 billion in revenue during the 2024 financial year by retaining a 20% cut from its creators' proceeds.<br>🚫 A new bipartisan Senate bill aims to ban prediction markets like Kalshi and Polymarket from offering contracts on sports and casino games, closing a loophole that previously allowed them to operate in all 50 states.<br>🏠 Samsung's pilot program introduced banner ads for products like Tide detergent on Family Hub smart fridge screens, disabling a news/weather widget if users opt out of ads, leading to customer backlash.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Be aware that Anthropic's Claude Code subscription offers massive subsidization, allowing up to $5,000 in compute for a $200 monthly fee, making direct competition difficult.<br>🛡️ Consider using T3 Code, which integrates with Claude Code's CLI directly, avoiding OAuth or API keys, to potentially remain compliant with subsidized token usage policies.<br>🧠 Try a multimodel coding workflow, using different models like CodeX 5.4 for most coding tasks and Claude for specific needs like UI passes or quick tidy-ups, to leverage each model's strengths.</div>
       
     </div>
     
@@ -260,12 +253,38 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 11:52:44 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Cybersecurity Insiders</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 18 Mar 2026 21:04:16 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">MarkTechPost</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQdVVwb1FkNmcyeVd0T1NESXVTMWtra29oaDY3cnFhbnltQklDdlMzWXJwcDdtSXh1M3ctQ09xTHZqLVAzU1ZSY0Fma0lYSGQ2NW1ndmlUZzQwRlRJM2d5T3dXaURJQzVUaGdCV20xdE5LTjBzU0lZMjRQOU55aU9CT205NGZwUW1TM1BVNUFCZ2RXbmZXa252UmJlQkNSQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Harness Introduces AI Security and Secure AI Coding Tools</a>
+      <a href="https://news.google.com/rss/articles/CBMinwJBVV95cUxNcjJ3NjMxTTZ2eGlIWC1mWVdLMXZ5NlQyLVZzVnlTRHJHS21PbUdsUVlMdWZVUzAxbmhOZ01JTVVtRGk4blJ0QzltVk1hZHp1Mlp3M2lJb0RqX2hNLXIzZUswaV85TjcwQnEybXB2X3RRYTNSWnl3akZtVnMxWjBjYzl0MVp1N2dVeVd1MjZuWlFRckJZTUtJRFloMDk1eTdHRkFheUdUbm9uRXNjd25JeE9GeHI3MWxDc005SjdEdWtoUXZwcXpqV0U2TEdPU0dvQ25pMTRITVdINDVqRWZBNy1jbURuTVZWTzBnZDlJZ1dmWXdsdm4wMHV3ejdBeGtHMmN2OGdLcWNmUEZ6M2RiUUJIcklONW1hUW1feG5EMNIBpAJBVV95cUxQXzVZNXFZb2hPd3BhRWp1WEY0NFgyb3BvZERLcFVpN3liTXVDM3ZoakNnVk0xQmJsQWxtemRjekItQWZnZmtPeElQZXhKMkx6SzlHYW9LMWxWWWVLS3p4WjEtS3JIeEpua09Fd0pKMGlkak95T0doZHBWT0REOE9wNG5Ua3MxMlJ1cGR3X1Z6dUI4ektybkk0d3RUbWhPdk1CX052ZDRnMXJTSUJtc1lVV1dnc3NBZUZIX1Flem41TTFydFNEQ29GYzI2YnM4UWMzQWllZUhOWWpuMFA5NmVtWFlOOW04aW1wTmdjWWhfLWw5WUh4cXMxZnBPR1lxOGdzX1FRWWFHMVRjR2RpV2szWWJ2RkNFYlBvTDd3WTNrbVRyY2dk?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Tsinghua and Ant Group Researchers Unveil a Five-Layer Lifecycle-Oriented Security Framework to Mitigate Autonomous LLM Agent Vulnerabilities in OpenClaw</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Harness launched AI Security and Secure AI Coding, extending its DevSecOps platform to cover the full AI lifecycle from code generation to production models.<br>🔍 AI Security's AI Discovery (GA) inventories an organization's AI attack surface in real time, identifying risks like unauthenticated APIs and sensitive data exposure.<br>🛠️ Secure AI Coding integrates with AI coding assistants like Cursor and Windsurf to scan code at generation, utilizing Harness's Code Property Graph for vulnerability detection.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔬 Tsinghua University and Ant Group researchers identified that OpenClaw’s 'kernel-plugin' architecture, with its pi-coding-agent, is vulnerable to multi-stage systemic risks.<br>⚙️ The vulnerability stems from the dynamic loading of third-party 'skills' without strict integrity verification, expanding the system’s attack surface.<br>🛡️ A five-layer lifecycle framework was developed to address threats like memory poisoning and skill supply chain contamination across initialization, input, inference, decision, and execution stages.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 19:36:14 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Boulevard</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQV3hTeFJaX3pCb1ZxVEtRRER1dmJkcUNCaG9qQzZURVBaVnAyb1BXY2o3bG1ZSnJwMzhzSm1jaUNMbW56Y3NTNlFyZVJ6ck5JSnd1TXNqd19DSnBUZnluajAxZ0NfaWE5TkVzckFVUTBlbG5pVmoxcE1NaU1IdElKRXlJUVJRM1puczZWYmtJR1RGUVFuNjNFV2FB?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Meet Tenable Hexa AI: Agentic AI for exposure management</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Tenable Hexa AI is the agentic engine of the Tenable One Exposure Management Platform, designed to automate complex security workflows.<br>⚡ Anthropic reported in November 2025 that a threat actor used a jailbroken Claude Code to automate 90% of a targeted attack, executing thousands of requests per second.<br>📈 Tenable Hexa AI aims to reduce security teams' operational workloads, shifting focus from reactive incident response to preemptive exposure management.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 13:00:49 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPSTgtV1g0cjZiVmQ1TEtUTXp2S3ZldzdjMkVJeVI2VXFuZ3BhTFo3QV82Vk8zdkVJX2VOQkViSTlXWlB0dVZ3RW5BVThzN0RvdUl4ekpxNXlsRFQ4N3B5bkVsUlo2SHNWYjhvbVNjSkNNaXBWYjZVSERVdU01ZmxsN0lxZlhtNW0wLTlaMFpR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Novee introduces autonomous AI red teaming to hunt LLM vulnerabilities</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎯 Novee introduced AI Red Teaming for LLM Applications on its AI penetration testing platform to find vulnerabilities in LLM-powered software.<br>🕵️ The Novee AI pentesting agent autonomously simulates real-world, sophisticated attack scenarios and chaining techniques against AI-enabled applications.<br>⚠️ Novee's research team recently disclosed a vulnerability in Cursor, which allowed attackers to influence a coding agent's context window and achieve full remote code execution.</div>
       
       
     </div>
@@ -278,33 +297,7 @@
       <a href="https://news.google.com/rss/articles/CBMidEFVX3lxTFAyZUhkNEZDc0lWSmZLVmxmLW9YM3JicW5BbVdMWnpnUFNmVFY4ZjVWb083MFBRZmppeHhTNVdaQkFaZG40TlhFVm9WcF9TdjR2S1J3X0lCYzM5X3lfak5IekplUHd1VzYtMzJiNkF0MEZEa2Vp?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How AI Agents Are Changing Gaming Privacy (And What You Should Actually Do About It)</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎮 Security reports from Zenity Labs, Cisco, and NIST in late 2025 and early 2026 revealed that compromised AI agents can act on behalf of users, broadening the impact of breaches beyond data leaks.<br>🚨 A Zenity Labs report at Black Hat USA in 2025 demonstrated that AI agents in Microsoft 365 and Google Workspace could be hijacked for data exfiltration and user impersonation, with attackers achieving memory persistence.<br>📈 The Gravitee State of AI Agent Security 2026 Report indicated that 88% of organizations experienced confirmed or suspected AI agent security incidents in the last year.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 23 Mar 2026 13:20:42 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Manila Times</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMikwJBVV95cUxQNUhHNWY5bllkbnN3WndhUk9nV2d4NERiYU1OdDBnWGdlaXdreVVXXzUwUnJBVWxDU0hQcEQ0UTd5N01DOGR3dVhKWWZXa01nRl81MDM1SkRRYVNvNzJWdjdtMFZ0QV9WbzlMeW54LU5ZNy1hSm1QdnZFWXkxejJmcGFnZ0RtSzVFQXhVZjFEcndOZnhuRFQ2Wm1CdTZ3NWQ0aHY3VEptcEtEVS1tSFM2MVVYVHY5b01CM1VmR2t3cDRsVF9KYUJ2Nk11Mld6Mmx6Um93bFJNQXpDTTFzLTA5emRQcjdFb3prd3l3RWFtWXR4RmJyQnE4Ukd2aXdoRWtwelZCVy1GWVFkOXZrY2lzcFZqWdIBmAJBVV95cUxObVZDWENxTDBhU09mVVN6LU5FTHZlSEluS0gzRnpsZ1pid05TaUoxeDhWSnRxdm1DcnotcF8xb3hVNXhTSmhMWEFsRnVRcjdFNUpXQmdnWTlhTWdJNVB6U0Z3RHk0c1gxVWxseVZjYjJGdldreEhKeTFQOExqQU0tc0MxMmEzX1RZQ0gwdVNIZW9xMGpFLUJMRnhxNnJfQlp2V2Q0Unc1aE5VSnRwRFNjOGs5N29uYXlFOUh0dHo4N2tSM1lONF9SZ04tTlpqY3A4VC0wMERMeDF2NDF3OHBNZ20ydDJ5X2Y0V3ZfUlpKamhDekFYV3phYUVTbDZ6WU9tQ2sycnhLLXUwZWlLRWFuSl9lS3ZoNGNn?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Check Point Releases AI Factory Security Blueprint to Safeguard AI Infrastructure from GPU Servers to LLM Prompts</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔒 Check Point Software Technologies released the AI Factory Security Architecture Blueprint on March 23, 2026, providing a comprehensive reference for securing private AI infrastructure from hardware to application layers.<br>🤝 The blueprint leverages Check Point's firewall and AI security technologies and incorporates NVIDIA BlueField data processing capabilities to deliver security by design.<br>⚙️ Check Point AI Agent Security defends the Application and LLM Layer against prompt injection, data exfiltration, and API abuse, integrating into Check Point Firewalls and WAF.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 23 Mar 2026 05:45:46 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Check Point Blog</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPZ1VralNYYVdnN25JRUw5cWQtQ19xNU9wQmRBR1poYmN6VzlfT3FIeFBhZmlnMUxVa3J2ajdhN2o0d09oUjd1WFQ4a3Zra3lVdmNhY1dKVkUxLWNoaUFiblJMcFdZbEhLVkwyMTRBS3M5ZENqa1cydW1CMUFEeTRYeWxEZEVLNkgtMjl1VnZkbUhiLXBaZXpWdXMxNXQ4OFNadEVqSW1zXzNuWGFCNW84UUNkaGt1VVNWX2pwRUg1ZHh5bHBCWm1mZ0R4SVNKNmvSAdQBQVVfeXFMTnZwaUxNR01BTnlEOHdYd1R1M09OQmo3OUExd29XQUZsZjdDRjdWdG91LU9ZTXFtNGFzV0ZtQXd1VFp4R0hnVER1X0U4UkZZLWJSTU1zQlVsaXRjWGVnTk1GN251NU1TU3pHTGxpaF94MUg4bU1pRG1nQzdlWF9tcVBUTkJBRnBqUjNnenBXQ1dzRXN1ZXlFbEU0SEh3U2ZYMUdGNkV1bFhHOFlBWmVqTzZXdmZQVVlkVlFjWGZtZC1xUTd5QlZmS3JBLTZGcEpDQl9DZDM?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">RSAC 2026: Check Point Securing Enterprise AI & Agentic Workloads</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ At RSAC 2026, Check Point announced the AI Data Center Security Architecture Blueprint to help enterprises secure their rapidly adopted AI tools and private AI infrastructure.<br>💰 Organizations are investing hundreds of millions of dollars in GPU clusters, training environments, and inference platforms, creating new attack surfaces for AI-driven threats.<br>💥 AI-native attacks targeting language interactions, prompt manipulation, and model-level vulnerabilities require AI-native defenses, as traditional security tools are not equipped to stop them.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎮 Security reports from Zenity Labs, Cisco, and NIST in late 2025 and early 2026 revealed that compromised AI agents can act on a user's behalf rapidly, rather than just leaking data.<br>🔒 A Zenity Labs report at Black Hat USA 2025 demonstrated that widely used AI agents in Microsoft 365 and Google Workspace could be hijacked for data exfiltration, workflow manipulation, and user impersonation, with memory persistence.<br>📊 The Gravitee State of AI Agent Security 2026 Report found that 88% of organizations reported confirmed or suspected AI agent security incidents in the last year.</div>
       
       
     </div>
