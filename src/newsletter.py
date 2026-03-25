@@ -29,7 +29,7 @@ from src.papers import get_ai_security_papers
 from src.ai_news import get_ai_security_news
 from src.events import get_nyc_events
 from src.health import get_nyc_health_status
-from src.llm import batch_summarize
+from src.llm import batch_summarize, generate_trending_topics
 from src.site_generator import update_site
 
 logger = logging.getLogger(__name__)
@@ -114,6 +114,11 @@ def fetch_all_data() -> dict:
         if item["type"] == "paper":
             item["quick_summary"] = item.get("abstract", "")
 
+    # Generate trending AI security topics for purple teamers
+    t0 = time.time()
+    trending_topics = generate_trending_topics(ai_security)
+    logger.info("Trending topics generated in %.1fs", time.time() - t0)
+
     return {
         "date": datetime.now().strftime(DATE_DISPLAY_FORMAT),
         "weather": weather,
@@ -121,6 +126,7 @@ def fetch_all_data() -> dict:
         "events": events,
         "news": news,
         "youtube": youtube,
+        "trending_topics": trending_topics,
         "ai_security": ai_security,
     }
 

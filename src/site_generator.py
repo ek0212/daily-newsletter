@@ -695,7 +695,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     resultDiv.innerHTML = '';
 
     try {{
-      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + encodeURIComponent(apiKey), {{
+      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=' + encodeURIComponent(apiKey), {{
         method: 'POST',
         headers: {{ 'Content-Type': 'application/json' }},
         body: JSON.stringify({{ contents: [{{ parts: [{{ text: prompt }}] }}] }})

@@ -327,7 +327,7 @@ for var, key in keys:
     try:
         from google import genai
         client = genai.Client(api_key=key)
-        r = client.models.generate_content(model='gemini-2.5-flash', contents='Say OK')
+        r = client.models.generate_content(model='gemini-3-flash-preview', contents='Say OK')
         checks.append((f'{var} is valid', True))
     except Exception as e:
         err = str(e)

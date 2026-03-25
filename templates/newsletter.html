@@ -126,6 +126,26 @@
   <!-- Section Rule -->
   <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
+  <!-- Trending AI Security Topics -->
+  {% if trending_topics %}
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #e67e22; background: linear-gradient(135deg, #fef9f2 0%, #fffdf7 100%);">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; border-bottom: 2px solid #e67e22; padding-bottom: 3px;">Trending in AI Security This Week</span>
+    </div>
+    <div style="font-size: 13px; color: #666; text-align: center; margin-bottom: 16px; font-style: italic; font-family: 'Times New Roman', Times, Georgia, serif;">Purple team career intel: topics worth digging into right now</div>
+    {% for topic in trending_topics %}
+    <div style="padding: 14px 16px; {% if not loop.last %}margin-bottom: 12px;{% endif %} background: #fffdf7; border: 1px solid #f0e6d6; border-radius: 3px;">
+      <div style="font-size: 16px; font-weight: 700; color: #1a1a1a; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 6px;">&#x1F525; {{ topic.topic }}</div>
+      <div style="font-size: 14px; color: #555; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 8px;">{{ topic.why }}</div>
+      <div style="font-size: 13.5px; color: #e67e22; font-weight: 600; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AF; {{ topic.action }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
+  {% endif %}
+
   <!-- AI Security -->
   <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
     <div style="text-align: center; margin-bottom: 20px;">

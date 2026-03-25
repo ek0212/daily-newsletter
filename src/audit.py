@@ -10,6 +10,8 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
+from src.constants import GEMINI_MODEL
+
 PROJECT_ROOT = Path(__file__).parent.parent
 SITE_DIR = PROJECT_ROOT / "site"
 
@@ -96,7 +98,7 @@ def main():
 
     client = genai.Client(api_key=api_key)
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model=GEMINI_MODEL,
         contents=prompt,
     )
     content_html = response.text.strip()

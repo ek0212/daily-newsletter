@@ -13,6 +13,8 @@ from pathlib import Path
 from dotenv import load_dotenv
 from flask import Flask, g, jsonify, request, session
 
+from src.constants import GEMINI_MODEL
+
 load_dotenv(Path(__file__).parent.parent / ".env")
 
 logger = logging.getLogger(__name__)
@@ -225,7 +227,7 @@ def generate_script():
         try:
             client = genai.Client(api_key=key)
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model=GEMINI_MODEL,
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     tools=[types.Tool(google_search=types.GoogleSearch())],

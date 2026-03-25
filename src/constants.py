@@ -13,7 +13,7 @@ HTTP_TIMEOUT_DEFAULT = 10    # standard API calls (weather, citations)
 HTTP_TIMEOUT_MEDIUM = 15     # slower feeds (arxiv, HF, events, health)
 HTTP_TIMEOUT_LONG = 30       # arxiv bulk queries
 
-GEMINI_MODEL = "gemini-2.5-flash"
+GEMINI_MODEL = "gemini-3-flash-preview"
 GEMINI_MAX_RETRIES = 3
 GEMINI_RETRY_BASE_DELAY = 6  # seconds, multiplied by (attempt + 1)
 

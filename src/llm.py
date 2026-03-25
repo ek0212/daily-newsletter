@@ -409,6 +409,74 @@ def _validate_summary(summary: str) -> str | None:
     return None
 
 
+def generate_trending_topics(ai_security_items: list[dict]) -> list[dict]:
+    """Analyze AI security items to identify trending topics for purple teamers.
+
+    Returns a list of dicts: [{"topic": str, "why": str, "action": str}, ...]
+    Each item suggests a topic the reader should look into for career growth.
+    """
+    import os
+    from google import genai
+    from google.genai import types
+
+    api_keys = _get_api_keys()
+    if not api_keys or not ai_security_items:
+        return []
+
+    # Build context from today's papers and news
+    items_text = []
+    for i, item in enumerate(ai_security_items[:12], 1):
+        item_type = item.get("type", "unknown")
+        title = item.get("title", "")
+        abstract = (item.get("abstract") or item.get("raw_text") or "")[:500]
+        items_text.append(f"{i}. [{item_type.upper()}] {title}: {abstract}")
+
+    prompt = (
+        "You are a career coach for an AI security purple teamer (someone who does both "
+        "offensive red-teaming AND defensive blue-teaming of AI/LLM systems).\n\n"
+        "Based on today's AI security papers and news below, identify the TOP 3 topics "
+        "trending RIGHT NOW in AI security. For each topic, explain:\n"
+        "- What the topic is (1 short phrase)\n"
+        "- Why it's trending this week (1 sentence, reference specific papers/news)\n"
+        "- A concrete action the reader should take for their career growth "
+        "(e.g. 'try building X', 'read up on Y technique', 'practice Z in a lab')\n\n"
+        "Frame everything as direct advice: 'You might want to look into X because...'\n\n"
+        "TODAY'S AI SECURITY ITEMS:\n" + "\n".join(items_text) + "\n\n"
+        "Return ONLY a valid JSON array of 3 objects with keys: topic, why, action\n"
+        "Example: [{\"topic\": \"Agentic prompt injection\", \"why\": \"3 new papers this week show agents are vulnerable to multi-step injection chains.\", \"action\": \"Set up a test harness with LangChain agents and try chaining indirect prompt injections across tool calls.\"}]\n"
+    )
+
+    for api_key in api_keys:
+        try:
+            client = genai.Client(api_key=api_key)
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    tools=[types.Tool(google_search=types.GoogleSearch())],
+                ),
+            )
+            text = response.text.strip()
+            if text.startswith("```"):
+                text = text.split("\n", 1)[1] if "\n" in text else text[3:]
+                if text.endswith("```"):
+                    text = text[:-3]
+                text = text.strip()
+
+            import json as _json
+            data = _json.loads(text)
+            if isinstance(data, list) and len(data) >= 1:
+                logger.info("Trending topics generated: %d items", len(data))
+                return data[:3]
+        except Exception as e:
+            logger.warning("Trending topics generation failed with key ...%s: %s",
+                           api_key[-6:], str(e)[:100])
+            continue
+
+    logger.warning("All keys failed for trending topics, returning empty")
+    return []
+
+
 def _fallback_summarize(sections: dict) -> dict:
     """Summarize all sections using sumy extractive summarizer."""
     return {
