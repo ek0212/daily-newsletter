@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 03:52:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Mar 2026 11:51:57 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Thursday, March 26, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-26.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-26.html</guid>
-      <description>Weather: 46°F - Cloudy | Illness level: LOW | 3 major events this week | 4 top news stories | 2 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 50°F - Cloudy | Illness level: LOW | 3 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Cloudy &mdash; High 67&deg; / Low 46&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Cloudy &mdash; High 70&deg; / Low 49&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -49,47 +49,47 @@
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">50&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(45&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">3%</td>
-        <td style="padding: 7px 6px; text-align: center;">77%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph SW</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">51&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">8%</td>
+        <td style="padding: 7px 6px; text-align: center;">74%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph SW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">54&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">3%</td>
-        <td style="padding: 7px 6px; text-align: center;">66%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph SW</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">55&deg;F</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
+        <td style="padding: 7px 6px; text-align: center;">8%</td>
+        <td style="padding: 7px 6px; text-align: center;">64%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph SW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">67&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">68&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">8%</td>
-        <td style="padding: 7px 6px; text-align: center;">49%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph SW</td>
+        <td style="padding: 7px 6px; text-align: center;">47%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph SW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">65&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">69&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Slight Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">22%</td>
-        <td style="padding: 7px 6px; text-align: center;">54%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph SW</td>
+        <td style="padding: 7px 6px; text-align: center;">17%</td>
+        <td style="padding: 7px 6px; text-align: center;">47%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph SW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">62&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">68&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">28%</td>
-        <td style="padding: 7px 6px; text-align: center;">62%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">32%</td>
+        <td style="padding: 7px 6px; text-align: center;">51%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph S</td>
       </tr>
       
     </table>
@@ -139,6 +139,17 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 07:16:16 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <!-- Title -->
+      <a href="https://www.npr.org/2026/03/26/g-s1-115289/up-first-newsletter-iran-israel-trump-meta-google-social-media-cdc-director" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Iran rejects U.S. peace plan. And, jury finds Meta, Google to blame in addiction trial</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 ghting until a list of its own conditions are met.<br>📢 <strong>Iran</strong>'s demands include war reparation payments and recognition of Iranian sovereignty over the Strait of Hormuz.<br>🔍 - 🎧 While the U.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 00:03:52 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
       <a href="https://techcrunch.com/2026/03/25/delve-did-the-security-compliance-on-litellm-an-ai-project-hit-by-malware/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Delve did the security compliance on LiteLLM, an AI project hit by malware</a>
@@ -162,23 +173,23 @@ This latest round of layoffs impacts workers on Reality Labs, as well as <strong
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 01:26:30 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The New York Times</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 07:30:48 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxPdWJvbllpd2Q2a1Q1SHJJR19TejQ1cXFEQ053dWM0d3hRV2hhdEE4VTF4R21NRTRkRVpXbENBc0Y5Skc2V25FWTd5RGlteWctZlRMTWJwZUV1TXRzR0x0dEhzYTF6Yk1GaWwxY1d6T0p5a25EZnhtQ0ZtMmJKajZPUVZ5SQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">ICE Agents at Some Airports Begin Checking IDs in Security Lines</a>
+      <a href="https://www.npr.org/2026/03/26/g-s1-115291/southeast-asia-turns-to-nuclear-as-iran-war-disrupts-energy-supplies" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Southeast Asia turns to nuclear as Iran war disrupts energy supplies</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 ICE Agents at Some Airports Begin Checking IDs in Security Lines</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 signaled their interest.<br>📢 <strong>Southeast</strong> <strong>Asia</strong> has never produced a single watt of nuclear energy, despite long-held atomic ambitions.<br>🔍 But that may soon change as pressure mounts to reduce emissions that contribute to climate change, while meeting growing power needs.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Today &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 05:44:35 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell</a>
+      <a href="https://www.npr.org/2026/03/26/nx-s1-5761882/iran-war-peace-conditions" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel and Iran ramp up attacks as Trump insists Tehran wants a deal</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 <strong>Dominion</strong> rep said.<br>📢 By settling, influential Fox executives and prominent on-air personalities will be spared from testifying about their 2020 election coverage, which was filled with lies about voter fraud.<br>🔍 <strong>Dominion</strong> also has pending lawsuits against right-wing networks Newsmax and OAN, as well as against Trump allies <strong>Rudy</strong> <strong>Giuliani</strong>, <strong>Sidney</strong> <strong>Powell</strong> and Mike Lindell.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 make a deal with the U.<br>📢 S.<br>🔍 , despite <strong>Tehran</strong>'s rejection of a 15-point proposal to end the war.</div>
       
     </div>
     
@@ -196,6 +207,28 @@ This latest round of layoffs impacts workers on Reality Labs, as well as <strong
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=slX_lDDobEs" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">This Datacenter Problem Nobody's Talking About</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 This Datacenter Problem Nobody's Talking About</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
+      <!-- Title -->
+      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/This-Bittensor-Subnet-Could-Cut-Drug-Discovery-Costs-in-HALF--E2267-e3gvsj3" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">This Bittensor Subnet Could Cut Drug Discovery Costs in HALF | E2267</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 This Bittensor Subnet Could Cut Drug Discovery Costs in HALF | E2267</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
       <!-- Title -->
       <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Work-AGI-is-the-Only-AGI-that-Matters-e3gvn96" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Work AGI is the Only AGI that Matters</a>
@@ -209,7 +242,7 @@ This latest round of layoffs impacts workers on Reality Labs, as well as <strong
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-25 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
       <!-- Title -->
-      <a href="https://youtube.com/watch?v=TOYd7wZvnSE" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Shuts Down Sora to Cut Costs</a>
+      <a href="https://www.morningbrew.com/issues/sloppy-fruit" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI Shuts Down Sora to Cut Costs</a>
       <!-- Summary -->
       
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 OpenAI Shuts Down Sora to Cut Costs</div>
@@ -248,12 +281,12 @@ The agent targets AI-powered applications, including chatbots, copilots, autonom
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 20:37:38 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Sonatype</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 22:29:01 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BleepingComputer</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPQnpzNGRYQjg1LVVmUk1ZRGlmV0E0a0haSm5Md3pRWkVFLVRIY3AwV2N0eFdPdHMxRlBEMjRzUGlzdEQ5MTgwV09nVktsMXFJTURhSXd5bGFwVnV1QVU5RUxxS1I4VmR3aWgyWjU5SFRJWFowNkFlTmF5V3dPLXU0a0RfZWppS1ZfY0RNZ085NFVDZUREZ3FSTEZQdU90YUhXZmszRNIBtAFBVV95cUxPZG5fUlhBallRSDZnc0tYOFM4LUdpdkhGUnRZWXVFUzlMa0diSlR3b24wdG9odGdMNlc2MWJYZGZ4Ui1ILVMxYmNQdlNXVGN4N2FfTTdFOVk3eXhGMEhEbGNMOGs4RzB6aEdidmZ6UWdZMlYyWXQyOTk1YXdacWREc2k3YUU3UWRTTkQxamhuZkZkekRpRWJUVGZvWDlZVVBndFo1bnU0eHFKNks4bGZwY3hyVVo?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Compromised litellm PyPI Package Delivers Multi-Stage Credential Stealer</a>
+      <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQaVFreWJkdFh2TTNucW45NWdpemZxUW5mdW9BQmdUYzVVTTQxdG94Z0lDVlBlRFNWYmFRZF9xcmNmNEJOMnZoVnVxdERUVjljem1iamNGak1jaDVTR2ZUM0o5alRYLWxpWWY3UWJGZlJ5cTR0Z3VodV9mbVlQMENWdzRsNGhtenBka3otbWk1X3UwM09EWXJpZlVRZTU4RHQ4dWRUekZJNjhFTnhoNHF6ZmI1cTNtNm5MOWVB0gHAAUFVX3lxTE1oT25FT29Za3pvWkZZbVNwMUJRMEwzUDE0R2s0UTBtcE9kNFlqWVBtaWQycHViOU1NNnR5QmNSenRPcWVSN3hFZ0kxSGluX2NpMDBxRWRQOFhZWVFoUG1HTFgtYnZEQTU1Nm5MWC1kQjB6RnBoeTdzY0xtUUtzV1hXNWNiTWRuTXl2cElGTXFyX19uWFBqYXluZWRDZ3Q1TkxVR3d1X1gyWkpKY0tqQWRCNVc5RGNqTTdLY1Qzbjh3Qw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Popular LiteLLM PyPI package backdoored to steal credentials, auth tokens</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ificant exposure during that short time span.<br>🔍 Malicious code embedded in these versions functioned as both a credential stealer and a dropper, enabling further compromise of affected systems with follow-on payloads.<br>⚠️ Sonatype's automated tooling immediately detected and blocked the malicious <strong>PyPI</strong> versions within seconds of publication (tracked as sonatype-2026-001357).</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ threat actors compromised the project and published malicious versions of <strong>LiteLLM</strong> 1.<br>🔍 82.<br>⚠️ 7 and 1.</div>
       
       
     </div>
