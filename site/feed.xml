@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Mar 2026 03:40:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 11:32:59 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Saturday, March 28, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-28.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-28.html</guid>
-      <description>Weather: 45°F - Mostly Cloudy | Illness level: NORMAL | 3 major events this week | 4 top news stories | 9 AI security updates</description>
+      <description>Weather: 37°F - Mostly Sunny | Illness level: NORMAL | 3 major events this week | 5 top news stories | 3 YouTube videos | 7 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Cloudy &mdash; High 42&deg; / Low 34&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 44&deg; / Low 34&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -49,37 +49,37 @@
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">36&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(26&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">36&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(27&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">5%</td>
         <td style="padding: 7px 6px; text-align: center;">43%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph N</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph N</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">36&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(26&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">36&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(27&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">5%</td>
-        <td style="padding: 7px 6px; text-align: center;">38%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph N</td>
+        <td style="padding: 7px 6px; text-align: center;">36%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph N</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">42&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(34&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">44&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(36&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">28%</td>
+        <td style="padding: 7px 6px; text-align: center;">23%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph NW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">42&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(34&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
-        <td style="padding: 7px 6px; text-align: center;">1%</td>
-        <td style="padding: 7px 6px; text-align: center;">29%</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">43&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(35&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">3%</td>
+        <td style="padding: 7px 6px; text-align: center;">27%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">16 mph NW</td>
       </tr>
       
@@ -88,8 +88,8 @@
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">42&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(35&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">33%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph NW</td>
+        <td style="padding: 7px 6px; text-align: center;">29%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">12 mph NW</td>
       </tr>
       
     </table>
@@ -139,6 +139,17 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Mar 2026 05:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <!-- Title -->
+      <a href="https://www.npr.org/2026/03/28/nx-s1-5755062/trump-wants-a-deadlocked-congress-to-move-on-ai-frustrated-states-say-they-already-have" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump wants a deadlocked Congress to move on AI. Frustrated states say they already have</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 pto czar David Sacks, have argued that various state laws are a burden to innovation.<br>📢 "<strong>We want to create an environment where innovators have certainty about the way that they can develop their products and it's something only congress can provide,</strong>" Michael Kratsios, the head of the White House Office of Science and Technology Policy, said earlier this week.<br>🔍 "The first step is to create one national framework so we can avoid a patchwork.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-27T14:35:53-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
       <!-- Title -->
       <a href="https://www.theverge.com/ai-artificial-intelligence/902546/data-centers-ai-energy-power-grids-controversy" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The latest in data centers, AI, and energy</a>
@@ -151,34 +162,34 @@ On Thursday, senators Elizabeth Warren (D-MA) and Josh Hawley (R-MO) sent a lett
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Mar 2026 03:28:50 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">ABC7 Los Angeles</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Mar 2026 07:17:36 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVDU0djB2UUVaY0R3UHVVVEQtM0RXNnJ6a0ExU2dQN1U5TU9zRXlwWldYbmdaVlp3bDY0UEEzc2JTWmtwMGd1V1dSU1pFbDhrS3c3SXdDdkZXY1JSSGJSU280YVdXeUlsS1czdk85V1NNb1kyUXl4dWdnNzREWU0zdl9Xc01rNmNtc0NxeXY4dUo4LW5WN0t3alNHV3FUZ2lBbDFTc016RU50dWFFTFd5bVJKb21kNjBGRTB3c2p1QWVmUmplOWQ1bUF0WHBiek40ZkI3NWxLUF9VU3lYT3fSAeMBQVVfeXFMUFRaTjJmS3ZiOVdianFJT0pWSXRCX1FQRUxtY0hZTFRKb1lrUGhqLURDN1dlcWZoRWpTdHVTdDdKQzBTRnZnZkc3Uzl5anBod2QzaXl6RFdUeVgwR0l6dVRzZ3BJamNSN1ktWEVfQ25Qd3QzSkFFenEyV3dtVko3THpPUmVveUtoQkJOazRFbDh2ZzBfM3ByWUdXcmJTUzNybGp2MFNqbjRzWjZIbHI0eHpzTkZIUkl2MFpsSlVzRDNCVEdxNlRjQkc5NnBma2tJellDVnFoQWFXM1lWU3pPUFBPZnc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">No Kings protests 2026: List of locations for Southern California rallies, including Los Angeles, Orange and Riverside counties</a>
+      <a href="https://www.npr.org/2026/03/28/g-s1-115502/measles-vaccines-mexico" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">There's a massive measles vaccine campaign in Mexico. Is the public on board?</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 nationwide for what leaders predict will be the largest day of protesting in U.<br>📢 S.<br>🔍 history.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 at various centers.<br>📢 "<strong>People were very worried,</strong>" says Erica Briones Chavez, a nurse in a public medical center in <strong>Mexico</strong> City's Chapultepec neighborhood.<br>🔍 "For a couple of months we were doing two to three hundred vaccinations a day — mothers, fathers, teenagers and babies.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Mar 2026 02:32:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Investor's Business Daily</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Mar 2026 06:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOekhjU3BOYWxuWGV5Ui0yaVY1eXJYVDByVHhEQ3JSSkN2Q2lnLUhEVmZ4eUtDaVRjUnpWaUFjN3hYYlVDSFdKT2dTV3BvYmlQaTZmZExfdWhQWVMtZkxLRHZER2RVUm1yNXkxUzFlbmpHZ0NGZExiUlpTU2YyVEdhYlBMM1JBRDlpaXJHZXBsSThWSjRHSGZ4QXgzVHY2cGVydnRsYWx5SGtDQ05rV0lDN3gtZVo4Smh6LVBTNl9jZDJ0UzVMQ2Nv?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Stocks Break Lower, Oil Prices At $100. What To Do Now.</a>
+      <a href="https://www.npr.org/2026/03/28/g-s1-114976/crossing-the-line-emotional-abuse-in-college-sports-marta-marija-galic" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Crossing the line: Emotional abuse in college sports</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Stocks Break Lower, Oil Prices At $100. What To Do Now.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 ing and repetitive layup drill.<br>📢 "<strong>People were collapsing on the floor,</strong>" Galic said.<br>🔍 And she had to use the restroom.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Today &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Mar 2026 06:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell</a>
+      <a href="https://www.npr.org/2026/03/28/nx-s1-5764275/cpac-2026" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Rifts over Iran, but unity for Trump: Takeaways from CPAC 2026</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 <strong>Dominion</strong> rep said.<br>📢 By settling, influential Fox executives and prominent on-air personalities will be spared from testifying about their 2020 election coverage, which was filled with lies about voter fraud.<br>🔍 <strong>Dominion</strong> also has pending lawsuits against right-wing networks Newsmax and OAN, as well as against Trump allies <strong>Rudy</strong> <strong>Giuliani</strong>, <strong>Sidney</strong> <strong>Powell</strong> and Mike Lindell.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 e president himself.<br>📢 Instead of closing out the multi-day conference with a rally-type address akin to previous years, <strong>Trump</strong> skipped <strong>CPAC</strong> this year for the first time in a decade.<br>🔍 His absence comes at a tense moment in his second term.</div>
       
     </div>
     
@@ -194,7 +205,40 @@ On Thursday, senators Elizabeth Warren (D-MA) and Josh Hawley (R-MO) sent a lett
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
     </div>
     
-    <div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-27 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
+      <!-- Title -->
+      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/The-60-billion-resource-hiding-in-space--and-the-start-trying-to-mine-it-feat--Matt-Gialich--Astroforge--E2268-e3h2suf" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The $60 billion resource hiding in space, and the start trying to mine it | E2268</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 The $60 billion resource hiding in space, and the start trying to mine it | E2268</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-27 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
+      <!-- Title -->
+      <a href="https://youtube.com/watch?v=OYyS0Gu5xj8" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI News: Anthropic Went Crazy This Week!</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 AI News: Anthropic Went Crazy This Week!</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-27 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <!-- Title -->
+      <a href="https://www.morningbrew.com/issues/coming-correct" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Why Clear is winning from TSA’s long wait times</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Why Clear is winning from TSA’s long wait times</div>
+      
+    </div>
+    
+    
   </div>
 
   <!-- Section Rule -->
@@ -267,40 +311,6 @@ The agent targets AI-powered applications, including chatbots, copilots, autonom
       <!-- Date + Authors + Stats -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-26</div>
       <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Cole Walsh, Rodica Ivan</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.25674v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Measuring What Matters -- or What's Convenient?: Robustness of LLM-Based Scoring Systems to Construct-Irrelevant Factors</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">adversarial</span>
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Automated systems have been widely adopted across the educational testing industry for open-response assessment and essay scoring. These systems commonly achieve performance levels comparable to or superior than trained human raters, but have frequently been demonstrated to be vulnerable to the influence of construct-irrelevant factors (i.e., features of responses that are unrelated to the construct assessed) and adversarial conditions. Given the rising usage of large language models in automated scoring systems, there is a renewed focus on ``hallucinations'' and the robustness of these LLM-based automated scoring approaches to construct-irrelevant factors. This study investigates the effects of construct-irrelevant factors on a dual-architecture LLM-based scoring system designed to score short essay-like open-response items in a situational judgment test. It was found that the scoring system was generally robust to padding responses with meaningless text, spelling errors, and writing sophistication. Duplicating large passages of text resulted in lower scores predicted by the system, on average, contradicting results from previous studies of non-LLM-based scoring systems, while off-topic responses were heavily penalized by the scoring system. These results provide encouraging support for the robustness of future LLM-based scoring systems when designed with construct relevance in mind.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-26</div>
-      <!-- Authors with affiliations -->
       <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Yuqian Fu, Haohuan Huang, Kaiwen Jiang et al.</div>
       <!-- Title -->
       <a href="https://huggingface.co/papers/2603.25562" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Revisiting On-Policy Distillation: Empirical Failure Modes and Simple Fixes</a>
@@ -327,40 +337,6 @@ The agent targets AI-powered applications, including chatbots, copilots, autonom
       <!-- Summary -->
       
       <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">On-policy distillation (OPD) is appealing for large language model (LLM) post-training because it evaluates teacher feedback on student-generated rollouts rather than fixed teacher traces. In long-horizon settings, however, the common sampled-token variant is fragile: it reduces distribution matching to a one-token signal and becomes increasingly unreliable as rollouts drift away from prefixes the teacher commonly visits. We revisit OPD from the estimator and implementation sides. Theoretically, token-level OPD is biased relative to sequence-level reverse-KL, but it has a much tighter worst-case variance bound; our toy study shows the same tradeoff empirically, with stronger future-reward coupling producing higher gradient variance and less stable learning. Empirically, we identify three failure modes of sampled-token OPD: an imbalanced one-token signal, unreliable teacher guidance on student-generated prefixes, and distortions caused by tokenizer or special-token mismatch. We address these issues with teacher top-K local support matching, implemented as truncated reverse-KL with top-p rollout sampling and special-token masking. Across single-task math reasoning and multi-task agentic-plus-math training, this objective yields more stable optimization and better downstream performance than sampled-token OPD.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-26 &nbsp;&bull;&nbsp; 1 citations</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Zehao Wang <span style="color: #999; font-style: normal; font-size: 10px;">(KU Leuven)</span>, Huaide Jiang, Shuaiwu Dong et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.25740v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Drive My Way: Preference Alignment of Vision-Language-Action Model for Personalized Driving</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Human driving behavior is inherently personal, which is shaped by long-term habits and influenced by short-term intentions. Individuals differ in how they accelerate, brake, merge, yield, and overtake across diverse situations. However, existing end-to-end autonomous driving systems either optimize for generic objectives or rely on fixed driving modes, lacking the ability to adapt to individual preferences or interpret natural language intent. To address this gap, we propose Drive My Way (DMW), a personalized Vision-Language-Action (VLA) driving framework that aligns with users' long-term driving habits and adapts to real-time user instructions. DMW learns a user embedding from our personalized driving dataset collected across multiple real drivers and conditions the policy on this embedding during planning, while natural language instructions provide additional short-term guidance. Closed-loop evaluation on the Bench2Drive benchmark demonstrates that DMW improves style instruction adaptation, and user studies show that its generated behaviors are recognizable as each driver's own style, highlighting personalization as a key capability for human-centered autonomous driving. Our data and code are available at https://dmw-cvpr.github.io/.</div>
       
     </div>
     
