@@ -206,6 +206,11 @@ def _build_section_prompt(section_key: str, items: list[dict]) -> str:
         )
         for i, item in enumerate(items, 1):
             text = (item.get("raw_text") or "").strip()
+            # Strip markdown formatting that leaks from RSS/website sources
+            text = re.sub(r'^#{1,6}\s+', '', text, flags=re.MULTILINE)
+            text = re.sub(r'---+', '', text)
+            text = re.sub(r'\*\*([^*]+)\*\*', r'\1', text)
+            text = re.sub(r'[•·]\s*less than \d+ min read\s*', ' ', text)
             if len(text) > 1500:  # long enough to warrant sponsor stripping + sampling
                 # Strip sponsor/ad segments
                 text = re.sub(

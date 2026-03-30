@@ -240,9 +240,9 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 {email_html}
 </div>
 <style>
-  .save-btn {{ background:none; border:1px solid #d0cdc5; cursor:pointer; font-size:11px; padding:4px 12px; opacity:0.6; transition:opacity 0.2s, border-color 0.2s, background 0.2s; font-family:'Times New Roman',Times,serif; letter-spacing:0.5px; text-transform:uppercase; color:#888; display:inline-flex; align-items:center; gap:4px; margin-top:8px; }}
-  .save-btn:hover {{ opacity:1; border-color:#1a1a1a; color:#1a1a1a; }}
-  .save-btn.saved {{ opacity:1; background:#1a1a1a; color:#fffdf7; border-color:#1a1a1a; }}
+  .save-btn {{ background:none; border:none; cursor:pointer; font-size:18px; padding:0; opacity:0.25; transition:opacity 0.15s, transform 0.15s; vertical-align:middle; line-height:1; flex-shrink:0; }}
+  .save-btn:hover {{ opacity:0.7; transform:scale(1.15); }}
+  .save-btn.saved {{ opacity:1; }}
   .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }}
   .login-bar input {{ font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }}
   .login-bar button {{ font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }}
@@ -434,10 +434,12 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       var key = btn.dataset.sourceKey;
       if (savedKeys.has(key)) {{
         btn.classList.add('saved');
-        btn.innerHTML = '&#x2713; Saved';
+        btn.innerHTML = '\u2605';
+        btn.title = 'Saved';
       }} else {{
         btn.classList.remove('saved');
-        btn.innerHTML = '&#x1F516; Save';
+        btn.innerHTML = '\u2606';
+        btn.title = 'Save to stash';
       }}
     }});
   }}
@@ -448,7 +450,8 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       allSaved = allSaved.filter(function(l) {{ return l.source_key !== sourceKey; }});
       savedKeys.delete(sourceKey);
       btn.classList.remove('saved');
-      btn.innerHTML = '&#x1F516; Save';
+      btn.innerHTML = '\u2606';
+      btn.title = 'Save to stash';
     }} else {{
       allSaved.push({{
         id: nextId++,
@@ -462,12 +465,13 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       }});
       savedKeys.add(sourceKey);
       btn.classList.add('saved');
-      btn.innerHTML = '&#x2713; Saved';
+      btn.innerHTML = '\u2605';
+      btn.title = 'Saved';
     }}
     saveSaved();
   }}
 
-  // --- Add save button to each source card ---
+  // --- Add bookmark icon next to each source title ---
   function addSaveButtons() {{
     // Find all card containers (each article/video/paper has a title link inside a padded div)
     var cards = document.querySelectorAll('.email-wrap div[style*="padding: 16px 0"]');
@@ -487,22 +491,24 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       var sourceKey = link || title;
       var isSaved = savedKeys.has(sourceKey);
 
+      // Wrap title in a flex container with the bookmark button
+      var wrapper = document.createElement('span');
+      wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+      titleEl.parentNode.insertBefore(wrapper, titleEl);
+      titleEl.style.flex = '1';
+      wrapper.appendChild(titleEl);
+
       var btn = document.createElement('button');
       btn.className = 'save-btn' + (isSaved ? ' saved' : '');
       btn.dataset.sourceKey = sourceKey;
-      btn.innerHTML = isSaved ? '&#x2713; Saved' : '&#x1F516; Save';
+      btn.innerHTML = isSaved ? '&#9733;' : '&#9734;';
+      btn.title = isSaved ? 'Saved' : 'Save to stash';
       btn.addEventListener('click', function(e) {{
         e.preventDefault();
         e.stopPropagation();
         toggleSave(btn, sourceKey, title, link, summary, section);
       }});
-
-      // Insert the save button after the summary (or after the title if no summary)
-      if (summaryEl) {{
-        summaryEl.parentNode.insertBefore(btn, summaryEl.nextSibling);
-      }} else {{
-        titleEl.parentNode.insertBefore(btn, titleEl.nextSibling);
-      }}
+      wrapper.appendChild(btn);
     }});
   }}
 

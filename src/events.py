@@ -26,6 +26,34 @@ _WALK_RADIUS_BLOCKS = 40
 MIN_STREET = _MIDTOWN_CENTER - _WALK_RADIUS_BLOCKS  # ~13th St
 MAX_STREET = _MIDTOWN_CENTER + _WALK_RADIUS_BLOCKS  # ~93rd St
 
+MAX_EVENTS_DISPLAY = 5
+
+# Events with full street closures get priority (they actually affect your commute)
+_CLOSURE_PRIORITY = {
+    "Full Street Closure": 3,
+    "Sidewalk and Curb Lane Closure": 2,
+    "Curb Lane Only": 1,
+}
+
+# Event types that indicate large public events
+_TYPE_PRIORITY = {
+    "Parade": 5,
+    "Athletic Race / Tour": 4,
+    "Street Festival": 3,
+    "Religious Event": 2,
+    "Street Event": 1,
+    "Special Event": 1,
+    "Production Event": 0,
+}
+
+# Keywords that indicate low-interest private/commercial events
+_LOW_INTEREST_KEYWORDS = [
+    "private event", "invite only", "sound test", "load in", "load out",
+    "setup", "strike", "filming", "production hold", "crane", "scaffold",
+    "construction", "utility", "maintenance", "permit", "launch day",
+    "sampling", "activation", "pop-up", "popup",
+]
+
 
 def _clean_location(raw: str) -> str:
     """Extract a concise location from verbose street-segment data.
@@ -95,11 +123,36 @@ def _is_within_walking_distance(location: str) -> bool:
     return MIN_STREET <= street_num <= MAX_STREET
 
 
+def _relevance_score(name: str, event_type: str, closure_type: str) -> float:
+    """Score an event's relevance. Higher = more interesting to a local reader."""
+    name_lower = name.lower()
+
+    # Penalize private/commercial/low-interest events heavily
+    for kw in _LOW_INTEREST_KEYWORDS:
+        if kw in name_lower:
+            return -10
+
+    score = 0.0
+    score += _TYPE_PRIORITY.get(event_type, 0)
+    score += _CLOSURE_PRIORITY.get(closure_type, 0)
+
+    # Bonus for recognizable public events (markets, galas, cultural)
+    public_keywords = ["parade", "marathon", "festival", "block party", "market",
+                       "greenmarket", "gala", "ceremony", "awards", "way of the cross",
+                       "procession", "fair", "shred-a-thon", "recycling"]
+    for kw in public_keywords:
+        if kw in name_lower:
+            score += 3
+            break
+
+    return score
+
+
 def get_nyc_events() -> list[dict]:
     """Fetch nearby NYC events for the current week (today through Sunday).
 
-    Queries Manhattan events with any street closure, then filters to
-    locations within walking distance of 53rd Street.
+    Queries Manhattan events with any street closure, filters to walking
+    distance of Midtown, ranks by relevance, and returns the top results.
     Returns list of dicts with: name, date, borough, location, event_type.
     Deduplicates by event name (same event may span multiple street segments).
     """
@@ -143,11 +196,8 @@ def get_nyc_events() -> list[dict]:
 
             location_raw = item.get("event_location", "")
 
-            # Filter to walking distance from 53rd St
+            # Filter to walking distance of Midtown
             if not _is_within_walking_distance(location_raw):
-                street_num = _extract_street_number(location_raw)
-                logger.debug("Skipping '%s' (street %s, outside %d-%d range)",
-                             name[:40], street_num, MIN_STREET, MAX_STREET)
                 continue
 
             dt = item.get("start_date_time", "")
@@ -157,17 +207,29 @@ def get_nyc_events() -> list[dict]:
             except (ValueError, AttributeError):
                 date_str = "This week"
 
+            event_type = item.get("event_type", "")
+            closure_type = item.get("street_closure_type", "")
+            score = _relevance_score(name, event_type, closure_type)
+
             seen[name] = {
                 "name": name,
                 "date": date_str,
                 "borough": "Manhattan",
                 "location": _clean_location(location_raw),
-                "event_type": item.get("event_type", ""),
+                "event_type": event_type,
+                "_score": score,
             }
 
-        events = list(seen.values())
-        logger.info("Found %d nearby Manhattan events this week (within %d blocks of Midtown)",
-                     len(events), _WALK_RADIUS_BLOCKS)
+        # Rank by relevance score and take the top N
+        ranked = sorted(seen.values(), key=lambda e: e["_score"], reverse=True)
+        events = ranked[:MAX_EVENTS_DISPLAY]
+
+        # Clean up internal score field
+        for e in events:
+            del e["_score"]
+
+        logger.info("Found %d nearby Manhattan events, showing top %d by relevance",
+                     len(seen), len(events))
         return events
 
     except Exception as e:

@@ -223,7 +223,7 @@ def _get_morning_brew_text(video_title: str) -> tuple[str, str]:
                 )
                 text = trafilatura.extract(resp.text)
                 if text:
-                    stories.append(f"## {title}\n\n{text}")
+                    stories.append(f"{title}\n\n{text}")
             except Exception as e:
                 logger.debug("Morning Brew story fetch failed for %s: %s", url, e)
 
