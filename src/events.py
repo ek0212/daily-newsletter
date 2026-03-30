@@ -1,4 +1,8 @@
-"""Fetch major NYC events from NYC Open Data (Socrata API, no key required)."""
+"""Fetch nearby NYC events from NYC Open Data (Socrata API, no key required).
+
+Filters to Manhattan events with street closures within walking distance
+of Midtown (~40 min walk = ~40 blocks north/south).
+"""
 
 import logging
 import re
@@ -16,11 +20,11 @@ logger = logging.getLogger(__name__)
 
 API_URL = NYC_EVENTS_API_URL
 
-# Event types that are always major (parades/races impact streets by definition)
-ALWAYS_MAJOR_TYPES = {"Parade", "Athletic Race / Tour"}
-
-# For "Special Event" type, only include if it has a full street closure
-# (filters out lawn closures, picnics, small park events)
+# 40 min walking ≈ 2 miles ≈ 40 blocks north/south in Manhattan
+_MIDTOWN_CENTER = 53
+_WALK_RADIUS_BLOCKS = 40
+MIN_STREET = _MIDTOWN_CENTER - _WALK_RADIUS_BLOCKS  # ~13th St
+MAX_STREET = _MIDTOWN_CENTER + _WALK_RADIUS_BLOCKS  # ~93rd St
 
 
 def _clean_location(raw: str) -> str:
@@ -59,9 +63,43 @@ def _ordinal(n: str) -> str:
     return f"{num}{suffix}"
 
 
-def get_nyc_events() -> list[dict]:
-    """Fetch major NYC events for the current week (today through Sunday).
+def _extract_street_number(location: str) -> int | None:
+    """Extract the primary street number from an event location string.
 
+    Handles formats like:
+      'WEST 26 STREET between 11 AVENUE and 10 AVENUE'
+      'EAST 43 STREET between LEXINGTON AVENUE and 3 AVENUE'
+      '5 AVENUE between WEST 53 STREET and WEST 56 STREET'
+    Returns the numbered street (not avenue) when possible.
+    """
+    if not location:
+        return None
+    # Look for patterns like "WEST 26 STREET", "EAST 43 STREET", "53 STREET"
+    street_matches = re.findall(r'(?:WEST|EAST|W|E)?\s*(\d+)\s*(?:ST(?:REET)?)\b', location, re.IGNORECASE)
+    if street_matches:
+        return int(street_matches[0])
+    # Fallback: any number before STREET
+    m = re.search(r'(\d+)\s*(?:ST(?:REET)?)\b', location, re.IGNORECASE)
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def _is_within_walking_distance(location: str) -> bool:
+    """Check if event location is within walking distance of Midtown."""
+    street_num = _extract_street_number(location)
+    if street_num is None:
+        # Can't determine street number (park, named venue, etc.)
+        # Include it so we don't accidentally drop big events
+        return True
+    return MIN_STREET <= street_num <= MAX_STREET
+
+
+def get_nyc_events() -> list[dict]:
+    """Fetch nearby NYC events for the current week (today through Sunday).
+
+    Queries Manhattan events with any street closure, then filters to
+    locations within walking distance of 53rd Street.
     Returns list of dicts with: name, date, borough, location, event_type.
     Deduplicates by event name (same event may span multiple street segments).
     """
@@ -76,10 +114,10 @@ def get_nyc_events() -> list[dict]:
         start = today.strftime("%Y-%m-%dT00:00:00")
         end = end_of_week.strftime("%Y-%m-%dT23:59:59")
 
-        # Query for parades, races, and special events with street closures
+        # Manhattan events with any street closure (matches the NYC Open Data filter approach)
         query = (
-            f"(event_type in('Parade','Athletic Race / Tour') "
-            f"OR (event_type='Special Event' AND street_closure_type='Full Street Closure')) "
+            f"event_borough='Manhattan' "
+            f"AND street_closure_type != 'N/A' "
             f"AND start_date_time >= '{start}' "
             f"AND start_date_time <= '{end}'"
         )
@@ -93,7 +131,7 @@ def get_nyc_events() -> list[dict]:
         raw = resp.json()
 
         if not raw:
-            logger.info("No major NYC events this week")
+            logger.info("No nearby NYC events this week")
             return []
 
         # Deduplicate by event name (same parade has multiple street segments)
@@ -102,6 +140,16 @@ def get_nyc_events() -> list[dict]:
             name = item.get("event_name", "").strip()
             if not name or name in seen:
                 continue
+
+            location_raw = item.get("event_location", "")
+
+            # Filter to walking distance from 53rd St
+            if not _is_within_walking_distance(location_raw):
+                street_num = _extract_street_number(location_raw)
+                logger.debug("Skipping '%s' (street %s, outside %d-%d range)",
+                             name[:40], street_num, MIN_STREET, MAX_STREET)
+                continue
+
             dt = item.get("start_date_time", "")
             try:
                 event_date = datetime.fromisoformat(dt.replace("Z", "+00:00"))
@@ -112,14 +160,14 @@ def get_nyc_events() -> list[dict]:
             seen[name] = {
                 "name": name,
                 "date": date_str,
-                "borough": item.get("event_borough", ""),
-                "location": _clean_location(item.get("event_location", "")),
+                "borough": "Manhattan",
+                "location": _clean_location(location_raw),
                 "event_type": item.get("event_type", ""),
             }
 
-        # Only include Brooklyn and Manhattan events
-        events = [e for e in seen.values() if e["borough"] in ("Manhattan", "Brooklyn")]
-        logger.info("Found %d major NYC events this week (Brooklyn/Manhattan only)", len(events))
+        events = list(seen.values())
+        logger.info("Found %d nearby Manhattan events this week (within %d blocks of Midtown)",
+                     len(events), _WALK_RADIUS_BLOCKS)
         return events
 
     except Exception as e:
