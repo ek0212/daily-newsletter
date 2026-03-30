@@ -17,12 +17,6 @@ GEMINI_MODEL = "gemini-3-flash-preview"
 GEMINI_MAX_RETRIES = 3
 GEMINI_RETRY_BASE_DELAY = 6  # seconds, multiplied by (attempt + 1)
 
-# ── Tor proxy ────────────────────────────────────────────────────────────
-TOR_SOCKS_PORT_DEFAULT = 9050
-TOR_CONTROL_PORT_DEFAULT = 9051
-TOR_MAX_RETRIES = 12
-TOR_SLEEP_SECONDS = 5
-
 # ── Text processing thresholds ──────────────────────────────────────────
 MIN_TEXT_LENGTH_SHORT = 100   # minimum useful article text
 MIN_TEXT_LENGTH_MEDIUM = 200  # minimum podcast/transcript text

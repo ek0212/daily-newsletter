@@ -2,24 +2,18 @@
 
 Uses a tiered approach for getting episode text:
 1. Podcast RSS descriptions / website transcripts (free, works everywhere)
-2. YouTube transcript API via Tor proxy (free, unreliable in CI)
-3. YouTube transcript API direct (works locally, blocked in CI)
+2. YouTube transcript API direct (works locally, may be blocked in CI)
 """
 
 import logging
-import os
 import re
-import socket
-import time
 from datetime import datetime, timedelta, timezone
-from difflib import SequenceMatcher
 
 import feedparser
 import requests as _requests
 import trafilatura
 
 from src.constants import (
-    HTTP_TIMEOUT_DEFAULT,
     HTTP_TIMEOUT_SHORT,
     MAX_PODCAST_ENTRIES,
     MAX_VIDEOS,
@@ -27,10 +21,6 @@ from src.constants import (
     MIN_TEXT_LENGTH_MEDIUM,
     MIN_TEXT_LENGTH_SHORT,
     PODCAST_MATCH_THRESHOLD,
-    TOR_CONTROL_PORT_DEFAULT,
-    TOR_MAX_RETRIES,
-    TOR_SLEEP_SECONDS,
-    TOR_SOCKS_PORT_DEFAULT,
 )
 
 logger = logging.getLogger(__name__)
@@ -66,10 +56,6 @@ TRANSCRIPT_WEBSITES = {
     "Lex Fridman Podcast": "https://lexfridman.com",
 }
 
-_TOR_MAX_RETRIES = TOR_MAX_RETRIES
-_TOR_SLEEP = TOR_SLEEP_SECONDS
-
-
 def _is_short(video_id: str) -> bool:
     """Check if a YouTube video is a Short by probing the /shorts/ URL.
 
@@ -84,47 +70,6 @@ def _is_short(video_id: str) -> bool:
     except Exception:
         return False
 
-
-def _rotate_tor_circuit(control_port: int = 9051) -> bool:
-    """Send NEWNYM signal to Tor to get a new exit node."""
-    try:
-        with socket.create_connection(("127.0.0.1", control_port), timeout=HTTP_TIMEOUT_SHORT) as s:
-            s.sendall(b"AUTHENTICATE\r\n")
-            s.recv(256)
-            s.sendall(b"SIGNAL NEWNYM\r\n")
-            resp = s.recv(256)
-            return b"250" in resp
-    except Exception:
-        return False
-
-
-def _tor_available() -> bool:
-    """Check if Tor SOCKS proxy is running and reachable."""
-    tor_port = int(os.getenv("TOR_SOCKS_PORT", str(TOR_SOCKS_PORT_DEFAULT)))
-    try:
-        session = _requests.Session()
-        session.proxies = {
-            "http": f"socks5h://127.0.0.1:{tor_port}",
-            "https": f"socks5h://127.0.0.1:{tor_port}",
-        }
-        r = session.get("https://check.torproject.org/api/ip", timeout=HTTP_TIMEOUT_DEFAULT)
-        if r.status_code == 200 and r.json().get("IsTor"):
-            logger.info("Tor proxy active (IP: %s)", r.json().get("IP"))
-            return True
-    except Exception as e:
-        logger.debug("Tor not available: %s", e)
-    return False
-
-
-def _make_tor_session() -> _requests.Session:
-    """Create a fresh requests session routed through Tor."""
-    tor_port = int(os.getenv("TOR_SOCKS_PORT", str(TOR_SOCKS_PORT_DEFAULT)))
-    session = _requests.Session()
-    session.proxies = {
-        "http": f"socks5h://127.0.0.1:{tor_port}",
-        "https": f"socks5h://127.0.0.1:{tor_port}",
-    }
-    return session
 
 
 def _title_similarity(a: str, b: str) -> float:
@@ -345,41 +290,21 @@ def _get_jeffsu_text(video_title: str) -> tuple[str, str]:
     return "", ""
 
 
-def _get_transcript_text(video_id: str, use_tor: bool = False) -> str:
-    """Fetch YouTube transcript. With Tor, retries with circuit rotation on failure."""
+def _get_transcript_text(video_id: str) -> str:
+    """Fetch YouTube transcript via the YouTube Transcript API (works locally, may fail in CI)."""
     from youtube_transcript_api import YouTubeTranscriptApi
 
-    if use_tor:
-        control_port = int(os.getenv("TOR_CONTROL_PORT", str(TOR_CONTROL_PORT_DEFAULT)))
-        for attempt in range(_TOR_MAX_RETRIES):
-            session = _make_tor_session()
-            try:
-                ytt = YouTubeTranscriptApi(http_client=session)
-                transcript = ytt.fetch(video_id, languages=["en"])
-                full_text = " ".join(snippet.text for snippet in transcript)
-                if len(full_text) >= MIN_TEXT_LENGTH_SHORT:
-                    logger.info("Transcript via Tor (attempt %d): %d chars for %s",
-                                attempt + 1, len(full_text), video_id)
-                    return full_text
-            except Exception as e:
-                logger.debug("Tor attempt %d failed for %s: %s", attempt + 1, video_id,
-                             type(e).__name__)
-            # Rotate to a new exit node and wait for new circuit
-            _rotate_tor_circuit(control_port)
-            time.sleep(_TOR_SLEEP)
-
-    # Direct fallback (works locally, may fail in CI)
     try:
         ytt = YouTubeTranscriptApi()
         transcript = ytt.fetch(video_id, languages=["en"])
         full_text = " ".join(snippet.text for snippet in transcript)
         if len(full_text) >= MIN_TEXT_LENGTH_SHORT:
-            logger.info("Transcript via direct: %d chars for %s", len(full_text), video_id)
+            logger.info("Transcript fetched: %d chars for %s", len(full_text), video_id)
             return full_text
     except Exception as e:
-        logger.debug("Direct transcript failed for %s: %s", video_id, type(e).__name__)
+        logger.debug("Transcript fetch failed for %s: %s", video_id, type(e).__name__)
 
-    logger.warning("All transcript methods failed for %s", video_id)
+    logger.warning("Transcript fetch failed for %s", video_id)
     return ""
 
 
@@ -487,12 +412,10 @@ def get_recent_videos(days: int = 3) -> list[dict]:
                 podcast_hits, len(selected), len(needs_yt))
 
     # Phase 2: YouTube transcripts for remaining videos
-    if needs_yt:
-        use_tor = _tor_available()
-        for video in needs_yt:
-            video["raw_text"] = _get_transcript_text(video["video_id"], use_tor=use_tor)
-            if video["raw_text"]:
-                video["_text_source"] = "youtube"
+    for video in needs_yt:
+        video["raw_text"] = _get_transcript_text(video["video_id"])
+        if video["raw_text"]:
+            video["_text_source"] = "youtube"
 
     # Clean up and log
     for video in selected:

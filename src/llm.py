@@ -485,11 +485,43 @@ def _fallback_summarize(sections: dict) -> dict:
     }
 
 
+def _split_sentences(text: str) -> list[str]:
+    """Split text into sentences, protecting abbreviations from false splits."""
+    import re
+    # Protect common abbreviations by replacing their periods with a placeholder
+    protected = text
+    abbreviations = [
+        'U.S.', 'U.S', 'U.K.', 'E.U.', 'D.C.',
+        'Dr.', 'Mr.', 'Mrs.', 'Ms.', 'Prof.', 'Rev.', 'Gen.', 'Gov.',
+        'Rep.', 'Sen.', 'Sgt.', 'Jr.', 'Sr.', 'St.', 'Mt.',
+        'Inc.', 'Ltd.', 'Corp.', 'Co.', 'Bros.', 'Dept.', 'Assn.',
+        'vs.', 'etc.', 'e.g.', 'i.e.', 'approx.', 'est.',
+        'Jan.', 'Feb.', 'Mar.', 'Apr.', 'Jun.', 'Jul.', 'Aug.',
+        'Sep.', 'Oct.', 'Nov.', 'Dec.', 'Ave.', 'Blvd.', 'Vol.', 'No.',
+    ]
+    PLACEHOLDER = '\x00'
+    for abbr in abbreviations:
+        protected = protected.replace(abbr, abbr.replace('.', PLACEHOLDER))
+
+    # Split on sentence-ending punctuation followed by space and uppercase
+    parts = re.split(r'(?<=[.!?])\s+(?=[A-Z\"\'\u201c\u2018])', protected)
+
+    # Restore placeholders and filter
+    sentences = []
+    for p in parts:
+        p = p.replace(PLACEHOLDER, '.').strip()
+        if len(p) > 15:  # skip tiny fragments
+            if p[-1] not in '.!?':
+                p = p + '.'
+            sentences.append(p)
+    return sentences
+
+
 def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     """Summarize a single section's items using sumy, formatted as emoji bullets.
 
     YouTube transcripts are conversational text that LexRank cannot meaningfully
-    summarize, so YouTube items fall back to title-only display.
+    summarize, so YouTube items fall back to a description from the raw_text if available.
     """
     emojis = {
         "news": ["📰", "📢", "🔍"],
@@ -500,8 +532,22 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     results = []
     for item in items:
         # YouTube: LexRank on spoken transcripts produces verbatim gibberish.
-        # Use title-only fallback instead.
+        # Try to extract a few coherent sentences from the raw text instead.
         if section_type == "youtube":
+            raw_text = (item.get("raw_text") or "").strip()
+            if len(raw_text) > 200:
+                sentences = _split_sentences(raw_text[:3000])
+                # Pick first 3 sentences that are long enough and not sponsor/ad text
+                import re
+                ad_re = re.compile(r'(?i)(?:brought to you|sponsored by|use code|promo code|sign up at|free trial|percent off|dollars off)')
+                good = [s for s in sentences if not ad_re.search(s)][:3]
+                if len(good) >= 2:
+                    bullets = []
+                    for j, sent in enumerate(good):
+                        emoji = section_emojis[j % len(section_emojis)]
+                        bullets.append(f"{emoji} {sent}")
+                    results.append("<br>".join(bullets))
+                    continue
             results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
             continue
         raw = summarize(item.get("raw_text", ""), num_sentences=3, title=item.get("title", ""))
@@ -509,12 +555,11 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
             # Minimal fallback from title
             results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
             continue
-        # Split extractive summary into sentences and format as emoji bullets
-        sentences = [s.strip() for s in raw.replace('<br>', ' ').split('. ') if s.strip()]
+        # Split extractive summary into sentences using robust splitter
+        sentences = _split_sentences(raw.replace('<br>', ' '))
         bullets = []
         for j, sent in enumerate(sentences[:3]):
             emoji = section_emojis[j % len(section_emojis)]
-            sent = sent.rstrip('.')
-            bullets.append(f"{emoji} {sent}.")
+            bullets.append(f"{emoji} {sent}")
         results.append("<br>".join(bullets) if bullets else f"{section_emojis[0]} {raw}")
     return results

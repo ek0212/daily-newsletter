@@ -240,9 +240,9 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 {email_html}
 </div>
 <style>
-  .like-btn {{ background:none; border:none; cursor:pointer; font-size:16px; padding:0 4px; opacity:0.35; transition:opacity 0.2s, transform 0.15s; vertical-align:middle; }}
-  .like-btn:hover {{ opacity:1; transform:scale(1.2); }}
-  .like-btn.liked {{ opacity:1; }}
+  .save-btn {{ background:none; border:1px solid #d0cdc5; cursor:pointer; font-size:11px; padding:4px 12px; opacity:0.6; transition:opacity 0.2s, border-color 0.2s, background 0.2s; font-family:'Times New Roman',Times,serif; letter-spacing:0.5px; text-transform:uppercase; color:#888; display:inline-flex; align-items:center; gap:4px; margin-top:8px; }}
+  .save-btn:hover {{ opacity:1; border-color:#1a1a1a; color:#1a1a1a; }}
+  .save-btn.saved {{ opacity:1; background:#1a1a1a; color:#fffdf7; border-color:#1a1a1a; }}
   .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }}
   .login-bar input {{ font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }}
   .login-bar button {{ font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }}
@@ -299,8 +299,8 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
   var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
-  var likedTexts = new Set();
-  var allLikes = [];
+  var savedKeys = new Set();
+  var allSaved = [];
   var nextId = 1;
 
   // --- Storage helpers ---
@@ -343,13 +343,13 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     var data = getStoredData();
     if (data && data.session_active) {{
       currentUser = data.username;
-      allLikes = data.likes || [];
-      nextId = allLikes.reduce(function(mx, l) {{ return Math.max(mx, l.id + 1); }}, 1);
-      likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+      allSaved = data.saved || data.likes || [];
+      nextId = allSaved.reduce(function(mx, l) {{ return Math.max(mx, l.id + 1); }}, 1);
+      savedKeys = new Set(allSaved.map(function(l) {{ return l.source_key || l.bullet_text || ''; }}));
     }} else {{
       currentUser = null;
-      allLikes = [];
-      likedTexts = new Set();
+      allSaved = [];
+      savedKeys = new Set();
     }}
   }}
 
@@ -393,7 +393,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     var existing = getStoredData();
     if (existing && existing.username === u) {{ alert('User already exists. Please login.'); return; }}
     var hash = await hashPassword(p);
-    var data = {{ version: 1, username: u, password_hash: hash, likes: [], session_active: true }};
+    var data = {{ version: 1, username: u, password_hash: hash, saved: [], session_active: true }};
     saveStoredData(data);
     loadSession();
     renderLoginBar();
@@ -407,111 +407,102 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       saveStoredData(data);
     }}
     currentUser = null;
-    allLikes = [];
-    likedTexts = new Set();
+    allSaved = [];
+    savedKeys = new Set();
     renderLoginBar();
     refreshAllButtons();
   }};
 
-  // --- Likes (localStorage) ---
-  function loadLikes() {{
+  // --- Saved sources (localStorage) ---
+  function loadSaved() {{
     var data = getStoredData();
-    if (!data || !data.session_active) {{ allLikes = []; likedTexts = new Set(); return; }}
-    allLikes = data.likes || [];
-    nextId = allLikes.reduce(function(mx, l) {{ return Math.max(mx, l.id + 1); }}, 1);
-    likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+    if (!data || !data.session_active) {{ allSaved = []; savedKeys = new Set(); return; }}
+    allSaved = data.saved || data.likes || [];
+    nextId = allSaved.reduce(function(mx, l) {{ return Math.max(mx, l.id + 1); }}, 1);
+    savedKeys = new Set(allSaved.map(function(l) {{ return l.source_key || l.bullet_text || ''; }}));
   }}
 
-  function saveLikes() {{
+  function saveSaved() {{
     var data = getStoredData();
     if (!data) return;
-    data.likes = allLikes;
+    data.saved = allSaved;
     saveStoredData(data);
   }}
 
   function refreshAllButtons() {{
-    document.querySelectorAll('.like-btn').forEach(function(btn) {{
-      var text = btn.dataset.bulletText;
-      if (likedTexts.has(text)) {{
-        btn.classList.add('liked');
+    document.querySelectorAll('.save-btn').forEach(function(btn) {{
+      var key = btn.dataset.sourceKey;
+      if (savedKeys.has(key)) {{
+        btn.classList.add('saved');
+        btn.innerHTML = '&#x2713; Saved';
       }} else {{
-        btn.classList.remove('liked');
+        btn.classList.remove('saved');
+        btn.innerHTML = '&#x1F516; Save';
       }}
     }});
   }}
 
-  function toggleLike(btn, bulletText, articleTitle, section) {{
+  function toggleSave(btn, sourceKey, title, link, summary, section) {{
     if (!currentUser) {{ alert('Please login first'); return; }}
-    if (likedTexts.has(bulletText)) {{
-      allLikes = allLikes.filter(function(l) {{ return l.bullet_text !== bulletText; }});
-      likedTexts.delete(bulletText);
-      btn.classList.remove('liked');
+    if (savedKeys.has(sourceKey)) {{
+      allSaved = allSaved.filter(function(l) {{ return l.source_key !== sourceKey; }});
+      savedKeys.delete(sourceKey);
+      btn.classList.remove('saved');
+      btn.innerHTML = '&#x1F516; Save';
     }} else {{
-      allLikes.push({{
+      allSaved.push({{
         id: nextId++,
-        bullet_text: bulletText,
-        article_title: articleTitle,
+        source_key: sourceKey,
+        title: title,
+        link: link,
+        summary: summary,
         section: section,
         newsletter_date: getDateFromURL(),
         created_at: new Date().toISOString()
       }});
-      likedTexts.add(bulletText);
-      btn.classList.add('liked');
+      savedKeys.add(sourceKey);
+      btn.classList.add('saved');
+      btn.innerHTML = '&#x2713; Saved';
     }}
-    saveLikes();
+    saveSaved();
   }}
 
-  // --- Add thumbs up to each bullet ---
-  function addThumbsToSummaries() {{
-    var summaryDivs = document.querySelectorAll('.email-wrap div[style*="font-size: 14.5px"]');
-    summaryDivs.forEach(function(div) {{
-      var html = div.innerHTML;
-      var cardEl = div.closest('div[style*="padding"]');
-      var titleEl = cardEl ? cardEl.querySelector('a[href]') : null;
-      var articleTitle = titleEl ? titleEl.textContent.trim() : '';
-      var section = detectSection(div);
+  // --- Add save button to each source card ---
+  function addSaveButtons() {{
+    // Find all card containers (each article/video/paper has a title link inside a padded div)
+    var cards = document.querySelectorAll('.email-wrap div[style*="padding: 16px 0"]');
+    cards.forEach(function(card) {{
+      var titleEl = card.querySelector('a[href]');
+      if (!titleEl) return;
+      var title = titleEl.textContent.trim();
+      var link = titleEl.getAttribute('href') || '';
+      var section = detectSection(card);
 
-      var parts = html.split(/<br\s*\/?>/i);
+      // Get summary text for storage
+      var summaryEl = card.querySelector('div[style*="font-size: 14.5px"]');
+      var summary = summaryEl ? summaryEl.textContent.trim() : '';
+      if (summary.length > 400) summary = summary.substring(0, 400) + '...';
 
-      if (parts.length < 2) {{
-        // Single block of text (e.g. paper abstract) — add one button for the whole thing
-        var cleanText = html.replace(/<[^>]*>/g, '').trim();
-        if (!cleanText) return;
-        var truncated = cleanText.length > 200 ? cleanText.substring(0, 200) + '...' : cleanText;
-        var isLiked = likedTexts.has(truncated);
-        div.style.position = 'relative';
-        var newHtml = '<span style="display:block;padding-right:28px;">' + html + '</span>'
-          + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
-          + 'style="position:absolute;top:0;right:0;" '
-          + 'data-bullet-text="' + truncated.replace(/"/g, '&quot;') + '" '
-          + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
-          + 'data-section="' + section + '" '
-          + 'title="Like this">\\uD83D\\uDC4D</button>';
-        div.innerHTML = newHtml;
-      }} else {{
-        var newHtml = parts.map(function(part) {{
-          var cleanText = part.replace(/<[^>]*>/g, '').trim();
-          if (!cleanText) return part;
-          var isLiked = likedTexts.has(cleanText);
-          return '<span style="display:flex;align-items:flex-start;gap:2px;margin-bottom:2px;">'
-            + '<span style="flex:1;">' + part + '</span>'
-            + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
-            + 'data-bullet-text="' + cleanText.replace(/"/g, '&quot;') + '" '
-            + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
-            + 'data-section="' + section + '" '
-            + 'title="Like this bullet">\\uD83D\\uDC4D</button>'
-            + '</span>';
-        }}).join('');
-        div.innerHTML = newHtml;
-      }}
+      // Use link as the unique key (most reliable), fallback to title
+      var sourceKey = link || title;
+      var isSaved = savedKeys.has(sourceKey);
 
-      div.querySelectorAll('.like-btn').forEach(function(btn) {{
-        btn.addEventListener('click', function(e) {{
-          e.preventDefault();
-          e.stopPropagation();
-          toggleLike(btn, btn.dataset.bulletText, btn.dataset.articleTitle, btn.dataset.section);
-        }});
+      var btn = document.createElement('button');
+      btn.className = 'save-btn' + (isSaved ? ' saved' : '');
+      btn.dataset.sourceKey = sourceKey;
+      btn.innerHTML = isSaved ? '&#x2713; Saved' : '&#x1F516; Save';
+      btn.addEventListener('click', function(e) {{
+        e.preventDefault();
+        e.stopPropagation();
+        toggleSave(btn, sourceKey, title, link, summary, section);
       }});
+
+      // Insert the save button after the summary (or after the title if no summary)
+      if (summaryEl) {{
+        summaryEl.parentNode.insertBefore(btn, summaryEl.nextSibling);
+      }} else {{
+        titleEl.parentNode.insertBefore(btn, titleEl.nextSibling);
+      }}
     }});
   }}
 
@@ -531,7 +522,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 
   window._openStash = function() {{
     if (!currentUser) return;
-    loadLikes();
+    loadSaved();
     var overlay = document.getElementById('stash-overlay');
     if (overlay) overlay.remove();
 
@@ -545,17 +536,17 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       + '<button class="stash-close" onclick="document.getElementById(\\x27stash-overlay\\x27).remove()">&times;</button>'
       + '<h2>My Stash</h2>';
 
-    if (allLikes.length === 0) {{
-      html += '</div><div class="stash-empty">Nothing here yet.<br>Like bullet points as you read &mdash; they\\x27ll appear here.</div>';
+    if (allSaved.length === 0) {{
+      html += '</div><div class="stash-empty">Nothing here yet.<br>Save sources as you read &mdash; they\\x27ll appear here.</div>';
     }} else {{
-      html += '<div class="stash-count">' + allLikes.length + ' saved item' + (allLikes.length === 1 ? '' : 's') + '</div></div>';
+      html += '<div class="stash-count">' + allSaved.length + ' saved source' + (allSaved.length === 1 ? '' : 's') + '</div></div>';
 
       // Group by newsletter_date, sorted newest first
       var groups = {{}};
-      allLikes.forEach(function(like) {{
-        var d = like.newsletter_date || 'Unknown';
+      allSaved.forEach(function(item) {{
+        var d = item.newsletter_date || 'Unknown';
         if (!groups[d]) groups[d] = [];
-        groups[d].push(like);
+        groups[d].push(item);
       }});
       var sortedDates = Object.keys(groups).sort(function(a,b) {{ return b.localeCompare(a); }});
 
@@ -563,20 +554,22 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       sortedDates.forEach(function(date) {{
         html += '<div class="stash-date-group">';
         html += '<div class="stash-date-label">' + formatDateLabel(date) + '</div>';
-        groups[date].forEach(function(like) {{
-          var escaped = like.bullet_text.replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          var displayText = like.bullet_text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          var titleDisplay = (like.article_title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          html += '<div class="stash-item" data-like-id="' + like.id + '">'
-            + '<input type="checkbox" value="' + like.id + '" data-text="' + escaped + '">'
+        groups[date].forEach(function(item) {{
+          var titleDisplay = (item.title || item.article_title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          var summaryPreview = (item.summary || item.bullet_text || '').replace(/<[^>]*>/g, '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          if (summaryPreview.length > 150) summaryPreview = summaryPreview.substring(0, 150) + '...';
+          var linkUrl = (item.link || '').replace(/"/g, '&quot;');
+          var escapedTitle = titleDisplay.replace(/"/g, '&quot;');
+          html += '<div class="stash-item" data-item-id="' + item.id + '">'
+            + '<input type="checkbox" value="' + item.id + '" data-title="' + escapedTitle + '" data-summary="' + summaryPreview.replace(/"/g, '&quot;') + '">'
             + '<div class="stash-item-content">'
-            + '<div class="stash-item-text">' + displayText + '</div>'
+            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1a1a1a;text-decoration:none;border-bottom:1px solid #ddd;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
+            + (summaryPreview ? '<div style="font-size:12.5px;color:#888;line-height:1.5;margin-top:4px;">' + summaryPreview + '</div>' : '')
             + '<div class="stash-item-meta">'
-            + '<span class="stash-item-section ' + (like.section || 'other') + '">' + sectionLabel(like.section) + '</span>'
-            + (titleDisplay ? '<span class="stash-item-source">' + titleDisplay + '</span>' : '')
+            + '<span class="stash-item-section ' + (item.section || 'other') + '">' + sectionLabel(item.section) + '</span>'
             + '</div>'
             + '</div>'
-            + '<button class="stash-delete" onclick="window._deleteLike(' + like.id + ',this)" title="Remove">&times;</button>'
+            + '<button class="stash-delete" onclick="window._deleteItem(' + item.id + ',this)" title="Remove">&times;</button>'
             + '</div>';
         }});
         html += '</div>';
@@ -624,25 +617,25 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) {{ cb.checked = false; }});
   }};
 
-  window._deleteLike = function(likeId, btnEl) {{
-    allLikes = allLikes.filter(function(l) {{ return l.id !== likeId; }});
-    saveLikes();
-    likedTexts = new Set(allLikes.map(function(l) {{ return l.bullet_text; }}));
+  window._deleteItem = function(itemId, btnEl) {{
+    allSaved = allSaved.filter(function(l) {{ return l.id !== itemId; }});
+    saveSaved();
+    savedKeys = new Set(allSaved.map(function(l) {{ return l.source_key || l.bullet_text || ''; }}));
     var row = btnEl.closest('.stash-item');
     if (row) row.remove();
     refreshAllButtons();
-    if (allLikes.length === 0) {{
+    if (allSaved.length === 0) {{
       window._openStash();
     }}
   }};
 
   window._copySelection = function(btn) {{
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
-    if (checked.length === 0) {{ alert('Select at least one item'); return; }}
+    if (checked.length === 0) {{ alert('Select at least one source'); return; }}
     var lines = [];
     var currentDate = '';
     checked.forEach(function(cb) {{
-      var item = allLikes.find(function(l) {{ return l.id === parseInt(cb.value); }});
+      var item = allSaved.find(function(l) {{ return l.id === parseInt(cb.value); }});
       if (!item) return;
       var d = item.newsletter_date || '';
       if (d !== currentDate) {{
@@ -651,9 +644,14 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
         lines.push('');
         currentDate = d;
       }}
-      lines.push(item.bullet_text);
-      var source = item.article_title ? '  — ' + item.article_title + ' [' + (item.section || '').replace('_',' ') + ']' : '';
-      if (source) lines.push(source);
+      var title = item.title || item.article_title || 'Untitled';
+      var sectionName = (item.section || '').replace('_', ' ');
+      lines.push(title + (sectionName ? ' [' + sectionName + ']' : ''));
+      if (item.link) lines.push(item.link);
+      if (item.summary) {{
+        var clean = (item.summary || '').replace(/<[^>]*>/g, '');
+        if (clean.length > 0) lines.push(clean);
+      }}
       lines.push('');
     }});
     var text = lines.join('\\n').trim();
@@ -673,17 +671,19 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 
   window._generateScript = async function() {{
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
-    if (checked.length === 0) {{ alert('Select at least one bullet'); return; }}
+    if (checked.length === 0) {{ alert('Select at least one source'); return; }}
 
     var apiKey = localStorage.getItem(GEMINI_KEY_STORAGE) || '';
     if (!apiKey) {{ alert('Please save your Gemini API key first'); return; }}
 
-    var bullets = [];
-    checked.forEach(function(cb) {{ bullets.push(cb.dataset.text); }});
+    var sources = [];
+    checked.forEach(function(cb) {{
+      sources.push({{ title: cb.dataset.title || '', summary: cb.dataset.summary || '' }});
+    }});
     var customPrompt = (document.getElementById('custom-prompt') || {{}}).value || '';
 
-    var prompt = 'You are an educational content writer. The user liked these bullet points from a daily newsletter:\\n\\n';
-    bullets.forEach(function(b) {{ prompt += '- ' + b + '\\n'; }});
+    var prompt = 'You are an educational content writer. The user saved these sources from a daily newsletter:\\n\\n';
+    sources.forEach(function(s) {{ prompt += '- ' + s.title + (s.summary ? ': ' + s.summary : '') + '\\n'; }});
     prompt += '\\nYour task:\\n1. Research each topic in more depth.\\n2. Write a 2-3 minute spoken script (350-500 words) that explains these topics in an educational, engaging way.\\n3. Be conversational but informative.\\n4. Add context, background, and why it matters.\\n5. Start with a hook, end with a takeaway.';
     if (customPrompt) {{ prompt += '\\n\\nAdditional instructions: ' + customPrompt; }}
     prompt += '\\n\\nReturn ONLY the script text, ready to be read aloud. No stage directions, no markdown.';
@@ -725,7 +725,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   function init() {{
     loadSession();
     renderLoginBar();
-    addThumbsToSummaries();
+    addSaveButtons();
   }}
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
@@ -777,9 +777,9 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
             if l_content:
                 learnings_section = f"""
     <div class="learnings" style="background: #fffdf7; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; border-left: 4px solid #e67e22;">
-      <h2 style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 14px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px;">Learnings from Your Likes</h2>
+      <h2 style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 14px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px;">Learnings from Your Stash</h2>
       <div style="font-size: 15px; color: #444; line-height: 1.8; font-family: 'Times New Roman', Times, Georgia, serif;">{l_content}</div>
-      <div style="font-size: 11px; color: #999; margin-top: 12px; font-style: italic;">Based on {l_count} liked items &middot; Generated {l_date}</div>
+      <div style="font-size: 11px; color: #999; margin-top: 12px; font-style: italic;">Based on {l_count} saved sources &middot; Generated {l_date}</div>
     </div>"""
         except Exception:
             pass
