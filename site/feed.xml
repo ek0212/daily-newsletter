@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Mar 2026 11:57:33 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 30 Mar 2026 19:21:22 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Monday, March 30, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-30.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-30.html</guid>
-      <description>Weather: 51°F - Partly Sunny | Illness level: NORMAL | 6 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 64°F - Slight Chance Rain Showers | Illness level: NORMAL | 21 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Partly Sunny &mdash; High 61&deg; / Low 57&deg;</div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Slight Chance Rain Showers &mdash; High 65&deg; / Low 60&deg;</div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">51&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">6%</td>
-        <td style="padding: 7px 6px; text-align: center;">68%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">54&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">6%</td>
-        <td style="padding: 7px 6px; text-align: center;">57%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">61&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">65&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Slight Chance Rain Showers</td>
         <td style="padding: 7px 6px; text-align: center;">24%</td>
-        <td style="padding: 7px 6px; text-align: center;">44%</td>
+        <td style="padding: 7px 6px; text-align: center;">46%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph SW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">61&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">64&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Slight Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">21%</td>
-        <td style="padding: 7px 6px; text-align: center;">48%</td>
+        <td style="padding: 7px 6px; text-align: center;">12%</td>
+        <td style="padding: 7px 6px; text-align: center;">58%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph SW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">61&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Slight Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">21%</td>
-        <td style="padding: 7px 6px; text-align: center;">56%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">16 mph SW</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">12%</td>
+        <td style="padding: 7px 6px; text-align: center;">62%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph SW</td>
       </tr>
       
     </table>
@@ -98,7 +80,7 @@
 
   <!-- Health Alert -->
   
-  <div style="padding: 16px 32px; border-left: 4px solid ; background: #f0faf0;">
+  <div style="padding: 16px 32px; border-left: 4px solid #27ae60; background: #f0faf0;">
     <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; margin-bottom: 6px;">
       &#x1F7E2; NYC Illness Level: NORMAL
     </div>
@@ -113,27 +95,87 @@
     
     
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Way%20of%20the%20Cross%20over%20the%20Brooklyn%20Bridge%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Way of the Cross over the Brooklyn Bridge</a> &mdash; Fri, Apr 3, Brooklyn <span style="color: #888;">(250 Cathedral Place)</span>
+      <a href="https://www.google.com/search?q=GH%20March/April%20Programming%20NYC%20Mon%2C%20Mar%2030" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">GH March/April Programming</a> &mdash; Mon, Mar 30, Manhattan <span style="color: #888;">(West 13th St & 10th Ave)</span>
     </div>
     
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Good%20Friday%20East%20Harlem%20Procession%202026%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Good Friday East Harlem Procession 2026</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(East 96th St & Park Ave)</span>
+      <a href="https://www.google.com/search?q=Burlington%20Launch%20Day%20NYC%20Mon%2C%20Mar%2030" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Burlington Launch Day</a> &mdash; Mon, Mar 30, Manhattan <span style="color: #888;">(Sixth Ave & West 19th St)</span>
     </div>
     
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Living%20Station%20of%20the%20Cross%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Living Station of the Cross</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(Amsterdam Ave & West 96th St)</span>
+      <a href="https://www.google.com/search?q=JOLLIBEE%20East%2042nd%20Street%20Store%20OPENING%20NYC%20Mon%2C%20Mar%2030" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">JOLLIBEE East 42nd Street Store OPENING</a> &mdash; Mon, Mar 30, Manhattan <span style="color: #888;">(East 42nd St & 5th Ave)</span>
     </div>
     
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=The%20Way%20of%20the%20Cross%20-%20Good%20Friday%20Procession%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">The Way of the Cross - Good Friday Procession</a> &mdash; Fri, Apr 3, Brooklyn <span style="color: #888;">(15th Ave & 72nd St)</span>
+      <a href="https://www.google.com/search?q=APPLE%20TV%20NYC%20Mon%2C%20Mar%2030" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">APPLE TV</a> &mdash; Mon, Mar 30, Manhattan <span style="color: #888;">(East 60th St & Fifth Ave)</span>
     </div>
     
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Pitkin%20Avenue%20Easter%20Parade%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Pitkin Avenue Easter Parade</a> &mdash; Sat, Apr 4, Brooklyn <span style="color: #888;">(Pitkin Ave & Howard Ave)</span>
+      <a href="https://www.google.com/search?q=Rosies%20Theater%20Kids%20Gala%20at%20Kaye%20Playhouse-Hunter%20College%20and%20Dinner%20at%20583%20Park%20Ave.%20NYC%20Mon%2C%20Mar%2030" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Rosies Theater Kids Gala at Kaye Playhouse-Hunter College and Dinner at 583 Park Ave.</a> &mdash; Mon, Mar 30, Manhattan <span style="color: #888;">(East 68th St & Park Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Blue%20Revolver%20Private%20Event%20at%2028%20Liberty%20Street%20NYC%20Tue%2C%20Mar%2031" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Blue Revolver Private Event at 28 Liberty Street</a> &mdash; Tue, Mar 31, Manhattan <span style="color: #888;">(Liberty Street & William Street)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=PEN%20America%20Literary%20Awards%20Ceremony%20NYC%20Tue%2C%20Mar%2031" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">PEN America Literary Awards Ceremony</a> &mdash; Tue, Mar 31, Manhattan <span style="color: #888;">(West 43rd St & Broadway)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=MNR%20Sound%20Test%20NYC%20Tue%2C%20Mar%2031" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">MNR Sound Test</a> &mdash; Tue, Mar 31, Manhattan <span style="color: #888;">(East 42nd St & Lexington Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Street%20Health%20Outreach%20Wellness%20Program%20NYC%20Wed%2C%20Apr%201" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Street Health Outreach Wellness Program</a> &mdash; Wed, Apr 1, Manhattan <span style="color: #888;">(West 39th St & 10th Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Edicola%20Acqua%20Di%20Parma%20NYC%20Wed%2C%20Apr%201" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Edicola Acqua Di Parma</a> &mdash; Wed, Apr 1, Manhattan <span style="color: #888;">(Herald Square Plaza: Herald Square (34/35 Broadway) Broadway & W. 34Th Street)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=St.%20Anthony%20Flea%20Market%20NYC%20Thu%2C%20Apr%202" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">St. Anthony Flea Market</a> &mdash; Thu, Apr 2, Manhattan <span style="color: #888;">(West Houston Street & Thompson Street)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=THEN%2C%20NOW%2C%20NEXT%20Invite%20Only%20Event%20at%20Complex%20NY%20Store%20at%20620%20Broadway%20NYC%20Thu%2C%20Apr%202" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">THEN, NOW, NEXT Invite Only Event at Complex NY Store at 620 Broadway</a> &mdash; Thu, Apr 2, Manhattan <span style="color: #888;">(Broadway & Bleecker Street)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Spring%20Sustainability%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Spring Sustainability</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(West 14th St & Hudson Street)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Good%20Friday%20Way%20of%20the%20Cross%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Good Friday Way of the Cross</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(East 47th St & 1st Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Old%20Cathedral%20Outdoor%20Market%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Old Cathedral Outdoor Market</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(Prince Street & Mulberry Street)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=TirTir%20Matcha%20House%20at%2045%20Grand%20St.%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">TirTir Matcha House at 45 Grand St.</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(Grand Street & West Broadway)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Inwood%20Greenmarket%20Saturday%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Inwood Greenmarket Saturday</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(Isham Street & Seaman Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=82%20Street%20Greenmarket%20Saturday%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">82 Street Greenmarket Saturday</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(East 82nd St & 1st Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Shred-a-Thon%2C%20E-Waste%2C%20and%20Textile%20Recycling%20Event%20-%20Spring%202026%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Shred-a-Thon, E-Waste, and Textile Recycling Event - Spring 2026</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(Fulton Street & Ryders Alley)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      <a href="https://www.google.com/search?q=Malbon%20x%20Knicks%20Block%20Party%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Malbon x Knicks Block Party</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(Crosby Street & Grand Street)</span>
     </div>
     
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
-      <a href="https://www.google.com/search?q=Commemorating%20Dr.%20Martin%20Luther%20King%20Jr%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Commemorating Dr. Martin Luther King Jr</a> &mdash; Sat, Apr 4, Brooklyn <span style="color: #888;">(Fulton Street & Grand Ave)</span>
+      <a href="https://www.google.com/search?q=Murray%20Hill%20Farmers%20Market%20NYC%20Sun%2C%20Apr%205" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Murray Hill Farmers Market</a> &mdash; Sun, Apr 5, Manhattan <span style="color: #888;">(2nd Ave & East 32nd St)</span>
     </div>
     
     
@@ -151,59 +193,56 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 09:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">npr.org</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 19:04:01 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNYnpadTFJSWh5RW5KdzVKTDU3ZE9nQzNJcGtrZ3o5REdnbzZBM1N6LTR1OGlBd093OFFEeWRqV0xwalpvNmJUMzN3ZFlQS2wwV0tvX2JpNzBkOUJ4Z1lRd1RSU3ZpQndGUXdkMGY3WXNFWTVWVHBTaEwtOGNjRV91MWFqSDZsQ0RXRnNtc2l3c04xaGVPZnUwY3RQYXc4WU5JZXVHalplOHBmTFF2UWIxQXN1ZjdJQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How a SCOTUS decision on birthright citizenship could impact education access</a>
+      <a href="https://arstechnica.com/tech-policy/2026/03/meta-hopes-scotus-piracy-ruling-will-help-it-beat-lawsuit-over-torrenting-ai-data/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Meta hopes SCOTUS piracy ruling will help it beat lawsuit over torrenting AI data</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 d the "<strong>privilege</strong>" has been too freely applied to children of non-citizens.<br>📢 "<strong>Hundreds of thousands of people are pouring into our country under birthright citizenship, and it wasn't meant for that reason,</strong>" President Trump said last year.<br>🔍 If this constitutionally protected right is struck down by the court, it would apply to children born on or after Feb.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Looks like <strong>Meta</strong> is hoping the recent Supreme Court ruling that found Internet service providers aren’t liable for piracy on their networks will help the social media giant dodge liability claims over its torrenting of AI training data.<br>📢 Last week, <strong>Meta</strong> filed a statement in a lawsuit that alleged that <strong>Meta</strong> should be liable under copyright law for contributory infringement simply because the company knows how torrenting works.<br>🔍 By seeding perhaps 80 terabytes of pirated works, the company allegedly knew it was inducing infringement by allowing uploads to help speed up its downloads, the plaintiffs, Entrepreneur Media, argued.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-29T09:00:00-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 13:00:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://www.theverge.com/gadgets/902829/birdbuddy-netvue-smart-bird-feeders-amazon-big-spring-sale-2026-deals" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Amazon’s Big Spring Sale is a great time to get a fancy, AI-powered bird feeder</a>
+      <a href="https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 a great time to get a fancy, AI-powered bird feeder
-The spring migration is upon us, so why not make the most of it?
-The spring migration is upon us, so why not make the most of it?
-At their core, both smart bird feeders are designed to help you keep an eye on your soon-to-be feathery friends, allowing for image stills, video, notifications, and AI-powered identification.<br>📢 Birdfy’s offering cuts corners on hardware to keep costs down, though.<br>🔍 It features the widest viewing angle of any model at 155 degrees; however, the video quality maxes out at 1080p, whereas the Birdbuddy Pro allows you to capture crystal-clear 2K video (with slow-mo).</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Founded in 2020, <strong>Rebellions</strong> develops and designs AI chips while outsourcing their fabrication.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 05:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 12:30:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/30/nx-s1-5760983/birthright-citizenship-public-opinion-supreme-court-arguments" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">As birthright citizenship goes to Supreme Court, here's how Americans feel about it</a>
+      <a href="https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Qodo raises $70M for code verification as AI coding scales</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 to children born to parents who were also born in the U.<br>📢 S.<br>🔍 — or to those who immigrated to the U.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 , Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round. <strong>Qodo</strong> is aiming to serve as a layer focused on improving trust in AI-generated code as enterprises accelerate adoption of tools like OpenClaw and Claude Code.<br>📢 Many are discovering that faster code output doesn’t necessarily translate into reliable or secure software.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 07:27:22 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 12:30:19 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/30/g-s1-115720/up-first-newsletter-israel-lebanon-strait-of-hormuz-tsa-dhs-birthright-citizenship" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">TSA workers may receive pay soon. And, Israel plans to expand its invasion of Lebanon</a>
+      <a href="https://www.npr.org/2026/03/30/nx-s1-5766046/ilia-malinin-world-champion-figure-skating-season" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Figure skating season ends with redemption and heartbreak. What do fans watch next?</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 lled.<br>📢 On Saturday, among those killed were three Lebanese journalists covering the Israeli invasion of their country's south.<br>🔍 - 🎧 The geography of events happening in <strong>Lebanon</strong> is worth understanding, NPR's Lauren Frayer tells Up First.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 cs, Malinin rebounded with a literal roar at the World Championships in Prague.<br>📢 He delivered two clean, quad-heavy programs to win gold by over 20 points, capping off the season on a note as high as his infamous jumps.<br>🔍 "<strong>I felt relieved that the season's finally done after a long up and down for this whole season,</strong>" Malinin told U.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 06:05:02 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 11:30:27 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
       <!-- Title -->
-      <a href="https://www.npr.org/2026/03/30/nx-s1-5765967/trump-iran-israel-lebanon-kharg-island-oil" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump weighing all options on Iran's Kharg Island</a>
+      <a href="https://www.npr.org/2026/03/30/nx-s1-5698159/nasa-artemis-ii-astronauts-moon-return-this-week" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">NASA is just days away from historic Artemis II moon launch</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 il in <strong>Iran</strong>" and that he was considering sending U.<br>📢 S.<br>🔍 forces to seize <strong>Kharg</strong> <strong>Island</strong>'s oil terminal.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 , this thing is moving out,"<strong> said Reid Wiseman, the <strong>NASA</strong> mission's commander, during a briefing with reporters on Sunday.<br>📢 He said that it was </strong>"surreal" to drive out to the launch pad and see this massive rocket.<br>🔍 The crew's first launch opportunity will come on April 1, at 6:24 p.</div>
       
     </div>
     
@@ -221,6 +260,23 @@ At their core, both smart bird feeders are designed to help you keep an eye on y
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-30 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <!-- Title -->
+      <a href="https://www.morningbrew.com/issues/another-element" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Wall Street is losing patience with Iran War</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 ## The Iran war is impacting aluminum, too
+
+The Iran war is impacting aluminum, too
+Under normal conditions, the Middle East is responsible for producing about 9% of the global aluminum supply.
+• less than 3 min read
+Over the weekend, Iran’s Islamic Revolutionary Guard Corps said it intentionally attacked two aluminum producers in US-allied nations in the region in response to earlier attacks on two Iranian steel plants.<br>⚡ The development underscores concerns that the conflict could drive prices of the metal higher.<br>📊 What happened
+On Saturday, the top producer in the region, Emirates Global Aluminum, said an Iranian drone and missile attack caused “significant damage” to its production plant in Abu Dhabi.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-30 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Dr. Izzy Sealey</span></div>
       <!-- Title -->
       <a href="https://youtube.com/watch?v=nXpYN92Vg7s" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How to Stop Wasting Your Evenings After Work</a>
@@ -230,7 +286,7 @@ At their core, both smart bird feeders are designed to help you keep an eye on y
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-29 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
       <!-- Title -->
@@ -238,17 +294,6 @@ At their core, both smart bird feeders are designed to help you keep an eye on y
       <!-- Summary -->
       
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 A rant about Javascript bloat</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-29 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=DvNKYftvPW0" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Era of Vertical AI Models</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 The Era of Vertical AI Models</div>
       
     </div>
     
@@ -270,13 +315,12 @@ At their core, both smart bird feeders are designed to help you keep an eye on y
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 25 Mar 2026 06:30:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 25 Mar 2026 21:31:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">hpcwire.com</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9TcHQySS00TUFOakFYZnVzeFRqWk4xMTJLUi1xT0lnMEJuZzMwUmZHdVFZMWtERFlpS2xJaHlZWDU2aUZYWmxOT0hQNnlJRlB0aUZTWnFfd3NVQ2tyRy1hMzh2UTh0UTJIcGMxX2VzeWpzTV9lNWc3SA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Training an AI agent to attack LLM applications like a real adversary</a>
+      <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPNEgyVFlITTRtMDc3RHVSdzF4ZVFEOWZmRnBVUThCZlhJQUMtVU1ZVy1EZlp2WmM3Z0M1c1p3RHp5dmRXdXE1blU5WXZXbDZKQ3gwQkF4T29odldFRV9RazB5OXR4ODNVamM5MkZiaFpUc1E5aVdKNlBJYS1VNmpxOXdQVk1HTGxKOXpfa2poREV4dXFkQ2JpQlJqZnlndVZtN3FOaGlnMlE3RHZXb2E4WTByX015TEotRnA1NUZCSTNxR0FT?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">ORNL Introduces ‘Photon’ Framework for Accelerating AI Vulnerability Discovery on Frontier</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ng agent built specifically to probe <strong>LLM</strong>-powered software.<br>🔍 The company introduced the product at RSAC 2026 Conference in San Francisco and is demonstrating it at booth S-0262.<br>⚠️ What the agent does
-The agent targets AI-powered applications, including chatbots, copilots, autonomous agents, and <strong>LLM</strong>-powered workflows, and simulates adversarial attacks against them.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ORNL Introduces ‘Photon’ Framework for Accelerating AI Vulnerability Discovery on Frontier</div>
       
       
     </div>
@@ -284,12 +328,25 @@ The agent targets AI-powered applications, including chatbots, copilots, autonom
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 13:00:49 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 25 Mar 2026 06:30:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPSTgtV1g0cjZiVmQ1TEtUTXp2S3ZldzdjMkVJeVI2VXFuZ3BhTFo3QV82Vk8zdkVJX2VOQkViSTlXWlB0dVZ3RW5BVThzN0RvdUl4ekpxNXlsRFQ4N3B5bkVsUlo2SHNWYjhvbVNjSkNNaXBWYjZVSERVdU01ZmxsN0lxZlhtNW0wLTlaMFpR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Novee introduces autonomous AI red teaming to hunt LLM vulnerabilities</a>
+      <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9TcHQySS00TUFOakFYZnVzeFRqWk4xMTJLUi1xT0lnMEJuZzMwUmZHdVFZMWtERFlpS2xJaHlZWDU2aUZYWmxOT0hQNnlJRlB0aUZTWnFfd3NVQ2tyRy1hMzh2UTh0UTJIcGMxX2VzeWpzTV9lNWc3SA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Training an AI agent to attack LLM applications like a real adversary</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ts, data exfiltration, and manipulation of agent behavior that traditional pentesting tools were never designed to detect.<br>🔍 Unlike conventional application security tools built for web and infrastructure testing, <strong>Novee</strong>’s AI pentesting agent is specifically designed to continuously probe AI-enabled applications.<br>⚠️ The agent autonomously simulates real-world, sophisticated attack scenarios and chaining techniques together to identify vulnerabilities that manual testing or static scanners often miss.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Training an AI agent to attack LLM applications like a real adversary</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 05:43:04 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TrendMicro</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNU2RWVDZPXzJFcklubUlSd1lpSGZhazI2elJwckdNa3NUdTlQNUNjYTJYS2J1YkFQNWhQdUFVaXRTS0NDS3pJbUlpN0hPMmtUOW9aUUFVTmhhWGlsVGdFdVZYSG9RNVRDaUpPblc5UVB2V2tvYzVteTQ1ZUZkQTlNbjEydkJVeUsyaHV2TkZta09PQk9E?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain Compromise</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain Compromise</div>
       
       
     </div>
@@ -302,21 +359,7 @@ The agent targets AI-powered applications, including chatbots, copilots, autonom
       <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOY3I4T2k2ZW1NalhROUFTX0VkTWlZb1JjM19QZzVxenlDU2F4TDM3ZGt2UThYQlVBN2lJWWtNeVE0MUltekNLX0dfNFRSQndqYWNuUlVPU2NXdVBPV3hmazVDOEFuSUtLZmptSDYtaGhJRm13ZkJXb09SallxbDY3RnM5T1BYQ2pUajFEVE1TTHFfQUxaYWJuQ05uQnRBeDZDMmNURVNfOGJVZ2t4dkw1MURWdFVvSHhJdjhrdWhWYm5hc3JCUmc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Week in review: NIST updates DNS security guidance, compromised LiteLLM PyPI packages</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ re Domain Name System Deployment Guide, superseding a version that dates to 2013.<br>🔍 The document covers three main areas: using <strong>DNS</strong> as an active security control, securing the <strong>DNS</strong> protocol itself, and protecting the servers and infrastructure that run <strong>DNS</strong> services.<br>⚠️ Attackers are exploiting RCE vulnerability in BIG-IP APM systems (CVE-2025-53521)
-A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) in F5’s BIG-IP Access Policy Manager (APM) solution is under active exploitation, the US Cybersecurity and Infrastructure Security Agency warned on Friday.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 23 Mar 2026 21:25:40 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Palo Alto Networks</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNRVRSN0RBaFUtRXpqMDNOZlNLYkM3ODVHc3BDM01lWF8ydW1pU0FFaFZxZjVXRF8zMHYyOHU2ZC16WmVYWHpObGdpYm83RnBnRTFfX3pjNG1oallaS201Wno3Mm9BdGxQRUxRRnFrYkF1QjVRTks3LW5DUXdBT1E3ZkxGNkYxMVRjNWV6N3VhTmpZWk5teldUX2hFYy1mTUtrWEh4TzgtODVMMXc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Prisma Browser: Where Agentic AI Meets Enterprise-Grade Security</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ nd completing workflows automatically.<br>🔍 The productivity potential is enormous, but the security implications are equally significant.<br>⚠️ Recognizing these risks, Gartner recently advised organizations to block AI browsers for now after vulnerabilities were discovered across several agentic browsers.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Week in review: NIST updates DNS security guidance, compromised LiteLLM PyPI packages</div>
       
       
     </div>
@@ -394,7 +437,7 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
       <!-- Date + Authors + Stats -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-27</div>
       <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Antonio Lopardo, Avyukth Harish, Catherine Arnett et al.</div>
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Antonio Lopardo, Avyukth Harish, Catherine Arnett <span style="color: #999; font-style: normal; font-size: 10px;">(EleutherAI)</span> et al.</div>
       <!-- Title -->
       <a href="https://arxiv.org/pdf/2603.26663v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Weight Tying Biases Token Embeddings Towards the Output Space</a>
       <!-- Topic badges -->
