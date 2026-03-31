@@ -1,7 +1,7 @@
 """Fetch nearby NYC events from NYC Open Data (Socrata API, no key required).
 
-Filters to Manhattan events with street closures within walking distance
-of Midtown (~40 min walk = ~40 blocks north/south).
+Filters to Manhattan events with street closures between downtown
+and 90th Street.
 """
 
 import logging
@@ -20,11 +20,18 @@ logger = logging.getLogger(__name__)
 
 API_URL = NYC_EVENTS_API_URL
 
-# 40 min walking ≈ 2 miles ≈ 40 blocks north/south in Manhattan
-_MIDTOWN_CENTER = 53
-_WALK_RADIUS_BLOCKS = 40
-MIN_STREET = _MIDTOWN_CENTER - _WALK_RADIUS_BLOCKS  # ~13th St
-MAX_STREET = _MIDTOWN_CENTER + _WALK_RADIUS_BLOCKS  # ~93rd St
+# Downtown Manhattan (1st St) up to 90th Street
+MIN_STREET = 0
+MAX_STREET = 90
+
+# Named streets/areas known to be above 90th St — exclude these
+_FAR_UPTOWN_KEYWORDS = [
+    "inwood", "isham", "dyckman", "fort tryon", "fort george",
+    "washington heights", "harlem", "morningside", "cathedral",
+    "broadway terrace", "nagle", "academy", "hillside",
+    "seaman", "indian road", "payson", "cooper",
+    "edgecombe", "convent", "hamilton terrace",
+]
 
 MAX_EVENTS_DISPLAY = 5
 
@@ -113,12 +120,19 @@ def _extract_street_number(location: str) -> int | None:
     return None
 
 
-def _is_within_walking_distance(location: str) -> bool:
-    """Check if event location is within walking distance of Midtown."""
+def _is_within_range(location: str) -> bool:
+    """Check if event location is between downtown and 90th St."""
+    # First check if location contains known far-uptown keywords
+    loc_lower = location.lower()
+    for kw in _FAR_UPTOWN_KEYWORDS:
+        if kw in loc_lower:
+            return False
+
     street_num = _extract_street_number(location)
     if street_num is None:
         # Can't determine street number (park, named venue, etc.)
-        # Include it so we don't accidentally drop big events
+        # Include it so we don't accidentally drop big events in
+        # lower/midtown Manhattan (most permitted events are there)
         return True
     return MIN_STREET <= street_num <= MAX_STREET
 
@@ -196,8 +210,8 @@ def get_nyc_events() -> list[dict]:
 
             location_raw = item.get("event_location", "")
 
-            # Filter to walking distance of Midtown
-            if not _is_within_walking_distance(location_raw):
+            # Filter to downtown through 90th St
+            if not _is_within_range(location_raw):
                 continue
 
             dt = item.get("start_date_time", "")
@@ -228,7 +242,7 @@ def get_nyc_events() -> list[dict]:
         for e in events:
             del e["_score"]
 
-        logger.info("Found %d nearby Manhattan events, showing top %d by relevance",
+        logger.info("Found %d Manhattan events (downtown-90th), showing top %d by relevance",
                      len(seen), len(events))
         return events
 

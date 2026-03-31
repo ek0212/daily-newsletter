@@ -74,7 +74,7 @@
     {% else %}
     <div style="font-size: 13px; color: #888; font-style: italic;">No major events scheduled this week.</div>
     {% endif %}
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: NYC Open Data — Permitted Events</div>
+    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #999; text-decoration: underline;">NYC Open Data — Permitted Events</a></div>
   </div>
 
   <!-- Section Rule -->
@@ -151,6 +151,9 @@
     <div style="text-align: center; margin-bottom: 20px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security</span>
     </div>
+    {% if ai_security_tldr %}
+    <div style="font-size: 14px; color: #555; text-align: center; margin-bottom: 20px; font-style: italic; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; padding: 0 16px;">{{ ai_security_tldr }}</div>
+    {% endif %}
     {% for item in ai_security %}
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
       {% if item.type == 'paper' %}

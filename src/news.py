@@ -1,4 +1,9 @@
-"""Fetch top news headlines from tech, general, and AI-focused RSS feeds."""
+"""Fetch top news headlines from broad, diverse sources (CNN '5 things' style).
+
+Prioritizes the biggest stories of the day across geopolitics, economy, science,
+society, and technology. Enforces topic diversity so no two stories cover the
+same subject.
+"""
 
 import logging
 import re
@@ -11,37 +16,15 @@ from googlenewsdecoder import new_decoderv1
 
 from src.constants import (
     DEDUP_OVERLAP_THRESHOLD,
-    DEMOTE_MULTIPLIER,
     MIN_TEXT_LENGTH_SHORT,
     NEWS_FEED_LIMIT_MULTIPLIER,
 )
 
 logger = logging.getLogger(__name__)
 
-# RSS sources — mix of tech-focused and general news
+# RSS sources — broad, major news outlets
 NEWS_FEEDS = [
-    # Tech / AI focused
-    {
-        "url": "https://feeds.arstechnica.com/arstechnica/index",
-        "name": "Ars Technica",
-        "is_google": False,
-    },
-    {
-        "url": "https://www.theverge.com/rss/index.xml",
-        "name": "The Verge",
-        "is_google": False,
-    },
-    {
-        "url": "https://techcrunch.com/feed/",
-        "name": "TechCrunch",
-        "is_google": False,
-    },
-    # General news (US-focused)
-    {
-        "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
-        "name": "Google News",
-        "is_google": True,
-    },
+    # Major general news
     {
         "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
         "name": "CNN",
@@ -52,22 +35,41 @@ NEWS_FEEDS = [
         "name": "NPR",
         "is_google": False,
     },
+    {
+        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "name": "BBC",
+        "is_google": False,
+    },
+    {
+        "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
+        "name": "NYT",
+        "is_google": False,
+    },
+    # Google News top stories (wide coverage)
+    {
+        "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
+        "name": "Google News",
+        "is_google": True,
+    },
+    # AP wire (catches breaking stories other outlets haven't published yet)
+    {
+        "url": "https://rss.app/feeds/ts4vGWjPjRBpxj1D.xml",
+        "name": "AP",
+        "is_google": False,
+    },
 ]
 
-# Keywords that boost relevance for the reader:
-# 26yo female SWE in big tech, NYC, AI security researcher
-_BOOST_KEYWORDS = re.compile(
-    r'(?i)\b(?:'
-    r'ai|artificial intelligence|machine learning|llm|gpt|openai|anthropic|claude|gemini|'
-    r'cyber|security|hack|breach|vulnerability|exploit|'
-    r'tech|software|engineer|developer|coding|startup|big tech|silicon valley|'
-    r'google|apple|meta|microsoft|amazon|nvidia|'
-    r'new york|nyc|manhattan|brooklyn|'
-    r'economy|inflation|housing|rent|salary|layoff|hiring|job|remote work|'
-    r'tariff|tax|regulation|policy|scotus|supreme court|congress|'
-    r'health|climate|education'
-    r')\b'
-)
+# Topic categories for diversity enforcement
+# Each story gets tagged with a category; we try to pick at most 1 per category
+_TOPIC_CATEGORIES = [
+    ("war_conflict", re.compile(r'(?i)\b(?:war|attack|strike|bomb|invasion|military|missile|ceasefire|troop|iran|ukraine|russia|gaza|houthi|yemen|tariff war)\b')),
+    ("politics_govt", re.compile(r'(?i)\b(?:congress|senate|house|trump|biden|executive order|legislation|supreme court|scotus|white house|dhs|shutdown|impeach|election|vote|protest|rally)\b')),
+    ("economy_jobs", re.compile(r'(?i)\b(?:economy|recession|inflation|jobs?|unemployment|market|stock|dow|nasdaq|fed|interest rate|gdp|trade|tariff|401.?k|housing|rent|salary|layoff)\b')),
+    ("science_space", re.compile(r'(?i)\b(?:nasa|space|moon|mars|artemis|rocket|satellite|climate|earthquake|hurricane|tornado|vaccine|pandemic|disease)\b')),
+    ("tech_ai", re.compile(r'(?i)\b(?:ai\b|artificial intelligence|openai|google|apple|meta|microsoft|amazon|nvidia|robot|autonomous|cyber|hack|breach)\b')),
+    ("crime_justice", re.compile(r'(?i)\b(?:shooting|murder|arrest|trial|verdict|sentence|prison|fbi|police|investigation|indictment|epstein|crime)\b')),
+    ("travel_transport", re.compile(r'(?i)\b(?:airport|airline|flight|travel|faa|crash|collision|runway|train|highway|bridge)\b')),
+]
 
 # Topics to deprioritize — celebrity gossip, sports entertainment, reality TV
 _DEMOTE_KEYWORDS = re.compile(
@@ -75,17 +77,24 @@ _DEMOTE_KEYWORDS = re.compile(
     r'love island|kardashian|bachelor|bachelorette|real housewives|'
     r'celebrity|gossip|red carpet|grammy|oscar|emmy|golden globe|'
     r'nfl draft|nba trade|mlb|nhl|premier league|fifa|'
-    r'flamingo land|loch lomond|bone cement'
+    r'flamingo land|loch lomond|bone cement|horoscope|zodiac'
     r')\b'
 )
 
 
-def _relevance_score(story: dict) -> float:
-    """Score a story's relevance. Higher = more relevant to the reader."""
-    text = f"{story.get('title', '')} {story.get('raw_text', '')[:500]}"
-    boosts = len(_BOOST_KEYWORDS.findall(text))
-    demotes = len(_DEMOTE_KEYWORDS.findall(text))
-    return boosts - (demotes * DEMOTE_MULTIPLIER)
+def _categorize(story: dict) -> str:
+    """Assign a topic category to a story. Returns category name or 'other'."""
+    text = f"{story.get('title', '')} {story.get('raw_text', '')[:300]}"
+    for cat_name, pattern in _TOPIC_CATEGORIES:
+        if pattern.search(text):
+            return cat_name
+    return "other"
+
+
+def _is_demoted(story: dict) -> bool:
+    """Check if a story matches low-interest patterns."""
+    text = f"{story.get('title', '')} {story.get('raw_text', '')[:200]}"
+    return bool(_DEMOTE_KEYWORDS.search(text))
 
 
 def _decode_google_news_url(url: str) -> str:
@@ -182,10 +191,11 @@ def _deduplicate(stories: list[dict]) -> list[dict]:
 
 
 def get_top_news(count: int = 5) -> list[dict]:
-    """Return a mix of top tech/AI stories and top general headlines.
+    """Return the top N most important, diverse stories of the day.
 
-    Ensures the reader gets both personally-relevant tech news AND
-    the biggest stories everyone is talking about today.
+    Mimics CNN's '5 things to know' format: each story covers a different
+    topic (war, economy, science, politics, etc.) so the reader gets a
+    broad picture of what's happening in the world.
     """
     feed_names = ", ".join(f["name"] for f in NEWS_FEEDS)
     logger.info("Fetching top %d news from %s", count, feed_names)
@@ -199,36 +209,39 @@ def get_top_news(count: int = 5) -> list[dict]:
 
     # Filter to today-only stories (keep unparseable dates as fallback)
     today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    unique = [s for s in unique if _parse_pub_date(s.get("published", "")).strftime("%Y-%m-%d") == today_str or _parse_pub_date(s.get("published", "")) == datetime.min.replace(tzinfo=timezone.utc)]
+    today_stories = [s for s in unique if _parse_pub_date(s.get("published", "")).strftime("%Y-%m-%d") == today_str or _parse_pub_date(s.get("published", "")) == datetime.min.replace(tzinfo=timezone.utc)]
 
-    # Score by relevance
-    for story in unique:
-        story["_relevance"] = _relevance_score(story)
+    # Fall back to all stories if nothing matched today
+    if len(today_stories) < count:
+        today_stories = unique
 
-    # Split: top stories by relevance (tech/AI) + CNN/general top headlines
-    by_relevance = sorted(unique, key=lambda s: (s["_relevance"], _parse_pub_date(s.get("published", ""))), reverse=True)
+    # Remove demoted stories (celebrity gossip, sports, etc.)
+    candidates = [s for s in today_stories if not _is_demoted(s)]
+    if len(candidates) < count:
+        candidates = today_stories  # don't filter if too few remain
 
-    # General sources for "what everyone is talking about today"
-    general_sources = {"CNN", "Google News", "NPR"}
-    general_stories = [s for s in unique if s["source"] in general_sources]
-    general_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
+    # Categorize each story
+    for s in candidates:
+        s["_category"] = _categorize(s)
 
-    # Take ceil(count/2) relevant + floor(count/2) general headlines
-    n_relevant = (count + 1) // 2  # 3 if count=5
-    n_general = count - n_relevant  # 2 if count=5
-
+    # Select stories with topic diversity: pick the most recent story
+    # from each category first, then fill remaining slots
     selected = []
     selected_titles = set()
+    used_categories = set()
 
-    # First: top relevant stories (tech/AI/security)
-    for s in by_relevance:
-        if len(selected) >= n_relevant:
+    # First pass: one story per category (most recent first, already sorted)
+    for s in candidates:
+        if len(selected) >= count:
             break
-        selected.append(s)
-        selected_titles.add(s["title"])
+        cat = s["_category"]
+        if cat not in used_categories:
+            selected.append(s)
+            selected_titles.add(s["title"])
+            used_categories.add(cat)
 
-    # Then: top CNN/general headlines not already selected
-    for s in general_stories:
+    # Second pass: fill remaining slots if we haven't hit count
+    for s in candidates:
         if len(selected) >= count:
             break
         if s["title"] not in selected_titles:
@@ -237,12 +250,12 @@ def get_top_news(count: int = 5) -> list[dict]:
 
     # Fetch article text for the selected stories
     for i, story in enumerate(selected, 1):
-        logger.debug("News #%d (relevance=%.1f): '%s' (%s)", i, story["_relevance"], story["title"], story["source"])
+        logger.debug("News #%d [%s]: '%s' (%s)", i, story["_category"], story["title"], story["source"])
         story["raw_text"] = _fetch_article_text(story["link"])
         story["summary"] = ""
-        del story["_relevance"]
+        del story["_category"]
 
     with_text = sum(1 for s in selected if s["raw_text"])
-    logger.info("News fetch complete: %d stories (%d relevant + %d general), %d with article text",
-                len(selected), n_relevant, len(selected) - n_relevant, with_text)
+    logger.info("News fetch complete: %d diverse stories, %d with article text",
+                len(selected), with_text)
     return selected if selected else [{"title": "No news available", "source": "", "link": "", "published": "", "summary": "", "raw_text": ""}]

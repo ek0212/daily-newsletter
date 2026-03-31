@@ -398,6 +398,31 @@ def _validate_summary(summary: str) -> str | None:
         if match:
             return f"verbatim transcript quote detected: '{match.group()[:50]}'"
 
+    # Check individual bullets for truncation (first chars eaten after emoji)
+    bullets_list = stripped.split('<br>')
+    for b in bullets_list:
+        b = b.strip()
+        if not b:
+            continue
+        # Extract text portion after the leading emoji character(s) + space
+        text_after = b
+        for ci, ch in enumerate(b):
+            if ch.isascii() and (ch.isalpha() or ch in "\"'(,;0123456789"):
+                text_after = b[ci:]
+                break
+        if not text_after:
+            continue
+        first_ch = text_after[0]
+        # Starts with comma/semicolon → mid-sentence fragment
+        if first_ch in ',;':
+            return f"bullet starts with truncated text: '{text_after[:30]}'"
+        # Starts with apostrophe followed by lowercase → contraction fragment ('t, 's, etc.)
+        if first_ch == "'" and len(text_after) > 1 and text_after[1].islower():
+            return f"bullet starts with contraction fragment: '{text_after[:30]}'"
+        # Starts with lowercase letter → mid-word fragment
+        if first_ch.islower():
+            return f"bullet starts mid-word: '{text_after[:30]}'"
+
     # Check for semantically vague bullets — meta-descriptions that say nothing
     vague_patterns = [
         r'(?i)the (?:podcast|episode|article|paper|discussion) (?:discussed|explores?|highlights?|focused on|suggests?|argues?)',
@@ -482,6 +507,60 @@ def generate_trending_topics(ai_security_items: list[dict]) -> list[dict]:
     return []
 
 
+def generate_ai_security_tldr(ai_security_items: list[dict]) -> str:
+    """Generate a single-sentence TLDR about the emerging AI security trends this week.
+
+    Returns a sentence explaining what trends are forming and why they matter,
+    e.g.: "Autonomous red-teaming tools are proliferating as vendors race to
+    probe LLM-powered apps before attackers do, while supply chain compromises
+    in AI tooling show the ecosystem's dependency risks are growing."
+    """
+    import os
+    from google import genai
+    from google.genai import types
+
+    api_keys = _get_api_keys()
+    if not api_keys or not ai_security_items:
+        return ""
+
+    # Give the model titles + short abstracts for richer context
+    items_text = []
+    for item in ai_security_items[:12]:
+        title = item.get("title", "")
+        abstract = (item.get("abstract") or item.get("raw_text") or "")[:300]
+        items_text.append(f"- {title}: {abstract}" if abstract else f"- {title}")
+    items_str = "\n".join(items_text)
+
+    prompt = (
+        "Below are this week's AI security papers and articles.\n\n"
+        f"{items_str}\n\n"
+        "Write EXACTLY ONE sentence (max 40 words) about the AI security trends "
+        "emerging this week and WHY they matter. Connect the dots across the items. "
+        "Do not list titles. Do not use em dashes. Write directly and specifically. "
+        "No quotes, no markdown. Return ONLY the sentence."
+    )
+
+    for api_key in api_keys:
+        try:
+            client = genai.Client(api_key=api_key)
+            response = client.models.generate_content(
+                model=GEMINI_MODEL,
+                contents=prompt,
+            )
+            text = response.text.strip().rstrip('.')
+            # Basic sanity check
+            if 10 < len(text) < 200 and not text.startswith('{'):
+                logger.info("AI security TLDR generated: %s", text[:80])
+                return text + '.'
+        except Exception as e:
+            logger.warning("AI security TLDR failed with key ...%s: %s",
+                           api_key[-6:], str(e)[:80])
+            continue
+
+    # Fallback: extract themes from titles
+    return ""
+
+
 def _fallback_summarize(sections: dict) -> dict:
     """Summarize all sections using sumy extractive summarizer."""
     return {
@@ -522,6 +601,20 @@ def _split_sentences(text: str) -> list[str]:
     return sentences
 
 
+def _is_clean_sentence(s: str) -> bool:
+    """Check if a string looks like a complete sentence (not a fragment)."""
+    s = s.strip()
+    if not s or len(s) < 20:
+        return False
+    # Must start with uppercase letter, number, or opening quote
+    if not (s[0].isupper() or s[0].isdigit() or s[0] in '""\u201c'):
+        return False
+    # Must not start with common fragment indicators
+    if s[0] in ',;' or (s[0] == "'" and len(s) > 1 and s[1].islower()):
+        return False
+    return True
+
+
 def _fallback_section(items: list[dict], section_type: str) -> list[str]:
     """Summarize a single section's items using sumy, formatted as emoji bullets.
 
@@ -545,7 +638,7 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
                 # Pick first 3 sentences that are long enough and not sponsor/ad text
                 import re
                 ad_re = re.compile(r'(?i)(?:brought to you|sponsored by|use code|promo code|sign up at|free trial|percent off|dollars off)')
-                good = [s for s in sentences if not ad_re.search(s)][:3]
+                good = [s for s in sentences if not ad_re.search(s) and _is_clean_sentence(s)][:3]
                 if len(good) >= 2:
                     bullets = []
                     for j, sent in enumerate(good):
@@ -562,8 +655,19 @@ def _fallback_section(items: list[dict], section_type: str) -> list[str]:
             continue
         # Split extractive summary into sentences using robust splitter
         sentences = _split_sentences(raw.replace('<br>', ' '))
+        # Filter out fragment sentences that don't start cleanly
+        clean_sentences = [s for s in sentences if _is_clean_sentence(s)]
+        # If extractive produced only fragments, fall back to raw text sentences
+        if len(clean_sentences) < 2:
+            raw_text = (item.get("raw_text") or "").strip()
+            if len(raw_text) > 100:
+                raw_sentences = _split_sentences(raw_text[:3000])
+                clean_sentences = [s for s in raw_sentences if _is_clean_sentence(s)][:3]
+        if not clean_sentences:
+            results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
+            continue
         bullets = []
-        for j, sent in enumerate(sentences[:3]):
+        for j, sent in enumerate(clean_sentences[:3]):
             emoji = section_emojis[j % len(section_emojis)]
             bullets.append(f"{emoji} {sent}")
         results.append("<br>".join(bullets) if bullets else f"{section_emojis[0]} {raw}")
