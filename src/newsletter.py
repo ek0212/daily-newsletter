@@ -4,6 +4,7 @@
 import logging
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 from pathlib import Path
 
@@ -39,33 +40,41 @@ def fetch_all_data() -> dict:
     """Fetch all newsletter sections, then batch-summarize via Gemini."""
     fetch_start = time.time()
 
-    t0 = time.time()
-    weather = get_nyc_weather()
-    logger.info("Weather fetched in %.1fs", time.time() - t0)
+    # Run all fetchers concurrently — they are fully independent
+    fetchers = {
+        "weather": lambda: get_nyc_weather(),
+        "health": lambda: get_nyc_health_status(),
+        "events": lambda: get_nyc_events(),
+        "news": lambda: get_top_news(count=DEFAULT_NEWS_COUNT),
+        "youtube": lambda: get_recent_videos(days=DEFAULT_YOUTUBE_DAYS),
+        "papers": lambda: get_ai_security_papers(days_back=DEFAULT_PAPERS_DAYS_BACK, top_n=DEFAULT_PAPERS_TOP_N),
+        "ai_security_news": lambda: get_ai_security_news(count=DEFAULT_AI_NEWS_COUNT),
+    }
 
-    t0 = time.time()
-    health = get_nyc_health_status()
-    logger.info("Health status fetched in %.1fs", time.time() - t0)
+    results = {}
+    with ThreadPoolExecutor(max_workers=len(fetchers)) as executor:
+        future_to_name = {}
+        timers = {}
+        for name, fn in fetchers.items():
+            timers[name] = time.time()
+            future_to_name[executor.submit(fn)] = name
 
-    t0 = time.time()
-    events = get_nyc_events()
-    logger.info("Events fetched in %.1fs", time.time() - t0)
+        for future in as_completed(future_to_name):
+            name = future_to_name[future]
+            try:
+                results[name] = future.result()
+            except Exception as e:
+                logger.error("Fetcher %s failed: %s", name, e)
+                results[name] = [] if name != "weather" else {}
+            logger.info("%s fetched in %.1fs", name.capitalize(), time.time() - timers[name])
 
-    t0 = time.time()
-    news = get_top_news(count=DEFAULT_NEWS_COUNT)
-    logger.info("News fetched in %.1fs", time.time() - t0)
-
-    t0 = time.time()
-    youtube = get_recent_videos(days=DEFAULT_YOUTUBE_DAYS)
-    logger.info("YouTube videos fetched in %.1fs", time.time() - t0)
-
-    t0 = time.time()
-    papers = get_ai_security_papers(days_back=DEFAULT_PAPERS_DAYS_BACK, top_n=DEFAULT_PAPERS_TOP_N)
-    logger.info("Papers fetched in %.1fs", time.time() - t0)
-
-    t0 = time.time()
-    ai_security_news = get_ai_security_news(count=DEFAULT_AI_NEWS_COUNT)
-    logger.info("AI security news fetched in %.1fs", time.time() - t0)
+    weather = results["weather"]
+    health = results["health"]
+    events = results["events"]
+    news = results["news"]
+    youtube = results["youtube"]
+    papers = results["papers"]
+    ai_security_news = results["ai_security_news"]
 
     logger.info("All data fetched in %.1fs", time.time() - fetch_start)
 

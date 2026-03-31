@@ -20,17 +20,24 @@ logger = logging.getLogger(__name__)
 
 API_URL = NYC_EVENTS_API_URL
 
-# Downtown Manhattan (1st St) up to 90th Street
-MIN_STREET = 0
-MAX_STREET = 90
+# ~20 min walking radius from midtown (~42nd St): 14th St to 72nd St
+MIN_STREET = 14
+MAX_STREET = 72
 
-# Named streets/areas known to be above 90th St — exclude these
-_FAR_UPTOWN_KEYWORDS = [
+# Named streets/areas outside the 14th-72nd St walking radius — exclude these
+_OUT_OF_RANGE_KEYWORDS = [
+    # Uptown / far north
     "inwood", "isham", "dyckman", "fort tryon", "fort george",
     "washington heights", "harlem", "morningside", "cathedral",
     "broadway terrace", "nagle", "academy", "hillside",
     "seaman", "indian road", "payson", "cooper",
     "edgecombe", "convent", "hamilton terrace",
+    # Downtown / financial district (below 14th)
+    "wall street", "battery", "fulton", "south street seaport",
+    "water street", "broad street", "pearl street", "whitehall",
+    "bowling green", "city hall", "chambers", "canal",
+    "chinatown", "little italy", "tribeca", "soho",
+    "lower east side", "delancey", "rivington", "orchard",
 ]
 
 MAX_EVENTS_DISPLAY = 5
@@ -122,18 +129,16 @@ def _extract_street_number(location: str) -> int | None:
 
 def _is_within_range(location: str) -> bool:
     """Check if event location is between downtown and 90th St."""
-    # First check if location contains known far-uptown keywords
     loc_lower = location.lower()
-    for kw in _FAR_UPTOWN_KEYWORDS:
+    for kw in _OUT_OF_RANGE_KEYWORDS:
         if kw in loc_lower:
             return False
 
     street_num = _extract_street_number(location)
     if street_num is None:
-        # Can't determine street number (park, named venue, etc.)
-        # Include it so we don't accidentally drop big events in
-        # lower/midtown Manhattan (most permitted events are there)
-        return True
+        # Can't determine street number — exclude to avoid showing
+        # events far from midtown
+        return False
     return MIN_STREET <= street_num <= MAX_STREET
 
 
@@ -181,10 +186,10 @@ def get_nyc_events() -> list[dict]:
         start = today.strftime("%Y-%m-%dT00:00:00")
         end = end_of_week.strftime("%Y-%m-%dT23:59:59")
 
-        # Manhattan events with any street closure (matches the NYC Open Data filter approach)
+        # Manhattan events with full street closures only (partial closures are noise)
         query = (
             f"event_borough='Manhattan' "
-            f"AND street_closure_type != 'N/A' "
+            f"AND street_closure_type = 'Full Street Closure' "
             f"AND start_date_time >= '{start}' "
             f"AND start_date_time <= '{end}'"
         )

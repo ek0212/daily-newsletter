@@ -7,6 +7,7 @@ same subject.
 
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 
@@ -199,9 +200,15 @@ def get_top_news(count: int = 5) -> list[dict]:
     """
     feed_names = ", ".join(f["name"] for f in NEWS_FEEDS)
     logger.info("Fetching top %d news from %s", count, feed_names)
+    # Fetch all RSS feeds in parallel
+    with ThreadPoolExecutor(max_workers=len(NEWS_FEEDS)) as executor:
+        feed_results = list(executor.map(
+            lambda cfg: _fetch_feed(cfg, limit=count * NEWS_FEED_LIMIT_MULTIPLIER),
+            NEWS_FEEDS,
+        ))
     all_stories = []
-    for feed_cfg in NEWS_FEEDS:
-        all_stories.extend(_fetch_feed(feed_cfg, limit=count * NEWS_FEED_LIMIT_MULTIPLIER))
+    for stories in feed_results:
+        all_stories.extend(stories)
 
     # Sort by recency, deduplicate
     all_stories.sort(key=lambda s: _parse_pub_date(s.get("published", "")), reverse=True)
@@ -248,10 +255,16 @@ def get_top_news(count: int = 5) -> list[dict]:
             selected.append(s)
             selected_titles.add(s["title"])
 
-    # Fetch article text for the selected stories
-    for i, story in enumerate(selected, 1):
-        logger.debug("News #%d [%s]: '%s' (%s)", i, story["_category"], story["title"], story["source"])
-        story["raw_text"] = _fetch_article_text(story["link"])
+    # Fetch article text for the selected stories in parallel
+    def _fetch_for_story(story):
+        return _fetch_article_text(story["link"])
+
+    with ThreadPoolExecutor(max_workers=min(6, len(selected))) as executor:
+        texts = list(executor.map(_fetch_for_story, selected))
+
+    for i, story in enumerate(selected):
+        logger.debug("News #%d [%s]: '%s' (%s)", i + 1, story["_category"], story["title"], story["source"])
+        story["raw_text"] = texts[i]
         story["summary"] = ""
         del story["_category"]
 

@@ -106,34 +106,35 @@ def batch_summarize(sections: dict) -> dict:
                 else:
                     raise
 
-    # Run sections sequentially, assigning keys via round-robin so each section
-    # gets a different key when possible (avoids two sections sharing one key).
-    for idx, (section_key, items) in enumerate(active):
-        # Round-robin: section 0 → key 0, section 1 → key 1, etc.
+    # Run sections in parallel, each on its own thread with round-robin key assignment
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    def _try_section(idx, section_key, items):
         assigned_keys = [api_keys[(idx + offset) % len(api_keys)] for offset in range(len(api_keys))]
-        last_exc = None
-        section_done = False
         for api_key in assigned_keys:
             try:
                 key, summaries = _summarize_section(section_key, items, api_key)
-                result[key] = summaries
                 logger.info("Section %s: got %d summaries", key, len(summaries))
-                section_done = True
-                break
+                return key, summaries
             except Exception as e:
                 err_str = str(e)
-                last_exc = e
-                # Expired, invalid, or daily-quota-exhausted key — try the next key
                 if any(x in err_str.lower() for x in ["expired", "api key", "invalid"]) or "PerDay" in err_str:
                     logger.warning("Key ...%s unusable for %s (%s), trying next key.",
                                    api_key[-6:], section_key,
                                    "daily quota" if "PerDay" in err_str else "expired/invalid")
                     continue
-                # Any other error (500, network, etc.) — stop trying keys
                 break
-        if not section_done:
-            logger.warning("All keys failed for %s: %s. Using extractive fallback.", section_key, last_exc)
-            result[section_key] = _fallback_section(sections.get(section_key, []), section_key)
+        logger.warning("All keys failed for %s. Using extractive fallback.", section_key)
+        return section_key, _fallback_section(sections.get(section_key, []), section_key)
+
+    with ThreadPoolExecutor(max_workers=len(active)) as executor:
+        futures = {
+            executor.submit(_try_section, idx, section_key, items): section_key
+            for idx, (section_key, items) in enumerate(active)
+        }
+        for future in as_completed(futures):
+            key, summaries = future.result()
+            result[key] = summaries
 
     return result
 
@@ -557,7 +558,26 @@ def generate_ai_security_tldr(ai_security_items: list[dict]) -> str:
                            api_key[-6:], str(e)[:80])
             continue
 
-    # Fallback: extract themes from titles
+    # Fallback: build a simple TLDR from the most common themes in titles
+    if ai_security_items:
+        titles = " ".join(item.get("title", "") for item in ai_security_items).lower()
+        themes = []
+        theme_keywords = [
+            ("supply chain", "supply chain attacks on AI tooling"),
+            ("llm", "LLM security vulnerabilities"),
+            ("prompt injection", "prompt injection techniques"),
+            ("agent", "autonomous AI agent risks"),
+            ("jailbreak", "jailbreak methods"),
+            ("red team", "AI red-teaming developments"),
+            ("vulnerability", "newly disclosed AI vulnerabilities"),
+        ]
+        for keyword, label in theme_keywords:
+            if keyword in titles:
+                themes.append(label)
+            if len(themes) >= 2:
+                break
+        if themes:
+            return f"This week's focus: {' and '.join(themes)}."
     return ""
 
 

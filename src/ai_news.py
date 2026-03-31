@@ -1,6 +1,7 @@
 """Fetch AI security news headlines from Google News RSS search."""
 
 import logging
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -109,18 +110,22 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
         candidates = candidates[:count * AI_NEWS_CANDIDATE_MULTIPLIER]
         logger.info("Pre-filtered to %d candidates by title relevance", len(candidates))
 
-        # Process candidates: extract text and score relevance
-        scored = []
-        for entry in candidates:
+        # Process candidates: extract text in parallel and score relevance
+        def _process_entry(entry):
             title = entry.title
             source = ""
             if " - " in title:
                 parts = title.rsplit(" - ", 1)
                 title, source = parts[0], parts[1]
-
             raw_text = _fetch_article_text(entry.link)
             score = _relevance_score(title, raw_text)
+            return title, source, entry, raw_text, score
 
+        with ThreadPoolExecutor(max_workers=min(6, len(candidates))) as executor:
+            processed = list(executor.map(_process_entry, candidates))
+
+        scored = []
+        for title, source, entry, raw_text, score in processed:
             if score < 1:
                 logger.debug("Filtered out (score %d): %s", score, title[:60])
                 continue
