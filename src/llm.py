@@ -34,7 +34,7 @@ SECTION_KEYS = ["news", "youtube", "ai_security"]
 def _get_api_keys() -> list[str]:
     """Collect all available Gemini API keys from environment variables."""
     keys = []
-    for var in ["GEMINI_API_KEY", "GEMINI_API_KEY_2"]:
+    for var in ["GEMINI_API_KEY", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3"]:
         k = os.getenv(var)
         if k:
             keys.append(k)
@@ -636,59 +636,80 @@ def _is_clean_sentence(s: str) -> bool:
 
 
 def _fallback_section(items: list[dict], section_type: str) -> list[str]:
-    """Summarize a single section's items using sumy, formatted as emoji bullets.
+    """Generate minimal, honest fallback summaries when Gemini is unavailable.
 
-    YouTube transcripts are conversational text that LexRank cannot meaningfully
-    summarize, so YouTube items fall back to a description from the raw_text if available.
+    Extractive summarizers (LexRank) produce incoherent or misattributed text
+    on newsletter content, so instead we extract the first few clean sentences
+    directly from the raw text, verifying they relate to the item's title.
     """
+    import re
+
     emojis = {
         "news": ["📰", "📢", "🔍"],
         "youtube": ["🎬", "⚡", "📊"],
         "ai_security": ["🛡️", "🔍", "⚠️"],
     }
     section_emojis = emojis.get(section_type, ["📌", "📎", "🔹"])
+
+    ad_re = re.compile(
+        r'(?i)(?:brought to you|sponsored by|use code|promo code|sign up at|'
+        r'learn more at|download it at|free trial|percent off|dollars off|'
+        r'less than \d+ min read|subscribe|newsletter|cookie|privacy policy)'
+    )
+
     results = []
     for item in items:
-        # YouTube: LexRank on spoken transcripts produces verbatim gibberish.
-        # Try to extract a few coherent sentences from the raw text instead.
-        if section_type == "youtube":
-            raw_text = (item.get("raw_text") or "").strip()
-            if len(raw_text) > 200:
-                sentences = _split_sentences(raw_text[:3000])
-                # Pick first 3 sentences that are long enough and not sponsor/ad text
-                import re
-                ad_re = re.compile(r'(?i)(?:brought to you|sponsored by|use code|promo code|sign up at|free trial|percent off|dollars off)')
-                good = [s for s in sentences if not ad_re.search(s) and _is_clean_sentence(s)][:3]
-                if len(good) >= 2:
-                    bullets = []
-                    for j, sent in enumerate(good):
-                        emoji = section_emojis[j % len(section_emojis)]
-                        bullets.append(f"{emoji} {sent}")
-                    results.append("<br>".join(bullets))
-                    continue
-            results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
-            continue
-        raw = summarize(item.get("raw_text", ""), num_sentences=3, title=item.get("title", ""))
-        if not raw or len(raw.strip()) < 20:
-            # Minimal fallback from title
-            results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
-            continue
-        # Split extractive summary into sentences using robust splitter
-        sentences = _split_sentences(raw.replace('<br>', ' '))
-        # Filter out fragment sentences that don't start cleanly
-        clean_sentences = [s for s in sentences if _is_clean_sentence(s)]
-        # If extractive produced only fragments, fall back to raw text sentences
-        if len(clean_sentences) < 2:
-            raw_text = (item.get("raw_text") or "").strip()
-            if len(raw_text) > 100:
-                raw_sentences = _split_sentences(raw_text[:3000])
-                clean_sentences = [s for s in raw_sentences if _is_clean_sentence(s)][:3]
-        if not clean_sentences:
-            results.append(f"{section_emojis[0]} {item.get('title', 'No summary available.')}")
-            continue
+        title = item.get("title", "")
+        raw_text = (item.get("raw_text") or "").strip()
+
+        # Extract clean, relevant sentences from the beginning of the article
         bullets = []
-        for j, sent in enumerate(clean_sentences[:3]):
-            emoji = section_emojis[j % len(section_emojis)]
-            bullets.append(f"{emoji} {sent}")
-        results.append("<br>".join(bullets) if bullets else f"{section_emojis[0]} {raw}")
+        if len(raw_text) > 100:
+            # Skip intro boilerplate (bylines, dates, etc.)
+            text_to_scan = raw_text[200:3000] if len(raw_text) > 500 else raw_text[:3000]
+            sentences = _split_sentences(text_to_scan)
+
+            # Title keywords for relevance check (excluding common stopwords)
+            _stopwords = {
+                'about', 'after', 'also', 'been', 'before', 'being', 'between',
+                'both', 'came', 'come', 'coming', 'could', 'does', 'done',
+                'each', 'even', 'every', 'from', 'gets', 'going', 'gone',
+                'good', 'have', 'here', 'high', 'into', 'just', 'keep',
+                'know', 'last', 'like', 'long', 'look', 'made', 'make',
+                'many', 'more', 'most', 'much', 'must', 'need', 'next',
+                'only', 'open', 'over', 'part', 'says', 'said', 'show',
+                'some', 'such', 'take', 'tell', 'than', 'that', 'them',
+                'then', 'they', 'this', 'very', 'want', 'well', 'were',
+                'what', 'when', 'will', 'with', 'work', 'year', 'your',
+            }
+            title_words = set(w.lower() for w in title.split() if len(w) > 3) - _stopwords
+
+            for sent in sentences:
+                if not _is_clean_sentence(sent):
+                    continue
+                if ad_re.search(sent):
+                    continue
+                # Ensure sentence ends properly (not mid-word)
+                if not sent.rstrip().endswith(('.', '!', '?', '"', '\u201d')):
+                    continue
+                # Relevance: at least 2 title keywords must appear to avoid
+                # false matches on common words
+                sent_lower = sent.lower()
+                matches = sum(1 for w in title_words if w in sent_lower)
+                if title_words and matches < min(2, len(title_words)):
+                    continue
+                emoji = section_emojis[len(bullets) % len(section_emojis)]
+                bullets.append(f"{emoji} {sent.strip()}")
+                if len(bullets) >= 3:
+                    break
+
+        if bullets:
+            results.append("<br>".join(bullets))
+        else:
+            # Honest minimal fallback — just the title, no fake summary
+            label = {"news": "📰 Breaking", "youtube": "🎬 New episode", "ai_security": "🛡️ Security update"}.get(section_type, "📌 Update")
+            source = item.get("source", "")
+            suffix = f" from {source}" if source else ""
+            results.append(f"{label}{suffix}: {title}.")
+
     return results
