@@ -95,6 +95,9 @@
       {% if story.summary %}
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ story.summary | safe }}</div>
       {% endif %}
+      {% if story.sdk_summary %}
+        <div style="font-size: 13.5px; color: #555; line-height: 1.65; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif; padding: 10px 14px; background: #f7f5ef; border-left: 3px solid #bbb;">{{ story.sdk_summary | replace('\n\n', '<br><br>') | safe }}</div>
+      {% endif %}
     </div>
     {% endfor %}
     {% if not news %}<div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No news available today.</div>{% endif %}
@@ -117,6 +120,9 @@
       <!-- Summary -->
       {% if vid.summary %}
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ vid.summary | safe }}</div>
+      {% endif %}
+      {% if vid.sdk_summary %}
+        <div style="font-size: 13.5px; color: #555; line-height: 1.65; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif; padding: 10px 14px; background: #f7f5ef; border-left: 3px solid #bbb;">{{ vid.sdk_summary | replace('\n\n', '<br><br>') | safe }}</div>
       {% endif %}
     </div>
     {% endfor %}
@@ -186,6 +192,9 @@
       <!-- Summary -->
       {% set paper_summary = item.abstract if item.abstract else 'No abstract available.' %}
       <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ paper_summary | safe }}</div>
+      {% if item.sdk_summary %}
+        <div style="font-size: 13.5px; color: #555; line-height: 1.65; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif; padding: 10px 14px; background: #f7f5ef; border-left: 3px solid #bbb;">{{ item.sdk_summary | replace('\n\n', '<br><br>') | safe }}</div>
+      {% endif %}
       {% else %}
       <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{% if item.published %}{{ item.published }}{% else %}Today{% endif %}{% if item.source %} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ item.source }}</span>{% endif %}</div>
@@ -194,6 +203,9 @@
       <!-- Summary -->
       {% if item.summary %}
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.summary | safe }}</div>
+      {% endif %}
+      {% if item.sdk_summary %}
+        <div style="font-size: 13.5px; color: #555; line-height: 1.65; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif; padding: 10px 14px; background: #f7f5ef; border-left: 3px solid #bbb;">{{ item.sdk_summary | replace('\n\n', '<br><br>') | safe }}</div>
       {% endif %}
       {% endif %}
     </div>
