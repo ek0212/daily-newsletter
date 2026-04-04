@@ -33,7 +33,37 @@ from src.health import get_nyc_health_status
 from src.llm import batch_summarize, generate_trending_topics, generate_ai_security_tldr
 from src.site_generator import update_site
 
+try:
+    from text_summarizer import summarize as sdk_summarize
+    SDK_SUMMARIZER_AVAILABLE = True
+except ImportError:
+    SDK_SUMMARIZER_AVAILABLE = False
+    logger.warning("text_summarizer SDK not available; sdk_summary will be skipped")
+
 logger = logging.getLogger(__name__)
+
+MIN_SDK_TEXT_LENGTH = 100
+
+
+def _run_sdk_summarizer(items: list[dict], text_field: str = "raw_text") -> None:
+    """Call sdk_summarize on each item in parallel; attach sdk_summary to the item dict."""
+    if not SDK_SUMMARIZER_AVAILABLE:
+        return
+
+    def _summarize_item(item: dict) -> None:
+        text = item.get(text_field) or item.get("abstract") or item.get("raw_text") or ""
+        if len(text) < MIN_SDK_TEXT_LENGTH:
+            return
+        try:
+            summary, _insights, _entities = sdk_summarize(text)
+            item["sdk_summary"] = summary.strip()
+        except Exception as e:
+            logger.warning("sdk_summarize failed for '%s': %s", item.get("title", "?")[:60], e)
+
+    with ThreadPoolExecutor(max_workers=8) as executor:
+        futures = [executor.submit(_summarize_item, item) for item in items]
+        for f in as_completed(futures):
+            f.result()  # surface any unexpected exceptions
 
 
 def fetch_all_data() -> dict:
@@ -122,6 +152,12 @@ def fetch_all_data() -> dict:
     for item in ai_security:
         if item["type"] == "paper":
             item["quick_summary"] = item.get("abstract", "")
+
+    # Run text-summarizer SDK on all items in parallel
+    t0 = time.time()
+    all_content_items = news + youtube + ai_security
+    _run_sdk_summarizer(all_content_items)
+    logger.info("SDK summarization completed in %.1fs", time.time() - t0)
 
     # Generate trending AI security topics for purple teamers
     t0 = time.time()
