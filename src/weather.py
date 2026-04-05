@@ -125,8 +125,15 @@ def get_nyc_weather() -> dict:
             forecast = today["detailedForecast"]
 
         hourly_breakdown = _parse_hourly_periods(hourly_periods)
-        logger.info("NYC weather fetched: %s°%s, %s, H:%s/L:%s, %d hourly slots",
+
+        # Compute current feels-like temperature
+        current_wind = current.get("windSpeed", "")
+        current_humidity = current.get("relativeHumidity", {}).get("value")
+        current_feels_like = _calc_feels_like(current["temperature"], current_wind, current_humidity)
+
+        logger.info("NYC weather fetched: %s°%s (feels %s°), %s, H:%s/L:%s, %d hourly slots",
                     current["temperature"], current["temperatureUnit"],
+                    current_feels_like,
                     current["shortForecast"], high, low, len(hourly_breakdown))
         return {
             "current_temp": current["temperature"],
@@ -134,6 +141,7 @@ def get_nyc_weather() -> dict:
             "conditions": current["shortForecast"],
             "high": high,
             "low": low,
+            "feels_like": current_feels_like,
             "forecast": forecast,
             "hourly": hourly_breakdown,
         }

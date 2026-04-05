@@ -15,6 +15,7 @@ from src.constants import (
     GOOGLE_NEWS_SEARCH_URL,
     MIN_TEXT_LENGTH_SHORT,
 )
+from src.summarizer import summarize as extractive_summarize
 
 logger = logging.getLogger(__name__)
 
@@ -121,7 +122,7 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
             score = _relevance_score(title, raw_text)
             return title, source, entry, raw_text, score
 
-        with ThreadPoolExecutor(max_workers=min(6, len(candidates))) as executor:
+        with ThreadPoolExecutor(max_workers=max(1, min(6, len(candidates)))) as executor:
             processed = list(executor.map(_process_entry, candidates))
 
         scored = []
@@ -130,12 +131,19 @@ def get_ai_security_news(count: int = 4) -> list[dict]:
                 logger.debug("Filtered out (score %d): %s", score, title[:60])
                 continue
 
+            summary = ""
+            if raw_text:
+                try:
+                    summary = extractive_summarize(raw_text, num_sentences=2, title=title) or ""
+                except Exception as e:
+                    logger.warning("Summarize failed for '%s': %s", title[:60], e)
+
             scored.append({
                 "title": title,
                 "source": source,
                 "link": entry.link,
                 "published": entry.get("published", ""),
-                "summary": "",
+                "summary": summary,
                 "raw_text": raw_text,
                 "_score": score,
             })

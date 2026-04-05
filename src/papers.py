@@ -22,6 +22,7 @@ from src.constants import (
     SEMANTIC_SCHOLAR_API_URL,
     USER_AGENT,
 )
+from src.summarizer import summarize as extractive_summarize
 
 logger = logging.getLogger(__name__)
 
@@ -278,7 +279,14 @@ def get_ai_security_papers(days_back: int = 7, top_n: int = 5) -> list[dict]:
     top_papers = papers[:top_n]
     top_papers.sort(key=lambda p: p.get("published", ""), reverse=True)
     for p in top_papers:
-        p["quick_summary"] = ""
         p["raw_text"] = p.get("abstract", "")
+        p["summary"] = ""
+        if p["raw_text"]:
+            try:
+                result = extractive_summarize(p["raw_text"], num_sentences=2, title=p.get("title", ""))
+                if result:
+                    p["summary"] = result
+            except Exception as e:
+                logger.warning("Summarize failed for paper '%s': %s", p["title"][:60], e)
     logger.info("Papers complete: top %d selected", len(top_papers))
     return top_papers

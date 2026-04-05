@@ -10,7 +10,7 @@ from pathlib import Path
 
 from dotenv import load_dotenv
 
-from src.constants import GEMINI_MODEL
+GEMINI_MODEL = "gemini-3-flash-preview"  # standalone tool, not part of newsletter pipeline
 
 PROJECT_ROOT = Path(__file__).parent.parent
 SITE_DIR = PROJECT_ROOT / "site"

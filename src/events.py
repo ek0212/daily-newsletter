@@ -12,6 +12,7 @@ import requests
 
 from src.constants import (
     EVENTS_API_LIMIT,
+    EVENTS_LOOKAHEAD_DAYS,
     HTTP_TIMEOUT_MEDIUM,
     NYC_EVENTS_API_URL,
 )
@@ -168,28 +169,25 @@ def _relevance_score(name: str, event_type: str, closure_type: str) -> float:
 
 
 def get_nyc_events() -> list[dict]:
-    """Fetch nearby NYC events for the current week (today through Sunday).
+    """Fetch nearby NYC events for the next 7 days.
 
-    Queries Manhattan events with any street closure, filters to walking
-    distance of Midtown, ranks by relevance, and returns the top results.
-    Returns list of dicts with: name, date, borough, location, event_type.
+    Queries Manhattan events with Full Street Closure in Community Board 5
+    (Midtown, roughly 14th-59th St between 3rd and 8th Ave).
+    Ranks by relevance and returns the top results.
     Deduplicates by event name (same event may span multiple street segments).
     """
     try:
         today = datetime.now()
-        # End of week (Sunday)
-        days_until_sunday = 6 - today.weekday()  # Monday=0, Sunday=6
-        if days_until_sunday < 0:
-            days_until_sunday = 0
-        end_of_week = today + timedelta(days=days_until_sunday)
+        end_date = today + timedelta(days=EVENTS_LOOKAHEAD_DAYS)
 
         start = today.strftime("%Y-%m-%dT00:00:00")
-        end = end_of_week.strftime("%Y-%m-%dT23:59:59")
+        end = end_date.strftime("%Y-%m-%dT23:59:59")
 
-        # Manhattan events with full street closures only (partial closures are noise)
+        # Manhattan events with full street closures in Community Board 5
         query = (
             f"event_borough='Manhattan' "
             f"AND street_closure_type = 'Full Street Closure' "
+            f"AND community_board LIKE '%5,%' "
             f"AND start_date_time >= '{start}' "
             f"AND start_date_time <= '{end}'"
         )
@@ -214,10 +212,6 @@ def get_nyc_events() -> list[dict]:
                 continue
 
             location_raw = item.get("event_location", "")
-
-            # Filter to downtown through 90th St
-            if not _is_within_range(location_raw):
-                continue
 
             dt = item.get("start_date_time", "")
             try:
@@ -247,8 +241,8 @@ def get_nyc_events() -> list[dict]:
         for e in events:
             del e["_score"]
 
-        logger.info("Found %d Manhattan events (downtown-90th), showing top %d by relevance",
-                     len(seen), len(events))
+        logger.info("Found %d Manhattan CB5 events (next %d days), showing top %d by relevance",
+                     len(seen), EVENTS_LOOKAHEAD_DAYS, len(events))
         return events
 
     except Exception as e:

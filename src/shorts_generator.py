@@ -18,8 +18,9 @@ try:
 except ImportError:
     HAS_PILLOW = False
 
+GEMINI_MODEL = "gemini-3-flash-preview"  # standalone tool, not part of newsletter pipeline
+
 from constants import (
-    GEMINI_MODEL,
     SHORTS_WIDTH, SHORTS_HEIGHT, SHORTS_DIR,
     SHORTS_HOOK_BG, SHORTS_BODY_BG, SHORTS_CTA_BG,
     SHORTS_ACCENT, SHORTS_TEXT_LIGHT, SHORTS_TEXT_DARK,

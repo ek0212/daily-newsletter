@@ -1,5 +1,10 @@
 """Centralized constants for the daily newsletter pipeline."""
 
+import os
+
+# ── Feature flags ──────────────────────────────────────────────────────
+VERBOSE_LOGGING = os.getenv("VERBOSE_LOGGING", "0") == "1"
+
 # ── Fetch defaults (newsletter.py orchestration) ────────────────────────
 DEFAULT_NEWS_COUNT = 5
 DEFAULT_YOUTUBE_DAYS = 1
@@ -12,10 +17,6 @@ HTTP_TIMEOUT_SHORT = 5       # quick probes (HEAD requests, socket checks)
 HTTP_TIMEOUT_DEFAULT = 10    # standard API calls (weather, citations)
 HTTP_TIMEOUT_MEDIUM = 15     # slower feeds (arxiv, HF, events, health)
 HTTP_TIMEOUT_LONG = 30       # arxiv bulk queries
-
-GEMINI_MODEL = "gemini-3-flash-preview"
-GEMINI_MAX_RETRIES = 3
-GEMINI_RETRY_BASE_DELAY = 6  # seconds, multiplied by (attempt + 1)
 
 # ── Text processing thresholds ──────────────────────────────────────────
 MIN_TEXT_LENGTH_SHORT = 100   # minimum useful article text
@@ -31,6 +32,8 @@ TEXT_SKIP_INTRO = 200         # chars to skip at start of transcripts
 SUMMARIZER_MIN_TEXT = 200     # minimum input for extractive summarizer
 SUMMARIZER_URL_THRESHOLD = 3  # skip text with more URLs than this
 SUMMARIZER_SKIP_INTRO = 500   # chars to skip for long transcripts
+MAX_SUMMARY_CHARS = 350       # max chars for displayed summaries (LLM targets 250)
+MAX_ABSTRACT_CHARS = 250      # max chars for paper abstracts in newsletter
 
 # ── Scoring & similarity ────────────────────────────────────────────────
 PODCAST_MATCH_THRESHOLD = 0.3
@@ -50,11 +53,7 @@ NEWS_FEED_LIMIT_MULTIPLIER = 3
 AI_NEWS_CANDIDATE_MULTIPLIER = 3
 AI_NEWS_DAYS_CUTOFF = 7
 EVENTS_API_LIMIT = 50
-
-# ── LLM quality validation ──────────────────────────────────────────────
-MIN_SUMMARY_LENGTH = 10
-MIN_EMOJI_BULLETS = 2
-MIN_BULLET_SEGMENTS = 2
+EVENTS_LOOKAHEAD_DAYS = 7
 
 # ── Display & site ───────────────────────────────────────────────────────
 DATE_DISPLAY_FORMAT = "%A, %B %d, %Y"
@@ -98,3 +97,10 @@ SHORTS_FONT_STAT = 72
 SHORTS_FONT_CTA = 52
 SHORTS_FONT_SMALL = 28
 SHORTS_MARGIN = 80
+
+# ── Groq LLM summarizer ────────────────────────────────────────────────
+GROQ_MODEL = "llama-3.3-70b-versatile"
+GROQ_MAX_TOKENS = 150        # 2 sentences, ~250 chars = ~60 tokens; 150 gives headroom
+GROQ_TEMPERATURE = 0.3
+GROQ_MAX_INPUT_CHARS = 1000  # truncate source text to save TPM (free tier: 12K TPM)
+GROQ_RATE_LIMIT_DELAY = 1.0  # seconds between calls (free tier: 30 RPM)

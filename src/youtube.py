@@ -22,6 +22,7 @@ from src.constants import (
     MIN_TEXT_LENGTH_SHORT,
     PODCAST_MATCH_THRESHOLD,
 )
+from src.summarizer import summarize as extractive_summarize
 
 logger = logging.getLogger(__name__)
 
@@ -416,6 +417,16 @@ def get_recent_videos(days: int = 3) -> list[dict]:
         video["raw_text"] = _get_transcript_text(video["video_id"])
         if video["raw_text"]:
             video["_text_source"] = "youtube"
+
+    # Summarize each video's text
+    for video in selected:
+        if video.get("raw_text"):
+            try:
+                result = extractive_summarize(video["raw_text"], num_sentences=2, title=video.get("title", ""))
+                if result:
+                    video["summary"] = result
+            except Exception as e:
+                logger.warning("Summarize failed for '%s': %s", video["title"][:60], e)
 
     # Clean up and log
     for video in selected:

@@ -13,7 +13,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 from flask import Flask, g, jsonify, request, session
 
-from src.constants import GEMINI_MODEL
+GEMINI_MODEL = "gemini-3-flash-preview"  # standalone tool, not part of newsletter pipeline
 
 load_dotenv(Path(__file__).parent.parent / ".env")
 

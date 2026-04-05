@@ -20,43 +20,44 @@ from src.constants import (
     MIN_TEXT_LENGTH_SHORT,
     NEWS_FEED_LIMIT_MULTIPLIER,
 )
+from src.summarizer import summarize as extractive_summarize
 
 logger = logging.getLogger(__name__)
 
 # RSS sources — broad, major news outlets
 NEWS_FEEDS = [
-    # Major general news
-    {
-        "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
-        "name": "CNN",
-        "is_google": False,
-    },
+    # Sources chosen for trafilatura compatibility:
+    # clean RSS feeds + extractable HTML, no paywalls, server-rendered pages
     {
         "url": "https://feeds.npr.org/1001/rss.xml",
         "name": "NPR",
         "is_google": False,
     },
     {
-        "url": "https://feeds.bbci.co.uk/news/world/rss.xml",
-        "name": "BBC",
+        "url": "https://www.theguardian.com/world/rss",
+        "name": "The Guardian",
         "is_google": False,
     },
     {
-        "url": "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
-        "name": "NYT",
+        "url": "https://www.aljazeera.com/xml/rss/all.xml",
+        "name": "Al Jazeera",
         "is_google": False,
     },
-    # Google News top stories (wide coverage)
+    {
+        "url": "http://rss.cnn.com/rss/cnn_topstories.rss",
+        "name": "CNN",
+        "is_google": False,
+    },
+    {
+        "url": "https://feeds.reuters.com/reuters/topNews",
+        "name": "Reuters",
+        "is_google": False,
+    },
+    # Google News top stories (wide coverage, redirect decoding built in)
     {
         "url": "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en",
         "name": "Google News",
         "is_google": True,
-    },
-    # AP wire (catches breaking stories other outlets haven't published yet)
-    {
-        "url": "https://rss.app/feeds/ts4vGWjPjRBpxj1D.xml",
-        "name": "AP",
-        "is_google": False,
     },
 ]
 
@@ -72,15 +73,50 @@ _TOPIC_CATEGORIES = [
     ("travel_transport", re.compile(r'(?i)\b(?:airport|airline|flight|travel|faa|crash|collision|runway|train|highway|bridge)\b')),
 ]
 
-# Topics to deprioritize — celebrity gossip, sports entertainment, reality TV
+# Source domains that produce low-quality or unreliable content
+_BLOCKED_DOMAINS = {
+    "aol.com", "wjla.com", "blockchain-council.org",
+    "dailymail.co.uk", "thesun.co.uk", "nypost.com",
+    "breitbart.com", "infowars.com", "naturalnews.com",
+    "msn.com",  # aggregator with low-quality summaries
+    "yahoo.com",  # aggregator
+}
+
+# Topics to deprioritize — celebrity gossip, sports entertainment, reality TV, local crime
 _DEMOTE_KEYWORDS = re.compile(
     r'(?i)\b(?:'
     r'love island|kardashian|bachelor|bachelorette|real housewives|'
     r'celebrity|gossip|red carpet|grammy|oscar|emmy|golden globe|'
     r'nfl draft|nba trade|mlb|nhl|premier league|fifa|'
-    r'flamingo land|loch lomond|bone cement|horoscope|zodiac'
+    r'flamingo land|loch lomond|bone cement|horoscope|zodiac|'
+    r'retirement home|nursing home|local police|school bus|'
+    r'car crash|bus crash|hit.and.run|pedestrian struck|'
+    r'lottery winner|pet rescue|county fair|prom|homecoming'
     r')\b'
 )
+
+# Boost keywords — stories matching these are more likely to be globally important
+_BOOST_KEYWORDS = re.compile(
+    r'(?i)\b(?:'
+    r'world leader|g7|g20|united nations|nato|eu|european union|'
+    r'president|prime minister|summit|treaty|ceasefire|'
+    r'global|international|billion|trillion|pandemic|'
+    r'climate change|earthquake|hurricane|tsunami|'
+    r'fed|federal reserve|wall street|recession|'
+    r'nuclear|sanctions|embargo|trade war|tariff'
+    r')\b'
+)
+
+
+def _is_blocked_source(story: dict) -> bool:
+    """Return True if the story's URL domain is on the blocklist."""
+    url = story.get("link", "")
+    try:
+        from urllib.parse import urlparse
+        domain = urlparse(url).netloc.lower().lstrip("www.")
+        return any(domain == blocked or domain.endswith("." + blocked) for blocked in _BLOCKED_DOMAINS)
+    except Exception:
+        return False
 
 
 def _categorize(story: dict) -> str:
@@ -96,6 +132,32 @@ def _is_demoted(story: dict) -> bool:
     """Check if a story matches low-interest patterns."""
     text = f"{story.get('title', '')} {story.get('raw_text', '')[:200]}"
     return bool(_DEMOTE_KEYWORDS.search(text))
+
+
+def _importance_score(story: dict) -> float:
+    """Score a story's global importance. Higher = more important."""
+    text = f"{story.get('title', '')} {story.get('raw_text', '')[:500]}"
+    score = 0.0
+
+    # Boost for globally important keywords
+    boost_matches = len(_BOOST_KEYWORDS.findall(text))
+    score += boost_matches * 2.0
+
+    # Penalize demoted stories
+    if _DEMOTE_KEYWORDS.search(text):
+        score -= 10.0
+
+    # Boost stories from multiple sources (likely big stories)
+    # Boost stories with longer raw_text (more coverage = more important)
+    raw_len = len(story.get("raw_text", ""))
+    if raw_len > 1000:
+        score += 1.0
+
+    # Boost Google News stories (already editorially selected as top stories)
+    if story.get("source") and story["source"] not in ("NPR", "The Guardian", "Al Jazeera", "CNN", "Reuters"):
+        score += 1.5
+
+    return score
 
 
 def _decode_google_news_url(url: str) -> str:
@@ -222,22 +284,28 @@ def get_top_news(count: int = 5) -> list[dict]:
     if len(today_stories) < count:
         today_stories = unique
 
-    # Remove demoted stories (celebrity gossip, sports, etc.)
-    candidates = [s for s in today_stories if not _is_demoted(s)]
+    # Remove blocked sources and demoted stories
+    candidates = [s for s in today_stories if not _is_blocked_source(s) and not _is_demoted(s)]
+    if len(candidates) < count:
+        candidates = [s for s in today_stories if not _is_blocked_source(s)]
     if len(candidates) < count:
         candidates = today_stories  # don't filter if too few remain
 
-    # Categorize each story
+    # Score each story for global importance
     for s in candidates:
         s["_category"] = _categorize(s)
+        s["_importance"] = _importance_score(s)
 
-    # Select stories with topic diversity: pick the most recent story
+    # Sort by importance (highest first), then recency as tiebreaker
+    candidates.sort(key=lambda s: (s["_importance"], _parse_pub_date(s.get("published", ""))), reverse=True)
+
+    # Select stories with topic diversity: pick the highest-importance story
     # from each category first, then fill remaining slots
     selected = []
     selected_titles = set()
     used_categories = set()
 
-    # First pass: one story per category (most recent first, already sorted)
+    # First pass: one story per category (most important first)
     for s in candidates:
         if len(selected) >= count:
             break
@@ -247,7 +315,7 @@ def get_top_news(count: int = 5) -> list[dict]:
             selected_titles.add(s["title"])
             used_categories.add(cat)
 
-    # Second pass: fill remaining slots if we haven't hit count
+    # Second pass: fill remaining slots with highest-importance remaining
     for s in candidates:
         if len(selected) >= count:
             break
@@ -256,6 +324,9 @@ def get_top_news(count: int = 5) -> list[dict]:
             selected_titles.add(s["title"])
 
     # Fetch article text for the selected stories in parallel
+    if not selected:
+        return [{"title": "No news available", "source": "", "link": "", "published": "", "summary": "", "raw_text": ""}]
+
     def _fetch_for_story(story):
         return _fetch_article_text(story["link"])
 
@@ -263,10 +334,18 @@ def get_top_news(count: int = 5) -> list[dict]:
         texts = list(executor.map(_fetch_for_story, selected))
 
     for i, story in enumerate(selected):
-        logger.debug("News #%d [%s]: '%s' (%s)", i + 1, story["_category"], story["title"], story["source"])
+        logger.debug("News #%d [%s] (score=%.1f): '%s' (%s)", i + 1, story["_category"], story.get("_importance", 0), story["title"], story["source"])
         story["raw_text"] = texts[i]
         story["summary"] = ""
-        del story["_category"]
+        if story["raw_text"]:
+            try:
+                result = extractive_summarize(story["raw_text"], num_sentences=2, title=story.get("title", ""))
+                if result:
+                    story["summary"] = result
+            except Exception as e:
+                logger.warning("Summarize failed for '%s': %s", story["title"][:60], e)
+        story.pop("_category", None)
+        story.pop("_importance", None)
 
     with_text = sum(1 for s in selected if s["raw_text"])
     logger.info("News fetch complete: %d diverse stories, %d with article text",

@@ -36,7 +36,9 @@ jobs:
           cache: 'pip'
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          python -c "import nltk; nltk.download('punkt_tab', quiet=True); nltk.download('punkt', quiet=True)"
 
       - name: Start Tor proxy
         run: |
@@ -56,15 +58,14 @@ jobs:
       - name: Run newsletter
         env:
           SITE_URL: ${{ vars.SITE_URL }}
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-          GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: python -m src.newsletter 2>&1 | tee /tmp/newsletter-build.log
 
-      - name: Validate transcript quality
+      - name: Validate summary quality
         run: |
           python3 -c "
-          import json, re, sys
+          import json, sys
           from pathlib import Path
           from datetime import datetime
 
@@ -75,29 +76,20 @@ jobs:
               sys.exit(0)
 
           data = json.loads(archive.read_text())
-          videos = data.get('youtube', data.get('podcasts', []))
-          if not videos:
-              print('WARNING: No youtube/podcast entries in archive')
-              sys.exit(0)
 
-          total = len(videos)
-          title_only = 0
-          good = 0
-          emoji_re = re.compile(r'[\U0001F300-\U0001FAFF\U00002600-\U000027BF\U00002702-\U000027B0]')
+          # Check all content sections have real summaries (not just fallbacks)
+          fallback_phrases = ['click for details', 'click to watch', 'read the full', 'new video', 'new episode from']
+          sections = {'news': data.get('news', []), 'youtube': data.get('youtube', []), 'ai_security': data.get('ai_security', [])}
 
-          for v in videos:
-              summary = v.get('summary', '')
-              emojis = len(emoji_re.findall(summary))
-              bullets = len(summary.split('<br>'))
-              if emojis >= 2 and bullets >= 2:
-                  good += 1
-              else:
-                  title_only += 1
-                  print(f'  TITLE-ONLY: {v.get(\"title\", \"?\")[:60]}')
-
-          print(f'Transcript quality: {good}/{total} videos have real summaries, {title_only} title-only')
-          if title_only > total // 2:
-              print(f'WARNING: More than half ({title_only}/{total}) fell back to title-only summaries')
+          for section, items in sections.items():
+              total = len(items)
+              weak = 0
+              for item in items:
+                  summary = (item.get('summary') or '').lower()
+                  if not summary or len(summary) < 40 or any(f in summary for f in fallback_phrases):
+                      weak += 1
+                      print(f'  WEAK [{section}]: {item.get(\"title\", \"?\")[:60]}')
+              print(f'{section}: {total - weak}/{total} items have substantive summaries')
           "
 
       - name: Upload Pages artifact
