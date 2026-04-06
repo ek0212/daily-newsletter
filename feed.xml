@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Apr 2026 11:49:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 19:44:10 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Monday, April 06, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-06.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-06.html</guid>
-      <description>Weather: 44°F - Mostly Sunny | Illness level: NORMAL | 2 major events this week | 2 top news stories | 6 AI security updates</description>
+      <description>Weather: 52°F - Mostly Sunny | Illness level: NORMAL | 2 major events this week | 3 top news stories | 2 YouTube videos | 6 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">&#x26C5; Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 54&deg; / Low 44&deg; <span style="font-size: 13px; color: #888;">(Feels like 38&deg;)</span></div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 54&deg; / Low 45&deg; <span style="font-size: 13px; color: #888;">(Feels like 52&deg;)</span></div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">43&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(36&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">55%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph W</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(39&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">49%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph NW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">53&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">2%</td>
-        <td style="padding: 7px 6px; text-align: center;">39%</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">36%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph W</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">53&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">4%</td>
-        <td style="padding: 7px 6px; text-align: center;">39%</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">2%</td>
+        <td style="padding: 7px 6px; text-align: center;">38%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph W</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
         <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Slight Chance Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">15%</td>
-        <td style="padding: 7px 6px; text-align: center;">46%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph W</td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
+        <td style="padding: 7px 6px; text-align: center;">13%</td>
+        <td style="padding: 7px 6px; text-align: center;">44%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph W</td>
       </tr>
       
     </table>
@@ -135,21 +117,31 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 06 Apr 2026 11:12:53 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/4/6/trumps-bridge-day-threat-can-a-last-ditch-ceasefire-plan-work?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump’s ‘Bridge Day’ threat: Can a last-ditch ceasefire plan work?</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 06 Apr 2026 17:46:59 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/6/cairo-faces-darker-nights-as-global-energy-prices-continue-to-soar?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Cairo faces darker nights as global energy prices continue to soar</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US President Trump threatened to attack Iran's bridges and power plants by Wednesday. This escalation may disrupt global oil supplies, affecting NYC fuel prices and markets.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Cairo's streets and storefronts go dark at night to curb Egypt's electricity use. This may impact local businesses and resident safety, as energy shortages spread globally.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 06 Apr 2026 17:07:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Detroit News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMi_gFBVV95cUxQVzhwV0JRcmc5eWZaUHJHbU1xZEtmM0J1Z191ZTktaHRpdlpMQ1N1Ni1kRGxKZTZ6QW5TMFVVN2x1eWFQcVo0WXVRLVdqY2JGMy1ER2NlOWdRbk5IQmdHalkwLWpUaWRBWHREUUY5TGROM0NFX3JZdGZoeF9yUEo2NVM0YndYNm9LY21mdndCbHQ5UjluOTVGTGRKU0FIX2w3OHdDalkzcXZfckhqWmVXOXh5VkdPeFZtYzc5ZDYybUJ3Nk9NYTVfTUNEcXdCVl9QQThJR0I0dHRfSlIwaFYyMUpHU0toT3pBc2s2N1NxWFM3MEJncVdNdXJnb2N6dw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Republican group to spend $45M to help Rogers win Michigan Senate race</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; The Senate Leadership Fund will spend <strong>$45M</strong> to help Mike Rogers win Michigan's Senate seat. This investment matters as it signals Republicans' focus on flipping the seat, potentially impacting the balance of power in the Senate.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 06 Apr 2026 10:00:01 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNBC</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQOWtMTlNBdjdSZHdDbGxJME9wTDZQdHF5eTNETFZLN0J0SF9IMlVnbkh4a3NvSmxBTlhLeUpYeGoyMG9SbHFZdDZtN202QkdUNWZucmxFREpaS2ZEd0tIWHZ5a2ctMlhuUkZvaUgyUHhYS002ZHF6YlZCSEx4MFNvXzVYOHlDUmxN0gGOAUFVX3lxTE1GNlZRb3Rmd2lIYVdQNXRZNS10dUJPbi05UG1ndTA3T0wtMXFrR1hENUlQQUxBa2Y1VmxVN2R3djBhOFVjVmFVcFdPeWFLYjFfYThheDNRYkJtdFhsNVN0Z0l4b3FSeVNMSEdKY1BUQW9KV2JVMzBxelVhdHJuc3IteEIzNzl4ckt1TktrQlE?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">JPMorgan CEO Jamie Dimon in annual letter cites risks in geopolitics, AI and private markets</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 06 Apr 2026 18:11:02 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/4/6/artemis-ii-breaks-record-for-the-furthest-human-travel-from-earth?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Artemis II breaks Apollo 13 record for farthest human travel from Earth</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; JPMorgan CEO Jamie Dimon cited risks in geopolitics, AI, and private markets in his annual letter. This warning may impact investor decisions and economic forecasts amid global uncertainty.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Artemis II's 4 astronauts broke Apollo 13's 1970 record, reaching 406,788km from Earth. This milestone marks progress in NASA's lunar exploration, paving the way for future manned missions.</div>
       
     </div>
     
@@ -165,7 +157,27 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">&#x1F3AC; YouTube</span>
     </div>
     
-    <div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-06 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Introducing-Maturity-Maps--A-New-Way-to-Measure-AI-Adoption-e3h89ni" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Introducing Maturity Maps: A New Way to Measure AI Adoption</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Maturity Maps benchmark AI adoption across 6 dimensions. Most organizations are behind in AI adoption, with 150,000+ survey respondents showing shortcomings.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-06 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <a href="https://www.morningbrew.com/issues/material-costs" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Artemis II crew snap stunning Earth pics with the iPhone</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Investments in women's sports teams have grown <strong>227%</strong> annually since 2022. The WNBA broke its single-season attendance record last year, with a month to spare.</div>
+      
+    </div>
+    
+    
   </div>
 
   <!-- Section Rule -->
@@ -189,7 +201,7 @@
       <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOTjBfTndENEhEUFVtTGc3OVVKZEtFaDhkcXd5ZkZjMklURXZMd0dsWDRUajlad2w0Uko1NDhQZ05vM2M2SUFwS2tvNlpyWmEtZmdYSkp2dFRUWkhudGJRa2ZkM2YxbERVOG0wQ2RqOUVTQWxzczJNcmx6V05ERHFCQ1Bnai1QTjZUaUFtZ0ltQzM4UUdEMEM5eEtDeWZpUlJRYUFRbWNiaEY5Q1ZzTHdOT0RIa25kbnFjRGc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Prompt Injection and LLM Jailbreaks: Defenses</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; OWASP guidance highlights prompt injection and LLM jailbreaks as primary risks. Defenders must implement layered defenses to prevent these attacks.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; OWASP guidance highlights prompt injection and LLM jailbreaks as primary risks. This means defenders must implement layered defenses to prevent overrides and manipulations.</div>
       
       
     </div>
@@ -202,7 +214,7 @@
       <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1pdXlYOElLRWNvZGFhVXlsUVo0d1kxdnNKUlQwVTFKWldNV3E5WkVnQXhYalNUbElmRUJxc0tkYWtQRFVaVGJLckVVb0hBMG16VDJfeXNXbGUxTXhOaHpmdHZKeF9qOTI4ZjZwWnRtUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; AI Security Fundamentals (2026): Threats and Controls</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; The 2025 Stanford AI Index Report found a <strong>56%</strong> year-over-year increase in AI-related incidents. This means defenders must implement threat models and controls across the AI lifecycle.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; AI-related incidents in business increased by <strong>56%</strong> in 2025, per the Stanford AI Index Report. This means defenders must prioritize AI-specific threat models and controls.</div>
       
       
     </div>
@@ -215,7 +227,7 @@
       <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeElIdmEzUkhpNUdVWmMzdWtRRXE1OGVfYWFfZm8tSkVEQTNKTWZMOFVMaGlPSmR0QTUyWkQxdE9maUcxQkxoVjJTcnB5cFBGYy01d2VJYUkzOHRwSlY1NV94NEl1amRObngtLXg5ekpsazBtMHZPVVJPdHFEcjY4clJDejZUSGJw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Poisoned pixels, phishing, prompt injection: Cybersecurity threats in AI-driven radiology</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; ECR 2026 presented cases of poisoned pixels and prompt injection in AI-driven radiology. This highlights the need for defenders to scrutinize image inputs and validate prompts.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; At ECR 2026, experts presented cases of poisoned pixels and prompt injection in AI-driven radiology. This highlights the need for defenders to scrutinize image inputs and validate prompts.</div>
       
       
     </div>
@@ -250,7 +262,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper studies how code review agents affect pull request outcomes. It helps practitioners understand when automated reviews succeed or fail, preventing wasted effort on abandoned pull requests.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper studies how code review agents affect pull request outcomes. It helps practitioners understand when automated reviews work, stopping wasted effort on abandoned requests.</div>
       
       
     </div>
@@ -285,7 +297,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; CoME-VL combines two types of vision encoders for better image understanding. It improves robustness against image-based attacks by capturing richer visual semantics.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; CoME-VL proposes fusing two types of vision encoders for better image-text understanding. This helps defend against image-based attacks by improving vision-language model robustness.</div>
       
       
     </div>
