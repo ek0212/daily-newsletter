@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 Apr 2026 03:52:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 11:55:14 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Wednesday, April 08, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-08.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-08.html</guid>
-      <description>Weather: 37°F - Clear | Illness level: NORMAL | 2 major events this week | 4 top news stories | 1 YouTube videos | 8 AI security updates</description>
+      <description>Weather: 34°F - Sunny | Illness level: NORMAL | 2 major events this week | 4 top news stories | 3 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">&#x26C5; Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Clear &mdash; High 48&deg; / Low 31&deg; <span style="font-size: 13px; color: #888;">(Feels like 26&deg;)</span></div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 48&deg; / Low 37&deg; <span style="font-size: 13px; color: #888;">(Feels like 25&deg;)</span></div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -49,47 +49,47 @@
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">36&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(29&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">35&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(26&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">41%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
+        <td style="padding: 7px 6px; text-align: center;">40%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph N</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(33&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(32&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">36%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph NE</td>
+        <td style="padding: 7px 6px; text-align: center;">32%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">12 mph NE</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(40&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(44&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">32%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">30%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph SE</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(40&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">44&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(39&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">35%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">38%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph S</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">42&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(36&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">42&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(37&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">46%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph SE</td>
+        <td style="padding: 7px 6px; text-align: center;">44%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph SE</td>
       </tr>
       
     </table>
@@ -135,41 +135,41 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 03:22:30 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOV2R5N0p2NWZKaWkyZEpqT05jUXZ4LUxmTVZQYkdkNmwyMktxczJBaExBc2Z1SGxmTkVjOV9KeGFlTEk0MWRkSWxtS3ZfR2xvSFJOT0RMZTJ1RDZ3ZDg2STh5cktiNjZYdEdPd1MyNDFPY2o3R1NCOVVLS0RXczBoaDRBalZla2sxZjRJRFJtNzVNQ01WZnI4c24xSU1SQdIBowFBVV95cUxPbUlQQkNkbXRIdlc0QmlOVGZvcFFxUDZUMC1XQ2R0OXg0bkVjb0Fyd0pua29DRFBQRHMwUXQ1SjFRd3hOMGM1b0doSFRVd1BDcXhqVFQ4dktWNGFDRjRtcFV1YjdVNEdJal9idmhBcElvYVVWS05SSzltQ2U1WWpHT1M4NXdzSUlLYmx5SGo4WnVERDdWMEFiYnE0Q1k3VFVCT1VJ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Netanyahu says US-Iran ceasefire ‘does not include Lebanon’</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 11:09:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
+      <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE45WVdrUzAtbXJoMFBfb3VYWnJZS2M5TVlJYVJ6anZMRmtUak9ITURsNU9QRWY0djJfc2dNQWVpaHhmak1QN1Nmd3ctWWJ6a1k3Tl9iOWJQdkdURTNNc0ZnUHpzQTRzVllkaC10dzRyZEZwc2Q1anJZRHh3alM4Qkk?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Live updates: Both US and Iran claim victory after two-week ceasefire deal reached</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Netanyahu stated the US-Iran ceasefire doesn't apply to Lebanon. This distinction may lead to continued Israeli military action in Lebanon.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US and Iran agreed to a 2-week ceasefire, with Iran controlling the Strait of Hormuz. This deal may stabilize oil prices, but its success hinges on upcoming talks in Islamabad.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 01:44:26 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhOERsd2pOZ0F6S3RXOFpBQktvLWNDbnRfeXBfYTJMd2RQUDhUb2pvX1lNQnluak85RmZJZDdqSXZGd19USjR6ZlJ5VElxS2JseEpRbms3UUtwUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">US journalist Shelly Kittleson to be released after kidnap in Iraq, militia says</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 10:00:40 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NBC News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUUUzaW5QM1dmR0dsZWd5VGgxT0pLRExzLWdyQURSMEI0dHlZOFdmODFNc2h1R0xJVHk4UWJRVEl0ZG1USjk1aHVjVjFBcngtY3o5QnVQYUdJdWQ1WTUwdnlxLUFiRm5KMU1BdXBTQ0tOZWQ3Qm1SZVFsbFNuWmZidXF0czgxQ2ZxeDBLQVNwWHhrREdNTjF4eGlYV2N0YWZERzJERzgySlMyWFFJZ3hnemRuRFo1RlJ5?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Gilgo Beach serial killings suspect heads to court for expected guilty plea</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US journalist Shelly Kittleson was released after a week-long kidnap in Baghdad. Her release reflects the US administration's efforts to secure American citizens' safety abroad, a key concern for those traveling or working internationally.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Rex Heuermann, 62, will plead guilty to killing 7 women in Long Island's Gilgo Beach. This expected plea deal means Heuermann still faces life in prison without parole.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 02:18:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
-      <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBhWFZGR0E3MXR4Wml3RTZSQkhMQTMzbnkxNjhkSGpoOWFEODRUN3BoT3IxY1lLanZ2dHhsMkVoNl9Xek9PWWNZQWFvdDduMkc2bkVad2dUMjhvbVNSQ3gzZE9RQmRYR094c09GMW9hMjRsWkU1RmpIZjRKcw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Live updates: Trump agrees to two-week ceasefire with Iran</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 08:27:19 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Guardian</span></div>
+      <a href="https://www.theguardian.com/uk-news/2026/apr/08/orla-wates-family-tribute-british-teenager-killed-motorcycle-crash-vietnam-ha-giang-loop" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Family pay tribute to British teenager killed in motorcycle crash in Vietnam</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Trump agreed to a 2-week ceasefire with Iran. This pause may ease tensions, but Israel's ongoing strikes and Iranian skepticism pose challenges to a lasting resolution.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Orla Wates, 19, died in a motorcycle crash on Vietnam's Ha Giang loop. Her organ donation may inspire others to consider registration, a decision that could save lives.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 01:55:02 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/8/iraqis-celebrates-us-iran-ceasefire-as-two-week-halt-in-war-begins?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Iraqis celebrates US-Iran ceasefire as two-week halt in war begins</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 10:43:30 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/4/8/uae-kuwait-bahrain-report-attacks-despite-iran-us-ceasefire?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">UAE, Kuwait, Bahrain report attacks despite Iran-US ceasefire</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Iraqis celebrated a US-Iran ceasefire in Baghdad. This halt may reduce regional tensions, impacting global oil prices.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; UAE, Kuwait, and Bahrain reported missile and drone attacks from Iran despite a 2-week ceasefire. This escalation may impact regional stability and oil prices, affecting global markets.</div>
       
     </div>
     
@@ -185,13 +185,33 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">&#x1F3AC; YouTube</span>
     </div>
     
-    <div style="padding: 16px 0; ">
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-08 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Calm-Before-the-AGI-Storm-e3hh4jq" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; The Calm Before the AGI Storm</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Major AI labs are positioning for a dramatic acceleration. OpenAI's record fundraise and Google's open source push are key signals.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-07 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Jeff Su</span></div>
       <a href="https://www.jeffsu.org/learn-80-of-claude-cowork-in-under-20-minutes/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Learn 80% of Claude Cowork in Under 20 Minutes</a>
       <!-- Summary -->
       
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Claude Cowork differs from Chat in file access, context window, and output delivery. Cowork delivers ready-to-use files directly to your folder, unlike Chat's copy-and-download process.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-07 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <a href="https://www.morningbrew.com/issues/center-of-attention" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Bars and restaurants are banning phones and people are loving it</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; The upper middle class is now the largest income group in the US, with <strong>31%</strong> of families falling into this category in 2024. A key takeaway is that this group is defined as a family of three earning <strong>$133k</strong> to <strong>$400k</strong>.</div>
       
     </div>
     
@@ -214,12 +234,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 02 Apr 2026 17:27:46 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Blockchain Council</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 11:03:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOTjBfTndENEhEUFVtTGc3OVVKZEtFaDhkcXd5ZkZjMklURXZMd0dsWDRUajlad2w0Uko1NDhQZ05vM2M2SUFwS2tvNlpyWmEtZmdYSkp2dFRUWkhudGJRa2ZkM2YxbERVOG0wQ2RqOUVTQWxzczJNcmx6V05ERHFCQ1Bnai1QTjZUaUFtZ0ltQzM4UUdEMEM5eEtDeWZpUlJRYUFRbWNiaEY5Q1ZzTHdOT0RIa25kbnFjRGc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Prompt Injection and LLM Jailbreaks: Defenses</a>
+      <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOQm4tdi1tbDFIcHZjTFRnSG1YODdpN3pmNVpfbEh5VGZKSm54OGx1YVNyYzBMbVBKVTdURkNKVHVHWVZvRm9vNkM2RUFUbFNoSzBlOUFmYWR3SkhzUV9RLVloX0VQT3FGYk8xVWRpR2dUcTNTM05ibWNSdjRWSnFvMU1rNzl2Y01KZXJLclBVTlRxc3pEVjJZM0dqR3hvYndqLTk1akxGVXIwMzFDdWY2RzRqX1JoWmwxd3NXVVNMaw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; LLM-generated passwords are indefensible. Your codebase may already prove it</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; OWASP guidance highlights prompt injection and LLM jailbreaks as primary risks. Defenders must implement layered defenses to prevent these exploits.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Irregular and Kaspersky found LLMs generate predictable passwords. This means defenders should beware of AI-generated credentials in their codebase.</div>
       
       
     </div>
@@ -232,7 +252,7 @@
       <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1pdXlYOElLRWNvZGFhVXlsUVo0d1kxdnNKUlQwVTFKWldNV3E5WkVnQXhYalNUbElmRUJxc0tkYWtQRFVaVGJLckVVb0hBMG16VDJfeXNXbGUxTXhOaHpmdHZKeF9qOTI4ZjZwWnRtUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; AI Security Fundamentals (2026): Threats and Controls</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; The 2025 Stanford AI Index Report found a <strong>56%</strong> year-over-year increase in AI-related incidents. This means defenders must prioritize AI-specific threat models and controls.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; The 2025 Stanford AI Index Report found a <strong>56%</strong> year-over-year increase in AI-related incidents. This means defenders must prioritize threat models and controls for AI systems.</div>
       
       
     </div>
@@ -245,7 +265,20 @@
       <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeElIdmEzUkhpNUdVWmMzdWtRRXE1OGVfYWFfZm8tSkVEQTNKTWZMOFVMaGlPSmR0QTUyWkQxdE9maUcxQkxoVjJTcnB5cFBGYy01d2VJYUkzOHRwSlY1NV94NEl1amRObngtLXg5ekpsazBtMHZPVVJPdHFEcjY4clJDejZUSGJw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Poisoned pixels, phishing, prompt injection: Cybersecurity threats in AI-driven radiology</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; At ECR 2026, experts presented cases of phishing and prompt injection attacks on AI-driven radiology systems. This highlights the need for robust security measures to protect healthcare systems from such vulnerabilities.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; At ECR 2026, experts presented cases of poisoned pixels and prompt injection in AI-driven radiology. This highlights the need for robust security measures to protect medical imaging systems from cyber threats.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 05 Apr 2026 11:26:44 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Blockchain Council</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMXVIeU55S2lRb2k0X2lLcmhrVzM3M2FZM1NPSUdCRHQ0SFl1WHlfMjlkVTY4RHpMd2NkRnZ0dGU5SUZxTk5LTURDZVlqaThFSDRMR2hJVmhScHU4Rk9oVXBOR0M0WVRhUU8xMDNwaVVVcS1FNnpKXzFDMzR0QnhseDJHUkhIRm8zRDFvXzA2cXl4T0pLaUhVLUx0NXA2dC16NG5wX010dWx1Y2tQelVLWVdjd21jNzBv?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Prompt Injection and LLM Jailbreaks in Production</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Prompt injection affects <strong>73%</strong> of generative AI deployments, causing data leakage and system compromise. This means defenders must prioritize input validation and security testing for AI systems.</div>
       
       
     </div>
@@ -280,7 +313,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes "<strong>Exclusive Unlearning</strong>", which removes all knowledge except what's explicitly retained. Practitioners should care because it stops Large Language Models from generating harmful content, like jailbreaks, in sensitive domains like healthcare.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes "<strong>Exclusive Unlearning</strong>", which removes all knowledge except what's explicitly retained. It stops Large Language Models from generating harmful content, like jailbreaks, in domains like healthcare and education.</div>
       
       
     </div>
@@ -315,7 +348,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a taxonomy to govern machine identities used by AI systems. Practitioners should care because it helps prevent attacks using ungoverned automated agents, like the <strong>$5.4</strong>-<strong>10 billion</strong> CrowdStrike outage.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes a taxonomy to govern machine identities used by AI systems. It helps stop attacks using ungoverned automated agents, like nation-state espionage vectors.</div>
       
       
     </div>
@@ -350,7 +383,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; SandMLE generates synthetic environments for training ML agents. This helps speed up agent training, stopping slow and expensive verification processes.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; SandMLE generates synthetic environments for training ML agents. This helps practitioners speed up agent training, stopping slow and costly verification processes.</div>
       
       
     </div>
@@ -385,7 +418,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper demonstrates a real-world safety analysis of OpenClaw, a personal AI agent, using the CIK taxonomy. Practitioners should care because it reveals how attackers can exploit OpenClaw's broad privileges to increase attack success rates via poisoning its capabilities, identity, or knowledge.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a safety analysis of OpenClaw, a personal AI agent, by evaluating its vulnerability to attacks. Practitioners should care because this research reveals how attackers can exploit OpenClaw's broad privileges to gain access to sensitive services like Gmail and filesystems.</div>
       
       
     </div>
@@ -420,7 +453,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; HDP proposes a token-based scheme to verify human authorization in AI systems. It stops unauthorized AI actions by tracing delegation chains back to human principals.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; HDP proposes a token-based scheme to verify human authorization in AI systems. Practitioners should care as it stops unauthorized AI actions by tracing delegation chains back to human principals.</div>
       
       
     </div>
