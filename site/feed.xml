@@ -5,8 +5,439 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2026 19:51:59 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 03:52:45 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Daily Briefing - Wednesday, April 08, 2026</title>
+      <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-08.html</link>
+      <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-08.html</guid>
+      <description>Weather: 37°F - Clear | Illness level: NORMAL | 2 major events this week | 4 top news stories | 1 YouTube videos | 8 AI security updates</description>
+      <content:encoded><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
+<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
+
+  <!-- Masthead -->
+  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Daily Intelligence</div>
+    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">&#x1F4F0; Your Daily Briefing</h1>
+    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">Wednesday, April 08, 2026</div>
+    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
+    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">&#x26C5; Weather &middot; &#x1F3E5; Health &middot; &#x1F3AD; Events &middot; &#x1F4F0; News &middot; &#x1F3AC; YouTube &middot; &#x1F6E1;&#xFE0F; AI Security</div>
+  </div>
+
+  <!-- Weather -->
+  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">&#x26C5; Weather in New York City</span>
+    </div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Clear &mdash; High 48&deg; / Low 31&deg; <span style="font-size: 13px; color: #888;">(Feels like 26&deg;)</span></div>
+    
+    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
+      <tr style="border-bottom: 2px solid #1a1a1a;">
+        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F552; Time</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F321;&#xFE0F; Temp</th>
+        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Conditions</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F327;&#xFE0F; Precip</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F4A7; Humidity</th>
+        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F32C;&#xFE0F; Wind</th>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">36&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(29&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">41%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(33&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">36%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph NE</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(40&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">32%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">45&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(40&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">35%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
+      </tr>
+      
+      <tr style="border-bottom: 1px solid #ddd;">
+        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">42&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(36&deg;)</span></td>
+        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
+        <td style="padding: 7px 6px; text-align: center;">0%</td>
+        <td style="padding: 7px 6px; text-align: center;">46%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph SE</td>
+      </tr>
+      
+    </table>
+    
+  </div>
+
+  <!-- Health Alert -->
+  
+  <div style="padding: 16px 32px; border-left: 4px solid #27ae60; background: #f0faf0;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; margin-bottom: 6px;">
+      &#x1F7E2; NYC Illness Level: NORMAL
+    </div>
+    <div style="font-size: 14px; color: #444; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">7,199 cases this week — near average for this time of year</div>
+    <div style="font-size: 10px; color: #999; margin-top: 4px;">Week ending 2026-03-28 · Source: NYC Dept. of Health</div>
+  </div>
+  
+
+  <!-- NYC Events -->
+  <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
+    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F3AD; NYC Events Near You (Next 7 Days)</div>
+    
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      &#x1F4CD; <a href="https://www.google.com/search?q=NYC%20Tartan%20Day%20Parade%20NYC%20Sat%2C%20Apr%2011" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">NYC Tartan Day Parade</a> &mdash; Sat, Apr 11, Manhattan <span style="color: #888;">(West 44th St & 5th Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
+      &#x1F4CD; <a href="https://www.google.com/search?q=Religious%20Procession%20NYC%20Fri%2C%20Apr%2010" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Religious Procession</a> &mdash; Fri, Apr 10, Manhattan <span style="color: #888;">(143 East 17th St)</span>
+    </div>
+    
+    
+    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #999; text-decoration: underline;">NYC Open Data — Permitted Events</a></div>
+  </div>
+
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&sect;</div></div></div>
+
+  <!-- Top News -->
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">&#x1F4F0; Top News</span>
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 03:22:30 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOV2R5N0p2NWZKaWkyZEpqT05jUXZ4LUxmTVZQYkdkNmwyMktxczJBaExBc2Z1SGxmTkVjOV9KeGFlTEk0MWRkSWxtS3ZfR2xvSFJOT0RMZTJ1RDZ3ZDg2STh5cktiNjZYdEdPd1MyNDFPY2o3R1NCOVVLS0RXczBoaDRBalZla2sxZjRJRFJtNzVNQ01WZnI4c24xSU1SQdIBowFBVV95cUxPbUlQQkNkbXRIdlc0QmlOVGZvcFFxUDZUMC1XQ2R0OXg0bkVjb0Fyd0pua29DRFBQRHMwUXQ1SjFRd3hOMGM1b0doSFRVd1BDcXhqVFQ4dktWNGFDRjRtcFV1YjdVNEdJal9idmhBcElvYVVWS05SSzltQ2U1WWpHT1M4NXdzSUlLYmx5SGo4WnVERDdWMEFiYnE0Q1k3VFVCT1VJ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Netanyahu says US-Iran ceasefire ‘does not include Lebanon’</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Netanyahu stated the US-Iran ceasefire doesn't apply to Lebanon. This distinction may lead to continued Israeli military action in Lebanon.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 01:44:26 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTFBhOERsd2pOZ0F6S3RXOFpBQktvLWNDbnRfeXBfYTJMd2RQUDhUb2pvX1lNQnluak85RmZJZDdqSXZGd19USjR6ZlJ5VElxS2JseEpRbms3UUtwUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">US journalist Shelly Kittleson to be released after kidnap in Iraq, militia says</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US journalist Shelly Kittleson was released after a week-long kidnap in Baghdad. Her release reflects the US administration's efforts to secure American citizens' safety abroad, a key concern for those traveling or working internationally.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 02:18:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
+      <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBhWFZGR0E3MXR4Wml3RTZSQkhMQTMzbnkxNjhkSGpoOWFEODRUN3BoT3IxY1lLanZ2dHhsMkVoNl9Xek9PWWNZQWFvdDduMkc2bkVad2dUMjhvbVNSQ3gzZE9RQmRYR094c09GMW9hMjRsWkU1RmpIZjRKcw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Live updates: Trump agrees to two-week ceasefire with Iran</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Trump agreed to a 2-week ceasefire with Iran. This pause may ease tensions, but Israel's ongoing strikes and Iranian skepticism pose challenges to a lasting resolution.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 01:55:02 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/8/iraqis-celebrates-us-iran-ceasefire-as-two-week-halt-in-war-begins?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Iraqis celebrates US-Iran ceasefire as two-week halt in war begins</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Iraqis celebrated a US-Iran ceasefire in Baghdad. This halt may reduce regional tensions, impacting global oil prices.</div>
+      
+    </div>
+    
+    
+  </div>
+
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&sect;</div></div></div>
+
+  <!-- YouTube -->
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">&#x1F3AC; YouTube</span>
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-07 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Jeff Su</span></div>
+      <a href="https://www.jeffsu.org/learn-80-of-claude-cowork-in-under-20-minutes/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Learn 80% of Claude Cowork in Under 20 Minutes</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Claude Cowork differs from Chat in file access, context window, and output delivery. Cowork delivers ready-to-use files directly to your folder, unlike Chat's copy-and-download process.</div>
+      
+    </div>
+    
+    
+  </div>
+
+  <!-- Section Rule -->
+  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&sect;</div></div></div>
+
+
+  <!-- AI Security -->
+  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
+    <div style="text-align: center; margin-bottom: 20px;">
+      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">&#x1F6E1;&#xFE0F; AI Security</span>
+    </div>
+    
+    <div style="font-size: 14px; color: #555; text-align: center; margin-bottom: 20px; font-style: italic; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; padding: 0 16px;">This week's focus: agentic ai security and prompt injection.</div>
+    
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 02 Apr 2026 17:27:46 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Blockchain Council</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOTjBfTndENEhEUFVtTGc3OVVKZEtFaDhkcXd5ZkZjMklURXZMd0dsWDRUajlad2w0Uko1NDhQZ05vM2M2SUFwS2tvNlpyWmEtZmdYSkp2dFRUWkhudGJRa2ZkM2YxbERVOG0wQ2RqOUVTQWxzczJNcmx6V05ERHFCQ1Bnai1QTjZUaUFtZ0ltQzM4UUdEMEM5eEtDeWZpUlJRYUFRbWNiaEY5Q1ZzTHdOT0RIa25kbnFjRGc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Prompt Injection and LLM Jailbreaks: Defenses</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; OWASP guidance highlights prompt injection and LLM jailbreaks as primary risks. Defenders must implement layered defenses to prevent these exploits.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 02 Apr 2026 16:17:14 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Blockchain Council</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1pdXlYOElLRWNvZGFhVXlsUVo0d1kxdnNKUlQwVTFKWldNV3E5WkVnQXhYalNUbElmRUJxc0tkYWtQRFVaVGJLckVVb0hBMG16VDJfeXNXbGUxTXhOaHpmdHZKeF9qOTI4ZjZwWnRtUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; AI Security Fundamentals (2026): Threats and Controls</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; The 2025 Stanford AI Index Report found a <strong>56%</strong> year-over-year increase in AI-related incidents. This means defenders must prioritize AI-specific threat models and controls.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 02 Apr 2026 04:03:12 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">healthcare-in-europe.com</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeElIdmEzUkhpNUdVWmMzdWtRRXE1OGVfYWFfZm8tSkVEQTNKTWZMOFVMaGlPSmR0QTUyWkQxdE9maUcxQkxoVjJTcnB5cFBGYy01d2VJYUkzOHRwSlY1NV94NEl1amRObngtLXg5ekpsazBtMHZPVVJPdHFEcjY4clJDejZUSGJw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Poisoned pixels, phishing, prompt injection: Cybersecurity threats in AI-driven radiology</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; At ECR 2026, experts presented cases of phishing and prompt injection attacks on AI-driven radiology systems. This highlights the need for robust security measures to protect healthcare systems from such vulnerabilities.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-07</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Mutsumi Sasaki, Kouta Nakayama, Yusuke Miyao et al.</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2604.06154v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Exclusive Unlearning</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F513; jailbreak</span>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F9F1; safety</span>
+        
+        
+      </div>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes "<strong>Exclusive Unlearning</strong>", which removes all knowledge except what's explicitly retained. Practitioners should care because it stops Large Language Models from generating harmful content, like jailbreaks, in sensitive domains like healthcare.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-07</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Andrew Kurtz, Klaudia Krawiecka</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2604.06148v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Who Governs the Machine? A Machine Identity Governance Taxonomy (MIGT) for AI Systems Operating Across Enterprise and Geopolitical Boundaries</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F9F1; safety</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F4CB; NIST taxonomy</span>
+        
+      </div>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a taxonomy to govern machine identities used by AI systems. Practitioners should care because it helps prevent attacks using ungoverned automated agents, like the <strong>$5.4</strong>-<strong>10 billion</strong> CrowdStrike outage.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Yuhang Zhou, Lizhu Zhang, Yifan Wu et al.</div>
+      <!-- Title -->
+      <a href="https://huggingface.co/papers/2604.04872" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Synthetic Sandbox for Training Machine Learning Engineering Agents</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F916; agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; SandMLE generates synthetic environments for training ML agents. This helps speed up agent training, stopping slow and expensive verification processes.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Zijun Wang, Haoqin Tu, Letian Zhang et al.</div>
+      <!-- Title -->
+      <a href="https://huggingface.co/papers/2604.04759" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Your Agent, Their Asset: A Real-World Safety Analysis of OpenClaw</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F9F1; safety</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F4CB; NIST taxonomy</span>
+        
+      </div>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper demonstrates a real-world safety analysis of OpenClaw, a personal AI agent, using the CIK taxonomy. Practitioners should care because it reveals how attackers can exploit OpenClaw's broad privileges to increase attack success rates via poisoning its capabilities, identity, or knowledge.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-06</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Asiri Dalugoda</div>
+      <!-- Title -->
+      <a href="https://huggingface.co/papers/2604.04522" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; HDP: A Lightweight Cryptographic Protocol for Human Delegation Provenance in Agentic AI Systems</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F916; agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; HDP proposes a token-based scheme to verify human authorization in AI systems. It stops unauthorized AI actions by tracing delegation chains back to human principals.</div>
+      
+      
+    </div>
+    
+    
+  </div>
+
+  <!-- Footer -->
+  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
+    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">&#x1F4E8; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
+  </div>
+
+</div>
+</body>
+</html>]]></content:encoded>
+      <pubDate>Wed, 08 Apr 2026 07:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>Daily Briefing - Tuesday, April 07, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-07.html</link>
@@ -13009,471 +13440,6 @@ AI systems interact with users through natural language, learn from massive data
 </body>
 </html>]]></content:encoded>
       <pubDate>Tue, 10 Mar 2026 07:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>Daily Briefing - Monday, March 09, 2026</title>
-      <link>https://ek0212.github.io/daily-newsletter/posts/2026-03-09.html</link>
-      <guid>https://ek0212.github.io/daily-newsletter/posts/2026-03-09.html</guid>
-      <description>Weather: 69°F - Sunny | Illness level: LOW | 2 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
-      <content:encoded><![CDATA[<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
-<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
-
-  <!-- Masthead -->
-  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Automated Daily Intelligence</div>
-    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
-    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">Monday, March 09, 2026</div>
-    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; Health &middot; Events &middot; News &middot; YouTube &middot; AI Security</div>
-  </div>
-
-  <!-- Weather -->
-  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
-    <div style="text-align: center; margin-bottom: 16px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
-    </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 69&deg; / Low 47&deg;</div>
-    
-    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
-      <tr style="border-bottom: 2px solid #1a1a1a;">
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Time</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Temp</th>
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Conditions</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Precip</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Humidity</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Wind</th>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">69&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">28%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph SW</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">64&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">40%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph S</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">56&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">57%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph S</td>
-      </tr>
-      
-    </table>
-    
-  </div>
-
-  <!-- Health Alert -->
-  
-  <div style="padding: 16px 32px; border-left: 4px solid #2980b9{clear else %}#27ae60; background: #f0f7fc;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; margin-bottom: 6px;">
-      &#x2705; NYC Illness Level: LOW
-    </div>
-    <div style="font-size: 14px; color: #444; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">4,621 cases this week — 59% below average for this time of year</div>
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Week ending 2026-02-28 · Source: NYC Dept. of Health</div>
-  </div>
-  
-
-  <!-- NYC Events -->
-  <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F4C5; NYC Major Events This Week</div>
-    
-    
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=2026%20United%20Airlines%20NYC%20Half%20NYC%20Sun%2C%20Mar%2015" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">2026 United Airlines NYC Half</a> &mdash; Sun, Mar 15, Brooklyn <span style="color: #888;">(Washington Ave & Eastern Parkway)</span>
-    </div>
-    
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
-      <a href="https://www.google.com/search?q=Brooklyn%20St.%20Patricks%20Parade%20NYC%20Sun%2C%20Mar%2015" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Brooklyn St. Patricks Parade</a> &mdash; Sun, Mar 15, Brooklyn <span style="color: #888;">(Prospect Park West & 9th St)</span>
-    </div>
-    
-    
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: NYC Open Data — Permitted Events</div>
-  </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- Top News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">Top News</span>
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 17:49:04 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/09/openai-acquires-promptfoo-to-secure-its-ai-agents/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI acquires Promptfoo to secure its AI agents</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎯 OpenAI acquired Promptfoo, an AI security startup founded in 2024, on Monday to protect large language models from online adversaries.
-⚙️ Promptfoo’s technology will be integrated into OpenAI Frontier, OpenAI's enterprise platform for AI agents, after the deal closes.
-💰 Promptfoo, founded by Ian Webster and Michael D’Angelo, is used by over 25% of Fortune 500 companies.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 18:28:13 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Ars Technica</span></div>
-      <!-- Title -->
-      <a href="https://arstechnica.com/tech-policy/2026/03/nintendo-sues-for-full-tariff-refund-after-backlash-over-price-hikes/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Nintendo sues to prevent Trump from dodging full tariff refunds</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎮 Nintendo joined thousands of companies on Friday in suing the Trump administration for full refunds, plus interest, on billions in unlawful tariffs.
-💲 Nintendo claims the Trump administration has already conceded over $200 billion in refunds are owed to hundreds of thousands of importers.
-⚖️ Nintendo argues the Court of International Trade must order prompt refunds for all importers, regardless of liquidation status, to prevent irreparable harm.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 13:30:59 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/09/nx-s1-5742548/anthropic-pentagon-lawsuit-amodai-hegseth" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Anthropic sues the Trump administration over 'supply chain risk' label</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚖️ Anthropic filed two federal lawsuits on Monday against the Trump administration, alleging illegal retaliation for its stance on artificial intelligence safety.
-🛡️ Pentagon officials designated Anthropic a “supply chain risk” last week after its CEO, Dario Amodei, stated Claude AI would not be used for autonomous weapons or mass surveillance of U.S. citizens.
-🚫 The lawsuits, filed in California and Washington, D.C. federal courts, allege violations of First Amendment rights and seek to block the Pentagon's blacklist designation.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 14:36:22 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/09/nx-s1-5742633/arizona-maricopa-county-2020-records-petersen" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Top Arizona lawmaker says he's complied with a subpoena for 2020 election records</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📜 Arizona State Senate President Warren Petersen announced on Monday that he complied with a federal grand jury subpoena received last week for records from the 2020 Maricopa County election review.
-🕵️‍♂️ Petersen stated on X that the FBI now has the records related to the Arizona State Senate's audit of Maricopa County's 2020 election.
-🗳️ Maricopa County Board of Supervisors and Recorder's office confirmed they have not received a subpoena for the widely discredited GOP-led review.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 14:11:42 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/09/nx-s1-5742375/mojtaba-khamenei-iran-supreme-leader" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What to know about Mojtaba Khamenei, Iran's new supreme leader</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🇮🇷 Iran's Assembly of Experts announced on Sunday that Mojtaba Khamenei, 56, was appointed as the third supreme leader since 1979, succeeding his killed father, Ayatollah Ali Khamenei.
-🤝 Mojtaba Khamenei's appointment, a mid-ranking cleric, signals a continuation of his father's hard-line rule due to his close ties to Iran's paramilitary Revolutionary Guard Corps (IRGC).
-📅 Born in 1969 in Mashhad, Mojtaba Khamenei served in the Revolutionary Guard during the Iran-Iraq War and has never held a formal government position.</div>
-      
-    </div>
-    
-    
-  </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- YouTube -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-09 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/in-the-hopper" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Oil prices soar past $100 a barrel as Middle East war widens</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛍️ OpenAI is dropping its plan to integrate checkout technology into ChatGPT, opting to use third-party apps for e-commerce instead.<br>📉 Following a Pentagon contract, US uninstalls of ChatGPT's mobile app surged 295% in one day, and US daily downloads decreased by 13%.<br>🎬 Pixar's "Hoppers" debuted at #1 with $46 million, but the studio faces ongoing challenges in creating original hits, with previous films like "Elio" being their biggest flop.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-09 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=1HeALnI-gVg" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Are you f**king kidding?</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Prepare for potential state laws, like those in California and Colorado, requiring ID verification to use computer operating systems, with fines up to $7,500 for intentional violations.<br>💻 Understand that state-level software laws could force developers to create different software versions for various states, increasing complexity for companies like Ubuntu.<br>📩 Contact your local and state representatives to educate them on how software works and the negative impacts of technology legislation to help prevent problematic laws.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-08 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=09SNudBuoCE" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Gemini Can Now Write You a Song</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎶 Use the new LIIA 3 AI music generator directly in the Gemini app or YouTube's Dream Track to create 30-second music clips from text, images, or video inputs.<br>⚠️ Be aware that Anthropic clarified its API changes aim to make third-party businesses pay for usage, potentially impacting personal agent tinkering with apps like OpenClaw.<br>🧪 Explore XAI's Grok Heavy, which now employs 16 debating sub-agents to generate more detailed responses, as an experiment in complex AI output.</div>
-      
-    </div>
-    
-    
-  </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- AI Security -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security</span>
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 19:34:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">IBM</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiY0FVX3lxTE0zQmwwUDdwVUFxWm8xZzVvUHduYWc5YjdnRi1YRjcxS1JUWm5zNlh5eHFLcmJGNmJ0ZGJ2Wm5GNTBWY0V3UURSbXdqY3UyUWt1Z0xBOUlEWFRvQ19yR1lpNFdoMA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Agent Security Best Practices and Tutorial</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 AI agents are transitioning from experimental demos to real-time autonomous systems integrated into everyday workflows, significantly expanding the attack surface.<br>🔒 Misconfigured AI agents risk leaking sensitive data, initiating unauthorized API calls, or exposing entire datasets through subtle prompt injection attacks.<br>🛡️ IBM’s BeeAI framework helps secure AI agent systems by applying permissions, role-based access control (RBAC), guardrails, and observability.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 03 Mar 2026 11:09:30 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Unit 42</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE81b0QxYzZmNUZ1Z0pmVjMyeFgtVkZxZUZoUFBwUjJtX3F2MklKQ21MbDlOSGN2eG5Hb3VPSlduTk1qczVKVHRsNzlGRUFxZkVycXVramF2ZFp2QkIzVjJ2ZElkMjhldllzeGJsdkZjZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎣 Indirect prompt injection (IDPI) is actively being weaponized in the wild, with adversaries embedding manipulated instructions within website content that LLMs later ingest.<br>🚨 Observed IDPI attacks include AI-based ad review evasion, SEO manipulation promoting phishing sites, data destruction, and unauthorized transactions.<br>🕵️ Researchers identified 22 distinct techniques attackers used in the wild to craft web-based IDPI payloads.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 09 Mar 2026 18:18:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQOVp2NkdmMFJVSHB4YXNQQl9OUmVycXkzWV85eDY2NUZsMnFPZW8ycWg5THpqeHNoTldrcFdMcHRfU19GelpiZjNoWTVNT01BMHkzck1mbmlBTExwRWR3Y0JvTlVWNkQzVGxUUG1IWm13WHhlb01JcmdDTU95bHRQTHNLSXZlMDBraEN1ekZ3XzZnSDZ5LTk0?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">OpenAI to acquire AI security platform Promptfoo</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤝 OpenAI is acquiring Promptfoo, an AI security platform that helps enterprises identify and remediate vulnerabilities in AI systems during development.<br>💻 Promptfoo's tools are utilized by over 25% of Fortune 500 companies and include a widely used open-source CLI and library for evaluating LLM applications.<br>🚀 The acquisition will integrate automated security testing and red-teaming capabilities, like detecting prompt injections and data leaks, directly into OpenAI's Frontier platform.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 06 Mar 2026 14:30:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Boulevard</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOc0lhTFNUZGNsSjZiaGtrNE4xTXRLXzZzYzliOGlYdGtXbVlxYVptTHY0VnhRSEdSNTFjNjhZcWc5MHJVUlFhWW5yTmhwXzVBOWRpaEhZWElCMzNVcExSYS1ITHpKMmRPRE16YnRBY2RoWkZrXzdhTDU0eUNNR0FfOHZxamwtQXAtQVpLQ1cwY0ZZZTM5TDFrTTUxNzZwZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What is AI Security? Top Security Risks in LLM Applications</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔒 AI security focuses on protecting AI models, training data, applications, and supporting infrastructure from manipulation, unauthorized access, and misuse.<br>🌐 LLM applications introduce new attack surfaces through their natural language interactions and connections to internal enterprise systems, which traditional cybersecurity often overlooks.<br>📊 McKinsey's 2023 Global AI Survey indicates 55% of organizations use AI, while research reveals 45% of AI-generated code contains security vulnerabilities.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Anmol Gulati, Sahil Sen, Waqar Sarguroh et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.06503v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Beyond Rows to Reasoning: Agentic Retrieval for Multimodal Spreadsheet Understanding and Editing</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">agentic AI</span>
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Recent advances in multimodal Retrieval-Augmented Generation (RAG) enable Large Language Models (LLMs) to analyze enterprise spreadsheet workbooks containing millions of cells, cross-sheet dependencies, and embedded visual artifacts. However, state-of-the-art approaches exclude critical context through single-pass retrieval, lose data resolution through compression, and exceed LLM context windows through naive full-context injection, preventing reliable multi-step reasoning over complex enterprise workbooks. We introduce Beyond Rows to Reasoning (BRTR), a multimodal agentic framework for spreadsheet understanding that replaces single-pass retrieval with an iterative tool-calling loop, supporting end-to-end Excel workflows from complex analysis to structured editing. Supported by over 200 hours of expert human evaluation, BRTR achieves state-of-the-art performance across three frontier spreadsheet understanding benchmarks, surpassing prior methods by 25 percentage points on FRTR-Bench, 7 points on SpreadsheetLLM, and 32 points on FINCH. We evaluate five multimodal embedding models, identifying NVIDIA NeMo Retriever 1B as the top performer for mixed tabular and visual data, and vary nine LLMs. Ablation experiments confirm that the planner, retrieval, and iterative reasoning each contribute substantially, and cost analysis shows GPT-5.2 achieves the best efficiency-accuracy trade-off. Throughout all evaluations, BRTR maintains full auditability through explicit tool-call traces.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Thomas Monninger, Shaoyuan Xie, Qi Alfred Chen et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.06576v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">BEVLM: Distilling Semantic Knowledge from LLMs into Bird's-Eye View Representations</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">The integration of Large Language Models (LLMs) into autonomous driving has attracted growing interest for their strong reasoning and semantic understanding abilities, which are essential for handling complex decision-making and long-tail scenarios. However, existing methods typically feed LLMs with tokens from multi-view and multi-frame images independently, leading to redundant computation and limited spatial consistency. This separation in visual processing hinders accurate 3D spatial reasoning and fails to maintain geometric coherence across views. On the other hand, Bird's-Eye View (BEV) representations learned from geometrically annotated tasks (e.g., object detection) provide spatial structure but lack the semantic richness of foundation vision encoders. To bridge this gap, we propose BEVLM, a framework that connects a spatially consistent and semantically distilled BEV representation with LLMs. Through extensive experiments, we show that BEVLM enables LLMs to reason more effectively in cross-view driving scenes, improving accuracy by 46%, by leveraging BEV features as unified inputs. Furthermore, by distilling semantic knowledge from LLMs into BEV representations, BEVLM significantly improves closed-loop end-to-end driving performance by 29% in safety-critical scenarios.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Kartik Sharma, Rakshit S. Trivedi</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.06495v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">COLD-Steer: Steering Large Language Models via In-Context One-step Learning Dynamics</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Activation steering methods enable inference-time control of large language model (LLM) behavior without retraining, but current approaches face a fundamental trade-off: sample-efficient methods suboptimally capture steering signals from labeled examples, while methods that better extract these signals require hundreds to thousands of examples. We introduce COLD-Steer, a training-free framework that steers LLM activations by approximating the representational changes that would result from gradient descent on in-context examples. Our key insight is that the effect of fine-tuning on a small set of examples can be efficiently approximated at inference time without actual parameter updates. We formalize this through two complementary approaches: (i) a unit kernel approximation method that updates the activations directly using gradients with respect to them, normalized across examples, and (ii) a finite-difference approximation requiring only two forward passes regardless of example count. Experiments across a variety of steering tasks and benchmarks demonstrate that COLD-Steer achieves upto 95% steering effectiveness while using 50 times fewer samples compared to the best baseline. COLD-Steer facilitates accommodating diverse perspectives without extensive demonstration data, which we validate through our experiments on pluralistic alignment tasks. Our framework opens new possibilities for adaptive, context-aware model control that can flexibly address varying loss-driven human preferences through principled approximation of learning dynamics rather than specialized training procedures.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Alejandra Perez, Anita Rau, Lee White et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.06570v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">SUREON: A Benchmark and Vision-Language-Model for Surgical Reasoning</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Surgeons don't just see -- they interpret. When an expert observes a surgical scene, they understand not only what instrument is being used, but why it was chosen, what risk it poses, and what comes next. Current surgical AI cannot answer such questions, largely because training data that explicitly encodes surgical reasoning is immensely difficult to annotate at scale. Yet surgical video lectures already contain exactly this -- explanations of intent, rationale, and anticipation, narrated by experts for the purpose of teaching. Though inherently noisy and unstructured, these narrations encode the reasoning that surgical AI currently lacks. We introduce SUREON, a large-scale video QA dataset that systematically harvests this training signal from surgical academic videos. SUREON defines 12 question categories covering safety assessment, decision rationale, and forecasting, and uses a multi-agent pipeline to extract and structure supervision at scale. Across 134.7K clips and 170 procedure types, SUREON yields 206.8k QA pairs and an expert-validated benchmark of 354 examples. To evaluate the extent to which this supervision translates to surgical reasoning ability, we introduce two models: SureonVLM, a vision-language model adapted through supervised fine-tuning, and SureonVLM-R1, a reasoning model trained with Group Relative Policy Optimization. Both models can answer complex questions about surgery and substantially outperform larger general-domain models, exceeding 84% accuracy on the SUREON benchmark while outperforming general-domain models on standard surgical perception tasks. Qualitative analysis of SureonVLM-R1 reveals explicit reasoning behavior, such as inferring operative intent from visual context.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-06</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Yonatan Tussa, Andy Heredia</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.06564v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Pen: Episodic Cognitive Assistance via an Ear-Worn Interface</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #16a085; color: #16a085; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">privacy</span>
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Wearable AI is often designed as always-available, yet continuous availability can conflict with how people work and socialize, creating discomfort around privacy, disruption, and unclear system boundaries. This paper explores episodic use of wearable AI, where assistance is intentionally invoked for short periods of focused activity and set aside when no longer needed, with a form factor that reflects this paradigm of wearing and taking off a device between sessions. We present The Pen, an ear-worn device resembling a pen, for episodic, situated cognitive assistance. The device supports short, on-demand assistance sessions using voice and visual context, with clear start/end boundaries and local processing. We report findings from an exploratory study showing how layered activation boundaries shape users' sense of agency, cognitive flow, and social comfort.</div>
-      
-    </div>
-    
-    
-  </div>
-
-  <!-- Footer -->
-  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
-    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Generated automatically &middot; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
-  </div>
-
-</div>
-</body>
-</html>]]></content:encoded>
-      <pubDate>Mon, 09 Mar 2026 07:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
