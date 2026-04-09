@@ -37,6 +37,7 @@ MAX_ABSTRACT_CHARS = 250      # max chars for paper abstracts in newsletter
 
 # ── Scoring & similarity ────────────────────────────────────────────────
 PODCAST_MATCH_THRESHOLD = 0.3
+PODCAST_MIN_DESC_CHARS = 1500   # minimum podcast RSS text to keep (was 3000, too aggressive)
 DEDUP_OVERLAP_THRESHOLD = 0.6
 DEMOTE_MULTIPLIER = 3
 CITATION_SCORE_CAP = 20

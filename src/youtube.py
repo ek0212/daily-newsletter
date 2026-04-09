@@ -21,6 +21,7 @@ from src.constants import (
     MIN_TEXT_LENGTH_MEDIUM,
     MIN_TEXT_LENGTH_SHORT,
     PODCAST_MATCH_THRESHOLD,
+    PODCAST_MIN_DESC_CHARS,
 )
 from src.summarizer import summarize as extractive_summarize
 
@@ -291,6 +292,44 @@ def _get_jeffsu_text(video_title: str) -> tuple[str, str]:
     return "", ""
 
 
+def _get_izzy_text() -> tuple[str, str]:
+    """Fetch the latest blog post from Dr. Izzy Sealey's Substack.
+
+    Uses the most recent post regardless of title match, since her Substack
+    covers personal development topics that complement her YouTube content.
+    Returns (text, post_url) tuple.
+    """
+    try:
+        feed = feedparser.parse("https://letters.izzysealey.com/feed")
+        if not feed.entries:
+            return "", ""
+
+        entry = feed.entries[0]
+        url = entry.get("link", "")
+        if not url:
+            return "", ""
+
+        # Prefer content:encoded > description > summary
+        text = ""
+        if hasattr(entry, "content") and entry.content:
+            text = entry.content[0].get("value", "")
+        if not text or len(text) < MIN_TEXT_LENGTH_MEDIUM:
+            text = entry.get("description", "") or entry.get("summary", "")
+
+        # Strip HTML tags
+        text = re.sub(r'<[^>]+>', ' ', text)
+        text = re.sub(r'\s+', ' ', text).strip()
+
+        if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
+            logger.info("Dr. Izzy Substack: %d chars from %s", len(text), url)
+            return text, url
+
+    except Exception as e:
+        logger.debug("Dr. Izzy Substack fetch failed: %s", e)
+
+    return "", ""
+
+
 def _get_transcript_text(video_id: str) -> str:
     """Fetch YouTube transcript via the YouTube Transcript API (works locally, may fail in CI)."""
     from youtube_transcript_api import YouTubeTranscriptApi
@@ -391,12 +430,21 @@ def get_recent_videos(days: int = 3) -> list[dict]:
                     video["source_url"] = blog_url
                 continue
 
+        if video["channel"] == "Dr. Izzy Sealey":
+            text, post_url = _get_izzy_text()
+            if text and len(text) >= MIN_TEXT_LENGTH_MEDIUM:
+                video["raw_text"] = text
+                video["_text_source"] = "podcast"
+                if post_url:
+                    video["source_url"] = post_url
+                continue
+
         # Try website transcripts first (fullest text)
         text, source_url = _get_website_transcript(video["channel"], video["title"])
         if not text or len(text) < MIN_TEXT_LENGTH_MEDIUM:
-            # Try podcast RSS descriptions — only use if substantial (3000+ chars)
+            # Try podcast RSS descriptions — only use if substantial
             text, source_url = _get_podcast_text(video["channel"], video["title"])
-            if text and len(text) < 3000:
+            if text and len(text) < PODCAST_MIN_DESC_CHARS:
                 logger.debug("Podcast text too short (%d chars) for '%s', skipping",
                              len(text), video["title"][:50])
                 text = ""

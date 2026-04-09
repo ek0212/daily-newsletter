@@ -175,7 +175,12 @@ def fetch_all_data() -> dict:
     # Items the LLM flags as low-signal get dropped.
     t0 = time.time()
     enhance_summaries(news, "news")
-    enhance_summaries(youtube, "youtube")
+    # Only send YouTube videos with actual text to LLM for enhancement
+    # Videos without text keep their fallback summary and are never dropped
+    yt_with_text = [v for v in youtube if v.get("raw_text")]
+    yt_without_text = [v for v in youtube if not v.get("raw_text")]
+    enhance_summaries(yt_with_text, "youtube")
+    youtube = yt_with_text + yt_without_text
 
     # AI security items: papers vs news get different prompts
     ai_papers = [i for i in ai_security if i.get("type") == "paper"]
