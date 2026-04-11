@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 11 Apr 2026 03:40:45 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 11:31:39 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Saturday, April 11, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-11.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-11.html</guid>
-      <description>Weather: 52°F - Mostly Cloudy | Illness level: NORMAL | 1 major events this week | 3 top news stories | 5 YouTube videos | 7 AI security updates</description>
+      <description>Weather: 52°F - Sunny | Illness level: NORMAL | 1 major events this week | 3 top news stories | 3 YouTube videos | 8 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">&#x26C5; Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Cloudy &mdash; High 60&deg; / Low 51&deg; <span style="font-size: 13px; color: #888;">(Feels like 52&deg;)</span></div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 64&deg; / Low 43&deg; <span style="font-size: 13px; color: #888;">(Feels like 52&deg;)</span></div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -49,46 +49,46 @@
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">54&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
         <td style="padding: 7px 6px; text-align: center;">59%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">21 mph NW</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">21 mph N</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">55&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">49%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">20 mph NW</td>
+        <td style="padding: 7px 6px; text-align: center;">54%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">20 mph N</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">59&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">62&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">32%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">16 mph NW</td>
+        <td style="padding: 7px 6px; text-align: center;">28%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">17 mph NW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">58&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">62&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">33%</td>
+        <td style="padding: 7px 6px; text-align: center;">27%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">16 mph NW</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">57&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">59&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Clear</td>
         <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">35%</td>
+        <td style="padding: 7px 6px; text-align: center;">32%</td>
         <td style="padding: 7px 6px; text-align: center; color: #555;">15 mph NW</td>
       </tr>
       
@@ -131,31 +131,31 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 11 Apr 2026 03:21:56 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTFAyV09tbUFGak5zQjF6RUxFU2JDZVpFTmMzc1owZ1ZhLWRYYVp6enpjTGozSUtFb0dtM0NGRTNReEVNdkNreTlZQ2k0T3NjVVZET1NjcQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Iran delegation arrives in Pakistan for US talks, as Lebanon and Israel to discuss ceasefire</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 11 Apr 2026 07:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <a href="https://www.npr.org/2026/04/11/g-s1-116582/india-cracks-down-satirists-turning-prime-minister-punch-line-modi" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">India cracks down on satirists for turning its prime minister into a punch line</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US VP JD Vance leads a delegation to Pakistan for Iran talks. This development may impact Middle East ceasefire negotiations, including Israel and Lebanon discussions.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; India's government, led by PM Narendra Modi, is cracking down on social media jokes criticizing him. This crackdown may chill free speech and impact India's global reputation as a democracy.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 11 Apr 2026 02:50:50 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Honolulu Star-Advertiser</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNWDhackU4RWRTSmJrQ1hCa1gyWG1jZEQxaXU2TlpfYS1Db2dqU1pBaTVkNThlekVDaVU0MW1aa2dSWDZicGNLVTJtczQ0YlRxdXlQbm8xMnVzSmJ6NGs3MnJ1NmNEbW5wclRpZzZfQTIzc3ZGRWhJQWI3c0YwcWpLVjZENjJ0XzhQUHo3XzVlN2Q2ZlhZRExFMlZUR3VKaEZjQTVDeXVMV2luYU9iaUNuYjNkYw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Record gas price surge fuels sharp rise in U.S. inflation</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 11 Apr 2026 07:51:14 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/4/11/israel-rejects-ceasefire-with-hezbollah-ahead-of-lebanon-talks-next-week?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel rejects ceasefire with Hezbollah ahead of Lebanon talks next week</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US consumer prices rose <strong>4%</strong> in March due to a record gas price surge. This may prevent the Federal Reserve from cutting interest rates this year.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Israel rejects a ceasefire with Hezbollah ahead of talks with Lebanon in Washington next week. This rejection may escalate tensions and impact US-Iran talks.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 11 Apr 2026 03:16:23 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/11/artemis-ii-astronauts-journey-back-to-earth-after-moon-mission?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Artemis II astronauts journey back to Earth after moon mission</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 11 Apr 2026 02:49:45 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Honolulu Star-Advertiser</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNWDhackU4RWRTSmJrQ1hCa1gyWG1jZEQxaXU2TlpfYS1Db2dqU1pBaTVkNThlekVDaVU0MW1aa2dSWDZicGNLVTJtczQ0YlRxdXlQbm8xMnVzSmJ6NGs3MnJ1NmNEbW5wclRpZzZfQTIzc3ZGRWhJQWI3c0YwcWpLVjZENjJ0XzhQUHo3XzVlN2Q2ZlhZRExFMlZUR3VKaEZjQTVDeXVMV2luYU9iaUNuYjNkYw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Record gas price surge fuels sharp rise in U.S. inflation</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; NASA's Artemis II astronauts returned to Earth on April 11, 2026, after a lunar mission. This success paves the way for future manned missions to the Moon and Mars.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US consumer prices rose <strong>4%</strong> in March due to a record gas price surge. This increase may lead the Federal Reserve to avoid cutting interest rates this year.</div>
       
     </div>
     
@@ -177,47 +177,27 @@
       <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Bittensor-Drama--TAO-down-15---E2274-e3hntu7" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Bittensor Drama! TAO down 15%! | E2274</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; TAO token fell <strong>15%</strong> after Covenant AI left Bittensor. Gareth Howells shares the community's perspective on Covenant's abrupt departure.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Every-AI-Product-Is-Becoming-Every-Other-AI-Product-e3goh0v" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Why Every AI Product Seems the Same</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Critics say AI products seem the same due to desperation and dilution. Coding capability may naturally unlock other knowledge work, making convergence inevitable.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
-      <a href="https://youtube.com/watch?v=SguncMvE77I" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; AI News: The Scariest AI Model Ever!</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Matt Wolfe. Click to watch.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; TAO token fell <strong>15%</strong> after Covenant AI left Bittensor. Gareth Howells shares the community's perspective on the sudden departure.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <a href="https://youtube.com/watch?v=XPgSupk9oRo" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Airlines are jacking up baggage fees and people are mad</a>
+      <a href="https://www.morningbrew.com/issues/striking-fear" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Airlines are jacking up baggage fees and people are mad</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Morning Brew Daily. Click to watch.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; NYC office vacancies fell to <strong>13.5%</strong> despite Mayor Mamdani's proposed tax hikes. Leasing by AI companies soared, drawn to the city's talent pool.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
-      <a href="https://youtube.com/watch?v=ND9CSuzvrIY" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; I’m scared about the future of security</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-10 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
+      <a href="https://youtube.com/watch?v=SguncMvE77I" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; AI News: The Scariest AI Model Ever!</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Theo - t3.gg. Click to watch.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Matt Wolfe. Click to watch.</div>
       
     </div>
     
@@ -240,6 +220,19 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 11:03:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOQm4tdi1tbDFIcHZjTFRnSG1YODdpN3pmNVpfbEh5VGZKSm54OGx1YVNyYzBMbVBKVTdURkNKVHVHWVZvRm9vNkM2RUFUbFNoSzBlOUFmYWR3SkhzUV9RLVloX0VQT3FGYk8xVWRpR2dUcTNTM05ibWNSdjRWSnFvMU1rNzl2Y01KZXJLclBVTlRxc3pEVjJZM0dqR3hvYndqLTk1akxGVXIwMzFDdWY2RzRqX1JoWmwxd3NXVVNMaw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; LLM-generated passwords are indefensible. Your codebase may already prove it</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Irregular and Kaspersky found LLM-generated passwords follow predictable patterns. This means defenders should not rely on AI-generated passwords, as they can be easily guessed.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 09 Apr 2026 16:03:17 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Security Boulevard</span></div>
       <!-- Title -->
       <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxPR3diajljeFBUT3NkTkRIUGRxR3hDbTJZMzZmc3lkWS1CclF2dWJndVQ2Y290WlFKUkcyLU40bDU3R2xsOUp5LWNkZ3BmOFhxa3Z0TG9HaXpHQ3MyU09vTXVnZ2NTTUNLVlV1bUt4Mmd3LURKZTRENk50WDVyanJTS29wb0s3b01qNnFCR1BnVS1jelptdkZsVzVtbUV0XzBsOFhENDJmc0ttVmFkNjJXclFjcnlDTGpJ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; LangChain, Langflow, LiteLLM: When AI’s Foundation Code Becomes the Attack Surface</a>
@@ -258,20 +251,8 @@
       <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMXVIeU55S2lRb2k0X2lLcmhrVzM3M2FZM1NPSUdCRHQ0SFl1WHlfMjlkVTY4RHpMd2NkRnZ0dGU5SUZxTk5LTURDZVlqaThFSDRMR2hJVmhScHU4Rk9oVXBOR0M0WVRhUU8xMDNwaVVVcS1FNnpKXzFDMzR0QnhseDJHUkhIRm8zRDFvXzA2cXl4T0pLaUhVLUx0NXA2dC16NG5wX010dWx1Y2tQelVLWVdjd21jNzBv?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Prompt Injection and LLM Jailbreaks in Production</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Prompt injection affects <strong>73%</strong> of generative AI deployments, per Blockchain Council. This means defenders must prioritize input validation to prevent model manipulation.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 06 Apr 2026 06:38:13 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CyberSecurityNews</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE5TajNxNExRaTdlcnVwMHhiNlNfaVhwM1BFZ01NU2dNMTVGVFFFR3RXTy1wdkhCWnBXMUI4WVVaTndRcGlZNTB6VFJReGlvOGlaYVA4S3B6ZXJ3YUUwNFNsY1hzQTFtUkFqdHBiZ19nNNIBdEFVX3lxTE1SVG5pM2IyRW9Ucm9lWFA2VmNvZEM1VElvZVdTRlhub1lBVUVmZFR0UXRocXR5WUlnQWFwT2FwQmt4enpTX0FJQnU1anBNTXRNTmowV3BpbHJXemM0WUhiWUFZMFUxT1Z1NmdqZ3hmYXRZZnd0?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; METATRON - Open-Source AI Penetration Testing Assistant Brings Local LLM Analysis to Linux</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; METATRON, a Python 3 framework, brings local LLM analysis to Linux for vulnerability assessment. This means defenders can test AI-driven recon tools without cloud connectivity.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Prompt injection affects <strong>73%</strong> of generative AI deployments, citing Blockchain Council. 
+This means defenders must prioritize input validation to prevent model manipulation.</div>
       
       
     </div>
@@ -284,7 +265,7 @@
       <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSmpXeDRiZmR4S3ZNRmpOMHJHbGZLOWsxWVYzSUNUX3o2S0RFZzV3YXl2SlJsUWN5VTloNWxKM2l4UXRTX3h6UmtJYVp4d0pNWmZBaHd2SHR0MmZaSVpBQy1vaTcxc1pyUEtiVG5aOXR3Q1h5V3Iyd0hvVlBFOTQtODEzSWQ1OXRGd2VSU1ZwSUdtNVRCd1J0S09JNTA5dUFwNjVVS0VvYnQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; VectorCertain’s MYTHOS Program: A Game-Changer in AI Security Standards</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; VectorCertain's MYTHOS program detected <strong>100%</strong> of 7,000 adversarial scenarios. This means defenders can expect high efficacy from SecureAgent governance pipeline validation in preventing AI attacks.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; VectorCertain's MYTHOS program detected <strong>100%</strong> of 7,000 adversarial scenarios. This means defenders can trust its SecureAgent pipeline for AI security.</div>
       
       
     </div>
@@ -319,7 +300,42 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes ParseBench, a benchmark to test AI agents' document parsing abilities. Practitioners should care because it reveals gaps in current parsing methods, helping them identify vulnerabilities in automated document processing.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes ParseBench, a benchmark to test AI agents' document parsing abilities. Practitioners should care because it reveals gaps in current parsing methods, helping them identify and fix errors in automated document processing.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Authors + Stats -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-09</div>
+      <!-- Authors with affiliations -->
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Shilin Yan, Jintao Tong, Hongwei Xue et al.</div>
+      <!-- Title -->
+      <a href="https://arxiv.org/pdf/2604.08545v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Act Wisely: Cultivating Meta-Cognitive Tool Use in Agentic Multimodal Models</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 8px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F916; agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a method to help AI models decide when to use external tools and when to rely on internal knowledge. This helps prevent unnecessary tool use, reducing latency and noise in AI decision-making.</div>
       
       
     </div>
@@ -354,7 +370,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Proposes Hierarchical Experience, a framework to improve search agents' training stability. Helps prevent inefficient reasoning trajectories in large language models.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a framework to improve reinforcement learning for search agents by extracting knowledge from experience. This helps stop inefficient exploration, enabling more stable and strategic search.</div>
       
       
     </div>
@@ -389,7 +405,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes a framework to improve text-to-video models' ability to generate the correct number of objects specified in a prompt. Practitioners should care because it reduces errors in video generation, such as incorrect object counts.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes a framework to improve text-to-video models' ability to generate the correct number of objects specified in a prompt. Practitioners should care because it helps prevent generation of incorrect or misleading video content.</div>
       
       
     </div>
