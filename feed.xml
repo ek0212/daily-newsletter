@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 12 Apr 2026 11:33:56 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 19:33:10 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Sunday, April 12, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-12.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-12.html</guid>
-      <description>Weather: 43°F - Sunny | Illness level: NORMAL | 2 major events this week | 4 top news stories | 1 YouTube videos | 8 AI security updates</description>
+      <description>Weather: 53°F - Mostly Sunny | Illness level: NORMAL | 2 major events this week | 4 top news stories | 2 YouTube videos | 7 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -35,7 +35,7 @@
     <div style="text-align: center; margin-bottom: 16px;">
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">&#x26C5; Weather in New York City</span>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Sunny &mdash; High 57&deg; / Low 49&deg; <span style="font-size: 13px; color: #888;">(Feels like 39&deg;)</span></div>
+    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Mostly Sunny &mdash; High 55&deg; / Low 50&deg; <span style="font-size: 13px; color: #888;">(Feels like 53&deg;)</span></div>
     
     <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
@@ -48,48 +48,30 @@
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">47&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(44&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">45%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">7 mph NE</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">35%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">8 mph E</td>
-      </tr>
-      
-      <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">57&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">54&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">3%</td>
-        <td style="padding: 7px 6px; text-align: center;">35%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph SE</td>
+        <td style="padding: 7px 6px; text-align: center;">1%</td>
+        <td style="padding: 7px 6px; text-align: center;">41%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph SE</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">57&deg;F</td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">52&deg;F</td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">5%</td>
-        <td style="padding: 7px 6px; text-align: center;">40%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">1%</td>
+        <td style="padding: 7px 6px; text-align: center;">48%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph SE</td>
       </tr>
       
       <tr style="border-bottom: 1px solid #ddd;">
         <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">49&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(44&deg;)</span></td>
+        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">50&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(45&deg;)</span></td>
         <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">7%</td>
-        <td style="padding: 7px 6px; text-align: center;">63%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">13 mph S</td>
+        <td style="padding: 7px 6px; text-align: center;">3%</td>
+        <td style="padding: 7px 6px; text-align: center;">58%</td>
+        <td style="padding: 7px 6px; text-align: center; color: #555;">14 mph S</td>
       </tr>
       
     </table>
@@ -135,41 +117,41 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 08:44:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AP News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxQNEdhN0h0VmJ6a1pSZlBtMmN5MWY0T0RfNVFDR2FudWF3SHdpR0pVRkhwbzl4ZnJLUmhUOUNCeGR5MXhzWlRVWVBuZE5nb0hUSWxJS1pGRkppb0ZaNGozaW9XSndrODAwYzk1OHRZaURuWF9VTGVRVzJwaXd1cVozZ0FfSVVZZzI0SVk2TWl0VVVkNXp2bllQZVdmVU5zYWo1LVlNeg?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">China says it will resume some ties with Taiwan after visit by opposition leader</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 13:06:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AP News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY1g0d1ZkX29ZR1BleHlJaFlvYlBlUmx2WTlnU1VNYkNZQXI5WUZBVUM4SDBpNXIzOGY3b0FBR01xWTlEYjU4bnBPZXBxXzVzX1NES2JudmV6cEdrclFfVjBvazNIZzNGdjRDelM2dHBJMlpxZGlFNHd2Ulo2X2Jka3hOc3l3Mjg3d0x2YTZ6MlRTUm9ZWFlKUEpENGhhUG9tUzFKc3BWVEY?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Russia and Ukraine accuse each other of violating Putin’s Easter ceasefire</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; China resumed ties with Taiwan after opposition leader Cheng Li-wun met President Xi Jinping. This move may ease tensions, affecting trade and travel between the two.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Russia and Ukraine accused each other of violating a 32-hour Easter ceasefire. This escalation may lead to renewed fighting, impacting regional stability.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 10:51:36 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/4/12/benin-holds-presidential-election-amid-deteriorating-security-situation?traffic_source=rss" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Benin holds presidential election amid deteriorating security situation</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 17:06:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">DW.com</span></div>
+      <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQS2ZLZEJZMnJYblQ3UUlETHVmekRtZW5HOWlRTHVqeC1zZ1lJSi1WN1VBX29saXhzQVdaQVRsbmhZWjVOaTdQekhRTHNoa2VuQTFMaVFVM0M3WkZkNGVQOWV1MWlJbVl3SUtfYS1aODlwVjRTR2UzZWcwd2FPSGNqNHkyRVpqbUdoM1FGOVdVMWVTbUkwU2hv?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Hungary election: Polls close as Orban faces pivotal vote</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Benin holds a presidential election with <strong>7.9 million</strong> registered voters. The new leader will face economic and security challenges, impacting the country's stability.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Hungary's polls closed with Orban likely defeated, Tisza party projected to win. A Tisza victory could bring significant reforms with a potential two-thirds majority in parliament.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 05:40:24 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <a href="https://www.npr.org/2026/04/12/nx-s1-5782538/u-s-iran-peace-talks-islamabad-collapse" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">No Deal: U.S.-Iran peace talks in Islamabad collapse</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 09:45:24 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">moneywise.com</span></div>
+      <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxOZHdkam1rel8zVV9vcHBqOUIybE9rZXZvczFsdnd4bDVrWlNwX2RadThmVWtLMzlrUDdHeG5fZVZRLXpOQjV6SzBkRmJObHZscHFMSjJqWnQ5anVVODNiZjdzZTY1X3pjNTlUNEZfVkhlOWNyWTk3RVhIMTRERWtnNVJ4SlZaTHFKanFjWjZJTW1XU3BJdm9zQ2tR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Bessent and Powell call emergency meeting with bank CEOs after Anthropic's Mythos AI finds thousands of zero-day exploits</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; US-Iran peace talks in Islamabad ended without a deal, with Vice President J.D. Vance citing Iran's refusal to commit to not seeking a nuclear weapon. This collapse may lead to increased US sanctions on Iran, affecting global oil markets and regional stability.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Treasury Secretary Bessent and Fed Chair Powell met with CEOs of major US banks on April 7 to discuss Anthropic's Mythos AI, which found thousands of zero-day exploits. This meeting matters as it may lead to new cybersecurity measures, potentially impacting the global financial system's stability.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 05:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <a href="https://www.npr.org/2026/04/12/nx-s1-5782074/project-hail-mary-nasa-space-science" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The real space science behind 'Project Hail Mary'</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 12 Apr 2026 03:54:59 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">ABC7 New York</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxQRWJJN3FSaGJBLXBxM0ZxS1NKTk5Fbk1YNWhDM3VXWWV5czkwTGNYaG9NSWJ4QWtXZHpOMTFDWkdHSEV2UEstZzRmeXI5X19Mc1RUY0JIdWNxUWloVV9ZN0ZLNHR0UXU5VjdCUjkxWEoycU14MGFxMmYzdGdWLWtRM0FnVENXZFlFV01BSVY1V09GMWhKMXNXTzdxMzVoZktqdVloM3hwZjNYM1Nud2RiZEtNSnROVk10M1HSAb8BQVVfeXFMUEhKUy1ZNXAzRlF6d3lNYTVhakhOZGZRbGs2anNtVTZrMEN4TGkxRC1XQXliMEJMTmxEQ1pPaGtZdWQ5RENKeDd1aFFPdXZYdFFvUDNIV0VfOTNfak9LcmJsdDdxNHIyWk5LOXNNNUcwSS1rWnRtWlZaUGdtZGwyRURIeFV1RHJVYTBJamxsOTlwc05tVkhwUUs3RHZ1bHRieXMzXzNBVHdNbV9kWEpDVy1yUFdqU0xTVjhBMDU1dnc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Reports of multiple people shot inside Chick-fil-A in Union, New Jersey; investigation ongoing</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Film 'Project Hail Mary' earns <strong>$400</strong> million globally. Its sci-fi concepts may inspire new interest in space science and interstellar travel research.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; Multiple people were shot inside a Chick-fil-A in Union, New Jersey, on Route 22, just before 9 p.m. Saturday. This incident may impact local business operations and public safety concerns in the area.</div>
       
     </div>
     
@@ -185,13 +167,23 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">&#x1F3AC; YouTube</span>
     </div>
     
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-12 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/OpenAIs-New-Deal-e3hj6vo" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Anthropic Now Leads OpenAI in Annualized Revenue</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Anthropic's revenue has tripled to a <strong>$30</strong> billion run rate, surpassing OpenAI. The AI industry struggles to make a case for its existence, despite massive revenue growth.</div>
+      
+    </div>
+    
     <div style="padding: 16px 0; ">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-12 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
       <a href="https://www.morningbrew.com/issues/investing-brew" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; ‘The Audacity’ exposes dark side of Silicon Valley billionaires</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Gen Zers invest based on "<strong>finfluencer</strong>" content, with <strong>70%</strong> influenced by it. Vivian Tu, a Wall Street trader turned finfluencer, explains finance like a friend on FaceTime, gaining millions of views.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Gen Zers invest based on "<strong>finfluencer</strong>" content, with <strong>70%</strong> influenced by it. Vivian Tu, a Wall Street trader turned finfluencer, reaches millions with relatable advice.</div>
       
     </div>
     
@@ -214,12 +206,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 22:00:51 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Unit 42</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 11:03:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE81b0QxYzZmNUZ1Z0pmVjMyeFgtVkZxZUZoUFBwUjJtX3F2MklKQ21MbDlOSGN2eG5Hb3VPSlduTk1qczVKVHRsNzlGRUFxZkVycXVramF2ZFp2QkIzVjJ2ZElkMjhldllzeGJsdkZjZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Fooling AI Agents: Web-Based Indirect Prompt Injection Observed in the Wild</a>
+      <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOQm4tdi1tbDFIcHZjTFRnSG1YODdpN3pmNVpfbEh5VGZKSm54OGx1YVNyYzBMbVBKVTdURkNKVHVHWVZvRm9vNkM2RUFUbFNoSzBlOUFmYWR3SkhzUV9RLVloX0VQT3FGYk8xVWRpR2dUcTNTM05ibWNSdjRWSnFvMU1rNzl2Y01KZXJLclBVTlRxc3pEVjJZM0dqR3hvYndqLTk1akxGVXIwMzFDdWY2RzRqX1JoWmwxd3NXVVNMaw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; LLM-generated passwords are indefensible. Your codebase may already prove it</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Unit 42 reports web-based indirect prompt injection attacks on large language models. This means defenders should monitor website content ingested by AI agents for hidden instructions.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Irregular and Kaspersky found LLM-generated passwords, like those from Claude Opus 4.6, follow predictable patterns. This means defenders should not rely on AI-generated passwords, as they can be easily guessed despite appearing complex.</div>
       
       
     </div>
@@ -227,12 +219,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 08 Apr 2026 11:03:25 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 07 Apr 2026 19:23:15 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechNadu</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOQm4tdi1tbDFIcHZjTFRnSG1YODdpN3pmNVpfbEh5VGZKSm54OGx1YVNyYzBMbVBKVTdURkNKVHVHWVZvRm9vNkM2RUFUbFNoSzBlOUFmYWR3SkhzUV9RLVloX0VQT3FGYk8xVWRpR2dUcTNTM05ibWNSdjRWSnFvMU1rNzl2Y01KZXJLclBVTlRxc3pEVjJZM0dqR3hvYndqLTk1akxGVXIwMzFDdWY2RzRqX1JoWmwxd3NXVVNMaw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; LLM-generated passwords are indefensible. Your codebase may already prove it</a>
+      <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOSWJXX1FKeDFjbWVOc0M3TFlVS0xQWGNVWlNUcEdzNWtHRmxiMmRlTkN2dzBJNGYyN180a1VZbGxEQTRDTjU5MVB5M2MzOEVLMDB0V2NjWUtPRURiUlJHdUZZYndVanJUczN6cjYyVTc4eFZKazRpTEVuWi01bmVsbmdHb0doMEhJdXlyMktnSm1abDlPbF9xT2JjaXZPei1wUDNlcDh2N3UxLU1tZ3dyYklMUWRfdURhZk5BU08wbFlWckdvY1E?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; GrafanaGhost Exploit Exfiltrates Sensitive Grafana Business Data via Indirect Prompt Injection</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Irregular and Kaspersky found LLM-generated passwords follow predictable patterns. This means defenders should not rely on AI-generated passwords, as they can be easily guessed.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Grafana's indirect prompt injection vulnerability, GrafanaGhost, allows silent data exfiltration. This means AI system defenders should review Grafana configurations for potential exploitability.</div>
       
       
     </div>
@@ -253,12 +245,12 @@
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 09 Apr 2026 13:05:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">PR Newswire</span></div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 10 Apr 2026 19:57:52 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">citybuzz -</span></div>
       <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVEowaWZXYmhIZ01FTE1CcXlKemJISHdhR3RLbkRRSFliRXJJVGNScDhlMTJsUUZGSlZleFhGZnhUaXRCeEhKcnVoZWtleFh3bURqdy1PZjI2eFVBbkpNVUdONjVnTThEWGRLUVhKYkE0YncxcTJmSkE3eFd2MnBnYnRIZjdscXRpdHpwTm5aaWhlQ0VwdWgxRl9IMnVTdHMxLWZ0Qk1raUJJV0ZXSEF4SDAtNWExNm1ndXgwNjRwSTZsdkdWZmpWSk9Wa0d0bWV4T2ZIS1M4WnQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; Norton Launches AI Agent Protection in Norton 360, Securing Autonomous AI in Real Time</a>
+      <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSmpXeDRiZmR4S3ZNRmpOMHJHbGZLOWsxWVYzSUNUX3o2S0RFZzV3YXl2SlJsUWN5VTloNWxKM2l4UXRTX3h6UmtJYVp4d0pNWmZBaHd2SHR0MmZaSVpBQy1vaTcxc1pyUEtiVG5aOXR3Q1h5V3Iyd0hvVlBFOTQtODEzSWQ1OXRGd2VSU1ZwSUdtNVRCd1J0S09JNTA5dUFwNjVVS0VvYnQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; VectorCertain’s MYTHOS Program: A Game-Changer in AI Security Standards</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; Norton launched AI Agent Protection in Norton 360, securing autonomous AI in real-time. This means defenders must consider AI-specific threats and protections.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; VectorCertain's MYTHOS program detected and prevented <strong>100%</strong> of 7,000 adversarial scenarios. This means defenders can rely on high detection rates for Anthropic Mythos threat vectors.</div>
       
       
     </div>
@@ -293,42 +285,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes ParseBench, a benchmark to test AI agents' document parsing abilities. Practitioners should care as it reveals weaknesses in current parsing methods, helping to prevent errors in automated decision-making.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-09</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Shilin Yan, Jintao Tong, Hongwei Xue et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2604.08545v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; Act Wisely: Cultivating Meta-Cognitive Tool Use in Agentic Multimodal Models</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F916; agentic AI</span>
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a method to help AI models decide when to use external tools and when to rely on internal knowledge. This helps prevent unnecessary tool use, reducing latency and noise in AI decision-making.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; ParseBench benchmarks AI document parsing with 2000 verified pages. It reveals gaps in parsing tables, charts, and formatting, which can lead to incorrect autonomous decisions.</div>
       
       
     </div>
@@ -363,7 +320,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes a framework to improve training of search agents by extracting knowledge from reasoning trajectories. Practitioners should care because it enables more efficient and stable search, stopping wasted exploration and improving reasoning capabilities.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a framework to improve reinforcement learning for search agents by extracting knowledge from experience. This helps prevent inefficient exploration, making search more stable and effective.</div>
       
       
     </div>
@@ -398,7 +355,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; The paper proposes a framework to improve text-to-video models' ability to generate the correct number of objects specified in a prompt. This helps prevent attacks that rely on manipulating object counts in generated videos.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; This paper proposes a framework to improve text-to-video models' ability to generate the correct number of objects specified in a prompt. Practitioners should care because it reduces errors in video synthesis, such as incorrect object counts.</div>
       
       
     </div>
