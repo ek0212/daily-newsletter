@@ -52,10 +52,13 @@ _NEWS_SYSTEM = (
     "and must go beyond restating the headline. Connect it to a consequence, a trend, or a decision "
     "the reader might face.\n"
     "Rules:\n"
+    "- Start your response with one emoji that captures the story's topic "
+    "(e.g. 💰 for finance, 🏛️ for politics, 🚀 for space, ⚖️ for legal, 🏥 for health, "
+    "💻 for tech, ⚔️ for conflict, 🌍 for climate, 🏆 for sports). Then a space, then your summary.\n"
     "- If a claim cites a study or statistic, name the source and sample size.\n"
     "- If the source text is login-wall junk, garbled, or too thin for 2 real sentences, respond: SKIP\n"
     "- Never invent facts. No filler phrases. No 'developing story' or 'click for details.'\n"
-    "- Keep it under 250 characters total."
+    "- Keep the summary under 250 characters total (not counting the emoji)."
 )
 
 _YOUTUBE_SYSTEM = (
@@ -64,9 +67,10 @@ _YOUTUBE_SYSTEM = (
     "Sentence 2: One concrete takeaway, a surprising detail, or why it's worth 30 minutes "
     "of the reader's time. Be specific, not generic.\n"
     "Rules:\n"
+    "- Start your response with one emoji that captures the episode's topic. Then a space, then your summary.\n"
     "- If the transcript is too thin or garbled, respond: SKIP\n"
     "- No filler like 'new episode', 'interesting discussion', 'great conversation.'\n"
-    "- Keep it under 250 characters total."
+    "- Keep the summary under 250 characters total (not counting the emoji)."
 )
 
 _PAPER_SYSTEM = (
@@ -75,9 +79,12 @@ _PAPER_SYSTEM = (
     "Sentence 2: Why a practitioner should care: what attack it stops, what defense it enables, "
     "or what blind spot it reveals. Be concrete.\n"
     "Rules:\n"
+    "- Start your response with one emoji that captures the paper's focus "
+    "(e.g. 🔒 for privacy, 💉 for injection, 🛡️ for defense, 🐛 for vulnerabilities, "
+    "🤖 for AI models, 🔓 for attacks). Then a space, then your summary.\n"
     "- If the abstract is too vague to summarize concretely, respond: SKIP\n"
     "- No jargon-only sentences. No marketing language.\n"
-    "- Keep it under 250 characters total."
+    "- Keep the summary under 250 characters total (not counting the emoji)."
 )
 
 _AI_NEWS_SYSTEM = (
@@ -86,11 +93,32 @@ _AI_NEWS_SYSTEM = (
     "(names, numbers, affected systems, dates).\n"
     "Sentence 2: What this means for someone defending or testing AI systems.\n"
     "Rules:\n"
+    "- Start your response with one emoji that captures the story's focus "
+    "(e.g. 🔓 for breaches, 🤖 for AI models, 📜 for regulation, 🎣 for phishing, "
+    "🔒 for privacy, 🛡️ for defenses). Then a space, then your summary.\n"
     "- If the article is generic advice ('why X matters', 'top 10 tips', 'explore Y'), respond: SKIP\n"
     "- Name sources for any statistics or claims.\n"
     "- No LinkedIn filler. No slogans.\n"
-    "- Keep it under 250 characters total."
+    "- Keep the summary under 250 characters total (not counting the emoji)."
 )
+
+
+# Matches a leading emoji (common Unicode emoji ranges + variation selectors)
+_EMOJI_PREFIX_RE = re.compile(
+    r'^([\U0001F300-\U0001FFFF\u2600-\u27BF\u2702-\u27B0\u23E9-\u23FA\uFE0F\u200D]+'
+    r')\s+'
+)
+
+
+def _extract_emoji(text: str) -> tuple[str, str]:
+    """Extract a leading emoji from LLM output.
+
+    Returns (emoji, remaining_text). Empty string for emoji if none found.
+    """
+    m = _EMOJI_PREFIX_RE.match(text)
+    if m:
+        return m.group(1), text[m.end():]
+    return "", text
 
 
 def _build_user_prompt(item: dict) -> str:
@@ -233,7 +261,10 @@ def enhance_summaries(items: list[dict], section: str) -> list[dict]:
             skipped += 1
             logger.debug("LLM skipped: %s", item.get("title", "")[:60])
         elif result:
-            cleaned = _clean_llm_summary(result)
+            emoji, result_text = _extract_emoji(result)
+            if emoji:
+                item["emoji"] = emoji
+            cleaned = _clean_llm_summary(result_text)
             item["summary"] = _bold_key_terms(cleaned, item.get("title", ""))
             enhanced += 1
         # else: keep existing extractive summary

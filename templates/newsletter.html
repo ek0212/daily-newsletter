@@ -68,7 +68,7 @@
     {% if events %}
     {% for event in events %}
     <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; {% if not loop.last %}margin-bottom: 4px;{% endif %}">
-      &#x1F4CD; <a href="https://www.google.com/search?q={{ (event.name + ' NYC ' + event.date) | urlencode }}" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">{{ event.name }}</a> &mdash; {{ event.date }}, {{ event.borough }}{% if event.location %} <span style="color: #888;">({{ event.location }})</span>{% endif %}
+      &#x1F4CD; <a href="https://www.google.com/search?q={{ (event.name + ' NYC ' + event.date) | urlencode }}" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">{{ event.name }}</a> &mdash; {{ event.date }}, {{ event.borough }}{% if event.location %} <span style="color: #888;">({{ event.location }})</span>{% endif %}
     </div>
     {% endfor %}
     {% else %}
@@ -89,10 +89,10 @@
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
       <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{% if story.published %}{{ story.published }}{% else %}Today{% endif %}{% if story.source %} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ story.source }}</span>{% endif %}</div>
-      <a href="{{ story.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ story.title }}</a>
+      <a href="{{ story.link }}" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ story.title }}</a>
       <!-- Summary -->
       {% if story.summary %}
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4F0; {{ story.summary | safe }}</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ story.emoji|default('📰') }} {{ story.summary | safe }}</div>
       {% endif %}
     </div>
     {% endfor %}
@@ -111,7 +111,7 @@
     <div style="padding: 16px 0; {% if not loop.last %}border-bottom: 1px solid #e0ddd5;{% endif %}">
       <!-- Date + Channel -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{{ vid.published }} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ vid.channel }}</span></div>
-      <a href="{{ vid.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; {{ vid.title }}</a>
+      <a href="{{ vid.link }}" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; {{ vid.title }}</a>
       <!-- Summary -->
       {% if vid.summary %}
         <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; {{ vid.summary | safe }}</div>
@@ -141,7 +141,7 @@
       <!-- Authors with affiliations -->
       <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">{% for author in item.authors[:3] %}{% if not loop.first %}, {% endif %}{{ author }}{% if item.affiliations is defined and item.affiliations[loop.index0] is defined and item.affiliations[loop.index0] %} <span style="color: #999; font-style: normal; font-size: 10px;">({{ item.affiliations[loop.index0] }})</span>{% endif %}{% endfor %}{% if item.authors | length > 3 %} et al.{% endif %}</div>
       <!-- Title -->
-      <a href="{{ item.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; {{ item.title }}</a>
+      <a href="{{ item.link }}" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.emoji|default('📄') }} {{ item.title }}</a>
       <!-- Topic badges -->
       {% set title_lower = item.title | lower %}
       {% set abstract_lower = (item.abstract | default('')) | lower %}
@@ -164,16 +164,16 @@
       </div>
       <!-- Summary -->
       {% if item.summary %}
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4C4; {{ item.summary | safe }}</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.emoji|default('📄') }} {{ item.summary | safe }}</div>
       {% endif %}
       {% else %}
       <!-- Date + Source -->
       <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">{% if item.published %}{{ item.published }}{% else %}Today{% endif %}{% if item.source %} &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">{{ item.source }}</span>{% endif %}</div>
       <!-- Title -->
-      <a href="{{ item.link }}" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F4E2; {{ item.title }}</a>
+      <a href="{{ item.link }}" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.emoji|default('📢') }} {{ item.title }}</a>
       <!-- Summary -->
       {% if item.summary %}
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F6E1;&#xFE0F; {{ item.summary | safe }}</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">{{ item.emoji|default('🛡️') }} {{ item.summary | safe }}</div>
       {% endif %}
       {% endif %}
     </div>

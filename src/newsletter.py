@@ -38,6 +38,48 @@ from src.site_generator import update_site
 
 logger = logging.getLogger(__name__)
 
+# ── Keyword-based emoji fallbacks (used when LLM doesn't assign one) ─────
+_NEWS_EMOJI_KEYWORDS = [
+    (re.compile(r'(?i)\b(tech|ai|robot|software|computer|cyber|data|chip|silicon|algorithm|app)\b'), '\U0001F4BB'),      # 💻
+    (re.compile(r'(?i)(?:\binterest rates?\b|\brate (?:hike|cut)s?\b|\b(?:money|economy|market|stock|bank|financ|dollar|inflation|gdp|trade|tariff|tax|debt|recession|treasury|crypto|bitcoin)\b|\bwall street\b|\bfederal reserve\b)'), '\U0001F4B0'),  # 💰
+    (re.compile(r'(?i)\b(war|military|missile|troops|army|combat|defense|weapon|conflict|invasion)\b'), '\u2694\uFE0F'),  # ⚔️
+    (re.compile(r'(?i)\b(health|medical|disease|hospital|drug|vaccine|doctor|virus|pandemic|cancer)\b'), '\U0001F3E5'),   # 🏥
+    (re.compile(r'(?i)\b(climate|environment|carbon|emission|energy|renewable|solar|wind|pollution)\b'), '\U0001F30D'),    # 🌍
+    (re.compile(r'(?i)\b(election|vote|politic|congress|senate|president|governor|legislation|law|bill|democrat|republican)\b'), '\U0001F3DB\uFE0F'),  # 🏛️
+    (re.compile(r'(?i)\b(crime|arrest|police|murder|shooting|prison|court|trial|sentence|verdict|lawsuit|sue)\b'), '\u2696\uFE0F'),  # ⚖️
+    (re.compile(r'(?i)\b(sport|game|team|nfl|nba|mlb|nhl|soccer|tennis|championship|match|playoff)\b'), '\U0001F3C6'),   # 🏆
+    (re.compile(r'(?i)\b(space|nasa|rocket|satellite|asteroid|orbit|mars|moon|launch)\b'), '\U0001F680'),                 # 🚀
+    (re.compile(r'(?i)\b(school|education|student|university|college|teacher)\b'), '\U0001F393'),                          # 🎓
+    (re.compile(r'(?i)\b(fire|earthquake|hurricane|flood|disaster|storm|tornado|wildfire)\b'), '\U0001F32A\uFE0F'),       # 🌪️
+    (re.compile(r'(?i)\b(entertainment|movie|film|music|concert|show|celebrity|oscar|grammy)\b'), '\U0001F3AD'),           # 🎭
+    (re.compile(r'(?i)\b(travel|flight|airline|airport|tourism|hotel|vacation)\b'), '\u2708\uFE0F'),                       # ✈️
+]
+
+_AI_EMOJI_KEYWORDS = [
+    (re.compile(r'(?i)\b(prompt injection|injection)\b'), '\U0001F489'),                                # 💉
+    (re.compile(r'(?i)\b(phishing|social engineering|scam)\b'), '\U0001F3A3'),                          # 🎣
+    (re.compile(r'(?i)\b(privacy|data protection|gdpr|surveillance)\b'), '\U0001F512'),                # 🔒
+    (re.compile(r'(?i)\b(deepfake|fake|misinformation|disinformation)\b'), '\U0001F3AD'),              # 🎭
+    (re.compile(r'(?i)\b(jailbreak|bypass|guardrail|safety|alignment)\b'), '\U0001F6E1\uFE0F'),        # 🛡️
+    (re.compile(r'(?i)\b(malware|trojan|backdoor|worm)\b'), '\U0001F47E'),                             # 👾
+    (re.compile(r'(?i)\b(vulnerability|cve|zero.day|patch|bug)\b'), '\U0001F41B'),                     # 🐛
+    (re.compile(r'(?i)\b(regulation|policy|compliance|law|legislation|ban|executive order)\b'), '\U0001F4DC'),  # 📜
+    (re.compile(r'(?i)\b(breach|hack|leak|compromise|attack|exploit|ransomware)\b'), '\U0001F513'),    # 🔓
+    (re.compile(r'(?i)\b(model|training|llm|gpt|claude|gemini|release|launch|update)\b'), '\U0001F916'),  # 🤖
+]
+
+
+def _assign_content_emoji(item: dict, keyword_map: list) -> None:
+    """Assign a content-aware emoji to an item if it doesn't already have one."""
+    if item.get("emoji"):
+        return
+    text = (item.get("title", "") + " " + (item.get("summary") or item.get("abstract") or "")[:200]).lower()
+    for pattern, emoji in keyword_map:
+        if pattern.search(text):
+            item["emoji"] = emoji
+            return
+
+
 # AI security topic clusters — limit to 1 item per cluster to avoid repetition
 _AI_SECURITY_TOPIC_CLUSTERS = [
     ("prompt_injection", re.compile(r'(?i)\b(prompt injection|indirect injection|instruction injection)\b')),
@@ -194,6 +236,12 @@ def fetch_all_data() -> dict:
     # Drop LLM-skipped items from news and youtube too
     news = [i for i in news if not i.get("llm_skip")]
     youtube = [i for i in youtube if not i.get("llm_skip")]
+
+    # Assign content-aware emojis (keyword fallback for items the LLM didn't tag)
+    for item in news:
+        _assign_content_emoji(item, _NEWS_EMOJI_KEYWORDS)
+    for item in ai_security:
+        _assign_content_emoji(item, _AI_EMOJI_KEYWORDS)
 
     # Apply fallbacks for any items that still lack a summary
     for item in news:
