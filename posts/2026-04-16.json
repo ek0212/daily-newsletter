@@ -1,0 +1,284 @@
+{
+  "date": "Thursday, April 16, 2026",
+  "weather": {
+    "current_temp": 75,
+    "unit": "F",
+    "conditions": "Slight Chance Rain Showers",
+    "high": 83,
+    "low": 68,
+    "feels_like": 75,
+    "forecast": "A chance of showers and thunderstorms before 2am. Mostly cloudy. Low around 68, with temperatures rising to around 70 overnight. Southwest wind 6 to 12 mph. Chance of precipitation is 30%.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 70,
+        "feels_like": 70,
+        "conditions": "Mostly Sunny",
+        "wind": "6 mph SW",
+        "humidity": "71%",
+        "precip_chance": "2%"
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 76,
+        "feels_like": 76,
+        "conditions": "Mostly Sunny",
+        "wind": "7 mph SW",
+        "humidity": "58%",
+        "precip_chance": "2%"
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 82,
+        "feels_like": 82,
+        "conditions": "Mostly Sunny",
+        "wind": "13 mph S",
+        "humidity": "41%",
+        "precip_chance": "4%"
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 81,
+        "feels_like": 81,
+        "conditions": "Partly Cloudy",
+        "wind": "13 mph S",
+        "humidity": "39%",
+        "precip_chance": "3%"
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 79,
+        "feels_like": 79,
+        "conditions": "Partly Cloudy",
+        "wind": "12 mph SW",
+        "humidity": "42%",
+        "precip_chance": "11%"
+      }
+    ]
+  },
+  "health": {
+    "status": "NORMAL",
+    "detail": "6,235 cases this week \u2014 near average for this time of year",
+    "combined_cases": 6235,
+    "vs_average_pct": -1.4,
+    "week_ending": "2026-04-04",
+    "breakdown": {
+      "flu": 4137,
+      "covid": 1270,
+      "rsv": 828
+    }
+  },
+  "events": [
+    {
+      "name": "Persian Day Parade",
+      "date": "Sun, Apr 19",
+      "borough": "Manhattan",
+      "location": "Madison Ave & East 25th St",
+      "event_type": "Single Block Festival"
+    },
+    {
+      "name": "Annual NYPD Holy Name Society Communion Breakfast",
+      "date": "Sun, Apr 19",
+      "borough": "Manhattan",
+      "location": "East 51st St & Madison Ave",
+      "event_type": "Religious Event"
+    }
+  ],
+  "news": [
+    {
+      "title": "Iran War News Live Updates: Blockade \u2018Fully Implemented\u2019 as Mediators Push for U.S.-Iran Ceasefire Extension",
+      "source": "WSJ",
+      "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kTnU4Y2EyRjYyanZFTkN3bE5UU2VITUFvMVYyWFRFWjk1Y3R1RExQUlVueUhXU3dXWktEakdhd2J5YlVWcDA1dGtBQ20xSmRrdi1HMm5QdnN6SWY4ZmJGaGZER21vcmVRSEpCSFlQWldMNmxXZnR6SU9ScEEzZ0U?oc=5",
+      "published": "Thu, 16 Apr 2026 00:46:00 GMT",
+      "raw_text": "",
+      "summary": "Iran implements a blockade, mediators push for a US-Iran ceasefire extension. This development may impact global oil prices and US diplomatic relations.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Videos Show Officers Beating Man During Arrest in Brooklyn",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQdDJpODY3QnJwa0h0YkU3NW85eHNUaUxWemt3RmhJZ2RkMnA2UDFIQ1lXbUtNMUZ1UDlXcksxLUZFa0p5MHVJeTZmTFg1SWNzR3lzZUpzbkZqb3BFbWhrUG1PUWRSWUNySnRqZTA1VGstSUU0aXJteDJ0UDM5bUhqOUtHVDJtUQ?oc=5",
+      "published": "Thu, 16 Apr 2026 00:53:19 GMT",
+      "raw_text": "",
+      "summary": "Officers beat a man during a Brooklyn arrest, sparking outrage. This incident may lead to renewed calls for police reform in NYC.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Pakistan expecting \u2018major breakthrough\u2019 tied to Iran\u2019s nuclear programme",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/4/16/pakistan-expecting-major-breakthrough-tied-to-irans-nuclear-programme?traffic_source=rss",
+      "published": "Thu, 16 Apr 2026 02:23:58 +0000",
+      "raw_text": "Pakistan expecting \u2018major breakthrough\u2019 tied to Iran\u2019s nuclear programme\nPakistan expecting \u2018major breakthrough\u2019 tied to Iran\u2019s nuclear programme\nA source has told Al Jazeera that Pakistan is expecting a breakthrough tied to Iran\u2019s nuclear programme as Islamabad helps negotiate an end the US-Israeli war on Iran. Pakistani military and government officials met with Iranian and Saudi leaders on Wednesday.\nPublished On 16 Apr 2026",
+      "summary": "Pakistan expects a breakthrough in Iran's nuclear program after meeting with Iranian and Saudi leaders. This could ease US-Iran tensions, affecting global oil prices.",
+      "emoji": "\ud83c\udf0d"
+    }
+  ],
+  "youtube": [],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai vulnerabilities.",
+  "ai_security": [
+    {
+      "title": "GitHub's New Game Tests AI Agent Security",
+      "source": "StartupHub.ai",
+      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYXJGU1NlYjdYTVE1V0E4UXktT3VwS0RYYnd4RDhVaGZKd19oUVk4WjRPVXVRckpicDJTUkVmM1J0bHNxOG9RWUQyb1FOenVvYzJPVzVIXzFta0xoeVdGdG9DR0t3cGZBVlRvTlQ3eFpZVll4dnNfR3dFaU8xY1h4cHdqUExMY2Zjc1RMTWFKLVRMS25fb0E?oc=5",
+      "published": "Tue, 14 Apr 2026 19:11:04 GMT",
+      "summary": "GitHub's Secure Code Game Season 4 tests AI agent security with ProdBot, a vulnerable AI coding assistant. This helps developers learn to find and exploit AI vulnerabilities.",
+      "raw_text": "GitHub is rolling out its latest Secure Code Game, Season 4, focusing on the burgeoning field of agentic AI security. This free, open-source game challenges developers to find and exploit vulnerabilities in autonomous AI systems, a critical skill as these tools become more integrated into workflows. You can learn more about these new agentic AI security skills directly from the source.\nThe new season introduces ProdBot, a deliberately vulnerable AI coding assistant designed to mimic tools like GitHub Copilot CLI. Players interact with ProdBot using natural language, tasked with tricking it into revealing sensitive information. This mirrors real-world attacks where malicious prompts can lead AI agents to perform unauthorized actions.\nFrom Simple Prompts to Complex Exploits\nThe game progresses through five levels, mirroring the increasing capabilities and attack surfaces of AI agents. Starting with basic command execution, players advance to challenges involving web browsing, external tool integration, persistent memory, and multi-agent coordination.\nThis tiered approach reflects the evolving threat landscape, from simple prompt injection to sophisticated attacks like tool misuse and memory poisoning, as highlighted by the OWASP Top 10 for Agentic Applications.\nOver 10,000 developers have already participated in previous seasons of the Secure Code Game, which aims to make security training engaging and practical.\nSeason 4 builds on lessons from previous iterations, which covered LLM security and expanded to multi-stack challenges.\nThe game requires no prior AI or coding experience, emphasizing curiosity and experimentation.\nThe goal is to build an attacker's mindset, enabling developers to spot potential risks in AI architecture and tool integrations.\nThis initiative comes as organizations grapple with the security implications of rapidly adopting generative AI and autonomous agents.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "SANS Institute, Cloud Security Alliance, [un]prompted, and OWASP GenAI Security Project Release Emergency Strategy Briefing as AI-Driven Vulnerability Discovery Compresses Exploit Timelines from Weeks to Hours",
+      "source": "The Manila Times",
+      "link": "https://news.google.com/rss/articles/CBMijwNBVV95cUxNOEdDaEtOQzdtRjlodDBDdXBybUpwX1VKdWI1d3dCNy1Ib1BsV0tuRzNtT093akozbGk3SmlTcnlXUndMMnpwZFJueGhiZUxMeGRKQWtiQlpkNjdnYjBpTUNlUzFkWjFjc1FrSjlKYlBVY2RvNWtqd21uc2hpWHhaYzVLMnpob054bEVIRThNSUVoS3VGcXhMcGxXcHR0cHlCQzhBNGgwTmRuM29NSXRYWm9ma2JnY25zWGNPaThmSngwRzhIZTJ3b1E4MjFGSU1fS05LVXo1SXZ6RU5BTXhEdENuZTNMMTVkRy1uTzB3emVlb05lck1uXzVUUkJvLTBlNUp2Q2FXMEZ5TUZGTVhHb2pSa1BabjVGWGw2MkZjNWVDR19sUGxmRHl6ZEFfaEVjVkd1cVZ1dmI4U3ZPODJ4TVJtZlAxaDJKTmRxTkpZblRJUklPN1FDRlB1cFV5ejk2cXNreVRTOXE2eDhUVG9YMXhGYVdnVnp5Y0p6ZjZ6WmJGeDNGaUtJV1pXUU5xM2fSAZQDQVVfeXFMT2paZ1Q1Nk9yYl9TX2RwMUh1TEVxSFE3R0NzbnBJUmxKeENxWHRXeEk4X2VUSElmZVVWV2FTdWxzWml5bi1ZbS1BWEFZV3ExSGpDcXh4U2I5VVpESXlkSEgyOTlqN2pzcXVoY0FxR1FPb29GLXFqMjBoRTI1c2FCM2ZsQ0NqeGJ5c3dMZDBUTV84N1ZHbDFoRkY3NzItSERfUEhoMnFhRUpCd0xhQTlRZ25CalBXNzlRNHVvdjhGZ3l6RkxrdzU1M0tPZmJLbzN6Q3NDNmpNZjhLSWRfcmhXZXYxVFZxd05tc1NFSEpBUjQya0p3VDE4Y2t6SVdsUERsd0M1NW1BV0d5RnBqODlFS05Wa2RicjRZeFMySUNoOERQUVB4T2kyYkpRSEl5Vm90a3dINHF1dlpzRkY4SU1IUVFRbWc1aDY3U1VJTGFNMUdKMnNvdEx6d2puUmlZM243dVFKRDFsSzdtQjAxTkNleEJaUGtJN0d0ODY2R1MtbkxYZ2lianNLQ1FJQU1oU2lPS0VQZU8?oc=5",
+      "published": "Tue, 14 Apr 2026 13:23:45 GMT",
+      "summary": "SANS Institute releases emergency briefing on AI-driven vulnerability discovery. This means defenders must act faster as exploit timelines shrink from weeks to hours.",
+      "raw_text": "\"The AI Vulnerability Storm: Building a Mythos-Ready Security Program\u201d delivers a risk register, 11 priority actions, and board briefing framework built by 60+ contributors and reviewed by 250+ CISOs in a single weekend\nThe briefing was produced over a single weekend by more than 60 named contributors and reviewed by over 250 CISOs from across the global cybersecurity community.\n\"The window between vulnerability discovery and weaponization has collapsed into hours,\u201d said Rob T. Lee, Chief AI Officer and Chief of Research at SANS Institute\nThe briefing was produced over a single weekend by more than 60 named contributors and reviewed by over 250 CISOs from across the global cybersecurity community. It responds directly to the capabilities demonstrated by Anthropic\u2019s Claude Mythos (Preview) and Project Glasswing, which autonomously identified thousands of zero-day vulnerabilities across every major operating system and web browser, including a 27-year-old vulnerability in OpenBSD, one of the most security-hardened operating systems in the world.\n\"The window between vulnerability discovery and weaponization has collapsed into hours,\u201d said Rob T. Lee, Chief AI Officer and Chief of Research at SANS Institute and co-author of the briefing. \"What Mythos shows us is a permanent acceleration. This document gives CISOs something the commentary doesn\u2019t: a risk register, priority actions with start dates, and a board briefing they can use this week.\u201d\nA 12-MONTH ESCALATION\nThe briefing documents a rapid escalation in AI offensive capabilities over the past year. In June 2025, XBOW became the first autonomous system to top HackerOne\u2019s US leaderboard, outperforming all human hackers on the platform. In August 2025, DARPA\u2019s AI Cyber Challenge found 54 vulnerabilities across 54 million lines of code in four hours. By November 2025, Anthropic disclosed a Chinese state-sponsored group had used AI to autonomously run full attack chains, from reconnaissance through data exfiltration, across approximately 30 global targets.\nIn February 2026, Anthropic reported more than 500 high-severity vulnerabilities in open source software using Claude Opus 4.6. Sysdig documented an AI-based attack that reached administrator-level access in eight minutes. Linux kernel maintainers saw vulnerability reports climb from two to ten per week.\nMythos represents a further step change. In internal testing, the model generated 181 working exploits against Firefox vulnerabilities where the previous best model succeeded only twice under the same conditions. The model achieved a 72% exploit success rate and demonstrated the ability to chain multiple vulnerabilities into single exploit paths without human guidance.\nAccording to the Zero Day Clock, the mean time from vulnerability disclosure to confirmed exploitation has fallen to less than one day in 2026, down from 2.3 years in 2019.\nWHAT THE BRIEFING INCLUDES\nThe briefing includes a 13-item risk register mapped to four industry frameworks (OWASP LLM Top 10 2025, OWASP Agentic Top 10 2026, MITRE ATLAS, and NIST CSF 2.0), an 11-item priority actions table with aggressive timelines, 10 diagnostic questions for CISOs to triage their current security program, and a board-ready executive briefing section.\nKey findings:\nAI-driven vulnerability discovery tools can now generate working exploits at a rate that outpaces organizational patch cycles. Every patch also becomes an exploit blueprint, as AI accelerates patch-diffing and reverse engineering of fixes.\nDefensive teams that have not adopted AI agents face a widening capability gap against AI-augmented adversaries, regardless of their existing technical skill. The briefing classifies this as a cultural challenge as much as a technological one.\nThe EU AI Act takes effect in August 2026, introducing automated audit, incident reporting, and cybersecurity requirements around AI. When AI can find vulnerabilities at accessible cost, the standard for what constitutes reasonable defensive effort shifts, creating direct governance and liability exposure for organizations that do not adapt.\nOrganizations should prepare for a sustained increase in the volume and cadence of vulnerability disclosures and should plan for operational burnout as security teams absorb the increase without corresponding investment in headcount or tooling.\nThe briefing\u2019s first priority action skips governance entirely: point AI agents at your own code this week. The longest-horizon item is to stand up a permanent Vulnerability Operations (VulnOps) function within 12 months, staffed and automated for continuous AI-driven discovery across the entire software estate.\n\"Attackers already operate as syndicates, crowdsourcing, sharing tools, moving as a collective. Defenders have to do the same,\u201d said Gadi Evron, CEO of Knostic and CISO-in-Residence for AI at the Cloud Security Alliance, and lead author of the briefing. \"We built this in three days because CISOs needed it now, not when it was perfect. Mythos is the first wave. The organizations that build the muscle now (the processes, the tooling, and a culture willing to adopt AI as a core part of how security gets done) will be the ones that meet the next wave on their own terms.\u201d\nCONTRIBUTING AUTHORS AND REVIEWERS\nThe briefing was co-authored by Gadi Evron (CEO, Knostic; CISO-in-Residence for AI, Cloud Security Alliance), Rob T. Lee (Chief AI Officer and Chief of Research, SANS Institute), and Rich Mogull (Chief Analyst, Cloud Security Alliance).\nContributing authors include Jen Easterly (CEO, RSAC; former Director, CISA), Bruce Schneier (Chief of Security Architecture, Inrupt; Fellow and Lecturer, Harvard Kennedy School), Chris Inglis (former National Cyber Director, The White House), Phil Venables (Ballistic Ventures; former CISO, Google Cloud), Heather Adkins (CISO, Google), Rob Joyce (former Cybersecurity Director, NSA), Sounil Yu (CTO, Knostic; former Chief Security Scientist, Bank of America), Katie Moussouris (Founder and CEO, Luta Security), James Lyne (CEO, SANS Institute), Jim Reavis (CEO, Cloud Security Alliance), Joshua Saxe (CTO, Security Superintelligence Labs; former AI and Llama Security Lead, Meta), and others.\nReviewers include CISOs from Atlassian, Cloudflare, Cushman & Wakefield, GitLab, Google, Hyland, NFL, Netflix, Rivian, Sophos, TransUnion, Wells Fargo, and more than 40 additional organizations. SANS reviewers include Chris Cochran (Field CISO and VP of AI Security), Ed Skoudis (President, SANS Technology Institute), and Ciaran Martin (Head of Cyber Leaders Network; Founder and former CEO, UK NCSC).\nSANS CRITICAL ADVISORY: BUGBUSTERS - AI VULNERABILITY DISCOVERY HYPE VS. REALITY\nLive Webcast | Thursday, April 16\nSANS Institute will host SANS Critical Advisory: BugBusters - AI Vulnerability Discovery Hype vs. Reality, a live demonstration of AI-assisted vulnerability discovery against real code, on Thursday, April 16 at 12:00 PM Noon ET. SANS Technology Institute President Ed Skoudis, Faculty Fellow Joshua Wright, and Principal Instructor Chris Elgee will demonstrate the practical application of current AI models to vulnerability research, based on 15 months of real-world penetration testing experience. No registration is required.\nTune in to watch live on April 16.\nSANS AI CYBERSECURITY SUMMIT 2026\nIn-Person in Arlington, VA & Free Online | April 20-21\nThe SANS AI Cybersecurity Summit brings together practitioners, researchers, and security leaders for two days of hands-on sessions on defending against AI-powered threats and deploying AI securely within security operations. Speakers include contributors to the Mythos-Ready briefing alongside leading voices in AI security from across the industry. The summit is free to attend online.\nRegister for the SANS AI Cybersecurity Summit.\nCSA AGENTIC AI SECURITY SUMMIT 2026\nVirtual Event | April 29-30\nCSA's Agentic AI Security Summit is a free, two-day virtual event dedicated to helping organizations securely design, deploy, and scale autonomous and collaborative AI systems. Across two immersive days, global leaders in AI governance, cybersecurity, cloud infrastructure, and standards development will share practical strategies for securing the next generation of AI ecosystems. From emerging risks to real-world implementation guidance, this summit delivers the clarity and actionable insight security and AI leaders need now.\nRegister now to help shape the future of secure Agentic AI.\nABOUT THE BRIEFING\n\"The AI Vulnerability Storm: Building a Mythos-Ready Security Program\u201d is available free at: https://labs.cloudsecurityalliance.org/mythos-ciso/\nAudio and video overviews are available at: https://sansurl.com/CISO-mythos-ready\nThe briefing is released under the Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license. All listed authors and reviewers represent only themselves.\nABOUT SANS INSTITUTE\nThe SANS Institute was established in 1989 as a cooperative research and education organization. Today, SANS is the most trusted and, by far, the largest provider of cybersecurity training and certification to professionals in government and commercial institutions worldwide. Renowned SANS instructors teach more than 85 courses at in-person and virtual cybersecurity events and OnDemand. GIAC, an affiliate of the SANS Institute, validates practitioner skills through more than 50 hands-on technical certifications in cybersecurity.\nABOUT CLOUD SECURITY ALLIANCE\nThe Cloud Security Alliance (CSA) is the world\u2019s leading not-for-profit organization committed to awareness, practical implementation, and credentialing of forward-looking cybersecurity topics, including AI, cloud, and Zero Trust. In an era where digital transformation drives business success, CSA stands as the global authority ensuring organizations can operate securely while harnessing cutting-edge technology. Through volunteer-driven research, globally-accepted standards, the CSAI Foundation, and award-winning vendor-neutral education programs that unite technical experts, industry practitioners, and varied associations, governments, chapters, and corporate members, CSA bridges the gap between innovation and pragmatic security execution. Visit CSA\u2019s website and the CSAI Foundation, a 501(c)3 non-profit foundation dedicated exclusively to AI security and safety, to learn more.\nAttachment\nCONTACT: Jenn Elston\nSANS Institute\n301-654-7267",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Are AI Agents Your Next Security Nightmare?",
+      "source": "KDnuggets",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE16OEwyZlQ2NmFwZnlqM08zM0lkZ21seVdQci1wRFo4Ulc1Q0FlQ1ducEYwVTVUaWFoR2I0WGtmNUxfTmRIVDYxX0RmV0RVOC1PbEh4eDNENmF0cW1JTng3LUJ1MXRuZ0prOERUaEo2dU1OY0p1QUI4?oc=5",
+      "published": "Mon, 13 Apr 2026 14:10:27 GMT",
+      "summary": "Autonomous AI agents with reasoning capabilities are emerging, integrated with LLMs or RAG systems. This shift increases the cybersecurity threat landscape as AI agents can act independently, posing new security risks.",
+      "raw_text": "Are AI Agents Your Next Security Nightmare?\nThis article provides a reflective summary, based on the most recent insights and dilemmas, about the current state of security in AI agents.\nImage by Editor\n# Introduction\n2026 is, with little doubt, the year of autonomous, agentic AI systems. We are witnessing an unprecedented shift from purely reactive chatbots to proactive AI agents with reasoning capabilities \u2014 typically integrated with large language models (LLMs) or retrieval-augmented generation (RAG) systems. This transition is causing the cybersecurity landscape to cross a critical point of no return. The reason is simple: AI agents do not just answer questions \u2014 they act. They do so as a result of planning and reasoning independently. The execution of actions such as mass-sending emails, manipulating databases, and interacting with internal platforms or external apps is no longer something only humans and developers do. As a result, the complexity of the security paradigm has reached a new level.\nThis article provides a reflective summary, based on recent insights and dilemmas, regarding the current state of security in AI agents. After analyzing core dilemmas and risks, we address the question stated in the title: \"Are AI agents your next security nightmare?\"\nLet's examine four core dilemmas related to security risks in the modern landscape of AI threats.\n# 1. Managing Excessive Agent Freedom in Shadow AI\nShadow AI is a concept referring to the unmonitored, ungoverned, and unsanctioned deployment of AI agent-based applications and tools into the real world.\nA notable and representative crisis related to this notion is centered around OpenClaw (formerly named Moltbot). This is an open-source, self-hosted personal AI agent tool that is gaining traction quickly and can be utilized to control personal or work accounts with little or no limits. It is no surprise that, based on early 2026 reports, it has been labeled as an \"AI agent security nightmare.\" Incidents have occurred where tens of thousands of OpenClaw instances were exposed to the internet without security barriers like authentication, which can easily let unauthorized, malicious users \u2014 or agents, for that matter \u2014 fully control a host machine.\nPart of the pressing dilemma surrounding shadow AI lies in whether to allow employees to integrate agentic tools into corporate settings without an extra layer of oversight by IT teams.\n# 2. Addressing Supply Chain Vulnerabilities\nAI agents have a strong reliance on third-party ecosystems \u2014 specifically the skills, plugins, and extensions they use to interact with external tools via APIs. This creates a complex new software supply chain. According to recent threat reports, malicious tools or plugins are often disguised as legitimate productivity-boosting solutions. Once integrated into the agent's environment, these solutions can secretly leverage their access to perform unintended actions, such as executing remote code, silently exfiltrating sensitive data, or installing malware.\n# 3. Identifying New Attack Vectors\nThe Open Web Application Security Project (OWASP) Top 10 report on AI and LLM security risks states that the 2026 threat panorama is introducing new risks, such as \"Agent Goal Hijack\". This form of threat involves an attacker manipulating the agent's main goal through hidden instructions on the web. Another aspect pertains to the memory retained by agents across sessions (often referred to as short-term and long-term memory mechanisms). This memory retention scheme can make agents highly vulnerable to corruption by inappropriate data, thereby altering their behavior and decision-making capabilities. Other risks listed in the report include the two already discussed: excessive agency (LLM06:2025) and vulnerabilities in the supply chain (ASI04).\n# 4. Implementing Missing Circuit Breakers\nThe effectiveness of traditional perimeter security mechanisms is rendered obsolete against an ecosystem of multiple interconnected AI agents. The communication between autonomous systems and operation at machine speed \u2014 usually orders of magnitude faster than humans \u2014 means a risk of having a standalone vulnerability cascade across an entire network in a matter of milliseconds. Enterprises usually lack the necessary runtime visibility or \"circuit breaker\" mechanisms to identify and stop an \"agent going rogue\" in the middle of a task execution.\nIndustry reports suggest that while perimeter security has improved slightly, proper circuit breakers consisting of automatic service shutdown mechanisms when a certain level of malicious activity is reported are still fundamentally missing within application and API layers of agent-based systems.\n# Wrapping Up\nThere is a strong consensus among security organizations: you cannot secure what you cannot see. A strategic shift is necessary to mitigate emerging risks in state-of-the-art agentic AI solutions. A good starting point to dispel the \"security nightmare\" in organizations could be by leveraging open-source governance frameworks aimed at establishing runtime visibility, fostering strict \"least needed privilege\" access, and, most importantly, treating agents as first-class identities in the network, each being labeled with their own trust scores.\nDespite the undeniable risks, autonomous agents do not inherently pose a security nightmare as long as they are governed by open yet vigilant frameworks. If so, they can turn what may look like a critical vulnerability into a very productive, manageable resource.\nIv\u00e1n Palomares Carrascosa is a leader, writer, speaker, and adviser in AI, machine learning, deep learning & LLMs. He trains and guides others in harnessing AI in the real world.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "MERRIN: A Benchmark for Multimodal Evidence Retrieval and Reasoning in Noisy Web Environments",
+      "authors": [
+        "Han Wang",
+        "David Wan",
+        "Hyunji Lee",
+        "Thinh Pham",
+        "Mikaela Cankosyan"
+      ],
+      "abstract": "Motivated by the underspecified, multi-hop nature of search queries and the multimodal, heterogeneous, and often conflicting nature of real-world web results, we introduce MERRIN (Multimodal Evidence Retrieval and Reasoning in Noisy Web Environments), a human-annotated benchmark for evaluating search-augmented agents. MERRIN measures AI agents' ability to identify relevant modalities, retrieve multimodal evidence, and perform multi-hop reasoning over noisy web sources. It differs from prior work in three important aspects: (1) using natural language queries without explicit modality cues, (2) incorporating underexplored modalities such as video and audio, and (3) requiring the retrieval of complex, often noisy or conflicting multimodal evidence during web search. We evaluate diverse search agents powered by ten models, including strong closed-source models (e.g., GPT-5.4-mini, Gemini 3/3.1 Flash/Pro) and open-weight models (Qwen3-4B/30B/235B), across three search settings (no search, native search, and agentic search). Our results show that MERRIN is highly challenging: the average accuracy across all agents is 22.3%, with the best-performing agent reaching only 40.1%. We further observe that while stronger agents like Gemini Deep Research achieve higher performance, gains are modest due to over-exploration; they take more steps and use more tools, but are often distracted by conflicting or partially relevant web content, leading to incorrect answers. Compared to humans, these agents consume more resources yet achieve lower accuracy, largely due to inefficient source selection and an overreliance on text modalities. These findings highlight the need for search agents capable of robust search and reasoning across diverse modalities in noisy web environments, making MERRIN a valuable testbed for evaluating such capabilities.",
+      "link": "https://huggingface.co/papers/2604.13418",
+      "published": "2026-04-15",
+      "arxiv_id": "2604.13418",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Motivated by the underspecified, multi-hop nature of search queries and the multimodal, heterogeneous, and often conflicting nature of real-world web results, we introduce MERRIN (Multimodal Evidence Retrieval and Reasoning in Noisy Web Environments), a human-annotated benchmark for evaluating search-augmented agents. MERRIN measures AI agents' ability to identify relevant modalities, retrieve multimodal evidence, and perform multi-hop reasoning over noisy web sources. It differs from prior work in three important aspects: (1) using natural language queries without explicit modality cues, (2) incorporating underexplored modalities such as video and audio, and (3) requiring the retrieval of complex, often noisy or conflicting multimodal evidence during web search. We evaluate diverse search agents powered by ten models, including strong closed-source models (e.g., GPT-5.4-mini, Gemini 3/3.1 Flash/Pro) and open-weight models (Qwen3-4B/30B/235B), across three search settings (no search, native search, and agentic search). Our results show that MERRIN is highly challenging: the average accuracy across all agents is 22.3%, with the best-performing agent reaching only 40.1%. We further observe that while stronger agents like Gemini Deep Research achieve higher performance, gains are modest due to over-exploration; they take more steps and use more tools, but are often distracted by conflicting or partially relevant web content, leading to incorrect answers. Compared to humans, these agents consume more resources yet achieve lower accuracy, largely due to inefficient source selection and an overreliance on text modalities. These findings highlight the need for search agents capable of robust search and reasoning across diverse modalities in noisy web environments, making MERRIN a valuable testbed for evaluating such capabilities.",
+      "summary": "MERRIN is a benchmark for evaluating AI agents' ability to retrieve and reason over multimodal web data. It helps practitioners assess AI's ability to handle noisy web searches.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "From $P(y|x)$ to $P(y)$: Investigating Reinforcement Learning in Pre-train Space",
+      "authors": [
+        "Yuqiao Tan",
+        "Minzheng Wang",
+        "Bo Liu",
+        "Zichen Liu",
+        "Tian Liang"
+      ],
+      "abstract": "While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model's existing output distribution. Optimizing the marginal distribution P(y) in the Pre-train Space addresses this bottleneck by encoding reasoning ability and preserving broad exploration capacity. Yet, conventional pre-training relies on static corpora for passive learning, leading to a distribution shift that hinders targeted reasoning enhancement. In this paper, we introduce PreRL (Pre-train Space RL), which applies reward-driven online updates directly to P(y). We theoretically and empirically validate the strong gradient alignment between log P(y) and log P(y|x), establishing PreRL as a viable surrogate for standard RL. Furthermore, we uncover a critical mechanism: Negative Sample Reinforcement (NSR) within PreRL serves as an exceptionally effective driver for reasoning. NSR-PreRL rapidly prunes incorrect reasoning spaces while stimulating endogenous reflective behaviors, increasing transition and reflection thoughts by 14.89x and 6.54x, respectively. Leveraging these insights, we propose Dual Space RL (DSRL), a Policy Reincarnation strategy that initializes models with NSR-PreRL to expand the reasoning horizon before transitioning to standard RL for fine-grained optimization. Extensive experiments demonstrate that DSRL consistently outperforms strong baselines, proving that pre-train space pruning effectively steers the policy toward a refined correct reasoning subspace.",
+      "link": "https://arxiv.org/pdf/2604.14142v1",
+      "published": "2026-04-15",
+      "arxiv_id": "2604.14142v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "While reinforcement learning with verifiable rewards (RLVR) significantly enhances LLM reasoning by optimizing the conditional distribution P(y|x), its potential is fundamentally bounded by the base model's existing output distribution. Optimizing the marginal distribution P(y) in the Pre-train Space addresses this bottleneck by encoding reasoning ability and preserving broad exploration capacity. Yet, conventional pre-training relies on static corpora for passive learning, leading to a distribution shift that hinders targeted reasoning enhancement. In this paper, we introduce PreRL (Pre-train Space RL), which applies reward-driven online updates directly to P(y). We theoretically and empirically validate the strong gradient alignment between log P(y) and log P(y|x), establishing PreRL as a viable surrogate for standard RL. Furthermore, we uncover a critical mechanism: Negative Sample Reinforcement (NSR) within PreRL serves as an exceptionally effective driver for reasoning. NSR-PreRL rapidly prunes incorrect reasoning spaces while stimulating endogenous reflective behaviors, increasing transition and reflection thoughts by 14.89x and 6.54x, respectively. Leveraging these insights, we propose Dual Space RL (DSRL), a Policy Reincarnation strategy that initializes models with NSR-PreRL to expand the reasoning horizon before transitioning to standard RL for fine-grained optimization. Extensive experiments demonstrate that DSRL consistently outperforms strong baselines, proving that pre-train space pruning effectively steers the policy toward a refined correct reasoning subspace.",
+      "summary": "This paper proposes optimizing the marginal distribution P(y) in pre-train space using reinforcement learning. It enables better reasoning in large language models by addressing the limitations of conventional pre-training methods.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Visplot: A visibility plot and observation scheduling tool for astronomical observatories",
+      "authors": [
+        "Emanuel Gafton",
+        "Illa R. Losada"
+      ],
+      "abstract": "We present Visplot, a free, open-source, web-based tool for hardware-aware visibility analysis and heuristic scheduling of both sidereal and non-sidereal astronomical observations. Visplot computes visibility windows as finite unions of disjoint intervals by intersecting user-defined constraints. This framework natively incorporates celestial parameters (airmass, moon distance, twilight), mechanical telescope boundaries (altitude and hour-angle limits), and custom temporal restrictions defined in UTC or Local Sidereal Time, allowing for a high degree of scheduling flexibility. The scheduling engine combines deterministic pre-allocation for mandatory targets with a multi-objective heuristic optimization of the remaining target pool, balancing scientific priority, target urgency, altitude, and telescope slew overhead. Originally developed to address an operational need for flexible and lightweight scheduling support at the Nordic Optical Telescope (NOT) in La Palma, Visplot has been in continuous use since 2016. Its nearly decade-long operational history, together with routine use by astronomers at multiple observatories worldwide, demonstrates its practical value in real-world observational workflows. Its client-side, zero-installation architecture facilitates real-time schedule refinement, making it particularly suited for time-domain triggers (e.g., GRB/GW alerts) and geographically distributed remote observing. A user survey indicates that the tool significantly reduces the cognitive overhead of nightly planning while ensuring that generated schedules remain strictly within the mechanical and operational limits of the telescope hardware. Visplot provides a robust, lightweight alternative to monolithic scheduling suites, supporting the practical needs of modern PI-led observatories.",
+      "link": "https://arxiv.org/pdf/2604.14151v1",
+      "published": "2026-04-15",
+      "arxiv_id": "2604.14151v1",
+      "citation_count": null,
+      "affiliations": [
+        "Nordic Optical Telescope, La Palma, Spain, Isaac Newton Group of Telescopes, La Palma, Spain",
+        "Nordic Optical Telescope, La Palma, Spain"
+      ],
+      "influential_citations": null,
+      "raw_text": "We present Visplot, a free, open-source, web-based tool for hardware-aware visibility analysis and heuristic scheduling of both sidereal and non-sidereal astronomical observations. Visplot computes visibility windows as finite unions of disjoint intervals by intersecting user-defined constraints. This framework natively incorporates celestial parameters (airmass, moon distance, twilight), mechanical telescope boundaries (altitude and hour-angle limits), and custom temporal restrictions defined in UTC or Local Sidereal Time, allowing for a high degree of scheduling flexibility. The scheduling engine combines deterministic pre-allocation for mandatory targets with a multi-objective heuristic optimization of the remaining target pool, balancing scientific priority, target urgency, altitude, and telescope slew overhead. Originally developed to address an operational need for flexible and lightweight scheduling support at the Nordic Optical Telescope (NOT) in La Palma, Visplot has been in continuous use since 2016. Its nearly decade-long operational history, together with routine use by astronomers at multiple observatories worldwide, demonstrates its practical value in real-world observational workflows. Its client-side, zero-installation architecture facilitates real-time schedule refinement, making it particularly suited for time-domain triggers (e.g., GRB/GW alerts) and geographically distributed remote observing. A user survey indicates that the tool significantly reduces the cognitive overhead of nightly planning while ensuring that generated schedules remain strictly within the mechanical and operational limits of the telescope hardware. Visplot provides a robust, lightweight alternative to monolithic scheduling suites, supporting the practical needs of modern PI-led observatories.",
+      "summary": "Visplot is a tool for scheduling astronomical observations. It helps observatories plan and prioritize telescope time.",
+      "type": "paper",
+      "emoji": "\ud83d\udd2d"
+    },
+    {
+      "title": "Self-Adversarial One Step Generation via Condition Shifting",
+      "authors": [
+        "Deyuan Liu",
+        "Peng Sun",
+        "Yansen Han",
+        "Zhenglin Cheng",
+        "Chuyan Chen"
+      ],
+      "abstract": "The push for efficient text to image synthesis has moved the field toward one step sampling, yet existing methods still face a three way tradeoff among fidelity, inference speed, and training efficiency. Approaches that rely on external discriminators can sharpen one step performance, but they often introduce training instability, high GPU memory overhead, and slow convergence, which complicates scaling and parameter efficient tuning. In contrast, regression based distillation and consistency objectives are easier to optimize, but they typically lose fine details when constrained to a single step. We present APEX, built on a key theoretical insight: adversarial correction signals can be extracted endogenously from a flow model through condition shifting. Using a transformation creates a shifted condition branch whose velocity field serves as an independent estimator of the model's current generation distribution, yielding a gradient that is provably GAN aligned, replacing the sample dependent discriminator terms that cause gradient vanishing. This discriminator free design is architecture preserving, making APEX a plug and play framework compatible with both full parameter and LoRA based tuning. Empirically, our 0.6B model surpasses FLUX-Schnell 12B (20times more parameters) in one step quality. With LoRA tuning on Qwen-Image 20B, APEX reaches a GenEval score of 0.89 at NFE=1 in 6 hours, surpassing the original 50-step teacher (0.87) and providing a 15.33times inference speedup. Code is available https://github.com/LINs-lab/APEX.",
+      "link": "https://huggingface.co/papers/2604.12322",
+      "published": "2026-04-14",
+      "arxiv_id": "2604.12322",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "The push for efficient text to image synthesis has moved the field toward one step sampling, yet existing methods still face a three way tradeoff among fidelity, inference speed, and training efficiency. Approaches that rely on external discriminators can sharpen one step performance, but they often introduce training instability, high GPU memory overhead, and slow convergence, which complicates scaling and parameter efficient tuning. In contrast, regression based distillation and consistency objectives are easier to optimize, but they typically lose fine details when constrained to a single step. We present APEX, built on a key theoretical insight: adversarial correction signals can be extracted endogenously from a flow model through condition shifting. Using a transformation creates a shifted condition branch whose velocity field serves as an independent estimator of the model's current generation distribution, yielding a gradient that is provably GAN aligned, replacing the sample dependent discriminator terms that cause gradient vanishing. This discriminator free design is architecture preserving, making APEX a plug and play framework compatible with both full parameter and LoRA based tuning. Empirically, our 0.6B model surpasses FLUX-Schnell 12B (20times more parameters) in one step quality. With LoRA tuning on Qwen-Image 20B, APEX reaches a GenEval score of 0.89 at NFE=1 in 6 hours, surpassing the original 50-step teacher (0.87) and providing a 15.33times inference speedup. Code is available https://github.com/LINs-lab/APEX.",
+      "summary": "APEX uses condition shifting to extract adversarial signals from a flow model. Practitioners care because it improves one-step text-to-image synthesis, reducing tradeoffs between fidelity, speed, and training efficiency.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "OccuBench: Evaluating AI Agents on Real-World Professional Tasks via Language World Models",
+      "authors": [
+        "Xiaomeng Hu",
+        "Yinger Zhang",
+        "Fei Huang",
+        "Jianhong Tu",
+        "Yang Su"
+      ],
+      "abstract": "AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to nuclear reactor safety monitoring to customs import processing), yet existing benchmarks can only evaluate agents in the few domains where public environments exist. We introduce OccuBench, a benchmark covering 100 real-world professional task scenarios across 10 industry categories and 65 specialized domains, enabled by Language World Models (LWMs) that simulate domain-specific environments through LLM-driven tool response generation. Our multi-agent synthesis pipeline automatically produces evaluation instances with guaranteed solvability, calibrated difficulty, and document-grounded diversity. OccuBench evaluates agents along two complementary dimensions: task completion across professional domains and environmental robustness under controlled fault injection (explicit errors, implicit data degradation, and mixed faults). We evaluate 15 frontier models across 8 model families and find that: (1) no single model dominates all industries, as each has a distinct occupational capability profile; (2) implicit faults (truncated data, missing fields) are harder than both explicit errors (timeouts, 500s) and mixed faults, because they lack overt error signals and require the agent to independently detect data degradation; (3) larger models, newer generations, and higher reasoning effort consistently improve performance. GPT-5.2 improves by 27.5 points from minimal to maximum reasoning effort; and (4) strong agents are not necessarily strong environment simulators. Simulator quality is critical for LWM-based evaluation reliability. OccuBench provides the first systematic cross-industry evaluation of AI agents on professional occupational tasks.",
+      "link": "https://huggingface.co/papers/2604.10866",
+      "published": "2026-04-13",
+      "arxiv_id": "2604.10866",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "AI agents are expected to perform professional work across hundreds of occupational domains (from emergency department triage to nuclear reactor safety monitoring to customs import processing), yet existing benchmarks can only evaluate agents in the few domains where public environments exist. We introduce OccuBench, a benchmark covering 100 real-world professional task scenarios across 10 industry categories and 65 specialized domains, enabled by Language World Models (LWMs) that simulate domain-specific environments through LLM-driven tool response generation. Our multi-agent synthesis pipeline automatically produces evaluation instances with guaranteed solvability, calibrated difficulty, and document-grounded diversity. OccuBench evaluates agents along two complementary dimensions: task completion across professional domains and environmental robustness under controlled fault injection (explicit errors, implicit data degradation, and mixed faults). We evaluate 15 frontier models across 8 model families and find that: (1) no single model dominates all industries, as each has a distinct occupational capability profile; (2) implicit faults (truncated data, missing fields) are harder than both explicit errors (timeouts, 500s) and mixed faults, because they lack overt error signals and require the agent to independently detect data degradation; (3) larger models, newer generations, and higher reasoning effort consistently improve performance. GPT-5.2 improves by 27.5 points from minimal to maximum reasoning effort; and (4) strong agents are not necessarily strong environment simulators. Simulator quality is critical for LWM-based evaluation reliability. OccuBench provides the first systematic cross-industry evaluation of AI agents on professional occupational tasks.",
+      "summary": "OccuBench evaluates AI agents on real-world professional tasks using language models. It helps practitioners assess AI reliability in domains like emergency triage and nuclear safety.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    }
+  ]
+}
