@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2026 04:14:37 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 11:59:42 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Briefing - Tuesday, April 21, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-21.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-21.html</guid>
-      <description>Weather: N/A°F - Unavailable | Illness level: NORMAL | 4 top news stories | 7 AI security updates</description>
+      <description>Weather: N/A°F - Unavailable | Illness level: NORMAL | 2 major events this week | 5 top news stories | 6 YouTube videos | 6 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +54,15 @@
   <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
     <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F3AD; NYC Events Near You (Next 7 Days)</div>
     
-    <div style="font-size: 13px; color: #888; font-style: italic;">No major events scheduled this week.</div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
+      &#x1F4CD; <a href="https://www.google.com/search?q=Private%20Wedding%20Procession%20NYC%20Fri%2C%20Apr%2024" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Private Wedding Procession</a> &mdash; Fri, Apr 24, Manhattan <span style="color: #888;">(455 Madison Ave)</span>
+    </div>
+    
+    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
+      &#x1F4CD; <a href="https://www.google.com/search?q=SIKH%20DAY%20PARADE%202026%20NYC%20Sat%2C%20Apr%2025" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">SIKH DAY PARADE 2026</a> &mdash; Sat, Apr 25, Manhattan <span style="color: #888;">(East 37th St & Park Ave)</span>
+    </div>
+    
     
     <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #999; text-decoration: underline;">NYC Open Data — Permitted Events</a></div>
   </div>
@@ -70,41 +78,51 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 02:37:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
-      <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE95ZnBiaFI0cUlMMDFKblpMdWYzMUNFUi1ONzNtZG9wSTFVUW53b3h1UDY1LXdsMml3YXI4UENwWG5kLUZnazF3ZVdxYlctaVZfRlZTZGRGalFIbnZodDNQaUQ2dlVpWW16cUZHeEFzUGdqeWNyM180THo1bw?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Live updates: Trump says ceasefire ends Wednesday evening and a further extension is ‘highly unlikely’</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 01:31:27 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ON3NvUEZFYXk3WXlwWkdqTm84X1JUSjNnRDNTTWlzOUJ5YWtYcGRabGdkblBRc3FKWEZXQVZoVzFZcHZrNENObkExUGwtV0hzVXlEZjIwaXJudw?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Japan on high alert for 'huge' second earthquake after lifting tsunami warning</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ Trump says US-Iran ceasefire ends Wednesday, unlikely to extend. This raises tensions and potential for retaliation from Iran.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🌍 Japan lifted a tsunami warning after a 7.7 magnitude quake struck off its northeast coast. A second, potentially larger quake is expected, posing a significant threat to coastal areas.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 02:27:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CNN</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxNNXJlMUdjcVQ4cGtjMGlETEtSanR1OGZyZWV1eU9EdTBwbHlPYW5UbjBjaEcyQ3llQXJWbWczcHlUR282NXRzSVQtRnlFam1KWmNEc3paeEJvU25iSWkxWVkzRFY1dHQ1VDBjN1lZcXBIc0xQQThNR3N2WXhSWFlHRkVn?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Japan opens door to global arms market with biggest export rule change in decades</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 07:38:06 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <a href="https://www.npr.org/2026/04/21/g-s1-118194/up-first-newsletter-us-iran-israel-ceasefire-lori-chavez-deremer-kevin-warsh" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">U.S.-Iran ceasefire nears its end. And, Fed chair nominee faces tough hearing</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Japan scraps defense export rules, allowing sales of warships and missiles. This move strengthens Japan's defense industry and expands opportunities amid US production strains.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ US-Iran ceasefire ends today, with Lebanon's temporary truce at risk. Its collapse could renew Israel-Hezbollah fighting, affecting <strong>1 million</strong> displaced people.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 02:05:10 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/21/global-sumud-flotilla-disrupts-cargo-ship-bound-for-israel?traffic_source=rss" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Global Sumud Flotilla disrupts cargo ship bound for Israel</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 09:32:43 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/4/21/spain-slovenia-ireland-push-eu-to-debate-israel-pact-suspension?traffic_source=rss" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Spain, Slovenia, Ireland push EU to debate Israel pact suspension</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ Activists with the Global Sumud Flotilla disrupted the MSC Maya, a cargo ship bound for Israel. This disruption may impact Israeli trade and spark further protests against companies operating in occupied territories.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏛️ Spain, Slovenia, and Ireland asked the EU to debate suspending its Israel pact, citing human rights violations. This move may impact EU-Israel trade and diplomatic relations.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 05:00:00 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
+      <a href="https://www.npr.org/2026/04/21/nx-s1-5787863/federal-reserve-kevin-warsh-confirmation-hearing" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">3 things to know about Fed chair nominee Kevin Warsh</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏛️ Kevin Warsh, Trump's Fed chair nominee, faces a Senate Banking Committee hearing Tuesday. His confirmation may be blocked by a GOP senator over a separate DOJ investigation.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
       <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 02:25:49 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The New York Times</span></div>
-      <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOemxiRi04Q1VEQVItUFNvTGg0b0J1RkRKckNUOHM0aWtlLW04RzNWcHpHVDI3N0JiUHdMek5zOElLMDFOWjhaTGlGWmlRRTVSNHZPNjB0N1UxUGFtTWQ1ZGtZQ2VvX1Q5Tjd1TmY4OWlPX2hOZi0xemFlMnRTSUJFd0pwNG5OUmtYZ0VyRVEzdUFhWUpKbGc?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Canadian Tourist Is Killed in Shooting at Mexico’s Pyramids</a>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 11:14:16 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1FbW1DQmFwNDRKamNFaFA1b2NTVVVtTnZkVzJTYlJhR0JVV0NvUE5TaFVqYU1BZWgtVU9sUWJQSlZfVk5fdDF6VDN6US1idXJnV1RFX21iV2pFUQ?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Woman and child jumped off roof to escape deadly Louisiana shooting</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ A Canadian tourist was killed in a shooting at Mexico's pyramids. This incident may impact travel warnings for Mexico.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ A father in Shreveport, Louisiana, fatally shot 8 children, including 7 of his own, before dying in a police shootout. The tragedy highlights the need for stricter gun control and mental health support to prevent such incidents.</div>
       
     </div>
     
@@ -120,7 +138,67 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">&#x1F3AC; YouTube</span>
     </div>
     
-    <div style="font-size: 14px; color: #888; font-style: italic; text-align: center;">No new videos today.</div>
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-21 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
+      <a href="https://www.morningbrew.com/issues/just-asking-questions" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Tim Cook is stepping down as Apple’s CEO</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; mRNA vaccines showed promise in treating aggressive pancreatic cancer, with 7 of 16 patients responding to treatment and still alive 6 years later. The vaccine works by training the immune system to fight off lingering cancer cells after surgery.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-21 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
+      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Why-Your-Company-Should-Own-Its-AI-Model--E2278-e3i72jk" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Why Your Company Should Own Its AI Model | E2278</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Eragon CEO Josh Sirota demos an AI operating system connecting business data. It's pre-trained to understand any business, making it a valuable tool for companies.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-the-Best-Companies-Use-AI-e3i576d" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; The Best Claude Design Use Cases</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Leading companies treat AI as a growth technology, building systems to support all employees. They raise the floor for every employee, rather than leaving them to figure it out alone.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/How-the-Best-Companies-Use-AI-e3i576d" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; How the Best Companies Use AI</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; Top companies use AI as a growth technology, building systems to support all employees. They raise the floor for every employee, rather than leaving them to figure it out alone.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-21 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
+      <a href="https://youtube.com/watch?v=wDgq9aiuL-w" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Did Anthropic just kill Figma?</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Theo - t3.gg. Click to watch.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <!-- Date + Channel -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-20 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
+      <a href="https://youtube.com/watch?v=KFisvc-AMII" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Did Claude really get dumber again?</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Theo - t3.gg. Click to watch.</div>
+      
+    </div>
+    
+    
   </div>
 
   <!-- Section Rule -->
@@ -133,7 +211,7 @@
       <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">&#x1F6E1;&#xFE0F; AI Security</span>
     </div>
     
-    <div style="font-size: 14px; color: #555; text-align: center; margin-bottom: 20px; font-style: italic; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; padding: 0 16px;">This week's focus: agentic ai security and ai alignment & safety.</div>
+    <div style="font-size: 14px; color: #555; text-align: center; margin-bottom: 20px; font-style: italic; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; padding: 0 16px;">This week's focus: agentic ai security and ai vulnerabilities.</div>
     
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
@@ -144,7 +222,7 @@
       <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQX3JMRjRpWTdLSVY3ZmFhWUtIRkVNN2ZtZmIxZFF2OWEzNk1BeE9hQ2JjeDRrTnlFWjIwbjFJR0dNTTJwdS02cUtrRE82X3VzcTRfalVjZzlhOWZHTTBoc0JmN3AxdWNfWkExcVg0SFRUa09NSUowaXp3QUwxTENsNjV6YzF2aGQwSE9VSA?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Malicious LLM proxy routers found in the wild</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Researchers found malicious LLM proxy routers on marketplaces like Taobao and GitHub. This means defenders should scrutinize AI traffic proxies for suspicious behavior.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Researchers found malicious LLM proxy routers in the wild, testing 28 paid and 400 free routers. This means defenders should scrutinize AI traffic proxies for suspicious behavior.</div>
       
       
     </div>
@@ -157,7 +235,20 @@
       <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxNclhVTl9Ibl9vR0Z2blFHX2NEWnlrYUFDTHp6VmYtaFBOWS1XZ1JDMFdoZW5yUmdKYmdrREpWVTZyTUhNWm9PZnN5ZlBLUjRhM2NFN3BhSTZmUk1CWDAwT2t5M0tGTFMyODBvT0hxTlBvWDFydEl2T2pnM0RSZFpHTWxMUjBEdldiUTZXUDl6Ny01TTV3OGJIV2ItVERWMWpSeFRabGZKbDk2NkZaWDZFV1pfSQ?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Hack the AI agent: Build agentic AI security skills with the GitHub Secure Code Game</a>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 GitHub's Secure Code Game teaches AI security skills through 5 challenges, used by 10,000+ developers. Defenders can build skills to find and exploit AI vulnerabilities.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 GitHub's Secure Code Game teaches AI security skills through 5 challenges. Defenders can use this game to learn about agentic AI vulnerabilities.</div>
+      
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+      
+      <!-- Date + Source -->
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 14 Apr 2026 13:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Yahoo Finance</span></div>
+      <!-- Title -->
+      <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNWxod2NuY3JITWdGS192amRfaUdFckhMYnNDM0ZVOU9Lc3F2T3ExdDhNN1NIYWd4cjM4LXc2SHhsVjg4S2dBV0JZN0tZTVRfN1NLX0FsYXVVTDdORjJUcDVBZmxiRWNHMzhjX2NxT2FDQWkzRFpDQUZiay1wSEVEdThTZDhIWGJINW9GU1RDcFJ1LVFXM0JmX1JwQVJ6ZEYySFpfNTJBR0JDRjg?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 SANS Institute, Cloud Security Alliance, [un]prompted, and OWASP GenAI Security Project Release Emergency Strategy Briefing as AI-Driven Vulnerability Discovery Compresses Exploit Timelines from Weeks to Hours</a>
+      <!-- Summary -->
+      
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 SANS Institute and partners release an emergency briefing on AI-driven vulnerability discovery. This means defenders must adapt to faster exploit timelines, from weeks to hours.</div>
       
       
     </div>
@@ -177,25 +268,12 @@
     
     <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 17 Apr 2026 16:22:15 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Data Center Knowledge</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOel9NaElwTlpCNm51Rm9faTZGU0RxM3lHSVY2czJkMkZtQ2s0NTJOTklobmVleGFuX1NKTlAxT0ZhZXBuNDc0ODA2dzlIdDhqUXVSc09UYTU4NjRwalY1Uy1qak9QRVZqdkpka2ttMDNOZW41QzhST3h3OXNIMUF5MGVlVm40RndkSUs1M2NRVnlfOW1iRWI0cW1BaFBPV0FLSGNyd2h6TC1zekt5RmVleWpaQUY1dF9PMVE?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Anthropic’s Project Glasswing Tackles AI Security Challenges</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Anthropic's Project Glasswing uses Claude Mythos to identify software flaws. This helps defenders secure AI-driven systems.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
       <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-20</div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-19</div>
       <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Guanting Dong, Junting Lu, Junjie Huang et al.</div>
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Ziao Zhang, Kou Shi, Shiting Huang et al.</div>
       <!-- Title -->
-      <a href="https://huggingface.co/papers/2604.18292" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Agent-World: Scaling Real-World Environment Synthesis for Evolving General Agent Intelligence</a>
+      <a href="https://huggingface.co/papers/2604.17308" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 SkillFlow:Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents</a>
       <!-- Topic badges -->
       
       
@@ -218,42 +296,7 @@
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Agent-World is a training arena that synthesizes realistic environments for agents to learn from. It helps stop limited agent intelligence by enabling life-long learning in various real-world scenarios.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-20</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Savya Khosla, Sethuraman T, Aryan Chadha et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2604.18573v1" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 T-REN: Learning Text-Aligned Region Tokens Improves Dense Vision-Language Alignment and Scalability</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F9F1; safety</span>
-        
-        
-      </div>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 T-REN proposes a lightweight network to map visual data to compact text-aligned region tokens. Practitioners should care as it improves dense vision-language alignment, enabling better open-vocabulary semantic segmentation.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 SkillFlow benchmarks autonomous agents' ability to discover and evolve skills over time. It reveals a capability gap in agents' skill discovery and evolution, affecting their ability to adapt to new tasks.</div>
       
       
     </div>
@@ -261,11 +304,11 @@
     <div style="padding: 16px 0; ">
       
       <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-20</div>
+      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-19</div>
       <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Xinping Lei, Xinyu Che, Junqi Xiong et al.</div>
+      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Kadir-Kaan Özer, René Ebeling, Markus Enzweiler</div>
       <!-- Title -->
-      <a href="https://huggingface.co/papers/2604.18224" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 WebCompass: Towards Multimodal Web Coding Evaluation for Code Language Models</a>
+      <a href="https://huggingface.co/papers/2604.17388" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ Back to Repair: A Minimal Denoising Network\ for Time Series Anomaly Detection</a>
       <!-- Topic badges -->
       
       
@@ -277,18 +320,18 @@
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2980b9; color: #2980b9; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x2696;&#xFE0F; LLM-as-judge</span>
         
         
         
         
+        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x2694;&#xFE0F; adversarial</span>
         
         
         
       </div>
       <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 WebCompass evaluates web coding models using text, image, and video inputs. It helps practitioners assess models' ability to generate, edit, and repair web code, revealing their limitations in real-world web development tasks.</div>
+        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ This paper proposes a simple denoising network for time series anomaly detection. It helps practitioners detect anomalies in time series data with high accuracy, outperforming other neural network baselines.</div>
       
       
     </div>
