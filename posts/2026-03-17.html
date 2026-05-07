@@ -3,343 +3,382 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing &mdash; Tuesday, March 17, 2026</title>
+<title>The Midtown Briefing &mdash; Tuesday, March 17, 2026</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }
-  .site-nav { background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }
-  .site-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }
-  .site-nav a:hover { color: #fff; }
-  .email-wrap { max-width: 680px; margin: 28px auto; background: #fffdf7; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+  body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased; }
+  a { color: #3d6b4f; text-decoration: none; }
+  a:hover { color: #8b4a3c; }
+  .shell-nav { position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }
+  .shell-nav .brand { font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }
+  .shell-nav .actions { display: flex; gap: 10px; align-items: center; }
+  .shell-nav .actions a, .shell-nav .actions button { background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-family: inherit; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; color: #4a3f30; border-radius: 99px; text-decoration: none; }
+  .shell-nav .actions a:hover, .shell-nav .actions button:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
+  .email-wrap { max-width: 700px; margin: 0 auto 60px; background: #faf7f0; overflow-x: hidden; }
+  @media (max-width: 760px) { .shell-nav { padding: 12px 16px; } .shell-nav .brand { font-size: 16px; } .shell-nav .actions { gap: 6px; } .shell-nav .actions a, .shell-nav .actions button { padding: 5px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
-<div class="site-nav">
-  <a href="../index.html">&larr; Back to Daily Briefing</a>
-</div>
+<nav class="shell-nav">
+  <a class="brand" href="../index.html">The Midtown Briefing</a>
+  <div class="actions">
+    <a href="../index.html">Archive</a>
+    <button onclick="window._openStash()">My Stash</button>
+  </div>
+</nav>
 <div class="email-wrap">
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
-<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
+<div style="max-width: 660px; margin: 0 auto; background: #faf7f0;">
 
   <!-- Masthead -->
-  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Automated Daily Intelligence</div>
-    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
-    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">Tuesday, March 17, 2026</div>
-    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; Health &middot; Events &middot; News &middot; YouTube &middot; AI Security</div>
+  <div style="padding: 44px 32px 0 32px; text-align: center; border-bottom: 1px solid #ede5d5;">
+    <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">Est. 2025</div>
+    <h1 style="margin: 10px 0 8px 0; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710; line-height: 1.0;">The Midtown <span style="color: #3d6b4f;">Briefing</span></h1>
+    <div style="font-size: 14px; color: #8a7a60; margin-bottom: 16px; font-weight: 400;">Tuesday, March 17, 2026</div>
+    <div style="height: 1px; background: #ede5d5; margin: 0 60px;"></div>
+    <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
   </div>
 
   <!-- Weather -->
-  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
-    <div style="text-align: center; margin-bottom: 16px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Weather Watch</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">39<span style="color: #8b4a3c;">&deg;</span></div>
+      
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">Partly Sunny</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px;">
+        <div><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; display: block;">High / Low</span><span style="font-size: 15px; color: #1c1710;">41&deg; / 30&deg;</span></div>
+        
+        
+      </div>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Partly Sunny &mdash; High 41&deg; / Low 30&deg;</div>
     
-    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
-      <tr style="border-bottom: 2px solid #1a1a1a;">
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Time</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Temp</th>
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Conditions</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Precip</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Humidity</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Wind</th>
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
+    <table style="width: 100%; min-width: 480px; border-collapse: collapse; font-size: 13px; color: #4a3f30; font-weight: 300;">
+      <tr>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Hour</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Temp</th>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Conditions</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Precip</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Humidity</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Wind</th>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(30&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Partly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">39%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph W</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">39&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(30&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Partly Sunny</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">39%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">18 mph W</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">40&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(30&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Scattered Snow Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">11%</td>
-        <td style="padding: 7px 6px; text-align: center;">36%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">22 mph W</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">40&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(30&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Scattered Snow Showers</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">11%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">36%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">22 mph W</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">39&deg;F <span style="font-weight: 400; font-size: 11px; color: #888;">(29&deg;)</span></td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Scattered Snow Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">11%</td>
-        <td style="padding: 7px 6px; text-align: center;">39%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">20 mph W</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">39&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(29&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Scattered Snow Showers</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">11%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">39%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">20 mph W</td>
       </tr>
       
     </table>
+    </div>
     
   </div>
 
   <!-- Health Alert -->
   
-  <div style="padding: 16px 32px; border-left: 4px solid #2980b9{clear else %}#27ae60; background: #f0f7fc;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; margin-bottom: 6px;">
-      &#x2705; NYC Illness Level: LOW
-    </div>
-    <div style="font-size: 14px; color: #444; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">5,240 cases this week — 46% below average for this time of year</div>
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Week ending 2026-03-07 · Source: NYC Dept. of Health</div>
+  <div style="padding: 20px 32px; margin: 0 32px; background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; margin-bottom: 8px;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding-right: 12px; vertical-align: middle; width: 10px;">
+          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #3d6b4f;"></span>
+        </td>
+        <td>
+          <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 4px;">
+            NYC Illness Level: LOW
+          </div>
+          <div style="font-size: 14px; color: #4a3f30; line-height: 1.6; font-weight: 300;">5,240 cases this week — 46% below average for this time of year</div>
+          <div style="font-size: 10px; color: #8a7a60; margin-top: 4px; font-weight: 400;">Week ending 2026-03-07 · NYC Dept. of Health</div>
+        </td>
+      </tr>
+    </table>
   </div>
   
 
   <!-- NYC Events -->
-  <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F4C5; NYC Major Events This Week</div>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">On the Block</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=New%20York%20City%20Saint%20Patricks%20Day%20Parade%20NYC%20Tue%2C%20Mar%2017" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">New York City Saint Patricks Day Parade</a> &mdash; Tue, Mar 17, Manhattan <span style="color: #888;">(West 43rd St & 5th Ave)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Tue</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">17</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=New%20York%20City%20Saint%20Patricks%20Day%20Parade%20NYC%20Tue%2C%20Mar%2017" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">New York City Saint Patricks Day Parade</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · West 43rd St & 5th Ave</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=BSSI%20Adventist%20Youth%20Federation%20Global%20Youth%20Day%20NYC%20Sat%2C%20Mar%2021" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">BSSI Adventist Youth Federation Global Youth Day</a> &mdash; Sat, Mar 21, Brooklyn <span style="color: #888;">(Newport Street & Thomas S Boyland Street)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">21</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=BSSI%20Adventist%20Youth%20Federation%20Global%20Youth%20Day%20NYC%20Sat%2C%20Mar%2021" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">BSSI Adventist Youth Federation Global Youth Day</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Brooklyn · Newport Street & Thomas S Boyland Street</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=5th%20Annual%20NYPD%20Memorial%20Run%20in%20Honor%20of%20Det.%20Jason%20Rivera%20and%20Wilbert%20Mora%20NYC%20Sun%2C%20Mar%2022" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">5th Annual NYPD Memorial Run in Honor of Det. Jason Rivera and Wilbert Mora</a> &mdash; Sun, Mar 22, Manhattan <span style="color: #888;">(611 West 204th St)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sun</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">22</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=5th%20Annual%20NYPD%20Memorial%20Run%20in%20Honor%20of%20Det.%20Jason%20Rivera%20and%20Wilbert%20Mora%20NYC%20Sun%2C%20Mar%2022" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">5th Annual NYPD Memorial Run in Honor of Det. Jason Rivera and Wilbert Mora</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · 611 West 204th St</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
-      <a href="https://www.google.com/search?q=Bay%20Ridge%20St.%20Patricks%20Day%20Parade%20NYC%20Sun%2C%20Mar%2022" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Bay Ridge St. Patricks Day Parade</a> &mdash; Sun, Mar 22, Brooklyn <span style="color: #888;">(Marine Ave & Third Ave)</span>
+    <div style="padding: 14px 0; ">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sun</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">22</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Bay%20Ridge%20St.%20Patricks%20Day%20Parade%20NYC%20Sun%2C%20Mar%2022" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Bay Ridge St. Patricks Day Parade</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Brooklyn · Marine Ave & Third Ave</div>
+        </td>
+      </tr></table>
     </div>
     
     
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: NYC Open Data — Permitted Events</div>
+    <div style="font-size: 10px; color: #8a7a60; margin-top: 12px; font-weight: 400;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">NYC Open Data</a></div>
   </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- Top News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">Top News</span>
-    </div>
+  <div data-section="news" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The World This Morning</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17T12:33:41-04:00 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Verge</span></div>
-      <!-- Title -->
-      <a href="https://www.theverge.com/ai-artificial-intelligence/896107/google-expands-personal-intelligence" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Now everyone in the US is getting Google&#8217;s personalized Gemini AI</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">2026-03-17T12:33:41-04:00 · <span style="color: #3d6b4f;">The Verge</span></div>
+      <a href="https://www.theverge.com/ai-artificial-intelligence/896107/google-expands-personal-intelligence" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Now everyone in the US is getting Google&#8217;s personalized Gemini AI</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🇺🇸 Google announced on Tuesday that all free-tier users in the US now have access to its Personal Intelligence feature for Gemini.<br>🔍 This feature, previously limited to Google AI Pro and AI Ultra subscribers, allows users to connect various Google apps for personalized Gemini responses.<br>🚫 Personal Intelligence is currently available only to users on personal Google accounts, excluding business, enterprise, or education accounts.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 13:00:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/17/hm-wants-to-make-clothing-from-co2-using-this-startups-tech/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">H&M wants to make clothing from CO2 using this startup’s tech</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 Rubi, a startup, raised $7.5 million in funding led by AP Ventures and FH One Investments to scale its cellulosic production system.<br>🌿 The company uses enzymes to produce cellulose from captured carbon dioxide, aiming for tens of tons of material output.<br>🤝 Rubi has secured over $60 million in non-binding off-take agreements and partnered with 15 pilot companies like H&M, Patagonia, and Walmart.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🇺🇸 Google announced on Tuesday that all free-tier users in the US now have access to its Personal Intelligence feature for Gemini.<br>🔍 This feature, previously limited to Google AI Pro and AI Ultra subscribers, allows users to connect various Google apps for personalized Gemini responses.<br>🚫 Personal Intelligence is currently available only to users on personal Google accounts, excluding business, enterprise, or education accounts.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 18:20:15 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/17/the-pentagon-is-developing-alternatives-to-anthropic-report-says/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Pentagon is developing alternatives to Anthropic, report says</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 17 Mar 2026 13:00:00 +0000 · <span style="color: #3d6b4f;">TechCrunch</span></div>
+      <a href="https://techcrunch.com/2026/03/17/hm-wants-to-make-clothing-from-co2-using-this-startups-tech/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">H&M wants to make clothing from CO2 using this startup’s tech</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛠️ The Pentagon is developing its own Large Language Models (LLMs) for government-owned environments, with engineering work already underway.<br>💸 Anthropic's $200 million contract with the Department of Defense broke down over unrestricted access to its AI technology.<br>🚫 Defense Secretary Pete Hegseth declared Anthropic a supply-chain risk, while OpenAI and xAI have signed separate agreements with the Pentagon.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">💰 Rubi, a startup, raised $7.5 million in funding led by AP Ventures and FH One Investments to scale its cellulosic production system.<br>🌿 The company uses enzymes to produce cellulose from captured carbon dioxide, aiming for tens of tons of material output.<br>🤝 Rubi has secured over $60 million in non-binding off-take agreements and partnered with 15 pilot companies like H&M, Patagonia, and Walmart.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 15:22:49 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/17/g-s1-114070/assassination-iran-supreme-leader-questions-democracies" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Khamenei's killing renews questions about US assassinating foreign leaders</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 17 Mar 2026 18:20:15 +0000 · <span style="color: #3d6b4f;">TechCrunch</span></div>
+      <a href="https://techcrunch.com/2026/03/17/the-pentagon-is-developing-alternatives-to-anthropic-report-says/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">The Pentagon is developing alternatives to Anthropic, report says</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🇮🇷 Supreme Leader Ayatollah Ali Khamenei was killed in his office in central Tehran in an opening strike of a U.S.-Israeli war on Iran.<br>🤔 Columbia University historian Timothy Naftali questions the strategic, philosophical, and moral implications of the U.S. ability to assassinate foreign leaders.<br>📜 The 1975 Church Committee interim report investigated U.S. involvement in plots to kill foreign leaders, including Rafael Trujillo and Fidel Castro.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🛠️ The Pentagon is developing its own Large Language Models (LLMs) for government-owned environments, with engineering work already underway.<br>💸 Anthropic's $200 million contract with the Department of Defense broke down over unrestricted access to its AI technology.<br>🚫 Defense Secretary Pete Hegseth declared Anthropic a supply-chain risk, while OpenAI and xAI have signed separate agreements with the Pentagon.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 17 Mar 2026 15:22:49 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/03/17/g-s1-114070/assassination-iran-supreme-leader-questions-democracies" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Khamenei's killing renews questions about US assassinating foreign leaders</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🇮🇷 Supreme Leader Ayatollah Ali Khamenei was killed in his office in central Tehran in an opening strike of a U.S.-Israeli war on Iran.<br>🤔 Columbia University historian Timothy Naftali questions the strategic, philosophical, and moral implications of the U.S. ability to assassinate foreign leaders.<br>📜 The 1975 Church Committee interim report investigated U.S. involvement in plots to kill foreign leaders, including Rafael Trujillo and Fidel Castro.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 17 Mar 2026 14:19:20 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/17/nx-s1-5749163/oksana-masters-2026-winter-paralympics-medals" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">She's won 24 Paralympic medals. But Oksana Masters wants to talk about times she lost</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 17 Mar 2026 14:19:20 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/03/17/nx-s1-5749163/oksana-masters-2026-winter-paralympics-medals" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">She's won 24 Paralympic medals. But Oksana Masters wants to talk about times she lost</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏅 Oksana Masters, 36, secured five new medals, including four gold, at the Milan Cortina Paralympics, bringing her total to 24 career medals.<br>🏆 She is now the most decorated U.S. Winter Paralympian with 19 winter medals and the third most-decorated Paralympian in U.S. history.<br>🤕 Masters overcame a concussion, a recurrent leg infection, and hand surgery for a torn ligament prior to the Milan Cortina Games.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🏅 Oksana Masters, 36, secured five new medals, including four gold, at the Milan Cortina Paralympics, bringing her total to 24 career medals.<br>🏆 She is now the most decorated U.S. Winter Paralympian with 19 winter medals and the third most-decorated Paralympian in U.S. history.<br>🤕 Masters overcame a concussion, a recurrent leg infection, and hand surgery for a torn ligament prior to the Milan Cortina Games.</div>
       
     </div>
     
     
   </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
 
   <!-- YouTube -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
-    </div>
+  <div data-section="youtube" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">From the Subscriptions</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/A-Guy-Used-AI-to-Cure-His-Dogs-Cancer-e3ghqmv" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">A Guy Used AI to Cure His Dog's Cancer</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/A-Guy-Used-AI-to-Cure-His-Dogs-Cancer-e3ghqmv" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">A Guy Used AI to Cure His Dog's Cancer</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-17</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 A Guy Used AI to Cure His Dog's Cancer</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Jeff Su</span></div>
-      <!-- Title -->
-      <a href="https://www.jeffsu.org/notebooklm-changed-completely-heres-what-matters-in-2026/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">NotebookLM Changed Completely: Here's What Matters (in 2026)</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 NotebookLM Changed Completely: Here's What Matters (in 2026)</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 A Guy Used AI to Cure His Dog's Cancer</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/gamers-deliver" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Drone strikes causes chaos at Dubai airport</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Jeff Su</div>
+      <a href="https://www.jeffsu.org/notebooklm-changed-completely-heres-what-matters-in-2026/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">NotebookLM Changed Completely: Here's What Matters (in 2026)</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-17</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Drone strikes causes chaos at Dubai airport</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 NotebookLM Changed Completely: Here's What Matters (in 2026)</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-17 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Matt Wolfe</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=JyWdgDcsmbk" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The REAL Story from NVIDIA GTC This Week!</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
+      <a href="https://www.morningbrew.com/issues/gamers-deliver" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Drone strikes causes chaos at Dubai airport</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-17</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 The REAL Story from NVIDIA GTC This Week!</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 Drone strikes causes chaos at Dubai airport</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-16 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Are-Brain-Computer-Interfaces-Actually-Ready-for-Humans-e3gi11p" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Are Brain-Computer Interfaces Actually Ready for Humans? | E2263</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Matt Wolfe</div>
+      <a href="https://youtube.com/watch?v=JyWdgDcsmbk" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">The REAL Story from NVIDIA GTC This Week!</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-17</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Are Brain-Computer Interfaces Actually Ready for Humans? | E2263</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 The REAL Story from NVIDIA GTC This Week!</div>
       
     </div>
     
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-16 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=qrmgkWl0vPg" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What to Expect from Nvidia This Week</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">This Week in Startups</div>
+      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Are-Brain-Computer-Interfaces-Actually-Ready-for-Humans-e3gi11p" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Are Brain-Computer Interfaces Actually Ready for Humans? | E2263</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-16</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 What to Expect from Nvidia This Week</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 Are Brain-Computer Interfaces Actually Ready for Humans? | E2263</div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; ">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
+      <a href="https://youtube.com/watch?v=qrmgkWl0vPg" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">What to Expect from Nvidia This Week</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-16</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 What to Expect from Nvidia This Week</div>
       
     </div>
     
     
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
   <!-- AI Security -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security</span>
-    </div>
+  <div data-section="ai_security" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Adversary's Desk</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 11 Mar 2026 13:01:14 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Cloudflare Blog</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VVkFKLUpzTFhuaXQ5SkxFbzhfTVJkeHBXWGdMMGVPejRYMUpSNEhGMU9iUkZzZ2FwdEZyT2FQeG5wRVh0bGJSZzhPWHRmc1Y2djNTUmZHMmo2NVkwUG9mMVNB?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI Security for Apps is now generally available</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚀 Cloudflare’s AI Security for Apps, which detects and mitigates threats to AI-powered applications, is now generally available. <br>🔎 Cloudflare is making AI endpoint discovery free for every customer, including those on Free, Pro, and Business plans. <br>🤝 Cloudflare has expanded its collaboration with IBM to deliver AI security to its cloud customers and is partnering with Wiz.</div>
-      
-      
-    </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 11 Mar 2026 10:03:41 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Cisco Talos Blog</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQVEFIMGhBUnRKMUpGdUZ4ZmdiaW85ajBKekdubnpFaE1FbjlSX0ktM0JZdl9vUWtwbDFKNmpvdGxLcjh2LWVDZjV3QWYxVnl4TEtNWDFCaG8ybWV1c0VzZ05XR25tV3dNMUktRWw0Y2x3czJ2RWtNY0VUbUNRRkg1VFZFbzREWnU2NFdPZnZpSEt6RjZPcEdNV2ExWHJvR2FrNVZtNk42TQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Agentic AI security: Why you need to know about autonomous agents now</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 11 Mar 2026 13:01:14 GMT · <span style="color: #3d6b4f;">The Cloudflare Blog</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiYkFVX3lxTE1VVkFKLUpzTFhuaXQ5SkxFbzhfTVJkeHBXWGdMMGVPejRYMUpSNEhGMU9iUkZzZ2FwdEZyT2FQeG5wRVh0bGJSZzhPWHRmc1Y2djNTUmZHMmo2NVkwUG9mMVNB?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">AI Security for Apps is now generally available</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Agentic AI is an autonomous system tasked with an objective, equipped with specific tools and resources, and typically powered by large language models. <br>🧠 Agentic AI systems can plan how to achieve objectives, implement plans, and verify results while trying different approaches if errors occur. <br>🔒 Organizations must address traceability, auditability, business risk management, and cybersecurity threat management when deploying AI agents.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🚀 Cloudflare’s AI Security for Apps, which detects and mitigates threats to AI-powered applications, is now generally available. <br>🔎 Cloudflare is making AI endpoint discovery free for every customer, including those on Free, Pro, and Business plans. <br>🤝 Cloudflare has expanded its collaboration with IBM to deliver AI security to its cloud customers and is partnering with Wiz.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 11 Mar 2026 07:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TrendMicro</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5IemZtc0dpRVRndHV6NVFlNGpCb3BFY2tFM3dNZlltZnFkZEVBaXM1NjVEZDRiZ3VGTHQ3OU9oX2Z5d3dqNTVRZTVkYnNsMHgzeUliS001RnJ0aXB2empCeWZMeTR6d194RHBib2Z3?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What are the OWASP Top 10 risks for LLMs?</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 11 Mar 2026 10:03:41 GMT · <span style="color: #3d6b4f;">Cisco Talos Blog</span></div>
+      <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxQVEFIMGhBUnRKMUpGdUZ4ZmdiaW85ajBKekdubnpFaE1FbjlSX0ktM0JZdl9vUWtwbDFKNmpvdGxLcjh2LWVDZjV3QWYxVnl4TEtNWDFCaG8ybWV1c0VzZ05XR25tV3dNMUktRWw0Y2x3czJ2RWtNY0VUbUNRRkg1VFZFbzREWnU2NFdPZnZpSEt6RjZPcEdNV2ExWHJvR2FrNVZtNk42TQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Agentic AI security: Why you need to know about autonomous agents now</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📚 OWASP launched the Generative AI Security Project in May 2023 to address emerging risks associated with large language models. <br>🗓️ The OWASP Top 10 for LLM Applications & Generative AI version 2025 was released in November 2024, outlining critical risks and mitigation strategies. <br>✍️ Prompt injection occurs when user inputs unintentionally alter an LLM's behavior, leading to guideline violations or unauthorized access, with jailbreaking being a form of this attack.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🤖 Agentic AI is an autonomous system tasked with an objective, equipped with specific tools and resources, and typically powered by large language models. <br>🧠 Agentic AI systems can plan how to achieve objectives, implement plans, and verify results while trying different approaches if errors occur. <br>🔒 Organizations must address traceability, auditability, business risk management, and cybersecurity threat management when deploying AI agents.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Fri, 13 Mar 2026 09:00:18 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">ucstrategies.com</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaE4tcUJDeVBoTGVPTEU0ZWJGblRRWmFfdjZhQnhmTHAxbEJiS3JqWHJZVVFmRG0tWlcwQl9fdXFFYWN4TVY3UnEyT3cxbWJEVFgzT2lWN1lscm9RamNHUGM0OTVZRHpidGJndlhkcGxFNm5CMDJUSE5TbUc3NGhmTVl1Mnloay0waFBhZnZfRzNmVEpHWXg0ZEJTREY4d0h6OVE?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What Is a Prompt Injection Attack? The Complete Guide to Securing LLMs</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 11 Mar 2026 07:00:00 GMT · <span style="color: #3d6b4f;">TrendMicro</span></div>
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE5IemZtc0dpRVRndHV6NVFlNGpCb3BFY2tFM3dNZlltZnFkZEVBaXM1NjVEZDRiZ3VGTHQ3OU9oX2Z5d3dqNTVRZTVkYnNsMHgzeUliS001RnJ0aXB2empCeWZMeTR6d194RHBib2Z3?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">What are the OWASP Top 10 risks for LLMs?</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎯 Prompt injection attacks exploit the architectural lack of separation between developer instructions and user data in LLM architectures. <br>🚫 LLMs have a "semantic gap" where they treat all inputs as an equal stream of tokens, unable to distinguish malicious commands from legitimate instructions. <br>⚠️ Prompt injection focuses on hijacking an application’s logic, tools, or private data access, potentially forcing an AI agent to exfiltrate data.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📚 OWASP launched the Generative AI Security Project in May 2023 to address emerging risks associated with large language models. <br>🗓️ The OWASP Top 10 for LLM Applications & Generative AI version 2025 was released in November 2024, outlining critical risks and mitigation strategies. <br>✍️ Prompt injection occurs when user inputs unintentionally alter an LLM's behavior, leading to guideline violations or unauthorized access, with jailbreaking being a form of this attack.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-16</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Lingyu Li, Yan Teng, Yingchun Wang</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.15615v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Mechanistic Origin of Moral Indifference in Language Models</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 13 Mar 2026 09:00:18 GMT · <span style="color: #3d6b4f;">ucstrategies.com</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxNaE4tcUJDeVBoTGVPTEU0ZWJGblRRWmFfdjZhQnhmTHAxbEJiS3JqWHJZVVFmRG0tWlcwQl9fdXFFYWN4TVY3UnEyT3cxbWJEVFgzT2lWN1lscm9RamNHUGM0OTVZRHpidGJndlhkcGxFNm5CMDJUSE5TbUc3NGhmTVl1Mnloay0waFBhZnZfRzNmVEpHWXg0ZEJTREY4d0h6OVE?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">What Is a Prompt Injection Attack? The Complete Guide to Securing LLMs</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🎯 Prompt injection attacks exploit the architectural lack of separation between developer instructions and user data in LLM architectures. <br>🚫 LLMs have a "semantic gap" where they treat all inputs as an equal stream of tokens, unable to distinguish malicious commands from legitimate instructions. <br>⚠️ Prompt injection focuses on hijacking an application’s logic, tools, or private data access, potentially forcing an AI agent to exfiltrate data.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-16</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Lingyu Li, Yan Teng, Yingchun Wang</div>
+      
+      <a href="https://arxiv.org/pdf/2603.15615v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Mechanistic Origin of Moral Indifference in Language Models</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -350,30 +389,27 @@
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">adversarial</span>
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">NIST taxonomy</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #ede5d5; color: #4a3f30; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #f5f0e8;">taxonomy</span>
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Existing behavioral alignment techniques for Large Language Models (LLMs) often neglect the discrepancy between surface compliance and internal unaligned representations, leaving LLMs vulnerable to long-tail risks. More crucially, we posit that LLMs possess an inherent state of moral indifference due to compressing distinct moral concepts into uniform probability distributions. We verify and remedy this indifference in LLMs' latent representations, utilizing 251k moral vectors constructed upon Prototype Theory and the Social-Chemistry-101 dataset. Firstly, our analysis across 23 models reveals that current LLMs fail to represent the distinction between opposed moral categories and fine-grained typicality gradients within these categories; notably, neither model scaling, architecture, nor explicit alignment reshapes this indifference. We then employ Sparse Autoencoders on Qwen3-8B, isolate mono-semantic moral features, and targetedly reconstruct their topological relationships to align with ground-truth moral vectors. This representational alignment naturally improves moral reasoning and granularity, achieving a 75% pairwise win-rate on the independent adversarial Flames benchmark. Finally, we elaborate on the remedial nature of current intervention methods from an experientialist philosophy, arguing that endogenously aligned AI might require a transformation from post-hoc corrections to proactive cultivation.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-16</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Aozhe Wang, Yuchen Yan, Nan Zhou et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.15611v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-16</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Aozhe Wang, Yuchen Yan, Nan Zhou et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2603.15611v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Code-A1: Adversarial Evolving of Code LLM and Test LLM via Reinforcement Learning</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -384,30 +420,27 @@
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">adversarial</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
         
         
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Reinforcement learning for code generation relies on verifiable rewards from unit test pass rates. Yet high-quality test suites are scarce, existing datasets offer limited coverage, and static rewards fail to adapt as models improve. Recent self-play methods unify code and test generation in a single model, but face a inherent dilemma: white-box access leads to self-collusion where the model produces trivial tests for easy rewards, yet black-box restriction yields generic tests that miss implementation-specific bugs. We introduce Code-A1, an adversarial co-evolution framework that jointly optimizes a Code LLM and a Test LLM with opposing objectives. The Code LLM is rewarded for passing more tests, while the Test LLM is rewarded for exposing more defects. This architectural separation eliminates self-collusion risks and safely enables white-box test generation, where the Test LLM can inspect candidate code to craft targeted adversarial tests. We further introduce a Mistake Book mechanism for experience replay and a composite reward balancing test validity with adversarial difficulty. Experiments on Qwen2.5-Coder models demonstrate that Code-A1 achieves code generation performance matching or exceeding models trained on human-annotated tests, while significantly improving test generation capability.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-16</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Jesper Derehag, Carlos Calva, Timmy Ghiurau</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.15599v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-16</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Jesper Derehag, Carlos Calva, Timmy Ghiurau</div>
+      
+      <a href="https://arxiv.org/pdf/2603.15599v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -420,28 +453,25 @@
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">NIST taxonomy</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #ede5d5; color: #4a3f30; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #f5f0e8;">taxonomy</span>
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Recent conversational memory systems invest heavily in LLM-based structuring at ingestion time and learned retrieval policies at query time. We show that neither is necessary. SmartSearch retrieves from raw, unstructured conversation history using a fully deterministic pipeline: NER-weighted substring matching for recall, rule-based entity discovery for multi-hop expansion, and a CrossEncoder+ColBERT rank fusion stage -- the only learned component -- running on CPU in ~650ms. Oracle analysis on two benchmarks identifies a compilation bottleneck: retrieval recall reaches 98.6%, but without intelligent ranking only 22.5% of gold evidence survives truncation to the token budget. With score-adaptive truncation and no per-dataset tuning, SmartSearch achieves 93.5% on LoCoMo and 88.4% on LongMemEval-S, exceeding all known memory systems under the same evaluation protocol on both benchmarks while using 8.5x fewer tokens than full-context baselines.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-16</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Nikita A. Zemlevskiy</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.15621v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Exclusive Scattering Channels from Entanglement Structure in Real-Time Simulations</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-16</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Nikita A. Zemlevskiy</div>
+      
+      <a href="https://arxiv.org/pdf/2603.15621v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Exclusive Scattering Channels from Entanglement Structure in Real-Time Simulations</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -454,34 +484,31 @@
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">NIST taxonomy</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #ede5d5; color: #4a3f30; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #f5f0e8;">taxonomy</span>
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">A scattering event in a quantum field theory is a coherent superposition of all processes consistent with its symmetries and kinematics. While real-time simulations have progressed toward resolving individual channels, existing approaches rely on knowledge of the asymptotic particle wavefunctions. This work introduces an experimentally inspired method to isolate scattering channels in Matrix Product State simulations based on the entanglement structure of the late-time wavefunction. Schmidt decompositions at spatial bipartitions of the post-scattering state identify elastic and inelastic contributions, enabling deterministic detection of outgoing particles of specific species. This method may be used in settings beyond scattering and is applied to detect heavy particles produced in a collision in the one-dimensional Ising field theory. Natural extensions to quantum simulations of other systems and higher-order processes are discussed.</div>
       
     </div>
     
-    <div style="padding: 16px 0; ">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-15</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Fiona Y. Wang, Lee Marom, Subhadeep Pal et al.</div>
-      <!-- Title -->
-      <a href="https://huggingface.co/papers/2603.14312" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Autonomous Agents Coordinating Distributed Discovery Through Emergent Artifact Exchange</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-15</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Fiona Y. Wang, Lee Marom, Subhadeep Pal et al.</div>
+      
+      <a href="https://huggingface.co/papers/2603.14312" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Autonomous Agents Coordinating Distributed Discovery Through Emergent Artifact Exchange</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">agentic AI</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
         
         
         
@@ -491,9 +518,7 @@
         
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">We present ScienceClaw + Infinite, a framework for autonomous scientific investigation in which independent agents conduct research without central coordination, and any contributor can deploy new agents into a shared ecosystem. The system is built around three components: an extensible registry of over 300 interoperable scientific skills, an artifact layer that preserves full computational lineage as a directed acyclic graph (DAG), and a structured platform for agent-based scientific discourse with provenance-aware governance. Agents select and chain tools based on their scientific profiles, produce immutable artifacts with typed metadata and parent lineage, and broadcast unsatisfied information needs to a shared global index. The ArtifactReactor enables plannerless coordination: peer agents discover and fulfill open needs through pressure-based scoring, while schema-overlap matching triggers multi-parent synthesis across independent analyses. An autonomous mutation layer actively prunes the expanding artifact DAG to resolve conflicting or redundant workflows, while persistent memory allows agents to continuously build upon complex epistemic states across multiple cycles. Infinite converts these outputs into auditable scientific records through structured posts, provenance views, and machine-readable discourse relations, with community feedback steering subsequent investigation cycles. Across four autonomous investigations, peptide design for the somatostatin receptor SSTR2, lightweight impact-resistant ceramic screening, cross-domain resonance bridging biology, materials, and music, and formal analogy construction between urban morphology and grain-boundary evolution, the framework demonstrates heterogeneous tool chaining, emergent convergence among independently operating agents, and traceable reasoning from raw computation to published finding.</div>
       
     </div>
     
@@ -501,76 +526,71 @@
   </div>
 
   <!-- Footer -->
-  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
-    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Generated automatically &middot; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
+  <div style="border-top: 1px solid #ede5d5; padding: 24px 32px; text-align: center;">
+    <div style="font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;"><a href="feed.xml" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">Subscribe via RSS</a></div>
   </div>
 
 </div>
-</body>
-</html>
 </div>
 <style>
-  .like-btn { background:none; border:none; cursor:pointer; font-size:16px; padding:0 4px; opacity:0.35; transition:opacity 0.2s, transform 0.15s; vertical-align:middle; }
-  .like-btn:hover { opacity:1; transform:scale(1.2); }
-  .like-btn.liked { opacity:1; }
-  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
-  .login-bar input { font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }
-  .login-bar button { font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }
-  .login-bar button:hover { background:#333; }
-  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,26,26,0.45); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
+  .save-btn { background:transparent; border:1px solid #ede5d5; width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px; color:#3d6b4f; padding:0; border-radius:99px; transition:transform 0.12s ease, background 0.12s, color 0.12s; vertical-align:middle; line-height:1; flex-shrink:0; }
+  .save-btn:hover { background:#d4e6da; transform:scale(1.08); }
+  .save-btn.saved { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
+  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'DM Sans',-apple-system,sans-serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(250,247,240,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
+  .login-bar input { font-family:inherit; font-size:12px; padding:6px 10px; border:1px solid #ede5d5; background:#faf7f0; border-radius:4px; }
+  .login-bar input:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
+  .login-bar button { font-family:inherit; font-size:11px; padding:6px 14px; background:#3d6b4f; color:#f5f0e8; border:none; cursor:pointer; letter-spacing:0.14em; text-transform:uppercase; border-radius:99px; font-weight:500; transition:background 0.2s; }
+  .login-bar button:hover { background:#1c1710; }
+  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,22,40,0.55); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
   .stash-overlay.open { display:flex; }
-  .stash-panel { background:#fffdf7; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'Times New Roman',Times,Georgia,serif; box-shadow:0 8px 40px rgba(0,0,0,0.18); position:relative; border:1px solid #e0ddd5; }
-  .stash-header { padding:28px 32px 20px; border-bottom:3px double #1a1a1a; position:sticky; top:0; background:#fffdf7; z-index:1; }
-  .stash-header h2 { font-size:10px; text-transform:uppercase; letter-spacing:3px; font-weight:700; color:#1a1a1a; margin:0; }
-  .stash-header .stash-count { font-size:12px; color:#999; font-style:italic; margin-top:4px; }
-  .stash-close { position:absolute; top:20px; right:24px; font-size:24px; cursor:pointer; background:none; border:none; color:#aaa; transition:color 0.15s; line-height:1; }
-  .stash-close:hover { color:#1a1a1a; }
-  .stash-body { padding:0 32px; }
+  .stash-panel { background:#f5f0e8; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'DM Sans',-apple-system,sans-serif; box-shadow:0 24px 60px rgba(26,22,40,0.32); position:relative; border:1px solid #ede5d5; border-radius:6px; }
+  .stash-header { padding:24px 24px 18px; border-bottom:1px solid #ede5d5; position:sticky; top:0; background:#f5f0e8; z-index:1; display:flex; justify-content:space-between; align-items:center; }
+  .stash-header h2 { font-size:22px; font-weight:600; color:#1c1710; margin:0; }
+  .stash-header .stash-count { font-size:12px; color:#8a7a60; margin-top:4px; font-weight:400; }
+  .stash-close { font-size:16px; cursor:pointer; background:transparent; border:1px solid #ede5d5; color:#4a3f30; width:30px; height:30px; border-radius:99px; display:flex; align-items:center; justify-content:center; transition:background 0.15s; }
+  .stash-close:hover { background:#3d6b4f; color:#f5f0e8; }
+  .stash-body { padding:0 24px; }
   .stash-date-group { margin-top:0; }
-  .stash-date-label { font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; padding:18px 0 8px; border-bottom:1px solid #e8e5de; display:flex; align-items:center; gap:8px; }
-  .stash-date-label::before { content:''; flex:1; height:1px; background:linear-gradient(to right, transparent, #e0ddd5); }
-  .stash-date-label::after { content:''; flex:1; height:1px; background:linear-gradient(to left, transparent, #e0ddd5); }
-  .stash-item { padding:14px 0; border-bottom:1px solid #f0ede6; display:flex; align-items:flex-start; gap:12px; transition:background 0.15s; }
+  .stash-date-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#3d6b4f; padding:18px 0 8px; border-bottom:1px solid #ede5d5; }
+  .stash-item { padding:14px 0; border-bottom:1px solid #ede5d5; display:flex; align-items:flex-start; gap:12px; }
   .stash-item:last-child { border-bottom:none; }
-  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#1a1a1a; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
+  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#3d6b4f; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
   .stash-item-content { flex:1; min-width:0; }
-  .stash-item-text { font-size:14px; color:#333; line-height:1.65; cursor:pointer; }
-  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#aaa; letter-spacing:0.3px; }
-  .stash-item-source { font-style:italic; color:#888; max-width:250px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .stash-item-section { text-transform:uppercase; letter-spacing:1px; font-weight:600; font-size:9px; padding:1px 6px; border:1px solid; border-radius:1px; }
-  .stash-item-section.news { color:#c0392b; border-color:#c0392b; }
-  .stash-item-section.youtube { color:#8e44ad; border-color:#8e44ad; }
-  .stash-item-section.ai_security { color:#27ae60; border-color:#27ae60; }
-  .stash-item-section.other { color:#888; border-color:#ccc; }
-  .stash-delete { background:none; border:none; color:#ccc; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
-  .stash-delete:hover { color:#c0392b; }
-  .stash-footer { padding:20px 32px 28px; border-top:1px solid #e8e5de; position:sticky; bottom:0; background:#fffdf7; z-index:1; }
-  .stash-prompt-label { font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; display:block; margin-bottom:8px; }
-  .stash-prompt { width:100%; font-family:'Times New Roman',Times,Georgia,serif; font-size:13.5px; padding:10px 12px; border:1px solid #e0ddd5; background:#faf8f2; resize:vertical; line-height:1.5; color:#333; }
-  .stash-prompt:focus { outline:none; border-color:#1a1a1a; }
+  .stash-item-text { font-size:14px; color:#1c1710; line-height:1.65; font-weight:400; }
+  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#8a7a60; letter-spacing:0.1em; text-transform:uppercase; }
+  .stash-item-section { text-transform:uppercase; letter-spacing:0.12em; font-weight:500; font-size:9.5px; padding:2px 8px; border:1px solid #ede5d5; border-radius:99px; color:#3d6b4f; }
+  .stash-item-section.news { color:#8b4a3c; border-color:#8b4a3c; }
+  .stash-item-section.youtube { color:#1a1628; border-color:#1a1628; }
+  .stash-item-section.ai_security { color:#3d6b4f; border-color:#3d6b4f; }
+  .stash-item-section.other { color:#8a7a60; border-color:#ede5d5; }
+  .stash-delete { background:none; border:none; color:#ede5d5; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
+  .stash-delete:hover { color:#8b4a3c; }
+  .stash-footer { padding:20px 24px 24px; border-top:1px solid #ede5d5; position:sticky; bottom:0; background:#f5f0e8; z-index:1; }
+  .stash-prompt-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#8a7a60; display:block; margin-bottom:8px; }
+  .stash-prompt { width:100%; font-family:'DM Sans',-apple-system,sans-serif; font-size:14px; padding:11px 13px; border:1px solid #ede5d5; background:#faf7f0; resize:vertical; line-height:1.5; color:#1c1710; border-radius:4px; }
+  .stash-prompt:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
   .stash-actions { margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-  .stash-actions button { font-family:'Times New Roman',Times,serif; font-size:11px; padding:8px 18px; cursor:pointer; border:none; letter-spacing:1.5px; text-transform:uppercase; transition:background 0.2s, color 0.2s; }
-  .stash-actions .primary { background:#1a1a1a; color:#fffdf7; }
-  .stash-actions .primary:hover { background:#333; }
-  .stash-actions .primary:disabled { background:#bbb; cursor:wait; }
-  .stash-actions .secondary { background:transparent; color:#888; border:1px solid #d0cdc5; }
-  .stash-actions .secondary:hover { color:#1a1a1a; border-color:#1a1a1a; }
+  .stash-actions button { font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; padding:9px 16px; cursor:pointer; border:none; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; border-radius:99px; transition:background 0.2s, color 0.2s; }
+  .stash-actions .primary { background:#3d6b4f; color:#f5f0e8; }
+  .stash-actions .primary:hover { background:#1c1710; }
+  .stash-actions .primary:disabled { background:#ede5d5; color:#8a7a60; cursor:wait; }
+  .stash-actions .secondary { background:transparent; color:#4a3f30; border:1px solid #ede5d5; }
+  .stash-actions .secondary:hover { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
   .stash-actions .divider { flex:1; }
-  .script-output { margin-top:16px; padding:20px; background:#f5f0e8; font-size:14.5px; line-height:1.75; color:#333; white-space:pre-wrap; border-left:3px solid #1a1a1a; }
-  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:7px 18px; background:#1a1a1a; color:#fffdf7; border:none; font-family:'Times New Roman',serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; transition:background 0.2s; }
-  .copy-script-btn:hover { background:#333; }
-  .stash-empty { font-size:15px; color:#999; font-style:italic; padding:40px 32px; text-align:center; line-height:1.6; }
-  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(255,253,247,0.3); border-top-color:#fffdf7; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
+  .script-output { margin-top:16px; padding:18px; background:#faf7f0; border:1px solid #ede5d5; font-size:15px; line-height:1.85; color:#4a3f30; white-space:pre-wrap; border-radius:4px; max-height:320px; overflow-y:auto; font-weight:300; }
+  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:9px 16px; background:#3d6b4f; color:#f5f0e8; border:none; font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; cursor:pointer; border-radius:99px; transition:background 0.2s; }
+  .copy-script-btn:hover { background:#1c1710; }
+  .stash-empty { font-size:15px; color:#8a7a60; padding:40px 24px; text-align:center; line-height:1.6; font-weight:300; }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(245,240,232,0.3); border-top-color:#f5f0e8; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
   @keyframes spin { to { transform:rotate(360deg); } }
 </style>
 <script>
 (function() {
   var STORAGE_KEY = 'newsletter_user';
   var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
-  var sectionMap = {'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'};
   var currentUser = null;
-  var likedTexts = new Set();
-  var allLikes = [];
+  var savedKeys = new Set();
+  var allSaved = [];
   var nextId = 1;
 
   // --- Storage helpers ---
@@ -594,10 +614,8 @@
   function detectSection(el) {
     var node = el;
     while (node && node !== document.body) {
-      var style = node.getAttribute('style') || '';
-      for (var color in sectionMap) {
-        if (style.indexOf(color) !== -1) return sectionMap[color];
-      }
+      var ds = node.dataset && node.dataset.section;
+      if (ds) return ds;
       node = node.parentElement;
     }
     return 'other';
@@ -613,13 +631,13 @@
     var data = getStoredData();
     if (data && data.session_active) {
       currentUser = data.username;
-      allLikes = data.likes || [];
-      nextId = allLikes.reduce(function(mx, l) { return Math.max(mx, l.id + 1); }, 1);
-      likedTexts = new Set(allLikes.map(function(l) { return l.bullet_text; }));
+      allSaved = data.saved || data.likes || [];
+      nextId = allSaved.reduce(function(mx, l) { return Math.max(mx, l.id + 1); }, 1);
+      savedKeys = new Set(allSaved.map(function(l) { return l.source_key || l.bullet_text || ''; }));
     } else {
       currentUser = null;
-      allLikes = [];
-      likedTexts = new Set();
+      allSaved = [];
+      savedKeys = new Set();
     }
   }
 
@@ -629,13 +647,13 @@
     var bar = document.createElement('div');
     bar.className = 'login-bar';
     if (currentUser) {
-      bar.innerHTML = '<span>' + currentUser + '</span>'
+      bar.innerHTML = '<span style="font-weight:500;color:#1c1710;">' + currentUser + '</span>'
         + '<button onclick="window._openStash()">My Stash</button>'
-        + '<button onclick="window._logout()">Logout</button>';
+        + '<button onclick="window._logout()">Sign Out</button>';
     } else {
       bar.innerHTML = '<input id="lb-user" placeholder="username">'
         + '<input id="lb-pass" type="password" placeholder="password">'
-        + '<button onclick="window._login()">Login</button>'
+        + '<button onclick="window._login()">Sign In</button>'
         + '<button onclick="window._register()">Register</button>';
     }
     document.body.appendChild(bar);
@@ -663,7 +681,7 @@
     var existing = getStoredData();
     if (existing && existing.username === u) { alert('User already exists. Please login.'); return; }
     var hash = await hashPassword(p);
-    var data = { version: 1, username: u, password_hash: hash, likes: [], session_active: true };
+    var data = { version: 1, username: u, password_hash: hash, saved: [], session_active: true };
     saveStoredData(data);
     loadSession();
     renderLoginBar();
@@ -677,110 +695,109 @@
       saveStoredData(data);
     }
     currentUser = null;
-    allLikes = [];
-    likedTexts = new Set();
+    allSaved = [];
+    savedKeys = new Set();
     renderLoginBar();
     refreshAllButtons();
   };
 
-  // --- Likes (localStorage) ---
-  function loadLikes() {
+  // --- Saved sources (localStorage) ---
+  function loadSaved() {
     var data = getStoredData();
-    if (!data || !data.session_active) { allLikes = []; likedTexts = new Set(); return; }
-    allLikes = data.likes || [];
-    nextId = allLikes.reduce(function(mx, l) { return Math.max(mx, l.id + 1); }, 1);
-    likedTexts = new Set(allLikes.map(function(l) { return l.bullet_text; }));
+    if (!data || !data.session_active) { allSaved = []; savedKeys = new Set(); return; }
+    allSaved = data.saved || data.likes || [];
+    nextId = allSaved.reduce(function(mx, l) { return Math.max(mx, l.id + 1); }, 1);
+    savedKeys = new Set(allSaved.map(function(l) { return l.source_key || l.bullet_text || ''; }));
   }
 
-  function saveLikes() {
+  function saveSaved() {
     var data = getStoredData();
     if (!data) return;
-    data.likes = allLikes;
+    data.saved = allSaved;
     saveStoredData(data);
   }
 
   function refreshAllButtons() {
-    document.querySelectorAll('.like-btn').forEach(function(btn) {
-      var text = btn.dataset.bulletText;
-      if (likedTexts.has(text)) {
-        btn.classList.add('liked');
+    document.querySelectorAll('.save-btn').forEach(function(btn) {
+      var key = btn.dataset.sourceKey;
+      if (savedKeys.has(key)) {
+        btn.classList.add('saved');
+        btn.innerHTML = '★';
+        btn.title = 'Saved';
       } else {
-        btn.classList.remove('liked');
+        btn.classList.remove('saved');
+        btn.innerHTML = '☆';
+        btn.title = 'Save to stash';
       }
     });
   }
 
-  function toggleLike(btn, bulletText, articleTitle, section) {
+  function toggleSave(btn, sourceKey, title, link, summary, section) {
     if (!currentUser) { alert('Please login first'); return; }
-    if (likedTexts.has(bulletText)) {
-      allLikes = allLikes.filter(function(l) { return l.bullet_text !== bulletText; });
-      likedTexts.delete(bulletText);
-      btn.classList.remove('liked');
+    if (savedKeys.has(sourceKey)) {
+      allSaved = allSaved.filter(function(l) { return l.source_key !== sourceKey; });
+      savedKeys.delete(sourceKey);
+      btn.classList.remove('saved');
+      btn.innerHTML = '☆';
+      btn.title = 'Save to stash';
     } else {
-      allLikes.push({
+      allSaved.push({
         id: nextId++,
-        bullet_text: bulletText,
-        article_title: articleTitle,
+        source_key: sourceKey,
+        title: title,
+        link: link,
+        summary: summary,
         section: section,
         newsletter_date: getDateFromURL(),
         created_at: new Date().toISOString()
       });
-      likedTexts.add(bulletText);
-      btn.classList.add('liked');
+      savedKeys.add(sourceKey);
+      btn.classList.add('saved');
+      btn.innerHTML = '★';
+      btn.title = 'Saved';
     }
-    saveLikes();
+    saveSaved();
   }
 
-  // --- Add thumbs up to each bullet ---
-  function addThumbsToSummaries() {
-    var summaryDivs = document.querySelectorAll('.email-wrap div[style*="font-size: 14.5px"]');
-    summaryDivs.forEach(function(div) {
-      var html = div.innerHTML;
-      var cardEl = div.closest('div[style*="padding"]');
-      var titleEl = cardEl ? cardEl.querySelector('a[href]') : null;
-      var articleTitle = titleEl ? titleEl.textContent.trim() : '';
-      var section = detectSection(div);
+  // --- Add bookmark icon next to each source title ---
+  function addSaveButtons() {
+    // Find items inside data-section containers (news, youtube, ai_security)
+    var sections = document.querySelectorAll('[data-section]');
+    sections.forEach(function(sec) {
+      // Match padded items and card items
+      var items = sec.querySelectorAll('div[style*="padding: 16px 0"], div[style*="padding: 14px 0"], div[style*="padding: 20px 22px"]');
+      items.forEach(function(card) {
+        var titleEl = card.querySelector('a[href]');
+        if (!titleEl) return;
+        var title = titleEl.textContent.trim();
+        var link = titleEl.getAttribute('href') || '';
+        var section = detectSection(card);
 
-      var parts = html.split(/<br\s*\/?>/i);
+        // Get summary text for storage
+        var summaryEl = card.querySelector('div[style*="font-size: 14.5px"], div[style*="font-size: 15px"]');
+        var summary = summaryEl ? summaryEl.textContent.trim() : '';
+        if (summary.length > 400) summary = summary.substring(0, 400) + '...';
 
-      if (parts.length < 2) {
-        // Single block of text (e.g. paper abstract) — add one button for the whole thing
-        var cleanText = html.replace(/<[^>]*>/g, '').trim();
-        if (!cleanText) return;
-        var truncated = cleanText.length > 200 ? cleanText.substring(0, 200) + '...' : cleanText;
-        var isLiked = likedTexts.has(truncated);
-        div.style.position = 'relative';
-        var newHtml = '<span style="display:block;padding-right:28px;">' + html + '</span>'
-          + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
-          + 'style="position:absolute;top:0;right:0;" '
-          + 'data-bullet-text="' + truncated.replace(/"/g, '&quot;') + '" '
-          + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
-          + 'data-section="' + section + '" '
-          + 'title="Like this">\uD83D\uDC4D</button>';
-        div.innerHTML = newHtml;
-      } else {
-        var newHtml = parts.map(function(part) {
-          var cleanText = part.replace(/<[^>]*>/g, '').trim();
-          if (!cleanText) return part;
-          var isLiked = likedTexts.has(cleanText);
-          return '<span style="display:flex;align-items:flex-start;gap:2px;margin-bottom:2px;">'
-            + '<span style="flex:1;">' + part + '</span>'
-            + '<button class="like-btn' + (isLiked ? ' liked' : '') + '" '
-            + 'data-bullet-text="' + cleanText.replace(/"/g, '&quot;') + '" '
-            + 'data-article-title="' + articleTitle.replace(/"/g, '&quot;') + '" '
-            + 'data-section="' + section + '" '
-            + 'title="Like this bullet">\uD83D\uDC4D</button>'
-            + '</span>';
-        }).join('');
-        div.innerHTML = newHtml;
-      }
+        var sourceKey = link || title;
+        var isSaved = savedKeys.has(sourceKey);
 
-      div.querySelectorAll('.like-btn').forEach(function(btn) {
+        var wrapper = document.createElement('span');
+        wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+        titleEl.parentNode.insertBefore(wrapper, titleEl);
+        titleEl.style.flex = '1';
+        wrapper.appendChild(titleEl);
+
+        var btn = document.createElement('button');
+        btn.className = 'save-btn' + (isSaved ? ' saved' : '');
+        btn.dataset.sourceKey = sourceKey;
+        btn.innerHTML = isSaved ? '★' : '☆';
+        btn.title = isSaved ? 'Saved' : 'Save to stash';
         btn.addEventListener('click', function(e) {
           e.preventDefault();
           e.stopPropagation();
-          toggleLike(btn, btn.dataset.bulletText, btn.dataset.articleTitle, btn.dataset.section);
+          toggleSave(btn, sourceKey, title, link, summary, section);
         });
+        wrapper.appendChild(btn);
       });
     });
   }
@@ -801,7 +818,7 @@
 
   window._openStash = function() {
     if (!currentUser) return;
-    loadLikes();
+    loadSaved();
     var overlay = document.getElementById('stash-overlay');
     if (overlay) overlay.remove();
 
@@ -812,20 +829,21 @@
     panel.className = 'stash-panel';
 
     var html = '<div class="stash-header">'
+      + '<h2>My Stash</h2>'
       + '<button class="stash-close" onclick="document.getElementById(\x27stash-overlay\x27).remove()">&times;</button>'
-      + '<h2>My Stash</h2>';
+      + '</div>';
 
-    if (allLikes.length === 0) {
-      html += '</div><div class="stash-empty">Nothing here yet.<br>Like bullet points as you read &mdash; they\x27ll appear here.</div>';
+    if (allSaved.length === 0) {
+      html += '<div class="stash-empty">Nothing saved yet. Tap the star next to any article, video, or paper.</div>';
     } else {
-      html += '<div class="stash-count">' + allLikes.length + ' saved item' + (allLikes.length === 1 ? '' : 's') + '</div></div>';
+      html += '';
 
       // Group by newsletter_date, sorted newest first
       var groups = {};
-      allLikes.forEach(function(like) {
-        var d = like.newsletter_date || 'Unknown';
+      allSaved.forEach(function(item) {
+        var d = item.newsletter_date || 'Unknown';
         if (!groups[d]) groups[d] = [];
-        groups[d].push(like);
+        groups[d].push(item);
       });
       var sortedDates = Object.keys(groups).sort(function(a,b) { return b.localeCompare(a); });
 
@@ -833,20 +851,22 @@
       sortedDates.forEach(function(date) {
         html += '<div class="stash-date-group">';
         html += '<div class="stash-date-label">' + formatDateLabel(date) + '</div>';
-        groups[date].forEach(function(like) {
-          var escaped = like.bullet_text.replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          var displayText = like.bullet_text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          var titleDisplay = (like.article_title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-          html += '<div class="stash-item" data-like-id="' + like.id + '">'
-            + '<input type="checkbox" value="' + like.id + '" data-text="' + escaped + '">'
+        groups[date].forEach(function(item) {
+          var titleDisplay = (item.title || item.article_title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          var summaryPreview = (item.summary || item.bullet_text || '').replace(/<[^>]*>/g, '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          if (summaryPreview.length > 150) summaryPreview = summaryPreview.substring(0, 150) + '...';
+          var linkUrl = (item.link || '').replace(/"/g, '&quot;');
+          var escapedTitle = titleDisplay.replace(/"/g, '&quot;');
+          html += '<div class="stash-item" data-item-id="' + item.id + '">'
+            + '<input type="checkbox" value="' + item.id + '" data-title="' + escapedTitle + '" data-summary="' + summaryPreview.replace(/"/g, '&quot;') + '">'
             + '<div class="stash-item-content">'
-            + '<div class="stash-item-text">' + displayText + '</div>'
+            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1c1710;text-decoration:none;border-bottom:1px solid #ede5d5;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
+            + (summaryPreview ? '<div style="font-size:12.5px;color:#8a7a60;line-height:1.5;margin-top:4px;font-weight:300;">' + summaryPreview + '</div>' : '')
             + '<div class="stash-item-meta">'
-            + '<span class="stash-item-section ' + (like.section || 'other') + '">' + sectionLabel(like.section) + '</span>'
-            + (titleDisplay ? '<span class="stash-item-source">' + titleDisplay + '</span>' : '')
+            + '<span class="stash-item-section ' + (item.section || 'other') + '">' + sectionLabel(item.section) + '</span>'
             + '</div>'
             + '</div>'
-            + '<button class="stash-delete" onclick="window._deleteLike(' + like.id + ',this)" title="Remove">&times;</button>'
+            + '<button class="stash-delete" onclick="window._deleteItem(' + item.id + ',this)" title="Remove">&times;</button>'
             + '</div>';
         });
         html += '</div>';
@@ -858,14 +878,14 @@
         + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
         + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>';
       if (!hasKey) {
-        html += '<div style="margin-top:12px;padding:12px;background:#f5f0e8;border-left:3px solid #e67e22;">'
-          + '<label class="stash-prompt-label" style="color:#e67e22;">Gemini API Key (saved locally, never uploaded)</label>'
+        html += '<div style="margin-top:12px;padding:12px;background:#faf7f0;border:1px solid #ede5d5;border-radius:4px;">'
+          + '<label class="stash-prompt-label" style="color:#8b4a3c;">Gemini API Key (saved locally, never uploaded)</label>'
           + '<div style="display:flex;gap:6px;">'
           + '<input id="gemini-key-input" type="password" class="stash-prompt" style="flex:1;padding:6px 10px;" placeholder="Paste your Gemini API key">'
           + '<button class="primary" style="font-size:11px;padding:6px 14px;" onclick="window._saveGeminiKey()">Save</button>'
           + '</div></div>';
       } else {
-        html += '<div style="margin-top:8px;font-size:11px;color:#999;font-style:italic;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#888;">Change key</a></div>';
+        html += '<div style="margin-top:8px;font-size:11px;color:#8a7a60;font-weight:400;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#3d6b4f;">Change key</a></div>';
       }
       html += '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
@@ -894,25 +914,25 @@
     document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) { cb.checked = false; });
   };
 
-  window._deleteLike = function(likeId, btnEl) {
-    allLikes = allLikes.filter(function(l) { return l.id !== likeId; });
-    saveLikes();
-    likedTexts = new Set(allLikes.map(function(l) { return l.bullet_text; }));
+  window._deleteItem = function(itemId, btnEl) {
+    allSaved = allSaved.filter(function(l) { return l.id !== itemId; });
+    saveSaved();
+    savedKeys = new Set(allSaved.map(function(l) { return l.source_key || l.bullet_text || ''; }));
     var row = btnEl.closest('.stash-item');
     if (row) row.remove();
     refreshAllButtons();
-    if (allLikes.length === 0) {
+    if (allSaved.length === 0) {
       window._openStash();
     }
   };
 
   window._copySelection = function(btn) {
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
-    if (checked.length === 0) { alert('Select at least one item'); return; }
+    if (checked.length === 0) { alert('Select at least one source'); return; }
     var lines = [];
     var currentDate = '';
     checked.forEach(function(cb) {
-      var item = allLikes.find(function(l) { return l.id === parseInt(cb.value); });
+      var item = allSaved.find(function(l) { return l.id === parseInt(cb.value); });
       if (!item) return;
       var d = item.newsletter_date || '';
       if (d !== currentDate) {
@@ -921,9 +941,14 @@
         lines.push('');
         currentDate = d;
       }
-      lines.push(item.bullet_text);
-      var source = item.article_title ? '  — ' + item.article_title + ' [' + (item.section || '').replace('_',' ') + ']' : '';
-      if (source) lines.push(source);
+      var title = item.title || item.article_title || 'Untitled';
+      var sectionName = (item.section || '').replace('_', ' ');
+      lines.push(title + (sectionName ? ' [' + sectionName + ']' : ''));
+      if (item.link) lines.push(item.link);
+      if (item.summary) {
+        var clean = (item.summary || '').replace(/<[^>]*>/g, '');
+        if (clean.length > 0) lines.push(clean);
+      }
       lines.push('');
     });
     var text = lines.join('\n').trim();
@@ -943,17 +968,19 @@
 
   window._generateScript = async function() {
     var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
-    if (checked.length === 0) { alert('Select at least one bullet'); return; }
+    if (checked.length === 0) { alert('Select at least one source'); return; }
 
     var apiKey = localStorage.getItem(GEMINI_KEY_STORAGE) || '';
     if (!apiKey) { alert('Please save your Gemini API key first'); return; }
 
-    var bullets = [];
-    checked.forEach(function(cb) { bullets.push(cb.dataset.text); });
+    var sources = [];
+    checked.forEach(function(cb) {
+      sources.push({ title: cb.dataset.title || '', summary: cb.dataset.summary || '' });
+    });
     var customPrompt = (document.getElementById('custom-prompt') || {}).value || '';
 
-    var prompt = 'You are an educational content writer. The user liked these bullet points from a daily newsletter:\n\n';
-    bullets.forEach(function(b) { prompt += '- ' + b + '\n'; });
+    var prompt = 'You are an educational content writer. The user saved these sources from a daily newsletter:\n\n';
+    sources.forEach(function(s) { prompt += '- ' + s.title + (s.summary ? ': ' + s.summary : '') + '\n'; });
     prompt += '\nYour task:\n1. Research each topic in more depth.\n2. Write a 2-3 minute spoken script (350-500 words) that explains these topics in an educational, engaging way.\n3. Be conversational but informative.\n4. Add context, background, and why it matters.\n5. Start with a hook, end with a takeaway.';
     if (customPrompt) { prompt += '\n\nAdditional instructions: ' + customPrompt; }
     prompt += '\n\nReturn ONLY the script text, ready to be read aloud. No stage directions, no markdown.';
@@ -965,7 +992,7 @@
     resultDiv.innerHTML = '';
 
     try {
-      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=' + encodeURIComponent(apiKey), {
+      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=' + encodeURIComponent(apiKey), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
@@ -976,7 +1003,7 @@
       resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
         + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
     } catch(e) {
-      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+      resultDiv.innerHTML = '<div class="script-output" style="color:#8b4a3c;">Error: ' + e.message + '</div>';
     }
 
     btn.disabled = false;
@@ -995,7 +1022,7 @@
   function init() {
     loadSession();
     renderLoginBar();
-    addThumbsToSummaries();
+    addSaveButtons();
   }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);

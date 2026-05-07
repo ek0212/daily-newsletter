@@ -3,466 +3,723 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing &mdash; Sunday, March 01, 2026</title>
+<title>The Midtown Briefing &mdash; Sunday, March 01, 2026</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }
-  .site-nav { background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }
-  .site-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }
-  .site-nav a:hover { color: #fff; }
-  .email-wrap { max-width: 680px; margin: 28px auto; background: #fffdf7; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+  body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased; }
+  a { color: #3d6b4f; text-decoration: none; }
+  a:hover { color: #8b4a3c; }
+  .shell-nav { position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }
+  .shell-nav .brand { font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }
+  .shell-nav .actions { display: flex; gap: 10px; align-items: center; }
+  .shell-nav .actions a, .shell-nav .actions button { background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-family: inherit; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; color: #4a3f30; border-radius: 99px; text-decoration: none; }
+  .shell-nav .actions a:hover, .shell-nav .actions button:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
+  .email-wrap { max-width: 700px; margin: 0 auto 60px; background: #faf7f0; overflow-x: hidden; }
+  @media (max-width: 760px) { .shell-nav { padding: 12px 16px; } .shell-nav .brand { font-size: 16px; } .shell-nav .actions { gap: 6px; } .shell-nav .actions a, .shell-nav .actions button { padding: 5px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
-<div class="site-nav">
-  <a href="../index.html">&larr; Back to Daily Briefing</a>
-</div>
+<nav class="shell-nav">
+  <a class="brand" href="../index.html">The Midtown Briefing</a>
+  <div class="actions">
+    <a href="../index.html">Archive</a>
+    <button onclick="window._openStash()">My Stash</button>
+  </div>
+</nav>
 <div class="email-wrap">
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
-<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
+<div style="max-width: 660px; margin: 0 auto; background: #faf7f0;">
 
   <!-- Masthead -->
-  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Automated Daily Intelligence</div>
-    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
-    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">Sunday, March 01, 2026</div>
-    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; News &middot; Podcasts &middot; Research</div>
+  <div style="padding: 44px 32px 0 32px; text-align: center; border-bottom: 1px solid #ede5d5;">
+    <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">Est. 2025</div>
+    <h1 style="margin: 10px 0 8px 0; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710; line-height: 1.0;">The Midtown <span style="color: #3d6b4f;">Briefing</span></h1>
+    <div style="font-size: 14px; color: #8a7a60; margin-bottom: 16px; font-weight: 400;">Sunday, March 01, 2026</div>
+    <div style="height: 1px; background: #ede5d5; margin: 0 60px;"></div>
+    <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
   </div>
 
   <!-- Weather -->
-  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
-    <div style="text-align: center; margin-bottom: 16px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Weather Watch</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">38<span style="color: #8b4a3c;">&deg;</span></div>
+      
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">Partly Sunny</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px;">
+        <div><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; display: block;">High / Low</span><span style="font-size: 15px; color: #1c1710;">38&deg; / 33&deg;</span></div>
+        
+        
+      </div>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Partly Sunny &mdash; High 38&deg; / Low 33&deg;</div>
     
-    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
-      <tr style="border-bottom: 2px solid #1a1a1a;">
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Time</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Temp</th>
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Conditions</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Precip</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Humidity</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Wind</th>
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
+    <table style="width: 100%; min-width: 480px; border-collapse: collapse; font-size: 13px; color: #4a3f30; font-weight: 300;">
+      <tr>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Hour</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Temp</th>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Conditions</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Precip</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Humidity</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Wind</th>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">34&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Light Snow Likely</td>
-        <td style="padding: 7px 6px; text-align: center;">57%</td>
-        <td style="padding: 7px 6px; text-align: center;">75%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7am</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">34&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Light Snow Likely</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">57%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">75%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph N</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">9am</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">33&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Light Snow Likely</td>
-        <td style="padding: 7px 6px; text-align: center;">57%</td>
-        <td style="padding: 7px 6px; text-align: center;">78%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">33&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Light Snow Likely</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">57%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">78%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph N</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">3pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">37&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">11%</td>
-        <td style="padding: 7px 6px; text-align: center;">59%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">9 mph N</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">37&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Mostly Sunny</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">11%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">59%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph N</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">37&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Sunny</td>
-        <td style="padding: 7px 6px; text-align: center;">1%</td>
-        <td style="padding: 7px 6px; text-align: center;">52%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">37&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Mostly Sunny</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">52%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph N</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">35&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Clear</td>
-        <td style="padding: 7px 6px; text-align: center;">0%</td>
-        <td style="padding: 7px 6px; text-align: center;">52%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">10 mph N</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">35&deg;F <span style="font-weight: 300; font-size: 11px; color: #8a7a60;">(&deg;)</span></td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Mostly Clear</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">52%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph N</td>
       </tr>
       
     </table>
+    </div>
     
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
+  <!-- Health Alert -->
+  
+
+  <!-- NYC Events -->
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">On the Block</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    
+    <div style="font-size: 14px; color: #8a7a60; text-align: center; font-weight: 300;">No major events scheduled this week.</div>
+    
+    <div style="font-size: 10px; color: #8a7a60; margin-top: 12px; font-weight: 400;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">NYC Open Data</a></div>
+  </div>
 
   <!-- Top News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">Top News</span>
-    </div>
+  <div data-section="news" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The World This Morning</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Feb 2026 21:05:06 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 28 Feb 2026 21:05:06 +0000 · <span style="color: #3d6b4f;">TechCrunch</span></div>
+      <a href="https://techcrunch.com/2026/02/28/anthropics-claude-rises-to-no-2-in-the-app-store-following-pentagon-dispute/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Anthropic’s Claude rises to No. 2 in the App Store following Pentagon dispute</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📈 Claude rose to number two among free apps in Apple’s US App Store as of Saturday afternoon.<br>📊 Claude climbed from being outside the top 100 in January to sixth on Wednesday, then second on Saturday.<br>🏛️ President Donald Trump directed federal agencies to stop using Anthropic products after negotiations on AI safeguards.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 01 Mar 2026 04:55:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">WSJ</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQlMzT2hZWXJCck9ibGJSMG91ZnU5NmFqdGcyejlXVV9mMDB3eWxpX0swZGd3YjZPYTE2Mm5wVGx5UXdDbjJnM1NNNTdiOEd6NFdHOG5ZaE9BWHQ2SWltVWIyQWYyVkxXajAtUFBwWEdMYVFPY19adklCQUVYeFh6aGtzYUtacmpveTEtSG1GbFFKUXlZOHUxZlZ5V0JjVWoxVGtPQjh2ZjgtU2RoT1dKaDlTQmt5RmlPc0FmNzJQTlVCYkkwQjl6LW5TUmg4ZW5YbTM0ZF93?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">U.S. Strikes in Middle East Use Anthropic, Hours After Trump Ban</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💥 US forces conducted strikes in the Middle East.<br>🤖 Anthropic's AI technology was utilized in these US strikes.<br>⏱️ The strikes occurred hours after President Trump banned federal agencies from using Anthropic products.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📈 Claude rose to number two among free apps in Apple’s US App Store as of Saturday afternoon.<br>📊 Claude climbed from being outside the top 100 in January to sixth on Wednesday, then second on Saturday.<br>🏛️ President Donald Trump directed federal agencies to stop using Anthropic products after negotiations on AI safeguards.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 01 Mar 2026 04:00:03 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">University of North Carolina Athletics</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNWWdTYlc4VkFKZndZN1o2cExUTkNPbS1PbVZyZUt5LWFJWjdyTDl6VGZsQW03YUNwYkZFelpQX2RaRXkwSjhLWjFKTFVSRFhqcGJ2bk05TEliQ0txUEtLMW1IYndvMURoS2NBRUl4Q09SSjlHY09pMXZ5M3ZHbDJrTmtkaVZlOW1MYjdJM0pGQQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Lucas: Virginia Tech Rapid Reactions - University of North Carolina Athletics</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sun, 01 Mar 2026 04:55:00 GMT · <span style="color: #3d6b4f;">WSJ</span></div>
+      <a href="https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQlMzT2hZWXJCck9ibGJSMG91ZnU5NmFqdGcyejlXVV9mMDB3eWxpX0swZGd3YjZPYTE2Mm5wVGx5UXdDbjJnM1NNNTdiOEd6NFdHOG5ZaE9BWHQ2SWltVWIyQWYyVkxXajAtUFBwWEdMYVFPY19adklCQUVYeFh6aGtzYUtacmpveTEtSG1GbFFKUXlZOHUxZlZ5V0JjVWoxVGtPQjh2ZjgtU2RoT1dKaDlTQmt5RmlPc0FmNzJQTlVCYkkwQjl6LW5TUmg4ZW5YbTM0ZF93?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">U.S. Strikes in Middle East Use Anthropic, Hours After Trump Ban</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏀 Carolina defeated Virginia Tech 89-82, tying the program record for most home wins with 17 this season.<br>⛹️ Henri Veesaar scored 18 of his career-high tying 26 points after halftime, and Seth Trimble added 13 of his 20 points in the second half.<br>🎯 Carolina converted 23 of 30 free throw opportunities, including an 8-of-8 showing from Zayden High.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">💥 US forces conducted strikes in the Middle East.<br>🤖 Anthropic's AI technology was utilized in these US strikes.<br>⏱️ The strikes occurred hours after President Trump banned federal agencies from using Anthropic products.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 01 Mar 2026 11:08:26 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">BBC</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BRHVheEFBVUpmNUpoZkw3RWJxNVFNRl9rc2FmVWtMd1FRNEJTSFJLNUxuRjVVZkcyTWs0VVZpYnE3d1pqaGpNTDlRTTRldlFQOS00Sg?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Israel and Iran exchange fresh attacks after Iran's Supreme Leader Khamenei killed</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sun, 01 Mar 2026 04:00:03 GMT · <span style="color: #3d6b4f;">University of North Carolina Athletics</span></div>
+      <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNWWdTYlc4VkFKZndZN1o2cExUTkNPbS1PbVZyZUt5LWFJWjdyTDl6VGZsQW03YUNwYkZFelpQX2RaRXkwSjhLWjFKTFVSRFhqcGJ2bk05TEliQ0txUEtLMW1IYndvMURoS2NBRUl4Q09SSjlHY09pMXZ5M3ZHbDJrTmtkaVZlOW1MYjdJM0pGQQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Lucas: Virginia Tech Rapid Reactions - University of North Carolina Athletics</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">✈️ All flights from Dubai International and Dubai Al Maktoum were suspended until further notice due to airspace closures.<br>🛑 British Airways cancelled flights to Tel Aviv and Bahrain until Wednesday, with impacts expected on services to other Middle East cities.<br>🩹 Four staff members at Dubai International were injured in an incident overnight.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🏀 Carolina defeated Virginia Tech 89-82, tying the program record for most home wins with 17 this season.<br>⛹️ Henri Veesaar scored 18 of his career-high tying 26 points after halftime, and Seth Trimble added 13 of his 20 points in the second half.<br>🎯 Carolina converted 23 of 30 free throw opportunities, including an 8-of-8 showing from Zayden High.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sun, 01 Mar 2026 11:08:26 GMT · <span style="color: #3d6b4f;">BBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiVEFVX3lxTE1BRHVheEFBVUpmNUpoZkw3RWJxNVFNRl9rc2FmVWtMd1FRNEJTSFJLNUxuRjVVZkcyTWs0VVZpYnE3d1pqaGpNTDlRTTRldlFQOS00Sg?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Israel and Iran exchange fresh attacks after Iran's Supreme Leader Khamenei killed</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">✈️ All flights from Dubai International and Dubai Al Maktoum were suspended until further notice due to airspace closures.<br>🛑 British Airways cancelled flights to Tel Aviv and Bahrain until Wednesday, with impacts expected on services to other Middle East cities.<br>🩹 Four staff members at Dubai International were injured in an incident overnight.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 01 Mar 2026 11:01:57 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Washington Post</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPc1BxWW9nTUduaUxYSXNGY0wtZUQyN0R6dFJ5cXFWRVJtS1RmWmpXQXJ5azJpeFpVTF9LUGptWHdtVGlTY2gtcDlWOF9MUzVaZk92V3htblRQSml1RGdqUXF1aUp3ejYwVGs2VVZ0S3dxd1Zid2ZncExtZHVTQmVjdzF1MC1KN1U5UnlrZmlDZWo0NEk?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Column | Asking Eric: Grandson has no motivation; daughter enables him</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sun, 01 Mar 2026 11:01:57 GMT · <span style="color: #3d6b4f;">The Washington Post</span></div>
+      <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxPc1BxWW9nTUduaUxYSXNGY0wtZUQyN0R6dFJ5cXFWRVJtS1RmWmpXQXJ5azJpeFpVTF9LUGptWHdtVGlTY2gtcDlWOF9MUzVaZk92V3htblRQSml1RGdqUXF1aUp3ejYwVGs2VVZ0S3dxd1Zid2ZncExtZHVTQmVjdzF1MC1KN1U5UnlrZmlDZWo0NEk?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Column | Asking Eric: Grandson has no motivation; daughter enables him</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">👨‍👩‍👦 The column addresses a reader's concern about their grandson's lack of motivation.<br>💬 The reader details their daughter's enabling behavior towards the grandson.<br>✍️ The column offers guidance on addressing family dynamics and fostering independence.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">👨‍👩‍👦 The column addresses a reader's concern about their grandson's lack of motivation.<br>💬 The reader details their daughter's enabling behavior towards the grandson.<br>✍️ The column offers guidance on addressing family dynamics and fostering independence.</div>
       
     </div>
     
     
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- Podcasts -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">Podcast Episodes</span>
-    </div>
+  <!-- YouTube -->
+  <div data-section="youtube" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">From the Subscriptions</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Podcast -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-01 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Lex Fridman Podcast</span></div>
-      <!-- Title -->
-      <a href="https://lexfridman.com/rick-beato/?utm_source=rss&utm_medium=rss&utm_campaign=rick-beato" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">#492 – Rick Beato: Greatest Guitarists of All Time, History & Future of Music</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎯 #492 – Rick Beato: Greatest Guitarists of All Time, History & Future of Music</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Podcast -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-28 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">This Week in Startups</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/The-Biggest-Private-Funding-Round-in-History--E2256-e3fniar" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">The Biggest Private Funding Round in History | E2256</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💰 OpenAI reportedly raised $110 billion in private funding, with investments from Microsoft, Nvidia, and SoftBank.<br>📈 ChatGPT currently serves 900 million weekly active users and has 50 million paying subscribers.<br>🧠 Host Jason Calacanis claimed that AGI has already been achieved, though it is not yet fully implemented.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Podcast -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-28 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Who-Controls-AI-e3foi8t" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Who Controls AI?</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💬 Anthropic CEO Dario Amodei publicly stated concerns about using AI models for autonomous weapons and mass domestic surveillance.<br>🚨 President Trump posted on Truth Social directing federal agencies to cease using Anthropic products.<br>🤝 OpenAI subsequently announced its own agreement with the Department of War, claiming similar safeguards were included.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Podcast -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-28 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <!-- Title -->
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Are-40-Staff-Cuts-the-New-AI-Normal-e3fnjad" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Are 40% Staff Cuts the New AI Normal?</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🍌 Google released a new model named Nano Banana 2.<br>📈 Claude AI experienced a surge in signups, indicating increased user adoption.<br>💻 Microsoft previewed its new Copilot Tasks feature.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Podcast -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-27 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <!-- Title -->
-      <a href="" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Netflix Walks Away From WBD Deal & Why is Everyone Leaving America?</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Netflix walked away from a potential deal to acquire Warner Bros. Discovery after Paramount made a counter offer.<br>✂️ Jack Dorsey's company Block cut nearly half of its staff, attributing the reductions to AI's impact.<br>🏪 Papa John's is closing hundreds of stores, while Waymo is expanding its autonomous driving service into more cities.</div>
-      
-    </div>
-    
-    
+    <div style="font-size: 14px; color: #8a7a60; text-align: center; font-weight: 300;">No new videos today.</div>
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- AI Security Papers -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security Papers</span>
-    </div>
+  <!-- AI Security -->
+  <div data-section="ai_security" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Adversary's Desk</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Kunihiro Miyazaki, Takanobu Kawahara, Stephen Roberts et al.</span></div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2602.23330v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks</a>
-      <!-- Topic badges -->
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">💡 The paper proposes a multi-agent LLM trading framework that explicitly decomposes investment analysis into fine-grained tasks.<br>📉 Mainstream multi-agent systems often use abstract instructions, leading to degraded inference performance and less transparent decision-making.<br>📈 The framework aims to improve upon existing systems mimicking analyst and manager roles by detailing real-world workflows.</div>
-    </div>
-    
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Sahal Shaji Mullappilly, Mohammed Irfan Kurpath, Omair Mohamed et al.</span></div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2602.23363v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">MediX-R1: Open Ended Medical Reinforcement Learning</a>
-      <!-- Topic badges -->
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔬 MediX-R1 is introduced as an open-ended Reinforcement Learning framework for medical multimodal large language models (MLLMs).<br>💬 The framework enables clinically grounded, free-form answers in MLLMs, moving beyond conventional multiple-choice formats.<br>⚙️ MediX-R1 fine-tunes a baseline vision-language backbone with Group Based RL and a composite reward tailored for medical reasoning.</div>
-    </div>
-    
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Salim Fares</span></div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2602.23331v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Utilizing LLMs for Industrial Process Automation</a>
-      <!-- Topic badges -->
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🖥️ Most current publications on LLMs in software engineering focus on widely-used general-purpose programming languages like Python.<br>🏭 The utility of LLMs for software in industrial process automation, which uses highly specialized proprietary languages, remains underexplored.<br>🎯 This research aims to assess the application of LLMs within proprietary industrial process automation domains.</div>
-    </div>
-    
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-23 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Nicole Cho, William Watson, Alec Koppel et al.</span></div>
-      <!-- Title -->
-      <a href="https://huggingface.co/papers/2602.20332" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">No One Size Fits All: QueryBandits for Hallucination Mitigation</a>
-      <!-- Topic badges -->
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🚫 QueryBandits is introduced as a model-agnostic contextual bandit framework designed to adaptively learn online methods for hallucination mitigation in LLMs.<br>🔍 Most existing hallucination mitigation research focuses on open-source models for post-hoc detection and parameter editing.<br>🏢 The framework addresses the lack of studies on hallucinations in closed-source LLMs predominantly used in institutional deployments.</div>
-    </div>
-    
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date + Authors -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-02-23 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">William Watson, Nicole Cho, Sumitra Ganesh et al.</span></div>
-      <!-- Title -->
-      <a href="https://huggingface.co/papers/2602.20300" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">What Makes a Good Query? Measuring the Impact of Human-Confusing Linguistic Features on LLM Performance</a>
-      <!-- Topic badges -->
-      
-      
-      <div style="margin-top: 8px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-      </div>
-      <!-- Summary -->
-      
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🧠 Large Language Model (<strong>LLM</strong>) hallucinations are usually treated as defects of the model or its decoding strategy.<br>📊 Drawing on classical linguistics, we argue that a query's form can also shape a listener's (and model's) response.<br>⚙️ We operationalize this insight by constructing a 22-dimension query feature vector covering clause complexity, lexical rarity, and anaphora, negation, answerability, and intention grounding, all known to affect human comprehension.</div>
-    </div>
-    
-    
-  </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- AI Security News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #d35400;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #d35400; font-weight: 700; border-bottom: 2px solid #d35400; padding-bottom: 3px;">AI Security News</span>
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sat, 28 Feb 2026 17:21:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Hacker News</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxPZF9wRGhqbUI1ekZ0OVRvelN1X3BSVFMxdVZQVzJrVjNfekJRN0lxOHh4bGtWNlphNXIwSzgtQTlETElSU3Jsb2EwNTdwa29BSUNVRk5PMGI2Vkktdi1NWUFFRXNOblZKZFUwbmduNEU1dmQ2S1lOd3pONnNnM1BNYQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">ClawJacked Flaw Lets Malicious Sites Hijack Local OpenClaw AI Agents via WebSocket</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ OpenClaw fixed a high-severity security flaw, codenamed ClawJacked, in version 2026.2.25 released on February 26, 2026.<br>🔑 The vulnerability allowed malicious websites to brute-force a local OpenClaw gateway password due to a missing rate-limiting mechanism.<br>🚨 The flaw exploited local WebSocket connections to silently auto-approve new device registrations without requiring user confirmation.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 25 Feb 2026 23:00:43 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechTarget</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQQTVOa211MGFuUVVXMHBHRzllMWJyNGdvZXJDZnRSLW40bWdGa29rWEQ3T3l2QkxjVzVXLXRjZi1ITWNIcDdLMDB2aFFGUm91eURwNERYUUhEOElnQ3pFUDktR3AxTWRMMlV2QWpSWFhmaTNubVRZQkRYUmszbUsydDFmamFXOWtDYlNEbVhuTFRIT2ZzS3FxRGpJVHNNZw?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">LLM firewalls emerge as a new AI security layer</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🔒 LLM firewalls are specialized tools designed to monitor, filter, and sanitize user input for AI-driven risks like prompt injection attacks and data leaks.<br>🧠 These firewalls differ from WAFs by analyzing the semantics, intent, and context of natural language in both incoming prompts and outgoing responses.<br>📐 An LLM firewall typically features a prompt firewall, a retrieval firewall for external data, and a response firewall for outbound generated text.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Feb 2026 09:04:17 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Qualys</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxQOFprXzBYQXdHb3BCQThidnl2aVlWbFJMcUhQU3Fqb0MzM1lsYzFjTDFTZU9VbUNLUXlyYTJPUEY1T3JnbVFMLVBxSHc3UzRHNnJ6ZDhMLWFGdGlkZlhXM2cxVmlqVm0tTm9WblZId2FWRmRHVGVFSTd0NTBQN2NEanpOM1NZcHJUbmQ4a1ZRSWhFZ3kyMXVDb2d1czV3S3YyOUpFR0o1Skp1ZTlkZkdUU1ZVQy1IYWVqeWRjWkxnN0l3Vkd1UHhKNWtzWGFYUQ?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">DeepSeek Jailbreak Vulnerability Analysis | Qualys TotalAI</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚠️ DeepSeek-R1 LLaMA 8B variant failed over half of the jailbreak tests conducted by Qualys TotalAI.<br>🔎 Qualys TotalAI is an AI security platform that assesses AI models across 16 categories for security threats, safety concerns, and ethical risks.<br>📊 DeepSeek's distilled versions, built on Llama and Qwen, aim to offer competitive performance and resource efficiency.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <!-- Date -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 23 Feb 2026 08:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPaUJaV2Jja3E4Tzk0Yi01ck0tOEFUXzQ5SnpwWmtWdWtOMC15VlZ3aU9NTTZhNVA5VWhINEstX3hkaG9DNGVYQmktQ1lhaGVPdHN0b0p3OERONGZMTjByWHE4cl9VdlZJbGszenNsMUZYV3Q0ZDNLTTkybGN3RTNOTHRaZE1VY3EzRVpWZHRmZzdiSGhDUWpfSi1LVHI4U0hJNDlSNEM4Q2x0ZjRfQ3c?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">13 ways attackers use generative AI to exploit your systems</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎣 Generative AI enables cybercriminals to create highly convincing and personalized phishing emails, increasing success rates.<br>🐛 Attackers use gen AI to generate more sophisticated malware, such as malicious HTML documents for HTML smuggling in XWorm attacks.<br>🤖 AI is evolving from a mere 'helper' to an autonomous 'partner-in-crime' for attackers, capable of executing entire attack chains.</div>
-      
-    </div>
-    
-    
+    <div style="font-size: 14px; color: #8a7a60; text-align: center; font-weight: 300;">No AI security updates today.</div>
   </div>
 
   <!-- Footer -->
-  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
-    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Generated automatically &middot; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
+  <div style="border-top: 1px solid #ede5d5; padding: 24px 32px; text-align: center;">
+    <div style="font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;"><a href="feed.xml" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">Subscribe via RSS</a></div>
   </div>
 
 </div>
-</body>
-</html>
 </div>
+<style>
+  .save-btn { background:transparent; border:1px solid #ede5d5; width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px; color:#3d6b4f; padding:0; border-radius:99px; transition:transform 0.12s ease, background 0.12s, color 0.12s; vertical-align:middle; line-height:1; flex-shrink:0; }
+  .save-btn:hover { background:#d4e6da; transform:scale(1.08); }
+  .save-btn.saved { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
+  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'DM Sans',-apple-system,sans-serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(250,247,240,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
+  .login-bar input { font-family:inherit; font-size:12px; padding:6px 10px; border:1px solid #ede5d5; background:#faf7f0; border-radius:4px; }
+  .login-bar input:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
+  .login-bar button { font-family:inherit; font-size:11px; padding:6px 14px; background:#3d6b4f; color:#f5f0e8; border:none; cursor:pointer; letter-spacing:0.14em; text-transform:uppercase; border-radius:99px; font-weight:500; transition:background 0.2s; }
+  .login-bar button:hover { background:#1c1710; }
+  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,22,40,0.55); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
+  .stash-overlay.open { display:flex; }
+  .stash-panel { background:#f5f0e8; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'DM Sans',-apple-system,sans-serif; box-shadow:0 24px 60px rgba(26,22,40,0.32); position:relative; border:1px solid #ede5d5; border-radius:6px; }
+  .stash-header { padding:24px 24px 18px; border-bottom:1px solid #ede5d5; position:sticky; top:0; background:#f5f0e8; z-index:1; display:flex; justify-content:space-between; align-items:center; }
+  .stash-header h2 { font-size:22px; font-weight:600; color:#1c1710; margin:0; }
+  .stash-header .stash-count { font-size:12px; color:#8a7a60; margin-top:4px; font-weight:400; }
+  .stash-close { font-size:16px; cursor:pointer; background:transparent; border:1px solid #ede5d5; color:#4a3f30; width:30px; height:30px; border-radius:99px; display:flex; align-items:center; justify-content:center; transition:background 0.15s; }
+  .stash-close:hover { background:#3d6b4f; color:#f5f0e8; }
+  .stash-body { padding:0 24px; }
+  .stash-date-group { margin-top:0; }
+  .stash-date-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#3d6b4f; padding:18px 0 8px; border-bottom:1px solid #ede5d5; }
+  .stash-item { padding:14px 0; border-bottom:1px solid #ede5d5; display:flex; align-items:flex-start; gap:12px; }
+  .stash-item:last-child { border-bottom:none; }
+  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#3d6b4f; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
+  .stash-item-content { flex:1; min-width:0; }
+  .stash-item-text { font-size:14px; color:#1c1710; line-height:1.65; font-weight:400; }
+  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#8a7a60; letter-spacing:0.1em; text-transform:uppercase; }
+  .stash-item-section { text-transform:uppercase; letter-spacing:0.12em; font-weight:500; font-size:9.5px; padding:2px 8px; border:1px solid #ede5d5; border-radius:99px; color:#3d6b4f; }
+  .stash-item-section.news { color:#8b4a3c; border-color:#8b4a3c; }
+  .stash-item-section.youtube { color:#1a1628; border-color:#1a1628; }
+  .stash-item-section.ai_security { color:#3d6b4f; border-color:#3d6b4f; }
+  .stash-item-section.other { color:#8a7a60; border-color:#ede5d5; }
+  .stash-delete { background:none; border:none; color:#ede5d5; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
+  .stash-delete:hover { color:#8b4a3c; }
+  .stash-footer { padding:20px 24px 24px; border-top:1px solid #ede5d5; position:sticky; bottom:0; background:#f5f0e8; z-index:1; }
+  .stash-prompt-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#8a7a60; display:block; margin-bottom:8px; }
+  .stash-prompt { width:100%; font-family:'DM Sans',-apple-system,sans-serif; font-size:14px; padding:11px 13px; border:1px solid #ede5d5; background:#faf7f0; resize:vertical; line-height:1.5; color:#1c1710; border-radius:4px; }
+  .stash-prompt:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
+  .stash-actions { margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
+  .stash-actions button { font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; padding:9px 16px; cursor:pointer; border:none; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; border-radius:99px; transition:background 0.2s, color 0.2s; }
+  .stash-actions .primary { background:#3d6b4f; color:#f5f0e8; }
+  .stash-actions .primary:hover { background:#1c1710; }
+  .stash-actions .primary:disabled { background:#ede5d5; color:#8a7a60; cursor:wait; }
+  .stash-actions .secondary { background:transparent; color:#4a3f30; border:1px solid #ede5d5; }
+  .stash-actions .secondary:hover { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
+  .stash-actions .divider { flex:1; }
+  .script-output { margin-top:16px; padding:18px; background:#faf7f0; border:1px solid #ede5d5; font-size:15px; line-height:1.85; color:#4a3f30; white-space:pre-wrap; border-radius:4px; max-height:320px; overflow-y:auto; font-weight:300; }
+  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:9px 16px; background:#3d6b4f; color:#f5f0e8; border:none; font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; cursor:pointer; border-radius:99px; transition:background 0.2s; }
+  .copy-script-btn:hover { background:#1c1710; }
+  .stash-empty { font-size:15px; color:#8a7a60; padding:40px 24px; text-align:center; line-height:1.6; font-weight:300; }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(245,240,232,0.3); border-top-color:#f5f0e8; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
+  @keyframes spin { to { transform:rotate(360deg); } }
+</style>
+<script>
+(function() {
+  var STORAGE_KEY = 'newsletter_user';
+  var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
+  var currentUser = null;
+  var savedKeys = new Set();
+  var allSaved = [];
+  var nextId = 1;
+
+  // --- Storage helpers ---
+  function getStoredData() {
+    try {
+      var raw = localStorage.getItem(STORAGE_KEY);
+      return raw ? JSON.parse(raw) : null;
+    } catch(e) { return null; }
+  }
+
+  function saveStoredData(data) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  }
+
+  async function hashPassword(password) {
+    var enc = new TextEncoder().encode(password);
+    var buf = await crypto.subtle.digest('SHA-256', enc);
+    return Array.from(new Uint8Array(buf)).map(function(b) { return b.toString(16).padStart(2, '0'); }).join('');
+  }
+
+  function detectSection(el) {
+    var node = el;
+    while (node && node !== document.body) {
+      var ds = node.dataset && node.dataset.section;
+      if (ds) return ds;
+      node = node.parentElement;
+    }
+    return 'other';
+  }
+
+  function getDateFromURL() {
+    var m = window.location.pathname.match(/(\d{4}-\d{2}-\d{2})/);
+    return m ? m[1] : '2026-03-01';
+  }
+
+  // --- Auth (localStorage) ---
+  function loadSession() {
+    var data = getStoredData();
+    if (data && data.session_active) {
+      currentUser = data.username;
+      allSaved = data.saved || data.likes || [];
+      nextId = allSaved.reduce(function(mx, l) { return Math.max(mx, l.id + 1); }, 1);
+      savedKeys = new Set(allSaved.map(function(l) { return l.source_key || l.bullet_text || ''; }));
+    } else {
+      currentUser = null;
+      allSaved = [];
+      savedKeys = new Set();
+    }
+  }
+
+  function renderLoginBar() {
+    var existing = document.querySelector('.login-bar');
+    if (existing) existing.remove();
+    var bar = document.createElement('div');
+    bar.className = 'login-bar';
+    if (currentUser) {
+      bar.innerHTML = '<span style="font-weight:500;color:#1c1710;">' + currentUser + '</span>'
+        + '<button onclick="window._openStash()">My Stash</button>'
+        + '<button onclick="window._logout()">Sign Out</button>';
+    } else {
+      bar.innerHTML = '<input id="lb-user" placeholder="username">'
+        + '<input id="lb-pass" type="password" placeholder="password">'
+        + '<button onclick="window._login()">Sign In</button>'
+        + '<button onclick="window._register()">Register</button>';
+    }
+    document.body.appendChild(bar);
+  }
+
+  window._login = async function() {
+    var u = document.getElementById('lb-user').value.trim();
+    var p = document.getElementById('lb-pass').value;
+    if (!u || !p) { alert('Username and password required'); return; }
+    var data = getStoredData();
+    if (!data || data.username !== u) { alert('User not found. Please register first.'); return; }
+    var hash = await hashPassword(p);
+    if (data.password_hash !== hash) { alert('Incorrect password'); return; }
+    data.session_active = true;
+    saveStoredData(data);
+    loadSession();
+    renderLoginBar();
+    refreshAllButtons();
+  };
+
+  window._register = async function() {
+    var u = document.getElementById('lb-user').value.trim();
+    var p = document.getElementById('lb-pass').value;
+    if (!u || !p) { alert('Username and password required'); return; }
+    var existing = getStoredData();
+    if (existing && existing.username === u) { alert('User already exists. Please login.'); return; }
+    var hash = await hashPassword(p);
+    var data = { version: 1, username: u, password_hash: hash, saved: [], session_active: true };
+    saveStoredData(data);
+    loadSession();
+    renderLoginBar();
+    refreshAllButtons();
+  };
+
+  window._logout = function() {
+    var data = getStoredData();
+    if (data) {
+      data.session_active = false;
+      saveStoredData(data);
+    }
+    currentUser = null;
+    allSaved = [];
+    savedKeys = new Set();
+    renderLoginBar();
+    refreshAllButtons();
+  };
+
+  // --- Saved sources (localStorage) ---
+  function loadSaved() {
+    var data = getStoredData();
+    if (!data || !data.session_active) { allSaved = []; savedKeys = new Set(); return; }
+    allSaved = data.saved || data.likes || [];
+    nextId = allSaved.reduce(function(mx, l) { return Math.max(mx, l.id + 1); }, 1);
+    savedKeys = new Set(allSaved.map(function(l) { return l.source_key || l.bullet_text || ''; }));
+  }
+
+  function saveSaved() {
+    var data = getStoredData();
+    if (!data) return;
+    data.saved = allSaved;
+    saveStoredData(data);
+  }
+
+  function refreshAllButtons() {
+    document.querySelectorAll('.save-btn').forEach(function(btn) {
+      var key = btn.dataset.sourceKey;
+      if (savedKeys.has(key)) {
+        btn.classList.add('saved');
+        btn.innerHTML = '★';
+        btn.title = 'Saved';
+      } else {
+        btn.classList.remove('saved');
+        btn.innerHTML = '☆';
+        btn.title = 'Save to stash';
+      }
+    });
+  }
+
+  function toggleSave(btn, sourceKey, title, link, summary, section) {
+    if (!currentUser) { alert('Please login first'); return; }
+    if (savedKeys.has(sourceKey)) {
+      allSaved = allSaved.filter(function(l) { return l.source_key !== sourceKey; });
+      savedKeys.delete(sourceKey);
+      btn.classList.remove('saved');
+      btn.innerHTML = '☆';
+      btn.title = 'Save to stash';
+    } else {
+      allSaved.push({
+        id: nextId++,
+        source_key: sourceKey,
+        title: title,
+        link: link,
+        summary: summary,
+        section: section,
+        newsletter_date: getDateFromURL(),
+        created_at: new Date().toISOString()
+      });
+      savedKeys.add(sourceKey);
+      btn.classList.add('saved');
+      btn.innerHTML = '★';
+      btn.title = 'Saved';
+    }
+    saveSaved();
+  }
+
+  // --- Add bookmark icon next to each source title ---
+  function addSaveButtons() {
+    // Find items inside data-section containers (news, youtube, ai_security)
+    var sections = document.querySelectorAll('[data-section]');
+    sections.forEach(function(sec) {
+      // Match padded items and card items
+      var items = sec.querySelectorAll('div[style*="padding: 16px 0"], div[style*="padding: 14px 0"], div[style*="padding: 20px 22px"]');
+      items.forEach(function(card) {
+        var titleEl = card.querySelector('a[href]');
+        if (!titleEl) return;
+        var title = titleEl.textContent.trim();
+        var link = titleEl.getAttribute('href') || '';
+        var section = detectSection(card);
+
+        // Get summary text for storage
+        var summaryEl = card.querySelector('div[style*="font-size: 14.5px"], div[style*="font-size: 15px"]');
+        var summary = summaryEl ? summaryEl.textContent.trim() : '';
+        if (summary.length > 400) summary = summary.substring(0, 400) + '...';
+
+        var sourceKey = link || title;
+        var isSaved = savedKeys.has(sourceKey);
+
+        var wrapper = document.createElement('span');
+        wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+        titleEl.parentNode.insertBefore(wrapper, titleEl);
+        titleEl.style.flex = '1';
+        wrapper.appendChild(titleEl);
+
+        var btn = document.createElement('button');
+        btn.className = 'save-btn' + (isSaved ? ' saved' : '');
+        btn.dataset.sourceKey = sourceKey;
+        btn.innerHTML = isSaved ? '★' : '☆';
+        btn.title = isSaved ? 'Saved' : 'Save to stash';
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleSave(btn, sourceKey, title, link, summary, section);
+        });
+        wrapper.appendChild(btn);
+      });
+    });
+  }
+
+  // --- Stash modal ---
+  function formatDateLabel(dateStr) {
+    try {
+      var parts = dateStr.split('-');
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      return months[parseInt(parts[1],10)-1] + ' ' + parseInt(parts[2],10) + ', ' + parts[0];
+    } catch(e) { return dateStr; }
+  }
+
+  function sectionLabel(s) {
+    var map = {'news':'News','youtube':'YouTube','ai_security':'AI Security','other':'Other'};
+    return map[s] || s;
+  }
+
+  window._openStash = function() {
+    if (!currentUser) return;
+    loadSaved();
+    var overlay = document.getElementById('stash-overlay');
+    if (overlay) overlay.remove();
+
+    overlay = document.createElement('div');
+    overlay.id = 'stash-overlay';
+    overlay.className = 'stash-overlay open';
+    var panel = document.createElement('div');
+    panel.className = 'stash-panel';
+
+    var html = '<div class="stash-header">'
+      + '<h2>My Stash</h2>'
+      + '<button class="stash-close" onclick="document.getElementById(\x27stash-overlay\x27).remove()">&times;</button>'
+      + '</div>';
+
+    if (allSaved.length === 0) {
+      html += '<div class="stash-empty">Nothing saved yet. Tap the star next to any article, video, or paper.</div>';
+    } else {
+      html += '';
+
+      // Group by newsletter_date, sorted newest first
+      var groups = {};
+      allSaved.forEach(function(item) {
+        var d = item.newsletter_date || 'Unknown';
+        if (!groups[d]) groups[d] = [];
+        groups[d].push(item);
+      });
+      var sortedDates = Object.keys(groups).sort(function(a,b) { return b.localeCompare(a); });
+
+      html += '<div class="stash-body" id="stash-items">';
+      sortedDates.forEach(function(date) {
+        html += '<div class="stash-date-group">';
+        html += '<div class="stash-date-label">' + formatDateLabel(date) + '</div>';
+        groups[date].forEach(function(item) {
+          var titleDisplay = (item.title || item.article_title || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          var summaryPreview = (item.summary || item.bullet_text || '').replace(/<[^>]*>/g, '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          if (summaryPreview.length > 150) summaryPreview = summaryPreview.substring(0, 150) + '...';
+          var linkUrl = (item.link || '').replace(/"/g, '&quot;');
+          var escapedTitle = titleDisplay.replace(/"/g, '&quot;');
+          html += '<div class="stash-item" data-item-id="' + item.id + '">'
+            + '<input type="checkbox" value="' + item.id + '" data-title="' + escapedTitle + '" data-summary="' + summaryPreview.replace(/"/g, '&quot;') + '">'
+            + '<div class="stash-item-content">'
+            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1c1710;text-decoration:none;border-bottom:1px solid #ede5d5;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
+            + (summaryPreview ? '<div style="font-size:12.5px;color:#8a7a60;line-height:1.5;margin-top:4px;font-weight:300;">' + summaryPreview + '</div>' : '')
+            + '<div class="stash-item-meta">'
+            + '<span class="stash-item-section ' + (item.section || 'other') + '">' + sectionLabel(item.section) + '</span>'
+            + '</div>'
+            + '</div>'
+            + '<button class="stash-delete" onclick="window._deleteItem(' + item.id + ',this)" title="Remove">&times;</button>'
+            + '</div>';
+        });
+        html += '</div>';
+      });
+      html += '</div>';
+
+      var hasKey = !!localStorage.getItem(GEMINI_KEY_STORAGE);
+      html += '<div class="stash-footer">'
+        + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
+        + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>';
+      if (!hasKey) {
+        html += '<div style="margin-top:12px;padding:12px;background:#faf7f0;border:1px solid #ede5d5;border-radius:4px;">'
+          + '<label class="stash-prompt-label" style="color:#8b4a3c;">Gemini API Key (saved locally, never uploaded)</label>'
+          + '<div style="display:flex;gap:6px;">'
+          + '<input id="gemini-key-input" type="password" class="stash-prompt" style="flex:1;padding:6px 10px;" placeholder="Paste your Gemini API key">'
+          + '<button class="primary" style="font-size:11px;padding:6px 14px;" onclick="window._saveGeminiKey()">Save</button>'
+          + '</div></div>';
+      } else {
+        html += '<div style="margin-top:8px;font-size:11px;color:#8a7a60;font-weight:400;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#3d6b4f;">Change key</a></div>';
+      }
+      html += '<div class="stash-actions">'
+        + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
+        + '<button class="secondary" onclick="window._stashSelectNone()">Select None</button>'
+        + '<button class="secondary" onclick="window._copySelection(this)">Copy Selection</button>'
+        + '<span class="divider"></span>'
+        + '<button class="primary" id="generate-script-btn" onclick="window._generateScript()">Generate Script</button>'
+        + '</div>'
+        + '<div id="script-result"></div>'
+        + '</div>';
+    }
+
+    panel.innerHTML = html;
+    overlay.appendChild(panel);
+    overlay.addEventListener('click', function(e) {
+      if (e.target === overlay) overlay.remove();
+    });
+    document.body.appendChild(overlay);
+  };
+
+  window._stashSelectAll = function() {
+    document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) { cb.checked = true; });
+  };
+
+  window._stashSelectNone = function() {
+    document.querySelectorAll('#stash-items input[type=checkbox]').forEach(function(cb) { cb.checked = false; });
+  };
+
+  window._deleteItem = function(itemId, btnEl) {
+    allSaved = allSaved.filter(function(l) { return l.id !== itemId; });
+    saveSaved();
+    savedKeys = new Set(allSaved.map(function(l) { return l.source_key || l.bullet_text || ''; }));
+    var row = btnEl.closest('.stash-item');
+    if (row) row.remove();
+    refreshAllButtons();
+    if (allSaved.length === 0) {
+      window._openStash();
+    }
+  };
+
+  window._copySelection = function(btn) {
+    var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
+    if (checked.length === 0) { alert('Select at least one source'); return; }
+    var lines = [];
+    var currentDate = '';
+    checked.forEach(function(cb) {
+      var item = allSaved.find(function(l) { return l.id === parseInt(cb.value); });
+      if (!item) return;
+      var d = item.newsletter_date || '';
+      if (d !== currentDate) {
+        if (lines.length > 0) lines.push('');
+        lines.push(d);
+        lines.push('');
+        currentDate = d;
+      }
+      var title = item.title || item.article_title || 'Untitled';
+      var sectionName = (item.section || '').replace('_', ' ');
+      lines.push(title + (sectionName ? ' [' + sectionName + ']' : ''));
+      if (item.link) lines.push(item.link);
+      if (item.summary) {
+        var clean = (item.summary || '').replace(/<[^>]*>/g, '');
+        if (clean.length > 0) lines.push(clean);
+      }
+      lines.push('');
+    });
+    var text = lines.join('\n').trim();
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = 'Copied!';
+      setTimeout(function() { btn.textContent = 'Copy Selection'; }, 2000);
+    });
+  };
+
+  window._saveGeminiKey = function() {
+    var key = (document.getElementById('gemini-key-input') || {}).value || '';
+    key = key.trim();
+    if (!key) { alert('Please paste your API key'); return; }
+    localStorage.setItem(GEMINI_KEY_STORAGE, key);
+    window._openStash();
+  };
+
+  window._generateScript = async function() {
+    var checked = document.querySelectorAll('#stash-items input[type=checkbox]:checked');
+    if (checked.length === 0) { alert('Select at least one source'); return; }
+
+    var apiKey = localStorage.getItem(GEMINI_KEY_STORAGE) || '';
+    if (!apiKey) { alert('Please save your Gemini API key first'); return; }
+
+    var sources = [];
+    checked.forEach(function(cb) {
+      sources.push({ title: cb.dataset.title || '', summary: cb.dataset.summary || '' });
+    });
+    var customPrompt = (document.getElementById('custom-prompt') || {}).value || '';
+
+    var prompt = 'You are an educational content writer. The user saved these sources from a daily newsletter:\n\n';
+    sources.forEach(function(s) { prompt += '- ' + s.title + (s.summary ? ': ' + s.summary : '') + '\n'; });
+    prompt += '\nYour task:\n1. Research each topic in more depth.\n2. Write a 2-3 minute spoken script (350-500 words) that explains these topics in an educational, engaging way.\n3. Be conversational but informative.\n4. Add context, background, and why it matters.\n5. Start with a hook, end with a takeaway.';
+    if (customPrompt) { prompt += '\n\nAdditional instructions: ' + customPrompt; }
+    prompt += '\n\nReturn ONLY the script text, ready to be read aloud. No stage directions, no markdown.';
+
+    var btn = document.getElementById('generate-script-btn');
+    btn.disabled = true;
+    btn.innerHTML = 'Generating<span class="spinner"></span>';
+    var resultDiv = document.getElementById('script-result');
+    resultDiv.innerHTML = '';
+
+    try {
+      var res = await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=' + encodeURIComponent(apiKey), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+      });
+      var data = await res.json();
+      if (data.error) throw new Error(data.error.message || 'API error');
+      var script = data.candidates[0].content.parts[0].text;
+      resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
+        + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
+    } catch(e) {
+      resultDiv.innerHTML = '<div class="script-output" style="color:#8b4a3c;">Error: ' + e.message + '</div>';
+    }
+
+    btn.disabled = false;
+    btn.textContent = 'Generate Script';
+  };
+
+  window._copyScript = function(btn) {
+    var text = document.getElementById('script-text').innerText;
+    navigator.clipboard.writeText(text).then(function() {
+      btn.textContent = 'Copied!';
+      setTimeout(function() { btn.textContent = 'Copy Script'; }, 2000);
+    });
+  };
+
+  // --- Init ---
+  function init() {
+    loadSession();
+    renderLoginBar();
+    addSaveButtons();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
+  else init();
+})();
+</script>
 </body>
 </html>

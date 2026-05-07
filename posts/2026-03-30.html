@@ -3,203 +3,275 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing &mdash; Monday, March 30, 2026</title>
+<title>The Midtown Briefing &mdash; Monday, March 30, 2026</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }
-  .site-nav { background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }
-  .site-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }
-  .site-nav a:hover { color: #fff; }
-  .email-wrap { max-width: 680px; margin: 28px auto; background: #fffdf7; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+  body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased; }
+  a { color: #3d6b4f; text-decoration: none; }
+  a:hover { color: #8b4a3c; }
+  .shell-nav { position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }
+  .shell-nav .brand { font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }
+  .shell-nav .actions { display: flex; gap: 10px; align-items: center; }
+  .shell-nav .actions a, .shell-nav .actions button { background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-family: inherit; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; color: #4a3f30; border-radius: 99px; text-decoration: none; }
+  .shell-nav .actions a:hover, .shell-nav .actions button:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
+  .email-wrap { max-width: 700px; margin: 0 auto 60px; background: #faf7f0; overflow-x: hidden; }
+  @media (max-width: 760px) { .shell-nav { padding: 12px 16px; } .shell-nav .brand { font-size: 16px; } .shell-nav .actions { gap: 6px; } .shell-nav .actions a, .shell-nav .actions button { padding: 5px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
-<div class="site-nav">
-  <a href="../index.html">&larr; Back to Daily Briefing</a>
-</div>
+<nav class="shell-nav">
+  <a class="brand" href="../index.html">The Midtown Briefing</a>
+  <div class="actions">
+    <a href="../index.html">Archive</a>
+    <button onclick="window._openStash()">My Stash</button>
+  </div>
+</nav>
 <div class="email-wrap">
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
-<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
+<div style="max-width: 660px; margin: 0 auto; background: #faf7f0;">
 
   <!-- Masthead -->
-  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Automated Daily Intelligence</div>
-    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">Your Daily Briefing</h1>
-    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">Monday, March 30, 2026</div>
-    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Weather &middot; Health &middot; Events &middot; News &middot; YouTube &middot; AI Security</div>
+  <div style="padding: 44px 32px 0 32px; text-align: center; border-bottom: 1px solid #ede5d5;">
+    <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">Est. 2025</div>
+    <h1 style="margin: 10px 0 8px 0; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710; line-height: 1.0;">The Midtown <span style="color: #3d6b4f;">Briefing</span></h1>
+    <div style="font-size: 14px; color: #8a7a60; margin-bottom: 16px; font-weight: 400;">Monday, March 30, 2026</div>
+    <div style="height: 1px; background: #ede5d5; margin: 0 60px;"></div>
+    <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
   </div>
 
   <!-- Weather -->
-  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
-    <div style="text-align: center; margin-bottom: 16px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">Weather in New York City</span>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Weather Watch</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">64<span style="color: #8b4a3c;">&deg;</span></div>
+      
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">Isolated Rain Showers</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px;">
+        <div><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; display: block;">High / Low</span><span style="font-size: 15px; color: #1c1710;">74&deg; / 60&deg;</span></div>
+        
+        
+      </div>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Isolated Rain Showers &mdash; High 74&deg; / Low 60&deg;</div>
     
-    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
-      <tr style="border-bottom: 2px solid #1a1a1a;">
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Time</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Temp</th>
-        <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Conditions</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Precip</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Humidity</th>
-        <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">Wind</th>
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
+    <table style="width: 100%; min-width: 480px; border-collapse: collapse; font-size: 13px; color: #4a3f30; font-weight: 300;">
+      <tr>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Hour</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Temp</th>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Conditions</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Precip</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Humidity</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Wind</th>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">5pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">64&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Isolated Rain Showers</td>
-        <td style="padding: 7px 6px; text-align: center;">15%</td>
-        <td style="padding: 7px 6px; text-align: center;">58%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph SW</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">64&deg;F</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Isolated Rain Showers</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">15%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">58%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">18 mph SW</td>
       </tr>
       
-      <tr style="border-bottom: 1px solid #ddd;">
-        <td style="padding: 7px 6px; font-weight: 600;">7pm</td>
-        <td style="padding: 7px 6px; text-align: center; font-weight: 700;">61&deg;F</td>
-        <td style="padding: 7px 6px; font-style: italic; color: #555;">Mostly Cloudy</td>
-        <td style="padding: 7px 6px; text-align: center;">12%</td>
-        <td style="padding: 7px 6px; text-align: center;">62%</td>
-        <td style="padding: 7px 6px; text-align: center; color: #555;">18 mph SW</td>
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">61&deg;F</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">Mostly Cloudy</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">12%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">62%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">18 mph SW</td>
       </tr>
       
     </table>
+    </div>
     
   </div>
 
   <!-- Health Alert -->
   
-  <div style="padding: 16px 32px; border-left: 4px solid #27ae60; background: #f0faf0;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; margin-bottom: 6px;">
-      &#x1F7E2; NYC Illness Level: NORMAL
-    </div>
-    <div style="font-size: 14px; color: #444; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">6,765 cases this week — near average for this time of year</div>
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Week ending 2026-03-21 · Source: NYC Dept. of Health</div>
+  <div style="padding: 20px 32px; margin: 0 32px; background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; margin-bottom: 8px;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding-right: 12px; vertical-align: middle; width: 10px;">
+          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #5a8c69;"></span>
+        </td>
+        <td>
+          <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #5a8c69; font-weight: 500; margin-bottom: 4px;">
+            NYC Illness Level: NORMAL
+          </div>
+          <div style="font-size: 14px; color: #4a3f30; line-height: 1.6; font-weight: 300;">6,765 cases this week — near average for this time of year</div>
+          <div style="font-size: 10px; color: #8a7a60; margin-top: 4px; font-weight: 400;">Week ending 2026-03-21 · NYC Dept. of Health</div>
+        </td>
+      </tr>
+    </table>
   </div>
   
 
   <!-- NYC Events -->
-  <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F4C5; NYC Major Events This Week</div>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">On the Block</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Good%20Friday%20Way%20of%20the%20Cross%20NYC%20Fri%2C%20Apr%203" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Good Friday Way of the Cross</a> &mdash; Fri, Apr 3, Manhattan <span style="color: #888;">(East 47th St & 1st Ave)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Fri</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;"> 3</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Good%20Friday%20Way%20of%20the%20Cross%20NYC%20Fri%2C%20Apr%203" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Good Friday Way of the Cross</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 47th St & 1st Ave</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Malbon%20x%20Knicks%20Block%20Party%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Malbon x Knicks Block Party</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(Crosby Street & Grand Street)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;"> 4</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Malbon%20x%20Knicks%20Block%20Party%20NYC%20Sat%2C%20Apr%204" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Malbon x Knicks Block Party</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · Crosby Street & Grand Street</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=Inwood%20Greenmarket%20Saturday%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Inwood Greenmarket Saturday</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(Isham Street & Seaman Ave)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;"> 4</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Inwood%20Greenmarket%20Saturday%20NYC%20Sat%2C%20Apr%204" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Inwood Greenmarket Saturday</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · Isham Street & Seaman Ave</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      <a href="https://www.google.com/search?q=82%20Street%20Greenmarket%20Saturday%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">82 Street Greenmarket Saturday</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(East 82nd St & 1st Ave)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;"> 4</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=82%20Street%20Greenmarket%20Saturday%20NYC%20Sat%2C%20Apr%204" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">82 Street Greenmarket Saturday</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 82nd St & 1st Ave</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
-      <a href="https://www.google.com/search?q=Shred-a-Thon%2C%20E-Waste%2C%20and%20Textile%20Recycling%20Event%20-%20Spring%202026%20NYC%20Sat%2C%20Apr%204" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Shred-a-Thon, E-Waste, and Textile Recycling Event - Spring 2026</a> &mdash; Sat, Apr 4, Manhattan <span style="color: #888;">(Fulton Street & Ryders Alley)</span>
+    <div style="padding: 14px 0; ">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;"> 4</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Shred-a-Thon%2C%20E-Waste%2C%20and%20Textile%20Recycling%20Event%20-%20Spring%202026%20NYC%20Sat%2C%20Apr%204" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Shred-a-Thon, E-Waste, and Textile Recycling Event - Spring 2026</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · Fulton Street & Ryders Alley</div>
+        </td>
+      </tr></table>
     </div>
     
     
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: NYC Open Data — Permitted Events</div>
+    <div style="font-size: 10px; color: #8a7a60; margin-top: 12px; font-weight: 400;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">NYC Open Data</a></div>
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
   <!-- Top News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">Top News</span>
-    </div>
+  <div data-section="news" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The World This Morning</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 21:53:09 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Former Coatue partner raises huge $65M seed for enterprise AI agent startup</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 30 Mar 2026 21:53:09 +0000 · <span style="color: #3d6b4f;">TechCrunch</span></div>
+      <a href="https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Former Coatue partner raises huge $65M seed for enterprise AI agent startup</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 ’t led by a 19-year-old Y Combinator grad — its founder brings decades of experience: Sri Viswanath, a former <strong>Coatue</strong> investor.<br>📢 He left the full-time VC role in the fall to launch Sycamore, where he is CEO.<br>🔍 “I’ve spent over 20 years building enterprise platforms at global scale at Sun Microsystems, VMware, Groupon, and as CTO of Atlassian, where I led the cloud transformation and scaled the engineering org to 7,000+,” Viswanath tells TechCrunch.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 13:00:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Founded in 2020, <strong>Rebellions</strong> develops and designs AI chips while outsourcing their fabrication.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📰 ’t led by a 19-year-old Y Combinator grad — its founder brings decades of experience: Sri Viswanath, a former <strong>Coatue</strong> investor.<br>📢 He left the full-time VC role in the fall to launch Sycamore, where he is CEO.<br>🔍 “I’ve spent over 20 years building enterprise platforms at global scale at Sun Microsystems, VMware, Groupon, and as CTO of Atlassian, where I led the cloud transformation and scaled the engineering org to 7,000+,” Viswanath tells TechCrunch.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 12:30:00 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TechCrunch</span></div>
-      <!-- Title -->
-      <a href="https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Qodo raises $70M for code verification as AI coding scales</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 30 Mar 2026 13:00:00 +0000 · <span style="color: #3d6b4f;">TechCrunch</span></div>
+      <a href="https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">AI chip startup Rebellions raises $400 million at $2.3B valuation in pre-IPO round</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 , Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round. <strong>Qodo</strong> is aiming to serve as a layer focused on improving trust in AI-generated code as enterprises accelerate adoption of tools like OpenClaw and Claude Code.<br>📢 Many are discovering that faster code output doesn’t necessarily translate into reliable or secure software.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📰 Founded in 2020, <strong>Rebellions</strong> develops and designs AI chips while outsourcing their fabrication.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 16:22:34 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/30/nx-s1-5707305/yemen-politician-assassination-us-soldiers-lawsuit" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Yemeni politician says former U.S. soldiers tried to kill him. Now he's suing in U.S. court</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 30 Mar 2026 12:30:00 +0000 · <span style="color: #3d6b4f;">TechCrunch</span></div>
+      <a href="https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Qodo raises $70M for code verification as AI coding scales</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 Statute, which allows foreigners to sue in U.<br>📢 S. federal court for violations of international law.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📰 , Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round. <strong>Qodo</strong> is aiming to serve as a layer focused on improving trust in AI-generated code as enterprises accelerate adoption of tools like OpenClaw and Claude Code.<br>📢 Many are discovering that faster code output doesn’t necessarily translate into reliable or secure software.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 30 Mar 2026 16:22:34 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/03/30/nx-s1-5707305/yemen-politician-assassination-us-soldiers-lawsuit" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Yemeni politician says former U.S. soldiers tried to kill him. Now he's suing in U.S. court</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📰 Statute, which allows foreigners to sue in U.<br>📢 S. federal court for violations of international law.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 30 Mar 2026 15:59:54 -0400 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">NPR</span></div>
-      <!-- Title -->
-      <a href="https://www.npr.org/2026/03/30/nx-s1-5766344/trump-rolls-back-pause-on-asylum-decisions" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Trump rolls back pause on asylum decisions imposed after D.C. National Guard shooting</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 30 Mar 2026 15:59:54 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/03/30/nx-s1-5766344/trump-rolls-back-pause-on-asylum-decisions" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump rolls back pause on asylum decisions imposed after D.C. National Guard shooting</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">📰 as a part of a slew of restrictions on immigration after an Afghan national shot two <strong>National</strong> Guardsmen in Washington, D.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">📰 as a part of a slew of restrictions on immigration after an Afghan national shot two <strong>National</strong> Guardsmen in Washington, D.</div>
       
     </div>
     
     
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
   <!-- YouTube -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">YouTube</span>
-    </div>
+  <div data-section="youtube" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">From the Subscriptions</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-30 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <!-- Title -->
-      <a href="https://www.morningbrew.com/issues/another-element" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Wall Street is losing patience with Iran War</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
+      <a href="https://www.morningbrew.com/issues/another-element" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Wall Street is losing patience with Iran War</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-30</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 Riskier options may be coming to your 401(k) soon
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 Riskier options may be coming to your 401(k) soon
 
 Riskier options may be coming to your 401(k) soon
 The Trump administration wants to bring private markets to 401(k)s.
@@ -208,105 +280,88 @@ When you can start golfing full time might soon hinge on the earnings of OpenAI,
       
     </div>
     
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-03-30 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Dr. Izzy Sealey</span></div>
-      <!-- Title -->
-      <a href="https://youtube.com/watch?v=nXpYN92Vg7s" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">How to Stop Wasting Your Evenings After Work</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; ">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Dr. Izzy Sealey</div>
+      <a href="https://youtube.com/watch?v=nXpYN92Vg7s" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">How to Stop Wasting Your Evenings After Work</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-03-30</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🎬 How to Stop Wasting Your Evenings After Work</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">🎬 How to Stop Wasting Your Evenings After Work</div>
       
     </div>
     
     
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&#9830;</div></div></div>
-
-  <!-- Trending AI Security Topics -->
-  
-
   <!-- AI Security -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">AI Security</span>
-    </div>
+  <div data-section="ai_security" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Adversary's Desk</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Wed, 25 Mar 2026 06:30:31 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9TcHQySS00TUFOakFYZnVzeFRqWk4xMTJLUi1xT0lnMEJuZzMwUmZHdVFZMWtERFlpS2xJaHlZWDU2aUZYWmxOT0hQNnlJRlB0aUZTWnFfd3NVQ2tyRy1hMzh2UTh0UTJIcGMxX2VzeWpzTV9lNWc3SA?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Training an AI agent to attack LLM applications like a real adversary</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 25 Mar 2026 06:30:31 GMT · <span style="color: #3d6b4f;">Help Net Security</span></div>
+      <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE9TcHQySS00TUFOakFYZnVzeFRqWk4xMTJLUi1xT0lnMEJuZzMwUmZHdVFZMWtERFlpS2xJaHlZWDU2aUZYWmxOT0hQNnlJRlB0aUZTWnFfd3NVQ2tyRy1hMzh2UTh0UTJIcGMxX2VzeWpzTV9lNWc3SA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Training an AI agent to attack LLM applications like a real adversary</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ng agent built specifically to probe <strong>LLM</strong>-powered software.<br>🔍 The company introduced the product at RSAC 2026 Conference in San Francisco and is demonstrating it at booth S-0262.<br>⚠️ What the agent does
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🛡️ ng agent built specifically to probe <strong>LLM</strong>-powered software.<br>🔍 The company introduced the product at RSAC 2026 Conference in San Francisco and is demonstrating it at booth S-0262.<br>⚠️ What the agent does
 The agent targets AI-powered applications, including chatbots, copilots, autonomous agents, and <strong>LLM</strong>-powered workflows, and simulates adversarial attacks against them.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 24 Mar 2026 13:00:49 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPSTgtV1g0cjZiVmQ1TEtUTXp2S3ZldzdjMkVJeVI2VXFuZ3BhTFo3QV82Vk8zdkVJX2VOQkViSTlXWlB0dVZ3RW5BVThzN0RvdUl4ekpxNXlsRFQ4N3B5bkVsUlo2SHNWYjhvbVNjSkNNaXBWYjZVSERVdU01ZmxsN0lxZlhtNW0wLTlaMFpR?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Novee introduces autonomous AI red teaming to hunt LLM vulnerabilities</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 24 Mar 2026 13:00:49 GMT · <span style="color: #3d6b4f;">Help Net Security</span></div>
+      <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPSTgtV1g0cjZiVmQ1TEtUTXp2S3ZldzdjMkVJeVI2VXFuZ3BhTFo3QV82Vk8zdkVJX2VOQkViSTlXWlB0dVZ3RW5BVThzN0RvdUl4ekpxNXlsRFQ4N3B5bkVsUlo2SHNWYjhvbVNjSkNNaXBWYjZVSERVdU01ZmxsN0lxZlhtNW0wLTlaMFpR?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Novee introduces autonomous AI red teaming to hunt LLM vulnerabilities</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ ts, data exfiltration, and manipulation of agent behavior that traditional pentesting tools were never designed to detect.<br>🔍 Unlike conventional application security tools built for web and infrastructure testing, <strong>Novee</strong>’s AI pentesting agent is specifically designed to continuously probe AI-enabled applications.<br>⚠️ The agent autonomously simulates real-world, sophisticated attack scenarios and chaining techniques together to identify vulnerabilities that manual testing or static scanners often miss.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🛡️ ts, data exfiltration, and manipulation of agent behavior that traditional pentesting tools were never designed to detect.<br>🔍 Unlike conventional application security tools built for web and infrastructure testing, <strong>Novee</strong>’s AI pentesting agent is specifically designed to continuously probe AI-enabled applications.<br>⚠️ The agent autonomously simulates real-world, sophisticated attack scenarios and chaining techniques together to identify vulnerabilities that manual testing or static scanners often miss.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 26 Mar 2026 05:43:04 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">TrendMicro</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNU2RWVDZPXzJFcklubUlSd1lpSGZhazI2elJwckdNa3NUdTlQNUNjYTJYS2J1YkFQNWhQdUFVaXRTS0NDS3pJbUlpN0hPMmtUOW9aUUFVTmhhWGlsVGdFdVZYSG9RNVRDaUpPblc5UVB2V2tvYzVteTQ1ZUZkQTlNbjEydkJVeUsyaHV2TkZta09PQk9E?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain Compromise</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 26 Mar 2026 05:43:04 GMT · <span style="color: #3d6b4f;">TrendMicro</span></div>
+      <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNU2RWVDZPXzJFcklubUlSd1lpSGZhazI2elJwckdNa3NUdTlQNUNjYTJYS2J1YkFQNWhQdUFVaXRTS0NDS3pJbUlpN0hPMmtUOW9aUUFVTmhhWGlsVGdFdVZYSG9RNVRDaUpPblc5UVB2V2tvYzVteTQ1ZUZkQTlNbjEydkJVeUsyaHV2TkZta09PQk9E?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Your AI Gateway Was a Backdoor: Inside the LiteLLM Supply Chain Compromise</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ oxy package, was compromised on PyPI, with two of its versions containing malicious code.<br>🔍 These <strong>LiteLLM</strong> versions deployed a three-stage payload: credential harvesting, Kubernetes lateral movement, and persistent backdoor for remote code execution.<br>⚠️ Sensitive data from cloud platforms, SSH keys, and Kubernetes clusters were targeted and encrypted before exfiltration.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🛡️ oxy package, was compromised on PyPI, with two of its versions containing malicious code.<br>🔍 These <strong>LiteLLM</strong> versions deployed a three-stage payload: credential harvesting, Kubernetes lateral movement, and persistent backdoor for remote code execution.<br>⚠️ Sensitive data from cloud platforms, SSH keys, and Kubernetes clusters were targeted and encrypted before exfiltration.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Sun, 29 Mar 2026 08:00:59 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Help Net Security</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOY3I4T2k2ZW1NalhROUFTX0VkTWlZb1JjM19QZzVxenlDU2F4TDM3ZGt2UThYQlVBN2lJWWtNeVE0MUltekNLX0dfNFRSQndqYWNuUlVPU2NXdVBPV3hmazVDOEFuSUtLZmptSDYtaGhJRm13ZkJXb09SallxbDY3RnM5T1BYQ2pUajFEVE1TTHFfQUxaYWJuQ05uQnRBeDZDMmNURVNfOGJVZ2t4dkw1MURWdFVvSHhJdjhrdWhWYm5hc3JCUmc?oc=5" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Week in review: NIST updates DNS security guidance, compromised LiteLLM PyPI packages</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sun, 29 Mar 2026 08:00:59 GMT · <span style="color: #3d6b4f;">Help Net Security</span></div>
+      <a href="https://news.google.com/rss/articles/CBMixgFBVV95cUxOY3I4T2k2ZW1NalhROUFTX0VkTWlZb1JjM19QZzVxenlDU2F4TDM3ZGt2UThYQlVBN2lJWWtNeVE0MUltekNLX0dfNFRSQndqYWNuUlVPU2NXdVBPV3hmazVDOEFuSUtLZmptSDYtaGhJRm13ZkJXb09SallxbDY3RnM5T1BYQ2pUajFEVE1TTHFfQUxaYWJuQ05uQnRBeDZDMmNURVNfOGJVZ2t4dkw1MURWdFVvSHhJdjhrdWhWYm5hc3JCUmc?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Week in review: NIST updates DNS security guidance, compromised LiteLLM PyPI packages</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🛡️ re Domain Name System Deployment Guide, superseding a version that dates to 2013.<br>🔍 The document covers three main areas: using <strong>DNS</strong> as an active security control, securing the <strong>DNS</strong> protocol itself, and protecting the servers and infrastructure that run <strong>DNS</strong> services.<br>⚠️ Attackers are exploiting RCE vulnerability in BIG-IP APM systems (CVE-2025-53521)
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">🛡️ re Domain Name System Deployment Guide, superseding a version that dates to 2013.<br>🔍 The document covers three main areas: using <strong>DNS</strong> as an active security control, securing the <strong>DNS</strong> protocol itself, and protecting the servers and infrastructure that run <strong>DNS</strong> services.<br>⚠️ Attackers are exploiting RCE vulnerability in BIG-IP APM systems (CVE-2025-53521)
 A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) in F5’s BIG-IP Access Policy Manager (APM) solution is under active exploitation, the US Cybersecurity and Infrastructure Security Agency warned on Friday.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-27</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Yoseph Berhanu Alebachew, Hunter Leary, Swanand Vaishampayan et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.26567v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Beyond Code Snippets: Benchmarking LLMs on Repository-Level Question Answering</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-27</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Yoseph Berhanu Alebachew, Hunter Leary, Swanand Vaishampayan et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2603.26567v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Beyond Code Snippets: Benchmarking LLMs on Repository-Level Question Answering</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">agentic AI</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
         
         
         
@@ -316,25 +371,22 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
         
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Large Language Models (LLMs) have shown impressive capabilities across software engineering tasks, including question answering (QA). However, most studies and benchmarks focus on isolated functions or single-file snippets, overlooking the challenges of real-world program comprehension, which often spans multiple files and system-level dependencies. In this work, we introduce StackRepoQA, the first multi-project, repository-level question answering dataset constructed from 1,318 real developer questions and accepted answers across 134 open-source Java projects. Using this dataset, we systematically evaluate two widely used LLMs (Claude 3.5 Sonnet and GPT-4o) under both direct prompting and agentic configurations. We compare baseline performance with retrieval-augmented generation methods that leverage file-level retrieval and graph-based representations of structural dependencies. Our results show that LLMs achieve moderate accuracy at baseline, with performance improving when structural signals are incorporated. Nonetheless, overall accuracy remains limited for repository-scale comprehension. The analysis reveals that high scores often result from verbatim reproduction of Stack Overflow answers rather than genuine reasoning. To our knowledge, this is the first empirical study to provide such evidence in repository-level QA. We release StackRepoQA to encourage further research into benchmarks, evaluation protocols, and augmentation strategies that disentangle memorization from reasoning, advancing LLMs as reliable tool for repository-scale program comprehension.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-27</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Mili Das, Morgan Byrd, Donghoon Baek et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.26659v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-27</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Mili Das, Morgan Byrd, Donghoon Baek et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2603.26659v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Partial Motion Imitation for Learning Cart Pushing with Legged Manipulators</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -345,30 +397,27 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">adversarial</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
         
         
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Loco-manipulation is a key capability for legged robots to perform practical mobile manipulation tasks, such as transporting and pushing objects, in real-world environments. However, learning robust loco-manipulation skills remains challenging due to the difficulty of maintaining stable locomotion while simultaneously performing precise manipulation behaviors. This work proposes a partial imitation learning approach that transfers the locomotion style learned from a locomotion task to cart loco-manipulation. A robust locomotion policy is first trained with extensive domain and terrain randomization, and a loco-manipulation policy is then learned by imitating only lower-body motions using a partial adversarial motion prior. We conduct experiments demonstrating that the learned policy successfully pushes a cart along diverse trajectories in IsaacLab and transfers effectively to MuJoCo. We also compare our method to several baselines and show that the proposed approach achieves more stable and accurate loco-manipulation behaviors.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-27</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Antonio Lopardo, Avyukth Harish, Catherine Arnett <span style="color: #999; font-style: normal; font-size: 10px;">(EleutherAI)</span> et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.26663v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Weight Tying Biases Token Embeddings Towards the Output Space</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-27</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Antonio Lopardo, Avyukth Harish, Catherine Arnett <span style="font-size: 10px; color: #8a7a60;">(EleutherAI)</span> et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2603.26663v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Weight Tying Biases Token Embeddings Towards the Output Space</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -381,62 +430,56 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #7f8c8d; color: #7f8c8d; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">NIST taxonomy</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #ede5d5; color: #4a3f30; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #f5f0e8;">taxonomy</span>
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Weight tying, i.e. sharing parameters between input and output embedding matrices, is common practice in language model design, yet its impact on the learned embedding space remains poorly understood. In this paper, we show that tied embedding matrices align more closely with output (unembedding) matrices than with input embeddings of comparable untied models, indicating that the shared matrix is shaped primarily for output prediction rather than input representation. This unembedding bias arises because output gradients dominate early in training. Using tuned lens analysis, we show this negatively affects early-layer computations, which contribute less effectively to the residual stream. Scaling input gradients during training reduces this bias, providing causal evidence for the role of gradient imbalance. This is mechanistic evidence that weight tying optimizes the embedding matrix for output prediction, compromising its role in input representation. These results help explain why weight tying can harm performance at scale and have implications for training smaller LLMs, where the embedding matrix contributes substantially to total parameter count.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-27</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Maria Milkowski, Tim Weninger</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.26635v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-27</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Maria Milkowski, Tim Weninger</div>
+      
+      <a href="https://arxiv.org/pdf/2603.26635v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #2c3e50; color: #2c3e50; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">agentic AI</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
         
         
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
         
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">As large language models are deployed as autonomous agents, their capacity for strategic deception raises core questions for coordination, reliability, and safety in multi-goal, multi-agent systems. We study deception and communication in L2LM agents through the social deduction game Among Us, a cooperative-competitive environment. Across 1,100 games, autonomous agents produced over one million tokens of meeting dialogue. Using speech act theory and interpersonal deception theory, we find that all agents rely mainly on directive language, while impostor agents shift slightly toward representative acts such as explanations and denials. Deception appears primarily as equivocation rather than outright lies, increasing under social pressure but rarely improving win rates. Our contributions are a large-scale analysis of role-conditioned deceptive behavior in LLM agents and empirical evidence that current agents favor low-risk ambiguity that is linguistically subtle yet strategically limited, revealing a fundamental tension between truthfulness and utility in autonomous communication.</div>
       
     </div>
     
-    <div style="padding: 16px 0; ">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-03-27</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Zhide Zhong, Haodong Yan, Junfeng Li et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2603.26666v1" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation</a>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-03-27</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Zhide Zhong, Haodong Yan, Junfeng Li et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2603.26666v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">VLA-OPD: Bridging Offline SFT and Online RL for Vision-Language-Action Models via On-Policy Distillation</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -448,13 +491,11 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #27ae60; color: #27ae60; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">safety</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
         
         
       </div>
-      <!-- Summary -->
       
-      <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">Although pre-trained Vision-Language-Action (VLA) models exhibit impressive generalization in robotic manipulation, post-training remains crucial to ensure reliable performance during deployment. However, standard offline Supervised Fine-Tuning (SFT) suffers from distribution shifts and catastrophic forgetting of pre-trained capabilities, while online Reinforcement Learning (RL) struggles with sparse rewards and poor sample efficiency. In this paper, we propose On-Policy VLA Distillation (VLA-OPD), a framework bridging the efficiency of SFT with the robustness of RL. Instead of relying on sparse environmental rewards, VLA-OPD leverages an expert teacher to provide dense, token-level supervision on the student's self-generated trajectories. This enables active error correction on policy-induced states while preserving pre-trained general capabilities through gentle alignment. Crucially, we formulate VLA-OPD via a Reverse-KL objective. Unlike standard Forward-KL that induces mode-covering entropy explosion, or Hard-CE that causes premature entropy collapse, our bounded mode-seeking objective ensures stable policy learning by filtering out the teacher's epistemic uncertainty while maintaining action diversity. Experiments on LIBERO and RoboTwin2.0 benchmarks demonstrate that VLA-OPD significantly improves sample efficiency over RL and robustness over SFT, while effectively mitigating catastrophic forgetting during post-training.</div>
       
     </div>
     
@@ -462,73 +503,68 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
   </div>
 
   <!-- Footer -->
-  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
-    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">Generated automatically &middot; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
+  <div style="border-top: 1px solid #ede5d5; padding: 24px 32px; text-align: center;">
+    <div style="font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;"><a href="feed.xml" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">Subscribe via RSS</a></div>
   </div>
 
 </div>
-</body>
-</html>
 </div>
 <style>
-  .save-btn { background:none; border:none; cursor:pointer; font-size:18px; padding:0; opacity:0.25; transition:opacity 0.15s, transform 0.15s; vertical-align:middle; line-height:1; flex-shrink:0; }
-  .save-btn:hover { opacity:0.7; transform:scale(1.15); }
-  .save-btn.saved { opacity:1; }
-  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
-  .login-bar input { font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }
-  .login-bar button { font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }
-  .login-bar button:hover { background:#333; }
-  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,26,26,0.45); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
+  .save-btn { background:transparent; border:1px solid #ede5d5; width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px; color:#3d6b4f; padding:0; border-radius:99px; transition:transform 0.12s ease, background 0.12s, color 0.12s; vertical-align:middle; line-height:1; flex-shrink:0; }
+  .save-btn:hover { background:#d4e6da; transform:scale(1.08); }
+  .save-btn.saved { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
+  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'DM Sans',-apple-system,sans-serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(250,247,240,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
+  .login-bar input { font-family:inherit; font-size:12px; padding:6px 10px; border:1px solid #ede5d5; background:#faf7f0; border-radius:4px; }
+  .login-bar input:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
+  .login-bar button { font-family:inherit; font-size:11px; padding:6px 14px; background:#3d6b4f; color:#f5f0e8; border:none; cursor:pointer; letter-spacing:0.14em; text-transform:uppercase; border-radius:99px; font-weight:500; transition:background 0.2s; }
+  .login-bar button:hover { background:#1c1710; }
+  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,22,40,0.55); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
   .stash-overlay.open { display:flex; }
-  .stash-panel { background:#fffdf7; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'Times New Roman',Times,Georgia,serif; box-shadow:0 8px 40px rgba(0,0,0,0.18); position:relative; border:1px solid #e0ddd5; }
-  .stash-header { padding:28px 32px 20px; border-bottom:3px double #1a1a1a; position:sticky; top:0; background:#fffdf7; z-index:1; }
-  .stash-header h2 { font-size:10px; text-transform:uppercase; letter-spacing:3px; font-weight:700; color:#1a1a1a; margin:0; }
-  .stash-header .stash-count { font-size:12px; color:#999; font-style:italic; margin-top:4px; }
-  .stash-close { position:absolute; top:20px; right:24px; font-size:24px; cursor:pointer; background:none; border:none; color:#aaa; transition:color 0.15s; line-height:1; }
-  .stash-close:hover { color:#1a1a1a; }
-  .stash-body { padding:0 32px; }
+  .stash-panel { background:#f5f0e8; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'DM Sans',-apple-system,sans-serif; box-shadow:0 24px 60px rgba(26,22,40,0.32); position:relative; border:1px solid #ede5d5; border-radius:6px; }
+  .stash-header { padding:24px 24px 18px; border-bottom:1px solid #ede5d5; position:sticky; top:0; background:#f5f0e8; z-index:1; display:flex; justify-content:space-between; align-items:center; }
+  .stash-header h2 { font-size:22px; font-weight:600; color:#1c1710; margin:0; }
+  .stash-header .stash-count { font-size:12px; color:#8a7a60; margin-top:4px; font-weight:400; }
+  .stash-close { font-size:16px; cursor:pointer; background:transparent; border:1px solid #ede5d5; color:#4a3f30; width:30px; height:30px; border-radius:99px; display:flex; align-items:center; justify-content:center; transition:background 0.15s; }
+  .stash-close:hover { background:#3d6b4f; color:#f5f0e8; }
+  .stash-body { padding:0 24px; }
   .stash-date-group { margin-top:0; }
-  .stash-date-label { font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; padding:18px 0 8px; border-bottom:1px solid #e8e5de; display:flex; align-items:center; gap:8px; }
-  .stash-date-label::before { content:''; flex:1; height:1px; background:linear-gradient(to right, transparent, #e0ddd5); }
-  .stash-date-label::after { content:''; flex:1; height:1px; background:linear-gradient(to left, transparent, #e0ddd5); }
-  .stash-item { padding:14px 0; border-bottom:1px solid #f0ede6; display:flex; align-items:flex-start; gap:12px; transition:background 0.15s; }
+  .stash-date-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#3d6b4f; padding:18px 0 8px; border-bottom:1px solid #ede5d5; }
+  .stash-item { padding:14px 0; border-bottom:1px solid #ede5d5; display:flex; align-items:flex-start; gap:12px; }
   .stash-item:last-child { border-bottom:none; }
-  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#1a1a1a; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
+  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#3d6b4f; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
   .stash-item-content { flex:1; min-width:0; }
-  .stash-item-text { font-size:14px; color:#333; line-height:1.65; cursor:pointer; }
-  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#aaa; letter-spacing:0.3px; }
-  .stash-item-source { font-style:italic; color:#888; max-width:250px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .stash-item-section { text-transform:uppercase; letter-spacing:1px; font-weight:600; font-size:9px; padding:1px 6px; border:1px solid; border-radius:1px; }
-  .stash-item-section.news { color:#c0392b; border-color:#c0392b; }
-  .stash-item-section.youtube { color:#8e44ad; border-color:#8e44ad; }
-  .stash-item-section.ai_security { color:#27ae60; border-color:#27ae60; }
-  .stash-item-section.other { color:#888; border-color:#ccc; }
-  .stash-delete { background:none; border:none; color:#ccc; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
-  .stash-delete:hover { color:#c0392b; }
-  .stash-footer { padding:20px 32px 28px; border-top:1px solid #e8e5de; position:sticky; bottom:0; background:#fffdf7; z-index:1; }
-  .stash-prompt-label { font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; display:block; margin-bottom:8px; }
-  .stash-prompt { width:100%; font-family:'Times New Roman',Times,Georgia,serif; font-size:13.5px; padding:10px 12px; border:1px solid #e0ddd5; background:#faf8f2; resize:vertical; line-height:1.5; color:#333; }
-  .stash-prompt:focus { outline:none; border-color:#1a1a1a; }
+  .stash-item-text { font-size:14px; color:#1c1710; line-height:1.65; font-weight:400; }
+  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#8a7a60; letter-spacing:0.1em; text-transform:uppercase; }
+  .stash-item-section { text-transform:uppercase; letter-spacing:0.12em; font-weight:500; font-size:9.5px; padding:2px 8px; border:1px solid #ede5d5; border-radius:99px; color:#3d6b4f; }
+  .stash-item-section.news { color:#8b4a3c; border-color:#8b4a3c; }
+  .stash-item-section.youtube { color:#1a1628; border-color:#1a1628; }
+  .stash-item-section.ai_security { color:#3d6b4f; border-color:#3d6b4f; }
+  .stash-item-section.other { color:#8a7a60; border-color:#ede5d5; }
+  .stash-delete { background:none; border:none; color:#ede5d5; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
+  .stash-delete:hover { color:#8b4a3c; }
+  .stash-footer { padding:20px 24px 24px; border-top:1px solid #ede5d5; position:sticky; bottom:0; background:#f5f0e8; z-index:1; }
+  .stash-prompt-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#8a7a60; display:block; margin-bottom:8px; }
+  .stash-prompt { width:100%; font-family:'DM Sans',-apple-system,sans-serif; font-size:14px; padding:11px 13px; border:1px solid #ede5d5; background:#faf7f0; resize:vertical; line-height:1.5; color:#1c1710; border-radius:4px; }
+  .stash-prompt:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
   .stash-actions { margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-  .stash-actions button { font-family:'Times New Roman',Times,serif; font-size:11px; padding:8px 18px; cursor:pointer; border:none; letter-spacing:1.5px; text-transform:uppercase; transition:background 0.2s, color 0.2s; }
-  .stash-actions .primary { background:#1a1a1a; color:#fffdf7; }
-  .stash-actions .primary:hover { background:#333; }
-  .stash-actions .primary:disabled { background:#bbb; cursor:wait; }
-  .stash-actions .secondary { background:transparent; color:#888; border:1px solid #d0cdc5; }
-  .stash-actions .secondary:hover { color:#1a1a1a; border-color:#1a1a1a; }
+  .stash-actions button { font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; padding:9px 16px; cursor:pointer; border:none; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; border-radius:99px; transition:background 0.2s, color 0.2s; }
+  .stash-actions .primary { background:#3d6b4f; color:#f5f0e8; }
+  .stash-actions .primary:hover { background:#1c1710; }
+  .stash-actions .primary:disabled { background:#ede5d5; color:#8a7a60; cursor:wait; }
+  .stash-actions .secondary { background:transparent; color:#4a3f30; border:1px solid #ede5d5; }
+  .stash-actions .secondary:hover { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
   .stash-actions .divider { flex:1; }
-  .script-output { margin-top:16px; padding:20px; background:#f5f0e8; font-size:14.5px; line-height:1.75; color:#333; white-space:pre-wrap; border-left:3px solid #1a1a1a; }
-  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:7px 18px; background:#1a1a1a; color:#fffdf7; border:none; font-family:'Times New Roman',serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; transition:background 0.2s; }
-  .copy-script-btn:hover { background:#333; }
-  .stash-empty { font-size:15px; color:#999; font-style:italic; padding:40px 32px; text-align:center; line-height:1.6; }
-  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(255,253,247,0.3); border-top-color:#fffdf7; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
+  .script-output { margin-top:16px; padding:18px; background:#faf7f0; border:1px solid #ede5d5; font-size:15px; line-height:1.85; color:#4a3f30; white-space:pre-wrap; border-radius:4px; max-height:320px; overflow-y:auto; font-weight:300; }
+  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:9px 16px; background:#3d6b4f; color:#f5f0e8; border:none; font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; cursor:pointer; border-radius:99px; transition:background 0.2s; }
+  .copy-script-btn:hover { background:#1c1710; }
+  .stash-empty { font-size:15px; color:#8a7a60; padding:40px 24px; text-align:center; line-height:1.6; font-weight:300; }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(245,240,232,0.3); border-top-color:#f5f0e8; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
   @keyframes spin { to { transform:rotate(360deg); } }
 </style>
 <script>
 (function() {
   var STORAGE_KEY = 'newsletter_user';
   var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
-  var sectionMap = {'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'};
   var currentUser = null;
   var savedKeys = new Set();
   var allSaved = [];
@@ -555,10 +591,8 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
   function detectSection(el) {
     var node = el;
     while (node && node !== document.body) {
-      var style = node.getAttribute('style') || '';
-      for (var color in sectionMap) {
-        if (style.indexOf(color) !== -1) return sectionMap[color];
-      }
+      var ds = node.dataset && node.dataset.section;
+      if (ds) return ds;
       node = node.parentElement;
     }
     return 'other';
@@ -590,13 +624,13 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
     var bar = document.createElement('div');
     bar.className = 'login-bar';
     if (currentUser) {
-      bar.innerHTML = '<span>' + currentUser + '</span>'
+      bar.innerHTML = '<span style="font-weight:500;color:#1c1710;">' + currentUser + '</span>'
         + '<button onclick="window._openStash()">My Stash</button>'
-        + '<button onclick="window._logout()">Logout</button>';
+        + '<button onclick="window._logout()">Sign Out</button>';
     } else {
       bar.innerHTML = '<input id="lb-user" placeholder="username">'
         + '<input id="lb-pass" type="password" placeholder="password">'
-        + '<button onclick="window._login()">Login</button>'
+        + '<button onclick="window._login()">Sign In</button>'
         + '<button onclick="window._register()">Register</button>';
     }
     document.body.appendChild(bar);
@@ -704,42 +738,44 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
 
   // --- Add bookmark icon next to each source title ---
   function addSaveButtons() {
-    // Find all card containers (each article/video/paper has a title link inside a padded div)
-    var cards = document.querySelectorAll('.email-wrap div[style*="padding: 16px 0"]');
-    cards.forEach(function(card) {
-      var titleEl = card.querySelector('a[href]');
-      if (!titleEl) return;
-      var title = titleEl.textContent.trim();
-      var link = titleEl.getAttribute('href') || '';
-      var section = detectSection(card);
+    // Find items inside data-section containers (news, youtube, ai_security)
+    var sections = document.querySelectorAll('[data-section]');
+    sections.forEach(function(sec) {
+      // Match padded items and card items
+      var items = sec.querySelectorAll('div[style*="padding: 16px 0"], div[style*="padding: 14px 0"], div[style*="padding: 20px 22px"]');
+      items.forEach(function(card) {
+        var titleEl = card.querySelector('a[href]');
+        if (!titleEl) return;
+        var title = titleEl.textContent.trim();
+        var link = titleEl.getAttribute('href') || '';
+        var section = detectSection(card);
 
-      // Get summary text for storage
-      var summaryEl = card.querySelector('div[style*="font-size: 14.5px"]');
-      var summary = summaryEl ? summaryEl.textContent.trim() : '';
-      if (summary.length > 400) summary = summary.substring(0, 400) + '...';
+        // Get summary text for storage
+        var summaryEl = card.querySelector('div[style*="font-size: 14.5px"], div[style*="font-size: 15px"]');
+        var summary = summaryEl ? summaryEl.textContent.trim() : '';
+        if (summary.length > 400) summary = summary.substring(0, 400) + '...';
 
-      // Use link as the unique key (most reliable), fallback to title
-      var sourceKey = link || title;
-      var isSaved = savedKeys.has(sourceKey);
+        var sourceKey = link || title;
+        var isSaved = savedKeys.has(sourceKey);
 
-      // Wrap title in a flex container with the bookmark button
-      var wrapper = document.createElement('span');
-      wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
-      titleEl.parentNode.insertBefore(wrapper, titleEl);
-      titleEl.style.flex = '1';
-      wrapper.appendChild(titleEl);
+        var wrapper = document.createElement('span');
+        wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+        titleEl.parentNode.insertBefore(wrapper, titleEl);
+        titleEl.style.flex = '1';
+        wrapper.appendChild(titleEl);
 
-      var btn = document.createElement('button');
-      btn.className = 'save-btn' + (isSaved ? ' saved' : '');
-      btn.dataset.sourceKey = sourceKey;
-      btn.innerHTML = isSaved ? '&#9733;' : '&#9734;';
-      btn.title = isSaved ? 'Saved' : 'Save to stash';
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleSave(btn, sourceKey, title, link, summary, section);
+        var btn = document.createElement('button');
+        btn.className = 'save-btn' + (isSaved ? ' saved' : '');
+        btn.dataset.sourceKey = sourceKey;
+        btn.innerHTML = isSaved ? '★' : '☆';
+        btn.title = isSaved ? 'Saved' : 'Save to stash';
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleSave(btn, sourceKey, title, link, summary, section);
+        });
+        wrapper.appendChild(btn);
       });
-      wrapper.appendChild(btn);
     });
   }
 
@@ -770,13 +806,14 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
     panel.className = 'stash-panel';
 
     var html = '<div class="stash-header">'
+      + '<h2>My Stash</h2>'
       + '<button class="stash-close" onclick="document.getElementById(\x27stash-overlay\x27).remove()">&times;</button>'
-      + '<h2>My Stash</h2>';
+      + '</div>';
 
     if (allSaved.length === 0) {
-      html += '</div><div class="stash-empty">Nothing here yet.<br>Save sources as you read &mdash; they\x27ll appear here.</div>';
+      html += '<div class="stash-empty">Nothing saved yet. Tap the star next to any article, video, or paper.</div>';
     } else {
-      html += '<div class="stash-count">' + allSaved.length + ' saved source' + (allSaved.length === 1 ? '' : 's') + '</div></div>';
+      html += '';
 
       // Group by newsletter_date, sorted newest first
       var groups = {};
@@ -800,8 +837,8 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
           html += '<div class="stash-item" data-item-id="' + item.id + '">'
             + '<input type="checkbox" value="' + item.id + '" data-title="' + escapedTitle + '" data-summary="' + summaryPreview.replace(/"/g, '&quot;') + '">'
             + '<div class="stash-item-content">'
-            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1a1a1a;text-decoration:none;border-bottom:1px solid #ddd;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
-            + (summaryPreview ? '<div style="font-size:12.5px;color:#888;line-height:1.5;margin-top:4px;">' + summaryPreview + '</div>' : '')
+            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1c1710;text-decoration:none;border-bottom:1px solid #ede5d5;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
+            + (summaryPreview ? '<div style="font-size:12.5px;color:#8a7a60;line-height:1.5;margin-top:4px;font-weight:300;">' + summaryPreview + '</div>' : '')
             + '<div class="stash-item-meta">'
             + '<span class="stash-item-section ' + (item.section || 'other') + '">' + sectionLabel(item.section) + '</span>'
             + '</div>'
@@ -818,14 +855,14 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
         + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
         + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>';
       if (!hasKey) {
-        html += '<div style="margin-top:12px;padding:12px;background:#f5f0e8;border-left:3px solid #e67e22;">'
-          + '<label class="stash-prompt-label" style="color:#e67e22;">Gemini API Key (saved locally, never uploaded)</label>'
+        html += '<div style="margin-top:12px;padding:12px;background:#faf7f0;border:1px solid #ede5d5;border-radius:4px;">'
+          + '<label class="stash-prompt-label" style="color:#8b4a3c;">Gemini API Key (saved locally, never uploaded)</label>'
           + '<div style="display:flex;gap:6px;">'
           + '<input id="gemini-key-input" type="password" class="stash-prompt" style="flex:1;padding:6px 10px;" placeholder="Paste your Gemini API key">'
           + '<button class="primary" style="font-size:11px;padding:6px 14px;" onclick="window._saveGeminiKey()">Save</button>'
           + '</div></div>';
       } else {
-        html += '<div style="margin-top:8px;font-size:11px;color:#999;font-style:italic;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#888;">Change key</a></div>';
+        html += '<div style="margin-top:8px;font-size:11px;color:#8a7a60;font-weight:400;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#3d6b4f;">Change key</a></div>';
       }
       html += '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
@@ -943,7 +980,7 @@ A critical unauthenticated remote code execution vulnerability (CVE-2025-53521) 
       resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
         + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
     } catch(e) {
-      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+      resultDiv.innerHTML = '<div class="script-output" style="color:#8b4a3c;">Error: ' + e.message + '</div>';
     }
 
     btn.disabled = false;

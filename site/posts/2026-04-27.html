@@ -3,246 +3,278 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing &mdash; Monday, April 27, 2026</title>
+<title>The Midtown Briefing &mdash; Monday, April 27, 2026</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }
-  .site-nav { background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }
-  .site-nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }
-  .site-nav a:hover { color: #fff; }
-  .email-wrap { max-width: 680px; margin: 28px auto; background: #fffdf7; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }
+  body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased; }
+  a { color: #3d6b4f; text-decoration: none; }
+  a:hover { color: #8b4a3c; }
+  .shell-nav { position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }
+  .shell-nav .brand { font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }
+  .shell-nav .actions { display: flex; gap: 10px; align-items: center; }
+  .shell-nav .actions a, .shell-nav .actions button { background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-family: inherit; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; color: #4a3f30; border-radius: 99px; text-decoration: none; }
+  .shell-nav .actions a:hover, .shell-nav .actions button:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
+  .email-wrap { max-width: 700px; margin: 0 auto 60px; background: #faf7f0; overflow-x: hidden; }
+  @media (max-width: 760px) { .shell-nav { padding: 12px 16px; } .shell-nav .brand { font-size: 16px; } .shell-nav .actions { gap: 6px; } .shell-nav .actions a, .shell-nav .actions button { padding: 5px 10px; font-size: 10px; } }
 </style>
 </head>
 <body>
-<div class="site-nav">
-  <a href="../index.html">&larr; Back to Daily Briefing</a>
-</div>
+<nav class="shell-nav">
+  <a class="brand" href="../index.html">The Midtown Briefing</a>
+  <div class="actions">
+    <a href="../index.html">Archive</a>
+    <button onclick="window._openStash()">My Stash</button>
+  </div>
+</nav>
 <div class="email-wrap">
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; margin: 0; padding: 0; color: #1a1a1a;">
-<div style="max-width: 660px; margin: 0 auto; background: #fffdf7;">
+<div style="max-width: 660px; margin: 0 auto; background: #faf7f0;">
 
   <!-- Masthead -->
-  <div style="padding: 40px 32px 0 32px; text-align: center; border-bottom: 3px double #1a1a1a;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; font-family: 'Times New Roman', Times, serif;">Est. 2025 &middot; Daily Intelligence</div>
-    <h1 style="margin: 10px 0 6px 0; font-size: 42px; font-weight: 700; letter-spacing: -1px; font-family: 'Times New Roman', Times, Georgia, serif; color: #1a1a1a; line-height: 1.1;">&#x1F4F0; Your Daily Briefing</h1>
-    <div style="font-size: 16px; font-style: italic; color: #555; margin-bottom: 14px; font-family: 'Times New Roman', Times, Georgia, serif;">Monday, April 27, 2026</div>
-    <div style="height: 1px; background: #1a1a1a; margin: 0 80px;"></div>
-    <div style="padding: 8px 0 16px 0; font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">&#x26C5; Weather &middot; &#x1F3E5; Health &middot; &#x1F3AD; Events &middot; &#x1F4F0; News &middot; &#x1F3AC; YouTube &middot; &#x1F6E1;&#xFE0F; AI Security</div>
+  <div style="padding: 44px 32px 0 32px; text-align: center; border-bottom: 1px solid #ede5d5;">
+    <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">Est. 2025</div>
+    <h1 style="margin: 10px 0 8px 0; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710; line-height: 1.0;">The Midtown <span style="color: #3d6b4f;">Briefing</span></h1>
+    <div style="font-size: 14px; color: #8a7a60; margin-bottom: 16px; font-weight: 400;">Monday, April 27, 2026</div>
+    <div style="height: 1px; background: #ede5d5; margin: 0 60px;"></div>
+    <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
   </div>
 
   <!-- Weather -->
-  <div style="padding: 28px 32px 20px 32px; border-left: 4px solid #2980b9;">
-    <div style="text-align: center; margin-bottom: 16px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; border-bottom: 2px solid #2980b9; padding-bottom: 3px;">&#x26C5; Weather in New York City</span>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Weather Watch</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">N/A<span style="color: #8b4a3c;">&deg;</span></div>
+      
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">Unavailable</div>
+      <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 16px;">
+        <div><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; display: block;">High / Low</span><span style="font-size: 15px; color: #1c1710;">N/A&deg; / N/A&deg;</span></div>
+        
+        
+      </div>
     </div>
-    <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">Unavailable &mdash; High N/A&deg; / Low N/A&deg;</div>
     
   </div>
 
   <!-- Health Alert -->
   
-  <div style="padding: 16px 32px; border-left: 4px solid #2980b9; background: #f0f7fc;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #2980b9; font-weight: 700; margin-bottom: 6px;">
-      &#x2705; NYC Illness Level: LOW
-    </div>
-    <div style="font-size: 14px; color: #444; line-height: 1.5; font-family: 'Times New Roman', Times, Georgia, serif;">2,975 cases this week — 30% below average for this time of year</div>
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Week ending 2026-04-18 · Source: NYC Dept. of Health</div>
+  <div style="padding: 20px 32px; margin: 0 32px; background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; margin-bottom: 8px;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding-right: 12px; vertical-align: middle; width: 10px;">
+          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #3d6b4f;"></span>
+        </td>
+        <td>
+          <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 4px;">
+            NYC Illness Level: LOW
+          </div>
+          <div style="font-size: 14px; color: #4a3f30; line-height: 1.6; font-weight: 300;">2,975 cases this week — 30% below average for this time of year</div>
+          <div style="font-size: 10px; color: #8a7a60; margin-top: 4px; font-weight: 400;">Week ending 2026-04-18 · NYC Dept. of Health</div>
+        </td>
+      </tr>
+    </table>
   </div>
   
 
   <!-- NYC Events -->
-  <div style="padding: 16px 32px; border-left: 4px solid #e67e22; background: #fef9f2;">
-    <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #e67e22; font-weight: 700; margin-bottom: 6px;">&#x1F3AD; NYC Events Near You (Next 7 Days)</div>
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">On the Block</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; margin-bottom: 4px;">
-      &#x1F4CD; <a href="https://www.google.com/search?q=2026%20TD%20Five%20Boro%20Bike%20Tour%20NYC%20Sun%2C%20May%203" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">2026 TD Five Boro Bike Tour</a> &mdash; Sun, May 3, Manhattan <span style="color: #888;">(Washington Street & Morris Street)</span>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sun</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;"> 3</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=2026%20TD%20Five%20Boro%20Bike%20Tour%20NYC%20Sun%2C%20May%203" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">2026 TD Five Boro Bike Tour</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · Washington Street & Morris Street</div>
+        </td>
+      </tr></table>
     </div>
     
-    <div style="font-size: 13.5px; color: #444; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; ">
-      &#x1F4CD; <a href="https://www.google.com/search?q=Grad%20Walk%20NYC%20Tue%2C%20Apr%2028" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-weight: 700; border-bottom: 1px solid #ddd;">Grad Walk</a> &mdash; Tue, Apr 28, Manhattan <span style="color: #888;">(West 27th St & 7th Ave)</span>
+    <div style="padding: 14px 0; ">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Tue</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">28</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Grad%20Walk%20NYC%20Tue%2C%20Apr%2028" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Grad Walk</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · West 27th St & 7th Ave</div>
+        </td>
+      </tr></table>
     </div>
     
     
-    <div style="font-size: 10px; color: #999; margin-top: 4px;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #999; text-decoration: underline;">NYC Open Data — Permitted Events</a></div>
+    <div style="font-size: 10px; color: #8a7a60; margin-top: 12px; font-weight: 400;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">NYC Open Data</a></div>
   </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&sect;</div></div></div>
 
   <!-- Top News -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #c0392b;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #c0392b; font-weight: 700; border-bottom: 2px solid #c0392b; padding-bottom: 3px;">&#x1F4F0; Top News</span>
-    </div>
+  <div data-section="news" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The World This Morning</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 27 Apr 2026 19:12:41 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/4/27/iraqi-president-names-shia-bloc-candidate-ali-al-zaidi-as-pm-designate?traffic_source=rss" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Iraqi president names Shia bloc candidate Ali al-Zaidi as PM-designate</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 27 Apr 2026 19:12:41 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/4/27/iraqi-president-names-shia-bloc-candidate-ali-al-zaidi-as-pm-designate?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Iraqi president names Shia bloc candidate Ali al-Zaidi as PM-designate</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏛️ Iraqi President names Ali al-Zaidi as PM-designate, ending months-long deadlock. This breaks US opposition to a pro-Iran candidate, shifting regional power dynamics.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 27 Apr 2026 17:27:54 +0000 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/4/27/ceasefire-at-risk-as-pakistan-and-afghanistan-report-cross-border-attacks?traffic_source=rss" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Ceasefire at risk as Pakistan and Afghanistan report cross-border attacks</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚔️ Pakistan and Afghanistan reported cross-border attacks, killing 4 in Kunar province. The violence threatens fragile peace talks between the two countries.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Iraqi President names Ali al-Zaidi as PM-designate, ending months-long deadlock. This breaks US opposition to a pro-Iran candidate, shifting regional power dynamics.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 27 Apr 2026 19:33:30 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The New York Times</span></div>
-      <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPak56bDVray1Qb050QmJ5Qzc0b0dGZ2k3NVFFTkV6QUplSDhwSVhFS0JqSGQyUXE5aHJ3eEFiRkl4NWZtYjlyLU0wLWpjV0M4MWJYTThtU09WVWJOUXgwMWhiQ0JfaFVwTXgyTkZNTVA1dlFzMEFkTHdpbVFjMGkyTjlnZ25CZ2Q5RzZ1SA?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Supreme Court Wrangles With Police Use of Cell Location Data to Find Suspects</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 27 Apr 2026 17:27:54 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/4/27/ceasefire-at-risk-as-pakistan-and-afghanistan-report-cross-border-attacks?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Ceasefire at risk as Pakistan and Afghanistan report cross-border attacks</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">⚖️ Supreme Court hears case on police use of cell location data. This matters as it may set precedent for digital privacy rights.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Pakistan and Afghanistan reported cross-border attacks, killing 4 in Kunar province. The violence threatens fragile peace talks between the two countries.</div>
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 27 Apr 2026 19:23:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AP News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV0FyZVpJY1YzWTVIRmRxbzVnVjJxa00yaXhlTEFpV182emZkOE4wRDRKWGNxOE4yb2pBSWxGcTg4LVVEZzJWa3ItQUo5cVFlWEpKLV9KSEkzaTlEWkxtVGR3OFRnUVVXVlRWa0JPQWFZZTBtM1k0dTQ4V1BHUVo5aWRJYVRCejdOTU9MWkJzOW00YlBMdUZqQjk3bFRtenpCVWw1ZmVERDBGa2xxeklWTDdQcVVYZXYtWWFMVmJvQmFRQVR3VjZELQ?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Archaeologists at Pompeii use artificial intelligence to reveal the face of one of the victims</a>
-      <!-- Summary -->
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 27 Apr 2026 19:33:30 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxPak56bDVray1Qb050QmJ5Qzc0b0dGZ2k3NVFFTkV6QUplSDhwSVhFS0JqSGQyUXE5aHJ3eEFiRkl4NWZtYjlyLU0wLWpjV0M4MWJYTThtU09WVWJOUXgwMWhiQ0JfaFVwTXgyTkZNTVA1dlFzMEFkTHdpbVFjMGkyTjlnZ25CZ2Q5RzZ1SA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Supreme Court Wrangles With Police Use of Cell Location Data to Find Suspects</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🏯 Archaeologists at Pompeii used AI to reconstruct a victim's face from the 79 AD eruption. This reveals new details about the disaster's impact on individuals.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Supreme Court hears case on police use of cell location data. This matters as it may set precedent for digital privacy rights.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 27 Apr 2026 19:23:00 GMT · <span style="color: #3d6b4f;">AP News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxPV0FyZVpJY1YzWTVIRmRxbzVnVjJxa00yaXhlTEFpV182emZkOE4wRDRKWGNxOE4yb2pBSWxGcTg4LVVEZzJWa3ItQUo5cVFlWEpKLV9KSEkzaTlEWkxtVGR3OFRnUVVXVlRWa0JPQWFZZTBtM1k0dTQ4V1BHUVo5aWRJYVRCejdOTU9MWkJzOW00YlBMdUZqQjk3bFRtenpCVWw1ZmVERDBGa2xxeklWTDdQcVVYZXYtWWFMVmJvQmFRQVR3VjZELQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Archaeologists at Pompeii use artificial intelligence to reveal the face of one of the victims</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Archaeologists at Pompeii used AI to reconstruct a victim's face from the 79 AD eruption. This reveals new details about the disaster's impact on individuals.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Mon, 27 Apr 2026 17:37:43 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">CBS News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQWF83NjFBZnVsSzdFbjljelVjaURLbkx2QjB4UGhwZlJvWlJnNldFTjZHeEN6c3F5T0NWWXc5eTRjTmJLejJmWEJMVF81d3p4UXhFLWZFeV81dURFVXNpZ1dEMnY0U3FQYUVUdXcwcmJuLVFrcjIwNGp0SzYtUm11TkRHTHptWmNLYWlKdUtWeFFpd2pZVEpma0N30gGfAUFVX3lxTE8tc3hQZnUxbDBUZkdNVXUwZWZVQjRCck5SYy1XdTZmNVpKOEFmR1daSHhjaUN5bjkwYkdBb01PX3BWZjl6Y0dIbmZ3eXNHOE93Y3NhNGRhWW5lY3lEVTJSY09OMTUyTWVmS2hXbDN0UDB5TndWNUhsc1d2QU1KNExza1NXMzRLVGNWUm5aSFBNTTFzS1E5eHpJMkQteU5zYw?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">Endangered orangutan filmed using canopy bridge to cross public road in Indonesia: "A world first"</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 27 Apr 2026 17:37:43 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxQWF83NjFBZnVsSzdFbjljelVjaURLbkx2QjB4UGhwZlJvWlJnNldFTjZHeEN6c3F5T0NWWXc5eTRjTmJLejJmWEJMVF81d3p4UXhFLWZFeV81dURFVXNpZ1dEMnY0U3FQYUVUdXcwcmJuLVFrcjIwNGp0SzYtUm11TkRHTHptWmNLYWlKdUtWeFFpd2pZVEpma0N30gGfAUFVX3lxTE8tc3hQZnUxbDBUZkdNVXUwZWZVQjRCck5SYy1XdTZmNVpKOEFmR1daSHhjaUN5bjkwYkdBb01PX3BWZjl6Y0dIbmZ3eXNHOE93Y3NhNGRhWW5lY3lEVTJSY09OMTUyTWVmS2hXbDN0UDB5TndWNUhsc1d2QU1KNExza1NXMzRLVGNWUm5aSFBNTTFzS1E5eHpJMkQteU5zYw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Endangered orangutan filmed using canopy bridge to cross public road in Indonesia: "A world first"</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🐒 A Sumatran orangutan used a canopy bridge to cross a public road in Indonesia. This innovation may help reduce fatal conflicts between orangutans and humans.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A Sumatran orangutan used a canopy bridge to cross a public road in Indonesia. This innovation may help reduce fatal conflicts between orangutans and humans.</div>
       
     </div>
     
     
   </div>
-
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&sect;</div></div></div>
 
   <!-- YouTube -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #8e44ad;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #8e44ad; font-weight: 700; border-bottom: 2px solid #8e44ad; padding-bottom: 3px;">&#x1F3AC; YouTube</span>
-    </div>
+  <div data-section="youtube" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">From the Subscriptions</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-27 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Morning Brew Daily</span></div>
-      <a href="https://www.morningbrew.com/issues/disrupted" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; A 2-hour marathon barrier BROKEN</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
+      <a href="https://www.morningbrew.com/issues/disrupted" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">A 2-hour marathon barrier BROKEN</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-27</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; The Michael Jackson biopic broke the global opening record for a biopic, earning <strong>$217.4</strong> million. It has a <strong>97%</strong> audience score, despite critics panning it.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-26 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">AI Daily Brief</span></div>
-      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Where-the-Economy-Thrives-After-AI-e3igj4g" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Where the Economy Thrives After AI</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; AI will shift value to parts of the economy where human presence matters. Relational work may become more valuable as automation increases.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">The Michael Jackson biopic broke the global opening record for a biopic, earning <strong>$217.4</strong> million. It has a <strong>97%</strong> audience score, despite critics panning it.</div>
       
     </div>
     
-    <div style="padding: 16px 0; ">
-      <!-- Date + Channel -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">2026-04-27 &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">Theo - t3.gg</span></div>
-      <a href="https://youtube.com/watch?v=DWcqbPm_Rn4" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">&#x25B6;&#xFE0F; Markdown is a terrible language</a>
-      <!-- Summary -->
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
+      <a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Where-the-Economy-Thrives-After-AI-e3igj4g" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Where the Economy Thrives After AI</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-26</div>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">&#x1F3AC; New episode from Theo - t3.gg. Click to watch.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">AI will shift value to parts of the economy where human presence matters. Relational work may become more valuable as automation increases.</div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; ">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Theo - t3.gg</div>
+      <a href="https://youtube.com/watch?v=DWcqbPm_Rn4" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Markdown is a terrible language</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-27</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Theo - t3.gg. Click to watch.</div>
       
     </div>
     
     
   </div>
 
-  <!-- Section Rule -->
-  <div style="padding: 0 32px;"><div style="height: 1px; background: #ccc; position: relative;"><div style="position: absolute; left: 50%; transform: translateX(-50%); top: -5px; background: #fffdf7; padding: 0 12px; font-size: 10px; color: #aaa; letter-spacing: 2px;">&sect;</div></div></div>
-
-
   <!-- AI Security -->
-  <div style="padding: 24px 32px 20px 32px; border-left: 4px solid #27ae60;">
-    <div style="text-align: center; margin-bottom: 20px;">
-      <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; color: #27ae60; font-weight: 700; border-bottom: 2px solid #27ae60; padding-bottom: 3px;">&#x1F6E1;&#xFE0F; AI Security</span>
+  <div data-section="ai_security" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Adversary's Desk</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    
+    <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
+      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and ai vulnerabilities.
     </div>
     
-    <div style="font-size: 14px; color: #555; text-align: center; margin-bottom: 20px; font-style: italic; line-height: 1.6; font-family: 'Times New Roman', Times, Georgia, serif; padding: 0 16px;">This week's focus: agentic ai security and ai vulnerabilities.</div>
     
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 13:06:51 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">The Manila Times</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxOcjRGV2JqSE56UGdpaWdtcnpUcFRVQXpLZnZTYnB3YzkzUWphUXJ0eXdmLWdwaVB1dlpOcFFqTmxpU1EzZnRQc0FESFpSQWhKOE9FYUJBLTRJZ2Zxd3JvX3M3WG4xemQwX1dhajhKcHNNRXZ6ODBBak1pZnBtRkJPdGhmV3h0TTR0ZkNpdWk5VnZNRjRMeTJRUVF2dGs4RzJtdzhwd3pSY1BNSFVFa2VwMEhuc3Bha2Nva3RsWTFYdjNmb1FjcXhENnE5dENvYzB0ODhkQkxaR1lYbEVocldZeWppWm5NdGh1LVJVYlNwdXBfbjJ5NS1WaHhsN1RYOWpf0gGGAkFVX3lxTFBvcXZMeUxIaUFHd01qb1pCcnpIV19CeWJFOEoxX0lXeHlva0tfQm54djROMFF2eHE5ZEZ4Y2g5a1VOQlRVRHAyWW9JTGI1MmR0M1ZoUE1KUWx2MUpVaWNQcVYtTzFwMnQ0ZWY5dFRKMnVqbktxTll0TWZleC16d2JadUUwdnpNcURpUzJURTQzRVF3X3lIZGhRcmlYaHpQM3NOUG9sSzR2Z1NiWGlmNHFHU1pEOFZCR0trd3FBRXNzcUZCTnBaWnBRcHVQOENuOVloUDhuN3dUMV9Xb2R6VmhJbUV3dmhOeEZ1WHNuTlJUeVNfLV84XzNuM29qYTZFMDVRQUo5Zmc?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Operant AI Launches CodeInjectionGuard to Defend AI Agents Against Runtime Code Injection Attacks</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 21 Apr 2026 13:06:51 GMT · <span style="color: #3d6b4f;">The Manila Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxOcjRGV2JqSE56UGdpaWdtcnpUcFRVQXpLZnZTYnB3YzkzUWphUXJ0eXdmLWdwaVB1dlpOcFFqTmxpU1EzZnRQc0FESFpSQWhKOE9FYUJBLTRJZ2Zxd3JvX3M3WG4xemQwX1dhajhKcHNNRXZ6ODBBak1pZnBtRkJPdGhmV3h0TTR0ZkNpdWk5VnZNRjRMeTJRUVF2dGs4RzJtdzhwd3pSY1BNSFVFa2VwMEhuc3Bha2Nva3RsWTFYdjNmb1FjcXhENnE5dENvYzB0ODhkQkxaR1lYbEVocldZeWppWm5NdGh1LVJVYlNwdXBfbjJ5NS1WaHhsN1RYOWpf0gGGAkFVX3lxTFBvcXZMeUxIaUFHd01qb1pCcnpIV19CeWJFOEoxX0lXeHlva0tfQm54djROMFF2eHE5ZEZ4Y2g5a1VOQlRVRHAyWW9JTGI1MmR0M1ZoUE1KUWx2MUpVaWNQcVYtTzFwMnQ0ZWY5dFRKMnVqbktxTll0TWZleC16d2JadUUwdnpNcURpUzJURTQzRVF3X3lIZGhRcmlYaHpQM3NOUG9sSzR2Z1NiWGlmNHFHU1pEOFZCR0trd3FBRXNzcUZCTnBaWnBRcHVQOENuOVloUDhuN3dUMV9Xb2R6VmhJbUV3dmhOeEZ1WHNuTlJUeVNfLV84XzNuM29qYTZFMDVRQUo5Zmc?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Operant AI Launches CodeInjectionGuard to Defend AI Agents Against Runtime Code Injection Attacks</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Operant AI launches CodeInjectionGuard to block malicious code in AI agents. This helps defenders protect AI systems from runtime code injection attacks.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
-      
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Tue, 21 Apr 2026 13:00:00 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">GlobeNewswire</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMilAJBVV95cUxOa3RYdGs0N3RBN3ItR1IxcDFJcDBqdmJOUXdxN1JnUWQ5VzhiTE1NLUdCY2tPVEVtV1d2LVBVM1RMYTB4T2kwUlhBaUc3VU0tdDluUHZacmxiaHVMd2djSHBqakFfN0ZaX3NFUWRPZm5fU0ZrTk1XSHIyWWV0WlNfWXdTa2xCS3A5bjRmQnVIZGxjSEJyTGFmNXZNZy1tQVVZQWtZSGZWZ3hxcXp1ZGtSRndyVmdCTHFZTGJ6bDBwV0w0T2hVbHVZaUNsYUlKX2hfSjRVbnBXWmpLa29iN1ZHdWR2bHBVaHVsREJhLU1NTUFydEpJSENNcFZmNkRobXFORGM1emZwa1lZbGdUdk9VU2ZsSVk?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Mondoo Launches World’s First Free AI Skills Security Checker to Address Emerging Supply Chain Risks in Agentic AI</a>
-      <!-- Summary -->
-      
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Mondoo launched a free AI skills security checker to address supply chain risks in agentic AI. This means defenders can now scan AI agent skills for security risks before installation.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Operant AI launches CodeInjectionGuard to block malicious code in AI agents. This helps defenders protect AI systems from runtime code injection attacks.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; border-bottom: 1px solid #e0ddd5;">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Source -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">Thu, 23 Apr 2026 20:47:14 GMT &nbsp;&bull;&nbsp; <span style="font-style: italic; text-transform: none; letter-spacing: 0; color: #666;">csoonline.com</span></div>
-      <!-- Title -->
-      <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNbkJncGo4cWRNNnhoMno5ak9oWnZuaFBteUxpS21DQXFlS29MODRsYzFuMXlwUWplc3FlUzc1bHQtSkgtWTVPVnN3TFhqVmk0Rzloc0hQXzgteHZORklNaW1DRmFiZ09mbWpYYl8xMU9ZYzY2VnMxcmNZdFMtaWtRbzhVV0VCVXRTSGFndDF3ZjgwYjMtTUNTMmxrQnNTb0pGRmtUNV93OA?oc=5" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Google drafts AI agents to secure systems against AI hackers</a>
-      <!-- Summary -->
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 21 Apr 2026 13:00:00 GMT · <span style="color: #3d6b4f;">GlobeNewswire</span></div>
+      <a href="https://news.google.com/rss/articles/CBMilAJBVV95cUxOa3RYdGs0N3RBN3ItR1IxcDFJcDBqdmJOUXdxN1JnUWQ5VzhiTE1NLUdCY2tPVEVtV1d2LVBVM1RMYTB4T2kwUlhBaUc3VU0tdDluUHZacmxiaHVMd2djSHBqakFfN0ZaX3NFUWRPZm5fU0ZrTk1XSHIyWWV0WlNfWXdTa2xCS3A5bjRmQnVIZGxjSEJyTGFmNXZNZy1tQVVZQWtZSGZWZ3hxcXp1ZGtSRndyVmdCTHFZTGJ6bDBwV0w0T2hVbHVZaUNsYUlKX2hfSjRVbnBXWmpLa29iN1ZHdWR2bHBVaHVsREJhLU1NTUFydEpJSENNcFZmNkRobXFORGM1emZwa1lZbGdUdk9VU2ZsSVk?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Mondoo Launches World’s First Free AI Skills Security Checker to Address Emerging Supply Chain Risks in Agentic AI</a>
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Google introduced AI-driven security agents at Cloud Next '26 to secure systems. This means AI-powered defenses may help analysts keep up with growing AI attack surfaces.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Mondoo launched a free AI skills security checker to address supply chain risks in agentic AI. This means defenders can now scan AI agent skills for security risks before installation.</div>
       
       
     </div>
     
-    <div style="padding: 16px 0; ">
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <!-- Date + Authors + Stats -->
-      <div style="font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px;">2026-04-24</div>
-      <!-- Authors with affiliations -->
-      <div style="font-size: 11.5px; color: #666; font-style: italic; margin-bottom: 6px; line-height: 1.5;">Ilana Nguyen, Harini Suresh, Thema Monroe-White et al.</div>
-      <!-- Title -->
-      <a href="https://arxiv.org/pdf/2604.22749v1" target="_blank" rel="noopener" style="color: #1a1a1a; text-decoration: none; font-size: 18px; font-weight: 700; line-height: 1.3; display: block; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 23 Apr 2026 20:47:14 GMT · <span style="color: #3d6b4f;">csoonline.com</span></div>
+      <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNbkJncGo4cWRNNnhoMno5ak9oWnZuaFBteUxpS21DQXFlS29MODRsYzFuMXlwUWplc3FlUzc1bHQtSkgtWTVPVnN3TFhqVmk0Rzloc0hQXzgteHZORklNaW1DRmFiZ09mbWpYYl8xMU9ZYzY2VnMxcmNZdFMtaWtRbzhVV0VCVXRTSGFndDF3ZjgwYjMtTUNTMmxrQnNTb0pGRmtUNV93OA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Google drafts AI agents to secure systems against AI hackers</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Google introduced AI-driven security agents at Cloud Next '26 to secure systems. This means AI-powered defenses may help analysts keep up with growing AI attack surfaces.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-04-24</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Ilana Nguyen, Harini Suresh, Thema Monroe-White et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2604.22749v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Representational Harms in LLM-Generated Narratives Against Global Majority Nationalities</a>
       <!-- Topic badges -->
       
       
       
-      <div style="margin-top: 8px;">
+      <div style="margin-top: 10px;">
         
         
         
@@ -250,7 +282,7 @@
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 600; padding: 2px 8px; border: 1px solid #8e44ad; color: #8e44ad; border-radius: 2px; margin-right: 4px; font-family: 'Times New Roman', Times, serif; letter-spacing: 0.5px;">&#x1F9EA; behavioral eval</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">behavioral eval</span>
         
         
         
@@ -258,9 +290,8 @@
         
         
       </div>
-      <!-- Summary -->
       
-        <div style="font-size: 14.5px; color: #444; line-height: 1.7; margin-top: 10px; font-family: 'Times New Roman', Times, Georgia, serif;">🤖 This paper examines how large language models portray diverse national identities in generated narratives. It reveals harmful stereotypes and biases that can misrepresent Global Majority nationalities in applications like asylum seeker interviews.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper examines how large language models portray diverse national identities in generated narratives. It reveals harmful stereotypes and biases that can misrepresent Global Majority nationalities in applications like asylum seeker interviews.</div>
       
       
     </div>
@@ -269,73 +300,68 @@
   </div>
 
   <!-- Footer -->
-  <div style="border-top: 3px double #1a1a1a; padding: 20px 32px; text-align: center;">
-    <div style="font-size: 11px; color: #999; letter-spacing: 1px; text-transform: uppercase;">&#x1F4E8; <a href="feed.xml" style="color: #555; text-decoration: none; border-bottom: 1px solid #ccc;">Subscribe via RSS</a></div>
+  <div style="border-top: 1px solid #ede5d5; padding: 24px 32px; text-align: center;">
+    <div style="font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;"><a href="feed.xml" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">Subscribe via RSS</a></div>
   </div>
 
 </div>
-</body>
-</html>
 </div>
 <style>
-  .save-btn { background:none; border:none; cursor:pointer; font-size:18px; padding:0; opacity:0.25; transition:opacity 0.15s, transform 0.15s; vertical-align:middle; line-height:1; flex-shrink:0; }
-  .save-btn:hover { opacity:0.7; transform:scale(1.15); }
-  .save-btn.saved { opacity:1; }
-  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
-  .login-bar input { font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }
-  .login-bar button { font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }
-  .login-bar button:hover { background:#333; }
-  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,26,26,0.45); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
+  .save-btn { background:transparent; border:1px solid #ede5d5; width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px; color:#3d6b4f; padding:0; border-radius:99px; transition:transform 0.12s ease, background 0.12s, color 0.12s; vertical-align:middle; line-height:1; flex-shrink:0; }
+  .save-btn:hover { background:#d4e6da; transform:scale(1.08); }
+  .save-btn.saved { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
+  .login-bar { position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'DM Sans',-apple-system,sans-serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(250,247,240,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }
+  .login-bar input { font-family:inherit; font-size:12px; padding:6px 10px; border:1px solid #ede5d5; background:#faf7f0; border-radius:4px; }
+  .login-bar input:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
+  .login-bar button { font-family:inherit; font-size:11px; padding:6px 14px; background:#3d6b4f; color:#f5f0e8; border:none; cursor:pointer; letter-spacing:0.14em; text-transform:uppercase; border-radius:99px; font-weight:500; transition:background 0.2s; }
+  .login-bar button:hover { background:#1c1710; }
+  .stash-overlay { position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,22,40,0.55); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }
   .stash-overlay.open { display:flex; }
-  .stash-panel { background:#fffdf7; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'Times New Roman',Times,Georgia,serif; box-shadow:0 8px 40px rgba(0,0,0,0.18); position:relative; border:1px solid #e0ddd5; }
-  .stash-header { padding:28px 32px 20px; border-bottom:3px double #1a1a1a; position:sticky; top:0; background:#fffdf7; z-index:1; }
-  .stash-header h2 { font-size:10px; text-transform:uppercase; letter-spacing:3px; font-weight:700; color:#1a1a1a; margin:0; }
-  .stash-header .stash-count { font-size:12px; color:#999; font-style:italic; margin-top:4px; }
-  .stash-close { position:absolute; top:20px; right:24px; font-size:24px; cursor:pointer; background:none; border:none; color:#aaa; transition:color 0.15s; line-height:1; }
-  .stash-close:hover { color:#1a1a1a; }
-  .stash-body { padding:0 32px; }
+  .stash-panel { background:#f5f0e8; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'DM Sans',-apple-system,sans-serif; box-shadow:0 24px 60px rgba(26,22,40,0.32); position:relative; border:1px solid #ede5d5; border-radius:6px; }
+  .stash-header { padding:24px 24px 18px; border-bottom:1px solid #ede5d5; position:sticky; top:0; background:#f5f0e8; z-index:1; display:flex; justify-content:space-between; align-items:center; }
+  .stash-header h2 { font-size:22px; font-weight:600; color:#1c1710; margin:0; }
+  .stash-header .stash-count { font-size:12px; color:#8a7a60; margin-top:4px; font-weight:400; }
+  .stash-close { font-size:16px; cursor:pointer; background:transparent; border:1px solid #ede5d5; color:#4a3f30; width:30px; height:30px; border-radius:99px; display:flex; align-items:center; justify-content:center; transition:background 0.15s; }
+  .stash-close:hover { background:#3d6b4f; color:#f5f0e8; }
+  .stash-body { padding:0 24px; }
   .stash-date-group { margin-top:0; }
-  .stash-date-label { font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; padding:18px 0 8px; border-bottom:1px solid #e8e5de; display:flex; align-items:center; gap:8px; }
-  .stash-date-label::before { content:''; flex:1; height:1px; background:linear-gradient(to right, transparent, #e0ddd5); }
-  .stash-date-label::after { content:''; flex:1; height:1px; background:linear-gradient(to left, transparent, #e0ddd5); }
-  .stash-item { padding:14px 0; border-bottom:1px solid #f0ede6; display:flex; align-items:flex-start; gap:12px; transition:background 0.15s; }
+  .stash-date-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#3d6b4f; padding:18px 0 8px; border-bottom:1px solid #ede5d5; }
+  .stash-item { padding:14px 0; border-bottom:1px solid #ede5d5; display:flex; align-items:flex-start; gap:12px; }
   .stash-item:last-child { border-bottom:none; }
-  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#1a1a1a; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
+  .stash-item input[type=checkbox] { margin-top:4px; accent-color:#3d6b4f; flex-shrink:0; width:16px; height:16px; cursor:pointer; }
   .stash-item-content { flex:1; min-width:0; }
-  .stash-item-text { font-size:14px; color:#333; line-height:1.65; cursor:pointer; }
-  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#aaa; letter-spacing:0.3px; }
-  .stash-item-source { font-style:italic; color:#888; max-width:250px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-  .stash-item-section { text-transform:uppercase; letter-spacing:1px; font-weight:600; font-size:9px; padding:1px 6px; border:1px solid; border-radius:1px; }
-  .stash-item-section.news { color:#c0392b; border-color:#c0392b; }
-  .stash-item-section.youtube { color:#8e44ad; border-color:#8e44ad; }
-  .stash-item-section.ai_security { color:#27ae60; border-color:#27ae60; }
-  .stash-item-section.other { color:#888; border-color:#ccc; }
-  .stash-delete { background:none; border:none; color:#ccc; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
-  .stash-delete:hover { color:#c0392b; }
-  .stash-footer { padding:20px 32px 28px; border-top:1px solid #e8e5de; position:sticky; bottom:0; background:#fffdf7; z-index:1; }
-  .stash-prompt-label { font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; display:block; margin-bottom:8px; }
-  .stash-prompt { width:100%; font-family:'Times New Roman',Times,Georgia,serif; font-size:13.5px; padding:10px 12px; border:1px solid #e0ddd5; background:#faf8f2; resize:vertical; line-height:1.5; color:#333; }
-  .stash-prompt:focus { outline:none; border-color:#1a1a1a; }
+  .stash-item-text { font-size:14px; color:#1c1710; line-height:1.65; font-weight:400; }
+  .stash-item-meta { display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#8a7a60; letter-spacing:0.1em; text-transform:uppercase; }
+  .stash-item-section { text-transform:uppercase; letter-spacing:0.12em; font-weight:500; font-size:9.5px; padding:2px 8px; border:1px solid #ede5d5; border-radius:99px; color:#3d6b4f; }
+  .stash-item-section.news { color:#8b4a3c; border-color:#8b4a3c; }
+  .stash-item-section.youtube { color:#1a1628; border-color:#1a1628; }
+  .stash-item-section.ai_security { color:#3d6b4f; border-color:#3d6b4f; }
+  .stash-item-section.other { color:#8a7a60; border-color:#ede5d5; }
+  .stash-delete { background:none; border:none; color:#ede5d5; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }
+  .stash-delete:hover { color:#8b4a3c; }
+  .stash-footer { padding:20px 24px 24px; border-top:1px solid #ede5d5; position:sticky; bottom:0; background:#f5f0e8; z-index:1; }
+  .stash-prompt-label { font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#8a7a60; display:block; margin-bottom:8px; }
+  .stash-prompt { width:100%; font-family:'DM Sans',-apple-system,sans-serif; font-size:14px; padding:11px 13px; border:1px solid #ede5d5; background:#faf7f0; resize:vertical; line-height:1.5; color:#1c1710; border-radius:4px; }
+  .stash-prompt:focus { outline:2px solid #3d6b4f; outline-offset:-2px; }
   .stash-actions { margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-  .stash-actions button { font-family:'Times New Roman',Times,serif; font-size:11px; padding:8px 18px; cursor:pointer; border:none; letter-spacing:1.5px; text-transform:uppercase; transition:background 0.2s, color 0.2s; }
-  .stash-actions .primary { background:#1a1a1a; color:#fffdf7; }
-  .stash-actions .primary:hover { background:#333; }
-  .stash-actions .primary:disabled { background:#bbb; cursor:wait; }
-  .stash-actions .secondary { background:transparent; color:#888; border:1px solid #d0cdc5; }
-  .stash-actions .secondary:hover { color:#1a1a1a; border-color:#1a1a1a; }
+  .stash-actions button { font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; padding:9px 16px; cursor:pointer; border:none; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; border-radius:99px; transition:background 0.2s, color 0.2s; }
+  .stash-actions .primary { background:#3d6b4f; color:#f5f0e8; }
+  .stash-actions .primary:hover { background:#1c1710; }
+  .stash-actions .primary:disabled { background:#ede5d5; color:#8a7a60; cursor:wait; }
+  .stash-actions .secondary { background:transparent; color:#4a3f30; border:1px solid #ede5d5; }
+  .stash-actions .secondary:hover { background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }
   .stash-actions .divider { flex:1; }
-  .script-output { margin-top:16px; padding:20px; background:#f5f0e8; font-size:14.5px; line-height:1.75; color:#333; white-space:pre-wrap; border-left:3px solid #1a1a1a; }
-  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:7px 18px; background:#1a1a1a; color:#fffdf7; border:none; font-family:'Times New Roman',serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; transition:background 0.2s; }
-  .copy-script-btn:hover { background:#333; }
-  .stash-empty { font-size:15px; color:#999; font-style:italic; padding:40px 32px; text-align:center; line-height:1.6; }
-  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(255,253,247,0.3); border-top-color:#fffdf7; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
+  .script-output { margin-top:16px; padding:18px; background:#faf7f0; border:1px solid #ede5d5; font-size:15px; line-height:1.85; color:#4a3f30; white-space:pre-wrap; border-radius:4px; max-height:320px; overflow-y:auto; font-weight:300; }
+  .copy-script-btn { display:inline-block; margin-bottom:10px; padding:9px 16px; background:#3d6b4f; color:#f5f0e8; border:none; font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; cursor:pointer; border-radius:99px; transition:background 0.2s; }
+  .copy-script-btn:hover { background:#1c1710; }
+  .stash-empty { font-size:15px; color:#8a7a60; padding:40px 24px; text-align:center; line-height:1.6; font-weight:300; }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid rgba(245,240,232,0.3); border-top-color:#f5f0e8; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }
   @keyframes spin { to { transform:rotate(360deg); } }
 </style>
 <script>
 (function() {
   var STORAGE_KEY = 'newsletter_user';
   var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
-  var sectionMap = {'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'};
   var currentUser = null;
   var savedKeys = new Set();
   var allSaved = [];
@@ -362,10 +388,8 @@
   function detectSection(el) {
     var node = el;
     while (node && node !== document.body) {
-      var style = node.getAttribute('style') || '';
-      for (var color in sectionMap) {
-        if (style.indexOf(color) !== -1) return sectionMap[color];
-      }
+      var ds = node.dataset && node.dataset.section;
+      if (ds) return ds;
       node = node.parentElement;
     }
     return 'other';
@@ -397,13 +421,13 @@
     var bar = document.createElement('div');
     bar.className = 'login-bar';
     if (currentUser) {
-      bar.innerHTML = '<span>' + currentUser + '</span>'
+      bar.innerHTML = '<span style="font-weight:500;color:#1c1710;">' + currentUser + '</span>'
         + '<button onclick="window._openStash()">My Stash</button>'
-        + '<button onclick="window._logout()">Logout</button>';
+        + '<button onclick="window._logout()">Sign Out</button>';
     } else {
       bar.innerHTML = '<input id="lb-user" placeholder="username">'
         + '<input id="lb-pass" type="password" placeholder="password">'
-        + '<button onclick="window._login()">Login</button>'
+        + '<button onclick="window._login()">Sign In</button>'
         + '<button onclick="window._register()">Register</button>';
     }
     document.body.appendChild(bar);
@@ -511,42 +535,44 @@
 
   // --- Add bookmark icon next to each source title ---
   function addSaveButtons() {
-    // Find all card containers (each article/video/paper has a title link inside a padded div)
-    var cards = document.querySelectorAll('.email-wrap div[style*="padding: 16px 0"]');
-    cards.forEach(function(card) {
-      var titleEl = card.querySelector('a[href]');
-      if (!titleEl) return;
-      var title = titleEl.textContent.trim();
-      var link = titleEl.getAttribute('href') || '';
-      var section = detectSection(card);
+    // Find items inside data-section containers (news, youtube, ai_security)
+    var sections = document.querySelectorAll('[data-section]');
+    sections.forEach(function(sec) {
+      // Match padded items and card items
+      var items = sec.querySelectorAll('div[style*="padding: 16px 0"], div[style*="padding: 14px 0"], div[style*="padding: 20px 22px"]');
+      items.forEach(function(card) {
+        var titleEl = card.querySelector('a[href]');
+        if (!titleEl) return;
+        var title = titleEl.textContent.trim();
+        var link = titleEl.getAttribute('href') || '';
+        var section = detectSection(card);
 
-      // Get summary text for storage
-      var summaryEl = card.querySelector('div[style*="font-size: 14.5px"]');
-      var summary = summaryEl ? summaryEl.textContent.trim() : '';
-      if (summary.length > 400) summary = summary.substring(0, 400) + '...';
+        // Get summary text for storage
+        var summaryEl = card.querySelector('div[style*="font-size: 14.5px"], div[style*="font-size: 15px"]');
+        var summary = summaryEl ? summaryEl.textContent.trim() : '';
+        if (summary.length > 400) summary = summary.substring(0, 400) + '...';
 
-      // Use link as the unique key (most reliable), fallback to title
-      var sourceKey = link || title;
-      var isSaved = savedKeys.has(sourceKey);
+        var sourceKey = link || title;
+        var isSaved = savedKeys.has(sourceKey);
 
-      // Wrap title in a flex container with the bookmark button
-      var wrapper = document.createElement('span');
-      wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
-      titleEl.parentNode.insertBefore(wrapper, titleEl);
-      titleEl.style.flex = '1';
-      wrapper.appendChild(titleEl);
+        var wrapper = document.createElement('span');
+        wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+        titleEl.parentNode.insertBefore(wrapper, titleEl);
+        titleEl.style.flex = '1';
+        wrapper.appendChild(titleEl);
 
-      var btn = document.createElement('button');
-      btn.className = 'save-btn' + (isSaved ? ' saved' : '');
-      btn.dataset.sourceKey = sourceKey;
-      btn.innerHTML = isSaved ? '&#9733;' : '&#9734;';
-      btn.title = isSaved ? 'Saved' : 'Save to stash';
-      btn.addEventListener('click', function(e) {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleSave(btn, sourceKey, title, link, summary, section);
+        var btn = document.createElement('button');
+        btn.className = 'save-btn' + (isSaved ? ' saved' : '');
+        btn.dataset.sourceKey = sourceKey;
+        btn.innerHTML = isSaved ? '★' : '☆';
+        btn.title = isSaved ? 'Saved' : 'Save to stash';
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          toggleSave(btn, sourceKey, title, link, summary, section);
+        });
+        wrapper.appendChild(btn);
       });
-      wrapper.appendChild(btn);
     });
   }
 
@@ -577,13 +603,14 @@
     panel.className = 'stash-panel';
 
     var html = '<div class="stash-header">'
+      + '<h2>My Stash</h2>'
       + '<button class="stash-close" onclick="document.getElementById(\x27stash-overlay\x27).remove()">&times;</button>'
-      + '<h2>My Stash</h2>';
+      + '</div>';
 
     if (allSaved.length === 0) {
-      html += '</div><div class="stash-empty">Nothing here yet.<br>Save sources as you read &mdash; they\x27ll appear here.</div>';
+      html += '<div class="stash-empty">Nothing saved yet. Tap the star next to any article, video, or paper.</div>';
     } else {
-      html += '<div class="stash-count">' + allSaved.length + ' saved source' + (allSaved.length === 1 ? '' : 's') + '</div></div>';
+      html += '';
 
       // Group by newsletter_date, sorted newest first
       var groups = {};
@@ -607,8 +634,8 @@
           html += '<div class="stash-item" data-item-id="' + item.id + '">'
             + '<input type="checkbox" value="' + item.id + '" data-title="' + escapedTitle + '" data-summary="' + summaryPreview.replace(/"/g, '&quot;') + '">'
             + '<div class="stash-item-content">'
-            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1a1a1a;text-decoration:none;border-bottom:1px solid #ddd;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
-            + (summaryPreview ? '<div style="font-size:12.5px;color:#888;line-height:1.5;margin-top:4px;">' + summaryPreview + '</div>' : '')
+            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1c1710;text-decoration:none;border-bottom:1px solid #ede5d5;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
+            + (summaryPreview ? '<div style="font-size:12.5px;color:#8a7a60;line-height:1.5;margin-top:4px;font-weight:300;">' + summaryPreview + '</div>' : '')
             + '<div class="stash-item-meta">'
             + '<span class="stash-item-section ' + (item.section || 'other') + '">' + sectionLabel(item.section) + '</span>'
             + '</div>'
@@ -625,14 +652,14 @@
         + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
         + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>';
       if (!hasKey) {
-        html += '<div style="margin-top:12px;padding:12px;background:#f5f0e8;border-left:3px solid #e67e22;">'
-          + '<label class="stash-prompt-label" style="color:#e67e22;">Gemini API Key (saved locally, never uploaded)</label>'
+        html += '<div style="margin-top:12px;padding:12px;background:#faf7f0;border:1px solid #ede5d5;border-radius:4px;">'
+          + '<label class="stash-prompt-label" style="color:#8b4a3c;">Gemini API Key (saved locally, never uploaded)</label>'
           + '<div style="display:flex;gap:6px;">'
           + '<input id="gemini-key-input" type="password" class="stash-prompt" style="flex:1;padding:6px 10px;" placeholder="Paste your Gemini API key">'
           + '<button class="primary" style="font-size:11px;padding:6px 14px;" onclick="window._saveGeminiKey()">Save</button>'
           + '</div></div>';
       } else {
-        html += '<div style="margin-top:8px;font-size:11px;color:#999;font-style:italic;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#888;">Change key</a></div>';
+        html += '<div style="margin-top:8px;font-size:11px;color:#8a7a60;font-weight:400;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\x27' + GEMINI_KEY_STORAGE + '\x27);window._openStash();return false;" style="color:#3d6b4f;">Change key</a></div>';
       }
       html += '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
@@ -750,7 +777,7 @@
       resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
         + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
     } catch(e) {
-      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+      resultDiv.innerHTML = '<div class="script-output" style="color:#8b4a3c;">Error: ' + e.message + '</div>';
     }
 
     btn.disabled = false;
