@@ -213,9 +213,20 @@ def _get_sorted_posts():
     return dates
 
 
+def _strip_email_wrapper(html: str) -> str:
+    """Strip outer document tags from email HTML for safe embedding in a post page."""
+    import re
+    html = re.sub(r'<!DOCTYPE[^>]*>', '', html, flags=re.IGNORECASE)
+    html = re.sub(r'</?html[^>]*>', '', html, flags=re.IGNORECASE)
+    html = re.sub(r'<head>.*?</head>', '', html, flags=re.IGNORECASE | re.DOTALL)
+    html = re.sub(r'</?body[^>]*>', '', html, flags=re.IGNORECASE)
+    return html.strip()
+
+
 def _post_page(data: dict, date_str: str, email_html: str) -> str:
     """Self-contained HTML page for a single newsletter post."""
     display_date = data.get("date", date_str)
+    email_html = _strip_email_wrapper(email_html)
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,7 +240,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   .site-nav {{ background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }}
   .site-nav a {{ color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }}
   .site-nav a:hover {{ color: #fff; }}
-  .email-wrap {{ max-width: 680px; margin: 28px auto; background: #fffdf7; overflow: hidden; box-shadow: 0 1px 8px rgba(0,0,0,0.06); }}
+  .email-wrap {{ max-width: 680px; margin: 28px auto; background: #fffdf7; box-shadow: 0 1px 8px rgba(0,0,0,0.06); overflow-x: hidden; }}
 </style>
 </head>
 <body>

@@ -23,7 +23,8 @@
     </div>
     <div style="text-align: center; font-size: 15px; color: #333; font-style: italic; margin-bottom: 14px;">{{ weather.conditions }} &mdash; High {{ weather.high }}&deg; / Low {{ weather.low }}&deg;{% if weather.feels_like is defined %} <span style="font-size: 13px; color: #888;">(Feels like {{ weather.feels_like }}&deg;)</span>{% endif %}</div>
     {% if weather.hourly %}
-    <table style="width: 100%; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+    <table style="width: 100%; min-width: 480px; border-collapse: collapse; font-size: 12.5px; color: #333; font-family: 'Times New Roman', Times, Georgia, serif;">
       <tr style="border-bottom: 2px solid #1a1a1a;">
         <th style="text-align: left; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F552; Time</th>
         <th style="text-align: center; padding: 8px 6px; font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 1px;">&#x1F321;&#xFE0F; Temp</th>
@@ -43,6 +44,7 @@
       </tr>
       {% endfor %}
     </table>
+    </div>
     {% endif %}
   </div>
 
