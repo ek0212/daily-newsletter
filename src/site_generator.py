@@ -101,7 +101,7 @@ def generate_feed():
             continue
 
         data = json.loads(json_path.read_text())
-        title = f"Daily Briefing - {data.get('date', date_str)}"
+        title = f"The Midtown Briefing - {data.get('date', date_str)}"
         link = f"{SITE_URL}/posts/{date_str}.html"
 
         # Build a summary from the data
@@ -160,9 +160,9 @@ def generate_feed():
     feed_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Daily Briefing Newsletter</title>
+    <title>The Midtown Briefing</title>
     <link>{SITE_URL}</link>
-    <description>A daily curated newsletter with weather, news, YouTube, and AI security.</description>
+    <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
     <lastBuildDate>{build_date}</lastBuildDate>
     <atom:link href="{SITE_URL}/feed.xml" rel="self" type="application/rss+xml" />
@@ -232,83 +232,92 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing &mdash; {display_date}</title>
+<title>The Midtown Briefing &mdash; {display_date}</title>
 <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{ font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; }}
-  .site-nav {{ background: #1a1a1a; padding: 12px 24px; text-align: center; border-bottom: 1px solid #333; }}
-  .site-nav a {{ color: rgba(255,255,255,0.7); text-decoration: none; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }}
-  .site-nav a:hover {{ color: #fff; }}
-  .email-wrap {{ max-width: 680px; margin: 28px auto; background: #fffdf7; box-shadow: 0 1px 8px rgba(0,0,0,0.06); overflow-x: hidden; }}
+  body {{ font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased; }}
+  a {{ color: #3d6b4f; text-decoration: none; }}
+  a:hover {{ color: #8b4a3c; }}
+  .shell-nav {{ position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }}
+  .shell-nav .brand {{ font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }}
+  .shell-nav .actions {{ display: flex; gap: 10px; align-items: center; }}
+  .shell-nav .actions a, .shell-nav .actions button {{ background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-family: inherit; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; color: #4a3f30; border-radius: 99px; text-decoration: none; }}
+  .shell-nav .actions a:hover, .shell-nav .actions button:hover {{ background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }}
+  .email-wrap {{ max-width: 700px; margin: 0 auto 60px; background: #faf7f0; overflow-x: hidden; }}
+  @media (max-width: 760px) {{ .shell-nav {{ padding: 12px 16px; }} .shell-nav .brand {{ font-size: 16px; }} .shell-nav .actions {{ gap: 6px; }} .shell-nav .actions a, .shell-nav .actions button {{ padding: 5px 10px; font-size: 10px; }} }}
 </style>
 </head>
 <body>
-<div class="site-nav">
-  <a href="../index.html">&larr; Back to Daily Briefing</a>
-</div>
+<nav class="shell-nav">
+  <a class="brand" href="../index.html">The Midtown Briefing</a>
+  <div class="actions">
+    <a href="../index.html">Archive</a>
+    <button onclick="window._openStash()">My Stash</button>
+  </div>
+</nav>
 <div class="email-wrap">
 {email_html}
 </div>
 <style>
-  .save-btn {{ background:none; border:none; cursor:pointer; font-size:18px; padding:0; opacity:0.25; transition:opacity 0.15s, transform 0.15s; vertical-align:middle; line-height:1; flex-shrink:0; }}
-  .save-btn:hover {{ opacity:0.7; transform:scale(1.15); }}
-  .save-btn.saved {{ opacity:1; }}
-  .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'Times New Roman',serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(255,253,247,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }}
-  .login-bar input {{ font-family:inherit; font-size:12px; padding:5px 10px; border:1px solid #d0cdc5; background:#faf8f2; }}
-  .login-bar button {{ font-family:inherit; font-size:11px; padding:5px 14px; background:#1a1a1a; color:#fffdf7; border:none; cursor:pointer; letter-spacing:0.5px; text-transform:uppercase; transition:background 0.2s; }}
-  .login-bar button:hover {{ background:#333; }}
-  .stash-overlay {{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,26,26,0.45); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }}
+  .save-btn {{ background:transparent; border:1px solid #ede5d5; width:28px; height:28px; display:inline-flex; align-items:center; justify-content:center; cursor:pointer; font-size:14px; color:#3d6b4f; padding:0; border-radius:99px; transition:transform 0.12s ease, background 0.12s, color 0.12s; vertical-align:middle; line-height:1; flex-shrink:0; }}
+  .save-btn:hover {{ background:#d4e6da; transform:scale(1.08); }}
+  .save-btn.saved {{ background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }}
+  .login-bar {{ position:fixed; top:0; right:0; z-index:10000; padding:10px 16px; font-family:'DM Sans',-apple-system,sans-serif; font-size:13px; display:flex; gap:8px; align-items:center; background:rgba(250,247,240,0.97); border-bottom-left-radius:6px; box-shadow:0 2px 12px rgba(0,0,0,0.08); backdrop-filter:blur(8px); }}
+  .login-bar input {{ font-family:inherit; font-size:12px; padding:6px 10px; border:1px solid #ede5d5; background:#faf7f0; border-radius:4px; }}
+  .login-bar input:focus {{ outline:2px solid #3d6b4f; outline-offset:-2px; }}
+  .login-bar button {{ font-family:inherit; font-size:11px; padding:6px 14px; background:#3d6b4f; color:#f5f0e8; border:none; cursor:pointer; letter-spacing:0.14em; text-transform:uppercase; border-radius:99px; font-weight:500; transition:background 0.2s; }}
+  .login-bar button:hover {{ background:#1c1710; }}
+  .stash-overlay {{ position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(26,22,40,0.55); backdrop-filter:blur(3px); z-index:9999; display:none; justify-content:center; align-items:flex-start; padding-top:5vh; }}
   .stash-overlay.open {{ display:flex; }}
-  .stash-panel {{ background:#fffdf7; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'Times New Roman',Times,Georgia,serif; box-shadow:0 8px 40px rgba(0,0,0,0.18); position:relative; border:1px solid #e0ddd5; }}
-  .stash-header {{ padding:28px 32px 20px; border-bottom:3px double #1a1a1a; position:sticky; top:0; background:#fffdf7; z-index:1; }}
-  .stash-header h2 {{ font-size:10px; text-transform:uppercase; letter-spacing:3px; font-weight:700; color:#1a1a1a; margin:0; }}
-  .stash-header .stash-count {{ font-size:12px; color:#999; font-style:italic; margin-top:4px; }}
-  .stash-close {{ position:absolute; top:20px; right:24px; font-size:24px; cursor:pointer; background:none; border:none; color:#aaa; transition:color 0.15s; line-height:1; }}
-  .stash-close:hover {{ color:#1a1a1a; }}
-  .stash-body {{ padding:0 32px; }}
+  .stash-panel {{ background:#f5f0e8; width:92%; max-width:580px; max-height:88vh; overflow-y:auto; font-family:'DM Sans',-apple-system,sans-serif; box-shadow:0 24px 60px rgba(26,22,40,0.32); position:relative; border:1px solid #ede5d5; border-radius:6px; }}
+  .stash-header {{ padding:24px 24px 18px; border-bottom:1px solid #ede5d5; position:sticky; top:0; background:#f5f0e8; z-index:1; display:flex; justify-content:space-between; align-items:center; }}
+  .stash-header h2 {{ font-size:22px; font-weight:600; color:#1c1710; margin:0; }}
+  .stash-header .stash-count {{ font-size:12px; color:#8a7a60; margin-top:4px; font-weight:400; }}
+  .stash-close {{ font-size:16px; cursor:pointer; background:transparent; border:1px solid #ede5d5; color:#4a3f30; width:30px; height:30px; border-radius:99px; display:flex; align-items:center; justify-content:center; transition:background 0.15s; }}
+  .stash-close:hover {{ background:#3d6b4f; color:#f5f0e8; }}
+  .stash-body {{ padding:0 24px; }}
   .stash-date-group {{ margin-top:0; }}
-  .stash-date-label {{ font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; padding:18px 0 8px; border-bottom:1px solid #e8e5de; display:flex; align-items:center; gap:8px; }}
-  .stash-date-label::before {{ content:''; flex:1; height:1px; background:linear-gradient(to right, transparent, #e0ddd5); }}
-  .stash-date-label::after {{ content:''; flex:1; height:1px; background:linear-gradient(to left, transparent, #e0ddd5); }}
-  .stash-item {{ padding:14px 0; border-bottom:1px solid #f0ede6; display:flex; align-items:flex-start; gap:12px; transition:background 0.15s; }}
+  .stash-date-label {{ font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#3d6b4f; padding:18px 0 8px; border-bottom:1px solid #ede5d5; }}
+  .stash-item {{ padding:14px 0; border-bottom:1px solid #ede5d5; display:flex; align-items:flex-start; gap:12px; }}
   .stash-item:last-child {{ border-bottom:none; }}
-  .stash-item input[type=checkbox] {{ margin-top:4px; accent-color:#1a1a1a; flex-shrink:0; width:16px; height:16px; cursor:pointer; }}
+  .stash-item input[type=checkbox] {{ margin-top:4px; accent-color:#3d6b4f; flex-shrink:0; width:16px; height:16px; cursor:pointer; }}
   .stash-item-content {{ flex:1; min-width:0; }}
-  .stash-item-text {{ font-size:14px; color:#333; line-height:1.65; cursor:pointer; }}
-  .stash-item-meta {{ display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#aaa; letter-spacing:0.3px; }}
-  .stash-item-source {{ font-style:italic; color:#888; max-width:250px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }}
-  .stash-item-section {{ text-transform:uppercase; letter-spacing:1px; font-weight:600; font-size:9px; padding:1px 6px; border:1px solid; border-radius:1px; }}
-  .stash-item-section.news {{ color:#c0392b; border-color:#c0392b; }}
-  .stash-item-section.youtube {{ color:#8e44ad; border-color:#8e44ad; }}
-  .stash-item-section.ai_security {{ color:#27ae60; border-color:#27ae60; }}
-  .stash-item-section.other {{ color:#888; border-color:#ccc; }}
-  .stash-delete {{ background:none; border:none; color:#ccc; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }}
-  .stash-delete:hover {{ color:#c0392b; }}
-  .stash-footer {{ padding:20px 32px 28px; border-top:1px solid #e8e5de; position:sticky; bottom:0; background:#fffdf7; z-index:1; }}
-  .stash-prompt-label {{ font-size:10px; text-transform:uppercase; letter-spacing:2px; font-weight:700; color:#999; display:block; margin-bottom:8px; }}
-  .stash-prompt {{ width:100%; font-family:'Times New Roman',Times,Georgia,serif; font-size:13.5px; padding:10px 12px; border:1px solid #e0ddd5; background:#faf8f2; resize:vertical; line-height:1.5; color:#333; }}
-  .stash-prompt:focus {{ outline:none; border-color:#1a1a1a; }}
+  .stash-item-text {{ font-size:14px; color:#1c1710; line-height:1.65; font-weight:400; }}
+  .stash-item-meta {{ display:flex; align-items:center; gap:6px; margin-top:5px; font-size:10.5px; color:#8a7a60; letter-spacing:0.1em; text-transform:uppercase; }}
+  .stash-item-section {{ text-transform:uppercase; letter-spacing:0.12em; font-weight:500; font-size:9.5px; padding:2px 8px; border:1px solid #ede5d5; border-radius:99px; color:#3d6b4f; }}
+  .stash-item-section.news {{ color:#8b4a3c; border-color:#8b4a3c; }}
+  .stash-item-section.youtube {{ color:#1a1628; border-color:#1a1628; }}
+  .stash-item-section.ai_security {{ color:#3d6b4f; border-color:#3d6b4f; }}
+  .stash-item-section.other {{ color:#8a7a60; border-color:#ede5d5; }}
+  .stash-delete {{ background:none; border:none; color:#ede5d5; font-size:16px; cursor:pointer; padding:2px 4px; flex-shrink:0; transition:color 0.15s; line-height:1; margin-top:2px; }}
+  .stash-delete:hover {{ color:#8b4a3c; }}
+  .stash-footer {{ padding:20px 24px 24px; border-top:1px solid #ede5d5; position:sticky; bottom:0; background:#f5f0e8; z-index:1; }}
+  .stash-prompt-label {{ font-size:10.5px; text-transform:uppercase; letter-spacing:0.16em; font-weight:500; color:#8a7a60; display:block; margin-bottom:8px; }}
+  .stash-prompt {{ width:100%; font-family:'DM Sans',-apple-system,sans-serif; font-size:14px; padding:11px 13px; border:1px solid #ede5d5; background:#faf7f0; resize:vertical; line-height:1.5; color:#1c1710; border-radius:4px; }}
+  .stash-prompt:focus {{ outline:2px solid #3d6b4f; outline-offset:-2px; }}
   .stash-actions {{ margin-top:14px; display:flex; gap:8px; flex-wrap:wrap; align-items:center; }}
-  .stash-actions button {{ font-family:'Times New Roman',Times,serif; font-size:11px; padding:8px 18px; cursor:pointer; border:none; letter-spacing:1.5px; text-transform:uppercase; transition:background 0.2s, color 0.2s; }}
-  .stash-actions .primary {{ background:#1a1a1a; color:#fffdf7; }}
-  .stash-actions .primary:hover {{ background:#333; }}
-  .stash-actions .primary:disabled {{ background:#bbb; cursor:wait; }}
-  .stash-actions .secondary {{ background:transparent; color:#888; border:1px solid #d0cdc5; }}
-  .stash-actions .secondary:hover {{ color:#1a1a1a; border-color:#1a1a1a; }}
+  .stash-actions button {{ font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; padding:9px 16px; cursor:pointer; border:none; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; border-radius:99px; transition:background 0.2s, color 0.2s; }}
+  .stash-actions .primary {{ background:#3d6b4f; color:#f5f0e8; }}
+  .stash-actions .primary:hover {{ background:#1c1710; }}
+  .stash-actions .primary:disabled {{ background:#ede5d5; color:#8a7a60; cursor:wait; }}
+  .stash-actions .secondary {{ background:transparent; color:#4a3f30; border:1px solid #ede5d5; }}
+  .stash-actions .secondary:hover {{ background:#3d6b4f; color:#f5f0e8; border-color:#3d6b4f; }}
   .stash-actions .divider {{ flex:1; }}
-  .script-output {{ margin-top:16px; padding:20px; background:#f5f0e8; font-size:14.5px; line-height:1.75; color:#333; white-space:pre-wrap; border-left:3px solid #1a1a1a; }}
-  .copy-script-btn {{ display:inline-block; margin-bottom:10px; padding:7px 18px; background:#1a1a1a; color:#fffdf7; border:none; font-family:'Times New Roman',serif; font-size:11px; letter-spacing:1.5px; text-transform:uppercase; cursor:pointer; transition:background 0.2s; }}
-  .copy-script-btn:hover {{ background:#333; }}
-  .stash-empty {{ font-size:15px; color:#999; font-style:italic; padding:40px 32px; text-align:center; line-height:1.6; }}
-  .spinner {{ display:inline-block; width:14px; height:14px; border:2px solid rgba(255,253,247,0.3); border-top-color:#fffdf7; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }}
+  .script-output {{ margin-top:16px; padding:18px; background:#faf7f0; border:1px solid #ede5d5; font-size:15px; line-height:1.85; color:#4a3f30; white-space:pre-wrap; border-radius:4px; max-height:320px; overflow-y:auto; font-weight:300; }}
+  .copy-script-btn {{ display:inline-block; margin-bottom:10px; padding:9px 16px; background:#3d6b4f; color:#f5f0e8; border:none; font-family:'DM Sans',-apple-system,sans-serif; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; font-weight:500; cursor:pointer; border-radius:99px; transition:background 0.2s; }}
+  .copy-script-btn:hover {{ background:#1c1710; }}
+  .stash-empty {{ font-size:15px; color:#8a7a60; padding:40px 24px; text-align:center; line-height:1.6; font-weight:300; }}
+  .spinner {{ display:inline-block; width:14px; height:14px; border:2px solid rgba(245,240,232,0.3); border-top-color:#f5f0e8; border-radius:50%; animation:spin 0.6s linear infinite; vertical-align:middle; margin-left:8px; }}
   @keyframes spin {{ to {{ transform:rotate(360deg); }} }}
 </style>
 <script>
 (function() {{
   var STORAGE_KEY = 'newsletter_user';
   var GEMINI_KEY_STORAGE = 'newsletter_gemini_key';
-  var sectionMap = {{'c0392b': 'news', '8e44ad': 'youtube', '27ae60': 'ai_security'}};
   var currentUser = null;
   var savedKeys = new Set();
   var allSaved = [];
@@ -335,10 +344,8 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
   function detectSection(el) {{
     var node = el;
     while (node && node !== document.body) {{
-      var style = node.getAttribute('style') || '';
-      for (var color in sectionMap) {{
-        if (style.indexOf(color) !== -1) return sectionMap[color];
-      }}
+      var ds = node.dataset && node.dataset.section;
+      if (ds) return ds;
       node = node.parentElement;
     }}
     return 'other';
@@ -370,13 +377,13 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     var bar = document.createElement('div');
     bar.className = 'login-bar';
     if (currentUser) {{
-      bar.innerHTML = '<span>' + currentUser + '</span>'
+      bar.innerHTML = '<span style="font-weight:500;color:#1c1710;">' + currentUser + '</span>'
         + '<button onclick="window._openStash()">My Stash</button>'
-        + '<button onclick="window._logout()">Logout</button>';
+        + '<button onclick="window._logout()">Sign Out</button>';
     }} else {{
       bar.innerHTML = '<input id="lb-user" placeholder="username">'
         + '<input id="lb-pass" type="password" placeholder="password">'
-        + '<button onclick="window._login()">Login</button>'
+        + '<button onclick="window._login()">Sign In</button>'
         + '<button onclick="window._register()">Register</button>';
     }}
     document.body.appendChild(bar);
@@ -484,42 +491,44 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
 
   // --- Add bookmark icon next to each source title ---
   function addSaveButtons() {{
-    // Find all card containers (each article/video/paper has a title link inside a padded div)
-    var cards = document.querySelectorAll('.email-wrap div[style*="padding: 16px 0"]');
-    cards.forEach(function(card) {{
-      var titleEl = card.querySelector('a[href]');
-      if (!titleEl) return;
-      var title = titleEl.textContent.trim();
-      var link = titleEl.getAttribute('href') || '';
-      var section = detectSection(card);
+    // Find items inside data-section containers (news, youtube, ai_security)
+    var sections = document.querySelectorAll('[data-section]');
+    sections.forEach(function(sec) {{
+      // Match padded items and card items
+      var items = sec.querySelectorAll('div[style*="padding: 16px 0"], div[style*="padding: 14px 0"], div[style*="padding: 20px 22px"]');
+      items.forEach(function(card) {{
+        var titleEl = card.querySelector('a[href]');
+        if (!titleEl) return;
+        var title = titleEl.textContent.trim();
+        var link = titleEl.getAttribute('href') || '';
+        var section = detectSection(card);
 
-      // Get summary text for storage
-      var summaryEl = card.querySelector('div[style*="font-size: 14.5px"]');
-      var summary = summaryEl ? summaryEl.textContent.trim() : '';
-      if (summary.length > 400) summary = summary.substring(0, 400) + '...';
+        // Get summary text for storage
+        var summaryEl = card.querySelector('div[style*="font-size: 14.5px"], div[style*="font-size: 15px"]');
+        var summary = summaryEl ? summaryEl.textContent.trim() : '';
+        if (summary.length > 400) summary = summary.substring(0, 400) + '...';
 
-      // Use link as the unique key (most reliable), fallback to title
-      var sourceKey = link || title;
-      var isSaved = savedKeys.has(sourceKey);
+        var sourceKey = link || title;
+        var isSaved = savedKeys.has(sourceKey);
 
-      // Wrap title in a flex container with the bookmark button
-      var wrapper = document.createElement('span');
-      wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
-      titleEl.parentNode.insertBefore(wrapper, titleEl);
-      titleEl.style.flex = '1';
-      wrapper.appendChild(titleEl);
+        var wrapper = document.createElement('span');
+        wrapper.style.cssText = 'display:flex;align-items:flex-start;gap:8px;';
+        titleEl.parentNode.insertBefore(wrapper, titleEl);
+        titleEl.style.flex = '1';
+        wrapper.appendChild(titleEl);
 
-      var btn = document.createElement('button');
-      btn.className = 'save-btn' + (isSaved ? ' saved' : '');
-      btn.dataset.sourceKey = sourceKey;
-      btn.innerHTML = isSaved ? '&#9733;' : '&#9734;';
-      btn.title = isSaved ? 'Saved' : 'Save to stash';
-      btn.addEventListener('click', function(e) {{
-        e.preventDefault();
-        e.stopPropagation();
-        toggleSave(btn, sourceKey, title, link, summary, section);
+        var btn = document.createElement('button');
+        btn.className = 'save-btn' + (isSaved ? ' saved' : '');
+        btn.dataset.sourceKey = sourceKey;
+        btn.innerHTML = isSaved ? '\u2605' : '\u2606';
+        btn.title = isSaved ? 'Saved' : 'Save to stash';
+        btn.addEventListener('click', function(e) {{
+          e.preventDefault();
+          e.stopPropagation();
+          toggleSave(btn, sourceKey, title, link, summary, section);
+        }});
+        wrapper.appendChild(btn);
       }});
-      wrapper.appendChild(btn);
     }});
   }}
 
@@ -550,13 +559,14 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
     panel.className = 'stash-panel';
 
     var html = '<div class="stash-header">'
+      + '<h2>My Stash</h2>'
       + '<button class="stash-close" onclick="document.getElementById(\\x27stash-overlay\\x27).remove()">&times;</button>'
-      + '<h2>My Stash</h2>';
+      + '</div>';
 
     if (allSaved.length === 0) {{
-      html += '</div><div class="stash-empty">Nothing here yet.<br>Save sources as you read &mdash; they\\x27ll appear here.</div>';
+      html += '<div class="stash-empty">Nothing saved yet. Tap the star next to any article, video, or paper.</div>';
     }} else {{
-      html += '<div class="stash-count">' + allSaved.length + ' saved source' + (allSaved.length === 1 ? '' : 's') + '</div></div>';
+      html += '';
 
       // Group by newsletter_date, sorted newest first
       var groups = {{}};
@@ -580,8 +590,8 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
           html += '<div class="stash-item" data-item-id="' + item.id + '">'
             + '<input type="checkbox" value="' + item.id + '" data-title="' + escapedTitle + '" data-summary="' + summaryPreview.replace(/"/g, '&quot;') + '">'
             + '<div class="stash-item-content">'
-            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1a1a1a;text-decoration:none;border-bottom:1px solid #ddd;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
-            + (summaryPreview ? '<div style="font-size:12.5px;color:#888;line-height:1.5;margin-top:4px;">' + summaryPreview + '</div>' : '')
+            + '<div class="stash-item-text">' + (linkUrl ? '<a href="' + linkUrl + '" target="_blank" style="color:#1c1710;text-decoration:none;border-bottom:1px solid #ede5d5;">' + titleDisplay + '</a>' : titleDisplay) + '</div>'
+            + (summaryPreview ? '<div style="font-size:12.5px;color:#8a7a60;line-height:1.5;margin-top:4px;font-weight:300;">' + summaryPreview + '</div>' : '')
             + '<div class="stash-item-meta">'
             + '<span class="stash-item-section ' + (item.section || 'other') + '">' + sectionLabel(item.section) + '</span>'
             + '</div>'
@@ -598,14 +608,14 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
         + '<label class="stash-prompt-label">Custom prompt (optional)</label>'
         + '<textarea id="custom-prompt" class="stash-prompt" rows="2" placeholder="e.g. Make it conversational, focus on practical takeaways, explain it simply..."></textarea>';
       if (!hasKey) {{
-        html += '<div style="margin-top:12px;padding:12px;background:#f5f0e8;border-left:3px solid #e67e22;">'
-          + '<label class="stash-prompt-label" style="color:#e67e22;">Gemini API Key (saved locally, never uploaded)</label>'
+        html += '<div style="margin-top:12px;padding:12px;background:#faf7f0;border:1px solid #ede5d5;border-radius:4px;">'
+          + '<label class="stash-prompt-label" style="color:#8b4a3c;">Gemini API Key (saved locally, never uploaded)</label>'
           + '<div style="display:flex;gap:6px;">'
           + '<input id="gemini-key-input" type="password" class="stash-prompt" style="flex:1;padding:6px 10px;" placeholder="Paste your Gemini API key">'
           + '<button class="primary" style="font-size:11px;padding:6px 14px;" onclick="window._saveGeminiKey()">Save</button>'
           + '</div></div>';
       }} else {{
-        html += '<div style="margin-top:8px;font-size:11px;color:#999;font-style:italic;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\\x27' + GEMINI_KEY_STORAGE + '\\x27);window._openStash();return false;" style="color:#888;">Change key</a></div>';
+        html += '<div style="margin-top:8px;font-size:11px;color:#8a7a60;font-weight:400;">API key saved &middot; <a href="#" onclick="localStorage.removeItem(\\x27' + GEMINI_KEY_STORAGE + '\\x27);window._openStash();return false;" style="color:#3d6b4f;">Change key</a></div>';
       }}
       html += '<div class="stash-actions">'
         + '<button class="secondary" onclick="window._stashSelectAll()">Select All</button>'
@@ -723,7 +733,7 @@ def _post_page(data: dict, date_str: str, email_html: str) -> str:
       resultDiv.innerHTML = '<button class="copy-script-btn" onclick="window._copyScript(this)">Copy Script</button>'
         + '<div class="script-output" id="script-text">' + script.replace(/</g, '&lt;').replace(/>/g, '&gt;') + '</div>';
     }} catch(e) {{
-      resultDiv.innerHTML = '<div class="script-output" style="color:#c0392b;">Error: ' + e.message + '</div>';
+      resultDiv.innerHTML = '<div class="script-output" style="color:#8b4a3c;">Error: ' + e.message + '</div>';
     }}
 
     btn.disabled = false;
@@ -766,21 +776,29 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
                 display = jd.get("date", d)
             except Exception:
                 pass
-        archive_items += f'<li><a href="posts/{d}.html">{display}</a></li>\n'
+        archive_items += f"""<div class="archive-row">
+        <span class="date">{display}</span>
+        <a class="go" href="posts/{d}.html">Read</a>
+      </div>\n"""
 
     if not archive_items:
-        archive_items = '<li class="no-items">No newsletters yet.</li>'
+        archive_items = '<div class="no-items">No newsletters yet.</div>'
 
     # Latest newsletter summary
     latest_section = ""
     if latest_data and latest_date:
         display_date = latest_data.get("date", latest_date)
         latest_section = f"""
-    <div class="latest">
-      <h2>Latest Issue</h2>
-      <div class="date-label">{display_date}</div>
-      <a href="posts/{latest_date}.html" class="read-btn">Read Latest Newsletter &rarr;</a>
-    </div>"""
+    <section class="hero-latest">
+      <div>
+        <div class="label">Latest Issue</div>
+        <div class="hero-date">{display_date}</div>
+      </div>
+      <div>
+        <p class="hero-desc">Weather, news, YouTube, and AI security, curated daily.</p>
+        <a href="posts/{latest_date}.html" class="btn btn-primary">Read the Issue</a>
+      </div>
+    </section>"""
 
     # Build learnings section if available
     learnings_section = ""
@@ -793,11 +811,15 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
             l_date = learnings.get("generated_at", "")[:10]
             if l_content:
                 learnings_section = f"""
-    <div class="learnings" style="background: #fffdf7; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; border-left: 4px solid #e67e22;">
-      <h2 style="font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 14px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px;">Learnings from Your Stash</h2>
-      <div style="font-size: 15px; color: #444; line-height: 1.8; font-family: 'Times New Roman', Times, Georgia, serif;">{l_content}</div>
-      <div style="font-size: 11px; color: #999; margin-top: 12px; font-style: italic;">Based on {l_count} saved sources &middot; Generated {l_date}</div>
-    </div>"""
+    <section class="learnings">
+      <div class="section-head">
+        <span class="rule"></span>
+        <h2>Learnings</h2>
+        <span class="rule"></span>
+      </div>
+      <div class="learnings-body">{l_content}</div>
+      <div class="learnings-meta">Based on {l_count} saved sources &middot; Generated {l_date}</div>
+    </section>"""
         except Exception:
             pass
 
@@ -806,52 +828,76 @@ def _index_page(posts: list, latest_data: dict | None, latest_date: str | None) 
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Daily Briefing</title>
+<title>The Midtown Briefing</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="alternate" type="application/rss+xml" title="Daily Briefing RSS" href="feed.xml">
+<link rel="alternate" type="application/rss+xml" title="The Midtown Briefing RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
   * {{ margin: 0; padding: 0; box-sizing: border-box; }}
-  body {{ font-family: 'Times New Roman', Times, Georgia, serif; background: #f5f0e8; color: #1a1a1a; min-height: 100vh; }}
-  .header {{ background: #fffdf7; color: #1a1a1a; padding: 56px 24px 40px; text-align: center; border-bottom: 3px double #1a1a1a; }}
-  .header .kicker {{ font-size: 11px; text-transform: uppercase; letter-spacing: 3px; color: #888; margin-bottom: 10px; }}
-  .header h1 {{ font-size: 44px; font-weight: 700; letter-spacing: -1px; margin-bottom: 8px; font-family: 'Times New Roman', Times, Georgia, serif; line-height: 1.1; }}
-  .header p {{ font-size: 15px; font-style: italic; color: #666; max-width: 400px; margin: 0 auto; line-height: 1.5; }}
-  .rss-btn {{ display: inline-block; margin-top: 24px; padding: 10px 28px; background: #1a1a1a; color: #fffdf7; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; transition: background 0.2s; }}
-  .rss-btn:hover {{ background: #333; }}
-  .content {{ max-width: 640px; margin: 0 auto; padding: 36px 20px; }}
-  .latest {{ background: #fffdf7; padding: 28px; margin-bottom: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; }}
-  .latest h2 {{ font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 14px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px; }}
-  .latest .date-label {{ font-size: 22px; font-weight: 600; color: #1a1a1a; margin-bottom: 16px; font-style: italic; }}
-  .read-btn {{ display: inline-block; padding: 10px 22px; background: #1a1a1a; color: #fffdf7; text-decoration: none; font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; font-family: 'Times New Roman', Times, serif; }}
-  .read-btn:hover {{ background: #333; }}
-  .archive {{ background: #fffdf7; padding: 28px; box-shadow: 0 1px 6px rgba(0,0,0,0.05); border: 1px solid #e0ddd5; }}
-  .archive h2 {{ font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 2.5px; color: #1a1a1a; margin-bottom: 18px; border-bottom: 2px solid #1a1a1a; display: inline-block; padding-bottom: 3px; }}
-  .archive ul {{ list-style: none; }}
-  .archive li {{ padding: 10px 0; border-bottom: 1px solid #e0ddd5; }}
-  .archive li:last-child {{ border-bottom: none; }}
-  .archive a {{ color: #1a1a1a; text-decoration: none; font-size: 16px; }}
-  .archive a:hover {{ color: #555; border-bottom: 1px solid #1a1a1a; }}
-  .no-items {{ color: #888; font-style: italic; font-size: 14px; }}
-  .footer {{ text-align: center; padding: 36px 20px; font-size: 11px; color: #aaa; letter-spacing: 1px; text-transform: uppercase; }}
+  html, body {{ font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; min-height: 100vh; }}
+  a {{ color: #3d6b4f; text-decoration: none; }}
+  a:hover {{ color: #8b4a3c; }}
+  .shell-nav {{ position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }}
+  .shell-nav .brand {{ font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }}
+  .shell-nav .actions {{ display: flex; gap: 12px; align-items: center; }}
+  .shell-nav .actions a {{ background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4a3f30; border-radius: 99px; }}
+  .shell-nav .actions a:hover {{ background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }}
+  .paper {{ max-width: 900px; margin: 0 auto; padding: 32px 48px 80px; }}
+  @media (max-width: 760px) {{ .paper {{ padding: 16px 22px 60px; }} html, body {{ font-size: 15px; }} .shell-nav {{ padding: 12px 16px; }} .shell-nav .brand {{ font-size: 16px; }} }}
+  .mast {{ border-top: 1px solid #ede5d5; border-bottom: 1px solid #ede5d5; padding: 36px 0 32px; margin-bottom: 32px; text-align: center; }}
+  .mast-title {{ font-weight: 700; font-size: clamp(40px, 7vw, 72px); line-height: 1.0; letter-spacing: -0.015em; margin: 4px 0 12px; color: #1c1710; }}
+  .mast-title em {{ font-style: normal; color: #3d6b4f; }}
+  .mast-meta {{ font-weight: 500; text-transform: uppercase; font-size: 11px; letter-spacing: 0.16em; color: #8a7a60; margin-top: 14px; }}
+  .hero-latest {{ border-top: 1px solid #ede5d5; border-bottom: 1px solid #ede5d5; padding: 32px 0; margin: 24px 0 36px; display: grid; grid-template-columns: 1fr 2fr; gap: 36px; align-items: center; }}
+  @media (max-width: 760px) {{ .hero-latest {{ grid-template-columns: 1fr; gap: 16px; }} }}
+  .hero-latest .label {{ font-weight: 500; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #3d6b4f; }}
+  .hero-date {{ font-weight: 600; font-size: 28px; line-height: 1.2; margin-top: 8px; color: #1c1710; }}
+  .hero-desc {{ font-size: 16.5px; color: #4a3f30; line-height: 1.75; margin: 0 0 16px; font-weight: 300; }}
+  .btn {{ font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; background: transparent; border: 1px solid #ede5d5; padding: 9px 16px; cursor: pointer; color: #4a3f30; border-radius: 99px; display: inline-block; }}
+  .btn:hover {{ background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }}
+  .btn-primary {{ background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }}
+  .btn-primary:hover {{ background: #1c1710; border-color: #1c1710; }}
+  .section-head {{ display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; margin-bottom: 24px; text-align: center; }}
+  .section-head .rule {{ height: 1px; background: #ede5d5; }}
+  .section-head h2 {{ font-weight: 700; font-size: 32px; margin: 0; letter-spacing: -0.015em; color: #1c1710; white-space: nowrap; }}
+  .archive-row {{ display: grid; grid-template-columns: 1fr auto; gap: 22px; padding: 16px 0; border-bottom: 1px solid #ede5d5; align-items: center; }}
+  .archive-row .date {{ font-weight: 400; font-size: 16px; color: #4a3f30; }}
+  .archive-row a.go {{ font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid #ede5d5; padding: 7px 14px; border-radius: 99px; color: #4a3f30; }}
+  .archive-row a.go:hover {{ background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }}
+  .no-items {{ color: #8a7a60; font-size: 14px; font-weight: 300; padding: 20px 0; }}
+  .learnings {{ margin-top: 56px; }}
+  .learnings-body {{ font-size: 15px; color: #4a3f30; line-height: 1.85; font-weight: 300; }}
+  .learnings-meta {{ font-size: 11px; color: #8a7a60; margin-top: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; }}
+  .footer {{ margin-top: 64px; border-top: 1px solid #ede5d5; padding: 24px 0; text-align: center; font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }}
 </style>
 </head>
 <body>
-<div class="header">
-  <div class="kicker">Est. 2025 &middot; Automated Daily Intelligence</div>
-  <h1>Daily Briefing</h1>
-  <p>Weather, news, YouTube &amp; AI security &mdash; delivered daily.</p>
-  <a href="feed.xml" class="rss-btn">Subscribe via RSS</a>
-</div>
-<div class="content">
+<nav class="shell-nav">
+  <span class="brand">The Midtown Briefing</span>
+  <div class="actions">
+    <a href="feed.xml">RSS</a>
+  </div>
+</nav>
+<main class="paper">
+  <header class="mast">
+    <h1 class="mast-title">The Midtown <em>Briefing</em></h1>
+    <div class="mast-meta">Est. 2025 &middot; Daily Intelligence</div>
+  </header>
   {latest_section}
   {learnings_section}
-  <div class="archive">
-    <h2>Archive</h2>
-    <ul>
+  <section>
+    <div class="section-head">
+      <span class="rule"></span>
+      <h2>Back Issues</h2>
+      <span class="rule"></span>
+    </div>
+    <div class="archive">
       {archive_items}
-    </ul>
-  </div>
-</div>
-<div class="footer">Daily Briefing Newsletter</div>
+    </div>
+  </section>
+  <footer class="footer">The Midtown Briefing</footer>
+</main>
 </body>
 </html>"""
