@@ -16,6 +16,23 @@
     <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
   </div>
 
+  <!-- Weather icon macro -->
+  {% macro weather_icon(conditions) -%}
+    {%- set c = conditions|lower -%}
+    {%- if 'thunder' in c or 'tstorm' in c -%}&#x26C8;&#xFE0F;
+    {%- elif 'snow' in c or 'blizzard' in c -%}&#x1F328;&#xFE0F;
+    {%- elif 'sleet' in c or 'ice' in c or 'freezing' in c -%}&#x1F9CA;
+    {%- elif 'rain' in c or 'shower' in c or 'drizzle' in c -%}&#x1F327;&#xFE0F;
+    {%- elif 'fog' in c or 'mist' in c or 'haze' in c or 'smoke' in c -%}&#x1F32B;&#xFE0F;
+    {%- elif 'cloudy' in c or 'overcast' in c -%}&#x2601;&#xFE0F;
+    {%- elif 'partly' in c or 'mostly sunny' in c or 'mostly clear' in c -%}&#x26C5;
+    {%- elif 'sunny' in c or 'clear' in c -%}&#x2600;&#xFE0F;
+    {%- elif 'wind' in c -%}&#x1F32C;&#xFE0F;
+    {%- elif 'hot' in c -%}&#x1F525;
+    {%- else -%}&#x1F324;&#xFE0F;
+    {%- endif -%}
+  {%- endmacro %}
+
   <!-- Weather -->
   <div style="padding: 32px 32px 24px 32px;">
     <!-- Section Header -->
@@ -25,30 +42,30 @@
       <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Midtown East, Manhattan</div>
       <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">{{ weather.current_temp|default(weather.high) }}<span style="color: #8b4a3c;">&deg;</span></div>
       {% if weather.feels_like is defined %}<div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like {{ weather.feels_like }}&deg;</div>{% endif %}
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">{{ weather.conditions }}</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">{{ weather_icon(weather.conditions) }} {{ weather.conditions }}</div>
       <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">{{ weather.high }}&deg; / {{ weather.low }}&deg;</span></div>
     </div>
     {% if weather.hourly %}
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
     <table style="width: 100%; min-width: 540px; border-collapse: collapse; font-size: 13px; color: #4a3f30; font-weight: 300;">
       <tr>
-        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Hour</th>
-        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Temp</th>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F552; Hour</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F321;&#xFE0F; Temp</th>
         <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Feels</th>
         <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Conditions</th>
-        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Precip</th>
-        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Humidity</th>
-        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Wind</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Precip</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F4A7; Humidity</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F32C;&#xFE0F; Wind</th>
       </tr>
       {% for h in weather.hourly %}
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">{{ h.label }}</td>
         <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">{{ h.temp }}&deg;</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;{% if h.feels_like != h.temp %} color: #8b4a3c; font-weight: 500;{% endif %}">{{ h.feels_like }}&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">{{ h.conditions }}</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">{{ weather_icon(h.conditions) }} {{ h.conditions }}</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">{{ h.precip_chance }}</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">{{ h.humidity }}</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">{{ h.wind }}</td>
