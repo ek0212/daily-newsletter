@@ -42,7 +42,7 @@
       <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Midtown East, Manhattan</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">{{ weather.location|default('53rd Street, NYC') }}</div>
       <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">{{ weather.current_temp|default(weather.high) }}<span style="color: #8b4a3c;">&deg;</span></div>
       {% if weather.feels_like is defined %}<div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like {{ weather.feels_like }}&deg;</div>{% endif %}
       <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">{{ weather_icon(weather.conditions) }} {{ weather.conditions }}</div>

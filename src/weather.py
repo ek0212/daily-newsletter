@@ -1,17 +1,19 @@
 """Fetch NYC weather from the free NWS API (no API key needed)."""
 
 import logging
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 import requests
 
 from src.constants import (
-    EST_OFFSET_HOURS,
     HEAT_INDEX_HUMIDITY_THRESHOLD,
     HEAT_INDEX_TEMP_THRESHOLD,
     HTTP_TIMEOUT_DEFAULT,
     NWS_FORECAST_URL,
     NWS_HOURLY_URL,
+    NWS_LOCATION_LABEL,
+    NWS_POINT_URL,
     TARGET_HOURS,
     USER_AGENT,
     WIND_CHILL_TEMP_THRESHOLD,
@@ -24,8 +26,25 @@ NWS_HEADERS = {"User-Agent": f"{USER_AGENT} (daily-newsletter)"}
 FORECAST_URL = NWS_FORECAST_URL
 HOURLY_URL = NWS_HOURLY_URL
 
-# EST timezone
-EST = timezone(timedelta(hours=EST_OFFSET_HOURS))
+# NYC local time, including daylight saving time.
+NYC_TZ = ZoneInfo("America/New_York")
+
+
+def _fetch_json(url: str) -> dict:
+    response = requests.get(url, headers=NWS_HEADERS, timeout=HTTP_TIMEOUT_DEFAULT)
+    response.raise_for_status()
+    return response.json()
+
+
+def _forecast_urls() -> tuple[str, str]:
+    """Resolve NWS forecast URLs from the configured 53rd Street point."""
+    try:
+        point = _fetch_json(NWS_POINT_URL)
+        properties = point["properties"]
+        return properties["forecast"], properties["forecastHourly"]
+    except Exception as e:
+        logger.warning("NWS point lookup failed for %s: %s; using fallback grid URLs", NWS_LOCATION_LABEL, e)
+        return FORECAST_URL, HOURLY_URL
 
 
 def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
@@ -60,19 +79,19 @@ def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
 
 
 def _parse_hourly_periods(periods: list) -> list[dict]:
-    """Extract weather data for TARGET_HOURS (EST) from NWS hourly periods."""
-    now_est = datetime.now(EST)
-    target_date = now_est.date()
+    """Extract weather data for TARGET_HOURS in NYC local time from NWS hourly periods."""
+    now_local = datetime.now(NYC_TZ)
+    target_date = now_local.date()
 
     # If all target hours have passed today, use tomorrow
-    if now_est.hour > max(TARGET_HOURS):
+    if now_local.hour > max(TARGET_HOURS):
         target_date = target_date + timedelta(days=1)
 
     hourly_data = []
     matched = set()
 
     for p in periods:
-        start = datetime.fromisoformat(p["startTime"]).astimezone(EST)
+        start = datetime.fromisoformat(p["startTime"]).astimezone(NYC_TZ)
         if start.date() != target_date or start.hour not in TARGET_HOURS or start.hour in matched:
             continue
         matched.add(start.hour)
@@ -104,13 +123,15 @@ def _parse_hourly_periods(periods: list) -> list[dict]:
 def get_nyc_weather() -> dict:
     """Return current NYC weather with high/low, forecast, and hourly breakdown."""
     try:
-        logger.debug("Fetching hourly forecast from %s", HOURLY_URL)
-        hourly = requests.get(HOURLY_URL, headers=NWS_HEADERS, timeout=HTTP_TIMEOUT_DEFAULT).json()
+        forecast_url, hourly_url = _forecast_urls()
+
+        logger.debug("Fetching hourly forecast for %s from %s", NWS_LOCATION_LABEL, hourly_url)
+        hourly = _fetch_json(hourly_url)
         hourly_periods = hourly["properties"]["periods"]
         current = hourly_periods[0]
 
-        logger.debug("Fetching daily forecast from %s", FORECAST_URL)
-        daily = requests.get(FORECAST_URL, headers=NWS_HEADERS, timeout=HTTP_TIMEOUT_DEFAULT).json()
+        logger.debug("Fetching daily forecast for %s from %s", NWS_LOCATION_LABEL, forecast_url)
+        daily = _fetch_json(forecast_url)
         periods = daily["properties"]["periods"]
 
         today = periods[0]
@@ -131,11 +152,15 @@ def get_nyc_weather() -> dict:
         current_humidity = current.get("relativeHumidity", {}).get("value")
         current_feels_like = _calc_feels_like(current["temperature"], current_wind, current_humidity)
 
-        logger.info("NYC weather fetched: %s°%s (feels %s°), %s, H:%s/L:%s, %d hourly slots",
+        logger.info("%s weather fetched: %s°%s (feels %s°), %s, H:%s/L:%s, %d hourly slots",
+                    NWS_LOCATION_LABEL,
                     current["temperature"], current["temperatureUnit"],
                     current_feels_like,
                     current["shortForecast"], high, low, len(hourly_breakdown))
         return {
+            "location": NWS_LOCATION_LABEL,
+            "source": "National Weather Service",
+            "source_url": forecast_url,
             "current_temp": current["temperature"],
             "unit": current["temperatureUnit"],
             "conditions": current["shortForecast"],
@@ -147,4 +172,4 @@ def get_nyc_weather() -> dict:
         }
     except Exception as e:
         logger.error("Weather API failed: %s", e, exc_info=True)
-        return {"error": str(e), "current_temp": "N/A", "conditions": "Unavailable", "high": "N/A", "low": "N/A", "forecast": "Weather data unavailable.", "hourly": []}
+        return {"error": str(e), "location": NWS_LOCATION_LABEL, "current_temp": "N/A", "conditions": "Unavailable", "high": "N/A", "low": "N/A", "forecast": "Weather data unavailable.", "hourly": []}

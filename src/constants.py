@@ -68,6 +68,10 @@ USER_AGENT = "DailyNewsletter/1.0"
 ARXIV_API_URL = "http://export.arxiv.org/api/query"
 SEMANTIC_SCHOLAR_API_URL = "https://api.semanticscholar.org/graph/v1"
 HF_DAILY_PAPERS_API_URL = "https://huggingface.co/api/daily_papers"
+NWS_LOCATION_LABEL = "53rd Street, NYC"
+NWS_POINT_LATITUDE = 40.7608
+NWS_POINT_LONGITUDE = -73.9772
+NWS_POINT_URL = f"https://api.weather.gov/points/{NWS_POINT_LATITUDE},{NWS_POINT_LONGITUDE}"
 NWS_FORECAST_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast"
 NWS_HOURLY_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast/hourly"
 NYC_EVENTS_API_URL = "https://data.cityofnewyork.us/resource/tvpp-9vvx.json"
@@ -75,7 +79,6 @@ NYC_HEALTH_BASE_URL = "https://raw.githubusercontent.com/nychealth/respiratory-i
 GOOGLE_NEWS_SEARCH_URL = "https://news.google.com/rss/search"
 
 # ── Weather ──────────────────────────────────────────────────────────────
-EST_OFFSET_HOURS = -5
 TARGET_HOURS = [7, 9, 15, 17, 19]
 WIND_CHILL_TEMP_THRESHOLD = 50   # °F
 WIND_CHILL_WIND_THRESHOLD = 3    # mph
