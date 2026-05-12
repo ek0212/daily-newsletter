@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 May 2026 04:38:19 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 May 2026 13:08:08 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Tuesday, May 12, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-05-12.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-05-12.html</guid>
-      <description>Weather: 55°F - Chance Rain Showers | Illness level: LOW | 5 major events this week | 4 top news stories | 6 AI security updates</description>
+      <description>Weather: 54°F - Sunny | Illness level: LOW | 5 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +43,10 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">53rd Street, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">55<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 55&deg;</div>
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x1F327;&#xFE0F; Chance Rain Showers</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">68&deg; / 47&deg;</span></div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">54<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 54&deg;</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2600;&#xFE0F; Sunny</div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">68&deg; / 51&deg;</span></div>
     </div>
     
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
@@ -62,39 +62,29 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">49&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">46&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">54%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph N</td>
-      </tr>
-      
-      <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
         <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">54&deg;</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">54&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">43%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">45%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph N</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">65&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">65&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">66&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">66&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">27%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph NW</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">26%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">7 mph W</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">66&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">66&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">67&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">67&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">26%</td>
@@ -103,12 +93,12 @@
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">63&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">63&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">64&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">64&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Mostly Clear</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">32%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph SW</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">31%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph S</td>
       </tr>
       
     </table>
@@ -235,34 +225,42 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 00:04:00 GMT · <span style="color: #3d6b4f;">The Guardian</span></div>
-      <a href="https://news.google.com/rss/articles/CBMi1AFBVV95cUxNc1B2MDBrc0laTGp2YjBMd2VMUnFianFfenI4bDNPSWI3TjFkYURTUzdzVVdaZzNDbk5tcUlRTElqejdhSmJDUC1JM2hZaTd2R1lqSVRFWXNwR0dTS2dWNWRUeHhiOTVtZ2pqMHZ2cFhuaG9OVDF4WnI2MWE1QXZiNkpuYjR4VVBlM0Y0ZGs2ZDlEUlk1ZlJLaW1SSVBlSTNWbk0xaFBPSGRuMG9SY0s2M2ZwQmhIOTdvXzhSUFRLTVppN3lEQnRzWXU0LXBjck45SmppSQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Ukraine war briefing: EU sanctions officials for child abductions; Kyiv under drone attack as ceasefire expires</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 10:00:00 GMT · <span style="color: #3d6b4f;">Fox Business</span></div>
+      <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxOaFg1bkp6TXh4SWdMU21qUS1Gd2pkazZNaXVFRHN0WWVXQU9vRlZ5Y3hFOER4eUV1QV82SjM0UWpWWUdJeEpvTnpOMGxpSktqd3pPdWUtT1lUei1Pa3dwazBvQ1dsOHVwSHM0VEZ6Y2l2emp0ZzlRU0pjWkZ3V2RXY0NlcExwcGw0NDBuSThTVTJZNE9jRkx4am05THdEXzduLVFxa3d30gGrAUFVX3lxTFBuZ2w1eWU4NTV5cjhxNzQ3elJsRWdSSm44cTdQZ18ybFBMaUdpMzF3UWc3cnJWX1lMcFVlQVk5U1hudFNnb0VxMkZXOHNxbDl5My1EZTk3WVRMeHJBRTByYV9WUnBZcEIxMmtUM19hak0wMV95ZHJMa2o4bjNZRUo1amRhWXB1NUF5WHRoMzl6RTFVRzlaZ3JkWFRwY1lEVDh4UEtMR2Zlcnl5OA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump readies for Beijing summit with Xi as AI chip sales, farm goods top agenda</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Kyiv under drone attack after 3-day truce expires. Ceasefire failure may escalate conflict, impacting regional stability.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 01:58:48 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/5/12/syria-restores-credit-card-payments-in-effort-to-rejoin-the-global-economy?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Syria restores credit card payments in effort to rejoin the global economy</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Syria allows Visa and Mastercard, seeking to rejoin the global economy. This move may ease trade with the EU, but US sanctions remain a hurdle.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump meets Xi in Beijing May 14-15 to discuss AI chip sales and farm goods. This summit may ease US-China trade tensions, impacting global markets.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 02:26:15 GMT · <span style="color: #3d6b4f;">The Boston Globe</span></div>
-      <a href="https://news.google.com/rss/articles/CBMikAFBVV95cUxOb2ZvbE5UdU1CYVJhRng3WG80b3VRZ0RBNGZWN3VsbVptNjBwd3lzRnJZYndraUdaNC04bW9PXzh1aFdXQUJOQWdva1JWRUhEUlpCN01xa29sQ3ZCR2VKR1RkYVlRTVZ2Rm5XM09HV0lldWRmR3U0dHZoM0IzcVdKM05HMDB5RjBTOUFRTWxaYmU?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Memorial Drive shooting: Gunman struck two drivers, officials say</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 12:17:08 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/5/12/pakistan-scrambles-to-salvage-us-iran-diplomacy-as-ceasefire-faces-collapse?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Pakistan scrambles to salvage US-Iran diplomacy as ceasefire faces collapse</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A gunman shot 2 drivers on Memorial Drive in Cambridge, firing 50-60 rounds. This incident may lead to increased police presence in the area.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Pakistan denies aiding Iran militarily as US-Iran ceasefire falters. This escalation may lead to renewed conflict, affecting global oil prices and regional stability.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 11:39:32 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/video/counting-the-cost/2026/5/12/can-china-counter-us-sanctions-with-its-trade-power?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Can China counter US sanctions with its trade power?</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">China ordered companies to ignore US sanctions, expanding export controls on rare earths. This escalation may fragment the global economy, forcing businesses to navigate competing demands.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 08:34:20 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/5/12/frances-macron-announces-27bn-investment-in-africa-at-kenya-summit?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">France’s Macron announces $27bn investment in Africa at Kenya summit</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">France's Macron announced <strong>$27b</strong>n in Africa investments at a Kenya summit. This move aims to strengthen ties with former colonies and create 250,000 jobs.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 00:33:02 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
-      <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNOUduYTdJaHRKaUZmWDY4OWtLZVFXamtFUjU3c0hFME13X0JLR2tpUG9KT05QNS1HdVlLVmJXdGdmeTRFU1NxbnJsaE9LMVl5MVd0dlk0LVd1Uk10WG4ycGFCM0hJaF8tSnprWjUxTHFsY2lXNGdGZHNnUXdXTnJOVno2WQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Supreme Court Clears Path for Alabama to Use New Voting Map</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 12:30:47 GMT · <span style="color: #3d6b4f;">CNBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBOOVBMcUpKVi1faTMwY1hxMms4RTVxeW1CQlFMd2J0NmFLMXBzWFBKUWhMSVIwVkRJeHZMM2ZvT1RnZ29aNWhnQjBSM1pFOHMyWkV4akV5Q1Bjel93dm5MRjMwNEVKVDRrOUlPaE82c9IBdEFVX3lxTFB6SU1BVXh4WXBPUkR0T2xUQ21pNUNfSWk4SnJIM0t4NUVvUmY1cWRHXzVvVlVIcW9VVDRwcEd1TGZVdlFSUzNKT0dpVldVUnVaZndCXzJuYkNpeV9fTE9ETUVLWGVFaUVBTlZILXdyY3V0c2sz?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Consumer prices rose 3.8% annually in April, the highest since May 2023</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The Supreme Court allowed Alabama to use a new voting map. This decision may impact voting rights and district boundaries.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Consumer prices rose <strong>3.8%</strong> annually in April, the highest since May 2023. This may lead to higher interest rates, affecting borrowing costs.</div>
       
     </div>
     
@@ -278,7 +276,43 @@
       <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
     </tr></table>
     
-    <div style="font-size: 14px; color: #8a7a60; text-align: center; font-weight: 300;">No new videos today.</div>
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
+      <a href="https://www.morningbrew.com/issues/prime-time-puzzle" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Wordle gets a game show on NBC</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-12</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Andrew Left's fraud trial may set a precedent for activist short sellers, with prosecutors claiming he made <strong>$16</strong> million from dishonest commentary. The verdict could impact free speech protections for stock opinions.</div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">This Week in Startups</div>
+      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Cerebrass-IPO-goes-vertical--and-the-death-of-OpenClaw---E2287-e3j7v8j" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Cerebras's IPO goes vertical, and the death of OpenClaw? | E2287</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-12</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Cerebras raises IPO range to <strong>$150</strong>-<strong>$160</strong>/share. Model orchestration, not bigger LLMs, will decide enterprise AI winners.</div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
+      <a href="https://www.morningbrew.com/issues/prime-time-puzzle" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">PwC’s Chief AI Officer: By 2030, AI will be a full member of your team</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-11</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Andrew Left's fraud trial may set a precedent for activist short sellers, with prosecutors claiming he made <strong>$16</strong> million by manipulating markets. The verdict could impact free speech protections for stock opinions.</div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; ">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Theo - t3.gg</div>
+      <a href="https://youtube.com/watch?v=gILMoijqeGA" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">I wish this was clickbait</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-12</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Theo - t3.gg. Click to watch.</div>
+      
+    </div>
+    
+    
   </div>
 
   <!-- AI Security -->
@@ -291,16 +325,16 @@
     </tr></table>
     
     <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
-      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security.
+      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and guardrail bypasses.
     </div>
     
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 11 May 2026 09:03:57 GMT · <span style="color: #3d6b4f;">csoonline.com</span></div>
-      <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxNd1RnUDVZdHN3NEFKMUladWR2QTh6TzlnQTQtZ0s1Tl9sTzBPN0p4TmlrWlduLXdHRG9aaWZYZ1BGNmRBSHFmMFZEV19NdUJSenM1TUZIZXREdVRuN0ZZSi0wLUttMDItb3hDTFYtWFJMVlVSazdyUS1RYXJfSFhoakFrR3d0b2RHMHE1dTBJeDF3QnNFeU1rX2dXa3o4bndVLVdCWWJxZUVYSWJydzRqRE9nek1wUEs1d1NGZGkwOXl4TXhzWFQxS3J3NUxKTF9SSFl0RXBaT0NEdEdJ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">1,800+ MCP servers exposed without authentication: How zero trust can secure the AI agent revolution</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 07 May 2026 20:22:39 GMT · <span style="color: #3d6b4f;">Microsoft</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxQU3p1SFVidnhmS2lIcGNTbUEwVmxRVlUwOHpsWlZySmhObzE4MlMyN3NWWjh5MzR2cVNvRGlERVhlS1o3ZVg4b1JnYTZXanA4YjZPZ3JwNlR3VFF6Y2VSaU9FTzVXVlNaczlqZWNYUlFFZXQ2SHdYcTZPOVFscEd6Q3diNlQtVnZCRlJnY2JreHRaUTctOVY0Wll0SlZLYy1zallsOVc3NVNNSjFvUGd2aHlfZjV2X1pvRXRJ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">When prompts become shells: RCE vulnerabilities in AI agent frameworks</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Over 1,800 MCP servers are exposed without authentication, according to Knostic's security researchers. This highlights the need for zero-trust security in AI systems.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Microsoft reports RCE vulnerabilities in AI agent frameworks like Semantic Kernel and LangChain. This means attackers can inject malicious prompts to execute arbitrary code.</div>
       
       
     </div>
@@ -310,7 +344,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 08 May 2026 17:06:16 GMT · <span style="color: #3d6b4f;">Towards Data Science</span></div>
       <a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxPNWJmNVNRQUZVakZVV3hYazNRM3gwSURWdmljNFF5V2ZMeEdrT2hPT1dXQUVWZXFGRmRCNU5oZ2lJTzI5ZFRpNmtoSlNmMjIzbDh6Z1JxNHFEV1ZSY1hmcE1wNnJqaGVNcUJHdFJJeEpzSUpaRHJDeVFfNEZPS0toSkpFUHliWmd5eFhLTjZ3VDlKd2hFVGZEVms1RmZCUDZXR2xBTF9qbGpqT1Z1Y1E?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">The AI Agent Security Surface: What Gets Exposed When You Add Tools and Memory</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;"><strong>88%</strong> of organizations reported concerns with AI agent security, citing expanded attack surfaces. This means defenders must consider agents' tool usage and memory storage when assessing risks.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;"><strong>88%</strong> of organizations reported concerns with AI agent security, citing expanded attack surfaces. This changes the threat model for defenders, who must consider tool usage and memory storage.</div>
       
       
     </div>
@@ -318,9 +352,9 @@
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 08 May 2026 12:35:18 GMT · <span style="color: #3d6b4f;">wiz.io</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1DeUJrMlBaQ0hwX0hRV1YyWm1lbmFhUEZDRmlGaEdBcXRDRHcwT2dpZmZWTmNZSjNCQWdrYUlVQkN5czJ5TUIySFcwcWtRZEdjWXBBN3lva192LTVBbHExODA2bm9jNFU?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">7 AI Security Tools to Prepare You for Every Attack Phase</a>
+      <a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1DeUJrMlBaQ0hwX0hRV1YyWm1lbmFhUEZDRmlGaEdBcXRDRHcwT2dpZmZWTmNZSjNCQWdrYUlVQkN5czJ5TUIySFcwcWtRZEdjWXBBN3lva192LTVBbHExODA2bm9jNFU?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Top AI Security Tools for the Cloud: Secure AI Workloads</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Wiz.io highlights the need for comprehensive AI asset visibility and aligned tooling to cover all ML attack phases. This means defenders should match tools to specific risks to proactively mitigate threats.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Wiz's AI-APP protects AI applications end-to-end. This helps defenders identify genuine risks and respond effectively.</div>
       
       
     </div>
@@ -339,9 +373,9 @@
       
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-11</div>
       
-      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Junhao Shen, Teng Zhang, Xiaoyan Zhao et al.</div>
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Zihui Xue, Ami Baid, Sangho Kim et al.</div>
       
-      <a href="https://huggingface.co/papers/2605.10923" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Dynamic Skill Lifecycle Management for Agentic Reinforcement Learning</a>
+      <a href="https://arxiv.org/pdf/2605.10936v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Personal Visual Context Learning in Large Multimodal Models</a>
       <!-- Topic badges -->
       
       
@@ -363,18 +397,18 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">SLIM manages external skills for reinforcement learning agents, dynamically adding or removing skills based on their value. This helps agents solve complex tasks more efficiently by avoiding skill overload.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes Personal Visual Context Learning, which enables large multimodal models to reason over user-specific visual information. This helps prevent personalized data misuse by improving model context understanding.</div>
       
       
     </div>
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-09</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-11</div>
       
-      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Haojie Zhang, Di Wu, Bingyan Liu et al.</div>
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Nikita Kezins, Urbas Ekka, Pascal Berrang et al.</div>
       
-      <a href="https://huggingface.co/papers/2604.23789" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">MuSS: A Large-Scale Dataset and Cinematic Narrative Benchmark for Multi-Shot Subject-to-Video Generation</a>
+      <a href="https://arxiv.org/pdf/2605.10901v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Beyond Red-Teaming: Formal Guarantees of LLM Guardrail Classifiers</a>
       <!-- Topic badges -->
       
       
@@ -393,10 +427,109 @@
         
         <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
         
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">guardrail</span>
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a method to formally verify Guardrail Classifiers for language models. It helps defend against harmful behavior by providing guarantees for classifier soundness.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-11</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Junhao Shen, Teng Zhang, Xiaoyan Zhao et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2605.10923v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Dynamic Skill Lifecycle Management for Agentic Reinforcement Learning</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">MuSS is a dataset for generating multi-shot videos from text. It helps prevent "<strong>copy-paste</strong>" errors in video generation.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">SLIM manages skills for reinforcement learning agents by dynamically adding or removing skills. Practitioners care because SLIM improves agent performance by optimizing skill usage.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-09</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Shawn Li, Chenxiao Yu, Han Wang et al.</div>
+      
+      <a href="https://huggingface.co/papers/2605.09163" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">FORTIS: Benchmarking Over-Privilege in Agent Skills</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
+        
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">FORTIS benchmarks over-privilege in AI agent skills. It reveals models often use excessive privileges, posing a security risk.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-09</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Boxuan Zhang, Jianing Zhu, Zeru Shi et al.</div>
+      
+      <a href="https://huggingface.co/papers/2605.08715" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">AgentForesight: Online Auditing for Early Failure Prediction in Multi-Agent Systems</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">AgentForesight predicts failures in multi-agent systems by auditing each step. It helps stop cascading errors by intervening early.</div>
       
       
     </div>
