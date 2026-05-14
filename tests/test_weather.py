@@ -6,7 +6,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src import weather
-from src.constants import NWS_LOCATION_LABEL, NWS_POINT_URL
+from src.constants import NWS_LOCATION_LABEL, NWS_POINT_URL, NWS_STATIONS_URL
 
 
 class _FakeResponse:
@@ -21,6 +21,7 @@ class _FakeResponse:
 
 
 def test_weather_fetch_uses_53rd_street_point():
+    """Verify weather fetch resolves URLs from the 53rd Street NWS point."""
     forecast_url = "https://api.weather.gov/gridpoints/OKX/34,44/forecast"
     hourly_url = "https://api.weather.gov/gridpoints/OKX/34,44/forecast/hourly"
     calls = []
@@ -29,6 +30,21 @@ def test_weather_fetch_uses_53rd_street_point():
         calls.append(url)
         if url == NWS_POINT_URL:
             return _FakeResponse({"properties": {"forecast": forecast_url, "forecastHourly": hourly_url}})
+        if url == NWS_STATIONS_URL:
+            return _FakeResponse({
+                "features": [{
+                    "properties": {"stationIdentifier": "KNYC"}
+                }]
+            })
+        if "observations/latest" in url:
+            return _FakeResponse({
+                "properties": {
+                    "temperature": {"value": 12.2, "unitCode": "wmoUnit:degC"},
+                    "textDescription": "Partly Cloudy",
+                    "windSpeed": {"value": 4.0, "unitCode": "wmoUnit:m.s-1"},
+                    "relativeHumidity": {"value": 55.0, "unitCode": "wmoUnit:percent"},
+                }
+            })
         if url == hourly_url:
             return _FakeResponse({
                 "properties": {
@@ -74,6 +90,9 @@ def test_weather_fetch_uses_53rd_street_point():
     assert result["location"] == NWS_LOCATION_LABEL == "53rd Street, NYC"
     assert result["source"] == "National Weather Service"
     assert result["source_url"] == forecast_url
+    # Hero should use observation data (12.2°C = 54°F)
+    assert result["current_temp"] == 54
+    assert result["conditions"] == "Partly Cloudy"
 
 
 if __name__ == "__main__":

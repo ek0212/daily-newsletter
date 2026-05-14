@@ -256,8 +256,13 @@ def fetch_all_data() -> dict:
         if not item.get("summary"):
             channel = item.get("channel", "")
             item["summary"] = f"New episode from {channel}. Click to watch." if channel else "New video. Click to watch."
-        if item.get("source_url"):
-            item["link"] = item["source_url"]
+        # Keep YouTube link; store source URL separately for "Read more"
+        # (previously source_url replaced link, losing the YouTube video URL)
+        if item.get("source_url") and item["source_url"] != item.get("link"):
+            item["read_more_url"] = item["source_url"]
+        # Thumbnail URL for visual display
+        if item.get("video_id"):
+            item["thumbnail"] = f"https://img.youtube.com/vi/{item['video_id']}/mqdefault.jpg"
 
     for item in ai_security:
         if not item.get("summary"):

@@ -14,6 +14,7 @@ from src.constants import (
     NWS_HOURLY_URL,
     NWS_LOCATION_LABEL,
     NWS_POINT_URL,
+    NWS_STATIONS_URL,
     TARGET_HOURS,
     USER_AGENT,
     WIND_CHILL_TEMP_THRESHOLD,
@@ -45,6 +46,48 @@ def _forecast_urls() -> tuple[str, str]:
     except Exception as e:
         logger.warning("NWS point lookup failed for %s: %s; using fallback grid URLs", NWS_LOCATION_LABEL, e)
         return FORECAST_URL, HOURLY_URL
+
+
+def _fetch_current_observation() -> dict | None:
+    """Fetch the latest observation from the nearest NWS weather station.
+
+    Returns actual measured conditions (temperature, sky, wind, humidity)
+    rather than forecast data. This matches what apps like Apple Weather show.
+    """
+    try:
+        stations = _fetch_json(NWS_STATIONS_URL)
+        features = stations.get("features", [])
+        if not features:
+            return None
+        station_id = features[0]["properties"]["stationIdentifier"]
+        obs_url = f"https://api.weather.gov/stations/{station_id}/observations/latest"
+        obs = _fetch_json(obs_url)
+        props = obs["properties"]
+
+        temp_c = props.get("temperature", {}).get("value")
+        if temp_c is None:
+            return None
+        temp_f = round(temp_c * 9 / 5 + 32)
+
+        conditions = props.get("textDescription", "")
+
+        wind_ms = props.get("windSpeed", {}).get("value")
+        wind_mph = round(wind_ms * 2.237) if wind_ms is not None else 0
+
+        humidity = props.get("relativeHumidity", {}).get("value")
+        if humidity is not None:
+            humidity = round(humidity)
+
+        logger.info("NWS observation from %s: %d°F, %s", station_id, temp_f, conditions)
+        return {
+            "temp": temp_f,
+            "conditions": conditions,
+            "wind_mph": wind_mph,
+            "humidity": humidity,
+        }
+    except Exception as e:
+        logger.warning("NWS observation fetch failed: %s", e)
+        return None
 
 
 def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
@@ -147,23 +190,34 @@ def get_nyc_weather() -> dict:
 
         hourly_breakdown = _parse_hourly_periods(hourly_periods)
 
-        # Compute current feels-like temperature
-        current_wind = current.get("windSpeed", "")
-        current_humidity = current.get("relativeHumidity", {}).get("value")
-        current_feels_like = _calc_feels_like(current["temperature"], current_wind, current_humidity)
+        # Use real-time observation for the hero (matches Apple Weather better)
+        obs = _fetch_current_observation()
+        if obs:
+            current_temp = obs["temp"]
+            conditions = obs["conditions"]
+            current_feels_like = _calc_feels_like(
+                current_temp, f"{obs['wind_mph']} mph", obs["humidity"],
+            )
+        else:
+            # Fallback to first forecast period if observation unavailable
+            current_temp = current["temperature"]
+            conditions = current["shortForecast"]
+            current_wind = current.get("windSpeed", "")
+            current_humidity = current.get("relativeHumidity", {}).get("value")
+            current_feels_like = _calc_feels_like(current_temp, current_wind, current_humidity)
 
-        logger.info("%s weather fetched: %s°%s (feels %s°), %s, H:%s/L:%s, %d hourly slots",
+        logger.info("%s weather fetched: %s°F (feels %s°), %s, H:%s/L:%s, %d hourly slots",
                     NWS_LOCATION_LABEL,
-                    current["temperature"], current["temperatureUnit"],
+                    current_temp,
                     current_feels_like,
-                    current["shortForecast"], high, low, len(hourly_breakdown))
+                    conditions, high, low, len(hourly_breakdown))
         return {
             "location": NWS_LOCATION_LABEL,
             "source": "National Weather Service",
             "source_url": forecast_url,
-            "current_temp": current["temperature"],
-            "unit": current["temperatureUnit"],
-            "conditions": current["shortForecast"],
+            "current_temp": current_temp,
+            "unit": "F",
+            "conditions": conditions,
             "high": high,
             "low": low,
             "feels_like": current_feels_like,

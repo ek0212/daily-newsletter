@@ -74,6 +74,7 @@ NWS_POINT_LONGITUDE = -73.9772
 NWS_POINT_URL = f"https://api.weather.gov/points/{NWS_POINT_LATITUDE},{NWS_POINT_LONGITUDE}"
 NWS_FORECAST_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast"
 NWS_HOURLY_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast/hourly"
+NWS_STATIONS_URL = f"https://api.weather.gov/points/{NWS_POINT_LATITUDE},{NWS_POINT_LONGITUDE}/stations"
 NYC_EVENTS_API_URL = "https://data.cityofnewyork.us/resource/tvpp-9vvx.json"
 NYC_HEALTH_BASE_URL = "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
 GOOGLE_NEWS_SEARCH_URL = "https://news.google.com/rss/search"

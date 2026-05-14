@@ -163,10 +163,18 @@
     {% for vid in youtube %}
     <div style="padding: 14px 0; {% if not loop.last %}border-bottom: 1px solid #ede5d5;{% endif %}">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">{{ vid.channel }}</div>
+      {% if vid.thumbnail %}
+      <a href="{{ vid.link }}" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="{{ vid.thumbnail }}" alt="{{ vid.title }}" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      </a>
+      {% endif %}
       <a href="{{ vid.link }}" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">{{ vid.title }}</a>
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">{{ vid.published }}</div>
       {% if vid.summary %}
         <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">{{ vid.summary | safe }}</div>
+      {% endif %}
+      {% if vid.read_more_url %}
+        <div style="margin-top: 6px;"><a href="{{ vid.read_more_url }}" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       {% endif %}
     </div>
     {% endfor %}
