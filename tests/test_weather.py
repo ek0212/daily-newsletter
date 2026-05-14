@@ -87,7 +87,7 @@ def test_weather_fetch_uses_53rd_street_point():
         weather.requests.get = original_get
 
     assert calls[0] == NWS_POINT_URL
-    assert result["location"] == NWS_LOCATION_LABEL == "53rd Street, NYC"
+    assert result["location"] == NWS_LOCATION_LABEL == "Manhattan, NYC"
     assert result["source"] == "National Weather Service"
     assert result["source_url"] == forecast_url
     # Hero should use observation data (12.2°C = 54°F)
