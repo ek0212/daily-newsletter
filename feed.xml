@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 May 2026 14:29:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 May 2026 20:21:54 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Monday, May 18, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-05-18.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-05-18.html</guid>
-      <description>Weather: 81°F - Clear | Illness level: LOW | 2 major events this week | 4 top news stories | 1 YouTube videos | 8 AI security updates</description>
+      <description>Weather: 82°F - Clear | Illness level: LOW | 5 major events this week | 4 top news stories | 3 YouTube videos | 8 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,7 +43,7 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">81<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">82<span style="color: #8b4a3c;">&deg;</span></div>
       <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 83&deg;</div>
       <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2600;&#xFE0F; Clear</div>
       <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">89&deg; / 71&deg;</span></div>
@@ -62,42 +62,22 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">78&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">78&deg;</td>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">82&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">83&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">58%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">3 mph E</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">87&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">87&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">3%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">43%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">14 mph S</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">84&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">84&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">2%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">46%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">49%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">14 mph S</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">79&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">79&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">81&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">82&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Mostly Clear</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">2%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">54%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">51%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">12 mph S</td>
       </tr>
       
@@ -151,7 +131,7 @@
       </tr></table>
     </div>
     
-    <div style="padding: 14px 0; ">
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
       <table style="width: 100%; border-collapse: collapse;"><tr>
         <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
           <div style="text-align: center; line-height: 1;">
@@ -162,6 +142,51 @@
         <td style="padding-left: 14px; vertical-align: top;">
           <a href="https://www.google.com/search?q=RELIGIOUS%20PROCESSION%20NYC%20Sun%2C%20May%2024" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">RELIGIOUS PROCESSION</a>
           <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · West 38th St & Broadway</div>
+        </td>
+      </tr></table>
+    </div>
+    
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Wed</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">20</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=40th%20Street%20Festival%20NYC%20Wed%2C%20May%2020" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">40th Street Festival</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 40th St & Park Ave</div>
+        </td>
+      </tr></table>
+    </div>
+    
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Thu</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">21</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=MIDTOWN%20EAST%20COMMUNITY%20FOOD%20FAIR%20NYC%20Thu%2C%20May%2021" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">MIDTOWN EAST COMMUNITY FOOD FAIR</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 45th St & 3rd Ave</div>
+        </td>
+      </tr></table>
+    </div>
+    
+    <div style="padding: 14px 0; ">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">23</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Avenue%20of%20Americas%20Springfest%20NYC%20Sat%2C%20May%2023" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Avenue of Americas Springfest</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · 6th Ave & West 42nd St</div>
         </td>
       </tr></table>
     </div>
@@ -180,34 +205,34 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 13:13:13 GMT · <span style="color: #3d6b4f;">CNBC</span></div>
-      <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBzdlFmTDdqbHRQdWlIRllodks4Ty1XemVDLTFnWHotVjZVMUlJSmd4RGNKVjRuVEJjWkxyYTlDYmJqd19fcHJZVUdMR0xWLXFZRGFKNHBieTM1a203Y0xxTWM4aWhpYVpabnRlaGg1bw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump drops $10 billion lawsuit against IRS</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 18:10:29 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/5/18/belarus-dismisses-concerns-as-it-launches-joint-nuclear-drills-with-russia?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Belarus dismisses concerns as it launches joint nuclear drills with Russia</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump dropped a <strong>$10</strong> billion lawsuit against the IRS. This move may be linked to a potential settlement with the DOJ, sparking controversy over a possible "<strong>slush fund</strong>" for Trump allies.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 02:22:57 GMT · <span style="color: #3d6b4f;">ScienceAlert</span></div>
-      <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPenkzR25Cd2l6U0lQY0I0cVJGNnR5cktzUmZ5ejRuNzRzNmYzc0pYMFo5c28yTlRsUHc4enhxSnhMMUhsNmhUZ2JzSXh3X3M0Ulo5bnZKalBIanA3d2FJdzJVNzRhXzQxbE1Ia0pJYTJxZkhHNmtuWVd0dk4wUXljUkxPbTI3R0NDcXR0OEFOUlZ5c2YwVnpET0g5X1FSUWNSdkg2aw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Deadly Ebola Outbreak Declared Global Emergency as Cases Spread in Africa</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">WHO declared a global emergency due to an Ebola outbreak in the Democratic Republic of Congo with 88 deaths. This declaration may lead to increased international aid and travel restrictions to contain the outbreak.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Belarus and Russia launched joint nuclear drills, sparking concern from Ukraine and NATO. This escalation may lead to increased tensions and military build-up in the region.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 13:11:52 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/5/18/ebola-hantavirus-is-the-world-prepared-for-the-next-pandemic?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Ebola, hantavirus: Is the world prepared for the next pandemic?</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 07:44:43 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/05/18/g-s1-122577/up-first-newsletter-bill-cassidy-trump-ebola-elon-musk-openai-sam-altman-idaho-airshow-collision" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Sen. Bill Cassidy loses primary. And, WHO declares Ebola outbreak a global emergency</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">WHO declares Ebola outbreak in Uganda and DRC a "<strong>public health emergency</strong>". Funding cuts and anti-vaccine movements hinder response to viruses.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Sen. Bill Cassidy lost the Louisiana primary, finishing last in a 3-way race. This loss highlights Trump's strong influence over the Republican Party, affecting Cassidy's reelection bid due to his vote to remove Trump from office.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 18:53:30 GMT · <span style="color: #3d6b4f;">Axios</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE1abGZ0VGgtVndickpoT1JMMVNWSWM5M3hpX0M1dHhMd3hkMzlqY25UbUlsSjdONVUtZGxqWHJpdFJOMVlON2FGV0J1QVFOMUtWdkxhWmNUX2d3SzU5ZExYUkJhejVNdDNDb2c?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump creates $1.8B "anti-weaponization" fund after dropping IRS suit</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump creates <strong>$1.8B</strong> "<strong>anti-weaponization</strong>" fund after dropping IRS suit. This move may impact future investigations and lawsuits against him.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 11:24:19 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/5/18/iran-says-nuclear-enrichment-rights-cannot-be-negotiated?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Iran says nuclear enrichment rights cannot be ‘negotiated’</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 18:05:00 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxNTUItQmZXWDZBUzFwUmt3alJHWnVSS3dWV0RzalVyd25Hc2ZqcFdxVkhVZTlNVmw1VEFLc0xjQ244VndXWER4QndWUGo0cUVnVjlGSWRqRHFydFdrRmU3U09OX2F0a0lzSzBzSlQ1c2RtbllaM3JVV2VWbE55TG9CWWFJd2taWVY2?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">ICE Agent Charged in Shooting of a Venezuelan Immigrant in Minnesota</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Iran's foreign ministry says nuclear enrichment is a non-negotiable right. This stance may hinder US-Iran talks, mediated by Pakistan, on a potential nuclear deal.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">An ICE agent was charged in Minnesota for shooting a Venezuelan immigrant. This incident may impact ICE's use of force policies and community relations.</div>
       
     </div>
     
@@ -223,6 +248,40 @@
       <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
     </tr></table>
     
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
+      
+      <a href="https://youtube.com/watch?v=8uCkUyRFUqY" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/8uCkUyRFUqY/mqdefault.jpg" alt="What Google Needs to Do at I/O This Week" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      </a>
+      
+      <a href="https://youtube.com/watch?v=8uCkUyRFUqY" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">What Google Needs to Do at I/O This Week</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-18</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">AI is moving out of its startup era into critical infrastructure. Google needs to adapt at I/O this week.</div>
+      
+      
+        <div style="margin-top: 6px;"><a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Week-AI-Grew-Up-e3iosi7" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Dr. Izzy Sealey</div>
+      
+      <a href="https://youtube.com/watch?v=e7oSv8h9O5w" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/e7oSv8h9O5w/mqdefault.jpg" alt="How to Train Your Brain to Crave Real Life Again" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      </a>
+      
+      <a href="https://youtube.com/watch?v=e7oSv8h9O5w" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">How to Train Your Brain to Crave Real Life Again</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-18</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">The author has struggled with embracing impermanence since childhood, with birthdays filling them with melancholy. One takeaway is that confronting death can help reframe life's value.</div>
+      
+      
+        <div style="margin-top: 6px;"><a href="https://letters.izzysealey.com/p/on-crying-on-birthdays" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
+      
+    </div>
+    
     <div style="padding: 14px 0; ">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
       
@@ -233,7 +292,7 @@
       <a href="https://youtube.com/watch?v=FeHg-tAdicA" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">America’s busiest commuter train comes to a screeching stop</a>
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-05-18</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">LIRR strike continues, seeking <strong>9.5%</strong> raise. Quarter million commuters affected.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">LIRR strike continues, affecting 250,000 NYC commuters. Workers seek <strong>9.5%</strong> retroactive raise, despite MTA agreement.</div>
       
       
         <div style="margin-top: 6px;"><a href="https://www.morningbrew.com/issues/incoming" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
@@ -262,17 +321,17 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 13 May 2026 21:51:19 GMT · <span style="color: #3d6b4f;">wiz.io</span></div>
       <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTE9EZndqR3BUbmJpVURNNkVPcjg1d3RIaUxMSUx5Qkl5QjJhanFQeHN4b0VKM0JTMk9MakVOTWtHSkVsWFlIZEE5Rm82N1FMYktEWVhtUXRrNzZ0YWh1UWdWNGZDMkM3NEpNNlE?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Securing Agentic AI: What Cloud Teams Need To Know</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Agentic AI security involves protecting AI systems that make autonomous decisions. This requires controlling agent actions and enforcing least privilege.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Agentic AI security involves protecting autonomous AI systems from making harmful decisions. This requires enforcing least privilege and adaptive security measures to prevent attacks like prompt injection.</div>
       
       
     </div>
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 12 May 2026 22:00:00 GMT · <span style="color: #3d6b4f;">Microsoft</span></div>
-      <a href="https://news.google.com/rss/articles/CBMi8gFBVV95cUxNam1FNzNlVU9IWG5GZlR0UENWbDFTQ0FwZlE1Mm9nQmdyOWNOd3dTWXFaT3MtUjAzSWVPRFR6bU5WREtMZlM2d1V4aVg2enE4VVVuNllEU3RrLWdONUlfN3MxUzhvelZrN1k0SXRGS3F4SHJqRFo1RFBvQV81N0ZSaFdkbFdncUg2SUEycVJMdTFza0J3dlFSNmhNUHV5dDdPLVlzZHBIcEdIV295WWNLMkpkUmQxVmxXUThPN3VvQmY0VHZHYzhOMU1RS1J3bnNtUU5yS2dwMzlLUXN4NkFmcjZ6bWR1bFAtMVItVjYzS2UtZw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Defense at AI speed: Microsoft’s new multi-model agentic security system tops leading industry benchmark</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 14 May 2026 14:19:52 GMT · <span style="color: #3d6b4f;">CX Today</span></div>
+      <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPTmxqaFJDaExGWlN1aGVranljczV6a3JsZGU2YVlKeG5GOWVuVEFUdHM3TVd0eUtSdUI5T2RWNFhTWVRIc28wUlk0OXdsNmRlbDhWUkNLNVZYc1BYWE9OTVNoU3RSY3NTT0pEUE9pbDZTOFR4bTR5WmRNNE94T1RWOVI5MG1mVzVDcmw3WHdfMEp3eGdvY0NwTmJOODBCdEpIdTJMYWl5R1hsRlh4V2VJbkV1bHU?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Vendors Race to Reinvent Cyber Defense for the Agentic AI Era</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Microsoft's multi-model agentic security system found 16 new Windows vulnerabilities. This means AI-powered defense can now identify bugs more effectively.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Microsoft, Cisco, and OpenAI unveiled new AI-native security initiatives. This shift towards agentic defense systems means defenders must adapt to more dynamic threat landscapes.</div>
       
       
     </div>
@@ -282,7 +341,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 10:17:51 GMT · <span style="color: #3d6b4f;">Augment Code</span></div>
       <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTE1pMEVmMzZEb3dMdkVQdVhreHJiZW96dzdTbnB1MVlzaWx0V1oyajBpN0xWa0tPVTVKakNabW90Qm91a0FQWW1Ya2JEVDdOLUM2TE9TQVBiOFBGbGhEV0N0NGdzR2p0Z3lhRkhSNmln?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Prompt Injection Vulnerability Detection: Tools & Techniques</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Prompt injection vulnerabilities affect chatbots and RAG systems. Defense-in-depth is needed to counter adaptive attacks.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Prompt injection vulnerabilities affect chatbots and agents, requiring layered detection. This means defenders need multiple tools and techniques to prevent attacks.</div>
       
       
     </div>
@@ -315,7 +374,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LymphNode proposes a defense framework that neutralizes model utility for unauthorized queries. It stops model extraction and inversion attacks by blocking gradient estimation.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LymphNode proposes a defense framework that blocks unauthorized access to neural networks. It stops model extraction and inversion attacks by neutralizing model utility for unauthorized queries.</div>
       
       
     </div>
@@ -348,7 +407,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers propose AI agents that design better neural architectures, finding models that outperform existing ones. Practitioners should care because these new models improve accuracy and scale more efficiently.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers propose a dual-framework approach for AI agents to autonomously design neural architectures. Practitioners should care because it yields models that outperform existing baselines like Llama 3.2 by 2.4-<strong>3.8%</strong> on downstream tasks.</div>
       
       
     </div>
@@ -381,7 +440,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Argus assembles evidence for research tasks by dividing and completing a jigsaw of complementary pieces. Practitioners should care as it enables more efficient and accurate information gathering, stopping redundant searches.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Argus assembles evidence for deep research using a Searcher and Navigator. It helps practitioners by reducing redundant searches, improving answer accuracy.</div>
       
       
     </div>
@@ -447,7 +506,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes embedding watermarks into the dynamics of generative models. Practitioners should care because it helps detect and prevent model theft by identifying illegitimate model use.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes embedding watermarks into the dynamics of generative models. It helps prevent model theft by detecting unauthorized use.</div>
       
       
     </div>
