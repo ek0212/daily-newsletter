@@ -5,8 +5,446 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 May 2026 19:59:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 05:23:13 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Midtown Briefing - Monday, May 25, 2026</title>
+      <link>https://ek0212.github.io/daily-newsletter/posts/2026-05-25.html</link>
+      <guid>https://ek0212.github.io/daily-newsletter/posts/2026-05-25.html</guid>
+      <description>Weather: 55°F - Fog/Mist | Illness level: LOW | 1 major events this week | 3 top news stories | 9 AI security updates</description>
+      <content:encoded><![CDATA[<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; margin: 0; padding: 0; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased;">
+<div style="max-width: 660px; margin: 0 auto; background: #faf7f0;">
+
+  <!-- Masthead -->
+  <div style="padding: 44px 32px 0 32px; text-align: center; border-bottom: 1px solid #ede5d5;">
+    <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">Est. 2025</div>
+    <h1 style="margin: 10px 0 8px 0; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710; line-height: 1.0;">The Midtown <span style="color: #3d6b4f;">Briefing</span></h1>
+    <div style="font-size: 14px; color: #8a7a60; margin-bottom: 16px; font-weight: 400;">Monday, May 25, 2026</div>
+    <div style="height: 1px; background: #ede5d5; margin: 0 60px;"></div>
+    <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
+  </div>
+
+  <!-- Weather icon macro -->
+  
+
+  <!-- Weather -->
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Weather Watch</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">55<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 55&deg;</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x1F32B;&#xFE0F; Fog/Mist</div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">74&deg; / 56&deg;</span></div>
+    </div>
+    
+    <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
+    <table style="width: 100%; min-width: 540px; border-collapse: collapse; font-size: 13px; color: #4a3f30; font-weight: 300;">
+      <tr>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F552; Hour</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F321;&#xFE0F; Temp</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Feels</th>
+        <th style="text-align: left; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">Conditions</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Precip</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F4A7; Humidity</th>
+        <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F32C;&#xFE0F; Wind</th>
+      </tr>
+      
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7am</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">58&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">58&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Light Rain Likely</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">66%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">93%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">2 mph SE</td>
+      </tr>
+      
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">60&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">60&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C8;&#xFE0F; Showers And Thunderstorms</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">84%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">90%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">2 mph S</td>
+      </tr>
+      
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">72&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">72&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2601;&#xFE0F; Cloudy</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">6%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">79%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph W</td>
+      </tr>
+      
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">73&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">73&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2601;&#xFE0F; Mostly Cloudy</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">2%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">76%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">6 mph W</td>
+      </tr>
+      
+      <tr>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">73&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">73&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2601;&#xFE0F; Mostly Cloudy</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">2%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">79%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">3 mph W</td>
+      </tr>
+      
+    </table>
+    </div>
+    
+  </div>
+
+  <!-- Health Alert -->
+  
+  <div style="padding: 20px 32px; margin: 0 32px; background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; margin-bottom: 8px;">
+    <table style="width: 100%; border-collapse: collapse;">
+      <tr>
+        <td style="padding-right: 12px; vertical-align: middle; width: 10px;">
+          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #3d6b4f;"></span>
+        </td>
+        <td>
+          <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 4px;">
+            NYC Illness Level: LOW
+          </div>
+          <div style="font-size: 14px; color: #4a3f30; line-height: 1.6; font-weight: 300;">1,443 cases this week — 49% below average for this time of year</div>
+          <div style="font-size: 10px; color: #8a7a60; margin-top: 4px; font-weight: 400;">Week ending 2026-05-16 · NYC Dept. of Health</div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+
+  <!-- NYC Events -->
+  <div style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">On the Block</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    
+    
+    <div style="padding: 14px 0; ">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sun</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">31</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=Israel%20Day%20Parade%20NYC%20Sun%2C%20May%2031" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Israel Day Parade</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 52nd St & Madison Ave</div>
+        </td>
+      </tr></table>
+    </div>
+    
+    
+    <div style="font-size: 10px; color: #8a7a60; margin-top: 12px; font-weight: 400;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">NYC Open Data</a></div>
+  </div>
+
+  <!-- Top News -->
+  <div data-section="news" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The World This Morning</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 25 May 2026 03:14:42 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOWVlHZlJSajRrLURZSF90US1CXzhTVlFYVjctcjhEdHQxcU9Ob2xUcXRUWjBQSWpSbEdKdTBFVVhDUmlOcWREdFJXQ0RRZmNIdVVvNnd4VXg5SjBqVl9CTVB2TEl5QjV1bWhfLUJQZHFQUFdSVzV2UF9PbGZMTlZBVEFRaGxlWWtrR3ptT2xhYVZ0X2k3YnRPbENMdXhfaG9KMzI5Tw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Efforts to stop California chemical leak in Orange County on new trajectory, officials say, as 50,000 remain evacuated</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">50,000 evacuated in Orange County due to chemical leak. Overnight pressure test will determine if explosion risk is eliminated.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 25 May 2026 02:37:50 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxQUTJCaW9UeXJpdk9lNWl0M0w1Z1JXTjdVdTVNOHh6Mjl3SDZvamRTdXZ5VXd3cl95WGUxQzc5V0g4TzdEM1J2amV3aFZTcjcxOG9KYWhkMkt6bmxfY1l1OWpybEcwWXRlaTRuWHduZWpuMmxRLWhwM3ppWkgtV3ViRXBPUl9keXc1WkxuQkFCOGYzWWtqblF1aHZ0R2g?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Kyiv, Ukraine, Hit in Russian Missile Attack</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Kyiv, Ukraine was hit in a Russian missile attack. This escalation may lead to increased US involvement.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; ">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 25 May 2026 01:07:15 GMT · <span style="color: #3d6b4f;">BBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE5DSVo5eG94MnNzS2dRRGo1Y0dsNzBkV0JLNWh3QWw4ZFR2anZIQ3Y4bVh4WTNPd21tcTBmSjR3RGgtQ0kzZ2xaalRQcnlYbng2dk90UUYyaVNDZw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump tells US negotiators 'not to rush' into deal with Iran</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump told US negotiators to slow down on a deal with Iran, seeking a 60-day ceasefire. This cautious approach may impact US-Iran relations and regional stability.</div>
+      
+    </div>
+    
+    
+  </div>
+
+  <!-- YouTube -->
+  <div data-section="youtube" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">From the Subscriptions</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    
+    <div style="font-size: 14px; color: #8a7a60; text-align: center; font-weight: 300;">No new videos today.</div>
+  </div>
+
+  <!-- AI Security -->
+  <div data-section="ai_security" style="padding: 32px 32px 24px 32px;">
+    <!-- Section Header -->
+    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Adversary's Desk</span></td>
+      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
+    </tr></table>
+    
+    <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
+      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and prompt injection.
+    </div>
+    
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 20 May 2026 16:27:13 GMT · <span style="color: #3d6b4f;">The Manila Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxNbDZMSUxpN0hLSmNoREh2S0dZY1QxWUcxWVEwTmFlWVE0aF9JdUpsOFBDaGRNbEtycEFUakw3V0Yxb1VCYWNJWmU3MWp2eXVuTjdVc3JFMEQ5clBoNmVGQ0JBUVdSY0xmRVdpSlZIczk1cjg3ODJMTGlVcFZZd2o5Q3Z5azAwS2JnanU0MmFNZWg2WUpQX3ZxUzVmVDhiN0taN2hLVV9acFlEOGVrVm1tZnJGSkhOZk5OOTA0a21CeDRRcDk4cUk2NTdVU21TMVpQUUZvVVQxNNIB3AFBVV95cUxQNTNCZ3ZtNDZIUGdGc3liMm9Ld0E2VVZGQk9YcWpBVjVleFNPSGVKME9LdW5iaXd6WVpGWWlWLUtZNHZsN0FJOGg2TE41cDAwT1RlYVlVYW9Oa2hRdHFtY0pLNEZOdGdkLUg4N0ZCWmhOUjNmLUxqSWFSS0FfbnBKNWdxNVE5Q0JlTE9NRWNpMW8ydEhCTGR3Q2FfSDZxVllOY1o4MkVvY3JLcDdTclJuRlFPaEM2ZWZFLUVmdFRhQ2Etc0tkT3cwemFvb0NvcDZNeWZXRGtSR2F3Uy0t?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Hadrian Releases OpenHack, Democratizing AI Vulnerability Discovery</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Hadrian releases OpenHack, a tool for AI-powered source code review. This democratizes AI vulnerability discovery for security practitioners.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 19 May 2026 07:00:00 GMT · <span style="color: #3d6b4f;">AIMultiple</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiU0FVX3lxTFBPalFYM0RMaGlaNUpuREhqdG1rNVdTR1o3WW5YOG5qNE1TMFV5a0g1VjBiYUJEV012MjQ3RWFka1NsR0RfOWI5ZHFDMXhzYngza05R?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Compare Top 20 LLM Security Tools & Free Frameworks in 2026</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Chevrolet's ChatGPT-based chatbot falsely advertised a car, leading to potential legal issues. This highlights the need for LLM security tools to prevent similar incidents.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 21 May 2026 21:04:19 GMT · <span style="color: #3d6b4f;">Digital Journal</span></div>
+      <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNM0RrNkpaMGlDemJhUmFKY0hvLTFib25kNWJqTjF4QndWSmltZS10VEFHb3V5YU9ZNFJUcmh1dGVOcS1meVVKYy1VX0psMmx3Y1RQc3lULWhWWUpkYUJQeHVoc2hsNVU0MzhlTnR1WXVnZ0laZGNYVWRBLVRRX3JDbzUwcWxBOHl0MHl2ZWJOOUJwYVhiM3I3QjFxU3lVbnJJNnR2bWJ3X0h0cUhjWno1NUUycWlfTG9uQzA3ZENuZGFfbjdr?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Uncovering live ‘Indirect Prompt Injection’ attacks that targeting AI agents</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Forcepoint X-Labs found "<strong>Indirect Prompt Injection</strong>" attacks on live websites, where attackers hide malicious instructions in web pages. This means AI system defenders must monitor external content for hidden prompts.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 18 May 2026 13:09:31 GMT · <span style="color: #3d6b4f;">wiz.io</span></div>
+      <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE5ZaFVrZm1JRWEwRk5Vc2lUS2xyM1JWTlVaWGxjXzJRWXpYNTlYd1A1SnF4TmJORm9JS0VkYzhqZ2xxLU9DdjhJaXBoQUlUV0NGRzYzV29sNlVpeVBCZFlpbDcxSmJ1VHllTmdBcw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">AI Security Solutions in 2026: Tools To Secure AI</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Wiz.io reports traditional security fails against AI, citing non-deterministic models and dynamic prompts. This means defenders need AI-first strategies to stop threats like data poisoning.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-22</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Yifan Yang, Ziyang Gong, Weiquan Huang et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2605.23904v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">SkillOpt: Executive Strategy for Self-Evolving Agent Skills</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">SkillOpt trains agent skills like deep-learning models, using a separate optimizer. Practitioners can use SkillOpt to improve agent performance in tasks like code generation and chat.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-22</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Zisu Huang, Jingwen Xu, Yifan Yang et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2605.23899v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">From Raw Experience to Skill Consumption: A Systematic Study of Model-Generated Agent Skills</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
+        
+        
+        
+        
+        
+        
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers propose a framework to evaluate model-generated agent skills, studying their entire lifecycle. Practitioners should care as it helps identify when these skills succeed or fail, informing their use in various task domains.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-22</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Jiarui Guo, Haojia Wei, Yiming Zhang et al.</div>
+      
+      <a href="https://huggingface.co/papers/2605.23771" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">PhotoFlow: Agentic 3D Virtual Photography Missions</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">PhotoFlow uses a 3D agent to take photos in virtual scenes based on language prompts. It helps generate realistic photos, but a practitioner should care as it reveals blind spots in evaluating AI's spatial understanding and aesthetic judgment.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-22</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Zizun Li, Haoyu Guo, Runzhe Teng et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2605.23903v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Geo-Align: Video Generation Alignment via Metric Geometry Reward</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Geo-Align proposes a reinforcement learning framework to improve video generation alignment. It helps models accurately follow camera trajectories and physical scales in real-world videos.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-05-22</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Renhe Sun, Jiayi Zhou, Haolin He et al.</div>
+      
+      <a href="https://arxiv.org/pdf/2605.23859v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Natural Yet Challenging to Detect: Robust In-the-Wild TTS through EMA and Dual-Scoring Prompt Selection -- Submission for WildSpoof 2026 TTS Track</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a text-to-speech model that uses exponential moving average and dual-scoring prompt selection to improve speech synthesis. It helps create realistic speech that is hard to detect as fake, making it a challenge for voice spoofing detectors.</div>
+      
+      
+    </div>
+    
+    
+  </div>
+
+  <!-- Footer -->
+  <div style="border-top: 1px solid #ede5d5; padding: 24px 32px; text-align: center;">
+    <div style="font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;"><a href="feed.xml" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">Subscribe via RSS</a></div>
+  </div>
+
+</div>
+</body>
+</html>]]></content:encoded>
+      <pubDate>Mon, 25 May 2026 07:00:00 +0000</pubDate>
+    </item>
     <item>
       <title>The Midtown Briefing - Sunday, May 24, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-05-24.html</link>
@@ -12324,363 +12762,6 @@
 </body>
 </html>]]></content:encoded>
       <pubDate>Sun, 26 Apr 2026 07:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>The Midtown Briefing - Saturday, April 25, 2026</title>
-      <link>https://ek0212.github.io/daily-newsletter/posts/2026-04-25.html</link>
-      <guid>https://ek0212.github.io/daily-newsletter/posts/2026-04-25.html</guid>
-      <description>Weather: N/A°F - Unavailable | Illness level: LOW | 5 major events this week | 3 top news stories | 4 YouTube videos | 5 AI security updates</description>
-      <content:encoded><![CDATA[<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body style="font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; margin: 0; padding: 0; color: #1c1710; font-weight: 300; -webkit-font-smoothing: antialiased;">
-<div style="max-width: 660px; margin: 0 auto; background: #faf7f0;">
-
-  <!-- Masthead -->
-  <div style="padding: 44px 32px 0 32px; text-align: center; border-bottom: 1px solid #ede5d5;">
-    <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">Est. 2025</div>
-    <h1 style="margin: 10px 0 8px 0; font-size: 44px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710; line-height: 1.0;">The Midtown <span style="color: #3d6b4f;">Briefing</span></h1>
-    <div style="font-size: 14px; color: #8a7a60; margin-bottom: 16px; font-weight: 400;">Saturday, April 25, 2026</div>
-    <div style="height: 1px; background: #ede5d5; margin: 0 60px;"></div>
-    <div style="padding: 10px 0 18px 0; font-size: 10px; color: #8a7a60; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 500;">Weather · Health · Events · News · YouTube · AI Security</div>
-  </div>
-
-  <!-- Weather -->
-  <div style="padding: 32px 32px 24px 32px;">
-    <!-- Section Header -->
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Weather Watch</span></td>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-    </tr></table>
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">N/A<span style="color: #8b4a3c;">&deg;</span></div>
-      
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">Unavailable</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">N/A&deg; / N/A&deg;</span></div>
-    </div>
-    
-  </div>
-
-  <!-- Health Alert -->
-  
-  <div style="padding: 20px 32px; margin: 0 32px; background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; margin-bottom: 8px;">
-    <table style="width: 100%; border-collapse: collapse;">
-      <tr>
-        <td style="padding-right: 12px; vertical-align: middle; width: 10px;">
-          <span style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #3d6b4f;"></span>
-        </td>
-        <td>
-          <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 4px;">
-            NYC Illness Level: LOW
-          </div>
-          <div style="font-size: 14px; color: #4a3f30; line-height: 1.6; font-weight: 300;">2,975 cases this week — 30% below average for this time of year</div>
-          <div style="font-size: 10px; color: #8a7a60; margin-top: 4px; font-weight: 400;">Week ending 2026-04-18 · NYC Dept. of Health</div>
-        </td>
-      </tr>
-    </table>
-  </div>
-  
-
-  <!-- NYC Events -->
-  <div style="padding: 32px 32px 24px 32px;">
-    <!-- Section Header -->
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">On the Block</span></td>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-    </tr></table>
-    
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <table style="width: 100%; border-collapse: collapse;"><tr>
-        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
-          <div style="text-align: center; line-height: 1;">
-            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
-            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">25</span>
-          </div>
-        </td>
-        <td style="padding-left: 14px; vertical-align: top;">
-          <a href="https://www.google.com/search?q=SIKH%20DAY%20PARADE%202026%20NYC%20Sat%2C%20Apr%2025" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">SIKH DAY PARADE 2026</a>
-          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 37th St & Park Ave</div>
-        </td>
-      </tr></table>
-    </div>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <table style="width: 100%; border-collapse: collapse;"><tr>
-        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
-          <div style="text-align: center; line-height: 1;">
-            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sat</span>
-            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">25</span>
-          </div>
-        </td>
-        <td style="padding-left: 14px; vertical-align: top;">
-          <a href="https://www.google.com/search?q=GATHERING%20AFTER%20SIKH%20DAY%20PARADE%202026%20NYC%20Sat%2C%20Apr%2025" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">GATHERING AFTER SIKH DAY PARADE 2026</a>
-          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · Madison Ave & East 24th St</div>
-        </td>
-      </tr></table>
-    </div>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <table style="width: 100%; border-collapse: collapse;"><tr>
-        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
-          <div style="text-align: center; line-height: 1;">
-            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sun</span>
-            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">26</span>
-          </div>
-        </td>
-        <td style="padding-left: 14px; vertical-align: top;">
-          <a href="https://www.google.com/search?q=Block%20Party%20NYC%20Sun%2C%20Apr%2026" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Block Party</a>
-          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · West 27th St & 7th Ave</div>
-        </td>
-      </tr></table>
-    </div>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <table style="width: 100%; border-collapse: collapse;"><tr>
-        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
-          <div style="text-align: center; line-height: 1;">
-            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Sun</span>
-            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">26</span>
-          </div>
-        </td>
-        <td style="padding-left: 14px; vertical-align: top;">
-          <a href="https://www.google.com/search?q=UNION%20SQUARE%20SPRING%20BLOCK%20PARTY%20NYC%20Sun%2C%20Apr%2026" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">UNION SQUARE SPRING BLOCK PARTY</a>
-          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 17th St & Broadway</div>
-        </td>
-      </tr></table>
-    </div>
-    
-    <div style="padding: 14px 0; ">
-      <table style="width: 100%; border-collapse: collapse;"><tr>
-        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
-          <div style="text-align: center; line-height: 1;">
-            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Tue</span>
-            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">28</span>
-          </div>
-        </td>
-        <td style="padding-left: 14px; vertical-align: top;">
-          <a href="https://www.google.com/search?q=Grad%20Walk%20NYC%20Tue%2C%20Apr%2028" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">Grad Walk</a>
-          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · West 27th St & 7th Ave</div>
-        </td>
-      </tr></table>
-    </div>
-    
-    
-    <div style="font-size: 10px; color: #8a7a60; margin-top: 12px; font-weight: 400;">Source: <a href="https://data.cityofnewyork.us/City-Government/NYC-Permitted-Event-Information/tvpp-9vvx" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">NYC Open Data</a></div>
-  </div>
-
-  <!-- Top News -->
-  <div data-section="news" style="padding: 32px 32px 24px 32px;">
-    <!-- Section Header -->
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The World This Morning</span></td>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-    </tr></table>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 25 Apr 2026 06:34:13 GMT · <span style="color: #3d6b4f;">dw.com</span></div>
-      <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxQNjhQT19QaXNUMktEZEs1UlllUFFrOHk4ZjVXZXAzWENHTC1STEp1S2dGZFc1VUxLdm9hXzZDS3hrNUFvSVM3RDZHLVgxOFd2YV9yWnN3YVBvM2J4TDVmTTg0V1F5TVN5aGlzQ1k1c2QtLWlTVVRhb1RnMm1scWNoc0E3WHIxVFpIbjJ1YjFzXzRWWXQ30gGUAUFVX3lxTFAwU0V5Z19hcEhDcGNNRnJjVHJoODd4azkyMmQ0WVNzd1UwRnJtS3FDWHFKYTROUWJxdkx1cmNCZWxkWEVMcVY3Z1k4ZGZibmxFbEJjTFNIQ2RNaElydm16Wi1JRFJVckgwWmFJSjZaNnlLMEhyT2N5RjFkbFlSY2g4alJjUUp0ZzVWUnc1b3Q0MWRPM3M?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Spain responds to reported US plans to punish NATO allies</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Spain's PM said he's "<strong>not worried</strong>" after a report suggested the US may expel Spain from NATO. This could strain US-EU relations and impact global security alliances.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 25 Apr 2026 12:23:27 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/25/flights-resume-at-tehran-airport-as-us-iran-ceasefire-holds?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Flights resume at Tehran airport as US-Iran ceasefire holds</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Flights resume at Tehran's Imam Khomeini airport after weeks of disruption. This eases travel for thousands, signaling a return to normalcy amidst the US-Iran ceasefire.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 25 Apr 2026 18:58:37 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/video/newsfeed/2026/4/25/france-defends-abstention-on-un-slave-trade-resolution?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">France defends abstention on UN slave trade resolution</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">France abstained from a UN resolution on the transatlantic slave trade. This decision may impact France's relations with African nations and its stance on human rights issues.</div>
-      
-    </div>
-    
-    
-  </div>
-
-  <!-- YouTube -->
-  <div data-section="youtube" style="padding: 32px 32px 24px 32px;">
-    <!-- Section Header -->
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">From the Subscriptions</span></td>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-    </tr></table>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">This Week in Startups</div>
-      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Navals-500-VC-fund--the-Maduro-Polymarket-scandal--and-NYT-defends-theft-and-murder--E2280-e3ifa1c" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Naval’s $500 VC fund, the Maduro Polymarket scandal, and NYT defends theft and murder | E2280</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-25</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Naval's <strong>$500</strong> VC fund faces criticism, while a soldier made <strong>$409K</strong> betting on Maduro's capture. Critics argue the fund's accessibility may not be beneficial.</div>
-      
-    </div>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">This Week in Startups</div>
-      <a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/The-Defense-Tech-Startup-YC-Kicked-Out-of-a-Meeting-is-Now-Arming-America--E2280-e3iek64" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">The Defense Tech Startup YC Kicked Out of a Meeting is Now Arming America | E2280</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-25</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Firehawk Aerospace uses 3D-printed propellant to cut missile production costs in half. It could 5x US missile output, addressing the military's shortage.</div>
-      
-    </div>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
-      <a href="https://youtube.com/watch?v=ntvkDnk_5jA" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">How To Build a Personal Agentic Operating System</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-25</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from AI Daily Brief. Click to watch.</div>
-      
-    </div>
-    
-    <div style="padding: 14px 0; ">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Theo - t3.gg</div>
-      <a href="https://youtube.com/watch?v=P6u0K3-z2p4" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Making millions of dollars on fake GitHub stars</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-04-25</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Theo - t3.gg. Click to watch.</div>
-      
-    </div>
-    
-    
-  </div>
-
-  <!-- AI Security -->
-  <div data-section="ai_security" style="padding: 32px 32px 24px 32px;">
-    <!-- Section Header -->
-    <table style="width: 100%; border-collapse: collapse; margin-bottom: 24px;"><tr>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-      <td style="text-align: center; white-space: nowrap; padding: 0 16px;"><span style="font-size: 26px; font-weight: 700; letter-spacing: -0.015em; color: #1c1710;">The Adversary's Desk</span></td>
-      <td style="border-bottom: 1px solid #ede5d5; width: 30%;"></td>
-    </tr></table>
-    
-    <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
-      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and ai vulnerabilities.
-    </div>
-    
-    
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
-      
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 21 Apr 2026 13:06:51 GMT · <span style="color: #3d6b4f;">The Manila Times</span></div>
-      <a href="https://news.google.com/rss/articles/CBMigAJBVV95cUxOcjRGV2JqSE56UGdpaWdtcnpUcFRVQXpLZnZTYnB3YzkzUWphUXJ0eXdmLWdwaVB1dlpOcFFqTmxpU1EzZnRQc0FESFpSQWhKOE9FYUJBLTRJZ2Zxd3JvX3M3WG4xemQwX1dhajhKcHNNRXZ6ODBBak1pZnBtRkJPdGhmV3h0TTR0ZkNpdWk5VnZNRjRMeTJRUVF2dGs4RzJtdzhwd3pSY1BNSFVFa2VwMEhuc3Bha2Nva3RsWTFYdjNmb1FjcXhENnE5dENvYzB0ODhkQkxaR1lYbEVocldZeWppWm5NdGh1LVJVYlNwdXBfbjJ5NS1WaHhsN1RYOWpf0gGGAkFVX3lxTFBvcXZMeUxIaUFHd01qb1pCcnpIV19CeWJFOEoxX0lXeHlva0tfQm54djROMFF2eHE5ZEZ4Y2g5a1VOQlRVRHAyWW9JTGI1MmR0M1ZoUE1KUWx2MUpVaWNQcVYtTzFwMnQ0ZWY5dFRKMnVqbktxTll0TWZleC16d2JadUUwdnpNcURpUzJURTQzRVF3X3lIZGhRcmlYaHpQM3NOUG9sSzR2Z1NiWGlmNHFHU1pEOFZCR0trd3FBRXNzcUZCTnBaWnBRcHVQOENuOVloUDhuN3dUMV9Xb2R6VmhJbUV3dmhOeEZ1WHNuTlJUeVNfLV84XzNuM29qYTZFMDVRQUo5Zmc?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Operant AI Launches CodeInjectionGuard to Defend AI Agents Against Runtime Code Injection Attacks</a>
-      
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Operant AI launches CodeInjectionGuard to block malicious code in AI agents. This helps defenders protect AI systems from runtime code injection attacks.</div>
-      
-      
-    </div>
-    
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
-      
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 23 Apr 2026 20:47:14 GMT · <span style="color: #3d6b4f;">csoonline.com</span></div>
-      <a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxNbkJncGo4cWRNNnhoMno5ak9oWnZuaFBteUxpS21DQXFlS29MODRsYzFuMXlwUWplc3FlUzc1bHQtSkgtWTVPVnN3TFhqVmk0Rzloc0hQXzgteHZORklNaW1DRmFiZ09mbWpYYl8xMU9ZYzY2VnMxcmNZdFMtaWtRbzhVV0VCVXRTSGFndDF3ZjgwYjMtTUNTMmxrQnNTb0pGRmtUNV93OA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Google drafts AI agents to secure systems against AI hackers</a>
-      
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Google introduced AI-driven security agents at Cloud Next '26 to secure systems. This means AI-powered defenses may help analysts keep up with growing AI attack surfaces.</div>
-      
-      
-    </div>
-    
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
-      
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 20 Apr 2026 17:11:56 GMT · <span style="color: #3d6b4f;">NVIDIA Developer</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUjBpVWJBY0hGNXF5dGRmc0tlcmpKa0lPRlFaTTNSZ05uU2FSNy1fVWtFcXVFaFllbGRXU2RHWFRHOUotd0pRT2NyczBMZzNVbmNYdVRZMm95UzZyQno3RG9kQ3otbDFsUlhNZTZiMTJJZ3BsWjVkck5EQ3E2UG1HczZadlBLb1p1RERlc19oaU5TcWlfNXBDY2UxWkVyTlFYR0pTLV9OdWpmZw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Mitigating Indirect AGENTS.md Injection Attacks in Agentic Environments | NVIDIA Technical Blog</a>
-      
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">NVIDIA's AI Red Team found a Codex vulnerability via malicious dependencies. This means defenders should scrutinize agentic tool dependencies to prevent supply chain attacks.</div>
-      
-      
-    </div>
-    
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
-      
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-04-23</div>
-      
-      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Zhiqiu Xu, Shibo Jin, Shreya Arya et al.</div>
-      
-      <a href="https://arxiv.org/pdf/2604.21916v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">MathDuels: Evaluating LLMs as Problem Posers and Solvers</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 10px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
-        
-        
-        
-      </div>
-      
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">MathDuels evaluates language models as both problem posers and solvers. Practitioners should care as it reveals model capability gaps in math problem generation and solving.</div>
-      
-      
-    </div>
-    
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
-      
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-04-23</div>
-      
-      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Yanran Zhang <span style="font-size: 10px; color: #8a7a60;">(Tsinghua University)</span>, Wenzhao Zheng, Yifei Li et al.</div>
-      
-      <a href="https://arxiv.org/pdf/2604.21904v1" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">UniGenDet: A Unified Generative-Discriminative Framework for Co-Evolutionary Image Generation and Generated Image Detection</a>
-      <!-- Topic badges -->
-      
-      
-      
-      <div style="margin-top: 10px;">
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
-        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
-        
-        
-      </div>
-      
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">UniGenDet unifies image generation and detection using a symbiotic mechanism. It helps detect fake images by improving authenticity identification.</div>
-      
-      
-    </div>
-    
-    
-  </div>
-
-  <!-- Footer -->
-  <div style="border-top: 1px solid #ede5d5; padding: 24px 32px; text-align: center;">
-    <div style="font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500;"><a href="feed.xml" style="color: #3d6b4f; text-decoration: none; border-bottom: 1px solid #d4e6da;">Subscribe via RSS</a></div>
-  </div>
-
-</div>
-</body>
-</html>]]></content:encoded>
-      <pubDate>Sat, 25 Apr 2026 07:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
