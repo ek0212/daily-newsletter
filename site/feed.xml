@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Jun 2026 14:48:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 08 Jun 2026 21:13:00 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Monday, June 08, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-06-08.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-06-08.html</guid>
-      <description>Weather: 69°F - Clear | Illness level: LOW | 3 major events this week | 5 top news stories | 3 YouTube videos | 8 AI security updates</description>
+      <description>Weather: 71°F -  | Illness level: LOW | 4 major events this week | 5 top news stories | 2 YouTube videos | 8 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +43,10 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">69<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 69&deg;</div>
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2600;&#xFE0F; Clear</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">78&deg; / 58&deg;</span></div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">71<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 71&deg;</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x1F324;&#xFE0F; </div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">76&deg; / 59&deg;</span></div>
     </div>
     
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
@@ -62,32 +62,22 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">78&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">78&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">35%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">7 mph SE</td>
-      </tr>
-      
-      <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">76&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">76&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">72&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">72&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">36%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph SE</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">38%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph S</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">72&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">72&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">70&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">70&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Clear</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">39%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">41%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph S</td>
       </tr>
       
@@ -156,7 +146,7 @@
       </tr></table>
     </div>
     
-    <div style="padding: 14px 0; ">
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
       <table style="width: 100%; border-collapse: collapse;"><tr>
         <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
           <div style="text-align: center; line-height: 1;">
@@ -167,6 +157,21 @@
         <td style="padding-left: 14px; vertical-align: top;">
           <a href="https://www.google.com/search?q=National%20Puerto%20Rican%20Day%20Parade%20NYC%20Sun%2C%20Jun%2014" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">National Puerto Rican Day Parade</a>
           <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 44th St & 5th Ave</div>
+        </td>
+      </tr></table>
+    </div>
+    
+    <div style="padding: 14px 0; ">
+      <table style="width: 100%; border-collapse: collapse;"><tr>
+        <td style="width: 56px; vertical-align: top; padding-right: 14px; border-right: 1px solid #ede5d5;">
+          <div style="text-align: center; line-height: 1;">
+            <span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500;">Wed</span>
+            <span style="font-size: 28px; font-weight: 600; display: block; margin-top: 2px; color: #1c1710;">10</span>
+          </div>
+        </td>
+        <td style="padding-left: 14px; vertical-align: top;">
+          <a href="https://www.google.com/search?q=40th%20Street%20Fair%20NYC%20Wed%2C%20Jun%2010" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 17px; font-weight: 600; line-height: 1.25;">40th Street Fair</a>
+          <div style="font-size: 13px; color: #8a7a60; margin-top: 4px; font-weight: 300;">Manhattan · East 40th St & Park Ave</div>
         </td>
       </tr></table>
     </div>
@@ -185,42 +190,42 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 14:01:08 GMT · <span style="color: #3d6b4f;">The Guardian</span></div>
-      <a href="https://www.theguardian.com/world/2026/jun/08/philippines-earthquake-mindanao-tsunami-warnings" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Powerful earthquake in southern Philippines leaves at least 32 dead</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 19:21:00 GMT · <span style="color: #3d6b4f;">Daily Express</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxQeEpqMVJaS0xsNUR0dTNQSzIyZk1zNl80SkwxSk0tNzlsVnBHWUtmLXdGR1JuMUE1U0VqbVVPRTNLZGxGeW1vdkwxU2lEVUhTUjlpRmREUDktbnpndWZwRjRtVnF3OExTRldRZFBPS1pmWXNjNHozVnJlYmZWYU8xUUF4Y0M1SXo3dm040gGQAUFVX3lxTE9kZVBXSFVyU2ZEVVhpU2twdmlGb2R1WTFHZ3ItQzhtaDdKWF8tQ1NVRkZrdmxJa1Z4LWVvLUhJQkNaOWtLbDlFQ25xSVE5WWtjazU1M1BmWEl0VVRfVHN2LWVGVl9tdTVPT2Z0MkN3Z2lhc2xIY2JocjgzaGlQTHRERVZtMXJKOU5Gak1jYUdodg?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Florida earthquake LIVE: Orlando hit by 6.1 quake off Cuba coast as Miami buildings shake</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A 7.8-magnitude earthquake hit the southern Philippines, killing at least 32. The disaster may disrupt regional trade and commerce, affecting local economies.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 14:27:22 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxPcjFQS29QZzZ4Q1VCVDRndW4tLXY0TGR0U0VVOGF0TGVBcjFmUHhrYkFEWEtjRHRpeFJkUU5CTUsyWjFVSzBCWHZYSFd6LTE3eW1WTURVR3dCY2ozUVpvTkJtanNuUTVDT3kzTHIxdTFMZDZTeldBbmVFdFBDbWF5eG53?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">At least 5 people stabbed at Penn Station. Here's what we know.</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">6 people were taken to hospital after a stabbing at NYC's Penn Station Sunday. The incident may cause traffic delays and mass transit disruptions in the area.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A 6.1 magnitude earthquake hit off Cuba's coast, causing shaking in Orlando, Miami, and Tampa. This may impact travel plans for the <strong>1.2 million</strong> Brits who visit Florida annually.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 14:10:31 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQX21FV19UbFgwd1ZLbWFSeGswMnRjS0Y4NERsSlRUOWdwelhRdXRHdEhpdW5XWElsZk93d09JQWF2R2RWdDBMd01KZ21CMW5Yd25LZ25CaktETy1NYkFpTFhSWVNRM0hjYUNQdHFEWUZOSWM4blh3UGhJZVgtQW9MTHdSZmgyN3JEaFFoNWwyR1FlMXhkSXlr?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump administration launches largest-ever effort to denaturalize U.S. citizens accused of fraud or other crimes</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 13:56:44 GMT · <span style="color: #3d6b4f;">PBS</span></div>
+      <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxOWWZxR3F1RDN6cXRGOUpPMjh0MjVDQ1g5MFAtY2wtT1FYczRCTklta1RvWXZwZnlYSGZHM1JGUFg0bFpFMnVNd1VQRmV6a3VjZ3lySGRla0dhaXBvVDNSYzFSR2tfVno2dllWU192WWRYc2NSVnlqUVBTSkhvOU1GN0M1Ukt4WU9la0RGM3lWT3JJOTRXZ2xzdnIxc0FvWV9Kc28tQ2plU1Mxbk1oMnVmbEVhM1IycVVmUWFyZzNON1lQY3MtdWhRbVJFS19uT0nSAdQBQVVfeXFMT05UZGhTMzkzUlpVUjd1cGxYTU53aUNyaXJCSi1vVzlPMWNERFp2cnhNNDMwOEtIbHNFSDV6Z1JDQ3hsWU5BaXpzZmRlbEhwUDdsVm9VUEVGM2FsdU0wSlh4NHBHV1NZREZJQ2J2Z0xxMHR5T1dYbk8xY3dDUWRwTHk5aWlsWHpwcG9BRE1ENHZ5bE10U1plRl9FYlZCRE5JX0QtMlBLRWRRRkZ1YUIxbFF5ZWxrSThvVmdTNEJxSmdmcTdQMjFtUDhvZUFmMHVyTjNDcWQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">A 7.8 magnitude quake in the Philippines kills at least 35, collapses buildings and triggers tsunami</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The Trump administration is seeking to revoke citizenship of 17 US citizens accused of immigration fraud. This effort may lead to increased scrutiny of naturalization processes and stricter enforcement of federal law.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A 7.8 magnitude quake in the Philippines killed at least 35, collapsing buildings. This disaster may impact regional trade and tourism, affecting economic recovery.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 13:55:28 GMT · <span style="color: #3d6b4f;">BBC</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiWkFVX3lxTE1xTXRXUmxlbXQyZzZJYnBCTFBnb2s4UUlxSHd2TWZWbTJvM3V1Q3dULUxybFB4R25WOWIzR3FvSlpMSExzUDRPeXpQbGo3Vm0xQkREOXQ3SmtXZw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Starmer tells Apple and Google to ban nude images on children's phones</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 18:54:59 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/6/8/nato-jets-shoot-down-drone-over-latvia-extending-ukraine-spillover-fears?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">NATO jets shoot down drone over Latvia, extending Ukraine spillover fears</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">UK PM Keir Starmer asks Apple and Google to block nude images on under-18s' devices. Non-compliance may result in fines or criminal liability within three months.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">NATO jets shot down a drone over Latvia, citing Russian electronic warfare. This incident raises concerns about Ukraine war spillover into NATO countries.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 19:42:47 GMT · <span style="color: #3d6b4f;">CNBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiigFBVV95cUxOTlZCaUtmTUs3anVSaGJRamUyOW5KQWp2ODhxWTUtRjdEb3JneHZXMzFqdnVjbjZnd3hJUXpFMFByNmZsR2YxejVYYmRsOHZIQVR6UVpPeUxRMWsxbVFFWVpvU041ZjRiN3BCd0hXSVYxdjViOUNBdFRGMXYwNDJXMndraDJ6Wjl5Q2fSAY8BQVVfeXFMTmVBZWZHanhjRXlSWXRrYlZYV05KalgyZU94RHc4eUZDQ0p5WUxFTkpRU3R3THVNNGlZSklaNG5lbkFjV0FLUFJCOVc4Si1CWEs0bXNoX29NUkh4cFRUWDB4eU56a2RrWHlFbVZVYzQ4c2VHNm5temJGMVFnV0UtNDdQSDBBNVVrbDZfVUpuckk?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump nominates Todd Blanche for attorney general amid controversy over DOJ fund</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump nominated Todd Blanche as attorney general. This nomination matters as it may face strong opposition from senators due to controversy over DOJ actions.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 13:27:00 GMT · <span style="color: #3d6b4f;">WSJ</span></div>
-      <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQWi1qZHpOOXlndl9pb25lRldfN09RVjVYVU1OQWt5OUVLRWl0UXpxblFyTjlwcV9oRVhKdGxfTlA5QnZTcVVYdHlNLVNENm5CYXRNNlNQSXF6U2c0ZVhxd0tkbXBBY19jUm9DTG9zbGtlY3VrTEJWMVVfMXNBemxVQ180MXk5SVI3dlB6a3dmN1dMQnpvUV9RaHFvd2lLZnJuUGoxUDJ5b09hSkUwcWhB?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Iran and Israel Halt Exchanges of Fire</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 08 Jun 2026 16:41:10 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/06/08/nx-s1-5847937/apple-wwdc-2026-siri-ai-tim-cook" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Hey, Siri: Apple just announced a long-awaited AI update</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Iran and Israel stopped exchanging fire. This de-escalation may ease regional tensions.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Apple announced a long-awaited AI update to Siri at WWDC in Cupertino, Calif. The update's success will impact Apple's competitive edge in the AI-driven tech market.</div>
       
     </div>
     
@@ -246,27 +251,10 @@
       <a href="https://youtube.com/watch?v=gfvAdwJ7sak" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">GLP-1s are leading to ‘returnflation’</a>
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-08</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Broadway hit record <strong>$1.9</strong> billion in ticket sales, but relied on Hollywood stars. One takeaway: Daniel Radcliffe's play was a rare success.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Broadway hit record <strong>$1.9</strong> billion in ticket sales, but relied on Hollywood stars. Daniel Radcliffe's one-man play was a top show, highlighting the genre's struggles.</div>
       
       
         <div style="margin-top: 6px;"><a href="https://www.morningbrew.com/issues/second-bite" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
-      
-    </div>
-    
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">This Week in Startups</div>
-      
-      <a href="https://youtube.com/watch?v=2Y5xwjkCj30" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/2Y5xwjkCj30/mqdefault.jpg" alt="Anthropic wants to slow AI down and Bernie wants 50%: JCal Reacts | E2297" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
-      </a>
-      
-      <a href="https://youtube.com/watch?v=2Y5xwjkCj30" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Anthropic wants to slow AI down and Bernie wants 50%: JCal Reacts | E2297</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-07</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Anthropic calls for a global AI slowdown, while Bernie Sanders proposes seizing <strong>50%</strong> of major AI companies' stock. JCal reconsiders universal basic income due to AI's impact.</div>
-      
-      
-        <div style="margin-top: 6px;"><a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/Anthropic-wants-to-slow-AI-down-and-Bernie-wants-50-JCal-Reacts--E2297-e3kdbcr" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       
     </div>
     
@@ -307,7 +295,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 02 Jun 2026 07:00:00 GMT · <span style="color: #3d6b4f;">AIMultiple</span></div>
       <a href="https://news.google.com/rss/articles/CBMiV0FVX3lxTE0yZnI5SFRHZEJkY3FGaDBOenpneWFrOGtnZnlwejBOZGlZdmlfck5DbDlybGh4OVJvSDRFQkFZTVhCcmpPTkg0a0pMU0hNX2xTR3VIWGhPWQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">15 Threats to the Security of AI Agents</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers found ChatGPT's search tool vulnerable to biased outputs from hidden webpage instructions. This highlights the need for defenders to test AI models against adversarial inputs.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers found ChatGPT's search tool vulnerable to biased outputs from hidden webpage instructions. This highlights the need for defenders to test AI models against manipulated input data.</div>
       
       
     </div>
@@ -317,7 +305,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 04 Jun 2026 17:33:02 GMT · <span style="color: #3d6b4f;">Tech Times</span></div>
       <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxPX1VrX2VscWR0cGlyYWxZamc5RVlORHdXUE1BUGtXQ2s5TmwwUnNKRHB1VHltWk9EanQ2aF8xNi1mVHFPVms2R2FSUXZsd01iVmpPQ2NmZC1zVUFSdE8tM1IwVEdvUm1UM2hGWlBhbzdNbmkwNXdiWld1UldLQmd3TnBoUFZCcVZOWkxDajlLZmZxNHduLVFaQXladHB6U2lOeGNabGlZci1rNEZUMFhIWkVnZ0NHaEk0QlNkVVNldlJ0Ymh6ZjdxMjdFSElkcEU?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Agentic AI Security Alarm at Infosecurity Europe: Free LLM Now Powers Adaptive Worm</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers at University of Toronto built a self-propagating AI worm using free large language models, compromising <strong>75%</strong> of a simulated network in 7 days. This demonstrates a new threat vector for defenders to consider.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers used a free large language model to build a self-propagating AI worm, compromising <strong>75%</strong> of a simulated network in 7 days. This demonstrates a new threat vector for defenders to consider.</div>
       
       
     </div>
@@ -327,7 +315,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 05 Jun 2026 16:46:47 GMT · <span style="color: #3d6b4f;">Microsoft</span></div>
       <a href="https://news.google.com/rss/articles/CBMivAFBVV95cUxNREJ4Wm45a0lId2d5MUxEOHdRWldESTBfVUZWNFdzMWozbGpLVFVNaEVIV0JlZUFBU0ZjMmFCeWNMazVuM1BsNUx2Z3VlajhHQURuR3cyNDd0LTY5YVJsVGpOU0E1RmtsZmVyb1JyOEgyQmNCeFJZT3U5bTBPSlZuNmdtdm10bzNwSmhyMmNLNkRrUU5EYVRxVG1McjVJSmNqZTBTb0dmRk15UlJtOWFubl9TTFRMUnJmQm5MTg?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Securing CI/CD in an agentic world: Claude Code Github action case</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Microsoft found Claude Code GitHub Action exposed CI/CD secrets. Defenders should treat AI workflows with access to secrets as high-risk.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Microsoft found Claude Code GitHub Action exposed CI/CD secrets. Defenders should treat AI workflows with untrusted input as high-risk.</div>
       
       
     </div>
@@ -337,7 +325,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 05 Jun 2026 09:00:00 GMT · <span style="color: #3d6b4f;">MIT Technology Review</span></div>
       <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNVlhzV1EwTzVfYjU2U2REZ3V6UnZCcVYwek12UUIySjBaRzRaVl9pMlJCclFHRVg2bUtZa3ZxdjNHY3E1TnoxVVE4S0pYV2VQQ0UxNnEtVGRRSEd1ckZRV0lhdGwyazF0ZkZiaEZaSkEwcXJFUEFnMVc2Q0kxaXI0alV1Tnlrb2U0Yy00NUhsTkxLcmhPanFZSE00MGcwWWhFTnVlUFVZa1BGQTRBU19OQdIBtgFBVV95cUxQQjJSVzEtLTFQSm13Q2FCd2FVUFlFMXRzUGRyRnRZWktLS3UwZGlkZ0JTM2p3Tlh0aURqRHpscFZ1ZzNkVTBWN3hQcW1OZEUwZmFFclZ4STd0elpzLWItSTRNR0JVUU92WWEtZXBYOEtCaS0xU2pnMHl3SWViM2drNHh0ZmlfcEItbEZ3bzM2WXh5eS1NVHM1Y1paN3l2VzVjV20yVG10R0dhTWtrY2t5U19jYjFBUQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">The Meta hack shows there’s more to AI security than Mythos</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Attackers used Meta's AI customer support agent to steal Instagram accounts by linking them to controlled email addresses. This shows simple AI security threats can be dangerous.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Attackers used Meta's AI customer support agent to steal Instagram accounts by linking them to controlled email addresses. This highlights the need to secure AI systems against simple, targeted attacks.</div>
       
       
     </div>
@@ -370,7 +358,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes AI agents that execute tasks autonomously, accelerating knowledge work. Practitioners should care as it enables efficient task automation, reducing manual work and increasing execution quality.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes AI agents that execute tasks autonomously, increasing efficiency and quality. Practitioners should care as it enables automation of knowledge work, reducing manual errors.</div>
       
       
     </div>
@@ -403,7 +391,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">UniSHARP synthesizes views across camera types by aligning images in a unified space. Practitioners can use it to generate realistic views for various security camera systems.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">UniSHARP extends SHARP for universal monocular rendering. It helps defend against camera-specific attacks by synthesizing views across various camera systems.</div>
       
       
     </div>
