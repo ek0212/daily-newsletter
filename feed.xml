@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 19 Jun 2026 14:16:55 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 20:27:21 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Friday, June 19, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-06-19.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-06-19.html</guid>
-      <description>Weather: 70°F - Clear | Illness level: LOW | 2 major events this week | 4 top news stories | 3 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 79°F - Mostly Cloudy | Illness level: LOW | 2 major events this week | 4 top news stories | 4 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +43,10 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">70<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 70&deg;</div>
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2600;&#xFE0F; Clear</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">84&deg; / 66&deg;</span></div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">79<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 79&deg;</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2601;&#xFE0F; Mostly Cloudy</div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">84&deg; / 65&deg;</span></div>
     </div>
     
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
@@ -62,32 +62,12 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">70&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">70&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Partly Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">53%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">13 mph W</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">83&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">83&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Partly Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">32%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">13 mph W</td>
-      </tr>
-      
-      <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
         <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">84&deg;</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">84&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Partly Sunny</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">30%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">29%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">13 mph W</td>
       </tr>
       
@@ -180,34 +160,34 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 06:40:00 GMT · <span style="color: #3d6b4f;">Yahoo Finance</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxQU3MyblNEaUp3T3hzc2Y1cmxpMXNJMXhmWmtJUFJ5WXhFQlFVdjF3d01MSTRBamctWmFvZ1lJTnpSZFdLbGJTZDUxMFpZZF85dXVZOGViVVBMcXdYQUpzY1VEaXRjYVhnTENmNGgtdXV6SEJaLVF6bGN4UWRfQ3o3ZUVRczlMY0pDRm1sdmtXZEJrNzFKN0VmU2lWODNMRFdRbEtCaFMzWWc2Z2ozMnZqVjRsWm5GZTAtLVBQVTlBXzFrSVU?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Warsh wants markets to guide the Fed, not the other way around</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 19:44:00 GMT · <span style="color: #3d6b4f;">CNN</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiggFBVV95cUxQQm9XSkVxdVBZVDc5ZkNXbVZSTXAwZElpTFp4a3pFRTU3Z28wMm9wWm5lcXgtajF2SmptTXZFZk5sUnctTVFrOTZZRGNnNGpkLVlweEhSWm4zZ29LT0JKOFAwemV4SlVwTlctQkhRdElpajFNazNEVS13cUdwRkR3X0p3?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Live updates: Israel and Hezbollah agree to renew ceasefire after conflict threatens to derail US-Iran talks</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Fed Chairman Kevin Warsh wants markets to guide the Fed, not the other way around. This shift could lead to more data-driven policy decisions.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 11:07:23 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/6/19/trump-hints-at-new-approach-to-north-koreas-nuclear-programme?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump hints at new approach to North Korea’s nuclear programme</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump told South Korea's president at the G7 summit that "<strong>the time had come to pay attention to the North Korea issue</strong>". This shift in focus may lead to renewed US diplomatic efforts to address Pyongyang's nuclear capabilities.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Israel and Hezbollah agreed to renew a ceasefire in Lebanon after a surge in violence. This truce is crucial for resuming US-Iran talks, which are now delayed.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 12:38:25 GMT · <span style="color: #3d6b4f;">NBC News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQZUlabWgwdElDRVdLdjVrdWdtbmZIYzh4V3NTT3BGTFpiWnFJU2w0NnF1RU1ha3lRUnlXY0xlSDlHUElSTTBnY3UzNXVERC1Hd3Q4RkQtQ1F1cl9OS0tLaW9LRzM2M0hibnlKWlA3SlZmcGZFYlloR3NESmNrMTdpaDBVRzRqT2paREplcV9wX194Wk1yb0hQSG8zdE9YeXR6cGM3Z0djS2tUOGNpVDR0aQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">U.S.-Iran talks postponed as Vance cancels trip and Israel intensifies strikes in southern Lebanon</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 19:59:00 GMT · <span style="color: #3d6b4f;">The Guardian</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiqAFBVV95cUxPTU5aX2Q4dGNKMVdVZm54RUtDdkpmYm5teWxfcFRQNjh6dWFVS0Rkc3RvVlBWNmtiY0xELTJ1NkZEVzRvdEgtSlpSZ2JaYXdJOHdQSXpyUm5Jem56cExHQmZCMHFSMVlRbTJwSU9qWWI4ZjdYbVQ4VEdyZjJLOVYzS3lOUms4M1J4T1NSVVZmS1FraGJic0pQOE1wM0VsNXdLck9pdmRORDM?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Italy PM Meloni ‘stunned’ by Trump’s claims she begged him for a photo</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">US-Iran talks in Switzerland were postponed after Israel intensified strikes in Lebanon. This delay may derail the fragile ceasefire and interim agreement, threatening regional stability.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Italy's PM Meloni denied Trump's claim she begged for a photo at the G7 summit. This dispute may strain US-Italy relations further.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 19:18:35 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/6/19/norway-seeks-to-ban-trade-with-illegal-israeli-settlements-in-palestine?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Norway seeks to ban trade with illegal Israeli settlements in Palestine</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Norway plans to ban trade with Israeli settlements in Palestine, citing breach of international law. This move may influence other EU countries to follow suit, impacting Israel's economy.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 11:41:34 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/6/19/could-the-hpv-vaccine-eliminate-cervical-cancer-deaths?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Could the HPV vaccine eliminate cervical cancer deaths?</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 16:22:22 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/video/the-take-2/2026/6/19/how-is-china-using-ai-in-the-classroom?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">How is China using AI in the classroom?</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">UK study: HPV vaccine reduces cervical cancer death risk to near zero in women under 30. This could lead to elimination of cervical cancer deaths in countries with widespread vaccination.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">China starts AI education at age 6, with new guidelines for every grade level. This prioritization of AI may give China a competitive edge in the tech industry.</div>
       
     </div>
     
@@ -224,6 +204,23 @@
     </tr></table>
     
     <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
+      
+      <a href="https://youtube.com/watch?v=4hvA6aCwf6E" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/4hvA6aCwf6E/mqdefault.jpg" alt="The Models Trying to Replace Fable" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      </a>
+      
+      <a href="https://youtube.com/watch?v=4hvA6aCwf6E" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">The Models Trying to Replace Fable</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-19</div>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Fable's shutdown accelerates shift to token efficiency and model diversity. NLW explores new models and strategies for frontier-level performance at lower cost.</div>
+      
+      
+        <div style="margin-top: 6px;"><a href="https://podcasters.spotify.com/pod/show/nlw/episodes/The-Models-Trying-to-Fill-the-Fable-Gap-e3kvr3b" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
+      
+    </div>
+    
+    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
       
       <a href="https://youtube.com/watch?v=y_QdKgmC2vY" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
@@ -233,39 +230,37 @@
       <a href="https://youtube.com/watch?v=y_QdKgmC2vY" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Joanna Stern handed her life to AI for 365 days</a>
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-19</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Joanna Stern used AI for almost everything for a year, including medical tests and life decisions. She found AI has strengths and weaknesses, and shares her findings in her book "<strong>I Am Not a Robot</strong>".</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Joanna Stern used AI for almost everything for a year, including medical tests and life decisions. She found AI has limitations, like humanoid robots being humorous but not helpful.</div>
       
       
     </div>
     
     <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Dwarkesh Podcast</div>
       
-      <a href="https://youtube.com/watch?v=v3jwNZ94GLo" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/v3jwNZ94GLo/mqdefault.jpg" alt="Why Only AI Training Can Save the Economy" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      <a href="https://youtube.com/watch?v=4pG3SJQPAwk" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/4pG3SJQPAwk/mqdefault.jpg" alt="The data black hole at the center of AI" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
       </a>
       
-      <a href="https://youtube.com/watch?v=v3jwNZ94GLo" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Why Only AI Training Can Save the Economy</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-18</div>
+      <a href="https://youtube.com/watch?v=4pG3SJQPAwk" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">The data black hole at the center of AI</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-19</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Mass-scale AI training is needed to bridge lab revenue and enterprise cost. It can teach workers to use AI as a reasoning partner.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Dwarkesh Podcast. Click to watch.</div>
       
-      
-        <div style="margin-top: 6px;"><a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-Only-AI-Training-Can-Save-the-Economy-e3kruqv" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       
     </div>
     
     <div style="padding: 14px 0; ">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Theo - t3.gg</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Matt Wolfe</div>
       
-      <a href="https://youtube.com/watch?v=iJVJwmCKW9o" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/iJVJwmCKW9o/mqdefault.jpg" alt="I guess we're writing loops now?" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      <a href="https://youtube.com/watch?v=Db260rUuKJg" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/Db260rUuKJg/mqdefault.jpg" alt="AI News: Fable Banned, New Open-Source Leader, Midjourney Shocker" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
       </a>
       
-      <a href="https://youtube.com/watch?v=iJVJwmCKW9o" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">I guess we're writing loops now?</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-18</div>
+      <a href="https://youtube.com/watch?v=Db260rUuKJg" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">AI News: Fable Banned, New Open-Source Leader, Midjourney Shocker</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-19</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Theo - t3.gg. Click to watch.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Matt Wolfe. Click to watch.</div>
       
       
     </div>
@@ -302,7 +297,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 15 Jun 2026 16:39:00 GMT · <span style="color: #3d6b4f;">The Hacker News</span></div>
       <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxNd3pzN0V5ckJOZkpoYW9YWEEyRkhCZmtzOVZSUWNpR0FOT1ZfdEFyQkE5SGRTNVdseWNsQUJBRHotZmV3NGVESFBwVC15Zlk3WEdLaFAtbGV6X3FaSDdiLUVUQm5scVg2SHN2VmsxZ2UzUnRobjB3TG0wZWZVU2tmMQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">LiteLLM Vulnerability Chain Lets Low-Privilege Users Take Over AI Gateway Servers</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LiteLLM's low-privilege account can be exploited to gain admin access via 3 vulnerabilities. Defenders should upgrade to LiteLLM v1.83.14-stable or later to patch the Critical-rated vulnerability chain.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LiteLLM's low-privilege account can exploit 3 vulnerabilities to gain admin access. This means AI gateway servers are at risk, and defenders should upgrade to LiteLLM v1.83.14-stable or later.</div>
       
       
     </div>
@@ -322,7 +317,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 07:02:18 GMT · <span style="color: #3d6b4f;">csoonline.com</span></div>
       <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWUtPWTFjZUJidG0yeGs5aF9zODdRQU9wYzBrUXdFOGhXRWpaekZLeFdUZ1JyT3VxS3hrNG5XTDIyOWdUTk84TVdHU3ZCT05qOUU5SmozbEpvc3haVVpFd0k4eWk4M3pQbWN1TVNxdnN2U3NjWDJvWUFoaTdhUWQ5RnlZd1pRQW40TUZkREFCdlViMXBLYTNRcmgtbGtwRm1hNnpueFJLcDVwTkRnbHVnbGRRcGVscXo5T1RlWGRUNHY?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">M365 Copilot SearchLeak: Your prompt injection attack surface just got bigger</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers demonstrated a POC attack, dubbed SearchLeak, against Microsoft's M365 Copilot Enterprise, exploiting parameter-to-prompt injections. This highlights a broader threat to AI-enhanced services, emphasizing the need for secure prompt handling.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers demonstrated a POC attack, dubbed SearchLeak, against Microsoft's M365 Copilot Enterprise. This highlights the potential for broader prompt injection threats in AI-enhanced services.</div>
       
       
     </div>
@@ -355,7 +350,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes a Sovereign Execution Broker (SEB) that enforces certified authority at runtime. It stops unauthorized changes by verifying proposed actions against certified contracts, enabling secure control of autonomous agents.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes a Sovereign Execution Broker (SEB) that enforces certified authority at runtime. It stops unauthorized changes to infrastructure by verifying proposed actions against certified contracts.</div>
       
       
     </div>
@@ -388,7 +383,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes a method to calibrate mixture-of-experts models under distribution shift. It helps prevent overconfidence in model predictions under changing conditions.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a method to calibrate mixture-of-experts models under distribution shift. It helps prevent overconfident predictions in AI models under changing conditions.</div>
       
       
     </div>
@@ -421,7 +416,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers study DiffusionGemma's transparency by breaking it into variable and algorithmic components. Practitioners should care because understanding model transparency helps mitigate model misuse and misalignment.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">DiffusionGemma's reasoning transparency is studied by decomposing it into variable and algorithmic transparency. Practitioners should care as it helps mitigate model misuse and misalignment by understanding model decisions.</div>
       
       
     </div>
@@ -454,7 +449,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">JanusMesh generates 3D visual illusions with different views. It stops oversaturation and semantic leaks in 3D mesh generation.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">JanusMesh generates 3D visual illusions with different views. It stops attacks using fake 3D objects by revealing their inconsistencies.</div>
       
       
     </div>
