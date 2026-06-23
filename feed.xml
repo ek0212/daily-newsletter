@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 13:45:20 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Jun 2026 20:58:15 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Tuesday, June 23, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-06-23.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-06-23.html</guid>
-      <description>Weather: 67°F - Light Rain | Illness level: LOW | 1 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 69°F - Light Rain | Illness level: LOW | 1 major events this week | 4 top news stories | 2 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +43,10 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">67<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 67&deg;</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">69<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 69&deg;</div>
       <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x1F327;&#xFE0F; Light Rain</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">72&deg; / 63&deg;</span></div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">71&deg; / 63&deg;</span></div>
     </div>
     
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
@@ -62,43 +62,23 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
         <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">69&deg;</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">69&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C8;&#xFE0F; Chance Showers And Thunderstorms</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">44%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">100%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">6 mph NW</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">72&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">72&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C8;&#xFE0F; Showers And Thunderstorms Likely</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">68%</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Chance Rain Showers</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">55%</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">87%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph N</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">72&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">72&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Rain Showers Likely</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">58%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">79%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph N</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">7 mph N</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">70&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">70&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Rain Showers Likely</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">58%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">81%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">7 mph N</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">69&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">69&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Chance Rain Showers</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">55%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">87%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">2 mph NW</td>
       </tr>
       
     </table>
@@ -165,42 +145,34 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 13:33:43 GMT · <span style="color: #3d6b4f;">Yahoo Finance</span></div>
-      <a href="https://news.google.com/rss/articles/CBMizgFBVV95cUxPNUxkeEl6VDRCSVRBVEpseXdQNFVJZm1wclRvXzlVV0JzeW16NE5CS0lpLWJrMm9NcnVtd0Y3YUZiSkt2UWIyY2VRVjJLZ3lnUk9TMnRYZ1pVMVoyN3FBdW85U0R4YkJuREdhU1JrWHA5c095RnYybFhjTG5rNmtpQ3JUenFadVdGVWhLV2IxZWJOWEtQbmkzWWFOc3hyUS1iZ0JoLWttaURab0ZkWUpWZlIwV1FLNHRULXZ4VEJFcjl3eDg4ZHF1SmNFSWtuQQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Stock market today: Nasdaq, S&P 500 plunge as global chip sell-off spurs AI doubts</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 20:00:00 GMT · <span style="color: #3d6b4f;">AP News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxNVVFUZXdFTzg1VTBPQ3EtRV9NVDdQbjM1ai1RNEt4TUdWWllFV1UzWFVXWjBkbzNzUENfdWJlZndiZGVqOG13T2JWWHJhc1laZzRuLVhkS0hQNEtubTc0anJMVk9tOG9ETFBWNW55SUd6OHdrN2YycTA2V1lSWDM2YkVkMUxnOEVyYUhUeExMbExtZ1czelkyTkxQOA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">US and Iran dispute whether Tehran has agreed to nuclear inspections</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Nasdaq fell <strong>2.4%</strong> and S&P 500 sank <strong>1.5%</strong> due to a global chip sell-off. This may lead to a reevaluation of AI investments and valuations.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 13:13:00 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNN0dINFdQeTZ4QmpjV3I3UVB4ejlkdHRvNVdSeGZFNHRjNEhMYURFdi11dFhtLU1PbDk0M2lTeWxBdjE2MnY3b09Kd2tnR1dZZTJaZlNJOWRRLWN5RDZTdWlvb2ZzR2xGZHBXblgtQmtqN0doYzBsRWo3UzF2dWZQX2N4dkRCbzVTX2VDRkNkQQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Live Updates: Trump says Iran "completely agreed" to nuclear inspections, but Tehran denies any such plans</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump claimed Iran agreed to nuclear inspections, but Tehran denied it. This dispute may impact shipping through the Strait of Hormuz.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">US and Iran dispute UN nuclear site inspections. This matters as it affects global energy supplies and war resolution talks.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 06:00:33 GMT · <span style="color: #3d6b4f;">The Guardian</span></div>
-      <a href="https://www.theguardian.com/world/2026/jun/23/monika-silva-koniuszek-ecuador-president-family-business" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Whistleblower investigating Ecuadorian president’s family business was murdered, activists say</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 19:31:00 GMT · <span style="color: #3d6b4f;">CNBC</span></div>
+      <a href="https://news.google.com/rss/articles/CBMid0FVX3lxTE9abTBDT1R4RFlQUHZoYkJ2TlYtV1dkNm1VOGdQUnBqc0ZiZGQ1Q3J6SVlTNzlBZER6ZlNTdHVHUVNkVzhRV2t3VlByTFlJWnJ1MnZjTDB2S0NkaFlXYUd0dlpiWUljcm92VGhsdEU2TS0wVVNsNFN30gF8QVVfeXFMT19qQ24zQl9pSUF4dTktMmx5aGV6Q0RONUlWV0I1ZTVfc1QwTjZXdWhMYmJ3Y2luNXFNWjlIWmw5bWMxZkVGbGlaWmNCOGZRWmxPYUp0S09SZk5wSHlfWkx4SzdxWjlqT1VvRDZMdmlCV290amp5bEE3VUJJOQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">S&P 500 falls on global chip rout with Nasdaq off 2%, led by Micron: Live updates</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Monika Silva Koniuszek, 41, was found dead in Ecuador after investigating President's family business. Her death may silence corruption whistleblowers, impacting Ecuador's anti-corruption efforts.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">S&P 500 fell <strong>1.44%</strong> to 7,365.46, Nasdaq slid <strong>2.21%</strong> to 25,587.04. This matters as it may impact investor decisions on tech stocks.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 06:22:00 GMT · <span style="color: #3d6b4f;">AP News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxQbWptX28wbTBPOFBJWFJpaENsTTVsYV84dTJKaUNxa21wcmZNcDlHeHo3czhCYmtZa2U5enZiMFF4VEktVlJSUHIwU09HTGZYNlZOUmpaOFI5aW5XTzJyUTNkcVZOS045MWdZNUpGYjlidlYwQ3JXYTRrRGZra180bllxcFBIVF9IOHFLMmpXQ0JBOE4xOF9mcQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Shooting at a Northern California library kills 2, and a suspect is in custody</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 17:37:10 GMT · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxQYXNRMnprUXVGb2NBbjVMYnd2NS1neG1uX3VoVnFTekxrYkRoYURub0xSdWI1ZXh5N0J0NUQxc2lkbWh6MXdpdTZ4cmZIeDE2OGE5Mkx1UUFGa1ZhSWctWF95QVBvSFNXeHIwbVdfZ1N6S1NOa2NMSXo2Y0RLLWJwYlRQcElnV0xtenk3c0VlTEVIM0xwVWZ4MW1uSEN3Y0N2QkVnMDl3UmIxVXlCWWhJQ9IBtgFBVV95cUxOQ2hrbDU0RndQS2RWSTR3Mi1rWlIzZWdwSFktTDZTY1VtZGlEYlJ3enNHT0RBb2tJSHVTSjNDS1IyV3FHYnZQLVpGZWhUbmp1dnNmVVR6anAwdVFFRWNRalY1MDh2TElzVV9uV242UUt5a0cyamhMVV8xUXdMMlNDZXA0emF3WmVOLVRvYkp0MjY2TzJYYTNLYlJ1b2hLNE5sbVVhakFMN0dVZU1xYm85ZGUwZ3Fjdw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">EU hosts Taliban officials for the first time in talks on deportations</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A shooter killed 2 at a Northern California library, with an 18-year-old suspect arrested. This incident may lead to increased security measures at public libraries nationwide.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Taliban officials met with EU representatives in Brussels to discuss deportations. This meeting may lead to increased cooperation on migrant returns, despite the EU not recognizing the Taliban government.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 13:05:00 GMT · <span style="color: #3d6b4f;">The Guardian</span></div>
-      <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxOY254a2l6WUdIT1dUbVktYkZ0RVBleEIwSFRVUFU4QTZ4X0JPZlVVRDVaSXBManRUWmMyRG5wX3FjTlBjOERoLWM4dWNBdVlYanNWeVJuSHl5VEFOaHUtdklUclpJU3R6OGFXVV94SlJ1cXN4NEpLUzdBam9Wc3djbm1WRlBUWUdUMHVqU2Nn?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">It’s not easy being green: Trump’s botched reflecting pool becomes 2,028ft metaphor</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 23 Jun 2026 19:33:36 GMT · <span style="color: #3d6b4f;">KRCR</span></div>
+      <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxPNV9aMVJVeEZXQ0tCWkN0VGhYM0MzcTd1Qkc5T2RXRUpIZTc2M3NYcWdtc1dtQTZ0dks1S3NEcVRrOFlpQXlMOVQwQ01td0hXX24wbnpRNHp0VjhSUjNsY0ZadFpiZ2wzSHpnQ0tjc0lobTN4WUJEOWhuQ0wzazhadGNqalhCYVVOaDNKcEhiQnFfZnZ4TU0yMUwyNzRfQ29CTlY3T1J4TW9uRk55ZVNkbQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">18-year-old suspect in custody after Chico library shooting, police say</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump's <strong>$14.7m</strong> Lincoln Memorial reflecting pool renovation turned green due to algae bloom. It matters as it becomes a symbol of his failed projects, deterring visitors from appreciating the pool's original purpose.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">18-year-old Bradley Scott Sayer was arrested for a fatal shooting at a Chico library, killing 2 adults. This incident may raise concerns about public safety and gun control in California communities.</div>
       
     </div>
     
@@ -226,14 +198,14 @@
       <a href="https://youtube.com/watch?v=i_OKNvo1wpE" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Fed ‘maestro’ Alan Greenspan dies at 100. What was his legacy on the US economy?</a>
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-23</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Google invests <strong>$75</strong> million in A24 to develop AI film tools, like storyboards. A24 won't use AI to make movies, but to aid production.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Google invests <strong>$75</strong> million in A24 to develop AI film tools, like AI-generated storyboards. A24 won't use AI to make movies, but to aid production.</div>
       
       
         <div style="margin-top: 6px;"><a href="https://www.morningbrew.com/issues/backroom-deal" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       
     </div>
     
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+    <div style="padding: 14px 0; ">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">This Week in Startups</div>
       
       <a href="https://youtube.com/watch?v=3whganNt-AA" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
@@ -243,27 +215,10 @@
       <a href="https://youtube.com/watch?v=3whganNt-AA" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">The hottest running app has nothing to do with speed | E2303</a>
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-22</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">INTVL turns running into a worldwide turf war competition, growing to <strong>1 million</strong> downloads without paid ads. Its founder created engaging videos from his home office to drive growth.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">INTVL turns running into a turf war competition, growing to 1M downloads without ads. Founder Louis Phillips shares his video-based marketing strategy.</div>
       
       
         <div style="margin-top: 6px;"><a href="https://podcasters.spotify.com/pod/show/thisweekinstartups/episodes/The-hottest-running-app-has-nothing-to-do-with-speed--E2303-e3l52u8" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
-      
-    </div>
-    
-    <div style="padding: 14px 0; ">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">AI Daily Brief</div>
-      
-      <a href="https://youtube.com/watch?v=HkVpSoaIKsc" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/HkVpSoaIKsc/mqdefault.jpg" alt="Why AI Users Are Raving About GLM 5.2" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
-      </a>
-      
-      <a href="https://youtube.com/watch?v=HkVpSoaIKsc" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Why AI Users Are Raving About GLM 5.2</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-06-22</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">GLM 5.2 may survive real-world usage, especially for coding and web design. Builders compare it to the DeepSeek R1 moment, justifying the hype.</div>
-      
-      
-        <div style="margin-top: 6px;"><a href="https://podcasters.spotify.com/pod/show/nlw/episodes/Why-AI-Users-Are-Raving-About-GLM-5-2-e3l50hs" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       
     </div>
     
@@ -280,16 +235,26 @@
     </tr></table>
     
     <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
-      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and adversarial attacks.
+      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and guardrail bypasses.
     </div>
     
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 17 Jun 2026 17:35:10 GMT · <span style="color: #3d6b4f;">sentinelone.com</span></div>
+      <a href="https://news.google.com/rss/articles/CBMi6gFBVV95cUxNdTdHNjFBb05sU1FSZEsxRXp4VmNHRmJkUVhQcTlzME9nenJqcnJPay1MRVFmMkJXQU1tVms5blFIc1FJNnYtYjkzV1VtNWVJekhVaFBBNktlbjVXbVNhUm9sTzJrdlFnZTBuQkJRT3VUVWtJeTNxLWdteVFscVBZNlF1dVF0UEVYM0loeGczY3RZejA3ZHQxTjJhTWl3LXNrOFh2SXctaUVodVNtRXhrQ1B5QjZpWjZzMGplR1dRM0pncFZsV2EtRFRhWkpiWFV1ZkR0U3NCb1JaSUhwZU94eEIwaF9qZC10ZWc?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">SentinelOne Announces AI Security Integration with Amazon Bedrock AgentCore to Deliver Runtime Guardrails for AI Agents</a>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">SentinelOne integrates AI security with Amazon Bedrock AgentCore for runtime guardrails. This enhances security for enterprises deploying AI agents on AWS.</div>
+      
+      
+    </div>
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 17 Jun 2026 06:58:51 GMT · <span style="color: #3d6b4f;">Rescana</span></div>
       <a href="https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZ0dNZEdJam9Lb3ZCWWR6c2JRUmU0bGFLbVdWMk1JeEYxWGJidXktSDR5Y0s4Q3E1b29sc05uTEpNQzY4ck1qZ0xIb1lGVDkxU21DZlZpUVozeFFtX0I1SFlOOHRudkk1UEZCRGJla3JQcWpySXBvREpLWVljVVJGWnlyY1Vpem5NVDgxWGc2OWhuZkIyd2d3b3lGaW1GVnowN2h2Y1lEOVA2cnJ5TjRhMW0tWUp0cV81ZUdoX2NPNE53YU9KMnhrbnlGdG1uUHM1MExUYjVUV2YyVWN5U2c5Mlluaw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Critical LiteLLM Vulnerability Chain Enables Remote Code Execution and Full AI Gateway Server Takeover (CVE-2026-42271, CVE-2026-47101, CVE-2026-47102, CVE-2026-40217)</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LiteLLM AI gateway has critical vulnerabilities (CVE-2026-42271, etc.) enabling remote code execution. Defenders should update to v1.83.14-stable to prevent full server takeover.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LiteLLM AI gateway has critical vulnerabilities (CVE-2026-42271, etc.) enabling remote code execution. This means defenders must patch to v1.83.14-stable to prevent full server takeover.</div>
       
       
     </div>
@@ -306,20 +271,10 @@
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 16 Jun 2026 15:22:15 GMT · <span style="color: #3d6b4f;">Cyber Magazine</span></div>
-      <a href="https://news.google.com/rss/articles/CBMijgFBVV95cUxPUjRPZ01GeDlPS2JBdUIwRkpBUEREY1duYm1HMXZYTWVkTXR4ZGFqaksxakVueEpyMGJiMjgtVFZ3SjVkNzBwOVdUN3ljeXE3YUt0bERKUHFJUnFsc1lheDhPdDBmRVpmV0p6QzctY1dpekhZQ21yOUJKbWNXNHZvNHFMY1hJQlFWQnRVQXF3?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">CrowdStrike Secures AI Agents with Real-Time Risk Tech</a>
-      
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">CrowdStrike launches Continuous Identity for AI Agents, a real-time risk evaluation system. This helps defenders secure autonomous AI agents with dynamic identity verification.</div>
-      
-      
-    </div>
-    
-    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
-      
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 19 Jun 2026 07:02:18 GMT · <span style="color: #3d6b4f;">csoonline.com</span></div>
       <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNWUtPWTFjZUJidG0yeGs5aF9zODdRQU9wYzBrUXdFOGhXRWpaekZLeFdUZ1JyT3VxS3hrNG5XTDIyOWdUTk84TVdHU3ZCT05qOUU5SmozbEpvc3haVVpFd0k4eWk4M3pQbWN1TVNxdnN2U3NjWDJvWUFoaTdhUWQ5RnlZd1pRQW40TUZkREFCdlViMXBLYTNRcmgtbGtwRm1hNnpueFJLcDVwTkRnbHVnbGRRcGVscXo5T1RlWGRUNHY?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">M365 Copilot SearchLeak: Your prompt injection attack surface just got bigger</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers demonstrated a POC "<strong>SearchLeak</strong>" attack on M365 Copilot Enterprise, exploiting parameter-to-prompt injections. This highlights a broader threat to AI-enhanced services, emphasizing the need for secure prompt handling.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers demonstrated a POC attack, dubbed SearchLeak, against Microsoft's M365 Copilot Enterprise, exploiting parameter-to-prompt injections. This highlights a broader threat to AI-enhanced services, requiring defenders to reassess prompt injection attack surfaces.</div>
       
       
     </div>
@@ -352,7 +307,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a method for controlled diversity in image generation, allowing users to navigate structured image galleries. Practitioners should care because it enables more meaningful and interpretable image generation, reducing reliance on random variations.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a method for controlled diversity in image generation, allowing users to navigate structured image galleries. Practitioners should care because it enables more meaningful and interpretable image variations, rather than random ones.</div>
       
       
     </div>
@@ -418,7 +373,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes a self-compacting language model that decides when to compact its context window. This helps prevent loss of partial results during generation or search, making models more efficient and effective.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes a self-compacting language model that decides when to compact its context window. This helps prevent loss of partial results during generation or search, making the model more reliable.</div>
       
       
     </div>
@@ -451,7 +406,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes a benchmark to test the safety of vision-language-action models in various scenarios. It helps practitioners identify and address potential safety issues in these models, such as collisions.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a benchmark for testing the safety of vision-language-action models. It helps practitioners identify and fix safety flaws in models that control robots.</div>
       
       
     </div>
@@ -484,7 +439,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LaST-HD learns robot manipulation from human demos by aligning physical dynamics. It enables robots to mimic human actions, stopping errors from geometry mismatches.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">LaST-HD learns physical reasoning from human demos for robot manipulation. It helps robots mimic human actions more accurately, enabling better task transfer.</div>
       
       
     </div>
