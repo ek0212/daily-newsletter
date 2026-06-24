@@ -1,0 +1,209 @@
+{
+  "date": "Wednesday, June 24, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 67,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 82,
+    "low": 63,
+    "feels_like": 67,
+    "forecast": "Mostly cloudy, with a low around 63. Northwest wind 3 to 7 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 65,
+        "feels_like": 65,
+        "conditions": "Sunny",
+        "wind": "7 mph NW",
+        "humidity": "78%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 69,
+        "feels_like": 69,
+        "conditions": "Sunny",
+        "wind": "8 mph NW",
+        "humidity": "68%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 81,
+        "feels_like": 81,
+        "conditions": "Sunny",
+        "wind": "9 mph NW",
+        "humidity": "39%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 82,
+        "feels_like": 82,
+        "conditions": "Sunny",
+        "wind": "9 mph NW",
+        "humidity": "37%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 80,
+        "feels_like": 80,
+        "conditions": "Clear",
+        "wind": "7 mph NW",
+        "humidity": "41%",
+        "precip_chance": "0%"
+      }
+    ]
+  },
+  "health": {
+    "status": "LOW",
+    "detail": "623 cases this week \u2014 81% below average for this time of year",
+    "combined_cases": 623,
+    "vs_average_pct": -80.9,
+    "week_ending": "2026-06-13",
+    "breakdown": {
+      "flu": 309,
+      "covid": 254,
+      "rsv": 60
+    }
+  },
+  "events": [
+    {
+      "name": "2026 NYC Pride March",
+      "date": "Sun, Jun 28",
+      "borough": "Manhattan",
+      "location": "West 33rd St & Broadway",
+      "event_type": "Parade"
+    }
+  ],
+  "news": [
+    {
+      "title": "Iran war live: Trump, Tehran at odds over nuclear inspections, Hormuz",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/liveblog/2026/6/24/iran-war-live-trump-tehran-at-odds-over-nuclear-inspections-hormuz?traffic_source=rss",
+      "published": "Wed, 24 Jun 2026 00:00:00 +0000",
+      "raw_text": "Live updatesLive updates, \nIran war live: Trump, Tehran at odds over nuclear inspections, Hormuz\nSeveral key issues remain as sticking points in US-Iran talks, including maritime security and nuclear oversight.\nPublished On 24 Jun 2026\n- US and Iran offer conflicting statements, including on nuclear oversight, as negotiators push for a final deal within a 60-day window.\n- US Secretary of State Marco Rubio says Iran will not be able to charge tolls in the Strait of Hormuz when a final deal is agreed upon.",
+      "summary": "US and Iran negotiators disagree on nuclear inspections and Hormuz tolls. This dispute may impact a final deal within the 60-day window.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Federal Judge Bars ICE From Making Arrests in Immigration Courts",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQWNtaHZDcldYeHlUOVo2czQ0ZE9ETlhqZ2htSUNXN2ppWXA2VFRHMG9Ga2ROV0pHWEVnREUwRGkwZlYyYUlmZW8tWTNRZ2VSN3AtYUg4TG1vMUJQdWp5RHZDNUlaTEItRjR1U3JCTml0Q05UX2xtMGt5Si0yMkozXzZMUWRuYUtLaGkyRg?oc=5",
+      "published": "Wed, 24 Jun 2026 02:16:54 GMT",
+      "raw_text": "",
+      "summary": "A federal judge barred ICE from making arrests in immigration courts. This ruling may impact immigration enforcement and court proceedings.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Prada plays a part in designing NASA\u2019s lunar mission spacesuits",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/6/24/prada-plays-a-part-in-designing-nasas-lunar-mission-spacesuits?traffic_source=rss",
+      "published": "Wed, 24 Jun 2026 03:12:17 +0000",
+      "raw_text": "Prada plays a part in designing NASA\u2019s lunar mission spacesuits\nPrada plays a part in designing NASA\u2019s lunar mission spacesuits\nNASA astronauts are planning to return to the moon in 2028 wearing new spacesuits designed with more safety features, greater mobility and high fashion. The suits are developed by Axiom Space in Houston, which has partnered with Prada for the Artemis mission.\nPublished On 24 Jun 2026",
+      "summary": "NASA partners with Axiom Space and Prada to design new lunar mission spacesuits. This collaboration enhances safety and mobility for astronauts returning to the moon in 2028.",
+      "emoji": "\ud83d\ude80"
+    }
+  ],
+  "youtube": [],
+  "ai_security_tldr": "This week's focus: agentic ai security and guardrail bypasses.",
+  "ai_security": [
+    {
+      "title": "SentinelOne Announces AI Security Integration with Amazon Bedrock AgentCore to Deliver Runtime Guardrails for AI Agents",
+      "source": "sentinelone.com",
+      "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNdTdHNjFBb05sU1FSZEsxRXp4VmNHRmJkUVhQcTlzME9nenJqcnJPay1MRVFmMkJXQU1tVms5blFIc1FJNnYtYjkzV1VtNWVJekhVaFBBNktlbjVXbVNhUm9sTzJrdlFnZTBuQkJRT3VUVWtJeTNxLWdteVFscVBZNlF1dVF0UEVYM0loeGczY3RZejA3ZHQxTjJhTWl3LXNrOFh2SXctaUVodVNtRXhrQ1B5QjZpWjZzMGplR1dRM0pncFZsV2EtRFRhWkpiWFV1ZkR0U3NCb1JaSUhwZU94eEIwaF9qZC10ZWc?oc=5",
+      "published": "Wed, 17 Jun 2026 17:35:10 GMT",
+      "summary": "SentinelOne integrates AI security with Amazon Bedrock AgentCore for runtime guardrails. This enhances security for enterprises deploying AI agents on AWS.",
+      "raw_text": "SentinelOne Announces AI Security Integration with Amazon Bedrock AgentCore to Deliver Runtime Guardrails for AI Agents\nPrompt Security capabilities will be integrated with AgentCore, delivering runtime guardrails for organizations deploying AI agents at enterprise scale\nMOUNTAIN VIEW, Calif. \u2014 June 17, 2026 \u2014 SentinelOne\u00ae (NYSE: S), the AI Security leader, today announced its upcoming integration with Amazon Bedrock AgentCore. The integration will be delivered through SentinelOne\u2019s Prompt Security offering. The integration reflects SentinelOne\u2019s commitment to extending the security controls customers already trust into agentic workflows, empowering enterprises deploying AI on AWS to secure and scale their AI workflows.\nAmazon Bedrock AgentCore is the platform to build, connect, and optimize agents at scale. Through its policy engine, AgentCore enforces real-time, deterministic controls at the gateway across all agent traffic including agent-to-tool, agent-to-LLM, and agent-to-agent communications. With this integration, SentinelOne\u2019s Prompt Security will provide detection signals covering prompt injection detection, PII exposure, tool-use validation, LLM response monitoring, and data leakage prevention that feed into AgentCore policy engine. AgentCore acts on those signals at the gateway, outside the agent\u2019s reasoning loop, so enterprise teams can apply SentinelOne\u2019s detection signals alongside deterministic, automated enforcement consistently across all agent activity. Because detection can be probabilistic, but enforcement stays deterministic, customers gain consistent allow-or-deny decisions on every agent action, allowing organizations to adopt agentic AI at enterprise scale with the confidence that existing SentinelOne security controls apply automatically throughout every agentic workflow.\n\u201cAgentic AI has become foundational to how enterprises operate,\u201d said Melissa K. Smith, SVP of Global Strategic Partnerships and Initiatives at SentinelOne. \u201cEvery organization building and running AI agents on AWS needs the same security controls they rely on across the rest of their infrastructure. This upcoming integration applies those guardrails at the AgentCore gateway, where all agent traffic is evaluated, giving every enterprise the confidence to deploy AI agents knowing their existing SentinelOne policies apply automatically, from day one.\u201d\nThe upcoming integration will be available in Amazon Bedrock AgentCore later this year. Customers with existing Prompt Security licenses will apply them through a Bring Your Own License path. As enterprise AI agent deployments scale, consumption scales with them.\nCustomers can learn more about SentinelOne\u2019s integration with Amazon Bedrock AgentCore at sentinelone.com.\nAbout SentinelOne\nSentinelOne (NYSE: S) is the leader in AI security, setting the standard for using AI and automation to give defenders a decisive operating advantage. Built for those who secure our world, its platform delivers unified coverage across endpoints, identity, cloud, and AI. Powered by Autonomous Security Intelligence, SentinelOne stops attacks at machine speed, reducing risk and delivering clarity and control to stay one step ahead. Headquartered in Mountain View, California with teams worldwide, SentinelOne protects nearly one-fifth of the Fortune 500 and hundreds of Global 2000 enterprises. From Main Street to Wall Street, the world\u2019s most critical organizations trust SentinelOne with their security.\nForward-Looking Statements\nThis press release includes forward-looking statements. Forward-looking statements are subject to risks and uncertainties, including factors beyond our control, that could cause actual performance or results to differ materially from those expressed in or suggested by the forward-looking statements. These and other risk factors are described in the \u201cRisk Factors\u201d section of our most recent Annual Report on Form 10-K, subsequently quarterly reports filed on Form 10-Q, and other filings made with the U.S. Securities and Exchange Commission (SEC), which are available free of charge on our website at investors.sentinelone.com and on the SEC\u2019s website at www.sec.gov. You are cautioned not to place undue reliance on these forward-looking statements. Any future products, functionality and services may be abandoned or delayed, and as such, you should make decisions to purchase products and services based on features that are currently available. Any forward-looking statements made herein are based on our beliefs and assumptions that we believe to be reasonable as of the date hereof. You should not rely upon forward-looking statements as predictions of future events. Except to the extent required by law, we undertake no obligation to update these forward-looking statements to reflect new information or future events.\nThird-Party Disclaimer\nAll third-party product names, logos, and brands mentioned in this publication are the property of their respective owners and are for identification purposes only. Use of these names, logos, and brands does not imply affiliation, endorsement, sponsorship, or association with the third party.\nContact:\nRegan DePinto\n[email\u00a0protected]",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Critical LiteLLM Vulnerability Chain Enables Remote Code Execution and Full AI Gateway Server Takeover (CVE-2026-42271, CVE-2026-47101, CVE-2026-47102, CVE-2026-40217)",
+      "source": "Rescana",
+      "link": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPZ0dNZEdJam9Lb3ZCWWR6c2JRUmU0bGFLbVdWMk1JeEYxWGJidXktSDR5Y0s4Q3E1b29sc05uTEpNQzY4ck1qZ0xIb1lGVDkxU21DZlZpUVozeFFtX0I1SFlOOHRudkk1UEZCRGJla3JQcWpySXBvREpLWVljVVJGWnlyY1Vpem5NVDgxWGc2OWhuZkIyd2d3b3lGaW1GVnowN2h2Y1lEOVA2cnJ5TjRhMW0tWUp0cV81ZUdoX2NPNE53YU9KMnhrbnlGdG1uUHM1MExUYjVUV2YyVWN5U2c5Mlluaw?oc=5",
+      "published": "Wed, 17 Jun 2026 06:58:51 GMT",
+      "summary": "LiteLLM AI gateway has critical vulnerabilities (CVE-2026-42271, etc.) enabling remote code execution. This means defenders must update to v1.83.14-stable to prevent full server takeover.",
+      "raw_text": "Executive Summary\nA critical vulnerability chain has been identified in LiteLLM, a widely adopted open-source AI gateway and proxy solution. This chain enables low-privilege users to escalate their privileges and ultimately seize full control of AI gateway servers. The vulnerabilities, disclosed by Obsidian Security and tracked under several CVEs, allow attackers to bypass authorization, escalate privileges to admin, execute arbitrary code, and exfiltrate sensitive AI credentials and data. The chain is rated as CVSS 9.9 (Critical) and affects all LiteLLM versions prior to v1.83.14-stable. Immediate action is required to mitigate the risk of compromise, as exploitation in the wild has already been observed.\nTechnical Information\nThe vulnerability chain in LiteLLM is composed of several interlinked flaws that, when exploited sequentially, allow a low-privilege user to achieve remote code execution (RCE) and full administrative control over the AI gateway. The affected product is LiteLLM, an open-source AI gateway/proxy that facilitates secure and scalable access to large language models (LLMs) from multiple providers.\nThe vulnerabilities are as follows:\nThe first vulnerability, CVE-2026-47101 (Authorization Bypass), arises from improper validation of the allowed_routes field when a regular user generates a virtual API key. LiteLLM fails to enforce role-based restrictions, allowing a non-admin user to create a key with allowed_routes: [\"/*\"], which grants access to all API routes, including those reserved for administrators. This flaw enables lateral movement and sets the stage for further privilege escalation.\nThe second vulnerability, CVE-2026-47102 (Privilege Escalation), is present in the /user/update endpoint. This endpoint allows users to modify their own records without restricting which fields can be altered. An attacker can exploit this by setting their user_role to \"proxy_admin\", thereby elevating their privileges to full administrative access. This vulnerability is rated CVSS 8.7 (CVSS 4.0) and 8.8 (CVSS 3.1), reflecting its high impact and ease of exploitation.\nThe third vulnerability, CVE-2026-40217 (Sandbox Escape / Remote Code Execution), is found in the Custom Code Guardrail feature. This feature compiles and executes admin-supplied Python code using the exec() function. If exec() is invoked with a globals dictionary that lacks the __builtins__ key, Python automatically injects the full builtins module, exposing dangerous functions such as __import__, open, and eval. An attacker with admin privileges can leverage this to execute arbitrary code on the server, including spawning reverse shells or deploying persistent malware.\nAn additional vulnerability, CVE-2026-42271 (MCP Preview Endpoint RCE), allows attackers to spawn subprocesses via the MCP preview endpoints. This vulnerability has been actively exploited in the wild and is listed in CISA's Known Exploited Vulnerabilities (KEV) catalog.\nThe attack chain typically unfolds as follows: a low-privilege user exploits CVE-2026-47101 to gain access to admin endpoints, uses CVE-2026-47102 to escalate privileges to admin, and then leverages CVE-2026-40217 or CVE-2026-42271 to achieve remote code execution.\nThe impact of this chain is severe. Attackers can exfiltrate all provider keys (including OpenAI, Anthropic, Gemini, Bedrock, Azure, and others), the master key, salt key, and database URL. All prompts and responses, including those containing personally identifiable information (PII), source code, internal tickets, and secrets, are exposed. Attackers can manipulate AI agent responses in transit, potentially leading to downstream compromise. Persistence can be achieved by hiding malicious callbacks in the config.yaml file under litellm_settings.callbacks, which are not visible in the admin UI.\nIndicators of compromise include unauthorized accounts with the proxy_admin role, suspicious entries in litellm_settings.callbacks, outbound connections from the LiteLLM server (indicative of reverse shells), unrecognized subprocesses spawned by the LiteLLM process, and access logs showing use of wildcard allowed_routes or unexpected access to admin endpoints.\nThe vulnerabilities map to several MITRE ATT&CK techniques, including T1078 (Valid Accounts) for privilege escalation, T1059 (Command and Scripting Interpreter) for remote code execution, T1566 (Phishing) for potential response manipulation, and T1210 (Exploitation of Remote Services) for abuse of exposed endpoints.\nExploitation in the Wild\nCVE-2026-42271 has been confirmed as exploited in the wild, with active attacks reported and its inclusion in CISA's Known Exploited Vulnerabilities (KEV) catalog. Proof-of-concept (PoC) exploits for the full privilege escalation chain (CVE-2026-47101 \u2192 CVE-2026-47102 \u2192 CVE-2026-40217) have been published by Obsidian Security and X41 D-Sec, demonstrating the feasibility of chaining these vulnerabilities for complete server takeover. While widespread exploitation of the full chain has not yet been confirmed, the availability of PoCs and the attractiveness of the attack surface make it likely that threat actors will adopt these techniques rapidly.\nIn addition to direct exploitation, a significant supply chain attack occurred in March 2026, when LiteLLM PyPI releases 1.82.7 and 1.82.8 were backdoored. Users who installed these versions were exposed to additional risks, including the possibility of pre-installed malware or credential theft. This incident underscores the importance of verifying the integrity of open-source dependencies and monitoring for anomalous behavior following upgrades.\nAPT Groups using this vulnerability\nWhile no specific advanced persistent threat (APT) group has been definitively attributed to the exploitation of the LiteLLM privilege escalation chain, the attack surface is highly attractive to both criminal and state-sponsored actors. The group TeamPCP has been linked to previous supply chain attacks on LiteLLM and other security tools, as documented by Trend Micro. Given the criticality of the vulnerabilities and the sensitive data processed by AI gateways, it is likely that both financially motivated cybercriminals and nation-state actors are actively investigating or exploiting these flaws.\nAffected Product Versions\nThe affected product is LiteLLM, an open-source AI gateway/proxy. All versions from v1.74.2 up to (but not including) v1.83.14-stable are vulnerable to the full privilege escalation and remote code execution chain. Notably, v1.82.7 and v1.82.8 were backdoored on PyPI, compounding the risk for users of those releases. The vulnerabilities are fully remediated in v1.83.14-stable and later versions. Organizations running any version prior to v1.83.14-stable are strongly advised to upgrade immediately.\nWorkaround and Mitigation\nThe primary mitigation is to upgrade LiteLLM to v1.83.14-stable or later, as these versions contain patches for all known vulnerabilities in the chain. Organizations should audit all accounts with proxy_admin privileges and review all Custom Code Guardrails for unauthorized or suspicious code. It is essential to check for hidden callbacks in the config.yaml file under litellm_settings.callbacks, as attackers may use this vector for persistence. If compromise is suspected, all provider keys, database credentials, and MCP tokens should be rotated immediately. Continuous monitoring for indicators of compromise, such as unauthorized admin accounts, suspicious callbacks, outbound connections, and anomalous subprocesses, is recommended. Reviewing server logs for evidence of wildcard allowed_routes or unexpected access to admin endpoints can help detect ongoing or past exploitation.\nReferences\nThe following resources provide additional technical details and context:\nThe Hacker News: LiteLLM Vulnerability Chain Lets Low-Privilege Users Take Over AI Gateway Servers\nObsidian Security: From Low-Privilege User to Admin and RCE\nCloud Security Alliance: LiteLLM AI Gateway Exploitation PDF\nTrend Micro: Inside the LiteLLM Supply Chain Compromise\nCycode: LiteLLM Supply Chain Attack\nOpenCVE: LiteLLM CVEs\nReddit: SecOpsDaily Discussion\nLinkedIn: NetManageIT Post\nGitHub Advisory: GHSA-qrc4-49gv-mv9m\nCVE.org: CVE-2026-42271\nAdditional resources include the LiteLLM GitHub Releases and the CISA KEV Catalog.\nRescana is here for you\nAt Rescana, we understand the critical importance of securing your AI infrastructure and supply chain. Our Third-Party Risk Management (TPRM) platform empowers organizations to continuously monitor, assess, and mitigate risks across their entire digital ecosystem. We are committed to helping you stay ahead of emerging threats and ensuring the resilience of your operations. If you have any questions about this advisory or require assistance with incident response, please contact us at ops@rescana.com. Our team is ready to support you.",
+      "type": "news",
+      "emoji": "\ud83d\udea8"
+    },
+    {
+      "title": "Snyk Launches Evo Agentic Development Security | AI Agent Governance",
+      "source": "Snyk",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE03RTZyVGxhUjdwQXpkeHRuaV8zMjFrbnVBNC03SmZJZ0k1U2dmcGM1WEt2SmdwZkkxVm8tV2VQSE5MRmdiWXkyUkNXcGUyTlZFN08xdDA0UjZ6NHFSb2dSVG8yOGtnTnlJVVVFbWwxUlRLcE5KRVFv?oc=5",
+      "published": "Tue, 23 Jun 2026 11:42:40 GMT",
+      "summary": "Snyk launches Evo Agentic Development Security, a real-time enforcement layer for AI agents building enterprise software. This means defenders can govern AI agent actions and secure generated code.",
+      "raw_text": "Snyk Adds Agentic Development Security to its AI Security Platform: The Enforcement Layer for the AI Agents Now Building Enterprise Software\nJune 23, 2026\nReal-time enforcement across the full agent development lifecycle \u2014 governing what agents use, what agents do, and securing the code they generate.\nBOSTON, June 23, 2026 \u2014 Snyk, the AI security company, today announced Evo Agentic Development Security (ADS), extending security coverage to the AI workforce powering modern software development. Evo ADS secures how software is built in the age of autonomous AI agents \u2014 governing what agents use, what they do, and what they generate \u2014 in real time, inside the agent workflow, before risks increase.\nAI coding assistants have evolved into autonomous agents \u2014 systems that invoke external tools, take actions, and generate software with minimal human oversight, connected to internal systems through MCP servers, plugins and third-party integrations. Existing security models were built to scan code and artifacts, not to govern the systems creating that code, vet the tools they use, or enforce policy on what an agent does at runtime. Data from enterprise environments confirms the shift is already underway \u2014 and publicly documented attacks have already demonstrated working exploits through the agent toolchain itself, from malicious MCP servers to prompt injection embedded in the dependencies agents consume.\nAutonomous agents have outpaced the security models designed to govern them\nAnonymized telemetry from nearly 9,700 developer environments reveals how far this shift has already progressed. Forty-three percent of developers run two or more AI coding environments simultaneously, and more than half have MCP servers installed. The most instrumented environments had more than 80 MCP servers running simultaneously. These connections create live access to code repositories, browsers, internal tools and production systems, with no security controls between them.\nThe risk inside that supply chain is very real. One in 12 developers with MCP servers has a high or critical finding. A separate analysis of early ADS enterprise design partner environments revealed the parallel threat in agent skills: nearly 1 in 4 developers has at least one skill installed, averaging 18 each, and more than 1 in 10 skills reference external dependencies or externally hosted instructions. Existing security tools scan code after it is written; they have no visibility into MCP configurations, skills, or what agents do at runtime.\nEvo Agentic Development Security: enforcement built into the agent execution loop\nUntil now, security teams have faced a false choice: block AI coding agents entirely and sacrifice the productivity gains the business is demanding, or allow them with no visibility into what they're connecting to or what they're doing. Evo ADS introduces a third option: govern them. It introduces a continuous control layer that operates inside the agent workflow \u2014 not downstream from it \u2014 across three layers of the agentic development lifecycle:\n- Secure the agent supply chain: Discovers and assesses the MCP servers, skills, and external tools agents pull in \u2014 surfacing prompt injection, malicious code patterns, and supply chain risks before agents ever interact with them. \n- Govern agent behavior: Monitors and enforces real-time policy on what agents do while they operate \u2014 blocking destructive actions before they execute, and governing the systems agents access and the workflows they run. \n- Ensure trusted output: Scans and fixes AI-generated vulnerabilities at the moment of creation \u2014 enforcing security at inception rather than in post-production review. \nOne solution. Three layers. Continuous enforcement across every phase of agentic development. Internal AI gateways can provide routing and logging \u2014 but they cannot determine whether an MCP server is malicious, whether a skill carries hostile instructions, or whether generated code is actually exploitable. That requires an independent enforcement layer operating across real-world environments at scale.\n\u201cAsk a security leader for a complete inventory of the AI agents, MCP servers, and skills running across their developer machines \u2014 in most organizations, that inventory doesn't exist,\" said Manoj Nair, Chief Technology & Innovation Officer at Snyk. \"That is the gap Evo ADS closes. It discovers what is actually installed, governs what agents do while they run, and validates what they produce. The question is no longer whether your team is using AI agents. It is whether you have a governance layer \u2014 and right now, for most organizations, the answer is no.\"\nFor organizations already deploying AI coding agents, the governance gap is immediate. Relay Network, whose engineering teams run GitHub Copilot, Codex, and Windsurf, and are transitioning to Claude Code as their primary development assistant, embedded Snyk directly into AI-assisted development workflows to enforce security as code is created.\n\"As we expanded our use of agentic development, it opened up a new attack surface,\u201d said Brendan Putek, director of DevOps, Relay Network. \u201cWe're seeing supply chain attacks, malicious skills and compromised MCP servers riding in on the agent's own toolchain, plus agents taking actions with no guardrails between intent and execution. The blast radius isn't bounded and we're early in the curve. Working with Snyk, we landed on what I think is the right architecture: controls built directly into the agent workflow that govern what an agent uses, executes, and generates.\"\n\"Agentic development security represents a fundamental shift in how developers think about code,\" said Oliver Neuberger, Managing Director, EMEA and UKI CMT cybersecurity practice lead, Accenture. \"The potential for agents to deliver value is enormous, but their impact demands mindful development and the right guardrails \u2014 so enterprises can deploy them securely and with confidence.\"\nAvailability\nEvo ADS will be generally available June 29, timed to roll out while Snyk attends the AI Engineer World's Fair, where Snyk is the exclusive sponsor of the event's first-ever security track.\nThe launch means the Snyk AI Security Platform now governs AI across the full software lifecycle, from agents writing code to the models running in production to the applications the agents build.\nEvo AI-SPM delivers total visibility and machine-speed governance of AI assets. Evo Continuous Offensive Security (COS) simulates attacks to find exploitable vulnerabilities before adversaries do. Evo ADS secures the AI workforce itself \u2014 the agents and tools through which software is now created. Together, the three solutions form the AI Security Fabric \u2013 the independent validator that makes AI-generated code, AI agents, and AI-native applications trustworthy.\nTo learn more, read our blog on Evo Agentic Development Security. To see Evo ADS in action, register for our upcoming webinar, Securing AI-Driven Software Development in the Age of AI Agents, on July 16.\nAbout Snyk\u00a0\nSnyk, the AI security company, empowers the AI-driven enterprise to develop and secure its future, ensuring organizations can trust AI to innovate without limits. The Snyk AI Security Platform delivers the industry's AI Security Fabric, weaving protection directly into the flow of creation to secure GenAI code, AI-native applications, and agentic systems. By delivering visibility, control, and autonomous defense secure at inception, Snyk enables over 4,800 global customers to build fearlessly in the AI era.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "AI-Powered iOS Apps Leaking LLM API Credentials Through Network Traffic",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5XSzd4RElCRm9NTmNFX1JhdVhRWld5eHRpOTlzcHl0THNwYVp3cDU5WlRaZjR6djQ2YzBFNXRycWZ6SllxeUFrdWRFYnh1eWZHajQwQ09vZDZDZnpOTmV1ekdlazZoRTAwMlNPY29SUjdCWlFxLVBhMVRR0gF6QVVfeXFMTldLN3hESUJGb01OY0VfUmF1WFFaV3l4dGk5OXNweXRMc3BhWndwNTlaVFpmNHp2NDZjMEU1dHJxZnpKWXF5QWt1ZEVieHV5ZkdqNDBDT29kNkNmek5OZXV6R2VrNmhFMDAyU09jb1JSN0JaUXEtUGExVFE?oc=5",
+      "published": "Mon, 22 Jun 2026 16:21:46 GMT",
+      "summary": "<strong>64%</strong> of 444 LLM-enabled iOS apps leak API credentials through network traffic. This exposes developers to abuse of their LLM accounts and cloud resources.",
+      "raw_text": "AI-powered iOS applications are increasingly leaking large language model (LLM) API credentials through network traffic, exposing developers to large-scale abuse of their LLM accounts and cloud resources.\nA recent empirical study of 444 free, LLM-enabled iOS apps from the US App Store found that 282 of them, or 64%, leaked exploitable LLM credentials when their traffic was intercepted during normal use.\nThese vulnerable apps span 13 categories and include both niche tools and highly popular apps with over two million user ratings, demonstrating that credential leakage is a widespread ecosystem problem rather than a fringe issue.\nTo systematically map this threat, researchers built a dynamic analysis framework called LLMKeyLens that observes iOS apps at runtime instead of relying on static binary analysis.\nTesters installed each app on physical devices, routed traffic through a man-in-the-middle (MITM) proxy, and used a custom root certificate to decrypt HTTPS flows, then triggered the app\u2019s AI features with controlled prompts.\nResearchers identified exposed credentials by matching provider-specific patterns in network traffic and safely validating them with benign requests to confirm active access to LLM services.\nThe study from Wake Forest University three primary credential leakage patterns, all of which were clearly observable in network traffic captures.\nThe first and most direct involves plaintext API keys: 54 apps sent static LLM provider keys directly in HTTP headers or query strings to endpoints such as api.openai.com or generativelanguage.googleapis.com.\nIn many of these cases, the same request also carried sensitive system prompts, meaning a single interception could reveal both a reusable key and the proprietary business logic that drives the app\u2019s AI behavior.\nThe second pattern uncovered 92 apps that use backend proxies but fail to require any authentication on those endpoints, effectively creating unauthenticated LLM relays that anyone can call once they know the URL and basic JSON schema.\nThe third and most common pattern involves JSON Web Tokens (JWTs): 136 apps leaked bearer tokens used to authenticate against intermediate backends, and many of those tokens remained sufficiently valid to be replayed for continued inference access.\nResearchers found critical JWT token management flaws, including missing expiration dates, tokens valid for up to 100 years, and servers accepting already expired tokens.\nEven where developers attempted to follow \u201cshort-lived token\u201d patterns, weak enforcement effectively downgraded them back to static secrets.\nOn the defensive side, only 143 of 444 apps implemented any form of interception resistance, and the most common protection bypassing the system HTTP proxy was defeated in 81% of cases once researchers switched to VPN-based transparent traffic capture.\nRobust multi-layer defenses such as custom payload encryption and anti-debugging checks were rare but significantly harder to bypass.\nNinety days after responsible disclosure, only 78 of the 282 affected apps showed clear evidence of remediation, while 66 remained exploitable with little or no change.\nSome developers revoked keys or tightened backend authentication, but others removed or abandoned services instead of properly fixing their integrations.\nOverall, the findings suggest that secure LLM integration on iOS lags far behind adoption: developers frequently embed or indirectly expose credentials, providers still permit insecure client-side patterns, and app platforms do not yet systematically screen for AI-related secret leakage.\nFollow us on Google News, LinkedIn, and X to Get More Instant Updates.\nThe U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added multiple Ubiquiti UniFi OS vulnerabilities\u2026\nA well-known threat actor called Dropping Elephant has returned with a refined and more dangerous\u2026\nPhishing attacks have grown far more complex in recent years. Attackers no longer rely on\u2026\nDC, United States, June 23rd, 2026, CyberNewswire Applications open 23 June\u20134 August 2026 to support\u2026\nAnthropic has unveiled Claude Tag, a new agentic AI feature that integrates directly into Slack,\u2026\nMost SOCs measure threat intelligence the same way they measure storage: bigger is better. A\u2026",
+      "type": "news",
+      "emoji": "\ud83d\udcca"
+    },
+    {
+      "title": "\"Zooming In\" on Agentic Web Browsers as Assistive Technologies: A Case Study with a Low-Vision Technology Expert",
+      "authors": [
+        "Laura Colazzo",
+        "Giuseppe Anzillotti"
+      ],
+      "abstract": "Agentic Web Browsers (AWBs), powered by Large Language Models (LLMs), are emerging as autonomous systems capable of navigating the Web on behalf of users. Beyond enhancing productivity, they could also offer significant promise as Assistive Technologies (ATs) for visually-impaired individuals, transforming web interaction into a fluid conversational exchange. In this paper, we present a case study with a low-vision technology expert, examining how AWBs can support visually-impaired users in web navigation. The findings show that, despite the current limitations, the navigation experience is notably fluid and flexible, underscoring the strong potential of AWBs to enhance accessibility and reduce barriers in web interaction, with implications that may extend beyond accessibility to agentic UX more broadly.",
+      "link": "https://arxiv.org/pdf/2606.24870v1",
+      "published": "2026-06-23",
+      "arxiv_id": "2606.24870v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Agentic Web Browsers (AWBs), powered by Large Language Models (LLMs), are emerging as autonomous systems capable of navigating the Web on behalf of users. Beyond enhancing productivity, they could also offer significant promise as Assistive Technologies (ATs) for visually-impaired individuals, transforming web interaction into a fluid conversational exchange. In this paper, we present a case study with a low-vision technology expert, examining how AWBs can support visually-impaired users in web navigation. The findings show that, despite the current limitations, the navigation experience is notably fluid and flexible, underscoring the strong potential of AWBs to enhance accessibility and reduce barriers in web interaction, with implications that may extend beyond accessibility to agentic UX more broadly.",
+      "summary": "This paper proposes using Agentic Web Browsers to help low-vision users navigate the web. It enables more accessible web interaction for visually-impaired individuals.",
+      "type": "paper",
+      "emoji": "\ud83d\udd0d"
+    },
+    {
+      "title": "AOHP: An Open-Source OS-Level Agent Harness for Personalized, Efficient and Secure Interaction",
+      "authors": [
+        "Shanhui Zhao",
+        "Jiacheng Liu",
+        "Guohong Liu",
+        "Jichao Yan",
+        "Jialei Ye"
+      ],
+      "abstract": "AI agents are driving a new software paradigm, with the ability to autonomously call tools, extract information, manage memory, and complete tasks that span applications and data sources. Most existing end-user operating systems, however, are designed for application-centric workflows and offer little native support for AI agents. This mismatch limits the wider adoption of agents and leads to execution overhead and safety risks when running agents on conventional systems. While the concept of agent-native operating systems is emerging, the research community lacks an open testbed to explore the architectural primitives desired for agent-mediated interaction. We present AOHP (Android Open Harness Project), an OS-level agent harness built on the Android Open Source Project (AOSP). The core design principle of AOHP is to treat agents as first-class OS actors, enabling adaptive user interfaces and agent-friendly runtime environments. AOHP preserves the mature Android software and hardware ecosystem while introducing three agent-oriented system mechanisms: personalized service composition, efficient agent interfaces, and secure information flow. Based on preliminary experiments on challenging tasks covering key capabilities of OS agents, AOHP shows clear advantages in task completion (+21.12% completion rate), execution cost (-51.55% token cost), and security-policy compliance.",
+      "link": "https://huggingface.co/papers/2606.23449",
+      "published": "2026-06-22",
+      "arxiv_id": "2606.23449",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "AI agents are driving a new software paradigm, with the ability to autonomously call tools, extract information, manage memory, and complete tasks that span applications and data sources. Most existing end-user operating systems, however, are designed for application-centric workflows and offer little native support for AI agents. This mismatch limits the wider adoption of agents and leads to execution overhead and safety risks when running agents on conventional systems. While the concept of agent-native operating systems is emerging, the research community lacks an open testbed to explore the architectural primitives desired for agent-mediated interaction. We present AOHP (Android Open Harness Project), an OS-level agent harness built on the Android Open Source Project (AOSP). The core design principle of AOHP is to treat agents as first-class OS actors, enabling adaptive user interfaces and agent-friendly runtime environments. AOHP preserves the mature Android software and hardware ecosystem while introducing three agent-oriented system mechanisms: personalized service composition, efficient agent interfaces, and secure information flow. Based on preliminary experiments on challenging tasks covering key capabilities of OS agents, AOHP shows clear advantages in task completion (+21.12% completion rate), execution cost (-51.55% token cost), and security-policy compliance.",
+      "summary": "AOHP proposes an open-source OS-level agent harness for secure interaction. Practitioners should care as it enables secure execution of AI agents on Android devices.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    }
+  ]
+}
