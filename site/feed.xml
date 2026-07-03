@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Jul 2026 04:49:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Jul 2026 12:56:17 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Friday, July 03, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-03.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-03.html</guid>
-      <description>Weather: 90°F - Clear | Illness level: LOW | 4 top news stories | 2 YouTube videos | 8 AI security updates</description>
+      <description>Weather: 85°F - Clear | Illness level: LOW | 5 top news stories | 2 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +43,10 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">90<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 96&deg;</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">85<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 90&deg;</div>
       <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2600;&#xFE0F; Clear</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">100&deg; / 83&deg;</span></div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">103&deg; / 81&deg;</span></div>
     </div>
     
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
@@ -62,53 +62,43 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">85&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">91&deg;</td>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">91&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">96&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">65%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">0%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">49%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">6 mph NW</td>
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">90&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">98&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">56%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">7 mph NW</td>
-      </tr>
-      
-      <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">100&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">100&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">103&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">103&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">8%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">37%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">3%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">35%</td>
         <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph W</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">100&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">100&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">103&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">103&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C8;&#xFE0F; Slight Chance Showers And Thunderstorms</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">16%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">36%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">12 mph W</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">21%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">34%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">10 mph W</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">98&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">98&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">97&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">104&deg;</td>
         <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C8;&#xFE0F; Slight Chance Showers And Thunderstorms</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">16%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">39%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph W</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">18%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">42%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph W</td>
       </tr>
       
     </table>
@@ -160,34 +150,42 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 04:36:41 GMT · <span style="color: #3d6b4f;">ABC7 New York</span></div>
-      <a href="https://news.google.com/rss/articles/CBMi2AFBVV95cUxPSkM4RGFkeUZ2Y3dGNU5WSVpTdWsxVE9McVpYRE10VklPNW5QYmRwa3ROanVBV3g4bkYxTEFyMUcxX3MxdHRNR0VNM3prOGN1N19JTnQ0NjlyTlZyQ2JNUmE4MWlIVWUza0JlcjdJdlFJLVR2TlZ5ZEw3MTk2Zm1uRG1welAxMkNBNUpJWUpFWWg1eG9lOU5iRGNaYlNFaUlKWDllMUNncUJSVm0xQk52a3VPLTVSdUl0VFlvVWpCMTZjNzRtZFVHMVJzbUFIMjc2RUlXS0RBNEnSAd4BQVVfeXFMUHdKbkR6UWFrNVZTd1ZHT245VzEzcDFHQ2NsTGh4NU1vRDAwRmxMb2k4Njl1MzJuNG1qYWRBaFpERVVnTWRJeDFHWXVDRExfZk9NNjR2MnBQaWpxMHl1Tnd6Z2hfTHJHX25Hc1pkRHo0S21teXZsVC1JdnlNb3hUbmNORzFEUXBFUko3SEpZcDhhQlBsQkJxSVUwX2VVZTg5OHd0Sk5YaXBIbHAybWNzVFd2bDFnWFZZYm1kSWJDRlBfN1czOHIwY3A5ejVQRHJ4XzBnVkRGbUk3V2VUejBB?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Empire State Building climbers: Angela Nikolau and Ivan Kuznetsov, AKA Beerkus, get supervised release until next court date</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 03:25:46 GMT · <span style="color: #3d6b4f;">Euronews</span></div>
+      <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNOWdGVm8zb29BV0VYVkFBYkloUlIyb1Q2ZEpmTUtfU2U0U0pFS2Q1M3gyWXI2a0szNUNmLW1xejhqUUt6eFpleUZFaFBlZ3dlMGw1ZVFaNkZyekR3UXVuMTRsSW1MZDlPTUV1SVZGYWVCYk92R3RtVUpFTTdnS1p4cmstd1F0R0txQmpwTjg0QmJQSi1DVzZHMW4tRGRzVm1udHJZVTR2MUFTa09faFRZbQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Trump says 'ridiculous' for US to maintain current support for NATO</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Ivan Kuznetsov and Angela Nikolau, who climbed the Empire State Building, were released on supervised release. They face reckless endangerment and burglary charges, potentially impacting urban adventure seekers' freedoms.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 01:22:00 GMT · <span style="color: #3d6b4f;">WSJ</span></div>
-      <a href="https://news.google.com/rss/articles/CBMifkFVX3lxTE5ERzdWcTBwekVjWjdVRzRseWxIZm9KZ0dPTk1yc2hDaHNXMm5nVTRLMzZVYlpfOW83LU9DdmlHTEJHTGpaZTNmUDJ2cTd2bmRSbUpvZUFZTi1kM2gzQUY5bWhLWTlaM1pMTGVUMjRTVDhGZ3duMFo0T2N4NWE5UQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Stock Market News, July 2, 2026: Dow Rises, Nasdaq Falls After June Jobs Report</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Dow rose, Nasdaq fell after June jobs report. This shift may impact investor decisions on market trends.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Trump called US support for NATO "<strong>ridiculous</strong>" due to a "<strong>one-sided</strong>" relationship. This may lead to reduced US commitments and increased pressure on European allies to boost defense spending.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Today · <span style="color: #3d6b4f;">CNN</span></div>
-      <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 10:45:52 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/7/3/moldovas-prime-minister-quits-triggering-governments-resignation?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Moldova’s prime minister quits, triggering government’s resignation</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Fox News pays <strong>$787.5M</strong> to settle Dominion's defamation lawsuit. This settlement spares Fox executives from testifying about their 2020 election coverage.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Moldova's Prime Minister Alexandru Munteanu resigned, triggering the government's resignation, amid corruption allegations. This change may impact Moldova's EU accession process, launched recently.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 11:15:00 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNaVMtX0gyODkzTzVJU0FSWjhLZkpmNUpUbldiN1VlQm5LR3ZveGdxRDVNWG5IWHh0dWd4ekptdUEwZE1yRDlsME1rV0R1dGZKYy11TGR6cTdsbEpKbjE5d0x4STQ5dzdzelpRQmZGNk8yeGtPZ1pERHVENmhjLThBdHNBZGhQamJ3WkZGQUVmUURkZ2NoMmVZ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">U.S.-Iran Latest: Slain supreme leader's coffin on display as Iran gears up for dayslong funeral, with peace talks paused</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Iran's slain Supreme Leader Ayatollah Ali Khamenei's coffin is on display in Tehran. Peace talks with the US are paused until after the funeral, potentially delaying negotiations.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 10:13:07 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/video/newsfeed/2026/7/3/us-police-staff-spark-altercation-with-egyptian-players-posing-with-fans?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">US Police staff spark altercation with Egyptian players posing with fans</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">US police sparked an altercation with Egypt's national team at their Dallas hotel. This incident may escalate tensions ahead of Egypt's match against Australia.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 02:28:11 GMT · <span style="color: #3d6b4f;">The Washington Post</span></div>
-      <a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOQkVQeUw2a0U5MVFEcGN5Y3U5MmUyWVZJLVVXYVhZbnZLVWlLajR0RFdsdWE2a1RVOFJWVDJwSXNERlBacDYtZ0luN011WlZwaEF6TmxHSGx4WGdYRHhlMjl3ZzcwN19HMi02SUNycnlQVlVycHJYMUx6VGJrdVZUclREc0w4eS1vUFAtRFNlM1hJbFVlY2IwejNfMnNzbDk2ckdiWEVtV0lfLTZTRWJIYkZKUXNkc01OSjNEOW8xdHlERGtobTJR?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Former Olympian faces felony charge over alleged Reflecting Pool vandalism</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Fri, 03 Jul 2026 05:00:00 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/07/03/nx-s1-5876505/swimming-pool-rental-sharing-economy-swimply" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">A hot summer trend in the sharing economy? Rental swimming pools</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Former Olympian faces felony charge for alleged vandalism at Reflecting Pool. This incident may impact public perception of athletes as role models.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Swimply and similar companies rent pools to users. This trend expands the sharing economy, changing how people access luxury amenities.</div>
       
     </div>
     
@@ -206,17 +204,17 @@
     <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Morning Brew Daily</div>
       
-      <a href="https://youtube.com/watch?v=TlFWg6Mxfgk" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/TlFWg6Mxfgk/mqdefault.jpg" alt="The quiet revolution in travel rewards" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      <a href="https://youtube.com/watch?v=yQp2vKnxSro" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/yQp2vKnxSro/mqdefault.jpg" alt="We quizzed our coworkers in an America 250 game show" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
       </a>
       
-      <a href="https://youtube.com/watch?v=TlFWg6Mxfgk" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">The quiet revolution in travel rewards</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-07-02</div>
+      <a href="https://youtube.com/watch?v=yQp2vKnxSro" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">We quizzed our coworkers in an America 250 game show</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-07-03</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Tesla delivered 480,000 EVs in Q2, beating Wall Street's predictions. High gas prices drove the sales surge, especially in Europe.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Taylor Swift's rumored wedding to Travis Kelce is set for 4pm ET at Madison Square Garden. NYPD memo details security plan for the ceremony.</div>
       
       
-        <div style="margin-top: 6px;"><a href="https://www.morningbrew.com/issues/in-the-clouds" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
+        <div style="margin-top: 6px;"><a href="https://www.morningbrew.com/issues/red-card" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       
     </div>
     
@@ -264,10 +262,10 @@
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 02 Jul 2026 15:03:50 GMT · <span style="color: #3d6b4f;">Cybernews</span></div>
-      <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE5UQVRjTzFoaDJEaTBnY3JhTWNLcndkangtSlR3ZnJ4ck5SMC1QVXZnZ2o4cUhGcXBYc1ZmMllobVF6Q2NoZ3lXa19sX00yeEVzRGhoM010bGk4bzJXYmc2c1dZaTV3Wm95UmxkemwxdUpockg5QVR5X0VPLVM?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Critical vulnerability in agentic AI: the brakes meant to stop destructive commands don’t work</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 30 Jun 2026 12:00:00 GMT · <span style="color: #3d6b4f;">PR Newswire</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPaS1IR094cFBUa1NjTThjTlhPUnh1UnF1OXlHYTdHRHBzUENzVDRIb1VrWU9jZzRUblVKSGtCNzFOTmxuam5qU2MwalJhdTdWVXNhUGlCU2UzRDhHMlRsUlVLRDJlV1g3THV0MDNUS2pib1lGeHJxZ0JHdHdHRTVtcnJaMlpPS2M3MmU3QzV5cTVMbndYTHIzSXBLMjV6ekVkb0ZPbVVNX0FKZ0pKX2tIRFY5UDd3WGpScVZwVlE0VkJoeGxoNlc1T2pn?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Data Theorem Launches the Industry's First Closed-Loop AI Security Platform</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers found 10/11 open-source AI agents failed to stop basic shell injection bypasses. This means defenders should isolate AI agents from sensitive directories to prevent data loss.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Data Theorem launches a closed-loop AI security platform with AI Exploits, AI Auto-Remediation, and AI Active Protection. This means defenders can automate exploit discovery to runtime defense without needing source code.</div>
       
       
     </div>
@@ -277,7 +275,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Thu, 02 Jul 2026 01:32:37 GMT · <span style="color: #3d6b4f;">csoonline.com</span></div>
       <a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxORGJ3bTJfSEp0eDFQZnB6ZHFMcXo3MWpMcnlTNkpTeC1kMGlVclJPbkc0X0l4aUhyUm4yMDNHZlNsY1ZoV3JPSGw2VWdWYml3bG81MVIySG9wQm1STEhpdFgzcmFYc2I4UWJrNUY5T2x3NXIxV1RnS01mMnl6bGY0OTBPY3l6MlhYRWo0TUdyV0VmUDdmbVJNYkdKTTRpZHdfWlZ5SG1BVW5vV1FqRnViVEQ5TU45V0k4QjNweTY3RUQzbHc?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Sandbox bypass flaws in Cursor IDE highlight prompt injection as an RCE vector</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Vulnerabilities CVE-2026-50548 and CVE-2026-50549 in Cursor IDE allow RCE via prompt injection. This means AI-assisted IDEs are vulnerable to sandbox bypass attacks.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Two vulnerabilities (CVE-2026-50548, CVE-2026-50549) in Cursor IDE allow prompt injection for RCE. This means AI-assisted IDEs are vulnerable to sandbox bypass attacks.</div>
       
       
     </div>
@@ -287,7 +285,7 @@
       <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Mon, 29 Jun 2026 10:32:41 GMT · <span style="color: #3d6b4f;">SDxCentral</span></div>
       <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxOZnFpZEFrN2JUY0x6ZEFSNllIZW1XWC1rY3pHUU0zOVpJQlJnRm5Lc0JWcTd4QmJTZU1MV1VBNFQwN2FJWG8tQnNIRWZ0YUhiYmt4QW5DLWFQVFlYdmN3aE04MnlhRE9lNFRkczdyNXN4eTRaYVJiVGpMLVB0aHJ1MHZTd01SeWNxdURiRzQ5M0xYZjNUMmdDWVhINDV1ZGZuaWNyMA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">'Chinese Mythos' adds further fuel to sovereignty debate in AI security</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Qihoo 360 claims its Tulongfeng AI model found 3,432 software vulnerabilities. This may impact AI security sovereignty and vulnerability detection for defenders.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Qihoo 360 claims its Tulongfeng AI model found 3,432 software vulnerabilities. This may indicate rising AI security capabilities in China, challenging US dominance.</div>
       
       
     </div>
@@ -320,7 +318,40 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a simple real-time monitor for LLMs that raises an alarm when output safety can't be assumed. It helps stop unsafe LLM outputs at deployment time.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes a simple real-time monitor for LLMs that raises an alarm when output safety can't be assumed. It helps stop harmful outputs from deployed LLMs by detecting when they may generate unsafe content.</div>
+      
+      
+    </div>
+    
+    <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
+      
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-07-02</div>
+      
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Haiyang Li, Yuming Fu, Qun Song et al.</div>
+      
+      <a href="https://huggingface.co/papers/2607.02271" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">AGVBench: A Reliability-Oriented Benchmark of Data Augmentation for Vein Recognition</a>
+      <!-- Topic badges -->
+      
+      
+      
+      <div style="margin-top: 10px;">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #3d6b4f; color: #3d6b4f; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #d4e6da;">safety</span>
+        
+        
+      </div>
+      
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">AGVBench evaluates data augmentation strategies for vein recognition. It helps practitioners choose methods that improve recognition while withstanding adversarial attacks.</div>
       
       
     </div>
@@ -353,7 +384,7 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes AgenticDataBench, a benchmark for evaluating data agents. It helps practitioners assess the performance of automated data science tools.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The paper proposes AgenticDataBench, a benchmark to evaluate data agents across diverse scenarios. It helps practitioners assess and improve data agents' performance in automating data science workflows.</div>
       
       
     </div>
@@ -386,18 +417,18 @@
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes SPIRE, a framework that learns latent design intents for personalized slide generation via structural denoising. It enables AI agents to create customized slides without relying on templates or user instructions.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes SPIRE, a framework that learns latent design intents for personalized slide generation via structural denoising. It helps stop poorly designed slides by enabling AI agents to refine layouts.</div>
       
       
     </div>
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-07-01</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">2026-06-30</div>
       
-      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">MD Azizul Hakim, Md Shihab Uddin, Talha Ibne Anis</div>
+      <div style="font-size: 11.5px; color: #8a7a60; margin-bottom: 8px; line-height: 1.5; font-weight: 300;">Qianchu Liu, Sheng Zhang, Guanghui Qin et al.</div>
       
-      <a href="https://huggingface.co/papers/2607.00553" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Cross-Domain Generalization Failure in Lightweight Intrusion Detection Models for IIoT Networks</a>
+      <a href="https://huggingface.co/papers/2606.31179" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents</a>
       <!-- Topic badges -->
       
       
@@ -408,18 +439,18 @@
         
         
         
+        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">agentic AI</span>
         
         
         
         
         
-        <span style="display: inline-block; font-size: 10px; font-weight: 500; padding: 3px 10px; border: 1px solid #1a1628; color: #1a1628; border-radius: 99px; margin-right: 4px; margin-bottom: 4px; letter-spacing: 0.12em; text-transform: uppercase; background: #e6e2ee;">adversarial</span>
         
         
         
       </div>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Researchers demonstrate that lightweight intrusion detection models fail to generalize across different IIoT networks. Practitioners should care because this failure can lead to undetected attacks when models are deployed in new, unseen networks.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">This paper proposes HealthAgentBench, a benchmark suite for evaluating AI agents in healthcare environments. It helps practitioners assess AI agents' ability to execute complex clinical workflows.</div>
       
       
     </div>
