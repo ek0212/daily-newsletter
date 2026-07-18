@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 18 Jul 2026 11:55:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Jul 2026 19:58:58 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Saturday, July 18, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-18.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-18.html</guid>
-      <description>Weather: 74°F - Haze | Illness level: LOW | 1 major events this week | 5 top news stories | 3 YouTube videos | 7 AI security updates</description>
+      <description>Weather: 73°F - Fog/Mist | Illness level: LOW | 1 major events this week | 5 top news stories | 2 YouTube videos | 7 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,9 +43,9 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">74<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 74&deg;</div>
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x1F32B;&#xFE0F; Haze</div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">73<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 73&deg;</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x1F32B;&#xFE0F; Fog/Mist</div>
       <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">81&deg; / 72&deg;</span></div>
     </div>
     
@@ -59,26 +59,6 @@
         <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Precip</th>
         <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F4A7; Humidity</th>
         <th style="text-align: center; padding: 9px 6px; font-weight: 500; font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #8a7a60; border-bottom: 1px solid #ede5d5;">&#x1F32C;&#xFE0F; Wind</th>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">74&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">74&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F32B;&#xFE0F; Areas Of Smoke</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">1%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">76%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">6 mph SW</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">76&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">76&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F32B;&#xFE0F; Areas Of Smoke</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">28%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">71%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph SW</td>
       </tr>
       
       <tr>
@@ -175,40 +155,40 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 11:01:00 GMT · <span style="color: #3d6b4f;">Politico</span></div>
-      <a href="https://news.google.com/rss/articles/CBMizAFBVV95cUxQN0N4UUtJQ1h4cHRyclNFQkNKUDJPUXBHNXhpVmxXd2FWbHZ0R3lUcnIxMHlmcHJTS3V1eXk3NlluOGs1NFItQkpSYlJfeVQzdnNFcjFWLU5ZR1lBT1NteWNiWmd0VWVqS3paSHhGQnRZRWozRXJ4SWxHMUMtQWYtbE0tcFNVZW1HdW5LNi1MZ0w2T1VJdXVic1RKWkQxZ2hGNmlvTXZiNTlxcUtxS2RoMHpIeGlFeVF4djBXblhzQ2RpR1VaaC1tVThKQ3k?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">‘Pulte got really scared’: Inside the White House debate over Trump’s elections speech</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 19:06:00 GMT · <span style="color: #3d6b4f;">CNN</span></div>
+      <a href="https://news.google.com/rss/articles/CBMibkFVX3lxTFBtMGlzV0M5eFNoa21PNkMyc0xxNmZTOEpMOU5Lek9MNFpvOUc0a21SbkpMOFpjbXhzVEtMU0o3SG42UHZjUl8wMHdvSzcxbE1lbzE5dnBhaDRtbFRINzVxLWdpQ1l1Z0YtRG9yejdR?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Live updates: Iran says it’s suspending ceasefire commitments with US after a week of intensified strikes</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Read the full story at Politico.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 10:10:18 GMT · <span style="color: #3d6b4f;">Financial Times</span></div>
-      <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxOQUhjZ3pZMTU0ZG4xVGRDaDVFYnAySU9USzVPQlgwTExOdXVwN2VpeXhJbkJiRk5HT3poZTdSUHdSRGdoM190cjRGT2NicU94MDlobGZCRWdkclBxY1JCb0gyVmJ5VV84VDE1OHk2STgyOTN4Mkx2U3lxcUhZVVNpMHliMjg?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Zelenskyy considers sacking commander-in-chief as protests swell</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Pay a year upfront and save <strong>20%</strong>. See why over a million readers pay to read the Financial Times.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">What to know about <strong>Iran</strong>'s Revolutionary Guards, which has vowed to counter US attacks <strong>Iran</strong>’s Islamic Revolutionary Guard Corps (IRGC) has warned that those who attack <strong>Iran</strong> will be met with the same force, as it launched strikes on American allies in the Middle East region following a fresh wave of US attacks.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 01:52:00 GMT · <span style="color: #3d6b4f;">The Hill</span></div>
-      <a href="https://news.google.com/rss/articles/CBMieEFVX3lxTE5Bd055ODVmMXFQeGZ3UzNORzdqS3VfVVg0alp2Uk9kTFVhUmR5RDZOT2tpMXIyLVpIcnhEaW00bkNOSFVuR2pJd0pYTE5ZTEhKSUJiNGhNUmxreTB6cDRHLVg3cFV1RHFMVnFzWktpZkpPSjJUS0RuWNIBfkFVX3lxTE1OQXFnazdKMl92MlpGakpLS3VwZDdVdU4yRVlpd1VadzJIM3ZsLUVvZkZpbjdZcHNXMjMwcTBBSkswdmo1dU5JTzJlYV91aTlaS05lRHdrdlB1S1NYT3hkcmdJODVfb3JYUm1ZYkw0VDNWTjR2UDJnNGlLUXRfUQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Iran attacks injure several US troops in Jordan this week: Report</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 19:15:00 GMT · <span style="color: #3d6b4f;">NBC New York</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiygFBVV95cUxPVXk3SDZrQXhaM2VrUnl1UnRUenpTckUxZU9KYTgtczliODVfb0hVdDc3T0hlYTNuUlZ5WGNOZHJMNXNtUGZEZXZLc1RwVFFIVlBwZkloblhhdUMzdklxTGVFOUctUHdLd1lDUmhUb1c0YnlrX2Z3Z0tMQWZJU290SDZ6VXN3dURyaHJIMUd4SHVjN25DOUpKYW9KTGgwWWg2RlN3cm5EVHF5b2lyRm9TTE9sTkFfWTREbXhYQXVXcHJsZEdIUXNkXzdR0gHSAUFVX3lxTFBHakE2NEJXYUlCb3NCTncydE0xY1F5R19PSUwxVWdDVHlocXhoQ0VOSGpvM3dadHB3RGlWbHdTS0FObWdFV2djUWQ0Szl3eWd1bFpRc2RkcHF2LVE1aXJTMmtvb014S1FWOWozZ1BPeWloRDhwb25WT3RncmZjWVcwWDNYSXJ4LVJjRHZWNFVVZmNlWS0zUHFyZTF1bW94cTBTWk9uZ0pzUUtGTnRsZEtIUVI2d2Ftc0NOVDl1d3JiTzE3RDNCZkFnUTYxc2RrM0otUQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Live updates: Flash flood warning issued for NYC metro area as conditions worsen</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Read the full story at The Hill.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">- Overall, in terms of severe weather risk, the National Weather Service puts much of the tri-state at a level 3 on a scale of 5. Multiple threats are on the table, including a high chance of isolated tornadoes and flash flooding.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 10:54:16 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
-      <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOcm5USURvSzZ5cjB1MlByVWIxYl9mNEpxd2tERTBQQVlWUlJEX2VMNnVUV2tVcmp2dG1IemZuaFZ4RndNMUhkTHRnQURwNnJaZFYtZjlCSG1nemJzMzFZQnFxcWJHMkp2dUw5UUNodlZIb0dUSUx0ZGNGdk85cnBhSzIwMnQxRl9qMHlXQTl0dXoxZjJkLUhWeFNoeGk?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">As Trump Scraps With Meloni, His Envoy to Italy Is at Sea</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 17:08:41 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxPNk5CTURYejFDSHlCQVVXajdmb1BZYVBKdlhESkI5WVlYOUZNcXVqYlByeUdDS3ZOemJoVVNySE5KallRZUxyQTVCMzJpUEdtSnV3NnJDVWtrcWxCWGRtS0dENjhQVFkzdWhtU25GX09CanRqTHJ4cGJPaXpLOHdRVFFqR1lJdFA0aHNGYTRzNlBCQjdiN0E?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">MyPillow Founder Not Registered to Vote in State He Wants to Lead</a>
       
         <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Read the full story at The New York Times.</div>
       
     </div>
     
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 18:17:00 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/news/2026/7/18/new-yorks-mamdani-says-looking-into-netanyahu-arrest-during-city-visit?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">New York’s Mamdani says looking into Netanyahu arrest during city visit</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">The mayor said that he was in “active conversation” with the city’s law department about whether he has the authority to have <strong>Netanyahu</strong> arrested, should he travel to New <strong>York</strong>. During his campaign for mayor, <strong>Mamdani</strong> was the target of frequent Islamophobic vitriol and insults.</div>
+      
+    </div>
+    
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 05:25:46 GMT · <span style="color: #3d6b4f;">The Washington Post</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxPRzJWQWlmLVIwLXZxcWpvMmZ3dmZYNnRYYk9iTHhXcThsWDcxVEFSR0EwS2NGTXJuWFI3enVhME45bllTSUdkZ3BSNWFfZzNsWEV2VURkWGNwLWt3NG1fOWF2TWRtOThYSDFXbEczZDN6b3JoamVuOFRZYTRpRjZEWG1NMHQ0SXllMEdUR0lndHU1MWxVT1hvYWxnVVNMUmczeGdkZ0dpNjV1T0phYjZydmx0UU5oUDVMZTBjLUpkbl9xdw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Wildfire smoke will linger and spread this weekend. See which cities are most affected.</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 19:05:40 GMT · <span style="color: #3d6b4f;">The Washington Post</span></div>
+      <a href="https://news.google.com/rss/articles/CBMivgFBVV95cUxQWU1fVTJtSDA3Z1BhVEdSaE96MmstME5pd2ZfNDZzeHVkYWJSSjhreE84aE41cTQwZWd5WDlDbndPME8yTnc2U0V1N2kwWWFNa1JVYVAtVlhJMVRkRW0wdkxLQVpFeFZyYlI3ampIRzQzclEzUGVSTV9NbThFdGtwbXdGV0FaamVRcmQxUlZDV0NMOGdyU0tuaGk1U05ZMWJzYkZZTzdPY0tUcXdrMjhVM01hWUF5cVpzdnZDcURn?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Taylor Farms launches recall in 27 states after iceberg lettuce tied to outbreak</a>
       
         <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Read the full story at The Washington Post.</div>
       
@@ -243,7 +223,7 @@
       
     </div>
     
-    <div style="padding: 14px 0; border-bottom: 1px solid #ede5d5;">
+    <div style="padding: 14px 0; ">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Theo - t3.gg</div>
       
       <a href="https://youtube.com/watch?v=IfkBQyWuTOE" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
@@ -254,21 +234,6 @@
       <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-07-18</div>
       
         <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Theo - t3.gg. Click to watch.</div>
-      
-      
-    </div>
-    
-    <div style="padding: 14px 0; ">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Matt Wolfe</div>
-      
-      <a href="https://youtube.com/watch?v=ss2LaCKUQmU" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/ss2LaCKUQmU/mqdefault.jpg" alt="AI News: Claude's New Browser, Spotify Gets AI & OpenAI's New Hardware" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
-      </a>
-      
-      <a href="https://youtube.com/watch?v=ss2LaCKUQmU" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">AI News: Claude's New Browser, Spotify Gets AI & OpenAI's New Hardware</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-07-17</div>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Matt Wolfe. Click to watch.</div>
       
       
     </div>
@@ -286,7 +251,7 @@
     </tr></table>
     
     <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
-      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and deepfake detection.
+      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and prompt injection.
     </div>
     
     
@@ -322,10 +287,10 @@
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sat, 18 Jul 2026 00:41:16 GMT · <span style="color: #3d6b4f;">finance.biggo.com</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiX0FVX3lxTE5PZjdVR2UyalVtb2lHYjhqYWNnbWlrWEJlTjdFeU5sZXZGcmViLXhuSXlqRHA3STVzak1QTVFJckdoZ3dvaEowQnYzcnNtNHZwTVRJR3ZDMGZzYXlna3dV?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Using LLMs to Secure Source Code — Eugene Yan, Anthropic｜AI Engineer</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Sun, 12 Jul 2026 11:12:37 GMT · <span style="color: #3d6b4f;">Rescana</span></div>
+      <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxPd05JLUhMTGlaZUFWdEJkTVZmZldRN1MzV1hheWhIc1dxRVBtUzBBQ2k3Mk1LZnFsTEIyLTJGamRHZ2I3NmFKYThZdllBZUdQNFIyeml3VGMwaG81MW1rd2dfV0ZJcjB1SVdPUVB6Ujd1TFJsQUJ2SGUyMXotbW44WURpV3lCSmxaM0sxTnlfRENiY2NXaTZjNEJORk5PaDN0cFNDQU9EOEdJWnk4WWw2b0FOMHRQYl9IdzZqVHpYUmhLTlBz?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Ghostcommit: Multimodal Prompt Injection Attack Exposes AI Code Review Tools to Supply Chain Risks</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">> "<strong>One thing that we are finding — and I think we're kind of crossing this point too — is that in a lot of the latest experiments, we can do much better than human red teamers now. </strong>"You need both."</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Security Implications and <strong>Risks</strong> The <strong>Ghostcommit</strong> technique exposes a critical vulnerability in the software supply chain, especially in organizations that rely on AI agents for code review and automation. Organizations should implement multimodal analysis in code review tools, ensuring that both text and images are scanned for malicious content.</div>
       
       
     </div>
