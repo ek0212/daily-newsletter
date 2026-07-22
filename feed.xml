@@ -5,13 +5,13 @@
     <link>https://ek0212.github.io/daily-newsletter</link>
     <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 Jul 2026 12:26:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 20:04:41 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Midtown Briefing - Wednesday, July 22, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-22.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-22.html</guid>
-      <description>Weather: 74°F - Cloudy | Illness level: LOW | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
+      <description>Weather: 85°F - Clear | Illness level: LOW | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
       <content:encoded><![CDATA[<!DOCTYPE html>
 <html>
 <head>
@@ -43,10 +43,10 @@
     </tr></table>
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 24px 28px;">
       <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500; margin-bottom: 8px;">Manhattan, NYC</div>
-      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">74<span style="color: #8b4a3c;">&deg;</span></div>
-      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 74&deg;</div>
-      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2601;&#xFE0F; Cloudy</div>
-      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">85&deg; / 65&deg;</span></div>
+      <div style="font-size: 64px; font-weight: 700; letter-spacing: -0.02em; color: #1c1710; line-height: 0.95;">85<span style="color: #8b4a3c;">&deg;</span></div>
+      <div style="font-size: 13px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 4px;">Feels like 86&deg;</div>
+      <div style="font-size: 20px; color: #3d6b4f; margin-top: 8px; font-weight: 600;">&#x2600;&#xFE0F; Clear</div>
+      <div style="margin-top: 14px;"><span style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.16em; color: #8a7a60; font-weight: 500;">High / Low</span><br><span style="font-size: 15px; color: #1c1710;">84&deg; / 65&deg;</span></div>
     </div>
     
     <div style="overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 16px;">
@@ -62,53 +62,23 @@
       </tr>
       
       <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">73&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">73&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Partly Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">11%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">90%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph SW</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">9am</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">76&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">76&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Partly Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">10%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">82%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph W</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">3pm</td>
+        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
         <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">84&deg;</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">86&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x1F327;&#xFE0F; Slight Chance Rain Showers</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">15%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">55%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">12 mph W</td>
-      </tr>
-      
-      <tr>
-        <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">5pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">83&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">84&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Partly Sunny</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">10%</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2600;&#xFE0F; Sunny</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">3%</td>
         <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">53%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">9 mph W</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">13 mph W</td>
       </tr>
       
       <tr>
         <td style="padding: 9px 6px; font-weight: 500; color: #3d6b4f; border-bottom: 1px solid #ede5d5;">7pm</td>
-        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">80&deg;</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">81&deg;</td>
-        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x2601;&#xFE0F; Mostly Cloudy</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">10%</td>
-        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">54%</td>
-        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">8 mph NW</td>
+        <td style="padding: 9px 6px; text-align: center; font-weight: 500; border-bottom: 1px solid #ede5d5;">82&deg;</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5; color: #8b4a3c; font-weight: 500;">83&deg;</td>
+        <td style="padding: 9px 6px; color: #4a3f30; border-bottom: 1px solid #ede5d5;">&#x26C5; Mostly Clear</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">3%</td>
+        <td style="padding: 9px 6px; text-align: center; border-bottom: 1px solid #ede5d5;">51%</td>
+        <td style="padding: 9px 6px; text-align: center; color: #4a3f30; border-bottom: 1px solid #ede5d5;">12 mph W</td>
       </tr>
       
     </table>
@@ -160,42 +130,42 @@
     </tr></table>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 01:36:00 GMT · <span style="color: #3d6b4f;">WSJ</span></div>
-      <a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQRDAtVDgxRzhwVHlfb3dqRkJ3UnRzeG9SbmhsSlN6YnZvclR6TFc5RFotc05LOEJ6a3hvVy1McEtNa2dGUVJnMm02REh6QWxaanhmWTZad2l0dnR2WHhXeU54aS1ZSFJGQld2ajZ4RTZuTUZsdVJ6djR2d3BOTGVQRmtXS1EzT0xybnRhSzlfc1JDU0RZQlNwZk1raTkyS3kwUGdpUkM2U1dnTVl2OWMtdDlGNHEzVGpNNno0R2VWTzFQQQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Exclusive | Trump Approves Landmark Nuclear Deal With Saudi Arabia in Big Win for Kingdom</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 13:52:00 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
+      <a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxOcExmSDBmYVZGdnVMd2VhQVZmTnpvMmR6YU5pTFAzckpmZHVUbU5BbzRybFhUbGsxTktmclBHV1ZLZzZreXdndHQyc0dMX2hpMXZRNmtwN0NFNWRya0lwX0VsM2p0X3Z5amlXUWZlT3RiUGM1cm5aWGozWHBkck1UaQ?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">France becomes first European Union country to ban social media for kids under 15</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Read the full story at WSJ.</div>
-      
-    </div>
-    
-    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 11:48:00 GMT · <span style="color: #3d6b4f;">CNN</span></div>
-      <a href="https://news.google.com/rss/articles/CBMickFVX3lxTFBRMWdUYldNM3B6UDFrSXpEd21GbzRtVklxWEFtVi1vclBYVHlNN3NmVVVwcnZPUlY5aHVBN19vbTE4b0VJUXJWXzU4TTBJdVc1UGVSR3BBWWRDeVZIdTYydE1JU1dLcHVIYTZSZ0NsQ29Hdw?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Live updates: US-Iran war, Iran warns Trump’s threat to attack underground nuclear site would expand regional war</a>
-      
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;"><strong>Trump</strong> approves deal with Saudi Arabia that could allow kingdom to enrich nuclear fuel, official says President Donald <strong>Trump</strong> has approved a nuclear deal with Saudi Arabia that could lead to the kingdom enriching its own fuel for civilian reactors, according to a US official. Here’s what we know about Pickaxe Mountain: What is it?</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">In January, Macron said in a post on X that French "children's brains are not for sale. Last month, the U.K. also announced plans to introduce a ban on social media accounts for under-16s from January 2027.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 11:59:42 GMT · <span style="color: #3d6b4f;">CBS News</span></div>
-      <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTFBpdkY4eV9OWmJUWmdkUU5CUUszTUI0SGhLdldXV3BZQnZQZ01qb0ItbkMzbURheTJiM1o1LXhPb0gyVWNIYktrcl9LX0thNm9DRFlQMEJsWVUzNEVsMmRaM01VWUR2cldCREsxbWZoQVZTNy05MG91SDExblA?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Tropical Storm Bertha impacting northern Gulf Coast. See forecast map and its path.</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 17:02:50 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
+      <a href="https://www.aljazeera.com/video/newsfeed/2026/7/22/hamass-new-leader-calls-for-permanent-gaza-ceasefire?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Hamas’s new leader calls for permanent Gaza ceasefire</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">A tropical storm watch was up for the area west of Morgan City, Louisiana, to Sargent, Texas, and for Lake Maurepas in Louisiana.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;"><strong>Hamas</strong>’s new leader calls for permanent <strong>Gaza</strong> ceasefire <strong>Hamas</strong>’s new leader calls for permanent <strong>Gaza</strong> ceasefire In his first speech since being elected <strong>Hamas</strong> political chief, Khalil al-Hayya called for a permanent ceasefire in <strong>Gaza</strong>, a full Israeli withdrawal, and faster reconstruction.</div>
       
     </div>
     
     <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 11:02:42 +0000 · <span style="color: #3d6b4f;">Al Jazeera</span></div>
-      <a href="https://www.aljazeera.com/news/2026/7/22/austria-turns-adolf-hitlers-birthplace-into-police-station?traffic_source=rss" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Austria turns Adolf Hitler’s birthplace into police station</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 05:15:35 -0400 · <span style="color: #3d6b4f;">NPR</span></div>
+      <a href="https://www.npr.org/2026/07/22/nx-s1-5902142/tropical-storm-bertha-hurricane-season" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">What forecasters expect this hurricane season, as Tropical Storm Bertha edges along</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Officers from the district and local police will be based in the building. In the end, having a charity based there would have made it too accessible to the public, he said.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Unusually warm Gulf waters increase risk of powerful storms Forecasts from the National Hurricane Center and Colorado State University predict fewer storms than average during the 2026 hurricane season.</div>
+      
+    </div>
+    
+    <div style="padding: 16px 0; border-bottom: 1px solid #ede5d5;">
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 18:00:16 GMT · <span style="color: #3d6b4f;">Yahoo! Finance Canada</span></div>
+      <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOay1lTzNkWnR6MEhwaUVzeEZVVTd6QnBKeXZSdUJ2UVlkb2lLcmtnX1JjQjB2bkR1aC1EeEFVMlZLY1dlZ1hMVFdwT0ZwUHZMb0djQXh0RXVILTdrYXRsTlhQMUV4YkxZM1BjQ1laSDB1bkh3Wm1xMVZTQnJOQ0lnZ1U0d1dEcWU5STVDZXh4di1wUE1aaXlpa0FkRldOazdKRHM5WDhWRDJiYXVhR2ItU3UwUlJyY1Y1cEE?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Stock market today: Dow, S&P 500, Nasdaq waver with Alphabet, Tesla earnings on deck</a>
+      
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">US stocks diverged on Wednesday as investors looked ahead to earnings from <strong>Alphabet</strong> (GOOG) and <strong>Tesla</strong> (TSLA) after the market close, while fresh tariffs and rising oil prices remained in focus.</div>
       
     </div>
     
     <div style="padding: 16px 0; ">
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 00:58:40 GMT · <span style="color: #3d6b4f;">The Guardian</span></div>
-      <a href="https://www.theguardian.com/us-news/2026/jul/21/gordie-howe-bridge-opening-celebration-canceled" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Canada cancels joint bridge-opening celebration with US amid trade tensions</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 14:40:22 GMT · <span style="color: #3d6b4f;">The New York Times</span></div>
+      <a href="https://news.google.com/rss/articles/CBMikwFBVV95cUxQTTNNM21pVWJUc1FZY1BiNVk5b1V6NTdqWVZvYWdhRjBPcWRWTk9WQWN0dEs2YTRWSUFPd1hnQlBCLWhVTDQxNEwtQkEtMFhmb2tpa29SSFBQbm9fNGxoWEp5NmFxZ1ZIWHBMNFNRSHFyRWVYclVRdjBOdENTaDNMRzBIblBNSFdMZ1JlMlR1OGtMZkE?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Daniel Siad, Model Scout Who Connected Women to Epstein, Is Found Dead in France</a>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">d States earlier this week, it would be inappropriate to proceed with a celebratory event between the two countries,” said Jenna Ghassabeh, a spokesperson for Canadian Infrastructure Minister Gregor Robertson, in an emailed statement.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">Read the full story at The New York Times.</div>
       
     </div>
     
@@ -246,19 +216,17 @@
     </div>
     
     <div style="padding: 14px 0; ">
-      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Jeff Su</div>
+      <div style="font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.14em; color: #3d6b4f; font-weight: 500; margin-bottom: 6px;">Theo - t3.gg</div>
       
-      <a href="https://youtube.com/watch?v=VeWf0l4ci6Y" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
-        <img src="https://img.youtube.com/vi/VeWf0l4ci6Y/mqdefault.jpg" alt="Claude Design is Insanely Easy (even for beginners)" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
+      <a href="https://youtube.com/watch?v=434cG4g5KLE" target="_blank" rel="noopener" style="display: block; margin-bottom: 10px; border-radius: 4px; overflow: hidden; line-height: 0;">
+        <img src="https://img.youtube.com/vi/434cG4g5KLE/mqdefault.jpg" alt="Stop Reading Every Line of Code" style="width: 100%; height: auto; display: block; border-radius: 4px;" />
       </a>
       
-      <a href="https://youtube.com/watch?v=VeWf0l4ci6Y" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Claude Design is Insanely Easy (even for beginners)</a>
-      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-07-21</div>
+      <a href="https://youtube.com/watch?v=434cG4g5KLE" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 18px; font-weight: 600; line-height: 1.25; display: block;">Stop Reading Every Line of Code</a>
+      <div style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; color: #8a7a60; font-weight: 400; margin-top: 6px;">2026-07-22</div>
       
-        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">Once your design system looks right, ask <strong>Claude</strong> <strong>Design</strong> to build the template: Then refine it with feedback, since every future deck references this template. Give the feedback and have <strong>Claude</strong> <strong>Design</strong> save it: A CLAUDE.md file is where <strong>Claude</strong> <strong>Design</strong> stores your standing instructions for a project, and it reads that file before every new design.</div>
+        <div style="font-size: 15px; color: #4a3f30; line-height: 1.75; margin-top: 8px; font-weight: 300;">New episode from Theo - t3.gg. Click to watch.</div>
       
-      
-        <div style="margin-top: 6px;"><a href="https://www.jeffsu.org/claude-design-tutorial/" target="_blank" rel="noopener" style="font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #3d6b4f; border-bottom: 1px solid #d4e6da;">Read transcript</a></div>
       
     </div>
     
@@ -275,16 +243,16 @@
     </tr></table>
     
     <div style="background: #1a1628; color: #f5f0e8; border-radius: 4px; padding: 18px 22px; font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-weight: 300;">
-      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security and ai vulnerabilities.
+      <span style="font-size: 10.5px; letter-spacing: 0.22em; text-transform: uppercase; color: #c47060; font-weight: 500; margin-right: 10px;">TL;DR</span>This week's focus: agentic ai security.
     </div>
     
     
     <div style="background: #faf7f0; border: 1px solid #ede5d5; border-radius: 4px; padding: 20px 22px; margin-bottom: 16px;">
       
-      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Tue, 21 Jul 2026 17:18:42 GMT · <span style="color: #3d6b4f;">CX Today</span></div>
-      <a href="https://news.google.com/rss/articles/CBMi-gFBVV95cUxQMXBrdkZ5SkhwZ1JHelVKMXZXOTJBM1l2ZWF0M2FoRkNVSGQzNFEyVDc2azdZNUlrdnNOdmRIMzVub3JNam93d0hYdlFWN09qLUJZZVM3Z0pIM2haSTlhSnZyM0NVbE10UVF4eU1GTG1TR2hnQUU1c1BFRkhmV1lwUHJyTUUxNUh1eXJHOU1tVHNDODJXQXFyWmU0N05hNzhXUk5CSFdyNEpWRS10QUZESm5YRElzM1JNZktRYmdpUWkxZkQxVWF5RWVQaHV2eEFVemZQcll1blBCOEhraXF2NkJoWE94NFh5OXNfYk15S2xQNWQzcUZka193?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Nozomi Networks Joins Anthropic’s Project Glasswing as AI Vulnerability Discovery Raises the Remediation Challenge</a>
+      <div style="font-size: 10.5px; color: #8a7a60; text-transform: uppercase; letter-spacing: 0.14em; font-weight: 500; margin-bottom: 6px;">Wed, 22 Jul 2026 14:48:45 GMT · <span style="color: #3d6b4f;">SDxCentral</span></div>
+      <a href="https://news.google.com/rss/articles/CBMinAFBVV95cUxOV2NSMVd6X0gyMlFWelVEaE9GdUtqdzFCZHNYY3czX2JGN2xvV0duSnEwbm1HSVpoVnlVLWdzR3pOdmNidmI4clNubHJzSV84MWVHUEJrQmhXcEtoaTU1SmRxSW5ZMzRheGRQNkNhV2Ezb3NOeTN0RlMweV9meFphMXNDc0E3cWtGTF9mbktQYkREYWc4Y3YwMHJvdXM?oc=5" target="_blank" rel="noopener" style="color: #1c1710; text-decoration: none; font-size: 20px; font-weight: 600; line-height: 1.25; display: block;">Google 'valuemaxxes' with AI security model response to Anthropic</a>
       
-        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;">As AI becomes embedded across business operations, the systems supporting customer experiences—from cloud platforms to connected devices and physical infrastructure—will increasingly need to withstand a faster-moving cyber threat landscape.</div>
+        <div style="font-size: 14.5px; color: #4a3f30; line-height: 1.75; margin-top: 10px; font-weight: 300;"><strong>Google</strong>'s 3.5 Flash Cyber is tuned to find, validate, and patch vulnerabilities better than Gemini’s mainline Flash models. Dubbed Antares, the models tested higher than <strong>Google</strong>'s Gemma and Gemini models, but tested lower than some OpenAI LLMs and <strong>Anthropic</strong>'s Claude Opus 4.6.</div>
       
       
     </div>
