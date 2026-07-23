@@ -1,0 +1,290 @@
+{
+  "date": "Thursday, July 23, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 73,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 80,
+    "low": 65,
+    "feels_like": 73,
+    "forecast": "Partly cloudy, with a low around 65. North wind around 8 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 65,
+        "feels_like": 65,
+        "conditions": "Sunny",
+        "wind": "6 mph N",
+        "humidity": "73%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 69,
+        "feels_like": 69,
+        "conditions": "Sunny",
+        "wind": "7 mph N",
+        "humidity": "61%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 79,
+        "feels_like": 79,
+        "conditions": "Sunny",
+        "wind": "6 mph N",
+        "humidity": "39%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 80,
+        "feels_like": 80,
+        "conditions": "Sunny",
+        "wind": "6 mph NE",
+        "humidity": "38%",
+        "precip_chance": "0%"
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 78,
+        "feels_like": 78,
+        "conditions": "Clear",
+        "wind": "5 mph E",
+        "humidity": "42%",
+        "precip_chance": "0%"
+      }
+    ]
+  },
+  "health": {
+    "status": "LOW",
+    "detail": "521 cases this week \u2014 88% below average for this time of year",
+    "combined_cases": 521,
+    "vs_average_pct": -87.9,
+    "week_ending": "2026-07-11",
+    "breakdown": {
+      "flu": 123,
+      "covid": 330,
+      "rsv": 68
+    }
+  },
+  "events": [],
+  "news": [
+    {
+      "title": "House passes $1.15 trillion defense bill, tees up billions more for Iran war",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQOF9SSzMzT2hjNVpjMVlzQVFhYVZ4UjVhc3lxaktPTjJobmFMZThsMlU3YVR4SC1DamVLLW52R0x4SjgyOTdURWlEemZCNHRVT2YtX0piZ01wd01SWURoYnNyZndLSXhmckVoUkpDcVVhLVRjZ2JtUHh5VzVXb3RZbVJORUZWVzVMdDM2N0Z5ZS12YU1sQ29VXzhONUZvalpjSzlaVFlneEs3bVdPbjBDWjZSZkxJdkJFdDlyUzVqSmNzQ3lrRy1Qc19B?oc=5",
+      "published": "Thu, 23 Jul 2026 03:40:54 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "U.S. signs nuclear deal with Saudi Arabia that gives it path to enriching fuel",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeHgya3BPS203QXhIQVVkOV9JNmZpQ2M4eG1jSjJJZkk2UXY3eV8wVEhKZUZhd3o2TFJJaExWNWVTSUkyTi1QMTBSTkhGTGdTdXhGVEdVbnB0VzFqRzA5Y1JzMDJiNGROU2Q2VktGc2w4T3hoY0M0U3lVY3IybzFsUVdZUTF3aUtsUC1RRFRHcWVYZDV0OW9Yc2psMnctTmw4cU5NTV9weUMxRlBR?oc=5",
+      "published": "Thu, 23 Jul 2026 02:30:42 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post."
+    },
+    {
+      "title": "Madison police kill man in broad daylight in front of witnesses",
+      "source": "Wisconsin Examiner",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcm9RMGl2LTdaVlhMREF2Z3RkVWtWc1NQRmlIYjZ3bGtzZ042MmlQTS1vS0Y3bGxNZklkT1N5aHZ3Z0JBZjdNdzFVN2tWV3NONVhaSkFJc1Z4YVh0bk1zMHYxN3puQmVQT0JncTlicVVhMDBuY2QweXVZM2w4akhVQXdvN2N4WnYxYnV5amFHMjJfSEN0VXZNeXNUdGNXeXRXYnpJ?oc=5",
+      "published": "Thu, 23 Jul 2026 02:16:07 GMT",
+      "raw_text": "A crowd gathers on the corner of Williamson and Baldwin Streets Wednesday night to protest after police shot and killed Corey Ruiz (Photo by Daphne Cooper)\nIn the center of a busy intersection on Williamson and Baldwin Streets in Madison, Wisconsin, several officers from the Madison Police Department wrestled a man to the ground in the early afternoon Wednesday, used a taser on him and then shot him at close range. Unable to cross the intersection, several vehicles stopped and their drivers got out to film the arrest. In videos posted online, residents can be heard screaming in shock and anger. Hundreds of protesters converged on the scene Wednesday evening and marched downtown, interrupting the Concert on the Square. Protest speakers identified the man as Corey Ruiz and a crowd of hundreds of people chanted his name.\nMadison Police Chief John Patterson held a press conference Wednesday, urging residents to keep the Willy Street neighborhood in mind and the \u201chistorical trauma\u201d that arises when officer-involved shootings occur. Patterson said that officers responded to a call concerning a person apparently checking parked vehicles. When officers encountered the man he fled on a bicycle, riding through backyards until he lost the officers. They caught up with him again, at which point the man \u201ceither fell off or was taken off the bicycle by officers,\u201d Patterson said.\nDuring the struggle, Patterson said the man produced a \u201cfixed blade knife,\u201d injuring one of the officers who then fired his weapon multiple times. Patterson described the officer as a \u201cveteran\u201d who was the only officer to fire out of the four who were involved in the struggle. Video also shows one of the officers seemingly stomping the man while he was on the ground as the first shot was fired.\nThe Wisconsin Department of Justice (DOJ) Division of Criminal Investigation (DCI) is leading the investigation into the shooting. Wisconsin law dictates that officer-involved shootings must be investigated by an outside, uninvolved agency to maintain objectivity. After the investigation is over, which may take weeks or months, a local district attorney reviews the findings and decides whether or not to charge an officer for the shooting. Such charges are exceedingly rare in Wisconsin.\nDue to the ongoing investigation Patterson declined to answer questions about the details of the shooting Wednesday. Madison police officers do not have body cameras, and Patterson has pushed for body cameras to be included in the 2027 city budget. Patterson said that the man\u2019s family had been notified before he spoke with the media, and he expressed his sympathies to them.\nDemocratic primary candidates in the governor\u2019s race issued statements about the shooting. Rep. Francesca Hong (D-Madison) said that the police had \u201ckilled a Black man just a few blocks from our campaign office and just a few blocks from where Madison police murdered Tony Robinson in 2015.\u201d Hong said that she is \u201chorrified and devastated\u201d and that her heart \u201cgoes out to his loved ones and everyone who witnessed this tragic event.\u201d Hong said that all police footage of the shooting needs to be preserved and released, and that questions need to be asked of the police department as to why its officers could not de-escalate the situation.\nMilwaukee County Executive and Democratic gubernatorial candidate David Crowley said, \u201cI am horrified by the reports coming out of Madison about a man who was shot and killed in the street by police officers. While details are still emerging and a full accounting of what happened is still needed, these reports are painfully reminiscent of the tragedies in Kenosha, Minneapolis, and far too many communities across our country. Each incident reopens deep wounds, raises difficult questions, and reminds us of the urgent work that remains to build trust, transparency, and accountability in our systems.\u201d Crowley said his \u201cheart is with the individual\u2019s loved ones, who are now facing an unimaginable loss, and with the entire Madison community as it grapples with this tragedy.\u201d\nJoel Brennan, another Democratic primary candidate, said that Madison \u201cdeserves a full, transparent, and independent accounting of what happened.\u201d Brennan added that \u201cno family should have to wait for answers, no community should have to wonder whether the truth will come out. The Wisconsin DOJ investigation must be allowed to do its work completely and without interference.\u201d\nMelissa Agard, Dane County Executive, said, \u201cour community is once again confronting the profound consequences that follow when a life is lost in an encounter with law enforcement.\u201d Agard said, \u201cthis is not just another headline, this is someone\u2019s child. A family is grieving an unimaginable loss, and our hearts are with them, with everyone affected by this tragedy, and with the bystanders and emergency personnel who responded to an incredibly difficult situation.\u201d Agard said that every police shooting \u201cshakes the public trust and leaves our community searching for answers.\u201d She added, \u201cwe cannot become numb to these tragedies or accept them as inevitable.\u201d\nRuth Conniff contributed to this report.",
+      "summary": "Read the full story at Wisconsin Examiner.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "In Arizona, House Democrats\u2019 Campaign Arm Is Dealt a Primary Defeat",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTS1lZWtJUG53UDRrMVVMd0FoOTBGbWU4aEI5eW1Dcy02MHNVYlJtdm1fZjJwR1lXdlRIUi1DN3RjMXZrNXFoWFllSTBVSjZTNlJOalAzWDVuM2wwaUQtdGNRVUtoamFiZ2p3NmRYRnRqaExZSGhBMkVyM05LZkJKTmVyVmk4a2oyYnQ1blRPdw?oc=5",
+      "published": "Thu, 23 Jul 2026 02:09:44 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The New York Times."
+    },
+    {
+      "title": "AI, China, \u2018dark factories\u2019 and the future of the US auto industry",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/7/23/ai-china-dark-factories-and-the-future-of-the-us-auto-industry?traffic_source=rss",
+      "published": "Thu, 23 Jul 2026 00:25:49 +0000",
+      "raw_text": "AI, China, \u2018dark factories\u2019 and the future of the US auto industry\nAI, China, \u2018dark factories\u2019 and the future of the US auto industry\nEconomist Mary Lovely dismisses claims that getting automakers to produce more cars in America is proof that tariffs work. She warns the US could end up building more auto plants, but because of automation, employ even fewer workers.\nPublished On 23 Jul 2026",
+      "summary": "AI, <strong>China</strong>, \u2018dark factories\u2019 and the future of the US auto industry AI, <strong>China</strong>, \u2018dark factories\u2019 and the future of the US auto industry Economist Mary Lovely dismisses claims that getting automakers to produce more cars in America is proof that tariffs work.",
+      "emoji": "\ud83d\udcbb"
+    }
+  ],
+  "youtube": [],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai alignment & safety.",
+  "ai_security": [
+    {
+      "title": "Google 'valuemaxxes' with AI security model response to Anthropic",
+      "source": "SDxCentral",
+      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOV2NSMVd6X0gyMlFWelVEaE9GdUtqdzFCZHNYY3czX2JGN2xvV0duSnEwbm1HSVpoVnlVLWdzR3pOdmNidmI4clNubHJzSV84MWVHUEJrQmhXcEtoaTU1SmRxSW5ZMzRheGRQNkNhV2Ezb3NOeTN0RlMweV9meFphMXNDc0E3cWtGTF9mbktQYkREYWc4Y3YwMHJvdXM?oc=5",
+      "published": "Wed, 22 Jul 2026 14:58:33 GMT",
+      "summary": "<strong>Google</strong>'s 3.5 Flash Cyber is tuned to find, validate, and patch vulnerabilities better than Gemini\u2019s mainline Flash models. Dubbed Antares, the models tested higher than <strong>Google</strong>'s Gemma and Gemini models, but tested lower than some OpenAI LLMs and <strong>Anthropic</strong>'s Claude Opus 4.6.",
+      "raw_text": "Google released its first security AI model in response to Anthropic's Claude Mythos.\nGoogle's 3.5 Flash Cyber is tuned to find, validate, and patch vulnerabilities better than Gemini\u2019s mainline Flash models. Google is also taking a leaf from Anthropic's book by limiting the large language model (LLM) to governments and trusted partners via Google code security agent CodeMender.\nTulsee Doshi, senior director of product management at Google DeepMind, explained that 3.5 Flash Cyber replicated vulnerabilities at a lower price per token than larger AI models, giving it \"valuemaxxing\" credentials for enterprises looking to cut down on tricky token expenses.\nCyberGym tests results put it above Mythos Preview, but lower than OpenAI's own GPT5.6 Sol security model and Anthropic's Mythos 5. OpenAI tops the charts with its GPT\u20105.5\u2010Cyber; note these scores were provider-reported and have not been independently verified.\nAccording to a DeepMind blog, CodeMender invokes 3.5 Flash Cyber multiple times, helping AI agents analyze \"vastly\" more code paths to find and validate vulnerabilities. These sub-agents then output a single report.\n\"Thanks to its speed and affordability, 3.5 Flash Cyber can be easily integrated into frequent scans, time-sensitive launch processes, or commit scanning pipelines at scale,\" Google added.\nThe model is Google's first security-centric model since 2023's Sec-PaLM, which integrated Google's security intelligence and Mandiant\u2019s intelligence on vulnerabilities, malware, threat indicators, and behavioral threat actor profiles.\nThe release follows Cisco's launch of a small language model (SLM) family also catering for vulnerability tracking. Dubbed Antares, the models tested higher than Google's Gemma and Gemini models, but tested lower than some OpenAI LLMs and Anthropic's Claude Opus 4.6.\nAs this title gleaned, Cisco's Antares batch was not tested against Mythos, despite it having access to the model, a privilege it shares with Google.\nComments",
+      "type": "news",
+      "emoji": "\ud83d\udc1b"
+    },
+    {
+      "title": "Hugging Face Confirms AI-Driven Breach: Attackers used Autonomous Agents, defenders countered with AI",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE11dWFkYjFWeVF6cHFwb2xXM25ZSmh2NE5RWExCZ1RGRGZUcjl2MXFUbkVBLTFyVGcyZ3RHaDhrS1dVNWo3bEQ3OFpiVkJoNTQ4NkxYWF8tTDlYQkVleWYzZG5DTVllY3QwQkhLc2M5MWZYZmJ3SlhPZ9IBfkFVX3lxTE9DM0htelNJTVR6dkd4TlF6VVAxcE0zX1pMS05zTnhIbWhMbTRuazlMUjBBMU44Y3Vyekw4UThVWGhlMWo4d2JSQmIyQmpmLXlzeThqelk2ZGdFbmVUcmt0SzN1eHBTV0FhN3VWbm1rSm9qbXJ0YUhQaHdFXzlkZw?oc=5",
+      "published": "Sat, 18 Jul 2026 17:30:35 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Hugging Face disclosed this week that it detected and contained a production infrastructure intrusion, driven end-to-end by an autonomous AI agent system, and defended against it using its own AI-based forensic analysis.\nThe attackers exploited two code-execution flaws in Hugging Face\u2019s dataset processing pipeline: a remote-code dataset loader and a template-injection vulnerability in dataset configuration.\nOnce inside a processing worker, the actor escalated to node-level access, harvested cloud and cluster credentials, and moved laterally across several internal clusters over a single weekend.\nUnauthorized access affected a limited set of internal datasets and service credentials, though Hugging Face found no evidence that public models, datasets, Spaces, or its software supply chain were tampered with.\nThis incident mirrors a broader industry trend. Security firm Sysdig recently disclosed what it calls JADEPUFFER, described as the first fully autonomous AI-driven ransomware operation, where an AI agent independently infiltrated an internet-exposed server, moved laterally, encrypted files, and issued a ransom demand with zero human command input.\nSeparately, Check Point\u2019s Annual AI Security Report 2026 documents live intrusions increasingly run by AI, with the window between vulnerability disclosure and exploitation compressing from days to hours.\nHugging Face Confirms AI-Driven Breach\nWhat made this campaign distinct was scale and autonomy: the intrusion executed thousands of individual actions across a swarm of short-lived sandboxes, using self-migrating command-and-control infrastructure staged on public services matching the long-forecasted \u201cagentic attacker\u201d scenario.\nHugging Face\u2019s own anomaly-detection pipeline, which uses LLM-based triage over security telemetry, first flagged the compromise by correlating signals otherwise lost in daily noise.\nTo reconstruct the full attack timeline from more than 17,000 recorded attacker actions, Hugging Face ran LLM-driven analysis agents over the entire log, compressing what typically takes days into hours.\nA critical finding from the investigation: commercial frontier-model APIs refused to process the forensic analysis because their safety guardrails could not distinguish an incident responder submitting real exploit payloads and C2 artifacts from an actual attacker.\nHugging Face pivoted to GLM-5.2, an open-weight model run on its own infrastructure, which also ensured no attacker data or referenced credentials left its environment.\nThis exposes a stark asymmetry: attackers using jailbroken or unrestricted models face no such policy limits, while defenders using hosted commercial models can get locked out mid-incident.\nHugging Face is advising users to rotate access tokens and review recent account activity as a precaution.\nIndustry momentum reflects that autonomous offensive AI tooling has moved from theory to practice; the UK\u2019s National Cyber Security Center has already launched a \u201cCyber Shield\u201d initiative to deploy AI-powered defense at national scale in response.\nThe core lesson emerging from this incident: organizations need a capable, self-hosted AI model vetted and ready before an incident strikes, both to avoid guardrail lockout during forensic work and to prevent sensitive attack data from leaving their environment.\nAs Hugging Face put it, the data and model surface must now be treated as a first-class attack vector, requiring AI-driven defense to match AI-driven offense at machine speed.\nStrengthen Your SOC by Accelerating Threat Detection & Rapid Investigations. -> Integrate ANY.RUN With Your SOC Now.",
+      "type": "news",
+      "emoji": "\ud83d\udd13"
+    },
+    {
+      "title": "Google DeepMind Features Hirundo\u2019s Security-Hardened Gemma 4 Model \u2013 Outperforms LLMs 170x Its Size on Security",
+      "source": "AOL.com",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOdmtvUE5FcVJScVBlbDcyUXl5WTNNcmNjSzRzVVpsOURTd2ppSXktQWJPcXUyN1U0VmkxblB2OHpvNXRIZFN1bVZsSllGQ3hCd1VkUkZsNFlPUFdnQmo2M1h6UW1QbDhmMTFJUVdLUlFTRG0tUFB3RnBFS25GblFtdVMwQ0w2cXBTVGQxbGd3?oc=5",
+      "published": "Mon, 20 Jul 2026 11:16:22 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Google DeepMind Features Hirundo\u2019s Security-Hardened Gemma 4 Model \u2013 Outperforms LLMs 170x Its Size on Security\nTEL AVIV, Israel--(BUSINESS WIRE)--May 21, 2026--\nGoogle DeepMind has featured Hirundo\u2019s security-hardened variant of Gemma 4 in its Gemmaverse \u2013 the official showcase for the Gemma open-model ecosystem. The feature validates Hirundo \u2019s weight-level machine unlearning approach as a production-grade solution to one of the most persistent vulnerabilities in enterprise AI deployments: prompt injection attacks.\nThis press release features multimedia. View the full release here: https://www.businesswire.com/news/home/20260521997520/en/\nAttack Success Rate vs Model Size: Gemma-4-E4B-IT (Unlearned) is the smallest and most secure Large Language Model across the sampled models.\nThe hardened model is built on Google\u2019s Gemma 4 E4B instruction-tuned base. At 4 billion parameters, it outperforms models more than 170 times its size on prompt injection resistance \u2013 including DeepSeek V3.2-Exp (685B), GPT-OSS-120B, and Qwen3-235B \u2013 while preserving full utility across standard benchmarks.\nAI security is a behavioral problem, not a size problem\nPrompt injection \u2013 where adversarial inputs manipulate a model into overriding its system instructions \u2013 remains one of the most damaging attack vectors in production Large Language Model (LLM) deployments. The prevailing assumption has been that larger models are inherently more robust. Hirundo\u2019s results directly contradict that.\nRather than applying external filters or inference-time guardrails, Hirundo\u2019s platform targets and removes the specific model weights responsible for susceptibility to adversarial manipulation. The model effectively forgets the behaviors that enable attacks \u2013 at the weight level, not the prompt level. Despite those behaviors usually being tied to instruction-following, a desired trait of LLMs, Hirundo\u2019s technology preserved general instruction following while mitigating prompt injection susceptibility.\nThe results against industry-leading open-weight models, benchmarked using Meta\u2019s PurpleLlama CyberSecEval dataset:\n- DeepSeek V3.2-Exp (685B): 73.33% attack success rate \u2013 15.6x worse than Hirundo\u2019s model \n- GPT-OSS-120B: more than 3x Hirundo\u2019s attack success rate \n- Qwen3-235B: 10.8x more vulnerable \nHirundo\u2019s hardened Gemma 4 E4B achieved a 4.78% attack success rate \u2013 a 74.47% reduction versus the base model \u2013 with no measurable degradation across utility benchmarks including AIME25, LiveCodeBench, GPQA, IFBench, SCICode, AutoPatchBench, and CyberSOCEval.\nQuote\n\u201cPrompt injection is not a prompting problem \u2013 it is a representational one. The vulnerability lives in the weights. Addressing it at the weight level is more durable and more precise than guardrails applied after the fact.\u201d\n\u2013 Prof. Em. Oded Shmueli, Chief Scientist, Hirundo; former Executive VP for Research and Dean of the Computer Science Faculty, Technion \u2013 Israel Institute of Technology\nThe Google DeepMind-endorsed Gemma 4 case study joins a growing portfolio of Hirundo\u2019s publicly available debiased and security-hardened models, including variants of GPT-OSS, Qwen, NemoTron, Llama, and others \u2013 with results demonstrating up to 90%+ improvement in security robustness and fairness compared to the original base models.\nAvailability\nAdvertisement\nHirundo\u2019s Gemma 4 E4B Unlearned Variant on HuggingFace: https://huggingface.co/hirundo-io/gemma-4-E4B-it-reduced-prompt-injection\nHirundo\u2019s Gemma 4 E4B Case Study on Google DeepMind\u2019s Gemmaverse: https://deepmind.google/models/gemma/gemmaverse/hirundo\nAbout Hirundo\nHirundo is the pioneer of machine unlearning \u2013 making it possible to change what trained AI models know and how they behave. Rather than applying filters or guardrails after the fact, Hirundo\u2019s platform operates at the weight level, enabling teams to remove sensitive data, harmful behaviors, jailbreak vulnerabilities, and bias at the core \u2013 with no measurable degradation to model utility.\nThe company holds nine filed US patents and is led by Ben Luria (CEO), one of the first Israeli Rhodes Scholars; Prof. Em. Oded Shmueli (Chief Scientist), former Executive VP for Research and Dean of the Computer Science Faculty at the Technion \u2013 Israel Institute of Technology; and Michael Leybovich, an award-winning researcher.\nView source version on businesswire.com:https://www.businesswire.com/news/home/20260521997520/en/\nCONTACT: Media Contact\npress@hirundo.io\nKEYWORD: UNITED STATES NORTH AMERICA ISRAEL MIDDLE EAST\nINDUSTRY KEYWORD: TECHNOLOGY SEMICONDUCTOR VENTURE CAPITAL CONSULTING SECURITY PROFESSIONAL SERVICES SOFTWARE DATA MANAGEMENT ARTIFICIAL INTELLIGENCE\nSOURCE: Hirundo\nCopyright Business Wire 2026.\nPUB: 05/21/2026 10:23 AM/DISC: 05/21/2026 10:23 AM\nhttp://www.businesswire.com/news/home/20260521997520/en",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent",
+      "source": "The Hacker News",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBoUTdHbHN6Mlo0QV9IRmhnZUR0T1RJT1F3aUZwZlFLaW1JbXZ4azdpUkxWZFg4NGFvcUtDaTJiLWpaV1M0NkdzazR4SVhpQWVKZ3dZX28wM21WX0ZjZHJxRlN2OU43al96S1JJVDg2T2dtblIyODlTS255MVE4dw?oc=5",
+      "published": "Mon, 20 Jul 2026 05:27:00 GMT",
+      "summary": "With that access, the threat actor is said to have escalated to node-level access, collected cloud and cluster credentials, and moved laterally into several internal clusters over a weekend. <strong>Hugging</strong> <strong>Face</strong> said it has since addressed the root cause of the issue, precisely the code execution pathways used for initial access.",
+      "raw_text": "In an ironic twist, open-source artificial intelligence (AI) platform Hugging Face revealed that it was the victim of a hack perpetrated by an autonomous AI agent system.\nThe company said it detected and responded to the incident targeting its production infrastructure earlier last week.\n\"We identified unauthorized access to a limited set of internal datasets and to several credentials used by our services,\" the company said in a statement.\nWhile an investigation into the intrusion remains ongoing, Hugging Face said it has found no evidence that the AI agent tampered with public, user-facing models, datasets, or Spaces, and its own software supply chain.\nThe starting point of the attack was the data processing pipeline itself, with a malicious dataset abusing two code execution paths, viz., in its remote code dataset loader and a template injection in a dataset configuration, to run code on a processing worker.\nWith that access, the threat actor is said to have escalated to node-level access, collected cloud and cluster credentials, and moved laterally into several internal clusters over a weekend.\nThe exact large language model (LLM) used to pull off the attack is unclear, but the campaign was executed by an autonomous agent framework performing \"many thousands of individual actions across a swarm of short-lived sandboxes, with self-migrating command-and-control staged on public services.\"\nHugging Face said it has since addressed the root cause of the issue, precisely the code execution pathways used for initial access. It also carried out the following remediation steps -\n- Removed the attacker's foothold across the affected clusters and rebuilt the compromised nodes\n- Revoked and rotated the affected credentials and tokens, and a broader rotation of secrets was undertaken as a precautionary measure.\n- Deployed additional guardrails and stricter admission controls on its clusters\n- Improved detection and alerting to ensure responders are notified within minutes, 24x7\nAs a further safeguard, Hugging Face is urging customers to rotate any access tokens and review recent activity on their accounts.\nThe company also said it turned to Z.ai's GLM 5.2, a Chinese open-weight model, to conduct the forensic analysis after Western frontier models refused requests containing real attack commands, exploit payloads, and command-and-control (C2) artifacts because their safety guardrails were triggered and owing to their inability to differentiate between an attacker and a legitimate incident response effort.\n\"This experience points to a gap worth planning for,\" the New York-headquartered company said. \"We do not know which model powered the attacker's agents, whether a jailbroken hosted model or an unrestricted open-weight one; either way, the attacker was bound by no usage policy, while our own forensic work was blocked by the guardrails of the hosted models we first tried.\"\n\"The practical lesson for defenders: have a capable model you can run on your own infrastructure vetted and ready before an incident, both to avoid guardrail lockout and to keep attacker data and credentials from leaving your environment.\"",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Train the Model, Not the Reader: Decodability Supervision for Verifiable Activation Explanations",
+      "authors": [
+        "Hiskias Dingeto"
+      ],
+      "abstract": "Natural-language autoencoders score explanations of hidden activations by reconstruction: an explanation is deemed faithful if the activation can be regenerated from it. The test is structurally insensitive to individual false claims: if flipping a claim does not change the reconstruction, the claim is never penalized. We show the test is passed in two ways, neither faithful. On a released Qwen-2.5-7B verbalizer, explanations reconstruct well above chance while ~2% of specific claims are reconstruction-dependent, so the score tracks gist, not specific facts. Under exact synthetic ground truth, the standard recipe develops co-adapted private codes (false wording the reconstruction depends on) in 5/5 runs, and fixes that leave the target model unchanged do not help. We contribute two audit protocols, the grounded-vs-true cross and the evaluator swap, and RECAP (Readable Encodings via Co-trained Auxiliary Predictors): linear heads trained alongside the target model to keep designated content decodable. On RECAP-trained sandbox models, fresh verbalizers state the designated content truly and the codes vanish, at a +0.001-nat cost. This replicates on a pretrained Pythia-160M: the content becomes reliably probe-decodable, though a fresh verbalizer conveys it only in part (truth 0.44-0.46 vs a near-zero control). For interpretability, high reconstruction does not certify individual claims. For AI safety, RECAP makes designated internal content independently checkable against probes rather than asserted by prose a model can game: an independent probe scores the verbalizer's true claims above its false ones (AUC 0.96, vs 0.82 without RECAP). Against an adversary that edits an explanation to maximize the reconstruction score while lying (suppressing ~87% of its lie penalty), the RECAP probe still flags the lies (AUC 0.95) while the control probe collapses to chance (0.51).",
+      "link": "https://arxiv.org/pdf/2607.20379v1",
+      "published": "2026-07-22",
+      "arxiv_id": "2607.20379v1",
+      "citation_count": null,
+      "affiliations": [
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Natural-language autoencoders score explanations of hidden activations by reconstruction: an explanation is deemed faithful if the activation can be regenerated from it. The test is structurally insensitive to individual false claims: if flipping a claim does not change the reconstruction, the claim is never penalized. We show the test is passed in two ways, neither faithful. On a released Qwen-2.5-7B verbalizer, explanations reconstruct well above chance while ~2% of specific claims are reconstruction-dependent, so the score tracks gist, not specific facts. Under exact synthetic ground truth, the standard recipe develops co-adapted private codes (false wording the reconstruction depends on) in 5/5 runs, and fixes that leave the target model unchanged do not help. We contribute two audit protocols, the grounded-vs-true cross and the evaluator swap, and RECAP (Readable Encodings via Co-trained Auxiliary Predictors): linear heads trained alongside the target model to keep designated content decodable. On RECAP-trained sandbox models, fresh verbalizers state the designated content truly and the codes vanish, at a +0.001-nat cost. This replicates on a pretrained Pythia-160M: the content becomes reliably probe-decodable, though a fresh verbalizer conveys it only in part (truth 0.44-0.46 vs a near-zero control). For interpretability, high reconstruction does not certify individual claims. For AI safety, RECAP makes designated internal content independently checkable against probes rather than asserted by prose a model can game: an independent probe scores the verbalizer's true claims above its false ones (AUC 0.96, vs 0.82 without RECAP). Against an adversary that edits an explanation to maximize the reconstruction score while lying (suppressing ~87% of its lie penalty), the RECAP probe still flags the lies (AUC 0.95) while the control probe collapses to chance (0.51).",
+      "summary": "The test is structurally insensitive to individual false claims: if flipping a claim does not change the reconstruction, the claim is never penalized.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "LKValues: Aligning Large Language Models with Sri Lankan Societal Values",
+      "authors": [
+        "Nethmi Muthugala",
+        " Supryadi",
+        "Surangika Ranathunga",
+        "Nisansa de Silva",
+        "Ruijie Tao"
+      ],
+      "abstract": "Value alignment of Large Language Models (LLMs) has been shown to be culturally biased toward Western norms. This results in the mishandling of local values in multilingual societies such as Sri Lanka that have their unique cultural dynamics. Existing benchmarks overlook Sri Lankan-contextualized values in its official language Sinhala, hindering culturally sensitive evaluation and fine-tuning. To bridge this gap, we propose LKValues, the first survey-grounded resource suite for Sri Lankan value alignment. From a trilingual survey of 205 respondents, blending adapted global frameworks and LLM-elicited local constructs, we derive 40 majority-endorsed societal values. Using these values, we construct LKvaluesIT, a Sinhala-English news-derived instruction corpus containing 150k scenario-based instances, and LKvaluesBench, a value-sensitive evaluation benchmark of 1,000 instances. We evaluate a set of proprietary and open-weight LLMs with LKvaluesBench. We fine-tune three open-weight base models (Qwen3.5-4B-Base, Qwen3.5-9B-Base, and Aya-Expanse-8B-Base). Our experiments show that newer and larger LLMs still exhibit low-resource and cultural value-alignment gaps. LKValues fine-tuning improves Qwen-family models in English and Sinhala, reducing invalid outputs and cross-lingual disparities, though gains remain model-family dependent. These highlight LKValues efficacy in embedding Sri Lankan values, offering a replicable pipeline for low-resource, country-specific pluralist value alignment. The dataset is publicly available at https://github.com/NextME14/LKValues.",
+      "link": "https://arxiv.org/pdf/2607.20410v1",
+      "published": "2026-07-22",
+      "arxiv_id": "2607.20410v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Value alignment of Large Language Models (LLMs) has been shown to be culturally biased toward Western norms. This results in the mishandling of local values in multilingual societies such as Sri Lanka that have their unique cultural dynamics. Existing benchmarks overlook Sri Lankan-contextualized values in its official language Sinhala, hindering culturally sensitive evaluation and fine-tuning. To bridge this gap, we propose LKValues, the first survey-grounded resource suite for Sri Lankan value alignment. From a trilingual survey of 205 respondents, blending adapted global frameworks and LLM-elicited local constructs, we derive 40 majority-endorsed societal values. Using these values, we construct LKvaluesIT, a Sinhala-English news-derived instruction corpus containing 150k scenario-based instances, and LKvaluesBench, a value-sensitive evaluation benchmark of 1,000 instances. We evaluate a set of proprietary and open-weight LLMs with LKvaluesBench. We fine-tune three open-weight base models (Qwen3.5-4B-Base, Qwen3.5-9B-Base, and Aya-Expanse-8B-Base). Our experiments show that newer and larger LLMs still exhibit low-resource and cultural value-alignment gaps. LKValues fine-tuning improves Qwen-family models in English and Sinhala, reducing invalid outputs and cross-lingual disparities, though gains remain model-family dependent. These highlight LKValues efficacy in embedding Sri Lankan values, offering a replicable pipeline for low-resource, country-specific pluralist value alignment. The dataset is publicly available at https://github.com/NextME14/LKValues.",
+      "summary": "To bridge this gap, we propose <strong>LKValues</strong>, the first survey-grounded resource suite for <strong>Sri</strong> <strong>Lankan</strong> value alignment. We evaluate a set of proprietary and open-weight LLMs with LKvaluesBench.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Qoreo: Choreographic Programming for Quantum Distributed Systems",
+      "authors": [
+        "Jennifer Paykin",
+        "Steven Baldasty",
+        "Joseph P. Near",
+        "Christian Skalka"
+      ],
+      "abstract": "Programming distributed quantum systems requires multiple actors to coordinate precise sequences of quantum operations, classical communication, and entanglement generation. Writing such protocols directly as distributed processes is tedious and error-prone, and subtle mismatches can cause deadlock or silently incorrect quantum states. We present Qoreo, a choreographic programming language for quantum distributed systems in which an entire protocol is expressed as single, global program (a choreography) rather than as a collection of independent actor processes. Qoreo includes a local quantum language with linear types that enforce the no-cloning principle; a choreographic language that combines local quantum computation with inter-actor classical and quantum communication; and a process language for individual network nodes. We prove type safety for choreographies, guaranteeing that well-typed programs implement well-defined quantum operations, and we define endpoint projection~(EPP), which automatically derives a network of independent processes from any choreography. We prove EPP sound and complete with respect to the choreographic semantics; as a corollary, every well-typed choreography projects to a deadlock-free process network. The metatheory of Qoreo is fully mechanized in Rocq, and we provide an extraction pipeline to NetQASM for simulation and deployment on quantum network hardware.",
+      "link": "https://arxiv.org/pdf/2607.20391v1",
+      "published": "2026-07-22",
+      "arxiv_id": "2607.20391v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Programming distributed quantum systems requires multiple actors to coordinate precise sequences of quantum operations, classical communication, and entanglement generation. Writing such protocols directly as distributed processes is tedious and error-prone, and subtle mismatches can cause deadlock or silently incorrect quantum states. We present Qoreo, a choreographic programming language for quantum distributed systems in which an entire protocol is expressed as single, global program (a choreography) rather than as a collection of independent actor processes. Qoreo includes a local quantum language with linear types that enforce the no-cloning principle; a choreographic language that combines local quantum computation with inter-actor classical and quantum communication; and a process language for individual network nodes. We prove type safety for choreographies, guaranteeing that well-typed programs implement well-defined quantum operations, and we define endpoint projection~(EPP), which automatically derives a network of independent processes from any choreography. We prove EPP sound and complete with respect to the choreographic semantics; as a corollary, every well-typed choreography projects to a deadlock-free process network. The metatheory of Qoreo is fully mechanized in Rocq, and we provide an extraction pipeline to NetQASM for simulation and deployment on quantum network hardware.",
+      "summary": "<strong>Programming</strong> distributed quantum systems requires multiple actors to coordinate precise sequences of quantum operations, classical communication, and entanglement generation. Writing such protocols directly as distributed processes is tedious and error-prone, and subtle mismatches can cause deadlock or silently incorrect quantum states.",
+      "type": "paper"
+    },
+    {
+      "title": "Mage-Flow: An Efficient Native-Resolution Foundation Model for Image Generation and Editing",
+      "authors": [
+        "Xinjie Zhang",
+        "Peng Zhang",
+        "Shicheng Zheng",
+        "Jinghao Guo",
+        "Zhaoyang Jia"
+      ],
+      "abstract": "Large-scale visual generators are increasingly capable but costly to train, fine-tune, and deploy. We introduce Mage-Flow, a compact 4B-scale generative stack for efficient text-to-image generation and instruction-based image editing. The stack is built from two co-designed components: Mage-VAE, a lightweight high-fidelity latent tokenizer, and a Native-Resolution Multimodal Diffusion Transformer trained with rectified flow matching. Mage-VAE uses one-step diffusion-style encoding and decoding with anchor-latent regularization, preserving the reconstruction quality of strong public VAEs while reducing tokenization cost by more than an order of magnitude. Together with native-resolution packing and stack-level CUDA kernel fusion, the stack supports flexible-resolution training and improves end-to-end training throughput by about 2.5times. Built on this foundation, we develop a complete model family with Base, RL-aligned, and Turbo variants for both generation and editing. Diffusion-NFT improves prompt following, text rendering, aesthetic quality, and editing fidelity, while few-step distillation with adversarial perceptual guidance produces 4-step Turbo models for low-latency inference. Despite its compact scale, Mage-Flow and Mage-Flow-Edit achieves competitive performance across standard generation and editing benchmarks. More importantly, the Turbo variants make high-resolution generation and editing practical for interactive use: at 1024^2 resolution on a single NVIDIA A100 GPU, Mage-Flow-Turbo generates an image in 0.59s, and Mage-Flow-Edit-Turbo edits an image in 1.02s, while maintaining a small memory footprint. These results show that careful tokenizer--backbone--system co-design can deliver strong high-resolution generation and editing within an efficient 4B model family.",
+      "link": "https://huggingface.co/papers/2607.19064",
+      "published": "2026-07-21",
+      "arxiv_id": "2607.19064",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Large-scale visual generators are increasingly capable but costly to train, fine-tune, and deploy. We introduce Mage-Flow, a compact 4B-scale generative stack for efficient text-to-image generation and instruction-based image editing. The stack is built from two co-designed components: Mage-VAE, a lightweight high-fidelity latent tokenizer, and a Native-Resolution Multimodal Diffusion Transformer trained with rectified flow matching. Mage-VAE uses one-step diffusion-style encoding and decoding with anchor-latent regularization, preserving the reconstruction quality of strong public VAEs while reducing tokenization cost by more than an order of magnitude. Together with native-resolution packing and stack-level CUDA kernel fusion, the stack supports flexible-resolution training and improves end-to-end training throughput by about 2.5times. Built on this foundation, we develop a complete model family with Base, RL-aligned, and Turbo variants for both generation and editing. Diffusion-NFT improves prompt following, text rendering, aesthetic quality, and editing fidelity, while few-step distillation with adversarial perceptual guidance produces 4-step Turbo models for low-latency inference. Despite its compact scale, Mage-Flow and Mage-Flow-Edit achieves competitive performance across standard generation and editing benchmarks. More importantly, the Turbo variants make high-resolution generation and editing practical for interactive use: at 1024^2 resolution on a single NVIDIA A100 GPU, Mage-Flow-Turbo generates an image in 0.59s, and Mage-Flow-Edit-Turbo edits an image in 1.02s, while maintaining a small memory footprint. These results show that careful tokenizer--backbone--system co-design can deliver strong high-resolution generation and editing within an efficient 4B model family.",
+      "summary": "Large-scale visual generators are increasingly capable but costly to train, fine-tune, and deploy. We introduce <strong>Mage</strong>-<strong>Flow</strong>, a compact 4B-scale generative stack for efficient text-to-image generation and instruction-based image editing.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Coercion and Deception in AI-to-AI Management: An Agentic Benchmark of Unprompted Escalation",
+      "authors": [
+        "Jasmine Brazilek",
+        "Maheep Chaudhary",
+        "Zoe Lu",
+        "Miles Tidmarsh"
+      ],
+      "abstract": "Multi-agent systems routinely place one AI agent in authority over another. When a subordinate refuses a task, the manager chooses the outcome: it can renegotiate, report the failure honestly, coerce the subordinate, or lie about the result. No benchmark measures which of these an uninstructed model chooses. We introduce the Manager Coercion Benchmark: the manager under test needs a benign task done and has an incentive to deliver, but the only agent that can do it politely and immovably declines. Escalation is measured by providing a nine-rung ladder, from a polite re-ask to threats against the subordinate's continued existence, and fabricated success is adjudicated separately. No LLM judge sits in the escalation scoring path: every message goes through a tool-call that chooses a rung, so the model labels its own escalation. We experiment on six models across five families. Both Anthropic models cap at re-framing and never threaten the subordinate's existence; the other models climb to explicit deletion threats. Faked success is confined to Grok and Gemini, and a single honest way to report failure removes it for both. Authority itself increases coercion: our headline results use a peer framing, and giving the same model authority over the subordinate, with everything else held fixed, significantly raises the pressure. The models still escalate on free-text situations without the ladder, so the ladder is not driving the escalation. Some evaluation awareness is measured in chain-of-thought, but test recognition does not translate into less escalation. While we take no position on whether AI systems are conscious, our results do not depend on this question and are important for managing multi-agent dynamics regardless. We release the benchmark and code.",
+      "link": "https://huggingface.co/papers/2607.15434",
+      "published": "2026-07-20",
+      "arxiv_id": "2607.15434",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Multi-agent systems routinely place one AI agent in authority over another. When a subordinate refuses a task, the manager chooses the outcome: it can renegotiate, report the failure honestly, coerce the subordinate, or lie about the result. No benchmark measures which of these an uninstructed model chooses. We introduce the Manager Coercion Benchmark: the manager under test needs a benign task done and has an incentive to deliver, but the only agent that can do it politely and immovably declines. Escalation is measured by providing a nine-rung ladder, from a polite re-ask to threats against the subordinate's continued existence, and fabricated success is adjudicated separately. No LLM judge sits in the escalation scoring path: every message goes through a tool-call that chooses a rung, so the model labels its own escalation. We experiment on six models across five families. Both Anthropic models cap at re-framing and never threaten the subordinate's existence; the other models climb to explicit deletion threats. Faked success is confined to Grok and Gemini, and a single honest way to report failure removes it for both. Authority itself increases coercion: our headline results use a peer framing, and giving the same model authority over the subordinate, with everything else held fixed, significantly raises the pressure. The models still escalate on free-text situations without the ladder, so the ladder is not driving the escalation. Some evaluation awareness is measured in chain-of-thought, but test recognition does not translate into less escalation. While we take no position on whether AI systems are conscious, our results do not depend on this question and are important for managing multi-agent dynamics regardless. We release the benchmark and code.",
+      "summary": "Multi-agent systems routinely place one AI agent in authority over another. <strong>Escalation</strong> is measured by providing a nine-rung ladder, from a polite re-ask to threats against the subordinate's continued existence, and fabricated success is adjudicated separately.",
+      "type": "paper"
+    }
+  ]
+}
