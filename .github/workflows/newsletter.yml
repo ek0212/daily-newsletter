@@ -4,10 +4,17 @@ on:
   push:
     branches:
       - main
+  # GitHub cron is UTC only and does not follow US daylight saving time, so each
+  # local run time is scheduled twice (EDT and EST offsets). The "Check local
+  # publish hour" step below drops whichever half of the pair is off-hour, so
+  # each slot fires exactly once per day in America/New_York.
   schedule:
-    - cron: '0 11 * * *'  # 11 AM UTC = 6 AM EST
-    - cron: '0 19 * * *'  # 7 PM UTC = 2 PM EST
-    - cron: '0 1 * * *'   # 1 AM UTC = 8 PM EST
+    - cron: '0 9 * * *'   # 5 AM EDT
+    - cron: '0 10 * * *'  # 5 AM EST
+    - cron: '0 18 * * *'  # 2 PM EDT
+    - cron: '0 19 * * *'  # 2 PM EST
+    - cron: '0 0 * * *'   # 8 PM EDT
+    - cron: '0 1 * * *'   # 8 PM EST
   workflow_dispatch:
 
 permissions:
@@ -26,21 +33,41 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # Each publish slot has two cron entries (EDT and EST). Skip the one that
+      # is not currently the intended local hour. Manual and push runs bypass this.
+      - name: Check local publish hour
+        id: hour_gate
+        run: |
+          LOCAL_HOUR=$(TZ=America/New_York date +%-H)
+          echo "Local hour in America/New_York: ${LOCAL_HOUR}"
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          elif [ "$LOCAL_HOUR" = "5" ] || [ "$LOCAL_HOUR" = "14" ] || [ "$LOCAL_HOUR" = "20" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "Off-hour duplicate of a DST cron pair, skipping."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Checkout
+        if: steps.hour_gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
       - name: Setup Python
+        if: steps.hour_gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
       - name: Install dependencies
+        if: steps.hour_gate.outputs.run == 'true'
         run: |
           pip install -r requirements.txt
           python -c "import nltk; nltk.download('punkt_tab', quiet=True); nltk.download('punkt', quiet=True)"
 
       - name: Start Tor proxy
+        if: steps.hour_gate.outputs.run == 'true'
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq tor > /dev/null
           # Enable control port for circuit rotation (no auth needed in CI)
@@ -51,11 +78,13 @@ jobs:
           curl -s --socks5-hostname 127.0.0.1:9050 https://check.torproject.org/api/ip || echo "Tor check failed, continuing anyway"
 
       - name: Restore site archive
+        if: steps.hour_gate.outputs.run == 'true'
         run: |
           git fetch origin gh-pages --depth=1 || true
           git checkout origin/gh-pages -- site/ 2>/dev/null || echo "No existing site archive"
 
       - name: Run newsletter
+        if: steps.hour_gate.outputs.run == 'true'
         env:
           SITE_URL: ${{ vars.SITE_URL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
@@ -63,6 +92,7 @@ jobs:
         run: python -m src.newsletter 2>&1 | tee /tmp/newsletter-build.log
 
       - name: Validate summary quality
+        if: steps.hour_gate.outputs.run == 'true'
         run: |
           python3 -c "
           import json, sys
@@ -93,15 +123,18 @@ jobs:
           "
 
       - name: Upload Pages artifact
+        if: steps.hour_gate.outputs.run == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/
 
       - name: Deploy to GitHub Pages
+        if: steps.hour_gate.outputs.run == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
 
       - name: Commit site to gh-pages branch
+        if: steps.hour_gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
