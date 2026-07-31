@@ -8,6 +8,10 @@ VERBOSE_LOGGING = os.getenv("VERBOSE_LOGGING", "0") == "1"
 # ── Fetch defaults (newsletter.py orchestration) ────────────────────────
 DEFAULT_NEWS_COUNT = 5
 DEFAULT_YOUTUBE_DAYS = 1
+YOUTUBE_EMAIL_DIGEST_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(__file__)), "data", "youtube_email_digest.json"
+)
+MAX_EMAIL_DIGEST_VIDEOS = 5
 DEFAULT_PAPERS_DAYS_BACK = 3
 DEFAULT_PAPERS_TOP_N = 5
 DEFAULT_AI_NEWS_COUNT = 4
@@ -77,6 +81,9 @@ NWS_HOURLY_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast/hourly"
 NWS_STATIONS_URL = f"https://api.weather.gov/points/{NWS_POINT_LATITUDE},{NWS_POINT_LONGITUDE}/stations"
 NYC_EVENTS_API_URL = "https://data.cityofnewyork.us/resource/tvpp-9vvx.json"
 NYC_HEALTH_BASE_URL = "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+NYC_HEALTH_PRESS_RELEASES_URL = "https://www.nyc.gov/site/doh/about/press/recent-press-releases.page"
+FDA_FOODBORNE_OUTBREAKS_URL = "https://www.fda.gov/food/outbreaks-foodborne-illness/investigations-foodborne-illness-outbreaks"
+CDC_FOOD_SAFETY_RSS_URL = "https://tools.cdc.gov/api/v2/resources/media/316422.rss"
 GOOGLE_NEWS_SEARCH_URL = "https://news.google.com/rss/search"
 
 # ── Weather ──────────────────────────────────────────────────────────────

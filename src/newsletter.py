@@ -95,6 +95,169 @@ _AI_SECURITY_TOPIC_CLUSTERS = [
 _MAX_PER_TOPIC_CLUSTER = 2
 
 
+def _plural(count: int, singular: str, plural: str | None = None) -> str:
+    """Return count with singular or plural label.
+
+    Args:
+        count: Item count.
+        singular: Singular noun.
+        plural: Optional plural noun. Defaults to singular plus "s".
+
+    Returns:
+        Human-readable count label.
+    """
+    noun = singular if count == 1 else plural or f"{singular}s"
+    return f"{count} {noun}"
+
+
+def _weather_exception(weather: dict) -> str:
+    """Return weather callout text when conditions need attention.
+
+    Args:
+        weather: Weather payload from get_nyc_weather.
+
+    Returns:
+        Exception text, or empty string.
+    """
+    if not weather:
+        return "Weather unavailable."
+    conditions = (weather.get("conditions") or "").lower()
+    trigger_words = ("thunder", "storm", "rain", "shower", "snow", "ice", "hot", "wind", "flood")
+    if any(word in conditions for word in trigger_words):
+        return f"Weather watch: {weather.get('conditions', 'check forecast')}."
+    return ""
+
+
+def _top_weather_risk(weather: dict) -> tuple[str, str]:
+    """Return a compact weather risk label and detail for the metric strip.
+
+    Args:
+        weather: Weather payload from get_nyc_weather.
+
+    Returns:
+        Tuple of short risk label and supporting detail.
+    """
+    conditions = " ".join(
+        [weather.get("conditions", "")]
+        + [hour.get("conditions", "") for hour in weather.get("hourly", [])]
+    ).lower()
+    temps = [hour.get("temp") for hour in weather.get("hourly", []) if isinstance(hour.get("temp"), int)]
+    if "smoke" in conditions or "haze" in conditions:
+        return "Smoke", "AQ caution"
+    if temps and max(temps) >= 85:
+        return "Heat", "Hydrate"
+    if any(word in conditions for word in ("thunder", "storm", "rain", "shower")):
+        return "Rain", "Plan cover"
+    return "Low", "Normal watch"
+
+
+def _max_precip(weather: dict) -> str:
+    """Return highest displayed precipitation chance.
+
+    Args:
+        weather: Weather payload from get_nyc_weather.
+
+    Returns:
+        Percent string for metric strip.
+    """
+    values = []
+    for hour in weather.get("hourly", []):
+        raw = str(hour.get("precip_chance", "")).strip().rstrip("%")
+        if raw.isdigit():
+            values.append(int(raw))
+    return f"{max(values)}% rain" if values else ""
+
+
+def _latest_ai_paper_date(ai_security: list[dict]) -> str:
+    """Return the newest paper date in a compact display format."""
+    dates = [item.get("published", "") for item in ai_security if item.get("type") == "paper"]
+    if not dates:
+        return "Current"
+    raw = max(dates)
+    try:
+        return datetime.fromisoformat(raw[:10]).strftime("%b %-d")
+    except ValueError:
+        return raw[:10] or "Current"
+
+
+def _build_issue_dashboard(data: dict) -> dict:
+    """Build dashboard metadata for newsletter header.
+
+    Args:
+        data: Newsletter payload after all fetchers and summarizers run.
+
+    Returns:
+        Dashboard metadata consumed by the email template.
+    """
+    events = data.get("events", [])
+    news = data.get("news", [])
+    youtube = data.get("youtube", [])
+    ai_security = data.get("ai_security", [])
+    health = data.get("health", {})
+    weather = data.get("weather", {})
+
+    ai_security_tldr = data.get("ai_security_tldr") or ""
+    lead_detail = ai_security_tldr or "NYC logistics, public-health context, major news, videos, and AI security in one scan."
+    top_risk, top_risk_detail = _top_weather_risk(weather)
+    paper_count = len([item for item in ai_security if item.get("type") == "paper"])
+
+    cards = [
+        {
+            "emoji": "&#x1F324;&#xFE0F;",
+            "label": "Weather",
+            "value": f"{weather.get('high', weather.get('current_temp', '?'))}°F",
+            "detail": _max_precip(weather) or "Check hourly",
+        },
+        {
+            "emoji": "&#x1F3E5;",
+            "label": "Health",
+            "value": str(health.get("status", "Unknown")).title(),
+            "detail": f"Week ending {health.get('week_ending', 'latest')}",
+        },
+        {
+            "emoji": "&#x26A0;&#xFE0F;",
+            "label": "Top risk",
+            "value": top_risk,
+            "detail": top_risk_detail,
+        },
+        {
+            "emoji": "&#x1F512;",
+            "label": "AI sec",
+            "value": _plural(paper_count, "paper"),
+            "detail": _latest_ai_paper_date(ai_security),
+        },
+        {
+            "emoji": "&#x25B6;&#xFE0F;",
+            "label": "YouTube",
+            "value": str(len(youtube)),
+            "detail": "seeded videos",
+        },
+    ]
+
+    exceptions = []
+    weather_callout = _weather_exception(data.get("weather", {}))
+    if weather_callout:
+        exceptions.append({"level": "attention", "text": weather_callout})
+    if health and health.get("status") in {"HIGH", "WATCH"}:
+        exceptions.append({"level": "urgent", "text": f"NYC public-health watch: {health.get('detail', 'check health section')}."})
+    if not news:
+        exceptions.append({"level": "attention", "text": "Top news feed returned no usable stories."})
+    if not ai_security:
+        exceptions.append({"level": "attention", "text": "AI security feeds returned no usable updates."})
+
+    return {
+        "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+        "lead_label": "Overall signal",
+        "lead_detail": lead_detail,
+        "cards": cards,
+        "exceptions": exceptions,
+        "news_count": len(news),
+        "events_count": len(events),
+        "youtube_count": len(youtube),
+        "ai_security_count": len(ai_security),
+    }
+
+
 def _title_words(title: str) -> set[str]:
     """Extract meaningful words from a title for overlap comparison."""
     stopwords = {"the", "a", "an", "in", "on", "at", "to", "for", "of", "and", "or", "is", "are", "was", "were", "by", "with", "from", "as", "its", "has", "have", "had", "be", "been", "will", "would", "could", "should", "may", "might"}
@@ -276,7 +439,7 @@ def fetch_all_data() -> dict:
     ai_security_tldr = generate_ai_security_tldr(ai_security)
     logger.info("AI security TLDR generated in %.1fs", time.time() - t0)
 
-    return {
+    data = {
         "date": datetime.now().strftime(DATE_DISPLAY_FORMAT),
         "weather": weather,
         "health": health,
@@ -286,6 +449,8 @@ def fetch_all_data() -> dict:
         "ai_security_tldr": ai_security_tldr,
         "ai_security": ai_security,
     }
+    data["issue_dashboard"] = _build_issue_dashboard(data)
+    return data
 
 
 def render_html(data: dict) -> str:

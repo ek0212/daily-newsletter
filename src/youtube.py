@@ -5,6 +5,7 @@ Uses a tiered approach for getting episode text:
 2. YouTube transcript API direct (works locally, may be blocked in CI)
 """
 
+import json
 import logging
 import re
 from datetime import datetime, timedelta, timezone
@@ -15,6 +16,7 @@ import trafilatura
 
 from src.constants import (
     HTTP_TIMEOUT_SHORT,
+    MAX_EMAIL_DIGEST_VIDEOS,
     MAX_PODCAST_ENTRIES,
     MAX_VIDEOS,
     MIN_TEXT_LENGTH_LONG,
@@ -22,6 +24,7 @@ from src.constants import (
     MIN_TEXT_LENGTH_SHORT,
     PODCAST_MATCH_THRESHOLD,
     PODCAST_MIN_DESC_CHARS,
+    YOUTUBE_EMAIL_DIGEST_FILE,
 )
 from src.summarizer import summarize as extractive_summarize
 
@@ -348,6 +351,105 @@ def _get_transcript_text(video_id: str) -> str:
     return ""
 
 
+def _extract_video_id(url: str) -> str:
+    """Extract a YouTube video ID from a watch or youtu.be URL.
+
+    Args:
+        url: A YouTube video URL.
+
+    Returns:
+        The 11-character video ID, or an empty string if none is found.
+    """
+    if not url:
+        return ""
+    if "watch?v=" in url:
+        return url.split("watch?v=")[-1].split("&")[0]
+    if "youtu.be/" in url:
+        return url.split("youtu.be/")[-1].split("?")[0].split("&")[0]
+    if "/shorts/" in url:
+        return url.split("/shorts/")[-1].split("?")[0]
+    return ""
+
+
+def load_email_digest_videos() -> list[dict]:
+    """Load YouTube items extracted from the Gmail digest by the scheduled task.
+
+    Reads YOUTUBE_EMAIL_DIGEST_FILE, a JSON list of objects with at least a
+    'url' and 'title'. Optional fields: 'channel', 'summary', 'video_id'.
+    Each item is normalized to the internal video dict shape used by the
+    newsletter pipeline. Items missing both a resolvable video_id and a url
+    are skipped.
+
+    Returns:
+        A list of normalized video dicts, capped at MAX_EMAIL_DIGEST_VIDEOS.
+        Returns an empty list if the file is absent or malformed.
+    """
+    try:
+        with open(YOUTUBE_EMAIL_DIGEST_FILE, encoding="utf-8") as f:
+            raw_items = json.load(f)
+    except FileNotFoundError:
+        logger.info("No YouTube email digest file at %s", YOUTUBE_EMAIL_DIGEST_FILE)
+        return []
+    except (json.JSONDecodeError, OSError) as e:
+        logger.warning("Failed to read YouTube email digest: %s", e)
+        return []
+
+    if not isinstance(raw_items, list):
+        logger.warning("YouTube email digest is not a list; ignoring")
+        return []
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    normalized = []
+    for item in raw_items:
+        if not isinstance(item, dict):
+            continue
+        url = item.get("url", "") or item.get("link", "")
+        video_id = item.get("video_id", "") or _extract_video_id(url)
+        if not video_id and not url:
+            continue
+        normalized.append({
+            "channel": item.get("channel", "") or "From your YouTube email",
+            "title": item.get("title", "").strip(),
+            "video_id": video_id,
+            "published": item.get("published", today),
+            "link": f"https://youtube.com/watch?v={video_id}" if video_id else url,
+            "summary": item.get("summary", "").strip(),
+            "raw_text": "",
+            "from_email_digest": True,
+        })
+    return normalized[:MAX_EMAIL_DIGEST_VIDEOS]
+
+
+def _merge_email_digest_videos(selected: list[dict], digest: list[dict]) -> list[dict]:
+    """Append email-digest videos to RSS videos, dropping duplicates.
+
+    Deduplicates by video_id and by fuzzy title match against already-selected
+    videos so the same episode is not listed twice.
+
+    Args:
+        selected: Videos already chosen from channel RSS feeds.
+        digest: Normalized videos from the Gmail digest.
+
+    Returns:
+        The merged list with digest items appended after RSS items.
+    """
+    existing_ids = {v.get("video_id") for v in selected if v.get("video_id")}
+    merged = list(selected)
+    for item in digest:
+        if item["video_id"] and item["video_id"] in existing_ids:
+            continue
+        if any(_title_similarity(item["title"], v.get("title", "")) >= PODCAST_MATCH_THRESHOLD
+               for v in selected):
+            continue
+        merged.append(item)
+        if item["video_id"]:
+            existing_ids.add(item["video_id"])
+    added = len(merged) - len(selected)
+    if added:
+        logger.info("Merged %d YouTube items from email digest", added)
+    return merged
+
+
 def get_recent_videos(days: int = 3) -> list[dict]:
     """Fetch videos from the last N days across all YouTube channels."""
     logger.info("Fetching videos from %d YouTube channels (last %d days)", len(YOUTUBE_CHANNELS), days)
@@ -475,6 +577,9 @@ def get_recent_videos(days: int = 3) -> list[dict]:
                     video["summary"] = result
             except Exception as e:
                 logger.warning("Summarize failed for '%s': %s", video["title"][:60], e)
+
+    # Merge in items extracted from the Gmail YouTube digest (no transcript fetch).
+    selected = _merge_email_digest_videos(selected, load_email_digest_videos())
 
     # Clean up and log
     for video in selected:

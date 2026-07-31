@@ -14,6 +14,34 @@
 
 ---
 
+## 2026-07-17: Compact briefing reference format
+
+**Context:** The colorful dashboard restored personality but moved away from the preferred briefing structure shown in the July 17 reference issue.
+
+**Decision:** Use the compact Daily Morning Briefing format: direct masthead, one-line overall signal, five metric tiles, weather and health tables, emoji-led linked rows for events/news/videos/security, separate AI articles and papers, optional Second Brain todo table, notes, and one final overall-signal paragraph.
+
+**Alternatives considered:**
+- Big colorful dashboard cards: rejected because they made the issue feel less like the preferred briefing
+- Plain prose report: rejected because the reference format is still visual and scan-first
+
+**Status:** ACTIVE
+
+---
+
+## 2026-07-17: Dashboard keeps newsletter personality
+
+**Context:** The issue dashboard made the newsletter easier to scan but flattened the existing Midtown Briefing voice.
+
+**Decision:** Keep the dashboard structure, but render it with colorful cards, emoji cues, playful action labels, and one primary CTA plus limited secondary CTAs.
+
+**Alternatives considered:**
+- Plain operational dashboard: rejected because this newsletter is personality-led and should feel fun to open
+- Removing the dashboard entirely: rejected because the top summary remains useful for fast scanning
+
+**Status:** BACKTRACKED
+
+---
+
 ## 2026-04-04: Importance scoring for news story selection
 
 **Context:** The "top 5 news" section was including local incidents (bus crashes, retirement home crimes) alongside global stories, making the newsletter feel unfocused.
