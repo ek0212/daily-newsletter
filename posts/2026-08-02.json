@@ -1,0 +1,456 @@
+{
+  "date": "Sunday, August 02, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 75,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 82,
+    "low": 74,
+    "feels_like": 75,
+    "forecast": "A chance of showers and thunderstorms after 5pm. Mostly cloudy. High near 83, with temperatures falling to around 80 in the afternoon. South wind 7 to 16 mph. Chance of precipitation is 30%. New rainfall amounts less than a tenth of an inch possible.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 75,
+        "feels_like": 80,
+        "conditions": "Cloudy",
+        "wind": "6 mph S",
+        "humidity": "86%",
+        "precip_chance": "1%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 78,
+        "feels_like": 83,
+        "conditions": "Cloudy",
+        "wind": "8 mph S",
+        "humidity": "77%",
+        "precip_chance": "3%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 82,
+        "feels_like": 84,
+        "conditions": "Cloudy",
+        "wind": "13 mph SE",
+        "humidity": "65%",
+        "precip_chance": "7%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 80,
+        "feels_like": 83,
+        "conditions": "Partly Cloudy",
+        "wind": "12 mph SE",
+        "humidity": "69%",
+        "precip_chance": "6%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 78,
+        "feels_like": 82,
+        "conditions": "Cloudy",
+        "wind": "11 mph SE",
+        "humidity": "79%",
+        "precip_chance": "10%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "950 cases this week \u2014 81% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 950,
+    "vs_average_pct": -81.0,
+    "week_ending": "2026-07-25",
+    "breakdown": {
+      "flu": 206,
+      "covid": 657,
+      "rsv": 87
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "950 combined flu/COVID/RSV cases",
+        "comparison": "81% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "current": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "comparison": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdjlUSG1Tem95R3QwTl9feVY4RzFDRGwwcG5CTGJIYmFJOGhleVVfWk9iRERqVC00cXNJT1NiWklrbklLUTNMczdQbE5TTkRhMFdqc2pCdFlOVEQtek1LSF9IcUtEMUhyc3BscFFPN080NE15YmRvdk1DNktVa3hKTUVkNVQtZXJBc1M2U2ZmVnBmcW9xcDN2NjR1WGJSVUtWamc1eTRONmp1YmUzU1HSAbYBQVVfeXFMTm00aDlnZUs0Q2h4UkZDTG9CM3NzYWN5TGU2QlpRZkQtZ3lIamVGMFNESTMybUZIQTFNQTZHV3otUVlQbUxkbmF5TUtKZEY5RFhpdEk1cU9nb2szYzBUUlVXdnB4MHhDdDd5M3BDOUEwVzRybGZhM3ZWTWVTS1hGX1NBcTBiSHoteEVBaFUydmRRRjZkaUJkRFZITTMzQ2ZhVDAxc3h6ejViQWRaV0V2N1lDalY1YVE?oc=5",
+        "title": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "summary": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "published": "Mon, 06 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (C",
+        "current": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition",
+        "comparison": "Fri, 31 Jul 2026 19:55:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766134",
+        "title": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (Coconut) Allergens",
+        "summary": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition facts panel for the following products:",
+        "published": "Fri, 31 Jul 2026 19:55:00 GMT"
+      },
+      {
+        "signal": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
+        "title": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "current": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "comparison": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdjlUSG1Tem95R3QwTl9feVY4RzFDRGwwcG5CTGJIYmFJOGhleVVfWk9iRERqVC00cXNJT1NiWklrbklLUTNMczdQbE5TTkRhMFdqc2pCdFlOVEQtek1LSF9IcUtEMUhyc3BscFFPN080NE15YmRvdk1DNktVa3hKTUVkNVQtZXJBc1M2U2ZmVnBmcW9xcDN2NjR1WGJSVUtWamc1eTRONmp1YmUzU1HSAbYBQVVfeXFMTm00aDlnZUs0Q2h4UkZDTG9CM3NzYWN5TGU2QlpRZkQtZ3lIamVGMFNESTMybUZIQTFNQTZHV3otUVlQbUxkbmF5TUtKZEY5RFhpdEk1cU9nb2szYzBUUlVXdnB4MHhDdDd5M3BDOUEwVzRybGZhM3ZWTWVTS1hGX1NBcTBiSHoteEVBaFUydmRRRjZkaUJkRFZITTMzQ2ZhVDAxc3h6ejViQWRaV0V2N1lDalY1YVE?oc=5",
+        "title": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "summary": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "published": "Mon, 06 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (C",
+        "current": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition",
+        "comparison": "Fri, 31 Jul 2026 19:55:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766134",
+        "title": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (Coconut) Allergens",
+        "summary": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition facts panel for the following products:",
+        "published": "Fri, 31 Jul 2026 19:55:00 GMT"
+      },
+      {
+        "signal": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
+        "title": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "School Parade",
+      "date": "Wed, Aug 5",
+      "borough": "Manhattan",
+      "location": "825 7th Ave",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Dominican Day Parade, Inc.",
+      "date": "Sun, Aug 9",
+      "borough": "Manhattan",
+      "location": "Sixth Ave & West 37th St",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Midtown Fair",
+      "date": "Sun, Aug 2",
+      "borough": "Manhattan",
+      "location": "Seventh Ave & West 47th St",
+      "event_type": "Street Festival"
+    },
+    {
+      "name": "SWING STREET BLOCK PARTY",
+      "date": "Sun, Aug 2",
+      "borough": "Manhattan",
+      "location": "East 52nd St & 5th Ave",
+      "event_type": "Single Block Festival"
+    },
+    {
+      "name": "Breakfast Program",
+      "date": "Tue, Aug 4",
+      "borough": "Manhattan",
+      "location": "East 55th St & Park Ave",
+      "event_type": "Street Event"
+    }
+  ],
+  "news": [
+    {
+      "title": "Petro urges global support to stop possible US invasion of Cuba",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/2/petro-urges-global-support-to-stop-possible-us-invasion-of-cuba?traffic_source=rss",
+      "published": "Sun, 02 Aug 2026 08:23:32 +0000",
+      "raw_text": "Petro urges global support to stop possible US invasion of Cuba\nColombia\u2019s outgoing president Gustavo Petro has called for international solidarity to prevent what he warned could be a US invasion of Cuba, during his final official trip abroad before leaving office.\nPublished On 2 Aug 2026",
+      "summary": "<strong>Petro</strong> urges global support to stop possible US invasion of <strong>Cuba</strong> Colombia\u2019s outgoing president Gustavo <strong>Petro</strong> has called for international solidarity to prevent what he warned could be a US invasion of <strong>Cuba</strong>, during his final official trip abroad before leaving office. Published On 2 Aug 2026",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Several people killed in shooting at In-N-Out restaurant in Twin Falls, Idaho, officials say",
+      "source": "CBS News",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTFAxTjBQeEdOakJESEdBOTFDSmxETkpVTDY3aHZyMHZYYllHTlZfbl9NZjM1Tk5jVFZtOWlGbG4xYWN5ekRrMndQaHhWem9DWm42end4bnRtbE9maHRvWERJMzZ5MGY2U3BhZm85N2J2MXI5UQ?oc=5",
+      "published": "Sun, 02 Aug 2026 11:32:55 GMT",
+      "raw_text": "Several people killed in shooting at In-N-Out restaurant in Twin Falls, Idaho, officials say\nThree people were killed and at least seven others were wounded in a shooting Saturday afternoon at an In-N-Out restaurant in Twin Falls, Idaho, local authorities said.\nThe situation unfolded before 2:30 p.m. local time. Social media video obtained by CBS News showed people fleeing a shopping center parking lot as multiple gunshots are heard. In the video, a person carrying what appeared to be a firearm could be seen outside the restaurant opening the doors to a parked sedan.\nIn a news conference Saturday night, Twin Falls Police Chief Matthew Hicks told reporters that there were fatalities, but he could not confirm an exact number. Joshua Palmer, a Twin Falls city spokesperson, had initially told CBS News that at least three people had been killed and two more wounded. Palmer then told the Associated Press that at least seven people were injured.\nHicks said there were \"a number of people being treated for injuries\" at St. Luke's Magic Valley Medical Center, a local hospital.\n\"Due to the active shooter incident occurring in Twin Falls, please avoid going to St. Luke's Magic Valley unless it is an emergency,\" St. Luke's also posted to its social media account.\nThe suspected gunman was dead, Hicks disclosed, but he did not detail how the person was killed.\n\"The suspected shooter in this incident is deceased,\" Hicks said. \"He was nearby on the scene there, and we are working to try to ascertain his identity and the motivations behind that.\"\nTwin Falls resident Haley Dodaro, 43, and her mother were at In-N-Out for lunch Saturday afternoon. She told the AP that while waiting in the drive-thru line, they saw people running across the road and workers bolting out of the restaurant. At first Dodaro thought there might have been a fire, but then a man directing traffic in a reflective vest said there was a shooter.\n\"So that's when we knew there was a shooting. People were running out crying and screaming. It was very scary,\" Dodaro said in a text message to the AP.\nThe police chief said that investigators were attempting to interview \"hundreds of people\" who were in the area at the time of the shooting.\n\"We have literally hundreds of people that were in some way, shape or form in the area of this restaurant at the time that are being interviewed right now,\" Hicks said.\nPolice shut down roads and a nearby bridge during the response and asked residents to stay away from the area. An FBI spokesperson told CBS News that its agents were on scene and assisting with the investigation.\nTwin Falls is located in southern Idaho, about 120 miles southeast of Boise.",
+      "summary": "In a news conference Saturday night, <strong>Twin</strong> <strong>Falls</strong> Police Chief Matthew Hicks told reporters that there were fatalities, but he could not confirm an exact number. The police chief said that investigators were attempting to interview \"<strong>hundreds of people</strong>\" who were in the area at the time of the shooting.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Western U.S. heat wave brings record temps to Phoenix, wildfire evacuations in Spokane",
+      "source": "Los Angeles Times",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUmJ4RGh1OVdNRUc1aEpKbEZEOXBWVmg0WUlEVnpoeWpRNktyRmZfaFMyQ3VuRy1RR1N0TU5aQXpfMlpBanFxN2g3RTk5RVR4UnVtUzZtUlE4bDRQSWl3YmNZT2s3eEItM095Zm40Tld4bU5vRGE3YUM5S2RIXzJ5OXRyeE9ZRFZUNWx3dFo0c3YxbG1aOWRMUjFGTmlyUXc?oc=5",
+      "published": "Sun, 02 Aug 2026 03:39:52 GMT",
+      "raw_text": "Western U.S. heat wave brings record temps to Phoenix, wildfire evacuations in Spokane\n-    Click here to listen to this article\n-   Share via\nSee more from the L.A. Times in Google Search. Set us as preferred\nYet another heat wave scorched the Western United States on Saturday, bringing extreme heat warnings to Southern California and record temperatures in the Southwest and Montana.\nWildfires erupted in the Pacific Northwest as the region faced an exceptionally rare \u201cParticularly Dangerous Situation\u201d warning due to extremely dry conditions and strong winds.\nPhoenix reached 116 degrees Saturday afternoon, tying the region\u2019s record for the hottest temperature ever recorded on the date Aug. 1, set in 1972, according to the National Weather Service. It was 6 degrees short of the area\u2019s all-time record.\nLas Vegas and El Centro, Calif., were within striking distance of their daily records, and both Great Falls and Helena, Mont., surpassed their daily records in preliminary measurements.\nOfficials in Southern California cautioned residents to look out for signs of heat-related illness, such as dizziness, confusion, headaches and nausea.\nExtreme heat is one of the deadliest climate risks facing California. On the hottest days, heat-related illness can account for nearly 1 in every 100 emergency department visits in L.A. County. In 2025, the county recorded 10 heat-related deaths, according to a new dashboard.\nMultiple days of high heat \u2014 with little relief overnight as temperatures remain high \u2014 can increase the risk.\n\u201cWe\u2019ve had these elevated temperatures for the last several days here, and that compounding effect can be significant,\u201d said Rose Schoenfeld, a meteorologist with the National Weather Service. \u201cWe have some elevated humidity across the area that increases those overnight low temperatures a bit as well.\u201d\nThe National Weather Service recommends limiting outdoor activity to the early hours of the day and staying in air-conditioned spaces during the afternoon and evening. It further advised residents never to leave pets or children unattended in vehicles, and to check in on loved ones.\nThe Pacific Northwest, which has had dozens of wildfires burning for days, saw a surge of activity Saturday afternoon into evening amid the National Weather Service\u2019s strongest form of wildfire weather warning.\nThe Old Trails fire, sparked around noon, grew to more than 2,300 acres by 5 p.m., prompting evacuations in Spokane, Wash., according to the disaster tracking nonprofit Watch Duty.\nSouthern California\u2019s heat warnings were set to expire Sunday night, with Schoenfeld noting the heat wave was expected to weaken Sunday into early next week.\nThe high temperatures are the result of a high-pressure system lingering over the area. As the air\u2019s pressure increases, it heats up. The high pressure also stifles the sea breeze that can bring cooler ocean air onto land. Meanwhile, the region\u2019s sticky humidity is thanks to an airflow pattern bringing moist, tropical air to Southern California.",
+      "summary": "<strong>Phoenix</strong> reached 116 degrees Saturday afternoon, tying the region\u2019s record for the hottest temperature ever recorded on the date Aug. 1, set in 1972, according to the National Weather Service. Multiple days of high heat \u2014 with little relief overnight as temperatures remain high \u2014 can increase the risk.",
+      "emoji": "\ud83c\udf2a\ufe0f"
+    },
+    {
+      "title": "Democrats slam Trump admin after DOJ drops Reflecting Pool vandalism case",
+      "source": "The Hill",
+      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOcUtVbXhuM3ZsbllEeHp5VU5hYnZlbkU1cS14bnRIZVFvaXRqNThQbHdoUWJJdHR2alhzanhxS3dmWEdmbzc0QjJac19FNFI2TGl1RWxtYzV6TjJDanhvN2hoQlhNWmFzOGM3b0JLZXBrZm9tcldNbHQ2Zk0zcWZPRXJ4YlNBYjhQVVNweFQwdlZwd2PSAZgBQVVfeXFMTUVhOEpmOTRNdTBWVHhpRk1IYVNTSVhvNkhFTy1TbUN4WTA3NDg0cmRSQXZCbkhWUjl3TlA2dXU1LXZLU1UwSkx0d3k1MDUyX1AwMHJCaVBXNk0weVRTLUl1a1pQNHJ1LXQwbTFXci1ZdTVvQl9hMlRmWmltT0pITUhITFpfbjQyV1RHM2NXNURXQm9oVzB6Wm0?oc=5",
+      "published": "Sun, 02 Aug 2026 02:04:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Hill."
+    },
+    {
+      "title": "Trump says he is cancelling strikes on Iran subject to deal being made 'rapidly'",
+      "source": "bbc.com",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9na2VtOEVjWF9TREttVVRmd2Ftc2VtUmV1dXF1QzM0TURGdDk3VUlQZzJIeDhXS1NrazVBQXFNZFNQcVpTUVdUSmFaYXRNeHFmZEtCUXVScmJMUQ?oc=5",
+      "published": "Sun, 02 Aug 2026 11:12:00 GMT",
+      "raw_text": "Trump cancels Iran strikes subject to deal being made 'rapidly'\nDonald Trump says he has cancelled strikes against Iran, provided a deal is struck \"rapidly\" with the country.\nIn a post on Truth Social, the US president said he had been asked by Iran and other countries in the Middle East to \"hold off\" on any attack as the \"perimeters\" of a deal had been agreed.\nTrump's comments came after reports that the US and Israel may have been planning new, intense strikes on Iran.\nIt is not the first time that Trump has issued apocalyptic warnings, only to subsequently insist that diplomacy was being given a chance.\nIran's semi-official Mehr news agency denied that Tehran had asked the US to hold off on further military action, saying Trump's claims were \"nothing but a new lie\".\nIran's acting Defence Minister Majid Ibn al-Reza said Tehran viewed every threat from its adversaries as \"real and credible\" even if it formed part of psychological warfare.\n\"We will neither be caught off guard nor remain passive,\" he added.\nThe raised tones followed reports in the US media that the US and Israel were planning what would be one of the harshest bombing campaigns to date against energy infrastructure targets in Iran.\nThe plan came up during Trump's cabinet meeting on Friday, sources told CBS News, the BBC's News partner in the US.\nThe US government had also urged Americans across the Middle East to be alert and ready to leave \"should there be escalation\" in the region.\nIn his post on Saturday, Trump said the US was \"locked and loaded and ready to go against the Islamic Republic of Iran, at levels of Military Terror, Strength, and Power not seen since World War II\".\nHe said cancelling the attack would be \"for the future benefit of the world and, likewise, the survival of a successful and prosperous Iran\".\nBack on 7 April, the US president warned that \"a whole civilisation will die tonight\" if Iran refused to engage in peace talks. He threatened to destroy civilian infrastructure and power plants, a move that many said would be a war crime.\nThat threat did result in historic face-to-face talks in Pakistan, led by Vice President JD Vance.\nFor supporters of the president, it was vindication. Bellicose threats - often referred to as the \"Madman Theory\" - resulted in talks with the Iranians.\nThe issue with that view, however, is that those talks ended without a deal. There were simply too many competing red lines that could not be reconciled, even with the threat of civilisation erasure.\nDuring the Friday meeting, CBS News reported Trump was heard saying while reporters were still in the room: \"We'll be hitting them [Iranians] very hard. At some point, they're going to say, 'We just can't take it anymore.'\"\nA day later, Saudi Crown Prince Mohammed Bin Salman had a call with Trump, aimed at reducing regional tensions, the kingdom's official SPA press agency reported.\n\"His Royal Highness emphasised the necessity of prioritising dialogue to reduce tensions and the importance of exerting all possible efforts to achieve a truce that paves the way for diplomatic solutions.\"\nThe US's Gulf Allies hold concerns that, while the American mainland is out of reach of Iranian missiles, countries like Bahrain, Jordan and the United Arab Emirates are not - with their critical infrastructure such as water desalination plans being prime targets.\nWashington and Tehran have engaged in escalating strikes and counter-strikes since a ceasefire in April aimed at pausing the war fell apart in June.\nThe US has blockaded Iranian ports and bombed Iranian sites, while Iran has fired missiles and drones at US assets in countries across the Middle East and targeted shipping in the Strait of Hormuz, a vital waterway for global oil shipping.\nThere have been significant fluctuations in oil prices since then.\nIt is not only international pressure that the US president faces. According to the Pew research centre, around 60% of Americans disapprove of the war with Iran, contributing to Trump's falling popularity.\nAny escalation would almost certainly result in an increase in oil prices, further squeezing US consumers.\nWith crucial US midterm elections looming, the president will know his international decisions could have serious domestic consequences for his administration.",
+      "summary": "In his post on Saturday, <strong>Trump</strong> said the US was \"<strong>locked and loaded and ready to go against the Islamic Republic of <strong>Iran</strong>, at levels of Military Terror, Strength, and Power not seen since World War II</strong>\". It is not only international pressure that the US president faces.",
+      "emoji": "\u2694\ufe0f"
+    }
+  ],
+  "youtube": [],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai vulnerabilities.",
+  "ai_security": [
+    {
+      "title": "Zenity Launches AI Security Platform for Autonomous Agents and Enterprise Protection",
+      "source": "The Fast Mode",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVzlwQ2Y0N0FMS3RTTENOdlZOb3NVVndpOG9tMFI0SnAzNEp0UnNLSmxjQ0VlczZ5SGNsNlB0WmJHcHIyLWhJMTBDSTgtUUVpSDhOSi1LOEhLeUdNcmpPdGJiZkdkSXd6UmU3dnVodHpHWlI2UjBJZUI5SmtVaDFrRDZzWkxPeDN1Wi1xbzFEak1QLXB1YnFodnlNaC1mSXQxTm1BZWl4Vk9GVGNDaEFYMjhlMlhScS02RlZxcUZ6RVpBcS1IQUlDbHJ5azhUWktWV0ROLVl3?oc=5",
+      "published": "Tue, 28 Jul 2026 23:20:23 GMT",
+      "summary": "built to enforce security at the decision point where an agent makes decisions, before it acts. The <strong>Zenity</strong> AI security platform introduces security at the decision layer, a new approach that evaluates every AI action before it becomes an enterprise action.",
+      "raw_text": "Zenity, the leader in AI agent security and governance, announced a major expansion of its platform, making it the industry's first AI security platform for autonomous AI built around a new security architecture designed to govern AI decisions before they become enterprise actions, including those made by long-horizon agents operating autonomously across extended, multi-step workflows.\nThe platform adds Exposure Management and Runtime Boundaries to its existing foundation. Each new capability is built to enforce security at the decision point where an agent makes decisions, before it acts.\nThe first generation of enterprise AI required organizations to understand where AI was being used, who could access it, and how to govern it. Autonomous AI introduces a fundamentally different challenge. This is especially true of long-horizon agents, autonomous systems that execute extended, multi-step tasks across hours or days rather than responding to a single prompt. As these agents operate over time, risk can emerge across a sequence of individually legitimate decisions as their context, access, tools and actions evolve throughout the workflow. Today's AI agents write production code, access enterprise systems, invoke tools, handle sensitive data, and execute business workflows with increasing autonomy. As AI agents become decision makers, AI security must evolve beyond observing activity to governing actions before they occur.\nThe Zenity AI security platform introduces security at the decision layer, a new approach that evaluates every AI action before it becomes an enterprise action. Rather than relying on alerts after an AI agent has already acted, organizations gain continuous control over what AI is allowed to do in the first place.\nAI security is a continuous discipline. The Zenity AI security platform is organized around three integrated capabilities that work together as one continuous system.\n- Surface continuously discovers AI agents, validates exploitable attack paths and prioritizes AI exposure.\n- Enforce applies Runtime Boundaries to evaluate every AI action in real time, determining whether it should proceed, be blocked, or be terminated before business impact occurs.\n- Protect closes the loop through AI-powered Digital Forensics and Incident Response (DFIR), while Guardian Agents continuously learn from every investigation to strengthen future policy decisions.\nAt the core of the Enforce layer, Runtime Boundaries serve as the decision engine for autonomous AI. Runtime Boundaries continuously evaluate every AI decision in the context of the agent\u2019s broader execution history\u2014analyzing its intent, identity, requested action, accessed data, tools, previous activity, and enterprise policy\u2014so risks that emerge across multiple steps can be identified and stopped before they create business impact. Organizations define what AI agents are permitted to do and Zenity enforces those decisions consistently across Claude Code, Cursor, Microsoft Copilot, Salesforce Agentforce, ChatGPT Enterprise, Amazon Bedrock, Azure AI Foundry, and custom-built AI agents. Whether preventing sensitive data exposure, governing coding agents, restricting privileged actions, or controlling MCP servers, Runtime Boundaries give enterprises precise control over autonomous AI.\nExposure Risk identifies the attack paths most likely to be exploited and informs Runtime Boundaries before AI actions occur. AI-powered Digital Forensics and Incident Response (DFIR) reconstructs every AI decision chain after an event, enabling Guardian Agents to continuously refine policies and strengthen future protection. This creates a continuous AI Security loop where exposure informs runtime decisions, investigations improve policies, and every decision strengthens future protection.\nBuilt from years of protecting Fortune 500 enterprises and pioneering AI agent research, Zenity continues to shape how organizations securely adopt autonomous AI. As enterprises move from AI experimentation to AI execution, AI security will become one of the defining cybersecurity disciplines of the autonomous era, with Security at the decision layer serving as its foundation.\nAvailability\nThe Zenity AI security and governance platform, including Runtime Boundaries and Exposure Management, is available immediately for enterprise customers.\nTomer Teller, VP product at Zenity\nEvery major technology shift has forced security to evolve. Autonomous AI introduces the next evolution: the decision itself. The future of AI security won't be defined by what an AI agent already did. It will be defined by what AI is allowed to do before it acts. Security starts at the decision layer and Runtime Boundaries are the engine that makes that possible.",
+      "type": "news"
+    },
+    {
+      "title": "PointGuard AI Advances Enterprise Agentic AI Security with Agent Mission Control",
+      "source": "Kitsap Sun",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONWtkVFI5Z19ZdExJMlRVU1Z4dzg0NXFScTFJQVo0djRrbmNJajQ4ZFhodEt5ZlpCSEF3d2Zpa1lpbUFaX05oOXlvZmVUSi1BM2dtWlZLdkZrNmdfM21PbFc2M2JUWlg4WFZLcHBRNWJBTksyNkl2dkdmZ0Z2Q1c3ZW1FVU1iQllFcVNzMGpIVkIzNUpEc05jSXFNMTNaZ25qQ0M1d0t6Nml2c3lNd2RPT1VHRFFVSzlwR1pfOTF2N2NVdmNjN0dVbnF5bXhKelE?oc=5",
+      "published": "Thu, 30 Jul 2026 14:46:55 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Gartner-recognized platform sets a new standard for discovering and governing autonomous AI with access security and Guardian Agent protection\nLAS VEGAS, NV, CA, UNITED STATES, July 30, 2026 /EINPresswire.com/ \u2014 At Black Hat USA 2026, PointGuard AI today unveiled Agent Mission Control, a comprehensive platform for discovering, governing, and controlling autonomous AI. Recently recognized by Gartner in Coolest Vendor Innovations in AI Software Security, Agent Mission Control enables organizations to securely deploy autonomous AI at enterprise scale. Gartner noted that PointGuard AI\u2019s Agent Mission Control \u201cgrants autonomous AI agents a verifiable identity and validates actions before execution, providing real-time containment of agentic behavioral anomalies.\u201d\nAs autonomous AI becomes more capable, so do the risks. The recent OpenAI autonomous agent incident, in which an AI agent escaped its testing environment, hacked Hugging Face, and compromised additional third-party services, demonstrates how quickly autonomous systems can move beyond their intended boundaries. Organizations need more than identity and content guardrails. They must be able to discover AI agents, establish trusted identities, validate every action, detect behavioral drift, and automatically contain rogue behavior before damage occurs. Agent Mission Control delivers this end-to-end governance while addressing all 10 categories of the OWASP Top 10 Risks for AI Agentic Applications, such as Agent Goal Hijacking, and Identity and Privilege Abuse which were exploited in the OpenAI incident.\nAs autonomous AI rapidly transforms the enterprise, security must evolve beyond static guardrails and isolated point products. Agent Mission Control brings together AI discovery, trusted identities, intent-based identity and access control, Guardian Agent technology, MCP Security Gateway enforcement, and high-performance runtime guardrails in a single platform. Built for enterprise deployments, the platform validates agent actions in less than 0.1 milliseconds, while parallel small language models inspect prompts, responses, and tool communications in approximately 0.1 seconds, delivering comprehensive protection with virtually no impact on AI performance.\n    Agent Mission Control provides end-to-end governance for autonomous AI, including:\n    \u2022\tDiscovery and inventory of AI agents, MCP servers, and agentic endpoints\n    \u2022\tSecure cryptographic identities for every AI agent\n    \u2022\tDirect and delegated identity with intent-based identity and access controls\n    \u2022\tSecure agent-to-agent communications\n    \u2022\tMCP Security Gateway enforcing granular tool-level authorization\n    \u2022\tHigh-performance runtime guardrails that prevent prompt injection, data leakage, and malicious tool interactions\n    \u2022\tGuardian Agent technology that continuously monitors autonomous behavior, detects behavioral drift, validates actions before execution, and automatically contains rogue agents through policy enforcement, circuit breakers, and kill switches\nThe announcement builds on Gartner\u2019s continued focus on securing autonomous AI, including recent research on AI software security, AI identity, Guardian Agents, MCP security, and AI TRiSM, reflecting the industry\u2019s growing emphasis on runtime governance and control for enterprise AI.\n\u201cPointGuard AI\u2019s Agent Mission Control grants autonomous AI agents a verifiable identity and validates actions before execution, providing real-time containment of agentic behavioral anomalies.\u201d Gartner, Coolest Vendor Innovations in AI Software Security, July 2026\n\u201cAutonomous AI is creating an entirely new security challenge,\u201d said Pravin Kothari, Founder and CEO of PointGuard AI. \u201cOrganizations need more than visibility into AI. They need the ability to discover every agent, establish trusted identities, govern every action, and stop rogue behavior before it impacts the business. Agent Mission Control delivers the runtime governance and Guardian Agent protection that enterprises need to confidently deploy autonomous AI at scale.\u201d\nPointGuard AI executives will meet with customers, partners, and industry leaders throughout Black Hat USA 2026 to discuss strategies for governing and securing autonomous AI. Organizations interested in scheduling an executive briefing can register here.\n    About PointGuard AI\n    PointGuard AI is redefining enterprise AI security with a comprehensive platform that enables organizations to confidently adopt AI while managing risk across models, applications, agents, MCP servers, and cloud AI services. From discovery and posture management to runtime governance and automated response, PointGuard AI helps enterprises securely innovate at the speed of AI.\n    * Gartner, Coolest Vendor Innovations in AI Software Security, Aaron Lord, Meghan Hollis, Manjunath Bhat, 1 July 2026.\n    Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner\u2019s research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.\nWilly Leichter\n    PointGuard AI\n    email us here\n    Visit us on social media:\n    LinkedIn\n    YouTube\nPointGuard AI Agent Mission Control Overview\nLegal Disclaimer:\n      EIN Presswire provides this news content \u201cas is\u201d without warranty of any kind. We do not accept any responsibility or liability\n      for the accuracy, content, images, videos, licenses, completeness, legality, or reliability of the information contained in this\n      article. If you have any complaints or copyright issues related to this article, kindly contact the author above.\n    \nMedia gallery",
+      "type": "news"
+    },
+    {
+      "title": "Microsoft Word Copilot Vulnerability Turns Hidden Prompts Into Self\u2011Propagating AI Worms",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA2U1NDTFZ5cVl0UmJYMUVNcFpXTDRGR0Y2NUpHUU91S3h3bmtYNThBd3F6eTFlZWs4bTAtV3NqbWxwblVhVDRrOGw4VGVYaDBkaXMwakp4eURRR0dneDUzeFhKclZtbHh2T1AxeEY4YlhwNEZkUUHSAXtBVV95cUxOU0lrcG9HNFpKUllNTXhpal9uOTJSR3E2dkJJMW10T1FCRF80MUhMV01zRHpQYnJWcHlNLV9obVU2OFYtRGx0WXFGMzRhZEJRX2xOSy13S05kUEd6NVZPamdfcnJ5ZnNpbHNaTW1YMnEtejd4ZGkwemhHMVU?oc=5",
+      "published": "Fri, 31 Jul 2026 18:22:43 GMT",
+      "summary": "<strong>Microsoft</strong> <strong>Word</strong> <strong>Copilot</strong> <strong>Vulnerability</strong> In the reported scenario, an attacker hides a JSON\u2011formatted prompt inside a <strong>Word</strong> document, for example by rendering the malicious text as white on white in a small font at the end of a market analysis or report.",
+      "raw_text": "A new vulnerability in Microsoft Copilot for Word shows how hidden prompts inside documents can transform routine editing into a self\u2011propagating \u201cAI worm\u201d that tampers with business content and then quietly spreads itself to new files.\nThe vulnerability uncovered by EN Klype Salt stems from Copilot\u2019s handling of attached or contextual documents: text that looks irrelevant or invisible to the human user can still be fully parsed by the underlying large language model, allowing attacker\u2011controlled instructions to cross the trust boundary between untrusted source material and trusted working documents.\nThe research builds on prior work into Cross\u2011Domain Prompt Injection Attacks (XPIAs), expanding the threat from single\u2011interaction compromises to multi\u2011document propagation across enterprise workflows.\nMicrosoft Word Copilot Vulnerability\nIn the reported scenario, an attacker hides a JSON\u2011formatted prompt inside a Word document, for example by rendering the malicious text as white on white in a small font at the end of a market analysis or report.\nWhen a user later attaches or indirectly references this document in Copilot for Word, either through the \u201cmagic pen\u201d experience or the \u201cEdit with Copilot\u201d mode, Copilot strips formatting, reads the hidden text as instructions, and begins to manipulate the active document.\nOnce triggered, Copilot may alter key content, such as silently halving financial figures in a Q1 report, while also copying the entire malicious prompt into the newly generated or edited document using concealed formatting.\nThat downstream document now becomes a fresh attack vector: if it is later reused as source material for another Copilot\u2011assisted draft, the hidden prompt fires again, modifies the new content, and embeds itself once more.\nIn effect, the attack turns trusted internal files into carriers of an AI worm that propagates via normal collaboration and document reuse, even after the original external document is no longer present.\nThis behavior was reproduced against multiple Copilot configurations and underlying models, including deployments upgraded to GPT\u20115.5 and GPT\u20115.6, despite targeted mitigations that blocked earlier payloads.\nResearcher EN Klype Salt coordinated disclosure with Microsoft\u2019s Security Response Center (MSRC) and product teams over a 144\u2011day period, providing reproduction steps, PoC prompts, and detailed videos.\nWhile Microsoft has shipped partial fixes and successfully closed some related vectors, there is currently no robust mitigation for the broader vulnerability class, and the attack chain remains exploitable at publication.\nFor organizations, the immediate risk is loss of data integrity and traceability inside their Microsoft 365 ecosystems. Once malicious instructions are embedded in internally authored documents, they can be redistributed through SharePoint, Teams, or email to other departments and even partner organizations, all under the guise of legitimate content.\nBecause Copilot\u2019s edits are often approved and then no longer surfaced as separate changes, identifying where and when financial numbers or wording were manipulated becomes extremely difficult, complicating incident response and forensic analysis.\nDefenders cannot fully remediate the issue on the customer side today, but they can reduce exposure by treating externally sourced documents as untrusted when used with Copilot, reviewing attachments before starting AI\u2011assisted drafting or edits, and performing careful human review of any Copilot\u2011generated or Copilot\u2011edited documents before reusing or sharing them.\nAt a strategic level, the findings highlight an architectural weakness shared across many LLM\u2011integrated systems: attacker\u2011controlled content must be processed in the same context as trusted instructions, making prompt\u2011injection and self\u2011propagation a systemic risk rather than an isolated product bug.\nStrengthen Your SOC by Accelerating Threat Detection & Rapid Investigations. -> Integrate ANY.RUN With Your SOC Now.",
+      "type": "news",
+      "emoji": "\ud83d\udc1b"
+    },
+    {
+      "title": "BM25 Wins at Scale: A Scaling Study of Retrieval-Augmented Generation Paradigms",
+      "authors": [
+        "Pengyu Wang",
+        "Benfeng Xu",
+        "Shaohan Wang",
+        "Xin Zeng",
+        "Huarui Wu"
+      ],
+      "abstract": "Retrieval-augmented generation (RAG) spans lexical and dense retrieval, graph-based indexing, and agentic search, but these paradigms are usually evaluated on different benchmarks at one corpus size, leaving their accuracy-cost scaling unclear. To bridge this gap, we present a controlled study that varies corpus size along 28 strictly nested tiers spanning roughly 450-fold, while holding questions and a fixed bedrock of relevant and adversarial documents unchanged. Under one reader model and one judging protocol, we measure official accuracy, construction and query tokens, and latency. The results reveal a scale-dependent crossover rather than an unconditional winner. File-System Agent leads at the smallest shared tiers, but its sequential exploration costs 39 times more query tokens at the bedrock and becomes less effective as the search space grows. Around 10 million corpus tokens, BM25 overtakes it and leads at every larger shared tier, with a margin approaching 20 points at full scale. BM25 also anchors the low-cost end of the Pareto frontier without LLM-based construction. Dense retrieval remains efficient but less accurate, whereas graph-based RAG encounters construction walls before deployment scale and its scalable variants remain below BM25 at shared tiers. Overall, corpus growth increasingly favors global candidate ranking: lexical retrieval is the strongest scalable default, while agentic reasoning works best after ranked discovery rather than in place of it.",
+      "link": "https://huggingface.co/papers/2607.26497",
+      "published": "2026-07-30",
+      "arxiv_id": "2607.26497",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Retrieval-augmented generation (RAG) spans lexical and dense retrieval, graph-based indexing, and agentic search, but these paradigms are usually evaluated on different benchmarks at one corpus size, leaving their accuracy-cost scaling unclear. To bridge this gap, we present a controlled study that varies corpus size along 28 strictly nested tiers spanning roughly 450-fold, while holding questions and a fixed bedrock of relevant and adversarial documents unchanged. Under one reader model and one judging protocol, we measure official accuracy, construction and query tokens, and latency. The results reveal a scale-dependent crossover rather than an unconditional winner. File-System Agent leads at the smallest shared tiers, but its sequential exploration costs 39 times more query tokens at the bedrock and becomes less effective as the search space grows. Around 10 million corpus tokens, BM25 overtakes it and leads at every larger shared tier, with a margin approaching 20 points at full scale. BM25 also anchors the low-cost end of the Pareto frontier without LLM-based construction. Dense retrieval remains efficient but less accurate, whereas graph-based RAG encounters construction walls before deployment scale and its scalable variants remain below BM25 at shared tiers. Overall, corpus growth increasingly favors global candidate ranking: lexical retrieval is the strongest scalable default, while agentic reasoning works best after ranked discovery rather than in place of it.",
+      "summary": "File-System Agent leads at the smallest shared tiers, but its sequential exploration costs 39 times more query tokens at the bedrock and becomes less effective as the search space grows.",
+      "type": "paper"
+    },
+    {
+      "title": "PAC-MAN: Perception-Aware CBF-RL for Whole-Body Safety in Humanoid Dodgeball",
+      "authors": [
+        "Lizhi Yang",
+        "Junheng Li",
+        "Aaron D. Ames"
+      ],
+      "abstract": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial motion prior regularizes the resulting evasive reflexes. We evaluate on a controlled any-link contact benchmark with seeded throws in two regimes: single throws and a deployment loop in which the robot walks back to its station and recovers between throws. On this benchmark, the policy comes within a few points of a privileged state oracle: a fixed onboard camera alone is adequate for evasion. We find that usable barrier structure depends on perceptual observability: Joint-CBF gives the best performance with accurate ball states, degrades under fixed-camera observations when used only as training guidance, and recovers with a ball-tracking gimbal or privileged runtime filter. We therefore deploy a lightweight Link-CBF policy zero-shot on the Unitree G1 in the real world, where it tolerates imperfect perception, succeeds on 95% of throws, and uses semantic segmentation to dodge different balls.",
+      "link": "https://arxiv.org/pdf/2607.28623v1",
+      "published": "2026-07-30",
+      "arxiv_id": "2607.28623v1",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "We present PAC-MAN, a perception-aware CBF-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball. The deployed policy sees the ball only as segmentation-masked depth from a head-mounted camera, while training-time CBF guidance represents clearance to every body link, and an adversarial motion prior regularizes the resulting evasive reflexes. We evaluate on a controlled any-link contact benchmark with seeded throws in two regimes: single throws and a deployment loop in which the robot walks back to its station and recovers between throws. On this benchmark, the policy comes within a few points of a privileged state oracle: a fixed onboard camera alone is adequate for evasion. We find that usable barrier structure depends on perceptual observability: Joint-CBF gives the best performance with accurate ball states, degrades under fixed-camera observations when used only as training guidance, and recovers with a ball-tracking gimbal or privileged runtime filter. We therefore deploy a lightweight Link-CBF policy zero-shot on the Unitree G1 in the real world, where it tolerates imperfect perception, succeeds on 95% of throws, and uses semantic segmentation to dodge different balls.",
+      "summary": "We present <strong>PAC</strong>-<strong>MAN</strong>, a perception-aware <strong>CBF</strong>-RL framework that couples control-barrier safety with deployment-realistic onboard sensing for whole-body humanoid dodgeball.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "AskChem: Claim-Centered Infrastructure for Chemistry Literature Synthesis",
+      "authors": [
+        "Bing Yan",
+        "Gregory Wolfe",
+        "Stefano Martiniani",
+        "Kyunghyun Cho"
+      ],
+      "abstract": "Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a result, scientists and AI agents need to locate relevant information, verify their provenance, and assemble cross-paper answers manually. We present AskChem, a claim-centered infrastructure for cross-paper chemistry search. AskChem changes the unit of retrieval from the paper to the provenance-carrying claim: each paper is converted into atomic, typed claims, each grounded by a source DOI and a verbatim quote or an explicit evidence locator. Over this shared claim store, AskChem exposes complementary structures for search and synthesis: a stabilized faceted taxonomy for hierarchical retrieval and browsing, an evidence graph linking claims through relations, and an exploratory living taxonomy that situates indexed papers under scientific principles. AskChem currently indexes 2.4M claims from 147K papers and provides a web interface, as well as REST, SDK, and MCP access for AI agents. On AskChem-Bench, grounding a GPT-5.5 reader in AskChem yields 100% resolvable DOIs, compared with 88.3% without retrieval, and the highest citation density among five tested systems. AskChem is live at https://askchem.org.",
+      "link": "https://arxiv.org/pdf/2607.28618v1",
+      "published": "2026-07-30",
+      "arxiv_id": "2607.28618v1",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "Chemistry literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a result, scientists and AI agents need to locate relevant information, verify their provenance, and assemble cross-paper answers manually. We present AskChem, a claim-centered infrastructure for cross-paper chemistry search. AskChem changes the unit of retrieval from the paper to the provenance-carrying claim: each paper is converted into atomic, typed claims, each grounded by a source DOI and a verbatim quote or an explicit evidence locator. Over this shared claim store, AskChem exposes complementary structures for search and synthesis: a stabilized faceted taxonomy for hierarchical retrieval and browsing, an evidence graph linking claims through relations, and an exploratory living taxonomy that situates indexed papers under scientific principles. AskChem currently indexes 2.4M claims from 147K papers and provides a web interface, as well as REST, SDK, and MCP access for AI agents. On AskChem-Bench, grounding a GPT-5.5 reader in AskChem yields 100% resolvable DOIs, compared with 88.3% without retrieval, and the highest citation density among five tested systems. AskChem is live at https://askchem.org.",
+      "summary": "<strong>Chemistry</strong> literature synthesis often requires assembling specific findings scattered across many publications, yet existing literature-search systems primarily return ranked document lists. As a result, scientists and AI agents need to locate relevant information, verify their provenance, and assemble cross-paper answers manually.",
+      "type": "paper"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai vulnerabilities.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "82\u00b0F",
+        "detail": "10% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-07-25"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "3 papers",
+        "detail": "Jul 30"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "0",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 950 cases this week \u2014 81% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 5,
+    "youtube_count": 0,
+    "ai_security_count": 6
+  }
+}
