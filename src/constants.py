@@ -79,6 +79,19 @@ NWS_POINT_URL = f"https://api.weather.gov/points/{NWS_POINT_LATITUDE},{NWS_POINT
 NWS_FORECAST_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast"
 NWS_HOURLY_URL = "https://api.weather.gov/gridpoints/OKX/34,44/forecast/hourly"
 NWS_STATIONS_URL = f"https://api.weather.gov/points/{NWS_POINT_LATITUDE},{NWS_POINT_LONGITUDE}/stations"
+OPEN_METEO_FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
+OPEN_METEO_MODELS = [
+    "best_match",
+    "gfs_seamless",
+    "ecmwf_ifs025",
+    "icon_seamless",
+    "gem_seamless",
+    "jma_seamless",
+    "meteofrance_seamless",
+    "ukmo_seamless",
+    "knmi_seamless",
+    "dmi_seamless",
+]
 NYC_EVENTS_API_URL = "https://data.cityofnewyork.us/resource/tvpp-9vvx.json"
 NYC_HEALTH_BASE_URL = "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
 NYC_HEALTH_PRESS_RELEASES_URL = "https://www.nyc.gov/site/doh/about/press/recent-press-releases.page"

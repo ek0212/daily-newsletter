@@ -1,6 +1,7 @@
 """Fetch NYC weather from the free NWS API (no API key needed)."""
 
 import logging
+from collections import Counter
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 
@@ -15,6 +16,10 @@ from src.constants import (
     NWS_LOCATION_LABEL,
     NWS_POINT_URL,
     NWS_STATIONS_URL,
+    NWS_POINT_LATITUDE,
+    NWS_POINT_LONGITUDE,
+    OPEN_METEO_FORECAST_URL,
+    OPEN_METEO_MODELS,
     TARGET_HOURS,
     USER_AGENT,
     WIND_CHILL_TEMP_THRESHOLD,
@@ -26,6 +31,16 @@ logger = logging.getLogger(__name__)
 NWS_HEADERS = {"User-Agent": f"{USER_AGENT} (daily-newsletter)"}
 FORECAST_URL = NWS_FORECAST_URL
 HOURLY_URL = NWS_HOURLY_URL
+OPEN_METEO_HOURLY_FIELDS = [
+    "temperature_2m",
+    "apparent_temperature",
+    "precipitation_probability",
+    "relative_humidity_2m",
+    "weather_code",
+    "wind_speed_10m",
+    "wind_direction_10m",
+]
+OPEN_METEO_DAILY_FIELDS = ["temperature_2m_max", "temperature_2m_min"]
 
 # NYC local time, including daylight saving time.
 NYC_TZ = ZoneInfo("America/New_York")
@@ -33,6 +48,28 @@ NYC_TZ = ZoneInfo("America/New_York")
 
 def _fetch_json(url: str) -> dict:
     response = requests.get(url, headers=NWS_HEADERS, timeout=HTTP_TIMEOUT_DEFAULT)
+    response.raise_for_status()
+    return response.json()
+
+
+def _fetch_open_meteo_json() -> dict:
+    response = requests.get(
+        OPEN_METEO_FORECAST_URL,
+        params={
+            "latitude": NWS_POINT_LATITUDE,
+            "longitude": NWS_POINT_LONGITUDE,
+            "timezone": "America/New_York",
+            "forecast_days": 2,
+            "hourly": ",".join(OPEN_METEO_HOURLY_FIELDS),
+            "daily": ",".join(OPEN_METEO_DAILY_FIELDS),
+            "temperature_unit": "fahrenheit",
+            "wind_speed_unit": "mph",
+            "precipitation_unit": "inch",
+            "models": ",".join(OPEN_METEO_MODELS),
+        },
+        headers=NWS_HEADERS,
+        timeout=HTTP_TIMEOUT_DEFAULT,
+    )
     response.raise_for_status()
     return response.json()
 
@@ -121,6 +158,140 @@ def _calc_feels_like(temp_f: int, wind_speed_str: str, humidity) -> int:
     return round(t)
 
 
+def _mean(values: list[float | int | None]) -> float | None:
+    """Average numeric values while ignoring missing model fields."""
+    clean = [float(v) for v in values if isinstance(v, int | float)]
+    return sum(clean) / len(clean) if clean else None
+
+
+def _mode_int(values: list[float | int | None]) -> int | None:
+    """Return most common integer-like model value."""
+    clean = [round(float(v)) for v in values if isinstance(v, int | float)]
+    if not clean:
+        return None
+    return Counter(clean).most_common(1)[0][0]
+
+
+def _wind_direction_label(degrees: float | int | None) -> str:
+    """Convert wind degrees to a compact compass label."""
+    if not isinstance(degrees, int | float):
+        return ""
+    labels = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"]
+    return labels[round(float(degrees) / 45) % 8]
+
+
+def _weather_code_label(code: int | None) -> str:
+    """Map WMO weather codes to compact email labels."""
+    if code in {0}:
+        return "Clear"
+    if code in {1, 2}:
+        return "Partly Cloudy"
+    if code in {3}:
+        return "Cloudy"
+    if code in {45, 48}:
+        return "Fog"
+    if code in {51, 53, 55, 56, 57}:
+        return "Drizzle"
+    if code in {61, 63, 65, 66, 67, 80, 81, 82}:
+        return "Rain"
+    if code in {71, 73, 75, 77, 85, 86}:
+        return "Snow"
+    if code in {95, 96, 99}:
+        return "Thunderstorms"
+    return "Mixed"
+
+
+def _model_values(payload: dict, section: str, field: str, index: int) -> list[float | int | None]:
+    """Collect one field across configured Open-Meteo models."""
+    data = payload.get(section, {})
+    values = []
+    for model in OPEN_METEO_MODELS:
+        key = f"{field}_{model}"
+        series = data.get(key)
+        if isinstance(series, list) and index < len(series):
+            values.append(series[index])
+    return values
+
+
+def _consensus_source_count(payload: dict, section: str, field: str, index: int) -> int:
+    """Return count of models that supplied one field."""
+    return len([v for v in _model_values(payload, section, field, index) if isinstance(v, int | float)])
+
+
+def _fetch_consensus_forecast() -> dict | None:
+    """Fetch averaged forecast fields across public weather models."""
+    try:
+        return _fetch_open_meteo_json()
+    except Exception as e:
+        logger.warning("Open-Meteo model consensus failed: %s", e)
+        return None
+
+
+def _parse_consensus_hourly(payload: dict) -> list[dict]:
+    """Build target-hour rows from averaged Open-Meteo model data."""
+    hourly = payload.get("hourly", {})
+    times = hourly.get("time", [])
+    if not times:
+        return []
+
+    now_local = datetime.now(NYC_TZ)
+    target_date = now_local.date()
+    if now_local.hour > max(TARGET_HOURS):
+        target_date = target_date + timedelta(days=1)
+
+    rows = []
+    matched = set()
+    for idx, raw_time in enumerate(times):
+        try:
+            start = datetime.fromisoformat(raw_time).replace(tzinfo=NYC_TZ)
+        except ValueError:
+            continue
+        if start.date() != target_date or start.hour not in TARGET_HOURS or start.hour in matched:
+            continue
+        matched.add(start.hour)
+
+        temp = _mean(_model_values(payload, "hourly", "temperature_2m", idx))
+        feels = _mean(_model_values(payload, "hourly", "apparent_temperature", idx))
+        precip = _mean(_model_values(payload, "hourly", "precipitation_probability", idx))
+        humidity = _mean(_model_values(payload, "hourly", "relative_humidity_2m", idx))
+        wind = _mean(_model_values(payload, "hourly", "wind_speed_10m", idx))
+        wind_dir = _mean(_model_values(payload, "hourly", "wind_direction_10m", idx))
+        code = _mode_int(_model_values(payload, "hourly", "weather_code", idx))
+
+        if temp is None:
+            continue
+
+        rows.append({
+            "label": start.strftime("%-I%p").lower(),
+            "hour": start.hour,
+            "temp": round(temp),
+            "feels_like": round(feels if feels is not None else temp),
+            "conditions": _weather_code_label(code),
+            "wind": f"{round(wind) if wind is not None else 0} mph {_wind_direction_label(wind_dir)}".strip(),
+            "humidity": f"{round(humidity)}%" if humidity is not None else "N/A",
+            "precip_chance": f"{round(precip)}%" if precip is not None else "N/A",
+            "source_count": _consensus_source_count(payload, "hourly", "temperature_2m", idx),
+        })
+
+    rows.sort(key=lambda x: x["hour"])
+    return rows
+
+
+def _consensus_daily_range(payload: dict) -> tuple[int | None, int | None, int]:
+    """Return high, low, and model count from Open-Meteo daily consensus."""
+    daily = payload.get("daily", {})
+    if not daily.get("time"):
+        return None, None, 0
+    high = _mean(_model_values(payload, "daily", "temperature_2m_max", 0))
+    low = _mean(_model_values(payload, "daily", "temperature_2m_min", 0))
+    count = _consensus_source_count(payload, "daily", "temperature_2m_max", 0)
+    return (
+        round(high) if high is not None else None,
+        round(low) if low is not None else None,
+        count,
+    )
+
+
 def _parse_hourly_periods(periods: list) -> list[dict]:
     """Extract weather data for TARGET_HOURS in NYC local time from NWS hourly periods."""
     now_local = datetime.now(NYC_TZ)
@@ -166,6 +337,7 @@ def _parse_hourly_periods(periods: list) -> list[dict]:
 def get_nyc_weather() -> dict:
     """Return current NYC weather with high/low, forecast, and hourly breakdown."""
     try:
+        consensus = _fetch_consensus_forecast()
         forecast_url, hourly_url = _forecast_urls()
 
         logger.debug("Fetching hourly forecast for %s from %s", NWS_LOCATION_LABEL, hourly_url)
@@ -189,6 +361,16 @@ def get_nyc_weather() -> dict:
             forecast = today["detailedForecast"]
 
         hourly_breakdown = _parse_hourly_periods(hourly_periods)
+        consensus_model_count = 0
+        if consensus:
+            consensus_hourly = _parse_consensus_hourly(consensus)
+            consensus_high, consensus_low, consensus_model_count = _consensus_daily_range(consensus)
+            if consensus_hourly:
+                hourly_breakdown = consensus_hourly
+            if consensus_high is not None:
+                high = consensus_high
+            if consensus_low is not None:
+                low = consensus_low
 
         # Use real-time observation for the hero (matches Apple Weather better)
         obs = _fetch_current_observation()
@@ -223,6 +405,9 @@ def get_nyc_weather() -> dict:
             "feels_like": current_feels_like,
             "forecast": forecast,
             "hourly": hourly_breakdown,
+            "forecast_source": "Open-Meteo model consensus + National Weather Service",
+            "forecast_source_count": consensus_model_count + 1 if consensus_model_count else 1,
+            "forecast_source_url": OPEN_METEO_FORECAST_URL if consensus_model_count else forecast_url,
         }
     except Exception as e:
         logger.error("Weather API failed: %s", e, exc_info=True)

@@ -12,7 +12,7 @@
   body,table,td{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
   table{border-collapse:collapse}
   a{text-decoration:none}
-  @media only screen and (max-width:620px){
+  @media only screen and (max-width:660px){
     .wrap{width:100%!important}
     .px{padding-left:16px!important;padding-right:16px!important}
     .col{display:block!important;width:100%!important;padding:0 0 8px 0!important}
@@ -51,12 +51,12 @@
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">{{ issue_dashboard.lead_detail if issue_dashboard else 'Daily Morning Briefing' }}</div>
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="bg" style="background:#f1efeb;">
 <tr><td align="center" style="padding:18px 8px 34px 8px;">
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrap card" style="width:600px;max-width:600px;background:#ffffff;border-radius:14px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" class="wrap card" style="width:640px;max-width:640px;background:#ffffff;border-radius:14px;">
 
   <tr><td class="px" style="padding:24px 26px 0 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-      <td class="tx big" style="font-family:Georgia,'Times New Roman',serif;font-size:26px;line-height:32px;color:#15181b;font-weight:600;">Daily Morning Briefing</td>
-      <td align="right" style="font-family:Consolas,'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">{{ date }}</td>
+      <td class="tx big" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:26px;line-height:32px;color:#15181b;font-weight:600;">Daily Morning Briefing</td>
+      <td align="right" style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">{{ date }}</td>
     </tr></table>
   </td></tr>
 
@@ -65,7 +65,7 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td width="4" style="background:#1f7a4d;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:2px 0 2px 10px;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">{{ issue_dashboard.lead_detail }}</td>
+        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">{{ issue_dashboard.lead_detail }}</td>
       </tr>
     </table>
   </td></tr>
@@ -78,9 +78,9 @@
         <td class="col" width="20%" valign="top" style="padding-right:{% if loop.last %}0{% else %}5px{% endif %};">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
             <tr><td style="padding:8px 7px;">
-              <div style="font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">{{ card.label }}</div>
-              <div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">{{ card.value }}</div>
-              <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;line-height:13px;color:#5f6a66;">{{ card.detail }}</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">{{ card.label }}</div>
+              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">{{ card.value }}</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">{{ card.detail }}</div>
             </td></tr>
           </table>
         </td>
@@ -93,17 +93,18 @@
 
   {% if weather.hourly %}
   <tr><td class="px" style="padding:8px 26px 0 26px;">
-    <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 6px 0;">NYC Weather</div>
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 3px 0;">NYC Weather</div>
+    <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#7c837f;margin:0 0 6px 0;">{{ weather.forecast_source|default('National Weather Service') }}{% if weather.forecast_source_count %} · {{ weather.forecast_source_count }} sources{% endif %}</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr class="tint" style="background:#f7f5f1;">
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Time</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Temp</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Feels</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Weather</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Precip</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Humidity</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Wind</td>
-        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Note</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Time</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Temp</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Feels</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Weather</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Precip</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Humidity</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Wind</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Note</td>
       </tr>
       {% for h in weather.hourly %}
       {% set temp_color = '#b5651d' if h.temp >= 75 else '#5b7f6b' %}
@@ -113,14 +114,14 @@
       {% set humidity = humidity_raw|int if humidity_raw.isdigit() else 0 %}
       {% set highlight = loop.index == 3 %}
       <tr class="rule" style="border-top:1px solid #e6e2da;{% if highlight %}background:#f1f9f4;{% else %}background:transparent;{% endif %}">
-        <td class="wcell" style="padding:9px 5px;border-left:3px solid {% if highlight %}#1f7a4d{% else %}transparent{% endif %};font-family:Consolas,'Courier New',monospace;font-size:11px;color:#15181b;font-weight:600;">{{ h.label }}</td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:{{ temp_color }};border-radius:5px;padding:2px 7px;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:600;">{{ h.temp }}F</span></td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">{{ h.feels_like }}F</span></td>
-        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">{{ weather_icon(h.conditions) }} {{ h.conditions }}</td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:{% if precip >= 40 %}#fbe3de{% elif precip >= 20 %}#cfe2ec{% else %}#f5f7f8{% endif %};color:{% if precip >= 40 %}#c2371f{% elif precip >= 20 %}#2f6f8f{% else %}#7c837f{% endif %};border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">{{ h.precip_chance }}</span></td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:{% if humidity >= 80 %}#fbe3de{% elif humidity >= 70 %}#fbeed4{% else %}#e3f2e9{% endif %};color:{% if humidity >= 80 %}#c2371f{% elif humidity >= 70 %}#a8730a{% else %}#1f7a4d{% endif %};border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;">{{ h.humidity }}</span></td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#5f6a66;">{{ h.wind }}</td>
-        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:15px;color:#5f6a66;">{% if highlight %}Best outdoor window.{% elif loop.first %}Best errand window.{% elif precip >= 40 %}Plan cover.{% else %}Normal watch.{% endif %}</td>
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid {% if highlight %}#1f7a4d{% else %}transparent{% endif %};font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">{{ h.label }}</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:{{ temp_color }};border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">{{ h.temp }}F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">{{ h.feels_like }}F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">{{ weather_icon(h.conditions) }} {{ h.conditions }}</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:{% if precip >= 40 %}#fbe3de{% elif precip >= 20 %}#cfe2ec{% else %}#f5f7f8{% endif %};color:{% if precip >= 40 %}#c2371f{% elif precip >= 20 %}#2f6f8f{% else %}#7c837f{% endif %};border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">{{ h.precip_chance }}</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:{% if humidity >= 80 %}#fbe3de{% elif humidity >= 70 %}#fbeed4{% else %}#e3f2e9{% endif %};color:{% if humidity >= 80 %}#c2371f{% elif humidity >= 70 %}#a8730a{% else %}#1f7a4d{% endif %};border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">{{ h.humidity }}</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">{{ h.wind }}</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{% if highlight %}Best outdoor window.{% elif loop.first %}Best errand window.{% elif precip >= 40 %}Plan cover.{% else %}Normal watch.{% endif %}</td>
       </tr>
       {% endfor %}
     </table>
@@ -132,7 +133,7 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td width="4" style="background:{% if health.status in ['HIGH', 'WATCH'] %}#c2371f{% elif health.status == 'LOW' %}#1f7a4d{% else %}#a8730a{% endif %};font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:2px 0 2px 10px;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">NYC Public Health: {{ health.detail|default('latest signal unavailable') }}</td>
+        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">NYC Public Health: {{ health.detail|default('latest signal unavailable') }}</td>
       </tr>
     </table>
   </td></tr>
@@ -140,24 +141,24 @@
   <tr><td class="px" style="padding:8px 26px 0 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr class="tint" style="background:#f7f5f1;">
-        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Signal</td>
-        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Current</td>
-        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Comparison</td>
-        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Practical read</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Signal</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Current</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Comparison</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Practical read</td>
       </tr>
       {% for signal in health.signals|default([]) %}
       <tr class="rule" style="border-top:1px solid #e6e2da;background:{% if signal.status in ['HIGH', 'WATCH'] %}#fbe4df{% elif signal.status == 'LOW' %}#e6f3ec{% else %}transparent{% endif %};">
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;">{% if signal.source_url %}<a href="{{ signal.source_url }}" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">{{ signal.signal }}</a>{% else %}{{ signal.signal }}{% endif %}</td>
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:{% if signal.status in ['HIGH', 'WATCH'] %}#c2371f{% else %}#5f6a66{% endif %};">{{ signal.current }}</td>
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{{ signal.comparison }}</td>
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{{ signal.practical_read }}</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;">{% if signal.source_url %}<a href="{{ signal.source_url }}" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">{{ signal.signal }}</a>{% else %}{{ signal.signal }}{% endif %}</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:{% if signal.status in ['HIGH', 'WATCH'] %}#c2371f{% else %}#5f6a66{% endif %};">{{ signal.current }}</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">{{ signal.comparison }}</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">{{ signal.practical_read }}</td>
       </tr>
       {% else %}
       <tr class="rule" style="border-top:1px solid #e6e2da;">
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;">Respiratory illness</td>
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{% if health.combined_cases is defined %}{{ "{:,}".format(health.combined_cases) }} combined cases{% else %}Unavailable{% endif %}</td>
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">week ending {{ health.week_ending|default('latest') }}</td>
-        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Use as context.</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;">Respiratory illness</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">{% if health.combined_cases is defined %}{{ "{:,}".format(health.combined_cases) }} combined cases{% else %}Unavailable{% endif %}</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">week ending {{ health.week_ending|default('latest') }}</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Use as context.</td>
       </tr>
       {% endfor %}
     </table>
@@ -168,7 +169,7 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td width="4" style="background:#c2371f;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:2px 0 2px 10px;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">Three reads carry today. The rest can wait.</td>
+        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">Three reads carry today. The rest can wait.</td>
       </tr>
     </table>
   </td></tr>
@@ -178,7 +179,7 @@
       {% if news %}
       <tr>
         <td width="4" style="background:#c2371f;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:9px 12px;background:#fbe3de;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+        <td style="padding:9px 12px;background:#fbe3de;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
           {{ row_link(news[0].link, news[0].title) }} <span style="color:#5f6a66;">&mdash; {{ news[0].summary|safe if news[0].summary else 'Read for details.' }}</span>
         </td>
       </tr>
@@ -187,7 +188,7 @@
       <tr><td colspan="2" height="5" style="height:5px;font-size:0;line-height:0;">&nbsp;</td></tr>
       <tr>
         <td width="4" style="background:#a8730a;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:9px 12px;background:#fbeed4;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+        <td style="padding:9px 12px;background:#fbeed4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
           {{ row_link(news[1].link, news[1].title) }} <span style="color:#5f6a66;">&mdash; {{ news[1].summary|safe if news[1].summary else 'Read for details.' }}</span>
         </td>
       </tr>
@@ -198,7 +199,7 @@
       <tr><td colspan="2" height="5" style="height:5px;font-size:0;line-height:0;">&nbsp;</td></tr>
       <tr>
         <td width="4" style="background:#6b3fa0;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:9px 12px;background:#ece4f6;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+        <td style="padding:9px 12px;background:#ece4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
           {{ row_link(item.link, (item.source|default('AI security')) ~ ': ' ~ item.title) }} <span style="color:#5f6a66;">&mdash; {{ item.summary|safe if item.summary else 'Security update.' }}</span>
         </td>
       </tr>
@@ -210,13 +211,13 @@
 
   {% if suggested_todos %}
   <tr><td class="px" style="padding:8px 26px 0 26px;">
-    <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">Second Brain Suggested Todos</div>
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">Second Brain Suggested Todos</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       {% for todo in suggested_todos %}
       <tr>
         <td width="20" valign="top" style="padding:5px 0;font-size:12px;color:#9aa19e;">&#x2610;</td>
-        <td valign="top" style="padding:5px 0;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;" class="tx">{{ todo.item }}</td>
-        <td width="52" align="right" valign="top" style="padding:5px 0;font-family:Consolas,'Courier New',monospace;font-size:9px;color:#9aa19e;">{{ todo.time|default('') }}</td>
+        <td valign="top" style="padding:5px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;" class="tx">{{ todo.item }}</td>
+        <td width="52" align="right" valign="top" style="padding:5px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;color:#9aa19e;">{{ todo.time|default('') }}</td>
       </tr>
       {% endfor %}
     </table>
@@ -225,7 +226,7 @@
 
   <tr><td class="px" style="padding:22px 26px 0 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:3px double #15181b;">
-      <tr><td style="padding-top:8px;font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.6px;color:#9aa19e;text-transform:uppercase;">Everything else, if you have more than a minute</td></tr>
+      <tr><td style="padding-top:8px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.6px;color:#9aa19e;text-transform:uppercase;">Everything else, if you have more than a minute</td></tr>
     </table>
   </td></tr>
 
@@ -234,19 +235,19 @@
       {% for story in news %}
       <tr>
         <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:{% if loop.index == 1 %}#c2371f{% elif loop.index == 2 %}#a8730a{% else %}#7c837f{% endif %};border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
-        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{{ story.emoji|default('&#x1F4F0;') }} {{ row_link(story.link, story.title) }}</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">{{ story.emoji|default('&#x1F4F0;') }} {{ row_link(story.link, story.title) }}</td>
       </tr>
       {% endfor %}
       {% for vid in youtube %}
       <tr>
         <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#2f6f8f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
-        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F3AC; {{ row_link(vid.link, vid.channel ~ ', "' ~ vid.title ~ '"') }}</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">&#x1F3AC; {{ row_link(vid.link, vid.channel ~ ', "' ~ vid.title ~ '"') }}</td>
       </tr>
       {% endfor %}
       {% for item in ai_security %}
       <tr>
         <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
-        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{% if item.type == 'paper' %}&#x1F4C4; {{ row_link(item.link, item.title ~ ' - arXiv') }}{% else %}{{ item.emoji|default('&#x1F510;') }} {{ row_link(item.link, (item.source|default('Security source')) ~ ': ' ~ item.title) }}{% endif %}</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">{% if item.type == 'paper' %}&#x1F4C4; {{ row_link(item.link, item.title ~ ' - arXiv') }}{% else %}{{ item.emoji|default('&#x1F510;') }} {{ row_link(item.link, (item.source|default('Security source')) ~ ': ' ~ item.title) }}{% endif %}</td>
       </tr>
       {% endfor %}
     </table>
@@ -254,13 +255,13 @@
 
   {% if events %}
   <tr><td class="px" style="padding:14px 26px 0 26px;">
-    <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">NYC Events</div>
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">NYC Events</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       {% for event in events %}
       <tr>
         <td width="20" valign="top" style="padding:3px 0;font-size:11px;">{% if loop.index == 1 %}&#x1F3AD;{% elif loop.index == 2 %}&#x1F3B9;{% elif loop.index == 3 %}&#x1F3B6;{% elif loop.index == 4 %}&#x1F33F;{% else %}&#x1F4CD;{% endif %}</td>
-        <td width="110" valign="top" style="padding:3px 0;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#9aa19e;">{{ event.date|default('today') }}</td>
-        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{{ row_link('https://www.google.com/search?q=' ~ (event.name ~ ' NYC ' ~ event.date)|urlencode, event.name) }}{% if event.location %} · {{ event.location }}{% endif %}</td>
+        <td width="110" valign="top" style="padding:3px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#9aa19e;">{{ event.date|default('today') }}</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">{{ row_link('https://www.google.com/search?q=' ~ (event.name ~ ' NYC ' ~ event.date)|urlencode, event.name) }}{% if event.location %} · {{ event.location }}{% endif %}</td>
       </tr>
       {% endfor %}
     </table>
@@ -272,7 +273,7 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       {% for todo in suggested_todos %}
       <tr>
-        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">
           <span style="color:#15181b;">{{ todo.item }}</span> &middot; {{ todo.source_signal }}{% if todo.next_step %} Next: {{ todo.next_step }}{% endif %}
         </td>
       </tr>
@@ -285,17 +286,17 @@
   <tr><td class="px" style="padding:20px 26px 24px 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:1px solid #e6e2da;">
       {% if notes %}
-      <tr><td style="padding-top:9px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:16px;color:#9aa19e;">{% for note in notes %}{% if not loop.first %} · {% endif %}{{ note }}{% endfor %}</td></tr>
+      <tr><td style="padding-top:9px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#9aa19e;">{% for note in notes %}{% if not loop.first %} · {% endif %}{{ note }}{% endfor %}</td></tr>
       {% endif %}
       {% if overall_signal %}
-      <tr><td style="padding-top:9px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:17px;color:#5f6a66;"><span style="color:#15181b;font-weight:600;">Overall signal:</span> {{ overall_signal }}</td></tr>
+      <tr><td style="padding-top:9px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><span style="color:#15181b;font-weight:600;">Overall signal:</span> {{ overall_signal }}</td></tr>
       {% endif %}
     </table>
   </td></tr>
   {% else %}
   <tr><td class="px" style="padding:20px 26px 24px 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:1px solid #e6e2da;">
-      <tr><td style="padding-top:9px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:16px;color:#9aa19e;">Generated from live fetchers. Full archive available on site output.</td></tr>
+      <tr><td style="padding-top:9px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#9aa19e;">Generated from live fetchers. Full archive available on site output.</td></tr>
     </table>
   </td></tr>
   {% endif %}

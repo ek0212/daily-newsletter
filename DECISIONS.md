@@ -1,5 +1,19 @@
 # Architecture & Product Decisions
 
+## 2026-08-02: Consensus weather forecasts
+
+**Context:** Single-source NWS hourly forecasts were drifting from the user's observed consumer-weather apps.
+
+**Decision:** Keep NWS for current observations and fallback, but average hourly and daily forecast fields across up to 10 Open-Meteo public models. Show source count in the email weather section.
+
+**Alternatives considered:**
+- Use only NWS: rejected because forecast drift was the reported problem
+- Scrape consumer weather pages: rejected because it is brittle and less transparent than model/API data
+
+**Status:** ACTIVE
+
+---
+
 ## 2026-04-04: Regex fallback summarizer for environments without NLTK data
 
 **Context:** The LSA summarizer (sumy) requires NLTK punkt tokenizer data, which must be downloaded separately. In some CI/network-restricted environments, this download fails silently and all summaries fall back to raw text fragments.
