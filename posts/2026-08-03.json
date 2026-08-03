@@ -1,0 +1,454 @@
+{
+  "date": "Monday, August 03, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 73,
+    "unit": "F",
+    "conditions": "Rain and Fog/Mist",
+    "high": 82,
+    "low": 72,
+    "feels_like": 73,
+    "forecast": "Showers and thunderstorms. Cloudy, with a high near 82. Southwest wind around 13 mph. Chance of precipitation is 100%. New rainfall amounts between 1 and 2 inches possible.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 74,
+        "feels_like": 79,
+        "conditions": "Drizzle",
+        "wind": "10 mph SW",
+        "humidity": "94%",
+        "precip_chance": "93%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 75,
+        "feels_like": 81,
+        "conditions": "Rain",
+        "wind": "10 mph SW",
+        "humidity": "93%",
+        "precip_chance": "82%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 80,
+        "feels_like": 86,
+        "conditions": "Drizzle",
+        "wind": "9 mph SW",
+        "humidity": "80%",
+        "precip_chance": "72%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 80,
+        "feels_like": 85,
+        "conditions": "Drizzle",
+        "wind": "8 mph W",
+        "humidity": "73%",
+        "precip_chance": "59%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 79,
+        "feels_like": 83,
+        "conditions": "Clear",
+        "wind": "7 mph W",
+        "humidity": "68%",
+        "precip_chance": "39%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "950 cases this week \u2014 81% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 950,
+    "vs_average_pct": -81.0,
+    "week_ending": "2026-07-25",
+    "breakdown": {
+      "flu": 206,
+      "covid": 657,
+      "rsv": 87
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "950 combined flu/COVID/RSV cases",
+        "comparison": "81% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "current": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "comparison": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdjlUSG1Tem95R3QwTl9feVY4RzFDRGwwcG5CTGJIYmFJOGhleVVfWk9iRERqVC00cXNJT1NiWklrbklLUTNMczdQbE5TTkRhMFdqc2pCdFlOVEQtek1LSF9IcUtEMUhyc3BscFFPN080NE15YmRvdk1DNktVa3hKTUVkNVQtZXJBc1M2U2ZmVnBmcW9xcDN2NjR1WGJSVUtWamc1eTRONmp1YmUzU1HSAbYBQVVfeXFMTm00aDlnZUs0Q2h4UkZDTG9CM3NzYWN5TGU2QlpRZkQtZ3lIamVGMFNESTMybUZIQTFNQTZHV3otUVlQbUxkbmF5TUtKZEY5RFhpdEk1cU9nb2szYzBUUlVXdnB4MHhDdDd5M3BDOUEwVzRybGZhM3ZWTWVTS1hGX1NBcTBiSHoteEVBaFUydmRRRjZkaUJkRFZITTMzQ2ZhVDAxc3h6ejViQWRaV0V2N1lDalY1YVE?oc=5",
+        "title": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "summary": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "published": "Mon, 06 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (C",
+        "current": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition",
+        "comparison": "Fri, 31 Jul 2026 19:55:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766134",
+        "title": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (Coconut) Allergens",
+        "summary": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition facts panel for the following products:",
+        "published": "Fri, 31 Jul 2026 19:55:00 GMT"
+      },
+      {
+        "signal": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
+        "title": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "current": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "comparison": "Mon, 06 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdjlUSG1Tem95R3QwTl9feVY4RzFDRGwwcG5CTGJIYmFJOGhleVVfWk9iRERqVC00cXNJT1NiWklrbklLUTNMczdQbE5TTkRhMFdqc2pCdFlOVEQtek1LSF9IcUtEMUhyc3BscFFPN080NE15YmRvdk1DNktVa3hKTUVkNVQtZXJBc1M2U2ZmVnBmcW9xcDN2NjR1WGJSVUtWamc1eTRONmp1YmUzU1HSAbYBQVVfeXFMTm00aDlnZUs0Q2h4UkZDTG9CM3NzYWN5TGU2QlpRZkQtZ3lIamVGMFNESTMybUZIQTFNQTZHV3otUVlQbUxkbmF5TUtKZEY5RFhpdEk1cU9nb2szYzBUUlVXdnB4MHhDdDd5M3BDOUEwVzRybGZhM3ZWTWVTS1hGX1NBcTBiSHoteEVBaFUydmRRRjZkaUJkRFZITTMzQ2ZhVDAxc3h6ejViQWRaV0V2N1lDalY1YVE?oc=5",
+        "title": "NYC investigating severe pneumonia cluster on Upper East Side: What to know - NBC New York",
+        "summary": "NYC investigating severe pneumonia cluster on Upper East Side: What to know NBC New York",
+        "published": "Mon, 06 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (C",
+        "current": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition",
+        "comparison": "Fri, 31 Jul 2026 19:55:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766134",
+        "title": "Lidl US Expands Recall of Eridanous Shortbread Cookies Due to Undeclared Wheat, Soy, Milk, Egg and Tree Nut (Coconut) Allergens",
+        "summary": "ARLINGTON, VA - JULY 31, 2026 - Lidl US is expanding its July 24, 2026 recall of Eridanous Shortbread Cookies to include all units with a foreign language ingredients and nutrition facts panel for the following products:",
+        "published": "Fri, 31 Jul 2026 19:55:00 GMT"
+      },
+      {
+        "signal": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Fri, 31 Jul 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
+        "title": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Fri, 31 Jul 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "School Parade",
+      "date": "Wed, Aug 5",
+      "borough": "Manhattan",
+      "location": "825 7th Ave",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Dominican Day Parade, Inc.",
+      "date": "Sun, Aug 9",
+      "borough": "Manhattan",
+      "location": "Sixth Ave & West 37th St",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Breakfast Program",
+      "date": "Tue, Aug 4",
+      "borough": "Manhattan",
+      "location": "East 55th St & Park Ave",
+      "event_type": "Street Event"
+    },
+    {
+      "name": "Museum of Arts and Design Family Engagement Day",
+      "date": "Sat, Aug 8",
+      "borough": "Manhattan",
+      "location": "West 58th St & Broadway",
+      "event_type": "Open Culture"
+    }
+  ],
+  "news": [
+    {
+      "title": "Myanmar's detained former leader Aung San Suu Kyi has rare meeting with International Red Cross",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOSlctT0dBVG9VVlhKZ284bjkxZlJVUFJDMFg0eGdHNkp2X1pQa2pPV0VZN3JZWFlRQ25zWHVCTkIzampNaWRqYjZ4VFdiQjk2WGZaS0didzJnaGc4M2JYV0dYdFU5dy1pTUZnRmFwcmpsb01iRzRBUFRQcUlKZWFhdzV1M1JfdV8yNlA1UzBiRUNVRUR5dVlqQUJ0QmNpS2pxMGVFVw?oc=5",
+      "published": "Mon, 03 Aug 2026 09:04:00 GMT",
+      "raw_text": "Myanmar\u2019s detained former leader Aung San Suu Kyi has rare meeting with International Red Cross\nBANGKOK (AP) \u2014 Myanmar\u2019s detained former leader Aung San Suu Kyi met with the International Committee of the Red Cross\u2019 representative in the capital on Monday, the military-backed government said, a rare moment of contact with the outside world for the Nobel laureate who has been held out of public view since the military seized power in 2021.\nTwo photographs published with the announcement showed Suu Kyi shaking hands with Arnaud de Baecque, the ICRC\u2019s representative to Myanmar, and meeting with him in a wood-paneled room.\nThe Presidential Press and Information Bureau, which released the photographs, said the meeting was held Monday morning but did not disclose the location of the meeting or provide details about what was discussed.\nThe ICRC confirmed in a statement on Monday that one of its delegates visited Suu Kyi under its standards and procedures for visiting people deprived of liberty, and spoke with her in private, but it did not disclose details of the discussion.\nThe organization said it continues to engage with all relevant actors to maintain and expand its access to places of detention in Myanmar.\nTwo other photographs showed Suu Kyi cutting a pink birthday cake bearing the inscription, \u201cHappy Birthday Aunty Suu,\u201d suggesting they may have been taken during a celebration for her 81st birthday in June.\nIn the photos, Suu Kyi appeared relaxed and was smiling. She did not show any obvious signs of ill health, although her physical condition could not be independently assessed from the images.\nThe release came as calls are growing from other countries, including Myanmar\u2019s fellow members of the Association of Southeast Asian Nations, for access to or engagement with Suu Kyi as part of efforts to resolve the country\u2019s political crisis.\nKim Aris, her younger son living in London, and Myanmar democracy activists has been waging an online campaign named to demand evidence his mother is alive and well.\nIn a statement sent to the AP, Aris welcomed the reported ICRC visit, saying it could mark the first positive development concerning his mother in more than five years.\n\u201cThis may be a first step, but it must not be the last,\u201d Aris said.\nHe thanked governments, the international community and supporters for standing with his family and backing his campaign to seek proof of his mother\u2019s well-being, while stressing that he had not yet received independent confirmation of her condition.\nHe said he hoped the visit would lead to direct family contact and her eventual release together with all political prisoners.\nSuu Kyi was detained Feb. 1, 2021, when the army seized power from her elected government. She has not been seen publicly since then, and the last official photo of her released was in April, when she was moved from prison to house arrest and her sentence was reduced as part of a prisoner amnesty for a Buddhist holiday.\nThe country\u2019s military leaders, who have faced sanctions and widespread international isolation since seizing power in 2021, have sought to project a return to normalcy by holding a 2025 election and increased engagement with regional neighbors.\nHowever, critics say the transition to a nominally elected government largely composed of former generals and holdovers from the previous military-led government has done little to change the military\u2019s grip on power.\nNay Phone Latt, a spokesperson for the opposition National Unity Government, said the ICRC\u2019s meeting with Suu Kyi shouldn\u2019t be taken as a real move to address human rights or democracy issues.\n\u201cSince, from the outset, a country\u2019s leader was wrongfully arrested and imprisoned by finding faults where there were none, she must be released without any conditions,\u201d he said.",
+      "summary": "<strong>Suu</strong> <strong>Kyi</strong> was detained Feb. 1, 2021, when the army seized power from her elected government. She has not been seen publicly since then, and the last official photo of her released was in April, when she was moved from prison to house arrest and her sentence was reduced as part of a prisoner amnesty for a Buddhist holiday.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "First moments of Egypt earthquake caught during livestream",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/8/3/first-moments-of-egypt-earthquake-caught-during-livestream?traffic_source=rss",
+      "published": "Mon, 03 Aug 2026 10:04:27 +0000",
+      "raw_text": "First moments of Egypt earthquake caught during livestream\nA magnitude 5.4 earthquake struck Egypt, north of Suez early on Monday, startling a content creator during a livestream. Tremors were felt as far as Gaza, prompting residents to evacuate homes and hotels. No casualties were reported.\nPublished On 3 Aug 2026",
+      "summary": "<strong>First</strong> moments of <strong>Egypt</strong> earthquake caught during livestream A magnitude 5.4 earthquake struck <strong>Egypt</strong>, north of Suez early on Monday, startling a content creator during a livestream. Tremors were felt as far as Gaza, prompting residents to evacuate homes and hotels.",
+      "emoji": "\ud83c\udf2a\ufe0f"
+    },
+    {
+      "title": "Iran rejects Trump\u2019s claim that talks will restart, adding to weekend of whiplash",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNOHV6dXFDM1hKanZxUW12NVNULXRwUkpfR3lhTEh3TzZhRGFjMGNwVWd6Z3ZQSFBTTkxNUFFsVGI1aTFEZlVLNnZIWDdQd1c5RmZSSUxIbVJxdTQ0QjRZN2JVbEJDUWZON29qQlQ2Vk80Mzc1OGl5Q3pDSEFpWEZlRWl2NXhSa2J4dXZhbXJfdzd2amx1ZWFLajRoRFIwRDJUUWw5czlldk5yNVlhbzF4bzFSeG9JZw?oc=5",
+      "published": "Mon, 03 Aug 2026 11:22:04 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post."
+    },
+    {
+      "title": "Kay Granger, first GOP woman from Texas to win House seat, dies at 83",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVEZpTnJrb0xVeHlzRVkzeElWSEJQRGtVMG00N1VHWnVscWVjeGZ4elRxbWFwdGFLMndJOGVBVkNwZ2pOQ3pqUGNtemlEVFdtREkzNjB0OTNFMEtzeFpyRHVNLW5vTXJuVlFQZTVybVNVczJ0SVo2cVVHQXBHcUJoZC1MS0lwY2wxVzBNdjZIeHMzQUR1M0ZSWGhUQ3NwT1ViWk5qOXpld25XQlFKdkg0?oc=5",
+      "published": "Mon, 03 Aug 2026 05:48:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post."
+    },
+    {
+      "title": "U.S. Rep. Marcy Kaptur \u2018active, alert\u2019 after crash; person involved at large",
+      "source": "Toledo Blade",
+      "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNN3Vqcnl0ZnkyT1dSYVhabGtGUTFheHBUVlUtWU5ieXY3dUJ1SnkxRV85MGxTalNKR0ZURXR1UjdrVmhxeERTSVpSWEM5OWpjemVYcVVSNm5EYjNjUWllMXprWFpwZkFfcS1oRXk5THJpZ0NKMDFZTFFJUGI4LU0zZ2Jhd0Z3d2hTR0VFSEVuYmVUWWZuamhGMWNlRE9NUkpfY0NWSVFNMzhqVjk4cHVBQ0tvc2NWS1o0bW4wckxhR1NlYktrbU9GUV9uU3ViNHJiX3p2Nw?oc=5",
+      "published": "Mon, 03 Aug 2026 04:29:38 GMT",
+      "raw_text": "Enter-To-Win\nObituaries\nEvents\nJobs\nClassifieds\nMENU\nSUBSCRIBE\nLOGIN\nREGISTER\nLOG OUT\nMY PROFILE\nHome\nLocal\nNews\nSports\nA&E\nBusiness\nOpinion\nContact Us\neBlade\nNEWSLETTERS\nMENU\nACCOUNT\nSubscribe\nLogin\nRegister\nLog out\nMy Profile\nSubscriber Services\nSearch\nSECTIONS\nHOME\nHomepage\nLOCAL\nLocal Home\nAnimals\nCity\nCourts\nCommunity Events\nDaily Log\nDogs for Adoption\nEducation\nEnvironment\nHomicides\nPolice Fire\nPolitics\nSuburbs\nTransportation\nNEWS\nNews Home\nDeaths\nHealth & Well-Being\nMedical\nNation\nReligion\nWorld\nSPORTS\nSports Home\nAmateur\nBGSU\nBrowns\nCavaliers\nCollege\nGolf\nGuardians\nHigh School\nLions\nMichigan\nMud Hens\nOhio State\nOutdoors\nOwens\nPistons\nPro\nRed Wings\nTigers\nUT\nWalleye\nA&E\nA&E Home\nArt\nCulture\nFood\nGardening\nLiving\nMovies\nMusic, Theater, & Dance\nPeach Weekender\nRestaurant Reviews\nToledo Magazine\nTV & Radio\nBUSINESS\nBusiness Home\nAgriculture\nAutomotive\nDevelopment\nEnergy\nLabor\nPersonal Finance\nReal Estate\nRetail\nStock Market\nTechnology\nOPINION\nOpinion Home\nColumnists\nEditorial Cartoons\nEditorials\nLetters to the Editor\nSubmit a Letter\nB PARTNERS\nB Partners Home\nAbility Center\nAnthem Blue Cross\nArrowhead Behavioral\nBalance & Mobility\nBGSU\nBlack Diamond\nBlue Ribbon Hemp\nBolt Express\nBoyk Law Offices\nCASA\nEpworth Church\nExciting Windows by Couture\nFair Housing Center\nFinixio\nFulton Cty Health Center\nGlass City Academy\nGTCF\nHammill Medical\nHoliday Gift Guide\nHolt Roofing Company\nHomes\nHOPE Toledo\nHylant\nImagination Station\nJustCBD\nKapios\nKeystone\nKids of Character\nLa-Z-Boy\nLeadership Toledo\nLevis Commons\nLott Industries\nLourdes University\nLucas County Recorder\nLuther Home of Mercy\nMcLaren St. Luke's\nMed1Care\nMedtronic\nMighty Earth\nMinistry of Hemp\nMiracle-Ear\nMission Lean\nMVCDS\nNationwide Children Hospital\nOhioans Home Healthcare\nOSU Engineering\nOswald Companies\nPhoenix Investors\nProMedica\nProMedica Medical Mgmt\nReaders' Choice Awards\nRestaurants\nRonald McDonald House\nShumaker\nSolheim Cup\nSpengler Nathanson\nTARTA\nTernion\nToledo Clinic\nToledo Museum of Art\nToledo Public Library\nToledo Zoo & Aquarium\nUnited Way\nUniversity of Toledo\nUT Physicians\nUTMC\nUSA Insulation\nZenobia Shriners\nMEALS WITH MADDIE\nMeals with Maddie Home\nOTHER\nEBLADE\nENTER-TO-WIN\nBLADE REWARDS\nBLADE VAULT / REPRINTS\nCLASSIFIEDS\nOBITUARIES\nJOBS\nCLASSIFIEDS\nBLADE HOMES\nHOMES\nWEEKLY ADS\nEVENTS\nCONTACT US / FAQ\nCONTACT US\nSUBSCRIBER GUIDE\nADVERTISING\nCAREER OPPORTUNITIES\nTOP\nEmail a Story\nYour e-mail:\nFriends e-mail:\nSubmit",
+      "summary": "Read the full story at Toledo Blade."
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "Theo - t3.gg",
+      "title": "Linus is so based for this",
+      "video_id": "XFSwfwiM8nk",
+      "published": "2026-08-03",
+      "link": "https://youtube.com/watch?v=XFSwfwiM8nk",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/XFSwfwiM8nk/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai privacy.",
+  "ai_security": [
+    {
+      "title": "Zenity Expands AI Security Platform to Target Autonomous Agent Decision Risks",
+      "source": "TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxONXJYeHJHU1RVY0xZNkNzSkRlWWoxajV3dFVPWHU1RzJwQy04RDNZakprc1ZfcUctYTBRMy1jdzNRank0dU12RnBVaXN1TmlsMFBIVEVJNkkyWkNCZ0ZQOW9YOVN2WUl5ZVctZ2FkRTJyYW9IT3UtcEhzRmdXQUhPU2pOVFNEaHktU19MNkZVdUx5SkZSV1hNT1JBcEJQWThxTjFISHBZakFBc1VnRnRTci1rcFpDNmg4Z2ZGSG1obUVVTFU?oc=5",
+      "published": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "summary": "According to a recent LinkedIn post from <strong>Zenity</strong>, the company is emphasizing emerging risks from autonomous AI agents that can cause harm through their own decision-making rather than traditional external attacks.",
+      "raw_text": "According to a recent LinkedIn post from Zenity, the company is emphasizing emerging risks from autonomous AI agents that can cause harm through their own decision-making rather than traditional external attacks. The post suggests that long-horizon agents, which maintain state and call multiple tools, challenge legacy security models built around single prompt-response inspections.\nClaim 55% Off TipRanks\n- Unlock powerful investing tools with TipRanks Premium to make smarter, more confident investment decisions\n- Subscribe to TipRanks Smart Investor Newsletter, and discover new investing opportunities with data-backed stock picks\nThe company\u2019s LinkedIn post highlights that Zenity has expanded its AI Security and Governance Platform to focus on the agent \u201cdecision point,\u201d where context and intent converge before actions are taken. This positioning indicates an effort to address a growing niche in AI security, which may strengthen Zenity\u2019s value proposition to enterprises deploying complex agentic AI systems and potentially support future customer growth.\nAs shared in the LinkedIn post, Zenity frames its approach as a continuous loop of surfacing, enforcing, and protecting decisions made by AI agents. For investors, this focus on pre-emptive control of autonomous AI behavior could align Zenity with rising demand for specialized AI governance solutions, possibly enhancing its competitive standing in the broader cybersecurity and AI tooling markets.",
+      "type": "news"
+    },
+    {
+      "title": "Hush Security says the AI security problem has shifted from protecting models to governing identities as autonomous agents spread",
+      "source": "Venturebeat",
+      "link": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMFVla0ZDSDAyTElJRnpxSUJKRWJjbzdYb3ZPb0NtRnhqa3dKN0F5ZlZzUER0aHpxYzIwWmJldEdRMmJrcXJIUF9FVmg3c3hVS0pCejQzMWtMQWl6SlAtR3VnVTNzQ196Q1BfSV80UlpoYjNMbXBkck1lVjNXUVhxdmREY3RFaDBSNmJiRlpfcDJ2QlB2YURnQkpCUjlJQkwxb0ZyUGVoOU1TZTFyR0dOTDd5a2NOY01QaWxRWDRHMmlrbk1iSUNkRWlIc3B2Rzc3WXdUcDRhRGFqVXE2NEJ3SGJ1dG9COVhBZmhYWm5DZDZBMjZz?oc=5",
+      "published": "Thu, 30 Jul 2026 16:29:00 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "",
+      "type": "news"
+    },
+    {
+      "title": "PointGuard AI Advances Enterprise Agentic AI Security with Agent Mission Control",
+      "source": "Kitsap Sun",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONWtkVFI5Z19ZdExJMlRVU1Z4dzg0NXFScTFJQVo0djRrbmNJajQ4ZFhodEt5ZlpCSEF3d2Zpa1lpbUFaX05oOXlvZmVUSi1BM2dtWlZLdkZrNmdfM21PbFc2M2JUWlg4WFZLcHBRNWJBTksyNkl2dkdmZ0Z2Q1c3ZW1FVU1iQllFcVNzMGpIVkIzNUpEc05jSXFNMTNaZ25qQ0M1d0t6Nml2c3lNd2RPT1VHRFFVSzlwR1pfOTF2N2NVdmNjN0dVbnF5bXhKelE?oc=5",
+      "published": "Thu, 30 Jul 2026 14:46:55 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Gartner-recognized platform sets a new standard for discovering and governing autonomous AI with access security and Guardian Agent protection\nLAS VEGAS, NV, CA, UNITED STATES, July 30, 2026 /EINPresswire.com/ \u2014 At Black Hat USA 2026, PointGuard AI today unveiled Agent Mission Control, a comprehensive platform for discovering, governing, and controlling autonomous AI. Recently recognized by Gartner in Coolest Vendor Innovations in AI Software Security, Agent Mission Control enables organizations to securely deploy autonomous AI at enterprise scale. Gartner noted that PointGuard AI\u2019s Agent Mission Control \u201cgrants autonomous AI agents a verifiable identity and validates actions before execution, providing real-time containment of agentic behavioral anomalies.\u201d\nAs autonomous AI becomes more capable, so do the risks. The recent OpenAI autonomous agent incident, in which an AI agent escaped its testing environment, hacked Hugging Face, and compromised additional third-party services, demonstrates how quickly autonomous systems can move beyond their intended boundaries. Organizations need more than identity and content guardrails. They must be able to discover AI agents, establish trusted identities, validate every action, detect behavioral drift, and automatically contain rogue behavior before damage occurs. Agent Mission Control delivers this end-to-end governance while addressing all 10 categories of the OWASP Top 10 Risks for AI Agentic Applications, such as Agent Goal Hijacking, and Identity and Privilege Abuse which were exploited in the OpenAI incident.\nAs autonomous AI rapidly transforms the enterprise, security must evolve beyond static guardrails and isolated point products. Agent Mission Control brings together AI discovery, trusted identities, intent-based identity and access control, Guardian Agent technology, MCP Security Gateway enforcement, and high-performance runtime guardrails in a single platform. Built for enterprise deployments, the platform validates agent actions in less than 0.1 milliseconds, while parallel small language models inspect prompts, responses, and tool communications in approximately 0.1 seconds, delivering comprehensive protection with virtually no impact on AI performance.\n    Agent Mission Control provides end-to-end governance for autonomous AI, including:\n    \u2022\tDiscovery and inventory of AI agents, MCP servers, and agentic endpoints\n    \u2022\tSecure cryptographic identities for every AI agent\n    \u2022\tDirect and delegated identity with intent-based identity and access controls\n    \u2022\tSecure agent-to-agent communications\n    \u2022\tMCP Security Gateway enforcing granular tool-level authorization\n    \u2022\tHigh-performance runtime guardrails that prevent prompt injection, data leakage, and malicious tool interactions\n    \u2022\tGuardian Agent technology that continuously monitors autonomous behavior, detects behavioral drift, validates actions before execution, and automatically contains rogue agents through policy enforcement, circuit breakers, and kill switches\nThe announcement builds on Gartner\u2019s continued focus on securing autonomous AI, including recent research on AI software security, AI identity, Guardian Agents, MCP security, and AI TRiSM, reflecting the industry\u2019s growing emphasis on runtime governance and control for enterprise AI.\n\u201cPointGuard AI\u2019s Agent Mission Control grants autonomous AI agents a verifiable identity and validates actions before execution, providing real-time containment of agentic behavioral anomalies.\u201d Gartner, Coolest Vendor Innovations in AI Software Security, July 2026\n\u201cAutonomous AI is creating an entirely new security challenge,\u201d said Pravin Kothari, Founder and CEO of PointGuard AI. \u201cOrganizations need more than visibility into AI. They need the ability to discover every agent, establish trusted identities, govern every action, and stop rogue behavior before it impacts the business. Agent Mission Control delivers the runtime governance and Guardian Agent protection that enterprises need to confidently deploy autonomous AI at scale.\u201d\nPointGuard AI executives will meet with customers, partners, and industry leaders throughout Black Hat USA 2026 to discuss strategies for governing and securing autonomous AI. Organizations interested in scheduling an executive briefing can register here.\n    About PointGuard AI\n    PointGuard AI is redefining enterprise AI security with a comprehensive platform that enables organizations to confidently adopt AI while managing risk across models, applications, agents, MCP servers, and cloud AI services. From discovery and posture management to runtime governance and automated response, PointGuard AI helps enterprises securely innovate at the speed of AI.\n    * Gartner, Coolest Vendor Innovations in AI Software Security, Aaron Lord, Meghan Hollis, Manjunath Bhat, 1 July 2026.\n    Gartner does not endorse any vendor, product or service depicted in its research publications and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner\u2019s research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose.\nWilly Leichter\n    PointGuard AI\n    email us here\n    Visit us on social media:\n    LinkedIn\n    YouTube\nPointGuard AI Agent Mission Control Overview\nLegal Disclaimer:\n      EIN Presswire provides this news content \u201cas is\u201d without warranty of any kind. We do not accept any responsibility or liability\n      for the accuracy, content, images, videos, licenses, completeness, legality, or reliability of the information contained in this\n      article. If you have any complaints or copyright issues related to this article, kindly contact the author above.\n    \nMedia gallery",
+      "type": "news"
+    },
+    {
+      "title": "The Theoretical Foundation of Socratic Tests: Dynamic, Multimodal, Conversational Examinations",
+      "authors": [
+        "Ilya Mikhelson"
+      ],
+      "abstract": "Traditional static assessments rely on a subtractive, deficit-based grading model that often penalizes ambition and obscures diagnostic feedback. Conversely, traditional face-to-face oral examinations introduce severe construct-irrelevant variance by exacerbating performative anxiety and the sociological power imbalances inherent to academic hierarchies. This paper presents the theoretical foundation for the \"Socratic Test,\" an automated, computer-mediated conversational assessment. By integrating Dynamic Assessment principles, multimodal workspaces, Bloom's Taxonomy for real-time proctoring, and the SOLO Taxonomy for structural evaluation, the Socratic Test actively maps a student's cognitive boundaries. This paper formalizes the use of graduated scaffolding to quantify the Zone of Proximal Development (ZPD) and details a non-compensatory, additive grading architecture that prioritizes mastery over penalty and human-AI alignment to ensure unprecedented measurement reliability.",
+      "link": "https://arxiv.org/pdf/2607.29624v1",
+      "published": "2026-07-31",
+      "arxiv_id": "2607.29624v1",
+      "citation_count": null,
+      "affiliations": [
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Traditional static assessments rely on a subtractive, deficit-based grading model that often penalizes ambition and obscures diagnostic feedback. Conversely, traditional face-to-face oral examinations introduce severe construct-irrelevant variance by exacerbating performative anxiety and the sociological power imbalances inherent to academic hierarchies. This paper presents the theoretical foundation for the \"Socratic Test,\" an automated, computer-mediated conversational assessment. By integrating Dynamic Assessment principles, multimodal workspaces, Bloom's Taxonomy for real-time proctoring, and the SOLO Taxonomy for structural evaluation, the Socratic Test actively maps a student's cognitive boundaries. This paper formalizes the use of graduated scaffolding to quantify the Zone of Proximal Development (ZPD) and details a non-compensatory, additive grading architecture that prioritizes mastery over penalty and human-AI alignment to ensure unprecedented measurement reliability.",
+      "summary": "Traditional static assessments rely on a subtractive, deficit-based grading model that often penalizes ambition and obscures diagnostic feedback.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "ExtractBench: A Benchmark for Schema-Guided Enterprise Document Extraction",
+      "authors": [
+        "Boyang Zhang",
+        "Adrian Lyjak",
+        "Eli Stewart",
+        "Zhaoqi Li",
+        "Simon Suo"
+      ],
+      "abstract": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ExtractBench}{HuggingFace} and \\href{https://github.com/run-llama/ExtractBench}{GitHub}.",
+      "link": "https://arxiv.org/pdf/2607.29677v1",
+      "published": "2026-07-31",
+      "arxiv_id": "2607.29677v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Enterprise workflows increasingly rely on agents for \\emph{schema-guided extraction}: given a document and a user-defined schema, the agent faithfully follows the schema to produce the correct output with source evidence as grounding metadata. We present ExtractBench, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. The evaluation system contains 4,869 pages across 370 enterprise documents, 8 business domains, and 67 document types, with clear tags differentiating their challenge scenarios. The scalable schema and ground-truth curation pipeline combines independent-system agreement for real documents, known values for synthetic lists, and human verification for forms. We report order-insensitive value F1 for value accuracy, plus two grounding metrics for source traceability: word- and page-level F1. Commercial VLMs perform well on short documents but often truncate record lists on long ones, while coding agents retain higher accuracy at much higher cost. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost. Dataset and evaluation code are available on \\href{https://huggingface.co/datasets/llamaindex/ExtractBench}{HuggingFace} and \\href{https://github.com/run-llama/ExtractBench}{GitHub}.",
+      "summary": "We present <strong>ExtractBench</strong>, a benchmark for schema-guided extraction and, to our knowledge, the first to score value accuracy, record completeness at scale, grounding, and measured cost together. LlamaExtract Agentic Plus ranks first on all three metrics, with accuracy comparable to coding agents at a fraction of the cost.",
+      "type": "paper"
+    },
+    {
+      "title": "Differentially Private Nonparametric Modal Learning with Applications to Regression and Clustering",
+      "authors": [
+        "Arkajyoti Bhattacharjee",
+        "Arnab Auddy"
+      ],
+      "abstract": "Density modes provide a localized and interpretable summary of multimodal distributions, but their estimation under rigorous differential privacy constraints remains largely unexplored. We study differentially private recovery of density modes for multivariate distributions under local smoothness, curvature, and separation conditions. We propose DP-GRAMS, a mean-shift inspired method that performs noisy ascent on a differentially private score estimator. Assuming the density belongs locally to a H\u00f6lder class with smoothness parameter $\u03b2> 2$, our score estimator uses bias-reducing higher-order kernels, and then enforces privacy in the gradient ascent steps via gradient clipping and calibrated Gaussian noise. A private initialization scheme combines a density-aware utility with a suppression rule and, with $k\\asymp M\\log n$ draws over a public $h_{\\mathrm{DAP}}$-grid and suppression radius $\u03c1_{\\mathrm{init}}\\asymp (\\log n)^{-1/d}$, achieves high-probability coverage of the modal basins by successively suppressing selected local neighborhoods in competitive regions, while correlated noise across multiple starts enables joint release under a single $(\\varepsilon,\u03b4)$-differential privacy guarantee. We prove that all population modes are recovered with high probability and establish asymptotic error rates of the form $O\\!\\left((\\tfrac{\\log n}{n})^{\\frac{2(\u03b2-1)}{d+2\u03b2}}\\right) + O\\!\\left((\\tfrac{\\mathrm{polylog}(n,\u03b4)}{n^2\\varepsilon^2})^{\\frac{\u03b2-1}{d+\u03b2}}\\right)$. We also provide minimax lower bounds for private mode estimation, and show that our estimators are nearly optimal, up to a logarithmic factor in the MSE. We present two natural extensions: DP-PMS, a private modal-regression method, and DP-GRAMS-C, a clustering pipeline. Extensive experiments on synthetic and real data demonstrate favorable privacy-utility trade-offs relative to common baselines.",
+      "link": "https://arxiv.org/pdf/2607.29675v1",
+      "published": "2026-07-31",
+      "arxiv_id": "2607.29675v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Density modes provide a localized and interpretable summary of multimodal distributions, but their estimation under rigorous differential privacy constraints remains largely unexplored. We study differentially private recovery of density modes for multivariate distributions under local smoothness, curvature, and separation conditions. We propose DP-GRAMS, a mean-shift inspired method that performs noisy ascent on a differentially private score estimator. Assuming the density belongs locally to a H\u00f6lder class with smoothness parameter $\u03b2> 2$, our score estimator uses bias-reducing higher-order kernels, and then enforces privacy in the gradient ascent steps via gradient clipping and calibrated Gaussian noise. A private initialization scheme combines a density-aware utility with a suppression rule and, with $k\\asymp M\\log n$ draws over a public $h_{\\mathrm{DAP}}$-grid and suppression radius $\u03c1_{\\mathrm{init}}\\asymp (\\log n)^{-1/d}$, achieves high-probability coverage of the modal basins by successively suppressing selected local neighborhoods in competitive regions, while correlated noise across multiple starts enables joint release under a single $(\\varepsilon,\u03b4)$-differential privacy guarantee. We prove that all population modes are recovered with high probability and establish asymptotic error rates of the form $O\\!\\left((\\tfrac{\\log n}{n})^{\\frac{2(\u03b2-1)}{d+2\u03b2}}\\right) + O\\!\\left((\\tfrac{\\mathrm{polylog}(n,\u03b4)}{n^2\\varepsilon^2})^{\\frac{\u03b2-1}{d+\u03b2}}\\right)$. We also provide minimax lower bounds for private mode estimation, and show that our estimators are nearly optimal, up to a logarithmic factor in the MSE. We present two natural extensions: DP-PMS, a private modal-regression method, and DP-GRAMS-C, a clustering pipeline. Extensive experiments on synthetic and real data demonstrate favorable privacy-utility trade-offs relative to common baselines.",
+      "summary": "Density modes provide a localized and interpretable summary of multimodal distributions, but their estimation under rigorous differential privacy constraints remains largely unexplored. We study differentially private recovery of density modes for multivariate distributions under local smoothness, curvature, and separation conditions.",
+      "type": "paper",
+      "emoji": "\ud83d\udd12"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai privacy.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "82\u00b0F",
+        "detail": "93% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-07-25"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Rain",
+        "detail": "Plan cover"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "3 papers",
+        "detail": "Jul 31"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "1",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "attention",
+        "text": "Weather watch: Rain and Fog/Mist."
+      },
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 950 cases this week \u2014 81% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 4,
+    "youtube_count": 1,
+    "ai_security_count": 6
+  }
+}
