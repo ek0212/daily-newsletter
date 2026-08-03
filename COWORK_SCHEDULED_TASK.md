@@ -36,7 +36,7 @@ Use these values in Cowork's Scheduled task modal.
 | Field | Value |
 |---|---|
 | Task name | Daily Midtown Briefing |
-| Description | Build the daily newsletter, update the static site archive, read the YouTube email digest, and text a short result. |
+| Description | Build the daily newsletter in the August 2 compact email format, update the static site archive, email the full briefing, and leave a short result. |
 | Folder | `/Users/evekazarian/Documents/Coding Projects/daily-newsletter` |
 | Frequency | Daily |
 | Time | 6:00 AM America/New_York |
@@ -50,7 +50,7 @@ The scheduled task should treat each newsletter concern as a bounded step.
 | Step | Automation piece | Repo source | Cowork role |
 |---|---|---|---|
 | Preflight | Confirm folder, environment file, dependencies, and network availability. | `.env.example`, `requirements.txt` | Check setup without printing secrets. Install dependencies only if the environment is missing them and permission allows it. |
-| Fetch weather | Get NYC weather from the National Weather Service. | `src/weather.py` | Let the script fetch it. Report only if the section fails or is empty. |
+| Fetch weather | Get NYC weather from Open-Meteo model consensus plus National Weather Service observation/fallback. | `src/weather.py` | Let the script fetch it. Report only if the section fails, is empty, or drops below the expected consensus source count. |
 | Fetch health | Get NYC respiratory illness status. | `src/health.py` | Let the script fetch it. Report failures as warnings, not blockers. |
 | Fetch events | Get nearby NYC events. | `src/events.py` | Let the script fetch it. Do not manually curate events unless the script fails. |
 | Fetch top news | Select broad top news using source scoring and deduplication. | `src/news.py`, `src/newsletter.py` | Let the deterministic ranking run. Do not replace it with ad hoc Cowork research. |
@@ -60,7 +60,7 @@ The scheduled task should treat each newsletter concern as a bounded step.
 | Editorial enhancement | Use Groq summaries when `GROQ_API_KEY` is configured, otherwise use built-in fallbacks. | `src/llm_summarizer.py` | Do not paste provider responses or secrets into the task report. |
 | Render | Render the email HTML and static site files. | `templates/newsletter.html`, `src/site_generator.py` | Run the script from the repo root so relative paths resolve. |
 | Verify | Check today's archive, post page, email HTML, index, feed, and local output. | `site/posts/`, `site/index.html`, `site/feed.xml`, `output.html` | Confirm files exist and are non-empty. Summarize counts and warnings. |
-| iMessage report | Send a short, clear completion text. | iMessage connector | Include section counts, YouTube digest highlights, and warnings. |
+| Email briefing | Send the full rendered briefing directly to `eve.kazarian@gmail.com`. | Gmail connector | Use generated Gmail-safe HTML with a concise plaintext fallback. Do not create a draft unless explicitly requested. |
 | Report | Produce a concise Cowork task result. | Generated files, digest extraction, and logs | Include status, files changed, section counts, connector status, and any blockers. |
 
 ## Scheduled Task Prompt
@@ -74,7 +74,7 @@ Work in this folder:
 /Users/evekazarian/Documents/Coding Projects/daily-newsletter
 
 Goal:
-Build today's daily newsletter, update the static site archive, read the latest YouTube email digest, send me a short iMessage summary, and leave a concise run report in this Cowork session.
+Build today's daily newsletter, update the static site archive, read the latest YouTube email digest if useful for video discovery, email the full briefing directly to eve.kazarian@gmail.com, and leave a concise run report in this Cowork session.
 
 Operating rules:
 - Work autonomously during scheduled runs.
@@ -84,7 +84,14 @@ Operating rules:
 - Do not create or modify a separate cron, launchd, or external scheduler. Cowork is the scheduler.
 - Do not rewrite newsletter content manually unless the Python pipeline fails in a way that can be fixed locally.
 - Do not mark emails as read, archive, delete, label, forward, or reply to them.
+- Do not create a Gmail draft unless explicitly requested. Send the final briefing directly.
 - Keep changes inside the selected project folder.
+
+Format lock:
+- Use the August 2 compact briefing email format from `templates/newsletter.html` and the user-confirmed PDF reference `Daily Morning Briefing  August 2 2026 Weather consensus.pdf`: rounded white container, direct masthead/date row, one green focus sentence, five muted metric chips, table-first NYC weather and public-health sections, `Three reads carry today. The rest can wait.`, compact colored top-read rows, `Everything else, if you have more than a minute`, NYC Events near the bottom, and a plain generated-from-live-fetchers footer when no notes are supplied.
+- Do not use the old legacy newsletter layout, large colorful card redesign, YouTube thumbnail layout, large CTA blocks, image-heavy format, or generic decorative visual system.
+- Weather must use the repo's Open-Meteo model consensus plus National Weather Service observation/fallback. Show the weather source count in the generated email.
+- If a run includes read-only Second Brain suggested todos, render them once near the bottom after NYC Events. Do not move them above `Everything else`.
 
 Preflight:
 1. Confirm the working directory is /Users/evekazarian/Documents/Coding Projects/daily-newsletter.
@@ -109,7 +116,7 @@ Run newsletter build:
 1. From the repo root, run:
    python3 src/newsletter.py
 2. Let the repo's Python code fetch and choose all content:
-   - NYC weather
+   - NYC weather from Open-Meteo consensus plus National Weather Service observation/fallback
    - NYC respiratory health status
    - NYC events
    - top general news
@@ -138,32 +145,15 @@ Verify:
 4. Count the YouTube digest items extracted from email.
 5. Check the command output for errors and warnings. Treat missing optional API keys as warnings only if the code used fallbacks.
 
-iMessage:
-After verification, send exactly one iMessage using the iMessage connector.
+Email:
+After verification, send exactly one Gmail message to eve.kazarian@gmail.com.
 
-Use this format:
+Use:
+- Subject: `Daily Morning Briefing - {Month D, YYYY}`
+- HTML body: generated compact Gmail-safe briefing HTML from `templates/newsletter.html`
+- Plaintext fallback: date, title, overall signal, weather source/count, weather rows, and section headlines with links
 
-🌞 Midtown Briefing is ready
-
-🗞️ News: {count}
-▶️ YouTube: {count}
-📬 YouTube digest: {count}
-🤖 AI security: {count}
-🎟️ Events: {count}
-🌤️ Weather: {short weather status}
-🩺 Health: {short health status}
-
-📺 From email:
-{up to 3 short digest highlights, each as "• Title - why it looks good"}
-{if no digest items: "No digest found today."}
-
-✅ Site updated:
-{public site URL if SITE_URL is known, otherwise "site/index.html"}
-
-⚠️ Notes:
-{only include real warnings; otherwise say "No issues."}
-
-Keep the iMessage cute, concise, and easy to scan. Do not include logs, stack traces, secrets, or long file paths unless the run failed.
+Do not include logs, stack traces, secrets, or long file paths in the email.
 
 Report:
 Return a concise report with:
@@ -174,7 +164,7 @@ Return a concise report with:
 - Warnings or blockers
 - The next manual action, only if one is required
 
-Do not commit, push, send email, post to Slack, or publish through another connector unless a separate task instruction explicitly asks for that action. The only connector-send action allowed in this task is the final iMessage.
+Do not commit, push, text, post to Slack, or publish through another connector unless a separate task instruction explicitly asks for that action. The only connector-send action allowed in this task is the final Gmail send.
 ```
 
 ## First-Run Setup
@@ -189,7 +179,7 @@ Before enabling an unattended daily run:
    - `SITE_URL` for RSS links and generated site URLs
    - `VERBOSE_LOGGING=1` only when debugging
 5. Confirm the Gmail connector can read the YouTube digest without mutating email state.
-6. Confirm the iMessage connector can send one test message to you.
+6. Confirm the Gmail connector can send one test message to you.
 7. Open `output.html` or `site/index.html` locally and confirm the newsletter renders.
 8. Switch the scheduled task to daily cadence only after the manual run succeeds.
 
@@ -203,8 +193,8 @@ Use this response policy for scheduled runs.
 | Missing dependency | Install from `requirements.txt` if allowed. If not allowed, report missing packages. |
 | External feed failure | Continue if the script produced fallback output. Report the affected section. |
 | Optional API key missing | Continue with fallback behavior. Report the disabled optional enhancement. |
-| Gmail connector unavailable | Continue the newsletter build. Send the iMessage without digest highlights and report the connector issue. |
-| iMessage connector unavailable | Complete the newsletter build and leave the report in Cowork. Mark the run success with warnings if the build passed. |
+| Gmail read connector unavailable | Continue the newsletter build without email-digest video discovery and report the connector issue. |
+| Gmail send connector unavailable | Complete the newsletter build and leave the report in Cowork. Mark the run success with warnings if the build passed. |
 | Generated file missing | Mark the run failed and include the missing path. |
 | Secret detected in output | Stop, report the file path, and do not publish or commit. |
 

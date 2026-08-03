@@ -38,6 +38,20 @@
 - Big colorful dashboard cards: rejected because they made the issue feel less like the preferred briefing
 - Plain prose report: rejected because the reference format is still visual and scan-first
 
+**Status:** BACKTRACKED
+
+---
+
+## 2026-08-03: August 2 compact email reference is canonical
+
+**Context:** The user identified `Daily Morning Briefing  August 2 2026 Weather consensus.pdf` as the correct visual and structural format, even if it came from a different session.
+
+**Decision:** Use the August 2 compact Mail-exported format as the canonical email layout: rounded white container, direct masthead/date row, one green focus sentence, five muted metric chips, table-first NYC weather and public-health sections, a `Three reads carry today. The rest can wait.` callout, compact colored top-read rows, an `Everything else, if you have more than a minute` mixed list, NYC Events near the bottom, and a plain generated-from-live-fetchers footer when no notes are supplied. Optional Second Brain todos appear once near the bottom after NYC Events when a run explicitly supplies them.
+
+**Alternatives considered:**
+- Fully sectioned August 3 layout: rejected because it drifted from the user-confirmed reference rhythm
+- Removing Second Brain support from the template: rejected because some automation prompts still request read-only todos
+
 **Status:** ACTIVE
 
 ---
