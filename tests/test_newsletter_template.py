@@ -80,7 +80,12 @@ def _sample_data(include_todos: bool = True) -> dict:
             },
         ],
         "events": [
-            {"name": "School Parade", "date": "Wed, Aug 5", "location": "825 7th Ave"}
+            {
+                "name": "School Parade",
+                "date": "Wed, Aug 5",
+                "location": "825 7th Ave",
+                "link": "https://example.com/events/school-parade",
+            }
         ],
         "notes": ["Generated from live fetchers."],
         "overall_signal": "Normal watch.",
@@ -113,6 +118,8 @@ def test_template_keeps_august_2_reference_order() -> None:
 
     assert positions == sorted(positions)
     assert html.count("Second Brain Suggested Todos") == 1
+    assert "https://example.com/events/school-parade" in html
+    assert "https://www.google.com/search" not in html
 
 
 def test_template_omits_second_brain_section_when_absent() -> None:
