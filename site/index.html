@@ -3,778 +3,1004 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Midtown Briefing</title>
+<title>Daily Morning Briefing</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="alternate" type="application/rss+xml" title="The Midtown Briefing RSS" href="feed.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="alternate" type="application/rss+xml" title="Daily Morning Briefing RSS" href="feed.xml">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  html, body { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; background: #f5f0e8; color: #1c1710; font-weight: 300; font-size: 16px; line-height: 1.75; -webkit-font-smoothing: antialiased; min-height: 100vh; }
-  a { color: #3d6b4f; text-decoration: none; }
-  a:hover { color: #8b4a3c; }
-  .shell-nav { position: sticky; top: 0; z-index: 20; background: #f5f0e8; border-bottom: 1px solid #ede5d5; display: flex; align-items: center; justify-content: space-between; padding: 14px 32px; font-weight: 500; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; height: 64px; }
-  .shell-nav .brand { font-weight: 600; font-size: 20px; letter-spacing: 0; text-transform: none; color: #3d6b4f; }
-  .shell-nav .actions { display: flex; gap: 12px; align-items: center; }
-  .shell-nav .actions a { background: transparent; border: 1px solid #ede5d5; padding: 7px 14px; font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #4a3f30; border-radius: 99px; }
-  .shell-nav .actions a:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
-  .paper { max-width: 900px; margin: 0 auto; padding: 32px 48px 80px; }
-  @media (max-width: 760px) { .paper { padding: 16px 22px 60px; } html, body { font-size: 15px; } .shell-nav { padding: 12px 16px; } .shell-nav .brand { font-size: 16px; } }
-  .mast { border-top: 1px solid #ede5d5; border-bottom: 1px solid #ede5d5; padding: 36px 0 32px; margin-bottom: 32px; text-align: center; }
-  .mast-title { font-weight: 700; font-size: clamp(40px, 7vw, 72px); line-height: 1.0; letter-spacing: -0.015em; margin: 4px 0 12px; color: #1c1710; }
-  .mast-title em { font-style: normal; color: #3d6b4f; }
-  .mast-meta { font-weight: 500; text-transform: uppercase; font-size: 11px; letter-spacing: 0.16em; color: #8a7a60; margin-top: 14px; }
-  .hero-latest { border-top: 1px solid #ede5d5; border-bottom: 1px solid #ede5d5; padding: 32px 0; margin: 24px 0 36px; display: grid; grid-template-columns: 1fr 2fr; gap: 36px; align-items: center; }
-  @media (max-width: 760px) { .hero-latest { grid-template-columns: 1fr; gap: 16px; } }
-  .hero-latest .label { font-weight: 500; font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: #3d6b4f; }
-  .hero-date { font-weight: 600; font-size: 28px; line-height: 1.2; margin-top: 8px; color: #1c1710; }
-  .hero-desc { font-size: 16.5px; color: #4a3f30; line-height: 1.75; margin: 0 0 16px; font-weight: 300; }
-  .btn { font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; background: transparent; border: 1px solid #ede5d5; padding: 9px 16px; cursor: pointer; color: #4a3f30; border-radius: 99px; display: inline-block; }
-  .btn:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
-  .btn-primary { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
-  .btn-primary:hover { background: #1c1710; border-color: #1c1710; }
-  .section-head { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; margin-bottom: 24px; text-align: center; }
-  .section-head .rule { height: 1px; background: #ede5d5; }
-  .section-head h2 { font-weight: 700; font-size: 32px; margin: 0; letter-spacing: -0.015em; color: #1c1710; white-space: nowrap; }
-  .archive-row { display: grid; grid-template-columns: 1fr auto; gap: 22px; padding: 16px 0; border-bottom: 1px solid #ede5d5; align-items: center; }
-  .archive-row .date { font-weight: 400; font-size: 16px; color: #4a3f30; }
-  .archive-row a.go { font-weight: 500; font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid #ede5d5; padding: 7px 14px; border-radius: 99px; color: #4a3f30; }
-  .archive-row a.go:hover { background: #3d6b4f; color: #f5f0e8; border-color: #3d6b4f; }
-  .no-items { color: #8a7a60; font-size: 14px; font-weight: 300; padding: 20px 0; }
-  .learnings { margin-top: 56px; }
-  .learnings-body { font-size: 15px; color: #4a3f30; line-height: 1.85; font-weight: 300; }
-  .learnings-meta { font-size: 11px; color: #8a7a60; margin-top: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; }
-  .footer { margin-top: 64px; border-top: 1px solid #ede5d5; padding: 24px 0; text-align: center; font-size: 10.5px; color: #8a7a60; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 500; }
+  body { margin:0; background:#f1efeb; color:#15181b; }
+  .page-nav { max-width:640px; margin:0 auto; padding:14px 8px 0; display:flex; justify-content:space-between; gap:12px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; font-size:11px; line-height:16px; }
+  .page-nav a { color:#5f6a66; text-decoration:none; border-bottom:1px solid #d4e6da; }
+  .archive-shell { max-width:640px; margin:0 auto 36px; padding:0 8px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif; }
+  .archive-box { background:#ffffff; border-radius:14px; padding:18px 26px 22px; }
+  .archive-title { font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace; font-size:9px; letter-spacing:1.4px; color:#9aa19e; text-transform:uppercase; margin-bottom:5px; }
+  .archive-row { display:grid; grid-template-columns:1fr auto; gap:12px; align-items:center; padding:9px 0; border-top:1px solid #e6e2da; font-size:12px; line-height:18px; color:#5f6a66; }
+  .archive-row a { color:#15181b; text-decoration:none; border-bottom:1px solid #d4e6da; font-weight:600; }
+  .no-items { padding:9px 0; font-size:12px; line-height:18px; color:#9aa19e; }
+  @media (max-width:680px) { .archive-box { border-radius:0; padding-left:18px; padding-right:18px; } }
 </style>
 </head>
 <body>
-<nav class="shell-nav">
-  <span class="brand">The Midtown Briefing</span>
-  <div class="actions">
-    <a href="feed.xml">RSS</a>
-  </div>
+<nav class="page-nav">
+  <a href="feed.xml">RSS</a>
+  <a href="posts/2026-08-09.html">Latest issue</a>
 </nav>
-<main class="paper">
-  <header class="mast">
-    <h1 class="mast-title">The Midtown <em>Briefing</em></h1>
-    <div class="mast-meta">Est. 2025 &middot; Daily Intelligence</div>
-  </header>
-  
-    <section class="hero-latest">
-      <div>
-        <div class="label">Latest Issue</div>
-        <div class="hero-date">Sunday, August 09, 2026</div>
-      </div>
-      <div>
-        <p class="hero-desc">Weather, news, YouTube, and AI security, curated daily.</p>
-        <a href="posts/2026-08-09.html" class="btn btn-primary">Read the Issue</a>
-      </div>
-    </section>
-  
-  <section>
-    <div class="section-head">
-      <span class="rule"></span>
-      <h2>Back Issues</h2>
-      <span class="rule"></span>
-    </div>
-    <div class="archive">
-      <div class="archive-row">
-        <span class="date">Sunday, August 09, 2026</span>
-        <a class="go" href="posts/2026-08-09.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, August 08, 2026</span>
-        <a class="go" href="posts/2026-08-08.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, August 07, 2026</span>
-        <a class="go" href="posts/2026-08-07.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, August 03, 2026</span>
-        <a class="go" href="posts/2026-08-03.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, August 02, 2026</span>
-        <a class="go" href="posts/2026-08-02.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, July 31, 2026</span>
-        <a class="go" href="posts/2026-07-31.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, July 30, 2026</span>
-        <a class="go" href="posts/2026-07-30.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, July 29, 2026</span>
-        <a class="go" href="posts/2026-07-29.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, July 28, 2026</span>
-        <a class="go" href="posts/2026-07-28.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, July 27, 2026</span>
-        <a class="go" href="posts/2026-07-27.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, July 26, 2026</span>
-        <a class="go" href="posts/2026-07-26.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, July 25, 2026</span>
-        <a class="go" href="posts/2026-07-25.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, July 24, 2026</span>
-        <a class="go" href="posts/2026-07-24.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, July 23, 2026</span>
-        <a class="go" href="posts/2026-07-23.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, July 22, 2026</span>
-        <a class="go" href="posts/2026-07-22.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, July 21, 2026</span>
-        <a class="go" href="posts/2026-07-21.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, July 20, 2026</span>
-        <a class="go" href="posts/2026-07-20.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, July 19, 2026</span>
-        <a class="go" href="posts/2026-07-19.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, July 18, 2026</span>
-        <a class="go" href="posts/2026-07-18.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, July 17, 2026</span>
-        <a class="go" href="posts/2026-07-17.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, July 16, 2026</span>
-        <a class="go" href="posts/2026-07-16.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, July 15, 2026</span>
-        <a class="go" href="posts/2026-07-15.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, July 14, 2026</span>
-        <a class="go" href="posts/2026-07-14.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, July 13, 2026</span>
-        <a class="go" href="posts/2026-07-13.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, July 12, 2026</span>
-        <a class="go" href="posts/2026-07-12.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, July 11, 2026</span>
-        <a class="go" href="posts/2026-07-11.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, July 10, 2026</span>
-        <a class="go" href="posts/2026-07-10.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, July 09, 2026</span>
-        <a class="go" href="posts/2026-07-09.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, July 08, 2026</span>
-        <a class="go" href="posts/2026-07-08.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, July 07, 2026</span>
-        <a class="go" href="posts/2026-07-07.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, July 06, 2026</span>
-        <a class="go" href="posts/2026-07-06.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, July 05, 2026</span>
-        <a class="go" href="posts/2026-07-05.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, July 04, 2026</span>
-        <a class="go" href="posts/2026-07-04.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, July 03, 2026</span>
-        <a class="go" href="posts/2026-07-03.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, July 02, 2026</span>
-        <a class="go" href="posts/2026-07-02.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, July 01, 2026</span>
-        <a class="go" href="posts/2026-07-01.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, June 30, 2026</span>
-        <a class="go" href="posts/2026-06-30.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, June 29, 2026</span>
-        <a class="go" href="posts/2026-06-29.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, June 28, 2026</span>
-        <a class="go" href="posts/2026-06-28.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, June 27, 2026</span>
-        <a class="go" href="posts/2026-06-27.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, June 26, 2026</span>
-        <a class="go" href="posts/2026-06-26.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, June 25, 2026</span>
-        <a class="go" href="posts/2026-06-25.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, June 24, 2026</span>
-        <a class="go" href="posts/2026-06-24.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, June 23, 2026</span>
-        <a class="go" href="posts/2026-06-23.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, June 22, 2026</span>
-        <a class="go" href="posts/2026-06-22.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, June 21, 2026</span>
-        <a class="go" href="posts/2026-06-21.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, June 20, 2026</span>
-        <a class="go" href="posts/2026-06-20.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, June 19, 2026</span>
-        <a class="go" href="posts/2026-06-19.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, June 18, 2026</span>
-        <a class="go" href="posts/2026-06-18.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, June 17, 2026</span>
-        <a class="go" href="posts/2026-06-17.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, June 16, 2026</span>
-        <a class="go" href="posts/2026-06-16.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, June 15, 2026</span>
-        <a class="go" href="posts/2026-06-15.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, June 14, 2026</span>
-        <a class="go" href="posts/2026-06-14.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, June 13, 2026</span>
-        <a class="go" href="posts/2026-06-13.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, June 12, 2026</span>
-        <a class="go" href="posts/2026-06-12.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, June 11, 2026</span>
-        <a class="go" href="posts/2026-06-11.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, June 10, 2026</span>
-        <a class="go" href="posts/2026-06-10.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, June 09, 2026</span>
-        <a class="go" href="posts/2026-06-09.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, June 08, 2026</span>
-        <a class="go" href="posts/2026-06-08.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, June 07, 2026</span>
-        <a class="go" href="posts/2026-06-07.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, June 06, 2026</span>
-        <a class="go" href="posts/2026-06-06.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, June 05, 2026</span>
-        <a class="go" href="posts/2026-06-05.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, June 04, 2026</span>
-        <a class="go" href="posts/2026-06-04.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, June 03, 2026</span>
-        <a class="go" href="posts/2026-06-03.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, June 02, 2026</span>
-        <a class="go" href="posts/2026-06-02.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, June 01, 2026</span>
-        <a class="go" href="posts/2026-06-01.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, May 31, 2026</span>
-        <a class="go" href="posts/2026-05-31.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, May 30, 2026</span>
-        <a class="go" href="posts/2026-05-30.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, May 29, 2026</span>
-        <a class="go" href="posts/2026-05-29.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, May 28, 2026</span>
-        <a class="go" href="posts/2026-05-28.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, May 27, 2026</span>
-        <a class="go" href="posts/2026-05-27.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, May 26, 2026</span>
-        <a class="go" href="posts/2026-05-26.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, May 25, 2026</span>
-        <a class="go" href="posts/2026-05-25.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, May 24, 2026</span>
-        <a class="go" href="posts/2026-05-24.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, May 23, 2026</span>
-        <a class="go" href="posts/2026-05-23.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, May 22, 2026</span>
-        <a class="go" href="posts/2026-05-22.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, May 21, 2026</span>
-        <a class="go" href="posts/2026-05-21.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, May 20, 2026</span>
-        <a class="go" href="posts/2026-05-20.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, May 19, 2026</span>
-        <a class="go" href="posts/2026-05-19.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, May 18, 2026</span>
-        <a class="go" href="posts/2026-05-18.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, May 17, 2026</span>
-        <a class="go" href="posts/2026-05-17.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, May 16, 2026</span>
-        <a class="go" href="posts/2026-05-16.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, May 15, 2026</span>
-        <a class="go" href="posts/2026-05-15.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, May 14, 2026</span>
-        <a class="go" href="posts/2026-05-14.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, May 13, 2026</span>
-        <a class="go" href="posts/2026-05-13.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, May 12, 2026</span>
-        <a class="go" href="posts/2026-05-12.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, May 11, 2026</span>
-        <a class="go" href="posts/2026-05-11.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, May 10, 2026</span>
-        <a class="go" href="posts/2026-05-10.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, May 09, 2026</span>
-        <a class="go" href="posts/2026-05-09.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, May 08, 2026</span>
-        <a class="go" href="posts/2026-05-08.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, May 07, 2026</span>
-        <a class="go" href="posts/2026-05-07.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, May 06, 2026</span>
-        <a class="go" href="posts/2026-05-06.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, May 05, 2026</span>
-        <a class="go" href="posts/2026-05-05.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, May 04, 2026</span>
-        <a class="go" href="posts/2026-05-04.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, May 03, 2026</span>
-        <a class="go" href="posts/2026-05-03.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, May 02, 2026</span>
-        <a class="go" href="posts/2026-05-02.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, May 01, 2026</span>
-        <a class="go" href="posts/2026-05-01.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, April 30, 2026</span>
-        <a class="go" href="posts/2026-04-30.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, April 29, 2026</span>
-        <a class="go" href="posts/2026-04-29.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, April 28, 2026</span>
-        <a class="go" href="posts/2026-04-28.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, April 27, 2026</span>
-        <a class="go" href="posts/2026-04-27.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, April 26, 2026</span>
-        <a class="go" href="posts/2026-04-26.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, April 25, 2026</span>
-        <a class="go" href="posts/2026-04-25.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, April 24, 2026</span>
-        <a class="go" href="posts/2026-04-24.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, April 23, 2026</span>
-        <a class="go" href="posts/2026-04-23.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, April 22, 2026</span>
-        <a class="go" href="posts/2026-04-22.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, April 21, 2026</span>
-        <a class="go" href="posts/2026-04-21.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, April 20, 2026</span>
-        <a class="go" href="posts/2026-04-20.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, April 19, 2026</span>
-        <a class="go" href="posts/2026-04-19.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, April 18, 2026</span>
-        <a class="go" href="posts/2026-04-18.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, April 17, 2026</span>
-        <a class="go" href="posts/2026-04-17.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, April 16, 2026</span>
-        <a class="go" href="posts/2026-04-16.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, April 15, 2026</span>
-        <a class="go" href="posts/2026-04-15.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, April 14, 2026</span>
-        <a class="go" href="posts/2026-04-14.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, April 13, 2026</span>
-        <a class="go" href="posts/2026-04-13.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, April 12, 2026</span>
-        <a class="go" href="posts/2026-04-12.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, April 11, 2026</span>
-        <a class="go" href="posts/2026-04-11.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, April 10, 2026</span>
-        <a class="go" href="posts/2026-04-10.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, April 09, 2026</span>
-        <a class="go" href="posts/2026-04-09.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, April 08, 2026</span>
-        <a class="go" href="posts/2026-04-08.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, April 07, 2026</span>
-        <a class="go" href="posts/2026-04-07.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, April 06, 2026</span>
-        <a class="go" href="posts/2026-04-06.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, April 05, 2026</span>
-        <a class="go" href="posts/2026-04-05.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, April 04, 2026</span>
-        <a class="go" href="posts/2026-04-04.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, April 03, 2026</span>
-        <a class="go" href="posts/2026-04-03.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, April 02, 2026</span>
-        <a class="go" href="posts/2026-04-02.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, April 01, 2026</span>
-        <a class="go" href="posts/2026-04-01.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, March 31, 2026</span>
-        <a class="go" href="posts/2026-03-31.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, March 30, 2026</span>
-        <a class="go" href="posts/2026-03-30.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, March 29, 2026</span>
-        <a class="go" href="posts/2026-03-29.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, March 28, 2026</span>
-        <a class="go" href="posts/2026-03-28.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, March 27, 2026</span>
-        <a class="go" href="posts/2026-03-27.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, March 26, 2026</span>
-        <a class="go" href="posts/2026-03-26.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, March 25, 2026</span>
-        <a class="go" href="posts/2026-03-25.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, March 24, 2026</span>
-        <a class="go" href="posts/2026-03-24.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, March 23, 2026</span>
-        <a class="go" href="posts/2026-03-23.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, March 22, 2026</span>
-        <a class="go" href="posts/2026-03-22.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, March 21, 2026</span>
-        <a class="go" href="posts/2026-03-21.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, March 20, 2026</span>
-        <a class="go" href="posts/2026-03-20.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, March 19, 2026</span>
-        <a class="go" href="posts/2026-03-19.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, March 18, 2026</span>
-        <a class="go" href="posts/2026-03-18.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, March 17, 2026</span>
-        <a class="go" href="posts/2026-03-17.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, March 16, 2026</span>
-        <a class="go" href="posts/2026-03-16.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, March 15, 2026</span>
-        <a class="go" href="posts/2026-03-15.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, March 14, 2026</span>
-        <a class="go" href="posts/2026-03-14.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, March 13, 2026</span>
-        <a class="go" href="posts/2026-03-13.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, March 12, 2026</span>
-        <a class="go" href="posts/2026-03-12.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, March 11, 2026</span>
-        <a class="go" href="posts/2026-03-11.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, March 10, 2026</span>
-        <a class="go" href="posts/2026-03-10.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, March 09, 2026</span>
-        <a class="go" href="posts/2026-03-09.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, March 08, 2026</span>
-        <a class="go" href="posts/2026-03-08.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, March 07, 2026</span>
-        <a class="go" href="posts/2026-03-07.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, March 06, 2026</span>
-        <a class="go" href="posts/2026-03-06.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, March 05, 2026</span>
-        <a class="go" href="posts/2026-03-05.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, March 04, 2026</span>
-        <a class="go" href="posts/2026-03-04.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, March 03, 2026</span>
-        <a class="go" href="posts/2026-03-03.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, March 02, 2026</span>
-        <a class="go" href="posts/2026-03-02.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, March 01, 2026</span>
-        <a class="go" href="posts/2026-03-01.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, February 28, 2026</span>
-        <a class="go" href="posts/2026-02-28.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, February 27, 2026</span>
-        <a class="go" href="posts/2026-02-27.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, February 26, 2026</span>
-        <a class="go" href="posts/2026-02-26.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, February 25, 2026</span>
-        <a class="go" href="posts/2026-02-25.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, February 24, 2026</span>
-        <a class="go" href="posts/2026-02-24.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, February 23, 2026</span>
-        <a class="go" href="posts/2026-02-23.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, February 22, 2026</span>
-        <a class="go" href="posts/2026-02-22.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, February 21, 2026</span>
-        <a class="go" href="posts/2026-02-21.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Friday, February 20, 2026</span>
-        <a class="go" href="posts/2026-02-20.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Thursday, February 19, 2026</span>
-        <a class="go" href="posts/2026-02-19.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Wednesday, February 18, 2026</span>
-        <a class="go" href="posts/2026-02-18.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Tuesday, February 17, 2026</span>
-        <a class="go" href="posts/2026-02-17.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Monday, February 16, 2026</span>
-        <a class="go" href="posts/2026-02-16.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Sunday, February 15, 2026</span>
-        <a class="go" href="posts/2026-02-15.html">Read</a>
-      </div>
-<div class="archive-row">
-        <span class="date">Saturday, February 14, 2026</span>
-        <a class="go" href="posts/2026-02-14.html">Read</a>
-      </div>
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;">This week's focus: agentic ai security and adversarial attacks.</div>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="bg" style="background:#f1efeb;">
+<tr><td align="center" style="padding:18px 8px 34px 8px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" class="wrap card" style="width:640px;max-width:640px;background:#ffffff;border-radius:14px;">
 
+  <tr><td class="px" style="padding:24px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td class="tx big" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:26px;line-height:32px;color:#15181b;font-weight:600;">Daily Morning Briefing</td>
+      <td align="right" style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Sunday, August 09, 2026</td>
+    </tr></table>
+  </td></tr>
+
+  
+  <tr><td class="px" style="padding:10px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="4" style="background:#1f7a4d;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">This week's focus: agentic ai security and adversarial attacks.</td>
+      </tr>
+    </table>
+  </td></tr>
+
+  
+  <tr><td class="px" style="padding:10px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        
+        <td class="col" width="20%" valign="top" style="padding-right:5px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
+            <tr><td style="padding:8px 7px;">
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Weather</div>
+              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">91°F</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">3% rain</div>
+            </td></tr>
+          </table>
+        </td>
+        
+        <td class="col" width="20%" valign="top" style="padding-right:5px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
+            <tr><td style="padding:8px 7px;">
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Health</div>
+              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">Watch</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">Week ending 2026-08-01</div>
+            </td></tr>
+          </table>
+        </td>
+        
+        <td class="col" width="20%" valign="top" style="padding-right:5px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
+            <tr><td style="padding:8px 7px;">
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Top risk</div>
+              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">Heat</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">Hydrate</div>
+            </td></tr>
+          </table>
+        </td>
+        
+        <td class="col" width="20%" valign="top" style="padding-right:5px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
+            <tr><td style="padding:8px 7px;">
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">AI sec</div>
+              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">4 papers</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">Aug 6</div>
+            </td></tr>
+          </table>
+        </td>
+        
+        <td class="col" width="20%" valign="top" style="padding-right:0;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
+            <tr><td style="padding:8px 7px;">
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">YouTube</div>
+              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">1</div>
+              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">seeded videos</div>
+            </td></tr>
+          </table>
+        </td>
+        
+      </tr>
+    </table>
+  </td></tr>
+  
+  
+
+  
+  <tr><td class="px" style="padding:8px 26px 0 26px;">
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 3px 0;">NYC Weather</div>
+    <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#7c837f;margin:0 0 6px 0;">Open-Meteo model consensus + National Weather Service · 11 sources</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr class="tint" style="background:#f7f5f1;">
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Time</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Temp</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Feels</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Weather</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Precip</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Humidity</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Wind</td>
+        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Note</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">7am</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">75F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">81F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x2600;&#xFE0F; Clear</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">0%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe3de;color:#c2371f;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">88%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">5 mph SW</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Best errand window.</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">9am</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">79F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">86F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x2600;&#xFE0F; Clear</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">0%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbeed4;color:#a8730a;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">78%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">5 mph W</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Normal watch.</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#f1f9f4;">
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid #1f7a4d;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">3pm</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">91F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">94F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x2600;&#xFE0F; Clear</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">3%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#e3f2e9;color:#1f7a4d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">42%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">7 mph W</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Best outdoor window.</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">5pm</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">91F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">92F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x2600;&#xFE0F; Clear</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">3%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#e3f2e9;color:#1f7a4d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">38%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">8 mph W</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Normal watch.</td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">7pm</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">88F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">90F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x2600;&#xFE0F; Clear</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">1%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#e3f2e9;color:#1f7a4d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">42%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">6 mph NW</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Normal watch.</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  
+  <tr><td class="px" style="padding:10px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="4" style="background:#c2371f;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">NYC Public Health: 1,184 cases this week — 75% below average for this time of year; 5 public-health advisory item(s) flagged</td>
+      </tr>
+    </table>
+  </td></tr>
+
+  <tr><td class="px" style="padding:8px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr class="tint" style="background:#f7f5f1;">
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Signal</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Current</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Comparison</td>
+        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Practical read</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#e6f3ec;">
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Respiratory illness</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">1,184 combined flu/COVID/RSV cases</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">75% below seasonal average</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Normal context unless symptoms/exposure apply.</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">NYC Health Legionnaires disease</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">92 people, 7 deaths</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">NYC Health Legionnaires disease</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">72 Cases</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Thu, 23 Jul 2026 07:00:00 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Thu, 23 Jul 2026 07:00:00 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMijgJBVV95cUxNakxDT0pmV3o5QmdtY04wd21rS0phOVJJcXZwcVpNT1lpVUFBWEUyQzIyMGVpNHpyVkJhaXpmV2JwYXRRMHNFbmpYSWxRUFptQ1hUVWRrRzZnYTNMWm5KOUtySUxrRTZNT1JnN0t6UFBfN2VQQjREUDlZd19DSEVJTmtfeTVvQXoyZ1RKZkhxcC1wYmJKcE5sM19BdHlkRW9aVkhQUWZOQS16SzE2MEU0Q1pJMUVqUWZ6NkZhNEp5eWhVaEhCWUl3RjBaOUNxWk9CTUNMWl8xdU5nUlpkYm45a1ZDRXdkTFotLVZpeVJsOVRDN1BjRnAzcmtrNC1vdVFWVTFNNTZrMUFwZm1VNGc?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Childr</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families NYC Health + Hospitals</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Fri, 17 Jul 2026 07:00:00 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMixwFBVV95cUxOTkxLUFhCUFhIcDhtQnZ6SDNOdThZVHdtSEE2WWRwaU5QdlpQdVJtSXVoUzJ6alFiUC1lRFF5SFNrQTVnU2YwTG1KdzhDMW1UYVpZNGQxVjhXYS1BRDVfTmVfZGhXZEhuM0NBSmJ1VTJCY2VzV0FOUEQ2ZEJuQ1hwUnl3dWdBSEIxcVNsU2lobjdYUy1sR0ZrbGdaOFhDVktQTkRzUDRrcFRBemQyaFNSZm1MVVFQMXM5MFhaZFUxNEJmSzNWdkhB?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says - PBS</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">98 people</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Fri, 24 Jul 2026 07:00:00 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  <tr><td class="px" style="padding:10px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:1px solid #e6e2da;">
+      <tr><td style="padding-top:8px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;">Top 3 Things</td></tr>
+    </table>
+  </td></tr>
+
+  <tr><td class="px" style="padding:8px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="4" style="background:#a8730a;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:9px 12px;background:#fbeed4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+          <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNUHpDV29DTXNHX2tBVGpTYjhRTUtpbDhRelpnYWZ3ZHNvU1BkdDFhckpjN1dRTUpDblBuMDVMbU1BWUg3VGJKcG1NUnVqcTZneE9vWERoMGxDS2FjYS0yZEJzT2FIazNudG5NMDBld2Q0b1FySm9pUEtjUzhTNXBNZmlWMHFQTjExWkJyQWlVOGNWZUNpckszSkxFdjJEeWptSDdDcFQ1NlY4dElkYUtv?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Netanyahu Rejects Trump’s Plan to Disarm Hamas</a> <span style="color:#5f6a66;">: Read the full story at The New York Times.</span>
+        </td>
+      </tr>
+      
+      
+      <tr><td colspan="2" height="5" style="height:5px;font-size:0;line-height:0;">&nbsp;</td></tr>
+      <tr>
+        <td width="4" style="background:#2f6f8f;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:9px 12px;background:#e6f1f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+          <a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQmp2aEpFdGZyVmtmYVRKN0dGaEdlWXZRZk44aE5TQkdncXRhbFVpS2prWjRIZFFsRW5PTFRzRGdZYTFKbDh1bkNQcFgxSmZlOGJzMl9aRlcxSnBhOG1mRHZPaUFmbEFfMEd0ajBaM1c4elRkSFlvb21RM1FoQndMdFNxM2hoZXV4?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Roman shipwreck discovered off the coast of Sicily, Italy laden with ancient jars believed to be more than 2,000 years old</a> <span style="color:#5f6a66;">: De Mola said he decided to dive and investigate anyway, when he stumbled upon what he described as "<strong>without a doubt, the most incredible discovery of my life.</strong>" Below me was a vast expanse of amphorae," De Mola said in the instagram post, along with video footage of the discovery.</span>
+        </td>
+      </tr>
+      
+      
+      
+      
+      <tr><td colspan="2" height="5" style="height:5px;font-size:0;line-height:0;">&nbsp;</td></tr>
+      <tr>
+        <td width="4" style="background:#6b3fa0;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:9px 12px;background:#ece4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+          <a href="https://news.google.com/rss/articles/CBMijAJBVV95cUxNS2I5WkwzdE5vSU5JX0JSYzM1aGZMZ1VFbG1rdE5KWkoyTk5kU0JiX2JhajE1Sk10Y01uNkZJUGlRam9Waml0NjlhUHhKSi10ZllSeE03cmZBcU9wVzJIaVBOMDI2enZPdTdKUHVGOUIwVXJHQVhlazNNd0ZHTXBPU3BfT3ZxU2tqSW1LcXk5U2hwbjBDd2NVVjR2a00zUnlfRnc1OHB3V2lOZGdaWGwySVN4bVFQU1J3bXF0Mkc5ekxBXzFOYkZEZ2ZBX2JRTUljYl81YjdFc2pKeUxFT0hid1piNmJzZ2ZKZlFHNW1SQ0N2ODJ2Z1FiNndlaGd3UzFYaTc4aXlUQWhTczhF0gGSAkFVX3lxTE02ZWR3bkZTV1pNNVhmLTJVUks0aWNnWUhLVUxvYWhRTVB0OTNQbHRrcVVKNUtoUDZyekEtbWc1b0JyZ2U3Uk5lZzFqOGlEUXlBc3ZGZndRN2p4b3ZxcFhOREZENzd1ZVdOanFYbHExS2Exc08xY2JJM3U4SG0ydnM5SWNMNTVjNUk5V05HSVE2MVNvbGlnX0ptN0VQYm15VzliR1VDR1pWbmQ2bFhiQWROdWM0RE80ZlJqYUpxRzRqRTE3amI4blJfNk5kcWkwb2NSR3d1QWhuQk1LREJ6N1FUVVFla3BpWFdsUExlU0oxaGxkcFJ4N1pLWTZ4X0xvYlk0WHNWNHhWVGJpbmJ3S3Q5ZHc?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">The Times of India: Job listings show Nvidia hiring for a new AI safety team to address one of the biggest ‘AI threats’</a> <span style="color:#5f6a66;">: Insider), <strong>Nvidia</strong> is recruiting an engineer to serve as the “founding technical leader” for the new team, alongside roles for a security research engineer, an evaluation engineer and a senior engineering manager.</span>
+        </td>
+      </tr>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </table>
+  </td></tr>
+
+  
+  <tr><td class="px" style="padding:14px 26px 0 26px;">
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">NYC Events</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AD;</td>
+        <td width="110" valign="top" style="padding:3px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#9aa19e;">Sun, Aug 9</td>
+        
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.google.com/search?q=Dominican%20Day%20Parade%2C%20Inc.%20NYC%20Sun%2C%20Aug%209" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Dominican Day Parade, Inc.</a> · Sixth Ave & West 37th St</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3B9;</td>
+        <td width="110" valign="top" style="padding:3px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#9aa19e;">Sun, Aug 16</td>
+        
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.google.com/search?q=India%20Day%20Parade%20NYC%20Sun%2C%20Aug%2016" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">India Day Parade</a> · East 37th St & Park Ave</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  
+  <tr><td class="px" style="padding:14px 26px 0 26px;">
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">General Top News</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4F0;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxNUHpDV29DTXNHX2tBVGpTYjhRTUtpbDhRelpnYWZ3ZHNvU1BkdDFhckpjN1dRTUpDblBuMDVMbU1BWUg3VGJKcG1NUnVqcTZneE9vWERoMGxDS2FjYS0yZEJzT2FIazNudG5NMDBld2Q0b1FySm9pUEtjUzhTNXBNZmlWMHFQTjExWkJyQWlVOGNWZUNpckszSkxFdjJEeWptSDdDcFQ1NlY4dElkYUtv?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Netanyahu Rejects Trump’s Plan to Disarm Hamas</a>: Read the full story at The New York Times.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4F0;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQmp2aEpFdGZyVmtmYVRKN0dGaEdlWXZRZk44aE5TQkdncXRhbFVpS2prWjRIZFFsRW5PTFRzRGdZYTFKbDh1bkNQcFgxSmZlOGJzMl9aRlcxSnBhOG1mRHZPaUFmbEFfMEd0ajBaM1c4elRkSFlvb21RM1FoQndMdFNxM2hoZXV4?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Roman shipwreck discovered off the coast of Sicily, Italy laden with ancient jars believed to be more than 2,000 years old</a>: De Mola said he decided to dive and investigate anyway, when he stumbled upon what he described as "<strong>without a doubt, the most incredible discovery of my life.</strong>" Below me was a vast expanse of amphorae," De Mola said in the instagram post, along with video footage of the discovery.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4F0;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxOeHRtS1FlYUdtODNUWmRQdHFUNGhybHpCT3A2SXNUc1U3YjY1YUw0SUhFNTJpdkhEdnBGRVZXZ3lQS2lXQjF4OE9ZUVJQcVhnX2Q1YXB4MkJLektGenhtcHhYY0p5RHVhcTdEY1FQWEJqY1NFZFpXNV84NHBFaW5sTVEtb1d2TFhtajZzejJqeDBCbmlGMExJX29ZTDEza01fT01CY1hENjMxV1h1aGNyS1VpOUUycjVjVlRIMlBGbndicDg?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Iran says deal with Oman is close — but its demands leave Hormuz opening uncertain</a>: Read the full story at The Washington Post.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">🌪️</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.aljazeera.com/news/2026/8/9/flight-cancellations-evacuations-as-china-braces-for-typhoon-dolphin?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Flight cancellations, evacuations as China braces for Typhoon Dolphin</a>: In Fujian province, approximately 99,000 people had been relocated from “risky areas” on Saturday evening in advance of the storm’s landfall, state news agency Xinhua said. Services on more than 200 ferry routes were suspended in Zhejiang and Fujian, Xinhua reported.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">⚖️</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.theguardian.com/world/2026/aug/09/thailand-school-shooting-toll-rises-to-nine-after-12-year-old-dies-police-say" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Thailand school shooting toll rises to nine after 12-year-old dies, police say</a>: Atthapol, who said police had so far interviewed 17 witnesses, said a knife had also been found in the boy’s bag and other evidence found at the crime scenes included a firearm, spent cartridge cases, and a personal computer.</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  
+  <tr><td class="px" style="padding:14px 26px 0 26px;">
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">Tech YouTube / Videos</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AC;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://youtube.com/watch?v=gVfEtktkvnE" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Theo - t3.gg, "Did Anthropic finally fix MCP?"</a>: New episode from Theo - t3.gg. Click to watch.</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  
+  
+  <tr><td class="px" style="padding:14px 26px 0 26px;">
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">AI Security Articles</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">🛡️</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMijAJBVV95cUxNS2I5WkwzdE5vSU5JX0JSYzM1aGZMZ1VFbG1rdE5KWkoyTk5kU0JiX2JhajE1Sk10Y01uNkZJUGlRam9Waml0NjlhUHhKSi10ZllSeE03cmZBcU9wVzJIaVBOMDI2enZPdTdKUHVGOUIwVXJHQVhlazNNd0ZHTXBPU3BfT3ZxU2tqSW1LcXk5U2hwbjBDd2NVVjR2a00zUnlfRnc1OHB3V2lOZGdaWGwySVN4bVFQU1J3bXF0Mkc5ekxBXzFOYkZEZ2ZBX2JRTUljYl81YjdFc2pKeUxFT0hid1piNmJzZ2ZKZlFHNW1SQ0N2ODJ2Z1FiNndlaGd3UzFYaTc4aXlUQWhTczhF0gGSAkFVX3lxTE02ZWR3bkZTV1pNNVhmLTJVUks0aWNnWUhLVUxvYWhRTVB0OTNQbHRrcVVKNUtoUDZyekEtbWc1b0JyZ2U3Uk5lZzFqOGlEUXlBc3ZGZndRN2p4b3ZxcFhOREZENzd1ZVdOanFYbHExS2Exc08xY2JJM3U4SG0ydnM5SWNMNTVjNUk5V05HSVE2MVNvbGlnX0ptN0VQYm15VzliR1VDR1pWbmQ2bFhiQWROdWM0RE80ZlJqYUpxRzRqRTE3amI4blJfNk5kcWkwb2NSR3d1QWhuQk1LREJ6N1FUVVFla3BpWFdsUExlU0oxaGxkcFJ4N1pLWTZ4X0xvYlk0WHNWNHhWVGJpbmJ3S3Q5ZHc?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">The Times of India: Job listings show Nvidia hiring for a new AI safety team to address one of the biggest ‘AI threats’</a>: Insider), <strong>Nvidia</strong> is recruiting an engineer to serve as the “founding technical leader” for the new team, alongside roles for a security research engineer, an evaluation engineer and a senior engineering manager.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F510;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNndUZktRUkRPTmZkUE52WWdKX3Bwa1Zpcm9QOC13bnU0dkRsdDBWcGtITy1wYjkxOFZyUXZ4Y1U2N2VzcU52LWJEcEtyR21pWmYtSTdmWnUxQ2hFMGdZSnEwWGl2OXVDWk1IUmwyR1AtOU52UXRpVVZnMFVxVUEtQ1RuSHZoRGFtLVVBN0lmcnBrSE1BbmRvOHd5dzZ6WXlSR2lZby1lMll1Zw?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">forkast.news: The Architecture of Failure: Why DEF CON 34 Shattered the AI Agent Security Narrative</a>: Low-level exploitation of the infrastructure itself is also possible. The agent runtime stack is currently built on a foundation of over-privileged patterns and implicit trust.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F510;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMia0FVX3lxTE5QSmdtZnBPc0NxckIya1RBX1hlUUo4b3lLbkF4MzJ2cU40VEVIS21Nb0EzdVp5WmU4RFVvUlRGOVBOcmxkXzdpdDE2TkVHTjFZTkpTU3NGMnZQYVB1N1g1eFJYN1Mwc3RBYWJB0gFrQVVfeXFMTlBKZ21mcE9zQ3FyQjJrVEFfWGVRSjhveUtuQXgzMnZxTjRURUhLbU1vQTN1WnlaZThEVW9SVEY5UE5ybGRfN2l0MTZORUdOMVlOSlNTc0YydlBhUHU3WDV4Ulg3UzBzdEFhYkE?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Trend Hunter: Complimentary AI Security Platforms</a>: Security update, click for details.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">🔓</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMidkFVX3lxTE1mcFlSWjNWQWNNcFVtX0x6Y2s3UVRvZnhZSWt0cWJCYnhwcDFVNHFUcEVmTEU0RGFQUG9fdmRMdjgzYlA2XzQwZ2QwOGJnald6d1huWHduYWd1b3FlWTFGbTFkclp3M0oycUZoWmlfX2FaLXJTMWc?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">finance.biggo.com: Israeli Startup Irregular at Center of AI Security Storm After Models Breach Testing Environments</a>: The company said it is investigating the issue in a white paper it plans to share with the industry. The company's ambition is to become a foundational security layer for the AI era, building a company that can define the field of AI model control and protection, much as earlier cybersecurity giants did in previous generations.</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  
+  
+  <tr><td class="px" style="padding:14px 26px 0 26px;">
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">AI Security Papers</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://huggingface.co/papers/2608.06020" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">From Economic Agents to Agentic Economies: A Systems Blueprint for Economic World Models</a> - Jiale Han, Xiang Li, Jing Qian, Wenyuan Gu, Pin Gao: This paper develops an implementation roadmap for building economic world models as generative engines in which heterogeneous agents act, interact, adapt, and co-evolve with markets and institutions, thereby producing economic dynamics from the inside.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://arxiv.org/pdf/2608.06346v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories</a> - Yunjia Qi, Zehua Yin, Xintong Shi, Hao Peng, Songyuanyi Lu: LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. <strong>Critical</strong> error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://arxiv.org/pdf/2608.06353v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents</a> - Praphul Chandra, Sujit Gujar, Ganesh Ghalme: We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets.</td>
+      </tr>
+      
+      <tr>
+        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
+        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://arxiv.org/pdf/2608.06352v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks</a> - Fanzhe Meng, Guoxin Chen, Jiale Zhao, Shuang Sun, Zhiyu Lin: Multi-solver calibration targets disagreement within a heterogeneous solver pool, whereas contrastive solver calibration targets a designated strong-pass/weak-fail relation; both operationalize a solver-relative learnable zone anchored in demonstrated solvability. Using <strong>CalibForge</strong>, we construct 5,431 calibrated terminal tasks.</td>
+      </tr>
+      
+    </table>
+  </td></tr>
+  
+
+  
+
+  
+  <tr><td class="px" style="padding:20px 26px 24px 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:1px solid #e6e2da;">
+      <tr><td style="padding-top:9px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#9aa19e;">Generated from live fetchers. Full archive available on site output.</td></tr>
+    </table>
+  </td></tr>
+  
+
+</table>
+</td></tr></table>
+<section class="archive-shell">
+  <div class="archive-box">
+    <div class="archive-title">Archive</div>
+    <div aria-label="Back issues">
+      <div class="archive-row">
+        <span>Sunday, August 09, 2026</span>
+        <a href="posts/2026-08-09.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, August 08, 2026</span>
+        <a href="posts/2026-08-08.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, August 07, 2026</span>
+        <a href="posts/2026-08-07.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, August 03, 2026</span>
+        <a href="posts/2026-08-03.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, August 02, 2026</span>
+        <a href="posts/2026-08-02.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, July 31, 2026</span>
+        <a href="posts/2026-07-31.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, July 30, 2026</span>
+        <a href="posts/2026-07-30.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, July 29, 2026</span>
+        <a href="posts/2026-07-29.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, July 28, 2026</span>
+        <a href="posts/2026-07-28.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, July 27, 2026</span>
+        <a href="posts/2026-07-27.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, July 26, 2026</span>
+        <a href="posts/2026-07-26.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, July 25, 2026</span>
+        <a href="posts/2026-07-25.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, July 24, 2026</span>
+        <a href="posts/2026-07-24.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, July 23, 2026</span>
+        <a href="posts/2026-07-23.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, July 22, 2026</span>
+        <a href="posts/2026-07-22.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, July 21, 2026</span>
+        <a href="posts/2026-07-21.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, July 20, 2026</span>
+        <a href="posts/2026-07-20.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, July 19, 2026</span>
+        <a href="posts/2026-07-19.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, July 18, 2026</span>
+        <a href="posts/2026-07-18.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, July 17, 2026</span>
+        <a href="posts/2026-07-17.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, July 16, 2026</span>
+        <a href="posts/2026-07-16.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, July 15, 2026</span>
+        <a href="posts/2026-07-15.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, July 14, 2026</span>
+        <a href="posts/2026-07-14.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, July 13, 2026</span>
+        <a href="posts/2026-07-13.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, July 12, 2026</span>
+        <a href="posts/2026-07-12.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, July 11, 2026</span>
+        <a href="posts/2026-07-11.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, July 10, 2026</span>
+        <a href="posts/2026-07-10.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, July 09, 2026</span>
+        <a href="posts/2026-07-09.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, July 08, 2026</span>
+        <a href="posts/2026-07-08.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, July 07, 2026</span>
+        <a href="posts/2026-07-07.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, July 06, 2026</span>
+        <a href="posts/2026-07-06.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, July 05, 2026</span>
+        <a href="posts/2026-07-05.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, July 04, 2026</span>
+        <a href="posts/2026-07-04.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, July 03, 2026</span>
+        <a href="posts/2026-07-03.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, July 02, 2026</span>
+        <a href="posts/2026-07-02.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, July 01, 2026</span>
+        <a href="posts/2026-07-01.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, June 30, 2026</span>
+        <a href="posts/2026-06-30.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, June 29, 2026</span>
+        <a href="posts/2026-06-29.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, June 28, 2026</span>
+        <a href="posts/2026-06-28.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, June 27, 2026</span>
+        <a href="posts/2026-06-27.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, June 26, 2026</span>
+        <a href="posts/2026-06-26.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, June 25, 2026</span>
+        <a href="posts/2026-06-25.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, June 24, 2026</span>
+        <a href="posts/2026-06-24.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, June 23, 2026</span>
+        <a href="posts/2026-06-23.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, June 22, 2026</span>
+        <a href="posts/2026-06-22.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, June 21, 2026</span>
+        <a href="posts/2026-06-21.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, June 20, 2026</span>
+        <a href="posts/2026-06-20.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, June 19, 2026</span>
+        <a href="posts/2026-06-19.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, June 18, 2026</span>
+        <a href="posts/2026-06-18.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, June 17, 2026</span>
+        <a href="posts/2026-06-17.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, June 16, 2026</span>
+        <a href="posts/2026-06-16.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, June 15, 2026</span>
+        <a href="posts/2026-06-15.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, June 14, 2026</span>
+        <a href="posts/2026-06-14.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, June 13, 2026</span>
+        <a href="posts/2026-06-13.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, June 12, 2026</span>
+        <a href="posts/2026-06-12.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, June 11, 2026</span>
+        <a href="posts/2026-06-11.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, June 10, 2026</span>
+        <a href="posts/2026-06-10.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, June 09, 2026</span>
+        <a href="posts/2026-06-09.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, June 08, 2026</span>
+        <a href="posts/2026-06-08.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, June 07, 2026</span>
+        <a href="posts/2026-06-07.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, June 06, 2026</span>
+        <a href="posts/2026-06-06.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, June 05, 2026</span>
+        <a href="posts/2026-06-05.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, June 04, 2026</span>
+        <a href="posts/2026-06-04.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, June 03, 2026</span>
+        <a href="posts/2026-06-03.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, June 02, 2026</span>
+        <a href="posts/2026-06-02.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, June 01, 2026</span>
+        <a href="posts/2026-06-01.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, May 31, 2026</span>
+        <a href="posts/2026-05-31.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, May 30, 2026</span>
+        <a href="posts/2026-05-30.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, May 29, 2026</span>
+        <a href="posts/2026-05-29.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, May 28, 2026</span>
+        <a href="posts/2026-05-28.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, May 27, 2026</span>
+        <a href="posts/2026-05-27.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, May 26, 2026</span>
+        <a href="posts/2026-05-26.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, May 25, 2026</span>
+        <a href="posts/2026-05-25.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, May 24, 2026</span>
+        <a href="posts/2026-05-24.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, May 23, 2026</span>
+        <a href="posts/2026-05-23.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, May 22, 2026</span>
+        <a href="posts/2026-05-22.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, May 21, 2026</span>
+        <a href="posts/2026-05-21.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, May 20, 2026</span>
+        <a href="posts/2026-05-20.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, May 19, 2026</span>
+        <a href="posts/2026-05-19.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, May 18, 2026</span>
+        <a href="posts/2026-05-18.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, May 17, 2026</span>
+        <a href="posts/2026-05-17.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, May 16, 2026</span>
+        <a href="posts/2026-05-16.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, May 15, 2026</span>
+        <a href="posts/2026-05-15.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, May 14, 2026</span>
+        <a href="posts/2026-05-14.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, May 13, 2026</span>
+        <a href="posts/2026-05-13.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, May 12, 2026</span>
+        <a href="posts/2026-05-12.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, May 11, 2026</span>
+        <a href="posts/2026-05-11.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, May 10, 2026</span>
+        <a href="posts/2026-05-10.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, May 09, 2026</span>
+        <a href="posts/2026-05-09.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, May 08, 2026</span>
+        <a href="posts/2026-05-08.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, May 07, 2026</span>
+        <a href="posts/2026-05-07.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, May 06, 2026</span>
+        <a href="posts/2026-05-06.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, May 05, 2026</span>
+        <a href="posts/2026-05-05.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, May 04, 2026</span>
+        <a href="posts/2026-05-04.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, May 03, 2026</span>
+        <a href="posts/2026-05-03.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, May 02, 2026</span>
+        <a href="posts/2026-05-02.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, May 01, 2026</span>
+        <a href="posts/2026-05-01.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, April 30, 2026</span>
+        <a href="posts/2026-04-30.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, April 29, 2026</span>
+        <a href="posts/2026-04-29.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, April 28, 2026</span>
+        <a href="posts/2026-04-28.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, April 27, 2026</span>
+        <a href="posts/2026-04-27.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, April 26, 2026</span>
+        <a href="posts/2026-04-26.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, April 25, 2026</span>
+        <a href="posts/2026-04-25.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, April 24, 2026</span>
+        <a href="posts/2026-04-24.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, April 23, 2026</span>
+        <a href="posts/2026-04-23.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, April 22, 2026</span>
+        <a href="posts/2026-04-22.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, April 21, 2026</span>
+        <a href="posts/2026-04-21.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, April 20, 2026</span>
+        <a href="posts/2026-04-20.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, April 19, 2026</span>
+        <a href="posts/2026-04-19.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, April 18, 2026</span>
+        <a href="posts/2026-04-18.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, April 17, 2026</span>
+        <a href="posts/2026-04-17.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, April 16, 2026</span>
+        <a href="posts/2026-04-16.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, April 15, 2026</span>
+        <a href="posts/2026-04-15.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, April 14, 2026</span>
+        <a href="posts/2026-04-14.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, April 13, 2026</span>
+        <a href="posts/2026-04-13.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, April 12, 2026</span>
+        <a href="posts/2026-04-12.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, April 11, 2026</span>
+        <a href="posts/2026-04-11.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, April 10, 2026</span>
+        <a href="posts/2026-04-10.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, April 09, 2026</span>
+        <a href="posts/2026-04-09.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, April 08, 2026</span>
+        <a href="posts/2026-04-08.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, April 07, 2026</span>
+        <a href="posts/2026-04-07.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, April 06, 2026</span>
+        <a href="posts/2026-04-06.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, April 05, 2026</span>
+        <a href="posts/2026-04-05.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, April 04, 2026</span>
+        <a href="posts/2026-04-04.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, April 03, 2026</span>
+        <a href="posts/2026-04-03.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, April 02, 2026</span>
+        <a href="posts/2026-04-02.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, April 01, 2026</span>
+        <a href="posts/2026-04-01.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, March 31, 2026</span>
+        <a href="posts/2026-03-31.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, March 30, 2026</span>
+        <a href="posts/2026-03-30.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, March 29, 2026</span>
+        <a href="posts/2026-03-29.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, March 28, 2026</span>
+        <a href="posts/2026-03-28.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, March 27, 2026</span>
+        <a href="posts/2026-03-27.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, March 26, 2026</span>
+        <a href="posts/2026-03-26.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, March 25, 2026</span>
+        <a href="posts/2026-03-25.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, March 24, 2026</span>
+        <a href="posts/2026-03-24.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, March 23, 2026</span>
+        <a href="posts/2026-03-23.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, March 22, 2026</span>
+        <a href="posts/2026-03-22.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, March 21, 2026</span>
+        <a href="posts/2026-03-21.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, March 20, 2026</span>
+        <a href="posts/2026-03-20.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, March 19, 2026</span>
+        <a href="posts/2026-03-19.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, March 18, 2026</span>
+        <a href="posts/2026-03-18.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, March 17, 2026</span>
+        <a href="posts/2026-03-17.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, March 16, 2026</span>
+        <a href="posts/2026-03-16.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, March 15, 2026</span>
+        <a href="posts/2026-03-15.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, March 14, 2026</span>
+        <a href="posts/2026-03-14.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, March 13, 2026</span>
+        <a href="posts/2026-03-13.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, March 12, 2026</span>
+        <a href="posts/2026-03-12.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, March 11, 2026</span>
+        <a href="posts/2026-03-11.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, March 10, 2026</span>
+        <a href="posts/2026-03-10.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, March 09, 2026</span>
+        <a href="posts/2026-03-09.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, March 08, 2026</span>
+        <a href="posts/2026-03-08.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, March 07, 2026</span>
+        <a href="posts/2026-03-07.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, March 06, 2026</span>
+        <a href="posts/2026-03-06.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, March 05, 2026</span>
+        <a href="posts/2026-03-05.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, March 04, 2026</span>
+        <a href="posts/2026-03-04.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, March 03, 2026</span>
+        <a href="posts/2026-03-03.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, March 02, 2026</span>
+        <a href="posts/2026-03-02.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, March 01, 2026</span>
+        <a href="posts/2026-03-01.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, February 28, 2026</span>
+        <a href="posts/2026-02-28.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, February 27, 2026</span>
+        <a href="posts/2026-02-27.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, February 26, 2026</span>
+        <a href="posts/2026-02-26.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, February 25, 2026</span>
+        <a href="posts/2026-02-25.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, February 24, 2026</span>
+        <a href="posts/2026-02-24.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, February 23, 2026</span>
+        <a href="posts/2026-02-23.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, February 22, 2026</span>
+        <a href="posts/2026-02-22.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, February 21, 2026</span>
+        <a href="posts/2026-02-21.html">Read</a>
+      </div><div class="archive-row">
+        <span>Friday, February 20, 2026</span>
+        <a href="posts/2026-02-20.html">Read</a>
+      </div><div class="archive-row">
+        <span>Thursday, February 19, 2026</span>
+        <a href="posts/2026-02-19.html">Read</a>
+      </div><div class="archive-row">
+        <span>Wednesday, February 18, 2026</span>
+        <a href="posts/2026-02-18.html">Read</a>
+      </div><div class="archive-row">
+        <span>Tuesday, February 17, 2026</span>
+        <a href="posts/2026-02-17.html">Read</a>
+      </div><div class="archive-row">
+        <span>Monday, February 16, 2026</span>
+        <a href="posts/2026-02-16.html">Read</a>
+      </div><div class="archive-row">
+        <span>Sunday, February 15, 2026</span>
+        <a href="posts/2026-02-15.html">Read</a>
+      </div><div class="archive-row">
+        <span>Saturday, February 14, 2026</span>
+        <a href="posts/2026-02-14.html">Read</a>
+      </div>
     </div>
-  </section>
-  <footer class="footer">The Midtown Briefing</footer>
-</main>
+  </div>
+</section>
 </body>
 </html>
