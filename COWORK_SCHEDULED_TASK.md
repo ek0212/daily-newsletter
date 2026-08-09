@@ -88,10 +88,10 @@ Operating rules:
 - Keep changes inside the selected project folder.
 
 Format lock:
-- Use the August 2 compact briefing email format from `templates/newsletter.html` and the user-confirmed PDF reference `Daily Morning Briefing  August 2 2026 Weather consensus.pdf`: rounded white container, direct masthead/date row, one green focus sentence, five muted metric chips, table-first NYC weather and public-health sections, `Three reads carry today. The rest can wait.`, compact colored top-read rows, `Everything else, if you have more than a minute`, NYC Events near the bottom, and a plain generated-from-live-fetchers footer when no notes are supplied.
+- Use the August 2 compact briefing email format from `templates/newsletter.html` and the user-confirmed PDF reference `Daily Morning Briefing  August 2 2026 Weather consensus.pdf`: rounded white container, direct masthead/date row, one green focus sentence, five muted metric chips, table-first NYC weather and public-health sections, a required `Top 3 Things` scan block, then explicit compact sections for NYC Events, General Top News, Tech YouTube / Videos, AI Security Articles, AI Security Papers, Second Brain Suggested Todos when present, Notes when needed, and final Overall signal.
 - Do not use the old legacy newsletter layout, large colorful card redesign, YouTube thumbnail layout, large CTA blocks, image-heavy format, or generic decorative visual system.
 - Weather must use the repo's Open-Meteo model consensus plus National Weather Service observation/fallback. Show the weather source count in the generated email.
-- If a run includes read-only Second Brain suggested todos, render them once near the bottom after NYC Events. Do not move them above `Everything else`.
+- If a run includes read-only Second Brain suggested todos, render them once near the bottom after AI Security Papers. Do not move them above `Top 3 Things`.
 
 Preflight:
 1. Confirm the working directory is /Users/evekazarian/Documents/Coding Projects/daily-newsletter.
