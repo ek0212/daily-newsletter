@@ -133,7 +133,7 @@ Verify:
    - site/index.html
    - site/feed.xml
    - site/posts/YYYY-MM-DD.json
-   - site/posts/YYYY-MM-DD.html
+   - site/posts/YYYY-MM-DD.html (must match the generated email HTML)
    - site/posts/YYYY-MM-DD.email.html
 3. Read the generated JSON and count:
    - news items

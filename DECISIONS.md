@@ -1,5 +1,19 @@
 # Architecture & Product Decisions
 
+## 2026-08-09: GitHub Pages uses email-rendered briefing
+
+**Context:** GitHub Pages used a separate web shell that could drift from the email format.
+
+**Decision:** Public post pages now write the generated email HTML directly. The Pages homepage embeds the latest saved email body first, followed by a compact archive. CI fails if the daily post HTML differs from the generated email HTML or if homepage compact markers are missing.
+
+**Alternatives considered:**
+- Maintain a separate web template: rejected because it can drift from the user-approved email version
+- Keep only raw `.email.html` files: rejected because homepage still needs archive navigation
+
+**Status:** ACTIVE
+
+---
+
 ## 2026-08-09: Compact briefing keeps top 3 things
 
 **Context:** The fully sectioned compact template removed the stronger top summary from the August 2 reference.

@@ -122,6 +122,34 @@ jobs:
               print(f'{section}: {total - weak}/{total} items have substantive summaries')
           "
 
+      - name: Validate Pages email parity
+        if: steps.hour_gate.outputs.run == 'true'
+        run: |
+          python3 - <<'PY'
+          from datetime import datetime
+          from pathlib import Path
+          import sys
+
+          today = datetime.now().strftime('%Y-%m-%d')
+          post = Path(f'site/posts/{today}.html')
+          email = Path(f'site/posts/{today}.email.html')
+          index = Path('site/index.html')
+
+          missing = [str(p) for p in (post, email, index) if not p.exists()]
+          if missing:
+              sys.exit(f'Missing Pages output: {missing}')
+
+          if post.read_text() != email.read_text():
+              sys.exit('Pages post HTML must match generated email HTML exactly.')
+
+          index_html = index.read_text()
+          for marker in ('Daily Morning Briefing', 'Top 3 Things', 'NYC Weather'):
+              if marker not in index_html:
+                  sys.exit(f'Missing compact email marker in site/index.html: {marker}')
+
+          print('Pages output matches generated email HTML.')
+          PY
+
       - name: Upload Pages artifact
         if: steps.hour_gate.outputs.run == 'true'
         uses: actions/upload-pages-artifact@v3
