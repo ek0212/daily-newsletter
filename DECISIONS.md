@@ -1,5 +1,19 @@
 # Architecture & Product Decisions
 
+## 2026-08-09: Compact briefing keeps top 3 things
+
+**Context:** The fully sectioned compact template removed the stronger top summary from the August 2 reference.
+
+**Decision:** Keep the explicit section order for events, news, videos, AI-security articles, AI-security papers, todos, notes, and overall signal. Add a compact `Top 3 Things` block immediately after weather and public health, using two top news items plus the leading AI-security article.
+
+**Alternatives considered:**
+- Only sectioned lists: rejected because first scan lost the strongest editorial priorities
+- Restoring the full mixed `Everything else` block: rejected because separate article and paper sections are now part of the automation contract
+
+**Status:** ACTIVE
+
+---
+
 ## 2026-08-02: Consensus weather forecasts
 
 **Context:** Single-source NWS hourly forecasts were drifting from the user's observed consumer-weather apps.
@@ -52,7 +66,7 @@
 - Fully sectioned August 3 layout: rejected because it drifted from the user-confirmed reference rhythm
 - Removing Second Brain support from the template: rejected because some automation prompts still request read-only todos
 
-**Status:** ACTIVE
+**Status:** BACKTRACKED
 
 ---
 
