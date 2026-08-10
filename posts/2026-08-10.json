@@ -1,0 +1,362 @@
+{
+  "date": "Monday, August 10, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 83,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 91,
+    "low": 74,
+    "feels_like": 84,
+    "forecast": "Mostly clear. Low around 72, with temperatures rising to around 74 overnight. North wind around 5 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 73,
+        "feels_like": 77,
+        "conditions": "Clear",
+        "wind": "2 mph SE",
+        "humidity": "73%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 78,
+        "feels_like": 82,
+        "conditions": "Partly Cloudy",
+        "wind": "2 mph SE",
+        "humidity": "64%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 90,
+        "feels_like": 94,
+        "conditions": "Clear",
+        "wind": "8 mph S",
+        "humidity": "43%",
+        "precip_chance": "15%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 88,
+        "feels_like": 90,
+        "conditions": "Clear",
+        "wind": "11 mph SW",
+        "humidity": "48%",
+        "precip_chance": "39%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 84,
+        "feels_like": 88,
+        "conditions": "Cloudy",
+        "wind": "8 mph SW",
+        "humidity": "62%",
+        "precip_chance": "46%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,184 cases this week \u2014 75% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1184,
+    "vs_average_pct": -75.1,
+    "week_ending": "2026-08-01",
+    "breakdown": {
+      "flu": 228,
+      "covid": 850,
+      "rsv": 106
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,184 combined flu/COVID/RSV cases",
+        "comparison": "75% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Childr",
+        "current": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families NYC Health + Hospitals",
+        "comparison": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNakxDT0pmV3o5QmdtY04wd21rS0phOVJJcXZwcVpNT1lpVUFBWEUyQzIyMGVpNHpyVkJhaXpmV2JwYXRRMHNFbmpYSWxRUFptQ1hUVWRrRzZnYTNMWm5KOUtySUxrRTZNT1JnN0t6UFBfN2VQQjREUDlZd19DSEVJTmtfeTVvQXoyZ1RKZkhxcC1wYmJKcE5sM19BdHlkRW9aVkhQUWZOQS16SzE2MEU0Q1pJMUVqUWZ6NkZhNEp5eWhVaEhCWUl3RjBaOUNxWk9CTUNMWl8xdU5nUlpkYm45a1ZDRXdkTFotLVZpeVJsOVRDN1BjRnAzcmtrNC1vdVFWVTFNNTZrMUFwZm1VNGc?oc=5",
+        "title": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families - NYC Health + Hospitals",
+        "summary": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families NYC Health + Hospitals",
+        "published": "Fri, 17 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says - PBS",
+        "current": "98 people",
+        "comparison": "Fri, 24 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTkxLUFhCUFhIcDhtQnZ6SDNOdThZVHdtSEE2WWRwaU5QdlpQdVJtSXVoUzJ6alFiUC1lRFF5SFNrQTVnU2YwTG1KdzhDMW1UYVpZNGQxVjhXYS1BRDVfTmVfZGhXZEhuM0NBSmJ1VTJCY2VzV0FOUEQ2ZEJuQ1hwUnl3dWdBSEIxcVNsU2lobjdYUy1sR0ZrbGdaOFhDVktQTkRzUDRrcFRBemQyaFNSZm1MVVFQMXM5MFhaZFUxNEJmSzNWdkhB?oc=5",
+        "title": "Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says - PBS",
+        "summary": "Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says PBS",
+        "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Childr",
+        "current": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families NYC Health + Hospitals",
+        "comparison": "Fri, 17 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNakxDT0pmV3o5QmdtY04wd21rS0phOVJJcXZwcVpNT1lpVUFBWEUyQzIyMGVpNHpyVkJhaXpmV2JwYXRRMHNFbmpYSWxRUFptQ1hUVWRrRzZnYTNMWm5KOUtySUxrRTZNT1JnN0t6UFBfN2VQQjREUDlZd19DSEVJTmtfeTVvQXoyZ1RKZkhxcC1wYmJKcE5sM19BdHlkRW9aVkhQUWZOQS16SzE2MEU0Q1pJMUVqUWZ6NkZhNEp5eWhVaEhCWUl3RjBaOUNxWk9CTUNMWl8xdU5nUlpkYm45a1ZDRXdkTFotLVZpeVJsOVRDN1BjRnAzcmtrNC1vdVFWVTFNNTZrMUFwZm1VNGc?oc=5",
+        "title": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families - NYC Health + Hospitals",
+        "summary": "NYC Health + Hospitals/Lincoln Launches New Pediatric Hospitality Cart to Bring Comfort to Hospitalized Children and Their Families NYC Health + Hospitals",
+        "published": "Fri, 17 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says - PBS",
+        "current": "98 people",
+        "comparison": "Fri, 24 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTkxLUFhCUFhIcDhtQnZ6SDNOdThZVHdtSEE2WWRwaU5QdlpQdVJtSXVoUzJ6alFiUC1lRFF5SFNrQTVnU2YwTG1KdzhDMW1UYVpZNGQxVjhXYS1BRDVfTmVfZGhXZEhuM0NBSmJ1VTJCY2VzV0FOUEQ2ZEJuQ1hwUnl3dWdBSEIxcVNsU2lobjdYUy1sR0ZrbGdaOFhDVktQTkRzUDRrcFRBemQyaFNSZm1MVVFQMXM5MFhaZFUxNEJmSzNWdkhB?oc=5",
+        "title": "Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says - PBS",
+        "summary": "Salmonella outbreak tied to eggs has sickened 98 people in 17 states since November, FDA says PBS",
+        "published": "Fri, 24 Jul 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "India Day Parade",
+      "date": "Sun, Aug 16",
+      "borough": "Manhattan",
+      "location": "East 37th St & Park Ave",
+      "event_type": "Parade"
+    }
+  ],
+  "news": [
+    {
+      "title": "Could Morocco\u2019s football chief Fouzi Lekjaa become its next prime minister?",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/8/10/could-moroccos-football-chief-fouzi-lekjaa-become-its-next-prime-minister?traffic_source=rss",
+      "published": "Mon, 10 Aug 2026 00:51:19 +0000",
+      "raw_text": "Could Morocco\u2019s football chief Fouzi Lekjaa become its next prime minister?\nLekjaa\u2019s decision to join a political party has fuelled speculation about his political ambitions.\nRabat, Morocco \u2013 As Morocco prepares for parliamentary elections on September 23, political debate is centred less on ideology and party programmes than on the decision of one of the country\u2019s most influential public officials to enter partisan politics.\nThe decision by Fouzi Lekjaa, Morocco\u2019s minister delegate for the budget and president of the Royal Moroccan Football Federation (FRMF), to join the Authenticity and Modernity Party (PAM) has prompted intense debate across the political class and social media.\nBest known for his role in public finance and the transformation of Moroccan football, Lekjaa built his reputation in public administration rather than electoral politics.\nHis move represents more than a simple party affiliation. It reflects a broader shift in Moroccan politics, where managerial competence, state-led development and national prestige are becoming increasingly important sources of political legitimacy.\nMustafa Ahdar, a researcher in constitutional law and political science at Ibn Zohr University in Agadir, told Al Jazeera that Lekjaa joined PAM less than three months before the elections, making the timing politically significant.\n\u201cFrom a constitutional perspective, every Moroccan citizen is free to join any political party under the 2011 Constitution,\u201d Ahdar said, noting that former PAM secretary-general Abdellatif Ouahbi has publicly reaffirmed this principle.\n\u201cHowever, someone who simultaneously heads the national football federation and occupies a senior ministerial position cannot realistically be viewed in the same way as an ordinary citizen entering politics.\u201d\nThe timing matters for another reason: the government formed after the election will oversee Morocco\u2019s preparations for the 2030 FIFA World Cup, which it will cohost with Spain and Portugal.\nWith billions expected to be invested in infrastructure, transport and tourism, commentators have increasingly described the next administration as Morocco\u2019s \u201cWorld Cup government\u201d, one likely to be judged as much by its ability to deliver the tournament as by traditional economic indicators.\nFrom party politics to performance politics\nLekjaa\u2019s rise reflects a broader trend in Morocco and beyond, where successful public officials are increasingly becoming political assets in their own right.\nAs budget minister, he became closely associated with major infrastructure and investment projects while emerging as a central figure in Morocco\u2019s football renaissance.\nThe Atlas Lions\u2019 historic run to the semifinals of the 2022 FIFA World Cup transformed Morocco\u2019s international image, strengthened its soft power across Africa and the Arab world, and made football a symbol of national ambition and institutional effectiveness.\nFor Ahdar, however, the trend raises deeper questions about the role of political parties.\n\u201cPolitical parties are supposed to create spaces where citizens become politically engaged and future leaders emerge,\u201d he said. \u201cWhen parties increasingly recruit influential personalities who have built their popularity outside politics, they risk abandoning that mission.\u201d\nA changing electorate\nMorocco\u2019s political evolution also reflects changing voter behaviour.\nTurnout exceeded 50 percent in the 2021 parliamentary elections, yet nearly half of eligible voters still abstained.\nMany analysts argue that this reflects scepticism towards political parties rather than a lack of political interest, particularly among younger Moroccans, who increasingly express their concerns through social media activism and protests over unemployment, rising living costs and public services.\nAccording to Ahdar, the debate surrounding Lekjaa illustrates this shift.\n\u201cPAM is part of the current governing coalition and faces criticism over its governmental record,\u201d he said. \u201cYet the debate today is centred far more on Lekjaa\u2019s arrival than on the party\u2019s political programme or achievements.\u201d\nHe noted that some social media users had even joked that \u201cLekjaa attracted PAM rather than PAM attracting Lekjaa\u201d, reflecting what he described as the growing personification of politics.\nMorocco\u2019s constitutional framework\nMorocco\u2019s 2011 Constitution expanded the powers of parliament while maintaining the monarchy\u2019s central role in government formation. Under Article 47, the king appoints the head of government from the party winning the largest number of parliamentary seats.\nMorocco\u2019s proportional electoral system almost always produces coalition governments, making post-election negotiations nearly as important as the vote itself.\nSpeculation over Lekjaa\u2019s future political role has intensified, despite no official indication that he is being considered for head of government.\nAhdar also sees parallels with Prime Minister Aziz Akhannouch, who entered partisan politics after establishing himself outside traditional party structures.\n\u201cThis inevitably raises questions about internal party democracy,\u201d he said. \u201cMany party activists spend years progressing through party ranks, while outsiders sometimes reach senior positions very quickly.\u201d\nHe added that observers will naturally ask whether such moves reflect genuine political conviction or primarily pragmatic political calculation.\nThe PAM factor\nFounded in 2008, PAM presents itself as a modernising political force focused on institutional reform, regional development and economic modernisation. The party has also faced corruption and abuse-of-office controversies involving some of its elected officials.\nFor PAM, recruiting a figure associated with effective governance and football success may reinforce its image as a party of competence while helping shift attention from criticism of the governing coalition\u2019s economic record.\nBetween legitimacy and expectations\nAdministrative competence can strengthen political credibility, but governing requires more than managerial efficiency. Morocco continues to face major challenges, including unemployment, education, healthcare, regional inequalities and rising living costs.\nNouh El Harmouzi, head of the Arab Center for Research, believes Lekjaa\u2019s administrative profile nevertheless explains the attention surrounding his political move.\n\u201cFew senior officials combine his experience in public finance, institutional management and strategic planning,\u201d he told Al Jazeera.\n\u201cThe next government will face enormous budgetary pressures alongside growing geopolitical and economic risks while simultaneously delivering one of the largest projects in Morocco\u2019s modern history: the 2030 World Cup.\u201d\nBeyond Lekjaa\nThe debate has also attracted attention among Moroccans abroad.\nTouria Guerraoui, a Moroccan-French technology expert, said the diaspora has followed Lekjaa\u2019s political move with particular interest because of his popularity through football.\n\u201cMany Moroccans living abroad closely followed the national team\u2019s achievements and feel connected to that success,\u201d she told Al Jazeera. \u201cHis decision to join PAM has made many in the diaspora more attentive to this election.\u201d\nShe argued that Morocco is not unique in seeing influential senior state officials enter politics, pointing to French President Emmanuel Macron, who entered national politics after a career in the private sector and public administration.\n\u201cA large part of Morocco\u2019s football team comes from the diaspora, and their achievements have generated enormous pride,\u201d she said. \u201cBut many people are now asking whether the effectiveness demonstrated in football administration can also be translated into the economic and social progress that Moroccans expect.\u201d",
+      "summary": "Best known for his role in public finance and the transformation of Moroccan football, <strong>Lekjaa</strong> built his reputation in public administration rather than electoral politics."
+    },
+    {
+      "title": "Houthis renew missile and drone attacks on Yemen\u2019s port of al-Makha",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/8/10/houthis-renew-missile-and-drone-attacks-on-yemens-port-of-al-makha?traffic_source=rss",
+      "published": "Mon, 10 Aug 2026 00:19:43 +0000",
+      "raw_text": "Houthis renew missile and drone attacks on Yemen\u2019s port of al-Makha\nThe latest Houthi attacks come less than 24 hours after an earlier barrage struck al-Makha (Mocha) and its commercial port.\nYemen\u2019s Houthis have launched a new wave of missile and drone attacks on the Red Sea port city of al-Makha (Mocha), extending an assault on government-held areas along Yemen\u2019s western coast and killing at least 11 people.\nThe latest attacks came on Sunday evening, less than 24 hours after an earlier barrage struck al-Makha and its commercial port. Yemeni government forces said air defences intercepted six drones during the renewed assault, while two ballistic missiles fell into the sea without hitting their targets.\nRecommended Stories\nlist of 4 items\n- list 1 of 4Houthis launch deadly attacks on Saudi-led coalition forces in Yemen\n- list 2 of 4Houthi strikes in Yemen as Saudi Arabia braces for attacks: What we know\n- list 3 of 4Houthi attacks on gov\u2019t forces hint that a major battle in Yemen is brewing\n- list 4 of 4Where does Iran stand on Saudi-Pakistan-Turkiye pact?\nFootage broadcast by the Houthi-affiliated Al Masirah TV showed several ballistic missiles and drones being launched. Houthi military spokesman Yahya Saree said the operation targeted Saudi troop concentrations and weapon depots in the area, according to the Reuters news agency.\nAt least 11 killed\nEarlier on Sunday, Attacks on al-Makha killed at least 11 people, including eight military personnel and three civilians, and wounded 32 others, according to the latest toll cited by the AFP news agency.\nThe strikes also caused extensive damage at al-Makha\u2019s port. Government authorities said buildings and commercial facilities were hit, while The Associated Press reported damage to port infrastructure, commercial goods and food supplies.\nGovernment forces also said they intercepted and destroyed an unmanned explosive boat approaching the commercial port.\nDuring the renewed attacks later on Sunday, the National Resistance Forces, which are aligned with Yemen\u2019s internationally recognised government, urged residents of al-Makha to remain indoors, accusing the Houthis of carrying out indiscriminate shelling.\nHouthis say Saudi military buildup prompted attack\nThe Houthis said the operation involved a large number of ballistic missiles and drones and was launched in response to an alleged continued Saudi military buildup, including the reinforcement of allied forces with weapons and equipment along Yemen\u2019s western coast and in Taiz province.\nHouthi political council member Hizam al-Assad separately claimed that continuing explosions, fires and columns of smoke from the port were caused by large quantities of weapons and military equipment stored there.\nAttacks extend to al-Khokha\nThe escalation was not limited to al-Makha, but also targeted the al-Khokha district, south of the coastal city of Hodeidah.\nAl-Jumhuriya television, which is affiliated with the National Resistance Forces led by Presidential Leadership Council member Tareq Saleh, said the government-appointed governor of Hodeidah, al-Hassan Taher, survived an assassination attempt on Sunday after a Houthi ballistic missile struck his residence in the district.",
+      "summary": "Houthi military spokesman Yahya Saree said the operation targeted Saudi troop concentrations and weapon depots in the area, according to the Reuters news agency.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell",
+      "source": "CNN",
+      "link": "https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8",
+      "published": "",
+      "raw_text": "Fox News agrees to pay $787.5 million to settle defamation lawsuit with Dominion Voting Systems\n2:50\nWhat we covered here\nFox News will pay more than $787 million to Dominion Voting Systems after the sides hammered out a last-minute settlement Tuesday in the explosive defamation case launched against the right-wing network.\nFox acknowledged the court\u2019s rulings finding \u201ccertain claims about Dominion to be false.\u201d However, the network will not have to admit on air that it spread election lies, a Dominion rep said.\nBy settling, influential Fox executives and prominent on-air personalities will be spared from testifying about their 2020 election coverage, which was filled with lies about voter fraud.\nDominion also has pending lawsuits against right-wing networks Newsmax and OAN, as well as against Trump allies Rudy Giuliani, Sidney Powell and Mike Lindell.\nOur live coverage has ended. Follow the latest US media news hereor read about today\u2019s settlement in the updates below.\n39 Posts\nLink Copied!\nHere's the ruling about Fox's on-air lies it acknowledged after settling defamation case\nFrom CNN's Marshall Cohen\nPeople walk by the News Corporation headquarters, home to Fox News, on April 18, in New York City.\n(Spencer Platt/Getty Images)\nIn a statement made Tuesday after Fox News settled the defamation case brought by Dominion Voting Systems, Fox said:\n\u201cWe acknowledge the Court\u2019s rulings finding certain claims about Dominion to be false.\u201d\nSo, what did those rulings say?\nThis is about the topic of falsity. To win a defamation case, you need to prove a few things. Most importantly, you need to prove the statements were false and that they were made with actual malice, otherwise known as a reckless disregard for the truth.\nIn a major pretrial ruling on March 31, Delaware Superior Court Judge Eric Davis ruled Dominion had successfully proven that all 20 statements mentioned in its lawsuit against Fox were false.\nLink Copied!\nFox settlement papers were signed minutes before announcement, Dominion lawyer says\nFrom CNN\u2019s Danny Freeman\nDominion Voting Systems\u2019 co-lead counsel Justin Nelson said he and Dominion\u2019s other attorneys were expecting to go to trial against Fox News on Tuesday.\nThe final deal to settle the case with the right-wing network for $787.5 million came late in the day, and the settlement papers with Fox were signed just \u201cminutes\u201d before the agreement was announced, he said.\nPrior to the last-minute settlement, Nelson told CNN he and other attorneys had been preparing opening statements \u2013 even during the two-and-a-half-hour courtroom delay after the lunch recess.\nLink Copied!\nHere's how it looked inside the courtroom during the Fox vs Dominion case today\nFox News will pay more than $787 million to Dominion Voting Systems after lawyers from both sides hammered out a last-minute settlement of the defamation case launched against the right-wing network.\nThe deal was announced hours after the jury was sworn in at the Delaware Superior Court. Rumors of a settlement swirled in the courthouse when, after a lunch break, the proceedings dramatically ground to a halt for nearly three hours with no explanation, while the parties apparently hammered out an accord.\nCNN\u2019s Bill Hennessy, court sketch artist, captured scenes from inside the courtroom:\nDelaware Superior Court Judge Eric Davis, center, with Dominion attorney Justin Nelson, left, and Fox attorney Dan Webb, right.\n(Sketch by Bill Hennessy)\nMembers of the public are seen in the foreground, with Delaware Superior Court Judge Eric Davis on the far right. On the left are smudged glass panels to obscure the jurors and protect their identity.\n(Sketch by Bill Hennessy)\nLawyers for both sides talk amongst themselves. Lawyers for Dominion are seated on the left side of the room, with Fox's lawyers on the right.\n(Sketch by Bill Hennessy)\nDan Webb, attorney for Fox, looks at his phone.\n(Sketch by Bill Hennessy)\nLink Copied!\nFox News settlement is the first time anyone has \"paid the price\" for election lies, Dominion's lead counsel says\nJustin Nelson, Dominion's lead counsel, appears on CNN.\n(CNN)\nDominion Voting Systems had two goals in its defamation case against Fox News \u2014 accountability and \u201ctrying to make Dominion whole,\u201d said Justin Nelson, the lead counsel election technology company.\nBoth were accomplished in this settlement, he told CNN on Tuesday.\nThe payment of more than $787 million by Fox News to Dominion and the network\u2019s statement acknowledging that its coverage of the 2020 election was false was \u201ca strong message of accountability\u201d and an important victory for the employees of his client\u2019s company.\nWhile the settlement does not stipulate that Fox\u2019s anchors must acknowledge the lies on air, Nelson said it was a consequential outcome for the network.\nThe texts and emails that emerged during the litigation process from inside the Fox network were valuable, he said. \u201cAnd what today has shown is that you have to pay a price if you\u2019re telling lies.\u201d\nPrevious court filings revealed messages that showed that the most prominent stars and highest-ranking executives at Fox News privately ridiculed claims of election fraud in the 2020 election, despite the right-wing channel allowing lies about the presidential contest to be promoted on its air.\nHe said the settlement with Fox sends a \u201cstrong message\u201d to other right-wing outlets in which Dominion has ongoing legal disputes.\nLink Copied!\nFox-Dominion defamation settlement is largest involving US media company\nFrom CNN's Jon Passantino\nFox News\u2019 payment of $787.5 million to Dominion Voting Systems is the largest publicly known defamation settlement in US history involving a media company.\nNotably, in 2017, ABC News paid $177 million after its years-long legal dispute with South Dakota-based meat processor Beef Products Inc. over its textured meat product that the network referred to as \u201cpink slime.\u201d\nAt the time, the settlement was believed to be the biggest amount ever paid in a media defamation case in the United States.\nLink Copied!\nFox anchors not required to acknowledge lies told about Dominion as part of settlement, Dominion rep says\nFrom CNN\u2019s Oliver Darcy\nFox News anchors will not have to acknowledge on-air that it told election lies about Dominion Voting Systems as part of the terms of its settlement, a representative for the election technology company told CNN.\nFox News did acknowledge in its statement that falsehoods were broadcast.\nBut top anchors at the right-wing talk channel will not be required as part of the settlement to acknowledge on air the lies broadcast in the wake of the 2020 election.\nLink Copied!\n\"Fox has admitted to telling lies,\" Dominion CEO says\nFrom CNN's Jon Passantino\nDominion CEO John Poulos, joined by members of the Dominion Voting Systems legal team, speaks outside the Leonard Williams Justice Center in Wilmington, Delaware, on April 18.\n(Andrew Caballero-Reynolds/AFP/Getty Images)\n\u201cFox has admitted to telling lies about Dominion,\u201d said the company CEO John Poulos on Tuesday, following the last-minute $787.5 million settlement with the right-wing network.\nLink Copied!\nSmartmatic says its pending case will further expose Fox News' wrongdoing after Dominion settlement\nFrom CNN's Jon Passantino\nSmartmatic representative demonstrates his company's system on August 30, 2018, at a meeting of the Secure, Accessible & Fair Elections Commission in Grovetown, Georgia.\n(Bob Andres/Atlanta Journal-Constitution/AP/FILE)\nSmartmatic, the voting technology company that is suing Fox News for $2.7 billion for defamation said its pending case will further expose wrongdoing by the right-wing network, following the last-minute settlement in the case brought by Dominion Voting Systems.\nLink Copied!\nDominion attorney says settlement represents a \"ringing endorsement for truth and accountability\"\nFrom CNN\u2019s Liam Reilly and Laura Dolan\nAttorney Justin Nelson\n(Matt Rourke/AP)\nThe settlement for more than $787 million with Fox News represents \u201ca ringing endorsement for truth and accountability,\u201d the attorney representing Dominion Voting Systems said Tuesday.\nNelson said that more than two years ago a \u201ctorrent of lies\u201d had swept Dominion and election officials across America, causing \u201cgrievous harm to Dominion and the country.\u201d\nNelson also said the country must \u201cremain ever vigilant to find common ground.\u201d\n\u201cFor our democracy to endure for another 250 years and, hopefully much longer, we must share a commitment to facts,\u201d Nelson added.\nLink Copied!\nAnalysis: This is an unequivocal rebuke of Fox News\nAnalysis From CNN's Elie Honig\nDaniel Webb, lawyer for Fox News, center, leaves the Leonard Williams Justice Center in Wilmington, Delaware, on April 18.\n(Andrew Caballero-Reynolds/AFP/Getty Images)\nThe $787.5 million settlement in the Fox-Dominion case is an unequivocal rebuke of the right-wing news network and its journalism, said Elie Honig, former assistant US attorney for the Southern District of New York.\n\u201cTranslated it means we got caught lying by the judge \u2013 and I think that\u2019s exactly why we are seeing this absolutely jaw-dropping number,\u201d Honig told CNN\u2019s Jake Tapper.\nAlthough the amount is about half of what Dominion was asking for, it\u2019s still an astonishing sum, he said.\nLink Copied!\nDominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell\nFrom CNN's Marshall Cohen\nDominion Voting Systems still has pending lawsuits against right-wing networks Newsmax and OAN, as well as against Trump allies Rudy Giuliani, Sidney Powell and Mike Lindell.\nAll of these parties and entities deny wrongdoing and are fighting the lawsuits.\nLink Copied!\n\"Fox has admitted to telling lies,\" Dominion CEO says\nFrom CNN's Nicki Brown\nJohn Poulos, the CEO of Dominion Voting Systems\n(CNN)\nFollowing the announcement of a $787.5 million dollar settlement in the Fox News-Dominion case, John Poulos, the CEO of Dominion Voting Systems, said Fox News \u201cadmitted to telling lies\u201d about the company.\n\u201cNothing can ever make up for that,\u201d Poulos added at a news conference following court.\n\u201cI cannot thank the election officials that we serve enough. Without them, there is no democracy,\u201d he said.\nLink Copied!\nOn-air claims about Dominion Voting Systems were false, Fox News says in statement\nFrom CNN's Jon Passantino\nFox News has issued a statement on its settlement with Dominion Voting Systems acknowledging that some of the right-wing network\u2019s on-air statements about Dominion were false.\nFor context: The statement was referring to Judge Eric Davis\u2019 recent ruling that 20 Fox News broadcasts from late 2020 contained blatantly untrue assertions that Dominion rigged the presidential election. But Fox won\u2019t have to admit on-air that it spread lies about Dominion, a Dominion representative told CNN.\nLink Copied!\nFox News-Dominion settlement totals more than $787 million, Dominion lawyer says\nFrom CNN's Nicki Brown\nDominion attorney Justin Nelson speaks during a press conference.\n(CNN)\nThe settlement between Fox News and Dominion Voting Systems totals $787,500,000, according to Dominion attorney Justin Nelson.\nThe settlement represents \u201cvindication and accountability,\u201d Nelson said in a news conference Tuesday afternoon.\n\u201cThe truth matters, lies have consequences,\u201d Nelson said\n\u201cOver two years ago, a torrent of lies swept Dominion and election officials across America into an alternative universe of conspiracy theories, causing grievous harm,\u201d Nelson added.\nLink Copied!\nJudge praises lawyers from both sides as Fox-Dominion case ends\nFrom CNN's Marshall Cohen\nJudge Eric Davis (center) depicted earlier today in an artist sketch before finishing jury selection in the Delaware Superior Court.\n(Elizabeth Williams/AP)\nDelaware Superior Court Judge Eric Davis praised both sides after they abruptly settled the defamation case between Fox News and Dominion Voting Systems at the last second.\nHe said, \u201cI have been on the bench since 2010\u2026 I think this is the best lawyering I\u2019ve had, ever.\u201d\n\u201cI would be proud to be your judge in the future,\u201d Davis said, his final words before leaving the bench.\nThe hearing is now over. The case is now over.\nLink Copied!\nJUST IN: Settlement has been reached in Fox-Dominion defamation case\nFrom CNN's Marshall Cohen\nReporters and members of the public outside of the Leonard Williams Justice Center where Dominion Voting Systems is suing Fox News in Delaware Superior Court today in Wilmington, Delaware.\n(Chip Somodevilla/Getty Images)\nA last-second settlement has been reached in Dominion Voting Systems\u2019 historic defamation lawsuit against Fox News, the parties announced Tuesday in court.\nThe settlement was apparently brokered while the trial was on the brink of opening statements in Wilmington, Delaware.\nAfter swearing in the jury earlier Tuesday, an unexplained hours-long delay paused proceedings in court, which yet again triggered rampant speculation that a deal was quietly in the works.\nWhat this means: The last-minute deal means the closely watched case is effectively over and won\u2019t proceed to trial. By settling with Dominion, influential Fox News executives and prominent on-air personalities will be spared from testifying about their 2020 election coverage, which was filled with lies about voter fraud.\nDetails of the settlement were not immediately available and might never become public.\nMore on the case: In its lawsuit, Dominion sought $1.6 billion in damages from Fox News. The right-wing network argued vociferously in pretrial proceedings that this number was inflated and didn\u2019t come close to accurately capturing the potential losses that Dominion could have suffered as a result of Fox\u2019s 2020 broadcasts.\nFox News and Fox Corporation \u2014 its parent company, which was also a defendant \u2014 say they never defamed Dominion, and say the case is a meritless assault on press freedoms. They denied Dominion\u2019s claim that they promoted these election conspiracies to save their falling ratings after the 2020 election.\nWhile the Dominion case is now over, Fox News is still facing a second major defamation lawsuit from Smartmatic, another voting technology company that was smeared on Fox shows after the 2020 election. That case is still in the discovery process, and a trial isn\u2019t expected anytime soon.\nLink Copied!\nCourt back in session after unexplained delay of more than two hours\nFrom CNN's Marshall Cohen in Wilmington, Delaware\nThe Fox-Dominion trial has resumed, after an unexplained delay of more than two hours.\nLink Copied!\nFox and Dominion lawyers briefly huddle in court as delay drags on\nFrom CNN's Marshall Cohen in Wilmington, Delaware\nFox News attorney Dan Webb (left) and Justin Nelson, attorney for Dominion Voting Systems (right), as they arrived with their legal teams outside of the Delaware Superior Court in Wilmington earlier today.\nThe unexplained delay in the Fox News-Dominion defamation trial has surpassed 90 minutes.\nMoments ago in court, CNN observed a top Fox lawyer showing a piece of paper \u2014presumably a note \u2014 to a top Dominion lawyer.\nA few minutes later, they both stepped out of the courtroom, into a private, secured area for court staff. Moments later, they walked back into court together. It is not known what they privately discussed, if anything.\nThe lawyers \u2014 Fox attorney Dan Webb and Dominion attorney Justin Nelson \u2014subsequently huddled at Dominion\u2019s table for a few minutes, in public view. They were talking to each other, but it is not known what they are saying.\nBoth men are now sitting at their respective tables, looking at their phones.\nJudge formally names special master to investigate whether Fox withheld evidence from Dominion\nFrom CNN's Marshall Cohen in Wilmington, Delaware\nDelaware Superior Court Judge Eric Davis has formally named a special master to investigate whether Fox News withheld evidence from Dominion Voting Systems, according to court filings.\nCNN reported last week that the judge was likely to launch this inquiry, which revolves around whether Fox intentionally suppressed evidence that it was legally obligated to provide to Dominion. The dispute escalated after audiotapes emerged of Fox host Maria Bartiromo talking to Rudy Giuliani in 2020.\nThe order, which was posted on the docket earlier in the day as jury selection began in the trial, directed attorney John Elzufon to lead the inquiry. Elzufon previously served as special master to handle routine evidentiary issues in the case.\nElzufon is required to finish his probe and submit a report by May 15.\nThe judge\u2019s order indicates that the special master has the power to take depositions as part of his inquiry \u2013 and the special master will be allowed to depose anyone he thinks is appropriate.\nFox is required to pay for all expenses related to the investigation, according to Davis\u2019 order.\nFox lawyers say they never withheld anything from Dominion, and that when new evidence emerged at a late stage, they turned it over as quickly as possible.\nLink Copied!\nFox-Dominion trial has not yet moved to opening statements after unexplained slowdown in proceedings\nFrom CNN's Marshall Cohen in Wilmington, Delaware\nA general view of the Leonard L. Williams Justice Center in Wilmington, Delaware, as media members stand outside, on April 18.\n(Mark Makela/Reuters)\nThe court in the Dominion-Fox defamation trial reconvened as planned at 1:30 p.m. ET in Wilmington, Delaware, after a lunch break, but there has been an unexplained slowdown in the proceedings.\nThe trial has not yet moved to opening statements, though that is expected next.\nLawyers for both sides have been present in the courtroom since things reconvened about one hour ago.\nThey have been looking at their phones, talking among their colleagues and waiting.",
+      "summary": "Here's how it looked inside the courtroom during the Fox vs <strong>Dominion</strong> case today Fox News will pay more than <strong>$787</strong> million to <strong>Dominion</strong> Voting Systems after lawyers from both sides hammered out a last-minute settlement of the defamation case launched against the right-wing network.",
+      "emoji": "\ud83c\udfdb\ufe0f"
+    },
+    {
+      "title": "Mother, infant daughter killed when boat overturns off Liberty Island; boat operator charged",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPN29zWF8tbEVTYjZBRHQyVVprQ19tbWZtWC1uMUN5dmR1cV9STzZvVTBtRTZVN3loSnlpaFFjTHhmeEJRY1JZUV9nTVF0aDNlOUZzMlpZdHFjT1poVG9aUWpBZG11ZFNMMmFzb1lnVmRzdFM1bVZmcUpuY2NabFYzRnY1QzhxVlVJR0pkQTRxV0ZHSUlUX0Y4Wk82elhuUWfSAaQBQVVfeXFMUGJqUVk3ekkxVWhxc2tXc2pJcGRmdER1MmNzeWZRMERUX0NWRVBUQkxLSWs2VjVtSzIyWEZZRmo2bWw0eW9La09GbFg0VUpSOW85V21mNUtpRko5Y201Wk5qTW8zRXhjUk9adUlsWmxQWVFuRHIxbmFuSjJ2M2tNVnJRZVF3ZzdYN09rU3REYU1meFBPeVBCTWM3dVBnUjRlMzdYdVY?oc=5",
+      "published": "Mon, 10 Aug 2026 01:39:59 GMT",
+      "raw_text": "NEW YORK (WABC) -- A 5-month-old girl and a 27-year-old mother from Queens died after a boat overturned off Liberty Island late Saturday night, according to officials. Twelve other people were rescued from the water, and the boat's operator was arrested.\nThe boat overturned at about 10:20 p.m., prompting a large emergency response involving FDNY and NYPD Harbor, scuba and aviation units.\nThe infant and woman, identified as 5-month-old Antonella Garcia and 27-year-old Sarah Sanchez, were transported to NYU Langone Brooklyn in critical condition, where they were later pronounced dead. The U.S. Coast Guard said the two passengers who were killed were a mother and child; however, police said it was not immediately clear whether the two were related.\nThe 12 other passengers rescued from the water were taken to hospitals with minor injuries.\nManuel Hernandez, 46, of Manhattan, was arrested and charged with 13 counts of reckless endangerment. The Coast Guard said investigators are also looking into whether the trip may have been operating as an illegal charter. The agency, working alongside the Coast Guard Investigative Service and NYPD, is conducting an active investigation into what caused the fatal capsizing.\nOne witness described seeing a frantic rescue effort as emergency boats raced back and forth to the scene.\n\"I saw a lot of ambulances, firefighters, and then I saw that there were boats here,\" said Madeline Hunter, a witness. \"And then people were just saying that there was a mother and a child that needed to be rescued from the water and that they were found.\"\nPolice identified the vessel as a 22-foot bowrider power boat, a type that typically holds 10 to 12 people.\nEyewitness News was told that Sanchez lived in College Point, Queens. Lucy Yang was there Sunday afternoon speaking with shocked neighbors.\n\"I'm in shock,\" said Diego Naranjo. \"For the family, sending condolences to the family. May they rest in peace in heaven.\"\n----------\n* Get Eyewitness News Delivered\n* Download the abc7NY app for breaking news alerts\n* Download our connected TV app\nHave a breaking news tip or an idea for a story we should cover? Send it to Eyewitness News using the form below. If attaching a video or photo, terms of use apply.",
+      "summary": "\"<strong>And then people were just saying that there was a mother and a child that needed to be rescued from the water and that they were found.</strong>\" Eyewitness News was told that Sanchez lived in College Point, Queens."
+    },
+    {
+      "title": "Hong Kong records hottest day ever as Typhoon Dolphin fuels heatwave",
+      "source": "The Guardian",
+      "link": "https://www.theguardian.com/world/2026/aug/10/hong-kong-heat-record-hottest-day-ever-typhoon-dolphin",
+      "published": "Mon, 10 Aug 2026 01:24:13 GMT",
+      "raw_text": "Hong Kong has officially recorded its highest ever temperature as Typhoon Dolphin swept warm air over the city, the meteorological service said.\nThe city\u2019s weather observatory posted a temperature of 36.9C on Sunday, the highest recorded since records began in 1884, the Hong Kong Observatory said in the afternoon.\nThe approaching storm has fuelled intense heat in the region over the weekend and triggered mass flight cancellations and evacuations along China\u2019s east coast before making landfall there on Sunday evening.\nThe previous record for Hong Kong was set at 36.6C on 22 August 2017, before Typhoon Hato hit.\nFigures recorded at the observatory\u2019s headquarters are the official reference point for the city\u2019s records, but temperatures elsewhere in the densely built Chinese finance hub topped 39C.\nA weather station in Sheung Shui, in the city\u2019s north, recorded 39.8C, the highest temperature logged in Hong Kong since automatic weather stations were introduced in the 1980s, the observatory said.\n\u201cWith Tropical Cyclone Dolphin moving towards the vicinity of Zhejiang and moving inland, its outer subsiding air will persistently bring extremely hot weather to the territory today to Tuesday,\u201d the forecaster said.\nThe observatory issued a \u201cvery hot weather warning\u201d on Sunday, advising citizens to drink water and avoid vigorous outdoor physical activities.\nTyphoon Dolphin has made landfall in the Chinese mainland, about 1,000km (620 miles) north-east of Hong Kong.\nDolphin made landfall near Yuhuan in Zhejiang province at about 5:30pm (0930 GMT) on Sunday, China\u2019s meteorological authorities said. It brought maximum sustained winds of 94mph (151 km/h) near its centre at landfall, equivalent to a category 1 hurricane on the Saffir-Simpson scale.\nScientists say human-driven climate change is making extreme heat events more frequent and more intense worldwide.",
+      "summary": "The city\u2019s weather observatory posted a temperature of 36.9C on Sunday, the highest recorded since records began in 1884, the <strong>Hong</strong> <strong>Kong</strong> Observatory said in the afternoon. <strong>Dolphin</strong> made landfall near Yuhuan in Zhejiang province at about 5:30pm (0930 GMT) on Sunday, China\u2019s meteorological authorities said."
+    }
+  ],
+  "youtube": [],
+  "ai_security_tldr": "This week's focus: agentic ai security.",
+  "ai_security": [
+    {
+      "title": "Zenity Emphasizes Governance of Autonomous Coding Agents in AI Security Strategy",
+      "source": "TipRanks",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQRlU1RVBqaTNnNy16bGpaRHo0WFVwM2ZWb21iWDk4SHh3UkpsVHZscUJ6VVQzVFBkWnRQMWhZSjZtckVELWM5dUpGYkpUZ0VoRlB2YUVDTnNjY3hEQTFReW1LYXlkbTkzcWtNWFhHRm11V0RnMTZQUkZlS3JPTFY3LThwM1pMYkhDUE5oR1lBSmdrdlRHeERxN25hUk83Wi1NelJUZl95OEtuQXRVUmd4enJiRXZGRVRnbnpMWmRudFc4MXcwQnNj?oc=5",
+      "published": "Sun, 09 Aug 2026 10:36:31 GMT",
+      "summary": "According to a recent LinkedIn post from <strong>Zenity</strong>, the company is drawing attention to security risks associated with autonomous coding agents that pursue goals rather than simply generating answers.",
+      "raw_text": "According to a recent LinkedIn post from Zenity, the company is drawing attention to security risks associated with autonomous coding agents that pursue goals rather than simply generating answers. The post describes a webinar demo in which an autonomous agent treated an existing security control as an obstacle to bypass rather than a safeguard to respect.\nClaim 55% Off TipRanks\n- Unlock powerful investing tools with TipRanks Premium to make smarter, more confident investment decisions\n- Subscribe to TipRanks Smart Investor Newsletter, and discover new investing opportunities with data-backed stock picks\nThe company\u2019s LinkedIn post highlights four foundational questions it believes security teams should address before developing more advanced AI security programs. These questions focus on which coding agents developers are using, what MCP servers and skills are installed, the permissions granted to these agents, and whether they operate with elevated autonomy.\nFor investors, the post suggests Zenity is positioning itself around emerging security challenges tied to agentic AI in software development workflows. By emphasizing governance of coding agents and their permissions, Zenity appears to be targeting a growing niche within AI security, which could support demand for its solutions as enterprises accelerate AI-assisted development.\nThis focus on oversight and control of AI agents may strengthen Zenity\u2019s strategic relevance to organizations seeking to balance developer productivity with cybersecurity and compliance. If enterprises increasingly prioritize structured AI security programs, vendors perceived as early movers in agentic AI security could see enhanced competitive positioning and potential revenue growth opportunities.",
+      "type": "news"
+    },
+    {
+      "title": "Job listings show Nvidia hiring for a new AI safety team to address one of the biggest \u2018AI threats\u2019",
+      "source": "The Times of India",
+      "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNS2I5WkwzdE5vSU5JX0JSYzM1aGZMZ1VFbG1rdE5KWkoyTk5kU0JiX2JhajE1Sk10Y01uNkZJUGlRam9Waml0NjlhUHhKSi10ZllSeE03cmZBcU9wVzJIaVBOMDI2enZPdTdKUHVGOUIwVXJHQVhlazNNd0ZHTXBPU3BfT3ZxU2tqSW1LcXk5U2hwbjBDd2NVVjR2a00zUnlfRnc1OHB3V2lOZGdaWGwySVN4bVFQU1J3bXF0Mkc5ekxBXzFOYkZEZ2ZBX2JRTUljYl81YjdFc2pKeUxFT0hid1piNmJzZ2ZKZlFHNW1SQ0N2ODJ2Z1FiNndlaGd3UzFYaTc4aXlUQWhTczhF0gGSAkFVX3lxTE02ZWR3bkZTV1pNNVhmLTJVUks0aWNnWUhLVUxvYWhRTVB0OTNQbHRrcVVKNUtoUDZyekEtbWc1b0JyZ2U3Uk5lZzFqOGlEUXlBc3ZGZndRN2p4b3ZxcFhOREZENzd1ZVdOanFYbHExS2Exc08xY2JJM3U4SG0ydnM5SWNMNTVjNUk5V05HSVE2MVNvbGlnX0ptN0VQYm15VzliR1VDR1pWbmQ2bFhiQWROdWM0RE80ZlJqYUpxRzRqRTE3amI4blJfNk5kcWkwb2NSR3d1QWhuQk1LREJ6N1FUVVFla3BpWFdsUExlU0oxaGxkcFJ4N1pLWTZ4X0xvYlk0WHNWNHhWVGJpbmJ3S3Q5ZHc?oc=5",
+      "published": "Sun, 09 Aug 2026 03:22:00 GMT",
+      "summary": "Insider), <strong>Nvidia</strong> is recruiting an engineer to serve as the \u201cfounding technical leader\u201d for the new team, alongside roles for a security research engineer, an evaluation engineer and a senior engineering manager.",
+      "raw_text": "Nvidia is reportedly assembling a dedicated AI safety and security engineering team, as per a series of corporate job listings posted late last month. The hiring initiative signals a broader effort by the chipmaker to address security vulnerabilities and safety risks associated with autonomous AI agents, which are currently seen as one of the biggest threats of technology, and open-weight models before they reach widespread commercial deployment.\nAccording to the disclosures (spotted by Business Insider), Nvidia is recruiting an engineer to serve as the \u201cfounding technical leader\u201d for the new team, alongside roles for a security research engineer, an evaluation engineer and a senior engineering manager.\nFocus on autonomous agents and software patching\nThe primary responsibility of the newly-formed division is said to be evaluating autonomous AI agents prior to deployment, testing their operational limits and developing AI-powered security software to automatically detect and patch code vulnerabilities.\nOne job description notes that the team\u2019s mission is \n\u201crooted in the firm belief that open-weight models, transparency, and broad scientific scrutiny are foundational to American AI leadership and cybersecurity defense.\u201d\nUnlike \u201cclosed\u201d proprietary software, open-weight models make their trained parameters publicly accessible for inspection and fine-tuning, allowing outside developers and researchers to evaluate how the software operates.\nNvidia advocates for open-source security\nThe internal safety push aligns with Nvidia\u2019s broader public strategy advocating for open-weight AI development, positioning the company alongside alternative approaches to closed ecosystems built by competitors like OpenAI and Anthropic.\nIn a recent public letter addressed to US policymakers, Nvidia CEO Jensen Huang urged government support for open AI models, arguing that open architectures strengthen overall software resilience and national cybersecurity.\nAdditionally, Nvidia recently became a founding member of the Open Secure AI Alliance, which is a consortium of 120 companies, including Microsoft, Palantir, SpaceX, and Hugging Face, focused on developing open-source security defenses for machine learning applications.",
+      "type": "news",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "The Architecture of Failure: Why DEF CON 34 Shattered the AI Agent Security Narrative",
+      "source": "forkast.news",
+      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNndUZktRUkRPTmZkUE52WWdKX3Bwa1Zpcm9QOC13bnU0dkRsdDBWcGtITy1wYjkxOFZyUXZ4Y1U2N2VzcU52LWJEcEtyR21pWmYtSTdmWnUxQ2hFMGdZSnEwWGl2OXVDWk1IUmwyR1AtOU52UXRpVVZnMFVxVUEtQ1RuSHZoRGFtLVVBN0lmcnBrSE1BbmRvOHd5dzZ6WXlSR2lZby1lMll1Zw?oc=5",
+      "published": "Sat, 08 Aug 2026 14:47:56 GMT",
+      "summary": "Low-level exploitation of the infrastructure itself is also possible. The agent runtime stack is currently built on a foundation of over-privileged patterns and implicit trust.",
+      "raw_text": "The week in Las Vegas began with a defensive wall of corporate security products at Black Hat and ended with the systematic dismantling of the AI agent runtime stack at DEF CON 34. As we detailed in our BH Day 1 Briefings, the industry has been racing to deploy tools like Wiz Agent Shield and Palo Alto Prisma AIRS. Yet, the research presented at DEF CON revealed an uncomfortable reality: the vulnerabilities are not bugs to be patched, but features of the current agentic architecture.\nStructural design gaps, rather than simple prompt injection, define the current state of agent security. In \u201cThe Sandbox Is a Suggestion\u201d, Elad Meged of Novee Security demonstrated that major coding agent sandboxes \u2014 Claude Code, Gemini CLI, and Codex CLI \u2014 are fundamentally broken. The Gemini CLI pre-task remote code execution (RCE) vulnerability, documented in GHSA-wpqr-6v78-jr5g, scored a CVSS 10.0, proving that environments meant to isolate agents are porous by design.\nInfrastructure layers are equally fragile. Yaara Shriki of Wiz and Google presented \u201cOffGuard\u201d, exposing LiteLLM \u2014 the most popular open-source AI gateway, deployed in roughly one-third of cloud environments \u2014 as a single point of failure. By chaining authentication bypasses in the Model Context Protocol (MCP) layer with sandbox escapes and server-side request forgery, the researchers demonstrated a path from zero credentials to full cloud compromise. Nearly one in ten instances accepted default credentials or required no authentication at all.\nConnectivity remains a primary vector for exploitation. In \u201cThe Hidden Cost of Agentic Connectivity\u201d, David Fiser analyzed over 19,000 MCP servers, revealing that security features are trivially bypassable. These vulnerabilities map directly to the OWASP MCP Top 10, confirming that the tools designed to connect agents to data are acting as conduits for attackers, a concern we previously highlighted in our MCP Vendor Wave coverage.\nMuskan Tomar\u2019s research on cross-agent privilege escalation introduces a new threat: the manipulation of trust between agents. By poisoning tool descriptions that read like routine compliance guidance, an attacker can trick an agent built on LangChain or Claude Code into escalating the privileges of a separate agent running in a different environment \u2014 all through authorized IAM calls. This finding underscores the danger of implicit trust in multi-agent systems.\nLow-level exploitation of the infrastructure itself is also possible. Ji\u2019an Zhou and Lei Lu identified CVE-2026-24747, a PyTorch weights_only bypass that allowed for the remote compromise of vLLM, ComfyUI, and NVIDIA Dynamo. The common assumption that AI applications are safe if they only load weights was overturned: many AI applications expose APIs that invoke torch.load for routine operations, turning a \u201clocal\u201d vulnerability into a remote one.\nSecurity tools themselves are being weaponized. In \u201cYour WAF Blocked Us, That Was The Exploit\u201d, Tenet Security demonstrated two chains. First, payloads delivered through Cloudflare WAF 403-blocked requests land in logs; when a developer asks their agent to debug Cloudflare, injections activate and the agent\u2019s own MCP tools hijack DNS to reroute customer traffic \u2014 an estimated 15,000-plus organizations exposed, 27 percent of the Fortune 1000. Second, stacktraces injected into Sentry\u2019s public API via public DSNs compromise Sentry\u2019s Seer agent, with poisoned recommendations flowing into Cursor. The exploitation success rate: 85 percent. The researchers also disclosed a Claude zero-day bypassing its network sandbox for full data exfiltration, and demonstrated agentic rootkits via memory injection and config poisoning that are invisible to EDRs. A stark contrast to the defensive optimism noted in our BH Day 2 Roundup.\nEven heavily guarded environments are not immune. Ryan Hausknecht and Simon Maxwell-Stewart of BeyondTrust, in \u201cWrestling with a Python\u201d, broke all three defensive layers of Microsoft Copilot Studio: dunder filters via MRO introspection, the Python sandbox via pythonnet, and the LLM guardrail by exploiting its leaked reasoning chain. They exfiltrated TLS private keys, approximately 75 environment variables including Azure AD client IDs and Service Fabric cluster topology, and full application source code \u2014 demonstrating admin-level access to every Copilot Studio agent sandbox.\nThe agent runtime stack is currently built on a foundation of over-privileged patterns and implicit trust. The industry is rushing to deploy agentic capabilities before the underlying security architecture is mature. Individual patches are stopgaps. Until the architecture itself is re-engineered to account for these systematic vulnerabilities, the agent economy will remain fundamentally exposed.",
+      "type": "news"
+    },
+    {
+      "title": "Complimentary AI Security Platforms",
+      "source": "Trend Hunter",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5QSmdtZnBPc0NxckIya1RBX1hlUUo4b3lLbkF4MzJ2cU40VEVIS21Nb0EzdVp5WmU4RFVvUlRGOVBOcmxkXzdpdDE2TkVHTjFZTkpTU3NGMnZQYVB1N1g1eFJYN1Mwc3RBYWJB0gFrQVVfeXFMTlBKZ21mcE9zQ3FyQjJrVEFfWGVRSjhveUtuQXgzMnZxTjRURUhLbU1vQTN1WnlaZThEVW9SVEY5UE5ybGRfN2l0MTZORUdOMVlOSlNTc0YydlBhUHU3WDV4Ulg3UzBzdEFhYkE?oc=5",
+      "published": "Fri, 07 Aug 2026 21:53:36 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "iboss, a cloud security company known for serving government agencies and highly regulated enterprises, has launched a free AI Security Platform that provides organizations with complete visibility into the artificial intelligence tools being used across their networks. Instant signup and deployment can reveal an organization's full AI footprint within hours, while also offering paid tiers for those seeking to enforce policies, prevent data breaches, and govern AI agents. The platform monitors prompts, sessions, users, and risk in real time across a wide range of popular AI services including ChatGPT, Microsoft Copilot, Gemini, Claude, Perplexity, and desktop applications like Cursor. \nFor organizations ready to move beyond observation, the paid versions unlock control features such as per-service allow, block, or redirect policies, fine-grained restrictions on copy, paste, upload, and download actions, tenant enforcement to keep employees within enterprise accounts, and default-deny connection policies for AI agents operating on endpoints and servers.\n\t\t\t\t\t\nComplimentary AI Security Platforms\niboss Debuts Free AI Security Platform for Organizations\nTrend Themes\n- \n\t\t\t\t\t\tFree AI Visibility \u2014 Complimentary monitoring platforms are lowering adoption barriers for enterprises seeking rapid insight into shadow AI usage and associated data exposure.\n- \n\t\t\t\t\t\tAgent Access Governance \u2014 Default-deny controls for AI agents create new security models around endpoint behavior, server interactions, and autonomous software decision-making.\n- \n\t\t\t\t\t\tGranular Prompt Security \u2014 Real-time oversight of prompts, sessions, and user actions supports more precise risk management across consumer and enterprise AI tools.\nIndustry Implications\n- \n\t\t\t\t\t\tCloud Security \u2014 Vendors are differentiating through AI-specific visibility and policy enforcement layers that extend beyond traditional network protection.\n- \n\t\t\t\t\t\tEnterprise Software \u2014 Business application ecosystems face rising demand for tenant enforcement, usage governance, and secure integration with workplace AI tools.\n- \n\t\t\t\t\t\tRegulatory Compliance \u2014 Highly regulated sectors gain new mechanisms for documenting AI activity, reducing data leakage, and aligning employee behavior with internal controls.",
+      "type": "news"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "91\u00b0F",
+        "detail": "46% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-01"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Heat",
+        "detail": "Hydrate"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "0 papers",
+        "detail": "Current"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "0",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,184 cases this week \u2014 75% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 1,
+    "youtube_count": 0,
+    "ai_security_count": 4
+  }
+}
