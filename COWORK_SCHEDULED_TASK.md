@@ -39,7 +39,7 @@ Use these values in Cowork's Scheduled task modal.
 | Description | Build the daily newsletter in the August 2 compact email format, update the static site archive, email the full briefing, and leave a short result. |
 | Folder | `/Users/evekazarian/Documents/Coding Projects/daily-newsletter` |
 | Frequency | Daily |
-| Time | 6:00 AM America/New_York |
+| Time | 5:00 AM America/New_York |
 | Model | Use the default Cowork model unless a more capable model is needed for debugging failures. |
 | Permission mode | Start with ask-before-acting for setup. Use act-without-asking only after a clean manual run. |
 

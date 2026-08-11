@@ -4,17 +4,12 @@ on:
   push:
     branches:
       - main
-  # GitHub cron is UTC only and does not follow US daylight saving time, so each
-  # local run time is scheduled twice (EDT and EST offsets). The "Check local
-  # publish hour" step below drops whichever half of the pair is off-hour, so
-  # each slot fires exactly once per day in America/New_York.
+  # GitHub cron is UTC only and does not follow US daylight saving time, so the
+  # 5 AM America/New_York run is scheduled at both EDT and EST offsets. The
+  # "Check local publish hour" step below drops whichever half is off-hour.
   schedule:
     - cron: '0 9 * * *'   # 5 AM EDT
     - cron: '0 10 * * *'  # 5 AM EST
-    - cron: '0 18 * * *'  # 2 PM EDT
-    - cron: '0 19 * * *'  # 2 PM EST
-    - cron: '0 0 * * *'   # 8 PM EDT
-    - cron: '0 1 * * *'   # 8 PM EST
   workflow_dispatch:
 
 permissions:
@@ -33,8 +28,8 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      # Each publish slot has two cron entries (EDT and EST). Skip the one that
-      # is not currently the intended local hour. Manual and push runs bypass this.
+      # Skip duplicate UTC schedule entries that are not 5 AM in New York.
+      # Manual and push runs bypass this.
       - name: Check local publish hour
         id: hour_gate
         run: |
@@ -42,7 +37,7 @@ jobs:
           echo "Local hour in America/New_York: ${LOCAL_HOUR}"
           if [ "${{ github.event_name }}" != "schedule" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
-          elif [ "$LOCAL_HOUR" = "5" ] || [ "$LOCAL_HOUR" = "14" ] || [ "$LOCAL_HOUR" = "20" ]; then
+          elif [ "$LOCAL_HOUR" = "5" ]; then
             echo "run=true" >> "$GITHUB_OUTPUT"
           else
             echo "Off-hour duplicate of a DST cron pair, skipping."

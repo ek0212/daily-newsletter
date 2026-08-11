@@ -1,5 +1,19 @@
 # Architecture & Product Decisions
 
+## 2026-08-11: Daily runs at 5 AM Eastern
+
+**Context:** The newsletter should publish once each morning, not at additional afternoon or evening times.
+
+**Decision:** Schedule the local briefing automation and GitHub Pages workflow for 5:00 AM America/New_York daily. GitHub Actions keeps separate EDT and EST UTC cron entries with a local-hour gate so only the 5 AM New York run proceeds.
+
+**Alternatives considered:**
+- Fixed 10:00 UTC only: rejected because it would drift to 6 AM during daylight saving time
+- Multiple daily Pages refreshes: rejected because the requested cadence is once daily
+
+**Status:** ACTIVE
+
+---
+
 ## 2026-08-09: GitHub Pages uses email-rendered briefing
 
 **Context:** GitHub Pages used a separate web shell that could drift from the email format.
