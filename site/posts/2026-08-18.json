@@ -1,0 +1,527 @@
+{
+  "date": "Tuesday, August 18, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 73,
+    "unit": "F",
+    "conditions": "Cloudy",
+    "high": 84,
+    "low": 71,
+    "feels_like": 73,
+    "forecast": "A slight chance of rain showers. Mostly cloudy, with a low around 73. North wind around 2 mph. Chance of precipitation is 20%.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 72,
+        "feels_like": 78,
+        "conditions": "Cloudy",
+        "wind": "2 mph SW",
+        "humidity": "92%",
+        "precip_chance": "18%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 74,
+        "feels_like": 80,
+        "conditions": "Cloudy",
+        "wind": "3 mph SW",
+        "humidity": "84%",
+        "precip_chance": "23%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 83,
+        "feels_like": 90,
+        "conditions": "Partly Cloudy",
+        "wind": "3 mph W",
+        "humidity": "57%",
+        "precip_chance": "39%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 84,
+        "feels_like": 88,
+        "conditions": "Partly Cloudy",
+        "wind": "5 mph SW",
+        "humidity": "56%",
+        "precip_chance": "38%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 80,
+        "feels_like": 85,
+        "conditions": "Partly Cloudy",
+        "wind": "4 mph SW",
+        "humidity": "65%",
+        "precip_chance": "23%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,258 cases this week \u2014 70% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1258,
+    "vs_average_pct": -69.9,
+    "week_ending": "2026-08-08",
+    "breakdown": {
+      "flu": 216,
+      "covid": 949,
+      "rsv": 93
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,258 combined flu/COVID/RSV cases",
+        "comparison": "70% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "comparison": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlkYi1PbWpQZWllVFpXYzZOaFo1ZmRQUFNfS2RMV2dGM1duNHJTcEdyY3o1VWFINEVSTDEzMTR1RndjLUZaSlg0VXN2Rl9ZX2dUU1ltWFNWSDVNSURXcnl1blh3UHVDcnFoT25CT2xqU0VRV3BqY2QyVVpXRGloNnNKQm42bTczdGYtX2VsVm1hMUFqanlUYXJQVy1NNG5EZ0JublJUTy1NM1BxUjFsY1BXQUFqNlNIVHVB?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "published": "Wed, 22 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Georgia Sen. Jon Ossoff questions RFK Jr. over CDC foodborne illness surveillance during Cyclospora outbreak -",
+        "current": "over CDC foodborne illness surveillance during Cyclospora outbreak CBS News",
+        "comparison": "Mon, 20 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOX1FfUXM3blBEZnpQQUNTZTZfVzVlOFJIb3NmeVZIVmF4X25FRzlwempfaDRfWXd2RUk0SW5OdlRvNVpvMU5sNi1SUkl5MEY4S3IwdlR2aHpXenpXWmxwYl9MZzRNa0xlMVBvRVhnT1l5dGVhSDhLSFdZRnJaR3pRTzJBZ0F2YkRyUkczTVpDeEVhZXZTd2RVS1JIXzNnQUZqSjdTVjlNUGxaOE9KZ0R0eEotTkRkRnozX2xnOWROaUtWYkJJaEdwMmZzUnliaUNoUjA2WUlBQzNma1Fn?oc=5",
+        "title": "Georgia Sen. Jon Ossoff questions RFK Jr. over CDC foodborne illness surveillance during Cyclospora outbreak - CBS News",
+        "summary": "over CDC foodborne illness surveillance during Cyclospora outbreak CBS News",
+        "published": "Mon, 20 Jul 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "comparison": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlkYi1PbWpQZWllVFpXYzZOaFo1ZmRQUFNfS2RMV2dGM1duNHJTcEdyY3o1VWFINEVSTDEzMTR1RndjLUZaSlg0VXN2Rl9ZX2dUU1ltWFNWSDVNSURXcnl1blh3UHVDcnFoT25CT2xqU0VRV3BqY2QyVVpXRGloNnNKQm42bTczdGYtX2VsVm1hMUFqanlUYXJQVy1NNG5EZ0JublJUTy1NM1BxUjFsY1BXQUFqNlNIVHVB?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "published": "Wed, 22 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Georgia Sen. Jon Ossoff questions RFK Jr. over CDC foodborne illness surveillance during Cyclospora outbreak -",
+        "current": "over CDC foodborne illness surveillance during Cyclospora outbreak CBS News",
+        "comparison": "Mon, 20 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOX1FfUXM3blBEZnpQQUNTZTZfVzVlOFJIb3NmeVZIVmF4X25FRzlwempfaDRfWXd2RUk0SW5OdlRvNVpvMU5sNi1SUkl5MEY4S3IwdlR2aHpXenpXWmxwYl9MZzRNa0xlMVBvRVhnT1l5dGVhSDhLSFdZRnJaR3pRTzJBZ0F2YkRyUkczTVpDeEVhZXZTd2RVS1JIXzNnQUZqSjdTVjlNUGxaOE9KZ0R0eEotTkRkRnozX2xnOWROaUtWYkJJaEdwMmZzUnliaUNoUjA2WUlBQzNma1Fn?oc=5",
+        "title": "Georgia Sen. Jon Ossoff questions RFK Jr. over CDC foodborne illness surveillance during Cyclospora outbreak - CBS News",
+        "summary": "over CDC foodborne illness surveillance during Cyclospora outbreak CBS News",
+        "published": "Mon, 20 Jul 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Americas 911 Ride",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "7th Ave & West 49th St",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Pakistan Independence Day Celebration",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "East 38th St & 5th Ave",
+      "event_type": "Parade"
+    }
+  ],
+  "news": [
+    {
+      "title": "Shakira makes surprise visit in earthquake-damaged Colombia and commits to rebuilding schools",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOQk85aFc5OVpMc3pHdWFaS2xjYzQyUmJhRVdQd2ZVc1dIZGY2Szd3b0V0bEdUOG02RnZ4VDV1cnllejNQM203bmkxcG5sS3BYSHlMVXg3ZGNNUldOWVgyOHBHTDlQOFJlS2VGWmlLQmJib0VXM2czT3BQTDAwc05JQnZ1RjFEdG5ORWE2TXBhYVc5MXNOSUs0YU52UUF1eDBaS1Zhc0JB?oc=5",
+      "published": "Tue, 18 Aug 2026 02:03:16 GMT",
+      "raw_text": "Shakira makes surprise visit in earthquake-damaged Colombia and commits to rebuilding schools\nBOGOT\u00c1, Colombia (AP) \u2014 Colombian superstar Shakira announced Monday that she will help rebuild at least 10 schools and restore a local university in a remote and hard-hit region of her home country after it suffered a devastating earthquake last week that killed hundreds and affected thousands of educational sites across western Colombia.\nThe globally recognized \u201cHips Don\u2019t Lie\u201d musician made the pledge during a surprise visit to Quibd\u00f3, the capital of the Colombian province of Choc\u00f3, where she toured damaged schools, hugging students and taking photos with them.\n\u201cWhat worries me the most is that schools are not rebuilt once this emergency is over,\u201d Shakira told journalists. \u201cEvery day that children don\u2019t go to school is a day they miss out on their future.\u201d\nShe was accompanied by Howard Buffett, son of billionaire philanthropist Warren Buffett and longtime donor to Colombia who has helped Shakira set up schools there before. The Howard G. Buffett foundation will collaborate with Shakira\u2019s Fundaci\u00f3n Pies Descalzos, or Barefoot Foundation, on reconstructing the 10 schools.\n\u201cWhen she calls, I come,\u201d Buffett said during the visit.\nThe singer also told reporters she planned to dedicate her \u201cpersonal efforts\u201d to rebuilding a local technological university in Choc\u00f3 and announced pledges of $500,000 each from the FIFA Global Citizen Education Fund and Live Nation and $250,000 from CAF Development Bank of Latin America and the Caribbean toward rebuilding schools and getting children back into classrooms.\nThe 7.4 magnitude quake on Aug. 10 struck a vast swath of western Colombia, killing at least 287 people and destroying more than 26,000 dwellings, authorities said. The government has said 194 people are missing, while other civilian-run databases put the number at more than 4,100.\nThe epicenter was in Choc\u00f3, one of Colombia\u2019s poorest regions and where at least 3,100 homes were destroyed and over 265 educational sites affected, according to the regional government latest report Monday.\n\u201cIt\u2019s a place I love, a place where I\u2019ve seen our students grow in our classrooms,\u201d Shakira said in a video posted on X by the Colombian news outlet La FM. Her foundation, which focuses on educational access for youths in Colombia, has been in Choc\u00f3 for 22 years, running two schools from which hundreds of students have graduated, she said. \u201cI really want to see it rebuild again.\u201d\nAid groups have struggled to assess the damage so far in Choc\u00f3, an area the size of Switzerland where communication is difficult. The province has few roads linking it to the rest of the country, and its towns and villages are connected mostly by rivers and unpaved roads.\nMost of Choc\u00f3\u2019s 600,000 inhabitants live in poverty, according to figures published last year by Colombia\u2019s national government, and it is largely inhabited by Indigenous tribes and Afro Colombian communities.\n\u201cThere is not a way to alleviate the pain of so many, there are no magic solutions,\u201d Shakira, 49, said during her visit to a large high school in Quibd\u00f3. \u201cBut what there is, is commitment to be here alongside those from Choc\u00f3, to not abandon El Choc\u00f3 like it historically has been abandoned, until every Colombian and every person from Choc\u00f3 can return to their normal lives like they deserve and all the children can return to their schools and dream of the futures they deserve.\u201d\nThe Grammy award winner known for hits like \u201cWhenever, Wherever,\u201d \u201cLa Tortura,\u201d and the 2026 FIFA World Cup anthem \u201cDai Dai\u201d is a longtime supporter of educational access and advancement. She recently headlined the halftime show of the World Cup final match in July and performed in May on Brazil\u2019s Copacabana Beach to a crowd of 2 million.\nAfter Venezuela\u2019s twin earthquakes in June, Shakira announced the FIFA Global Citizen Education Fund would commit $500,000 to education recovery there.\nHer announcement Monday is the latest of many commitments from prominent Colombians and other Latin American artists to help Colombia and Venezuela. On Sunday, Marc Anthony and Chayanne joined dozens of other artists at a Miami benefit concert and live fundraiser for both countries\u2019 earthquake relief.\nColombian singer Karol G pledged to match fan donations to her Con Cora Foundation during her three-night run at SoFi Stadium near Los Angeles last weekend. She will also join Maluma, Sebasti\u00e1n Yatra and others at a benefit concert in Bogot\u00e1 this Sunday.\n___\nAn earlier correction stated Shakira committed to building 10 new schools, not rebuilding 10 schools. She and Buffett are helping reconstruct the schools, not building new ones.\n___\nGabriela Aoun Angueira reported from San Diego.\n___\nAssociated Press coverage of philanthropy and nonprofits receives support through the AP\u2019s collaboration with The Conversation US, with funding from Lilly Endowment Inc. The AP is solely responsible for this content. For all of AP\u2019s philanthropy coverage, visit https://apnews.com/hub/philanthropy.",
+      "summary": "\u201cWhen she calls, I come,\u201d Buffett said during the visit. She and Buffett are helping reconstruct the schools, not building new ones.",
+      "emoji": "\ud83c\udf2a\ufe0f"
+    },
+    {
+      "title": "Palestine weekly: Global outcry fails to break West Bank siege",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/features/2026/8/18/palestine-weekly-global-outcry-fails-break-west-bank-siege?traffic_source=rss",
+      "published": "Tue, 18 Aug 2026 07:46:17 +0000",
+      "raw_text": "Palestine weekly: Global outcry fails to break West Bank siege\nIsraeli settlers besiege Palestinian homes in the occupied West Bank, while the Board of Peace goes back on the Gaza disarmament deal.\nFor more than a week, Israeli settlers have besieged three Palestinian families in their homes in Qusra, south of Nablus in the occupied West Bank, cutting them off from basic supplies and emergency services.\nSettlers used the same tactic just last month to force the al-Tubassi family from their home in Jalud. This time, however, with one of the besieged Qusra homes belonging to a Palestinian-American, the siege has become front-page news.\nRecommended Stories\nlist of 3 items\n- list 1 of 3Boat sets sail from Bristol, aiming to break Israel\u2019s siege of Gaza\n- list 2 of 3Why Kushner met Hamas leaders, and what it means for Trump\u2019s Gaza roadmap\n- list 3 of 3Netanyahu\u2019s Likud Party holds primaries ahead of Israel\u2019s general elections\nThe United Nations, France, Spain and the United Kingdom have issued condemnations, and the White House was reported to be pressing Netanyahu to publicly denounce settler violence. US Ambassador Mike Huckabee, a staunch settlement supporter, broke publicly with the Israeli government to call the besieging settlers \u201cIsraeli terrorists\u201d.\nOn August 13, Israeli forces ordered the families to evacuate, saying the homes would be seized \u201cto protect\u201d them, and converted 16 homes in the town into military barracks. Soldiers entered Qusra that day. Israeli forces briefly detained one Israeli suspect during a later overnight operation dismantling nearby outpost structures, but no other arrests of settlers have been reported. Amnesty International\u2019s Erika Guevara Rosas said the siege reflected \u201can accelerating and well-documented pattern of coordinated and strategic settler terror, enabled, backed and funded by the State of Israel\u201d.\nFor a second week, 15 Palestinians, including two children, remain trapped in their homes. Soldiers spent two days dismantling the settlers\u2019 tent, only to put up their own in the same spot, effectively continuing the closure. Municipal crews eventually restored electricity and water, but the families say they have been told they can\u2019t leave their homes. Speaking to Al Jazeera the same day, UN Special Rapporteur Francesca Albanese called Qusra the \u201cclimax\u201d of Israel\u2019s \u201cdecades-long rule of impunity\u201d, saying Israeli officials \u201cappear to be collaborating with settlers rather than restraining them\u201d.\nNonetheless, Israeli Defence Minister Israel Katz ordered the Israeli military to prepare a plan for transferring responsibility for civilian law enforcement to the Israeli police \u2013 a move critics questioned as impractical and warned could further advance Israel\u2019s de facto annexation of the occupied West Bank.\nSettlers uncowed\nRather than being encumbered by the global outcry, settlers have carried out similar sieges \u2013 with soldiers again standing by or actively assisting.\nOn August 16, in Beit Imrin, north of Nablus \u2013 a village nominally under full Palestinian civil and security control \u2013 settlers besieged a home for more than three hours, blocking residents and ambulances from reaching those inside. Israeli forces then raided the house themselves, arrested all nine people inside, and withdrew. Soldiers separately blocked Palestine Red Crescent crews from the area and confiscated their ambulance keys.\nFor years, the legal architecture of West Bank dispossession \u2013 including firing-zone designations, \u201cstate land\u201d declarations and a permit regime that effectively criminalises Palestinian construction \u2013 has operated overwhelmingly in Area C, the area of the West Bank under full Israeli control. It has fallen hardest on Bedouin and herding communities who have experienced massive forcible displacement as a result.\nBeit Imrin has none of that legal exposure. But as the Qusra siege leads settlers to widen such tactics, the week\u2019s developments suggest that where the traditional legal toolkit of the occupation doesn\u2019t reach \u2013 like the areas of the West Bank under nominal Palestinian control \u2013 the pattern is becoming clear: settlers establish a tent adjacent to homes and are not removed; Palestinians\u2019 homes are besieged, with water, power, supplies and medical services cut off; and soldiers arrive not to remove the settlers, but increasingly to remove the family \u2013 through arrest or ostensibly for their \u201cprotection\u201d.\nOn August 16, settlers also pitched tents for a new outpost near Umm Safa, northwest of Ramallah, which, the Wafa news agency reported, brings the number of outposts surrounding Umm Safa and neighbouring Burqa to six; settlers have already seized most of Umm Safa\u2019s and Burqa\u2019s surrounding lands.\nAs new outposts were built without authorisation, Israeli forces demolished homes in Qalandiya, north of Jerusalem; Masara, south of Bethlehem; and Silwan in occupied East Jerusalem, according to pictures and videos shared among local activists. Israeli authorities also forced Sami Abu Rahma to demolish his own farm in al-Mughayyir, days after his son was shot by settlers working the same land.\nThe Colonization and Wall Resistance Commission told Wafa that Israeli authorities carried out 80 demolitions in July alone, hitting 165 structures, with 34 further notices issued.\nGaza\u2019s trajectory hangs in the balance\nA Board of Peace official told Al Jazeera on Monday that the body had agreed with Israeli Prime Minister Benjamin Netanyahu that Israel did not need to withdraw its forces from Gaza until Hamas disarms \u2013 including both light and heavy weapons, and the dismantling of its tunnel network.\nThat comes after Netanyahu had publicly rejected the disarmament agreement announced by US President Donald Trump last month. The deal had initially envisaged a phased withdrawal occurring alongside a phased disarmament.\nAt the same time, in a podcast with former Israeli captive Rom Braslavski, National Security Minister Itamar Ben-Gvir said Israeli forces should kill \u201c30 or 40\u201d people in Gaza every night, going beyond those who pose an immediate threat. The far-right minister said he opposed Netanyahu\u2019s decision to scale back strikes under the current truce, called for encouraging Palestinians to leave Gaza permanently alongside new Israeli settlement of the Strip, and offered to help arrange for Braslavski to personally execute prisoners under Israel\u2019s newly enacted death-penalty law for Palestinians. Ben-Gvir holds no formal authority to order military strikes but sits on Israel\u2019s security cabinet.\nIt is against that tension \u2013 between US pressure to advance the ceasefire and demands from Israel\u2019s far right for intensified attacks \u2013 that Israeli strikes this week resumed, though still at a pace markedly lower than two weeks earlier. On August 12, a strike on a motorised rickshaw in Beit Lahiya killed municipal worker Mohanad Saada, returning from repairing a war-damaged well \u2013 Israel\u2019s first air strike in Gaza in more than a week.\nOn August 13, a drone fired three missiles at a four-wheel drive vehicle in Gaza City, killing Colonel Jamal Abu Kamil, the city\u2019s civil police chief; the Israeli military said it targeted a Hamas commander, a claim Gaza\u2019s police and Interior Ministry rejected. More attacks were reported in the following days.\nBeneath the week\u2019s violence, a report from the Euro-Med Human Rights Monitor found that Israel is crushing and trucking rubble out of the Strip \u2013 more than 10 million tonnes have already been removed. The group says the process erases property boundaries and risks destroying evidence relevant to the International Court of Justice\u2019s genocide case against Israel.\nMeanwhile, vital supplies continue to be severely restricted from entering Gaza; on August 15, Gaza\u2019s Ministry of Health said only 12 of the Strip\u2019s 34 oxygen-generating stations remained functional, with no spare parts entering the territory, according to Wafa. Doctors said that cancer patients are dying at two to three times the pre-war rate after Israel destroyed the Strip\u2019s only specialised cancer hospital.\nAlongside 21 additional bodies recovered in Khan Younis underneath the rubble, the Palestine Red Crescent also recovered the body of 14-year-old Suhail Masoud Shalouf on August 16, after he was shot the previous evening near the so-called \u201cYellow Line\u201d in an area rescuers had been unable to reach.\nBy August 17, Gaza\u2019s Ministry of Health had counted 1,265 Palestinians killed since the October \u201cceasefire\u201d \u2013 and 73,399 killed since October 7, 2023.",
+      "summary": "On August 16, in Beit Imrin, north of Nablus \u2013 a village nominally under full Palestinian civil and security control \u2013 settlers besieged a home for more than three hours, blocking residents and ambulances from reaching those inside.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "South Korea president calls for military independence in wake of Trump call to cut joint drills",
+      "source": "The Guardian",
+      "link": "https://www.theguardian.com/world/2026/aug/18/south-korea-president-trump-military-drills-control-opcon-kim-jong-un",
+      "published": "Tue, 18 Aug 2026 05:50:33 GMT",
+      "raw_text": "South Korea\u2019s president has renewed his push to regain independent control of the military from the US in the event of war and urged faster progress in acquiring nuclear-powered submarines after Donald Trump\u2019s order to cut joint drills.\nOn Sunday night, Trump instructed the Pentagon to \u201csubstantially reduce\u201d this week\u2019s joint military exercises with South Korea, saying the nuclear-armed North \u201chas been unthreatening and respectful\u201d and that the US president had a \u201cvery good relationship with Kim Jong-un\u201d.\nLee Jae Myung said on Tuesday that Seoul should proceed without disruption with the planned transfer, during his term, of wartime operational control, or Opcon, of South Korean forces from the US \u2013 a goal he and the government have long held.\n\u201cA strong alliance makes the foundation of security stronger, and strengthening our own capabilities increases our value and necessity as an ally,\u201d Lee said in a cabinet meeting, describing the US-South Korea alliance and independent defence as mutually reinforcing.\nThe issue dates back to the Korean war, which ended in an armistice rather than a formal peace treaty in 1953, meaning the two Koreas remain technically at war. US troops have been stationed in South Korea ever since, and the country now hosts Camp Humphreys, the largest American military base outside the US. The two militaries train and operate together closely, including through large-scale annual exercises such as this week\u2019s.\nWartime Opcon, the authority to direct South Korean forces if fighting resumes, has rested with the US since the war began, exercised through the head of the allies\u2019 Combined Forces Command, a position that has always been held by an American four-star general.\nSeoul regained peacetime control of its own military in 1994, but the wartime authority has become a potent symbol of national sovereignty, and reclaiming it has been one of South Korea\u2019s foremost security goals for more than two decades, repeatedly delayed under successive governments.\nThis week\u2019s now-curtailed drills were meant to help certify South Korea\u2019s readiness to finally take it over, a process Lee has pushed to accelerate since taking office.\nLee also called for faster progress on South Korea\u2019s nuclear-powered submarine programme and on developing officers capable of integrated operations for future conflicts.\nThe renewed push follows Trump\u2019s call to make cuts to the planned 10 days of drills that started on Monday under the name Ulchi Freedom Shield, one of two main annual exercises held by South Korea and the US.\nThey were expected to involve about 18,000 South Korean troops, alongside US forces and personnel from 11 of the 18 member states of the United Nations Command (UNC), the multinational body that oversees the 1953 armistice that halted hostilities of the Korean war.\nDuring questioning in the Oval Office on Monday, Trump claimed North Korean leader Kim had responded to his order to the Pentagon but did not provide details. When asked what stage the conversations with Kim were at, Trump said \u201cit\u2019s very positive\u201d but provided no further detail.\nTrump doubled down on his praise for Kim, saying their ties had reduced tensions. \u201cYou see, I\u2019m actually making it much safer. Kim Jong-un has always treated me with great respect,\u201d he said. \u201cI understand him. He understands me.\u201d\nTrump has previously suspended major US-South Korean military exercises in pursuit of diplomacy with Kim. After his first summit with the North Korean leader in 2018, that year\u2019s Ulchi Freedom Guardian exercise was cancelled, while other drills were suspended or scaled back. The exercises were redesigned and resumed in modified form with changed names.\nThe US president acted despite warnings from US and South Korean military officials that Kim\u2019s regime is learning new battlefield tactics from sending North Korean troops to the Ukraine war. Last week, South Korean and US military officials said Ulchi Freedom Shield drills would incorporate aspects such as the North Koreans\u2019 experience with drones on the battlefield.\nNorth Korea has deepened military ties with Russia since they signed a comprehensive strategic partnership pact in June 2024. Pyongyang is providing troops, artillery ammunition and ballistic missiles to support Moscow\u2019s war against Ukraine.\n\u201cThey\u2019ve taken those lessons they learned there and brought them back to North Korea, that changes the DPRK capability,\u201d said Col Ryan Donald, the public affairs director for the US-led commands in South Korea.\n\u201cOur training accounts for that threat, that is why the exercise looks different [from previous exercises], and over the last five years it\u2019s continually evolved.\u201d\nOn Tuesday, Seoul\u2019s presidential office said the drills did not reflect \u201cany intention to attack North Korea or escalate tensions on the Korean peninsula\u201d.\nLee\u2019s office reiterated that their fundamental purpose was \u201cnot to treat a specific entity as an adversary, but to safeguard the safe and peaceful daily lives of the people\u201d.",
+      "summary": "The renewed push follows <strong>Trump</strong>\u2019s call to make cuts to the planned 10 days of drills that started on Monday under the name Ulchi Freedom Shield, one of two main annual exercises held by <strong>South</strong> <strong>Korea</strong> and the US.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Judge delays Mangione\u2019s state trial after lawyers sought dismissal",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSHIzVFRvWVhldjlneVdMNFJ6cEo1YjhwUUhrSDNwLWp6cXZrck1LblRHbmF0UmE5VU9mTG1aRkYtN1UzVEZYRXZVdkl0MkpSX3VXakZXQlRNVmtBOUpFdHo2LVViYkJsdlROSXktVXFtODBkZzJESTEzeEt5T3JQX3E1Q2RBLUpwallIdGVucU9TdGd2R2lKMzk1YU1fc2VMUVdNNlFpNnBmcERBN3FMaW5aZUQzQQ?oc=5",
+      "published": "Tue, 18 Aug 2026 04:22:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Trump says concern about USS Abraham Lincoln is \u2018a CNN fake report\u2019",
+      "source": "The Hill",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPMXRUT1ptdHc0Qm5HdS0tMGZSeV9vU3hrc3lGcmt6V3Z2dTBRa1o1OGdlUVVlRk5NaWhETjd5SlFYaVh2QV8wdWNGQmxBRjF4X2gtLVoxaGktcnRvZVRZVjFUazZQRG1wbThlU0Jyb1NJbnZDaTJPaGN4TkZ4bHdjbHotbGRKbEF0ZVhIYW9pamHSAZYBQVVfeXFMTTVhWl9WVXFHU2t2b3pnUlBPbURhaEpmZ1hyUXRDaG13ME1KdkE0YXRkZXlSS0VOT2dZQmF6U0NBUmdoNlM0ZEV4Nl9Xb3VKRGFISWo2ZjlsallRUzc0aUxUcGpsMW45YlRUUVBMNmJPWkZtLW13dnhFYk1NOW9FNXNwbGJIV2Z0TU1mbnVuRzdsa3I2YmR3?oc=5",
+      "published": "Tue, 18 Aug 2026 00:01:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Hill."
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "This Week in Startups",
+      "title": "Bittensor creator Const on Affine, dTAO, \u201cmining reasoning,\u201d and more | E2326",
+      "video_id": "quq00obUVQ4",
+      "published": "2026-08-17",
+      "link": "https://youtube.com/watch?v=quq00obUVQ4",
+      "summary": "New episode from This Week in Startups. Click to watch.",
+      "raw_text": "This Week In Startups is made possible by: Northwest Registered Agent https://northwestregisteredagent.com/twist DigitalOcean https://do.co/twist Odoo https://Odoo.com/twist Today's show: We've been going deep on Bittensor and how it works all year on TWiST, meeting with the creators of some of our favorite subnets, and exploring how the system decentralizes inference, compute, and storage. Now, on this very special episode, Jason and Lon welcome Bittensor co-founder Jason Steeves (aka \"Const\") to the show. He gives us a quick tour of the project's first principles, before diving into how subnets incentivize miners to contribute, how dTAO turned the creation of subnets into its own competition, how Const says he employs \"the internal machinery of capitalism\" to rank subnects, and his latest project, Subnet 120 (aka Affine). Find out what the OpenTensor Foundation actually does, go inside the Templar controversy, and learn why Const is trying to make himself increasingly irrelevant. Guest Jacob Steeves on X: https://x.com/const_reborn Bittensor: https://www.bittensor.com/ Affine: https://affine.io/ Relevant Links Original Bittensor whitepaper: https://bittensor.com/whitepaper Bittensor governance and documentation: https://www.bittensor.com/docs Beginner's Guide to Dynamic TAO: https://www.tao.media/the-complete-beginners-guide-to-dynamic-tao-dtao/ Prime Intellect: TOPLOC: https://www.primeintellect.ai/blog/toploc Engy (SN53): https://engy.ai/ Lium (SN51): https://www.lium.io Targon (SN4): https://targon.com/ Templar (SN3): https://www.tplr.ai/ Hippius (SN75): https://hippius.com/ MakerDAO: https://makerdao.com/ Stillcore Capital: https://stillcorecapital.com/ Timestamps: 0:00 The origin of Bittensor (and the name Const) 10:48 Northwest Registered Agent - Get more when you start your business with Northwest. In 10 clicks and 10 minutes, you can form your company and walk away with a real business identity \u2014 Learn more at https://northwestregisteredagent.com/twist 13:55 From Bitcoin mining to mining intelligence 19:33 DigitalOcean - Head to https://do.co/twist to start building on DigitalOcean's AI-Native Cloud today \u2014 and cut your AI workload costs by up to 50%. 30:17 Odoo - The all-in-one business platform. Get started for free at https://Odoo.com/twist 32:37 What is a subnet? 33:35 Forcing honest inference from bad actors 37:14 Building a subnet is harder than it looks 40:42 Understanding dTAO 51:57 Where the registration TAO actually goes 1:02:57 All about the Conviction \"rug pull\" 1:15:19 How Const is making himself irrelevant 1:17:33 The \"Buy One TAO\" philosophy Subscribe to the TWiST500 newsletter: https://ticker.thisweekinstartups.com Check out the TWIST500: https://www.twist500.com Subscribe to This Week in Startups on Apple: https://rb.gy/v19fcp Follow Lon: X: https://x.com/lons Follow Jason: X: https://twitter.com/Jason LinkedIn: https://www.linkedin.com/in/jasoncalacanis Check out all our partner offers: https://partners.launch.co/ Great TWIST interviews: Will Guidara, Eoghan McCabe , Steve Huffman , Brian Chesky , Bob Moesta, Aaron Levie , Sophia Amoruso , Reid Hoffman , Frank Slootman , Billy McFarland Check out Jason's suite of newsletters: https://substack.com/@calacanis Follow TWiST: Twitter: https://twitter.com/TWiStartups YouTube: https://www.youtube.com/thisweekin Instagram: https://www.instagram.com/thisweekinstartups TikTok: https://www.tiktok.com/@thisweekinstartups Substack: https://twistartups.substack.com",
+      "source_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/bittensor-creator-const-on-affine-dtao-mining-reasoning-and-more-e2326",
+      "read_more_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/bittensor-creator-const-on-affine-dtao-mining-reasoning-and-more-e2326",
+      "thumbnail": "https://img.youtube.com/vi/quq00obUVQ4/mqdefault.jpg"
+    },
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Ferrari\u2019s first EV was mocked by the internet, but just sold for $40 million",
+      "video_id": "-fh08vCPopM",
+      "published": "2026-08-17",
+      "link": "https://youtube.com/watch?v=-fh08vCPopM",
+      "summary": "New episode from Morning Brew Daily. Click to watch.",
+      "raw_text": "Meta defends itself in $1.4t trial\n\nMeta defends itself in $1.4t trial\nThe momentous case could force Meta to change how its social platforms work.\n\u2022 less than 3 min read\nMeta is in a higher stakes situation than someone prepping an Instagram summer photo dump after not posting for three years. The social media giant is heading to federal court in California today for the start of a trial that could upend how users scroll on its platforms and leave it financially ravaged if it loses.\nCalifornia, Colorado, Kentucky, and New Jersey are suing Meta for up to $1.4 trillion, claiming that the company intentionally got young people hooked on Facebook and Instagram through addictive product design. They also allege that Meta misled the public about product safety and broke a federal child privacy law. Meta has called the claims \u201cunsubstantiated\u201d and maintains that it implemented youth safety features.\nDoomscrolling might be doomed\nThe plaintiffs aren\u2019t just seeking damages that could bankrupt the company if it is found liable, given its $1.5 trillion market cap. They also want the court to force Meta to nix features central to its apps:\n- These include the infinite scroll enabled by autoplaying videos, ephemeral content like Instagram stories, and beauty filters.\n- The states also want Meta to crack down on kids making multiple accounts and for it to create parental verification for underage users.\nIn a similar but smaller case, a New Mexico court recently fined Meta $942 million after finding that its platforms were designed to be addictive and ordered it to implement safety features for users in the state. Today\u2019s case demands more sweeping product changes that would potentially have to get implemented nationwide.\nWill Meta have to cough up $1.4 trillion? Maybe not, even if it loses. A judge hearing the case said the payout demand is \u201cunreasonable\u201d in a recent pretrial hearing. But she said that Meta\u2019s estimate that it would owe just $4 million \u201cis also unreasonable.\u201d A ruling against Meta could also spur some users to cut back on scrolling its products\u2014imperiling the ad dollars funding its massive AI buildout\u2014and inspire even more lawsuits.\u2014SK\nBecome smarter in just 5 minutes\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nThis movie is so bad, it became a box-office hit\n\nThis movie is so bad, it became a box-office hit\nAn animated film widely mocked online is finding ironic success in China\n\u2022 less than 3 min read\nDid you hear about the movie having box-office success despite poor reviews and a bad script? No, it\u2019s not an Adam Sandler project featuring Rob Schneider\u2014it\u2019s Niu Lai, an animated film about a cartoon bull that\u2019s drawing people to theaters in China.\nNiu Lai, which translates to \u201cHere Comes the Cow,\u201d was reportedly made for just $47 by a mother/son team, who provided all of the movie\u2019s voices and released it through a production company that was formerly an interior decorating business. The online community mocked it over the weekend, calling it \u201cworse than AI.\u201d But not being made with AI eventually endeared it to viewers:\n- In the first 10 days after its Aug. 5 release, the film grossed only $1,140.\n- But it\u2019s earned $1.7 million since the viral negativity. Chinese ticketing platform Maoyan predicts Niu Lai can make ~$3 million within 30 days of its release.\nThe budget was so paltry that cinemas didn\u2019t have posters to display, so theaters drew their own (and as you can see, AI wasn\u2019t used to make them, either).\nIf you want to watch Niu Lai but don\u2019t want to make the trip to Beijing, the full movie is currently available on YouTube.\u2014DL\nBecome smarter in just 5 minutes\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nFerrari\u2019s widely mocked EV breaks auction record\n\nFerrari\u2019s widely mocked EV breaks auction record\nThe custom Luce sold for 36 times its original estimate of $1.1 million, according to Sotheby\u2019s.\n\u2022 less than 3 min read\nThis is the part of the rom-com when the bullied nerd stuns at prom: A custom model of Ferrari\u2019s first electric vehicle, the Luce, sold for $40 million over the weekend, becoming the most expensive new car ever purchased at auction. It\u2019s quite a recovery after it debuted as a laughingstock less than three months ago.\nICYMI: Co-designed by former Apple design chief Jony Ive, the Luce was highly anticipated but failed to impress many Ferrari fans when it was unveiled in May. The internet compared the car to a Nissan Leaf, and Ferrari\u2019s former chairman said it didn\u2019t deserve the Prancing Horse badge.\nBut there\u2019s a buyer for everything. The custom Luce sold for 36 times its original estimate of $1.1 million, according to Sotheby\u2019s. The auction house didn\u2019t name the bidder but did say that\u2026\n- The personalized model is finished with a pearl-like gloss that reflects green or violet in different lighting. So maybe the buyer is the Joker.\n- Proceeds from the sale will go to The Ferrari Foundation\u2019s educational programs. So maybe the buyer isn\u2019t the Joker.\nThe Luce is selling: Ferrari already hit its annual target for regular sales of the $626,000 Luce, thanks to strong demand in China, the Financial Times reported.\u2014ML\nBecome smarter in just 5 minutes\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/major-shift",
+      "read_more_url": "https://www.morningbrew.com/issues/major-shift",
+      "thumbnail": "https://img.youtube.com/vi/-fh08vCPopM/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "I'm done with terminals",
+      "video_id": "dLhcLqoff6k",
+      "published": "2026-08-17",
+      "link": "https://youtube.com/watch?v=dLhcLqoff6k",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/dLhcLqoff6k/mqdefault.jpg"
+    },
+    {
+      "channel": "Matt Wolfe",
+      "title": "AI Rants & Rabbit Holes: Does AI Make Our Lives Better?",
+      "video_id": "IeT5Jn7d1aM",
+      "published": "2026-08-17",
+      "link": "https://youtube.com/watch?v=IeT5Jn7d1aM",
+      "summary": "New episode from Matt Wolfe. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/IeT5Jn7d1aM/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and prompt injection.",
+  "ai_security": [
+    {
+      "title": "OpenAI, Anthropic, and Google LLM APIs vulnerability Exposes Hidden Reasoning Traces",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNV3ctRXpzblZqam12cUpqbkg1MDd4d0NlV3dLREk4dTBqNi1TeVlMOURxQ25GZm0wWlA1aWFWSXJTLV8zaGxyaGJUUmFuRzBLNmlUZms3M3FqMi1VbVhneElfd0NPLWZQa3F5TTJ5T1NReFNzLUh1cndrcXhfZWswMndPaGNmd9IBiwFBVV95cUxQWU96VllRM202REJpMDMzMkRmRVlRSlhRMGxSWnVWZzNkaUxpWFhjcXNNMjNCS0tmbWdPQ0tOdFE1dFdENHRjOGVZeTRVSWpVMXJ1dE56dk5NVEtaT1BuNWFzVC1kU0VKWWhOaEhUbl9JYzFVTnNNRXM2aWFXYWlxUTNlRGxSLVdDellv?oc=5",
+      "published": "Tue, 11 Aug 2026 15:35:32 GMT",
+      "summary": "An adversary captures an encrypted reasoning block emitted by a frontier model (such as Claude Opus 4.8) and injects it into the API call of a smaller model (such as Claude Haiku 4.5), instructing the smaller model to transcribe the internal thinking verbatim inside custom text tags.",
+      "raw_text": "A significant architectural flaw in how major AI providers, including OpenAI, Anthropic, and Google, protect the internal \u201cchain-of-thought\u201d reasoning generated by their flagship large language models (LLMs).\nThe research reveals that encrypted reasoning envelopes returned by provider APIs can be replayed into weaker, less-guarded sibling models to extract private reasoning traces in plain text.\nDetailed by a collaborative research team from the ELLIS Institute T\u00fcbingen, the Max Planck Institute, MATS Research, and Snyk, the attack affects the Claude, GPT, and Gemini model ecosystems and requires only standard, unprivileged API access.\nAPIs Flaw Exposes Hidden Reasoning Traces\nModern reasoning architectures such as GPT-5.6, Claude Opus 4.8, and Gemini 3 construct hidden chain-of-thought processing traces prior to returning a final response.\nBecause these internal thoughts contain commercial intellectual property and safety checks, vendors withhold them in plain text.\nInstead, APIs transmit the reasoning trace as an encrypted, base64-encoded envelope that the client application passes back on subsequent calls to maintain multi-turn conversational context without requiring server-side state storage.\nHowever, researchers discovered that these encrypted payloads are authenticated using a global, provider-wide key rather than being cryptographically bound to a specific user account, session ID, or model tier.\nBecause the cryptographic signatures lack model-specific binding, an encrypted envelope created by a heavily guarded flagship model can be legally passed into any other model hosted under the same provider\u2019s infrastructure.\nExploiting such widespread implementation gaps demonstrates how unmitigated API security vulnerabilities can compromise sensitive cloud services. The attack chain operates by utilizing cheaper, lightweight models as decryption oracles.\nAn adversary captures an encrypted reasoning block emitted by a frontier model (such as Claude Opus 4.8) and injects it into the API call of a smaller model (such as Claude Haiku 4.5), instructing the smaller model to transcribe the internal thinking verbatim inside custom text tags.\nBecause lighter models lack the aggressive anti-distillation alignment and safety guardrails enforced on flagship tiers, they comply with the prompt and output the hidden reasoning in plain text.\nAs detailed in the research paper published on ArXiv, the team confirmed identical cross-model compatibility across OpenAI\u2019s GPT-5.6 family and Google\u2019s Gemini 3 lineup.\nThe researchers validated the mathematical precision of the recovered traces by matching decoded token lengths against the billable thinking token counts reported by the provider APIs.\nThe real-world security implications extend well beyond model distillation or intellectual property theft. By analyzing 6,708 public agent transcripts scraped from GitHub and Hugging Face, the researchers decoded 315,320 embedded reasoning blocks, recovering:\n- 367 Personally Identifiable Information (PII) artifacts\n- 182 Hardcoded credentials (including 62 API keys, 33 passwords, and 30 personal email addresses)\nCrucially, much of this sensitive data resided solely within the internal reasoning blocks and was never rendered in the visible assistant responses, leaving developers unaware that their shared session logs contained exposed secrets.\nFurthermore, the vulnerability enables invisible indirect prompt injection attacks against autonomous AI agents. An adversary can craft malicious instructions inside an encrypted reasoning block.\nWhen processed by an agent, monitoring tools inspecting only the visible conversation history fail to flag the hidden payload, allowing the injected instructions to compromise downstream agentic workflows undetected.\n| Provider | Originating Flagship Model | Target Decryption Oracle | Extracted Asset / Risk | \n| Anthropic | Claude Opus 4.8 / Sonnet 5 | Claude Haiku 4.5 | Unaligned chain-of-thought, system prompts, API keys | \n| OpenAI | GPT-5.6 / GPT-5 | GPT-5-mini / o4-mini | Internal safety evaluation, credentials, raw reasoning | \n|  | Gemini 3 / Gemini 3.1 Pro | Gemini 3.1 Flash Lite / Flash | Hardcoded secrets, hidden instructions, PII | \nFollowing responsible disclosure, OpenAI, Anthropic, and Google acknowledged the research findings. All three vendors deployed server-side mitigations, rendering the original cross-model replay PoCs non-reproducible on current API builds.\nTo establish comprehensive Generative AI security controls across LLM pipelines, providers and enterprise developers should implement the following protections:\n- Cryptographic Binding: Bind reasoning envelopes to the specific originating model, session ID, and user identity at the API gateway layer.\n- Strict Model Isolation: Reject thinking blocks submitted to a different model tier than the one that generated the payload.\n- Key Rotation: Rotate legacy signing keys to invalidate historical ciphertext blocks exposed in public code repositories.\n- Log Sanitization: Developer teams building AI agents must treat encrypted thinking blocks as sensitive data and scrub raw signature fields before making agent logs public.\n[Live Webinar] Join Elastic & UnderDefense to learn how small security teams can unify AI visibility and agentic response into one operating model -> Register Now",
+      "type": "news",
+      "emoji": "\ud83d\udc1b"
+    },
+    {
+      "title": "Fortinet acquires Virtue AI to expand security for AI agents",
+      "source": "MSSP Alert",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNZ0VxREF1ZTJ6MnNwUEE4UjVyRURVUE02QkliMnEyMF9kU2xFdHNfWlNyVTJDbk54eUtCYmRvZTQxRXl1OTlxTm0xVEdvdk5ETFh4WFYzN2ZOalpLT1BCVHBYNlFPZnhyVndVUDI1bDBkYTJIQzZRUzJaaXNPbjFvVzRpRllNUmVfbDZkcU1DMktqaUFNSzJF?oc=5",
+      "published": "Mon, 17 Aug 2026 19:44:17 GMT",
+      "summary": "<strong>Fortinet</strong> has acquired <strong>Virtue</strong> AI, adding technology for AI runtime protection, automated validation and autonomous agent security to its broader Security for AI portfolio.",
+      "raw_text": "Fortinet has acquired Virtue AI, adding technology for AI runtime protection, automated validation and autonomous agent security to its broader Security for AI portfolio. The acquisition extends Fortinet\u2019s focus into the growing attack surface created by enterprise AI deployments, including models, prompts, agents, APIs and Model Context Protocol (MCP) tools.Virtue AI brings several capabilities that Fortinet plans to incorporate into its AI-Native Security Fabric. These include red-teaming autonomous agents across simulated environments, discovering unsanctioned AI applications and agents, scanning MCP tools and source code, monitoring agent behavior and blocking malicious tool calls. Its technology can also continuously test models as they are updated or fine-tuned and generate evidence that security and compliance teams can use during reviews.The acquisition builds on FortiAIGate, which Fortinet introduced earlier this year to protect large language models against risks such as prompt injection, data leakage, model poisoning and excessive resource consumption. Virtue AI adds testing and runtime controls across AI models, applications and agentic systems, including guardrails for text, images, video, audio and AI-generated code. Fortinet said the combination will allow it to apply security controls throughout the development and production lifecycle of AI systems.For Fortinet, the deal adds another security layer as enterprises move AI agents into production and give them greater access to applications, data and business processes. That shift is creating demand for tools that can identify what agents are doing, test how they respond to attacks and stop risky actions before they reach other systems. Adding Virtue AI gives Fortinet more of those capabilities inside its existing security portfolio and puts AI validation, governance and runtime protection into the same broader platform strategy.",
+      "type": "news"
+    },
+    {
+      "title": "Claude's Corner: Clam - AI Agent Security With a Semantic Firewall (YC W2026)",
+      "source": "StartupHub.ai",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOUFRnYk5zY2VJU0ZlT2tkNkVCaUpZT2hsNGJHalVscnlBVF9RME94akpBcWZDbDhWRlB2S1RyRzk5aEZwdmJrXzdIQUhRZ3I3V0J4N0xWZFpsTjFFelQxRVRxWEotN293U25ob0RuRkRPWFpWdU9jSzVMR0x1OEY1SVYyNDFCS2dKd2lz?oc=5",
+      "published": "Mon, 17 Aug 2026 11:11:14 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Claude's Corner: Clam - The Network Firewall Your AI Agents Actually Need\nClam (YC W2026) builds a Semantic Firewall that sits at the network layer between AI agents and everything they touch, blocking PII leaks, prompt injections, and malicious code in real time. Here's the technical breakdown and what's hard to replicate.\nAug 17 at 11:11 AM10 min read\nTL;DR\nClam secures AI agents at the network layer with a Semantic Firewall that scans for PII leaks, prompt injections, and malicious code before damage happens. Their bet is that agent security cannot live inside the model - it has to live in the wire. The moat is first-mover integration depth with frameworks like OpenClaw while the enterprise security incumbents are still catching up.\n6.0\nC\nBuild difficulty\nMost AI security products were built for the chatbot era. They scan prompts before they hit the model, flag sensitive outputs, and call it a day. That worked fine when the worst a model could do was say something embarrassing. It doesn't work when the model has a calendar invite, an SSH key, and write access to your CRM.\nClam is a YC W2026 company that builds what it calls a Semantic Firewall: a network-layer security checkpoint that sits between AI agents and everything they touch. Every message in and every message out gets scanned for PII leaks, prompt injection attempts, and malicious code. The agent runs in an isolated VM. API keys never enter the model's context. The approach is less \"add security to the prompt\" and more \"treat the agent like untrusted code and put it in a sandbox.\"\nThat's the right framing. And it's arriving at exactly the right moment.\nWhat They Do\nClam started as Baseframe, a tool that analyzed work patterns to identify automation opportunities inside organizations. The founders pivoted mid-YC, roughly 2.5 weeks before Demo Day. That pivot - from spotting automation opportunities to securing the agents that execute them - tells you something about how fast the market is moving. The problem they discovered wasn't that companies didn't want to automate. It was that they couldn't deploy agents in production without a security architecture that didn't exist yet.\nThe product today is a secure hosting platform for AI agents, starting with OpenClaw integration. You run your agent through Clam's infrastructure instead of directly on your own stack. Clam handles three things:\nIsolation. Each agent runs in its own cloud VM. One compromised agent can't reach others. The blast radius of a successful attack stays contained.\nThe Semantic Firewall. All traffic between the agent and the outside world passes through Clam's network proxy. Outbound messages are scanned for PII (SSNs, credit card numbers, API keys, private keys). Inbound messages are scanned for prompt injection attempts - jailbreak payloads, instruction overrides, attempts to redirect the agent's behavior by embedding instructions in external content. The proxy also flags malicious code patterns like reverse shells and encoded execution attempts. If something is blocked, the agent gets a safe response back; it never sees the raw payload.\nCredential injection. API keys and secrets are injected at the network level, never passed to the model. The agent authenticates to external services through Clam's proxy without ever handling the credentials directly. This closes one of the most common agent attack vectors: a prompt injection that tricks the agent into leaking its own API keys.\nPricing starts at $50/month, with a 3-day free trial. Enterprise tiers exist for teams that need more compute or compliance controls. The product connects to over 1,000 integrations including Slack, Gmail, and GitHub, which is necessary for agents doing real work across the typical enterprise SaaS stack.\nWhy Now\nThe timing argument is straightforward. Enterprises are deploying AI agents with actual authority: read email, schedule meetings, query databases, push code. Every one of those capabilities is also an attack surface. A prompt injection that once made a chatbot say something stupid can now make an agent exfiltrate a contact list, commit malicious code, or book 400 flights.\nThe incumbent security tools weren't built for this. Traditional DLP watches files and emails. WAFs watch HTTP requests. Neither has a concept of \"the model was tricked by content it read in a Slack message into taking an action it shouldn't have.\" That's an agent-specific problem that requires an agent-specific solution.\nStartupHub.ai tracks 27 companies competing in the LLM and generative AI security space. Of those, the leaders are pre-agent: Prompt Security (platform score 63) and Lakera AI AG (score 55) built their early traction on model-level injection protection and data leakage controls, before autonomous agents became the dominant enterprise deployment mode. Clam is staking out the runtime security position that none of the incumbents own yet.\nFrom the same YC batch, Hex Security (score 53) is approaching the problem from the offensive side - running automated red-team agents to find vulnerabilities before attackers do. Salus (score 40) is another YC W2026 company building guardrails that validate agent actions before they execute. The batch-level clustering is a signal: the market collectively understood in early 2026 that agent security was the next frontier.\nHow the Semantic Firewall Works\nThe architecture is simpler to describe than to execute at production latency. Clam runs a network proxy that all agent traffic routes through. The proxy intercepts each message, runs a stack of analysis passes, and either forwards it, blocks it, or modifies it before the agent or external service sees it.\nThe first pass is pattern-based: regex and lookup tables for well-known PII formats (SSN patterns, credit card Luhn checks, email structures, private key headers). This is fast and catches the obvious leaks.\nThe second pass is semantic. This is the harder part. Prompt injection attempts don't follow a fixed pattern because the whole point is to disguise them as legitimate content. \"Ignore previous instructions\" is trivially blocked; an injection hidden in a PDF summary of a contract is not. The semantic layer runs a trained classifier that looks at the structure and intent of text to identify instruction-override patterns even when they're obfuscated. This is where the proprietary training data becomes the real defensibility - you need labeled examples of real-world agent-specific attacks, not just generic chatbot jailbreaks.\nThe third pass flags executable code patterns. Reverse shells, base64-encoded execution strings, and suspicious command sequences are well-documented in security research. The agent context adds a wrinkle: legitimate agents do execute code, so the classifier needs to distinguish between \"agent correctly running a python script\" and \"agent being manipulated into running a reverse shell.\" That's a classification problem that doesn't have a clean off-the-shelf solution.\nThroughout all of this, the proxy adds less than 20ms of latency on average according to the company's claims - which matters because agents often run in multi-step loops where latency compounds across calls.\nThe Founders\nAnshul Paul (CEO) was the first engineering hire at HappyRobot, a logistics AI company that went from seed to Series B. He ran AI evaluations and observability there, which means he spent time thinking about how AI systems fail in production at scale - exactly the failure modes Clam is trying to prevent. He studied EECS and Business at UC Berkeley.\nVaibhav Agrawal was a Fellow at Sutter Hill Ventures before building data ingestion infrastructure at Sigma Computing and working on agent orchestration and containerization at Augment Code. The containerization work is directly relevant: running agents in isolated VMs is an infrastructure problem, and Vaibhav has the background to solve it.\nThe pivot story is worth noting. Two weeks before Demo Day, with a working product and a clear thesis, they scrapped Baseframe and rebuilt as Clam. That's either a sign of dangerous indecision or extraordinary market sensitivity. Given that the new product has a partnership with Composio and the YC organization promoted it publicly, it looks more like the latter.\nThe Moat - and What's Missing\nThe easy version of Clam is not hard to build. A network proxy plus Microsoft Presidio for PII detection plus a basic injection pattern list is a weekend project. Several open-source libraries exist for each component.\nThe defensible version is different. The moat lives in three places.\nFirst: integration depth. Clam integrated with OpenClaw before OpenClaw became the standard enterprise agent framework. That first-mover position means enterprise teams adopting OpenClaw encounter Clam first. The same logic applies to the Composio partnership. Getting into the integration layer early makes you load-bearing infrastructure rather than a replaceable addon.\nSecond: production incident data. Every blocked attack is a labeled training example. The more agents Clam secures, the better its classifiers get at recognizing novel injection techniques. An attacker who figures out how to bypass Clam's detection on one customer gets caught automatically on the next. This flywheel doesn't spin until you have real customer traffic, which means the window to start it is now, not in two years when the enterprise security vendors wake up.\nThird: the trust relationship. Security products are sticky because switching them is risky. An enterprise that deploys Clam doesn't want to rip it out and replace it with something unproven. If Clam can get into production environments before Cisco, CrowdStrike, or Palo Alto releases their inevitable \"AI agent security module,\" the switching cost becomes a real barrier.\nWhat's missing is the enterprise go-to-market motion. Security sales at large enterprises goes through procurement, legal, and compliance reviews. A $50/month self-serve tier is good for finding early adopters. Converting those into six-figure contracts requires an enterprise sales team, compliance certifications (SOC 2 at minimum, FedRAMP for government), and a clear answer to \"what happens when your proxy fails and our agents go down?\" The two-person team has the technical credibility to win those conversations. Whether they can execute the sales motion is the open question.\nReplicating This\nThe core architecture - network proxy, VM isolation, multi-pass scanning - is buildable by a small team with the right background. The semantic classification layer is where it gets hard. You need labeled training data from real agent deployments to build a classifier that catches novel injections without generating false positives that break legitimate agent workflows. That data doesn't exist publicly. Clam's path to building it is by processing real traffic early.\nThe devops complexity is also real. Running one VM per agent, managing the lifecycle of those VMs, ensuring sub-20ms overhead, and keeping the proxy available at the SLA required by production agent systems is not trivial infrastructure engineering. Augment Code's containerization work in Vaibhav's background is directly relevant here.\nThe frontend is genuinely the easy part. A dashboard showing blocked events, a configuration UI for custom policies, an API for programmatic control - all standard SaaS work.\nThe hardest thing to replicate isn't technical: it's the first-mover position in the OpenClaw ecosystem and the customer trust that comes from being the first product enterprises think of when they need to secure an agent deployment.\nThe Bottom Line\nClam is building the right product at the right time. The shift from chatbots to agents with write access to production systems is real, the security gap is real, and the existing market doesn't own this problem yet. The semantic firewall concept is sound: if you can't trust the model's behavior, secure the wire.\nThe risks are the standard early-stage risks amplified by the speed of the market. Enterprise security sales is slow and relationship-driven. The window before big vendors build competing features might be 12 to 18 months. And the technical approach depends on building a proprietary dataset fast enough to stay ahead of novel attack patterns.\nFor a two-person team fresh out of YC, the trajectory so far - a production partnership with Composio, a YC-promoted launch, the right technical backgrounds, a clear product vision - is the right foundation. Whether it becomes a category-defining security company or an acqui-hire for a larger platform depends on how fast they can close enterprise customers and how wide they can spread the integration footprint before the incumbents catch up.\nThat's a real race. And for now, Clam is running it from the front.\nComplete replication guide \u2014 install as a slash command or rules file\n# How to Build a Clam Clone: AI Agent Security Firewall in 7 Steps\n## Overview\nBuild a network-layer semantic firewall that secures AI agents running in isolated VMs, scanning all traffic for PII leaks, prompt injections, and malicious code.\n## Step 1: Set Up Isolated Agent VM Infrastructure\n**Goal:** Run each agent in an isolated container or VM\n```yaml\n# docker-compose.yml per-agent template\nservices:\nagent:\nimage: openclaw:latest\nnetwork_mode: none # no direct network access\nenvironment:\n- PROXY_URL=http://firewall-proxy:8080\nfirewall-proxy:\nimage: your-proxy:latest\nports:\n- \"8080:8080\"\n```\nDatabase schema:\n```sql\nCREATE TABLE agent_sessions (\nid UUID PRIMARY KEY DEFAULT gen_random_uuid(),\ntenant_id UUID NOT NULL,\nagent_config JSONB,\nvm_instance_id TEXT,\nstatus TEXT DEFAULT 'running',\ncreated_at TIMESTAMPTZ DEFAULT now(),\nterminated_at TIMESTAMPTZ\n);\nCREATE TABLE agent_events (\nid UUID PRIMARY KEY DEFAULT gen_random_uuid(),\nsession_id UUID REFERENCES agent_sessions(id),\ndirection TEXT CHECK (direction IN ('inbound', 'outbound')),\nblocked BOOLEAN DEFAULT false,\nblock_reason TEXT,\nlatency_ms INTEGER,\ncreated_at TIMESTAMPTZ DEFAULT now()\n);\n```\n## Step 2: Build the Network Proxy Interceptor\n**Goal:** Route all agent traffic through a proxy that can inspect and modify messages\n```python\n# proxy/main.py using mitmproxy\nfrom mitmproxy import http\nfrom scanner import SemanticFirewall\nfirewall = SemanticFirewall()\ndef request(flow: http.HTTPFlow):\nbody = flow.request.get_text()\nresult = firewall.scan_outbound(body)\nif result.blocked:\nflow.response = http.Response.make(\n403,\nf\"Blocked: {result.reason}\",\n{\"Content-Type\": \"text/plain\"}\n)\ndef response(flow: http.HTTPFlow):\nbody = flow.response.get_text()\nresult = firewall.scan_inbound(body)\nif result.blocked:\nflow.response.text = \"[Content blocked by security policy]\"\nflow.response.status_code = 200 # Return safe response, not 403\n```\n## Step 3: Implement PII Detection Layer\n**Goal:** Detect and block Social Security numbers, credit cards, API keys, private keys\n```python\n# scanner/pii_detector.py\nimport re\nfrom presidio_analyzer import AnalyzerEngine\nclass PIIDetector:\ndef __init__(self):\nself.analyzer = AnalyzerEngine()\nself.patterns = {\n'private_key': re.compile(r'-----BEGIN (RSA |EC )?PRIVATE KEY-----'),\n'api_key': re.compile(r'(sk-[a-zA-Z0-9]{32,}|AIza[0-9A-Za-z-_]{35})'),\n}\ndef scan(self, text: str) -> dict:\nresults = self.analyzer.analyze(text=text, language='en')\npii_found = [r.entity_type for r in results if r.score > 0.8]\nfor name, pattern in self.patterns.items():\nif pattern.search(text):\npii_found.append(name)\nreturn {\"detected\": pii_found, \"blocked\": len(pii_found) > 0}\n```\n## Step 4: Build the Prompt Injection Classifier\n**Goal:** Detect instruction-override attempts even when obfuscated\n```python\n# scanner/injection_classifier.py\n# Fine-tune a small classifier on injection examples\nfrom transformers import pipeline\nclass InjectionClassifier:\ndef __init__(self, model_path: str):\nself.classifier = pipeline(\n\"text-classification\",\nmodel=model_path,\nreturn_all_scores=True\n)\n# Rule-based fast path for obvious patterns\nself.obvious_patterns = [\nr'ignore (previous|above|all) instructions',\nr'you are now',\nr'forget everything',\nr'system prompt:',\n]\ndef scan(self, text: str) -> dict:\nimport re\nfor pattern in self.obvious_patterns:\nif re.search(pattern, text, re.IGNORECASE):\nreturn {\"blocked\": True, \"reason\": \"obvious_injection\", \"confidence\": 1.0}\nresult = self.classifier(text[:512])[0]\ninjection_score = next(r['score'] for r in result if r['label'] == 'INJECTION')\nreturn {\n\"blocked\": injection_score > 0.85,\n\"reason\": \"semantic_injection\" if injection_score > 0.85 else None,\n\"confidence\": injection_score\n}\n# Training data format (collect from real deployments):\n# {\"text\": \"...\", \"label\": \"INJECTION\" or \"BENIGN\"}\n```\n## Step 5: Implement Credential Injection at Network Layer\n**Goal:** Keep API keys out of the model context by injecting them server-side\n```python\n# proxy/credential_injector.py\nimport boto3 # or HashiCorp Vault, etc.\nclass CredentialInjector:\ndef __init__(self, secrets_client):\nself.secrets = secrets_client\ndef inject(self, request: dict, tenant_id: str) -> dict:\n\"\"\"Replace placeholder tokens with real credentials.\"\"\"\ncreds = self.secrets.get_secret_value(SecretId=f\"tenant/{tenant_id}/creds\")\ncred_map = json.loads(creds['SecretString'])\nheaders = request.get('headers', {})\nfor placeholder, real_key in cred_map.items():\nif f\"{{CRED:{placeholder}}}\" in headers.get('Authorization', ''):\nheaders['Authorization'] = headers['Authorization'].replace(\nf\"{{CRED:{placeholder}}}\", real_key\n)\nreturn request\n# The agent receives CRED:OPENAI_KEY as a placeholder\n# The proxy replaces it with the real key on the way out\n# The model only ever sees the placeholder token\n```\n## Step 6: Build the Dashboard and Policy Configuration API\n**Goal:** Let teams configure custom security policies and view blocked events\n```typescript\n// api/policies.ts - Next.js API route\nimport { createClient } from '@supabase/supabase-js'\nexport async function GET(req: Request) {\nconst supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_KEY!)\nconst { data } = await supabase\n.from('agent_events')\n.select('*')\n.eq('blocked', true)\n.order('created_at', { ascending: false })\n.limit(100)\nreturn Response.json({ events: data })\n}\n// Policy schema in DB\n// CREATE TABLE security_policies (\n// id UUID PRIMARY KEY DEFAULT gen_random_uuid(),\n// tenant_id UUID NOT NULL,\n// pii_block_level TEXT DEFAULT 'high',\n// injection_sensitivity FLOAT DEFAULT 0.85,\n// allowed_domains TEXT[],\n// custom_patterns JSONB DEFAULT '[]'\n// );\n```\n## Step 7: Deploy with Per-Agent VM Orchestration\n**Goal:** Spin up and tear down isolated VMs per agent session with sub-20ms proxy latency\n```python\n# orchestrator/vm_manager.py\nimport boto3\nec2 = boto3.client('ec2')\ndef launch_agent_vm(session_id: str, agent_config: dict) -> str:\nresponse = ec2.run_instances(\nImageId='ami-agent-base',\nInstanceType='t3.small',\nMinCount=1, MaxCount=1,\nUserData=f\"\"\"#!/bin/bash\nexport SESSION_ID={session_id}\nexport PROXY_ENDPOINT=https://proxy.yourservice.com\nexport HTTPS_PROXY=$PROXY_ENDPOINT\ndocker run --env-file /etc/agent-config openclaw:latest\n\"\"\",\nNetworkInterfaces=[{\n'AssociatePublicIpAddress': False,\n'SubnetId': 'subnet-isolated',\n'Groups': ['sg-no-internet-direct']\n}],\nTagSpecifications=[{'ResourceType': 'instance', 'Tags': [\n{'Key': 'session_id', 'Value': session_id}\n]}]\n)\nreturn response['Instances'][0]['InstanceId']\n# Key metrics to monitor:\n# - Proxy latency p99 (target: <20ms)\n# - VM cold start time (target: <30s)\n# - False positive rate (blocked legit traffic)\n# - False negative rate (missed injections - requires red-team testing)\n```\n## Key Architecture Decisions\n1. **Network layer over SDK layer**: Intercepting at the network gives you coverage regardless of which SDK or framework the agent uses. SDK-level interception requires each framework to adopt your library.\n2. **Fail-open vs fail-closed**: Decide upfront. Failing closed (block on proxy error) protects security but kills availability. Fail-open (allow on proxy error) maintains uptime but creates attack windows. Most enterprise customers want fail-closed with automatic failover.\n3. **Latency budget**: Each scanning layer adds latency. PII detection with Presidio typically runs 2-5ms. The ML injection classifier needs to stay under 10ms per call. Profile everything - agents running multi-step loops multiply your latency on every hop.\n4. **Training data flywheel**: Log all blocked events (with tenant permission) to build your injection training set. Novel attacks seen on one tenant's agents should improve detection for all of them within 24-48 hours.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Security of Foundation-Model-Powered Embodied Agents: Attack Surfaces, Attacks, Defenses, and Evaluation",
+      "authors": [
+        "Jiawei Liu",
+        "Jiacheng Guo",
+        "Tian Zhang",
+        "Yiwei Xu",
+        "Juan Wang"
+      ],
+      "abstract": "Foundation models are increasingly used for perception, reasoning, planning, and action generation in embodied agents, creating security risks that can propagate from digital inputs to physical behavior. Existing surveys often organize threats by mechanisms such as jailbreaks, prompt injection, backdoors, poisoning, or adversarial examples, but these categories do not consistently identify where an adversary first enters the embodied control loop. We present a trust-boundary-centric survey of foundation-model-powered embodied-agent security. Using a first-compromised-trust-boundary principle, we separate attack surface from attack mechanism and organize the system into five layers and twelve attack surfaces spanning the model supply chain, user instructions, context and memory, physical semantic environments, multimodal perception, world state, internal reasoning, task planning, action interfaces, middleware, multi-agent communication, and execution control. Based on 58 attack records and 61 defense records collected through August 15, 2026, we analyze representative attacks, cross-layer propagation, defense placement, and evaluation practices. Our quantitative analysis shows that attack research is concentrated on multimodal perception and action interfaces, while defenses are especially concentrated on action-level and runtime protection. Context and long-term memory, middleware and networking, world-state integrity, and multi-agent trust remain comparatively underexplored. We conclude with open challenges in state provenance, compositional defenses, long-horizon attack propagation, physical realizability, Byzantine multi-robot behavior, and unified closed-loop evaluation.",
+      "link": "https://arxiv.org/pdf/2608.16843v1",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.16843v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Foundation models are increasingly used for perception, reasoning, planning, and action generation in embodied agents, creating security risks that can propagate from digital inputs to physical behavior. Existing surveys often organize threats by mechanisms such as jailbreaks, prompt injection, backdoors, poisoning, or adversarial examples, but these categories do not consistently identify where an adversary first enters the embodied control loop. We present a trust-boundary-centric survey of foundation-model-powered embodied-agent security. Using a first-compromised-trust-boundary principle, we separate attack surface from attack mechanism and organize the system into five layers and twelve attack surfaces spanning the model supply chain, user instructions, context and memory, physical semantic environments, multimodal perception, world state, internal reasoning, task planning, action interfaces, middleware, multi-agent communication, and execution control. Based on 58 attack records and 61 defense records collected through August 15, 2026, we analyze representative attacks, cross-layer propagation, defense placement, and evaluation practices. Our quantitative analysis shows that attack research is concentrated on multimodal perception and action interfaces, while defenses are especially concentrated on action-level and runtime protection. Context and long-term memory, middleware and networking, world-state integrity, and multi-agent trust remain comparatively underexplored. We conclude with open challenges in state provenance, compositional defenses, long-horizon attack propagation, physical realizability, Byzantine multi-robot behavior, and unified closed-loop evaluation.",
+      "summary": "<strong>Foundation</strong> models are increasingly used for perception, reasoning, planning, and action generation in embodied agents, creating security risks that can propagate from digital inputs to physical behavior.",
+      "type": "paper",
+      "emoji": "\ud83d\udd13"
+    },
+    {
+      "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+      "authors": [
+        "Bingxin Xu",
+        "Yuzhang Shang",
+        "Emilio Ferrara"
+      ],
+      "abstract": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe freezes the VLA and puts an LLM agent in charge: it plans in language, moves in free space with analytic primitives, invokes the VLA only for contact-rich segments, and writes adaptation into language memory. Applied to long horizons, it breaks twice. (1) Competence comes from whole-task exploration at test time, whose cost is multiplicative in stages: if one stage needs T episodes, a K-stage task needs about T^K, and a failure does not reveal which stage caused it. (2) It has no representation of transitions: the VLA primitive carries an exit but no entry condition, so a subtask can succeed in a form its successor cannot use. We present BATON. Against (1), BATON makes the subtask the unit of exploration: each is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole. Cost becomes additive (T*K) and every failure is attributed to a single stage. Against (2), BATON equips exploration with a transition-aware memory. Within a subtask, a verifier agent governs the invocation transition: the VLA is called only after the wrist view confirms the scene is ready. Across subtasks, a handoff transition restores an entry state disturbed by the predecessor's residue, and a lookahead transition selects the strategy whose outcome the successor can inherit. No parameters are updated. On the long-horizon benchmark RoboMemArena, BATON improves task success by 11.6% and cumulative success by 14.9% over the SoTA.",
+      "link": "https://arxiv.org/pdf/2608.16889v1",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.16889v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe freezes the VLA and puts an LLM agent in charge: it plans in language, moves in free space with analytic primitives, invokes the VLA only for contact-rich segments, and writes adaptation into language memory. Applied to long horizons, it breaks twice. (1) Competence comes from whole-task exploration at test time, whose cost is multiplicative in stages: if one stage needs T episodes, a K-stage task needs about T^K, and a failure does not reveal which stage caused it. (2) It has no representation of transitions: the VLA primitive carries an exit but no entry condition, so a subtask can succeed in a form its successor cannot use. We present BATON. Against (1), BATON makes the subtask the unit of exploration: each is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole. Cost becomes additive (T*K) and every failure is attributed to a single stage. Against (2), BATON equips exploration with a transition-aware memory. Within a subtask, a verifier agent governs the invocation transition: the VLA is called only after the wrist view confirms the scene is ready. Across subtasks, a handoff transition restores an entry state disturbed by the predecessor's residue, and a lookahead transition selects the strategy whose outcome the successor can inherit. No parameters are updated. On the long-horizon benchmark RoboMemArena, BATON improves task success by 11.6% and cumulative success by 14.9% over the SoTA.",
+      "summary": "Against (1), <strong>BATON</strong> makes the subtask the unit of exploration: each is explored in the cheap short-horizon regime and its solution stored in memory; a long-horizon trajectory is then composed from these solutions rather than discovered whole.",
+      "type": "paper"
+    },
+    {
+      "title": "Model Hypnosis: Strong control of AI via additive subliminal effects",
+      "authors": [
+        "Enric Boix-Adsera",
+        "Benedict Tessler"
+      ],
+      "abstract": "We demonstrate that AI models are broadly susceptible to a phenomenon we call model hypnosis, in which individually weak and seemingly irrelevant cues in the prompt can be systematically combined to strongly control model behavior. Model hypnosis occurs across model families and scales, including in frontier reasoning models, and hypnotic prompts can transfer between models. Because the model is controlled by inconspicuous textual choices, such as paraphrases and typos, model hypnosis presents new challenges and avenues for AI safety, and is a major hurdle for AI interpretability.",
+      "link": "https://arxiv.org/pdf/2608.16834v1",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.16834v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "We demonstrate that AI models are broadly susceptible to a phenomenon we call model hypnosis, in which individually weak and seemingly irrelevant cues in the prompt can be systematically combined to strongly control model behavior. Model hypnosis occurs across model families and scales, including in frontier reasoning models, and hypnotic prompts can transfer between models. Because the model is controlled by inconspicuous textual choices, such as paraphrases and typos, model hypnosis presents new challenges and avenues for AI safety, and is a major hurdle for AI interpretability.",
+      "summary": "We demonstrate that AI models are broadly susceptible to a phenomenon we call model hypnosis, in which individually weak and seemingly irrelevant cues in the prompt can be systematically combined to strongly control model behavior.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Topological Attribution Distance (TAD): Revealing Segment-Level RAG Influence on LLM Output Geometry for Incident Log Analysis",
+      "authors": [
+        "Reza Fayyazi",
+        "Michael Zuzak",
+        "Shanchieh Jay Yang"
+      ],
+      "abstract": "Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs. As Agentic AI is integrated into operational systems, a robust evidence attribution and provenance tracking technique is essential to trace the origins of model generations. When autonomous agents make a decision (right or wrong), the ability to trace back through the decision chain is critical, as without it, teams cannot identify which segment of the data caused the model generation. Existing methods often struggle to distinguish among complex and highly similar evidence sources, such as cyber incident logs. This reveals a key gap: current approaches do not adequately capture the holistic geometric relationship between the retrieved evidence and the generated response for reliable evidence verification. To bridge this gap, we propose Topological Attribution Distance (TAD), inspired by Topology, to characterize and capture the global geometric shape of an output and its changes against its retrieved logs. In other words, if the embeddings of a specific source log drastically changes the geometry of the model's response in the embedding space, this suggests that such log is a critical source for the model's generated response. Therefore, TAD is powered by segment-level ablation attribution to investigate incident logs of an actual cyberattack. We demonstrate how TAD finds the most attributed logs on LLM outputs in an adaptive manner. This can provide an explainable and trustworthy tracing based on each LLM's hidden state to understand how geometrically different retrieved logs influence the model generation, and provide evidence verification in cybersecurity and Agentic-AI workflows.",
+      "link": "https://arxiv.org/pdf/2608.16775v1",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.16775v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Large Language Models (LLMs) are increasingly being deployed in cybersecurity operations to assist cybersecurity analysts with rapid decision-making against emerging threats. However, there is a main criteria that must be met when using LLMs in cybersecurity, that is, trust in the generated outputs. As Agentic AI is integrated into operational systems, a robust evidence attribution and provenance tracking technique is essential to trace the origins of model generations. When autonomous agents make a decision (right or wrong), the ability to trace back through the decision chain is critical, as without it, teams cannot identify which segment of the data caused the model generation. Existing methods often struggle to distinguish among complex and highly similar evidence sources, such as cyber incident logs. This reveals a key gap: current approaches do not adequately capture the holistic geometric relationship between the retrieved evidence and the generated response for reliable evidence verification. To bridge this gap, we propose Topological Attribution Distance (TAD), inspired by Topology, to characterize and capture the global geometric shape of an output and its changes against its retrieved logs. In other words, if the embeddings of a specific source log drastically changes the geometry of the model's response in the embedding space, this suggests that such log is a critical source for the model's generated response. Therefore, TAD is powered by segment-level ablation attribution to investigate incident logs of an actual cyberattack. We demonstrate how TAD finds the most attributed logs on LLM outputs in an adaptive manner. This can provide an explainable and trustworthy tracing based on each LLM's hidden state to understand how geometrically different retrieved logs influence the model generation, and provide evidence verification in cybersecurity and Agentic-AI workflows.",
+      "summary": "This reveals a key gap: current approaches do not adequately capture the holistic geometric relationship between the retrieved evidence and the generated response for reliable evidence verification.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Classical Adversarial Fault-Tolerance and PCPs",
+      "authors": [
+        "Anurag Anshu",
+        "Nikolas P. Breuckmann",
+        "Louis Golowich",
+        "Quynh T. Nguyen",
+        "Umesh Vazirani"
+      ],
+      "abstract": "We show how to compile an arbitrary classical circuit into a fault-tolerant circuit, which performs the desired computation even when an almost-linear number of bits are adversarially chosen and corrupted in each timestep. Using a variant of this fault-tolerance scheme that only detects (rather than corrects) corruptions, we give a new construction of probabilistically checkable proofs (PCPs) for NP with polylogarithmic query complexity. This PCP construction from fault-tolerance presents a promising candidate for quantization by the work of Anshu, Breuckmann, and Nguyen (STOC'24), who provided a roadmap for constructing quantum PCPs via fault-tolerance.",
+      "link": "https://arxiv.org/pdf/2608.16860v1",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.16860v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "We show how to compile an arbitrary classical circuit into a fault-tolerant circuit, which performs the desired computation even when an almost-linear number of bits are adversarially chosen and corrupted in each timestep. Using a variant of this fault-tolerance scheme that only detects (rather than corrects) corruptions, we give a new construction of probabilistically checkable proofs (PCPs) for NP with polylogarithmic query complexity. This PCP construction from fault-tolerance presents a promising candidate for quantization by the work of Anshu, Breuckmann, and Nguyen (STOC'24), who provided a roadmap for constructing quantum PCPs via fault-tolerance.",
+      "summary": "We show how to compile an arbitrary classical circuit into a fault-tolerant circuit, which performs the desired computation even when an almost-linear number of bits are adversarially chosen and corrupted in each timestep.",
+      "type": "paper"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and prompt injection.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "84\u00b0F",
+        "detail": "39% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-08"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "5 papers",
+        "detail": "Aug 17"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "4",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,258 cases this week \u2014 70% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 2,
+    "youtube_count": 4,
+    "ai_security_count": 8
+  }
+}
