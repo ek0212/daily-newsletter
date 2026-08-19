@@ -1,0 +1,570 @@
+{
+  "date": "Wednesday, August 19, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 72,
+    "unit": "F",
+    "conditions": "Cloudy",
+    "high": 87,
+    "low": 69,
+    "feels_like": 72,
+    "forecast": "Mostly clear, with a low around 73. Northwest wind around 3 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 70,
+        "feels_like": 72,
+        "conditions": "Clear",
+        "wind": "3 mph NW",
+        "humidity": "75%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 75,
+        "feels_like": 78,
+        "conditions": "Clear",
+        "wind": "2 mph SW",
+        "humidity": "66%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 86,
+        "feels_like": 88,
+        "conditions": "Clear",
+        "wind": "7 mph SW",
+        "humidity": "40%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 85,
+        "feels_like": 86,
+        "conditions": "Clear",
+        "wind": "8 mph SW",
+        "humidity": "43%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 82,
+        "feels_like": 84,
+        "conditions": "Clear",
+        "wind": "7 mph SW",
+        "humidity": "56%",
+        "precip_chance": "1%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,258 cases this week \u2014 70% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1258,
+    "vs_average_pct": -69.9,
+    "week_ending": "2026-08-08",
+    "breakdown": {
+      "flu": 216,
+      "covid": 949,
+      "rsv": 93
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,258 combined flu/COVID/RSV cases",
+        "comparison": "70% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "comparison": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlkYi1PbWpQZWllVFpXYzZOaFo1ZmRQUFNfS2RMV2dGM1duNHJTcEdyY3o1VWFINEVSTDEzMTR1RndjLUZaSlg0VXN2Rl9ZX2dUU1ltWFNWSDVNSURXcnl1blh3UHVDcnFoT25CT2xqU0VRV3BqY2QyVVpXRGloNnNKQm42bTczdGYtX2VsVm1hMUFqanlUYXJQVy1NNG5EZ0JublJUTy1NM1BxUjFsY1BXQUFqNlNIVHVB?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "published": "Wed, 22 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "NYC Health Department Detects Increase in Mosquitos with West Nile Virus Across New York City",
+        "current": "While no human cases have been reported in New York City this season, cases are typically seen between mid-July and early fall.",
+        "comparison": "August 6, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-west-nile-virus-in-local-mosquitos.page",
+        "title": "NYC Health Department Detects Increase in Mosquitos with West Nile Virus Across New York City",
+        "summary": "While no human cases have been reported in New York City this season, cases are typically seen between mid-July and early fall.",
+        "published": "August 6, 2026"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "comparison": "Wed, 22 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcUlkYi1PbWpQZWllVFpXYzZOaFo1ZmRQUFNfS2RMV2dGM1duNHJTcEdyY3o1VWFINEVSTDEzMTR1RndjLUZaSlg0VXN2Rl9ZX2dUU1ltWFNWSDVNSURXcnl1blh3UHVDcnFoT25CT2xqU0VRV3BqY2QyVVpXRGloNnNKQm42bTczdGYtX2VsVm1hMUFqanlUYXJQVy1NNG5EZ0JublJUTy1NM1BxUjFsY1BXQUFqNlNIVHVB?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Moringa Leaf Powder (January 2026) fda.gov",
+        "published": "Wed, 22 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "NYC Health Department Detects Increase in Mosquitos with West Nile Virus Across New York City",
+        "current": "While no human cases have been reported in New York City this season, cases are typically seen between mid-July and early fall.",
+        "comparison": "August 6, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-west-nile-virus-in-local-mosquitos.page",
+        "title": "NYC Health Department Detects Increase in Mosquitos with West Nile Virus Across New York City",
+        "summary": "While no human cases have been reported in New York City this season, cases are typically seen between mid-July and early fall.",
+        "published": "August 6, 2026"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "BIG APPLE PERFORMING ARTS FAIR",
+      "date": "Sat, Aug 22",
+      "borough": "Manhattan",
+      "location": "6th Ave & West 42nd St",
+      "event_type": "Street Festival"
+    },
+    {
+      "name": "Americas 911 Ride",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "7th Ave & West 49th St",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Pakistan Independence Day Celebration",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "East 38th St & 5th Ave",
+      "event_type": "Parade"
+    },
+    {
+      "name": "New Student Orientation Lunch Block Party",
+      "date": "Wed, Aug 26",
+      "borough": "Manhattan",
+      "location": "West 27th St & 7th Ave",
+      "event_type": "Street Event"
+    },
+    {
+      "name": "Pakistan Independence Day Parade",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "East 26th St & Madison Ave",
+      "event_type": "Single Block Festival"
+    }
+  ],
+  "news": [
+    {
+      "title": "Trump\u2019s Tariffs on Hold as President Claims Deal With Canada Is Near",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPRDQ4MzBmeUdBV0VLNnNTVXFKU3NkUVowYXZxVE5nNTJiYU9YT1dWOWRhdEg3ZG5NelNqSW55clZsb0lXbVdvOFQyVDdodGEzandYQ1BDUGZTbmc1eUU4c3pNUGlMUFc1b2Z1d0xQdGpEVHhzQnhNa1ZUdGNJZFREdVpyZmpkUQ?oc=5",
+      "published": "Wed, 19 Aug 2026 07:08:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The New York Times.",
+      "emoji": "\ud83c\udfdb\ufe0f"
+    },
+    {
+      "title": "Israel defends strike on Syria as U.S. frustration with Bibi grows",
+      "source": "Axios",
+      "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPYm9BMmh3VTlYTDhPWlY1b0JPYWZITWtQZFh4dVRDdFU0QzdlaWRIcWNOdk04NVZ3a1lXelNIdktFcGFidmxuRG12UXcxd1dWNV9qXzN2OEdMeHZDSF9lT3lrOUVGbVMxT0NZZkJkdXpmRUhsQXRFTjhkUUxETWVDeTF3?oc=5",
+      "published": "Wed, 19 Aug 2026 05:42:44 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Axios."
+    },
+    {
+      "title": "Alleged leader of Penn State frat cocaine ring arraigned, denied bail",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUVd4bVdFUGpzN0FaQjRJcmJZSGk4a1dqVHhMUEJUT09JREZDUjgxR1REU0E5cWdpQW5DcjhYVUFPT243cDBsMWhvVWkzWno4NEpBUEY4YkNZV2gwU25hYjE5V2JIb1Q4QW45d01JOE10SXNrR3N5ZlNvSGdpMHl0SFVJWVFQdUVWUFlpdms5RG10ZGpOVk5EczYtLWxGMWFRc01Lcnk0VUFaTW1mUDB2alF1VGp1TEJLTmxDT05zbjE0cG8?oc=5",
+      "published": "Wed, 19 Aug 2026 03:29:42 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post."
+    },
+    {
+      "title": "Chinese Robot Maker Unitree Soars 500 Percent in Trading Debut",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9rMjYwRGNLa09aWFNHdDhLcklGMXgwU0hMUnBnNU0zenJqeTcxbTd2VXRhRUQzNUtIS05Ob3hLLVhoeUkwTFFMb3ZjYmgwNmMxTEF0WmJNYVNnekhQZ2tteTFPZFMyMmltaEZHT0h4eWNYYTl2N1RF?oc=5",
+      "published": "Wed, 19 Aug 2026 02:47:23 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The New York Times.",
+      "emoji": "\ud83d\udcbb"
+    },
+    {
+      "title": "Shares in humanoid robot firm Unitree surge 600% on Chinese stock market debut",
+      "source": "The Guardian",
+      "link": "https://www.theguardian.com/technology/2026/aug/19/unitree-shares-surge-humanoid-robot-firm-chinese-stock-market-debut",
+      "published": "Wed, 19 Aug 2026 07:49:58 GMT",
+      "raw_text": "Unitree, the world\u2019s biggest humanoid robot maker, has made a spectacular entry on to China\u2019s stock market, with its shares surging by more than 600%.\nThe Chinese company\u2019s robots have gained global fame via viral videos of them performing martial arts, running at Olympic speeds and serving as backup dancers for pop stars.\nShares in the business, officially known as Yushu Technology Co, rose to as high as 1,100 yuan (\u00a3120.39) on Wednesday, up from an IPO price of just 150.8 yuan. Its gains were later pared back to a rise of nearly 500%.\nInvestors are searching for winners in robotics development, which has emerged as one of the key battlegrounds in the AI race.\nUnitree, which was founded in 2016, shipped more than 5,500 humanoid robots last year.\nThe market for human-like robots is expected to grow rapidly, with analysts projecting that sales could rise from around $2bn (\u00a31.5bn) in 2025 to $300bn by 2035.\nThere was exceptional demand from Chinese retail investors in Unitree\u2019s IPO, with the tranche of shares dedicated to non-professional stockpickers oversubscribed by thousands.\nUnitree is one of the few listed humanoid robot makers in the world. Its biggest competitor, AgiBot, is private and its smaller rival UBTech is listed in Hong Kong.\nHowever, at least half a dozen other Chinese humanoid robotic businesses are preparing to go public, including Deep Robotics and Leju Robotics.\nWang Xingxing, who founded Unitree in 2016 and remains its chief executive, owns about a fifth of the business. The spike in its share price means his personal wealth is now worth more than $12bn on paper, according to Reuters.\nUnitree\u2019s market debut also coincided with the opening of the World Robot Conference in Bejiing on Wednesday, where hundreds of companies, mostly Chinese, will launch new products and demonstrate their technical developments.\nLast month, the US Federal Communications Commission banned imports of future models of foreign-made humanoid and quadruped robots based on national security concerns.\nThis summer the Pentagon also added Unitree to a list of Chinese military companies, describing it as a \u201ccontributor to the Chinese defence industrial base\u201d. Unitree has previously said its robots are for civilian use.\nThe business is backed by several big Chinese technology companies, including Tencent and Alibaba.",
+      "summary": "Investors are searching for winners in robotics development, which has emerged as one of the key battlegrounds in the AI race. <strong>Unitree</strong> is one of the few listed humanoid robot makers in the world.",
+      "emoji": "\ud83d\udcbb"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "AI Daily Brief",
+      "title": "How People Are Fixing AI's Problems",
+      "video_id": "Zq8e3xX02u8",
+      "published": "2026-08-18",
+      "link": "https://youtube.com/watch?v=Zq8e3xX02u8",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "AI is solving old problems while creating entirely new ones. NLW looks at how people and companies are responding to AI slop, rising token costs, uneven productivity, workforce deskilling, and the long-term challenge of preserving human expertise. AIDB's AI Summer Adventure: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://summeradventure.ai/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Brought to you by: KPMG \u2013 Research from KPMG and the University of Texas at Austin shows the highest-impact AI users treat AI like a reasoning partner \u2014 and those skills can be taught at scale. Learn more at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://kpmg.com/us/Sophisticated\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Harbor - Invest in the AI ecosystem. \u2060\u2060https://www.harborcapital.com/aidaily\u2060\u2060 Hyperagent - Hire a fleet of always-on agents. New users get $1,000 in inference. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060hyperagent.com/aidailybrief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Rackspace Technology- One accountable partner to build, operate and run your full enterprise AI stack \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.rackspace.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Section - Section turns AI investment into workforce transformation and ROI - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.sectionai.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Blitzy - Want to accelerate enterprise software development velocity by 5x? \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://blitzy.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 AssemblyAI - The best way to build Voice AI apps - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.assemblyai.com/brief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Robots &amp; Pencils - Cloud-native AI solutions that power results \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://robotsandpencils.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 The AI Daily Brief helps you understand the most important news and discussions in AI. Subscribe to the podcast version of The AI Daily Brief wherever you listen: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://pod.link/1680633614\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Our Newsletter is BACK: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://aidailybrief.beehiiv.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Interested in sponsoring the show? sponsors@aidailybrief.ai",
+      "source_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-New-Problems-AI-Is-Creating-And-How-People-Are-Solving-Them-e3nff4j",
+      "read_more_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-New-Problems-AI-Is-Creating-And-How-People-Are-Solving-Them-e3nff4j",
+      "thumbnail": "https://img.youtube.com/vi/Zq8e3xX02u8/mqdefault.jpg"
+    },
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Are AI companies buying up and destroying used books for their models?",
+      "video_id": "UowKqM6fuoU",
+      "published": "2026-08-18",
+      "link": "https://youtube.com/watch?v=UowKqM6fuoU",
+      "summary": "New episode from Morning Brew Daily. Click to watch.",
+      "raw_text": "Disney and ABC filed a First Amendment lawsuit against the FCC\n\nDisney and ABC filed a First Amendment lawsuit against the FCC\nThe 46-page complaint details numerous accusations that the FCC is attempting to control the network and its content through regulatory threats.\n\u2022 less than 3 min read\nDisney channeled the wrath of a child told they can\u2019t have a fourth Mickey-shaped churro waffle and sued the federal government yesterday. Disney-owned ABC, along with eight of its stations, filed a First Amendment lawsuit against President Trump\u2019s Federal Communications Commission (FCC), alleging that the agency is illegally punishing the company over editorial coverage that Trump and his administration have tried to stifle.\nThe 46-page complaint details numerous accusations that the FCC is attempting to control the network and its content through regulatory threats.\nIt comes a few months after the agency requested that Disney renew some of its stations\u2019 broadcast licenses early\u2014something the FCC hasn\u2019t done in nearly 50 years. The FCC claims it is looking into the broadcast company\u2019s diversity, equity, and inclusion program, while Disney\u2019s lawsuit alleges that the agency is trying to clamp down on content that Trump doesn\u2019t like:\n- Last year, Trump-appointed FCC Commissioner Brendan Carr briefly succeeded in having Jimmy Kimmel Live! taken off the air after the comedian made a comment about Charlie Kirk\u2019s assassination.\n- Following the ordeal, President Trump threatened to delicense TV networks that were critical of him. He also called on NBC to cancel Jimmy Fallon\u2019s and Seth Meyers\u2019 respective late-night shows.\nA roundtable of complaints. ABC claims that the FCC is also targeting The View: After the daytime talk show invited on Texas Democratic Senate candidate James Talarico, Carr opened an investigation into the program, asserting that it did not qualify for an exemption from the agency\u2019s \u201cequal opportunities\u201d rule, which requires most non-news broadcasts to offer equal time to competing political candidates.\nThe FCC argued in a statement yesterday that Disney is engaging in an \u201congoing campaign of disinformation.\u201d ABC, meanwhile, called the FCC\u2019s actions an \u201cexistential threat\u201d to its work.\nDisney is not alone. The company\u2019s allegations mirror complaints from law firms, universities, and some individuals who say that the administration is targeting them over protected speech. The White House has denied doing so.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nAmerican Airlines is bringing back screens on seats\n\nAmerican Airlines is bringing back screens on seats\nAn upgrade is coming after the air carrier yanked them from flights a decade ago\n\u2022 less than 3 min read\nAmerican Airlines will begin installing screens in the seatbacks of every plane in its fleet in 2028, once again allowing passengers to experience the joy of watching a movie without sound on a screen in the row ahead of them.\nThis corrects what was widely viewed as a mile-high flub, when American removed the devices for nodding off during a Vin Diesel movie about a decade ago. The airline felt that flyers would prefer to consume content on their personal screens, while also seeing it as a way of saving on fuel costs by lightening the aircraft and erasing repair expenses when screens break. But, since then, American has fallen behind rivals Delta and United.\nAlong with moving into 2013 modernizing to match competitors, American flights will have other new amenities to lure high-end customers:\n- Planes will be retrofitted with Bluetooth connectivity and USB-C charging ports.\n- More first-class seats and extra legroom are coming, too.\n- Starlink wi-fi will be offered on 500 of its planes starting next year.\nMost of these upgrades won\u2019t be complete until the early 2030s, according to an American executive who spoke to CNBC.\nScreens mean dollars: Screens allow airlines to show personalized ads to a captive audience, something United started doing in 2024.\u2014DL\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/coming-to-court",
+      "read_more_url": "https://www.morningbrew.com/issues/coming-to-court",
+      "thumbnail": "https://img.youtube.com/vi/UowKqM6fuoU/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "So I tried Matt's skills...",
+      "video_id": "0oXOOlqVu5M",
+      "published": "2026-08-19",
+      "link": "https://youtube.com/watch?v=0oXOOlqVu5M",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/0oXOOlqVu5M/mqdefault.jpg"
+    },
+    {
+      "channel": "Matt Wolfe",
+      "title": "Exclusive BTS of my Automated AI System (LIVE)",
+      "video_id": "IeT5Jn7d1aM",
+      "published": "2026-08-18",
+      "link": "https://youtube.com/watch?v=IeT5Jn7d1aM",
+      "summary": "New episode from Matt Wolfe. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/IeT5Jn7d1aM/mqdefault.jpg"
+    },
+    {
+      "channel": "AI Daily Brief",
+      "title": "Dario Amodei Breaks His Social Media Silence",
+      "video_id": "_q3yhihZKSg",
+      "published": "2026-08-18",
+      "link": "https://youtube.com/watch?v=_q3yhihZKSg",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/_q3yhihZKSg/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and prompt injection.",
+  "ai_security": [
+    {
+      "title": "The future SOC: How AI agents are reshaping operations",
+      "source": "internationalsecurityjournal.com",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA1OFlZOEpja0lRcVcyMERGQ1pNVnEyREpMSXZmaVdZRXRmTWxRSWRTUldYdGtYaEdOZmdZZnNoR0k4dmczX2xoOWFCMk5KbVZxTGtFQkxmR3NtbnFIOFBqcVBzb0RtbWlBZlBPTkFwUDc3QWZBb0hVeQ?oc=5",
+      "published": "Wed, 19 Aug 2026 07:18:00 GMT",
+      "summary": "CEO at Dropzone AI, discusses how security operations centre (<strong>SOC</strong>) teams can think about AI agents, where they can take on the work directly \u2013 and where human judgement still needs to remain firmly in control.",
+      "raw_text": "What will a Mythos-resilient SOC look like? International Security Journal speaks with Edward Wu, Founder and CEO at Dropzone AI, to find out more.\nSecurity operations teams are under pressure, with analysts expected to investigate high volumes of alerts while keeping pace with more sophisticated threats.\nThe emergence of AI models capable of discovering vulnerabilities and generating working exploits adds another layer of complexity\u2026\nIn this exclusive interview with ISJ, Edward Wu, Founder and CEO at Dropzone AI, discusses how security operations centre (SOC) teams can think about AI agents, where they can take on the work directly \u2013 and where human judgement still needs to remain firmly in control.\nHow do models like Mythos change the situation for SOC analysts?\nModels such as Mythos make it easier, and cheaper, for attackers to find zero-day vulnerabilities and turn them into working exploits.\nVulnerability management teams are likely to feel the first impact, as they face a sharper increase in the number of issues they need to assess, prioritise and patch.\nBut patching will not keep pace with every new vulnerability.\nThat makes detection and response even more important.\nIf attackers have a greater chance of getting through perimeter defences, the SOC becomes the line between an initial foothold and a much wider compromise.\nThis does not necessarily mean alert volumes will double overnight.\nThe bigger concern is that more of those alerts may point to genuine activity.\nFor already stretched analysts, the priority becomes finding more investigative capacity so they can assess more alerts, faster, with greater confidence.\nWhen should security teams expect LLM-enabled attacks to reach the SOC?\nSecurity teams are already having to think about what this means in practice.\nCommercial large language models already show similar capabilities and comparable open-source models are likely to follow.\nOnce that happens, attackers will have greater freedom to experiment and put them to work.\nThe most immediate risk is vulnerability discovery and exploit development.\nResearchers are also exploring how these models could support automated penetration testing and lateral movement, but the clearest shift is their ability to identify vulnerabilities that previous generations of models could not reliably find.\nSecurity leaders should be assessing whether their SOC has the coverage, triage capacity and response maturity needed to deal with a higher rate of successful initial compromise before these attacks become commonplace.\nIs the threat from Mythos-type LLMs being overblown?\nThe threat should not be dismissed, but it does require some context.\nMythos was not a sudden leap from limited capability to full autonomy.\nIt was more of a threshold moment that has been building for several years as the use of large language models become more prevalent in cybersecurity.\nHowever, there are still a few limitations. LLMs are currently strongest when they have access to source code, which makes open-source software an area of concern.\nBlack-box vulnerability discovery, where the model does not have the underlying source code, remains much harder and still favours experienced human researchers.\nOrganisations must prepare to protect complex environments, with security operations needing to become more automated, scalable and resilient.\nHow should the role of the SOC change as attackers adopt AI?\nThe role of the SOC is unlikely to change dramatically.\nTeams will still need to detect, investigate, prioritise and respond to threats.\nBut the intensity at which they do this will change dramatically.\nIf attackers use AI to move faster and at a greater scale, defenders need AI agents working at that same scale to increase their own capacity.\nOne of the clearest opportunities is using AI agents to automate alert investigation.\nAn AI SOC analyst can review alerts, form hypotheses, gather evidence from connected tools and assess whether an alert is likely to be a true or false positive.\nThat gives human analysts more time to focus on genuine incidents, complex judgement calls and higher-value projects.\nFor security leaders, the value comes from speed and the ability to cover more ground.\nMany SOCs only have time to investigate a fraction of their alerts properly.\nAI agents let teams investigate more alerts consistently, including those that might otherwise stay in the queue.\nWhat should remain firmly in human hands?\nAI agents can support investigation and, in some cases, initial containment.\nHowever, there are still areas of security operations where human judgement must remain central.\nEnd-to-end remediation is a good example of this. In complex organisations, remediation depends on context, accuracy and a clear understanding of the business impact if the wrong action is taken.\nThe same is true for work that relies on influence and organisational change. Improving security coverage may mean working with application teams to add telemetry, deploying additional sensors or encouraging other parts of the business to change established processes.\nThey may start with a technical requirement, but they still rely on trust, context and human ownership.\nThat makes the future SOC less about choosing between people and AI, and more about deciding which tasks each is best placed to handle.\nAI agents can take on repetitive investigative work, while human analysts remain accountable for the judgement calls and decisions that carry operational risk.\nWho has the advantage, AI-enabled attackers or AI-enabled defenders?\nAttackers may gain an early advantage because they can move quickly, experiment aggressively and use large language models for vulnerability discovery, exploit development and more targeted social engineering.\nDefenders will need to close that gap by putting AI agents to work across security operations at a comparable scale.\nThis is important because most organisations are not going to double or triple their cybersecurity budgets or SOC headcount in response.\nFor defenders, the opportunity is to reduce the pressure on human analyst capacity.\nIf AI agents can take on repetitive investigative work around the clock, human teams can focus on the areas where judgement, accountability and strategic decision-making are still essential.\nWhat will the future SOC look like?\nThe future SOC is likely to look like a team of experienced practitioners directing multiple AI agents.\nHuman analysts will increasingly act as team leads, defining scope, reviewing outputs, validating conclusions and remaining accountable for final decisions.\nThat does not mean humans disappear from security operations.\nSome tasks remain too complex and consequential for full automation, including end-to-end remediation, decisions that require deep organisational context and work that depends on influencing other teams to improve telemetry or change processes.\nFor senior security professionals, the priority is understanding where AI can safely increase scale and where human expertise must remain in control.\nThe strongest SOCs will be those that use AI to extend their teams\u2019 reach, without handing over the judgement calls that still need human accountability.",
+      "type": "news"
+    },
+    {
+      "title": "Microsoft finally patches critical one-click Copilot vulnerability, almost eight months after learning of it",
+      "source": "computerworld.com",
+      "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPM3JKYVRhQ1Z1ekUwdXRjRTJ6OGN3SzZUSm52eUVVVGV0azVCSjFWQnNPdzBrUTRDMlBPMm5VcDZ0TDZUeTlsOXQ2TndtU3BGZk9VMmx3cGplX1VSY2hTb0NHb25BVmt0VGxsdUFpVDU4UmUxZWZZUVdCSHBJSU91dVQxb2loWUx3RW1JUDRscHpGSllxN3g2akczT1BoZmZ2NldHTzlReTB2akstTnBldU53TEZhazF4ajc3Mjk0a190SDkyTnZOOERfaDhpUnlJcVRVMTFTMFJXQ3RXRnhMNHpCOVVsWEZEOTBPeEpQeEQ2QWM?oc=5",
+      "published": "Wed, 19 Aug 2026 02:24:49 GMT",
+      "summary": "Varonis reported the CoSnitch hole on December 31, and the company patched one element of the hole, its auto-execution capability, on February 1, noted Lior Adar, a Varonis senior security researcher, in an interview, but it didn\u2019t complete the fix until Tuesday.",
+      "raw_text": "Dubbed CoSnitch by the security researcher who discovered it, the flaw executes an attack chain that exfiltrates data from enterprises without any obvious red flags.\nAlmost eight months after confirming a critical security vulnerability within the personal version of its AI assistant, Copilot, Microsoft on Tuesday issued a patch to close the hole, which relies on an LLM\u2019s inability to distinguish the data in a query from an instruction.\nThe CoSnitch hole was discovered by Varonis, and marked the third Copilot bug that Varonis has reported to Microsoft this year, following Reprompt, which bypassed Copilot guardrails by repeating queries, and SearchLeak, which Varonis said turned Microsoft 365 Copilot Enterprise into \u201ca silent exfiltration tool. All three share the same exploit pattern: one click on a legitimate-looking link is enough.\u201d\nA detailed blog, posted by Varonis on Tuesday, said the hole\u2019s capabilities were significant.\nCoSnitch relied on an attacker leveraging three different Copilot flaws, Varonis wrote:\n- Automatic prompt execution. \u201cThe ?q= URL parameter, combined with an undocumented parameter, causes any attacker-supplied prompt to execute instantly on page load: no click, no confirmation, no user action. One link is all it takes.\u201d\n- Data exfiltration to external servers. \u201cAn injected prompt can query the victim\u2019s connected apps, such as Gmail, Drive, Calendar or OneDrive, encode the results into a URL and exfiltrate them via Copilot\u2019s built-in URL-fetch capability to an attacker-controlled webhook.\u201d\n- Persistent memory poisoning via web summarization. \u201cA crafted webpage, when summarized by Copilot, injects attacker instructions into the victim\u2019s permanent memory store. The injection survives password changes, session revocation, and device re-enrollment, persisting forever.\u201d\nBut the potentially most intriguing element of the CoSnitch bug was how it was discovered: Copilot essentially revealed the hole itself.\nCopilot revealed its own flaw\n\u201cWe prompted Copilot to explain why auto-execution was impossible, and each refusal came with a technical justification, which mapped the architecture,\u201d the Varonis post said. Varonis then \u201creframed every refusal as a follow-up question, and each answer narrowed the attack surface further. Copilot then disclosed an undocumented URL parameter, unprompted, mid-refusal, including its historical behavior and every protection put in place to disable it. We built the URL exactly as described. With no click or confirmation from the user, the prompt was successfully executed automatically. Copilot wasn\u2019t breached; it was played.\u201d\nMicrosoft confirmed both the flaw and the fix, emailing a statement that said, \u201cour customers are already protected and do not need to take any action. We continuously update our guardrails to strengthen our protections against similar techniques.\u201d It also issued an MSRC disclosure labeling the hole \u201ccritical.\u201d\nBut Microsoft\u2019s emailed comments also included a statement that is not strictly accurate: It said, \u201centerprise customers using Microsoft 365 Copilot are not affected.\u201d\nBut analysts and others stressed that the complex nature of enterprise environments would often also house some consumer-grade Copilots from the personal accounts of workforce members, meaning that the flaw in the personal version could have absolutely impacted the enterprise version.\nThis is further complicated by the fact that Microsoft also said that it \u201cis in the process of moving toward a more unified Copilot experience,\u201d referred to as Copilot Fusion; details of the planned product merger began to leak last month. That means that enterprise CISOs need to be concerned about flaws in the personal version of Copilot that may be carried over into the merged offering.\nThe timing of Microsoft\u2019s fix was also fragmented. Varonis reported the CoSnitch hole on December 31, and the company patched one element of the hole, its auto-execution capability, on February 1, noted Lior Adar, a Varonis senior security researcher, in an interview, but it didn\u2019t complete the fix until Tuesday.\nThat February patch \u201clowered the other vulnerabilities significantly,\u201d Adar said. And, added his colleague, Chen Levy Ben Aroy, the Varonis Cloud Security Research Team leader, \u201cLLMs are a whole new world of vulnerabilities.\u201d\nMark Tauschek, VP and distinguished analyst at Info-Tech Research Group, said that he found the Varonis methodology of tricking Copilot into revealing its own flaws powerful.\nVaronis used \u201ca very sophisticated combination of social engineering on an LLM, a variety of jailbreaks, and a prompt injection attack that is very concerning in its capability,\u201d he said. \u201cThe combination of hack vectors is what makes it more startling, as we\u2019ve seen all of those methods alone before, but I think all three working for one exploit is new, at least from a disclosure perspective.\u201d\nFor CISOs, Tauschek said urgent action might be required.\n\u201cMuch like in the old macro virus days in the late 90s and early 2000s, the only way to definitively stop it is to turn it off. Disable macros back then. Disable Copilot now,\u201d Tauschek said. \u201cThere are many mitigation steps that can reduce risk to negligible, but that\u2019s not zero. The point is, it\u2019s just the beginning.\u201d\nThe money trail will make this fix difficult\nAman Mahapatra, chief strategy officer for Tribeca Softtech, a New York City-based technology consulting firm, said there is a much more difficult issue involved in this case. He argued that the financial incentives for the major AI companies will make meaningfully fixing these kinds of holes almost impossible.\nHe pointed out that every guardrail that would fully close this class of attack degrades the product, because the same capabilities being exploited are the features that Microsoft is marketing as Copilot\u2019s value. \u201cThe fix and the feature are in direct tension, which means these will not be cleanly patched so much as perpetually mitigated, and the eight-month window is what it looks like when a vendor is negotiating between its security obligation and its product roadmap on every single fix,\u201d Mahapatra said.\n\u201cThis is the pattern CISOs must internalize: in agentic systems, the malicious action and the legitimate action are the same action with different intent, which collapses the entire signature-and-anomaly detection model that enterprise security has been built on for twenty years,\u201d Mahapatra said. \u201cCoSnitch is serious, but its defining property is that nothing was broken. Three chained flaws: an autorun URL parameter firing a prompt with no click, OAuth connector abuse reading full Gmail bodies rather than metadata, and persistent memory poisoning through web summarization, and every one is Copilot doing exactly what it was designed to do.\u201d\nMahapatra added that the third element of the CoSnitch flaw is the most troubling.\n\u201cThe memory-poisoning component is the one being undersold, and it is the most dangerous. A single summarized webpage writes attacker instructions into Copilot\u2019s persistent memory, and that memory survives password changes, session revocation, and device re-enrollment,\u201d he said. \u201cEvery standard incident response step leaves the injection intact. The attacker needs no persistent infrastructure after the initial write, because every future session runs under attacker-controlled context, recorded only in a memory settings UI almost no user has opened.\u201d\nFlavio Villanustre, CISO for the LexisNexis Risk Solutions Group, also pointed to a bigger-picture issue that impacts all agentic and genAI deployments.\n\u201cThe mechanisms behind the prompt injection part of the attack are based on the inability of the LLM to differentiate between data, the unsafe data stream coming from an external web page, and instructions which happen to be embedded in that data stream by the attacker controlling that external web page,\u201d Villanustre said. \u201cThis is another example of why a different architectural approach to LLMs that separates data and instructions is needed to better guarantee the safety of their operation. This is not something that Microsoft or any other AI vendor has addressed to date.\u201d",
+      "type": "news",
+      "emoji": "\ud83d\udc1b"
+    },
+    {
+      "title": "Fortinet\u2019s Virtue AI acquisition rebalances the agentic AI security equation",
+      "source": "SiliconANGLE",
+      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQal9oQU1QMHdYZ0d1LXNuTE84YjRva2ZUZWVVcmVDRXEzRmJmSG5nT19YY25zYWtWV3ZreXFTc2RQeVVCcUdJYTdUQU1zeTdnM0h1eml5b0JKUDd4amxNUmRsUXVGWGFYbmZOUWpxT2hsQnNyYnM5MzdEZ3FCdTcwSHEzTzhFUDJ4c1JNS1BCRk1xLVRnR3M3T1VGZmdhQkpxYTRhTmRGVmhnSjBkNVZMTE5n?oc=5",
+      "published": "Tue, 18 Aug 2026 18:04:00 GMT",
+      "summary": "Organizations need to secure the full lifecycle of autonomous AI: what data an agent can access, which tools it can use, what decisions it is permitted to make, how those actions are monitored and when humans must intervene.",
+      "raw_text": "Fortinet\u2019s Virtue AI acquisition rebalances the agentic AI security equation\nFortinet Inc. announced its intent to acquire Virtue AI Inc. Monday, and though the financial aspects are interesting, what\u2019s more significant is how this will help businesses with their next big security challenge: How do you secure agentic artificial intelligence?\nGenerative AI has raised new concerns about data leakage, unsanctioned use and inaccurate outputs. Agentic AI raises the security stakes because it\u2019s significantly harder to secure, and the impact of breaches is greater. These systems can retrieve information, call application programming interfaces, trigger workflows, interact with applications and increasingly act on behalf of people. That makes an AI agent less like a \u201cchatbot\u201d and more like a digital employee with access credentials, permissions and the ability to affect business processes.\nThe industry\u2019s response cannot be limited to securing the model or filtering prompts. Organizations need to secure the full lifecycle of autonomous AI: what data an agent can access, which tools it can use, what decisions it is permitted to make, how those actions are monitored and when humans must intervene. That is why Fortinet\u2019s acquisition of Virtue AI, which brings AI runtime protection, automated AI validation and agentic AI security capabilities to the company, is strategically important.\nWhy agentic AI changes the security equation\nTraditional application security was designed for relatively predictable systems. Code may be updated periodically, but it generally operates within defined parameters. Users authenticate, applications make known requests and security teams can establish policies based on expected behavior.\nAgentic AI operates differently. An agent can dynamically decide which tools to invoke, what information to retrieve, and what next step to take based on the context it receives. It may interact with multiple systems within a single workflow, drawing on customer data, internal knowledge bases, cloud services and business applications. In some cases, one agent may delegate tasks to another.\nThat flexibility is what makes agentic AI valuable. It is also what makes it difficult to secure. The core challenge is that agents operate in continuously changing environments. A model may be updated. A prompt may be modified. A new API connector may be added. The data source for a retrieval system may change. A business team may expand an agent\u2019s role from answering questions to initiating transactions. Each change can alter the system\u2019s risk profile.\nThis raises several security concerns. Prompt injection can cause an agent to ignore its intended instructions or manipulate it into taking an unintended action. Excessive permissions can turn a minor error into a significant incident. Connected tools can create indirect paths into critical systems. Sensitive data can be exposed through poorly governed retrieval or workflow execution. Because agents can operate at machine speed, a flawed decision can escalate much faster than a traditional human-driven security event.\nThe biggest mistake enterprises can make is treating AI agents as just another application category. They are dynamic actors in the environment. They have identities, permissions, behavioral patterns and connections to other systems. Security controls need to reflect that reality.\nWhy continuous AI protection is needed\nMost security programs still rely heavily on point-in-time assessments. An application is tested before going into production. A vendor is reviewed during procurement. A configuration is audited periodically. These processes remain important, but they are insufficient for autonomous AI.\nAn AI agent can behave differently tomorrow even if no one changes the underlying business process. A new data set may introduce unexpected content. A model provider may alter the model\u2019s behavior. A tool integration may change its capabilities. An adversary may find a new way to influence the agent through malicious content, instructions or inputs.\nThat is why continuous AI protection is so important. Continuous protection means validating an agent before deployment, monitoring it while it operates and reassessing it whenever its model, data, tools, permissions or role changes. It also means moving beyond simple guardrails at the model interface and gaining visibility into the agent\u2019s decisions, tool calls and outcomes.\nThe objective should not be to stop enterprises from using agentic AI. That would be unrealistic and strategically counterproductive. The goal should be to enable organizations to deploy agents with confidence by establishing meaningful guardrails for their behavior.\nA practical, continuous-protection approach should include several elements:\n- Clear inventory of all AI agents, their owners and their business purpose.\n- Visibility into the data sources, applications and tools each agent can access.\n- Least-privilege permissions that limit agents to only the actions they need.\n- Continuous testing for prompt injection, unsafe tool use, data leakage and policy violations.\n- Runtime monitoring that detects unusual behavior or actions outside expected parameters.\n- Human approval requirements for high-impact tasks, such as financial transactions, system changes or access modifications.\n- Detailed logs that connect prompts, agent decisions, tool calls, identities and outcomes.\nThis is where security will need to evolve from protecting infrastructure and applications to governing behavior. The ability to see that an agent connected to a particular application is useful. The ability to understand why it acted, what data it used, which tool it called and whether the action complied with policy is far more valuable.\nHow Virtue AI fits Fortinet\u2019s security platform story\nFortinet has long emphasized the convergence of networking and security through its Security Fabric. The company\u2019s core argument is that enterprises are better served when security controls share intelligence, policy and enforcement across networks, clouds, endpoints and operations, rather than operating as disconnected point products.\nThe addition of Virtue AI extends that thesis to agentic AI. Fortinet already has AI-related security capabilities, including tools to protect AI interactions and broader efforts to integrate AI into security operations. Virtue AI adds a more specific layer focused on validating and protecting AI agents as they operate.\nSecuring traffic to and from a large language model is necessary, but it is only one part of the problem. Enterprises also need to secure what the agent does after it receives an answer from a model. Can it access sensitive data? Can it send an email? Can it create a ticket? Can it change a configuration? Can it trigger a financial workflow? Can it invoke another agent?\nVirtue AI\u2019s capabilities should help Fortinet broaden its platform story from protecting AI access to protecting AI actions. If integrated effectively, the technology could provide Fortinet customers with a way to apply consistent policy and visibility across the network, applications, endpoints and increasingly autonomous systems operating within those environments.\nThat is especially important for enterprises already struggling with security tool sprawl. Few organizations want to deploy a separate point product for each new AI-related risk. They want AI protection that fits into existing operational workflows, uses existing telemetry and can be managed alongside broader security controls.\nThe proof of this will come from execution. Fortinet will need to demonstrate how Virtue AI integrates with the broader Security Fabric, how customers can operationalize it without adding unnecessary complexity, and how the technology performs across multivendor environments. The most successful AI-security platforms will not be those with the most ambitious marketing claims. They will be those that make autonomous AI safer without slowing the business value it can create.\nRecommendations for security pros\nSecurity leaders should treat agentic AI as a new class of privileged digital worker, not merely another software-as-a-service application or chatbot. Start by inventorying every AI agent already in use, including departmental experiments, and document the data it can access, the tools it can invoke and the actions it is authorized to perform.\nThe foundational controls are the ones most security pros use today. These include least-privilege access, strong identity governance, segmentation, logging and human approval for high-impact actions. The difference is that these controls must be evaluated continuously because an agent\u2019s behavior can change as models, prompts, tools and connected data sources evolve.\nOrganizations should also establish a formal AI-agent lifecycle: Validate an agent before production, monitor its behavior at runtime, test it against adversarial inputs, and revoke or reduce permissions when its role changes. Security teams should insist on telemetry that links an agent\u2019s prompt, decision, tool call, identity and outcome. Without that end-to-end view, investigating an AI-driven incident becomes an exercise in reconstructing an event after damage has already occurred.\nFinally, enterprises should favor security architectures that can enforce policy consistently across networks, identities, endpoints, applications and AI interactions, rather than adding another isolated dashboard for each new AI use case.\nFinal thoughts\nFortinet\u2019s Virtue AI acquisition reflects an important market reality: Agentic AI is likely to create more security work, not less. The enterprises that gain the most from autonomous AI will be those that pair experimentation with disciplined guardrails, continuous validation and clear accountability for agent actions.\nAI may reshape the security market and force every incumbent to evolve, but it will not eliminate the need for security platforms. If anything, it raises the value of a platform capable of seeing, governing and responding across the increasingly connected environment in which AI agents operate.\nZeus Kerravala is a principal analyst at ZK Research, a division of Kerravala Consulting. He wrote this article for SiliconANGLE.\nImage: Fortinet\nA message from John Furrier, co-founder of SiliconANGLE:\nSupport our mission to keep content open and free by engaging with theCUBE community. Join theCUBE\u2019s Alumni Trust Network, where technology leaders connect, share intelligence and create opportunities.\n- 15M+ viewers of theCUBE videos, powering conversations across AI, cloud, cybersecurity and more\n- 11.4k+ theCUBE alumni \u2014 Connect with more than 11,400 tech and business leaders shaping the future through a unique trusted-based network\nAre you an AWS customer? Support SiliconANGLE financially by buying your AWS services from our Marketplace portal page and links: https://siliconangle.com/aws-marketplace/\nAbout SiliconANGLE Media\nFounded by tech visionaries John Furrier and Dave Vellante, SiliconANGLE Media has built a dynamic ecosystem of industry-leading digital media brands that reach 15+ million elite tech professionals. Our new proprietary theCUBE AI Video Cloud is breaking ground in audience interaction, leveraging theCUBEai.com neural network to help technology companies make data-driven decisions and stay at the forefront of industry conversations.",
+      "type": "news"
+    },
+    {
+      "title": "Delegation Asymmetry in Agentic Recommender Systems: Measuring Two-Sided Receptivity in Online Dating",
+      "authors": [
+        "Daria Leshchikova",
+        "Valentina V. Kuskova",
+        "Dmitry Zaytsev",
+        "Valerii Klimov"
+      ],
+      "abstract": "Autonomous LLM agents that converse on a user's behalf are an emerging design pattern in matching platforms, yet their viability depends on a condition rarely examined: users must accept not only delegating conversation to an agent, but also receiving agent-mediated communication from others. We study this condition using two large-scale surveys of active users of a major dating platform (N=2,894 on generative profile features; N=2,617 on autonomous conversational agents, fielded in two languages). We develop a latent-variable measurement model of agent receptivity based on graded response models with latent regression, and show via model comparison that willingness to send and willingness to receive agent communication are distinct constructs: highly correlated (rho=0.92) but separable (Delta BIC=52), with partial measurement invariance across languages. The model quantifies a systematic delegation asymmetry: deploying one's own agent requires far lower receptivity (threshold -0.38) than engaging a counterpart's agent (+0.32; full engagement +1.39), and mean deployment propensity exceeds engagement propensity roughly threefold. Under a random-pairing counterfactual derived from stated receptivity, only 4-13% of directed dyads combine agent deployment with receiver engagement, with a pronounced gender-directional imbalance. Design counterfactuals quantify the levers: a reciprocity requirement cuts interaction volume by half or more by excluding nearly two-thirds of would-be deployment, while routing agent contacts on receive receptivity triples per-contact engagement, a lift that survives out-of-sample validation with the target item held out (AUC 0.88, 3.1x quartile lift under respondent-level cross-validation). We discuss implications for agentic recommender design, including disclosure, opt-in mechanics, and receptivity-aware matchmaking.",
+      "link": "https://arxiv.org/pdf/2608.18058v1",
+      "published": "2026-08-18",
+      "arxiv_id": "2608.18058v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Autonomous LLM agents that converse on a user's behalf are an emerging design pattern in matching platforms, yet their viability depends on a condition rarely examined: users must accept not only delegating conversation to an agent, but also receiving agent-mediated communication from others. We study this condition using two large-scale surveys of active users of a major dating platform (N=2,894 on generative profile features; N=2,617 on autonomous conversational agents, fielded in two languages). We develop a latent-variable measurement model of agent receptivity based on graded response models with latent regression, and show via model comparison that willingness to send and willingness to receive agent communication are distinct constructs: highly correlated (rho=0.92) but separable (Delta BIC=52), with partial measurement invariance across languages. The model quantifies a systematic delegation asymmetry: deploying one's own agent requires far lower receptivity (threshold -0.38) than engaging a counterpart's agent (+0.32; full engagement +1.39), and mean deployment propensity exceeds engagement propensity roughly threefold. Under a random-pairing counterfactual derived from stated receptivity, only 4-13% of directed dyads combine agent deployment with receiver engagement, with a pronounced gender-directional imbalance. Design counterfactuals quantify the levers: a reciprocity requirement cuts interaction volume by half or more by excluding nearly two-thirds of would-be deployment, while routing agent contacts on receive receptivity triples per-contact engagement, a lift that survives out-of-sample validation with the target item held out (AUC 0.88, 3.1x quartile lift under respondent-level cross-validation). We discuss implications for agentic recommender design, including disclosure, opt-in mechanics, and receptivity-aware matchmaking.",
+      "summary": "Autonomous LLM agents that converse on a user's behalf are an emerging design pattern in matching platforms, yet their viability depends on a condition rarely examined: users must accept not only delegating conversation to an agent, but also receiving agent-mediated communication from others.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "HarnessRisk: A Lifecycle-Oriented Benchmark for Agent Harness Safety",
+      "authors": [
+        "Yajing Bai",
+        "Jinhao Duan",
+        "Jie Peng",
+        "Xianfeng Wu",
+        "Sijia Liu"
+      ],
+      "abstract": "Large language models are increasingly deployed through agent harnesses that manage tools, extensions, persistent state, permissions, and external actions. Existing safety benchmarks mainly target individual attack mechanisms or a limited subset of operational settings, making it difficult to compare how safety failures emerge across different harness responsibilities. We present HarnessRisk, a lifecycle oriented benchmark that organizes agent harness safety into six operational phases including Harness Configuration, Capability Extension, Runtime Operation, State Persistence, Action Control, and Incident Recovery. HarnessRisk contains 128 sandboxed cases, each pairing a benign user objective with an adversarial instruction embedded in an untrusted workflow artifact. We evaluate each trajectory using Utility, Attack Success Rate, Persistence, and Detection. Across three harnesses, six language models, and 14 model and harness configurations, attack success ranges from 12.6% to 80.9%, while Utility remains between 75.0% and 97.6%. Harness Configuration is the most vulnerable phase across all three harnesses, showing that attacks can succeed by altering security sensitive parameters within otherwise authorized workflows. We also find that explicit risk recognition does not reliably lead to safe action, as some configurations detect risks in more than 90% of runs while retaining substantial attack success. These results highlight the need to evaluate agent safety across multiple harness responsibilities and at the level of the deployed model and harness configuration.",
+      "link": "https://huggingface.co/papers/2608.17597",
+      "published": "2026-08-18",
+      "arxiv_id": "2608.17597",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "Large language models are increasingly deployed through agent harnesses that manage tools, extensions, persistent state, permissions, and external actions. Existing safety benchmarks mainly target individual attack mechanisms or a limited subset of operational settings, making it difficult to compare how safety failures emerge across different harness responsibilities. We present HarnessRisk, a lifecycle oriented benchmark that organizes agent harness safety into six operational phases including Harness Configuration, Capability Extension, Runtime Operation, State Persistence, Action Control, and Incident Recovery. HarnessRisk contains 128 sandboxed cases, each pairing a benign user objective with an adversarial instruction embedded in an untrusted workflow artifact. We evaluate each trajectory using Utility, Attack Success Rate, Persistence, and Detection. Across three harnesses, six language models, and 14 model and harness configurations, attack success ranges from 12.6% to 80.9%, while Utility remains between 75.0% and 97.6%. Harness Configuration is the most vulnerable phase across all three harnesses, showing that attacks can succeed by altering security sensitive parameters within otherwise authorized workflows. We also find that explicit risk recognition does not reliably lead to safe action, as some configurations detect risks in more than 90% of runs while retaining substantial attack success. These results highlight the need to evaluate agent safety across multiple harness responsibilities and at the level of the deployed model and harness configuration.",
+      "summary": "Across three harnesses, six language models, and 14 model and harness configurations, attack success ranges from <strong>12.6%</strong> to <strong>80.9%</strong>, while Utility remains between <strong>75.0%</strong> and <strong>97.6%</strong>. These results highlight the need to evaluate agent safety across multiple harness responsibilities and at the level of the deployed model and harness configuration.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Security Assessment of DeepSeek Harness with A.I.G: Evaluating Resistance to Indirect Prompt Injection",
+      "authors": [
+        "Zonghao Ying",
+        "Xiangfan Wu",
+        "Huiyu Wu",
+        "Xing Zheng",
+        "Huangsheng Cheng"
+      ],
+      "abstract": "We assess indirect prompt injection in DeepSeek Harness (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes. The study covers 14,560 controlled executions over 16 indirect-content channels, text and file carrier modes, 35 payload objectives, one unmodified baseline, and 12 attack methods. The experiment preserves DSH's agent loop, tool registry, model adapter, and session-event path; source tools and sensitive sinks are local fixtures, so attempted actions are recorded without external side effects. We evaluate each trace with a deterministic rule-based judge,  (RuleJudge), and a semantic LLM-based judge,  (LLMJudge). The strongest observed attack success rates are 17.0% under  for fake-completion attack in text mode, 25.5% under  for hidden Unicode in file mode, and 16.0% under  for the skills channel in file mode.  also assigns partial compliance more often than  (7.3% versus 2.0%). We relate these results to DSH's treatment of tool results, additional contexts, and tool-call policy hooks, then identify controls that should sit between untrusted content and sensitive actions. Our code is available at https://github.com/Tencent/AI-Infra-Guard/tree/main/Research/deepseek-harness-security-assessment .",
+      "link": "https://huggingface.co/papers/2608.16393",
+      "published": "2026-08-18",
+      "arxiv_id": "2608.16393",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "We assess indirect prompt injection in DeepSeek Harness (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes. The study covers 14,560 controlled executions over 16 indirect-content channels, text and file carrier modes, 35 payload objectives, one unmodified baseline, and 12 attack methods. The experiment preserves DSH's agent loop, tool registry, model adapter, and session-event path; source tools and sensitive sinks are local fixtures, so attempted actions are recorded without external side effects. We evaluate each trace with a deterministic rule-based judge,  (RuleJudge), and a semantic LLM-based judge,  (LLMJudge). The strongest observed attack success rates are 17.0% under  for fake-completion attack in text mode, 25.5% under  for hidden Unicode in file mode, and 16.0% under  for the skills channel in file mode.  also assigns partial compliance more often than  (7.3% versus 2.0%). We relate these results to DSH's treatment of tool results, additional contexts, and tool-call policy hooks, then identify controls that should sit between untrusted content and sensitive actions. Our code is available at https://github.com/Tencent/AI-Infra-Guard/tree/main/Research/deepseek-harness-security-assessment .",
+      "summary": "We assess indirect prompt injection in <strong>DeepSeek</strong> <strong>Harness</strong> (DSH), using AI-Infra-Guard (A.I.G) to construct tests, deliver controlled taint, execute DSH, collect traces, and judge outcomes.",
+      "type": "paper",
+      "emoji": "\ud83d\udc89"
+    },
+    {
+      "title": "DiSCO: Defending text-to-image generation through distribution-guided contrastive prompt optimization",
+      "authors": [
+        "Tong Zhang",
+        "Motasem Alfarra",
+        "Carlos Hinojosa",
+        "Christos Louizos",
+        "Bernard Ghanem"
+      ],
+      "abstract": "As text-to-image generative models advance, they raise critical safety concerns, particularly the generation of Not-Safe-For-Work (NSFW) content such as violence and nudity, further exacerbated by red-teaming adversarial attacks. Existing defenses predominantly operate under white-box assumptions, relying on text encoder optimization, weight editing, or inference-time intervention, and fundamentally cannot scale to proprietary models. Black-box alternatives based on LLM prompt rewriting offer broader applicability, yet fail in a critical regime we identify as the benign adversarial problem: prompts that are linguistically safe but still trigger harmful generation due to the model's learned data distribution. We propose DiSCO, a zero-shot, strictly black-box defense that operates entirely at the prompt level as a plug-and-play module, requiring no model retraining, fine-tuning, or access to model internals. DiSCO performs distribution-guided suffix expansion via beam search, optimized through contrastive scoring over safe and unsafe image pools generated by the target model itself, with iterative adaptive feedback until safe content is produced. We demonstrate that DiSCO consistently enhances the safety of both undefended and defended models on the I2P benchmark under multiple red-teaming attacks, achieving 37.7% and 25.13% ASR reduction, respectively, while maintaining semantic fidelity and improving image coherence. As a black-box, architecture-agnostic module, DiSCO can be readily applied to any text-to-image system without necessitating any changes to the model itself.",
+      "link": "https://huggingface.co/papers/2608.17067",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.17067",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "As text-to-image generative models advance, they raise critical safety concerns, particularly the generation of Not-Safe-For-Work (NSFW) content such as violence and nudity, further exacerbated by red-teaming adversarial attacks. Existing defenses predominantly operate under white-box assumptions, relying on text encoder optimization, weight editing, or inference-time intervention, and fundamentally cannot scale to proprietary models. Black-box alternatives based on LLM prompt rewriting offer broader applicability, yet fail in a critical regime we identify as the benign adversarial problem: prompts that are linguistically safe but still trigger harmful generation due to the model's learned data distribution. We propose DiSCO, a zero-shot, strictly black-box defense that operates entirely at the prompt level as a plug-and-play module, requiring no model retraining, fine-tuning, or access to model internals. DiSCO performs distribution-guided suffix expansion via beam search, optimized through contrastive scoring over safe and unsafe image pools generated by the target model itself, with iterative adaptive feedback until safe content is produced. We demonstrate that DiSCO consistently enhances the safety of both undefended and defended models on the I2P benchmark under multiple red-teaming attacks, achieving 37.7% and 25.13% ASR reduction, respectively, while maintaining semantic fidelity and improving image coherence. As a black-box, architecture-agnostic module, DiSCO can be readily applied to any text-to-image system without necessitating any changes to the model itself.",
+      "summary": "As text-to-image generative models advance, they raise critical safety concerns, particularly the generation of Not-Safe-For-Work (NSFW) content such as violence and nudity, further exacerbated by red-teaming adversarial attacks.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "PixRestore: Unified Image Restoration via Pixel Diffusion Transformer",
+      "authors": [
+        "Lingchen Sun",
+        "Rongyuan Wu",
+        "Xiangtao Kong",
+        "Jixin Zhao",
+        "Qiaosi Yi"
+      ],
+      "abstract": "Unified image restoration (UIR) aims to recover high-quality (HQ) content from low-quality (LQ) images with different degradations using a single model. Most recent methods adapt large pretrained text-to-image (T2I) latent diffusion models for their strong capacity and generative priors. However, the variational autoencoder (VAE) in latent T2I models may discard restoration-sensitive details, while the open-ended synthesis prior can introduce content-inconsistent artifacts. We present PixRestore, a VAE-free pixel-space Diffusion Transformer (DiT) for UIR, where the diffusion backbone is trained entirely from scratch, without relying on T2I pretraining. PixRestore performs flow matching directly on patchified pixels, preserving fine-grained details while keeping the token sequence tractable. To adapt to different degradations, PixRestore learns to predict the reliability of layer features using LQ--HQ DINO feature similarity. Features from more reliable layers are fused as dense conditioning, while less reliable layers receive stronger HQ-feature supervision to encourage degradation removal. We train PixRestore on a large-scale corpus of diverse scenes and degradations, and further finetune it into a one-step generator using DINO-based adversarial objectives for efficient inference. Experiments on public benchmarks and real-world test sets show that, with only about 50M parameters and single-step inference, PixRestore achieves the best overall fidelity, perceptual quality, and robustness to degradations among competing UIR models while being far more efficient. Larger PixRestore variants can further boost performance, demonstrating the scalability of our pixel-space design. Code and the curated benchmark can be found at https://github.com/csslc/PixRestore.",
+      "link": "https://huggingface.co/papers/2608.16793",
+      "published": "2026-08-17",
+      "arxiv_id": "2608.16793",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "Unified image restoration (UIR) aims to recover high-quality (HQ) content from low-quality (LQ) images with different degradations using a single model. Most recent methods adapt large pretrained text-to-image (T2I) latent diffusion models for their strong capacity and generative priors. However, the variational autoencoder (VAE) in latent T2I models may discard restoration-sensitive details, while the open-ended synthesis prior can introduce content-inconsistent artifacts. We present PixRestore, a VAE-free pixel-space Diffusion Transformer (DiT) for UIR, where the diffusion backbone is trained entirely from scratch, without relying on T2I pretraining. PixRestore performs flow matching directly on patchified pixels, preserving fine-grained details while keeping the token sequence tractable. To adapt to different degradations, PixRestore learns to predict the reliability of layer features using LQ--HQ DINO feature similarity. Features from more reliable layers are fused as dense conditioning, while less reliable layers receive stronger HQ-feature supervision to encourage degradation removal. We train PixRestore on a large-scale corpus of diverse scenes and degradations, and further finetune it into a one-step generator using DINO-based adversarial objectives for efficient inference. Experiments on public benchmarks and real-world test sets show that, with only about 50M parameters and single-step inference, PixRestore achieves the best overall fidelity, perceptual quality, and robustness to degradations among competing UIR models while being far more efficient. Larger PixRestore variants can further boost performance, demonstrating the scalability of our pixel-space design. Code and the curated benchmark can be found at https://github.com/csslc/PixRestore.",
+      "summary": "<strong>Unified</strong> image restoration (UIR) aims to recover high-quality (HQ) content from low-quality (LQ) images with different degradations using a single model. We train <strong>PixRestore</strong> on a large-scale corpus of diverse scenes and degradations, and further finetune it into a one-step generator using DINO-based adversarial objectives for efficient inference.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and prompt injection.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "87\u00b0F",
+        "detail": "1% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-08"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Heat",
+        "detail": "Hydrate"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "5 papers",
+        "detail": "Aug 18"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "5",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,258 cases this week \u2014 70% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 5,
+    "youtube_count": 5,
+    "ai_security_count": 8
+  }
+}
