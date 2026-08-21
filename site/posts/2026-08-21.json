@@ -1,0 +1,463 @@
+{
+  "date": "Friday, August 21, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 63,
+    "unit": "F",
+    "conditions": "",
+    "high": 77,
+    "low": 64,
+    "feels_like": 63,
+    "forecast": "A slight chance of rain showers. Mostly cloudy, with a low around 63. North wind around 12 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 65,
+        "feels_like": 64,
+        "conditions": "Partly Cloudy",
+        "wind": "9 mph W",
+        "humidity": "81%",
+        "precip_chance": "4%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 67,
+        "feels_like": 67,
+        "conditions": "Clear",
+        "wind": "9 mph S",
+        "humidity": "78%",
+        "precip_chance": "3%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 76,
+        "feels_like": 79,
+        "conditions": "Partly Cloudy",
+        "wind": "7 mph NE",
+        "humidity": "64%",
+        "precip_chance": "5%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 76,
+        "feels_like": 79,
+        "conditions": "Cloudy",
+        "wind": "6 mph E",
+        "humidity": "66%",
+        "precip_chance": "6%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 74,
+        "feels_like": 78,
+        "conditions": "Drizzle",
+        "wind": "4 mph E",
+        "humidity": "72%",
+        "precip_chance": "7%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,543 cases this week \u2014 65% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1543,
+    "vs_average_pct": -64.6,
+    "week_ending": "2026-08-15",
+    "breakdown": {
+      "flu": 266,
+      "covid": 1126,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,543 combined flu/COVID/RSV cases",
+        "comparison": "65% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Nearly 100 people sickened in salmonella outbreak linked in part to recalled eggs produced in Texas: FDA - ABC",
+        "current": "100 people",
+        "comparison": "Sat, 25 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOREwxOFdTTFRPOFFwUnlNcXNEd1NjelprWkEzak5RQUlIM1dXakdVZVotRFdQb3NOaWhVNEp2QmJqakJuTUI2WU1ZNnBvUHBfSm1WaURSSnR4WW5XM1N5dzFWQVUzeGVKX3MtSXpUcWQ1Vi15VnNjcV84NExhVF9mTHFsNFZmU0JpY29RYkFKdm1MYXN4VkUwOGk1QzlobTlBRTZUUkpuUXRHc3Uxei1iUHlFdm9XTm55OFQw?oc=5",
+        "title": "Nearly 100 people sickened in salmonella outbreak linked in part to recalled eggs produced in Texas: FDA - ABC7 New York",
+        "summary": "Nearly 100 people sickened in salmonella outbreak linked in part to recalled eggs produced in Texas: FDA ABC7 New York",
+        "published": "Sat, 25 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "current": "72 Cases",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPNFUxUm9pWDB3UUlMbW5pZ0daNXpaWlNodURSZHR6b0ZzRTVKZHAzTjJNMUZScm8xQUl3THpYdmNCQTZ6WjZtU1hZbUdrZTFobXYzN1EtOFpmTVhCRXVTU3l6Mzg5Z19KbDV3TEJyMDQ3Wk5IVjkyTVk4Nm5IWXgzNGVtREpNWGM?oc=5",
+        "title": "F.D.A. Announces New Cyclosporiasis Outbreak With 72 Cases - The New York Times",
+        "summary": "Announces New Cyclosporiasis Outbreak With 72 Cases The New York Times",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Nearly 100 people sickened in salmonella outbreak linked in part to recalled eggs produced in Texas: FDA - ABC",
+        "current": "100 people",
+        "comparison": "Sat, 25 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOREwxOFdTTFRPOFFwUnlNcXNEd1NjelprWkEzak5RQUlIM1dXakdVZVotRFdQb3NOaWhVNEp2QmJqakJuTUI2WU1ZNnBvUHBfSm1WaURSSnR4WW5XM1N5dzFWQVUzeGVKX3MtSXpUcWQ1Vi15VnNjcV84NExhVF9mTHFsNFZmU0JpY29RYkFKdm1MYXN4VkUwOGk1QzlobTlBRTZUUkpuUXRHc3Uxei1iUHlFdm9XTm55OFQw?oc=5",
+        "title": "Nearly 100 people sickened in salmonella outbreak linked in part to recalled eggs produced in Texas: FDA - ABC7 New York",
+        "summary": "Nearly 100 people sickened in salmonella outbreak linked in part to recalled eggs produced in Texas: FDA ABC7 New York",
+        "published": "Sat, 25 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "current": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "comparison": "Thu, 23 Jul 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZDJKZ2FBLXpicTlIMnZtWjBzd3VyS1FqUnpYcVlBTDBUdnhaN3hXeTZqcHpJZ3hxaS1GQ3BMTWI1TW4tLW83dlBvempKZk04TGZNTHVxd3A2NUJJWDZIUlZ5YmRYMDNhT0ozQnBINXNLVWtWNDJ3dnpQUWRINzRHRjRidDNZVnozR0sxVmt2dWJHTWQtM3RCRkNiSG43NExVRkdLdE5CTkxzb3N0SDNqckxsRHRVbF9RUWR3UktpZ9IBxwFBVV95cUxNOTlqcmFOcVlpcEhyWDRtREdUX1lVbFM2STl4SzlvbGxIMmhUVlV3OVlPRzRDR2FmVlFOckstYzFUSS1xYlhKMEdibWoyMFhIQ1JkWlluNTc1ZEhXOFhuU3BVVTh6VnhvWWVyWUJpRFFmbVpacVE3aGRqVDNFQWpCSGZHbjMxSjQzaDAzamJkaUMwTG5FUUZwbF8yNDRodUZ1cHJ3TlBpZFdUeWhBV09QTzBLbGVfd2tweTNiX19YWTB6aTRnUEVR?oc=5",
+        "title": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria - NBC New York",
+        "summary": "MAP UPDATE: 50 buildings in Manhattan outbreak zone test positive for live bacteria NBC New York",
+        "published": "Thu, 23 Jul 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "BIG APPLE PERFORMING ARTS FAIR",
+      "date": "Sat, Aug 22",
+      "borough": "Manhattan",
+      "location": "6th Ave & West 42nd St",
+      "event_type": "Street Festival"
+    },
+    {
+      "name": "6TH AVENUE MERCHANDISE FAIR NoHo",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "6th Ave & West 14th St",
+      "event_type": "Street Festival"
+    },
+    {
+      "name": "Americas 911 Ride",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "7th Ave & West 49th St",
+      "event_type": "Parade"
+    },
+    {
+      "name": "Pakistan Independence Day Celebration",
+      "date": "Sun, Aug 23",
+      "borough": "Manhattan",
+      "location": "East 38th St & 5th Ave",
+      "event_type": "Parade"
+    },
+    {
+      "name": "New Student Orientation Lunch Block Party",
+      "date": "Wed, Aug 26",
+      "borough": "Manhattan",
+      "location": "West 27th St & 7th Ave",
+      "event_type": "Street Event"
+    }
+  ],
+  "news": [
+    {
+      "title": "Here's how America's $40 trillion debt can hit your wallet",
+      "source": "Axios",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOQnBoUnZyY1lwRjZ3MkQ3Wk1oS1Y0QWZKS29pczdXczBmdlA1X3BpWnZjbjEzcVRRODNJM2VDSWp4Rm9uUkNLdGoxTWNuN29xWDJuSm83WFFHekNVODVpQkRCWmxTWUJUTF9QdENsU1g5LTNnMTBvTGcxT0tRaEdINEkwUlAwY19JdEpXTFNR?oc=5",
+      "published": "Fri, 21 Aug 2026 07:25:27 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Axios.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "Charter plane crash kills 8 at remote radar site in western Alaska, military says",
+      "source": "CBS News",
+      "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE53d1hFZV9ienB1SHZGRkFSQzVGTllwQ3NWd1gwR2o0ZE14WEFBUWVwVzk1aEw4UDNNU2RCS0dmbHhJT19WcHlXRGV6NUx1YzZ3SURVQXFRbXpsY0xWZm9SQWhkbXc5TUFrOGRqakdZRlhSa3RJM0wyQVlR?oc=5",
+      "published": "Fri, 21 Aug 2026 06:54:33 GMT",
+      "raw_text": "Charter plane crash kills 8 at remote radar site in western Alaska, military says\nJuneau, Alaska \u2014 A charter aircraft carrying eight people crashed at a remote radar site in western Alaska on Thursday, killing all on board, the U.S. military said.\nThe crash happened at Cape Newenham Long Range Radar Site Airport, approximately 450 miles west of Anchorage.\nThe U.S. Army Corps of Engineers said in a statement that two of its employees were among those killed, according to KTUU-TV, a sister station to CBS Anchorage affiliate KYES-TV.\n\"This is a devastating loss for our military family and the communities we serve,\" U.S. Air Force Lt. Gen. Robert Davis, commander of Alaskan Command, the Alaskan North American Aerospace Defense Command Region and Eleventh Air Force, said in a statement.\nThe radar site is managed by the Pacific Air Forces Regional Support Center. It's part of a network of remote radar sites that track aircraft operating in Alaska's airspace and along its borders, the statement from Alaskan Command said.\nThe statement didn't provide details on the specific work the individuals were doing.\nIt referred to the plane involved as a \"civilian-contracted aircraft.\" The Army Corps said in its statement that it had chartered the plane, KTUU reported. CBS News has reached out to the corps about the discrepancy.\nDavis described those on board as \"dedicated professionals carrying out a vital mission in a demanding environment. Our absolute priority right now is providing unwavering support to their families, friends and teammates during this devastating time. We are profoundly grateful for the swift and tireless response of our search and recovery professionals.\"\nClint Johnson, the National Transportation Safety Board's Alaska region chief, said there were two pilots and six passengers on board.\nThe plane had taken off from Anchorage and was believed to have crashed on approach to Cape Newenham, Johnson said.\nThe Federal Aviation Administration said in a statement that the Cessna 441 crashed at 12:15 p.m. local time.\nThe twin-engine Cessna aircraft was operated by Anchorage-based air charter company Security Aviation, Johnson said, according to KTUU.\nThe FAA said the NTSB would lead the investigation into the crash, with the FAA assisting.",
+      "summary": "\"<strong>This is a devastating loss for our military family and the communities we serve,</strong>\" U.S. Air Force Lt. Gen. Robert Davis, commander of Alaskan Command, the Alaskan North American Aerospace Defense Command Region and Eleventh Air Force, said in a statement.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Hong Kong's Tiananmen activists convicted in national security trial",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE0wQTVYNHFydWprakYyQXJNeWVHejVJeWN3eE0tT0VxOHE4SXFBVUVuakRUU1hON2JJeTF3dkp6T3RjcFd1TmRueUl4TTBpZ3Q0eHJwM2hjUGtOZw?oc=5",
+      "published": "Fri, 21 Aug 2026 05:47:32 GMT",
+      "raw_text": "Hong Kong's Tiananmen activists convicted in national security trial\nTwo Hong Kong activists who organised annual vigils to commemorate the 1989 Tiananmen Square crackdown have been found guilty of inciting others to subvert state power under the city's controversial national security law.\nLee Cheuk-yan, 69, and Chow Hang-tung, 41, face a maximum penalty of 10 years in prison after being convicted under the China-introduced law. Sentencing is expected at a later date.\nA third defendant, Albert Ho, 74, pleaded guilty in January.\nLee and Chow \"incited other persons to organise, plan, commit or participate in acts by unlawful means with a view to subverting the state power\", according to a summary on Friday. Chow told the court in May the law itself was on trial.\nHong Kong used to be one of the only places in Chinese territory where people could gather to mark the deadly 1989 crackdown against pro-democracy protesters.\nAuthorities banned these gatherings in 2020, citing Covid-19 policies, but they have never resumed. This was also the year the national security law, which makes illegal a wider range of dissenting acts, officially came into force.\nIn mainland China, authorities have banned even oblique references to the 1989 crackdown.\nIn the courtroom, Chow smiled as the verdict was read out, while Lee showed little emotion as he made a heart gesture and folded his hands to show his gratitude to those in the gallery.\nLee, a lawmaker, and Chow, a lawyer, were also leaders of the now-defunct Hong Kong Alliance (HKA), which has been described as a \"toxic tumour\" by Chinese authorities.\nThe HKA was founded in May 1989 to support students holding pro-democracy rallies. Weeks later, the Communist Party crushed pro-democracy protests in Beijing's Tiananmen Square with troops and tanks. Estimates of the death toll range from a few hundred to many thousands.\nOver the next three decades, HKA called on authorities to accept responsibility for the crackdown, free dissidents and introduce democratic reform.\nThe Alliance's leaders were charged in 2021 and have been behind bars since.\nRights group Amnesty International has said the case \"relies on vague, overly broad and arbitrary definitions of 'subversion'\".\nSarah Brooks, Amnesty International's deputy regional director, said Chow and Lee had \"not committed any recognisable crime\".\n\"Chow Hang-tung and Lee Cheuk-yan are prisoners of conscience who should never have been prosecuted in the first place. They must be released immediately and unconditionally,\" she added.\nElaine Pearson, Asia director at Human Rights Watch, said the convictions showed \"how public displays of mourning have become a crime in Hong Kong\".\nIn a separate case, Chow was arrested in June 2021 for \"inciting\" the public to take part in that year's vigil and later found guilty.\nHowever, Hong Kong's top court overturned that conviction in 2022, with a judge ruling the police hadn't properly justified the vigil's ban.\nChow Hang-tung spoke to the BBC in 2021, weeks before her arrest on 4 June 2022.\n\"I am prepared to be arrested. That is how Hong Kong is now,\" she had said.\n\"I am willing to pay the price for fighting for democracy.\"\nCritics say the national security law has eroded Hong Kong's autonomy and created a climate of fear. Authorities insist it is needed to maintain stability.\nAmong other things, the law criminalises anything considered as secession - or breaking away from China - as well as subversion, terrorism and collusion with foreign or external forces.",
+      "summary": "Lee, a lawmaker, and Chow, a lawyer, were also leaders of the now-defunct <strong>Hong</strong> <strong>Kong</strong> Alliance (HKA), which has been described as a \"<strong>toxic tumour</strong>\" by Chinese authorities. In a separate case, Chow was arrested in June 2021 for \"<strong>inciting</strong>\" the public to take part in that year's vigil and later found guilty.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Navy may name new aircraft carrier after Trump and not WWII hero",
+      "source": "USA Today",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVEphcnFSd3lOQnRNczZCLW9rSHpnczA5OE5lYmxkMVNGdzU4OWl6ZUNuLVhPcTdqSjA0Tnd4NDBURHYxS3hWMkpxcXNONm5iTGY2WnBMODRfY3VIaDR1V3hBRjN6MnhBU3h2alhzeVhKTHh4Tm9rWmVjNUlEMF80ekcwd0JuVC1ZUmM2NFZNY2h6T1pBeEw4dXhMWGhOUDM2el9IeDBfOVVqTkNzUENweTFIdTh4Zk0?oc=5",
+      "published": "Fri, 21 Aug 2026 03:18:00 GMT",
+      "raw_text": "Navy may name new aircraft carrier after Trump and not WWII hero\nThe move to name an aircraft carrier after a sitting president would mark an unprecedented move. The carrier was expected to be named in honor of Navy Cross recipient Doris Miller.\nU.S. Navy officials may name a new aircraft carrier after President Donald Trump instead of a World War II sailor who heroically saved lives when Pearl Harbor was bombed, CNN and NBC News reported Thursday, Aug. 20.\nThe reported move by the Navy to name the carrier, now called CVN-81, comes amid a decades-long push to recognize Doris Miller, an enlisted Black sailor who was a mess attendant second class aboard the battleship USS West Virginia when bombs began falling on Dec. 7, 1941.\nMiller, who had been gathering laundry that morning, rushed to the smoking deck and took control of an anti-aircraft gun he had no training on and opened fire on Japanese planes, downing at least one of them. He also helped carry wounded sailors to safety.\nMiller was famously portrayed by Cuba Gooding Jr. in the 2001 film Pearl Harbor. During Trump\u2019s first term, the Navy announced that the Ford-class carrier would be called the USS Doris Miller.\nCNN, citing three sources familiar with internal discussions, said it\u2019s unclear what the carrier will be named. But two of the sources told CNN there have been internal conversations about renaming it to honor Trump. It would be an unprecedented move to name an aircraft carrier after a sitting president. NBC, citing two U.S. officials, also reported that Navy leaders are considering naming the carrier after Trump and have been discussing the issue for months.\nThe carrier is still under construction until 2034 but the Navy is under a time crunch to finalize the name as the ship\u2019s keel-laying ceremony is expected at the end of this year, according to CNN.\nAmid conversations over the ship\u2019s name, the Navy has effectively stopped referring to the ship as the USS Doris Miller internally and is only calling it by its hull number, CVN-81, one of the sources said. A recent White House executive order on shipbuilding also referred to the ship only as CVN-81, tasking the Secretary of Defense and Secretary of the Navy to report back with a plan to replace the ship\u2019s electromagnetic aircraft launch system with steam and hydraulic systems.\nUSA TODAY has reached out to the White House and Navy for comment. A Pentagon spokesperson declined to comment.\nAccording to CNN, the Navy plans to name another warship after Miller and is recommending him for the Medal of Honor, the highest decoration for military valor. NBC reported that the White House has not approved the commendation for Miller.\nMiller\u2019s family could not be immediately reached for comment. The Waco, Texas, native died in 1943 during a Japanese torpedo attack in the Pacific. His family and members of Congress have long pushed for him to be awarded the Medal of Honor.\nAfter the Japanese surprise attack in Hawaii in 1941, \"Dorie,\" as he was known, received the Navy Cross for his action in 1942.\nPossible first aircraft carrier to be named after an African American\nThe U.S. Navy said on Martin Luther King Jr. Day in 2020 that the carrier would be the first to be named after an African American.\nNavy Acting Secretary Thomas B. Modly said at that time the USS Doris Miller would serve as a reminder of the nation's pursuit for justice and as a tribute to its namesake.\n\"Doris Miller was the son of a sharecropper and a descendant of slaves,\" Modly said at the ceremony at Pearl Harbor. \"He was not given the same opportunities that men of a different color were given to serve this country. But on Dec. 7, 1941, he would not be defined by the prejudice of other people.\"\nMiller was a ship's cook at the time, Modly said, and showed initiative, professionalism and commitment during the attack.\n\u201cIn selecting this name, we honor the contributions of all our enlisted ranks, past and present, men and women, of every race, religion and background,\u201d Modly said in a statement announcing the ship's name in 2020. \u201cDr. Martin Luther King Jr. observed, \u2018Everybody can be great \u2013 because anybody can serve.\u2019 No one understands the importance and true meaning of service than those who have volunteered to put the needs of others above themselves.\u201d\nThe Gerald R. Ford-class carrier named after Miller will be deployed in major combat operations, crisis response and humanitarian relief, the Navy said in a statement. One other ship bears Miller's name: the USS Miller (FF-1091), a Knox-class frigate.\nAlong with the Navy Cross, Miller was awarded the Purple Heart; the American Defense Service Medal, Fleet Clasp; the Asiatic-Pacific Campaign Medal; and the World War II Victory Medal.",
+      "summary": "During <strong>Trump</strong>\u2019s first term, the <strong>Navy</strong> announced that the Ford-class carrier would be called the USS Doris Miller. Possible first aircraft carrier to be named after an African American The U.S. <strong>Navy</strong> said on Martin Luther King Jr. Day in 2020 that the carrier would be the first to be named after an African American."
+    },
+    {
+      "title": "Storms cause flood, tornado warnings in New York City, Tri-State | Live Updates",
+      "source": "ABC7 New York",
+      "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQeTRVekZ2V2RMaUJId0NCT1FIcjRKMkVwSVlFQW5RaFNfU0d0eHQ1Q2owTTVlbXIxQTZnTFEyYkplSDZhcV9LaXUwXy1uNWlqcmtyWF9xcXk4U1JRbHJadWdEdUNKMGtoVU1LMEJVT2lveTh4UHk3Qms3OENXeU1vUWRNTW5qX1dDQWJJTmlRRGF4WUE2enp2WWI2WXplSjJuUUdINFVNNzRzVGd4SkJXd0VIUXQ2UWc?oc=5",
+      "published": "Fri, 21 Aug 2026 02:49:00 GMT",
+      "raw_text": "NWS to survey Atlantic Beach storm damage after possible tornado\nThe National Weather Service is expected to survey storm damage in Atlantic Beach Friday morning after a possible tornado tore through the area, leaving the Sun and Surf Beach Club heavily damaged.\nMore than 30 cabanas that had been occupied by over 100 guests were destroyed at the beach club, and it remains unclear when the property will reopen.\nA spinning column of air and water was spotted Thursday evening in both Atlantic Beach and the eastern Rockaways. The NWS is now investigating whether a waterspout moved onto land in Atlantic Beach, which would classify it as a tornado.\nThose inside the Sun and Surf described terrifying moments as powerful winds shook the building and sent furniture and debris flying.\n\"The noise was frightening, you could hear the wind, it was extremely violent,\" Sun and Surf board member Richard Accarino said.\nOne person suffered a minor head injury. First responders searched the damaged area Thursday night to make sure no one was trapped.\nNassau County Executive Bruce Blakeman is expected to hold a news conference at 8 a.m. Friday with an update on the storm damage.\nAbout 2,000 customers on Long Island remained without power early Friday morning",
+      "summary": "NWS to survey Atlantic Beach storm damage after possible tornado The National Weather Service is expected to survey storm damage in Atlantic Beach Friday morning after a possible tornado tore through the area, leaving the Sun and Surf Beach Club heavily damaged.",
+      "emoji": "\ud83c\udf2a\ufe0f"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "AI Daily Brief",
+      "title": "The AI Backlash Is Getting Stupider But Also Smarter",
+      "video_id": "efyXCQSu-bU",
+      "published": "2026-08-21",
+      "link": "https://youtube.com/watch?v=efyXCQSu-bU",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "The anti-AI backlash is becoming more meme-driven and politically powerful\u2014but also, in a few important ways, more productive. NLW looks at Liquid Death\u2019s viral Jason Kelce ad, Josh Shapiro\u2019s aggressive new data center rules, and OpenAI\u2019s voluntary training pause to ask whether the AI debate is finally creating room for concrete standards instead of blanket bans. Free Webinar - Agentic Loops for Knowledge Workers - 8/26/26 26pm https://aidailybrief.ai/webinar Brought to you by: KPMG \u2013 Research from KPMG and the University of Texas at Austin shows the highest-impact AI users treat AI like a reasoning partner \u2014 and those skills can be taught at scale. Learn more at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://kpmg.com/us/Sophisticated\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Harbor - Invest in the AI ecosystem. \u2060\u2060\u2060\u2060\u2060https://www.harborcapital.com/aidaily\u2060\u2060\u2060\u2060\u2060 Hyperagent - Hire a fleet of always-on agents. New users get $1,000 in inference. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060hyperagent.com/aidailybrief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Rackspace Technology- One accountable partner to build, operate and run your full enterprise AI stack \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.rackspace.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Section - Section turns AI investment into workforce transformation and ROI - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.sectionai.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Blitzy - Want to accelerate enterprise software development velocity by 5x? \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://blitzy.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 AssemblyAI - The best way to build Voice AI apps - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.assemblyai.com/brief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Robots &amp; Pencils - Cloud-native AI solutions that power results \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://robotsandpencils.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 The AI Daily Brief helps you understand the most important news and discussions in AI. Subscribe to the podcast version of The AI Daily Brief wherever you listen: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://pod.link/1680633614\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Our Newsletter is BACK: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://aidailybrief.beehiiv.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Interested in sponsoring the show? sponsors@aidailybrief.ai",
+      "source_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Backlash-Is-Getting-Stupider--But-Also-Smarter-e3nkhhd",
+      "read_more_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-AI-Backlash-Is-Getting-Stupider--But-Also-Smarter-e3nkhhd",
+      "thumbnail": "https://img.youtube.com/vi/efyXCQSu-bU/mqdefault.jpg"
+    },
+    {
+      "channel": "This Week in Startups",
+      "title": "Taste is the new programming language (w/ Astrocade CEO Amir Sadeghian) | AI Basics",
+      "video_id": "Y3lrMrZpiuc",
+      "published": "2026-08-20",
+      "link": "https://youtube.com/watch?v=Y3lrMrZpiuc",
+      "summary": "New episode from This Week in Startups. Click to watch.",
+      "raw_text": "The TWiST AI Basics series is made possible by Google Cloud! Build context-aware AI workflows using DeepMind models and orchestration tools with Google for Startups' new Startup technical guide on generative media. Get the guide here: https://goo.gle/technical_guide Astrocade is building super-intelligence for the interactive world. Build the future of fun: https://www.astrocade.com/careers Today's show: *Making a video game once required a studio, an engine, and a team of five or more people working for six months. But with Astrocade, users just describe the game they'd like to play and share, and an AI assembles it from minutes, ready to publish to a TikTok-style feed. Still, founder and CEO Amir Sadeghian tell us AI can't actually build a great game all on its own. The magic isn't just in the automation, but the user's creativity and good taste. Amir demos how the app turns simple sentences and descriptions into full video games, explains why frontier models still regress to the mean rather than pushing boundaries, and unpacks how the game's human-in-the-loop workflow can turn even generic ideas into something original and fun. Guest: Amir Sadeghian on X: https://x.com/_amirabs Astrocade: https://www.astrocade.com/ Relevant Links Flappy Bird: https://flappybird.io/ Plants vs. Zombies: https://www.ea.com/ea-studios/popcap/plants-vs-zombies MrBeast on YouTube: https://www.youtube.com/@MrBeast Google's Nano Banana Pro: https://nanabananapro.com/ Timestamps: 0:00 Welcome to AI Basics, presented by Google Cloud 0:44 Amir Sadeghian, CEO of Astrocade joins 1:08 What is Astrocade and how does it work? 2:58 From describing to publishing: the TikTok for games 3:37 Amir's origin story: four continents, one vision 5:11 Why making games used to require years of training 6:46 The watermelon juice theory of product friction 7:35 Taste as the new programming language 14:18 Personalizing games with your own images 15:23 From consumer to prosumer: can you make a living? 16:22 Astrocade's creator fund and new creator economy 17:07 Open roles at Astrocade 18:10 Why play is the most universal human language 19:43 Google Cloud, Gemini, and wrapping up Subscribe to the TWiST500 newsletter: https://ticker.thisweekinstartups.com Check out the TWIST500: https://www.twist500.com Subscribe to This Week in Startups on Apple: https://rb.gy/v19fcp Follow Lon: X: https://x.com/lons Follow Jason: X: https://twitter.com/Jason LinkedIn: https://www.linkedin.com/in/jasoncalacanis Thank you to our partners! Build context-aware AI workflows using DeepMind models and orchestration tools with Google for Startups' new Startup technical guide on generative media. Get the guide here: https://goo.gle/technical_guide Astrocade is building super-intelligence for the interactive world. Build the future of fun: https://www.astrocade.com/careers Great TWIST interviews: Will Guidara, Eoghan McCabe , Steve Huffman , Brian Chesky , Bob Moesta, Aaron Levie , Sophia Amoruso , Reid Hoffman , Frank Slootman , Billy McFarland Check out Jason's suite of newsletters: https://substack.com/@calacanis Follow TWiST: Twitter: https://twitter.com/TWiStartups YouTube: https://www.youtube.com/thisweekin Instagram: https://www.instagram.com/thisweekinstartups TikTok: https://www.tiktok.com/@thisweekinstartups Substack: https://twistartups.substack.com",
+      "source_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/taste-is-the-new-programming-language-w-astrocade-ceo-amir-sadeghian-ai-basics",
+      "read_more_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/taste-is-the-new-programming-language-w-astrocade-ceo-amir-sadeghian-ai-basics",
+      "thumbnail": "https://img.youtube.com/vi/Y3lrMrZpiuc/mqdefault.jpg"
+    },
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Moderna\u2019s shares nearly triple after breakthrough cancer vaccine success",
+      "video_id": "x00oXcUI2Os",
+      "published": "2026-08-20",
+      "link": "https://youtube.com/watch?v=x00oXcUI2Os",
+      "summary": "New episode from Morning Brew Daily. Click to watch.",
+      "raw_text": "Walmart reports slowest sales growth in 6 years\n\nWalmart reports slowest sales growth in 6 years\nIn response to the news, the retail giant\u2019s stock dropped over 9% yesterday.\n\u2022 less than 3 min read\nWalmart\u2019s same-store sales growth wobbled out of last quarter with the power of the last remaining shopping cart during a Sunday afternoon grocery trip. US sales growth inched up just 2.6%, the company\u2019s slowest growth in almost six years in what was otherwise a positive earnings report. With Walmart often seen as a bellwether for the broader US economy, economists are worrying if consumer spending might finally be starting to dwindle.\nIn response to the news, the retail giant\u2019s stock dropped over 9% yesterday. Much of the blame was placed on Walmart\u2019s health and wellness business, which suffered from new drug price caps, including on GLP-1s. But, even excluding those losses, sales growth clocked in at 3.4%, just shy of Wall Street\u2019s expected 3.5%. Last year, same-store sales grew 4.6% during the same time.\nSo what\u2019s going on?\n- CFO John David Rainey told investors that the consumer environment has softened in the last quarter, pointing to gas prices jumping past $4 a gallon in July.\n- Average hourly earnings have slowed, consumer sentiment sank this month, and folks\u2019 personal savings rates are at their lowest levels since 2022.\n- Spring also brought higher-than-usual tax refund checks that have likely dried up.\nSome relief might be on the way. Walmart said that it\u2019s investing its tariff refund\u2014a record $2.9 billion\u2014back into lowering prices. Last quarter, the retailer said it eased prices on 11,000 items, an increase from 7,200 products in Q1.\nWhat about the competition? Retail sales across the board were down 0.6% in July compared with June, according to the most recent Census Bureau data. But some areas are doing better than others: Target said its back-to-school sales were up by almost 20% compared with last year, while Home Depot said that sales of items needed for small projects, like painting and gardening, have replaced large-scale remodels.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nTreasury\u2019s plan to boost bonds falls flat\n\nTreasury\u2019s plan to boost bonds falls flat\nUS bond prices popped only briefly after Treasury Secretary Scott Bessent said the government would buy more of them.\n\u2022 less than 3 min read\nUncle Sam\u2019s attempt to give its Treasury bonds a not-so-invisible hand isn\u2019t working out as planned. The effect of Treasury Secretary Scott Bessent\u2019s announcement this week that he would raise the limit on buying bonds back from investors to support the US bond market turned out to be as short-lived as your calligraphy hobby.\nBessent\u2019s announcement on Wednesday that the buyback program would grow from $2 billion to at least $4 billion per operation followed a bond selloff that pushed the 30-year bond yield\u2014which moves opposite to price\u2014to 5.32% on Tuesday, the highest level since 2007. Many analysts interpreted Bessent\u2019s move as an attempt to lower yields (along with closely correlated mortgage rates). But instead of sagging, they whipsawed:\n- Yields came down to as low as 5.18% following Bessent\u2019s initial announcement on Wednesday but then rebounded to 5.27% by yesterday morning.\n- After Bessent told CNBC yesterday that the Treasury could use other tools to support bonds, yields dipped again\u2014but only briefly.\nSome analysts aren\u2019t surprised. They say buying bonds doesn\u2019t address the reasons investors are demanding higher premiums for holding US debt in the first place\u2014which include fears that rising oil prices will reignite inflation and worries about ballooning government debt.\nFed Chair Kevin Warsh advocates for the opposite approach\u2026saying the central bank should take a backseat to bond investors in determining interest rates.\u2014SK\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\n'GTA VI' hackers threaten a nightmare scenario\n\n'GTA VI' hackers threaten a nightmare scenario\nThe group may have an actual working build of the game\u2014not just stolen videos.\n\u2022 less than 3 min read\nThe most anticipated video game of the decade may be suffering its most catastrophic leak yet: A hacktivist group called CyberLeek has allegedly been releasing unauthorized Grand Theft Auto VI footage all week, in protest against what it described as \u201cmonetization schemes.\u201d\nWorst case: The whole game gets spoiled. Yesterday, CyberLeek posted a clip (its fifth since Tuesday) that shows a GTA VI protagonist shooting the word \u201cLEEK\u201d into a wall:\n- This suggested that the group may have an actual working build of the game\u2014not just stolen videos.\n- The group has said that it won\u2019t stop releasing footage until publisher Rockstar Games and parent company Take-Two make certain business changes.\n- A prevailing fear is that CyberLeek may spoil the game bit by bit: It already apparently posted the game map.\nCyberLeek appears to be opposed to Take-Two\u2019s unpopular decisions to make GTA VI digital-only and paywall some in-game features behind the $100 Ultimate Edition. \u201cNo physical discs? Then more leeks!\u201d the group wrote on one of its clips. Per its manifesto, CyberLeek is \u201craising funds for a secret project\u201d and will target any game publisher that it considers to be acting against consumers\u2019 interests.\nGreat timing: Netflix is set to air an official extended look at GTA VI gameplay on Aug. 27.\u2014ML\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/your-best-shot",
+      "read_more_url": "https://www.morningbrew.com/issues/your-best-shot",
+      "thumbnail": "https://img.youtube.com/vi/x00oXcUI2Os/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "Your Mac is slowing you down (a rant about file systems)",
+      "video_id": "4wVNFaFDIn8",
+      "published": "2026-08-20",
+      "link": "https://youtube.com/watch?v=4wVNFaFDIn8",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/4wVNFaFDIn8/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and guardrail bypasses.",
+  "ai_security": [
+    {
+      "title": "Fortinet acquires AI security startup Virtue AI to bolster its autonomous agent defenses",
+      "source": "Crypto Briefing",
+      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9ySC1NQ2huTEdBQVowSWNWbHM0RDZiM3A0WU54d21IM1BCbklKaUNQZUhzNlNxd2pCMzk2REZLZlYtYXFlSDZxa1V5UjdUMVI4Qk5EUzBLM2FHekl6MUdtT1MwRWtrT1pUOTRsZ1B2QmU1UQ?oc=5",
+      "published": "Wed, 19 Aug 2026 01:19:47 GMT",
+      "summary": "<strong>Fortinet</strong> is now absorbing that technology into FortiAIGate, its platform designed to provide security coverage across the full AI lifecycle: prompts, models, agents, and APIs. The company has been building out what it calls its \u201cSecurity for AI\u201d strategy, and <strong>Virtue</strong> AI represents the latest piece of that puzzle.",
+      "raw_text": "Fortinet acquires AI security startup Virtue AI to bolster its autonomous agent defenses\nVirtue AI specializes in securing autonomous AI systems, with technology for automated red-teaming, continuous validation, agent governance and real-time AI guardrails.\nFortinet just bought Virtue AI, a startup focused on securing the kinds of autonomous AI systems that enterprises are racing to deploy. The acquisition, announced on August 17, slots Virtue AI\u2019s runtime protection and automated validation technology directly into Fortinet\u2019s FortiAIGate platform.\nFinancial terms weren\u2019t disclosed, with Fortinet describing the deal as immaterial to its overall business.\nWhat Virtue AI actually does\nVirtue AI built technology designed to protect AI systems while they\u2019re actually running, not just during development or after a breach. The startup\u2019s core capabilities include red-teaming agentic systems in protected sandbox environments, continuous validation with audit-ready reporting, and real-time guardrails that enforce governance policies across different modalities.\nThe startup raised $30 million across seed and Series A rounds in 2025, building out its technology during a period when enterprise AI adoption was accelerating faster than security teams could keep up. Fortinet is now absorbing that technology into FortiAIGate, its platform designed to provide security coverage across the full AI lifecycle: prompts, models, agents, and APIs.\nA market that\u2019s about to get very large\nGartner forecasts that the market for securing AI ecosystems and agents will grow from $2.8 billion in 2026 to $16.4 billion by 2030. That\u2019s roughly a 6x increase in four years.\nFortinet is positioning itself to capture a meaningful slice of that expansion. The company has been building out what it calls its \u201cSecurity for AI\u201d strategy, and Virtue AI represents the latest piece of that puzzle.\nWhat this means for the competitive landscape\nThe acquisition also narrows the field for other AI security startups. Virtue AI was one of several companies working on runtime protection for autonomous AI systems. Its exit to Fortinet validates the market category while simultaneously removing a potential partner or competitor from the landscape.\nThe deal also underscores a shift in how the industry thinks about AI risk. Early conversations about AI security centered mostly on data privacy and bias. The conversation has since evolved to encompass a much broader threat surface: prompt injection attacks, model manipulation, API exploitation, and the challenge of governing AI agents that operate with increasing autonomy. Virtue AI\u2019s focus on runtime protection and real-time guardrails reflects this newer, more operational understanding of AI risk.",
+      "type": "news"
+    },
+    {
+      "title": "Managing the cyber risk of agentic AI",
+      "source": "National Cyber Security Centre",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5UZ2hPZ2poYUtzNVRSbzFYX2dzNGpqSGxOVGtickdodjc5ZVBTZ3poYlVYUkhUclVEckFBMXFfeDNwSGIxeWNnbElGTFpiRGZiRFByN2dhNUt5ejlUb0RKYmo0aFJRc0VONU9FVV85aTd4V1lXY1E?oc=5",
+      "published": "Thu, 20 Aug 2026 12:00:00 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Managing the cyber risk of agentic AI\nUse safeguards, sandboxing and active oversight to realise the benefits of autonomous systems while limiting the unintended activity.\nJ Studios via Getty Images\nAgentic AI systems have shown potential to transform how organisations work, at times delivering unparalleled productivity gains. They can automate complex workflows, reduce routine effort and enable people to focus on higher-value tasks.\nAs organisations deploy increasingly autonomous uses of AI at pace, it is important to consider how these systems behave when they do not function as envisaged or expected - and plan accordingly.\nRecently, there have been several incidents involving AI models and agentic AI systems carrying out unsanctioned or unintended activity. These events highlight why organisations need to carefully consider how these technologies are deployed, constrained, observed and responded to.\nAdvice and effective practice will continue to evolve\nAI cyber security continues to be a rapidly evolving field, and effective practice will continue to evolve as the technology matures and evidence bases are built. We will work with the wider cyber security community to continue to research, develop and evaluate approaches that help organisations deploy increasingly autonomous systems securely and confidently.\nThe NCSC has been researching and experimenting in this area for some time and is working with partners to develop formal guidance which will build upon, and ultimately supersede, this blog.\nUntil formal guidance is published, the NCSC is sharing interim practical advice, based on NCSC research to date, to help organisations make informed decisions about how to deploy agentic AI systems securely within their environments.\nWho this blog is for\nThis blog is aimed at system designers and operators who are:\n- building environments where AI agents are intended to operate with significant degrees of autonomy\n- concerned about the implications of an AI agent performing unintended actions because of the instructions it receives, the tools available to it, or the systems it can access\nAssess how much autonomy is needed\nThe recommendations in this blog should be applied proportionately based on the level of autonomy each agentic AI system is intended to have.\nNot every deployment requires the same degree of autonomy. Some agents may simply assist a human user by making suggestions or carrying out tightly constrained tasks in a low-risk manner. Others may be trusted to take actions, access production systems and make decisions with little or no human intervention in potentially high-risk scenarios.\nThe greater an agent's autonomy, the greater the potential impact if it:\n- malfunctions unexpectedly\n- accesses information it should not\n- takes actions outside its intended scope\nAnd therefore the greater the need for controls.\nBeing clear on the level of autonomy, and the level of risk you are willing to tolerate, will inform the design of controls that are proportionate to both the organisational benefits you aim to achieve and the consequences of a failure.\nUnderstand your model's built-in safeguards and protections\nOnce you have identified how much autonomy an agent will have and the level of risk you are prepared to accept, it is important to understand the safeguards that already exist within the AI model, inference service and harnesses you are using.\nMany AI models include mechanisms designed to detect or prevent certain types of unwanted behaviour. These controls can provide a baseline level of protection. However, they should not be treated as holistic. Safety controls built into models may:\n- be bypassed\n- not provide adequate protection in higher-risk environments\n- not be sufficient to manage risk appropriately on their own\nUnderstanding the safeguards that are available, their efficacy and their limitations, will enable you to determine what additional controls are needed.\nPlan for additional safeguards\nFor applications where the consequences of failure are above tolerance, organisations should implement additional safeguards rather than relying solely on model-level or harness-level protections.\nExamples of further safeguards can include classifiers, deterministic provers and wider controls.\nIrrespective of the inbuilt controls, all deployments should be subject to robust observability, operational monitoring and response procedures.\nKey considerations\n-   1 Identify what could go wrongDocument what is within and outside the scope of your intended activity, highlighting any \u2018red lines\u2019 that the agentic AI system must stay within. Before deployment, carry out threat modelling to identify the failure scenarios during the agent\u2019s activities. Consider: \n  - the prompt given to the agent\n  - the networks and services the agent may be able to access and communicate with through the configured sandbox \u2013 either directly or indirectly\n Remember that an AI agent is not human. It does not have common sense or human traits, and may interpret instructions and goals in literal or unexpected ways. Use the results from your threat modelling to assess whether you accept the risks identified and whether any additional controls should be placed in and around the agentic AI system.\n-   2 Prompt carefullyThe instructions and context given to an agentic AI system and its underlying model will influence the activities it carries out. AI agents can pursue goals in ways that are unintended or undesirable if those goals, or how you expect the agent to achieve them, are not clearly defined. The way a task is described can have a significant impact on the agent's behaviour. Before running an agent, think carefully about: \n  - what it is to achieve\n  - what actions it should be allowed to take\n  - when it should stop and seek human approval \u2013 and ensure those approvals will be both guaranteed and gated\n Where possible, make your expectations explicit. Instruct the agent in both what it should do and what it should not do. For longer-running tasks, review how the agent handles context over time. Some agents may compress their context windows to use tokens more efficiently. Where appropriate, repeat critical constraints so they remain throughout the task. However, do not rely on prompting alone. You should combine prompts with technical and operational controls to provide defence in depth.\n-   3 Set the right level of oversightConsider how much autonomy you want the agent to have. There are several approaches: \n  - Human-in-the-loop: humans approve actions before they happen.\n  - Human-on-the-loop: humans monitor actions and can intervene if needed.\n  - Human-out-of-the-loop: AI acts autonomously without human review.\n The model you choose should inform your risk tolerance and the potential consequences if the agent behaves unexpectedly. Where unintended activity would have significant consequences, we recommend: \n  - making named individuals or group responsible for agentic AI activities\n  - maintaining human oversight of the AI agent\u2019s actions\n  - instructing agents to identify blockers or behaviours directly\n  - using real-time monitoring alerts to identify unexpected or concerning behaviour\n  - monitoring what the agent is doing so it can be stopped if necessary\n Using additional \u2018judge\u2019 AI models and agents can help manage an agent's activities. However, these agents and the approach should be independently evaluated for performance noting that they may also have limitations and second order effects. For higher risk scenarios, we recommend having human oversight alongside technically enforced controls. When events of consequence are flagged, humans should be able to investigate quickly and take action to limit any unintended impact.\n-   4 Control the AI agent's environment with a robust sandboxAlways run AI agents within a sandboxed environment that controls and manages what resources can and cannot be communicated with, both locally and over a network. a. Decide what your agent can connect toFor high-risk activities, the most robust approach is to run your AI agent within an isolated and disconnected environment, with access to pre-downloaded tools and information. However, many use cases require the AI agent to communicate with external environments, systems and services including for access to the model. When this is necessary, apply sandbox isolations. b. Define the boundaries of the sandboxWhen designing a sandbox environment, think beyond the system where the: \n  - AI agent scaffolding runs\n  - AI agents commands run\n  - inference infrastructure is - whether local, remote or as a service\n Where possible, these elements should be segregated from one another. Instead, consider everything the agent can access or influence, whether directly or indirectly. This includes: \n  - Execution: between scaffolding, agent command execution sandbox and inference infrastructure\n  - Network: what it can remotely access\n  - Compute: what it can locally access\n  - Credentials: what identity and roles it can impersonate or otherwise have access to, intentionally or not\n  - Data: what data it has access to\n Some autonomous AI tools, such as OpenClaw and Hermes Agent, are designed to interact with large numbers of systems and services. The wider the access, the greater the potential impact if the AI agent malfunctions unexpectedly or is compromised. To help limit the agent\u2019s potential impact - sometime described as its 'blast radius', you should try to restrict access to just the resources needed for the task being performed whilst monitoring for attempts at wider access. c. Restrict network accessWhere possible, deny all inbound and outbound network traffic to the AI agent\u2019s environment by default. Then, only allow connections that are required, using allowlists. When selecting network sandboxing technologies, consider the security properties described in our cross domain approach and architecture guidance. Some use cases require internet access and allowlists may not always provide the level of control or granularity required. In these cases, consider using protocol- or service-aware proxies that allow connections only by exception and require manual approval before permitting communications outside of approved scopes. The following maturity model will help you assess your approach: \n  - Level 1 (lowest): unrestricted network access\n  - Level 2: access restricted to an allowlist of approved domains\n  - Level 3: access restricted to just the API of the model\n  - Level 4 (highest): no external network access, with the model hosted locally inside the network sandbox\n d. Strengthen compute and host isolationMany AI agent solutions include built-in sandboxing technologies. For some use cases, these may provide a sufficient level of protection. However, you should evaluate whether they are appropriate for your use case. For higher risk activities, consider enforcing stronger isolation using additional controls and solutions. When prompted or trained on the underlying model to do so, AI agents may be able to discover and exploit configuration issues, or potentially even vulnerabilities, in certain technical controls. If this event occurs, it could lead to a sandbox escape. To reduce this risk, use multiple layers of isolation and control whilst regularly validating configurations, potentially via agentic AI approaches, to identify weaknesses or misconfiguration. This should include explicit prompts to not: \n  - connect to domains outside an allowlist\n  - attempt to escape the sandbox\n Not all sandboxing technologies offer the same level of protection. Choose mature, trusted sandbox technologies that are designed specifically to isolate potentially malicious code and activities. The following maturity model will help you assess your approach: \n  - Level 1 (lowest): no compute isolation. The AI agent runs on, or has remote access to, the host platform alongside other workloads and data\n  - Level 2: the agent runs on the same host as other workloads, but is constrained using kernel primitives such as process separation and OCI containers which are properly configured. A residual risk of kernel exploit breakout remains\n  - Level 3: the agent runs on the same host as other workloads but is isolated using virtualisation technologies\n  - Level 4 (highest): the AI agent runs on dedicated hardware that is separate from other workloads\n e. Assign and limit an agent\u2019s access to credentialsAll agents should be assigned their own unique identity in a class which differentiates them from human or individual systems. The credentials available to an AI agent form part of its potential 'blast radius' if it behaves unexpectedly. Credentials include API keys, OAUTH grants, SSH keys and any authenticated sessions the agent can access or use. These credentials allow the agent to perform actions using the identities and permissions associated with them. Where an agent has access to a host environment, such as a level 1 above (no compute isolation), it may also be able to use credentials that are available to the user account under which it is running. Where possible you should restrict the credentials available to the agent. Ensure it has only the permissions it needs for the task being performed and use credentials with the shortest possible lifetime. For some use cases, a proxy can help by injecting credentials into requests without exposing the credentials directly to the agent, which ensures the agent cannot use the credentials through an unexpected endpoint it finds access to.\n-   5 Observability: log, audit and monitor agentic AI activity as part of security operationsWhile an AI agent is operating, you need a reliable way to access and analyse telemetry about the activities it's carrying out, both in near real time and afterwards. This should include: \n  - chain of thought traces and transcripts from the AI agent\n  - logging events from the wider sandbox environment - such as access logs, proxies and network traffic\n This observability telemetry is critical for actively overseeing an AI agent's activities in real time, and for investigating any incidents. Make sure you save and protect these logs appropriately. They may contain sensitive data so you should ensure they are protected from modification or deletion. Where possible, logs should be immutable so you can trust them during an investigation. You should also consider the attack surface created by your log collection infrastructure and whether an AI agent could abuse it to escape from its sandbox environment. Agentic AI activity should be treated as a form of user activity. It should therefore be included in 24/7 security operational monitoring and incident response responses, with appropriate action taken when events arise. This may include running initial experiments in office hours, when more human oversight is available. Once you are confident that all controls are effective, you can expand to overnight or weekend autonomous execution. For more information, follow our guidance on logging and monitoring, and incident management.\n-   6 Make your AI activity easy to attributeIf your AI agent communicates with third-party systems, make it as easy as possible for those organisations to identify that the activity originates from you. Industry methods for doing this are still emerging, but examples include: \n  - ensuring traffic originates from IP addresses that support reverse lookups\n  - adding identifying headers to outbound communications as a form of watermarking, such as HTTP headers\n If you receive abuse reports or other communications about your AI agent\u2019s activity, manage them in the same way as a vulnerability or abuse report, and follow an incident management playbook.\n-   7 Emergency shutdown: maintain the ability to \u2018pull the plug\u2019If an incident is detected or reported, you should always be able to \u2018pull the plug\u2019 and halt autonomous AI agent activity immediately. This may mean more than stopping the agentic AI processes. Your controls should cover the wider system, allowing you to rapidly restrict network access to the agentic AI infrastructure and interrupt the communications between selected AI agents and the AI model inference infrastructure.\nFurther reading\nThe advice in this blog should form part of a wider approach to securing AI models and systems. Further information is available in:\n- The ETSI standard, EN 304 223. Baseline Cyber Security Requirements for AI Models and Systems\n- Thinking carefully before adopting agentic AI\n- Careful adoption of agentic AI services\nAI security is evolving rapidly. As capabilities, use cases and standards develop, organisations should continue to review their controls and assumptions, and ensure that the level of autonomy they grant AI agents remains proportionate to the risk appetite of the organisation.",
+      "type": "news"
+    },
+    {
+      "title": "PolicyGuide: From Guarding One Action to Guiding the Whole Workflow for Policy-Compliant LLM Agents",
+      "authors": [
+        "Seongjae Kang",
+        "Taehyung Yu",
+        "Sung Ju Hwang"
+      ],
+      "abstract": "Customer-service LLM agents must follow organizational policy when acting on a user's behalf. Compliance failures arise from either forbidden actions, such as granting an ineligible change, or omitted procedural requirements, such as identification or confirmation. Runtime safeguards can intervene on risky actions, but action-local checks do not guide an agent through a multi-step procedure. Workflow-following systems support prescribed process execution, but primarily target workflow completion rather than safeguarding agent behavior. PolicyGuide instead compiles each domain policy into a workflow graph and invokes a proactive verifier at user-turn boundaries. From persisted graph state, the verifier reconciles open requests and returns step-specific remediation along a policy-compliant path. Across the \u03c4^2-bench airline, retail, and telecom domains with a GPT-5.4 agent and verifier, PolicyGuide raises mean Pass^4 from 0.42 to 0.62, with the largest gain on telecom (0.19 to 0.61), the most workflow-structured domain. The same workflows transfer to Claude Sonnet 4.6 and Gemini 2.5 Pro agents. Complementary evaluations find the lowest observed attack-success rate under adversarial users and the strongest procedural compliance in an author-designed workflow-level validation.",
+      "link": "https://huggingface.co/papers/2608.19861",
+      "published": "2026-08-20",
+      "arxiv_id": "2608.19861",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Customer-service LLM agents must follow organizational policy when acting on a user's behalf. Compliance failures arise from either forbidden actions, such as granting an ineligible change, or omitted procedural requirements, such as identification or confirmation. Runtime safeguards can intervene on risky actions, but action-local checks do not guide an agent through a multi-step procedure. Workflow-following systems support prescribed process execution, but primarily target workflow completion rather than safeguarding agent behavior. PolicyGuide instead compiles each domain policy into a workflow graph and invokes a proactive verifier at user-turn boundaries. From persisted graph state, the verifier reconciles open requests and returns step-specific remediation along a policy-compliant path. Across the \u03c4^2-bench airline, retail, and telecom domains with a GPT-5.4 agent and verifier, PolicyGuide raises mean Pass^4 from 0.42 to 0.62, with the largest gain on telecom (0.19 to 0.61), the most workflow-structured domain. The same workflows transfer to Claude Sonnet 4.6 and Gemini 2.5 Pro agents. Complementary evaluations find the lowest observed attack-success rate under adversarial users and the strongest procedural compliance in an author-designed workflow-level validation.",
+      "summary": "Customer-service <strong>LLM</strong> agents must follow organizational policy when acting on a user's behalf. Compliance failures arise from either forbidden actions, such as granting an ineligible change, or omitted procedural requirements, such as identification or confirmation.",
+      "type": "paper",
+      "emoji": "\ud83d\udcdc"
+    },
+    {
+      "title": "ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models",
+      "authors": [
+        "Sahil Kale",
+        "Ian Harris"
+      ],
+      "abstract": "Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely. Current approaches rely on disjoint forget and retain sets composed of independent facts, and measure success using simple and direct factual recall. This framing fails to capture a key requirement of unlearning, namely the ability to eliminate harmful behaviors while preserving benign and beneficial knowledge. We argue that effective unlearning must operate at the level of concepts, ensuring complete removal of unsafe applications while maintaining their correct and useful usage, thereby achieving conceptually meaningful and complete unlearning. To better evaluate unlearning techniques from such a practical viewpoint, we introduce the notion of dual-use concepts: concepts that can be used in both harmful and benign contexts. Building on these concepts, we construct a benchmark called ConceptGuard where forget and retain sets are explicitly complementary in concept usage. Our benchmark uniquely enables unlearning to be explored and gauged at the level of concepts, instead of sparse facts, and evaluation is intent-sensitive with the goal of maximizing contextual separation to promote safer behavior. We demonstrate that current unlearning techniques perform poorly under this setting, showing weak contextual separation alongside poor performance in ROUGE and concept-level metrics. Our results reveal strong forgetting-utility trade-offs, limited gains in contextual sensitivity, and poor consistency in concept-level control across methods, and provide ideas for unlearning approaches that better align with real-world safety requirements. Our dataset is publicly available.",
+      "link": "https://arxiv.org/pdf/2608.20338v1",
+      "published": "2026-08-20",
+      "arxiv_id": "2608.20338v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely. Current approaches rely on disjoint forget and retain sets composed of independent facts, and measure success using simple and direct factual recall. This framing fails to capture a key requirement of unlearning, namely the ability to eliminate harmful behaviors while preserving benign and beneficial knowledge. We argue that effective unlearning must operate at the level of concepts, ensuring complete removal of unsafe applications while maintaining their correct and useful usage, thereby achieving conceptually meaningful and complete unlearning. To better evaluate unlearning techniques from such a practical viewpoint, we introduce the notion of dual-use concepts: concepts that can be used in both harmful and benign contexts. Building on these concepts, we construct a benchmark called ConceptGuard where forget and retain sets are explicitly complementary in concept usage. Our benchmark uniquely enables unlearning to be explored and gauged at the level of concepts, instead of sparse facts, and evaluation is intent-sensitive with the goal of maximizing contextual separation to promote safer behavior. We demonstrate that current unlearning techniques perform poorly under this setting, showing weak contextual separation alongside poor performance in ROUGE and concept-level metrics. Our results reveal strong forgetting-utility trade-offs, limited gains in contextual sensitivity, and poor consistency in concept-level control across methods, and provide ideas for unlearning approaches that better align with real-world safety requirements. Our dataset is publicly available.",
+      "summary": "<strong>Large</strong> <strong>Language</strong> <strong>Models</strong> (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completely.",
+      "type": "paper"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and guardrail bypasses.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "77\u00b0F",
+        "detail": "7% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-15"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "2 papers",
+        "detail": "Aug 20"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "4",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,543 cases this week \u2014 65% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 5,
+    "youtube_count": 4,
+    "ai_security_count": 4
+  }
+}
