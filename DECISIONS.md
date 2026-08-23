@@ -1,5 +1,19 @@
 # Architecture & Product Decisions
 
+## 2026-08-23: August 21 PDF reference is canonical
+
+**Context:** The user supplied `Daily Morning Briefing  Friday August 21 2026.pdf` and said the newsletter should return to that format.
+
+**Decision:** Use the August 21 Mail-exported compact briefing as the active visual reference: date above title, direct signal line, muted five-tile metric strip, plain dense weather table cells, compact health table callouts, colored `Top 3 Things` rows, sectioned event/news/video/security lists, optional Second Brain todo table, notes, and final overall signal.
+
+**Alternatives considered:**
+- August 2 `Three reads` / `Everything else` variant: rejected because the attached August 21 issue is the current user-supplied reference
+- Badge-heavy weather cells with emoji icons: rejected because they drift from the plainer table in the reference PDF
+
+**Status:** ACTIVE
+
+---
+
 ## 2026-08-11: Daily runs at 5 AM Eastern
 
 **Context:** The newsletter should publish once each morning, not at additional afternoon or evening times.

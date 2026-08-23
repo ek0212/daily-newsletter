@@ -101,25 +101,34 @@ def _sample_data(include_todos: bool = True) -> dict:
     return data
 
 
-def test_template_keeps_august_2_reference_order() -> None:
-    """August 2 compact reference keeps focus blocks before optional todos."""
+def test_template_keeps_august_21_reference_order() -> None:
+    """August 21 reference keeps sectioned scan blocks before optional todos."""
     html = render_html(_sample_data())
+
+    date_pos = html.index(">SUNDAY, AUGUST 02, 2026</div>")
+    title_pos = html.index(">Daily Morning Briefing</div>")
 
     order = [
         "NYC Weather",
         "NYC Public Health",
-        "Three reads carry today. The rest can wait.",
-        "Everything else, if you have more than a minute",
+        "Top 3 Things",
         "NYC Events",
+        "General Top News",
+        "Tech YouTube / Videos",
+        "AI Security Articles",
+        "AI Security Papers",
         "Second Brain Suggested Todos",
         "Overall signal:",
     ]
     positions = [html.index(item) for item in order]
 
+    assert date_pos < title_pos < positions[0]
     assert positions == sorted(positions)
     assert html.count("Second Brain Suggested Todos") == 1
     assert "https://example.com/events/school-parade" in html
     assert "https://www.google.com/search" not in html
+    assert "font-size:30px;line-height:36px" in html
+    assert "Cloudy</td>" in html
 
 
 def test_template_omits_second_brain_section_when_absent() -> None:
@@ -127,4 +136,4 @@ def test_template_omits_second_brain_section_when_absent() -> None:
     html = render_html(_sample_data(include_todos=False))
 
     assert "Second Brain Suggested Todos" not in html
-    assert "Everything else, if you have more than a minute" in html
+    assert "Top 3 Things" in html

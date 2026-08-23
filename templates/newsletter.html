@@ -54,10 +54,8 @@
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" class="wrap card" style="width:640px;max-width:640px;background:#ffffff;border-radius:14px;">
 
   <tr><td class="px" style="padding:24px 26px 0 26px;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
-      <td class="tx big" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:26px;line-height:32px;color:#15181b;font-weight:600;">Daily Morning Briefing</td>
-      <td align="right" style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">{{ date }}</td>
-    </tr></table>
+    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;line-height:15px;letter-spacing:2px;color:#9aa19e;text-transform:uppercase;margin:0 0 7px 0;">{{ date }}</div>
+    <div class="tx big" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:30px;line-height:36px;color:#15181b;font-weight:650;">Daily Morning Briefing</div>
   </td></tr>
 
   {% if issue_dashboard %}
@@ -107,7 +105,6 @@
         <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Note</td>
       </tr>
       {% for h in weather.hourly %}
-      {% set temp_color = '#b5651d' if h.temp >= 75 else '#5b7f6b' %}
       {% set precip_raw = (h.precip_chance|string).replace('%','') %}
       {% set precip = precip_raw|int if precip_raw.isdigit() else 0 %}
       {% set humidity_raw = (h.humidity|string).replace('%','') %}
@@ -115,13 +112,13 @@
       {% set highlight = loop.index == 3 %}
       <tr class="rule" style="border-top:1px solid #e6e2da;{% if highlight %}background:#f1f9f4;{% else %}background:transparent;{% endif %}">
         <td class="wcell" style="padding:9px 5px;border-left:3px solid {% if highlight %}#1f7a4d{% else %}transparent{% endif %};font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">{{ h.label }}</td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:{{ temp_color }};border-radius:5px;padding:2px 7px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:14px;font-weight:600;">{{ h.temp }}F</span></td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">{{ h.feels_like }}F</span></td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">{{ weather_icon(h.conditions) }} {{ h.conditions }}</td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:{% if precip >= 40 %}#fbe3de{% elif precip >= 20 %}#cfe2ec{% else %}#f5f7f8{% endif %};color:{% if precip >= 40 %}#c2371f{% elif precip >= 20 %}#2f6f8f{% else %}#7c837f{% endif %};border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;">{{ h.precip_chance }}</span></td>
-        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:{% if humidity >= 80 %}#fbe3de{% elif humidity >= 70 %}#fbeed4{% else %}#e3f2e9{% endif %};color:{% if humidity >= 80 %}#c2371f{% elif humidity >= 70 %}#a8730a{% else %}#1f7a4d{% endif %};border-radius:5px;padding:2px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;font-weight:600;">{{ h.humidity }}</span></td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#5f6a66;">{{ h.wind }}</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">{% if h.note %}{{ h.note }}{% elif highlight %}Best outdoor window.{% elif loop.first %}Best errand window.{% elif precip >= 40 %}Plan cover.{% else %}Normal watch.{% endif %}</td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">{{ h.temp }}F</td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">{{ h.feels_like }}F</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">{{ h.conditions }}</td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:{% if precip >= 40 %}#c2371f{% else %}#15181b{% endif %};">{{ h.precip_chance }}</td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:{% if humidity >= 80 %}#c2371f{% else %}#15181b{% endif %};">{{ h.humidity }}</td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;line-height:15px;color:#15181b;">{{ h.wind }}</td>
+        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">{% if h.note %}{{ h.note }}{% elif highlight %}Best outdoor window.{% elif loop.first %}Best errand window.{% elif precip >= 40 %}Plan cover.{% else %}Normal watch.{% endif %}</td>
       </tr>
       {% endfor %}
     </table>
