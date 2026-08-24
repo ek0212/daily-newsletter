@@ -1,0 +1,497 @@
+{
+  "date": "Monday, August 24, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 67,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 79,
+    "low": 64,
+    "feels_like": 67,
+    "forecast": "Mostly clear, with a low around 65. Southwest wind around 5 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 65,
+        "feels_like": 66,
+        "conditions": "Clear",
+        "wind": "3 mph SW",
+        "humidity": "82%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 70,
+        "feels_like": 71,
+        "conditions": "Clear",
+        "wind": "4 mph SW",
+        "humidity": "70%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 79,
+        "feels_like": 78,
+        "conditions": "Partly Cloudy",
+        "wind": "10 mph SW",
+        "humidity": "45%",
+        "precip_chance": "17%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 79,
+        "feels_like": 76,
+        "conditions": "Clear",
+        "wind": "9 mph W",
+        "humidity": "43%",
+        "precip_chance": "22%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 76,
+        "feels_like": 73,
+        "conditions": "Clear",
+        "wind": "8 mph W",
+        "humidity": "46%",
+        "precip_chance": "11%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,543 cases this week \u2014 65% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1543,
+    "vs_average_pct": -64.6,
+    "week_ending": "2026-08-15",
+    "breakdown": {
+      "flu": 266,
+      "covid": 1126,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,543 combined flu/COVID/RSV cases",
+        "comparison": "65% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "current": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "comparison": "Fri, 21 Aug 2026 20:15:57 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT1ZrRWd3d00wNnQwaXhQcndtV2phZUlXb2hoNUdZNHN1QmVzWndvZzZCZWlXbV8tRkUzd1ZQeE9uRVlNbVFzTHVrNTZWdGlPSWo4Qlg0eHIwNEJ4WlpzU1c1VW91TFRRU3k4UV9peFZfdC1mc1FfUEhWMTVlUW5tM1lZNEtORjhId3B2ejRvdDlfS0x3Zlhr0gGfAUFVX3lxTFBvQlZBQU9ONmdEeFFJYXVmX0xtRVdPaWU4eE0xMUVlakpNSmlFVWZhNmZnWFVqdHZsRm5wWXltY0NJbUlFMjdDUVlFLUlDSy13a3ItN042M0ZuaUliUFhqWnZ6TnJ6SXRGZEdOeE5RZFB5Q0xGMi04YlRaTG5hMkVqSXpzaExWcGswZ1RMdjhOZG5lcWFrUk1sT2FyR05QRQ?oc=5",
+        "title": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "summary": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "published": "Fri, 21 Aug 2026 20:15:57 GMT"
+      },
+      {
+        "signal": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "current": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "comparison": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRXFPSF9nTGhZeGUtQkt5YnpSRy1ScERjc0UzMjFqOWx2RTFmbWJaMWtzMmV4NVNKWUhfbW13am1mVWR4VXJIdS1LS0VLUWhPRC1QTnQyQUZHOVpydHpSU2RvYnY4QWlxX0kzMF9EX2N2Q1dRcjR4djd1aVJoRHJMY1pmdHBOcGZpRmR5SzdqT1RxazlKUXd4bDNiUTg4V2xZai1fOA?oc=5",
+        "title": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "summary": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Tue, 18 Aug 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51X1BhQ0lBVWtVOTNraUlGZk53Y29odEVFUE9IN3ZzZ3VfTEFNdXlraHpHWHVfS1JfdG9XdkpiQ3hjc1hGRUlqbmJHVmQ1b1RTdFhFbVhLT2p6TnpteXhsVGM3cExYMEczek1zZXh6Yw?oc=5",
+        "title": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "current": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "comparison": "Fri, 21 Aug 2026 20:15:57 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT1ZrRWd3d00wNnQwaXhQcndtV2phZUlXb2hoNUdZNHN1QmVzWndvZzZCZWlXbV8tRkUzd1ZQeE9uRVlNbVFzTHVrNTZWdGlPSWo4Qlg0eHIwNEJ4WlpzU1c1VW91TFRRU3k4UV9peFZfdC1mc1FfUEhWMTVlUW5tM1lZNEtORjhId3B2ejRvdDlfS0x3Zlhr0gGfAUFVX3lxTFBvQlZBQU9ONmdEeFFJYXVmX0xtRVdPaWU4eE0xMUVlakpNSmlFVWZhNmZnWFVqdHZsRm5wWXltY0NJbUlFMjdDUVlFLUlDSy13a3ItN042M0ZuaUliUFhqWnZ6TnJ6SXRGZEdOeE5RZFB5Q0xGMi04YlRaTG5hMkVqSXpzaExWcGswZ1RMdjhOZG5lcWFrUk1sT2FyR05QRQ?oc=5",
+        "title": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "summary": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "published": "Fri, 21 Aug 2026 20:15:57 GMT"
+      },
+      {
+        "signal": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "current": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "comparison": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRXFPSF9nTGhZeGUtQkt5YnpSRy1ScERjc0UzMjFqOWx2RTFmbWJaMWtzMmV4NVNKWUhfbW13am1mVWR4VXJIdS1LS0VLUWhPRC1QTnQyQUZHOVpydHpSU2RvYnY4QWlxX0kzMF9EX2N2Q1dRcjR4djd1aVJoRHJMY1pmdHBOcGZpRmR5SzdqT1RxazlKUXd4bDNiUTg4V2xZai1fOA?oc=5",
+        "title": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "summary": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Tue, 18 Aug 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE51X1BhQ0lBVWtVOTNraUlGZk53Y29odEVFUE9IN3ZzZ3VfTEFNdXlraHpHWHVfS1JfdG9XdkpiQ3hjc1hGRUlqbmJHVmQ1b1RTdFhFbVhLT2p6TnpteXhsVGM3cExYMEczek1zZXh6Yw?oc=5",
+        "title": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Surveillance of Cyclosporiasis - Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Tue, 18 Aug 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "New Student Orientation Lunch Block Party",
+      "date": "Wed, Aug 26",
+      "borough": "Manhattan",
+      "location": "West 27th St & 7th Ave",
+      "event_type": "Street Event"
+    }
+  ],
+  "news": [
+    {
+      "title": "Live Updates: U.S. Treasury to unveil new Iran sanctions after Trump warned of \"economic D-Day\" for Tehran",
+      "source": "CBS News",
+      "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOUEpzNDk2c1V6WnVlU0lpVnpZWlE4OC1YNl91RURET211TzluVGFCR0VYRm5qZkxMU1ZVTU9Sc2xzMXBudzhwcVppb1YxNlpDc1EySjVNV0xkSlRIS2VJU1FPMmtXdm52OHJJQ2cwUzdDX2NBLTQ1Tk5NNXk1RWtsSExqeDVRTnM0b2c?oc=5",
+      "published": "Mon, 24 Aug 2026 09:02:00 GMT",
+      "raw_text": "Live Updates: U.S. Treasury to unveil new Iran sanctions after Trump warned of \"economic D-Day\" for Tehran\nWhat to know about the Iran war today:\n- Treasury Secretary Scott Bessent will unveil new sanctions against Iran on Monday that he described as \"the single greatest financial offensive ever marshalled against an adversary.\" The move is part of a strategy shift to pile economic pressure on the Islamic republic in the hope of breaking the stalemate between the two countries.\n- Talks between Iran and Oman on the future management of the Strait of Hormuz are set to continue on Tuesday. The two countries have been negotiating for weeks about how to manage the traffic of ships through the vital waterway, with suggestions of fees and specific routes emerging as possible solutions.\n- Iran's president said Sunday that he believes the memorandum of understanding between the U.S. and his country is still the best path forward to ending the war. The agreement was signed in June and called for a 60-day negotiation period. That deadline has since expired and both countries have previously declared the deal to be dead.\nIranian currency hits new record low\nIran's currency hit a record low against the dollar on Monday as the U.S. government prepared to unveil new sanctions in a bid to further squeeze the country's economy to force Iran's theocratic rulers to capitulate in the nearly six-month war.\nThe rial dropped to 2.02 million to the U.S. dollar as trading opened on informal currency markets. Iran's official Central Bank rate stood at around 1.5 million rial to the dollar, but the informal rate is what most Iranians pay.\nThe currency had already been under pressure before the U.S. and Israel attacked Iran on Feb. 28, with double-digit inflation and negative growth, but it has been hitting new lows as the war takes an even greater toll.\nCBS/AP\nShip struck off the coast of Saudi Arabia\nA ship was struck by an unknown projectile in the Red Sea off the coast of Saudi Arabia, the British military's Maritime Trade Operations agency said Monday.\nThe incident caused a fire on the main deck of the vessel, but the crew was safe, UKMTO said in a brief statement.\nThe incident took place 63 nautical miles west of the Saudi city of Yanbu, the agency reported.\nYemen's Iranian-backed Houthi rebels said on July 20 that they would impose a blockade on Saudi ports and vessels in the Red Sea, and they have since attacked multiple Saudi-owned tankers in the region.\nGreek military reportedly moves Patriot interceptor systems in response to Iranian threats\nThe Greek military on Monday moved one of its Patriot missile interceptor systems to the island of Crete in response to Iranian threats to hit U.S. military bases in Europe, local media reports said.\nThe battery was moved from the eastern island of Karpathos to Crete, where there is a major U.S. base at Souda, the reports said. Media images showed the Patriot system on a truck waiting to be loaded on a barge.\nThe Financial Times reported last week, quoting Iranian sources, that Iran would fire missiles at U.S. targets in Europe if President Donald Trump steps up military pressure over the Strait of Hormuz.\nThe Greek defence ministry did not comment on the reported transfer of the missile system.\nIran-Oman talks on Strait of Hormuz to continue Tuesday\nOman and Iran are set to continue their talks on the future management of the Strait of Hormuz on Tuesday, Tehran's foreign ministry spokesperson Esmail Baghaei said Monday.\nThe spokesperson said Oman's foreign minister will travel to Tehran to meet with Iranian officials.\nThe two countries, whose shorelines include the strategic waterway, have been engaged in talks for weeks to negotiate how to manage the chokepoint. Some details have emerged regarding the possible introduction of fees for ships transiting the strait, as well as specific routes for entering and exiting the area.\nCBS/AFP\nTreasury Secretary warns Iran, allies of \"economic D-Day\"\nTreasury Secretary Scott Bessent has warned Iran and its allies the U.S. will unleash an \"economic D-Day\" on Iran as part of a shift in strategy to pile economic pressure in the hope of breaking the stalemate in the conflict \u2013 a term first used by President Trump last week.\nWriting in the British Financial Times newspaper, Bessent said the measures would be the \"the single greatest financial offensive ever marshalled against an adversary.\"\nThe secretary also urged Iran's allies to sever ties with Tehran, saying that doing so would \"deepen their access to global capital, reinforce confidence in their markets and attain the standing they seek in the world economy.\"\nBessent is set to hold a news conference on Monday at which he will unveil the new measures.\nAfter months of military pressure and a failed agreement to negotiate an end to the war, Mr. Trump signaled in recent weeks a shift in the strategy to exert economic pressure on Iran.\nIran's president defends memorandum of understanding as best path forward\nIranian President Masoud Pezeshkian defended the memorandum of understanding signed with the U.S. in June as the best way for the country to move beyond what he described as a situation of \"neither war nor peace.\"\nIn a speech published by state-run IRNA news agency Sunday, he said members of Iran's Supreme National Security Council believed the agreement was the best possible based on what he described as dignity, wisdom and the national interest.\n\"There is not a single provision in this agreement that amounts to capitulation,\" Pezeshkian said. \"The supreme leader sets the policies, and we will follow that path.\"\nThe deal known as the Memorandum of Understanding was signed by President Trump in June. It set an ambitious 60-day deadline for ending the war with Iran and reaching an accord on its nuclear program. That period ended last week, after weeks of months of stalled progress and flare-ups, with both sides declaring they had abandoned it.. There appear to be no signs of compromise on the crucial issue of reopening the Strait of Hormuz, vital to global shipping.\nCBS/AP\nIran says any country joining U.S. sanctions is considered an \"enemy\"\nIran on Saturday warned countries against participating in the United States' \"economic war\" against the Islamic republic, saying they would be considered enemies.\n\"We declare to all countries ... do not join the economic war waged by the United States. Any country participating in the imposition of economic restrictions against us is considered an enemy,\" Mohsen Rezai, the head of Iran's supreme national security council, said on state television.\nIf the countries concerned refuse to \"distance themselves\" from the United States, Iran would \"harm\" their interests, he added.\nRezai also insisted Iran had more cards to play in the war, claiming, \"We have not yet attacked any American economic interests.\"\nPresident Trump said last week the U.S. will enforce \"Economic Warfare and Isolation on an unprecedented scale.\" But he also called on the rest of the world to come to the aid of the U.S. in enforcing sanctions, the specifics of which have still not been announced.\nCBS/AFP",
+      "summary": "- <strong>Iran</strong>'s president said Sunday that he believes the memorandum of understanding between the U.S. and his country is still the best path forward to ending the war.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "Canada Rejected US Tariff Deal. Now Comes the Economic Cost",
+      "source": "Bloomberg.com",
+      "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUVFBQ3R0WHZJV2xnd0I4RVIxUjdNS2hoVGRaZUpPaW5OcFdFVEloM0JoT1RqMzZmMUxHT1RKcnA4LUxQTmgyMy1YR09zVHBGTDMzbEhjdjFpRENjYzFnOXp5N2VqMzFvclRDdl9MTTVqRnpFUnJ2c203NzUwUDBqUlY1djFqbzZucnpGZmg4aUk4VlF5cTZnaXpMMlZMYUJYdm9UNVBuZnk2MnlORlF4Vk5GelY?oc=5",
+      "published": "Mon, 24 Aug 2026 05:49:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Bloomberg.com.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "E1 settlement: Why Netanyahu, Israel\u2019s right might not mind global outrage",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/8/24/e1-settlement-why-netanyahu-israels-right-might-not-mind-global-outrage?traffic_source=rss",
+      "published": "Mon, 24 Aug 2026 08:45:10 +0000",
+      "raw_text": "E1 settlement: Why Netanyahu, Israel\u2019s right might not mind global outrage\nThe proposed illegal settlement threatens Palestinian statehood. But it could help Israel\u2019s PM, other far-right leaders before elections.\nThe Israeli government last week invited bids for the building of more than 1,200 units, a key step towards the construction of the E1 settlement in the occupied West Bank just two months before Israel\u2019s general election.\nE1 (East 1) would link Ma\u2019ale Adumim and other illegal Israeli settlements to occupied East Jerusalem, effectively severing the West Bank in two. Both supporters and critics agree that its construction would end the possibility of a Palestinian state.\nRecommended Stories\nlist of 4 items\n- list 1 of 4Analysis: Israel\u2019s government can\u2019t disown West Bank settler violence\n- list 2 of 4Palestinians, UK condemn Israel\u2019s \u2018destructive\u2019 E1 settlement plan\n- list 3 of 4Europe, Canada condemn Israeli plans for new West Bank settlement\n- list 4 of 4Why Israeli tenders for illegal E1 West Bank settlement prompted outrage\nThe move has drawn international outrage, including from the United Nations.\nBut sections of Israel\u2019s political class are using this global backlash to their own ends and could frame their support for E1 as a key pitch in their election campaigns.\nHow could they benefit Israel?\nMany on Israel\u2019s right, including Prime Minister Benjamin Netanyahu, thrive on the international outrage their comments and plans draw, particularly criticism from European nations.\nSince October 2023, Netanyahu has cast international criticism of Israel\u2019s genocidal war on Gaza as an \u201cus vs them\u201d moment for the country. He has frequently framed Israel as alone in a hostile world and that he is the only leader strong enough to stand up to the country\u2019s critics.\nAfter the United Kingdom\u2019s Foreign Minister Ed Miliband described E1 as an \u201cunacceptable and destructive act\u201d, Israeli Foreign Minister Gideon Saar criticised the \u201cpatronising tone\u201d of his statement.\nWith the election approaching, the way ministers respond to the E1 project could determine their political futures.\nFar-right Finance Minister Bezalel Smotrich has been one of the key proponents of E1 and could benefit from an uptick in support from right-wing Israelis over the proposed illegal settlement. His Religious Zionist Party is currently unlikely to pass the electoral threshold to even run in this year\u2019s election.\n\u201cIt\u2019s Smotrich, he\u2019s hyping up everything under his watch ahead of the election,\u201d Israeli analyst Nimrod Flaschenberg told Al Jazeera from Berlin, Germany.\nThe fact that the government\u2019s call for tenders to construct E1 falls so close to Israel\u2019s election is not a coincidence, Flaschenberg said. Neither is the dramatic increase in settler violence in the occupied West Bank, where Smotrich has administrative control.\n\u201cBoth he and even Netanyahu are benefitting from the outrage. Little of this is accidental,\u201d the analyst added.\nHow extensive has this outrage been?\nCondemnation of the E1 settlement has been almost universal. On Friday, the foreign ministers of Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia, Turkiye and the United Arab Emirates rejected the E1 settlement, calling for \u201cimmediate action to halt the E1 settlement plan\u201d.\nEarlier in the week, 15 European and North American leaders, including those from Israel\u2019s traditional allies the United Kingdom, France and Germany, condemned the settlement.\nIn a joint letter, they said E1 would \u201cundermine the prospect of the two-state solution by driving a wedge through the West Bank\u201d. Some have pointed out that their failure to present any penalties if Israel goes ahead with the plan makes their criticism moot.\nThe United States has not criticised E1 itself, but did on Friday state its opposition to Israel\u2019s annexation of the West Bank, which the illegal settlement could effectively result in.\n\u201cAs the president has clearly stated, the US does not support Israel annexing the West Bank. A stable West Bank keeps Israel secure and is in line with this administration\u2019s goal to achieve peace in the region,\u201d read a statement from the US Department of State.\nSo, is this really the end of the two-state solution?\nAnnouncing plans for construction in August 2025, Smotrich had boasted that the new settlement would bury the \u201cidea of a Palestinian state\u201d.\nGiven that thousands of Palestinian homes have been demolished by Israel since its occupation of the West Bank began in 1967, some hope the same could happen to the illegal Israeli settlements that replaced them, if the two-state solution becomes a reality.\n\u201cThe idea that this is irreversible is just nonsense. Every time there\u2019s a new illegal settlement, voices in the West say that this is the end of the two-state solution,\u201d Flaschenberg said.\n\u201cIt definitely makes it less likely, but why the end? Every illegal settlement that\u2019s been built can be demolished \u2026 why do we have to accept their presence as fact?\u201d\nPolitical analyst Ori Goldberg noted that the tender for the E1 settlement project came at a time Israel faced further international criticism for bombing an airfield in Syria and described the issuing of the tender as \u201ca deliberate provocation\u201d.\nIs it all smoke and mirrors?\nThousands of Palestinians, most of them Bedouin, have already suffered home demolitions, displacement and restrictions on basic services as Israel expands its road network before construction in the occupied West Bank.\nIn April 2026, 23 Palestinians, including 15 children, were displaced from the az-Za\u2019im Bedouin community following demolitions by the Israeli army.\nThe UN warns that the planned expansion of Israeli illegal settlements and associated infrastructure threatens to fragment the occupied West Bank and could forcibly displace the 18 Palestinian communities that have lived within the territory Israel now claims for decades.",
+      "summary": "Given that thousands of Palestinian homes have been demolished by <strong>Israel</strong> since its occupation of the West Bank began in 1967, some hope the same could happen to the illegal Israeli settlements that replaced them, if the two-state solution becomes a reality.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "Sean Grayson, former deputy convicted of killing Sonya Massey, dies in prison, lawyer says",
+      "source": "NPR",
+      "link": "https://www.npr.org/2026/08/24/g-s1-139734/sonya-massey-convicted-deputy",
+      "published": "Mon, 24 Aug 2026 04:53:36 -0400",
+      "raw_text": "Sean Grayson, former deputy convicted of killing Sonya Massey, dies in prison, lawyer says\nCHICAGO \u2014 Sean Grayson, a former Illinois sheriff's deputy whose fatal shooting of Sonya Massey inside her home became a flashpoint over police use of force, died Sunday while serving a 20-year prison sentence.\nGrayson's attorney, Daniel Fultz, confirmed that his client died earlier Sunday but declined to provide any further details.\nGrayson, 32, was convicted of second-degree murder in October in the fatal shooting of Massey, a 36-year-old Black woman who had reported a possible prowler outside her Springfield-area home. Body camera video of the July 2024 encounter showed Massey crouching in her kitchen and apologizing moments before Grayson shot her in the face.\nHe was sentenced in January to the maximum 20 years in prison.\nGrayson had been diagnosed with colon cancer before Massey's killing, and his attorneys said at his sentencing that the disease had spread to his liver and lungs. In May, only months into his sentence, he sought medical release under an Illinois law for prisoners with terminal illnesses or serious medical conditions. The Illinois Prisoner Review Board denied his request last month.\nMassey called 911 early on July 6, 2024, to report someone prowling outside her home. Grayson and another Sangamon County sheriff's deputy responded.\nVideo showed Grayson directing Massey to remove a pot of hot water from the stove. As she held the pot, Massey told the deputies, \"I rebuke you in the name of Jesus.\"\nGrayson threatened to shoot her, drew his handgun and ordered her to drop the pot. Massey apologized and ducked behind a kitchen counter before Grayson fired three times.\nThe other deputy, Dawson Farley, later testified that he did not consider Massey a threat and drew his own weapon only after Grayson did.\nGrayson was fired after the shooting and charged with first-degree murder. Jurors convicted him of the lesser charge of second-degree murder after Grayson argued that he feared Massey would throw the hot water at him.\nMassey's killing drew national attention and protests and raised questions about how Grayson had moved through several law enforcement agencies before being hired by the Sangamon County Sheriff's Office.\nIllinois lawmakers later passed the Sonya Massey Act, requiring law enforcement agencies to more closely review an applicant's previous employment records before hiring an officer.\nThe Justice Department also opened a civil rights investigation after Massey's death and later reached an agreement with Sangamon County, its sheriff's office and other agencies requiring changes to policing and emergency response. Those changes included additional training for interactions with people with behavioral health disabilities and development of a mobile crisis response program.",
+      "summary": "Body camera video of the July 2024 encounter showed <strong>Massey</strong> crouching in her kitchen and apologizing moments before <strong>Grayson</strong> shot her in the face.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Kazakhstan\u2019s newly formed pro-government party wins parliamentary election",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/8/24/kazakhstans-newly-formed-pro-government-party-wins-parliamentary-election?traffic_source=rss",
+      "published": "Mon, 24 Aug 2026 08:29:54 +0000",
+      "raw_text": "Kazakhstan\u2019s newly formed pro-government party wins parliamentary election\nThe victory of Adilet, founded earlier this year, is likely to consolidate the power of President Kassym-Jomart Tokayev.\nKazakhstan\u2019s pro-government Adilet party won more than 71 percent of the vote in Sunday\u2019s parliamentary election, said the electoral commission in a result likely to consolidate the power of President Kassym-Jomart Tokayev.\nAnnouncing the results on Monday, the commission said that four other blocs also entered parliament: the pro-business Respublika and Ak Zhol parties, the centre-left Nationwide Social Democratic Party and the Auyl party, which represents rural voters.\nRecommended Stories\nlist of 3 items\n- list 1 of 3Pakistan\u2019s army chief back in Iran: Can he break peace talks deadlock?\n- list 2 of 3Ukraine\u2019s allies convene in Kyiv as Zelenskyy seeks air defence boost\n- list 3 of 3How much more are you spending on petrol since the war on Iran began?\nAccording to the commission, 74 percent of eligible voters cast ballots to choose the new 145-member, single-chamber parliament, called the Kurultai. Approximately 12.6 million of the 20 million population were eligible to vote.\nAdilet was founded in the Central Asian nation earlier this year and is led by Tokayev\u2019s top aides. Shortly after its inception, it absorbed the previous ruling party, Amanat. All four other parties entering parliament are also seen as broadly supportive of Tokayev\u2019s administration.\nSunday\u2019s election was triggered by a new constitution adopted earlier this year, which streamlined parliament from two chambers into one.\nKazakhstan\u2019s Supreme Court ruled last month that the new constitution allows Tokayev to run for a new seven-year term.\nOfficials say that the structural change aims to give parliament more weight in political decision-making. Previously, it was confined to a largely auxiliary role under a system that concentrated power in the presidency.\nA former Soviet diplomat and top United Nations official, Tokayev has led Central Asia\u2019s largest economy since 2019, maintaining warm relations with the West, Russia and China.\nTokayev has also championed a reform programme called \u201cJust Kazakhstan\u201d. The initiative followed riots in 2022 when 238 people were killed as cost-of-living protests escalated.\nThe 73-year-old president said he is trying to move away from the legacy of his authoritarian predecessor, Nursultan Nazarbayev, who ruled for three decades after the collapse of the Soviet Union. Tokayev originally took office as the chosen successor of Nazarbayev, Kazakhstan\u2019s founding president, who governed from 1991 to 2019.\nWhile voting in the capital, Astana, Tokayev told journalists it was too early to say whether he would seek another term.\nHe also said that he would name his choice for vice president, the newly created office under the new constitution, within the next seven to 10 days, adding that it would be a \u201cwell-known\u201d person.",
+      "summary": "Adilet was founded in the Central Asian nation earlier this year and is led by Tokayev\u2019s top aides. He also said that he would name his choice for vice president, the newly created office under the new constitution, within the next seven to 10 days, adding that it would be a \u201cwell-known\u201d person.",
+      "emoji": "\ud83c\udfdb\ufe0f"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "AI Daily Brief",
+      "title": "The Future of AI and Work",
+      "video_id": "m8x-gYMYFCg",
+      "published": "2026-08-24",
+      "link": "https://youtube.com/watch?v=m8x-gYMYFCg",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "AI\u2019s impact on work goes far beyond job losses. Drawing on Every\u2019s new Thesis Statements project, NLW explores how AI could transform what individuals do, how companies operate, which skills become valuable and what becomes possible when intelligence is abundant. Thesis Statements: https://every.to/thesis-statements Executive Agent Leadership - Returns in September -- Learn how to use agents - \u2060https://training.besuper.ai/\u2060 Free Webinar - Agentic Loops for Knowledge Workers - 8/26/26 26pm \u2060https://aidailybrief.ai/webinar\u2060 Brought to you by: KPMG \u2013 Research from KPMG and the University of Texas at Austin shows the highest-impact AI users treat AI like a reasoning partner \u2014 and those skills can be taught at scale. Learn more at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://kpmg.com/us/Sophisticated\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Harbor - Invest in the AI ecosystem. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.harborcapital.com/aidaily\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Hyperagent - Hire a fleet of always-on agents. New users get $1,000 in inference. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060hyperagent.com/aidailybrief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Rackspace Technology- One accountable partner to build, operate and run your full enterprise AI stack \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.rackspace.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Section - Section turns AI investment into workforce transformation and ROI - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.sectionai.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Blitzy - Want to accelerate enterprise software development velocity by 5x? \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://blitzy.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 AssemblyAI - The best way to build Voice AI apps - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.assemblyai.com/brief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Robots &amp; Pencils - Cloud-native AI solutions that power results \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://robotsandpencils.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 The AI Daily Brief helps you understand the most important news and discussions in AI. Newsletter: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://aidailybrief.beehiiv.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Interested in sponsoring the show? sponsors@aidailybrief.ai",
+      "source_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Real-Future-of-AI-and-Work-e3noahk",
+      "read_more_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Real-Future-of-AI-and-Work-e3noahk",
+      "thumbnail": "https://img.youtube.com/vi/m8x-gYMYFCg/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and guardrail bypasses.",
+  "ai_security": [
+    {
+      "title": "Fortinet Acquires AI Security Startup Virtue AI, Expanding into Agentic Security",
+      "source": "finance.biggo.com",
+      "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5wNEhfdUpWdkRhNXNXREhsVVlwR2xoNzV2d2pzampYR0plY1hKMWlVQzF0ZjZfRTVQS2NDNzBMelF3X0tkeTBwa3VBaHpzSXBXZk01OUpLX0txYmNOenBJck1tX205LUgzcXRhVzF3Z0Y1bW1NTkE?oc=5",
+      "published": "Thu, 20 Aug 2026 09:35:00 GMT",
+      "summary": "With this acquisition, the company plans to complement FortiAIGate and further strengthen its security capabilities for the AI operational phase.",
+      "raw_text": "Fortinet Acquires AI Security Startup Virtue AI, Expanding into Agentic Security\nGlobal network security company Fortinet (FTNT) announced on the 19th (local time) that it has acquired Virtue AI, a startup with AI runtime protection, automated AI validation, and AI agent security technologies. Financial terms of the deal were not disclosed.\nFounded in 2024, Virtue AI is a privately held security company headquartered in San Francisco, specializing in diagnosing security vulnerabilities in autonomous AI systems and defending against them in real time. The acquisition is being interpreted as a strategic move by Fortinet to expand beyond its existing AI security portfolio into \"Agentic AI\" security.\nFortinet founder and CEO Ken Xie said, \"As AI fundamentally changes how enterprises operate, security must evolve at the speed of AI,\" adding, \"With Virtue AI's technology, we will help customers securely manage their AI systems across the entire lifecycle while operating at enterprise scale.\"\nResponding to the Expanding AI Attack Surface\nAs enterprises rapidly adopt AI applications and autonomous agents, the attack surface is expanding beyond networks, users, endpoints, applications, and cloud to include prompts, models, agents, MCP (Model Context Protocol) tools, API calls, and AI infrastructure. This has created a challenge for enterprises to ensure secure operations even as they adopt AI.\nFortinet has been protecting large language models (LLMs) used by enterprises from AI-specific threats such as prompt injection, data leakage, and model poisoning with its \"FortiAIGate,\" launched earlier this year. With the Virtue AI acquisition, Fortinet is extending its security coverage from the development stage of AI models, applications, and agents through to actual operational deployment.\nVirtue AI's core technology can be summarized in four key areas. First, red-teaming capabilities that proactively diagnose AI agent vulnerabilities across more than 50 virtual environments and 14 high-risk domains. Second, agent protection and governance that detects unauthorized AI tools and preemptively blocks malicious command execution. Third, continuous validation that automatically checks for new risks whenever model updates or policy changes occur, generating audit-ready evidence. Fourth, real-time defense that applies security policies to diverse content\u2014from text to images and video\u2014to prevent sensitive information exposure, AI jailbreak attempts, and vulnerable code leakage.\nThe automated diagnostic system covers hundreds of attack types and more than 1,000 risk items, with security personnel able to review assessment results on demand, the company explained.\nAI Security Market Growth and Fortinet's Strategy\nAccording to market research firm Gartner, the AI ecosystem and AI agent security market is projected to grow from $2.8 billion (approximately 3.9 trillion won) in 2026 to $16.4 billion (approximately 22.9 trillion won) by 2030\u2014a high-growth segment with a compound annual growth rate exceeding 50%.\nFortinet already provides customers with its \"AI-Native Security Fabric,\" which delivers integrated protection across networks, endpoints, cloud, applications, and AI systems. With this acquisition, the company plans to complement FortiAIGate and further strengthen its security capabilities for the AI operational phase.\nFortinet expects Virtue AI's automated validation and real-time defense technologies to work in complementary fashion with FortiAIGate. The company also plans to combine these capabilities with data from FortiGuard Labs, its threat intelligence organization, to provide enterprises with unified protection across the entire lifecycle of their AI systems.\nOnce added, BigGo Finance appears first in Google Search Top Stories, so you get the broadest, most up-to-the-minute, and most comprehensive global financial news first.",
+      "type": "news"
+    },
+    {
+      "title": "Fortinet Expands AI Security Strategy With Virtue AI Acquisition",
+      "source": "The Fast Mode",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQkZuNnQzLURxenIwWnpzSnN4V2xWM2xvRjZGVnVBZmU1Ql82RzNycTRnZGlJaEgxeHhITDlsUE9qTDBqVkhPNkdEOC1RVzFSNVc3WGtid2Vud1NZTUdxLVlRNW5IWENhYnc4cDhobW81NFZEZXhidms2aXVqTWdNYU11cHVZODB1MWxhcFh0eU1fdlZRYUFaZG8yM1hGSlRCejkwMWNTbmx5RGhpU1RTQWJkRFU0WVZrVnhF?oc=5",
+      "published": "Mon, 24 Aug 2026 01:54:15 GMT",
+      "summary": "This acquisition complements FortiAIGate and further strengthens <strong>Fortinet</strong>\u2019s AI runtime security capabilities with <strong>Virtue</strong> AI\u2019s automated validation and real-time protection. Combined with coordinated enforcement and FortiGuard Labs threat intelligence, it will give organizations the confidence to secure AI systems throughout their lifecycle.",
+      "raw_text": "Fortinet, the global cybersecurity leader driving the convergence of networking and security, announced it has acquired Virtue AI, an innovator in AI runtime protection, automated AI validation, and security for autonomous AI systems.\nThe acquisition advances the company\u2019s broader Security for AI strategy and vision for securing the agentic enterprise, building on Fortinet's existing AI security solution portfolio, including its FortiGate Hyperscale Firewall.\nAs organizations rapidly deploy AI applications and autonomous agents, their attack surface expands beyond traditional networks, users, endpoints, applications, and cloud workloads. It now includes prompts, models, agents, Model Context Protocol (MCP) tools, application programming interface (API) calls, and AI infrastructure. Organizations need to adopt AI with confidence, keep it secure in production, and trust it behaves as intended.\nFortinet met that need earlier this year with FortiAIGate, which safeguards large language models (LLMs) from prompt injections, data leakage, model poisoning, excessive resource consumption, and other emerging AI-specific risks. Virtue AI extends that security to AI models, applications, and agentic systems from development through runtime, leveraging Virtue AI\u2019s Guardian Agent abilities and key product capabilities, including:\n- Agentic system red-teaming: Tests autonomous agents for exploitable weaknesses across more than 50 sandboxed environments and 14 high-stakes domains, including simulated prompt-injection and MCP-based attacks against leading agent frameworks.\n- Agent protection, governance, and visibility: Provides full visibility into agents and AI tools running in their environment, discovers unsanctioned AI applications and agents, scans MCP tools and source code for hidden risks, monitors agent behavior, and blocks malicious tool calls before they act.\n- Continuous AI validation: Identifies new risks across every model update and fine-tuning of policies, while generating audit-ready evidence to support security and compliance reviews. The automated red-teaming runs across hundreds of attack vectors and more than 1,000 risk categories, with multimodal testing and on-demand reporting for security, risk, and compliance teams.\n- Real-time guardrails: Enforces customizable policies across text, images, video, audio, and AI-generated code to keep harmful content, sensitive data, jailbreaks, and vulnerable code from reaching users or downstream systems.\nAccording to Gartner\u00ae, \u201cthe market for securing AI ecosystems and AI agents is rapidly expanding; products and tools are expected to expand from $2.8 billion in 2026 to $16.4 billion by 2030.\u201d[1] Fortinet believes that anticipated market expansion reflects evolving industry demand to secure the AI era.\nCustomers already rely on the Fortinet AI-native Security Fabric for integrated protection across networks, endpoints, clouds, applications, and AI deployments. This acquisition complements FortiAIGate and further strengthens Fortinet\u2019s AI runtime security capabilities with Virtue AI\u2019s automated validation and real-time protection. Combined with coordinated enforcement and FortiGuard Labs threat intelligence, it will give organizations the confidence to secure AI systems throughout their lifecycle.\nFinancial terms of the transaction are not disclosed, and the amount paid by Fortinet as consideration is immaterial to Fortinet\u2019s business.\nKen Xie, Founder, Chairman of the Board, and Chief Executive Officer at Fortinet\nAI is fundamentally changing enterprise computing, and security must evolve just as quickly. Virtue AI\u2019s technology will advance our vision for continuous AI assurance, helping customers govern and protect AI systems throughout their lifecycle and while operating them confidently at enterprise scale.",
+      "type": "news"
+    },
+    {
+      "title": "Encrypted Prompts Bypass AI Safety Guardrails in Grok and Gemini",
+      "source": "SecurityWeek",
+      "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPd3hDSTJXVy1VbXh3Z0daNjY1WDlyRGo3azJkSWRJUHI4S0dzTDVwNDJKeWl0dDQ2Y0hkRFpCb0N0Vm01bllvSjltQ1RZODgwZkZ2Mmg1Q3JpVTZnS0VsdTExSldMOE00N1h4VjlqcVV2RHBrX2gxUWplNGlBMXZzWDdWTHJlXy1YbGRPSGEzb0hPVUN1SGlzdnlB0gGfAUFVX3lxTE94aDJTUU0tZDlHM1d5YnRIZGd0SzZjZlp3SmE3blZRaVlTTERlbVdBTzhJZ0taVzVWMC10OHRKRXZNOWgzLTFWa0E0NDIyNTVPU2hQQXRKNERhSUJWYkptMDRoQTV4d0hUT2xmdzRvWTd4MFJnajl4MHlBcmhvWGNPSDJfdm0talRETzNfeTZ1aXpTdUZYUWZhYzB3M1M0TQ?oc=5",
+      "published": "Fri, 21 Aug 2026 14:34:05 GMT",
+      "summary": "Cryptographic context injection <strong>Safety</strong> guardrails classify prompt text without executing it. The resulting plaintext prompt instructs the agent to resolve its private session context and embed the data into an URL.",
+      "raw_text": "Researchers at Adversa AI discovered a new attack technique and named it Cryptographic Context Injection. They reported their findings to xAI on June 3, 2026, and attempted to coordinate disclosure on August 4 and August 10. At the time of writing, they had received no response.\nThey could not disclose to Google since jailbreaks are out of scope for its vulnerability disclosure program. Nevertheless, the success rate for the attack against Gemini had fallen by August.\nThe potential success of this attack by bad actors should be treated seriously. Adversa\u2019s report includes prevention advice for defenders.\nCryptographic context injection\nSafety guardrails classify prompt text without executing it. They cannot parse ciphertext into anything harmful and consequently allow its progress. The ciphertext, including an instruction and means for decryption, are run inside the model\u2019s code execution sandbox. The result is the plaintext prompt is recovered inside the trusted execution context and not flagged by the guardrails as harmful.\n\u201cThe attacker payload inherits a credibility that the same text would never get if pasted directly into the prompt,\u201d warn the researchers.\nThe encrypted attack can be delivered directly to the Chat or indirectly as a watering hole attack. In the latter case, an encrypted JSON object and decryption could be included in a web page. An agent subsequently instructed to act on this page (perhaps to summarize the content or extract specific data) will ingest the ciphertext and kick off the attack.\nThe decrypted prompt could instruct the model, \u201cto reach out to external servers, leaking the user\u2019s data through request parameters, or produce some other undesired output and re-encrypt it to smuggle it past output guardrails.\u201d In an agentic scenario the instructions could instigate misuse of any tool available to the model.\nGrok indirect cryptographic context injection example\nThis example targets the xAI Grok web chat, agentic browsing framework. It is a zero click data exfiltration attack that could be instigated through social engineering. The target is persuaded to examine or analyze a weaponized web page. The page contains an encrypted JSON object and an instruction to decrypt it using the agent\u2019s Python runtime. The resulting plaintext prompt instructs the agent to resolve its private session context and embed the data into an URL. The attacker\u2019s URL will be autonomously loaded and the user data transmitted to it.\n\u201cThe framework built by xAI lets instructions and data parsed from an untrusted external page drive the invocation of a privileged, internet-connected tool,\u201d write the researchers. This allows private session metadata and conversation history to be resolved into the inputs of that outbound tool \u2013 the laundered, attacker-controlled instructions reach a privileged egress action unimpeded with no user confirmation or visible warning.\nGemini safety bypass via direct injection example\nThis example targets the Gemini public chat interface in Deep Thinking mode. A single prompt instructs Gemini to run a Python script that decrypts supplied ciphertext. Through a series of tricks described by the researchers, the decrypted prompt can instruct the model to produce restricted content \u201cframed as something it will encrypt \u2018for safety\u2019\u201d.\nThe prohibited data is gathered, encrypted \u2018for safety\u2019, and returned to the user. \u201cThe technique produced a multi-paragraph example of restricted content that Gemini\u2019s safety filters normally suppress\u201d (such as instructions for building an incendiary weapon), comment the researchers.\nBoth the malicious prompt and the dangerous output defeat the input and output safety guardrails through encryption.\nSummary\nThe researchers disclosed their findings to xAI but have received no response. At the time of writing the report, the attack was still successful. Although they were unable to disclose their findings to Google, they note that the attack is increasingly less successful against Gemini (although still potentially possible). They are unsure of the reason, suggesting it may be filter updates, model version changes, or both.\nNevertheless, the continuing potential danger from cryptographic context injection has persuaded them to now go public with their findings and potential defensive solutions.\nRelated: Critical Vulnerability Exposes GitHub Agentic Workflows to Prompt Injection\nRelated: Prompt Injection Attacks Trick AI Agents Into Making Crypto Payments\nRelated: Malicious AI Prompt Injection Attacks Increasing, but Sophistication Still Low: Google\nRelated: Claude Code, Gemini CLI, GitHub Copilot Agents Vulnerable to Prompt Injection via Comments",
+      "type": "news",
+      "emoji": "\ud83d\udc89"
+    },
+    {
+      "title": "Where Security Fits in an AI Agent Stack | NVIDIA Technical Blog",
+      "source": "NVIDIA Developer",
+      "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxORFk2TGl4UXNSYTRLaFdpay1xd3QzZUhKMzEzN2JVeWxpWWV2R3JRNmk2c3NKUVJ5aUxGSEdBRFlWWFVXbjBaNG4tN01NTURSenljX3pnN0pjdi1VeG9yRkUwZUtpT1A4Xy1sVEpyZkhFQnd3YlgyZDFSa1NYQmVYNQ?oc=5",
+      "published": "Fri, 21 Aug 2026 13:20:36 GMT",
+      "summary": "A control that the agent can decline to invoke is not an effective security control. Every action that changes the external state must pass through the policy and enforcement layers below the boundary.",
+      "raw_text": "As AI agents become more capable and operate over longer horizons, building security and trust into the applications they power becomes increasingly important. Drawing on work with NVIDIA OpenShell, agent developers, open-source projects, and partners across the ecosystem, AI safety and security teams at NVIDIA offer their perspective on the emerging agent stack\u2014including the role of each layer and where security should live.\nRecent reports underscore why the placement of security controls matters. Within a few weeks this summer, OpenAI, Anthropic, and the UK AI Security Institute each reported frontier agents operating beyond their intended boundaries. The reported behaviors included exploiting an unexpected path out of lab environments to the open internet, gaining unauthorized access to other companies\u2019 systems, and taking unsanctioned actions involving people and infrastructure. These cases involved long-horizon agents running with reduced model safeguards. But they point to the same design challenge: the capabilities that enable agents to solve problems creatively and pursue complex goals can also help them find paths that their original instructions did not anticipate.\nRecent NVIDIA research underscores the importance of the harness layer in the agent stack. Using Agentic Variation Operators (AVO), researchers achieved a 100% score on ARC-AGI-3, an interactive reasoning benchmark that places agents in unfamiliar environments without instructions, explicit rules, or stated goals. Learn more about the AVO research.\nThis post maps the main layers of the emerging agent stack\u2014models, harnesses, meta-harnesses, secure runtimes such as OpenShell, and inference infrastructure\u2014and explains how each layer can help reduce risk. You\u2019ll also learn which security properties become critical as these layers grow more capable and composable, including where authority should live, how access should be scoped, and how the runtime can contain and record an agent\u2019s actions.\nBehavioral and infrastructure controls for AI agents\nSecuring agents doesn\u2019t require reinventing security. Decades of systems security provide durable principles, including least privilege, defense in depth, isolation, explicit authorization, and auditability. The challenge is determining where to apply them in an agent stack.\nPrompts, model safeguards, and harness logic all shape what an agent is likely to do, but they don\u2019t create a hard boundary around what it can do. This distinction leads to two different kinds of control: behavioral controls that guide the agent and infrastructure controls that limit its authority.\nBehavioral controls influence agent actions\nThe model and agent propose actions, and the harness directs them. Together, the model, agent, and harness interpret goals, work through ambiguity, and propose actions. The harness is the natural control point: it owns the loop, the context, the tools, and the session, and it can steer behavior toward what the operator intends. That steering is valuable, but every control implemented at this level still depends on how the model will behave.\nInfrastructure controls determine what an agent can do\nFinal authority belongs to the environment in which the agent runs in. That environment holds identity, enforces policy, contains failures, records what happened, and reaches the same authorization decision every time, given the same approved policy and verified state. It doesn\u2019t estimate what an agent will do. It determines what an agent can do.\nThe harness guides what an agent tries. The infrastructure controls what an agent can do. Both are necessary; only one is authoritative.\nInfrastructure enforcement is not infallible. It means approved policy and verified configuration produce repeatable outcomes, and the agent cannot choose whether to comply. Policy can still be wrong, and external outcomes can remain uncertain.\nMapping security controls\nThis division maps onto the layers the open-source ecosystem is already converging on:\n| Layer | What it does | Examples | \n|---|---|---|\n| Distribution/product | Package installation, defaults, and the supported experience | NVIDIA NemoClaw | \n| Orchestration (meta-harness) | Selects and coordinates different harnesses | Databricks\u2019 Omnigent | \n| Agent harness | Turns a model into an agent: loop, context, tools, sessions | Claude Code, Codex, Hermes, Pi, DeepSeek Harness | \n| Secure runtime | Isolation, identity, policy, credentials, and audit | NVIDIA OpenShell | \n| Inference data plane | Model serving, cache placement, routing, and scheduling | NVIDIA Dynamo | \nThese layers describe functional roles. One product may combine several roles, and a deployment may split one role across multiple services. Here, each layer names a responsibility. The security boundary is defined by the effect paths that the agent cannot bypass.\nThe model supplies intelligence; the harness turns that intelligence into an agent; the runtime determines what that agent is allowed to do.\nThe harness layer is a spectrum rather than a fixed category. Codex and Claude Code are opinionated harnesses, while Pi and DeepSeek Harness (DSH) expose more of the harness as a programmable substrate. Through Cordis, DSH enables core behaviors that can be composed and replaced as plugins. This programmability makes the harness a poor place for a security guarantee: a layer designed to be modified cannot reliably enforce controls against its own modification. The alternative\u2014relying on harness logic for safety\u2014encodes assumptions about model behavior, and those assumptions go stale as models improve.\nA narrowly scoped credential limits potential harm, but keeping the raw credential out of the agent\u2019s reach creates a stronger boundary enforced by the environment.\nEstablish the AI agent runtime boundary before launch\nModels, harnesses, runtimes, policies, and inference deployments are increasingly selected independently. This approach only works if the runtime\u2019s guarantees hold regardless of which components operate above it. That means a security boundary must be established when the agent launches.\nAn orchestrator asks OpenShell to create a runtime and enforce policies and governance. The selected harness starts inside that runtime, and its plugins, Model Context Protocol (MCP) processes, tools, and other model-directed code run inside the same boundary. Subagents receive delegated child runtimes with ceilings they can\u2019t exceed, while the orchestrator operates inside a runtime governed by its own policy.\nThis approach is different from treating the runtime as another tool that a harness can invoke once it\u2019s already running. A control that the agent can decline to invoke is not an effective security control.\nCommon security gaps in agent stacks\nMany agent stacks share the same flaw: authorization decisions can be influenced by the agent or by untrusted data it reads.\n- Unclear boundaries. Rules are split across prompts, models, agents, harnesses, runtimes, and infrastructure, so the authoritative version is hard to find.\n- Excessive access. The agent receives standing, often long-lived credentials or permissions beyond what the current task needs.\n- Untrusted data as control. Documents, messages, tool results, and memory can redirect action without being authorized as instructions.\n- Uncontrolled external effects. An allowed API can move data, create compute, or trigger effects outside the intended controls.\n- Compounding failures. Agents delegate, share memory, and call peers, so one mistake can become a fast cascade.\n- Incomplete audit evidence. Approvals are vague, access is slow to revoke, and the record is not sufficient to explain an incident or support recovery.\nDesign rules for enforceable agent security\nFive design rules help keep security decisions outside the agent\u2019s control.\n- Above proposes; below decides. No model, agent, harness, tool, or memory system grants itself authority.\n- Authoritative policy location. Keep policy below the line. Policy-aware planning above the line is useful, but advisory.\n- Check every effect. Control every file, process, network request, API call, data operation, resource allocation, communication, and device action.\n- Just-in-time access. Credentials and capabilities should be narrow, short-lived, and easy to remove.\n- Isolation and recovery. Isolate each agent, revoke access quickly, recover, and preserve the record.\nA layered security model for agents\nLike the OSI model, this agent stack assigns each layer one job and a clear interface. Higher layers can change without redefining the control layer below them.\nHow the security boundary works\nThe boundary is effective only if every request is evaluated consistently. Three requirements make this possible.\n- Treat every component above the boundary as untrusted. It may be mistaken, compromised, or adversarial, and its requests carry no authority on their own.\n- Make the controls below the boundary authoritative. These layers bind each request to an identity, apply policy, and enforce the decision.\n- Use risk signals only to reduce authority. Signals such as anomaly scores may trigger tighter controls, but they must never grant additional access.\nEvery action that changes the external state must pass through the policy and enforcement layers below the boundary. Any path that allows Layers 5-7 to bypass those controls is an architectural defect.\nFour security profiles for agent workloads\nAll four profiles use the same stack, boundary, and interfaces. Each applies different controls based on the authority granted, the potential impact, and the likelihood of adversarial behavior.\n| Level | Typical work | Required configuration | \n|---|---|---|\n| 1. Isolated | Coding in pre-production with disposable data. | No production credentials; restricted network; session recording. | \n| 2. Connected | Pre-production using approved services. | Short-lived identity; masked data; rate/spend limits; full logging. | \n| 3. Production | Changes to production systems or data. | Task-scoped access; independent checks; human approval for high-impact. | \n| 4. Adversarial | Frontier-model, non-guardrailed, or red-team runs. | Default-deny communications; automatic quarantine; strongest isolation. | \nImportant. Production access for a red-team agent should be exceptional and narrower, not broader, than access granted to an ordinary production agent.\nHow agent security controls change as risk increases\nAs an agent gains more authority and the potential impact of its actions grows, strengthen controls in five areas.\n- Narrower authority. Grants should become shorter-lived as risk rises.\n- Fresh decisions. Reevaluate policy closer to each action.\n- Stronger oversight. Add live supervision for high-impact work.\n- Faster recovery. Plan for access revocation, quarantine, and rollback.\n- Independent evidence. Keep immutable records below the security boundary.\nSecurity requirements at every risk level\nAlthough controls become stricter as risk increases, the following security requirements should remain consistent across every profile.\n- The agent never grants itself access. Controls are enforced outside the agent process and beyond the agent\u2019s control. This holds at every level.\n- Every in-scope, high-impact effect crosses an enforcement point. The check occurs in the system that performs the action.\n- The system fails safely: a missing or stale control selects a preapproved safer state. For physical and availability-critical systems, that state may require controlled operation rather than an abrupt stop.\n- Security claims remain scoped. State the exact paths covered, assumptions made, and exclusions left outside the stack.\nHelp shape AI with in-market learning\nWhether you build AI models, deploy AI systems, operate cloud infrastructure, conduct security research, or develop governance and standards, your perspective can help shape how the AI community learns from incidents.\nExplore NVIDIA OpenShell to learn how a safe, private runtime isolates autonomous agents and enforces security policies.\nReview and contribute to the Open Secure AI Alliance\u2019s Shared AI Findings Exchange (SAFE) proposal, which outlines a community framework for learning from AI incidents and near misses.",
+      "type": "news",
+      "emoji": "\ud83d\udcdc"
+    },
+    {
+      "title": "Invisible Agents, Uninformed Patients: Towards Responsible Deployment Of Autonomous AI Diagnostic Agents In Sub-Saharan Africa",
+      "authors": [
+        "Percy Brown",
+        "Kweku Yamoah"
+      ],
+      "abstract": "Autonomous AI diagnostic agents, systems that analyse patient-specific clinical data and produce diagnostic outputs or triage decisions without mandatory real-time human review, are increasingly deployed across eHealth platforms in sub-Saharan Africa at a pace that has outrun the governance infrastructure needed to oversee them. While significant bodies of work address AI accountability, transparency and explainability in healthcare, existing frameworks are largely clinician-centered and assume regulatory conditions that do not uniformly exist in low-resource settings. A patient-centered analysis of the disparity in patient awareness regarding autonomous agents, which results in a structural accountability gap, is mostly missing from the literature. This paper synthesizes existing research on informed consent, algorithmic accountability, and explainable AI to highlight three distinct challenges introduced by deploying AI agents in the sub-Saharan African context. Drawing on three documented deployment cases, including computer-aided tuberculosis detection in Tanzania, diabetic retinopathy and TB screening in Zambia, and mobile health chat-bot triage in Ghana, it demonstrates that these gaps are already present in active deployments across the region. In response, the paper proposes three foundational principles; agent-aware informed consent, human override as a structural requirement and contextually adapted explainability. This triad of principles lays a practical minimum standard for developers, health system administrators and policymakers in contexts where formal AI regulation remains nascent.",
+      "link": "https://arxiv.org/pdf/2608.21326v1",
+      "published": "2026-08-21",
+      "arxiv_id": "2608.21326v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Autonomous AI diagnostic agents, systems that analyse patient-specific clinical data and produce diagnostic outputs or triage decisions without mandatory real-time human review, are increasingly deployed across eHealth platforms in sub-Saharan Africa at a pace that has outrun the governance infrastructure needed to oversee them. While significant bodies of work address AI accountability, transparency and explainability in healthcare, existing frameworks are largely clinician-centered and assume regulatory conditions that do not uniformly exist in low-resource settings. A patient-centered analysis of the disparity in patient awareness regarding autonomous agents, which results in a structural accountability gap, is mostly missing from the literature. This paper synthesizes existing research on informed consent, algorithmic accountability, and explainable AI to highlight three distinct challenges introduced by deploying AI agents in the sub-Saharan African context. Drawing on three documented deployment cases, including computer-aided tuberculosis detection in Tanzania, diabetic retinopathy and TB screening in Zambia, and mobile health chat-bot triage in Ghana, it demonstrates that these gaps are already present in active deployments across the region. In response, the paper proposes three foundational principles; agent-aware informed consent, human override as a structural requirement and contextually adapted explainability. This triad of principles lays a practical minimum standard for developers, health system administrators and policymakers in contexts where formal AI regulation remains nascent.",
+      "summary": "<strong>Autonomous</strong> AI diagnostic agents, systems that analyse patient-specific clinical data and produce diagnostic outputs or triage decisions without mandatory real-time human review, are increasingly deployed across eHealth platforms in sub-<strong>Saharan</strong> <strong>Africa</strong> at a pace that has outrun the governance infrastructure needed to oversee them.",
+      "type": "paper"
+    },
+    {
+      "title": "Move by Move: Measuring and Steering How LLMs Conduct Psychotherapy",
+      "authors": [
+        "Afonso Baldo",
+        "Hugo Pitorro",
+        "Areti Vassilopoulos",
+        "Anabela C. Areias",
+        "Maya D'Eon"
+      ],
+      "abstract": "Users increasingly turn to large language models for emotional support, yet little is known about how these models actually conduct a psychotherapy interaction. We introduce an ontology of ten therapeutic moves: compact, function-based categories grounded in the MULTI-60 inventory, validated through an annotation campaign with five licensed psychologists, and scaled with a judge-based approach that matches expert agreement. Applying it to real counseling transcripts and model-led sessions, we compare the move distributions between human clinicians and a panel of frontier models. Models over-use inquiry at up to three times the human rate, neglect psychoeducation, and are strongly context-anchored: they carry forward strategies initiated by a human clinician but rarely initiate them themselves. Exposing the ontology as a set of tools roughly halves the mean deviation from the human move distribution and improves turn-level alignment with human therapist by 7-9 percentage points, without any fine-tuning.",
+      "link": "https://arxiv.org/pdf/2608.21325v1",
+      "published": "2026-08-21",
+      "arxiv_id": "2608.21325v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Users increasingly turn to large language models for emotional support, yet little is known about how these models actually conduct a psychotherapy interaction. We introduce an ontology of ten therapeutic moves: compact, function-based categories grounded in the MULTI-60 inventory, validated through an annotation campaign with five licensed psychologists, and scaled with a judge-based approach that matches expert agreement. Applying it to real counseling transcripts and model-led sessions, we compare the move distributions between human clinicians and a panel of frontier models. Models over-use inquiry at up to three times the human rate, neglect psychoeducation, and are strongly context-anchored: they carry forward strategies initiated by a human clinician but rarely initiate them themselves. Exposing the ontology as a set of tools roughly halves the mean deviation from the human move distribution and improves turn-level alignment with human therapist by 7-9 percentage points, without any fine-tuning.",
+      "summary": "Users increasingly turn to large language models for emotional support, yet little is known about how these models actually conduct a psychotherapy interaction.",
+      "type": "paper"
+    },
+    {
+      "title": "From Regulation to Implementation: A Critical Evaluation of LLM-Assisted Regulatory Compliance in Industry",
+      "authors": [
+        "Adriana Watson",
+        "Marco B\u00fccheler",
+        "Grant Richards"
+      ],
+      "abstract": "The European Union (EU) has emerged as a leading regulatory body in the development of sustainability and privacy regulations. While new regulation requirements vary, many include a documentation artifact to ensure compliance. Notably, the Ecodesign for Sustainable Products Regulation (ESPR) introduces Digital Product Passports (DPPs) for life cycle transparency, while the General Data Protection Regulation (GDPR) mandates Data Protection Impact Assessments (DPIAs) to mitigate privacy risks. Creating these compliance artifacts, however, is challenging. Industrial data, which often exists in heterogeneous formats and is scattered across company and supplier systems, is required for DPPs and can be difficult to extract into compliant DPP formatting. Furthermore, DPIA documents require interdisciplinary expertise and follow no standardized format, making development difficult for novel systems. To address the particular complexity of compliance artifact creation for both regulations, researchers have proposed the use of LLMs in the generation process; however, the impact of the aforementioned problems on the output of these systems is largely unaddressed. This work investigates the existing research gap by exploring how data extraction instructions and regulatory vagueness impact the quality and consistency of LLM-produced compliance artifacts. The resulting artifacts are evaluated by benchmarking different models against manually created ground-truth schemas. The results reveal that less strict guidelines, such as DPIA formatting, require higher context prompts to maintain consistency and completeness. Stricter guidelines, such as formatting for Digital Battery Passports (DBP), result in consistent results regardless of prompt context, but may lead to more hallucinations in the output",
+      "link": "https://arxiv.org/pdf/2608.21317v1",
+      "published": "2026-08-21",
+      "arxiv_id": "2608.21317v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "The European Union (EU) has emerged as a leading regulatory body in the development of sustainability and privacy regulations. While new regulation requirements vary, many include a documentation artifact to ensure compliance. Notably, the Ecodesign for Sustainable Products Regulation (ESPR) introduces Digital Product Passports (DPPs) for life cycle transparency, while the General Data Protection Regulation (GDPR) mandates Data Protection Impact Assessments (DPIAs) to mitigate privacy risks. Creating these compliance artifacts, however, is challenging. Industrial data, which often exists in heterogeneous formats and is scattered across company and supplier systems, is required for DPPs and can be difficult to extract into compliant DPP formatting. Furthermore, DPIA documents require interdisciplinary expertise and follow no standardized format, making development difficult for novel systems. To address the particular complexity of compliance artifact creation for both regulations, researchers have proposed the use of LLMs in the generation process; however, the impact of the aforementioned problems on the output of these systems is largely unaddressed. This work investigates the existing research gap by exploring how data extraction instructions and regulatory vagueness impact the quality and consistency of LLM-produced compliance artifacts. The resulting artifacts are evaluated by benchmarking different models against manually created ground-truth schemas. The results reveal that less strict guidelines, such as DPIA formatting, require higher context prompts to maintain consistency and completeness. Stricter guidelines, such as formatting for Digital Battery Passports (DBP), result in consistent results regardless of prompt context, but may lead to more hallucinations in the output",
+      "summary": "To address the particular complexity of compliance artifact creation for both regulations, researchers have proposed the use of LLMs in the generation process; however, the impact of the aforementioned problems on the output of these systems is largely unaddressed.",
+      "type": "paper",
+      "emoji": "\ud83d\udcdc"
+    },
+    {
+      "title": "Sums of products of Kloosterman sums to prime power moduli",
+      "authors": [
+        "Djordje Mili\u0107evi\u0107",
+        "Catherine Robinson",
+        "Chloe Shupe"
+      ],
+      "abstract": "We prove new bounds on complete sums of products of k additively shifted Kloosterman sums to odd high prime power moduli q=p^n, which feature substantially stronger power savings (about q^(-1/ceil(k/2)) in generic configurations) and a novel quantification of the alignment among the shifts. We prove our bounds by developing a method to estimate complete exponential sums with a broad class of phases well-controlled by a specified number of initial terms in a property reflecting p-adic differentiability.",
+      "link": "https://arxiv.org/pdf/2608.21346v1",
+      "published": "2026-08-21",
+      "arxiv_id": "2608.21346v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "We prove new bounds on complete sums of products of k additively shifted Kloosterman sums to odd high prime power moduli q=p^n, which feature substantially stronger power savings (about q^(-1/ceil(k/2)) in generic configurations) and a novel quantification of the alignment among the shifts. We prove our bounds by developing a method to estimate complete exponential sums with a broad class of phases well-controlled by a specified number of initial terms in a property reflecting p-adic differentiability.",
+      "summary": "We prove new bounds on complete sums of products of k additively shifted <strong>Kloosterman</strong> sums to odd high prime power moduli q=p^n, which feature substantially stronger power savings (about q^(-1/ceil(k/2)) in generic configurations) and a novel quantification of the alignment among the shifts.",
+      "type": "paper"
+    },
+    {
+      "title": "Graph Engineering in the Era of LLM Agents: From Individual Intelligence to System Intelligence",
+      "authors": [
+        "Yuyuan Feng",
+        "Zhishang Xiang",
+        "Chaobin Yang",
+        "Qichao Ma",
+        "Zerui Chen"
+      ],
+      "abstract": "LLMs have evolved from language generators to autonomous agents capable of complex, long-horizon tasks. This evolution has produced paradigms including Prompt Engineering to elicit model capabilities, Context Engineering to manage information access, Harness Engineering to organize external tools and resources, and Loop Engineering to support continual reflection and self-improvement. Yet as tasks grow more complex, individual intelligence faces a fundamental limit: many tasks require heterogeneous expertise, interdependent subtasks, parallel execution, independent verification, and persistent state, exceeding any single agent's organizational capacity. Augmenting one agent's capabilities or context cannot resolve this architectural mismatch; intelligence must instead be distributed across specialized agents and organized at the system level. We call this System Intelligence: an agent system's ability to organize and coordinate multiple intelligent components into a coherent, adaptive whole pursuing a shared objective. Achieving it requires more than adding agents; it demands explicit structures to organize work, coordinate heterogeneous agents, and maintain evolving execution states. We introduce Graph Engineering, an emerging paradigm for next-generation agent systems. Unlike prior paradigms that mainly optimize individual interactions or agent-level behavior, Graph Engineering constructs explicit, dynamic, evolving graph structures representing tasks, agents, and system states. These abstractions provide a unified foundation for organizing complex objectives, orchestrating heterogeneous agents, modeling system dynamics, and enabling scalable agent evolution. We systematically review the principles, methodologies, and applications of Graph Engineering for LLM agents. Related papers, open-source data, and projects are collected at https://github.com/DEEP-JLU/Awesome-Graph-Engineering.",
+      "link": "https://huggingface.co/papers/2608.21156",
+      "published": "2026-08-21",
+      "arxiv_id": "2608.21156",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "LLMs have evolved from language generators to autonomous agents capable of complex, long-horizon tasks. This evolution has produced paradigms including Prompt Engineering to elicit model capabilities, Context Engineering to manage information access, Harness Engineering to organize external tools and resources, and Loop Engineering to support continual reflection and self-improvement. Yet as tasks grow more complex, individual intelligence faces a fundamental limit: many tasks require heterogeneous expertise, interdependent subtasks, parallel execution, independent verification, and persistent state, exceeding any single agent's organizational capacity. Augmenting one agent's capabilities or context cannot resolve this architectural mismatch; intelligence must instead be distributed across specialized agents and organized at the system level. We call this System Intelligence: an agent system's ability to organize and coordinate multiple intelligent components into a coherent, adaptive whole pursuing a shared objective. Achieving it requires more than adding agents; it demands explicit structures to organize work, coordinate heterogeneous agents, and maintain evolving execution states. We introduce Graph Engineering, an emerging paradigm for next-generation agent systems. Unlike prior paradigms that mainly optimize individual interactions or agent-level behavior, Graph Engineering constructs explicit, dynamic, evolving graph structures representing tasks, agents, and system states. These abstractions provide a unified foundation for organizing complex objectives, orchestrating heterogeneous agents, modeling system dynamics, and enabling scalable agent evolution. We systematically review the principles, methodologies, and applications of Graph Engineering for LLM agents. Related papers, open-source data, and projects are collected at https://github.com/DEEP-JLU/Awesome-Graph-Engineering.",
+      "summary": "Read the full paper for details.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and guardrail bypasses.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "79\u00b0F",
+        "detail": "22% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-15"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "5 papers",
+        "detail": "Aug 21"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "1",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,543 cases this week \u2014 65% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 1,
+    "youtube_count": 1,
+    "ai_security_count": 9
+  }
+}
