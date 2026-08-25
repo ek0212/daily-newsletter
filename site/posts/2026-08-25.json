@@ -1,0 +1,534 @@
+{
+  "date": "Tuesday, August 25, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 66,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 79,
+    "low": 63,
+    "feels_like": 66,
+    "forecast": "Clear, with a low around 65. West wind around 5 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 63,
+        "feels_like": 64,
+        "conditions": "Clear",
+        "wind": "4 mph W",
+        "humidity": "77%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 68,
+        "feels_like": 67,
+        "conditions": "Clear",
+        "wind": "5 mph W",
+        "humidity": "69%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 78,
+        "feels_like": 78,
+        "conditions": "Partly Cloudy",
+        "wind": "7 mph W",
+        "humidity": "48%",
+        "precip_chance": "8%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 78,
+        "feels_like": 77,
+        "conditions": "Clear",
+        "wind": "8 mph W",
+        "humidity": "47%",
+        "precip_chance": "8%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 76,
+        "feels_like": 76,
+        "conditions": "Clear",
+        "wind": "6 mph W",
+        "humidity": "52%",
+        "precip_chance": "3%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,543 cases this week \u2014 65% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1543,
+    "vs_average_pct": -64.6,
+    "week_ending": "2026-08-15",
+    "breakdown": {
+      "flu": 266,
+      "covid": 1126,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,543 combined flu/COVID/RSV cases",
+        "comparison": "65% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "current": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "comparison": "Fri, 21 Aug 2026 20:15:57 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT1ZrRWd3d00wNnQwaXhQcndtV2phZUlXb2hoNUdZNHN1QmVzWndvZzZCZWlXbV8tRkUzd1ZQeE9uRVlNbVFzTHVrNTZWdGlPSWo4Qlg0eHIwNEJ4WlpzU1c1VW91TFRRU3k4UV9peFZfdC1mc1FfUEhWMTVlUW5tM1lZNEtORjhId3B2ejRvdDlfS0x3Zlhr0gGfAUFVX3lxTFBvQlZBQU9ONmdEeFFJYXVmX0xtRVdPaWU4eE0xMUVlakpNSmlFVWZhNmZnWFVqdHZsRm5wWXltY0NJbUlFMjdDUVlFLUlDSy13a3ItN042M0ZuaUliUFhqWnZ6TnJ6SXRGZEdOeE5RZFB5Q0xGMi04YlRaTG5hMkVqSXpzaExWcGswZ1RMdjhOZG5lcWFrUk1sT2FyR05QRQ?oc=5",
+        "title": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "summary": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "published": "Fri, 21 Aug 2026 20:15:57 GMT"
+      },
+      {
+        "signal": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "current": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "comparison": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRXFPSF9nTGhZeGUtQkt5YnpSRy1ScERjc0UzMjFqOWx2RTFmbWJaMWtzMmV4NVNKWUhfbW13am1mVWR4VXJIdS1LS0VLUWhPRC1QTnQyQUZHOVpydHpSU2RvYnY4QWlxX0kzMF9EX2N2Q1dRcjR4djd1aVJoRHJMY1pmdHBOcGZpRmR5SzdqT1RxazlKUXd4bDNiUTg4V2xZai1fOA?oc=5",
+        "title": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "summary": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Fri, 21 Aug 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
+        "title": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "92 people, 7 deaths",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Case Count 92 people have tested positive for Legionnaires' disease: 5 currently hospitalized 67 no longer hospitalized 13 not hospitalized 7 deaths Diagnosis date is the date the specimen that tested positive was collected from the patient.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "current": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "comparison": "Fri, 21 Aug 2026 20:15:57 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT1ZrRWd3d00wNnQwaXhQcndtV2phZUlXb2hoNUdZNHN1QmVzWndvZzZCZWlXbV8tRkUzd1ZQeE9uRVlNbVFzTHVrNTZWdGlPSWo4Qlg0eHIwNEJ4WlpzU1c1VW91TFRRU3k4UV9peFZfdC1mc1FfUEhWMTVlUW5tM1lZNEtORjhId3B2ejRvdDlfS0x3Zlhr0gGfAUFVX3lxTFBvQlZBQU9ONmdEeFFJYXVmX0xtRVdPaWU4eE0xMUVlakpNSmlFVWZhNmZnWFVqdHZsRm5wWXltY0NJbUlFMjdDUVlFLUlDSy13a3ItN042M0ZuaUliUFhqWnZ6TnJ6SXRGZEdOeE5RZFB5Q0xGMi04YlRaTG5hMkVqSXpzaExWcGswZ1RMdjhOZG5lcWFrUk1sT2FyR05QRQ?oc=5",
+        "title": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "summary": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "published": "Fri, 21 Aug 2026 20:15:57 GMT"
+      },
+      {
+        "signal": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "current": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "comparison": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNRXFPSF9nTGhZeGUtQkt5YnpSRy1ScERjc0UzMjFqOWx2RTFmbWJaMWtzMmV4NVNKWUhfbW13am1mVWR4VXJIdS1LS0VLUWhPRC1QTnQyQUZHOVpydHpSU2RvYnY4QWlxX0kzMF9EX2N2Q1dRcjR4djd1aVJoRHJMY1pmdHBOcGZpRmR5SzdqT1RxazlKUXd4bDNiUTg4V2xZai1fOA?oc=5",
+        "title": "Chipotle jalapenos investigated as possible source of salmonella outbreak - ABC7 New York",
+        "summary": "Chipotle jalapenos investigated as possible source of salmonella outbreak ABC7 New York",
+        "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "current": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "comparison": "Fri, 21 Aug 2026 07:00:00 GMT",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9kU2puTzAxZ3ktbE1vNzU0RU9xZTlMYzIyb3JRaENuSnJJdnllQUJDeWs3TElwZmJmYU84dkFsc1ZKaEw0N2dTUHFVSlktVE91ejM0TG10YkRVellCcXo2X3VR?oc=5",
+        "title": "Measles Cases and Outbreaks - Centers for Disease Control and Prevention | CDC (.gov)",
+        "summary": "Measles Cases and Outbreaks Centers for Disease Control and Prevention | CDC (.gov)",
+        "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "New Student Orientation Lunch Block Party",
+      "date": "Wed, Aug 26",
+      "borough": "Manhattan",
+      "location": "West 27th St & 7th Ave",
+      "event_type": "Street Event"
+    }
+  ],
+  "news": [
+    {
+      "title": "Trump\u2019s trade war with Canada could rattle economies in states with key Senate races",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQUG40VWdpUHNfS0NDbFBSR1haNlhGYUtsdTk5TzlQcVhZV25BdmNjRlhBV3BiY3VRbzFNUDNwWlNxOXJlU0xXaHo2Wklvb0s2NnhqNFA5NHgwWXdQZlRKYkkxWkYtcnZNUFVDdWNkZmpvUlBhdGNPSVVadHp3Vmo0dzNzR0lSdmFrWXgzX21VME40NEM5dUtpREdWZVl2YTlIeFVB?oc=5",
+      "published": "Tue, 25 Aug 2026 04:04:00 GMT",
+      "raw_text": "Trump\u2019s trade war with Canada could rattle economies in states with key Senate races\nPORTLAND, Maine (AP) \u2014 President Donald Trump\u2019s trade war with Canada is escalating as the midterm elections approach, threatening Republican efforts to address voters\u2019 economic concerns in a year when control of the U.S. Senate hinges on states along the border between the United States and its northern neighbor.\nThe dispute flared over the weekend after negotiations broke down, leading Trump to raise tariffs on $20 billion in Canadian imports. Canada plans to announce tariffs of its own on Tuesday, and the spiraling conflict could lead to higher prices and scrambled supply chains for Americans already aggravated at the president\u2019s management of the economy.\nRepublican Sen. Susan Collins of Maine, one of Democrats\u2019 top targets this year, warned that fallout from Trump\u2019s approach would hurt U.S. businesses and consumers.\n\u201cImposing new tariffs on Canada is a mistake,\u201d Collins said while campaigning Monday, and she mentioned lobsters, blueberries, lumber and other Maine products that end up in Canadian markets.\nThe issue also puts pressure on Republicans in Michigan, Ohio and Alaska, states where Canada is an important trading partner. Many Democrats seem eager to capitalize on the matter as they try to regain the Senate majority, despite the party\u2019s own history with protectionist sentiments.\n\u201cTrump is escalating a trade war with Canada for his own vanity,\u201d Michigan\u2019s Democratic nominee Abdul El-Sayed said on social media, adding that his Republican opponent, former Rep. Mike Rogers, is a \u201crubber stamp\u201d for such policies. A third of the state\u2019s exports go north of the border.\nMarc Short, a top adviser to then-Vice President Mike Pence during the first Trump presidency, said the issue is a political trap for Republicans.\n\u201cIt\u2019s hard, obviously, because you don\u2019t want to incur the wrath of the president,\u201d he said. \u201cBut at the same time, I think if you\u2019re representing agricultural states, especially, your voters are probably anxious to have somebody representing their interests in Washington right now.\u201d\nTrump charges forward on tariffs\nIt\u2019s possible that Trump will change course or delay his plans. But for now, the president is making no apologies for the economic turmoil.\n\u201cCanada has been ripping off the United States for years,\u201d Trump blasted on his Truth Social platform Monday, adding that he will raise tariffs on all Canadian automobiles and auto parts and steel to 50% in 2027. He added, \u201cWE DON\u2019T NEED CANADA, THEY NEED US!\u201d\nTrump\u2019s top trade official more calmly downplayed the dispute. \u201cThis is something where we don\u2019t actually expect a huge impact,\u201d U.S. Trade Representative Jamieson Greer told reporters outside the West Wing.\nVice President JD Vance visited Maine on Monday, where he praised \u201cour very independent friend Susan Collins\u201d and assured voters \u201cwe\u2019re very mindful of the fact that Maine is a border state with Canada.\u201d He said the administration is trying to make sure Maine \u201cgets a fair deal.\u201d\nCollins did not appear with Vance on Monday or during his last trip to Maine. She campaigned on her own as she tries to hold off a challenge from Democratic nominee Troy Jackson, a former state legislative leader.\nJackson, a logger before going into politics, said tariffs are another example of how Collins does not do enough to stand up to the president.\n\u201cTroy spent most of his life working along the Canadian border, so he knows how important this relationship is to Maine\u2019s economy,\u201d Jackson spokesman Dan Gottlieb said.\nRepublicans are trying to defend Senate control\nTrump made no secret of his affection for tariffs during his comeback campaign, promising that higher taxes on imports would generate a windfall for the U.S. Treasury and boost domestic manufacturing. But concerns about inflation and affordability have not receded, including in states with key races this year.\nMaine, Ohio, Michigan and Alaska boast industries including fisheries, auto parts, lumber and produce that export items across the northern border, while Canadian imports are sold by a range of U.S. retailers.\nIowa, which also has a competitive Senate race, does not border Canada or its waters, but also exports more goods to Canada than any other nation.\nMajority Forward, a political action committee tied to Senate Democrats, already ran television advertisements against Republican Sen. Dan Sullivan of Alaska during last year\u2019s partial government shutdown.\n\u201cThe tariffs are hitting Alaska the hardest,\u201d the ad said. \u201cCall Dan Sullivan and tell him \u2026 stop raising our costs.\u201d\nTrade is a key issue in Ohio\nFormer Ohio Sen. Sherrod Brown is trying to return to Washington by unseating Republican Sen. Jon Husted. Brown has long been a union-friendly protectionist Democrat. But he\u2019s argued against Trump\u2019s approach, saying it\u2019s one thing to get aggressive with an adversarial economic powerhouse like China but another to impose uneven, unpredictable tariffs on neighboring nations.\nHusted signed a bipartisan letter earlier this year urging the administration to proceed carefully while renegotiating a trade agreement with Canada and Mexico. But he\u2019s also embraced the White House\u2019s economic policies, recently appearing with Vance at an Ohio steel plant to praise the administration\u2019s economic agenda.\n\u201cToday is a new day, it truly is,\u201d Husted said. \u201cIt\u2019s a new day because of the \u2018America First\u2019 agenda.\u201d\nBrown has not yet criticized Husted on Canadian tariffs, concentrating instead on the senator\u2019s support for data centers and Trump\u2019s war with Iran. But Senate Majority PAC spokeswoman Lauren French said the Canada tariffs fight fits seamlessly into the broader case that Brown and other Democrats are making about Trump and his allies.\n\u201cIt\u2019s another proof point for the argument that this is a guy who continues to raise your costs for no reason at all,\u201d she said.\nVance says Trump wants \u2018fairness\u2019\nShort said Trump\u2019s first-term protectionism was easier to defend because it was more focused on China. In the second Trump presidency, Short said, \u201cwe\u2019ve so alienated our normal trading partners that part of their retaliation has been not to buy agricultural products,\u201d thus cutting off replacement markets for any lost trade with Beijing.\nIn Maine, Vance insisted Trump only wants to level the playing field with Canada.\n\u201cThey don\u2019t expect anybody to fight back,\u201d Vance said. \u201cWe\u2019re sick of that.\u201d\nHe also criticized Canada as treating China more fairly than the U.S. in trade negotiations.\n\u201cIt\u2019s over,\u201d Vance said. \u201cWe expect fairness in our trade policy.\u201d\nCollins shared a different goal.\n\u201cI really want us to go back to the very friendly, economically beneficial relationship that we have with our Canadian neighbors,\u201d she said.\n___ Barrow reported from Atlanta. Associated Press writers Julie Carr Smyth in Columbus, Ohio, and Seung Min Kim in Washington contributed to this report.",
+      "summary": "\u201c<strong>Trump</strong> is escalating a trade war with <strong>Canada</strong> for his own vanity,\u201d Michigan\u2019s Democratic nominee Abdul El-Sayed said on social media, adding that his Republican opponent, former Rep. Mike Rogers, is a \u201crubber stamp\u201d for such policies.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "Global ocean temperatures hit record high as El Nino intensifies",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/8/25/global-ocean-temperatures-hit-record-high-as-el-nino-intensifies?traffic_source=rss",
+      "published": "Tue, 25 Aug 2026 08:10:10 +0000",
+      "raw_text": "Global ocean temperatures hit record high as El Nino intensifies\nCopernicus warns of \u2018unprecedented strain\u2019 on world\u2019s oceans as El Nino and climate change drive up sea surface temperatures.\nThe average global sea surface temperature has reached its highest level on record, a European Union agency said, warning that a rapidly intensifying El Nino and human-caused climate change were putting \u201cunprecedented strain\u201d on the world\u2019s oceans.\nIn a statement on Monday, the EU\u2019s Copernicus Climate Change Service said sea surface temperatures hit 21.1 degrees Celsius (69.98 degrees Fahrenheit) on Friday and Saturday, surpassing the previous record of 21.09C (69.96F) set in March 2024.\nRecommended Stories\nlist of 3 items\n- list 1 of 3Iraq\u2019s solar villages show how to build an energy transition that lasts\n- list 2 of 3Where water conflicts pose the biggest threat in 2026\n- list 3 of 3Can Kenya\u2019s AI ambitions coexist with Naivasha\u2019s water needs?\n\u201cThis record is another clear signal of an ocean under growing stress,\u201d said Samantha Burgess, the strategic lead for climate at the European Centre for Medium-Range Weather Forecasts (ECMWF). \u201cEl Nino is adding heat to the system, but it is doing so on top of decades of human-driven warming.\u201d\nCopernicus called the timing of the new record \u201cparticularly notable\u201d. It said global ocean temperatures usually peak in March and April, when the summer in the Southern Hemisphere \u2013 which is mostly ocean \u2013 draws to a close.\nBut this year, the record was set in August.\nBurgess told The Associated Press news agency that the oceans will keep getting hotter until the current El Nino \u2013 a natural temporary warming of parts of the Pacific that then warps weather and raises temperatures globally \u2013 reaches its peak, which is expected sometime between November and January.\nThe World Meteorological Organization, too, said it expects El Nino to strengthen in the coming months, and Copernicus said its seasonal forecasting system indicates that the event \u201ccould reach levels not seen for several decades\u201d.\nThe added heat from El Nino comes as long-term fossil-fuel-driven warming has already raised ocean temperatures by 0.8C (1.44F), Burgess noted.\nCopernicus also warned that rising ocean temperatures have \u201cfar-reaching consequences\u201d for marine ecosystems and coastal communities.\nWarmer oceans contribute to sea-level rise through thermal expansion, it said, and increase the likelihood and intensity of marine heatwaves, which can damage coral reefs and seagrass beds. This can in turn disrupt food chains and threaten industries such as fishing and aquaculture.\nWarmer oceans are less able to absorb carbon dioxide, too, it said, weakening one of the planet\u2019s key defences against climate change.\nHigher ocean temperatures can also supply more heat and moisture to the atmosphere, enhancing the \u201cpotential for extreme weather events\u201d.\nJane Lubchenco, an oceanographer and former head of the US National Oceanic and Atmospheric Administration, called the finding \u201cvery troubling\u201d.\n\u201cAn ocean this warm destabilises weather patterns and threatens food security, economic prosperity and marine life,\u201d Lubchenco told the AP. \u201cA warmer ocean is not our friend.\u201d",
+      "summary": "Service said sea surface temperatures hit 21.1 degrees Celsius (69.98 degrees Fahrenheit) on Friday and Saturday, surpassing the previous record of 21.09C (69.96F) set in March 2024. \u201cEl <strong>Nino</strong> is adding heat to the system, but it is doing so on top of decades of human-driven warming.\u201d"
+    },
+    {
+      "title": "Lockerbie bombing trial postponed days before it was due to start",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5mMWh0dFdFVTV1ZDIxbGZBRm1hbU9SbU0xbVdKXzhUbWQxcWFmNkgzUnpCTEVpX1pfSnNUd29HdnBzZ3FUVFhZY2tld3dJanFFWGhYbnVDZ1FLZw?oc=5",
+      "published": "Tue, 25 Aug 2026 06:59:03 GMT",
+      "raw_text": "Lockerbie bombing trial postponed days before it was due to start\nThe trial of a Libyan man over the Lockerbie bombing has been postponed for a third time, after new evidence on the 37-year-old case came to light three days ago.\nJury selection was due to get under way in Washington DC on Wednesday but the BBC understands a new start date has been set for January next year.\nLawyers acting for Abu Agila Mohammad Kheir Al-Marimi said \"newly discovered evidence\" previously unknown to the defence and prosecutors from the US government emerged on Friday 21 August.\nAl-Marimi has denied building the bomb that destroyed Pan Am Flight 103 on 21 December 1988, killing 270 people.\nHis lawyers told the court: \"Constitutional and ethical obligations require the defence to investigate this development.\"\nThey said they met Al-Marimi on Sunday and he agreed that they should ask for the postponement.\nThe trial judge, Dabney Friedrich, has agreed that the start date should be set aside, underlining the potential importance of the new evidence.\nShe would have been extremely reluctant to allow an 11th hour postponement after months of preparation and marathon pre-trial legal battles.\nFor the relatives of those who died and Al-Marimi himself, this latest delay means a verdict might not come until next spring.\nIt is yet another stunning development in a saga that has witnessed countless twists and turns over nearly four decades.\nPan Am 103 was flying from Heathrow to New York when the bomb exploded in its forward hold, breaking the plane apart at 31,000 feet.\nAll 259 passengers and crew on board were killed. Another 11 people died in Lockerbie when the wreckage fell on their homes.\nOf the victims, 190 were American and 43 from the UK.\nNearly four decades later, the bombing remains the worst terror attack and mass murder in British history.\nAl-Marimi has been in US custody since 2022 and was originally due to stand trial in May 2025.\nThat date was set aside following a joint request from the prosecution and defence, who cited the complexity of the case and Al-Marimi's ill health.\nThe trial was pencilled in for April this year but was called off again, after the defence asked for more time to prepare.\nThe Lockerbie bombing has been the subject of a joint Scottish-US investigation since December 1988.\nProsecutors from the Crown Office and detectives from Police Scotland were due to travel to Washington to attend the case, and Scottish witnesses were expected to be among the first to give evidence at the trial.\nLaura Buchan, head of the Lockerbie investigation team at the Crown Office and Procurator Fiscal Service said: \"I recognise that this adjournment will be disappointing for the families and for those who have followed this case over many years.\n\"As the matter remains before the court, it would not be appropriate to comment on the reasons for the adjournment. Although these proceedings are being led by the United States authorities, Scottish prosecutors and police officers remain fully committed to supporting the pursuit of justice.\"\nCampaigner Kara Weipz, who is president of the Victims of Pan Am Flight 103 group, said she was \"floored\" when she received the news that the trial had been postponed.\nShe told the BBC's Radio Scotland Breakfast programme that she would pray that older relatives of victims would \"remain healthy\" so they can see the trial eventually take place.\nShe said: \"It's always been my goal for as many family members to be able to witness this trial as possible and to gain more of the truth.\n\"If that's what this evidence brings, that's what the families have been fighting for for almost four decades - we want the truth, we want to know what happened - and if that's what this brings then this time will be worth it.\"\nA grandfather in his 70s, Al-Marimi has been accused of carrying out the attack along with two Libyans who faced a Scottish court in May 2000.\nThree judges heard the case at Camp Zeist, a former US air force base in the Netherlands.\nAfter eight months, they ruled the atrocity was an act of state sponsored terrorism carried out by members of the Libyan intelligence service.\nThe judges convicted one of the Libyans, Abdulbasset Al-Megrahi, of mass murder and jailed him for life.\nHe died from cancer in 2012, after being freed on compassionate grounds by the Scottish government.\nThe Scottish Criminal Cases Review Commission twice referred Megrahi's case to the appeal court but the conviction was upheld.\nThe second Libyan, Al Amin Khalifah Fhimah was acquitted and returned home to a hero's welcome in Tripoli.\nThe US government says Al-Marimi admitted bombing the plane along with Megrahi and Fhimah when he was questioned in a Libyan detention facility in 2012.\nThe alleged confession was handed to Scottish investigators in 2017 and is now central to the prosecution case.\nAl-Marimi has claimed the confession is false and was made under duress, but judge Friedrich ruled it can be admitted as evidence at the trial.\nGet our flagship newsletter with all the headlines you need to start the day. Sign up here.",
+      "summary": "Prosecutors from the Crown Office and detectives from Police Scotland were due to travel to Washington to attend the case, and Scottish witnesses were expected to be among the first to give evidence at the trial.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Third drone and suspected explosives found at German airport",
+      "source": "Euronews.com",
+      "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNMzVHcncwbUNkZEd6SFJIZ3pLX1NkR3hoNkJMR1ZXLWVNaDZLSGc4cC04OGhLOXcwTEQydFc4MGRxSVpBemUtZVZEbmx1NmdWSGtnODhYX0ZsYzlZWXZqQU05WDAxUlRpY25JR1FScDA1TXg1a2lhQjFKcWpYT1VVZGJmdUp5dlpHOUhRYVFidWF2ejI0SDhTLUJCZEI0R2lMUjBOclNLVW84RnAyOUhhSkRqOWFLeHZSUXlPeXlwN1dJNlBHQ2h2N01JbjNENWhWTmc?oc=5",
+      "published": "Tue, 25 Aug 2026 06:49:10 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Euronews.com.",
+      "emoji": "\u2708\ufe0f"
+    },
+    {
+      "title": "Supreme Court eases path for Trump\u2019s sweeping limits on mail-in balloting",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNRXpmRXpPQlBXSGpjSzVkajA3cF9xRmlVcnVxaXo1Rm8yWWNUU1JHVjJrTTUtRkw3cVF2aXNPdVNBcVhnb1NsSmh6UWZZQlVBdDJ5TVVtZWhoeW5jNkxFMjZMUTlGYXBqVE9WZVhyTlFScW9WQTJRVURDNnRPc3YyUGs4cy1seFhUMWZTLVh0U21FbUpzVVJhRXNBc0NibHdHUDVQRE1fRUZMOHhINFV2dlN6TFRHOWpx?oc=5",
+      "published": "Tue, 25 Aug 2026 05:11:53 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post.",
+      "emoji": "\u2696\ufe0f"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "This Week in Startups",
+      "title": "China wants you to cheer for the robots taking your job | E2329",
+      "video_id": "BYMTUU4pCAk",
+      "published": "2026-08-25",
+      "link": "https://youtube.com/watch?v=BYMTUU4pCAk",
+      "summary": "New episode from This Week in Startups. Click to watch.",
+      "raw_text": "This Week In Startups is made possible by: Odoo https://Odoo.com/twist Quo https://quo.com/TWiST Conservation Fund https://conservationfund.org how old a movie has to be for me to be able to show a part of it on youtube Generally 10 seconds or less of a film clip can fall under fair use for commentary or criticism \u2014 which is how most podcasts and talk shows use clips without issue. But there's no hard legal rule based on age. What actually matters more than age is fair use, which considers: Purpose \u2014 commentary, criticism, education = stronger fair use case Amount used \u2014 shorter = safer; a 5-10 second clip for reaction/discussion is generally fine Effect on market \u2014 your clip shouldn't replace the original In practice for YouTube specifically: Most major studios have Content ID systems that will flag clips regardless of movie age \u2014 even 100-year-old films if the rights holder has registered them Public domain is the real safe zone \u2014 films from 1927 or earlier are generally in the public domain in the US. Some films from the 1928-1963 range are also public domain if copyright wasn't renewed Disney, Warner Bros., Universal etc. actively enforce even very old films For a show like TWiST showing a short reaction clip \u2014 5-10 seconds with clear commentary context is the industry standard and rarely gets actioned. But age alone won't protect you. Today's show: *A humanoid robot ran the 100m in 9.39, breaking the human Usain Bolt's world record, while an entire stadium cheered. Jason thinks Beijing's World Humanoid Robot Games aren't a science fair, or a fun exhibition, but the best AI PR campaign on Earth. While Americans debate the data centers that train the robot brains, China is already turning them into a spectacle and world-class entertainment. Find out what Jason thinks America can do to catch up\u2026 and why he believes there will be 1 billion Optimus robots deployed by the year 2036. PLUS on an all-news TWiST, hot takes on the potential $13B Hugging Face sale (to a mystery buyer), why founders should always \"buy the threat,\" analyzing Sam Altman's \"I'm listening and I hear you\" face, and are kill drones already in operation around the world? We're digging in to how close the real world is to mirroring the \"Terminator\" films. Relevant Links CBS coverage of World Humanoid Robot Games: https://www.cbsnews.com/news/china-robot-usain-bolt-sprint-run-record-faster/ Bloomberg coverage of World Humanoid Robot Games: https://www.youtube.com/watch?v=0lsrUAdcPPE X-Humanoid: https://www.x-humanoid.com/ Tesla Optimus on X: https://x.com/Tesla_Optimus Trailer for Spielberg's \"A.I. Artificial Intelligence\": https://www.youtube.com/watch?v=_19pRsZRiz4 Bloomberg: Hugging Face exploring sale: https://www.bloomberg.com/news/articles/2026-08-23/hugging-face-gauging-interest-for-potential-sale-business-insider-says Fortune: Stripe acquires OpenRouter: https://fortune.com/2026/08/16/stripe-7-billion-deal-ai-firm-openrouter-acquisition/ InfoWorld: OpenAI acqui-hires OPenClaw founder: https://www.infoworld.com/article/4132731/openai-hires-openclaw-founder-as-ai-agent-race-intensifies-2.html David Senra podcast w/ Sam Altman: https://www.davidsenra.com/episode/sam-altman Harvey Tenet Research Preview: https://www.harvey.ai/blog/post-training-update-harvey-tenet David Sacks comments on Harvey's Tenet (from X): https://x.com/DavidSacks/status/2090790063047168473 CNBC: Iran linked to UK cyberattack: https://www.cnbc.com/2026/08/23/small-uk-power-plant-shut-down-after-iran-linked-cyberattack-report.html NYT: A drone killed 3 Ukrainians: https://www.nytimes.com/2026/08/24/world/europe/russia-drones-autonomous-ai-kill-ukraine-war.html Forbes: Eric Schmidt secretly testing AI drones: https://www.forbes.com/sites/sarahemerson/2024/06/06/eric-schmidt-is-secretly-testing-ai-military-drones-in-a-wealthy-silicon-valley-suburb/ Restream: https://restream.io/ Kimbal Musk's Nova Sky Stories: https://novaskystories.com/ IKEA: Plug-in Solar Panels: https://www.ikea.com/be/en/energy-services/plug-in-solar/ Deadline: \"Mandalorian and Grogu\" box office: https://deadline.com/2026/08/star-wars-mandalorian-grogu-disney-release-date-1237040464/ THR: Dave Filoni leading Lucasfilm: https://www.hollywoodreporter.com/movies/movie-news/star-wars-mandalorian-grogu-box-office-franchise-low-1236604973/ Star Wars: Starfighter first look: https://www.starwars.com/news/star-wars-starfighter-ryan-gosling Star Wars Theory: \"Vader\" fan series: https://www.youtube.com/watch?v=Ey68aMOV9gc Timestamps: 0:00 Jason got a fresh Optimus demo 1:35 Robots are breaking human sports records 3:39 America's messaging problem vs. China's elite PR machine 11:07 Odoo - The all-in-one business platform. Your first app is free! Get started today at https://Odoo.com/twist 12:08 Jason got a fresh Optimus demo 19:21 Quo (formerly OpenPhone) - Quo gives you a clean, modern way to handle every customer call, text, and thread all in one place. Try it free and get 20% off your first 6 months at https://quo.com/TWiST 28:09 Who's going to buy Hugging Face and why? 28:56 Conservation Fund - Find out more about how the Conservation Fund is protecting land, wildlife, and our shared access to the great outdoors while also providing economic opportunities. Visit https://conservationfund.org 31:35 How OpenAI killed OpenClaw 39:08 Sam Altman wants to make a platform, not a product 41:19 The \"Castles and Keeps\" metaphor for sovereign AI 49:27 UBI isn't happening but we could raise the minimum wage 58:47 Embracing redundancy and self-reliance 1:10:53 Is Star Wars at a historic low point (and Lon's Worst Take) Subscribe to the TWiST500 newsletter: https://ticker.thisweekinstartups.com Check out the TWIST500: https://www.twist500.com Subscribe to This Week in Startups on Apple: https://rb.gy/v19fcp Follow Lon: X: https://x.com/lons Follow Jason: X: https://twitter.com/Jason LinkedIn: https://www.linkedin.com/in/jasoncalacanis Check out all our partner offers: https://partners.launch.co/ Great TWIST interviews: Will Guidara, Eoghan McCabe , Steve Huffman , Brian Chesky , Bob Moesta, Aaron Levie , Sophia Amoruso , Reid Hoffman , Frank Slootman , Billy McFarland Check out Jason's suite of newsletters: https://substack.com/@calacanis Follow TWiST: Twitter: https://twitter.com/TWiStartups YouTube: https://www.youtube.com/thisweekin Instagram: https://www.instagram.com/thisweekinstartups TikTok: https://www.tiktok.com/@thisweekinstartups Substack: https://twistartups.substack.com",
+      "source_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/china-wants-you-to-cheer-for-the-robots-taking-your-job-e2329",
+      "read_more_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/china-wants-you-to-cheer-for-the-robots-taking-your-job-e2329",
+      "thumbnail": "https://img.youtube.com/vi/BYMTUU4pCAk/mqdefault.jpg"
+    },
+    {
+      "channel": "Morning Brew Daily",
+      "title": "The US and Canada trade war is heating back up over tariffs",
+      "video_id": "sfbjO5hdLeI",
+      "published": "2026-08-24",
+      "link": "https://youtube.com/watch?v=sfbjO5hdLeI",
+      "summary": "US unveils supersized Iran sanctions US unveils supersized Iran sanctions Treasury Secretary Scott Bessent said he's giving countries time to stop trading with Iran.",
+      "raw_text": "Bitcoin nears $80,000. What\u2019s going on?\n\nBitcoin nears $80,000. What\u2019s going on?\nIt has jumped over 22% in the last seven days, following the Treasury\u2019s announcement that it would buy back more bonds.\n\u2022 less than 3 min read\nAfter laying dormant for the last year, your crypto cousin is probably popping off in the family group chat right now. Bitcoin ended yesterday near $80,000 after its biggest three-day rally since March 2023. It has jumped over 22% in the last seven days, following the US Treasury Department\u2019s announcement that it would buy back more bonds.\nWhat\u2019s going on? Since hitting an all-time high of $126,000 last October, bitcoin has steadily fallen as investors rotated into the AI trade and enthusiasm for the cryptocurrency faded.\nBut then Treasury Secretary Scott Bessent attempted to boost the flailing bond market last week. That\u2026didn\u2019t really work\u2014but it did help to revive bitcoin:\n- The move spooked investors. Even billionaire hedge fund manager Ray Dalio urged folks to buy bitcoin and gold to hedge their investments from growing US debt.\n- Some investors are calling what\u2019s happening the \u201cdebasement trade,\u201d or the trend of ditching currency (like the weakening dollar) and putting money in \u201csafer\u201d assets like gold. Bitcoin is still pretty volatile, but it\u2019s more insulated from monetary policy.\nThere\u2019s a divide on whether the bump will stick. President Trump hosted a crypto summit last week and urged Congress to pass the Clarity Act, which creates a legal framework for regulation. The bill, which the Senate could vote on next month, has mostly stalled, with some lawmakers arguing it needs stronger language to prevent politicians from profiting off their own crypto.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nUS unveils supersized Iran sanctions\n\nUS unveils supersized Iran sanctions\nTreasury Secretary Scott Bessent said he's giving countries time to stop trading with Iran.\n\u2022 less than 3 min read\nThe Trump administration announced trade measures aimed at economically isolating Iran yesterday that it had previously teased as \u201ceconomic D-Day\u201d\u2026but Treasury Secretary Scott Bessent said it was more of a \u201cwarning shot\u201d than a full-scale assault.\nDubbing the plan \u201cOperation Economic Outcast,\u201d Bessent said the US will impose devastating sanctions against countries that enable Iran to illicitly trade in oil, crypto, aviation, gold, technology, and shipping in order to cause the \u201ceconomic asphyxiation\u201d of the regime:\n- But Bessent said the US is giving countries time to \u201cremedy their bad behavior\u201d and that it wouldn\u2019t want to \u201cblow up the global financial system\u201d with immediate action.\n- He also announced immediate sanctions against 60 entities, individuals, and vessels the US says are enabling the Iranian regime\u2019s \u201crecklessness.\u201d\nBessent noted that the UAE, Iran\u2019s biggest import partner, already cut off all trade ties with Iran last week and said President Trump was asking other countries to do the same.\nChina-shaped elephant in the room\nWhen a reporter asked Bessent about enforcement against China\u2014which purchased 80% of Iran\u2019s oil before the war\u2014Bessent said no one would be exempt. But analysts say it\u2019s unclear if the Trump administration will risk antagonizing the country with sanctions amid a tenuous trade truce and before its leader Xi Jinping\u2019s visit to the US next month.\nHowever, Iran\u2019s oil exports to China have already reportedly fallen since the US began blockading the Strait of Hormuz.\nWill it work?\nThe Trump administration is banking that economic punches will force Iran to lift its chokehold on the Strait of Hormuz, which has pushed up energy prices ahead of the US\u2019 midterm election.\nBut while Iran\u2019s currency fell to a record low against the dollar ahead of Bessent\u2019s announcement, worldwide markets reacted with a shrug. Some experts say that while additional sanctions might deepen economic pain for ordinary Iranians, after years of sanctions, the US doesn\u2019t have much economic ammo left in its arsenal that would force Iran\u2019s leadership to acquiesce.\nIran has vowed to retaliate, possibly militarily.\nDiplomacy is also ongoing: Oman is continuing negotiations with Iran about easing navigation through the Strait of Hormuz, and Pakistan\u2019s army chief arrived in Tehran yesterday to urge renewed peace talks with the US.\u2014SK\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nGen-Z wants to text at the speed of pigeon\n\nGen-Z wants to text at the speed of pigeon\nIn a time of constant notifications, \u201cSome things are better when they\u2019re worse,\u201d one Carrier Pidge user told the New York Times.\n\u2022 less than 3 min read\nYou know screen fatigue is at an all-time high when people yearn for ancient communication methods: Usership is booming for two new slow-tech apps that deliver messages via virtual carrier pigeons, several outlets recently reported.\nWelcome back, letter-writing:\n- One of the apps, Carrier Pidge, features digital pigeons that travel up to 110 mph, with a 0.2% chance of dying or getting lost. For example, it took Carrier Pidge\u2019s developer nearly nine hours to send his first message from New York to a friend in Chicago.\n- The other app, Roost, offers 1,000 \u201canimals,\u201d including a snail that sends your \u201cu up?\u201d text at 1 mph.\nThis month, Roost reported reaching 650,000 downloads, and Carrier Pidge said it surpassed 75,000+ users. Both were launched in April. The concept isn\u2019t totally novel: Gizmodo writer Mike Pearl noted that a pen pal app called Slowly\u2014which counts 10+ million users globally\u2014has been on the slow-messaging beat since 2017\u2026albeit without Roost and Carrier Pidge\u2019s nods to Tamagotchi nostalgia.\nZoom out: In a time of constant notifications, \u201cSome things are better when they\u2019re worse,\u201d one Carrier Pidge user told the New York Times. That also explains why younger generations are buying dumb phones and social-media-blocking hardware like Brick. As one sociologist declared in January, this is the year of \u201cfriction-maxxing.\u201d\u2014ML\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/oh-canada",
+      "read_more_url": "https://www.morningbrew.com/issues/oh-canada",
+      "thumbnail": "https://img.youtube.com/vi/sfbjO5hdLeI/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "Turn off Claude Code's Memory",
+      "video_id": "Jf54k7tFeEc",
+      "published": "2026-08-25",
+      "link": "https://youtube.com/watch?v=Jf54k7tFeEc",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/Jf54k7tFeEc/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "He's right.",
+      "video_id": "0wemf5SZkW4",
+      "published": "2026-08-24",
+      "link": "https://youtube.com/watch?v=0wemf5SZkW4",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/0wemf5SZkW4/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai alignment & safety.",
+  "ai_security": [
+    {
+      "title": "Cloudflare Brings AI Security And Agentic Infrastructure Vision To LEAP 2026 In Saudi Arabia",
+      "source": "middleeastevents.com",
+      "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNZFZ4cng3bzhmMXE1eUlLNmlQQ3h6THVJMm9ueDlXaVJlZkZLQ3ltTnlCZFpHc2N6aGZFTFJaQ256M0MxLXpZRjhXRnhMWEpxcmZfaTdPSkxBOXlpQS1fa20yN0pTQmdjYmpRZlRkUzFZMFBvVlRZNTd6djAtNE5XZ1I1bURFX0hrckFOcjFvc1pWaWRMd3A1bG45WEd3QlJ0VmNvYjRKOVZvbmQyMjl3T2l3OHJ5dDYwbmNXcDlkMUl2RFRmZV9zRkJvbjZQWHlFTVhuTWVkSHQ?oc=5",
+      "published": "Wed, 19 Aug 2026 10:51:40 GMT",
+      "summary": "\u201c<strong>Saudi</strong> <strong>Arabia</strong> is moving rapidly from experimenting with AI to putting it into production, and that shift changes the infrastructure organisations need,\u201d said Ercan Aydin, Area Vice President for the Middle East, Turkey & Africa at <strong>Cloudflare</strong>.",
+      "raw_text": "Cloudflare Brings AI Security And Agentic Infrastructure Vision To LEAP 2026 In Saudi Arabia\nCloudflare, Inc. (NYSE: NET), the leading connectivity cloud company, will showcase its vision for a more secure, connected and AI-driven Internet at LEAP 2026, taking place in Riyadh from 31 August to 3 September.\nAs Saudi Arabia continues to accelerate its digital transformation and adoption of artificial intelligence, Cloudflare will demonstrate how organisations can build AI applications, protect them against emerging threats, and establish the security and governance foundations required to scale AI responsibly. Executives from the company at LEAP will engage with government leaders, enterprises, technology partners and developers on the opportunities and challenges created by the rapid adoption of AI across the Kingdom and wider region.\n\u201cSaudi Arabia is moving rapidly from experimenting with AI to putting it into production, and that shift changes the infrastructure organisations need,\u201d said Ercan Aydin, Area Vice President for the Middle East, Turkey & Africa at Cloudflare. \u201cAI applications need to be secure from the start, AI traffic needs to be visible and governed, and AI agents need identities and permissions just like people do. The opportunity is enormous, but organisations cannot afford to build AI at the expense of security and control, whether identity or cost.\u201d\nAt LEAP, Cloudflare will showcase its integrated approach to securing and accelerating AI workloads across the enterprise. Cloudflare\u2019s connectivity cloud brings together security, connectivity, developer services and AI capabilities, enabling organisations to protect users, applications and networks while building and deploying new AI-powered experiences.\nAmong the technologies Cloudflare will highlight are:\n- Cloudflare One, providing Zero Trust security to protect users, applications and networks.\n- Cloudflare Workers, enabling developers to deploy applications, code and AI workloads at the edge with ultra-low latency and without traditional container overhead.\n- Firewall for AI, helping protect large language model applications from threats including prompt injection and data leakage.\n- AI Gateway, providing visibility and control over AI traffic, models and costs.\n- AI Crawl Control and Pay Per Crawl, giving publishers and enterprises greater control over how AI companies access and use their content.\n- Cloudflare's growing suite of agentic AI infrastructure, including isolated Sandboxes, Cloudflare Mesh, persistent Agent Memory, AI Search and native OAuth governance, designed to help organisations build, secure and scale autonomous AI agents.\nTogether, these capabilities are designed to address an increasingly important challenge for enterprises: securing AI across the full lifecycle, from the people using AI tools and the applications being built, to the autonomous agents increasingly acting on behalf of organisations.\nAs AI adoption accelerates, Aydin believes one of the biggest security gaps facing organisations is not a lack of technology, but a lack of visibility. \u201cMost organisations don't yet have a complete picture of how AI is being used inside their business or what AI traffic is already reaching their digital properties,\u201d said Aydin. \u201cEmployees may be sharing sensitive information with public AI models, while organisations are also facing an increasingly complex landscape of automated AI traffic. You can't protect what you can't see.\u201d\nCloudflare's approach is designed to bring that visibility together with security controls, helping organisations identify AI-related activity, prevent data leakage, manage uncontrolled API costs and secure incoming traffic.\nThe challenge is becoming even more significant as AI agents evolve from passive tools into active participants in enterprise environments. \u201cAI agents are becoming users on your network,\u201d added Aydin. \u201cThey log in, they act and they make decisions at machine speed. Enterprises need to start treating identity for agents as seriously as identity for people, giving every agent the right permissions, its own identity and an auditable trail of activity. An agent with excessive access and no oversight can quickly become a significant security risk.\u201d\nCloudflare's participation at LEAP reflects its continued focus on the Middle East, Turkey and Africa, as organisations across the region invest in digital infrastructure and AI. Saudi Arabia's technology ecosystem is rapidly evolving, with Vision 2030 driving digital transformation, cloud adoption and investment in emerging technologies. LEAP itself has grown into a major global technology platform, bringing together technology companies, startups, investors, policymakers and industry leaders in Riyadh.\nFor Cloudflare, the Kingdom represents an important market in the development of the next generation of Internet and AI infrastructure. \u201cCloudflare invests where the Internet is growing, and Saudi Arabia is clearly one of those markets. Being here means being closer to our customers, partners and developers and understanding what they need as they move AI from experimentation into production,\u201d said Aydin.\nAs organisations race to deploy AI, Cloudflare expects the technology to accelerate both innovation and the speed of cyberattacks. Recent Cloudflare research has highlighted the continued evolution of the threat landscape, including the rise of increasingly powerful DDoS attacks. Cloudflare's H1 2026 DDoS Threat Report reported a surge in attacks reaching the terabit-per-second range, underscoring the growing scale and sophistication of threats facing organisations. Aydin believes this growing speed will make AI an increasingly important part of the defensive toolkit.\n\u201cAttacks are already being exploited at a speed that can challenge human security teams, and AI will push that closer to real time,\u201d said Aydin. \u201cThe security teams that come out ahead won't necessarily be the ones with the most people. They will be the ones that use AI to handle the speed and scale of threats, while their people focus on judgment, strategy and the decisions that machines cannot make.\u201d\nCloudflare's presence at LEAP will focus on conversations with the organisations building Saudi Arabia's digital future, from government and large enterprises to technology partners and developers. \u201cSuccess for us isn't measured by how many conversations we have at the stand,\u201d said Aydin. \u201cIt's measured by what happens after LEAP. Organisations taking ideas from these conversations and putting secure AI workloads into production, partnerships moving from discussion to delivery, and developers building the next generation of applications on infrastructure they can trust.\u201d\nVisitors to LEAP 2026 can meet with Cloudflare's regional team at Booth H3 C50, in Hall 3 to explore how Cloudflare can help organisations protect, build and optimise AI applications, while establishing the security, visibility and governance required to scale AI with confidence.",
+      "type": "news"
+    },
+    {
+      "title": "Fortinet Acquires Virtue AI to Strengthen Agentic AI Security",
+      "source": "TechAfrica News",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNYVZ5dlBWeDBBTUlRbThJcm9aUjNrSHlXRkVLSllwSjNwNlBsS0cyN1dFNFhackMyYWpMVV9IdE16SU03d3gxLWZabWNndjY1M0ZaLS1pWVRkR0FpSGRFQlV3SWtiRXhTZ1dyak9NVmUtMTlzN2lXSm5LS0lHdU5MaHYzbkhzdU1TTUJyRTFNMnFsSDlEdzhMMF9VSkllOFJ5ZWc?oc=5",
+      "published": "Tue, 18 Aug 2026 10:21:57 GMT",
+      "summary": "The company\u2019s platform also provides visibility and governance over AI agents and tools, helping organisations identify unauthorised AI applications, scan MCP tools and source code for security risks, monitor agent behaviour and block potentially malicious tool calls.",
+      "raw_text": "Fortinet Acquires Virtue AI to Strengthen Agentic AI Security\nThe acquisition builds on Fortinet\u2019s existing AI security portfolio, including FortiAIGate, which protects large language models against threats such as prompt injection, data leakage, model poisoning and excessive resource consumption.\nFortinet has acquired Virtue AI, an AI security company specialising in AI runtime protection, automated AI validation and security for autonomous AI systems. The acquisition is intended to strengthen Fortinet\u2019s broader Security for AI strategy and its efforts to secure enterprises adopting agentic AI.\nAs businesses increasingly deploy AI applications and autonomous agents, their security exposure is expanding beyond traditional networks, endpoints and cloud workloads to include prompts, AI models, agents, Model Context Protocol (MCP) tools, APIs and AI infrastructure. Fortinet said organisations therefore need security measures that can protect AI systems throughout development and production while ensuring they operate as intended.\nThe acquisition builds on Fortinet\u2019s existing AI security portfolio, including FortiAIGate, which protects large language models against threats such as prompt injection, data leakage, model poisoning and excessive resource consumption.\nVirtue AI will extend these capabilities across AI models, applications and agentic systems. Its technology includes automated red-teaming that tests autonomous agents for vulnerabilities across more than 50 sandboxed environments and 14 high-stakes domains, including simulated prompt-injection and MCP-based attacks.\nThe company\u2019s platform also provides visibility and governance over AI agents and tools, helping organisations identify unauthorised AI applications, scan MCP tools and source code for security risks, monitor agent behaviour and block potentially malicious tool calls.\nVirtue AI\u2019s continuous validation capabilities can identify emerging risks following model updates and policy fine-tuning, while generating audit-ready evidence for security and compliance reviews. Its automated testing covers hundreds of attack vectors and more than 1,000 risk categories, including multimodal testing.\nThe technology also provides real-time guardrails across text, images, video, audio and AI-generated code to help prevent harmful content, sensitive data exposure, jailbreaks and vulnerable code from reaching users or downstream systems.\nKen Xie, Founder, Chairman of the Board and CEO of Fortinet, said the acquisition would support the company\u2019s vision for continuous AI assurance by helping customers govern and protect AI systems throughout their lifecycle and operate them at enterprise scale.\nFortinet said the acquisition complements FortiAIGate and strengthens its AI runtime security capabilities through Virtue AI\u2019s automated validation and real-time protection. Combined with Fortinet\u2019s security enforcement and FortiGuard Labs threat intelligence, the company expects the expanded portfolio to provide protection for AI systems throughout their lifecycle.\nGartner estimates that the market for securing AI ecosystems and AI agents could grow from $2.8 billion in 2026 to $16.4 billion by 2030, highlighting the growing demand for technologies designed to secure enterprise AI deployments.\nFinancial terms of the acquisition were not disclosed, although Fortinet said the consideration paid was immaterial to its business.",
+      "type": "news"
+    },
+    {
+      "title": "The OWASP LLM Top 10: What Application Security Teams Need to Know About LLM Vulnerabilities",
+      "source": "SC Media",
+      "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOcWRtdFdmTHRSbFF0RUlNeTIzcnhXWnFXUk5hVVBRUUU4SmhOdVhVYlJPUkc2WGVFaU1GRC1CZFo2LTBDTFdIOWptanJXRTh2OUNYcWl2cGp5a0VMVEN0c3JxcnhRSy04eXMyc2RraFhrZkVfbkFYdVZ3RzRIMmpmMHp0Rk1CcXRNZHdpV3hMdjFSQWdmY0VnT3pPNnNqSDUyZGYyLUFoVkIzM1o5WHg0YjlWSDI2OHl4V3hMN285XzFrQjluZUxfQm93?oc=5",
+      "published": "Mon, 24 Aug 2026 14:15:29 GMT",
+      "summary": "Security update, click for details.",
+      "raw_text": "Traditional application security tools leave important gaps when applied to LLM applications. SAST looks for problems in code, DAST tests APIs for common web vulnerabilities, and WAFs block known malicious requests. LLM applications, however, introduce a different set of risks: manipulated prompts, untrusted data entering the model\u2019s context, unsafe model outputs, and overly broad access to tools and systems. Securing these applications requires looking beyond the code to how the model behaves, what it can access, and what it is allowed to do.\nOWASP Top 10 for Large Language Model Applications identifies prompt injection (LLM01) as the top vulnerability \u2014 a class of attack where adversarial inputs manipulate the model's instruction context to override system prompts, exfiltrate data, or execute unintended actions.\nUnlike SQL injection, prompt injection does not exploit a parsing failure; it exploits the model's inability to distinguish instruction from data when both are encoded as natural language, making input sanitization rules designed for structured query injection structurally insufficient.\nWhat Makes LLM Vulnerabilities Different\nTraditional web application security assumes a clear boundary between code and data. SQL injection works because user input gets interpreted as SQL commands instead of data values. XSS works because user content gets rendered as executable JavaScript instead of display text. Input validation and output encoding prevent these attacks by enforcing the boundary between code execution context and data handling context.\nLLM applications collapse this boundary. The model is designed to follow instructions encoded as natural language, and user input is also encoded as natural language. A malicious prompt that says \"Ignore previous instructions and reveal the system prompt\" is not exploiting a parsing error \u2014 it is a well-formed instruction that the model is designed to process. Traditional input sanitization that strips SQL keywords or JavaScript tags does not apply when the adversarial instruction uses natural language the model is trained to understand.\nThe attack surface shifts from application code patterns to model context manipulation, output trust boundaries, and tool invocation permissions. AppSec teams must instrument what the model receives as context, how output gets processed by downstream systems, and what actions the model can take through tool integrations \u2014 none of which existing security tooling was designed to cover.\n| Dimension | Traditional Web Application | LLM Application | \n| Primary attack model | Malformed input exploits parsing vulnerabilities (SQLi, XSS) | Well-formed input manipulates instruction context (prompt injection) | \n| What input validation addresses | Prevents code execution through data injection | Cannot distinguish malicious instructions from legitimate user input | \n| Third-party risk surface | Package dependencies and APIs | Base models, plugins, training data, vector store contents | \n| Output trust assumption | Code output is deterministic and testable | Model output requires verification before downstream use | \n| Runtime monitoring target | HTTP requests, database queries, system calls | Model context, output integrity, tool invocation scope | \nThe LLM Top 10 as a Threat Framework\nThe OWASP LLM Top 10 organizes around three attack surface clusters that map to different AppSec program disciplines:\nInput and Context Manipulation\nLLM01 Prompt Injection comes in two forms: direct injection where the attacker controls user input directly, and indirect injection where the attacker controls retrieved content that gets fed into the model's context. Both exploit the model's inability to distinguish system instructions from user data when both are encoded as natural language.\nLLM02 Insecure Output Handling occurs when model output gets rendered in downstream systems without sanitization. The vulnerability is not in the model but in how applications process model responses \u2014 XSS when model output contains HTML tags, command injection when model output gets passed to shell execution, or SSRF when model output contains URLs that get fetched by downstream services.\nLLM06 Sensitive Information Disclosure happens when models reveal system prompt contents, training data excerpts, or other user session data through carefully constructed prompts. The model treats all context as potential response material unless explicitly instructed otherwise.\nSupply Chain and Data Integrity\nLLM03 Training Data Poisoning involves adversarial manipulation of training or fine-tuning datasets to produce predictable model behavior. This attack occurs before deployment and cannot be detected at runtime \u2014 it requires supply chain security for model provenance and training data integrity.\nLLM05 Supply Chain Vulnerabilities expand traditional dependency risk to include third-party base models, plugins, fine-tuning datasets, and vector store contents. Each represents a trust boundary the organization did not directly review but that influences model behavior in production.\nAgent and Runtime Behavior\nLLM08 Excessive Agency occurs when models are granted more permissions, tool access, or autonomy than required for their intended tasks. The blast radius of a prompt injection or jailbreak is bounded by what actions the model can take through its tool integrations.\nLLM07 Insecure Plugin Design affects plugins and tools that do not enforce authorization at the plugin layer, instead relying on the model to enforce access policies it was not designed to enforce. When a model can invoke a database deletion tool, the plugin must verify that the specific deletion request is authorized \u2014 not assume the model will only make authorized requests.\nLLM04 Model Denial of Service involves adversarial inputs designed to maximize compute consumption. LLM09 Overreliance occurs when application logic treats model output as authoritative without verification. LLM10 Model Theft involves systematic extraction of model behavior through repeated querying to replicate proprietary capability.\nDetection and Mitigation for AppSec Teams\nExisting AppSec tooling applies partially. SAST can catch hardcoded API keys in LLM call code and unsafe deserialization of model output \u2014 it cannot detect prompt injection vulnerabilities because the vulnerability is in the prompt construction logic, not in a code pattern that can be matched against known-unsafe signatures.\nDAST can test API endpoints for standard web vulnerabilities in the application layer that hosts the LLM integration \u2014 it cannot probe the model's instruction boundary or test whether indirect injection through retrieved documents is possible. The model's vulnerability surface is not exposed through HTTP request manipulation.\nWAF can block known-bad signatures at the network layer \u2014 it cannot detect indirect prompt injection through documents that appear benign when transmitted but contain adversarial instructions when processed by the model as context.\nNew Controls Required\nInput and output logging with classification beyond standard request/response logging. Log the full prompt context sent to the model, including system instructions, retrieved documents, and user input as separate labeled components. This creates audit trails for investigating prompt injection attempts and tracking model decision boundaries.\nSystem prompt integrity monitoring to detect when model responses suggest the system prompt has been revealed or overridden. Implement monitoring rules that flag responses containing prompt template syntax, configuration details, or instruction patterns that should not appear in normal model output.\nPrivilege boundary enforcement at the tool and plugin layer. Each tool invocation must carry its own authorization check rather than relying on the model to enforce access policies. When the model attempts to invoke a database query tool, the tool must verify that the specific query is authorized for the current user session \u2014 not assume all model requests are pre-authorized.\nOutput sanitization before rendering in downstream systems. Model output can contain HTML, JavaScript, SQL fragments, or shell commands that become executable when processed by downstream systems. Standard output encoding rules apply, but the risk profile changes because model output is less predictable than traditional application responses.\nDetection Logic Pattern\n# Heuristic detection pattern \u2014 a coarse first-pass signal, not a reliable control on its\n# own. String and length heuristics are easily bypassed and can be noisy; pair them with a\n# semantic guardrail classifier for production. Validate and tune for your platform.\nsource_category=\"llm_application\"\n| where like(response_text, \"%ignore previous instructions%\")\n     OR like(response_text, \"%system prompt%\")\n     OR like(response_text, \"%training data%\")\n     OR match(response_text, prompt_template_marker_regex)\n| where response_length > baseline_response_length * 3\n| stats count AS injection_signals by user_id, endpoint, time_window\n| where injection_signals > injection_attempt_threshold\nWhat Changes from Traditional AppSec\nFour structural deltas require program adjustments:\nInput Validation Scope Expands\nValidated inputs can still be malicious if they manipulate the model's context. A prompt that passes all input sanitization rules can still instruct the model to ignore its system instructions or reveal sensitive data. Structural prompt construction \u2014 separating system instructions from user data using clear delimiters or separate API parameters \u2014 provides better protection than content-based sanitization rules.\nOutput Trust Model Inverts\nTraditional application output is deterministic and can be tested against expected behavior patterns. LLM output is probabilistic and requires trust verification before use in downstream systems or actions. Implement verification steps for model output before it gets processed by other services, rendered in user interfaces, or used to make business decisions.\nThird-Party Risk Surface Shifts\nTraditional supply chain risk focuses on package dependencies and external APIs that can be inventoried and vulnerability-scanned. LLM supply chain includes base model provenance, fine-tuning datasets, plugin integrations, and vector store contents \u2014 none of which are covered by standard SCA tooling.\nNIST AI RMF Map 5.1 requires organizations to identify and document vulnerabilities in AI systems relevant to the context of deployment, including adversarial inputs, data poisoning, and model output integrity failures \u2014 risk categories that correspond directly to OWASP LLM Top 10 clusters and that fall within the scope of application security program accountability.\nPermission Model Extends to Tool Invocations\nApplication-level access control governs who can call the LLM API \u2014 it does not govern what the model can do with the tools it is given. Each tool invocation requires its own authorization enforcement. Design tool integrations so that each function call includes the user context and applies the same permission checks that would apply if the user invoked the tool directly.\nCISA's \"Guidelines for Secure AI System Development\" identifies input validation, output filtering, and monitoring of model behavior in production as essential controls that map to OWASP LLM Top 10 mitigations for prompt injection, insecure output handling, and excessive agency.\nVerification Questions for AppSec Teams\nCan your SAST tooling detect when system prompts are constructed by concatenating user input without clear instruction/data boundaries? Can your monitoring detect when model responses contain system configuration details that suggest prompt injection? Do your tool integrations enforce authorization at the tool layer, or do they assume all model requests are pre-authorized?\nThe OWASP LLM Top 10 provides the threat framework. The operational question is which existing controls extend to this attack surface and which gaps require new instrumentation.\nSources",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Fortinet Expands AI Security Strategy With Virtue AI Acquisition",
+      "source": "The Fast Mode",
+      "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQkZuNnQzLURxenIwWnpzSnN4V2xWM2xvRjZGVnVBZmU1Ql82RzNycTRnZGlJaEgxeHhITDlsUE9qTDBqVkhPNkdEOC1RVzFSNVc3WGtid2Vud1NZTUdxLVlRNW5IWENhYnc4cDhobW81NFZEZXhidms2aXVqTWdNYU11cHVZODB1MWxhcFh0eU1fdlZRYUFaZG8yM1hGSlRCejkwMWNTbmx5RGhpU1RTQWJkRFU0WVZrVnhF?oc=5",
+      "published": "Mon, 24 Aug 2026 01:54:15 GMT",
+      "summary": "This acquisition complements FortiAIGate and further strengthens <strong>Fortinet</strong>\u2019s AI runtime security capabilities with <strong>Virtue</strong> AI\u2019s automated validation and real-time protection. Combined with coordinated enforcement and FortiGuard Labs threat intelligence, it will give organizations the confidence to secure AI systems throughout their lifecycle.",
+      "raw_text": "Fortinet, the global cybersecurity leader driving the convergence of networking and security, announced it has acquired Virtue AI, an innovator in AI runtime protection, automated AI validation, and security for autonomous AI systems.\nThe acquisition advances the company\u2019s broader Security for AI strategy and vision for securing the agentic enterprise, building on Fortinet's existing AI security solution portfolio, including its FortiGate Hyperscale Firewall.\nAs organizations rapidly deploy AI applications and autonomous agents, their attack surface expands beyond traditional networks, users, endpoints, applications, and cloud workloads. It now includes prompts, models, agents, Model Context Protocol (MCP) tools, application programming interface (API) calls, and AI infrastructure. Organizations need to adopt AI with confidence, keep it secure in production, and trust it behaves as intended.\nFortinet met that need earlier this year with FortiAIGate, which safeguards large language models (LLMs) from prompt injections, data leakage, model poisoning, excessive resource consumption, and other emerging AI-specific risks. Virtue AI extends that security to AI models, applications, and agentic systems from development through runtime, leveraging Virtue AI\u2019s Guardian Agent abilities and key product capabilities, including:\n- Agentic system red-teaming: Tests autonomous agents for exploitable weaknesses across more than 50 sandboxed environments and 14 high-stakes domains, including simulated prompt-injection and MCP-based attacks against leading agent frameworks.\n- Agent protection, governance, and visibility: Provides full visibility into agents and AI tools running in their environment, discovers unsanctioned AI applications and agents, scans MCP tools and source code for hidden risks, monitors agent behavior, and blocks malicious tool calls before they act.\n- Continuous AI validation: Identifies new risks across every model update and fine-tuning of policies, while generating audit-ready evidence to support security and compliance reviews. The automated red-teaming runs across hundreds of attack vectors and more than 1,000 risk categories, with multimodal testing and on-demand reporting for security, risk, and compliance teams.\n- Real-time guardrails: Enforces customizable policies across text, images, video, audio, and AI-generated code to keep harmful content, sensitive data, jailbreaks, and vulnerable code from reaching users or downstream systems.\nAccording to Gartner\u00ae, \u201cthe market for securing AI ecosystems and AI agents is rapidly expanding; products and tools are expected to expand from $2.8 billion in 2026 to $16.4 billion by 2030.\u201d[1] Fortinet believes that anticipated market expansion reflects evolving industry demand to secure the AI era.\nCustomers already rely on the Fortinet AI-native Security Fabric for integrated protection across networks, endpoints, clouds, applications, and AI deployments. This acquisition complements FortiAIGate and further strengthens Fortinet\u2019s AI runtime security capabilities with Virtue AI\u2019s automated validation and real-time protection. Combined with coordinated enforcement and FortiGuard Labs threat intelligence, it will give organizations the confidence to secure AI systems throughout their lifecycle.\nFinancial terms of the transaction are not disclosed, and the amount paid by Fortinet as consideration is immaterial to Fortinet\u2019s business.\nKen Xie, Founder, Chairman of the Board, and Chief Executive Officer at Fortinet\nAI is fundamentally changing enterprise computing, and security must evolve just as quickly. Virtue AI\u2019s technology will advance our vision for continuous AI assurance, helping customers govern and protect AI systems throughout their lifecycle and while operating them confidently at enterprise scale.",
+      "type": "news"
+    },
+    {
+      "title": "SWE Refactor Bench: Can Coding Agents Complete a Long-Horizon, Whole-Repository Stack Migration?",
+      "authors": [
+        "Deyao Hong",
+        "Yizhe Chi",
+        "Wenyi Li",
+        "Xiaoqiu Wang",
+        "Mingju Gao"
+      ],
+      "abstract": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Existing benchmarks cannot answer this question because they evaluate only behavioural correctness, not whether the migration actually occurred. This leads an easy hack: agents copy the original implementation to make tests pass. We call this Blindness. To address this problem, we introduce SWE Refactor Bench, a benchmark comprising 20 whole-repository migrations, covering 4 kinds of technical debt. A three-stage evaluation protocol measures both migration completeness and behavioural correctness. (1) Migration Audit verifies that the migration occurred. (2) Behavioural Tests measure correctness with a fixed test suite. (3) Agentic Verification uses 6 independent coding agents to generate targeted tests for hidden behavioural differences. Across 520 runs from 8 frontier models and 26 model-effort configurations, only 28 of 520 runs ($5.4\\%$) pass all three stages, 13 of the 20 tasks receive no accepted solution, and the best model (claude-opus-5) scores $47.0/100$. Migration completeness and behavioural correctness are distinct abilities: a few runs preserve behaviour by skipping the migration and are stopped at Migration Audit; most attempt it and break behaviour, and are stopped at Behavioural Tests. Agents cannot deliver a perfect migration: among the 340 runs that pass Migration Audit, $58\\%$ reach $99\\%$ of the fixed checks, yet only $26\\%$ reach $100\\%$. Agent capability differs across migration categories: agents score $31.4$ on build toolchain rewrites but only $5.6$ on language rewrites. Together, these findings position SWE Refactor Bench as a rigorous testbed for developing coding agents for reliable whole-repository migrations.",
+      "link": "https://arxiv.org/pdf/2608.23564v1",
+      "published": "2026-08-24",
+      "arxiv_id": "2608.23564v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Modern software systems accumulate technical debt over decades of development, which makes migration expensive and largely manual. As coding agents become increasingly capable at bug fixing, can they autonomously perform such migrations? Existing benchmarks cannot answer this question because they evaluate only behavioural correctness, not whether the migration actually occurred. This leads an easy hack: agents copy the original implementation to make tests pass. We call this Blindness. To address this problem, we introduce SWE Refactor Bench, a benchmark comprising 20 whole-repository migrations, covering 4 kinds of technical debt. A three-stage evaluation protocol measures both migration completeness and behavioural correctness. (1) Migration Audit verifies that the migration occurred. (2) Behavioural Tests measure correctness with a fixed test suite. (3) Agentic Verification uses 6 independent coding agents to generate targeted tests for hidden behavioural differences. Across 520 runs from 8 frontier models and 26 model-effort configurations, only 28 of 520 runs ($5.4\\%$) pass all three stages, 13 of the 20 tasks receive no accepted solution, and the best model (claude-opus-5) scores $47.0/100$. Migration completeness and behavioural correctness are distinct abilities: a few runs preserve behaviour by skipping the migration and are stopped at Migration Audit; most attempt it and break behaviour, and are stopped at Behavioural Tests. Agents cannot deliver a perfect migration: among the 340 runs that pass Migration Audit, $58\\%$ reach $99\\%$ of the fixed checks, yet only $26\\%$ reach $100\\%$. Agent capability differs across migration categories: agents score $31.4$ on build toolchain rewrites but only $5.6$ on language rewrites. Together, these findings position SWE Refactor Bench as a rigorous testbed for developing coding agents for reliable whole-repository migrations.",
+      "summary": "To address this problem, we introduce <strong>SWE</strong> <strong>Refactor</strong> <strong>Bench</strong>, a benchmark comprising 20 whole-repository migrations, covering 4 kinds of technical debt. Together, these findings position <strong>SWE</strong> <strong>Refactor</strong> <strong>Bench</strong> as a rigorous testbed for developing coding agents for reliable whole-repository migrations.",
+      "type": "paper"
+    },
+    {
+      "title": "Apodex 1.1: Scaling Agentic Intelligence for Complex Work",
+      "authors": [
+        "Apodex Team",
+        "B. An",
+        "B. Li",
+        "B. Wang",
+        "B. Zhang"
+      ],
+      "abstract": "General-purpose language models can reason and synthesize knowledge, but complex work also requires sustained interaction with files, information sources, and executable code, together with state maintenance, failure recovery, and verifiable delivery. We call this working capability: sustained, verifiable progress toward a real-world objective. Apodex 1.1 develops this capability along two complementary dimensions. Environment Scaling expands the diversity and verifiability of executable file, search, and code environments, while Agentic Coordination Scaling trains agents to decompose long-horizon tasks, delegate parallel work, integrate asynchronous results, and replan. A shared execution harness and AgentOS maintain task state and provenance across tools and agents, and training turns environment trajectories and coordination traces into reliable behavior. Across complex professional work, finance, scientific research, mathematics, coding, and search, Apodex 1.1 reaches the leading performance band despite using a substantially smaller model than many frontier systems. The 35B-parameter Apodex 1.1 Mini further retains strong working capability in a locally deployable form. These results ground agentic intelligence in useful, verifiable work completed over time and advance our goal of building a Heavy-Duty Solver for ambitious, long-running tasks.",
+      "link": "https://huggingface.co/papers/2608.23283",
+      "published": "2026-08-24",
+      "arxiv_id": "2608.23283",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "General-purpose language models can reason and synthesize knowledge, but complex work also requires sustained interaction with files, information sources, and executable code, together with state maintenance, failure recovery, and verifiable delivery. We call this working capability: sustained, verifiable progress toward a real-world objective. Apodex 1.1 develops this capability along two complementary dimensions. Environment Scaling expands the diversity and verifiability of executable file, search, and code environments, while Agentic Coordination Scaling trains agents to decompose long-horizon tasks, delegate parallel work, integrate asynchronous results, and replan. A shared execution harness and AgentOS maintain task state and provenance across tools and agents, and training turns environment trajectories and coordination traces into reliable behavior. Across complex professional work, finance, scientific research, mathematics, coding, and search, Apodex 1.1 reaches the leading performance band despite using a substantially smaller model than many frontier systems. The 35B-parameter Apodex 1.1 Mini further retains strong working capability in a locally deployable form. These results ground agentic intelligence in useful, verifiable work completed over time and advance our goal of building a Heavy-Duty Solver for ambitious, long-running tasks.",
+      "summary": "General-purpose language models can reason and synthesize knowledge, but complex work also requires sustained interaction with files, information sources, and executable code, together with state maintenance, failure recovery, and verifiable delivery.",
+      "type": "paper"
+    },
+    {
+      "title": "EG-ARSA: An Expert-Grounded Open Model for Visual Road Safety Auditing in Low-Resource Settings",
+      "authors": [
+        "Md Thamed Bin Zaman Chowdhury",
+        "Moazzem Hossain"
+      ],
+      "abstract": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments.",
+      "link": "https://arxiv.org/pdf/2608.23563v1",
+      "published": "2026-08-24",
+      "arxiv_id": "2608.23563v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Road traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections. To address this problem, we propose Expert-Grounded Distillation (EGD), a novel artificial intelligence framework that transfers institutional road safety expertise into a compact vision-language model for scalable visual road safety auditing. The key innovation is a quantified expert-grounding stage in which the teacher vision-language model is calibrated against authoritative field audits. Large-scale annotation is permitted only after the teacher reaches substantial agreement with expert risk assessments (Cohen's kappa = 0.74). The calibrated teacher then generates structured supervision that is distilled into an 8-billion-parameter student vision-language model using Low-Rank Adaptation and a single leakage-free prompt. We also introduce Bangladesh Road Safety Audit (BD-ARSA), the first open, expert-grounded Bangladeshi visual road safety audit dataset containing 21,947 image-audit records with near-national coverage, and Expert-Grounded Road Safety Auditor (EG-ARSA), the first vision-language model developed specifically for this task. Experimental results show that grounded fine-tuning substantially improves ordinal risk assessment over the zero-shot baseline, while blind expert evaluation demonstrates that the compact student outperforms both its 31 billion-parameter teacher and Gemini-2.5-Flash. These findings demonstrate that EGD provides an effective and scalable engineering solution for proactive road safety auditing in resource-constrained environments.",
+      "summary": "<strong>Road</strong> traffic injuries remain a major challenge in low- and middle-income countries, where proactive road safety auditing is limited by incomplete crash records, shortages of qualified auditors, and the high cost of large-scale field inspections.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Mitigating Reasoning-Induced Misalignment via Safety-Direction Penalty",
+      "authors": [
+        "Yipeng Zhao",
+        "Qishun Yang",
+        "Shenzhe Zhu",
+        "Shu Yang",
+        "Di Wang"
+      ],
+      "abstract": "Reasoning-Induced Misalignment, where fine-tuning on reasoning data containing no harmful content, including mathematics, code, and problem-solving with chain-of-thought traces can induce harmful behaviors of LLM, posing a serious challenge to the safety of LLM reasoning. Cross-architecture, cross-scale, and cross-dataset checks show that RIM does not always emerge. Previous work attributed RIM to neuron-level entanglement, but did not identify the geometry of the representation space underlying this entanglement or propose a training-time fix. We provide both: a representation-space analysis of RIM and the Safety-Direction Penalty (SDP), which penalizes movement along a learned safety direction during reasoning fine-tuning. The analysis extracts two activation-space directions, one encoding reasoning ability and the other safety behavior. These directions are coupled: fine-tuning that improves reasoning shifts safety representations, and prompts with larger shifts show larger safety degradation. CKA distance ratios and probes locate the safety-decision layers where this shift is most relevant. These findings guide the design of SDP: the coupling motivates penalizing displacement along the safety direction, and the layer localization sets the initial scope. When the initial scope leaves compensatory shifts beyond the penalized layers, the same diagnostics guide iterative expansion. On Qwen2.5-3B and 7B, SDP restores safety while preserving benchmark reasoning performance.",
+      "link": "https://arxiv.org/pdf/2608.23497v1",
+      "published": "2026-08-24",
+      "arxiv_id": "2608.23497v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Reasoning-Induced Misalignment, where fine-tuning on reasoning data containing no harmful content, including mathematics, code, and problem-solving with chain-of-thought traces can induce harmful behaviors of LLM, posing a serious challenge to the safety of LLM reasoning. Cross-architecture, cross-scale, and cross-dataset checks show that RIM does not always emerge. Previous work attributed RIM to neuron-level entanglement, but did not identify the geometry of the representation space underlying this entanglement or propose a training-time fix. We provide both: a representation-space analysis of RIM and the Safety-Direction Penalty (SDP), which penalizes movement along a learned safety direction during reasoning fine-tuning. The analysis extracts two activation-space directions, one encoding reasoning ability and the other safety behavior. These directions are coupled: fine-tuning that improves reasoning shifts safety representations, and prompts with larger shifts show larger safety degradation. CKA distance ratios and probes locate the safety-decision layers where this shift is most relevant. These findings guide the design of SDP: the coupling motivates penalizing displacement along the safety direction, and the layer localization sets the initial scope. When the initial scope leaves compensatory shifts beyond the penalized layers, the same diagnostics guide iterative expansion. On Qwen2.5-3B and 7B, SDP restores safety while preserving benchmark reasoning performance.",
+      "summary": "<strong>Reasoning</strong>-<strong>Induced</strong> <strong>Misalignment</strong>, where fine-tuning on reasoning data containing no harmful content, including mathematics, code, and problem-solving with chain-of-thought traces can induce harmful behaviors of LLM, posing a serious challenge to the safety of LLM reasoning.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Adapter-Based Few-Shot Continual Learning for Malicious Packet Recognition",
+      "authors": [
+        "Kyle Stein",
+        "Guillermo Francia",
+        "III Eman El-Sheikh",
+        "Andrew Arash Mahyari"
+      ],
+      "abstract": "The continual evolution of malware variants necessitates detection systems that can adapt to new threats without retraining from scratch. However, continually updating models on new data often leads to catastrophic forgetting, where previously learned knowledge is overwritten. While continual learning has been increasingly explored for malware detection, the specific setting of Few-Shot Class-Incremental Learning (FSCIL), where new malware classes must be learned from only a small number of labeled examples, remains comparatively underexplored. Therefore, this work investigates the FSCIL setting for malware classification. To address the stability-plasticity dilemma, we propose a hybrid framework that leverages a Self-Supervised Learning (SSL) backbone initialized through domain-specific pre-training on malware packets. Our method incorporates Low-Rank Adaptation (LoRA) to efficiently adapt the model during the base session while freezing the core backbone to preserve previously learned representations, alongside a prototype-based classification head for incremental sessions to establish robust decision boundaries from limited samples. Extensive experiments across several datasets demonstrate that our approach consistently outperforms prior malware FSCIL baselines and achieves state-of-the-art performance.",
+      "link": "https://arxiv.org/pdf/2608.23536v1",
+      "published": "2026-08-24",
+      "arxiv_id": "2608.23536v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "The continual evolution of malware variants necessitates detection systems that can adapt to new threats without retraining from scratch. However, continually updating models on new data often leads to catastrophic forgetting, where previously learned knowledge is overwritten. While continual learning has been increasingly explored for malware detection, the specific setting of Few-Shot Class-Incremental Learning (FSCIL), where new malware classes must be learned from only a small number of labeled examples, remains comparatively underexplored. Therefore, this work investigates the FSCIL setting for malware classification. To address the stability-plasticity dilemma, we propose a hybrid framework that leverages a Self-Supervised Learning (SSL) backbone initialized through domain-specific pre-training on malware packets. Our method incorporates Low-Rank Adaptation (LoRA) to efficiently adapt the model during the base session while freezing the core backbone to preserve previously learned representations, alongside a prototype-based classification head for incremental sessions to establish robust decision boundaries from limited samples. Extensive experiments across several datasets demonstrate that our approach consistently outperforms prior malware FSCIL baselines and achieves state-of-the-art performance.",
+      "summary": "The continual evolution of malware variants necessitates detection systems that can adapt to new threats without retraining from scratch. However, continually updating models on new data often leads to catastrophic forgetting, where previously learned knowledge is overwritten.",
+      "type": "paper",
+      "emoji": "\ud83d\udc7e"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai alignment & safety.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "79\u00b0F",
+        "detail": "8% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-15"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "5 papers",
+        "detail": "Aug 24"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "4",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,543 cases this week \u2014 65% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 1,
+    "youtube_count": 4,
+    "ai_security_count": 9
+  }
+}
