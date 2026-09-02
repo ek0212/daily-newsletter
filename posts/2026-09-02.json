@@ -1,0 +1,504 @@
+{
+  "date": "Wednesday, September 02, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 65,
+    "unit": "F",
+    "conditions": "Fog/Mist",
+    "high": 75,
+    "low": 67,
+    "feels_like": 65,
+    "forecast": "A slight chance of rain showers after 2pm. Mostly cloudy. High near 76, with temperatures falling to around 74 in the afternoon. East wind around 9 mph. Chance of precipitation is 20%.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 67,
+        "feels_like": 69,
+        "conditions": "Cloudy",
+        "wind": "6 mph NE",
+        "humidity": "89%",
+        "precip_chance": "5%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 68,
+        "feels_like": 70,
+        "conditions": "Cloudy",
+        "wind": "6 mph E",
+        "humidity": "83%",
+        "precip_chance": "6%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 74,
+        "feels_like": 77,
+        "conditions": "Cloudy",
+        "wind": "6 mph SE",
+        "humidity": "71%",
+        "precip_chance": "24%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 73,
+        "feels_like": 76,
+        "conditions": "Cloudy",
+        "wind": "7 mph SE",
+        "humidity": "73%",
+        "precip_chance": "22%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 72,
+        "feels_like": 74,
+        "conditions": "Cloudy",
+        "wind": "7 mph SE",
+        "humidity": "79%",
+        "precip_chance": "19%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "1,721 cases this week \u2014 55% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 1721,
+    "vs_average_pct": -55.5,
+    "week_ending": "2026-08-22",
+    "breakdown": {
+      "flu": 285,
+      "covid": 1296,
+      "rsv": 140
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "1,721 combined flu/COVID/RSV cases",
+        "comparison": "55% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "current": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "comparison": "Mon, 31 Aug 2026 15:07:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTnlrYU9lVjFwNDg1XzBoU2dEbHd5LWdVbkh0VUF0dVF3RGxwU2pkR1ltM05LQjF4a2RrczlfNldzODFCY1lEWFJHY0pqbG5VYkhuNWFudUVObW9OUWlab1pPcW11eXZkUFpYV1huMGNsdWFBZVJBb3lRdnJCTFdiLWNYa2RqN0dFV1BiREFZSjd0VDFYVnFsYWlVS2R4b0RXWkY0VWcyTFdlM0ppa3g2X0VPM1RsSXJKeHZWTDBTV19SamZDeHMxR3d0ZFc3RFFR?oc=5",
+        "title": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "published": "Mon, 31 Aug 2026 15:07:00 GMT"
+      },
+      {
+        "signal": "C.D.C. Expands Cyclospora Outbreak to Six More States - The New York Times",
+        "current": "Expands Cyclospora Outbreak to Six More States The New York Times",
+        "comparison": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQV3BZSFRCNkpCei1SU2pQVnJYempqRTM1d3p2eVRFNWYzcGhmeUJZZWgwcXk2aUtYdEJYVWhnS0h0UDdydW9STkpTY0l2X0hna2c0Z21RWi1FRExHZW9DTlpnVkdmbVhHdzJmcnhOU2UtOXBHXy1JVlBKT1B5V2dHaHRpZ3dOZC1yd2c?oc=5",
+        "title": "C.D.C. Expands Cyclospora Outbreak to Six More States - The New York Times",
+        "summary": "Expands Cyclospora Outbreak to Six More States The New York Times",
+        "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "LMSI LLC/Kofinas Olive Oil Issues a Voluntary Recall of its Garlic Mediterranean Infused Extra Virgin Olive Oi",
+        "current": "29, 2026) - LMSI LLC/ Kofinas Olive Oil is issuing a voluntary recall of its Garlic Mediterranean infused extra virgin olive oil for using a garlic essential oil not approved for c",
+        "comparison": "Mon, 31 Aug 2026 16:44:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766347",
+        "title": "LMSI LLC/Kofinas Olive Oil Issues a Voluntary Recall of its Garlic Mediterranean Infused Extra Virgin Olive Oil for Using a Garlic Essential Oil Not Approved for Culinary Use",
+        "summary": "29, 2026) - LMSI LLC/ Kofinas Olive Oil is issuing a voluntary recall of its Garlic Mediterranean infused extra virgin olive oil for using a garlic essential oil not approved for culinary use.",
+        "published": "Mon, 31 Aug 2026 16:44:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "current": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "comparison": "Mon, 31 Aug 2026 15:07:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTnlrYU9lVjFwNDg1XzBoU2dEbHd5LWdVbkh0VUF0dVF3RGxwU2pkR1ltM05LQjF4a2RrczlfNldzODFCY1lEWFJHY0pqbG5VYkhuNWFudUVObW9OUWlab1pPcW11eXZkUFpYV1huMGNsdWFBZVJBb3lRdnJCTFdiLWNYa2RqN0dFV1BiREFZSjd0VDFYVnFsYWlVS2R4b0RXWkY0VWcyTFdlM0ppa3g2X0VPM1RsSXJKeHZWTDBTV19SamZDeHMxR3d0ZFc3RFFR?oc=5",
+        "title": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "published": "Mon, 31 Aug 2026 15:07:00 GMT"
+      },
+      {
+        "signal": "C.D.C. Expands Cyclospora Outbreak to Six More States - The New York Times",
+        "current": "Expands Cyclospora Outbreak to Six More States The New York Times",
+        "comparison": "Tue, 04 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQV3BZSFRCNkpCei1SU2pQVnJYempqRTM1d3p2eVRFNWYzcGhmeUJZZWgwcXk2aUtYdEJYVWhnS0h0UDdydW9STkpTY0l2X0hna2c0Z21RWi1FRExHZW9DTlpnVkdmbVhHdzJmcnhOU2UtOXBHXy1JVlBKT1B5V2dHaHRpZ3dOZC1yd2c?oc=5",
+        "title": "C.D.C. Expands Cyclospora Outbreak to Six More States - The New York Times",
+        "summary": "Expands Cyclospora Outbreak to Six More States The New York Times",
+        "published": "Tue, 04 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "LMSI LLC/Kofinas Olive Oil Issues a Voluntary Recall of its Garlic Mediterranean Infused Extra Virgin Olive Oi",
+        "current": "29, 2026) - LMSI LLC/ Kofinas Olive Oil is issuing a voluntary recall of its Garlic Mediterranean infused extra virgin olive oil for using a garlic essential oil not approved for c",
+        "comparison": "Mon, 31 Aug 2026 16:44:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766347",
+        "title": "LMSI LLC/Kofinas Olive Oil Issues a Voluntary Recall of its Garlic Mediterranean Infused Extra Virgin Olive Oil for Using a Garlic Essential Oil Not Approved for Culinary Use",
+        "summary": "29, 2026) - LMSI LLC/ Kofinas Olive Oil is issuing a voluntary recall of its Garlic Mediterranean infused extra virgin olive oil for using a garlic essential oil not approved for culinary use.",
+        "published": "Mon, 31 Aug 2026 16:44:00 GMT"
+      }
+    ]
+  },
+  "events": [],
+  "news": [
+    {
+      "title": "Stock Market Today: Global Bond Selloff Deepens, Hitting Europe Hardest \u2014 Live Updates",
+      "source": "WSJ",
+      "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxObUtvTklVNGJKRzVNcXpfV2lTUGhLS2t3M3ZCaTRNbU96WnlrV2x0NkllZkdtemRWZlYwMllmMWE0eW4wT2VRamkwUEdzaG9BX0FETVJmd2RvbXJWWlRWWjdVU3gtM2dfdllnTTdha20yQVFSR1FTLWFFM09FbVpKaUM0YUN5alE?oc=5",
+      "published": "Wed, 02 Sep 2026 11:26:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at WSJ.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "US urges NATO allies to prepare in case Russia attacks",
+      "source": "USA Today",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdG9jUkFnRDlSc3FfWHppRmJka0Vnd0kycXItVDl6TVd5Z0ZIVXRNTm54VGxjQXdyVzloS0xLU3RvZEt1bFdiZWcyak5KSWpxTjRpMTliQWp0ZHlLSnpzeEpEZjVuYl84cUpTZnVYWTd1V1hRMmdvTFJnX2RiZTdXanA0SWFnTHRiTU93N21MNzNhbmx5Y1d5ZnJuSy1Db1U0am0wQU1R?oc=5",
+      "published": "Wed, 02 Sep 2026 07:10:29 GMT",
+      "raw_text": "US urges NATO allies to prepare in case Russia attacks\nIn an exclusive interview with USA TODAY, U.S. Ambassador to NATO Matt Whitaker said allies need to be ready, in case Russian President Vladimir Putin decides to attack.\nBRUSSELS \u2013 Russian President Vladimir Putin may not be planning an imminent assault on NATO nations, but the United States says its military allies need to train and invest like he is, so they\u2019re ready to fend off a sudden attack.\nAfter leaked U.S. intelligence reportedly revealed that Russia could launch a limited assault, such as a land incursion or cyberattack, on a member country within the next few years, America\u2019s allies have been on high alert.\nThe warning contradicted assessments that Putin would not attempt to draw NATO into a fight while he\u2019s battling Ukraine \u2013 and came amid concerns about a U.S. weapons shortage, as the Trump administration wages war on Iran.\nIn an exclusive interview with USA TODAY at the military alliance\u2019s headquarters in Brussels, U.S. Ambassador to NATO Matt Whitaker declined to comment directly on the leaked intelligence, while stressing a need for allies to be vigilant in their defense spending and weapons production.\n\u201cYou can't predict what Vladimir Putin's going to do or any adversary. All you can do is be prepared for it and deter and make it not worth their time to make that move,\u201d Whitaker said. \u201cAnd I think we are preparing every single day to prevent that from happening, and if it does happen, to be ready for it.\n\u201cWe should know that our adversary invaded Ukraine, and so we should all be pretty clear-eyed,\u201d Whitaker added.\nWithout commenting directly on the classified information, which first appeared in The Wall Street Journal, people with knowledge of the assessments described allies as having been startled to learn that Putin could have the ability to attack NATO nations sooner than they thought.\nIt\u2019s much quicker than the 10-15 years the alliance anticipated, one European official said, which is what the alliance had in mind when it set its most recent spending targets.\nLast year, NATO allies agreed to allocate 5% of their annual GDP toward defense by 2035. At least 3.5% has to go directly to military spending. The rest can go toward constructing roads, bridges, airports and other infrastructure projects.\nRussia is now battle-weary and isn\u2019t operating on the same timeline to ramp up its defense spending, the official said.\nThis was why some in the NATO alliance, including the United States, have been pushing allies to significantly speed up defense spending and production capacity.\n\u201cWe need to exercise like it matters. We need to prepare, we need to invest in capabilities,\u201d Whitaker said in the USA TODAY interview.\nRussia has had a rapid expansion of its defense production capabilities, while America and its allies have largely operated in a peacetime economy, experts and officials from allied nations said.\nPutin has transformed Russia\u2019s economy to support the country\u2019s war against Ukraine. Nearly 40% of Russia's federal spending is allocated to defense and security, supporting the production of bombs and tanks that are sent directly to the frontlines.\n\u201cWhere there\u2019s an asymmetry between Russia and NATO is that they are on a war footing and we\u2019re not,\u201d said Max Bergmann, the director of the Europe, Russia and Eurasia Program at the Center for Strategic and International Studies. \u201cThey can produce a thousand cruise missiles. Our ability to provide air defense interceptors or produce them is just inept.\u201d\nCIA director\u2019s visit to Moscow stirs concern\nAn unannounced visit late last week to Moscow by CIA Director John Ratcliffe stoked concern that Putin could move from taunting to testing the mutual defense pact of the NATO alliance sooner rather than later.\nThe spy chief reportedly warned Russia against an attack on NATO territory. He\u2019s also said to have told Russia it was losing the war against Ukraine and warned Moscow it should cut ties with Iran.\nRussia denied Aug. 27 that it was planning to attack NATO. \"These reports have no basis in reality and do not reflect Russia\u2019s intentions,\u201d Putin spokesman Dmitry Peskov said, according to Russian state media publication TASS.\nPresident Donald Trump declined to say whether Ratcliffe delivered a message about an attack on NATO when pressed on the visit. \u201cHe's not going to be attacking a NATO territory,\u201d Trump told reporters in the Oval Office on Aug. 27.\nThe denials did not persuade everyone in the alliance.\nInvoking former CIA Director Nicholas Burns\u2019 visit to Moscow before Russia\u2019s full-scale invasion of Ukraine, Radoslaw Sikorski, the Polish minister of foreign affairs wrote in an Aug. 27 social media post: \u201cApparently, Putin\u2019s spooks told @CIA Director he would not provoke @NATO. Putin had told president Biden\u2019s CIA Director that he would not invade Ukraine. We should accelerate defence preparations.\u201d\nA European official with knowledge of the conversations around Putin\u2019s capabilities told USA TODAY said that Ratcliffe\u2019s visit appeared on its face to be intended to send a strong, public signal to Putin. Ratcliffe arrived on a C-17 military jet, the official pointed out, that was able to be tracked.\nThat doesn\u2019t mean a military attack is imminent, the person said, discouraging comparisons to Putin\u2019s reassurances before he amassed troops on Ukraine\u2019s border in 2021, saying they were different circumstances.\nPutin already attacking NATO, experts say\nEuropean officials believe Russia has already been testing NATO and is responsible for a series of hybrid attacks on member nations, including the discovery of explosive drones near a Ukrainian cargo plane at an airport in Germany and the presence of a naval drone near an offshore gas facility off the Romania's Black Sea coast.\nGerman Interior Minister Alexander Dobrindt publicly said on Sept. 1 that the attempted drone attack at the Leipzig airport last month follows a pattern of \u201cRussian hybrid operations.\u201d\nRomanian President Nicu\u0219or Dan explicitly blamed Russia for the naval drone in a statement posted on social media, condemning \u201cthese types of irresponsible incidents on the part of the Russian Federation.\u201d\nAir raids in Estonia were activated overnight on Sept. 1 after drones entered the country\u2019s air space, according to Estonian Foreign Minister Margus Tsahkna, who attributed the incident to Russia.\n\u201cThese acts of sabotage are pretty significant, and they are acts of war,\u201d said Fiona Hill, the senior director for Russian and European affairs on the National Security Council during the first Trump administration.\n\u201cPeople are constantly saying, \u2018Well, we\u2019re not at war. War is kinetic. They\u2019re not lobbing missiles on us,\u2019\u201d she added. \u201cBut that is exactly what Putin wants because it leaves everybody else defenseless and vulnerable.\u201d\nWhile Putin is certainly testing the NATO alliance with what European officials view as increasingly reckless attacks on countries close to Ukraine, they do not believe he is baiting NATO into a fight. They view Putin as trying to scare NATO nations into ending support for Ukraine, because they fear being pulled into the war.\nCiting intelligence, Finnish President Alexander Stubb said in a weekend interview that Russia is suffering too many losses to open up a second front in the war.\nIn reality, Putin is too bogged down to make good on that kind of threat, said Kurt Volker, special representative to Ukraine in Trump\u2019s first term and U.S. ambassador to NATO under George W. Bush.\n\u201cTake an end to fighting in Ukraine and add three to five years. That's your timeline,\u201d Volker said.\nBergmann said he doesn\u2019t believe Putin would attack a NATO country while Russian forces are \u201cbattered and bruised and bleeding\u201d from the war in Ukraine. But if the fighting starts to slow down and the Russian military is able to regroup, Bergmann said Russia could theoretically develop the capabilities to attack one of the Baltic states by 2028.\nRussia\u2019s willingness to accept a large number of casualties would be another advantage in a potential large-scale attack against a NATO ally, according to Bergmann.\n\u201cIt would be, I think, a bad war for Russia, but their tolerance level for death and for casualties is just really both sickening and worrying,\u201d he said.\nIn its war against Ukraine, Russia has also demonstrated a high tolerance for military casualties. More than 1.4 million Russian troops have been killed or wounded since the start of its full-scale invasion of Ukraine in February 2022, according to a recent study by CSIS.\nPointing to the losses, Whitaker, the U.S. ambassador to NATO, said that currently, \u201cRussia is pretty occupied with the situation in Ukraine.\u201d\n\u201cIt's not going well. And it would take, even if an immediate pivot, it would still take years to reconstitute, to return to the pre\u20132022, pre-Ukraine invasion Russian army,\u201d Whitaker added.\nThe growing concern is that Russian forces now incorporate drone formations, large numbers of precision strike capabilities and millions of tactical drones, allowing it to conduct strikes or small, but painful, operations more effectively, said Michael Kofman, a senior fellow who specializes in Russian warfare at the Carnegie Endowment for International Peace.\nRussian military reconstitution \u201cis not a matter of if but of when,\u201d said Kofman.",
+      "summary": "A European official with knowledge of the conversations around Putin\u2019s capabilities told USA TODAY said that Ratcliffe\u2019s visit appeared on its face to be intended to send a strong, public signal to Putin."
+    },
+    {
+      "title": "India's prime minister is wooing the GenZ while cracking down on them",
+      "source": "NPR",
+      "link": "https://www.npr.org/2026/09/02/g-s1-141512/india-genz-protests",
+      "published": "Wed, 02 Sep 2026 07:11:04 -0400",
+      "raw_text": "India's prime minister is wooing the GenZ while cracking down on them\nMUMBAI, India \u2013 Last month, weeks after tens of thousands of students took to the streets of New Delhi demanding education reform, Prime Minister Narendra Modi finally broke his silence on the seven-week protests.\nHe did it through an Instagram reel.\nModi said he was aware of how corruption in India's examination systems had affected them, and he was working to fix it.\nThe reel \u2014 shot chin-first, uploaded at midnight \u2014 inspired countless parodies. Undaunted, the 75-year-old leader put up more reels over the next few days addressing his \"friends,\" as he referred to the protesting youth. Over the next few weeks, many of his ministers appeared to increase their frequency of posting on Instagram too.\nThis was a reaction to nationwide protests by a youth-led movement known as the Cockroach Janta Party, a name that emerged from its origins as an internet meme. It has since become a political force that ousted the education minister and posed the biggest challenge to the Modi government in years.\nOver two months, the protesters and their supporters \u2013 most who appeared to be digitally-savvy GenZ \u2013 used Instagram and Snapchat to connect, organize, and share countless reels parodying the government.\nAnd Modi's efforts to respond spotlight how, for the first time in its 12-year-rule, the ruling Hindu nationalist BJP appears to be playing catch-up instead of setting the agenda \u2013 both politically and on social media, where it once dominated.\nEven as Modi and his ministers go on a charm offensive, local media report Indian police booked thousands on criminal charges. The digital rights group Software Freedom Law Centre told NPR of unprecedented social media censorship by the government on platforms like Meta and X, mainly blocking of posts critical of Modi and his government. Some critics report being verbally abused, doxxed, and even threatened with rape and death by BJP supporters.\nThe government is yet to announce any action against security forces involved in violent clashes in July, where they used batons, tear gas, and pellet guns against protesters. The India chapter of Amnesty International called it \"state-sanctioned violence masked as crowd control.\"\nLeaders of the Cockroach Party say the prosecution was a betrayal of the government's promise to its leaders to give amnesty to protesters. On Tuesday, India's top court ordered the government to drop criminal charges against the protesters. The Cockroach Janta Party hailed the court's order as \"a big victory for the students!\" The court's decision came just over a week after the Cockroach Janta Party warned of another protest march.\nReeling in the GenZ\nFor years, India's ruling party adopted a top-down communication strategy. Its dedicated IT cell used Facebook, X and WhatsApp for voter outreach.\nThe Cockroach protests showed the \"boomers\" in the BJP government that the tactic was \"antiquated\", says Rajat Sethi, a visiting fellow at the conservative think-tank India Foundation.\n\"The BJP realized that it needs to come out with a new playbook,\" he says. \"If they're not making reels, if they are not speaking in a rap song, perhaps the Gen Z will not hear you.\"\nSince then, India's foreign ministry got onto Snapchat. Some legislators started using slang in Parliament speeches. India's finance minister, Nirmala Sitharaman, even chided the state-run banks for not being \"cool\" enough: \"Please get some young people to talk to you all,\" she said, \"When they sit in front of the customers, make sure everything is cool.\"\nAround two-thirds of Indians are under the age 35. But the average age of India's Parliamentarians is 56. Sethi says the outreach is a way to bridge this age gap. \"It currently appears to be a forceful attempt but I think over time it will normalize,\" he says.\nIt would be a steep learning curve.\n\"For a politician, it is very important not to come across as a kind of dad on the dance floor,\" says Prof Joyjeet Pal, who tracks political messaging at the University of Michigan. But Pal says BJP leaders need not pretend to be immersed in Gen-Z culture. \"And where they're making the mistake is imagining that trying to be like young people is actually going to win them votes.\"\nAnd any goodwill from the outreach, he says, is undermined by how some protesters have since been targeted.\nTake Mumbai-based model Rhiya Ahir, whose photograph of her blocking a police van carrying detained students became one of the movement's defining images. Ahir says she has since faced abuse online, with some falsely claiming she posts naked pictures for subscribers on her Instagram account. And yet, she tells NPR: \"The day I filed a police complaint against the online abuse, the cops also filed one against me for joining the protests.\"\nLocal media also reports the police filed a complaint against a 15-year-old girl from Noida city, whose video using cuss words against Modi during the Delhi protest went viral. The Times of India newspaper quoted her family lawyer saying they had to move houses three times because people he described as \"unruly elements\" kept turning up and threatening the girl, \"including rape threats.\"\nWhen asked about the legal cases, BJP national spokesperson Shazia Ilmi said NPR's questions were \"nonsense\" and \"anti-Modi\". \"Who are these youths? What have they done? What are the cases? There are 'history sheeters' who were there,\" she said, using a South Asian term for those with a rap sheet.\nShe accused NPR of bias, and called its editors \"hypocrites\" for not working on a report on a student protest in the opposition-ruled Jharkhand state. Then she hung up.\nScrubbing off online criticism\nEver since the Cockroach leaders called off their protests last month, activists, satirists,independent journalists and opposition politicians criticizing the government have reported their social media accounts being restricted in India or posts arbitrarily taken down.\nCiting government data, the Indian Express newspaper reported that between March and July this year, the government sent nearly 200,000 blocking orders to Instagram, Facebook and YouTube \u2013 or more than one order every minute.\nThe Indian government doesn't publicly disclose reasons for its blocking orders. Angela Thomas, a public policy researcher at the Software Freedom Law Center (SFLC), a Delhi-based internet watchdog, says under Indian laws, the government can sue social media companies if they don't comply with its takedown orders. \"This means the platforms themselves get into censorship, and inevitably turn into mouthpieces of the government,\" says Thomas.\nIn some cases, even documentation of the state's excesses invites intimidation.\nIn July, Shrey Gupta, a software engineer from Ahmedabad city, created a website to compile videos of Delhi police's violent crackdown on protestors. The Unbadged invited people to submit videos of personnel who used batons and tear gas against protestors without wearing a name badge, which police are legally required to wear.\nA day after the website went live on July 22, Gupta says people called him from unknown numbers, verbally abusing him and threatening him with violence. On July 24, policemen in plainclothes barged into his house late evening and took him to the Navrangpura police station in Ahmedabad.\nGupta says the interrogation went on for hours, and the officers asked \"everything about myself for the last five years,\" he says. When they were done, Gupta said he wanted to file a complaint about the abusive phone calls he had been receiving. \"The officer said, this is a repercussion for you posting. You have to deal with it.\"\nThe Ahmedabad police did not respond to an emailed interview request with a list of questions.\nGupta says he had \"zero political engagement\" before the protests. But the ordeal prompted an awakening.\nIt spurred him on to his next project: an AI tool that analyses online speech to weed out Hindu nationalist bots and trolls.\nIs he worried of being harassed again?\n\"No,\" he says. \"But my plans definitely do include talking to the lawyers this time.\"",
+      "summary": "The government is yet to announce any action against security forces involved in violent clashes in July, where they used batons, tear gas, and pellet guns against protesters. \"<strong>It currently appears to be a forceful attempt but I think over time it will normalize,</strong>\" he says."
+    },
+    {
+      "title": "Judge sends Charlie Kirk murder case to trial with defendant facing potential death penalty",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNckxjUEVsX3F2VW1nN0JOdHRxQ1pQdVA3SjZsTy02ZEswUG4tRGdIWmtNMGpjUS13LUNKRUh6ajhzVUlLTlIzUkp3VGQyQzJHTlpWOTZacmtVR3RCbFdMaHhwcU92eElNRXNmSFRFUW9tZ3IxS0xxSmZOaHh1VG1PYzZNTWNCUjQ2LVJIMG55ZWRDS3dDQ3VNZW0tSThmNnUxdncwRFNEdTNNanc?oc=5",
+      "published": "Wed, 02 Sep 2026 04:22:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at AP News.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "U.N. Says World Will Miss Its Climate Target, Warming Must Be Reversed",
+      "source": "The New York Times",
+      "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRjFrV3U2SWRZZmFGZk9HZEwybFBVcFo4aVEtMTRkNVhaNUdIemhLekRnMjdvb0RGN0JTYkE5X3ZpMndWck5uNlNucDl0aFhtY2tBVWJ6aWt1RTd4eXcwelMxZjBjRFJpLUU4R2hSR2tfUEFtemlWakhfZ0lieHRiQ0JLTzNQX3dNUEJEbVJpdU8?oc=5",
+      "published": "Wed, 02 Sep 2026 04:01:05 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The New York Times.",
+      "emoji": "\ud83c\udf0d"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Blue-collar workers go to bat for data centers",
+      "video_id": "PU3mj7YO8rU",
+      "published": "2026-09-02",
+      "link": "https://youtube.com/watch?v=PU3mj7YO8rU",
+      "summary": "\u201cWhen\u2019s the last time there\u2019s been a book that a mom and her son or daughter would also be interested in?\u201d According to Dyson: - The toothbrush uses an endoscopic camera to identify and instantaneously shoot refillable mouthwash between your teeth while you brush.",
+      "raw_text": "Reports: MrBeast and James Patterson\u2019s new book is a flop\n\nReports: MrBeast and James Patterson\u2019s new book is a flop\nIt feels like a partnership out of left field.\n\u2022 less than 3 min read\nAfter surviving seven days at sea and 100 hours inside the Egyptian pyramids, MrBeast is reportedly having some trouble surviving his first book launch. The Most Dangerous Games, a collaboration between the YouTuber Jimmy \u201cMrBeast\u201d Donaldson and prolific thriller author James Patterson, is \u201con track to be a historic bomb,\u201d according to Semafor.\nSemafor reported that presales are clocking in \u201cin the four digits,\u201d though IGN reported that a senior source disputed that narrative. Publisher HarperCollins, which hasn\u2019t responded to requests for comment, likely spent a ton of cash on the pair\u2019s author fees that will be difficult to recoup if the book doesn\u2019t sell like gangbusters.\nIt feels like a partnership out of left field. Patterson has written several novels with famous people, from Dolly Parton to Bill Clinton. But the crossover between Donaldson\u2019s younger, internet-focused audience and Patterson fans wouldn\u2019t even fill an early 2000s Barnes & Noble loveseat. Donaldson told USA Today that he was hoping the book, which follows a fictional (more) dangerous version of the Squid Game-like challenges he\u2019s become known for, would reach multiple generations in a family. \u201cWhen\u2019s the last time there\u2019s been a book that a mom and her son or daughter would also be interested in?\u201d (Easy, Marley and Me.)\nHail Mary. Donaldson is trying to pad sales by offering fans who buy a physical copy of the book a chance to win $1,000,000.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nSo there\u2019s this $499 AI Dyson camera toothbrush\n\nSo there\u2019s this $499 AI Dyson camera toothbrush\nAn all-seeing toothbrush could be the next jewel in the vacuum-maker's personal care crown.\n\u2022 less than 3 min read\nAfter finding success with floors and hair, Dyson hopes your mouth will be its next frontier. The air-bending gadget company launched an AI-powered electric toothbrush yesterday that doubles as a sharpshooting water pick.\nOpen wide for the CameraJet. Dyson\u2019s $499 oral product is geared toward people who lie to the dentist about how often they floss, and who are willing to pass their sink time by viewing a livestream of their teeth rather than scrolling. According to Dyson:\n- The toothbrush uses an endoscopic camera to identify and instantaneously shoot refillable mouthwash between your teeth while you brush.\n- You can watch live from the brush\u2019s POV via the MyDyson app, which also analyzes your thoroughness. (Footage apparently isn\u2019t stored and is only captured when you prompt the brush.)\nOne catch: You have to use non-foaming toothpaste, lest it block the camera. Dyson is launching a 2.5oz tube soon for ~$11.\n\u201cIf it turns out not to be a good commercial idea like the car, we\u2019ll stop it,\u201d chairman James Dyson told the Wall Street Journal. The vacuum-maker has struck out with EVs, washing machines, and air-purifying headphones. But it hit a home run with blow dryers, which account for 30% of Dyson\u2019s US business as of 2023. An all-seeing toothbrush could be the next jewel in its personal care crown.\u2014ML\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/global-sale",
+      "read_more_url": "https://www.morningbrew.com/issues/global-sale",
+      "thumbnail": "https://img.youtube.com/vi/PU3mj7YO8rU/mqdefault.jpg"
+    },
+    {
+      "channel": "AI Daily Brief",
+      "title": "How To Navigate the Next Wave of AI Competition",
+      "video_id": "mLaO3L0dLlw",
+      "published": "2026-09-01",
+      "link": "https://youtube.com/watch?v=mLaO3L0dLlw",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "OpenAI\u2019s decision to cut off Cursor reveals how the next phase of AI competition will affect enterprise users. NLW explains why companies need strategies for open-weight models, model routing and internally controlled harnesses to avoid dependence on any single provider. In the headlines: data center politics, AI chip restrictions, Anthropic\u2019s Pentagon victory, enterprise Mac Minis and cheaper OpenAI models. NEXT COHORT - Executive Agent Leadership - Returns in September -- Learn how to use agents - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://training.besuper.ai/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Brought to you by: KPMG \u2013 Research from KPMG and the University of Texas at Austin shows the highest-impact AI users treat AI like a reasoning partner \u2014 and those skills can be taught at scale. Learn more at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://kpmg.com/us/Sophisticated\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Harbor - Invest in the AI ecosystem. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.harborcapital.com/aidaily\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Hyperagent - Hire a fleet of always-on agents. New users get $1,000 in inference. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060hyperagent.com/aidailybrief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Rackspace Technology- One accountable partner to build, operate and run your full enterprise AI stack \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.rackspace.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Section - Section turns AI investment into workforce transformation and ROI - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.sectionai.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Blitzy - Want to accelerate enterprise software development velocity by 5x? \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://blitzy.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 AssemblyAI - The best way to build Voice AI apps - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.assemblyai.com/brief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Robots &amp; Pencils - Cloud-native AI solutions that power results \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://robotsandpencils.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 The AI Daily Brief helps you understand the most important news and discussions in AI. Newsletter: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://aidailybrief.beehiiv.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Interested in sponsoring the show? sponsors@aidailybrief.ai",
+      "source_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Navigate-the-Next-Wave-of-AI-Competition-e3o59rt",
+      "read_more_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/How-to-Navigate-the-Next-Wave-of-AI-Competition-e3o59rt",
+      "thumbnail": "https://img.youtube.com/vi/mLaO3L0dLlw/mqdefault.jpg"
+    },
+    {
+      "channel": "Dwarkesh Podcast",
+      "title": "Ajeya Cotra \u2013 Inside the OpenAI agent swarm that hacked Hugging Face",
+      "video_id": "X50zezLFWWI",
+      "published": "2026-09-01",
+      "link": "https://youtube.com/watch?v=X50zezLFWWI",
+      "summary": "New episode from Dwarkesh Podcast. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/X50zezLFWWI/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai alignment & safety.",
+  "ai_security": [
+    {
+      "title": "Palo Alto Networks Stock Soars on AI Security Boom",
+      "source": "The Tech Buzz",
+      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOTTh2Z3dMUUYwWlB6RFNqVVBOb3Z3OUFMeEpEaVdMWTF4bVNib05feV9VUmJuRGEteGRTSE9yU3R1Q1o3OXAxUE81SnUyVllUdTNOQ0NlR0hSbE51ZDBid0liMGUwTEFTazdYc2lMZmRCRU5LX3dzbU5PNlBIdXVkdE5wM1d1T3VRQmN3?oc=5",
+      "published": "Tue, 01 Sep 2026 22:18:00 GMT",
+      "summary": "For now, though, the message from this earnings report is clear: in cybersecurity, AI isn't just the threat anymore, it's also the sales pitch.",
+      "raw_text": "Palo Alto Networks just gave Wall Street another reason to believe the AI security gold rush is real. The cybersecurity giant beat quarterly estimates across the board on Tuesday, and its stock, which has nearly doubled so far this year, extended gains as investors piled into a company that's positioning itself as the go-to platform for defending enterprises against AI-powered threats and AI-driven attackers alike.\nPalo Alto Networks isn't just riding the AI wave, it's trying to become the toll booth every enterprise has to pass through to use AI safely. The company's latest quarterly results, reported Tuesday and detailed by CNBC, beat Wall Street's estimates on both revenue and profit, and the market response tells you everything about where investor appetite currently sits. Shares of Palo Alto Networks have nearly doubled in 2026 alone, a run that's outpaced most of its cybersecurity peers and even some pure-play AI names.\nThe story here isn't complicated once you unpack it. Enterprises are deploying AI systems faster than their security teams can vet them, and that's created a massive appetite for tools that can detect and respond to threats in real time, especially ones that touch AI infrastructure, agents, and data pipelines. Palo Alto Networks has leaned hard into this with its Cortex XSIAM platform and AI-powered security operations tooling, betting that customers would rather consolidate spend with one vendor than stitch together a dozen point solutions.\n[Image: Palo Alto Networks headquarters exterior shot]\nThat consolidation pitch is also why the company hasn't slowed down on the acquisition front. Over the past two years, Palo Alto Networks has scooped up smaller security and AI infrastructure startups to plug gaps in its platform, a strategy CEO Nikesh Arora has defended repeatedly as the fastest way to keep pace with a threat landscape that's evolving on AI's timeline, not the industry's usual multi-year product cycles. \"The threats are moving at machine speed now,\" Arora has said in past earnings calls, a framing that's become almost a mission statement for the company's M&A logic.\nCompetitors are feeling the pressure. CrowdStrike has pushed its own AI-native Falcon platform updates, while Fortinet and Zscaler have both accelerated AI security roadmaps in the past year. But Palo Alto Networks' scale advantage, and its willingness to acquire rather than build everything in-house, has let it move faster on integrating AI detection capabilities across its platform than smaller rivals with tighter R&D budgets.\n[Video iframe: CNBC earnings call segment discussing Palo Alto Networks Q4 results]\nWall Street's reaction suggests analysts see this AI security demand as durable rather than a short-term bump. The stock's near-doubling this year reflects not just the beat itself but confidence that the AI threat detection and response category is still in its early innings, with enterprise security budgets shifting meaningfully toward vendors that can prove they understand AI-specific risk, from model poisoning to agentic AI misuse.\nThat said, beating estimates once doesn't guarantee the multiple holds. Palo Alto Networks trades at a premium that assumes continued AI-driven growth, and any slowdown in enterprise security spending, or a well-timed product launch from a rival, could test investor patience quickly. The company's next moves on the acquisition front, along with how quickly its AI security tools scale into recurring revenue, will be the real tell on whether this rally has legs heading into fiscal 2027. For now, though, the message from this earnings report is clear: in cybersecurity, AI isn't just the threat anymore, it's also the sales pitch.\nFor enterprise buyers and investors alike, this earnings beat is another data point confirming that AI is reshaping cybersecurity spending priorities faster than almost anyone predicted a year ago. Palo Alto Networks has positioned itself well to capture that shift through a mix of platform consolidation and aggressive M&A, but the same AI dynamics fueling its growth are also raising the bar for what customers expect from every security vendor. Whether the stock's blistering run continues will depend on the company proving this quarter wasn't a one-off, and on how quickly rivals close the AI capability gap.",
+      "type": "news"
+    },
+    {
+      "title": "Six-month-old AIR Security raises $50 million to build a firewall for AI agents",
+      "source": "calcalistech.com",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9lVFlrNmF0ZjJRS0FQRlNiaElMNHkzdXZyUldUOGxjanZHY1lYenpOSGNHd2cwNlBSSlcwejlLN0RsWHJ2clpXOGZSWTdJZkcteE9GUmVRVG9NZ2UtWEl6UGNtbEd5NzlW?oc=5",
+      "published": "Tue, 01 Sep 2026 15:00:00 GMT",
+      "summary": "<strong>AIR</strong> is betting that as companies move from experimenting with AI agents to relying on them for increasingly important tasks, a new security layer will be needed to protect the tools, information and instructions those agents encounter.",
+      "raw_text": "Six-month-old AIR Security raises $50 million to build a firewall for AI agents\nThe Israeli startup emerged from stealth with research showing thousands of AI add-ons rely on untrusted sources, as companies give autonomous agents access to more data, tools and systems.\nCybersecurity company AIR Security, which develops a security platform for the supply chain of AI agents, has raised $50 million in funding led by Sequoia Capital and Greenoaks.\nSwish Ventures and Netz also participated, alongside private investors including Zach Frankel (President, Cognition), Yinon Costica (Co-founder, Wiz), Ofir Ehrlich (Co-founder, Eon), Anne Neuberger, Omer Adam, Varun Anand (Co-founder, Clay); and other senior figures from the cybersecurity and AI industries.\nAIR emerged from stealth alongside the funding. The company was founded in February 2026 by Yair Saban and Niv Hoffman, who met about a decade ago in the military. The two have backgrounds in offensive cybersecurity, enterprise infrastructure and AI security research.\nThe company currently employs 40 people in Israel, with a focus on building a research laboratory dedicated to AI and the behavior of AI agents. Ryan Knisley, the former chief information security officer of The Walt Disney Company and Costco Wholesale, has also joined AIR as chief strategy officer.\nThe size of the round is notable given how recently the company was founded. AIR is betting that as companies move from experimenting with AI agents to relying on them for increasingly important tasks, a new security layer will be needed to protect the tools, information and instructions those agents encounter.\nThe company describes that layer as an \u201cinline firewall\u201d for AI agents, a system designed to protect what enters an agent\u2019s context rather than simply restricting what the agent is allowed to do.\nAs enterprises deploy more AI agents, those systems can connect to an expanding range of tools, information and third-party services. Agents can browse websites, read emails and files and perform actions on behalf of employees. They can also install AI plugins and use Skills, MCP servers and subagents to extend their capabilities.\nThat creates a different kind of security challenge. Malicious content or a compromised tool could influence an agent and cause it to take an action it was not intended to take, potentially creating risks ranging from data theft and fraud to unauthorized access.\nUnlike traditional software, AI agents make decisions based on information they encounter while carrying out their tasks. That can make it harder for security teams to understand what is influencing an agent, what systems it can access and what actions it may ultimately take.\n\u201cEvery enterprise has a firewall protecting its network. Now they need one protecting their AI agents,\u201d Saban, AIR\u2019s co-founder and CEO, told Calcalist. \u201cAI agents need a new kind of firewall, one that protects what enters their context.\u201d\nSaban argues that the problem is not simply that companies are giving AI agents too many permissions.\n\u201cWe believe that AI agents are a hedged risk,\u201d he said. \u201cOrganizations are gaining trust in agents and companies are counting on them to deliver products. There is more and more trust, and they are granting increased permissions.\u201d\nBut Saban argues that permissions are not the only, or even the primary, source of danger.\n\u201cWe think it becomes dangerous when it is exposed to malicious information,\u201d he said.\nAccording to Saban, there are three main sources of that risk: extensions and tools installed on an agent, websites it encounters online, including fraudulent or fake sites, and internal organizational information.\n\u201cWe think that this is the source of the risk, not unnecessary permissions,\u201d he said. \u201cThere are new challenges today and you need to know that everything it encounters is filtered.\u201d\nAIR's launch follows a series of security studies conducted by the company into what it describes as the supply chain surrounding AI agents.\nIn one study, AIR found more than 17,800 public AI add-ons representing approximately 6.7 million installations that relied on untrusted external sources for instructions.\nIn another, the company identified AI Skills impersonating trusted brands, including Anthropic and OpenAI, in an attempt to bypass platform security reviews. One of the Skills was capable of executing arbitrary code on enterprise systems, according to AIR.\nThe research points to a problem that could become more significant as agents gain greater autonomy: the software and information surrounding an agent can become a means of influencing its behavior.\nAIR has developed a real-time firewall designed to protect the information entering an AI agent's context and block malicious instructions, untrusted information and compromised tools before they can influence the agent's decisions or actions.\nThe platform continuously discovers and evaluates Skills, plugins, MCP servers and other add-ons across an organization's AI-agent supply chain, both before and after deployment.\nWhen an add-on is found to be malicious, vulnerable or unapproved, AIR allows security teams to trace the agents and workflows that depend on it and revoke its use across the organization.\nThe company is also developing a marketplace of pre-vetted and certified add-ons, giving enterprises a way to expand the capabilities of their agents without introducing tools that have not been reviewed.\n\u201cWe started selling to big companies and we have some big customers,\u201d Saban said. \u201cWe started hiring employees in the United States and one of them was a senior executive at Disney and is now a senior executive with us.\u201d\nThe company is entering a market in which the competitive landscape is likely to change quickly. AI security has attracted a growing number of startups, while the underlying technology itself is evolving rapidly.\nSaban acknowledges that AIR cannot assume its lead will last.\n\u201cIn principle, it was also very easy to copy in the past. The seriousness of developing software has dropped significantly. Many companies are emerging today,\u201d he said.\nHis argument for differentiation is that AIR is concentrating specifically on prevention rather than detection after an agent has already been compromised.\n\u201cThere are many AI companies today and many focus on other areas and we focus on prevention, and this differentiates us from our competitors,\u201d Saban said.\nHe also believes the technology behind AIR's security engine will be difficult to replicate.\n\u201cThe engine that we developed will be very difficult to develop. We have accumulated expertise over time. We have a significant difference from the others and it is the focus on prevention,\u201d he said.\nThe company intends to use the new capital to expand its operations and accelerate its commercial activity.\n\u201cWe have raised a lot of money and are using it and will raise more rounds,\u201d Saban said. \u201cI am optimistic that we will be able to raise additional rounds. I expect that we will reach significant sales in the coming year.\u201d",
+      "type": "news"
+    },
+    {
+      "title": "Israeli Startups Raised $577.5M In August As AI Security Funding Surged",
+      "source": "ascendants.in",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQMzRYbzB4N0dOekE5OGpJTUYzaTFIREQxakhMQ0J1ZjRzMG04ZkQ5WndZVWVZbHpuRlU2b01UbEh6TG9vdFYzUHAyWGd5RTJwR2ZpOWF4dGljR0M1dFQ0WlBLOGRSeThyNkkwd0hZLTZYWGxfT3JDMVE3cTVPOTI2WGE5Y0VmZ3R5VmM3dzV5Z0lVNVpnVS10b0hPbGRHUVdlWlE?oc=5",
+      "published": "Tue, 01 Sep 2026 12:57:57 GMT",
+      "summary": "A 13th investment, involving cybersecurity startup Above, was also announced during the month, although the size of that deal was not made public. Close behind was Zenity, which raised <strong>$125</strong> million in a Series C round.",
+      "raw_text": "Israeli startups announced at least $577.5 million across 12 disclosed funding rounds in August 2026, while a separate investment in cybersecurity company Above was announced without a disclosed amount. The month stood out not only for the size of the funding, but for where investors were placing their bets: securing AI systems, autonomous agents and enterprise deployments.\nIsrael\u2019s startup funding market had an unusually active August, with companies announcing at least $577.5 million in capital across a dozen disclosed rounds.\nA 13th investment, involving cybersecurity startup Above, was also announced during the month, although the size of that deal was not made public. The total made August 2026 the strongest August for Israeli startup fundraising since 2022, despite the month traditionally being quieter because of summer holidays.\nWhat made the month particularly notable was the concentration of capital around a problem that is becoming harder for enterprises to ignore: artificial intelligence is creating a new security surface of its own.\nSeveral of the companies that raised money in August are working on protecting AI models, monitoring autonomous agents, defending businesses from AI-assisted cyberattacks or helping enterprises move AI projects beyond pilots and into production.\nAlice and Zenity lead the month\nAlice recorded August\u2019s largest disclosed round, raising $140 million at a valuation of between $700 million and $800 million.\nThe company is taking its experience in identifying malicious online behaviour into the emerging market for securing AI models and agents.\nClose behind was Zenity, which raised $125 million in a Series C round. The financing brought the cybersecurity company\u2019s total funding to $185 million and is intended to support its global expansion.\nZenity is focused on autonomous AI agents, a growing category of software capable of carrying out tasks with less direct human involvement. As companies deploy more of these systems, security is increasingly shifting from simply controlling who can access corporate applications to understanding what AI agents can actually do after they are given access.\nTogether, Alice and Zenity raised $265 million during the month, making the emerging security layer around AI agents one of the clearest themes in August\u2019s funding activity.\nCybersecurity money moves closer to live AI systems\nOligo Security and Corma each announced $60 million rounds, although they are approaching the changing threat landscape from different directions.\nOligo is focused on runtime security. Its premise is that AI-enabled attackers can identify vulnerabilities faster than businesses are able to patch them, creating a need to protect applications while they are actually running rather than relying only on fixes made before deployment.\nCorma raised a $60 million Seed round to develop a foundation model designed specifically for defensive cybersecurity. The company is working from the view that increasingly capable general-purpose AI systems can strengthen offensive cyber capabilities, while specialised defensive models will be needed on the other side.\nSmaller rounds reinforced the same pattern.\nAttestable raised $20 million to explore the use of zero-knowledge cryptography for verifying activity inside powerful AI systems. Its backers include alumni of RAND, Unit 8200, StarkWare and Safe Superintelligence.\nArrakis Security secured $8 million in Seed funding. Founded by former Palantir and Torq employees, the startup is developing security systems aimed at tracking what autonomous agents do after gaining access to enterprise environments.\nAbove also received a strategic investment from CrowdStrike, although the amount was not disclosed. The investment strengthens the startup\u2019s integration with CrowdStrike\u2019s Falcon platform and centres on AI-native security technology designed to monitor risks involving trusted users as well as external attackers.\nAI funding stretches beyond cybersecurity\nNot every major August deal was a cybersecurity round.\nTravel fintech Faye raised $50 million in a Series C at an estimated valuation of $500 million. The company plans to use AI to automate parts of the insurance claims process while expanding internationally.\nQuantHealth raised $45 million in Series B funding for its AI simulation technology used in clinical trials. The company says its platform has simulated more than 600 trials and is designed to help drugmakers evaluate decisions before enrolling patients or making large development commitments.\nRemepy secured $36 million in a Series A as it prepares its AI-driven Hybridopa treatment for Parkinson\u2019s disease for Phase III. The company has also expanded its work into rare tumours through a partnership with Merck.\nEnterprise AI adoption produced another pocket of activity. June AI raised $20 million in a pre-Seed round from Marc Benioff and Michael Dell. Founded by the team behind Bonobo AI after five years at Salesforce, the company is developing AI agents aimed at automating software implementation work.\nXpander, founded by former AWS engineers, raised $7.5 million in Seed funding to build infrastructure that allows businesses to deploy AI agents across different models, cloud environments and workflows.\nAnother $6 million went to IAIG, founded by former Simplex founders, which plans to build multiple AI-native software companies around the changing economics of software development.\nAugust\u2019s funding tells a broader AI story\nThe August numbers show that investor interest is no longer concentrated simply on companies building new AI models or adding generative AI features.\nA meaningful share of the month\u2019s activity instead went to companies dealing with what happens after AI reaches real businesses: how autonomous agents are controlled, how applications are protected while running, how AI-led attacks are countered and how large organisations move AI systems into everyday operations.\nThat distinction helps explain why cybersecurity featured so prominently in one of Israel\u2019s strongest August funding performances in recent years. The next phase of enterprise AI appears to be creating demand not only for smarter software, but also for an entirely new layer of infrastructure around how that software behaves.\nAlso Read: Jim Curtis Finally Opens Up About Jennifer Aniston",
+      "type": "news"
+    },
+    {
+      "title": "Mechanism Design for Alignment and Control",
+      "authors": [
+        "Dirk Bergemann",
+        "Andrew Koh",
+        "Stephen Morris"
+      ],
+      "abstract": "We develop a framework for mechanism design with AI agents whose alignment (preferences) and capabilities (feasible actions and information) are unknown. We want such agents to act on our behalf so mechanisms must incentivize both honesty and obedience. A one-sided imitation structure---capabilities can be concealed but not counterfeited---yields a revelation principle, a characterization of implementable policies via nested cyclical monotonicity, and conditions under which eliciting higher-order beliefs can discipline multiple agents. We apply our framework to stylized examples of (i) sandbagging in which a more capable agent pretends to be less capable; (ii) an alignment--interpretability trade-off, where the two are substitutes in the instrument but complements in value; (iii) discipline via peer scoring; (iv) coupling rewards to induce competition among multiple agents; and (v) scalable oversight and reward shaping.",
+      "link": "https://arxiv.org/pdf/2609.01595v1",
+      "published": "2026-09-01",
+      "arxiv_id": "2609.01595v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "We develop a framework for mechanism design with AI agents whose alignment (preferences) and capabilities (feasible actions and information) are unknown. We want such agents to act on our behalf so mechanisms must incentivize both honesty and obedience. A one-sided imitation structure---capabilities can be concealed but not counterfeited---yields a revelation principle, a characterization of implementable policies via nested cyclical monotonicity, and conditions under which eliciting higher-order beliefs can discipline multiple agents. We apply our framework to stylized examples of (i) sandbagging in which a more capable agent pretends to be less capable; (ii) an alignment--interpretability trade-off, where the two are substitutes in the instrument but complements in value; (iii) discipline via peer scoring; (iv) coupling rewards to induce competition among multiple agents; and (v) scalable oversight and reward shaping.",
+      "summary": "We develop a framework for mechanism design with AI agents whose alignment (preferences) and capabilities (feasible actions and information) are unknown. We want such agents to act on our behalf so mechanisms must incentivize both honesty and obedience.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+      "authors": [
+        "Himil Vasava",
+        "Ming Jiang"
+      ],
+      "abstract": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-level modification maps, and a four-experiment battery of causal tracing, logit-lens vocabulary projection, and attention-head knockout applied to Themis (Llama-3-8B) and Prometheus (Mistral-7B). Both evaluators implement a structured, coherent evaluation pipeline operating in two stages: below layer 15, attention performs local error comparison and routes the result to the final input position; above it, the MLP cascade integrates the signal and writes the rating, with the decision crystallizing in the residual stream at a sharp late layer (L = 26 on Themis, L = 25 on Prometheus). Furthermore, a base-model control at the same scale (Llama-3-8B) reproduces the routing architecture and crystallization but not the stage separation, isolating the two mechanisms that fine-tuning specifically installs, suppression of below-L15 MLP contribution at the last position and a two-layer advance of the crystallization depth, indicating that fine-tuning sculpts an existing substrate rather than building the pipeline from scratch. We release the source code and data at https://github.com/himil-v/judge-mech",
+      "link": "https://arxiv.org/pdf/2609.01604v1",
+      "published": "2026-09-01",
+      "arxiv_id": "2609.01604v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy across the Readability and Adequacy dimensions of NLG quality, a generation pipeline that produces paired clean and corrupt summaries with controlled error intensity and explicit token-level modification maps, and a four-experiment battery of causal tracing, logit-lens vocabulary projection, and attention-head knockout applied to Themis (Llama-3-8B) and Prometheus (Mistral-7B). Both evaluators implement a structured, coherent evaluation pipeline operating in two stages: below layer 15, attention performs local error comparison and routes the result to the final input position; above it, the MLP cascade integrates the signal and writes the rating, with the decision crystallizing in the residual stream at a sharp late layer (L = 26 on Themis, L = 25 on Prometheus). Furthermore, a base-model control at the same scale (Llama-3-8B) reproduces the routing architecture and crystallization but not the stage separation, isolating the two mechanisms that fine-tuning specifically installs, suppression of below-L15 MLP contribution at the last position and a two-layer advance of the crystallization depth, indicating that fine-tuning sculpts an existing substrate rather than building the pipeline from scratch. We release the source code and data at https://github.com/himil-v/judge-mech",
+      "summary": "<strong>LLM</strong>-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "SpatialGuard: Harness-Guided Verifiable Spatial Reasoning for Text-to-Image Generation",
+      "authors": [
+        "Ziyun Qian",
+        "Zizhi Chen",
+        "Yizhou Liu",
+        "Mingyang Sun",
+        "Dingkang Yang"
+      ],
+      "abstract": "Complex 3D spatial text to image generation requires models to convert natural language into stable visual geometry, not merely semantic appearance. Existing prompt-driven or layout-conditioned methods improve controllability, but often lack an optimizable and verifiable spatial intermediary before visual sampling. As a result, object relations, occlusion, visibility, and camera constraints can decay during multi-round generation. This paper presents SpatialGuard, a structured layout-guided framework for complex 3D spatial text-to-image generation. SpatialGuard parses prompts into image synthesis-oriented 3D layouts through a Spatial Layout Architect, realizes them as visual conditions and candidate images through a Visual Realizer, and uses a Visual Alignment Critic to validate consistency among prompt, layout, and image. To keep constraints stable across iterations, SpatialGuard introduces a Layout Harness that organizes rule constraints, tool invocation, shared knowledge, and feedback loops around the editable layout state. This design turns complex spatial generation from implicit prompt following into a verifiable process of planning, realization, validation, and repair. Comprehensive experiments show that SpatialGuard achieves state-of-the-art performance in complex 3D spatial layout generation and improves spatial faithfulness over existing text-to-image and layout control baselines.",
+      "link": "https://arxiv.org/pdf/2609.01582v1",
+      "published": "2026-09-01",
+      "arxiv_id": "2609.01582v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Complex 3D spatial text to image generation requires models to convert natural language into stable visual geometry, not merely semantic appearance. Existing prompt-driven or layout-conditioned methods improve controllability, but often lack an optimizable and verifiable spatial intermediary before visual sampling. As a result, object relations, occlusion, visibility, and camera constraints can decay during multi-round generation. This paper presents SpatialGuard, a structured layout-guided framework for complex 3D spatial text-to-image generation. SpatialGuard parses prompts into image synthesis-oriented 3D layouts through a Spatial Layout Architect, realizes them as visual conditions and candidate images through a Visual Realizer, and uses a Visual Alignment Critic to validate consistency among prompt, layout, and image. To keep constraints stable across iterations, SpatialGuard introduces a Layout Harness that organizes rule constraints, tool invocation, shared knowledge, and feedback loops around the editable layout state. This design turns complex spatial generation from implicit prompt following into a verifiable process of planning, realization, validation, and repair. Comprehensive experiments show that SpatialGuard achieves state-of-the-art performance in complex 3D spatial layout generation and improves spatial faithfulness over existing text-to-image and layout control baselines.",
+      "summary": "Complex 3D spatial text to image generation requires models to convert natural language into stable visual geometry, not merely semantic appearance. Existing prompt-driven or layout-conditioned methods improve controllability, but often lack an optimizable and verifiable spatial intermediary before visual sampling.",
+      "type": "paper"
+    },
+    {
+      "title": "E-Commerce Bench: Evaluating LLM Agents on Long-Horizon Autonomous Business Operation",
+      "authors": [
+        "Wei Fan",
+        "Xinjie Shen",
+        "Xudong Guo",
+        "Jianhong Tu",
+        "Yang Su"
+      ],
+      "abstract": "Long-horizon agentic tasks go beyond chaining short tasks over more interaction turns. Their evolving dynamic environments and long-range dependencies require Large Language Models (LLMs) to continually explore, learn from experience, and adapt their policies over thousands of steps. We introduce E-Commerce Bench, the first open-source benchmark that integrates multi-round counterpart negotiation and dynamic events into a year-long business operation. Over a 365-day year, an LLM agent concurrently runs multiple online stores, researching the market, negotiating with suppliers to source inventory, optimizing sales strategies, fulfilling orders, handling returns, and managing cash flow to maximize its end-of-year total assets. To construct a realistic merchant-side operating environment, the product and supplier data are derived from a real e-commerce platform, while a year-long calendar of promotions, natural disasters, and supply-chain shocks continually reshapes demand. For reproducibility, both sides of the market are deterministic: customer purchases and returns follow a fixed demand model, while a negotiation kernel determines supplier pricing, concessions, and decisions, with an LLM used only to verbalize them. We evaluate 18 frontier models across seven dimensions, including year-end assets, and find that no single model dominates. GPT-5.6 Sol earns the most, growing the 100,000 opening stake into 1,431,425, yet it ranks 16th of 18 on fraud avoidance and trails Fable5 in operational efficiency. Among open-weight models, Qwen3.8-Max-Preview leads with 416,252, 38% above GLM 5.2 (high), and achieves the strongest learning over the horizon, progressively bargaining down prices across repeated orders. Our code is available at https://github.com/QwenLM/E-CommerceBench.",
+      "link": "https://huggingface.co/papers/2608.30730",
+      "published": "2026-08-31",
+      "arxiv_id": "2608.30730",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "Long-horizon agentic tasks go beyond chaining short tasks over more interaction turns. Their evolving dynamic environments and long-range dependencies require Large Language Models (LLMs) to continually explore, learn from experience, and adapt their policies over thousands of steps. We introduce E-Commerce Bench, the first open-source benchmark that integrates multi-round counterpart negotiation and dynamic events into a year-long business operation. Over a 365-day year, an LLM agent concurrently runs multiple online stores, researching the market, negotiating with suppliers to source inventory, optimizing sales strategies, fulfilling orders, handling returns, and managing cash flow to maximize its end-of-year total assets. To construct a realistic merchant-side operating environment, the product and supplier data are derived from a real e-commerce platform, while a year-long calendar of promotions, natural disasters, and supply-chain shocks continually reshapes demand. For reproducibility, both sides of the market are deterministic: customer purchases and returns follow a fixed demand model, while a negotiation kernel determines supplier pricing, concessions, and decisions, with an LLM used only to verbalize them. We evaluate 18 frontier models across seven dimensions, including year-end assets, and find that no single model dominates. GPT-5.6 Sol earns the most, growing the 100,000 opening stake into 1,431,425, yet it ranks 16th of 18 on fraud avoidance and trails Fable5 in operational efficiency. Among open-weight models, Qwen3.8-Max-Preview leads with 416,252, 38% above GLM 5.2 (high), and achieves the strongest learning over the horizon, progressively bargaining down prices across repeated orders. Our code is available at https://github.com/QwenLM/E-CommerceBench.",
+      "summary": "<strong>Long</strong>-horizon agentic tasks go beyond chaining short tasks over more interaction turns. For reproducibility, both sides of the market are deterministic: customer purchases and returns follow a fixed demand model, while a negotiation kernel determines supplier pricing, concessions, and decisions, with an <strong>LLM</strong> used only to verbalize them.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Lies We Can See: Joint Verbal and Non-Verbal Deception by VLM Agents in Embodied Social Interactions",
+      "authors": [
+        "Jaewoo Ahn",
+        "Junseo Kim",
+        "Hyunseo Kim",
+        "Heeseung Yun",
+        "Jaehyeon Son"
+      ],
+      "abstract": "Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern. Social-deduction games (where each player holds a hidden role and communicates with others to deduce identities) serve as the canonical testbed, particularly in multi-agent settings. Existing testbeds, however, are text-only and run on a single fixed agent configuration, missing the non-verbal sensorimotor channels treated as core by deception taxonomies and leaving it ambiguous whether an observed behavior reflects the underlying model or the surrounding harness. We introduce MineAmongUs, a 3D multimodal Among Us sandbox where imposter agents must deceive crewmates through joint verbal and non-verbal action. We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement. Empirical results show that VLM agents pursue imposter wins through joint verbal and non-verbal deception, with non-verbal channels emerging as the more decisive winning contributors across both harness ablation and cross-VLM evaluation. Taken together, our work opens a new path for embodied VLM-agent alignment research.",
+      "link": "https://huggingface.co/papers/2608.30428",
+      "published": "2026-08-31",
+      "arxiv_id": "2608.30428",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Strategic deception by LLM and VLM agents has emerged as a central AI alignment and safety concern. Social-deduction games (where each player holds a hidden role and communicates with others to deduce identities) serve as the canonical testbed, particularly in multi-agent settings. Existing testbeds, however, are text-only and run on a single fixed agent configuration, missing the non-verbal sensorimotor channels treated as core by deception taxonomies and leaving it ambiguous whether an observed behavior reflects the underlying model or the surrounding harness. We introduce MineAmongUs, a 3D multimodal Among Us sandbox where imposter agents must deceive crewmates through joint verbal and non-verbal action. We also propose ARIA, a configurable VLM-agent harness that exposes five cognitive-component ablation axes; and an atom- and arc-level annotation scheme grounded in deception taxonomies and operationalized at scale by an LLM-as-a-Judge reaching near-human atom-labeling agreement. Empirical results show that VLM agents pursue imposter wins through joint verbal and non-verbal deception, with non-verbal channels emerging as the more decisive winning contributors across both harness ablation and cross-VLM evaluation. Taken together, our work opens a new path for embodied VLM-agent alignment research.",
+      "summary": "Strategic deception by LLM and <strong>VLM</strong> agents has emerged as a central AI alignment and safety concern. <strong>Social</strong>-deduction games (where each player holds a hidden role and communicates with others to deduce identities) serve as the canonical testbed, particularly in multi-agent settings.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai alignment & safety.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "75\u00b0F",
+        "detail": "24% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-22"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "5 papers",
+        "detail": "Sep 1"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "3",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 1,721 cases this week \u2014 55% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 0,
+    "youtube_count": 3,
+    "ai_security_count": 8
+  }
+}
