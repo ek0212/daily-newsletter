@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
   <channel>
-    <title>Daily Morning Briefing</title>
+    <title>The Midtown Briefing</title>
     <link>https://ek0212.github.io/daily-newsletter</link>
-    <description>Daily Morning Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
+    <description>The Midtown Briefing: weather, news, YouTube, and AI security, delivered daily.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Sep 2026 11:12:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 11:16:39 +0000</lastBuildDate>
     <atom:link href="https://ek0212.github.io/daily-newsletter/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Daily Morning Briefing - Thursday, September 03, 2026</title>
+      <title>The Midtown Briefing - Thursday, September 03, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-09-03.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-09-03.html</guid>
       <description>Weather: 69°F - Partly Cloudy | Illness level: WATCH | 3 major events this week | 5 top news stories | 5 YouTube videos | 7 AI security updates</description>
@@ -26,7 +26,7 @@
   body,table,td{-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
   table{border-collapse:collapse}
   a{text-decoration:none}
-  @media only screen and (max-width:660px){
+  @media only screen and (max-width:620px){
     .wrap{width:100%!important}
     .px{padding-left:16px!important;padding-right:16px!important}
     .col{display:block!important;width:100%!important;padding:0 0 8px 0!important}
@@ -49,11 +49,13 @@
 <div style="display:none;max-height:0;overflow:hidden;opacity:0;">This week's focus: agentic ai security.</div>
 <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" class="bg" style="background:#f1efeb;">
 <tr><td align="center" style="padding:18px 8px 34px 8px;">
-<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="640" class="wrap card" style="width:640px;max-width:640px;background:#ffffff;border-radius:14px;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" width="600" class="wrap card" style="width:600px;max-width:600px;background:#ffffff;border-radius:14px;">
 
   <tr><td class="px" style="padding:24px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;line-height:15px;letter-spacing:2px;color:#9aa19e;text-transform:uppercase;margin:0 0 7px 0;">Thursday, September 03, 2026</div>
-    <div class="tx big" style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:30px;line-height:36px;color:#15181b;font-weight:650;">Daily Morning Briefing</div>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+      <td class="tx big" style="font-family:Georgia,'Times New Roman',serif;font-size:26px;line-height:32px;color:#15181b;font-weight:600;">Daily Morning Briefing</td>
+      <td align="right" style="font-family:Consolas,'Courier New',monospace;font-size:10px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Thursday, September 03, 2026</td>
+    </tr></table>
   </td></tr>
 
   
@@ -61,7 +63,7 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td width="4" style="background:#1f7a4d;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">This week's focus: agentic ai security.</td>
+        <td style="padding:2px 0 2px 10px;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">This week's focus: agentic ai security.</td>
       </tr>
     </table>
   </td></tr>
@@ -74,9 +76,9 @@
         <td class="col" width="20%" valign="top" style="padding-right:5px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
             <tr><td style="padding:8px 7px;">
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Weather</div>
-              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">85°F</div>
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">48% rain</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Weather</div>
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">86°F</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;line-height:13px;color:#5f6a66;">43% rain</div>
             </td></tr>
           </table>
         </td>
@@ -84,9 +86,9 @@
         <td class="col" width="20%" valign="top" style="padding-right:5px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
             <tr><td style="padding:8px 7px;">
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Health</div>
-              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">Watch</div>
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">Week ending 2026-08-22</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Health</div>
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">Watch</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;line-height:13px;color:#5f6a66;">Week ending 2026-08-22</div>
             </td></tr>
           </table>
         </td>
@@ -94,9 +96,9 @@
         <td class="col" width="20%" valign="top" style="padding-right:5px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
             <tr><td style="padding:8px 7px;">
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Top risk</div>
-              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">Low</div>
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">Normal watch</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">Top risk</div>
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">Heat</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;line-height:13px;color:#5f6a66;">Hydrate</div>
             </td></tr>
           </table>
         </td>
@@ -104,9 +106,9 @@
         <td class="col" width="20%" valign="top" style="padding-right:5px;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
             <tr><td style="padding:8px 7px;">
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">AI sec</div>
-              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">3 papers</div>
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">Sep 2</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">AI sec</div>
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">4 papers</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;line-height:13px;color:#5f6a66;">Sep 2</div>
             </td></tr>
           </table>
         </td>
@@ -114,9 +116,9 @@
         <td class="col" width="20%" valign="top" style="padding-right:0;">
           <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f7f5f1;border-radius:8px;">
             <tr><td style="padding:8px 7px;">
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">YouTube</div>
-              <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">5</div>
-              <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;line-height:13px;color:#5f6a66;">seeded videos</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:1px;color:#9aa19e;text-transform:uppercase;">YouTube</div>
+              <div style="font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:23px;color:#15181b;font-weight:600;">5</div>
+              <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;line-height:13px;color:#5f6a66;">seeded videos</div>
             </td></tr>
           </table>
         </td>
@@ -129,19 +131,19 @@
 
   
   <tr><td class="px" style="padding:8px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 3px 0;">NYC Weather</div>
-    <div style="font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#7c837f;margin:0 0 6px 0;">Open-Meteo model consensus + National Weather Service · 11 sources</div>
+    <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 6px 0;">NYC Weather</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr class="tint" style="background:#f7f5f1;">
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Time</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Temp</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Feels</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Weather</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Precip</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Humidity</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Wind</td>
-        <td class="wcell" style="padding:7px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Note</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Time</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Temp</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Feels</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Weather</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Precip</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Humidity</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:center;">Wind</td>
+        <td class="wcell" style="padding:7px 5px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;text-align:left;">Note</td>
       </tr>
+      
       
       
       
@@ -149,15 +151,16 @@
       
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
-        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">7am</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">70F</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">74F</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Cloudy</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#c2371f;">48%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#c2371f;">96%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;line-height:15px;color:#15181b;">6 mph SW</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Best errand window.</td>
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:Consolas,'Courier New',monospace;font-size:11px;color:#15181b;font-weight:600;">7am</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#5b7f6b;border-radius:5px;padding:2px 7px;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:600;">71F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">71F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x1F327;&#xFE0F; Chance Rain Showers</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe3de;color:#c2371f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">43%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe3de;color:#c2371f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;">90%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#5f6a66;">7 mph SW</td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:15px;color:#5f6a66;">Best errand window.</td>
       </tr>
+      
       
       
       
@@ -165,15 +168,16 @@
       
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
-        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">9am</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">72F</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">77F</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Cloudy</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#c2371f;">41%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#c2371f;">90%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;line-height:15px;color:#15181b;">7 mph SW</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Plan cover.</td>
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:Consolas,'Courier New',monospace;font-size:11px;color:#15181b;font-weight:600;">9am</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#5b7f6b;border-radius:5px;padding:2px 7px;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:600;">74F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">74F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x1F327;&#xFE0F; Slight Chance Rain Showers</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">19%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe3de;color:#c2371f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;">87%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#5f6a66;">9 mph SW</td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:15px;color:#5f6a66;">Normal watch.</td>
       </tr>
+      
       
       
       
@@ -181,14 +185,14 @@
       
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:#f1f9f4;">
-        <td class="wcell" style="padding:9px 5px;border-left:3px solid #1f7a4d;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">3pm</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">83F</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">89F</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Partly Cloudy</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">11%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">67%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;line-height:15px;color:#15181b;">7 mph W</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Best outdoor window.</td>
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid #1f7a4d;font-family:Consolas,'Courier New',monospace;font-size:11px;color:#15181b;font-weight:600;">3pm</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:600;">84F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">91F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x26C8;&#xFE0F; Slight Chance Showers And Thunderstorms</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#f5f7f8;color:#7c837f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">18%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbeed4;color:#a8730a;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;">72%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#5f6a66;">9 mph W</td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:15px;color:#5f6a66;">Best outdoor window.</td>
       </tr>
       
       
@@ -196,15 +200,16 @@
       
       
       
+      
       <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
-        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">5pm</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">84F</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">90F</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Cloudy</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">17%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">66%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;line-height:15px;color:#15181b;">7 mph SW</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Normal watch.</td>
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:Consolas,'Courier New',monospace;font-size:11px;color:#15181b;font-weight:600;">5pm</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:600;">85F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">93F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x26C8;&#xFE0F; Chance Showers And Thunderstorms</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#cfe2ec;color:#2f6f8f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">33%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbeed4;color:#a8730a;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;">70%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#5f6a66;">8 mph SW</td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:15px;color:#5f6a66;">Normal watch.</td>
       </tr>
       
       
@@ -212,15 +217,16 @@
       
       
       
+      
       <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
-        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:11px;color:#15181b;font-weight:600;">7pm</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">80F</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">87F</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Cloudy</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">26%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">76%</td>
-        <td class="wcell" align="center" style="padding:9px 5px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;line-height:15px;color:#15181b;">5 mph SW</td>
-        <td class="wcell" style="padding:9px 5px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:17px;color:#15181b;">Normal watch.</td>
+        <td class="wcell" style="padding:9px 5px;border-left:3px solid transparent;font-family:Consolas,'Courier New',monospace;font-size:11px;color:#15181b;font-weight:600;">7pm</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbf1de;color:#b5651d;border-radius:5px;padding:2px 7px;font-family:Georgia,'Times New Roman',serif;font-size:14px;font-weight:600;">82F</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbe9d8;color:#b5651d;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">87F</span></td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:11px;color:#5f6a66;">&#x26C8;&#xFE0F; Chance Showers And Thunderstorms</td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#cfe2ec;color:#2f6f8f;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;">33%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;"><span style="display:inline-block;background:#fbeed4;color:#a8730a;border-radius:5px;padding:2px 6px;font-family:Consolas,'Courier New',monospace;font-size:11px;font-weight:600;">74%</span></td>
+        <td class="wcell" align="center" style="padding:9px 5px;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#5f6a66;">5 mph W</td>
+        <td class="wcell" style="padding:9px 5px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:15px;color:#5f6a66;">Normal watch.</td>
       </tr>
       
     </table>
@@ -232,7 +238,7 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr>
         <td width="4" style="background:#c2371f;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:2px 0 2px 10px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">NYC Public Health: 1,721 cases this week — 55% below average for this time of year; 5 public-health advisory item(s) flagged</td>
+        <td style="padding:2px 0 2px 10px;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">NYC Public Health: 1,721 cases this week — 55% below average for this time of year; 5 public-health advisory item(s) flagged</td>
       </tr>
     </table>
   </td></tr>
@@ -240,52 +246,52 @@
   <tr><td class="px" style="padding:8px 26px 0 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       <tr class="tint" style="background:#f7f5f1;">
-        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Signal</td>
-        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Current</td>
-        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Comparison</td>
-        <td style="padding:7px 6px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Practical read</td>
+        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Signal</td>
+        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Current</td>
+        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Comparison</td>
+        <td style="padding:7px 6px;font-family:Consolas,'Courier New',monospace;font-size:8px;letter-spacing:.8px;color:#9aa19e;text-transform:uppercase;">Practical read</td>
       </tr>
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:#e6f3ec;">
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Respiratory illness</a></td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">1,721 combined flu/COVID/RSV cases</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">55% below seasonal average</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Normal context unless symptoms/exposure apply.</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;"><a href="https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Respiratory illness</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">1,721 combined flu/COVID/RSV cases</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">55% below seasonal average</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Normal context unless symptoms/exposure apply.</td>
       </tr>
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">NYC Health Legionnaires disease</a></td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">11 people, 94 cases</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">NYC Health Legionnaires disease</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
-      </tr>
-      
-      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMiqgJBVV95cUxPYmxIdGIxSUZtdGYwUXZvdGoxNlJ3eUxVb014Tmt3WUptclpjQU5ZRmd2MlcwVzNwb1JHdFd4aG5mbWhKQnJKdUVDV1I4MEkzZXpTWjZaWjlKWGtwQUtFbjZSMkhnalRpUXJrc1ZKemVoWHA0MmxFXzdnREtna0N4VS1WeVFFR0dnWDFfVU1WbGM4UnJybjRlTXUwVEQ3SEZ5MmVmNGpHVDRoS0xSVXlFUTNxVWlFWWkya3NfVEpTMWRjOWxXVDYxb1RrTmwyWUxUZ2dRX2dnamRyUS1CelVENEIyWWYxcHBVU3FhMVBYVldPQUpqdFNVR0FwRFNzUnhkbXFPcTZ1YVU2eFA2YWxVVUZpUDhwdk9mYzNRYVdtZFdJZ3RaT1kydmN3?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Requesón Listeria Outbreak Tha</a></td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Requesón Listeria Outbreak That Ran Three Years and Four Months Food Poison Journal</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Wed, 26 Aug 2026 22:38:31 GMT</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;"><a href="https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">NYC Health Legionnaires disease</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#c2371f;">11 people, 94 cases</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">NYC Health Legionnaires disease</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
       </tr>
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:transparent;">
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">NYC Health Department Detects First Person With West Nile Virus in 2026</a></td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">150 people, 16 people, 31 people</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">August 19, 2026</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Awareness item; no immediate action unless exposed.</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;"><a href="https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">NYC Health Department Detects First Person With West Nile Virus in 2026</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">150 people, 16 people, 31 people</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">August 19, 2026</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Awareness item; no immediate action unless exposed.</td>
       </tr>
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTnlrYU9lVjFwNDg1XzBoU2dEbHd5LWdVbkh0VUF0dVF3RGxwU2pkR1ltM05LQjF4a2RrczlfNldzODFCY1lEWFJHY0pqbG5VYkhuNWFudUVObW9OUWlab1pPcW11eXZkUFpYV1huMGNsdWFBZVJBb3lRdnJCTFdiLWNYa2RqN0dFV1BiREFZSjd0VDFYVnFsYWlVS2R4b0RXWkY0VWcyTFdlM0ppa3g2X0VPM1RsSXJKeHZWTDBTV19SamZDeHMxR3d0ZFc3RFFR?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov</a></td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">Outbreak Investigation of Shiga Toxin-producing E.</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Mon, 31 Aug 2026 15:07:00 GMT</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTnlrYU9lVjFwNDg1XzBoU2dEbHd5LWdVbkh0VUF0dVF3RGxwU2pkR1ltM05LQjF4a2RrczlfNldzODFCY1lEWFJHY0pqbG5VYkhuNWFudUVObW9OUWlab1pPcW11eXZkUFpYV1huMGNsdWFBZVJBb3lRdnJCTFdiLWNYa2RqN0dFV1BiREFZSjd0VDFYVnFsYWlVS2R4b0RXWkY0VWcyTFdlM0ppa3g2X0VPM1RsSXJKeHZWTDBTV19SamZDeHMxR3d0ZFc3RFFR?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#c2371f;">Outbreak Investigation of Shiga Toxin-producing E.</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Mon, 31 Aug 2026 15:07:00 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
       </tr>
       
       <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMizBBBVV95cUxPMlJKbjBFb0ZBdDU1dFEtRldub0FuV2RJcUxLZ3NvREZuLWRzWmUwSUozZ2tkM0xfeWk1QUJZTDFSQ21NLWhoU3Ata0Z4T1FLT052V0JoaG9sbHE2czJicDNZMm5LaHpLRmlCMHRubGpQY1F1dGtKbE44eDF6endrOWgxTjMwSDZCekFJWWxlQW4zVzdjcDVKTHlEaXMyNVpTQkxzTEx5aFVrb05FYUtLYzBDUE1OTkt3TlRrbzNoRGxOSGtyVExCRm1wOXBROXJvLUM5R001QTZuQloxY3RFem1hWEp0cGFfdk5MUDJqaW5SR2g1LUF3dnZkOVRmQWdDeGREZjRzMGlvdjZaQ3l2UnQ1TVE2bkRLTzZ3cHVkUGQ0X0hmU0lEdHVMUkRMZVNxM3pkd2RDbDZRd0FEWkF3b3NwTFN0N3c5R3J3WnFYWUloanR1eEVuNGRGbHBsX2Y4SS1zd1o1MWh3bFdyYlQ4TU1sVWhsdWJWM1RWblNZVHduelQzR1pEbkNIZ0ltVjBoVVFVWG1lQVN0enVQN0RoaWs3TDI3TXA1Qk9xZ0RiVms0ZGFla211Y0NSc1lhNWxFMWVQSkxNblRXQVJrd20yOGU4RUQwT0R4SWxkMXp3dm1mM1RCLS0xaUxUcnVqeUhMMWZvY2d1MThKdTdxLUFaOFB6LXUwT2RlUUZPcGFWYTZKeHdXY2RwcUdMUDFhQ2gtYzZWSk9HendVTlFGeXdXOHNEenBRQjlfTU5nMC1yWFpHVlc3STY4VldQQkkzWEtUcFdYZnBFd2pQOFpPSmNuMTNVa2xqc0syTzFJLUkzTERSRzIzSzBFQmt5VHdWQnU3UDNDVVVGS3M0UkRvc0FsZDE5TUZ4UWtWR256SlF0TTdEUkNOcktXVldpZ2g3Z3VEY1g5MUNrYnM0bmFaQnRoR1loenFyRkc5QkhSN1hNcEI3dVFfcnN3TUVxaXloMm1JcnNjRThDQXZwbzFteFYxQ2ZBaGJrN3FlYm81azJKRTk3bjZuWTdrSmFTc0tWTUhDNU9BTjZTV2hEMFhBYlUwelNXd01hemd2OXBPSnhYS2JOVEpDZDBucW9QRHlCSHFYbU1kR2VGbFY4Y3dCZzJwYnFQUkVLS0w4MHZFcDZRdEx2MDhFZ2UzTE5vMlRXSjZOcnZMTGFldnRhbkltY045NGFIeC1wUGxrYnhDTnhFOUtYNEFNVEFOMVg0eTFJSWxRV0RXYVlCbXoxZkZZVDJaVGVrMURMX25UakVScWstUkw3TGZIUXdNY3dKWjVwcDl6QnVVbFc4V2tONFpkNUxuRDVQWmlYdWx1UjNlbFdMYUVsUkVUaVo4U2p4RUozcERzZUtDbVQyclFSTEt1OHp1Zm0xa0h6eFZESWIycVlnNzNLZ1pYaFk3dFlpQTNDN3M0UWJaRnl1Zm9YZG4xLWotT2JvRmJkWDY4QVljajJfYXNrcl8tRDJERWF5aW9FajdWTnZXVWpQTnZCTWNBeFJHb2drYU81am5UdzFiYlg4RGpCRGlXZWZPdlF2TFFwTjltTGVkNG1qdzVmeThocFpoVTR3dWtyZnc4VXBEbV8weFdZanNnSlF3QS1zSzlaeC1RM2NNaVNMcENLbWl6ajJld3RqMGE3d0RnY1lhX0xLX3BwQk5WUzFSRnB2aGhqTW9PVXgydFhxT3p1d2FhMFJFYkQwWW1TRDBRZnVfalNXS1lxbk5RNVFtM2hYMEtSZVFON0VxLXFKOGloeW5LWjJQalhsV0xvMUI5VlZmdU5Ebk5SN0l2YUtsY1NlSG0wTmlEamJHdDJ1b0FFdXVrQUh6RWZ2RFQ2cGhSSnpvRDYwdC1QaTRrVzhaRlVvdEs0TFZrVDlkYlpFT1N4dEZ6SGtiWlJhcXYzLUVWTU5HcmYyMlYtaGZoNExsVmlpYlJ3QWRaY2hWcnpkM3V1RUJybGdEYlM5RE9tQks0ZGc5WkF3YlZ5OUNZZG5zdURhV0xINUxxZWhzSE5fdm9DQzluV1IxdGRBUXA0dzFRX0t5aFlTbG9MZE5sWEg1THBRSEVpTEkzVkowbGNrSlk0UV9WS1FGSmhQVjVvYURqRS1wRU9uWTdYUFZrb3ZjdEdoZFI1R0NDNGY1WC1IdnBUNkdPc2x3REtjNHdyVU81V1ZuMFQ4Y3Q4YktBRlJaQWtuUDBScE1XaFA1R1NZR3VrTWItRkJUS2JzTlFpUzZVYy1Vcmw5a01vR1V2c2pCOVRlbFQxcWxGZUl5dXI2V3N4cFZfSTNBekVxeEJNODFPbldJN3hQWGQwdGJNYnJudlduNTVPaEROb1lTN2pHZUZlN1FQU3N1WHJzNXkxUUxKMk5RcWlYWEt3VUw4SVF2SVBmU0ZibUxBUWNJYllWdkt0dVRwYUlZU1VxWnYxaEpfb2s5eVZrR3lDYS1Md3RyVTRPa1RrNFE2NkpNeHdTWm93d3BINGRSV05lMzg1bnZlbER1ZHljcHhxVlV5UXRmTHFwNEEtYkZjTTdXUXVtdHZGWXhlTnlNLWxEVWE5bjg1ZnVoZXdlZVVreUo2enM5ZHZMczlKQ0M5RVJTNlNvUHdwVUxGSF9Wb1dlRENXMmxrcGpnLWZxRTd5WVVNOTFITjQyeFJ0SHJkRFlsSkJYeXJIWExsX2cxUGFSb1JYUXpPWjZ3c3VNQ0dqTnJEMHhhNGFEMVFoS3VvMy1YRWkwV3ZYODNsalc5c09kVnpGQW5CZzdsdXlhRV83dmRHOGtaaTk0QmJKRWNnUHU0VXdid19wUXBvOW04QlhHbEw3cDh0OXlFV2JXbFpVMURsWkQtN2ZpbVQ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states - ABC7 New York</a></td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#c2371f;">Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states ABC7 New York</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Thu, 06 Aug 2026 07:00:00 GMT</td>
-        <td valign="top" style="padding:8px 6px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUGhuUzRwQ1RCZmRQdXJyOHp6VXF6QWRpdy1ObzIwME14MUVka1RiOFVYMzNOOGtTb2tEaUZ2N0M2cDVYMDAyMWtFYTltOXJsUlNwQVFZcDJXVkRXZ1BvamwzMXl0Q2xMSWJBOXhxLTJ3MEYzdjY3M0huRjZjS2tDclV1RFh4b2hfbmRsNWU0a1ZhQktldDRYQWdQODBxME5vNndyU1RVTlRDdUhhWkZJbjdDcE1GTl9zV3lIN01ZaDhLaHPSAcgBQVVfeXFMUHNlMld4dkpLMng1QktaaEJOZ3dKekt0MXBtbnV5V3RmSnFwN3VVMExoTVFKSEIxcG1RRzM3RE5YaGhHWkJ4c0RiVGhORnFhUEJORWZFOFlGQU5pdkpnel9wR2poeDExUHk1SV9tdlhMTDRHSHpPMTN1QnptVWJLUVF0ajVTOGNTWktwNTFoemhKUjcwTlVvQ1J1aDQ0dHdVNldKX3Q0NG9MT0N5QWtDWUhYMEMwelRKRHpaS2dseTZCczZFWWFpcXA?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Is it safe to eat lettuce yet? What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuit</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#c2371f;">What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits ABC7 New York</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Mon, 31 Aug 2026 12:22:12 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
+      </tr>
+      
+      <tr class="rule" style="border-top:1px solid #e6e2da;background:#fbe4df;">
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#15181b;font-weight:600;"><a href="https://news.google.com/rss/articles/CBMirgFBVV95cUxNT05VcDYtemNBYzhpbTA0UTFfV0dTU0ZQdG16MGRsSFgxYkZtZUlIRkRENFA4Zmt6U3gwVi1wVmVhR0JWQm5ZYXVyMzFpQzV0SktnaEZDekwwMVhWbnc4ZWhYRE1zZTI5aERyczRxT2VQOHg5YVZkbHlyaFFzME1vbnhacVA0QVg5UU9CRDNibmYzT3JCYmJFeHJ0bk94U0Q4cnh1YWFGSUhlTEUzWUE?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Jalapeños linked to a U.S. sal­mo­nella outbreak are tracked to a Mexican farm and a dis­tributor - Spectrum N</a></td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#c2371f;">sal­mo­nella outbreak are tracked to a Mexican farm and a dis­tributor Spectrum News</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Thu, 06 Aug 2026 07:00:00 GMT</td>
+        <td valign="top" style="padding:8px 6px;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">Watch official updates; use symptoms/exposure guidance if relevant.</td>
       </tr>
       
     </table>
@@ -293,8 +299,11 @@
   
 
   <tr><td class="px" style="padding:10px 26px 0 26px;">
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:1px solid #e6e2da;">
-      <tr><td style="padding-top:8px;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;">Top 3 Things</td></tr>
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tr>
+        <td width="4" style="background:#c2371f;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:2px 0 2px 10px;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#15181b;font-weight:600;" class="tx">Three reads carry today. The rest can wait.</td>
+      </tr>
     </table>
   </td></tr>
 
@@ -302,18 +311,18 @@
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       
       <tr>
-        <td width="4" style="background:#a8730a;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:9px 12px;background:#fbeed4;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
-          <a href="https://www.aljazeera.com/news/2026/9/3/eu-foreign-ministers-fail-to-break-deadlock-over-israel-and-ukraine?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">EU foreign ministers fail to break deadlock over Israel and Ukraine</a> <span style="color:#5f6a66;">: Dublin has also pointed to what it sees as a disparity between the bloc’s willingness to impose sanctions and other measures in response to Russia’s actions in <strong>Ukraine</strong> and its reluctance to take comparable action against <strong>Israel</strong> despite its ongoing genocide in Gaza and alarming rate of violence in the occupied Palestinian territory.</span>
+        <td width="4" style="background:#c2371f;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:9px 12px;background:#fbe3de;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+          <a href="https://www.aljazeera.com/news/2026/9/3/kyrgyzstan-hosts-pivotal-sco-summit-amid-global-geopolitical-shifts?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Kyrgyzstan hosts pivotal SCO summit amid global geopolitical shifts</a> <span style="color:#5f6a66;">&mdash; For the <strong>SCO</strong>, however, Iran is not simply a diplomatic issue – it is an economic one. But the wider questions remain, whether Central Asia can move from being the space between Russia, China, Iran and Europe to becoming a centre of its own?</span>
         </td>
       </tr>
       
       
       <tr><td colspan="2" height="5" style="height:5px;font-size:0;line-height:0;">&nbsp;</td></tr>
       <tr>
-        <td width="4" style="background:#2f6f8f;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:9px 12px;background:#e6f1f5;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
-          <a href="https://www.aljazeera.com/video/newsfeed/2026/9/3/egypts-sisi-welcomes-chinas-president-xi-in-grand-egyptian-museum-tour?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Egypt’s Sisi welcomes China’s President Xi in Grand Egyptian Museum tour</a> <span style="color:#5f6a66;">: Read the full story at Al Jazeera.</span>
+        <td width="4" style="background:#a8730a;font-size:0;line-height:0;">&nbsp;</td>
+        <td style="padding:9px 12px;background:#fbeed4;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+          <a href="https://www.aljazeera.com/news/2026/9/3/eu-foreign-ministers-fail-to-break-deadlock-over-israel-and-ukraine?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">EU foreign ministers fail to break deadlock over Israel and Ukraine</a> <span style="color:#5f6a66;">&mdash; Dublin has also pointed to what it sees as a disparity between the bloc’s willingness to impose sanctions and other measures in response to Russia’s actions in <strong>Ukraine</strong> and its reluctance to take comparable action against <strong>Israel</strong> despite its ongoing genocide in Gaza and alarming rate of violence in the occupied Palestinian territory.</span>
         </td>
       </tr>
       
@@ -323,8 +332,8 @@
       <tr><td colspan="2" height="5" style="height:5px;font-size:0;line-height:0;">&nbsp;</td></tr>
       <tr>
         <td width="4" style="background:#6b3fa0;font-size:0;line-height:0;">&nbsp;</td>
-        <td style="padding:9px 12px;background:#ece4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
-          <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNTlk4VWhVc0hPaHRKdHQyaEo2TGVlN1NQMU5NRW9PcnBqRGh0YVFFbE95dHo5Qk5acFM0bzN3NFQwQzNQaG1XZUdabk9oSWVXa1NERGdnZVJiNFJYN2pIX2NxdUFKeDBKd2hNa1hZLTdhWXNtTjMtQjBvUWdaVmlrcXFpR3hvVHpDRU1yR9IBkgFBVV95cUxNekRUc2VDVkFfUzFKOFF0WUxaM05xeEo2ZUY1Q1FBLVcyc0xWVjM1MlJDSW9xSGRWZHJiV1JSOVVNVS1GbFJrLXZhc0hpa1d2UTkyZ2hCTnZPOThWTGItUm9ZV1IybkYyTlRZQTZpQ3poeFl5eG50eXJ5dlNkN0FkRlBhX2t5aDl2WGEzd0xmOUlqQQ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">SecurityWeek: OpenLeash Adds a Human Check to Risky AI Agent Actions</a> <span style="color:#5f6a66;">: “When it intends to delete my database, Leash intercepts this message, evaluates it, and tries to understand if the action is risky or not. The threat exists because the agent alone doesn’t behave as if it needs to ask permission to do something; it’s just performing the instructions it has as it interprets them and does what it is told.</span>
+        <td style="padding:9px 12px;background:#ece4f6;font-family:Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;">
+          <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE8zTzlkWENMUDhNbFBHbHdoVEdqZ284b3BSTF9jZ3l3dlR3ZVB6NXZ1eUNCNlZHRDJnVVo2Y0s2QUFybFc3bklXNXYyNVEycGRQYkFYbTNRaFJ4eEJwbUZyQXRrR2h1ZGw4NUlXNdIBbEFVX3lxTE8zTzlkWENMUDhNbFBHbHdoVEdqZ284b3BSTF9jZ3l3dlR3ZVB6NXZ1eUNCNlZHRDJnVVo2Y0s2QUFybFc3bklXNXYyNVEycGRQYkFYbTNRaFJ4eEJwbUZyQXRrR2h1ZGw4NUlXNQ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Ventureburn: HiddenLayer Raises $100M to Expand AI Security Platform</a> <span style="color:#5f6a66;">&mdash; Research Strengthens <strong>HiddenLayer</strong>’s AI Defence <strong>Platform</strong> <strong>HiddenLayer</strong>’s security capabilities are supported by an extensive AI research programme. More News: Elucid <strong>Raises</strong> <strong>$55M</strong> to <strong>Expand</strong> AI Cardiovascular Diagnostics <strong>HiddenLayer</strong> Targets International AI <strong>Security</strong> Growth The new funding will support <strong>HiddenLayer</strong>’s next phase of commercial expansion.</span>
         </td>
       </tr>
       
@@ -346,152 +355,127 @@
   </td></tr>
 
   
+
+  <tr><td class="px" style="padding:22px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:3px double #15181b;">
+      <tr><td style="padding-top:8px;font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.6px;color:#9aa19e;text-transform:uppercase;">Everything else, if you have more than a minute</td></tr>
+    </table>
+  </td></tr>
+
+  <tr><td class="px" style="padding:8px 26px 0 26px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#c2371f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">🚀 <a href="https://www.aljazeera.com/news/2026/9/3/kyrgyzstan-hosts-pivotal-sco-summit-amid-global-geopolitical-shifts?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Kyrgyzstan hosts pivotal SCO summit amid global geopolitical shifts</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#a8730a;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F4F0; <a href="https://www.aljazeera.com/news/2026/9/3/eu-foreign-ministers-fail-to-break-deadlock-over-israel-and-ukraine?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">EU foreign ministers fail to break deadlock over Israel and Ukraine</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#7c837f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">💻 <a href="https://www.aljazeera.com/video/newsfeed/2026/9/3/openais-sam-altman-tells-g20-ai-will-be-as-essential-as-electricity?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">OpenAI’s Sam Altman tells G20 AI will be as essential as electricity</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#7c837f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">⚔️ <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPRWgxRGlNVC1BQUNiS1ZjS3ZPUlV3ZWdGM2FrNUtKbGlCWExpUnhjWUFOUVJiclctU2lRaUJVSXJ5bGVRbDQwZ19LNkFBUDJtRFo5X0FoRS1ZYkZ1by1nUlNLZW9QVlRXbnlmbktqc0JGR1A3djNlSjNsMGxWSjRZc3BkVHJvWFREY2Y4Rm9DSEh3akhjeVlLVkRvN0lwcHJsbWpZ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Trump encouraged Army secretary to stay in job</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#7c837f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">🎓 <a href="https://www.npr.org/2026/09/03/nx-s1-5921324/the-general-buster-keaton-anniversary" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">An epic train chase is turning 100 — and Buster Keaton fans are celebrating</a></td>
+      </tr>
+      
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#2f6f8f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F3AC; <a href="https://youtube.com/watch?v=r_dw-1109Ag" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Theo - t3.gg, "My New Favorite Model"</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#2f6f8f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F3AC; <a href="https://youtube.com/watch?v=Po_Dh7WLgmM" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Matt Wolfe, "The Most Overhyped and Underhyped New AI Models"</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#2f6f8f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F3AC; <a href="https://youtube.com/watch?v=uBxoNBUFkgc" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">This Week in Startups, "VC experts on why Physical AI funding is heating up | E2333"</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#2f6f8f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F3AC; <a href="https://youtube.com/watch?v=CDUclXojmDg" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">AI Daily Brief, "Why Fable 5.1 Is Worth the Upgrade"</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#2f6f8f;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F3AC; <a href="https://youtube.com/watch?v=9IYTGvNOmLk" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">AI Daily Brief, "OpenClaw 2.0 Shows Where AI Agents Are Going Next"</a></td>
+      </tr>
+      
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F510; <a href="https://news.google.com/rss/articles/CBMibEFVX3lxTE8zTzlkWENMUDhNbFBHbHdoVEdqZ284b3BSTF9jZ3l3dlR3ZVB6NXZ1eUNCNlZHRDJnVVo2Y0s2QUFybFc3bklXNXYyNVEycGRQYkFYbTNRaFJ4eEJwbUZyQXRrR2h1ZGw4NUlXNdIBbEFVX3lxTE8zTzlkWENMUDhNbFBHbHdoVEdqZ284b3BSTF9jZ3l3dlR3ZVB6NXZ1eUNCNlZHRDJnVVo2Y0s2QUFybFc3bklXNXYyNVEycGRQYkFYbTNRaFJ4eEJwbUZyQXRrR2h1ZGw4NUlXNQ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Ventureburn: HiddenLayer Raises $100M to Expand AI Security Platform</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F510; <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNTlk4VWhVc0hPaHRKdHQyaEo2TGVlN1NQMU5NRW9PcnBqRGh0YVFFbE95dHo5Qk5acFM0bzN3NFQwQzNQaG1XZUdabk9oSWVXa1NERGdnZVJiNFJYN2pIX2NxdUFKeDBKd2hNa1hZLTdhWXNtTjMtQjBvUWdaVmlrcXFpR3hvVHpDRU1yR9IBkgFBVV95cUxNekRUc2VDVkFfUzFKOFF0WUxaM05xeEo2ZUY1Q1FBLVcyc0xWVjM1MlJDSW9xSGRWZHJiV1JSOVVNVS1GbFJrLXZhc0hpa1d2UTkyZ2hCTnZPOThWTGItUm9ZV1IybkYyTlRZQTZpQ3poeFl5eG50eXJ5dlNkN0FkRlBhX2t5aDl2WGEzd0xmOUlqQQ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">SecurityWeek: OpenLeash Adds a Human Check to Risky AI Agent Actions</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">🤖 <a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeGtfd2dFZV8zb0JlLVZRMzNLV0E0TkNKZU1LUnFQOGF2UENiakx1a19VVU5jZnZhWUFHeVBwRDVfYjhnRmZRRnRIZGRQLVNTMlVZN1V0UVVWTWZCWE9JYlQ4d3hyTnB5YkxGY3JtaFF1QnNlaGJjaS11VnItYjZzR0xYODN5WmNfNGlIM2xNU0xHaFRYTF94WjQ4OXk3QkhHSVpmeE4xQmNUUkQwdmNRbVlUN3NRVmR5eUtKSFNwOU14dVdlM2tmN0N3Nk92aUN3ZFHSAdIBQVVfeXFMUHhrX3dnRWVfM29CZS1WUTMzS1dBNE5DSmVNS1JxUDhhdlBDYmpMdWtfVVVOY2Z2YVlBR3lQcEQ1X2I4Z0ZmUUZ0SGRkUC1TUzJVWTdVdFFVVk1mQlhPSWJUOHd4ck5weWJMRmNybWhRdUJzZWhiY2ktdVZyLWI2c0dMWDgzeVpjXzRpSDNsTVNMR2hUWExfeFo0ODl5N0JIR0laZnhOMUJjVFJEMHZjUW1ZVDdzUVZkeXlLSkhTcDlNeHVXZTNrZjdDdzZPdmlDd2RR?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">storagereview.com: Broadcom AgentMinder Debuts Alongside vDefend, Avi, and TrueSource Upgrades for Agentic AI Security</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F4C4; <a href="https://arxiv.org/pdf/2609.02852v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">The Implications of Linguistic Illegibility for LLM Security - arXiv</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F4C4; <a href="https://arxiv.org/pdf/2609.02805v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Large Language Models (LLMs) for Telecom Root Cause Analysis (RCA): A Structured Reasoning Framework for Evidence-Grounded Diagnosis - arXiv</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F4C4; <a href="https://arxiv.org/pdf/2609.02888v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">POSEIDON III: The Aligned Orbit of the Hot Neptune Around the Hot Star WASP-195 - arXiv</a></td>
+      </tr>
+      
+      <tr>
+        <td width="8" valign="top" style="padding:4px 8px 4px 0;"><div style="width:7px;height:7px;background:#6b3fa0;border-radius:4px;font-size:0;line-height:0;">&nbsp;</div></td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;">&#x1F4C4; <a href="https://huggingface.co/papers/2609.00377" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos - arXiv</a></td>
+      </tr>
+      
+    </table>
+  </td></tr>
+
+  
   <tr><td class="px" style="padding:14px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">NYC Events</div>
+    <div style="font-family:Consolas,'Courier New',monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">NYC Events</div>
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
       
       <tr>
         <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AD;</td>
-        <td width="110" valign="top" style="padding:3px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#9aa19e;">Sat, Sep 5</td>
-        
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.google.com/search?q=EARTH%20AWARENESS%20FAIR%20AT%20HERALD%20SQUARE%20NYC%20Sat%2C%20Sep%205" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">EARTH AWARENESS FAIR AT HERALD SQUARE</a> · 6th Ave & West 34th St</td>
+        <td width="110" valign="top" style="padding:3px 0;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#9aa19e;">Sat, Sep 5</td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;"><a href="https://www.google.com/search?q=EARTH%20AWARENESS%20FAIR%20AT%20HERALD%20SQUARE%20NYC%20Sat%2C%20Sep%205" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">EARTH AWARENESS FAIR AT HERALD SQUARE</a> · 6th Ave & West 34th St</td>
       </tr>
       
       <tr>
         <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3B9;</td>
-        <td width="110" valign="top" style="padding:3px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#9aa19e;">Sun, Sep 6</td>
-        
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.google.com/search?q=THE%2041ST%20ANNUAL%20BRAZILIAN%20DAY%20FESTIVAL%20NYC%20Sun%2C%20Sep%206" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">THE 41ST ANNUAL BRAZILIAN DAY FESTIVAL</a> · Ave Of The Americas & West 42nd St</td>
+        <td width="110" valign="top" style="padding:3px 0;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#9aa19e;">Sun, Sep 6</td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;"><a href="https://www.google.com/search?q=THE%2041ST%20ANNUAL%20BRAZILIAN%20DAY%20FESTIVAL%20NYC%20Sun%2C%20Sep%206" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">THE 41ST ANNUAL BRAZILIAN DAY FESTIVAL</a> · Ave Of The Americas & West 42nd St</td>
       </tr>
       
       <tr>
         <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3B6;</td>
-        <td width="110" valign="top" style="padding:3px 0;font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:10px;color:#9aa19e;">Sun, Sep 6</td>
-        
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.google.com/search?q=Legacy%20Church%20Block%20Party%20NYC%20Sun%2C%20Sep%206" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Legacy Church Block Party</a> · East 27th St & 5th Ave</td>
-      </tr>
-      
-    </table>
-  </td></tr>
-  
-
-  
-  <tr><td class="px" style="padding:14px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">General Top News</div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4F0;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.aljazeera.com/news/2026/9/3/eu-foreign-ministers-fail-to-break-deadlock-over-israel-and-ukraine?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">EU foreign ministers fail to break deadlock over Israel and Ukraine</a>: Dublin has also pointed to what it sees as a disparity between the bloc’s willingness to impose sanctions and other measures in response to Russia’s actions in <strong>Ukraine</strong> and its reluctance to take comparable action against <strong>Israel</strong> despite its ongoing genocide in Gaza and alarming rate of violence in the occupied Palestinian territory.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">🏛️</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.aljazeera.com/video/newsfeed/2026/9/3/egypts-sisi-welcomes-chinas-president-xi-in-grand-egyptian-museum-tour?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Egypt’s Sisi welcomes China’s President Xi in Grand Egyptian Museum tour</a>: Read the full story at Al Jazeera.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">💻</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.aljazeera.com/video/newsfeed/2026/9/3/openais-sam-altman-tells-g20-ai-will-be-as-essential-as-electricity?traffic_source=rss" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">OpenAI’s Sam Altman tells G20 AI will be as essential as electricity</a>: Read the full story at Al Jazeera.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">⚔️</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPRWgxRGlNVC1BQUNiS1ZjS3ZPUlV3ZWdGM2FrNUtKbGlCWExpUnhjWUFOUVJiclctU2lRaUJVSXJ5bGVRbDQwZ19LNkFBUDJtRFo5X0FoRS1ZYkZ1by1nUlNLZW9QVlRXbnlmbktqc0JGR1A3djNlSjNsMGxWSjRZc3BkVHJvWFREY2Y4Rm9DSEh3akhjeVlLVkRvN0lwcHJsbWpZ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Trump encouraged Army secretary to stay in job</a>: Read the full story at The Washington Post.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">🎓</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://www.npr.org/2026/09/03/nx-s1-5921324/the-general-buster-keaton-anniversary" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">An epic train chase is turning 100 — and Buster Keaton fans are celebrating</a>: "<strong>I saw one when I was in college and I just could not believe that this man was the grandfather that I'd known my whole life because his films weren't available to anybody.</strong>" "And when he got up here and looked out, he said 'This is it.</td>
-      </tr>
-      
-    </table>
-  </td></tr>
-  
-
-  
-  <tr><td class="px" style="padding:14px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">Tech YouTube / Videos</div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AC;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://youtube.com/watch?v=r_dw-1109Ag" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Theo - t3.gg, "My New Favorite Model"</a>: New episode from Theo - t3.gg. Click to watch.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AC;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://youtube.com/watch?v=Po_Dh7WLgmM" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Matt Wolfe, "The Most Overhyped and Underhyped New AI Models"</a>: New episode from Matt Wolfe. Click to watch.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AC;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://youtube.com/watch?v=uBxoNBUFkgc" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">This Week in Startups, "VC experts on why Physical AI funding is heating up | E2333"</a>: New episode from This Week in Startups. Click to watch.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AC;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://youtube.com/watch?v=CDUclXojmDg" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">AI Daily Brief, "Why Fable 5.1 Is Worth the Upgrade"</a>: New episode from AI Daily Brief. Click to watch.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F3AC;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://youtube.com/watch?v=9IYTGvNOmLk" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">AI Daily Brief, "OpenClaw 2.0 Shows Where AI Agents Are Going Next"</a>: New episode from AI Daily Brief. Click to watch.</td>
-      </tr>
-      
-    </table>
-  </td></tr>
-  
-
-  
-  
-  <tr><td class="px" style="padding:14px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">AI Security Articles</div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F510;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxNTlk4VWhVc0hPaHRKdHQyaEo2TGVlN1NQMU5NRW9PcnBqRGh0YVFFbE95dHo5Qk5acFM0bzN3NFQwQzNQaG1XZUdabk9oSWVXa1NERGdnZVJiNFJYN2pIX2NxdUFKeDBKd2hNa1hZLTdhWXNtTjMtQjBvUWdaVmlrcXFpR3hvVHpDRU1yR9IBkgFBVV95cUxNekRUc2VDVkFfUzFKOFF0WUxaM05xeEo2ZUY1Q1FBLVcyc0xWVjM1MlJDSW9xSGRWZHJiV1JSOVVNVS1GbFJrLXZhc0hpa1d2UTkyZ2hCTnZPOThWTGItUm9ZV1IybkYyTlRZQTZpQ3poeFl5eG50eXJ5dlNkN0FkRlBhX2t5aDl2WGEzd0xmOUlqQQ?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">SecurityWeek: OpenLeash Adds a Human Check to Risky AI Agent Actions</a>: “When it intends to delete my database, Leash intercepts this message, evaluates it, and tries to understand if the action is risky or not. The threat exists because the agent alone doesn’t behave as if it needs to ask permission to do something; it’s just performing the instructions it has as it interprets them and does what it is told.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F510;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMilgFBVV95cUxOUEVHaV9IUXQ1RHZlaElzUENWeC0wMGJSNXBuXzNxTDJhY21DSGRMSWx4Q182czFUUmVpUWw3VGhlaUI0d0gzMTdEMXlpc3Q1TVBuSDBqRnJQZWU5M2xnMFp5TkZwREFmbzh4REJ4dF9BcUpHX3FBSl80bDVQRnQ0VTAyUVdlWlN3LURyeFBqbE5jd04xUmc?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Unite.AI: HiddenLayer Raises $100M Series B to Expand AI Agent Security Platform</a>: The second is <strong>Agent</strong> Harness <strong>Security</strong>, a new solution that extends the platform’s Runtime <strong>Security</strong> module to secure AI coding agents at runtime as enterprises adopt autonomous coding agents that write, review, and ship code with less human oversight than traditional development tools.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F510;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMiiwFBVV95cUxObm5pOW9VSThQbE9LTGpMRzhZNFFRdHEzTUE2dFFYUm03aVpBNzlqOEZyaUVLUWxpTWFZTHRzTnJKM3V0dFZXd2VfeXZUU3BpTjhfcm9HOTVYWmZ1clB5TUJFSVBPQTkzX2kwVVVleWZGcG5tdDJXUnN3SU9YVTJheUpGSFQzSWJSMjg0?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">techbuzz.ai: NVIDIA, CrowdStrike Unveil Agentic AI Security Tool</a>: Security update, click for details.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">🤖</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeGtfd2dFZV8zb0JlLVZRMzNLV0E0TkNKZU1LUnFQOGF2UENiakx1a19VVU5jZnZhWUFHeVBwRDVfYjhnRmZRRnRIZGRQLVNTMlVZN1V0UVVWTWZCWE9JYlQ4d3hyTnB5YkxGY3JtaFF1QnNlaGJjaS11VnItYjZzR0xYODN5WmNfNGlIM2xNU0xHaFRYTF94WjQ4OXk3QkhHSVpmeE4xQmNUUkQwdmNRbVlUN3NRVmR5eUtKSFNwOU14dVdlM2tmN0N3Nk92aUN3ZFHSAdIBQVVfeXFMUHhrX3dnRWVfM29CZS1WUTMzS1dBNE5DSmVNS1JxUDhhdlBDYmpMdWtfVVVOY2Z2YVlBR3lQcEQ1X2I4Z0ZmUUZ0SGRkUC1TUzJVWTdVdFFVVk1mQlhPSWJUOHd4ck5weWJMRmNybWhRdUJzZWhiY2ktdVZyLWI2c0dMWDgzeVpjXzRpSDNsTVNMR2hUWExfeFo0ODl5N0JIR0laZnhOMUJjVFJEMHZjUW1ZVDdzUVZkeXlLSkhTcDlNeHVXZTNrZjdDdzZPdmlDd2RR?oc=5" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">StorageReview.com: Broadcom AgentMinder Debuts Alongside vDefend, Avi, and TrueSource Upgrades for Agentic AI Security</a>: <strong>TrueSource</strong> establishes a curation model based on clean-room builds, upstream maintainer collaboration, automated repository scanning, and human code review: Spring Enterprise provides commercial support and hardened releases from the core maintainers of the Spring framework.</td>
-      </tr>
-      
-    </table>
-  </td></tr>
-  
-
-  
-  
-  <tr><td class="px" style="padding:14px 26px 0 26px;">
-    <div style="font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:9px;letter-spacing:1.4px;color:#9aa19e;text-transform:uppercase;margin:0 0 4px 0;">AI Security Papers</div>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://arxiv.org/pdf/2609.02852v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">The Implications of Linguistic Illegibility for LLM Security</a> - James Mickens: LLMs are trained to generate natural language. However, various strands of evidence indicate that an <strong>LLM</strong>'s externalized linguistic outputs and mechanistically-extracted linguistic features can be an unreliable lens for understanding internal model computation.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://arxiv.org/pdf/2609.02805v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Large Language Models (LLMs) for Telecom Root Cause Analysis (RCA): A Structured Reasoning Framework for Evidence-Grounded Diagnosis</a> - Hao Zhou, Mandar Kulkarni, Hao Chen, Yan Xin,  Charlie: <strong>Root</strong> cause analysis (<strong>RCA</strong>) is a critical task in telecom network operations, but diagnosing performance degradations in modern 5G and emerging 6G networks remains challenging due to complex cross-layer dependencies.</td>
-      </tr>
-      
-      <tr>
-        <td width="20" valign="top" style="padding:3px 0;font-size:11px;">&#x1F4C4;</td>
-        <td valign="top" style="padding:3px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#5f6a66;"><a href="https://arxiv.org/pdf/2609.02888v1" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">POSEIDON III: The Aligned Orbit of the Hot Neptune Around the Hot Star WASP-195</a> - Juan I. Espinoza-Retamal, Joshua N. Winn, Rafael Brahm, Luke B. Handley, Elise Koo: Stellar obliquities provide important clues as to the formation and migration histories of planetary systems, but measurements remain scarce for <strong>Neptune</strong>-mass planets, especially those orbiting hot stars (above the Kraft break).</td>
+        <td width="110" valign="top" style="padding:3px 0;font-family:Consolas,'Courier New',monospace;font-size:10px;color:#9aa19e;">Sun, Sep 6</td>
+        <td valign="top" style="padding:3px 0;font-family:Helvetica,Arial,sans-serif;font-size:11px;line-height:16px;color:#5f6a66;"><a href="https://www.google.com/search?q=Legacy%20Church%20Block%20Party%20NYC%20Sun%2C%20Sep%206" target="_blank" rel="noopener" style="color:#15181b;text-decoration:none;border-bottom:1px solid #d4e6da;">Legacy Church Block Party</a> · East 27th St & 5th Ave</td>
       </tr>
       
     </table>
@@ -503,7 +487,7 @@
   
   <tr><td class="px" style="padding:20px 26px 24px 26px;">
     <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="rule" style="border-top:1px solid #e6e2da;">
-      <tr><td style="padding-top:9px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;font-size:12px;line-height:18px;color:#9aa19e;">Generated from live fetchers. Full archive available on site output.</td></tr>
+      <tr><td style="padding-top:9px;font-family:Helvetica,Arial,sans-serif;font-size:10px;line-height:16px;color:#9aa19e;">Generated from live fetchers. Full archive available on site output.</td></tr>
     </table>
   </td></tr>
   
@@ -515,7 +499,7 @@
       <pubDate>Thu, 03 Sep 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Wednesday, September 02, 2026</title>
+      <title>The Midtown Briefing - Wednesday, September 02, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-09-02.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-09-02.html</guid>
       <description>Weather: 65°F - Fog/Mist | Illness level: WATCH | 5 top news stories | 3 YouTube videos | 8 AI security updates</description>
@@ -991,7 +975,7 @@
       <pubDate>Wed, 02 Sep 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Wednesday, August 26, 2026</title>
+      <title>The Midtown Briefing - Wednesday, August 26, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-26.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-26.html</guid>
       <description>Weather: 66°F - Clear | Illness level: WATCH | 1 major events this week | 5 top news stories | 5 YouTube videos | 7 AI security updates</description>
@@ -1484,7 +1468,7 @@
       <pubDate>Wed, 26 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Tuesday, August 25, 2026</title>
+      <title>The Midtown Briefing - Tuesday, August 25, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-25.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-25.html</guid>
       <description>Weather: 66°F - Clear | Illness level: WATCH | 1 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
@@ -1986,7 +1970,7 @@
       <pubDate>Tue, 25 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Monday, August 24, 2026</title>
+      <title>The Midtown Briefing - Monday, August 24, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-24.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-24.html</guid>
       <description>Weather: 67°F - Clear | Illness level: WATCH | 1 major events this week | 5 top news stories | 1 YouTube videos | 9 AI security updates</description>
@@ -2473,7 +2457,7 @@
       <pubDate>Mon, 24 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Sunday, August 23, 2026</title>
+      <title>The Midtown Briefing - Sunday, August 23, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-23.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-23.html</guid>
       <description>Weather: 68°F - Partly Cloudy | Illness level: WATCH | 5 major events this week | 5 top news stories | 7 AI security updates</description>
@@ -2962,7 +2946,7 @@
       <pubDate>Sun, 23 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Saturday, August 22, 2026</title>
+      <title>The Midtown Briefing - Saturday, August 22, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-22.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-22.html</guid>
       <description>Weather: 69°F - Clear | Illness level: WATCH | 5 major events this week | 5 top news stories | 4 YouTube videos | 7 AI security updates</description>
@@ -3485,7 +3469,7 @@
       <pubDate>Sat, 22 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Friday, August 21, 2026</title>
+      <title>The Midtown Briefing - Friday, August 21, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-21.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-21.html</guid>
       <description>Weather: 63°F -  | Illness level: WATCH | 5 major events this week | 5 top news stories | 4 YouTube videos | 4 AI security updates</description>
@@ -3987,7 +3971,7 @@
       <pubDate>Fri, 21 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Thursday, August 20, 2026</title>
+      <title>The Midtown Briefing - Thursday, August 20, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-20.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-20.html</guid>
       <description>Weather: 73°F - Clear | Illness level: WATCH | 5 major events this week | 5 top news stories | 3 YouTube videos | 6 AI security updates</description>
@@ -4498,7 +4482,7 @@
       <pubDate>Thu, 20 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Wednesday, August 19, 2026</title>
+      <title>The Midtown Briefing - Wednesday, August 19, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-19.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-19.html</guid>
       <description>Weather: 72°F - Cloudy | Illness level: WATCH | 5 major events this week | 5 top news stories | 5 YouTube videos | 8 AI security updates</description>
@@ -5033,7 +5017,7 @@
       <pubDate>Wed, 19 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Tuesday, August 18, 2026</title>
+      <title>The Midtown Briefing - Tuesday, August 18, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-18.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-18.html</guid>
       <description>Weather: 73°F - Cloudy | Illness level: WATCH | 2 major events this week | 5 top news stories | 4 YouTube videos | 8 AI security updates</description>
@@ -5542,7 +5526,7 @@
       <pubDate>Tue, 18 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Monday, August 17, 2026</title>
+      <title>The Midtown Briefing - Monday, August 17, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-17.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-17.html</guid>
       <description>Weather: 70°F - Light Rain and Fog/Mist | Illness level: WATCH | 2 major events this week | 5 top news stories | 1 YouTube videos | 9 AI security updates</description>
@@ -6043,7 +6027,7 @@
       <pubDate>Mon, 17 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Sunday, August 16, 2026</title>
+      <title>The Midtown Briefing - Sunday, August 16, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-16.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-16.html</guid>
       <description>Weather: 72°F - Mostly Cloudy | Illness level: WATCH | 5 major events this week | 5 top news stories | 8 AI security updates</description>
@@ -6546,7 +6530,7 @@
       <pubDate>Sun, 16 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Saturday, August 15, 2026</title>
+      <title>The Midtown Briefing - Saturday, August 15, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-15.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-15.html</guid>
       <description>Weather: 70°F - Clear | Illness level: WATCH | 5 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
@@ -7083,7 +7067,7 @@
       <pubDate>Sat, 15 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Tuesday, August 11, 2026</title>
+      <title>The Midtown Briefing - Tuesday, August 11, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-11.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-11.html</guid>
       <description>Weather: 82°F - Clear | Illness level: WATCH | 1 major events this week | 5 top news stories | 5 YouTube videos | 9 AI security updates</description>
@@ -7597,7 +7581,7 @@
       <pubDate>Tue, 11 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Monday, August 10, 2026</title>
+      <title>The Midtown Briefing - Monday, August 10, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-10.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-10.html</guid>
       <description>Weather: 84°F - Clear | Illness level: WATCH | 1 major events this week | 5 top news stories | 1 YouTube videos | 8 AI security updates</description>
@@ -8084,7 +8068,7 @@
       <pubDate>Mon, 10 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Sunday, August 09, 2026</title>
+      <title>The Midtown Briefing - Sunday, August 09, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-09.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-09.html</guid>
       <description>Weather: 87°F - Mostly Clear | Illness level: WATCH | 2 major events this week | 5 top news stories | 1 YouTube videos | 8 AI security updates</description>
@@ -8578,7 +8562,7 @@
       <pubDate>Sun, 09 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Saturday, August 08, 2026</title>
+      <title>The Midtown Briefing - Saturday, August 08, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-08.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-08.html</guid>
       <description>Weather: 84°F - Partly Cloudy | Illness level: WATCH | 4 major events this week | 5 top news stories | 2 YouTube videos | 8 AI security updates</description>
@@ -9070,7 +9054,7 @@
       <pubDate>Sat, 08 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Friday, August 07, 2026</title>
+      <title>The Midtown Briefing - Friday, August 07, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-07.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-07.html</guid>
       <description>Weather: 88°F - Mostly Cloudy | Illness level: WATCH | 2 major events this week | 5 top news stories | 5 YouTube videos | 8 AI security updates</description>
@@ -9563,7 +9547,7 @@
       <pubDate>Fri, 07 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Monday, August 03, 2026</title>
+      <title>The Midtown Briefing - Monday, August 03, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-03.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-03.html</guid>
       <description>Weather: 73°F - Rain and Fog/Mist | Illness level: WATCH | 4 major events this week | 5 top news stories | 1 YouTube videos | 6 AI security updates</description>
@@ -10036,7 +10020,7 @@
       <pubDate>Mon, 03 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Sunday, August 02, 2026</title>
+      <title>The Midtown Briefing - Sunday, August 02, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-08-02.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-08-02.html</guid>
       <description>Weather: 75°F - Clear | Illness level: WATCH | 5 major events this week | 5 top news stories | 6 AI security updates</description>
@@ -10508,7 +10492,7 @@
       <pubDate>Sun, 02 Aug 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Friday, July 31, 2026</title>
+      <title>The Midtown Briefing - Friday, July 31, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-31.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-31.html</guid>
       <description>Weather: 68°F - Clear | Illness level: WATCH | 5 major events this week | 5 top news stories | 2 YouTube videos | 6 AI security updates</description>
@@ -10965,7 +10949,7 @@
       <pubDate>Fri, 31 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Thursday, July 30, 2026</title>
+      <title>The Midtown Briefing - Thursday, July 30, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-30.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-30.html</guid>
       <description>Weather: 71°F - Mostly Cloudy | Illness level: LOW | 5 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
@@ -11515,7 +11499,7 @@
       <pubDate>Thu, 30 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Wednesday, July 29, 2026</title>
+      <title>The Midtown Briefing - Wednesday, July 29, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-29.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-29.html</guid>
       <description>Weather: 79°F - Mostly Cloudy | Illness level: LOW | 5 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
@@ -12073,7 +12057,7 @@
       <pubDate>Wed, 29 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Tuesday, July 28, 2026</title>
+      <title>The Midtown Briefing - Tuesday, July 28, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-28.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-28.html</guid>
       <description>Weather: 76°F - Clear | Illness level: LOW | 2 major events this week | 5 top news stories | 2 YouTube videos | 8 AI security updates</description>
@@ -12513,7 +12497,7 @@
       <pubDate>Tue, 28 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Monday, July 27, 2026</title>
+      <title>The Midtown Briefing - Monday, July 27, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-27.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-27.html</guid>
       <description>Weather: 80°F - Mostly Clear | Illness level: LOW | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
@@ -12986,7 +12970,7 @@
       <pubDate>Mon, 27 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Sunday, July 26, 2026</title>
+      <title>The Midtown Briefing - Sunday, July 26, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-26.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-26.html</guid>
       <description>Weather: 83°F - Clear | Illness level: LOW | 1 major events this week | 5 top news stories | 6 AI security updates</description>
@@ -13311,7 +13295,7 @@
       <pubDate>Sun, 26 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Saturday, July 25, 2026</title>
+      <title>The Midtown Briefing - Saturday, July 25, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-25.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-25.html</guid>
       <description>Weather: 80°F - Clear | Illness level: LOW | 2 major events this week | 5 top news stories | 3 YouTube videos | 9 AI security updates</description>
@@ -13809,7 +13793,7 @@
       <pubDate>Sat, 25 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Friday, July 24, 2026</title>
+      <title>The Midtown Briefing - Friday, July 24, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-24.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-24.html</guid>
       <description>Weather: 81°F - Clear | Illness level: LOW | 2 major events this week | 5 top news stories | 4 YouTube videos | 9 AI security updates</description>
@@ -14314,7 +14298,7 @@
       <pubDate>Fri, 24 Jul 2026 07:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>Daily Morning Briefing - Thursday, July 23, 2026</title>
+      <title>The Midtown Briefing - Thursday, July 23, 2026</title>
       <link>https://ek0212.github.io/daily-newsletter/posts/2026-07-23.html</link>
       <guid>https://ek0212.github.io/daily-newsletter/posts/2026-07-23.html</guid>
       <description>Weather: 79°F - Clear | Illness level: LOW | 1 major events this week | 5 top news stories | 5 YouTube videos | 9 AI security updates</description>

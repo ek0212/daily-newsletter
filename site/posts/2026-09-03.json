@@ -7,70 +7,62 @@
     "current_temp": 69,
     "unit": "F",
     "conditions": "Partly Cloudy",
-    "high": 85,
-    "low": 68,
+    "high": 86,
+    "low": 72,
     "feels_like": 69,
     "forecast": "A chance of rain showers before 11am, then a chance of showers and thunderstorms. Partly sunny, with a high near 86. Southwest wind around 9 mph. Chance of precipitation is 40%. New rainfall amounts between a quarter and half of an inch possible.",
     "hourly": [
       {
         "label": "7am",
         "hour": 7,
-        "temp": 70,
-        "feels_like": 74,
-        "conditions": "Cloudy",
-        "wind": "6 mph SW",
-        "humidity": "96%",
-        "precip_chance": "48%",
-        "source_count": 10
+        "temp": 71,
+        "feels_like": 71,
+        "conditions": "Chance Rain Showers",
+        "wind": "7 mph SW",
+        "humidity": "90%",
+        "precip_chance": "43%"
       },
       {
         "label": "9am",
         "hour": 9,
-        "temp": 72,
-        "feels_like": 77,
-        "conditions": "Cloudy",
-        "wind": "7 mph SW",
-        "humidity": "90%",
-        "precip_chance": "41%",
-        "source_count": 10
+        "temp": 74,
+        "feels_like": 74,
+        "conditions": "Slight Chance Rain Showers",
+        "wind": "9 mph SW",
+        "humidity": "87%",
+        "precip_chance": "19%"
       },
       {
         "label": "3pm",
         "hour": 15,
-        "temp": 83,
-        "feels_like": 89,
-        "conditions": "Partly Cloudy",
-        "wind": "7 mph W",
-        "humidity": "67%",
-        "precip_chance": "11%",
-        "source_count": 10
+        "temp": 84,
+        "feels_like": 91,
+        "conditions": "Slight Chance Showers And Thunderstorms",
+        "wind": "9 mph W",
+        "humidity": "72%",
+        "precip_chance": "18%"
       },
       {
         "label": "5pm",
         "hour": 17,
-        "temp": 84,
-        "feels_like": 90,
-        "conditions": "Cloudy",
-        "wind": "7 mph SW",
-        "humidity": "66%",
-        "precip_chance": "17%",
-        "source_count": 10
+        "temp": 85,
+        "feels_like": 93,
+        "conditions": "Chance Showers And Thunderstorms",
+        "wind": "8 mph SW",
+        "humidity": "70%",
+        "precip_chance": "33%"
       },
       {
         "label": "7pm",
         "hour": 19,
-        "temp": 80,
+        "temp": 82,
         "feels_like": 87,
-        "conditions": "Cloudy",
-        "wind": "5 mph SW",
-        "humidity": "76%",
-        "precip_chance": "26%",
-        "source_count": 10
+        "conditions": "Chance Showers And Thunderstorms",
+        "wind": "5 mph W",
+        "humidity": "74%",
+        "precip_chance": "33%"
       }
-    ],
-    "forecast_source": "Open-Meteo model consensus + National Weather Service",
-    "forecast_source_count": 11,
-    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+    ]
   },
   "health": {
     "status": "WATCH",
@@ -107,18 +99,6 @@
         "published": ""
       },
       {
-        "signal": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak Tha",
-        "current": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak That Ran Three Years and Four Months Food Poison Journal",
-        "comparison": "Wed, 26 Aug 2026 22:38:31 GMT",
-        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
-        "status": "WATCH",
-        "source": "Google News health watch",
-        "source_url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPYmxIdGIxSUZtdGYwUXZvdGoxNlJ3eUxVb014Tmt3WUptclpjQU5ZRmd2MlcwVzNwb1JHdFd4aG5mbWhKQnJKdUVDV1I4MEkzZXpTWjZaWjlKWGtwQUtFbjZSMkhnalRpUXJrc1ZKemVoWHA0MmxFXzdnREtna0N4VS1WeVFFR0dnWDFfVU1WbGM4UnJybjRlTXUwVEQ3SEZ5MmVmNGpHVDRoS0xSVXlFUTNxVWlFWWkya3NfVEpTMWRjOWxXVDYxb1RrTmwyWUxUZ2dRX2dnamRyUS1CelVENEIyWWYxcHBVU3FhMVBYVldPQUpqdFNVR0FwRFNzUnhkbXFPcTZ1YVU2eFA2YWxVVUZpUDhwdk9mYzNRYVdtZFdJZ3RaT1kydmN3?oc=5",
-        "title": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak That Ran Three Years and Four Months - Food Poison Journal",
-        "summary": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak That Ran Three Years and Four Months Food Poison Journal",
-        "published": "Wed, 26 Aug 2026 22:38:31 GMT"
-      },
-      {
         "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
         "current": "150 people, 16 people, 31 people",
         "comparison": "August 19, 2026",
@@ -143,15 +123,27 @@
         "published": "Mon, 31 Aug 2026 15:07:00 GMT"
       },
       {
-        "signal": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states - ABC7 New York",
-        "current": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states ABC7 New York",
+        "signal": "Is it safe to eat lettuce yet? What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuit",
+        "current": "What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits ABC7 New York",
+        "comparison": "Mon, 31 Aug 2026 12:22:12 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUGhuUzRwQ1RCZmRQdXJyOHp6VXF6QWRpdy1ObzIwME14MUVka1RiOFVYMzNOOGtTb2tEaUZ2N0M2cDVYMDAyMWtFYTltOXJsUlNwQVFZcDJXVkRXZ1BvamwzMXl0Q2xMSWJBOXhxLTJ3MEYzdjY3M0huRjZjS2tDclV1RFh4b2hfbmRsNWU0a1ZhQktldDRYQWdQODBxME5vNndyU1RVTlRDdUhhWkZJbjdDcE1GTl9zV3lIN01ZaDhLaHPSAcgBQVVfeXFMUHNlMld4dkpLMng1QktaaEJOZ3dKekt0MXBtbnV5V3RmSnFwN3VVMExoTVFKSEIxcG1RRzM3RE5YaGhHWkJ4c0RiVGhORnFhUEJORWZFOFlGQU5pdkpnel9wR2poeDExUHk1SV9tdlhMTDRHSHpPMTN1QnptVWJLUVF0ajVTOGNTWktwNTFoemhKUjcwTlVvQ1J1aDQ0dHdVNldKX3Q0NG9MT0N5QWtDWUhYMEMwelRKRHpaS2dseTZCczZFWWFpcXA?oc=5",
+        "title": "Is it safe to eat lettuce yet? What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits - ABC7 New York",
+        "summary": "What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits ABC7 New York",
+        "published": "Mon, 31 Aug 2026 12:22:12 GMT"
+      },
+      {
+        "signal": "Jalape\u00f1os linked to a U.S. sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor - Spectrum N",
+        "current": "sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor Spectrum News",
         "comparison": "Thu, 06 Aug 2026 07:00:00 GMT",
         "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
         "status": "WATCH",
         "source": "Google News health watch",
-        "source_url": "https://news.google.com/rss/articles/CBMizBBBVV95cUxPMlJKbjBFb0ZBdDU1dFEtRldub0FuV2RJcUxLZ3NvREZuLWRzWmUwSUozZ2tkM0xfeWk1QUJZTDFSQ21NLWhoU3Ata0Z4T1FLT052V0JoaG9sbHE2czJicDNZMm5LaHpLRmlCMHRubGpQY1F1dGtKbE44eDF6endrOWgxTjMwSDZCekFJWWxlQW4zVzdjcDVKTHlEaXMyNVpTQkxzTEx5aFVrb05FYUtLYzBDUE1OTkt3TlRrbzNoRGxOSGtyVExCRm1wOXBROXJvLUM5R001QTZuQloxY3RFem1hWEp0cGFfdk5MUDJqaW5SR2g1LUF3dnZkOVRmQWdDeGREZjRzMGlvdjZaQ3l2UnQ1TVE2bkRLTzZ3cHVkUGQ0X0hmU0lEdHVMUkRMZVNxM3pkd2RDbDZRd0FEWkF3b3NwTFN0N3c5R3J3WnFYWUloanR1eEVuNGRGbHBsX2Y4SS1zd1o1MWh3bFdyYlQ4TU1sVWhsdWJWM1RWblNZVHduelQzR1pEbkNIZ0ltVjBoVVFVWG1lQVN0enVQN0RoaWs3TDI3TXA1Qk9xZ0RiVms0ZGFla211Y0NSc1lhNWxFMWVQSkxNblRXQVJrd20yOGU4RUQwT0R4SWxkMXp3dm1mM1RCLS0xaUxUcnVqeUhMMWZvY2d1MThKdTdxLUFaOFB6LXUwT2RlUUZPcGFWYTZKeHdXY2RwcUdMUDFhQ2gtYzZWSk9HendVTlFGeXdXOHNEenBRQjlfTU5nMC1yWFpHVlc3STY4VldQQkkzWEtUcFdYZnBFd2pQOFpPSmNuMTNVa2xqc0syTzFJLUkzTERSRzIzSzBFQmt5VHdWQnU3UDNDVVVGS3M0UkRvc0FsZDE5TUZ4UWtWR256SlF0TTdEUkNOcktXVldpZ2g3Z3VEY1g5MUNrYnM0bmFaQnRoR1loenFyRkc5QkhSN1hNcEI3dVFfcnN3TUVxaXloMm1JcnNjRThDQXZwbzFteFYxQ2ZBaGJrN3FlYm81azJKRTk3bjZuWTdrSmFTc0tWTUhDNU9BTjZTV2hEMFhBYlUwelNXd01hemd2OXBPSnhYS2JOVEpDZDBucW9QRHlCSHFYbU1kR2VGbFY4Y3dCZzJwYnFQUkVLS0w4MHZFcDZRdEx2MDhFZ2UzTE5vMlRXSjZOcnZMTGFldnRhbkltY045NGFIeC1wUGxrYnhDTnhFOUtYNEFNVEFOMVg0eTFJSWxRV0RXYVlCbXoxZkZZVDJaVGVrMURMX25UakVScWstUkw3TGZIUXdNY3dKWjVwcDl6QnVVbFc4V2tONFpkNUxuRDVQWmlYdWx1UjNlbFdMYUVsUkVUaVo4U2p4RUozcERzZUtDbVQyclFSTEt1OHp1Zm0xa0h6eFZESWIycVlnNzNLZ1pYaFk3dFlpQTNDN3M0UWJaRnl1Zm9YZG4xLWotT2JvRmJkWDY4QVljajJfYXNrcl8tRDJERWF5aW9FajdWTnZXVWpQTnZCTWNBeFJHb2drYU81am5UdzFiYlg4RGpCRGlXZWZPdlF2TFFwTjltTGVkNG1qdzVmeThocFpoVTR3dWtyZnc4VXBEbV8weFdZanNnSlF3QS1zSzlaeC1RM2NNaVNMcENLbWl6ajJld3RqMGE3d0RnY1lhX0xLX3BwQk5WUzFSRnB2aGhqTW9PVXgydFhxT3p1d2FhMFJFYkQwWW1TRDBRZnVfalNXS1lxbk5RNVFtM2hYMEtSZVFON0VxLXFKOGloeW5LWjJQalhsV0xvMUI5VlZmdU5Ebk5SN0l2YUtsY1NlSG0wTmlEamJHdDJ1b0FFdXVrQUh6RWZ2RFQ2cGhSSnpvRDYwdC1QaTRrVzhaRlVvdEs0TFZrVDlkYlpFT1N4dEZ6SGtiWlJhcXYzLUVWTU5HcmYyMlYtaGZoNExsVmlpYlJ3QWRaY2hWcnpkM3V1RUJybGdEYlM5RE9tQks0ZGc5WkF3YlZ5OUNZZG5zdURhV0xINUxxZWhzSE5fdm9DQzluV1IxdGRBUXA0dzFRX0t5aFlTbG9MZE5sWEg1THBRSEVpTEkzVkowbGNrSlk0UV9WS1FGSmhQVjVvYURqRS1wRU9uWTdYUFZrb3ZjdEdoZFI1R0NDNGY1WC1IdnBUNkdPc2x3REtjNHdyVU81V1ZuMFQ4Y3Q4YktBRlJaQWtuUDBScE1XaFA1R1NZR3VrTWItRkJUS2JzTlFpUzZVYy1Vcmw5a01vR1V2c2pCOVRlbFQxcWxGZUl5dXI2V3N4cFZfSTNBekVxeEJNODFPbldJN3hQWGQwdGJNYnJudlduNTVPaEROb1lTN2pHZUZlN1FQU3N1WHJzNXkxUUxKMk5RcWlYWEt3VUw4SVF2SVBmU0ZibUxBUWNJYllWdkt0dVRwYUlZU1VxWnYxaEpfb2s5eVZrR3lDYS1Md3RyVTRPa1RrNFE2NkpNeHdTWm93d3BINGRSV05lMzg1bnZlbER1ZHljcHhxVlV5UXRmTHFwNEEtYkZjTTdXUXVtdHZGWXhlTnlNLWxEVWE5bjg1ZnVoZXdlZVVreUo2enM5ZHZMczlKQ0M5RVJTNlNvUHdwVUxGSF9Wb1dlRENXMmxrcGpnLWZxRTd5WVVNOTFITjQyeFJ0SHJkRFlsSkJYeXJIWExsX2cxUGFSb1JYUXpPWjZ3c3VNQ0dqTnJEMHhhNGFEMVFoS3VvMy1YRWkwV3ZYODNsalc5c09kVnpGQW5CZzdsdXlhRV83dmRHOGtaaTk0QmJKRWNnUHU0VXdid19wUXBvOW04QlhHbEw3cDh0OXlFV2JXbFpVMURsWkQtN2ZpbVQ?oc=5",
-        "title": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states - ABC7 New York",
-        "summary": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states ABC7 New York",
+        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT05VcDYtemNBYzhpbTA0UTFfV0dTU0ZQdG16MGRsSFgxYkZtZUlIRkRENFA4Zmt6U3gwVi1wVmVhR0JWQm5ZYXVyMzFpQzV0SktnaEZDekwwMVhWbnc4ZWhYRE1zZTI5aERyczRxT2VQOHg5YVZkbHlyaFFzME1vbnhacVA0QVg5UU9CRDNibmYzT3JCYmJFeHJ0bk94U0Q4cnh1YWFGSUhlTEUzWUE?oc=5",
+        "title": "Jalape\u00f1os linked to a U.S. sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor - Spectrum News",
+        "summary": "sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor Spectrum News",
         "published": "Thu, 06 Aug 2026 07:00:00 GMT"
       }
     ],
@@ -169,18 +161,6 @@
         "published": ""
       },
       {
-        "signal": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak Tha",
-        "current": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak That Ran Three Years and Four Months Food Poison Journal",
-        "comparison": "Wed, 26 Aug 2026 22:38:31 GMT",
-        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
-        "status": "WATCH",
-        "source": "Google News health watch",
-        "source_url": "https://news.google.com/rss/articles/CBMiqgJBVV95cUxPYmxIdGIxSUZtdGYwUXZvdGoxNlJ3eUxVb014Tmt3WUptclpjQU5ZRmd2MlcwVzNwb1JHdFd4aG5mbWhKQnJKdUVDV1I4MEkzZXpTWjZaWjlKWGtwQUtFbjZSMkhnalRpUXJrc1ZKemVoWHA0MmxFXzdnREtna0N4VS1WeVFFR0dnWDFfVU1WbGM4UnJybjRlTXUwVEQ3SEZ5MmVmNGpHVDRoS0xSVXlFUTNxVWlFWWkya3NfVEpTMWRjOWxXVDYxb1RrTmwyWUxUZ2dRX2dnamRyUS1CelVENEIyWWYxcHBVU3FhMVBYVldPQUpqdFNVR0FwRFNzUnhkbXFPcTZ1YVU2eFA2YWxVVUZpUDhwdk9mYzNRYVdtZFdJZ3RaT1kydmN3?oc=5",
-        "title": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak That Ran Three Years and Four Months - Food Poison Journal",
-        "summary": "Fifteen Sick, Fourteen Hospitalized, One Dead: CDC Closes the Clover Hill Dairy Reques\u00f3n Listeria Outbreak That Ran Three Years and Four Months Food Poison Journal",
-        "published": "Wed, 26 Aug 2026 22:38:31 GMT"
-      },
-      {
         "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
         "current": "150 people, 16 people, 31 people",
         "comparison": "August 19, 2026",
@@ -205,15 +185,27 @@
         "published": "Mon, 31 Aug 2026 15:07:00 GMT"
       },
       {
-        "signal": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states - ABC7 New York",
-        "current": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states ABC7 New York",
+        "signal": "Is it safe to eat lettuce yet? What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuit",
+        "current": "What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits ABC7 New York",
+        "comparison": "Mon, 31 Aug 2026 12:22:12 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNUGhuUzRwQ1RCZmRQdXJyOHp6VXF6QWRpdy1ObzIwME14MUVka1RiOFVYMzNOOGtTb2tEaUZ2N0M2cDVYMDAyMWtFYTltOXJsUlNwQVFZcDJXVkRXZ1BvamwzMXl0Q2xMSWJBOXhxLTJ3MEYzdjY3M0huRjZjS2tDclV1RFh4b2hfbmRsNWU0a1ZhQktldDRYQWdQODBxME5vNndyU1RVTlRDdUhhWkZJbjdDcE1GTl9zV3lIN01ZaDhLaHPSAcgBQVVfeXFMUHNlMld4dkpLMng1QktaaEJOZ3dKekt0MXBtbnV5V3RmSnFwN3VVMExoTVFKSEIxcG1RRzM3RE5YaGhHWkJ4c0RiVGhORnFhUEJORWZFOFlGQU5pdkpnel9wR2poeDExUHk1SV9tdlhMTDRHSHpPMTN1QnptVWJLUVF0ajVTOGNTWktwNTFoemhKUjcwTlVvQ1J1aDQ0dHdVNldKX3Q0NG9MT0N5QWtDWUhYMEMwelRKRHpaS2dseTZCczZFWWFpcXA?oc=5",
+        "title": "Is it safe to eat lettuce yet? What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits - ABC7 New York",
+        "summary": "What to know as USDA makes announcement on cyclosporiasis outbreak amid lawsuits ABC7 New York",
+        "published": "Mon, 31 Aug 2026 12:22:12 GMT"
+      },
+      {
+        "signal": "Jalape\u00f1os linked to a U.S. sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor - Spectrum N",
+        "current": "sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor Spectrum News",
         "comparison": "Thu, 06 Aug 2026 07:00:00 GMT",
         "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
         "status": "WATCH",
         "source": "Google News health watch",
-        "source_url": "https://news.google.com/rss/articles/CBMizBBBVV95cUxPMlJKbjBFb0ZBdDU1dFEtRldub0FuV2RJcUxLZ3NvREZuLWRzWmUwSUozZ2tkM0xfeWk1QUJZTDFSQ21NLWhoU3Ata0Z4T1FLT052V0JoaG9sbHE2czJicDNZMm5LaHpLRmlCMHRubGpQY1F1dGtKbE44eDF6endrOWgxTjMwSDZCekFJWWxlQW4zVzdjcDVKTHlEaXMyNVpTQkxzTEx5aFVrb05FYUtLYzBDUE1OTkt3TlRrbzNoRGxOSGtyVExCRm1wOXBROXJvLUM5R001QTZuQloxY3RFem1hWEp0cGFfdk5MUDJqaW5SR2g1LUF3dnZkOVRmQWdDeGREZjRzMGlvdjZaQ3l2UnQ1TVE2bkRLTzZ3cHVkUGQ0X0hmU0lEdHVMUkRMZVNxM3pkd2RDbDZRd0FEWkF3b3NwTFN0N3c5R3J3WnFYWUloanR1eEVuNGRGbHBsX2Y4SS1zd1o1MWh3bFdyYlQ4TU1sVWhsdWJWM1RWblNZVHduelQzR1pEbkNIZ0ltVjBoVVFVWG1lQVN0enVQN0RoaWs3TDI3TXA1Qk9xZ0RiVms0ZGFla211Y0NSc1lhNWxFMWVQSkxNblRXQVJrd20yOGU4RUQwT0R4SWxkMXp3dm1mM1RCLS0xaUxUcnVqeUhMMWZvY2d1MThKdTdxLUFaOFB6LXUwT2RlUUZPcGFWYTZKeHdXY2RwcUdMUDFhQ2gtYzZWSk9HendVTlFGeXdXOHNEenBRQjlfTU5nMC1yWFpHVlc3STY4VldQQkkzWEtUcFdYZnBFd2pQOFpPSmNuMTNVa2xqc0syTzFJLUkzTERSRzIzSzBFQmt5VHdWQnU3UDNDVVVGS3M0UkRvc0FsZDE5TUZ4UWtWR256SlF0TTdEUkNOcktXVldpZ2g3Z3VEY1g5MUNrYnM0bmFaQnRoR1loenFyRkc5QkhSN1hNcEI3dVFfcnN3TUVxaXloMm1JcnNjRThDQXZwbzFteFYxQ2ZBaGJrN3FlYm81azJKRTk3bjZuWTdrSmFTc0tWTUhDNU9BTjZTV2hEMFhBYlUwelNXd01hemd2OXBPSnhYS2JOVEpDZDBucW9QRHlCSHFYbU1kR2VGbFY4Y3dCZzJwYnFQUkVLS0w4MHZFcDZRdEx2MDhFZ2UzTE5vMlRXSjZOcnZMTGFldnRhbkltY045NGFIeC1wUGxrYnhDTnhFOUtYNEFNVEFOMVg0eTFJSWxRV0RXYVlCbXoxZkZZVDJaVGVrMURMX25UakVScWstUkw3TGZIUXdNY3dKWjVwcDl6QnVVbFc4V2tONFpkNUxuRDVQWmlYdWx1UjNlbFdMYUVsUkVUaVo4U2p4RUozcERzZUtDbVQyclFSTEt1OHp1Zm0xa0h6eFZESWIycVlnNzNLZ1pYaFk3dFlpQTNDN3M0UWJaRnl1Zm9YZG4xLWotT2JvRmJkWDY4QVljajJfYXNrcl8tRDJERWF5aW9FajdWTnZXVWpQTnZCTWNBeFJHb2drYU81am5UdzFiYlg4RGpCRGlXZWZPdlF2TFFwTjltTGVkNG1qdzVmeThocFpoVTR3dWtyZnc4VXBEbV8weFdZanNnSlF3QS1zSzlaeC1RM2NNaVNMcENLbWl6ajJld3RqMGE3d0RnY1lhX0xLX3BwQk5WUzFSRnB2aGhqTW9PVXgydFhxT3p1d2FhMFJFYkQwWW1TRDBRZnVfalNXS1lxbk5RNVFtM2hYMEtSZVFON0VxLXFKOGloeW5LWjJQalhsV0xvMUI5VlZmdU5Ebk5SN0l2YUtsY1NlSG0wTmlEamJHdDJ1b0FFdXVrQUh6RWZ2RFQ2cGhSSnpvRDYwdC1QaTRrVzhaRlVvdEs0TFZrVDlkYlpFT1N4dEZ6SGtiWlJhcXYzLUVWTU5HcmYyMlYtaGZoNExsVmlpYlJ3QWRaY2hWcnpkM3V1RUJybGdEYlM5RE9tQks0ZGc5WkF3YlZ5OUNZZG5zdURhV0xINUxxZWhzSE5fdm9DQzluV1IxdGRBUXA0dzFRX0t5aFlTbG9MZE5sWEg1THBRSEVpTEkzVkowbGNrSlk0UV9WS1FGSmhQVjVvYURqRS1wRU9uWTdYUFZrb3ZjdEdoZFI1R0NDNGY1WC1IdnBUNkdPc2x3REtjNHdyVU81V1ZuMFQ4Y3Q4YktBRlJaQWtuUDBScE1XaFA1R1NZR3VrTWItRkJUS2JzTlFpUzZVYy1Vcmw5a01vR1V2c2pCOVRlbFQxcWxGZUl5dXI2V3N4cFZfSTNBekVxeEJNODFPbldJN3hQWGQwdGJNYnJudlduNTVPaEROb1lTN2pHZUZlN1FQU3N1WHJzNXkxUUxKMk5RcWlYWEt3VUw4SVF2SVBmU0ZibUxBUWNJYllWdkt0dVRwYUlZU1VxWnYxaEpfb2s5eVZrR3lDYS1Md3RyVTRPa1RrNFE2NkpNeHdTWm93d3BINGRSV05lMzg1bnZlbER1ZHljcHhxVlV5UXRmTHFwNEEtYkZjTTdXUXVtdHZGWXhlTnlNLWxEVWE5bjg1ZnVoZXdlZVVreUo2enM5ZHZMczlKQ0M5RVJTNlNvUHdwVUxGSF9Wb1dlRENXMmxrcGpnLWZxRTd5WVVNOTFITjQyeFJ0SHJkRFlsSkJYeXJIWExsX2cxUGFSb1JYUXpPWjZ3c3VNQ0dqTnJEMHhhNGFEMVFoS3VvMy1YRWkwV3ZYODNsalc5c09kVnpGQW5CZzdsdXlhRV83dmRHOGtaaTk0QmJKRWNnUHU0VXdid19wUXBvOW04QlhHbEw3cDh0OXlFV2JXbFpVMURsWkQtN2ZpbVQ?oc=5",
-        "title": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states - ABC7 New York",
-        "summary": "Cyclosporiasis outbreak linked to shredded iceberg lettuce expands to 15 states ABC7 New York",
+        "source_url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNT05VcDYtemNBYzhpbTA0UTFfV0dTU0ZQdG16MGRsSFgxYkZtZUlIRkRENFA4Zmt6U3gwVi1wVmVhR0JWQm5ZYXVyMzFpQzV0SktnaEZDekwwMVhWbnc4ZWhYRE1zZTI5aERyczRxT2VQOHg5YVZkbHlyaFFzME1vbnhacVA0QVg5UU9CRDNibmYzT3JCYmJFeHJ0bk94U0Q4cnh1YWFGSUhlTEUzWUE?oc=5",
+        "title": "Jalape\u00f1os linked to a U.S. sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor - Spectrum News",
+        "summary": "sal\u00admo\u00adnella outbreak are tracked to a Mexican farm and a dis\u00adtributor Spectrum News",
         "published": "Thu, 06 Aug 2026 07:00:00 GMT"
       }
     ]
@@ -243,21 +235,21 @@
   ],
   "news": [
     {
+      "title": "Kyrgyzstan hosts pivotal SCO summit amid global geopolitical shifts",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/9/3/kyrgyzstan-hosts-pivotal-sco-summit-amid-global-geopolitical-shifts?traffic_source=rss",
+      "published": "Thu, 03 Sep 2026 10:45:16 +0000",
+      "raw_text": "Kyrgyzstan hosts pivotal SCO summit amid global geopolitical shifts\nKyrgyzstan balances ties with global powers while leveraging geography to secure economic and political opportunities.\nBishkek, Kyrgyzstan \u2013 It was a round table of some of the most influential men in the world. Representing Russia, China, India, Iran, Pakistan \u2013 and when they extended to the Shanghai Cooperation Organisation Plus \u2013 Turkiye, as well as the United Nations Secretary-General, Antonio Guterres. Gathered here in Kyrgyzstan were countries at the centre of some of the world\u2019s biggest geopolitical tensions.\nWhat brings them together is not necessarily agreement on everything. It is the space to pursue their interests outside a Western-led framework. Moscow sees that space as evidence of a changing world.\nRecommended Stories\nlist of 3 items\n- list 1 of 3EU or Eurasia: Why Putin sparred with Armenia\u2019s PM\n- list 2 of 3China\u2019s support for Iran shows its limits as US ramps up pressure on Tehran\n- list 3 of 3SCO slams attacks, sanctions on Iran: Key takeaways from Bishkek summit\n\u201cOver the 25 years since its inception, the Shanghai Cooperation Organisation has evolved into one of the independent and influential centres of the emerging multipolar world,\u201d Russian President Vladimir Putin told the summit.\nThe organisation, he said, had grown from six founding members in 2001 into what he described as the world\u2019s largest regional association.\nKyrgyzstan is a small, mountainous, landlocked country with Russia to the north and China next door. The calculation is more immediate: how do you balance between giants?\nAs Europe and the United States are increasingly looking towards Central Asia, Kyrgyzstan needs to balance relations with all of them.\nShairbek Dzhuraev, president of the Crossroads Central Asia think tank, said the timing of the summit is particularly important.\n\u201cThe members in the room are precisely heavyweights that are directly involved in key geopolitical conflicts of the day,\u201d he said.\nThat balancing act is not new. Since independence in 1991, Central Asian states have largely operated through what is known as a multi-vector foreign policy.\nBishkek \u2013 like other Central Asian nations \u2013 operates by keeping Russia close and building ties with China, while keeping open doors to Europe and maintaining healthy relations with Washington.\nFor Kyrgyzstan, it is less about choosing sides than keeping options open, underscored by its geography. Being landlocked means dependence on transport corridors and being mountainous makes infrastructure more difficult. Dependence on imported energy and external markets leaves the economy exposed to shocks beyond its borders.\n\u201cThe biggest weakness of Kyrgyzstan, geopolitically and geographically, is the dependence in terms of transport routes, in terms of energy, in terms of economic relationships\u201d, Dzhuraev puts it bluntly.\nSo diversification becomes more than an economic ambition. Kyrgyzstan, being one of the smaller members, cannot dictate the SCO\u2019s agenda. But it helped to shape the language.\nFor decades, Central Asia was viewed largely through the prism of the powers surrounding it. But the wars in the region and beyond have changed that \u2013 Russia is under sanctions, so is Iran, China is looking west, Europe is looking east. Suddenly the geography has acquired new value with highways, railways, pipelines, trade corridors, power networks and the periphery is becoming a strategically important passageway. Dzhuraev said: \u201cKyrgyzstan wanted the summit declaration to recognise that transformation, Central Asia\u2019s movement into the centre stage of international politics\u201d.\nThe Shanghai Cooperation Organisation is increasingly seen as a counterweight to US influence \u2014 a grouping through which China and Russia can advance a different vision of the global order. But the SCO is too diverse for a simple East-versus-West confrontation. That description comes with a qualification that the SCO is not a unified anti-American bloc.\nIts members have competing interests, different relationships with Washington and, in some cases, deep disagreements with one another. The question is not whether the SCO rejects the West, it is whether it can resist being defined entirely in opposition to it.\nIran brings that to the centre stage \u2013 where geopolitical theory meets a much more immediate crisis. Tehran and Washington have returned to confrontation after more than a month of relative calm. Iranian President Masoud Pezeshkian used the SCO summit to put the diplomatic question directly on the table.\n\u201cI state explicitly that if the United States returns to its commitments under the aforementioned memorandum of understanding, the Islamic Republic of Iran will immediately take reciprocal action,\u201d he said.\nThe Islamabad MoU signed in June collapsed, with Tehran and Washington blaming each other for violating its terms. Iran\u2019s Foreign Minister, Abbas Araghchi, also called on Washington to return to what its president signed under the MoU. \u201cIn that case, everything can be put back on the right track,\u201d he said.\nFor the SCO, however, Iran is not simply a diplomatic issue \u2013 it is an economic one. Washington has renewed sanctions on Tehran and expanded the threat of penalties for those doing business with Iran. For Central Asia, that matters, particularly for countries whose economies are deeply intertwined with Russia and increasingly connected to Chinese trade networks. Dzhuraev is sceptical whether countries such as Kyrgyzstan comply fully with sanctions, \u201cThe declaration will most likely not match the reality,\u201d he said. \u201cChina and other countries have already rejected what they describe as unilateral sanctions.\u201d\nThe reality is that sanctions can hurt, as they have hurt Iran and Russia. Not as intended for economic collapse, but they brought pain for the masses and put a spanner in their economies. But enforcement across a region built around cross-border trade is another matter. For Central Asian economies, complete compliance is difficult because the economic relationships are too dense, which is quite different from Western compliance. Both with Iran and Russia, transport and trade links have been growing steadily, so countries are unlikely to simply switch them off overnight.\nThat makes the SCO summit an important political moment.\nNot necessarily because its members can defeat the sanctions regime, but because they can collectively signal where they stand on unilateral pressure.\nWhen you speak to delegates from the global south, there is also a broader message: that the SCO is becoming a forum where countries that do not necessarily agree on everything can nevertheless agree on one principle: they want room to manoeuvre.\nPutin calls that the emergence of a multipolar world, Pezeshkian is using the forum to keep diplomacy with Washington alive on Iran\u2019s terms, China is defending its economic relationships, India is pursuing its own strategic interests, and Kyrgyzstan is trying to make sure none of these relationships closes the door to another.\nBut there is a second question confronting Kyrgyzstan \u2014 and it is not sitting around the summit table. How much of its rise belongs to Kyrgyzstan itself?\nAs transit trade has risen, the economy has been growing rapidly, wages have increased, construction has accelerated and exports have increased.\nThere is visible momentum in Bishkek, with new roads and buildings appearing to fill the empty spaces. Extraordinary circumstances have generated a lot, such as the war in Ukraine, which has altered regional trade and expanded Chinese investment. When trade routes shifted, money and demand moved across borders. The government is proud that much of the recent development has been undertaken without the external borrowing that characterised earlier periods. But buildings alone do not create a productive economy. External momentum can be a dangerous foundation for long-term growth, as Dzhuraev points out. \u201cProductivity is growing. Exports are rising. More goods are being produced domestically. But much of the momentum remains connected to external factors \u2014 particularly the Russia-Ukraine war and Chinese investment. One of the biggest drivers of poverty reduction has been rising salaries.\u201d\nThe harder question is what comes next? Where are the productive sectors that will sustain those incomes? Agriculture could be an obvious answer as Kyrgyzstan is an agricultural country. But glaciers are melting and climate change is having an impact. Plus, its long-term capacity to generate higher-value growth remains uncertain. That may ultimately be the more important story behind this summit. Not the speeches, the flags, nor the declaration.\nKyrgyzstan wants to convert geography into leverage and its vulnerabilities into options. But the wider questions remain, whether Central Asia can move from being the space between Russia, China, Iran and Europe to becoming a centre of its own? As well as whether today\u2019s economic growth can survive when the external forces driving it inevitably change?\nKyrgyzstan finds itself at the centre of a changing region that brings opportunity but also pressure. Between the giants, keeping every door open may be the most important strategy of all.",
+      "summary": "For the <strong>SCO</strong>, however, Iran is not simply a diplomatic issue \u2013 it is an economic one. But the wider questions remain, whether Central Asia can move from being the space between Russia, China, Iran and Europe to becoming a centre of its own?",
+      "emoji": "\ud83d\ude80"
+    },
+    {
       "title": "EU foreign ministers fail to break deadlock over Israel and Ukraine",
       "source": "Al Jazeera",
       "link": "https://www.aljazeera.com/news/2026/9/3/eu-foreign-ministers-fail-to-break-deadlock-over-israel-and-ukraine?traffic_source=rss",
       "published": "Thu, 03 Sep 2026 09:34:09 +0000",
       "raw_text": "EU foreign ministers fail to break deadlock over Israel and Ukraine\nEU foreign ministers met in Ireland but failed to agree on imposing trade sanctions on Israel or military support for Ukraine.\nWicklow, Ireland \u2013 \u201cWe have reached an impasse,\u201d said Ireland\u2019s Foreign Minister Helen McEntee at a gathering of European Union officials on Tuesday, summing up the bloc\u2019s increasingly fractured position on trade sanctions on Israel.\nIreland, which currently holds the European Council\u2019s presidency, and Spain pushed for EU-wide trade curbs on goods produced in illegal Israeli settlements in the occupied West Bank at the September 1-2 meeting in Wicklow amid escalating settler violence against Palestinians.\nFrance pressed for a stronger European response to Israeli rhetoric against Palestinians. \u201cCondemnations from Israeli officials have been a good start, but they are not enough,\u201d French Foreign Minister Jean-Noel Barrot told reporters, referring to Israel\u2019s National Security Minister Itamar Ben-Gvir\u2019s call for mass displacement in the Gaza Strip.\nBut several EU nations, including Germany and Hungary, opposed the move during the two-day informal gathering.\nThe Gymnich meeting, as the gathering is called, opened on Tuesday with renewed efforts by Dublin to revive discussions on sanctions against Israeli settlers in the occupied West Bank \u2013 a proposal that has largely stalled in recent months because of divisions among member states.\nThe EU is Israel\u2019s largest trading partner, with bilateral trade standing at more than $50bn.\nDeadlock over Israel\nKaja Kallas, the EU\u2019s foreign policy chief, acknowledged that the absence of unanimity had once again prevented the bloc from moving forward on measures against Israel, despite growing pressure from several governments for a stronger European response to illegal settlement expansion and settler violence in the occupied Palestinian territory.\nIreland has argued that the EU\u2019s credibility depends on applying international law consistently, regardless of the conflict under discussion. Dublin has also pointed to what it sees as a disparity between the bloc\u2019s willingness to impose sanctions and other measures in response to Russia\u2019s actions in Ukraine and its reluctance to take comparable action against Israel despite its ongoing genocide in Gaza and alarming rate of violence in the occupied Palestinian territory.\nThe disagreement is not simply over how member states view the Israel-Palestinian conflict, but over what practical steps the EU should take. Ireland and several other governments have pushed for stronger measures, including action against individuals involved in settler violence and restrictions on trade linked to illegal Israeli settlements, while other member states have been reluctant to support such proposals.\nDivisions over Ukraine\nUkraine dominated much of the first day\u2019s talks, with Kyiv continuing to call for greater European military support.\nRussia\u2019s full-scale invasion of Ukraine has entered its fifth year, with Moscow escalating drone and missile attacks against Ukrainian cities and infrastructure.\nKyiv again urged European governments to provide additional air defence systems after months of sustained Russian drone attacks.\nYet ministers again failed to bridge their differences.\nGreece and Spain maintained their opposition to using common EU funds to finance further purchases of air defence systems, leaving Ukraine without the additional missiles and interceptors it had hoped for from the meeting.\nOn the sidelines of the talks, Ukraine\u2019s Foreign Minister Andrii Sybiha appealed directly to European media, warning that delays in military support would come at a growing cost as Russia has intensified its aerial campaign. It did not seem to move the needle much.\nThe Ukraine debate also exposed another longstanding fault line within the bloc.\nWhile Poland, Sweden, Denmark and the Netherlands renewed calls to use frozen Russian sovereign assets to finance Ukraine\u2019s military effort, Belgium, which holds the largest share of those assets, again resisted the proposal, citing unresolved legal and financial concerns.\nBroader security challenges\nMeanwhile, ministers also turned their attention to the wider Middle East.\nThe US-Israel war on Iran, now in its seventh month, has left European governments with limited diplomatic leverage despite the conflict directly affecting the continent, including concerns over energy security for the upcoming winter months.\nThe future of Lebanon, which continued to be attacked by Israel, was also discussed, with ministers considering a possible EU mission to train the Lebanese army as the mandate of the United Nations Interim Force in Lebanon (UNIFIL) ends this year.\nElsewhere, on August 30, EU forces operating in the Mediterranean boarded a tanker suspected of being linked to Russia\u2019s so-called shadow fleet, as part of broader European efforts to enforce sanctions against Moscow and disrupt attempts to evade them.\nInternal strains persist\nAnd if the external crises were not enough, the ministers also had some internal fires to deal with.\nJust a day before the meeting, Italy renewed enhanced air and land checks on travellers arriving from Spain following a dispute linked to migration and border controls. Madrid responded by extending reciprocal measures.\nThe dispute followed an influx of migrants in Spain\u2019s North African enclave of Ceuta, after which Italy introduced additional checks on some travellers from Spain.\nSpanish Foreign Minister Jose Manuel Albares urged other member states to support Madrid\u2019s position on the border measures while criticising governments that, he said, had failed to support Spain during the Ceuta crisis.\nAt the end of the two-day meeting on Wednesday, ministers left having said more or less what they had said before.\n\u201cWe are a dog that barks but doesn\u2019t bite,\u201d Luxembourg\u2019s Deputy Prime Minister and Foreign Minister Xavier Bettel said at the meeting, expressing his frustration at the lack of support to sanction Israel.\nAfter the meeting, the bloc is more or less where it started \u2013 plenty of shared concern, but very little shared action. The unanimity rule remains the EU\u2019s Achilles heel \u2013 everyone has to agree, which means, in practice, almost nothing gets done.",
       "summary": "Dublin has also pointed to what it sees as a disparity between the bloc\u2019s willingness to impose sanctions and other measures in response to Russia\u2019s actions in <strong>Ukraine</strong> and its reluctance to take comparable action against <strong>Israel</strong> despite its ongoing genocide in Gaza and alarming rate of violence in the occupied Palestinian territory."
-    },
-    {
-      "title": "Egypt\u2019s Sisi welcomes China\u2019s President Xi in Grand Egyptian Museum tour",
-      "source": "Al Jazeera",
-      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/3/egypts-sisi-welcomes-chinas-president-xi-in-grand-egyptian-museum-tour?traffic_source=rss",
-      "published": "Thu, 03 Sep 2026 09:07:28 +0000",
-      "raw_text": "Egypt\u2019s Sisi welcomes China\u2019s President Xi in Grand Egyptian Museum tour\nNewsFeed\nEgypt\u2019s Sisi welcomes China\u2019s President Xi in Grand Egyptian Museum tour\nEgyptian President Abdel Fattah el-Sisi has given Chinese President Xi Jinping a tour of the Grand Egyptian Museum in Giza, as China\u2019s leader visits Egypt for the first time in a decade in a bid to strengthen ties.\nPublished On 3 Sep 2026",
-      "summary": "Read the full story at Al Jazeera.",
-      "emoji": "\ud83c\udfdb\ufe0f"
     },
     {
       "title": "OpenAI\u2019s Sam Altman tells G20 AI will be as essential as electricity",
@@ -348,6 +340,15 @@
   "ai_security_tldr": "This week's focus: agentic ai security.",
   "ai_security": [
     {
+      "title": "HiddenLayer Raises $100M to Expand AI Security Platform",
+      "source": "Ventureburn",
+      "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE8zTzlkWENMUDhNbFBHbHdoVEdqZ284b3BSTF9jZ3l3dlR3ZVB6NXZ1eUNCNlZHRDJnVVo2Y0s2QUFybFc3bklXNXYyNVEycGRQYkFYbTNRaFJ4eEJwbUZyQXRrR2h1ZGw4NUlXNdIBbEFVX3lxTE8zTzlkWENMUDhNbFBHbHdoVEdqZ284b3BSTF9jZ3l3dlR3ZVB6NXZ1eUNCNlZHRDJnVVo2Y0s2QUFybFc3bklXNXYyNVEycGRQYkFYbTNRaFJ4eEJwbUZyQXRrR2h1ZGw4NUlXNQ?oc=5",
+      "published": "Wed, 02 Sep 2026 21:42:56 GMT",
+      "summary": "Research Strengthens <strong>HiddenLayer</strong>\u2019s AI Defence <strong>Platform</strong> <strong>HiddenLayer</strong>\u2019s security capabilities are supported by an extensive AI research programme. More News: Elucid <strong>Raises</strong> <strong>$55M</strong> to <strong>Expand</strong> AI Cardiovascular Diagnostics <strong>HiddenLayer</strong> Targets International AI <strong>Security</strong> Growth The new funding will support <strong>HiddenLayer</strong>\u2019s next phase of commercial expansion.",
+      "raw_text": "HiddenLayer Raises $100M Series B Funding\nAI security company HiddenLayer has raised $100 million in a Series B financing round. Delta-v Capital led the round. Ten Eleven Ventures, Morgan Stanley, M12 and Booz Allen Ventures also participated. The funding arrives after a major acceleration in demand for AI security.\nHiddenLayer\u2019s annual recurring revenue grew more than tenfold over the past year. The company also added more than 50 new platform customers. These customers span financial services, healthcare, government, technology and defence.\nHiddenLayer supports organisations deploying generative, predictive and agentic AI systems. Its platform protects AI applications across their entire lifecycle. The company will use the fresh capital to expand its enterprise platform. It will also strengthen sales and distribution capabilities.\nAgentic AI Creates New Security Challenges\nHiddenLayer is expanding its platform as enterprises adopt autonomous AI agents. These systems can make decisions and interact with external tools. The company\u2019s Agentic Runtime Security provides visibility into AI behaviour during production. It can identify manipulation, tool misuse and unauthorised actions.\nHiddenLayer has also introduced Agent Harness Security. The solution extends runtime protection to autonomous coding agents. These agents can write, review and ship software with limited human oversight. That creates additional security risks for enterprise development teams.\nHiddenLayer believes traditional security tools cannot address these risks alone. AI systems can face threats through poisoned models, malicious inputs and prompt injection. The company therefore focuses on security built specifically for AI environments. Its platform combines discovery, attack simulation, supply chain protection and runtime security.\nResearch Strengthens HiddenLayer\u2019s AI Defence Platform\n \nHiddenLayer\u2019s security capabilities are supported by an extensive AI research programme. Its researchers hold 39 granted patents and 65 pending patents. These patents cover adversarial detection, model protection and AI threat analysis.\nThe team also developed a comprehensive Adversarial Prompt Engineering Taxonomy. Its researchers continue identifying vulnerabilities across the AI ecosystem. The research spans foundation models, AI tools and supporting infrastructure.\nHiddenLayer also contributes to industry initiatives focused on AI security and governance. Its researchers work with organisations including CISA, MITRE, NIST, OWASP and OpenSSF. These collaborations help improve AI red teaming and security practices.\nMore News: Elucid Raises $55M to Expand AI Cardiovascular Diagnostics\nHiddenLayer Targets International AI Security Growth\nThe new funding will support HiddenLayer\u2019s next phase of commercial expansion. The company recently appointed Mike Gesnaldo as chief revenue officer. It also plans to strengthen channel partnerships and expand its international operations.\nEurope and the wider EMEA region are key targets for expansion. HiddenLayer expects enterprise demand for AI security to continue increasing. The company already serves customers across several highly regulated industries.\nThese include banking, insurance, pharmaceuticals and government. One leading frontier model provider also uses HiddenLayer\u2019s technology. The provider reportedly serves more than 700 million weekly users.\nHiddenLayer\u2019s customer growth reflects rising enterprise concerns around AI security. Its platform aims to help organisations deploy AI with greater confidence. The company expects autonomous systems to become increasingly important across business operations. That shift could create further demand for specialised AI security tools.\nHiddenLayer will now focus on scaling its platform alongside the rapid development of artificial intelligence. HiddenLayer says its research helps enterprises respond to emerging threats. The company is increasingly focused on protecting AI systems during real-world deployment.\nTo stay updated on crypto venture capital funding and market trends, visit our venture capital news section for more insights.",
+      "type": "news"
+    },
+    {
       "title": "OpenLeash Adds a Human Check to Risky AI Agent Actions",
       "source": "SecurityWeek",
       "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTlk4VWhVc0hPaHRKdHQyaEo2TGVlN1NQMU5NRW9PcnBqRGh0YVFFbE95dHo5Qk5acFM0bzN3NFQwQzNQaG1XZUdabk9oSWVXa1NERGdnZVJiNFJYN2pIX2NxdUFKeDBKd2hNa1hZLTdhWXNtTjMtQjBvUWdaVmlrcXFpR3hvVHpDRU1yR9IBkgFBVV95cUxNekRUc2VDVkFfUzFKOFF0WUxaM05xeEo2ZUY1Q1FBLVcyc0xWVjM1MlJDSW9xSGRWZHJiV1JSOVVNVS1GbFJrLXZhc0hpa1d2UTkyZ2hCTnZPOThWTGItUm9ZV1IybkYyTlRZQTZpQ3poeFl5eG50eXJ5dlNkN0FkRlBhX2t5aDl2WGEzd0xmOUlqQQ?oc=5",
@@ -357,26 +358,8 @@
       "type": "news"
     },
     {
-      "title": "HiddenLayer Raises $100M Series B to Expand AI Agent Security Platform",
-      "source": "Unite.AI",
-      "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUEVHaV9IUXQ1RHZlaElzUENWeC0wMGJSNXBuXzNxTDJhY21DSGRMSWx4Q182czFUUmVpUWw3VGhlaUI0d0gzMTdEMXlpc3Q1TVBuSDBqRnJQZWU5M2xnMFp5TkZwREFmbzh4REJ4dF9BcUpHX3FBSl80bDVQRnQ0VTAyUVdlWlN3LURyeFBqbE5jd04xUmc?oc=5",
-      "published": "Wed, 02 Sep 2026 15:20:02 GMT",
-      "summary": "The second is <strong>Agent</strong> Harness <strong>Security</strong>, a new solution that extends the platform\u2019s Runtime <strong>Security</strong> module to secure AI coding agents at runtime as enterprises adopt autonomous coding agents that write, review, and ship code with less human oversight than traditional development tools.",
-      "raw_text": "Funding\nHiddenLayer Raises $100M Series B to Expand AI Agent Security Platform\nAdd Unite.AI to your preferred sources on Google\nHiddenLayer, an Austin-based AI security company, announced on September 2, 2026 that it has raised a $100 million Series B round led by Delta-v Capital, with participation from Ten Eleven Ventures, Morgan Stanley, M12, Microsoft\u2019s Venture Fund, and Booz Allen Ventures. The company said it will use the funding to deepen its enterprise platform, including its Agentic Runtime Security capabilities and a new product for securing AI coding agents.\nThe company\u2019s announcement describes HiddenLayer as a provider of security for agentic, generative, and predictive AI applications. The raise arrives as enterprises work to secure an expanding AI attack surface that now stretches from foundation models to autonomous agents writing and shipping code on their behalf, according to the company.\nPlatform Focus and New Coding-Agent Product\nHiddenLayer said the new capital will support three areas where it sees enterprises as most exposed. The first is Agentic Runtime Security, which gives organizations visibility into how their AI agents behave in production and is designed to flag and stop manipulation, tool misuse, and unauthorized actions as they happen. The second is Agent Harness Security, a new solution that extends the platform\u2019s Runtime Security module to secure AI coding agents at runtime as enterprises adopt autonomous coding agents that write, review, and ship code with less human oversight than traditional development tools.\n\u201cWe set out to pioneer trusted, secure use of AI for enterprises, long before most organizations saw the urgency we do today. This funding lets us keep growing the purpose-built team and platform required to meet that moment as agentic AI becomes core to how enterprises operate,\u201d said Chris Sestito, CEO and Co-Founder of HiddenLayer.\nThe company framed its approach around runtime protection, arguing that AI cannot be made trustworthy through design-time principles alone and that trust has to be continuously tested and proven at runtime.\nReported Growth Over the Past Year\nHiddenLayer reported that its annual recurring revenue grew more than 10x over the past year and that it signed more than 50 new platform customers. Those customers span securities brokerage, banking, insurance, accounting, government, technology, IT services, pharmaceuticals, airlines, and the US defense and intelligence communities, the company said. Internationally, it reported adding one of the world\u2019s largest pharmaceutical companies along with several premium automotive brands and food and beverage providers. HiddenLayer also said it supports a leading frontier model provider in securing more than 700 million weekly users.\nInvestors pointed to that traction in statements accompanying the round. Dan Williams, Partner at Delta-v Capital, said traditional security tools were built for code and infrastructure rather than for models that can be poisoned, hijacked, or manipulated through their own inputs, and said HiddenLayer built its platform to secure AI across its full lifecycle. Mark Hatfield, Co-Founder and Partner at Ten Eleven Ventures, said HiddenLayer\u2019s growth across defense, financial services, and sensitive AI deployments shows security teams have concluded that AI needs its own category of protection. Zheng Wang, Head of Strategic Investments at Morgan Stanley, described HiddenLayer\u2019s end-to-end platform for compliant AI adoption as an important contribution to addressing the market need.\nResearch Team and Patent Portfolio\nThe company credited its growth in part to its research organization. HiddenLayer said its researchers hold 39 granted patents and 65 pending patents covering adversarial detection, model protection, and AI threat analysis. The team developed what the company describes as the first comprehensive Adversarial Prompt Engineering (APE) Taxonomy and reports identifying dozens of vulnerabilities across the AI ecosystem, from foundation models to supporting tools and infrastructure. Its researchers also contribute to community work with CISA/JCDC, MITRE, NIST, OWASP, and OpenSSF, focused on red teaming methodologies and AI governance discussions.\nThe funding announcement cites findings from HiddenLayer\u2019s 2026 AI Threat Landscape Report, which states that 96% of organizations consider AI critical to their core operations while nearly a third cannot say with certainty whether they have experienced an AI-related breach.\nLeadership and Expansion Plans\nHiddenLayer said it recently named Mike Gesnaldo as Chief Revenue Officer and plans further hires as it deepens channel relationships, keeps pace with enterprise customer demand, and expands into international markets, beginning with Europe and the wider EMEA region. Gesnaldo\u2019s appointment was announced on August 12, 2026; he previously built go-to-market organizations at CrowdStrike, Tanium, and Dazz.\nThe Series B follows a period of product expansion for the company. On August 3, 2026, HiddenLayer launched Agent Harness Security as a stand-alone solution that integrates into each coding agent\u2019s native hook surface to detect and stop prompt injection, sensitive data exposure, and unsafe command execution as they occur. In March 2026, the company introduced agentic capabilities for its AI Runtime Security module, adding runtime visibility, investigation and threat hunting, and detection and enforcement for autonomous AI workloads. HiddenLayer was also selected in August 2026 to support the US Department of Energy\u2019s $60 million Prometheus initiative, contributing AI security expertise to a national-laboratory collaboration applying AI to nuclear energy challenges.",
-      "type": "news"
-    },
-    {
-      "title": "NVIDIA, CrowdStrike Unveil Agentic AI Security Tool",
-      "source": "techbuzz.ai",
-      "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObm5pOW9VSThQbE9LTGpMRzhZNFFRdHEzTUE2dFFYUm03aVpBNzlqOEZyaUVLUWxpTWFZTHRzTnJKM3V0dFZXd2VfeXZUU3BpTjhfcm9HOTVYWmZ1clB5TUJFSVBPQTkzX2kwVVVleWZGcG5tdDJXUnN3SU9YVTJheUpGSFQzSWJSMjg0?oc=5",
-      "published": "Tue, 01 Sep 2026 22:02:00 GMT",
-      "summary": "Security update, click for details.",
-      "raw_text": "Jensen Huang took the stage at CrowdStrike's Fal.Con 2026 in Las Vegas Tuesday with a blunt warning: cyberattacks have gone automated, and defenses need to catch up fast. Standing alongside CrowdStrike CEO George Kurtz, the Nvidia founder unveiled CrowdStrike SafeMind, a new agentic cybersecurity system built on Nvidia's AI stack, marking one of the most significant enterprise security bets either company has made this year.\n\"We're at an inflection point in cybersecurity,\" Nvidia founder and CEO Jensen Huang told a packed room at CrowdStrike's Fal.Con 2026 conference in Las Vegas on Tuesday. Attacks are automated now, he said, so defense has to be too. That single line set the tone for what turned into one of the bigger product reveals of the week: CrowdStrike SafeMind, a new agentic cybersecurity system built jointly by CrowdStrike's threat research arm and powered by Nvidia's AI computing stack.\nHuang didn't come alone. He shared the stage with CrowdStrike founder and CEO George Kurtz, and the optics mattered. This wasn't a quiet integration announcement buried in a press release, it was a full keynote moment in front of a sold-out crowd, the kind of joint appearance that signals both companies are treating this partnership as core strategy rather than a side project.\nThe timing tracks with where the industry has been heading for a while now. Security teams have spent the last two years watching attackers use large language models to write more convincing phishing lures, automate reconnaissance, and probe for vulnerabilities faster than human analysts can patch them. That's pushed vendors across the board, from Microsoft to Palo Alto Networks, to pitch their own flavors of AI-assisted defense. What makes the Nvidia-CrowdStrike pairing notable is the depth of the technical relationship: Nvidia isn't just licensing a chatbot layer, it's supplying the underlying AI infrastructure that SafeMind runs on, according to details shared at the event.\n[Image: Jensen Huang and George Kurtz on stage at Fal.Con 2026]\nAgentic AI, the idea of AI systems that can take autonomous action rather than just generate suggestions, has become the industry's favorite buzzword this year, and cybersecurity is shaping up to be one of the first real-world proving grounds. Instead of an analyst manually triaging thousands of alerts a day, an agentic system built into SafeMind could, in theory, investigate an incident, correlate it with historical threat data, and take containment action, all before a human even opens the ticket. CrowdStrike has been building toward this for a while through its Falcon platform, but pairing it with Nvidia's compute muscle changes the scale of what's possible.\n[Video: Fal.Con 2026 keynote highlights]\nFor Nvidia, this is also a strategic play beyond selling GPUs to hyperscalers. The company has been steadily pushing into vertical AI applications, and enterprise security is a natural fit given how much sensitive data flows through it and how much budget CISOs are willing to spend to stay ahead of automated threats. Landing a marquee partner like CrowdStrike, which protects a huge share of the Fortune 500, gives Nvidia a visible showcase for its AI stack outside the usual cloud and consumer AI conversations.\nFor CrowdStrike, the move is as much about competitive positioning as technology. Rivals have been racing to bake AI into their platforms, and a joint launch with Nvidia, timed for maximum visibility at CrowdStrike's own flagship conference, sends a clear signal to customers and competitors alike that the company intends to lead the agentic security category rather than follow it.\nWhat's less clear right now is how SafeMind actually performs in production environments, what it costs, and how fast enterprises will trust an AI agent to take autonomous action inside their networks. Security teams tend to be conservative about automation for good reason: a false positive that shuts down critical infrastructure can be as damaging as the attack it was meant to stop. Nvidia and CrowdStrike will need to answer those questions in the coming months as SafeMind moves from keynote demo to actual deployments.\nStill, the announcement fits a broader pattern playing out across the AI industry this year, where infrastructure giants are pairing up with domain specialists to push agentic systems into high-stakes, real-world use cases. Cybersecurity, given the sheer volume and speed of automated attacks, is arguably one of the clearest cases for it. Whether SafeMind becomes the standard other vendors chase, or just another entrant in a crowded field of AI security claims, will depend on what happens after the applause at Fal.Con dies down.\nThe SafeMind launch is a bet that the next phase of cybersecurity won't be won by faster human analysts but by AI agents that can act on their own, and both Nvidia and CrowdStrike are staking real reputational capital on making that bet pay off. For enterprise security teams already drowning in alerts, the promise of autonomous triage and response is appealing, but the real test starts now, once the keynote lights go down and customers start asking how much they trust an AI agent with the keys to their network.",
-      "type": "news"
-    },
-    {
       "title": "Broadcom AgentMinder Debuts Alongside vDefend, Avi, and TrueSource Upgrades for Agentic AI Security",
-      "source": "StorageReview.com",
+      "source": "storagereview.com",
       "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQeGtfd2dFZV8zb0JlLVZRMzNLV0E0TkNKZU1LUnFQOGF2UENiakx1a19VVU5jZnZhWUFHeVBwRDVfYjhnRmZRRnRIZGRQLVNTMlVZN1V0UVVWTWZCWE9JYlQ4d3hyTnB5YkxGY3JtaFF1QnNlaGJjaS11VnItYjZzR0xYODN5WmNfNGlIM2xNU0xHaFRYTF94WjQ4OXk3QkhHSVpmeE4xQmNUUkQwdmNRbVlUN3NRVmR5eUtKSFNwOU14dVdlM2tmN0N3Nk92aUN3ZFHSAdIBQVVfeXFMUHhrX3dnRWVfM29CZS1WUTMzS1dBNE5DSmVNS1JxUDhhdlBDYmpMdWtfVVVOY2Z2YVlBR3lQcEQ1X2I4Z0ZmUUZ0SGRkUC1TUzJVWTdVdFFVVk1mQlhPSWJUOHd4ck5weWJMRmNybWhRdUJzZWhiY2ktdVZyLWI2c0dMWDgzeVpjXzRpSDNsTVNMR2hUWExfeFo0ODl5N0JIR0laZnhOMUJjVFJEMHZjUW1ZVDdzUVZkeXlLSkhTcDlNeHVXZTNrZjdDdzZPdmlDd2RR?oc=5",
       "published": "Mon, 31 Aug 2026 15:03:07 GMT",
       "summary": "<strong>TrueSource</strong> establishes a curation model based on clean-room builds, upstream maintainer collaboration, automated repository scanning, and human code review: Spring Enterprise provides commercial support and hardened releases from the core maintainers of the Spring framework.",
@@ -454,6 +437,30 @@
       "raw_text": "Stellar obliquities provide important clues as to the formation and migration histories of planetary systems, but measurements remain scarce for Neptune-mass planets, especially those orbiting hot stars (above the Kraft break). Here we present observations of the Rossiter-McLaughlin effect in the hot-star/hot-Neptune system WASP-195 ($T_{\\rm eff}=6470\\pm100$ K, $v\\sin{i_\\star}=10.5\\pm1.1$ km s$^{-1}$) obtained with the Keck Planet Finder and NEID spectrographs. A joint analysis of these observations, archival photometry, and archival radial velocities yields a sky-projected stellar obliquity of $\u03bb=-10\\pm7^\\circ$, consistent with spin-orbit alignment. This makes WASP-195 one of the few hot-star/hot-Neptune systems with a measured obliquity. Archival radial velocities from SOPHIE exclude Jupiter-mass planets within approximately 3 au at $5\u03c3$ confidence. The aligned and nearly circular orbit is naturally consistent with a history of disk-driven migration, although coplanar high-eccentricity migration or Roche-lobe overflow cannot be ruled out. We also investigate why so few Neptunes around hot stars have measured obliquities. Their scarcity likely reflects a combination of the lower intrinsic occurrence of short-period Neptunes around hot stars and the difficulty of confirming planet candidates in this regime, where rapid stellar rotation broadens spectral lines and hampers conventional radial-velocity confirmation. Rapid rotation also increases the detectability of the Rossiter-McLaughlin effect, a feature that could help to widen the planet confirmation bottleneck while expanding the obliquity census of small planets around hot stars.",
       "summary": "Stellar obliquities provide important clues as to the formation and migration histories of planetary systems, but measurements remain scarce for <strong>Neptune</strong>-mass planets, especially those orbiting hot stars (above the Kraft break).",
       "type": "paper"
+    },
+    {
+      "title": "FoldingAgent: Inferring Parametric Origami Procedures from Demonstration Videos",
+      "authors": [
+        "Maya Moriya",
+        "Sigal Raab",
+        "Yael Vinker",
+        "Tali Dekel"
+      ],
+      "abstract": "We present FoldingAgent, an agentic framework for inferring explicit parametric folding programs directly from origami demonstration videos. Our framework leverages the reasoning power of a pre-trained Vision-Language Model (VLM) equipped with a suite of specialized tools that enable the agent to simulate geometric transitions, verify physical plausibility, retrieve and compare visual content, and evaluate its own predictions. To translate visual content into folding programs, we define a parametric space that consists of the paper's geometry and a set of parametric folding actions. Unlike models that predict static crease patterns, our agent operates sequentially and possesses the ability to re-plan its actions, effectively mitigating the compounding errors inherent in multi-step folding. Our approach takes a step toward closing the gap between human origami knowledge, which is primarily shared through unstructured visual demonstrations, and computational methods, which typically rely on structured, parametric representations such as a crease pattern or an executable parametric plan. We evaluate our approach on PurelandFold, a newly curated benchmark of diverse Pureland origami videos with ground-truth geometry and action labels. Our results demonstrate that by combining VLM reasoning with a set of specialized tools and physical simulation, we can successfully transform unstructured visual demonstrations into executable, physically plausible folding procedures.",
+      "link": "https://huggingface.co/papers/2609.00377",
+      "published": "2026-08-31",
+      "arxiv_id": "2609.00377",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "Tel-Aviv University",
+        "Tel Aviv University",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "We present FoldingAgent, an agentic framework for inferring explicit parametric folding programs directly from origami demonstration videos. Our framework leverages the reasoning power of a pre-trained Vision-Language Model (VLM) equipped with a suite of specialized tools that enable the agent to simulate geometric transitions, verify physical plausibility, retrieve and compare visual content, and evaluate its own predictions. To translate visual content into folding programs, we define a parametric space that consists of the paper's geometry and a set of parametric folding actions. Unlike models that predict static crease patterns, our agent operates sequentially and possesses the ability to re-plan its actions, effectively mitigating the compounding errors inherent in multi-step folding. Our approach takes a step toward closing the gap between human origami knowledge, which is primarily shared through unstructured visual demonstrations, and computational methods, which typically rely on structured, parametric representations such as a crease pattern or an executable parametric plan. We evaluate our approach on PurelandFold, a newly curated benchmark of diverse Pureland origami videos with ground-truth geometry and action labels. Our results demonstrate that by combining VLM reasoning with a set of specialized tools and physical simulation, we can successfully transform unstructured visual demonstrations into executable, physically plausible folding procedures.",
+      "summary": "To translate visual content into folding programs, we define a parametric space that consists of the paper's geometry and a set of parametric folding actions.",
+      "type": "paper"
     }
   ],
   "issue_dashboard": {
@@ -464,8 +471,8 @@
       {
         "emoji": "&#x1F324;&#xFE0F;",
         "label": "Weather",
-        "value": "85\u00b0F",
-        "detail": "48% rain"
+        "value": "86\u00b0F",
+        "detail": "43% rain"
       },
       {
         "emoji": "&#x1F3E5;",
@@ -476,13 +483,13 @@
       {
         "emoji": "&#x26A0;&#xFE0F;",
         "label": "Top risk",
-        "value": "Low",
-        "detail": "Normal watch"
+        "value": "Heat",
+        "detail": "Hydrate"
       },
       {
         "emoji": "&#x1F512;",
         "label": "AI sec",
-        "value": "3 papers",
+        "value": "4 papers",
         "detail": "Sep 2"
       },
       {
