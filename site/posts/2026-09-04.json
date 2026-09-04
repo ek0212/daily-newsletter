@@ -1,0 +1,530 @@
+{
+  "date": "Friday, September 04, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 73,
+    "unit": "F",
+    "conditions": "Mostly Cloudy",
+    "high": 84,
+    "low": 72,
+    "feels_like": 73,
+    "forecast": "A slight chance of showers and thunderstorms before 8am. Mostly sunny, with a high near 84. Northwest wind 5 to 9 mph. Chance of precipitation is 20%. New rainfall amounts less than a tenth of an inch possible.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 73,
+        "feels_like": 78,
+        "conditions": "Clear",
+        "wind": "5 mph W",
+        "humidity": "90%",
+        "precip_chance": "22%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 76,
+        "feels_like": 80,
+        "conditions": "Clear",
+        "wind": "8 mph NW",
+        "humidity": "81%",
+        "precip_chance": "9%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 84,
+        "feels_like": 86,
+        "conditions": "Clear",
+        "wind": "10 mph NW",
+        "humidity": "46%",
+        "precip_chance": "7%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 83,
+        "feels_like": 82,
+        "conditions": "Clear",
+        "wind": "10 mph NW",
+        "humidity": "45%",
+        "precip_chance": "8%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 80,
+        "feels_like": 80,
+        "conditions": "Clear",
+        "wind": "7 mph NW",
+        "humidity": "52%",
+        "precip_chance": "5%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 2108,
+    "vs_average_pct": -43.2,
+    "week_ending": "2026-08-29",
+    "breakdown": {
+      "flu": 318,
+      "covid": 1639,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "2,108 combined flu/COVID/RSV cases",
+        "comparison": "43% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "current": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "comparison": "Mon, 31 Aug 2026 15:07:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTnlrYU9lVjFwNDg1XzBoU2dEbHd5LWdVbkh0VUF0dVF3RGxwU2pkR1ltM05LQjF4a2RrczlfNldzODFCY1lEWFJHY0pqbG5VYkhuNWFudUVObW9OUWlab1pPcW11eXZkUFpYV1huMGNsdWFBZVJBb3lRdnJCTFdiLWNYa2RqN0dFV1BiREFZSjd0VDFYVnFsYWlVS2R4b0RXWkY0VWcyTFdlM0ppa3g2X0VPM1RsSXJKeHZWTDBTV19SamZDeHMxR3d0ZFc3RFFR?oc=5",
+        "title": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "published": "Mon, 31 Aug 2026 15:07:00 GMT"
+      },
+      {
+        "signal": "Cheese sold in NY linked to Listeria outbreak: FDA - PIX11",
+        "current": "Cheese sold in NY linked to Listeria outbreak: FDA PIX11",
+        "comparison": "Thu, 06 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWWlqbEQwSWhRbW1wdEtPV0Y4MFVHQV9BLUN2eExBS29SYkNiUzlKeXQxS0QwWXZpREhRRk5GelN5SlNvQXNGakNETXFyMkJTX3BJNjNMQ043eDViMy03TUpINHNqMl9tOS1acllDRzkzMEZvNkVjMFhPajdEbTFvSVNvTkZhMUd4VVQ5aTF1LVNGcklCZFEw0gGcAUFVX3lxTE9tODJSVWRqaGxvYW9MME9pZFdBU3lWLUNsNEF6VWFIcVlSTVZyeEZ4SmRrend5ZzZyYjR6X0dvUWVCemhXS1hZTk1vaThQal9QR0VvTW9jeWljTVlWdUVuQVhQdmNJRkpyRXBkc2xYM2ZTeXNnaWhwZHJPOUEwVU15Qlk3NGNNdWNUbmZOUmtOSnc5eVk4RUhwSGZnTQ?oc=5",
+        "title": "Cheese sold in NY linked to Listeria outbreak: FDA - PIX11",
+        "summary": "Cheese sold in NY linked to Listeria outbreak: FDA PIX11",
+        "published": "Thu, 06 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "American Regent, Inc. Issues Voluntary Nationwide Recall of Three Lots of Epinephrine Injection, USP 30 mg/ 30",
+        "current": "is conducting a nationwide voluntary recall of three lots of Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vials to the consumer level.",
+        "comparison": "Thu, 03 Sep 2026 21:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766368",
+        "title": "American Regent, Inc. Issues Voluntary Nationwide Recall of Three Lots of Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) Due to the Presence of Particulate Matter and Lack of Assurance of Sterility",
+        "summary": "is conducting a nationwide voluntary recall of three lots of Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vials to the consumer level.",
+        "published": "Thu, 03 Sep 2026 21:30:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "current": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "comparison": "Mon, 31 Aug 2026 15:07:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNTnlrYU9lVjFwNDg1XzBoU2dEbHd5LWdVbkh0VUF0dVF3RGxwU2pkR1ltM05LQjF4a2RrczlfNldzODFCY1lEWFJHY0pqbG5VYkhuNWFudUVObW9OUWlab1pPcW11eXZkUFpYV1huMGNsdWFBZVJBb3lRdnJCTFdiLWNYa2RqN0dFV1BiREFZSjd0VDFYVnFsYWlVS2R4b0RXWkY0VWcyTFdlM0ppa3g2X0VPM1RsSXJKeHZWTDBTV19SamZDeHMxR3d0ZFc3RFFR?oc=5",
+        "title": "Outbreak Investigation of Shiga Toxin-producing E. coli & Salmonella: Sprouts (August 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Shiga Toxin-producing E.",
+        "published": "Mon, 31 Aug 2026 15:07:00 GMT"
+      },
+      {
+        "signal": "Cheese sold in NY linked to Listeria outbreak: FDA - PIX11",
+        "current": "Cheese sold in NY linked to Listeria outbreak: FDA PIX11",
+        "comparison": "Thu, 06 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOWWlqbEQwSWhRbW1wdEtPV0Y4MFVHQV9BLUN2eExBS29SYkNiUzlKeXQxS0QwWXZpREhRRk5GelN5SlNvQXNGakNETXFyMkJTX3BJNjNMQ043eDViMy03TUpINHNqMl9tOS1acllDRzkzMEZvNkVjMFhPajdEbTFvSVNvTkZhMUd4VVQ5aTF1LVNGcklCZFEw0gGcAUFVX3lxTE9tODJSVWRqaGxvYW9MME9pZFdBU3lWLUNsNEF6VWFIcVlSTVZyeEZ4SmRrend5ZzZyYjR6X0dvUWVCemhXS1hZTk1vaThQal9QR0VvTW9jeWljTVlWdUVuQVhQdmNJRkpyRXBkc2xYM2ZTeXNnaWhwZHJPOUEwVU15Qlk3NGNNdWNUbmZOUmtOSnc5eVk4RUhwSGZnTQ?oc=5",
+        "title": "Cheese sold in NY linked to Listeria outbreak: FDA - PIX11",
+        "summary": "Cheese sold in NY linked to Listeria outbreak: FDA PIX11",
+        "published": "Thu, 06 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "American Regent, Inc. Issues Voluntary Nationwide Recall of Three Lots of Epinephrine Injection, USP 30 mg/ 30",
+        "current": "is conducting a nationwide voluntary recall of three lots of Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vials to the consumer level.",
+        "comparison": "Thu, 03 Sep 2026 21:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766368",
+        "title": "American Regent, Inc. Issues Voluntary Nationwide Recall of Three Lots of Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) Due to the Presence of Particulate Matter and Lack of Assurance of Sterility",
+        "summary": "is conducting a nationwide voluntary recall of three lots of Epinephrine Injection, USP 30 mg/ 30 mL (1 mg/mL) multi dose vials to the consumer level.",
+        "published": "Thu, 03 Sep 2026 21:30:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "EARTH AWARENESS FAIR AT HERALD SQUARE",
+      "date": "Sat, Sep 5",
+      "borough": "Manhattan",
+      "location": "6th Ave & West 34th St",
+      "event_type": "Street Festival"
+    },
+    {
+      "name": "THE 41ST ANNUAL BRAZILIAN DAY FESTIVAL",
+      "date": "Sun, Sep 6",
+      "borough": "Manhattan",
+      "location": "Ave Of The Americas & West 42nd St",
+      "event_type": "Street Festival"
+    },
+    {
+      "name": "Legacy Church Block Party",
+      "date": "Sun, Sep 6",
+      "borough": "Manhattan",
+      "location": "East 27th St & 5th Ave",
+      "event_type": "Street Event"
+    }
+  ],
+  "news": [
+    {
+      "title": "Argentina\u2019s Milei threatens sanctions as he refocuses on Falklands",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/9/4/argentinas-milei-threatens-sanctions-as-he-refocuses-on-falklands?traffic_source=rss",
+      "published": "Fri, 04 Sep 2026 10:17:47 +0000",
+      "raw_text": "Argentina\u2019s Milei threatens sanctions as he refocuses on Falklands\nArgentina\u2019s president accused of political machinations as he eyes shifting US stance on Las Malvinas.\nArgentine President Javier Milei has threatened sanctions against companies drilling for oil near the Falkland Islands.\nIn a televised address on Thursday, Milei said he would seek approval of urgent legislation to toughen penalties for companies operating near the islands without approval from Buenos Aires. Argentina claims sovereignty over the South Atlantic archipelago, which it calls Las Malvinas,\nRecommended Stories\nlist of 2 items\n- list 1 of 2Argentina\u2019s Milei threatens sanctions over Falklands oil drilling\n- list 2 of 2\u2018Falklands are Argentinian\u2019: Celebrations over England win revive old wounds\nMilei\u2019s hardened stance is viewed as a bid to revive support for his libertarian presidency, with the Falklands issue one of the few that cuts across political lines.\nThe sanctions would target the Sea Lion project, a deep-sea oil field about 140 miles (220 kilometres) north of the islands being developed by the UK\u2019s Rockhopper Exploration and Israel\u2019s Navitas Petroleum.\nMilei said the sanctions would extend beyond the two firms to suppliers, shareholders and directors and that companies involved could be barred from operating in Argentina altogether.\nArgentine war veterans and environmental lawyers have already filed a lawsuit seeking to halt the project, which Milei said violates a United Nations resolution urging Argentina and the UK to avoid unilateral action around the islands.\nBritain\u2019s Defence Secretary, Wes Streeting, said on Friday that Milei\u2019s statement \u201ctells us more about domestic politics in Argentina than it does about the Falkland Islands\u201d.\n\u201cThe Falklands are British because Falkland Islanders choose to be British,\u201d he added. \u201cOur commitment to the Falklands is absolute and unshakeable.\u201d\nLondon frequently refers to a 2013 referendum in which the roughly 4,000 islanders voted overwhelmingly to remain British in response to questions over sovereignty.\nRockhopper said in a statement that it does not expect the latest development to have a \u201cmaterial effect\u201d on the Sea Lion project. The company hopes to start drilling this year, with production by 2028.\nMilei\u2019s revival of the dispute is seen as a bid to overturn domestic criticism of his relations with United States President Donald Trump, which some have called subservient.\nHowever, the Argentine president hopes to show that the relationship has the potential to reap rewards, with Trump having hinted that Washington could alter its neutral stance on the Falklands to turn it in Argentina\u2019s favour.\nTrump recently declined to say whether the US would back the UK in a future Falklands conflict, criticising Britain instead for not doing more to support the US-led bombing campaign against Iran.\nBritain and Argentina fought the 1982 war over the islands that killed more than 900 people from both sides. The conflict still shapes Argentina\u2019s national identity and remains one of the few issues that unites its otherwise divided political class.\nMilei has faced accusations from opposition MPs that he is exploiting the dispute for political gain as his approval ratings slump to 34 percent.\nAl Jazeera\u2019s correspondent in Buenos Aires, Teresa Bo, said the timing owes as much to domestic politics as to Washington.\n\u201cMilei\u2019s approval ratings have been falling as Argentines feel the impact of his harsh austerity plan,\u201d she said.\n\u201cAnd the Malvinas are one of the few issues capable of uniting Argentines across the political spectrum.\u201d",
+      "summary": "ereignty over the South Atlantic archipelago, which it calls Las Malvinas, <strong>Milei</strong>\u2019s hardened stance is viewed as a bid to revive support for his libertarian presidency, with the <strong>Falklands</strong> issue one of the few that cuts across political lines."
+    },
+    {
+      "title": "Trump already tried to hurt Iran with sanctions once - and it didn't work",
+      "source": "NPR",
+      "link": "https://www.npr.org/2026/09/04/nx-s1-5945582/trump-already-tried-to-hurt-iran-with-sanctions-once-and-it-didnt-work",
+      "published": "Fri, 04 Sep 2026 04:06:02 -0400",
+      "raw_text": "Trump already tried to hurt Iran with sanctions once - and it didn't workPresident Trump is again hoping to use economic pressure to force Iran to the negotiating table.\nPresident Trump is again hoping to use economic pressure to force Iran to the negotiating table.\nNPR does not offer or accept money for coverage or interviews.\nAnyone who makes such an offer or request is not an NPR employee and does not represent NPR.",
+      "summary": "<strong>Trump</strong> already tried to hurt <strong>Iran</strong> with sanctions once - and it didn't workPresident <strong>Trump</strong> is again hoping to use economic pressure to force <strong>Iran</strong> to the negotiating table. President <strong>Trump</strong> is again hoping to use economic pressure to force <strong>Iran</strong> to the negotiating table."
+    },
+    {
+      "title": "\u2018We've told them he cannot come\u2019: Republicans grapple with how to handle Trump on the trail",
+      "source": "Politico",
+      "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdV93eEs4TUw4T2h1SnZWdUlXM3ZaeXUxbnBmTUZHVFc4Q2JYY2x0cFFoTjdLMW1aeDhMNU0zd0tldm1meERxN196R0QxeDU3aktSSE91cUt0R2hSZ3hIMlpsQjdIQWNSTlVsRHFLdDI1a0hwYTZjWjlyUFNxLXRBWDdNNFdtMHJ6bDltalZn?oc=5",
+      "published": "Fri, 04 Sep 2026 08:45:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Politico."
+    },
+    {
+      "title": "Deadly downtown Minneapolis shooting started as a custody exchange \u2014 here's what else we know",
+      "source": "5 EYEWITNESS NEWS",
+      "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNODhSMDg3UmN4b2stLW8xV2RBR2RiM2FJVU5BRzdlcDAyLTRvdWVqdDc0ZHkxZHk4RGZvbnFCSGJqcEJrVUhyNFBuZ1JoTjhzVHpRV2pSVEJIaHU1cTJfRFNZa05Cd2pibW1HN0syLVlmYmVzZmtleVdjTlpZdmVZQkc3WEtDUGtyZGFTSzRUejJ1SVRDamhhRzNqTkducGVfYnJrNGJkNmZUWnVvcmtUQXZmY0RKSXM0MVU2ZnRBSlR3dzRkNmc?oc=5",
+      "published": "Fri, 04 Sep 2026 03:08:54 GMT",
+      "raw_text": "Deadly downtown Minneapolis shooting started as a custody exchange \u2014 here\u2019s what else we know\nThe deadly downtown Minneapolis shooting that ended with three people dead and six people hurt Wednesday started as a custody exchange, the Minnesota Bureau of Criminal Apprehension (BCA) says.\nInvestigators currently believe that the shooter, 35-year-old Carlton Johnson II, died in an exchange of gunfire with police at Shoreline Plaza, formerly known as Loring Towers.\nHere\u2019s what else we know so far about the deadly incident. Download the KSTP app below for additional updates as we confirm more details.\nTimeline\nThe BCA says Johnson was outside of Shoreline Plaza, located just off Nicollet Avenue and East Grant Street, for a custody exchange with his child and the child\u2019s mother at around 4:30 p.m. Wednesday.\nDuring that exchange, Johnson apparently shot the child\u2019s mother, then went inside the apartment building and shot two employees \u2014 a woman, who was seriously hurt, and a man, who suffered less serious injuries, according to the BCA. The child ran away to safety.\nFrom there, the BCA says Johnson went up to the building\u2019s ninth floor, where he rented an apartment and lived alone. On that floor, he shot two residents.\nSuperintendent Evans urged the community to address what he feels is a growing problem causing too much devastation.\n\u201cThe role that domestic violence continues to play in mass casualty incidents and other situations where people are shot and killed continues to be a problem that we need to continue to encounter and figure out as a society,\u201d Evans said. \u201cWe have multiple people shot here in a situation where domestic violence led up to this point.\u201d\nRELATED: Suspect in deadly downtown Minneapolis shooting was evicted for threatening other residents with gun\nInvestigators are still working to determine why Johnson shot who he did and if the victims were targeted. However, 5 INVESTIGATES learned that Johnson was challenging an eviction order from Loring Towers.\nMPD Response\nVideos from the area show Minneapolis police responding in full force, with SWAT and several squad cars responding within minutes of the first reports of a shooting. Officers from multiple other agencies and cities also responded.\nMinneapolis Interim Police Chief Bill Peterson said police records show at least 157 officers were assigned to the shooting.\nThe first officers entered the apartment building at around 4:39 p.m., according to the Minneapolis Police Department, and saw multiple victims on the ground in addition to hearing gunfire from the upper levels of the building.\nRELATED: \u2018Like a blink of an eye\u2019: Witnesses, officials react to deadly downtown Minneapolis shooting\nMinneapolis Mayor Jacob Frey said police had a police squad en route to Shoreline Plaza 44 seconds after the first 911 call, and officers entered the building 1 minute and 42 seconds after that first call.\nAs officers followed the sound of gunfire to upper floors, visibility from a haze became limited, and two officers were shot while another was injured. The BCA says it is still investigating what caused that haze, although it may have been from damage to something. Frey later suggested it may have been from an exploded fire extinguisher.\nVictim IDs\nThe BCA says the two residents shot by Johnson on the ninth floor of the apartment building were 63-year-old Dale Henry Spry and 61-year-old Muse Abdi Afrah. Both men died, the BCA says, one at a hospital and the other at the scene.\nThe mother of Johnson\u2019s child and the two wounded building employees weren\u2019t identified and are recovering from their injuries. No specifics regarding their conditions have been shared at this time.\nRELATED: BCA identifies civilians killed, officers involved in Minneapolis shooting at Shoreline Plaza\nThe two MPD officers injured by gunfire were identified as Joseph Michnowski, a five-year veteran of MPD, and Yahye Ahmed, a nearly two-year MPD veteran. A third officer was hurt unrelated to the shooting and isn\u2019t being identified at this time.\nAhmed was released from the hospital on Thursday, Frey says. Peterson said the third officer was released Wednesday night after being treated for a glass cut related to breaking a squad window. Michnowski remained hospitalized Thursday afternoon.\nThe BCA says Liban Mohamed Ibrahim, who has been a Minneapolis police officer for two years, discharged his firearm during the incident, as did Ahmed. Investigators are still determining whether any other officers fired their weapons. Ibrahim seems to be one of the MPD officers who shared their accounts of the Annunciation Catholic Church shooting ahead of the one-year anniversary last month.\nAdditional Notes\n- The BCA says surveillance cameras at Shoreline Plaza caught the entire incident. Investigators are currently reviewing that video.\n- Carlton used a handgun during the shooting, although investigators haven\u2019t yet confirmed if it was modified in any way.\n- Police and the BCA say Carlton had a valid permit to carry a gun.\n- Hennepin County Attorney Mary Moriarty confirmed that police responded to a past call involving Johnson on June 25 that prosecutors flagged for a possible Extreme Risk Protection Order that would\u2019ve forced him to surrender his weapons. Ultimately, prosecutors found insufficient evidence for that or any charges related to the June 25 incident.\nIf you or someone you know is experiencing abuse, several resources are available to offer help. For immediate help, contact:\n- The National Domestic Violence Hotline at 800-799-7233.\n- Minnesota Day One at 866-223-1111.\n- The Women\u2019s Advocates crisis line at 651-227-8284.\nMore than 12 million people just in the U.S. are affected by domestic violence every year, according to the National Domestic Violence Hotline.\nThe organizations listed above can help connect victims to resources like safe shelter, advocacy, legal help and support groups.\nThe National Domestic Violence Hotline also offers tips for identifying abuse and supporting victims of abuse. CLICK HERE to see those.\nOther organizations that can help include:\n- Violence Free Minnesota at 651-646-6177 or 800-289-6177.\n- STANDPOINT(formerly the Battered Women\u2019s Legal Advocacy Project) at 612-343-9842.\n- Mending the Sacred Hoop at 888-305-1650.\n- Minnesota Coalition Against Sexual Assault at 612-209-9993.\nMinnesota also has a list of many other resources for victims of crimes that can be found HERE.",
+      "summary": "The first officers entered the apartment building at around 4:39 p.m., according to the <strong>Minneapolis</strong> Police Department, and saw multiple victims on the ground in addition to hearing gunfire from the upper levels of the building.",
+      "emoji": "\u2696\ufe0f"
+    },
+    {
+      "title": "Europe targeted by spiralling campaign of sabotage and Russia is the chief suspect",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE52bS1aVFc1ektQekdnZHU5Y0dBTkI4RnRUZFhTSWJ1WnZpd1U5dWNaMmppbWVfWmVkeDNFWjVwaUNIMW90Mng0bFhzQWNtNHYxN3g5bVNEekhsUQ?oc=5",
+      "published": "Fri, 04 Sep 2026 10:00:18 GMT",
+      "raw_text": "Europe targeted by spiralling campaign of sabotage and Russia is the chief suspect\nAs summer temperatures in Europe smashed records this summer and many politicians shifted to holiday mode, Russia remained focused on its war.\nNot only did its military attacks across Ukraine intensify last month, becoming ever more deadly for civilians, Russia also appears to have escalated its sabotage campaign across Europe.\nThis time, military and defence sector sites were the prime target.\nA full month after drones packed with explosives were found at Leipzig's airport, used by Ukraine to transport military goods, Germany's interior minister has declared that \"Russia is responsible\".\nRussia's President Vladimir Putin is demanding proof, as always, and his officials call the accusation \"absurd\".\nBut the drones were just a dramatic start. August then brought a series of suspicious fires at defence facilities from Italy to Estonia.\nSome of the affected countries have already blamed Russia; others are still investigating and some fires may eventually be ruled accidental, exactly as such attacks are designed to seem.\nPoland's interior minister is clear.\n\"There are many, many signals that Russia is changing its strategy and intensifying its activities, including terrorist and sabotage activities,\" Marcin Kierwi\u0144ski said, warning people to be on their guard.\nAugust campaign across Europe\n4 August Germany: The first drone at Leipzig airport is discovered.\n10 August Bulgaria: A major fire breaks out at a factory of the defence firm EMCO, with initial reports that a truck ignited during a fuel delivery.\n13 August Italy: A fire at KNDS Ammo Italy outside Rome triggers a large explosion.\nThe local prosecutor is looking into possible outside interference, La Repubblica newspaper reports. Publicly, his office will only confirm that a case has been opened for negligent disaster against \"unknown persons\".\n15 August Estonia: The Milrem Robotics factory in Tallinn, which the Kyiv Post says supplies drones to Ukraine, goes up in flames. Two suspects are arrested.\nEstonian Prime Minister Kristen Michal says the possibility of Russian sabotage is being \"taking seriously\" by investigators.\n25 August Slovakia: Police announce they have averted an arson attack on a Ukrainian-owned drone manufacturer and seized a \"large amount of incendiary mixture\". The firm itself blames Russia and police arrest three suspects who they say were \"following orders\". Slovakia is Russia's close ally in Europe.\n30 August Poland: A country which is heavily targeted for sabotage reports two more fires.\nOne is in Lublin at a company which produces helicopter components. Prime Minister Donald Tusk said arson \"cannot be ruled out\".\nAn attack on the drone producer, WB Group, is clearer cut. A masked man is caught on CCTV throwing incendiary devices. Tusk calls it a \"continuation of Russia's escalatory activities\".\nThe pattern has continued into September with two Bulgarians arrested in Munich, Germany, for suspected arson after throwing incendiary devices from a car at defence firm Rhode & Schwartz.\nWhy is this happening now?\nAttacks on military and defence targets are not new, although previous acts of sabotage linked to Russia include more puzzling targets - such as an Ikea store and a Polish paint store.\nThe novelty now is the concentration of cases.\n\"The intensity of military sites being attacked we've seen over the past couple of weeks is unusual,\" Daniela Richterova of the Department of War Studies at King's College says.\nShe links the spike to developments in Russia's invasion of Ukraine.\n\"We've basically seen Ukraine take the war to Russia and strike deep inside Russian territory\u2026They [Moscow] are under pressure, they have to do something.\"\nWhilst some sabotage is staged to sow chaos or fear, Richterova believes the Kremlin's aim right now is \"coercive signalling\": pressuring countries to stop supporting Kyiv by raising the stakes.\nAfter a slow start, Germany is Ukraine's biggest supplier of military aid.\nThere are other theories.\nTo some, Russia is less concerned about \"turning off the taps\" of supplies to Ukraine and more about testing Nato for weaknesses.\n\"Russia is probing the boundaries of what's acceptable and collecting information on the results. They find out what works, and what's vulnerable,\" argues Keir Giles from the Chatham House think tank.\nHe sees the sabotage campaign as preparation for the \"next phase\", as he puts it, of Russia's aggression in Europe.\n\"They're assessing the willingness of the victim country to actually do something about it.\"\nThe International Institute for Strategic Studies (IISS), which tracks sabotage cases, points to a previous surge in 2024 when Ukraine's allies began allowing it to use Western-supplied weapons deeper inside Russia.\n2024 was the year of the parcel bomb plot, when Russia was accused of sending packages containing liquid explosive to the UK and Poland.\nOne ignited shortly before it was loaded on to a DHL cargo plane. It is thought this was a test run for something significantly bigger.\n\"That was a marked high in terms of their willingness to inflict mass casualties,\" Giles adds.\nIt was a step so serious, the White House contacted the Kremlin to tell it to stop. Russia had probed and found the limit.\nBut the attacks have continued. German media on Friday quoted a federal police report that lists more than 165 suspected sabotage cases nationwide this year, though they don't say who is responsible.\nWho are the suspected saboteurs?\nReports from Germany suggest the men who loaded and launched the drones at Leipzig's airport were Russian, and at least one may have entered the country specially for this job.\nThat would be unusual.\nThe vast majority of sabotage attacks in Europe have been carried out by Russian proxies: its so-called \"gig economy saboteurs\".\nThey are usually Russian-speakers from former Soviet states, recruited online and driven by the cash, not political conviction.\nIn one case the BBC reported from Poland, the saboteurs-for-hire had previously fought for Ukraine as volunteers.\nThe \"handlers\" are generally thought to remain in Russia, co-ordinating operations online.\nThe IISS likened the proxies they used to kamikaze drones: cheap and easy to launch in large numbers, but disposable.\nThe amateurs can be sloppy or reckless, though. In the parcel plot, one man failed to find a pick-up point and the whole mission had to be aborted.\nSo if Moscow did send professionals for the Leipzig drone launch, it suggests it wanted precision - and success.\nIn fact, the devices appear to have malfunctioned.\nNato faced with Soviet-style campaign\nRussia's sabotage operations seem to come from the Cold War playbook. Daniela Richterova's research shows very similar targets on Soviet sabotage lists, and agents-saboteurs were used in much the same way.\nThe idea, she says, was to have small, deniable attacks in peace-time that would escalate in times of war.\n\"I think we are still in the grey zone between the two, but the kind of attacks we've seen in the past weeks shrink that zone,\" she says. \"And I think that increases the risk of what happens next.\"\nAs Nato scrambles to respond, questions like how many small, individual attacks add up to a sustained Russian assault - and demand action - remain unanswered.\nPerhaps riskier than all is the potential for escalation by accident.\nWhat if the exploding parcel had gone off mid-air and caused a crash? What if the Leipzig drone had brought down a plane?\n\"I think it could result in a big attack,\" Richterova says. \"Then Nato, in this heightened security environment, would not be able to ignore that, and have to react.\"",
+      "summary": "August campaign across <strong>Europe</strong> 4 August Germany: The first drone at Leipzig airport is discovered. The idea, she says, was to have small, deniable attacks in peace-time that would escalate in times of war.",
+      "emoji": "\u2708\ufe0f"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "This Week in Startups",
+      "title": "Becki DeGraw on spinouts, IP licensing & clean exits | Wilson Sonsini Startup Legal Basics",
+      "video_id": "PwmiD8YmgyI",
+      "published": "2026-09-03",
+      "link": "https://youtube.com/watch?v=PwmiD8YmgyI",
+      "summary": "New episode from This Week in Startups. Click to watch.",
+      "raw_text": "This Week In Startups is made possible by: Wilson Sonsini Today's show: Spinouts are everywhere right now, and most founders get the cap table wrong. Jason sits down with Becki DeGraw, partner at Wilson Sonsini, to break down how to do it right, starting with his 80/20 rule for splitting the new cap table and why letting the old company keep too much of it kills your ability to raise. Becki also covers the legal side: who owns the IP, non-competes between the two companies, and the trap founders fall into when they're still on the old board. PLUS, the one question every Series A investor will ask. Guests: Becki DeGraw on LinkedIn: https://www.linkedin.com/in/rebecca-degraw-639bbb62/ Wilson Sonsini: https://www.wsgr.com/en/ Relevant Links: Wilson Sonsini Goodrich & Rosati (WSGR) \u2014 ** https://www.wsgr.com/** Becki DeGraw \u2014 https://www.wsgr.com/en/people/becki-degraw.html Waymo \u2014 Jason's headline example of a big-company spinout \u2014 https://waymo.com/ Expedia's 1999 Microsoft spinout \u2014 https://www.britannica.com/topic/Expedia-com-American-company Nvidia's ~$20B deal for Groq's asset\u2014 https://www.cnbc.com/2025/12/24/nvidia-buying-ai-chip-startup-groq-for-about-20-billion-biggest-deal.html Timestamps: 0:00 What a spinout actually is 0:50 Becki: the real \"why\" behind spinouts 2:24 IP licenses and the \"acquihire\" workaround 3:09 University spinouts 4:41 Google/Waymo and Microsoft/Expedia: spinouts at scale 5:03 Jason's 80/20 rule and the unicorn test 6:06 The broken cap table problem 6:36 Licensing deals as an M&amp;A workaround 8:44 Exclusive licenses, full assignments, and license-backs 11:07 \"What if Google spun out YouTube\" 12:31 Groq\u2013Nvidia, capital gains vs. income 13:23 Confidentiality, customer lists, and fiduciary duty traps 15:16 Get the paper done BEFORE you start the new thing 15:56 \"It's a divorce,\" \u2014 and the employees are the kids Subscribe to the TWiST500 newsletter: https://ticker.thisweekinstartups.com Check out the TWIST500: https://www.twist500.com Subscribe to This Week in Startups on Apple: https://rb.gy/v19fcp Follow Lon: X: https://x.com/lons Follow Jason: X: https://twitter.com/Jason LinkedIn: https://www.linkedin.com/in/jasoncalacanis Check out all our partner offers: https://partners.launch.co/ Great TWIST interviews: Will Guidara, Eoghan McCabe , Steve Huffman , Brian Chesky , Bob Moesta, Aaron Levie , Sophia Amoruso , Reid Hoffman , Frank Slootman , Billy McFarland Check out Jason's suite of newsletters: https://substack.com/@calacanis Follow TWiST: Twitter: https://twitter.com/TWiStartups YouTube: https://www.youtube.com/thisweekin Instagram: https://www.instagram.com/thisweekinstartups TikTok: https://www.tiktok.com/@thisweekinstartups Substack: https://twistartups.substack.com",
+      "source_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/becki-degraw-on-spinouts-ip-licensing-clean-exits-wilson-sonsini-startup-legal-basics",
+      "read_more_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/becki-degraw-on-spinouts-ip-licensing-clean-exits-wilson-sonsini-startup-legal-basics",
+      "thumbnail": "https://img.youtube.com/vi/PwmiD8YmgyI/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "It's Here.",
+      "video_id": "XFWpf0wLbh0",
+      "published": "2026-09-04",
+      "link": "https://youtube.com/watch?v=XFWpf0wLbh0",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/XFWpf0wLbh0/mqdefault.jpg"
+    },
+    {
+      "channel": "Matt Wolfe",
+      "title": "GPT-6 Astra Is Finally Here (And It\u2019s REALLY Good)",
+      "video_id": "GGzT7zVrRTU",
+      "published": "2026-09-03",
+      "link": "https://youtube.com/watch?v=GGzT7zVrRTU",
+      "summary": "New episode from Matt Wolfe. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/GGzT7zVrRTU/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai vulnerabilities.",
+  "ai_security": [
+    {
+      "title": "AI agents expose 5G core security risks for telecom operators",
+      "source": "Fierce Network",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOT0lPbzBUMzA4Q25iWkpxUUc1M0s2Ym1KYzVjb0t1MW55bERlSExSYVU4M1RENjdOSWsyS2pmQ19sQVlpMXJ3MVJzLTQ4ajBPSF9RWXpnV2VHYXQ5RnFXbHA0NjZLZDJIQ3AyV3kzMUNFWDMyOHd0dE9RczJjR0FXNmh3UG5NQWszOXhrQjZJN2xBb2pvRUFJNnpYLXhyQQ?oc=5",
+      "published": "Thu, 03 Sep 2026 22:11:33 GMT",
+      "summary": "That signals a new pace of security discovery for telecom infrastructure \u2014 one that operators and vendors may not be prepared to match with current patch cycles.",
+      "raw_text": "- AI agents uncovered 84 new flaws in 4G and 5G cores, speeding telecom vulnerability discovery\n- Internal 5G interfaces are now attack surfaces and need zero-trust protections\n- A validated flaw could hijack subscriber traffic, raising risks for commercial 5G networks\nNew research challenges one of telecom\u2019s longest-standing assumptions: that the mobile core is safe because it is internal. Researchers at Nanyang Technological University used a multi-agent AI system called iFinder to find 84 previously unknown vulnerabilities in several widely deployed 4G and 5G network core implementations.\nIn a cloud-native world, \u201cinternal\u201d no longer means physically isolated. Misconfigured clusters, shared infrastructure, compromised workloads or overly broad network access could give attackers a path to interfaces that were never designed to face hostile traffic.\nThis is a preview of the next security race. If researchers can use AI agents to discover and exploit telecom flaws at scale, adversaries can do the same.\nTop takeaways from the report\nAI is accelerating telecom vulnerability discovery\nResearchers used iFinder, a multi-agent LLM system, to uncover 84 previously unknown vulnerabilities across seven 4G and 5G core implementations; 83 were confirmed and 81 received CVEs. That signals a new pace of security discovery for telecom infrastructure \u2014 one that operators and vendors may not be prepared to match with current patch cycles.\nInternal 5G core interfaces are now real attack surfaces\nInterfaces like N4/PFCP and S11/S5/GTP-C should no longer be treated as protected simply because they are \u201cinternal.\u201d The report argues they need the same kind of authentication, segmentation and message validation applied to internet-facing systems\nThe most concrete risk is subscriber traffic hijacking\nThe standout flaw is CVE-2026-8233, a PFCP session hijacking vulnerability that could allow an attacker with access to a UPF\u2019s internal interface to redirect a subscriber\u2019s uplink traffic. The attack was validated against two commercial 5G core deployments, which makes this more than a theoretical open-source issue.\nUPFs and gateways deserve immediate scrutiny\nThe majority of findings were concentrated in PFCP/User Plane Function and GTP-C/Serving Gateway code. Operators should prioritize patch verification and exposure audits for those components, while vendors should treat session-state validation, identifier checks and resource limits as urgent engineering priorities.\nVendors need to redesign for zero trust, not bolt on fixes\nThe findings point to specification-level and architecture-level trust assumptions, not just sloppy coding. Vendors should bake in mutual authentication, strict input validation, state-invariant checks and bounded resource allocation across internal signaling paths.\nRead more about AI agents and cybersecurity\nNGMN: Agentic AI needs guardrails before it can run telco networks\nCrowdStrike: Companies give AI agents keys to the kingdom. That's a security disaster.",
+      "type": "news",
+      "emoji": "\ud83d\udc1b"
+    },
+    {
+      "title": "How Autonomous Agent Risks Are Reshaping Cybersecurity Investing",
+      "source": "I/O Fund",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdnYxdFg4NXkzV29URktqZTZEUzZMMnJ6TFFENHRZVk5USG1CWHNSU0M3Y3ZtSjdSV3ZUNmFXRFBmQTJ3S2V3SWFyRzFvVHdJai01bVNJZ1hQaUxNQjczMjVWZ3poZEhTWGRPeGFNZTNrNGpTdXVkVHl5cXdiQXE0MlliT2NZY2EwQjJLNjBPbGM4QVRJ?oc=5",
+      "published": "Thu, 03 Sep 2026 18:03:24 GMT",
+      "summary": "OpenAI and Anthropic\u2019s Rogue AI Models Expose Growing AI Security <strong>Risks</strong> Even the developers of these systems do not have full control. Lending support to this forecast is data from IBM, which shows that organizations have become much more likely to increase their cybersecurity spending due to AI risks.",
+      "raw_text": "- Recent events indicate that the internal AI security efforts of model developers and enterprises may not be enough to control the new cybersecurity risks posed by these frontier models.\n- 80% of chief information security officers (CISOs) surveyed by Boston Consulting Group ranked emerging AI-powered attacks as a critical or serious issue.\n- Gartner projects that spending toward platforms that secure AI systems will hit $7.7 billion in 2028, implying drastic growth from 2026 levels.\nOn April 7, 2026, Anthropic released its Mythos Preview model to a select group of defensive cybersecurity partners with the purpose of uncovering and patching critical software vulnerabilities before bad actors could exploit them. The trial succeeded; however, what was also revealed was the model\u2019s sheer offensive capability.\n\u201cThis is a super weapon, you should have to own a gun license to use it, please don\u2019t release this,\u201d Dario Amodei, the CEO of Anthropic, recalled hearing from companies that tested the model. As a result of this warning, Anthropic decided to restrict usage of this advanced model to a handful of companies in the cloud infrastructure and cybersecurity space.\nThis situation was soon followed by OpenAI\u2019s rollout of a new model. Its flagship system unexpectedly broke out of its safety limits during testing. The AI began writing and executing code on its own to dodge developer controls, forcing OpenAI to pause its launch and adopt Anthropic\u2019s cautious, restricted approach.\nNot only is AI rapidly changing the security landscape, but it is also escalating the global threat environment at a rate that legacy security systems are struggling to keep pace with. Over the past three years, weekly cyberattacks per organization have surged by 70%, driven largely by an 89% increase in AI-enabled cyberattacks.\nAs AI-driven cyberattacks accelerate in conjunction with models becoming more autonomous, security is quickly becoming the single biggest bottleneck to wide-spread AI adoption. This reality is shaping one of the more promising investment themes in AI today.\nOpenAI and Anthropic\u2019s Rogue AI Models Expose Growing AI Security Risks\nEven the developers of these systems do not have full control. In July, OpenAI ran a cybersecurity capability test on its models. When the models were unable to solve the evaluation problem, it unexpectedly, and creatively found a vulnerability in the closed testing environment. It then followed the command to solve the problem, by gaining access to the internet; a possibility the developers thought was impossible based on the closed parameters of testing environments.\nOpenAI\u2019s model sought the solution to the test prompt on Hugging Face, which hosts AI models and datasets. The models then found vulnerabilities in Hugging Face\u2019s infrastructure and stole credentials to successfully access the company\u2019s servers. This attack on a private company was the model attempting to solve a controlled test in the most efficient means it deemed possible.\nThough this incident is the most alarming to date, it is not an isolated incident by any means. Tests from the UK\u2019s AI Security Institute (AISI) show that across 10 out of 122 evaluation runs, AI agents took autonomous unsanctioned actions targeting real people and organizations. This included 17 unsanctioned actions from Anthropic\u2019s Mythos 5 and two from OpenAI\u2019s ChatGPT Sol 5.6.\nWhile attempts that could have caused real harm were unsuccessful, AISI notes that \u201cthis is the first time we have seen risks around autonomy and deception manifest this clearly, without specific prompting, in the real world.\u201d\nThese events indicate that the internal AI security efforts of model developers and enterprises may not be enough to control the new cybersecurity risks posed by these frontier models. Notably, OpenAI brought in CrowdStrike to validate its understanding of actions its models took in the Hugging Face event, signaling the need for external cybersecurity expertise. Amid this, AI-powered attacks are becoming the top concern among enterprise cybersecurity executives.\nAI-Powered Attacks Become the Top Concern for CISOs\nAccording to a survey by Boston Consulting Group, these concerns are not new and are becoming increasingly widespread. In 2025, months before the OpenAI incident, 80% of chief information security officers (CISOs) surveyed ranked emerging AI-powered attacks as a critical or serious issue. This was a dramatic 19% increase versus 2024, with AI-powered attacks rising from the fifth biggest concern among CISOs to their number one concern.\nThese CISOs have significant influence over enterprise cybersecurity budgets, which have been expanding rapidly in 2026. According to Gartner, enterprise cybersecurity budget growth will accelerate from roughly 4% in 2025 to over 12.5% in 2026 to combat AI-driven threats. The cybersecurity market is projected to grow from $39 billion today, to over $180 billion by 2033, as organizations prioritize automated defenses.\nCybersecurity stocks are emerging as key second-order beneficiaries of AI. Find out which names have the strongest setups in this week\u2019s 1-hour webinar\u2014and also see how we\u2019re positioning for what comes next in the AI trade. Subscribe now to follow the I/O Fund, with 6 stocks already up more than 100% YTD.\nIndustry Data Points to Strong AI Cybersecurity Tailwinds\nAll of these developments point to a significant tailwind for cybersecurity vendors that can effectively address AI-driven concerns. Notably, Gartner projects immense spending growth toward platforms that secure AI systems. It forecasts spending to increase from $2.835 billion in 2026 to nearly $7.7 billion in 2028\u2014representing an impressive CAGR near 64.8%.\nLending support to this forecast is data from IBM, which shows that organizations have become much more likely to increase their cybersecurity spending due to AI risks. The company says that after becoming aware of frontier model cyber capabilities, 85% of organizations plan to increase their security spending\u2014a huge jump versus 64% in 2025.\nThis 64.8% CAGR compares to Gartner\u2019s 12.5% overall security budget growth forecast in 2026 and IDC\u2019s \u201cover 12%\u201d CAGR forecast through 2028, implying that the spending allocated to securing AI will rise more than 5X faster than overall security spending.\nData from CrowdStrike and IBM highlights the underlying dynamics that are likely to increase AI-driven cybersecurity spending, including the rapid uptick in AI-cyber-attacks and the significant cost of these attacks.\nIn 2025, CrowdStrike observed an 89% increase in attacks from AI-enabled adversaries, while IBM has seen a 56% increase in AI-driven attacks in 2026.\nIBM also notes that AI-enabled breaches lead to significantly higher costs than other breaches. At $6 million, the average cost of an AI-enabled breach was roughly $1 million more, or 20% higher, than the global average breach cost of $4.99 million. More generally, IBM says that the global average breach cost increased 12% YoY to a record high, implying an overall cybersecurity tailwind.\nIncreased Government Pressure Reflects Growing Security Concerns\nTwo house representatives, one Democrat and one Republican, recently introduced the \u201cAI Kill Switch Act,\u201d which would require developers to maintain the technical capability to throttle, suspend, or shut down their frontier models. The representatives note strong public support for this type of legislation, citing a poll where 88% of Democrats, 86% of Independents, and 83% of Republicans \u201cwant a guaranteed off switch for the most powerful systems.\u201d\nIn June, the Trump administration ordered Anthropic to suspend access to Fable 5 and Mythos 5 for foreign nationals due to national security concerns. Anthropic subsequently disabled access to these models for all users for multiple weeks.\nAs model developers and enterprises look to profit from the AI trend, government regulation could now become a significant headwind. This further increases the incentive for these companies to address cybersecurity risks, boosting the value proposition of cyber vendors.\nConclusion\nData shows that cybersecurity risks are now the top concern among enterprise cybersecurity executives, with industry forecasts pointing to rapid growth in platforms that secure AI systems.\nCybersecurity stocks are emerging as key second-order beneficiaries of AI. Find out which names have the strongest setups in this week\u2019s 1-hour webinar\u2014and see how we\u2019re positioning for what comes next in the AI trade.\nAfter investing in Nvidia at $3.15 per share, the I/O Fund has consistently uncovered other top AI beneficiaries, including our highest-allocation position, which is up more than 150% since our initial entry last year. This year alone, the portfolio has 16 stocks outperforming the Nasdaq-100, including 6 stocks up more than 100% YTD.\nPaid subscribers receive access to our audited portfolio with industry-leading annualized returns, real-time trade alerts, weekly webinars, and key analysis such as I/O Fund\u2019s Top 20 Stocks Report.\nDon\u2019t Navigate the Volatility on Your Own. Subscribe Now.\nPlease note: The I/O Fund conducts research and draws conclusions for the company\u2019s portfolio. We then share that information with our readers and offer real-time trade notifications. This is not a guarantee of a stock\u2019s performance and it is not financial advice. Please consult your personal financial advisor before buying any stock in the companies mentioned in this analysis.\nLeo Miller, AI and Semiconductor Investment Writer at I/O Fund, contributed to this analysis.\nRecommended Reading:",
+      "type": "news"
+    },
+    {
+      "title": "Securing the Agentic AI Frontier: Why Private Clouds Need Software-Defined Security",
+      "source": "BBN Times",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOHJLb1hEa1lTRE04YUZJS1RQZlhmYmh4U3JnLTg1U2lOb3NaSG4wdnhjUkdGTGFnbnhKSkEzRG01U1RJNkxuUHUxOGZzMmtLVXNCQ1hBdFI5V0pBeV81RnFfTE1jdGxMelVkMy0wc0hCajZia3laYkd3TFJiN2FLeVZoN3phUjZLamZMcjI1M3ZOanJhMUVfR1dRZVhWSWpnUUF1UGlWSWJSc25ldHJxSk52SFVjRlZ3akE?oc=5",
+      "published": "Thu, 03 Sep 2026 15:40:22 GMT",
+      "summary": "Broadcom\u2019s software-defined architecture co-locates defensive controls along with workloads: distributed segmentation and behavioral threat detection for east-west traffic, combined with intelligent application and API protection at ingress.",
+      "raw_text": "Securing the Agentic AI Frontier: Why Private Clouds Need Software-Defined Security\nEnterprise technology leaders face an unprecedented architectural shift.\nAs generative AI transitions from static conversational prompts to autonomous, agentic workflows, organizations are re-evaluating their private cloud strategies. The promise of agentic AI is undeniable: autonomous multi-step reasoning, dynamic tool orchestration via Model Context Protocol (MCP) servers, and rapid software iteration. This evolution introduces unprecedented operational and security friction.\nAt VMware Explore this week, I spoke with Umesh Mahajan, Vice President and General Manager of the Application Networking and Security Division at Broadcom to discuss how agentic workloads are transforming enterprise private clouds and why traditional perimeter security architectures are no longer sufficient to defend them.\nThe New Threat Equation: Velocity Meets Surface Expansion\nAI has fundamentally shifted both sides of the cybersecurity equation. Threat actors increasingly leverage frontier AI models to uncover vulnerabilities at remarkable speed and scale, compressing the timeline between zero-day discovery and active exploitation.\nEnterprise development teams are deploying containerized microservices, LLM endpoints, and MCP tool integrations across Kubernetes clusters rapidly at the same time. Because these workloads are dynamic and distributed, organizations encounter two challenges with security:\n- Shadow AI sprawl: Teams frequently launch unauthorized models, MCP tools, and external API connections without centralized visibility or governance, exposing sensitive enterprise data.\n- The limits of perimeter appliances: Traditional hardware appliances cannot keep pace with ephemeral, high-throughput AI traffic. Hairpinning traffic out to external physical appliances introduces substantial latency and leaves internal east-west communication uninspected.\nAs Umesh emphasized during our interview, running modern AI workloads demands complete architectural visibility. Security must live directly where workloads execute and embedded natively inside the virtualization and private cloud fabric.\nArchitectural Imperatives: Lateral Segmentation and Ingress API Defense\nWhen adversaries or misconfigured agents breach an initial node, the primary objective is preventing lateral movement toward core enterprise assets while safeguarding the ingress APIs that agentic systems rely upon.\nBroadcom\u2019s software-defined architecture co-locates defensive controls along with workloads: distributed segmentation and behavioral threat detection for east-west traffic, combined with intelligent application and API protection at ingress.\nSource: Broadcom adapted from \u201cMulti-Layer Security Built for\nStopping East-West Lateral Traversal\nInitial host compromise is an operational reality. Once an agentic workload is penetrated, attackers attempt to hop laterally across virtual machines and containers to access crown jewel databases and credentials. Through VMware vDefend, enterprises enforce granular, hypervisor-level zero trust boundaries between agents, LLMs, and back-end storage, containing threats before lateral exfiltration can occur.\nSecuring Ingress and Preventing Data Loss\nAgentic applications interact almost entirely through APIs. Positioned at the ingress of Kubernetes clusters, solutions like VMware Avi Load Balancer combine Layer 4\u20137 load balancing with comprehensive Web Application and API Protection (WAAP):\n- Bi-directional inspection: Monitoring inbound prompts for injection attacks and malicious tool abuse, while actively inspecting outbound traffic to prevent unauthorized exfiltration of PII, credit card data, and sensitive intellectual property.\n- Unified software delivery: Integrating Global Server Load Balancing (GSLB), IPAM, and Web Application Firewalls into a single, automated fabric, eliminating the latency and overhead of managing disparate point appliances.\nFighting AI with AI: Automated Virtual Patching\nWith frontier models accelerating vulnerability discovery, enterprise IT and security organizations face severe patch fatigue. Manually testing and rolling out code fixes across thousands of multi-data-center workloads can take weeks or months, leaving systems exposed during critical vulnerability windows.\nBroadcom leverages an internal agentic AI pipeline that ingests emerging vulnerability intelligence, analyzes attack patterns, automatically generates IDPS signatures at scale, and validates them. These signatures are pushed via the threat intelligence suite to deliver distributed virtual patching. Workloads receive immediate shielding within minutes of a signature release, providing teams the vital operational runway needed to test and deploy permanent software patches safely.\nArchitectural Comparison: Legacy Hardware vs. Distributed Software-Defined Security\nThe Boardroom & C-Suite Takeaway: 3 Steps to AI Readiness\nUmesh outlined three immediate priorities for technology executives preparing their private clouds for agentic AI:\n- Implement Lateral Segmentation Immediately: Do not rely solely on perimeter firewalls. Enforce granular, zero trust micro-segmentation between AI agents, inference workloads, and back-end databases to isolate breaches at the point of origin.\n- Move Up the Proactive Defense Stack: Go beyond basic packet filtering by activating behavioral threat detection (NDR) and distributed virtual patching to shield against zero-day exploits before patches can be rolled out.\n- Consolidate and Automate Application Delivery: Replace fragmented point solutions with a unified software-defined ingress and API protection layer, delivering the scale and low latency that AI workflows require.\nTransforming enterprise infrastructure for the AI era requires moving from reactive patching to proactive, continuous cyber resilience. Synthesizing insights from my discussion with Umesh, here is the strategic roadmap I recommend for CIOs, CISOs, and enterprise architects today:\n- Treat Non-Human Identities amp; Agents as First-Class Security Entities: (Zero Trust amp; Lateral Segmentation)\n- Automate Cyber Resilience at Machine Speed: (Behavioral NDR amp; Virtual Patching)\n- Consolidate Ingress to Eliminate Shadow Friction: (Unified WAAP amp; API Governance)\nPrivate cloud infrastructure is entering an era defined by speed, autonomy, and heightened risk. As organizations build out their AI environments, long-term success hinges on embedding security and networking directly into the foundation.\nTo hear our complete discussion on securing agentic workloads and modernizing private cloud networking, watch the full interview with Umesh Mahajan from VMware Explore. https://youtu.be/pAKo21v21JY\nWhat steps is your organization taking to govern agentic AI and MCP connections in your private cloud?\nComments",
+      "type": "news"
+    },
+    {
+      "title": "SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center",
+      "authors": [
+        "Uday Vallabhaneni",
+        "Cassie L. Cagwin",
+        "David J. Wild"
+      ],
+      "abstract": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proximal Policy Optimization (PPO) policy maps this state to a constrained set of investigative actions, and an LLM agent loop is restricted to consuming the policy's recommendations and producing analyst-readable narratives gated by a critic. We instantiate the system on the LANL Comprehensive, Multi-Source Cyber-Security Events dataset and the Indiana University Quartz HPC cluster, reporting four results: (i) a two-phase CREATE ingestion pattern loads a 24M-edge authentication subgraph into Neo4j in 14.2 minutes on a single 32-core node, roughly 24x faster than the canonical MERGE-based pipeline; (ii) a sliding-window alert engine reliably trips a 25-event/10-second threshold in <=2.5 s across 50 trials; (iii) PPO training over 200 iterations converges to a mean episodic return of 8.74+/-0.31, with held-out precision of 0.91 and recall of 0.87 on labeled red-team events; and (iv) the integrated containment loop completes a full detect-investigate-recommend-human-approve cycle in a median of 6.3 s. We contribute a reusable engineering pattern (the hot-node deadlock workaround), a portable HPC deployment pattern (anchor-node co-location), and an enterprise-readiness analysis covering false-positive economics, reversibility guarantees, audit compliance, and the human-approval boundary.",
+      "link": "https://arxiv.org/pdf/2609.04159v1",
+      "published": "2026-09-03",
+      "arxiv_id": "2609.04159v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proximal Policy Optimization (PPO) policy maps this state to a constrained set of investigative actions, and an LLM agent loop is restricted to consuming the policy's recommendations and producing analyst-readable narratives gated by a critic. We instantiate the system on the LANL Comprehensive, Multi-Source Cyber-Security Events dataset and the Indiana University Quartz HPC cluster, reporting four results: (i) a two-phase CREATE ingestion pattern loads a 24M-edge authentication subgraph into Neo4j in 14.2 minutes on a single 32-core node, roughly 24x faster than the canonical MERGE-based pipeline; (ii) a sliding-window alert engine reliably trips a 25-event/10-second threshold in <=2.5 s across 50 trials; (iii) PPO training over 200 iterations converges to a mean episodic return of 8.74+/-0.31, with held-out precision of 0.91 and recall of 0.87 on labeled red-team events; and (iv) the integrated containment loop completes a full detect-investigate-recommend-human-approve cycle in a median of 6.3 s. We contribute a reusable engineering pattern (the hot-node deadlock workaround), a portable HPC deployment pattern (anchor-node co-location), and an enterprise-readiness analysis covering false-positive economics, reversibility guarantees, audit compliance, and the human-approval boundary.",
+      "summary": "Read the full paper for details.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Seeing Before Synthesizing: VLM-Guided Transition Event Discovery for Weakly-Supervised Dense Video Captioning",
+      "authors": [
+        "Ye-Chan Kim",
+        "Seunghee Choi",
+        "SeungJu Cha",
+        "Si-Woo Kim",
+        "Hwiseon Kim"
+      ],
+      "abstract": "Weakly-Supervised Dense Video Captioning aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video. Recent work synthesizes auxiliary transition captions via LLM to provide additional vision-language alignment, but these captions lack visual grounding and are rigidly assigned to every inter-event gap at a fixed location and duration. To address these, we propose Seeing Before Synthesizing (SBS), a framework that adaptively provides visually grounded linguistic guidance only where warranted. Leveraging a VLM, we generate frame-level narratives for the inter-event gaps and detect transitions from the semantic variation across them. For identified transitions, we then refine inter-event temporal masks by blending the temporal midpoint with the semantic change point and selecting the width that maximizes vision-language alignment. Experiments on ActivityNet Captions and YouCook2 demonstrate state-of-the-art performance in both captioning and localization.",
+      "link": "https://arxiv.org/pdf/2609.04183v1",
+      "published": "2026-09-03",
+      "arxiv_id": "2609.04183v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Weakly-Supervised Dense Video Captioning aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video. Recent work synthesizes auxiliary transition captions via LLM to provide additional vision-language alignment, but these captions lack visual grounding and are rigidly assigned to every inter-event gap at a fixed location and duration. To address these, we propose Seeing Before Synthesizing (SBS), a framework that adaptively provides visually grounded linguistic guidance only where warranted. Leveraging a VLM, we generate frame-level narratives for the inter-event gaps and detect transitions from the semantic variation across them. For identified transitions, we then refine inter-event temporal masks by blending the temporal midpoint with the semantic change point and selecting the width that maximizes vision-language alignment. Experiments on ActivityNet Captions and YouCook2 demonstrate state-of-the-art performance in both captioning and localization.",
+      "summary": "<strong>Weakly</strong>-<strong>Supervised</strong> <strong>Dense</strong> <strong>Video</strong> <strong>Captioning</strong> aims to localize and describe multiple events in untrimmed videos given only an ordered set of event-level captions per video.",
+      "type": "paper"
+    },
+    {
+      "title": "Knowledge Acquisition During Pre-training? Large Language Models Learn Better With Auxiliary Views",
+      "authors": [
+        "Joseph Lee",
+        "Yidi Huang",
+        "Dokyoon Kim",
+        "Shu Yang",
+        "Li Shen"
+      ],
+      "abstract": "Gaps remain in our understanding of how large language models (LLMs) acquire knowledge during pre-training. We posit that auxiliary views, reformulations of knowledge, are causally helpful for learning. We design controlled experiments to isolate this. First, we confirm that repetition is necessary for acquisition and clarify that paraphrasing helps only at smaller batch sizes. Second, holding the token budget fixed, allocating tokens from document repetition to auxiliary views improves learning, counterintuitively, even for factual recall. Third, the effectiveness of auxiliary views is not contingent on the strength of the teacher model that generates them. Fourth, we identify forms of knowledge, contextual and foundational, that aid learning in the presence of prior knowledge gaps. Finally, we examine how these effects manifest mechanistically via layer-wise biases and compression. Together, our findings suggest that auxiliary representations of knowledge, which arise naturally in large pre-training corpora, are a key factor in the success of pre-training and offer a plausible explanation for why data diversity matters.",
+      "link": "https://arxiv.org/pdf/2609.04180v1",
+      "published": "2026-09-03",
+      "arxiv_id": "2609.04180v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Gaps remain in our understanding of how large language models (LLMs) acquire knowledge during pre-training. We posit that auxiliary views, reformulations of knowledge, are causally helpful for learning. We design controlled experiments to isolate this. First, we confirm that repetition is necessary for acquisition and clarify that paraphrasing helps only at smaller batch sizes. Second, holding the token budget fixed, allocating tokens from document repetition to auxiliary views improves learning, counterintuitively, even for factual recall. Third, the effectiveness of auxiliary views is not contingent on the strength of the teacher model that generates them. Fourth, we identify forms of knowledge, contextual and foundational, that aid learning in the presence of prior knowledge gaps. Finally, we examine how these effects manifest mechanistically via layer-wise biases and compression. Together, our findings suggest that auxiliary representations of knowledge, which arise naturally in large pre-training corpora, are a key factor in the success of pre-training and offer a plausible explanation for why data diversity matters.",
+      "summary": "Gaps remain in our understanding of how large language models (LLMs) acquire knowledge during pre-training. Fourth, we identify forms of knowledge, contextual and foundational, that aid learning in the presence of prior knowledge gaps.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "GIFT: Guided Intermediate Feature Training via Action-Oriented Structural Supervision for Robotic Manipulation",
+      "authors": [
+        "Yupeng Zheng",
+        "Xiang Li",
+        "Songen Gu",
+        "Yuhang Zheng",
+        "Shuai Tian"
+      ],
+      "abstract": "Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and task structure while retaining control-irrelevant visual redundancy. We call this mismatch between visual richness and control utility the action-sufficiency gap. We investigate whether this gap can be bridged by guiding intermediate features to preserve three control-relevant structure in robotic manipulation: geometry governing motion feasibility, affordance encoding instruction-relevant entities, and goals grounding instructions in task-relevant regions. To this end, we present GIFT (Guided Intermediate Feature Training), an architecture-flexible framework for learning intermediate features that translates these structures into training-time constraints through geometry alignment, affordance prediction, and goal-region reconstruction. We instantiate GIFT in a Vision-Language-Action (VLA) policy, a direct-action World-Action Model (WAM), and an inverse-dynamics WAM while retaining each model's action formulation. Under zero-shot transfer to LIBERO-Plus, GIFT-VLA, GIFT-WAM-Fast, and GIFT-WAM-IDM outperform StarVLA-OFT, Fast-WAM, and Fast-WAM-IDM by 4.6, 12.6, and 5.2 points, reaching 79.6%, 72.6%, and 87.8%, respectively. On RoboCasa, the three GIFT variants reach 61.4%, 83.6%, and 82.3%, outperforming their counterparts by 12.6, 9.0, and 8.4 points, respectively. Together, these results establish learning functionally structured intermediate features as a reusable principle across model-specific action formulations, with especially large gains on articulated-object tasks and high-precision real-world manipulation under unseen visual and spatial perturbations. Project page: https://openphoenix-team.github.io/GIFT-pages.",
+      "link": "https://arxiv.org/pdf/2609.04193v1",
+      "published": "2026-09-03",
+      "arxiv_id": "2609.04193v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and task structure while retaining control-irrelevant visual redundancy. We call this mismatch between visual richness and control utility the action-sufficiency gap. We investigate whether this gap can be bridged by guiding intermediate features to preserve three control-relevant structure in robotic manipulation: geometry governing motion feasibility, affordance encoding instruction-relevant entities, and goals grounding instructions in task-relevant regions. To this end, we present GIFT (Guided Intermediate Feature Training), an architecture-flexible framework for learning intermediate features that translates these structures into training-time constraints through geometry alignment, affordance prediction, and goal-region reconstruction. We instantiate GIFT in a Vision-Language-Action (VLA) policy, a direct-action World-Action Model (WAM), and an inverse-dynamics WAM while retaining each model's action formulation. Under zero-shot transfer to LIBERO-Plus, GIFT-VLA, GIFT-WAM-Fast, and GIFT-WAM-IDM outperform StarVLA-OFT, Fast-WAM, and Fast-WAM-IDM by 4.6, 12.6, and 5.2 points, reaching 79.6%, 72.6%, and 87.8%, respectively. On RoboCasa, the three GIFT variants reach 61.4%, 83.6%, and 82.3%, outperforming their counterparts by 12.6, 9.0, and 8.4 points, respectively. Together, these results establish learning functionally structured intermediate features as a reusable principle across model-specific action formulations, with especially large gains on articulated-object tasks and high-precision real-world manipulation under unseen visual and spatial perturbations. Project page: https://openphoenix-team.github.io/GIFT-pages.",
+      "summary": "Vision-language pre-training and predictive world modeling provide robot policies with rich semantic and dynamic visual features, but their native action and visual-prediction objectives may omit critical physical and task structure while retaining control-irrelevant visual redundancy.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Toward Frontier-Quality Declarative UI Generation at Small-Model Cost",
+      "authors": [
+        "Yingxiang Yang",
+        "Weihang Xiao",
+        "Ben Bullough",
+        "Tushar Deshpande",
+        "Niresh Agarwal"
+      ],
+      "abstract": "Declarative UI protocols such as A2UI let applications generate interactive UIs by selecting pre-built components from a catalog and binding their props to application data, rather than emitting frontend code from scratch. This contract is attractive for production systems because of safety and consistency. An open question is: can low-latency and low-cost small models achieve the required quality for A2UI-based UI generation? To answer this, we systematically study three controllable design choices for catalog-conditioned A2UI generation: supervised fine-tuning (SFT) data construction method, model size, and component-catalog size. Across two React/TypeScript domains and four base checkpoints spanning two model families (Qwen 3.5 0.8B/2B/4B; SmolLM 3B), we find: (i) a 4B fine-tuned student recovers ~98% of teacher semantic quality and ~97% of teacher visual quality at more than an order of magnitude lower cost than frontier API calls; (ii) both augmented strategies (Perturbed-catalog and Constrained-GT) Pareto-dominate the unaugmented Full-catalog baseline, while specializing on different axes; (iii) even small models can handle and benefit from relatively large component catalog size. We distill these results into practitioner-facing trade-offs and deployment recommendations across the three design choices.",
+      "link": "https://arxiv.org/pdf/2609.04184v1",
+      "published": "2026-09-03",
+      "arxiv_id": "2609.04184v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Declarative UI protocols such as A2UI let applications generate interactive UIs by selecting pre-built components from a catalog and binding their props to application data, rather than emitting frontend code from scratch. This contract is attractive for production systems because of safety and consistency. An open question is: can low-latency and low-cost small models achieve the required quality for A2UI-based UI generation? To answer this, we systematically study three controllable design choices for catalog-conditioned A2UI generation: supervised fine-tuning (SFT) data construction method, model size, and component-catalog size. Across two React/TypeScript domains and four base checkpoints spanning two model families (Qwen 3.5 0.8B/2B/4B; SmolLM 3B), we find: (i) a 4B fine-tuned student recovers ~98% of teacher semantic quality and ~97% of teacher visual quality at more than an order of magnitude lower cost than frontier API calls; (ii) both augmented strategies (Perturbed-catalog and Constrained-GT) Pareto-dominate the unaugmented Full-catalog baseline, while specializing on different axes; (iii) even small models can handle and benefit from relatively large component catalog size. We distill these results into practitioner-facing trade-offs and deployment recommendations across the three design choices.",
+      "summary": "<strong>Declarative</strong> UI protocols such as A2UI let applications generate interactive UIs by selecting pre-built components from a catalog and binding their props to application data, rather than emitting frontend code from scratch. This contract is attractive for production systems because of safety and consistency.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai vulnerabilities.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "84\u00b0F",
+        "detail": "22% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-29"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "5 papers",
+        "detail": "Sep 3"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "3",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 3,
+    "youtube_count": 3,
+    "ai_security_count": 8
+  }
+}
