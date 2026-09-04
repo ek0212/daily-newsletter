@@ -5,8 +5,10 @@ on:
     branches:
       - main
   # GitHub cron is UTC only and does not follow US daylight saving time, so the
-  # 5 AM America/New_York run is scheduled at both EDT and EST offsets. The
-  # "Check local publish hour" step below drops whichever half is off-hour.
+  # 5 AM America/New_York run is scheduled at both EDT and EST offsets. GitHub
+  # also queues scheduled runs at low priority and routinely fires them hours
+  # late, so the "Decide whether to publish" step accepts any fire at or after
+  # 5 AM local and dedupes on the gh-pages archive instead of on the clock.
   schedule:
     - cron: '0 9 * * *'   # 5 AM EDT
     - cron: '0 10 * * *'  # 5 AM EST
@@ -27,42 +29,61 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # Runners are UTC. Pin the job to New York so the publish gate, the archive
+    # filenames, and datetime.now() in src/ all resolve to the same local day.
+    env:
+      TZ: America/New_York
     steps:
-      # Skip duplicate UTC schedule entries that are not 5 AM in New York.
-      # Manual and push runs bypass this.
-      - name: Check local publish hour
-        id: hour_gate
-        run: |
-          LOCAL_HOUR=$(TZ=America/New_York date +%-H)
-          echo "Local hour in America/New_York: ${LOCAL_HOUR}"
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          elif [ "$LOCAL_HOUR" = "5" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "Off-hour duplicate of a DST cron pair, skipping."
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Checkout
-        if: steps.hour_gate.outputs.run == 'true'
         uses: actions/checkout@v4
 
+      # A scheduled run publishes once per local day. The clock alone cannot
+      # gate it: GitHub fires these crons hours after their nominal time, so an
+      # exact-hour check drops every scheduled run. Publish on the first fire at
+      # or after 5 AM local that has no post archived for today; the second cron
+      # of the DST pair then finds that post and skips.
+      - name: Decide whether to publish
+        id: gate
+        run: |
+          echo "Local time in America/New_York: $(date)"
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "Event is ${{ github.event_name }}, publishing."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          LOCAL_HOUR=$(date +%-H)
+          if [ "$LOCAL_HOUR" -lt 5 ]; then
+            echo "Before 5 AM in New York, skipping."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          TODAY=$(date +%F)
+          git fetch origin gh-pages --depth=1 || true
+          if git cat-file -e "origin/gh-pages:posts/${TODAY}.html" 2>/dev/null; then
+            echo "Post for ${TODAY} already published, skipping."
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "No post for ${TODAY} yet, publishing."
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Setup Python
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
 
       - name: Install dependencies
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         run: |
           pip install -r requirements.txt
           python -c "import nltk; nltk.download('punkt_tab', quiet=True); nltk.download('punkt', quiet=True)"
 
       - name: Start Tor proxy
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq tor > /dev/null
           # Enable control port for circuit rotation (no auth needed in CI)
@@ -73,13 +94,13 @@ jobs:
           curl -s --socks5-hostname 127.0.0.1:9050 https://check.torproject.org/api/ip || echo "Tor check failed, continuing anyway"
 
       - name: Restore site archive
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         run: |
           git fetch origin gh-pages --depth=1 || true
           git checkout origin/gh-pages -- site/ 2>/dev/null || echo "No existing site archive"
 
       - name: Run newsletter
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         env:
           SITE_URL: ${{ vars.SITE_URL }}
           TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
@@ -87,7 +108,7 @@ jobs:
         run: python -m src.newsletter 2>&1 | tee /tmp/newsletter-build.log
 
       - name: Validate summary quality
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         run: |
           python3 -c "
           import json, sys
@@ -118,7 +139,7 @@ jobs:
           "
 
       - name: Validate Pages email parity
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         run: |
           python3 - <<'PY'
           from datetime import datetime
@@ -146,18 +167,18 @@ jobs:
           PY
 
       - name: Upload Pages artifact
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site/
 
       - name: Deploy to GitHub Pages
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
 
       - name: Commit site to gh-pages branch
-        if: steps.hour_gate.outputs.run == 'true'
+        if: steps.gate.outputs.run == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
