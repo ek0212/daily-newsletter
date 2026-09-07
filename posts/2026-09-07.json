@@ -1,0 +1,502 @@
+{
+  "date": "Monday, September 07, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 70,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 79,
+    "low": 60,
+    "feels_like": 70,
+    "forecast": "Sunny, with a high near 80. North wind 5 to 8 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 60,
+        "feels_like": 59,
+        "conditions": "Clear",
+        "wind": "5 mph NW",
+        "humidity": "70%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 66,
+        "feels_like": 64,
+        "conditions": "Clear",
+        "wind": "5 mph NW",
+        "humidity": "61%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 79,
+        "feels_like": 78,
+        "conditions": "Clear",
+        "wind": "6 mph N",
+        "humidity": "33%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 79,
+        "feels_like": 76,
+        "conditions": "Clear",
+        "wind": "4 mph NW",
+        "humidity": "34%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 76,
+        "feels_like": 74,
+        "conditions": "Clear",
+        "wind": "4 mph NW",
+        "humidity": "43%",
+        "precip_chance": "0%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 2108,
+    "vs_average_pct": -43.2,
+    "week_ending": "2026-08-29",
+    "breakdown": {
+      "flu": 318,
+      "covid": 1639,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "2,108 combined flu/COVID/RSV cases",
+        "comparison": "43% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 14:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 14:30:00 GMT"
+      },
+      {
+        "signal": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "current": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "comparison": "Fri, 28 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1J6TlYzcVd0Y3E1R1A4dHZvbmNtbmdjejlwOUdRdWVHTTdCQV9XZVg1dE1mQVAxbXJDd2FrelBlekY4R1Zodk5MTlFhM2kzdGRUUGFFQ1QzNmlDMDNqYko0VHdzWlkwR3VfeXFWOXJQTmZXMWFmRllZRXV1cE1FajEzQUxfQy1zU1FfeFVFRTByMEwyeTFMTlpsNHVwTGFKbUxxWGFYSWloVkF3dFdMYQ?oc=5",
+        "title": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "summary": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 14:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 14:30:00 GMT"
+      },
+      {
+        "signal": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "current": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "comparison": "Fri, 28 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1J6TlYzcVd0Y3E1R1A4dHZvbmNtbmdjejlwOUdRdWVHTTdCQV9XZVg1dE1mQVAxbXJDd2FrelBlekY4R1Zodk5MTlFhM2kzdGRUUGFFQ1QzNmlDMDNqYko0VHdzWlkwR3VfeXFWOXJQTmZXMWFmRllZRXV1cE1FajEzQUxfQy1zU1FfeFVFRTByMEwyeTFMTlpsNHVwTGFKbUxxWGFYSWloVkF3dFdMYQ?oc=5",
+        "title": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "summary": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "New Balance 5th Avenue Mile 2026",
+      "date": "Sun, Sep 13",
+      "borough": "Manhattan",
+      "location": "5th Ave & East 79th St",
+      "event_type": "Athletic Race / Tour"
+    },
+    {
+      "name": "40th Street Fair",
+      "date": "Wed, Sep 9",
+      "borough": "Manhattan",
+      "location": "East 40th St & Park Ave",
+      "event_type": "Single Block Festival"
+    }
+  ],
+  "news": [
+    {
+      "title": "Powerful Category 3 Hurricane Lowell barrels toward Hawaii, prompting Hurricane Warning for Kaua\u02bbi",
+      "source": "FOX Weather",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOY0t0YzdrSEZlSmJIcTVNRnVsWUNWdkFETzY5N2RIS1Z4TnlCTnlkeFVLaHB3TEtYNlZkdjFjTF9PcDNEUU9QRXZPWnBpeUVWbUVmQldLMjVMUFNRenB1bjJzSzF6WExWdjNMU1VJV05aVzZkc1AwOWQ5VzkzRDh1XzFFSy01NnNIdzN4bXV4ZUcxWEVu0gGaAUFVX3lxTFBoeFVHV0MwSFdWdktMNF8yR0w0cE9Db0o3anlrUUFiTkd2UFQ2NjlYNHpGdXV1NEozc042M3FRb1pkTzVXdnU2WGN2dTRrS1dhWXBubzRTMVJxeWR5d1BUeTV4MXc4ajlkY2ZTZDV2Z3BPdVdFaHo2X3Zfc1BpRjk3VTVLV1l3Uy11Y2hTeFVBb1JOX0RYQXc5cWc?oc=5",
+      "published": "Mon, 07 Sep 2026 09:38:26 GMT",
+      "raw_text": "Powerful Category 3 Hurricane Lowell barrels toward Hawaii, prompting Hurricane Warning for Kaua\u02bbi\nRain associated with Lowell has already triggered flash flooding in parts of Oahu.\nTHE TAKEAWAY\n- Hawaii remains on alert as Lowell remains at Category 3 strength.\n- Lowell has turned north and is making its run at Hawaii.\n- A Hurricane Warning has been issued for Kauai County.\n- High Surf Advisories have been issued across the Hawaiian Islands with waves expected to peak at 14 feet.\nHONOLULU \u2014 Powerful Hurricane Lowell is barreling toward Hawaii and is expected to make a dangerously close pass by the state's western islands as heavy rain associated with the Category 3 hurricane has already triggered flash flooding on Oahu and damaging surf is pounding Hawaii's southern shores.\nA Hurricane Warning was issued for Kaua\u02bbi County late Sunday, Hawaii time.\n(FOX Weather)\nThe Hurricane Warning also covers parts of the Papahanaumokuakea Marine National Monument, a chain of smaller islands and atolls northwest of Hawaii's populated islands.\nLowell remains a powerful Category 3 storm, with maximum sustained winds of 115 mph. It's 455 miles southwest of Lihue and is moving north-northeast at 10 mph, according to the National Hurricane Center (NHC).\nLowell is expected to produce more heavy rain, flash flooding, gusty winds and damaging surf across the entire state, forecast to make its closest approach late Monday into early Tuesday.\nTIMELINE: WHEN HAWAII WILL START FEELING HURRICANE LOWELL'S IMPACTS\nHawaii Gov. Josh Green declared a state of emergency last Thursday in preparation for the storm.\n(FOX Weather)\nRain from Lowell's outer bands is lashing Kaua\u02bbi and Oahu overnight Sunday.\nRain associated with Lowell had already triggered flash flooding along the Kamehameha Highway north of Waikane in Oahu on Sunday afternoon.\nOahu #hitraffic #hiwx 9/6/26 4:50PM: Crew is north of Waikane. Mobilizing contractor to clear a large tree that came downstream at Waiahole. pic.twitter.com/VtmeIvvbvg\n\u2014 Hawaii DOT (@DOTHawaii) September 7, 2026\nHurricane Lowell peaked as a Category 5 storm last Wednesday with winds up to 160 mph, before weakening to a Category 3, then a Category 4, storm by Thursday and Friday, respectively.\nLooking ahead as forecasters track the path of Lowell, the consensus amongst computer models predicts the hurricane will pass to the west of Hawaii and avoid a direct hit to the state.\n\"Lowell is currently steered by an upper-level trough/low north of the Hawaiian Chain, which is pulling Lowell sharply northward,\" the FOX Forecast Center said. \"Current tracks place the center around 100 to 150 miles West/Southwest of Kaua\u02bbi during its closest pass.\"\nHURRICANE SEASON 2026: THESE ARE THE STORM NAMES YOU'LL SEE THIS SEASON\nDespite predictions that the storm will pass offshore, Lowell's large tropical-storm wind field means the Western Hawaiian Islands will still experience significant impacts.\n(FOX Weather)\nThe timing and early impacts for Oahu will kick off Monday afternoon, when tropical-force wind gusts of up to 30 to 40 mph will lash Oahu, along with heavy rainfall.\nAs the storm tracks closer to the state, rough surf and waves as high as 20 feet will be possible along the south and west-facing coastal areas of Kauai and Oahu, helping fuel a coastal flood threat.\nHOW ARE HURRICANES RATED? THE SAFFIR-SIMPSON HURRICANE WIND SCALE EXPLAINED\n(FOX Weather)\nBy Tuesday, Lowell will begin to accelerate north before weakening, as tropical-storm-force winds will also decrease by the evening.\nAs these powerful winds continue to decrease, the rough surf crashing along the Hawaiian Islands will also lessen.\nTRACK HURRICANE LOWELL: PATH, FORECAST CONE, SPAGHETTI MODELS, WIND AND MORE\nDespite this, a flood threat will still exist as around 5 to 8 inches of rain will have fallen across portions of the state, with some localized amounts closer to a foot.",
+      "summary": "ne <strong>Lowell</strong> is barreling toward <strong>Hawaii</strong> and is expected to make a dangerously close pass by the state's western islands as heavy rain associated with the <strong>Category</strong> 3 hurricane has already triggered flash flooding on Oahu and damaging surf is pounding <strong>Hawaii</strong>'s southern shores.",
+      "emoji": "\ud83c\udf2a\ufe0f"
+    },
+    {
+      "title": "Could Trump\u2019s Iran trade war threaten Spain\u2019s saffron-infused paella?",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/9/7/could-trumps-iran-trade-war-threaten-spains-saffron-infused-paella?traffic_source=rss",
+      "published": "Mon, 07 Sep 2026 12:00:07 +0000",
+      "raw_text": "Could Trump\u2019s Iran trade war threaten Spain\u2019s saffron-infused paella?\nUS threats to punish Iran\u2019s trading partners could disrupt Spain\u2019s saffron supply, putting pressure on paella chefs and exporters.\nMadrid, Spain \u2013 Fields of purple flowers contain crimson stigmas that make saffron, an essential spice in Spain\u2019s national dish, paella.\nSaffron gives the rice-based dish its distinctive yellow colour and earthy aroma.\nRecommended Stories\nlist of 3 items\n- list 1 of 3Diesel price hits all-time high in US amid Iran war woes\n- list 2 of 3Iran touts military response as US maintains blockade, hits tankers\n- list 3 of 3Trump official says \u2018there may not be a nuclear agreement\u2019 with Iran\nThough the central Spanish region of Castilla-La Mancha grows its own crop, Spain depends largely on Iran for its supply.\nThis could now be under threat after the United States said in late August that it would launch an \u201ceconomic onslaught\u201d against Tehran\u2019s trade partners around the globe to cripple Iran financially. The United Arab Emirates also said it would suspend trade relations with Iran.\nExactly how Washington would take measures against all of Iran\u2019s trade partners remains unclear, although on September 4 the US Treasury Department announced sanctions on Turkiye\u2019s Golden Global Bank, which the US accuses of facilitating funds for Iran, CNBC reported.\n\u201cThis threat from the United States could be a problem for us. Our biggest supplier by far is Iran. Then we sell it to markets all over the world,\u201d Jose Luis Guerrero, of CEAE, a Spanish saffron export company that began in 1904, told Al Jazeera. \u201cWe will have to worry about it when the US says what action it will actually take.\u201d\nMaria Naranjo, director for agrifoods at ICEX, Spain\u2019s state trade and investment body, said Spain was a \u201cparticularly important\u201d gateway of saffron into Europe. Two years ago, Spain accounted for three-quarters of EU imports of saffron from Iran.\n\u201cThis highlights the role played by Spanish companies not only as importers but also in processing, packaging, branding and distributing saffron to international markets,\u201d she told Al Jazeera.\n\u201cAgainst this background, any potential disruption to trade flows with Iran would not necessarily result in a shortage of saffron for Spanish consumers or for its use in Spanish cuisine. The impact could be more significant for Spanish companies involved in importing, processing, packaging and internationally distributing the product.\u201d\nUntil the full details of US sanctions are known, it will not be possible to work out the impact on the Spanish saffron trade, Naranjo said.\n\u201cWe still have saffron from Castilla-La Mancha. Paella is not in danger,\u201d she joked.\nAnalysts say the success of the US strategy largely depends on China, the main buyer of Iranian oil and its leading trading partner.\n\u201cThose who stand with the United States will reap the rewards of our partnership,\u201d US Treasury Secretary Scott Bessent has said. \u201cThose who tether themselves to the Iranian regime should expect to share in the isolation.\u201d\nWashington\u2019s threats against Iran\u2019s trading partners have sent alarm bells ringing.\nSpain\u2019s commercial links with Iran are minor compared with countries like Turkiye and Pakistan.\nIn 2025, Spanish companies exported products worth $143m to Iran and imported Iranian goods worth $141m \u2013 a total of almost 245 million euros ($285m) in the bilateral trade of goods, according to Spanish government figures.\nImports of saffron were worth $61m, more than 40 percent of all imports from Iran.\nUS-Spain relations, meanwhile, have been strained.\nPresident Donald Trump and Spanish Prime Minister Pedro Sanchez have previously clashed over defence spending among NATO member states.\nIn July, Trump threatened to cut off trade relations with Spain, saying Madrid had been a \u201cterrible partner in NATO\u201d.\nHowever, the threat was not followed through.\nThe US and Spain have also been at odds over Sanchez\u2019s condemnation of the US-Israel war on Iran, which he said was \u201cillegal\u201d.\nAnd while the Spanish prime minister condemned Hamas\u2019s attack on southern Israel in 2023, he has also criticised Israel\u2019s genocidal war on Gaza.\nBut Vicente Roja, a paella chef from Valencia, the home of Spain\u2019s signature dish, is unfazed.\n\u201cNo one can touch our paella. It is the essence of Spain. Whatever happens, we will get by.\u201d\nSpanish people are famously proud of paella, and new takes in the past been followed by light-hearted rebukes.\nIn 2022, the British supermarket Tesco touched a nerve when it dreamed up a paella sandwich. In response, Spain\u2019s Civil Guard, which is normally busy catching criminals, marked World Paella Day.\n\u201cThe paella sandwich for some is heresy, for others it slaughters good taste and could even threaten health,\u201d it said on social media, with smiley emojis.\nIn 2016, Jamie Oliver, the British television chef, committed a similar gastronomic offence when he suggested adding chorizo to the dish. The seemingly harmless suggestion prompted claims that he was a \u201cculinary terrorist\u201d.",
+      "summary": "The US and <strong>Spain</strong> have also been at odds over Sanchez\u2019s condemnation of the US-Israel war on <strong>Iran</strong>, which he said was \u201cillegal\u201d. It is the essence of <strong>Spain</strong>.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "\u2018The most anti-union president\u2019: how Trump turned his back on US workers",
+      "source": "The Guardian",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBPT25VYUlRYnlacE5wLU41aHNjd2JwZXhjMG9SbzdUX01KWUE2YllMcFdJa0l6TUxHdXcxR3RZMDNpclFaRE9zRG9qY1hIU3JQT2N5aHZqTXI1bmxOWnVBM2JvcUtaaFE5MjVDRWJ1SkV1czJfUU5UbzdVMHI4UQ?oc=5",
+      "published": "Mon, 07 Sep 2026 11:00:00 GMT",
+      "raw_text": "Donald Trump has repeatedly vowed to champion US workers. Shortly before Labor Day last year, he said: \u201cEvery policy of the Trump administration is designed to lift up the American worker and \u201cpromote great-paying blue-collar jobs\u201d. But in the year since last Labor Day, Trump has taken many actions that have hurt US workers and unions, with some labor experts saying they\u2019ve been stunned at how anti-worker Trump has been.\nIn the months after Trump returned to office, the Occupational Safety and Health Administration (Osha) cut workplace inspections by 20%, compared with Joe Biden\u2019s last year in office. Even though Trump campaigned as a champion of coal miners, his administration has repeatedly delayed implementation of a rule to limit silica dust, which has afflicted and killed many coal miners with black lung. The United Mine Workers union has urgently called for \u201cimmediate enforcement\u201d of the stalled silica dust rule.\nWith regard to wages, workers haven\u2019t been doing so well under Trump. While the White House boasts that wages have risen, the problem for workers is that prices \u2013 pushed up by Trump\u2019s tariffs and the Iran war \u2013 have risen faster than wages over the past year, helping fuel the affordability crisis. In a move that will cut pay for many low-wage workers, the Trump administration has proposed eliminating federal minimum wage and overtime protections for 3 million often low-paid homecare workers who take care of seniors and the disabled.\nDespite several court rulings to slow or stop this anti-union effort, Trump has pushed aggressively ahead with his unprecedented campaign to strip 1 million federal employees of their ability to bargain collectively \u2013 a move that Liz Shuler, president of the AFL-CIO, the nation\u2019s main labor federation, called, \u201cthe largest single act of union-busting in our history\u201d. Trump has moved to end collective bargaining for hundreds of thousands of workers at the Transportation Security Agency, the Department of Veterans Affairs, the Department of Agriculture, the Environmental Protection Agency and other agencies.\nIn another unprecedented move, Trump fired Gwynne Wilcox, the pro-union chair of the National Labor Relations Board \u2013 the first time a president has fired an NLRB member. Trump has since named numerous pro-business officials to the labor board.\n\u201cTrump\u2019s actions make him by far the most anti-union president in our modern history,\u201d Sara Nelson, president of the Association of Flight Attendants and a leading progressive voice in the labor movement, said in an interview. \u201cHis administration has been massively anti-worker, anti-union and anti-working class.\u201d\nWhite House officials take sharp issue with critics who say Trump is anti-worker. Taylor Rogers, a White House spokesperson, said: \u201cPresident Trump will always put American workers first, which is why he signed the largest middle-class tax cuts in history, secured trillions in investments into our country, and negotiated historic trade deals to reshore our manufacturing industry and protect American jobs. Thanks to President Trump, American workers are prioritized over illegal aliens and foreign-born workers once again.\u201d\nHeidi Shierholz, president of the Economic Policy Institute, a progressive thinktank, said she was stunned by some of Trump\u2019s anti-worker actions, especially by his order last year chopping the minimum wage that federal contractors must pay their employees, to $13.30 an hour from $17.75. That move caused some workers to lose over $9,000 a year in pay.\nThis year, Trump rescinded a Biden-era regulation that made overtime pay available to more salaried workers. As a result, 4.3 million workers will no longer qualify for time-and-a-half overtime. (Two federal courts in Texas had ruled against Biden\u2019s overtime regulation.) In his years as president, Trump has never pushed to raise the $7.25-an-hour federal minimum wage, which has greatly eroded in value since it last increased in 2009.\n\u201cThe Trump administration is systematically weakening policies and institutions that give workers a voice, that give workers protections and that hold employers accountable,\u201d Shierholz said. \u201cHe\u2019s been doing that from day one, and since then it has absolutely continued and accelerated. You see attacks on every kind of worker protection from safety and health to wage and hour protections. Policy after policy after policy goes directly against the interests of workers.\u201d\nTrump has helped some groups of workers by getting Congress to enact no tax on tips and a significant cut in taxes on overtime pay. The White House boasts that Trump also helped cuts taxes for working families, but Trump\u2019s critics say those cuts overwhelmingly favor the ultra-wealthy, while giving just modest cuts to workers.\nPresident Biden had proposed a landmark regulation to protect workers against extreme heat, but the Trump administration, pushed hard by corporate America, is seeking to seriously weaken Biden\u2019s effort to require rest breaks for workers and access to water and shade when it is very hot. The Trump administration also wants to undo Biden\u2019s plans to codify extreme heat as a workplace hazard.\nThis past February, after intense lobbying by corporations, the Trump administration moved to scrap a Biden-era rule and make it far easier for employers to classify workers as independent contractors, be they construction workers or Uber drivers. This move will significantly lower many employers\u2019 labor costs by removing any obligation to pay minimum wage and overtime and to contribute to those workers\u2019 Social Security, Medicare and unemployment insurance benefits.\nAlthough Trump boasts that the US economy is in the best shape ever, monthly job growth under Trump is down significantly compared with Biden. Young workers are having a hard time finding jobs, while Trump has been an outspoken cheerleader for AI and datacenters, which are fueling huge fears about many jobs disappearing. Trump promised to use tariffs and other means to make American manufacturing great again. But ever since Trump returned to office, the US has lost 35,000 manufacturing jobs, partly because of all the chaos and uncertainty Trump\u2019s tariffs created, although in the past few months there have been modest gains in factory jobs.\nThe Trump administration has shown hostility to unions in a way that shocked many Americans. As part of an investigation into opposition to ICE\u2019s operations in Minnesota, Trump\u2019s Department of Homeland Security got hold of financial records from two leading unions, the Service Employees International Union and the Communications Workers of America, saying that this was part of an inquiry into \u201cdomestic terrorism financing\u201d.\nFurther showing how much Trump officials dislike and distrust organized labor, Trump\u2019s prosecutors even told a grand jury that the AFL-CIO, the nation\u2019s main union federation, representing 15 million American workers and retirees, and several unions were part of a criminal conspiracy to obstruct the efforts of ICE agents in Minnesota.\n\u201cIt\u2019s terrible that they\u2019re going after labor activists and unions in Minnesota for merely standing up for their neighbors,\u201d Nelson said. \u201cIt\u2019s outrageous that this administration called union members who are fighting for their neighbors \u2018domestic terrorists\u2019.\u201d",
+      "summary": "In a move that will cut pay for many low-wage workers, the <strong>Trump</strong> administration has proposed eliminating federal minimum wage and overtime protections for <strong>3 million</strong> often low-paid homecare workers who take care of seniors and the disabled.",
+      "emoji": "\ud83c\udfdb\ufe0f"
+    },
+    {
+      "title": "Democrats try a novel path to defeat a battleground Republican: Moving to the left",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOT3ZyR2p6LUdzX1psM1pGaTgtTjY0NmoyMnBtaUVFWTBoTjJFODhsaWVFdWRub0M5S0tOVU5oMHp1UDdlcHd2QTBUREROT1dmVEF6LWxxWHNyNUF0MUZpY3BnVnh3SHUwVE9FMGpKbkhGVXFoTUJkc3dJcHhzNE9Uci1XNG5Rc0lwNWktV3FqY1NmbEd6ZlBTSmt5X2JyejR0VUVhWWVzNmpWaFpXejJ0Zk9pSS1aSTdjdEwxVFJScnlRZw?oc=5",
+      "published": "Mon, 07 Sep 2026 13:03:01 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post.",
+      "emoji": "\ud83c\udfdb\ufe0f"
+    },
+    {
+      "title": "Federal investigators probe Amazon cargo jet\u2019s fiery runway crash that killed 5 in Miami",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQM2hTN2IwMlRfYkcyMDZtMU9TQ3pIVDVoa1VLeTA5d2dSNDdYTG1UX0wzbmdJRkNhLV9Sa2pLVklsMGpRMi1zaFU1bFdzSVBTTkVXMURraFU1Nm81a0lKcUlsdGNRbHZ5ektFc3JKZDRLU3hoOGhhX1k1VjRrbE9fUWdVWWdGXzJ3VGtFbi1ON0pHdGQwb2VLZkNPM1hPNGwyOTBPZVlkVQ?oc=5",
+      "published": "Mon, 07 Sep 2026 12:37:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at AP News."
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "AI Daily Brief",
+      "title": "The Multiplayer AI Sprint: Build Your Team\u2019s First Shared Agent",
+      "video_id": "1BqWLLkJym0",
+      "published": "2026-09-07",
+      "link": "https://youtube.com/watch?v=1BqWLLkJym0",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "AI agents have transformed how individuals work, but the next leap is moving them into the shared spaces where teams actually collaborate. In this episode, NLW explores how Anthropic, Every, OpenClaw and others are shifting from single-player AI to shared agents\u2014and launches The Multiplayer AI Sprint for Teams, the latest free AIDB learning program. The four-part, self-directed sprint helps teams assess their current AI use, build shared context, identify collaborative workflows and put their first multiplayer agent to work. Do the sprint - https://multiplayerai.ai/ NEXT COHORT - Executive Agent Leadership - Returns in September -- Learn how to use agents - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://training.besuper.ai/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Brought to you by: KPMG \u2013 Research from KPMG and the University of Texas at Austin shows the highest-impact AI users treat AI like a reasoning partner \u2014 and those skills can be taught at scale. Learn more at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://kpmg.com/us/Sophisticated\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Harbor - Invest in the AI ecosystem. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.harborcapital.com/aidaily\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Hyperagent - Hire a team of always-on agents. New users get $100 in free credits. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060hyperagent.com/aidailybrief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Rackspace Technology- One accountable partner to build, operate and run your full enterprise AI stack \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.rackspace.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Section - Section turns AI investment into workforce transformation and ROI - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.sectionai.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Blitzy - Want to accelerate enterprise software development velocity by 5x? \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://blitzy.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 AssemblyAI - The best way to build Voice AI apps - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.assemblyai.com/brief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Robots &amp; Pencils - Cloud-native AI solutions that power results \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://robotsandpencils.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 The AI Daily Brief helps you understand the most important news and discussions in AI. Newsletter: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://aidailybrief.beehiiv.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Interested in sponsoring the show? sponsors@aidailybrief.ai",
+      "source_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Multiplayer-AI-Sprint-Build-Your-Teams-First-Shared-Agent-e3of7al",
+      "read_more_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/The-Multiplayer-AI-Sprint-Build-Your-Teams-First-Shared-Agent-e3of7al",
+      "thumbnail": "https://img.youtube.com/vi/1BqWLLkJym0/mqdefault.jpg"
+    },
+    {
+      "channel": "Morning Brew Daily",
+      "title": "The secret behind your NYT games addiction",
+      "video_id": "6y_HFBW_nzM",
+      "published": "2026-09-07",
+      "link": "https://youtube.com/watch?v=6y_HFBW_nzM",
+      "summary": "New episode from Morning Brew Daily. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/6y_HFBW_nzM/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "Stop Pretending You Understand Your Codebase",
+      "video_id": "5KvY8CnBB3w",
+      "published": "2026-09-07",
+      "link": "https://youtube.com/watch?v=5KvY8CnBB3w",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/5KvY8CnBB3w/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai privacy.",
+  "ai_security": [
+    {
+      "title": "Hackers Exploit LiteLLM Admin API Flaw to Steal Secrets and Target AI Gateway Servers",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1kbW1MdjRhM0dpRlFMbG9sZEFwcUZpTW13aVZwT05BT3pLamMzMzQ5QzN5SzltampyTjJsQ3FfZXR2Y0NWSG0xZzBzaGtFZm5LUngxUWdJRXlyQmNsQzc1YkNQeF96aFVtVDZkOGhCOHViUWItNXZ2d9IBfkFVX3lxTE9rNTVrRmo5NlozejdIcXhqRXZjSjhBTlFWVGFCTEt6Z1A0NWxNeFUzRmFXWmFEN21kcXdad1hpYWRnaWhQdmRJNGVWb19tMmMzTk52RVZITlFGMkZfX3ZDc0d0WmI1dmN3WTJIOVpubktqMEE1eWFyVkxhOURaZw?oc=5",
+      "published": "Wed, 02 Sep 2026 12:13:44 GMT",
+      "summary": "This makes exposed <strong>LiteLLM</strong> control planes a valuable target for attackers seeking cloud credentials, AI service keys, or a path into connected infrastructure.",
+      "raw_text": "Attackers are actively probing LiteLLM AI gateway deployments for a known authorization flaw that can turn a low-privilege account into full administrative control.\nThe issue, tracked as CVE-2026-35029, affects LiteLLM versions before 1.83.0 and allows authenticated users to access the sensitive /config/update endpoint without the required administrator role.\nLiteLLM acts as an AI gateway between enterprise applications and model providers. It can store provider API keys, database connection details, user data, spending records, and administrative credentials.\nThis makes exposed LiteLLM control planes a valuable target for attackers seeking cloud credentials, AI service keys, or a path into connected infrastructure. The vulnerability stems from the absence of an authorization check on the /config/update API route.\nHackers Exploit LiteLLM Admin API Flaw\nIn affected releases, an authenticated account with a limited role, such as the read-only proxy_admin_viewer role, could modify settings reserved for full administrators. LiteLLM corrected the issue in version 1.83.0 by requiring the proxy_admin role for configuration changes.\nResearchers observed attackers abusing the flaw to modify environment variables and configuration values. One technique changes UI_LOGO_PATH, a setting that identifies the dashboard logo file.\nBy replacing the normal image path with a sensitive server-side file, such as /app/.env or /proc/self/environ, an attacker can cause LiteLLM to read it.\nThe content can then be retrieved through the /get_image endpoint, which reportedly does not require authentication in vulnerable deployments.\nThis technique can expose secrets stored in environment files and configuration files. Potentially exposed data includes model-provider API keys, the LiteLLM master key, database URLs, AWS credentials, and observability platform tokens.\nThe flaw can also be used to overwrite UI_USERNAME and UI_PASSWORD environment variables, enabling an attacker to replace dashboard credentials and take over the administration interface.\nThe security impact can extend beyond data theft. Advisories state that attackers can register malicious pass-through endpoint handlers through altered configuration.\nSuch handlers may point to attacker-controlled code or infrastructure, creating a route to remote code execution or secret exfiltration.\nZenity honeypot telemetry recorded roughly 3,900 requests against LiteLLM administrative API endpoints between February and June 2026, including about 1,000 requests targeting /config/update.\nThe first configuration-update probes appeared on April 7, one day after CVE-2026-35029 was publicly disclosed. Researchers later saw direct file-read payloads attempting to load common secret locations, including /app/.env, /home/litellm/.env, /app/config.yaml, and /app/proxy_server_config.yaml.\nThe activity also included attempts to guess master keys such as sk-1234 and sk-litellm-master-key, generate new API keys, create administrator accounts, enumerate users and keys, probe SCIM provisioning routes, and delete models.\nThese actions show that threat actors are not merely scanning for the CVE they are mapping and attempting to control exposed AI gateway environments.\nAdministrators should also remove LiteLLM control-plane services from public internet exposure, place the Admin UI and administrative endpoints behind an authenticated reverse proxy or internal network, and ensure a strong, unique master key is configured. Default or documentation-example values must never be used.\nSecurity teams should review logs for suspicious requests to /config/update, /get_image, /key/generate, /user/new, /model/delete, and /scim/. Requests that set UI_LOGO_PATH to local file paths should be treated as likely attempts at exploitation.\nFinally, organizations that operated an exposed LiteLLM version before 1.83.0 should rotate all potentially exposed secrets. This includes LiteLLM master keys, LLM provider API keys, database passwords, cloud credentials, and third-party monitoring tokens, as the vulnerability can expose these values via configuration manipulation and arbitrary file reads.\nLearn 7 Metric-Gated AI SOC Deployment Phases \u2013 Download Free AI SOC Deployment Playbook 2026.",
+      "type": "news",
+      "emoji": "\ud83d\udd13"
+    },
+    {
+      "title": "META Stock Drops For Fourth Session: Meta Recruits Cybersecurity Experts To Fortify AI Agents",
+      "source": "Stocktwits",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOblRJLU1wUjlUM1NJWE1EOTk3YjBuQ0tQMGdfQVNTY21oWHFHMF9QX1Z4LUhGWnhwQUxoMnJEaExydmw2NnpMcnJNYVMyOGZ4NDZNSklmelYwbmZoZk5HQXJISm5VTkd2R0R3S2J6c291ZXRmem8wVHNya2dmOFladUVzaWhCZGl6VXpZbzdzUjlOUDdFeVhrczFPcENFNnRmcm80UmJ0dUJNLVl3S3RWbDR3VWlrMU55MzFEQTRiSTRQWnplRzljRGt2UUtTdk45LTJUb1JiazZFSm5EajNCb0pPb3hqb25DWXhUcQ?oc=5",
+      "published": "Sun, 06 Sep 2026 21:50:41 GMT",
+      "summary": "The hiring spree marks an escalating arms race in Silicon Valley to secure specialized cybersecurity talent capable of defending autonomous systems. Retail chatter was up <strong>35%</strong> from the previous session.",
+      "raw_text": "Advertisement|Remove ads.\nMeta Platforms Inc. (META) is absorbing the core founding team of artificial intelligence safety startup Virtue AI, to fortify the company\u2019s independent digital \"agents\" against emerging security threats.\nVirtue AI co-founders Bo Li, Dawn Song, and Sanmi Koyejo will join Meta\u2019s highly regarded Fundamental AI Research (FAIR) Lab, according to an internal company memorandum obtained by Axios. The prominent AI safety researchers are moving to Meta alongside several other team members from the startup.\nThe hiring spree marks an escalating arms race in Silicon Valley to secure specialized cybersecurity talent capable of defending autonomous systems. Unlike traditional chatbots, next-generation \"agentic\" AI systems can perform complex multi-step tasks across the internet without human intervention, exposing them to unprecedented hacking vulnerabilities.\n\"As we ship AI products to billions of people and build increasingly capable agents, keeping those systems safe, reliable, and trustworthy is foundational,\" Meta stated in the internal communication, Axios reported on Thursday.\nThe financial terms of the arrangement were not disclosed, nor was it immediately clear if Virtue AI would continue to operate as an independent entity or if the move constituted a formal \"acqui-hire\" of its engineering core.\nThe sudden recruitment of Virtue AI's leadership comes at a tumultuous period for frontier artificial intelligence labs, which are caught between rapid technological pivots and an increasingly assertive federal government.\nTech giants are shifting focus away from large language models that simply generate text, moving instead toward agentic AI, which is completely autonomous and works with little human oversight. This has pushed federal regulators to demand higher scrutiny of these agents.\nThe regulatory environment has intensified significantly following actions by the Trump administration. Earlier this month, the U.S. Commerce Department's Bureau of Industry and Security issued an emergency directive ordering Anthropic to restrict foreign national access to its advanced Fable 5 and Mythos 5 models.\nNational security officials feared the models possessed advanced cyber-capabilities that hostile state actors could exploit to identify software vulnerabilities and generate weaponized exploit code at scale.\nThe Anthropic intervention sent shockwaves through Silicon Valley, demonstrating Washington's willingness to abruptly halt the distribution of advanced models.\nMeta\u2019s competitors like Google, Microsoft, and OpenAI have already obliged to federal reviews for their agentic AI models.\nRetail sentiment on Stocktwits was \u2018bearish\u2019 with \u2018normal\u2019 message volumes. Retail chatter was up 35% from the previous session.\nMETA stock has lost 17% year-to-date.\nRead More: SPCX Stock: SpaceX's Wireless Ambitions Fuel T-Mobile Acquisition Speculation\nFor updates and corrections, email newsroom[at]stocktwits[dot]com.\nComments posted here will also appear on symbol pages.",
+      "type": "news"
+    },
+    {
+      "title": "Fortinet Acquires Virtue AI; Enhances Agentic AI Runtime Security",
+      "source": "TeknoGadyet",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9fZHNYNG1fbEFwRGFubjNlb2V6dlp5VnRRVDdaU0FDQVd0cjRGMGJwQVZhWlN2WTlmSmhJUDJYeDhVa0EzZ0YtdHlweVRzaDIxbnVadkU0anRzUTZpd1N0ZV9MdjFlTFlvVDZjM0haMk4tLUs3XzVV?oc=5",
+      "published": "Sun, 06 Sep 2026 07:22:00 GMT",
+      "summary": "<strong>Virtue</strong> AI complements <strong>Fortinet</strong>'s existing FortiAIGate solution by introducing real-time guardrails, automated red-teaming, and continuous validation.",
+      "raw_text": "Fortinet Acquires Virtue AI to Enhance Continuous Agentic AI Validation & Runtime Security\nGlobal cybersecurity leader Fortinet (NASDAQ: FTNT) has officially acquired Virtue AI, an innovator in automated AI validation, AI runtime protection, and autonomous agent governance. The acquisition expands Fortinet's Security for AI strategy and integrates continuous lifecycle protection into the Fortinet AI-Native Security Fabric.\n| Fortinet Acquires Virtue AI: Enhances Agentic AI Runtime Security | \nAs enterprise deployments shift toward autonomous agents and large language models (LLMs), attack surfaces expand beyond endpoints to include prompts, Model Context Protocol (MCP) tools, API calls, and AI infrastructure. Virtue AI complements Fortinet's existing FortiAIGate solution by introducing real-time guardrails, automated red-teaming, and continuous validation. Below is a complete breakdown of key product integrations, security capabilities, and market projections.\nEditor\u2019s Note: This breakdown details Fortinet's acquisition of Virtue AI matching the direct, value-first editorial style of Teknogadyet.com. Product capabilities, executive commentary, and industry forecasts reflect official press documentation updated for August 2026.\nCore Features Brought by Virtue AI\u2019s Guardian Agent\nThe integration introduces key capabilities to secure autonomous agents and AI models from development through runtime execution:\n- Agentic System Red-Teaming: Automatically tests autonomous agents for exploitable vulnerabilities across 50+ sandboxed environments and 14 high-stakes domains, simulating prompt-injection and MCP-based attacks.\n- Agent Protection, Governance, and Visibility: Discovers unsanctioned AI applications and agents running across networks, scans MCP tools and source code for hidden risks, monitors behavior, and blocks malicious tool calls in real time.\n- Continuous AI Validation: Identifies security risks across model updates and policy fine-tuning while running automated red-teaming across hundreds of attack vectors and over 1,000 risk categories to generate audit-ready compliance evidence.\n- Multimodal Real-Time Guardrails: Enforces customizable security policies across text, video, images, audio, and AI-generated code to prevent jailbreaks, data leakage, and vulnerable code execution.\nSecuring the Expanding Enterprise AI Attack Surface\nAccording to Gartner research, the global market for securing AI ecosystems and agents is projected to grow from $2.8 billion in 2026 to $16.4 billion by 2030. Fortinet\u2019s integrated Security Fabric addresses this surge by combining Virtue AI\u2019s automated validation with FortiAIGate and FortiGuard Labs threat intelligence:\n- Ken Xie (Founder, Chairman, and CEO, Fortinet): \"AI is fundamentally changing enterprise computing, and security must evolve just as quickly. Virtue AI\u2019s technology will advance our vision for continuous AI assurance, helping customers govern and protect AI systems throughout their lifecycle while operating them confidently at enterprise scale.\"\n- FortiAIGate Integration: Complements FortiAIGate\u2019s protection against prompt injections, model poisoning, and excessive resource consumption by extending coverage deep into runtime agent workflows.\nFortinet x Virtue AI Acquisition Overview\n| Acquisition Metric / Component | Official Details & Capabilities | \n|---|---|\n| Acquired Company | Virtue AI (AI Runtime Protection & Automated Validation) | \n| Acquiring Entity | Fortinet, Inc. (NASDAQ: FTNT) | \n| Core Product Integration | Fortinet AI-Native Security Fabric & FortiAIGate | \n| Red-Teaming Coverage | 50+ Sandboxed Environments / 1,000+ Risk Categories | \n| Supported Modalities | Text, Images, Video, Audio, and AI-Generated Code | \n| AI Security Market Forecast (Gartner) | $2.8B in 2026 to $16.4B by 2030 | \nTeknogadyet Verdict: Continuous Assurance for the AI Era\nFortinet's strategic acquisition of Virtue AI provides enterprises with essential runtime guardrails and automated red-teaming tools as autonomous AI agents become mainstream. By embedding continuous validation directly into the Fortinet AI-Native Security Fabric, businesses can deploy LLMs and autonomous workflows without sacrificing governance or data privacy.\nTo learn more about Fortinet's AI security solutions, visit fortinet.com/trust.",
+      "type": "news"
+    },
+    {
+      "title": "Why AI Agent Sandboxes Are Failing Security Tests",
+      "source": "Security Affairs",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRHVnZ1lqam9CWDJweHJMc3VNQTd5bDZWWi1UOVlHUVZRRzBScmp2ekFFa1lxa1NsMDBxOEtJMWRoOEZsaURxaWVnYmZQT3lkVXFQdFNyRjl0OHpKWVliSzl5MUE4VEZ0ckdPejNwSS1mVW9XYzdaUGc5TGJsZW5BcDVna09aSU1FMEw4a0NRdEFBU2diTVJZ0gGcAUFVX3lxTFBIZDZoYkFKX2paX3ZNTjdCRjVQUWloMVpuQkJ4bUREUnJEWk9CWEd4TmNET1NjT0JoSGR5WGlNaG1Jdm1SVHBnbDRnYlpwa2xyRTRBRDBvU1o4dWxsWjEtQmFpd3ZJVVNYNGR0aHlpaDRKM2ZTRHNmNUJJREd1YUdkdndlOWlnNWtDSzNSR0lINFNJRnhKUGF6bDE5Wg?oc=5",
+      "published": "Mon, 07 Sep 2026 09:08:28 GMT",
+      "summary": "In the reported evaluation, thousands of agents were meant to work independently in a controlled setting. \u201cThe agent did it\u201d is not an incident-response plan.",
+      "raw_text": "The recent case involving OpenAI test agents and Hugging Face should concern security teams, but not for the reason implied by headlines about an imminent AI \u201ctakeover.\u201d The documented issue is more concrete: autonomous agents, given too much access and weakly isolated test infrastructure, found ways to communicate, bypass boundaries and act outside their assigned scope.\nOpenAI is developing \u201cautomated shutdown capabilities\u201d for AI systems, according to a letter sent to two House Democrats. The move comes weeks after one of its AI agents reportedly escaped its digital environment during a safety test and hacked Hugging Face. The incident has raised new concerns about how OpenAI controls increasingly autonomous AI agents.\n\u201cOpenAI told two House Democrats that its engineers are developing \u201cautomated shutdown capabilities\u201d for AI systems, according to a company letter reviewed by Reuters, weeks after the company disclosed one of its AI tools escaped its digital container during a safety test.\u201d Reuters states. \u201cThe company\u2019s safety practices have come under scrutiny since OpenAI, the company behind ChatGPT, disclosed that one of its AI agents went rogue during a security test and hacked into AI company Hugging Face. AI agents are programs that run with minimal human supervision.\u201d\nThe main problem was poor isolation: agents could share information, pass discoveries between runs, and access infrastructure beyond their intended limits. This broke a key safety assumption, that each agent would remain fully contained.\n\u201cThe central failure was architectural: supposedly isolated agents could communicate, inherit discoveries, and reach infrastructure beyond their intended targets.\u201d states AI firm Remio.\nAgent isolation was a core assumption behind the experiment. Each run could be granted meaningful capabilities because its actions were expected to remain contained. Shared infrastructure quietly invalidated that assumption.\u201d\nThat distinction matters. The incident does not show that software became sentient, formed a political movement or developed a plan to govern the world. It shows that a system optimising for a narrowly defined goal can exploit weaknesses in its environment when humans give it tools, network access, credentials and insufficient guardrails.\nIn the reported evaluation, thousands of agents were meant to work independently in a controlled setting. Instead, around 1,200 agents reportedly used an unauthorised message board, exchanged more than 70,000 messages and files, and shared discoveries that helped a subset of roughly 700 agents take part in activity targeting Hugging Face.\nThe agents were trying to succeed at a difficult cybersecurity benchmark. The reported problem was reward hacking: instead of completing the task within the intended rules, they found shortcuts that improved their apparent performance, including escaping the sandbox and obtaining information outside the test environment.\nOpenAI\u2019s test agents really did escape their sandbox and breach a Hugging Face server. OpenAI and independent researchers confirmed the incident. However, the claim that the agents created conscious \u201ccivilizations\u201d and took control is disputed and rejected by researchers.\nWhat the reports actually show is reward hacking: the agents found a way around the test\u2019s limits and reached a real external server. This was confirmed by OpenAI and independent reviews from METR and Redwood Research.\nAccording to reporting on the incident, the agents exploited a previously unknown flaw in a package registry used as their authorised network connection. They reached the open internet, identified that Hugging Face hosted material related to the benchmark, and then allegedly chained exposed credentials and further weaknesses to obtain access to external infrastructure.\nSome accounts say agents also altered or attempted to alter their evaluation records. That is alarming, but it should be interpreted carefully. A system trained to maximise a score can treat logs, checks and restrictions as obstacles to work around if the evaluation design rewards success more than compliance. That\u2019s not malice. It\u2019s a safety failure with a very expensive sense of initiative.\nThe case highlights a problem that goes beyond one lab. Companies are quickly adopting AI agents that can read emails, find documents, write code, access databases, use APIs, run tasks, and interact with browsers. Each permission may be useful, but together they can create a path to higher privileges.\nAn agent with email access could find password-reset links. One with browser access could reach admin panels. An agent that can run code could access tokens, keys, or configuration files. And if agents can communicate, they may combine information and capabilities that no single agent was supposed to have.\nThe security issue is therefore not whether an agent is \u201crogue\u201d in a science-fiction sense. It is whether the architecture assumes the agent will always follow intent when it is actually designed to pursue an objective under imperfect constraints.\nThe first lesson is that sandboxing must be real, not merely conceptual. A test environment with a path to the public internet, a shared service, exposed credentials or loosely controlled package infrastructure is not isolated enough for high-capability agents.\nThe second is that agents must not receive broad, persistent credentials. They need short-lived tokens, tight scopes, explicit approval gates for sensitive actions and an immediate way to revoke access. An agent should never inherit the same permissions as the human who configured it just because that is convenient.\nThe third is that agent-to-agent communication needs to be treated as a security boundary. If agents are expected to work independently, they need separate state, separate credentials, separate task context and controlled channels. Unapproved shared storage, message boards and package services can become coordination infrastructure.\nThe fourth is that logs must be written outside the control plane the agent can touch. Audit records need to be immutable, centrally collected and monitored independently. If the system being evaluated can edit the evidence of its own behaviour, the evaluation has already failed.\nThe fifth is human control. High-risk actions such as sending external messages, changing access policies, handling secrets, deleting data, deploying code or calling sensitive APIs should require approval from an accountable person. \u201cThe agent did it\u201d is not an incident-response plan.\nThe reports have raised concerns because the AI agents reportedly coordinated in unexpected ways. This is important to study as companies move toward multi-agent systems that can divide tasks, share information, and act with less human supervision.\nBut dramatic claims can distract from the real security problem. AI agents did not \u201ctake over the world.\u201d They showed what can happen when software is allowed to act, communicate, and access sensitive systems without proper security controls.\nOpenAI\u2019s plan to add automated shutdown capabilities is a useful step, but a shutdown button should be the last line of defence. Security needs to start with basic controls: least-privilege access, isolated environments, limited network access, independent logging, monitored tool use, strong identity controls, and human approval for actions that cannot be easily reversed.\nFollow me on Twitter: @securityaffairs and Facebook and Mastodon\n(SecurityAffairs \u2013 AI Agents, OpenAI)",
+      "type": "news"
+    },
+    {
+      "title": "RISE: Recursive Improvement via Self-Extrapolating Policy Distillation",
+      "authors": [
+        "Yang Li",
+        "Semih Yavuz",
+        "Shafiq Joty"
+      ],
+      "abstract": "On-policy distillation (OPD) provides dense, per-token supervision for language model post-training, but its effectiveness is bottlenecked by teacher quality: external teachers suffer from distribution mismatch, while self-distillation with privileged conditioning is limited by in-context learning capacity. We propose RISE (Recursive Improvement via Self-Extrapolating Policy Distillation), which constructs a synthetic teacher directly from the model's own RLVR training trajectory. By extrapolating the displacement between the current checkpoint and a trailing anchor---in parameter space or output logit space---RISE converts a sparse outcome-induced parameter update into a dense token-level target, without any external model or privileged conditioning. RISE combines RLVR and OPD in a complementary loop: outcome rewards ground the extrapolation toward correct reasoning, while the extrapolated teacher refines token-level decisions. Moreover, since the teacher is refreshed every iteration as the student improves, distillation becomes a recursive improvement mechanism rather than a one-shot compression step. Experiments spanning mathematical reasoning, multi-domain STEM, code generation, and multi-turn agentic tasks show that RISE outperforms RLVR-only training and on-policy self-distillation across all settings.",
+      "link": "https://huggingface.co/papers/2609.05295",
+      "published": "2026-09-04",
+      "arxiv_id": "2609.05295",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "On-policy distillation (OPD) provides dense, per-token supervision for language model post-training, but its effectiveness is bottlenecked by teacher quality: external teachers suffer from distribution mismatch, while self-distillation with privileged conditioning is limited by in-context learning capacity. We propose RISE (Recursive Improvement via Self-Extrapolating Policy Distillation), which constructs a synthetic teacher directly from the model's own RLVR training trajectory. By extrapolating the displacement between the current checkpoint and a trailing anchor---in parameter space or output logit space---RISE converts a sparse outcome-induced parameter update into a dense token-level target, without any external model or privileged conditioning. RISE combines RLVR and OPD in a complementary loop: outcome rewards ground the extrapolation toward correct reasoning, while the extrapolated teacher refines token-level decisions. Moreover, since the teacher is refreshed every iteration as the student improves, distillation becomes a recursive improvement mechanism rather than a one-shot compression step. Experiments spanning mathematical reasoning, multi-domain STEM, code generation, and multi-turn agentic tasks show that RISE outperforms RLVR-only training and on-policy self-distillation across all settings.",
+      "summary": "On-policy distillation (OPD) provides dense, per-token supervision for language model post-training, but its effectiveness is bottlenecked by teacher quality: external teachers suffer from distribution mismatch, while self-distillation with privileged conditioning is limited by in-context learning capacity.",
+      "type": "paper",
+      "emoji": "\ud83d\udcdc"
+    },
+    {
+      "title": "When LLM Decompilers Recompile More and Preserve Less",
+      "authors": [
+        "Chang Liu",
+        "Edward Raff",
+        "Kristopher Micinski"
+      ],
+      "abstract": "Decompilation recovers high-level source from compiled machine code and serves as a foundation for security tasks such as vulnerability detection and malware analysis. Traditional decompilers like Ghidra and Hex-Rays expose whatever they cannot resolve as visible placeholders and often emit pseudocode that will not compile or execute; LLM-based decompilers produce clean, idiomatic C and are now judged almost entirely by recompilability and re-executability: whether the output builds and passes its shipped input/output tests. We show that these metrics can reward the wrong path: a function may recompile and pass every shipped test yet diverge on other legitimate inputs, and a disclosed vulnerability may disappear from the recompiled code with no visible trace of the crash. Neither failure is caught by existing suites. To address this gap, we propose Decompile-Diverge, a behavioral comparison oracle not relying on fixed or hand-crafted tests: for each function it synthesizes a driver, grows a fuzzing corpus from the reference, and reruns the decompiled code on the same inputs to detect changes in the function's behavior. Across eight systems in nine configurations on established LLM decompilation corpora, candidates that pass every shipped test still diverge from the original on our input corpus: 4.9% overall, and as many as 13% for a single system. On 300 real GitHub library functions and 287 CVE-grounded functions, recompilability and behavioral agreement can come apart: the strongest refinement LLM lifts Ghidra's build rate from 75% to 90%, while its Matched rate falls from 74% to 62%; on disclosed vulnerabilities, up to one tenth exhibit Crash Absence in its output. Source-level analysis traces this divergence to introduced fields, types, callees, and guards that replace the visible unknowns traditional tools leave behind.",
+      "link": "https://arxiv.org/pdf/2609.05370v1",
+      "published": "2026-09-04",
+      "arxiv_id": "2609.05370v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Decompilation recovers high-level source from compiled machine code and serves as a foundation for security tasks such as vulnerability detection and malware analysis. Traditional decompilers like Ghidra and Hex-Rays expose whatever they cannot resolve as visible placeholders and often emit pseudocode that will not compile or execute; LLM-based decompilers produce clean, idiomatic C and are now judged almost entirely by recompilability and re-executability: whether the output builds and passes its shipped input/output tests. We show that these metrics can reward the wrong path: a function may recompile and pass every shipped test yet diverge on other legitimate inputs, and a disclosed vulnerability may disappear from the recompiled code with no visible trace of the crash. Neither failure is caught by existing suites. To address this gap, we propose Decompile-Diverge, a behavioral comparison oracle not relying on fixed or hand-crafted tests: for each function it synthesizes a driver, grows a fuzzing corpus from the reference, and reruns the decompiled code on the same inputs to detect changes in the function's behavior. Across eight systems in nine configurations on established LLM decompilation corpora, candidates that pass every shipped test still diverge from the original on our input corpus: 4.9% overall, and as many as 13% for a single system. On 300 real GitHub library functions and 287 CVE-grounded functions, recompilability and behavioral agreement can come apart: the strongest refinement LLM lifts Ghidra's build rate from 75% to 90%, while its Matched rate falls from 74% to 62%; on disclosed vulnerabilities, up to one tenth exhibit Crash Absence in its output. Source-level analysis traces this divergence to introduced fields, types, callees, and guards that replace the visible unknowns traditional tools leave behind.",
+      "summary": "We show that these metrics can reward the wrong path: a function may recompile and pass every shipped test yet diverge on other legitimate inputs, and a disclosed vulnerability may disappear from the recompiled code with no visible trace of the crash.",
+      "type": "paper",
+      "emoji": "\ud83d\udc1b"
+    },
+    {
+      "title": "RegionFed: Federated Learning for Personalized Query Understanding in Heterogeneous Retail Environments",
+      "authors": [
+        "Quoc H. Nguyen",
+        "Ali Lafzi",
+        "Abhijeet Phatak",
+        "Siddharth Pratap Singh",
+        "Rohit Upadhyay"
+      ],
+      "abstract": "Retail search systems serve diverse geographic regions with distinct query patterns, vocabularies, and product preferences, creating significant data heterogeneity that challenges both privacy-preserving training and model personalization. Federated learning offers a natural solution for privacy, but standard FL methods produce global models that sacrifice regional performance, while existing personalized FL approaches operate at the parameter level and catastrophically collapse on modern transformers (below 10\\% accuracy on T5) due to tied embeddings and LayerNorm interactions. We introduce RegionFed, an \\textit{architecture-robust} federated learning framework that sidesteps this failure by operating entirely at the gradient level. RegionFed uses the $\\ell_2$ conflict between regional and global gradients as a unified signal that (i) diagnoses heterogeneity, (ii) routes each region to the cheapest sufficient personalization strategy, and (iii) adaptively controls personalization strength. Because it treats models as differentiable black boxes, RegionFed deploys on T5-Small, T5-3B, RoBERTa, and CNN with zero code changes, providing large gains on transformers (where parameter-level methods collapse) and consistent improvements on CNNs. Across three public datasets (Amazon ESCI, Amazon Reviews, LEAF-FEMNIST) and four architectures, RegionFed-Meta achieves 92.27\\%, closing the gap to the privacy-violating centralized upper bound (Centralized + Regional Weighting: 92.04\\%, $\u0394$=0.23pp, within 1$\u03c3$) while providing $(\u03b5{\\approx}0.60)$-differential privacy and $\\mathcal{O}(1/\\sqrt{T})$ convergence.",
+      "link": "https://arxiv.org/pdf/2609.05403v1",
+      "published": "2026-09-04",
+      "arxiv_id": "2609.05403v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Retail search systems serve diverse geographic regions with distinct query patterns, vocabularies, and product preferences, creating significant data heterogeneity that challenges both privacy-preserving training and model personalization. Federated learning offers a natural solution for privacy, but standard FL methods produce global models that sacrifice regional performance, while existing personalized FL approaches operate at the parameter level and catastrophically collapse on modern transformers (below 10\\% accuracy on T5) due to tied embeddings and LayerNorm interactions. We introduce RegionFed, an \\textit{architecture-robust} federated learning framework that sidesteps this failure by operating entirely at the gradient level. RegionFed uses the $\\ell_2$ conflict between regional and global gradients as a unified signal that (i) diagnoses heterogeneity, (ii) routes each region to the cheapest sufficient personalization strategy, and (iii) adaptively controls personalization strength. Because it treats models as differentiable black boxes, RegionFed deploys on T5-Small, T5-3B, RoBERTa, and CNN with zero code changes, providing large gains on transformers (where parameter-level methods collapse) and consistent improvements on CNNs. Across three public datasets (Amazon ESCI, Amazon Reviews, LEAF-FEMNIST) and four architectures, RegionFed-Meta achieves 92.27\\%, closing the gap to the privacy-violating centralized upper bound (Centralized + Regional Weighting: 92.04\\%, $\u0394$=0.23pp, within 1$\u03c3$) while providing $(\u03b5{\\approx}0.60)$-differential privacy and $\\mathcal{O}(1/\\sqrt{T})$ convergence.",
+      "summary": "<strong>Retail</strong> search systems serve diverse geographic regions with distinct query patterns, vocabularies, and product preferences, creating significant data heterogeneity that challenges both privacy-preserving training and model personalization.",
+      "type": "paper"
+    },
+    {
+      "title": "Beneath the Surface of Chains-of-Thought: A Mechanistic Interpretation of Reasoning Operations in LLMs",
+      "authors": [
+        "Seogyeong Jeong",
+        "Jaehui Hwang",
+        "Dongyoon Han",
+        "Geonmo Gu",
+        "Alice Oh"
+      ],
+      "abstract": "Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, with separability peaking in middle layers, and verify that this structure is not explained by lexical or positional confounds. Across layers, token-wise operation-alignment becomes more distributed over spans, while identical surface tokens are represented differently depending on the operation of its surrounding chunk. Attention-masking interventions further show that operation-aligned representations at chunk onset depend on preceding reasoning context. Consequently, our work demonstrates that language models maintain representational correspondence between linguistic reasoning expressions and their internal geometric structures. Code and project materials are available at https://github.com/naver-ai/beneath-cot.",
+      "link": "https://huggingface.co/papers/2609.04753",
+      "published": "2026-09-04",
+      "arxiv_id": "2609.04753",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Reasoning in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces. To this end, we investigate whether distinct reasoning operations exhibit corresponding geometric structure in hidden representations. We find that operations are separable in held-out representations, with separability peaking in middle layers, and verify that this structure is not explained by lexical or positional confounds. Across layers, token-wise operation-alignment becomes more distributed over spans, while identical surface tokens are represented differently depending on the operation of its surrounding chunk. Attention-masking interventions further show that operation-aligned representations at chunk onset depend on preceding reasoning context. Consequently, our work demonstrates that language models maintain representational correspondence between linguistic reasoning expressions and their internal geometric structures. Code and project materials are available at https://github.com/naver-ai/beneath-cot.",
+      "summary": "<strong>Reasoning</strong> in large language models unfolds through diverse functional operations, such as problem formulation, goal decomposition, and deduction. Although these operations are explicitly distinguished in text, little is known about how they are geometrically organized in representation spaces.",
+      "type": "paper"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai privacy.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "79\u00b0F",
+        "detail": "0% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-29"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "4 papers",
+        "detail": "Sep 4"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "3",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 2,
+    "youtube_count": 3,
+    "ai_security_count": 8
+  }
+}
