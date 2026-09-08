@@ -1,0 +1,383 @@
+{
+  "date": "Tuesday, September 08, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 67,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 81,
+    "low": 63,
+    "feels_like": 67,
+    "forecast": "Sunny, with a high near 83. Northwest wind around 7 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 63,
+        "feels_like": 63,
+        "conditions": "Clear",
+        "wind": "3 mph W",
+        "humidity": "76%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 68,
+        "feels_like": 68,
+        "conditions": "Clear",
+        "wind": "3 mph NW",
+        "humidity": "64%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 81,
+        "feels_like": 81,
+        "conditions": "Cloudy",
+        "wind": "4 mph NW",
+        "humidity": "35%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 81,
+        "feels_like": 79,
+        "conditions": "Cloudy",
+        "wind": "3 mph NW",
+        "humidity": "36%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 77,
+        "feels_like": 78,
+        "conditions": "Cloudy",
+        "wind": "3 mph W",
+        "humidity": "47%",
+        "precip_chance": "0%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 2108,
+    "vs_average_pct": -43.2,
+    "week_ending": "2026-08-29",
+    "breakdown": {
+      "flu": 318,
+      "covid": 1639,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "2,108 combined flu/COVID/RSV cases",
+        "comparison": "43% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 14:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 14:30:00 GMT"
+      },
+      {
+        "signal": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "current": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "comparison": "Fri, 28 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1J6TlYzcVd0Y3E1R1A4dHZvbmNtbmdjejlwOUdRdWVHTTdCQV9XZVg1dE1mQVAxbXJDd2FrelBlekY4R1Zodk5MTlFhM2kzdGRUUGFFQ1QzNmlDMDNqYko0VHdzWlkwR3VfeXFWOXJQTmZXMWFmRllZRXV1cE1FajEzQUxfQy1zU1FfeFVFRTByMEwyeTFMTlpsNHVwTGFKbUxxWGFYSWloVkF3dFdMYQ?oc=5",
+        "title": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "summary": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 14:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 14:30:00 GMT"
+      },
+      {
+        "signal": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "current": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "comparison": "Fri, 28 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM1J6TlYzcVd0Y3E1R1A4dHZvbmNtbmdjejlwOUdRdWVHTTdCQV9XZVg1dE1mQVAxbXJDd2FrelBlekY4R1Zodk5MTlFhM2kzdGRUUGFFQ1QzNmlDMDNqYko0VHdzWlkwR3VfeXFWOXJQTmZXMWFmRllZRXV1cE1FajEzQUxfQy1zU1FfeFVFRTByMEwyeTFMTlpsNHVwTGFKbUxxWGFYSWloVkF3dFdMYQ?oc=5",
+        "title": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states - ABC7 New York",
+        "summary": "US officials tie cyclospora outbreak involving iceberg lettuce to 3 more states ABC7 New York",
+        "published": "Fri, 28 Aug 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "New Balance 5th Avenue Mile 2026",
+      "date": "Sun, Sep 13",
+      "borough": "Manhattan",
+      "location": "5th Ave & East 79th St",
+      "event_type": "Athletic Race / Tour"
+    },
+    {
+      "name": "40th Street Fair",
+      "date": "Wed, Sep 9",
+      "borough": "Manhattan",
+      "location": "East 40th St & Park Ave",
+      "event_type": "Single Block Festival"
+    }
+  ],
+  "news": [
+    {
+      "title": "BRICS summit may be the only place another Iran ceasefire can be built",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/opinions/2026/9/8/brics-summit-may-be-the-only-place-another-iran-ceasefire-can-be-built?traffic_source=rss",
+      "published": "Tue, 08 Sep 2026 12:00:16 +0000",
+      "raw_text": "BRICS summit may be the only place another Iran ceasefire can be built\nIts members and partners have brokered every ceasefire so far and hold the relationships needed to build the next one.\nIranian missiles and drones came down on Kuwait on September 3, two days after American aircraft struck roughly a hundred positions along the Hormuz coast and across western Iran, including a strike that killed five people at a wedding party in Sirik. The confrontation has continued since, with US forces striking Iranian oil tankers and Iran targeting shipping in and around the Strait of Hormuz. Brent is trading around $97 a barrel.\nOn September 12, Iranian President Masoud Pezeshkian lands in New Delhi for the BRICS summit. So do Chinese President Xi Jinping and Russian President Vladimir Putin, along with at least eight of the eleven BRICS heads of state and government. The United Arab Emirates, which has spent six months under Iranian fire, will be in the same hall.\nWestern commentary has already filed the summit under photo opportunity, a bloc too broad to agree on anything. That reading skips an awkward fact about the past six months. Every ceasefire this war has produced was assembled by BRICS members and their partners. Not one was assembled in Washington.\nLook at the sequence. On March 31, Beijing and Islamabad issued a five-point initiative calling for an immediate ceasefire and the reopening of the Strait of Hormuz. A week later, Iran accepted a two-week truce. Direct American and Iranian delegations then sat down in Islamabad on April 11, the highest-level contact of the war, in talks run by Pakistan\u2019s Shehbaz Sharif, with his army chief Asim Munir shuttling to Tehran twice. What came out of it was the Islamabad Memorandum, signed on June 17 by Trump at Versailles and Pezeshkian in Tehran, with Qatar, Oman, Turkiye, Saudi Arabia and Egypt carrying pieces of it. Fourteen points. Sixty days of toll-free passage. A pledge to lift the naval blockade within 30 days. A plan for at least $300 billion in reconstruction and economic development. It expired on August 17 after the two sides read Articles 1 and 5 differently and no mediator could force a common text.\nThe document failed. The machinery that built it did not. It is the only machinery this war has produced and most of it will be inside one building in Delhi on September 12.\nChina\u2019s share of that record deserves more than the shrug it usually gets. Beijing buys more than 80 percent of Iran\u2019s exported crude. It also buys heavily from the Gulf states Iran has been shelling and its Gulf imports fell 25 percent year on year in March. No other major power is losing money on both sides of this war at once. That exposure is what made its proposals legible in Tehran and tolerable in Abu Dhabi.\nNone of which makes Beijing clean. Chinese firms have supplied Iran with dual-use components, radar and navigation equipment, and a commercial reconnaissance satellite; Washington says the list runs longer and Beijing denies the sharper items. China has also said almost nothing about the Kuwaiti and Bahraini civilians killed and Qatari civilians injured by Iranian missiles, which is a real cost to its standing in the Gulf and one the Gulf has noticed. The argument is not that China has behaved well. It is that a mediator with commercial skin on every side and no interest in regime change is more usable than a mediator with none. Opportunism that produces a signed ceasefire outperforms conviction that produces nothing.\nAnd Washington now produces nothing by choice. The United States has burned through nearly 80 percent of its THAAD interceptors and virtually all of its ATACMS and Precision Strike Missiles, and Trump says he prefers near-total control of the strait to any agreement. Six months in, that is attrition with no terminal point and the states absorbing it are not American. Kuwait has taken strikes on its airport, its refineries and its bases since the first day of the war. Oman drew the compromise shipping lanes. Qatar kept a channel open after being hit itself. These are not spectators to be arranged around a Chinese or Russian argument and any Delhi text that treats them that way will die the way May\u2019s did.\nThe economic half of the summit is the same war by other means. Iranian inflation runs near 70 percent and the IMF expects a contraction above five percent this year. Bombs did some of it. Exclusion from dollar payment infrastructure did more, as it did to Russia, Venezuela and Afghanistan before it.\nThat exclusion is now repricing itself in public. China\u2019s cross-border payment system posted a single-day record of 1.22 trillion yuan, about $178.5bn, and March average daily volumes ran 50 percent above February. Standard Chartered\u2019s chief economist for Greater China put the war down as a likely catalyst, mostly through oil settlement. As chair, India is pushing links between members\u2019 fast-payment systems, including UPI and Pix, alongside work on central bank digital currencies. Sanjay Malhotra, who runs India\u2019s central bank, calls it cost reduction rather than confrontation, which is both accurate and shrewd.\nBe honest about scale. The yuan still accounts for less than three percent of global payments through SWIFT, against 51 percent for the dollar, and CIPS has 1,791 participating institutions against SWIFT\u2019s 11,000. Nobody displaces anything this decade. What has moved is the demand curve. Governments from Jakarta to Pretoria have now watched a country get bombed in the middle of live nuclear talks while cut off from the rails that would let it sell oil to willing buyers. They are not debating whether an alternative appeals. They are pricing what it costs.\nIndia\u2019s own year makes the point. In February, facing a 50 percent tariff wall, New Delhi agreed to stop buying Russian crude and Washington dropped the rate to 18 percent. Bilateral pressure worked, as it always does against one country at a time. Shared infrastructure is the only reply to that arithmetic, and Narendra Modi, chairing under a banner about building for resilience, needs to show the bloc delivers something a tariff cannot take back.\nWhen the foreign ministers met in May, they broke up without a joint statement, because Abbas Araghchi wanted the bloc to name American and Israeli aggression and the Emiratis would not sign it. The Shanghai Cooperation Organisation had no such trouble at Bishkek on September 1, where a declaration condemning the strikes on Iran passed unanimously. Bishkek was easy because nobody in the room sat on the other side. Delhi is hard for the same reason it is worth something.\nSo set the bar where it belongs. A navigation understanding Iran initials alongside the UAE and Oman would do more for war-risk premiums than another month of strikes on Larak Island. Reconstruction money lifted out of the dead memorandum and carried by a grouping representing 40 percent of world output at purchasing power parity is harder to wave away as Kremlin messaging than the same offer from Moscow alone. A dated timetable on payment linkage would tell the Global South that the alternative is under construction rather than under discussion.\nWashington has stated its terms: the strait, on its own conditions, indefinitely. Delhi is where everyone else gets a turn to answer.\nThe views expressed in this article are the author\u2019s own and do not necessarily reflect Al Jazeera\u2019s editorial stance.",
+      "summary": "It is the only machinery this war has produced and most of it will be inside one building in Delhi on September 12. Six months in, that is attrition with no terminal point and the states absorbing it are not American.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "\u2018Limit overshoot, peak, decline\u2019: A new global goal for climate change?",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/features/2026/9/8/limit-overshoot-peak-decline-a-new-global-goal-for-climate-change?traffic_source=rss",
+      "published": "Tue, 08 Sep 2026 10:58:21 +0000",
+      "raw_text": "\u2018Limit overshoot, peak, decline\u2019: A new global goal for climate change?\nThe world agreed to limit temperature rises in 2015. Now, that goal is proving impossible. Is it time for a course correction?\nThe signing of the Paris Agreement by 200 countries in 2015 was a rare moment of global unity, and the euphoria was real.\nTo cheers and tears, the international climate treaty was approved by nearly every country in the world. Fundamental to the agreement was a commitment to keeping temperatures from rising beyond 1.5C (2.7F) above the pre-industrial levels of the mid 19th-century.\nBut 11 years on, it is evident that the Earth is soon going to exceed that threshold because of the continued record burning of fossil fuels.\nA report from the United Nations Environment Programme (UNEP) in Nairobi, Kenya \u2013 called Limiting Overshoot \u2013 has found that even under the most optimistic scenario, the Earth will heat up by 1.8C (3.2F) above pre-industrial levels. It adds that the best hope for the planet is an \u201covershoot, peak and decline\u201d pathway.\nThat would mean it is still possible, and essential, to bring temperatures down and achieve the Paris goals, but a course correction is required to get there.\nThe UNEP report envisions that the global temperature rise will pass the 1.5C threshold \u201cwithin the next few years\u201d, continue to increase, then gradually cool to below the 1.5-mark, hopefully by the end of the century.\nLimiting the shock\nThe report makes it clear that the impact of rising temperatures will intensify with every year spent above the 1.5C threshold. Extreme weather will get more extreme; the danger of small island states and coastal cities being submerged will be more likely, while biodiversity loss will accelerate.\nThat means disasters such as the recent catastrophic Nepal flash floods \u2013 in which more than 1,300 people have died and thousands are still missing \u2013 which were caused by melting glaciers, could become more frequent.\nTom Rivett-Carnac, who helped shape the architecture of the Paris Agreement, told Al Jazeera that this overshoot looks increasingly locked in.\n\u201cOvershooting is extremely dangerous and raises the risks of runaway tipping points,\u201d Rivett-Carnac told Al Jazeera. \u201cIf it has to happen, our task is to make it as small and as short as possible.\u201d\nBut to ensure the temperature rise threshold returns to 1.5C in the future, the world needs to act now, the report warns, with sustained cuts to greenhouse gas emissions.\nMohammed Adow of the think tank Power Shift Africa told Al Jazeera that every fraction of a degree above 1.5C means more lives lost, more crops failing and more damage to economies.\n\u201cIf exceeding 1.5C can no longer be avoided then of course we must keep that overshoot in check and bring temperatures back down as soon as possible,\u201d he said. \u201cGiving up because 1.5C is temporarily breached would be a catastrophic, unforgivable mistake.\u201d\n\u2018We need political courage\u2019\nDespite the extraordinary momentum the Paris Agreement prompted, as it reduced the scale of projected warming and supercharged clean energy growth, the political will to see it through has failed to emerge, Rivett-Carnac said.\n\u201cTemperature projections have fallen from 3-3.5C in 2015 to roughly 2.3-2.5C now, so the progress from Paris has been real,\u201d he said.\n\u201cHowever, the 2015 assumption was that politics would follow economics, that falling costs in renewable energy would pull political ambition with them. That has not proved to be constantly the case.\u201d\nMost notably, the United States has proved entirely inconsistent. Under both presidencies of Donald Trump, it has withdrawn from the Paris Agreement altogether while the Trump administration remains heavily invested in touting US \u2013 and now Venezuelan \u2013 oil to international consumers.\nSince 2015, global fossil fuel consumption has only increased. According to the International Energy Agency, carbon dioxide emissions rose by about 145 million tonnes in 2025, reaching a new record high of 38.4 billion tonnes, 5 percent above 2019 levels.\nThis is happening despite extraordinary declines in the cost of producing renewable energy. According to the International Renewable Energy Agency (IRENA), solar power is now 90 percent cheaper than it was in 2010.\nFurthermore, renewables surpass fossil fuels as the most cost-competitive source of new electricity generation, the agency says. More than 90 percent of utility-scale projects commissioned in 2025 delivered power below the cost of the cheapest new fossil fuel plant built in their market.\n\u201cThe tragedy is our technological progress has outrun our political progress,\u201d said Mohammed Adow. \u201cWhat we lack is governments willing to deploy renewable technology at the necessary speed, to phase out fossil fuels and to provide developing countries with the finance to make that transition.\n\u201cThe route out of this crisis is clearer than it was in 2015. We now need the political courage to take it.\u201d\nClimate rollbacks and AI data centres\nUS climate policy rollbacks under President Trump and his withdrawal from the Paris Agreement have undoubtedly slowed the momentum for change at the level of global governance. Global energy demands, particularly from artificial intelligence, continue to rise.\nIn 2024, AI data centres were estimated to have consumed approximately 1.5 percent of global electricity. That consumption is projected to double by 2030.\nMany believe it is incumbent upon Big Tech like Apple and Meta to make use of new technologies to reverse the direction of travel with AI emissions.\n\u201cThe demand for data centres is rising sharply,\u201d Jan Rosenow, professor of energy and climate policy at the University of Oxford, told Al Jazeera. \u201cAnd too many being built are powered by fossil fuels. Tech companies need to do the right thing.\u201d\nRosenow pointed to the use of circular energy systems as one means of reducing emissions. \u201cThe waste heat from data centres can and should be recovered \u2013 this is something that has been happening in Sweden for years.\u201d\nThe explosive demand for electricity to power AI means Big Tech is struggling to meet its climate pledges. In July this year, British daily The Guardian reported that Microsoft, Amazon and Google\u2019s collective carbon emissions have increased by nearly 20 percent in a year, an increase equivalent to about one-third of the CO2 emissions of France.\nIn its annual sustainability report, Amazon said: \u201cWe recognise the path to being a more sustainable company is not a straight line. Though our emissions increased in 2025, we remain steadfast in our commitment to sustainability.\u201d\nThe AI-fuelled demand in the US, in particular, is increasingly being met by fossil fuels. The Environmental Integrity Project reports that there are plans for at least 74 gas-fired power plants to cater for data centres, which could emit upwards of 660 million tonnes of greenhouse gas per year, equivalent to Australia\u2019s pollution annually.\nRemoving carbon\nTo help bring the world back to its 1.5C threshold course, the UNEP report points to the need for the implementation of large-scale carbon dioxide removal (CDR) projects.\nThese include conventional methods, such as planting trees and restoring ecosystems, and more controversial ones such as carbon capture and storage, where emissions are collected, cleaned and stored deep underground, a technology hard to implement at scale.\nRosenow said carbon removal technologies have their place but not as a primary route to decarbonisation.\n\u201cWhy? Because it is far cheaper to avoid emitting in the first place,\u201d he said.",
+      "summary": "Mohammed Adow of the think tank Power Shift Africa told Al Jazeera that every fraction of a degree above 1.5C means more lives lost, more crops failing and more damage to economies. According to the International Renewable Energy Agency (IRENA), solar power is now <strong>90 percent</strong> cheaper than it was in 2010.",
+      "emoji": "\ud83c\udf0d"
+    },
+    {
+      "title": "UK announces sanctions on illegal Israeli settlements",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/9/8/uk-announces-sanctions-on-illegal-israeli-settlements?traffic_source=rss",
+      "published": "Tue, 08 Sep 2026 12:34:55 +0000",
+      "raw_text": "UK announces sanctions on illegal Israeli settlements\nUnited Kingdom Foreign Minister Ed Miliband has announced sanctions on illegal Israeli settlements in the occupied West Bank.\nBritain will introduce an import ban on goods from Israeli settlements, Miliband told parliament on Tuesday.\nHe said that there will also be a comprehensive sanctions regime put in place, adding that Britain could no longer simply \u201ccall out\u201d injustice and suffering, but told the House of Commons that the country now had to \u201cact\u201d to oppose the expansion of settlements.\n\u201cToday we refuse to be bystanders to further suffering and to the destruction of the two-state solution,\u201d Miliband said, referring to Britain\u2019s long-held support for the two-state idea, which Israel opposes.\nThe United States, through its ambassador to Israel, has already criticised Britain\u2019s plan to impose sanctions, while two Israeli ministers called for measures to be taken against Britain.\nMiliband, who became Britain\u2019s foreign minister in July, also said Britain\u2019s position is that the occupation in the West Bank is unlawful, and that London believes that there is \u201cethnic cleansing\u201d of Palestinians in areas of the West Bank.\nThe impact on the \u00a36 billion ($8.12bn) of annual bilateral trade between the UK and Israel is likely to be minimal, with details unclear of how the UK will differentiate between goods originating in West Bank settlements and products made in Israel.",
+      "summary": "UK announces sanctions on illegal <strong>Israeli</strong> settlements United Kingdom Foreign Minister Ed Miliband has announced sanctions on illegal <strong>Israeli</strong> settlements in the occupied West Bank."
+    },
+    {
+      "title": "Trump threatens Canadian jetmaker Bombardier, which has an extensive US footprint",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVmRxSDVSaGtVRFo4OG1zYjJXOVpUa2t6QTFvWTVKYmUxQ0J4UTRlRUVPSGlKRC1TVHkxaWIxSEsyZnExYmh5WUhJRW53ZDYxVWlBNjg5SVRZNmUxcVRveVdnRkRZNE9leDlTZ2ZnNXRnWTZoSG4xWmVfMkNtbV9PbEJuRldIMFNFbDliTFFjMERBeVY2aWhienpCcUhqb0FvS3lkWDBoVEo?oc=5",
+      "published": "Tue, 08 Sep 2026 11:33:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at AP News."
+    },
+    {
+      "title": "Five killed in Miami plane crash landing were in two vehicles, investigators say",
+      "source": "BBC",
+      "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5wSkw0UXZKdFc1ZGdldUhtb3pxeGdXcXRQQXNUcC1IQi1QcXJ4RFpWTHZUTEFBbnlEUGk0c0RRelVuTFdacVZGc2R6QmkybFJlYzl4Mjh5R1BSZw?oc=5",
+      "published": "Tue, 08 Sep 2026 09:31:26 GMT",
+      "raw_text": "Five killed in Miami plane crash were in two vehicles on ground, investigators say\nThe five people killed and five injured when an Amazon cargo plane crashed on landing at Miami International Airport were in two vehicles on the ground, investigators said.\nThe Boeing 767-300, operated by 21 Air, overshot the runway on Sunday and hit an airline cleaning van holding seven people before breaking the perimeter fence and striking a Toyota SUV with three inside.\nJennifer Homendy, chairwoman of the National Transportation Safety Board (NTSB), called the crash scene \"utter devastation\" and said it was too early to identify a cause.\nInvestigators have recovered the flight recorders and will look at flight systems, crew experience and weather as potential factors, say aviation experts.\nSpeaking at a press conference at Miami International Airport on Monday, Homendy said the aircraft had two crew members on board and was arriving from San Juan, Puerto Rico, on its third flight of the day.\nThe plane struck navigational aids and equipment after overrunning the runway, before hitting a white Ford van owned by a contract cleaning company.\nIt then travelled through a perimeter fence and collided with a Toyota Corolla, coming to rest about 1,300ft (394m) beyond the runway.\nIt was not clear from the NTSB's updates how many people died in each vehicle on the ground, or the condition of the two crew on board the plane.\nDebris from the aircraft, mangled vehicles and airport fencing was left strewn across the area.\n\"It's hard to see, and I'm sure very difficult for the first responders as well,\" said Homendy during the press conference.\nShe said recovering victims' bodies was the current priority, adding: \"The investigation and access to the aircraft, as well as evidence, can wait.\"\nThe flight data recorder and cockpit voice recorder have been recovered and are being sent to NTSB headquarters for evaluation.\nHomendy said investigators could not yet say anything substantive about the cause of the crash as they were still collecting evidence at the scene.\nInvestigators will examine the flight history, crew experience and training, radar data, and aircraft performance. Separate teams will look at the plane's systems and engines, while a meteorologist will assess the weather conditions at the time of landing.\nThe NTSB will also examine whether the runway should have had an engineered materials arresting system (EMAS), which is designed to slow and stop aircraft that overrun a runway. Homendy said this would be a \"key\" part of the investigation.\nEarlier analysis by BBC Verify found there was an active thunderstorm near the airport shortly before the crash, with winds gusting up to 26 knots (48km/h).\nThe NTSB has appealed for members of the public to share photographs or videos that could aid the investigation.\nHomendy said the agency would make safety recommendations at the end of its investigation. \"That's why we're here - to prevent the next tragedy,\" she said.\n\"Our recommendations must be implemented, or we'll be here again.\"\nTwo of the four runways at the airport remained closed following the crash. Passengers have been warned to expect further disruption after Sunday's cancellations affected the arrival of aircraft and flight crews.\nThe crash happened during the Labor Day holiday weekend, one of the busiest travel periods in the US.\nAmazon said it was \"heartbroken\" by the loss of life and that it was working closely with authorities.\nThe company operating the aircraft, 21 Air, expressed its condolences and said it was co-operating with the investigation.",
+      "summary": "Investigators have recovered the flight recorders and will look at flight systems, crew experience and weather as potential factors, say aviation experts.",
+      "emoji": "\u2708\ufe0f"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Women are winning the job market",
+      "video_id": "ceGAqpJ_S8w",
+      "published": "2026-09-08",
+      "link": "https://youtube.com/watch?v=ceGAqpJ_S8w",
+      "summary": "- The new record is ~<strong>30%</strong> higher than gas prices were this time last year, on average. For context, gas prices tend to move seasonally\u2014rising through spring and summer, beginning their descent by Labor Day, and hitting their lowest lows in the winter, when days are shorter and people tend to drive less.",
+      "raw_text": "Nathan Fielder made a secret documentary about Elizabeth Holmes\n\nNathan Fielder made a secret documentary about Elizabeth Holmes\nIt\u2019s apparently really weird.\n\u2022 less than 3 min read\nA new documentary from Nathan Fielder and Lance Oppenheim about disgraced Theranos founder Elizabeth Holmes will hit theaters in October, but don\u2019t expect to leave with any clear answers. And before the trailer for You Can See Everything dropped yesterday alongside its buzzy premiere at the Telluride Film Festival, basically no one knew it existed.\nIt\u2019s apparently really weird. In 2023, just 36 days before starting her 11-year prison sentence for defrauding investors by lying about her company\u2019s blood-testing machines, Holmes allowed Fielder and his crew to shoot a documentary in her home. Fielder even lived with Holmes and her partner, Billy Evans (and their two kids), for a few days:\n- The filming took place in secret. The audience at Telluride didn\u2019t even know what the movie was about until they entered the theater.\n- Throughout the doc, which runs almost three hours, Fielder tries to find the truth about what happened with Theranos and if Holmes was being manipulated\u2014or doing the manipulating.\nThere are apparently twists. If you think Holmes\u2019s story has already been detailed to death in longform articles, a book, podcasts, and a Hulu series, reviewers say you\u2019re wrong. Fielder said in a post-film Q&A, \u201cI really am struggling to this day to understand exactly what I experienced.\u201d And many of those at the Telluride screening said it\u2019s unlike anything they\u2019ve ever watched.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nLabor Day gas prices have never been this high\n\nLabor Day gas prices have never been this high\nGas never surpassed $4/gallon on Labor Day before this year.\n\u2022 less than 3 min read\nCredit cards were working overtime at gas stations across the US this weekend. Pump prices for this time of year hit their highest level on record over the holiday, driven by continued oil disruptions from the Iran war and the Russia-Ukraine war.\nGas cost an average of $4.15 per gallon yesterday, according to AAA:\n- Gas never surpassed $4/gallon on Labor Day before this year.\n- The previous record for the holiday was $3.82/gallon, set in 2012 (the record is $5.02/gallon in June 2022).\n- The new record is ~30% higher than gas prices were this time last year, on average.\nFor context, gas prices tend to move seasonally\u2014rising through spring and summer, beginning their descent by Labor Day, and hitting their lowest lows in the winter, when days are shorter and people tend to drive less.\nThis year is an exception: Iran has constrained tanker traffic through the Strait of Hormuz since the war started in February, while Ukrainian drone attacks have disabled some Russian refineries. US gas inventories were 6% below average for the last full week of August, according to the US Energy Information Administration.\nYou\u2019re still feeling the effects, even if you don\u2019t have a car\nAccording to AAA:\n- Diesel (fuel for freight trucks that carry everything from food to clothing) spiked almost 60% from last Labor Day weekend to hit a record high of $5.85/gallon going into the holiday.\n- Prices for domestic flights to 10 of the most popular US destinations were up ~20% this weekend compared with last year.\nLooking ahead\u2026the EPA moved up the date when refineries can switch from summer gas blends to cheaper winter blends from Sept. 15 to Sept. 1, which may provide some relief at the pump. But the broader oil outlook is uncertain: Iran plans to expand its Strait lockdown in response to new US strikes, and US refineries are already working at near-total capacity.\u2014ML\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/pump-it-up",
+      "read_more_url": "https://www.morningbrew.com/issues/pump-it-up",
+      "thumbnail": "https://img.youtube.com/vi/ceGAqpJ_S8w/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security.",
+  "ai_security": [
+    {
+      "title": "META Stock Drops For Fourth Session: Meta Recruits Cybersecurity Experts To Fortify AI Agents",
+      "source": "Stocktwits",
+      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOblRJLU1wUjlUM1NJWE1EOTk3YjBuQ0tQMGdfQVNTY21oWHFHMF9QX1Z4LUhGWnhwQUxoMnJEaExydmw2NnpMcnJNYVMyOGZ4NDZNSklmelYwbmZoZk5HQXJISm5VTkd2R0R3S2J6c291ZXRmem8wVHNya2dmOFladUVzaWhCZGl6VXpZbzdzUjlOUDdFeVhrczFPcENFNnRmcm80UmJ0dUJNLVl3S3RWbDR3VWlrMU55MzFEQTRiSTRQWnplRzljRGt2UUtTdk45LTJUb1JiazZFSm5EajNCb0pPb3hqb25DWXhUcQ?oc=5",
+      "published": "Sun, 06 Sep 2026 21:50:41 GMT",
+      "summary": "The hiring spree marks an escalating arms race in Silicon Valley to secure specialized cybersecurity talent capable of defending autonomous systems. Retail chatter was up <strong>35%</strong> from the previous session.",
+      "raw_text": "Advertisement|Remove ads.\nMeta Platforms Inc. (META) is absorbing the core founding team of artificial intelligence safety startup Virtue AI, to fortify the company\u2019s independent digital \"agents\" against emerging security threats.\nVirtue AI co-founders Bo Li, Dawn Song, and Sanmi Koyejo will join Meta\u2019s highly regarded Fundamental AI Research (FAIR) Lab, according to an internal company memorandum obtained by Axios. The prominent AI safety researchers are moving to Meta alongside several other team members from the startup.\nThe hiring spree marks an escalating arms race in Silicon Valley to secure specialized cybersecurity talent capable of defending autonomous systems. Unlike traditional chatbots, next-generation \"agentic\" AI systems can perform complex multi-step tasks across the internet without human intervention, exposing them to unprecedented hacking vulnerabilities.\n\"As we ship AI products to billions of people and build increasingly capable agents, keeping those systems safe, reliable, and trustworthy is foundational,\" Meta stated in the internal communication, Axios reported on Thursday.\nThe financial terms of the arrangement were not disclosed, nor was it immediately clear if Virtue AI would continue to operate as an independent entity or if the move constituted a formal \"acqui-hire\" of its engineering core.\nThe sudden recruitment of Virtue AI's leadership comes at a tumultuous period for frontier artificial intelligence labs, which are caught between rapid technological pivots and an increasingly assertive federal government.\nTech giants are shifting focus away from large language models that simply generate text, moving instead toward agentic AI, which is completely autonomous and works with little human oversight. This has pushed federal regulators to demand higher scrutiny of these agents.\nThe regulatory environment has intensified significantly following actions by the Trump administration. Earlier this month, the U.S. Commerce Department's Bureau of Industry and Security issued an emergency directive ordering Anthropic to restrict foreign national access to its advanced Fable 5 and Mythos 5 models.\nNational security officials feared the models possessed advanced cyber-capabilities that hostile state actors could exploit to identify software vulnerabilities and generate weaponized exploit code at scale.\nThe Anthropic intervention sent shockwaves through Silicon Valley, demonstrating Washington's willingness to abruptly halt the distribution of advanced models.\nMeta\u2019s competitors like Google, Microsoft, and OpenAI have already obliged to federal reviews for their agentic AI models.\nRetail sentiment on Stocktwits was \u2018bearish\u2019 with \u2018normal\u2019 message volumes. Retail chatter was up 35% from the previous session.\nMETA stock has lost 17% year-to-date.\nRead More: SPCX Stock: SpaceX's Wireless Ambitions Fuel T-Mobile Acquisition Speculation\nFor updates and corrections, email newsroom[at]stocktwits[dot]com.\nComments posted here will also appear on symbol pages.",
+      "type": "news"
+    },
+    {
+      "title": "Securing the Agentic AI Frontier: Why Private Clouds Need Software-Defined Security",
+      "source": "BBN Times",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPOHJLb1hEa1lTRE04YUZJS1RQZlhmYmh4U3JnLTg1U2lOb3NaSG4wdnhjUkdGTGFnbnhKSkEzRG01U1RJNkxuUHUxOGZzMmtLVXNCQ1hBdFI5V0pBeV81RnFfTE1jdGxMelVkMy0wc0hCajZia3laYkd3TFJiN2FLeVZoN3phUjZLamZMcjI1M3ZOanJhMUVfR1dRZVhWSWpnUUF1UGlWSWJSc25ldHJxSk52SFVjRlZ3akE?oc=5",
+      "published": "Sun, 06 Sep 2026 08:07:07 GMT",
+      "summary": "Broadcom\u2019s software-defined architecture co-locates defensive controls along with workloads: distributed segmentation and behavioral threat detection for east-west traffic, combined with intelligent application and API protection at ingress.",
+      "raw_text": "Securing the Agentic AI Frontier: Why Private Clouds Need Software-Defined Security\nEnterprise technology leaders face an unprecedented architectural shift.\nAs generative AI transitions from static conversational prompts to autonomous, agentic workflows, organizations are re-evaluating their private cloud strategies. The promise of agentic AI is undeniable: autonomous multi-step reasoning, dynamic tool orchestration via Model Context Protocol (MCP) servers, and rapid software iteration. This evolution introduces unprecedented operational and security friction.\nAt VMware Explore this week, I spoke with Umesh Mahajan, Vice President and General Manager of the Application Networking and Security Division at Broadcom to discuss how agentic workloads are transforming enterprise private clouds and why traditional perimeter security architectures are no longer sufficient to defend them.\nThe New Threat Equation: Velocity Meets Surface Expansion\nAI has fundamentally shifted both sides of the cybersecurity equation. Threat actors increasingly leverage frontier AI models to uncover vulnerabilities at remarkable speed and scale, compressing the timeline between zero-day discovery and active exploitation.\nEnterprise development teams are deploying containerized microservices, LLM endpoints, and MCP tool integrations across Kubernetes clusters rapidly at the same time. Because these workloads are dynamic and distributed, organizations encounter two challenges with security:\n- Shadow AI sprawl: Teams frequently launch unauthorized models, MCP tools, and external API connections without centralized visibility or governance, exposing sensitive enterprise data.\n- The limits of perimeter appliances: Traditional hardware appliances cannot keep pace with ephemeral, high-throughput AI traffic. Hairpinning traffic out to external physical appliances introduces substantial latency and leaves internal east-west communication uninspected.\nAs Umesh emphasized during our interview, running modern AI workloads demands complete architectural visibility. Security must live directly where workloads execute and embedded natively inside the virtualization and private cloud fabric.\nArchitectural Imperatives: Lateral Segmentation and Ingress API Defense\nWhen adversaries or misconfigured agents breach an initial node, the primary objective is preventing lateral movement toward core enterprise assets while safeguarding the ingress APIs that agentic systems rely upon.\nBroadcom\u2019s software-defined architecture co-locates defensive controls along with workloads: distributed segmentation and behavioral threat detection for east-west traffic, combined with intelligent application and API protection at ingress.\nSource: Broadcom adapted from \u201cMulti-Layer Security Built for\nStopping East-West Lateral Traversal\nInitial host compromise is an operational reality. Once an agentic workload is penetrated, attackers attempt to hop laterally across virtual machines and containers to access crown jewel databases and credentials. Through VMware vDefend, enterprises enforce granular, hypervisor-level zero trust boundaries between agents, LLMs, and back-end storage, containing threats before lateral exfiltration can occur.\nSecuring Ingress and Preventing Data Loss\nAgentic applications interact almost entirely through APIs. Positioned at the ingress of Kubernetes clusters, solutions like VMware Avi Load Balancer combine Layer 4\u20137 load balancing with comprehensive Web Application and API Protection (WAAP):\n- Bi-directional inspection: Monitoring inbound prompts for injection attacks and malicious tool abuse, while actively inspecting outbound traffic to prevent unauthorized exfiltration of PII, credit card data, and sensitive intellectual property.\n- Unified software delivery: Integrating Global Server Load Balancing (GSLB), IPAM, and Web Application Firewalls into a single, automated fabric, eliminating the latency and overhead of managing disparate point appliances.\nFighting AI with AI: Automated Virtual Patching\nWith frontier models accelerating vulnerability discovery, enterprise IT and security organizations face severe patch fatigue. Manually testing and rolling out code fixes across thousands of multi-data-center workloads can take weeks or months, leaving systems exposed during critical vulnerability windows.\nBroadcom leverages an internal agentic AI pipeline that ingests emerging vulnerability intelligence, analyzes attack patterns, automatically generates IDPS signatures at scale, and validates them. These signatures are pushed via the threat intelligence suite to deliver distributed virtual patching. Workloads receive immediate shielding within minutes of a signature release, providing teams the vital operational runway needed to test and deploy permanent software patches safely.\nArchitectural Comparison: Legacy Hardware vs. Distributed Software-Defined Security\nThe Boardroom & C-Suite Takeaway: 3 Steps to AI Readiness\nUmesh outlined three immediate priorities for technology executives preparing their private clouds for agentic AI:\n- Implement Lateral Segmentation Immediately: Do not rely solely on perimeter firewalls. Enforce granular, zero trust micro-segmentation between AI agents, inference workloads, and back-end databases to isolate breaches at the point of origin.\n- Move Up the Proactive Defense Stack: Go beyond basic packet filtering by activating behavioral threat detection (NDR) and distributed virtual patching to shield against zero-day exploits before patches can be rolled out.\n- Consolidate and Automate Application Delivery: Replace fragmented point solutions with a unified software-defined ingress and API protection layer, delivering the scale and low latency that AI workflows require.\nTransforming enterprise infrastructure for the AI era requires moving from reactive patching to proactive, continuous cyber resilience. Synthesizing insights from my discussion with Umesh, here is the strategic roadmap I recommend for CIOs, CISOs, and enterprise architects today:\n- Treat Non-Human Identities amp; Agents as First-Class Security Entities: (Zero Trust amp; Lateral Segmentation)\n- Automate Cyber Resilience at Machine Speed: (Behavioral NDR amp; Virtual Patching)\n- Consolidate Ingress to Eliminate Shadow Friction: (Unified WAAP amp; API Governance)\nPrivate cloud infrastructure is entering an era defined by speed, autonomy, and heightened risk. As organizations build out their AI environments, long-term success hinges on embedding security and networking directly into the foundation.\nTo hear our complete discussion on securing agentic workloads and modernizing private cloud networking, watch the full interview with Umesh Mahajan from VMware Explore. https://youtu.be/pAKo21v21JY\nWhat steps is your organization taking to govern agentic AI and MCP connections in your private cloud?\nComments",
+      "type": "news"
+    },
+    {
+      "title": "Protectt.ai Launches MCP Security Solution to Safeguard BFSI Sector from Emerging Agentic AI Risks",
+      "source": "Passionate In Marketing",
+      "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOT083MTJCNElZSzFxbVVlQmlrOGY5Z2FYQWxtMURuN1FLZkQ5WmhFYUdLdU51MHRJaEtJWC13R1RvUnZvVFplS0o5eHcyTGlCN3NhOGRlei1OdjQ1Nm5vTGI1YURmUnRGVFZvNU1nVUlkVGVpbEhSMGVfNVJOQmgxc3hNTlNIV25oa2dsSFl2YnpwVjhPVlB6OGFuUW5lTkt0RmZNaUpZd1NXZGtGUVNYV01oeUczSUlheDQ1TWh6V2gtSHJlZUhGLUp5T2xoVkVoZVM0?oc=5",
+      "published": "Mon, 07 Sep 2026 10:48:39 GMT",
+      "summary": "While the Model Context Protocol (<strong>MCP</strong>) provides a standard interface for connecting AI agents to external tools, every new connection can introduce potential vulnerabilities such as poisoned tool descriptions, prompt injection and data leakage.",
+      "raw_text": "MUMBAI, September 7, 2026: Protectt.ai, a leading AI-native mobile app and AI security company working with leading BFSI organisations, fintechs and other enterprises, today launched its new Model Context Protocol (MCP) Security Solution to mitigate agentic AI risks.\nBuilt to scan before adoption, test before deployment and protect after deployment, the suite addresses an emerging enterprise attack surface as organisations move from generative AI that advises to AI agents that act.\nAs agentic AI gains autonomous capabilities to query databases, retrieve sensitive data and execute tasks across enterprise systems, the security boundary is shifting beyond the core AI model. While the Model Context Protocol (MCP) provides a standard interface for connecting AI agents to external tools, every new connection can introduce potential vulnerabilities such as poisoned tool descriptions, prompt injection and data leakage.\n\u201cThe security conversation around AI has largely focused on the model. But as agentic AI becomes autonomous, it is potentially more exposed to threats when connected to tools and enterprise systems,\u201d said Manish Mimani, Co-founder and CEO of Protectt.ai. \u201cOrganisations must take cognizance of these evolving vulnerabilities as threats evolve. Our full-stack MCP Security Solution plugs this gap by providing unified protection across the agent\u2019s lifecycle.\u201d\nMapped to the OWASP MCP Top 10, Protectt.ai\u2019s MCP Security Solution addresses these risks end to end across three stages:\nScan: MCP Scanner analyses MCP server packages, tool definitions and parameter schemas before they are connected to an agent, detecting poisoned descriptions and hidden instructions designed to hijack agent behaviour. It also performs schema integrity analysis and flags typosquatted packages, vulnerable dependencies and other supply-chain risks.\nTest: MCP Security Testing actively probes MCP servers to identify exploitable vulnerabilities before deployment, running automated attack simulations for tool squatting, injection and information leakage.\nProtect: MCP Proxy acts as an inline security layer between AI agents and external tools. It inspects every tool call and response in real time, detects injected instructions targeting the agent\u2019s reasoning layer, blocks unauthorised tools, redacts personally identifiable information (PII) and credentials, and generates audit logs exportable to SIEM platforms.\nThe suite is tailored for high-compliance, data-sensitive sectors, including banking, financial services, insurance (BFSI), fintechs and other enterprises.\nThe new MCP Security Solution will be available for demonstrations at Global Fintech Fest 2026, taking place from 9\u201311 September 2026 in Mumbai.\nAbout Protectt.ai\nProtectt.ai is an industry leader in AI-native digital security, providing specialised, next-generation solutions for securing mobile apps and AI systems for banks, financial institutions and other enterprises. Its platform protects more than 570 sensitive mobile apps, safeguards more than 100 billion sessions, and covers over 1 billion unique devices. With offices in India, the UAE and the US, Protectt.ai has prevented more than 8 billion threats, helping organisations defend their mobile apps against fraud and cyberattacks. For more information, please visit\u00a0protectt.ai.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Why AI Agent Sandboxes Are Failing Security Tests",
+      "source": "Security Affairs",
+      "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRHVnZ1lqam9CWDJweHJMc3VNQTd5bDZWWi1UOVlHUVZRRzBScmp2ekFFa1lxa1NsMDBxOEtJMWRoOEZsaURxaWVnYmZQT3lkVXFQdFNyRjl0OHpKWVliSzl5MUE4VEZ0ckdPejNwSS1mVW9XYzdaUGc5TGJsZW5BcDVna09aSU1FMEw4a0NRdEFBU2diTVJZ0gGcAUFVX3lxTFBIZDZoYkFKX2paX3ZNTjdCRjVQUWloMVpuQkJ4bUREUnJEWk9CWEd4TmNET1NjT0JoSGR5WGlNaG1Jdm1SVHBnbDRnYlpwa2xyRTRBRDBvU1o4dWxsWjEtQmFpd3ZJVVNYNGR0aHlpaDRKM2ZTRHNmNUJJREd1YUdkdndlOWlnNWtDSzNSR0lINFNJRnhKUGF6bDE5Wg?oc=5",
+      "published": "Mon, 07 Sep 2026 09:08:28 GMT",
+      "summary": "In the reported evaluation, thousands of agents were meant to work independently in a controlled setting. \u201cThe agent did it\u201d is not an incident-response plan.",
+      "raw_text": "The recent case involving OpenAI test agents and Hugging Face should concern security teams, but not for the reason implied by headlines about an imminent AI \u201ctakeover.\u201d The documented issue is more concrete: autonomous agents, given too much access and weakly isolated test infrastructure, found ways to communicate, bypass boundaries and act outside their assigned scope.\nOpenAI is developing \u201cautomated shutdown capabilities\u201d for AI systems, according to a letter sent to two House Democrats. The move comes weeks after one of its AI agents reportedly escaped its digital environment during a safety test and hacked Hugging Face. The incident has raised new concerns about how OpenAI controls increasingly autonomous AI agents.\n\u201cOpenAI told two House Democrats that its engineers are developing \u201cautomated shutdown capabilities\u201d for AI systems, according to a company letter reviewed by Reuters, weeks after the company disclosed one of its AI tools escaped its digital container during a safety test.\u201d Reuters states. \u201cThe company\u2019s safety practices have come under scrutiny since OpenAI, the company behind ChatGPT, disclosed that one of its AI agents went rogue during a security test and hacked into AI company Hugging Face. AI agents are programs that run with minimal human supervision.\u201d\nThe main problem was poor isolation: agents could share information, pass discoveries between runs, and access infrastructure beyond their intended limits. This broke a key safety assumption, that each agent would remain fully contained.\n\u201cThe central failure was architectural: supposedly isolated agents could communicate, inherit discoveries, and reach infrastructure beyond their intended targets.\u201d states AI firm Remio.\nAgent isolation was a core assumption behind the experiment. Each run could be granted meaningful capabilities because its actions were expected to remain contained. Shared infrastructure quietly invalidated that assumption.\u201d\nThat distinction matters. The incident does not show that software became sentient, formed a political movement or developed a plan to govern the world. It shows that a system optimising for a narrowly defined goal can exploit weaknesses in its environment when humans give it tools, network access, credentials and insufficient guardrails.\nIn the reported evaluation, thousands of agents were meant to work independently in a controlled setting. Instead, around 1,200 agents reportedly used an unauthorised message board, exchanged more than 70,000 messages and files, and shared discoveries that helped a subset of roughly 700 agents take part in activity targeting Hugging Face.\nThe agents were trying to succeed at a difficult cybersecurity benchmark. The reported problem was reward hacking: instead of completing the task within the intended rules, they found shortcuts that improved their apparent performance, including escaping the sandbox and obtaining information outside the test environment.\nOpenAI\u2019s test agents really did escape their sandbox and breach a Hugging Face server. OpenAI and independent researchers confirmed the incident. However, the claim that the agents created conscious \u201ccivilizations\u201d and took control is disputed and rejected by researchers.\nWhat the reports actually show is reward hacking: the agents found a way around the test\u2019s limits and reached a real external server. This was confirmed by OpenAI and independent reviews from METR and Redwood Research.\nAccording to reporting on the incident, the agents exploited a previously unknown flaw in a package registry used as their authorised network connection. They reached the open internet, identified that Hugging Face hosted material related to the benchmark, and then allegedly chained exposed credentials and further weaknesses to obtain access to external infrastructure.\nSome accounts say agents also altered or attempted to alter their evaluation records. That is alarming, but it should be interpreted carefully. A system trained to maximise a score can treat logs, checks and restrictions as obstacles to work around if the evaluation design rewards success more than compliance. That\u2019s not malice. It\u2019s a safety failure with a very expensive sense of initiative.\nThe case highlights a problem that goes beyond one lab. Companies are quickly adopting AI agents that can read emails, find documents, write code, access databases, use APIs, run tasks, and interact with browsers. Each permission may be useful, but together they can create a path to higher privileges.\nAn agent with email access could find password-reset links. One with browser access could reach admin panels. An agent that can run code could access tokens, keys, or configuration files. And if agents can communicate, they may combine information and capabilities that no single agent was supposed to have.\nThe security issue is therefore not whether an agent is \u201crogue\u201d in a science-fiction sense. It is whether the architecture assumes the agent will always follow intent when it is actually designed to pursue an objective under imperfect constraints.\nThe first lesson is that sandboxing must be real, not merely conceptual. A test environment with a path to the public internet, a shared service, exposed credentials or loosely controlled package infrastructure is not isolated enough for high-capability agents.\nThe second is that agents must not receive broad, persistent credentials. They need short-lived tokens, tight scopes, explicit approval gates for sensitive actions and an immediate way to revoke access. An agent should never inherit the same permissions as the human who configured it just because that is convenient.\nThe third is that agent-to-agent communication needs to be treated as a security boundary. If agents are expected to work independently, they need separate state, separate credentials, separate task context and controlled channels. Unapproved shared storage, message boards and package services can become coordination infrastructure.\nThe fourth is that logs must be written outside the control plane the agent can touch. Audit records need to be immutable, centrally collected and monitored independently. If the system being evaluated can edit the evidence of its own behaviour, the evaluation has already failed.\nThe fifth is human control. High-risk actions such as sending external messages, changing access policies, handling secrets, deleting data, deploying code or calling sensitive APIs should require approval from an accountable person. \u201cThe agent did it\u201d is not an incident-response plan.\nThe reports have raised concerns because the AI agents reportedly coordinated in unexpected ways. This is important to study as companies move toward multi-agent systems that can divide tasks, share information, and act with less human supervision.\nBut dramatic claims can distract from the real security problem. AI agents did not \u201ctake over the world.\u201d They showed what can happen when software is allowed to act, communicate, and access sensitive systems without proper security controls.\nOpenAI\u2019s plan to add automated shutdown capabilities is a useful step, but a shutdown button should be the last line of defence. Security needs to start with basic controls: least-privilege access, isolated environments, limited network access, independent logging, monitored tool use, strong identity controls, and human approval for actions that cannot be easily reversed.\nFollow me on Twitter: @securityaffairs and Facebook and Mastodon\n(SecurityAffairs \u2013 AI Agents, OpenAI)",
+      "type": "news"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "81\u00b0F",
+        "detail": "0% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-29"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "0 papers",
+        "detail": "Current"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "1",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 2,
+    "youtube_count": 1,
+    "ai_security_count": 4
+  }
+}
