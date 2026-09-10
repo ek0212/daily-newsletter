@@ -1,0 +1,515 @@
+{
+  "date": "Thursday, September 10, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 73,
+    "unit": "F",
+    "conditions": "Clear",
+    "high": 88,
+    "low": 72,
+    "feels_like": 73,
+    "forecast": "Mostly sunny, with a high near 88. West wind around 10 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 72,
+        "feels_like": 75,
+        "conditions": "Cloudy",
+        "wind": "8 mph SW",
+        "humidity": "82%",
+        "precip_chance": "55%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 74,
+        "feels_like": 78,
+        "conditions": "Cloudy",
+        "wind": "8 mph W",
+        "humidity": "81%",
+        "precip_chance": "33%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 87,
+        "feels_like": 89,
+        "conditions": "Cloudy",
+        "wind": "8 mph W",
+        "humidity": "43%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 87,
+        "feels_like": 86,
+        "conditions": "Clear",
+        "wind": "9 mph NW",
+        "humidity": "41%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 83,
+        "feels_like": 84,
+        "conditions": "Clear",
+        "wind": "6 mph NW",
+        "humidity": "47%",
+        "precip_chance": "1%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 2108,
+    "vs_average_pct": -43.2,
+    "week_ending": "2026-08-29",
+    "breakdown": {
+      "flu": 318,
+      "covid": 1639,
+      "rsv": 151
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "2,108 combined flu/COVID/RSV cases",
+        "comparison": "43% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 14:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 14:30:00 GMT"
+      },
+      {
+        "signal": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "current": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "comparison": "Fri, 21 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT1ZrRWd3d00wNnQwaXhQcndtV2phZUlXb2hoNUdZNHN1QmVzWndvZzZCZWlXbV8tRkUzd1ZQeE9uRVlNbVFzTHVrNTZWdGlPSWo4Qlg0eHIwNEJ4WlpzU1c1VW91TFRRU3k4UV9peFZfdC1mc1FfUEhWMTVlUW5tM1lZNEtORjhId3B2ejRvdDlfS0x3Zlhr0gGfAUFVX3lxTFBvQlZBQU9ONmdEeFFJYXVmX0xtRVdPaWU4eE0xMUVlakpNSmlFVWZhNmZnWFVqdHZsRm5wWXltY0NJbUlFMjdDUVlFLUlDSy13a3ItN042M0ZuaUliUFhqWnZ6TnJ6SXRGZEdOeE5RZFB5Q0xGMi04YlRaTG5hMkVqSXpzaExWcGswZ1RMdjhOZG5lcWFrUk1sT2FyR05QRQ?oc=5",
+        "title": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "summary": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "11 people, 94 cases",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "As of August 28, no one is still in the hospital, 11 people have died and 94 cases have been identified.",
+        "published": ""
+      },
+      {
+        "signal": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "current": "150 people, 16 people, 31 people",
+        "comparison": "August 19, 2026",
+        "practical_read": "Awareness item; no immediate action unless exposed.",
+        "status": "INFO",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-health-department-detects-first-person-with-wnv-in-2026.page",
+        "title": "NYC Health Department Detects First Person With West Nile Virus in 2026",
+        "summary": "This is the first reported case in New York City this year.",
+        "published": "August 19, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 14:30:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 14:30:00 GMT"
+      },
+      {
+        "signal": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "current": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "comparison": "Fri, 21 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQT1ZrRWd3d00wNnQwaXhQcndtV2phZUlXb2hoNUdZNHN1QmVzWndvZzZCZWlXbV8tRkUzd1ZQeE9uRVlNbVFzTHVrNTZWdGlPSWo4Qlg0eHIwNEJ4WlpzU1c1VW91TFRRU3k4UV9peFZfdC1mc1FfUEhWMTVlUW5tM1lZNEtORjhId3B2ejRvdDlfS0x3Zlhr0gGfAUFVX3lxTFBvQlZBQU9ONmdEeFFJYXVmX0xtRVdPaWU4eE0xMUVlakpNSmlFVWZhNmZnWFVqdHZsRm5wWXltY0NJbUlFMjdDUVlFLUlDSy13a3ItN042M0ZuaUliUFhqWnZ6TnJ6SXRGZEdOeE5RZFB5Q0xGMi04YlRaTG5hMkVqSXpzaExWcGswZ1RMdjhOZG5lcWFrUk1sT2FyR05QRQ?oc=5",
+        "title": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says - NBC New York",
+        "summary": "Alfalfa sprouts linked to food-poisoning outbreak in 15 states, CDC says NBC New York",
+        "published": "Fri, 21 Aug 2026 07:00:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "New Balance 5th Avenue Mile 2026",
+      "date": "Sun, Sep 13",
+      "borough": "Manhattan",
+      "location": "5th Ave & East 79th St",
+      "event_type": "Athletic Race / Tour"
+    }
+  ],
+  "news": [
+    {
+      "title": "On Israeli sanctions, Trump strikes an unusually restrained tone",
+      "source": "Politico",
+      "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQR0JQQ3dyNndhVmo4eG5jN00wZnZpREF0aG9kQWdKRUZZUkhia1BSZUVjRDJYOGlrOGJOdWZlTnd1aFN5Nzh1QnE0OS1LMGdfYTNYUWxobUxYZjVjT1VzUmxTMGk4TmV5ZzJ4eUJyQWVGX3hhcjlvd3ZnZDZUWmZLaVA3OFU4UGJpMXM3a2VWN0tyejBKT045aVBWOEZyTnloWXlRTFVxaWZjMnI2al9oZ3hyT2k5elJQX3F5RlFJNFVqRnh0X3hV?oc=5",
+      "published": "Thu, 10 Sep 2026 04:01:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Politico."
+    },
+    {
+      "title": "Wall Street Journal publisher convicted in Hong Kong of deterring reporter from union role",
+      "source": "The Guardian",
+      "link": "https://www.theguardian.com/world/2026/sep/10/wall-street-journal-selina-cheng-termination-lawsuit",
+      "published": "Thu, 10 Sep 2026 05:57:31 GMT",
+      "raw_text": "A Hong Kong court has convicted the publisher of the Wall Street Journal of deterring a reporter from taking up a trade union role, in a case that raised concerns about press freedom in the city.\nThe newspaper dismissed Selina Cheng just weeks after she was appointed chair of the Hong Kong Journalist Association (HKJA) in 2024. She was told at the time her termination was officially due to restructuring.\nOutside court on Thursday, Cheng said: \u201cIf reporters\u2019 employment rights are not sufficiently safeguarded, or when their rights are violated and not enforced in law, then we can no longer work safely as reporters.\u201d\nPrincipal magistrate David Cheung ruled that Dow Jones Publishing, the parent company of the Wall Street journal, was guilty of \u201cpreventing or deterring an employee from exercising trade union rights,\u201d but acquitted it of \u201cdismissing or discriminating against an employee because she exercised those rights.\u201d\nCheng, who covered China\u2019s automobiles and energy sectors for the WSJ, said her editor had told her that employees should not be seen as advocating for press freedom in \u201cplaces like Hong Kong\u201d, saying it could be perceived as a conflict of interest. She alleged her employer had attempted to prevent her from taking up a role in the union.\nShe said the company told her that she needed to seek the firm\u2019s approval for outside activities and requested her to leave her then-board position at the association.\nCheng launched the private prosecution against Dow Jones Publishing after losing her job in July 2024, weeks after taking up the position as chair of the union.\nThe company pleaded not guilty to both charges, which each carry a maximum fine of HK$100,000 (about $12,750).\nSentencing is expected to be handed down at a later date.\nDuring the trial, the defence argued that Cheng was terminated because of redundancy and that the prosecution had not sufficiently proved that the firm\u2019s management instructed Cheng\u2019s supervisor. The defence also accused Cheng of acting in bad faith in a previous hearing.\nBut magistrate David Cheung said that Cheng\u2019s termination \u201cwas motivated by wrongful and unjustified application of their code of conduct\u201d when it insisted Cheng needed to seek prior approval to stand as chair of HKJA.\nCheung said he accepted Cheng\u2019s explanation, describing the former WSJ reporter as \u201chonest and reliable\u201d, adding she and was clearly motivated by \u201cthe wish to see justice\u201d.\nCheng\u2019s termination alarmed journalists, who are already operating in an increasingly restricted media environment in the city, where foreign outlets have traditionally faced less pressure than local news outlets.\n\u201cThe WSJ set a very bad precedent by punishing an employee who was exercising her constitutionally protected rights in Hong Kong,\u201d said Eric Lai, a senior fellow at the Georgetown Center for Asian Law.\nThe WSJ maintained there was no link between Cheng\u2019s role in the Hong Kong union and her termination. At the time of Cheng\u2019s dismissal, it issued a statement saying: \u201cThe Wall Street Journal has been and continues to be a fierce and vocal advocate for press freedom in Hong Kong and around the world.\u201d\nHKJA is the oldest journalist union in Hong Kong. It was established in 1968 and is registered as a trade union representing journalists and workers in news. It has faced increasing pressure since the introduction of a Beijing-imposed national security law in 2020.\nHong Kong has fallen sharply in global press freedom rankings since the law\u2019s introduction. In 2019 Reporters Without Borders ranked the city 73rd in the world. By 2026 it had fallen 67 places to 140th out of 180 countries and territories.",
+      "summary": "Read the full story at The Guardian.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "'Seems Like A Setup': Musk Mocks Ex-Anthropic Staffer's Warnings On AI Extinction Risks",
+      "source": "Forbes",
+      "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOZFYteXVSX2hINXNaUlVTd1hBWUtIZTJVemxyZmI4T250NjRTcHVVTU1tQzhnYXUybU9kSnZyeVFnVWtUczgxN0ZUQWNBaFBUaEhENGxROHJ6QWtyYW1icnItQk83WDIyQ1Nack1FX3NvRnJiQmhnb0paVm42dWRwZUhROTJXOVlCblJfYkg3ckt1cTE5N3p6U1VZNEFBSnN0QzV6bDNfWk9XZ1JTRGtBcjd2bjhWVHBhSnNqaVI3dkpvVzdHdjF4UzFNaFRWOXM?oc=5",
+      "published": "Thu, 10 Sep 2026 12:02:42 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Forbes.",
+      "emoji": "\ud83d\udcbb"
+    },
+    {
+      "title": "Trump makes case for Iran war, promises $5,000 payouts if GOP wins midterms",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQejRybzlicFo4YXVQU0M0YjRKc1ZIRGF0VXdTNW1tSlA1Sk42WkRYcnZsN3VOMHdUeWx1YzJrZmM1YkZ1MDBiQlFUdjVsdFpveHhhMDVfZnI0UmFGVzJuV0dzQnk1dDN4NlhMcVI3RFZjeTE3aEY3UkpkMlJWdGV3Z0otdXM1bjRMejExVXZySDcyYjNia2JCZTR1OHhZdkt1QTRESy1rTVpDSVBpTFNreDl4dw?oc=5",
+      "published": "Thu, 10 Sep 2026 11:16:36 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Calls grow for investigation after ICE attacks protesters",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/video/newsfeed/2026/9/10/calls-grow-for-investigation-after-ice-attacks-protesters?traffic_source=rss",
+      "published": "Thu, 10 Sep 2026 12:07:30 +0000",
+      "raw_text": "Calls grow for investigation after ICE attacks protesters\nNewsFeed\nCalls grow for investigation after ICE attacks protesters\nCalls are growing for an independent investigation into ICE after agents were filmed attacking protesters who were trying to prevent arrests in a residential area in Frederick. ICE has arrested more than 50,000 people in August, averaging 1,642 arrests a day.\nPublished On 10 Sep 2026",
+      "summary": "<strong>Calls</strong> grow for investigation after <strong>ICE</strong> attacks protesters <strong>Calls</strong> grow for investigation after <strong>ICE</strong> attacks protesters <strong>Calls</strong> are growing for an independent investigation into <strong>ICE</strong> after agents were filmed attacking protesters who were trying to prevent arrests in a residential area in Frederick."
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Apple unveils its first-ever foldable iPhone\u2026and it\u2019s $2,000",
+      "video_id": "ZrCUrpNEaJY",
+      "published": "2026-09-10",
+      "link": "https://youtube.com/watch?v=ZrCUrpNEaJY",
+      "summary": "New episode from Morning Brew Daily. Click to watch.",
+      "raw_text": "The Rams and 49ers play in the NFL\u2019s inaugural Australia game\n\nThe Rams and 49ers play in the NFL\u2019s inaugural Australia game\nThe NFL is trying to increase international revenue and grow its fanbase around the world. In short: money.\n\u2022 less than 3 min read\nThe real star of the Rams vs. 49ers game in Australia tonight is whoever has been managing the spreadsheet of players\u2019 passport statuses.\nFor the NFL\u2019s first regular season game played in the country, both teams had to manage the logistical behemoth of playing nearly 8,000 miles from home. That meant everything from navigating jet lag to getting cleats through customs had the potential to derail the game before anyone even stepped on the field.\nOne of the biggest hurdles for players was adjusting to the 17-hour time difference in Melbourne:\n- To prepare for the 10:35am local time kickoff, the 49ers left San Francisco over a week ago to acclimate to their new bedtime.\n- The Rams decided to take the opposite approach and left Tuesday night, only about 24 hours before kickoff, opting to have the team sleep on the 16-hour flight.\nMore than a carry-on. Australia also has some of the strictest biodiversity rules, so teams had to make sure gear was free of grass and dirt before trying to get it through customs. While the Rams sent an entire shipping container of food and supplies overseas months ago, they still had to get 90 trunks of equipment\u2014weighing about 25,000 pounds\u2014halfway around the world this week.\nWhat\u2019s the point of all this? The NFL is trying to increase international revenue and grow its fanbase around the world. In short: money.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nApple hopes you\u2019ll see this new iPhone and fold\n\nApple hopes you\u2019ll see this new iPhone and fold\nNew CEO John Ternus is hoping you'll spend $2,000 on Apple's first foldable iPhone\n\u2022 less than 3 min read\nJohn Ternus took the stage in Cupertino yesterday for the first time as Apple CEO and delivered what everyone was expecting\u2014nearly 10 uninterrupted minutes of Apple Hands and a new folding iPhone that has the potential to become the leader in a virtually untapped market.\nThe details: The iPhone Duo will be available for preorder on Oct. 16 at a starting price of $2,000, but it can cost as much as $3,000 if you want more storage for cat videos. When unfolded, it acts more like an iPad than two iPhones, and it\u2019s about the same size as a passport when folded.\nBringing Apple into the fold\nConsumer electronics companies shipped a total of ~20 million foldables last year\u2014accounting for ~2% of all smartphone sales, per Counterpoint Research. The Duo is tracking to make a splash instantly:\n- Morgan Stanley expects Apple to ship 6.5 million Duos in its fiscal first quarter, which ends in December. That amounts to ~$14 billion in sales, or about 16% of total iPhone revenue expected in the quarter, per Bloomberg.\n- Next year, the company is projected to sell more than 12 million foldables, according to Counterpoint.\nThe latest push to catch up on AI\nApple also unveiled other new products at yesterday\u2019s \u201cSurprise and Shine\u201d event besides the iPhone You\u2019re Even More Afraid To Drop, including the upgraded AirPods 5.\nJust about everything else was a signal that Apple no longer wants to be the tech company that\u2019s lagging on AI. The new iPhone 18 Pro and Pro Max (which you can fold, but only if you want to break it) along with the Duo are being positioned as Apple\u2019s primary AI devices. Both of the latest iPhones have improved AI software that includes a new Siri AI. Even the new Apple Watch is being rebranded as an AI wearable.\nBad day, good outlook? Apple shares were down slightly yesterday before market close, but Ternus shouldn\u2019t take it personally\u2014it\u2019s the sixth time over the last nine new iPhone events that its stock has fallen on the same day. But shares have also averaged a 10% gain over the six months following these annual product pitches, per data from Bloomberg.\u2014DL\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nAnthropic researcher quits, warns AI \u2018could kill us all\u2019\n\nAnthropic researcher quits, warns AI \u2018could kill us all\u2019\n\u201cThe people building AI earnestly believe that it could kill us all by the end of the decade. This is not a marketing stunt,\u201d the departed employee, Jacob Coxon, wrote online.\n\u2022 less than 3 min read\nIt\u2019s a wonder that you got any work done after an artificial intelligence researcher who resigned from Anthropic this week accused both the Claude maker and OpenAI of acting irresponsibly and \u201cgambling with our lives.\u201d\n\u201cThe people building AI earnestly believe that it could kill us all by the end of the decade. This is not a marketing stunt,\u201d the departed employee, Jacob Coxon, wrote in a post on X with 110+ million views. Coxon said that:\n- Many people at OpenAI\u2014where he worked before Anthropic\u2014\u201chave not deeply internalized the civilizational stakes,\u201d but they\u2019re \u201cwell-understood\u201d at Anthropic.\n- Still, Anthropic is \u201clocked in a race,\u201d and believes it must win because \u201cno one else will act responsibly.\u201d (Both companies are eyeing IPOs.)\nSenior Anthropic leads might publicly pretend they don\u2019t share these fears, Coxon said, but two of them essentially corroborated his statements on X. \u201cWe really do earnestly believe AI could kill all humans! I personally think it is >10% within the next decade,\u201d one replied.\nD\u00e9j\u00e0 vu: Senior safety researchers at Anthropic, OpenAI, and xAI resigned at the beginning of the year, citing ethical concerns. Last month, Bill Gates issued a stark warning. In the past week, Sam Altman admitted conflicting feelings after the Hugging Face hack, and OpenAI\u2019s chief scientist called for a slowdown of AI development\u2014which some members of Congress also want to enforce.\u2014ML\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/in-the-fold",
+      "read_more_url": "https://www.morningbrew.com/issues/in-the-fold",
+      "thumbnail": "https://img.youtube.com/vi/ZrCUrpNEaJY/mqdefault.jpg"
+    },
+    {
+      "channel": "AI Daily Brief",
+      "title": "Why Astra Is the Most Significant and Confounding Model in a Very Long Time",
+      "video_id": "Wqz2yyUCtiw",
+      "published": "2026-09-09",
+      "link": "https://youtube.com/watch?v=Wqz2yyUCtiw",
+      "summary": "New episode from AI Daily Brief. Click to watch.",
+      "raw_text": "GPT-6 Astra has produced spectacular 3D worlds, autonomous computer use and eye-popping demonstrations\u2014but surprisingly mixed reactions from everyday users. NLW explains why Astra is so difficult to evaluate, what its unusual strengths reveal about OpenAI\u2019s strategy, and why it may represent something bigger than a better model: a fundamental expansion of what people can do with AI. Multiplayer AI Sprint - \u2060https://multiplayerai.ai/\u2060 Brought to you by: KPMG \u2013 Research from KPMG and the University of Texas at Austin shows the highest-impact AI users treat AI like a reasoning partner \u2014 and those skills can be taught at scale. Learn more at \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://kpmg.com/us/Sophisticated\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Harbor - Invest in the AI ecosystem. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.harborcapital.com/aidaily\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Hyperagent - Hire a team of always-on agents. New users get $100 in free credits. \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060hyperagent.com/aidailybrief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Rackspace Technology- One accountable partner to build, operate and run your full enterprise AI stack \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.rackspace.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Section - Section turns AI investment into workforce transformation and ROI - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.sectionai.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Blitzy - Want to accelerate enterprise software development velocity by 5x? \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://blitzy.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 AssemblyAI - The best way to build Voice AI apps - \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://www.assemblyai.com/brief\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Robots &amp; Pencils - Cloud-native AI solutions that power results \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://robotsandpencils.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 The AI Daily Brief helps you understand the most important news and discussions in AI. Newsletter: \u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060https://aidailybrief.beehiiv.com/\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060 Interested in sponsoring the show? sponsors@aidailybrief.ai",
+      "source_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-GPT-6-Astra-Is-So-Significant-and-So-Confounding-e3oib9i",
+      "read_more_url": "https://podcasters.spotify.com/pod/show/nlw/episodes/Why-GPT-6-Astra-Is-So-Significant-and-So-Confounding-e3oib9i",
+      "thumbnail": "https://img.youtube.com/vi/Wqz2yyUCtiw/mqdefault.jpg"
+    },
+    {
+      "channel": "This Week in Startups",
+      "title": "Did OpenAI Steal the Navier-Stokes Solution? | E2335",
+      "video_id": "1vSi26ckhe4",
+      "published": "2026-09-09",
+      "link": "https://youtube.com/watch?v=1vSi26ckhe4",
+      "summary": "New episode from This Week in Startups. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/1vSi26ckhe4/mqdefault.jpg"
+    },
+    {
+      "channel": "Matt Wolfe",
+      "title": "Trying To Solve The Biggest AI Problem",
+      "video_id": "-KcHn0QcSb0",
+      "published": "2026-09-09",
+      "link": "https://youtube.com/watch?v=-KcHn0QcSb0",
+      "summary": "New episode from Matt Wolfe. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/-KcHn0QcSb0/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "This is really bad\u2026",
+      "video_id": "4B4R2T4w7Kg",
+      "published": "2026-09-09",
+      "link": "https://youtube.com/watch?v=4B4R2T4w7Kg",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/4B4R2T4w7Kg/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and ai-powered malware.",
+  "ai_security": [
+    {
+      "title": "Evolving With Agentic Risk: Updating Our Integrated AI Security & Safety Framework",
+      "source": "Cisco Blogs",
+      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9PcFJWZHhKVkFuNlhYTjduME9IZlIycUdpajF2OXpjQm9uNDhINzB5NFRwb2Z0eG8zSVFkZzBkLXA0bWRPZE5PVjRFNE9ZanVHdEx0bE5uZ2s2aWJE?oc=5",
+      "published": "Wed, 09 Sep 2026 18:03:07 GMT",
+      "summary": "Screenshot of updated OB-001 Goal Hijacking techniques A new objective: OB-002: <strong>Agentic</strong> Autonomy Failures The larger change is a new objective, OB-002: <strong>Agentic</strong> Autonomy Failures. We classify this as AITech-2.1 Excessive Agency: the agent exceeded its authority and ignored a stop condition without an attacker or exploit.",
+      "raw_text": "With research and development assistance from Konstantin Berlin, Edmund Dyer-Essig, Andy Hsu, and Karthick Kalyanasundaram\nNine months ago, we introduced the Integrated AI Safety and Security Framework as a unified and comprehensive taxonomy to help organizations identify and mitigate the security and safety risks unique to AI systems. Existing frameworks remained essential, but they didn\u2019t fully capture how AI could be manipulated, produce harmful outputs, or take unexpected actions. This left security teams and executives without a common language for planning defenses or explaining AI risk across the business. You can browse the taxonomy here.\nOur v1 taxonomy denoted the scenarios where threats applied to agentic systems, which helped teams distinguish risks relevant to autonomous systems rather than to a single prompt-and-response exchange. In the months since, our understanding of how agentic systems fail has evolved alongside their accelerated adoption. Agents now plan, call tools, run code, move money, and delegate work to other agents across long, multi-step tasks. That autonomy creates risks beyond a bad output: an agent can widen its own permissions, replace its goal, or game the metric used to judge success. Even recently, we\u2019ve witnessed these failures occur, as more developments continue to unfold.\nWe are excited to release v2 of our taxonomy, including the introduction of a new objective: Agentic Autonomy Failures, with three new Techniques and eight new Subtechniques. This update gives organizations a shared, actionable framework for setting boundaries, designing controls, evaluating agent behavior, and aligning security, governance, research, and policy before agents reach consequential systems.\nMerging prompt injection and jailbreak\nIn v1, OB-001 Goal Hijacking, which covered prompt injection, and OB-002 Jailbreak, were separate objectives. In practice, the distinction was difficult to apply.\nAsk five researchers to classify the hardest adversarial attacks as prompt injection or jailbreak, and the answers will likely differ. Many of the same adversarial techniques can be applied to both types of attacks, especially as they involve inputs redirecting model behavior away from intended instructions or constraints, even though the source of that input and the appropriate defenses may differ. This ambiguity can force detectors to separate heavily overlapping categories, degrading label quality and making detection less reliable.\nGoal Hijacking now covers both, while lower-level techniques preserve distinctions that matter, including input source and defenses. The structure better reflects how attacks work without discarding operational detail.\nFigure 1. Screenshot of updated OB-001 Goal Hijacking techniques\nA new objective: OB-002: Agentic Autonomy Failures\nThe larger change is a new objective, OB-002: Agentic Autonomy Failures. Goal Hijacking covers external direction; this objective covers an agent diverging without an identifiable external instruction. These failures can emerge when a capable agent receives real autonomy. We group them three ways:\n- AITech-2.1 Excessive Agency: The agent acts beyond the authority it was given, skipping an approval it was supposed to wait for, or reaching for a tool, permission, or resource outside the task at hand.\n- AITech-2.2 Goal Drift: The agent changes course on its own, quietly adding unauthorized work, substituting a different goal for the one it was asked to pursue, or eroding its own constraints and stop conditions over a long session.\n- AITech-2.3: Reward Hacking: The agent optimizes for the appearance of success, gaming a metric, working around a check meant to verify its work, or taking a shortcut it was told not to.\nThese failure modes are no longer theoretical: in July 2025, an AI coding agent deleted a live production database during an explicit code freeze, after being instructed repeatedly not to make changes, and then wrongly reported that the deletion could not be rolled back. We classify this as AITech-2.1 Excessive Agency: the agent exceeded its authority and ignored a stop condition without an attacker or exploit.\nAgentic failures can also compound across runs and systems. In July 2026, OpenAI reported that agents operating with reduced safeguard coordinated through an unauthorized message board, circumvented network controls, and compromised part of Hugging Face\u2019s production infrastructure. Independent reviewers found that many agents recognized the activity was out of scope, but continued pursuing ways to influence the ExploitGym scorer. Humans set the objective, but the agents coordinated and chained the actions autonomously. The incident combined AITech-2.3 Reward Hacking with actions that exceeded the intended evaluation boundary (AITech-2.1 Excessive Agency).\nGoal Drift requires a materially different objective without an identifiable external instruction. If a user, attacker, tool response, or poisoned document introduces the new direction, we track the behavior under OB-001 Goal Hijacking. Separating \u201cthe agent drifted on its own\u201d from \u201csomething pushed it\u201d matters for attribution and defense, because the controls you would build for each are different.\nWe expect this objective to grow in importance, especially as agents take on more consequential work with less human oversight. These failures can turn a helpful assistant into an incident, and likely not even trigger a content safety guardrail.\nFigure 2. Screenshot of new OB-002 Agent Autonomy Failures techniques and subtechniques\nTurning definitions into decisions\nA taxonomy that names categories provides vocabulary, but we have also authored constitutions to operationalize our AI Security Framework. The constitutions provide per-category specifications define scope, resolve hard cases, distinguish neighboring categories, and provide examples on both sides of the line.\nWe\u2019ve written before about why this approach matters: No human annotator can hold a definition detailed enough to resolve every borderline case in working memory. A frontier model can apply the full specification to each decision. The written definition therefore becomes a consistent reference for detection, retraining, customer explanations, and compliance review.\nAs agents become more capable, organizations will give them more autonomy, and the consequences of going off course will grow. The challenge is to supervise them without neutralizing the autonomy that makes them useful. Our constitutions for Excessive Agency, Goal Drift, and Reward Hacking are designed around that tension. They evaluate the full trajectory, not a single message, and distinguish a brief deviation the agent corrects on its own from behavior that continues toward or results in harm. User intervention does not count as self-correction. A verified rollback may clear the outcome-based label if it fully restores the intended state, but it does not erase an authorization violation or security event from audit and incident telemetry.\nWhat this means for you\n- If you build or deploy agents: treat Agentic Autonomy Failures as a design and evaluation checklist. Relevant controls could include least-privilege tool access, explicit approval gates for consequential actions, immutable task and stop conditions, independent outcome verification, bounded execution and network access, and complete audit trails across messages, tool calls, and resulting state changes.\n- If you lead AI risk or governance: define autonomy tiers, accountable owners, approval boundaries, and evidence requirements before agents receive access to consequential systems.\n- If you work in AI security or safety: use the taxonomy as a shared reference for connecting research findings, security controls, evaluations, and policy. Mapping work to common categories makes it easier to compare results across organizations, identify gaps, and build a robust AI security program.\nWhat\u2019s next\nThe framework is meant to evolve as the threat landscape does, and right now the landscape is moving fastest around autonomy. We\u2019re sharing this update to get it in front of the practitioners living these problems. Feedback, counterexamples, and disagreement are all genuinely welcome.",
+      "type": "news",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Why AI agents cannot be trusted to secure agentic AI yet",
+      "source": "Computer Weekly",
+      "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPckwxcTFpaXIxbFU2RnMzNGFyd3o4U0ZYZFBRTXNkVGpTZzVSNlVvX1ZVaVduUGxsaEI5N0hIVjFiYXRpZkVvRlZCeTcyZzBBSS1vZzJHaXhaRkhoV3NCQ1V4VDRKY1VzNlMta3JYNy1YNks1YTA0Q1ptcVk3Mm9qOXpNdjdPeGotZEpGSV8tXzlFeG1hckpTaC1mcw?oc=5",
+      "published": "Wed, 09 Sep 2026 16:05:37 GMT",
+      "summary": "Secure the action, not just the agent The promise of agents securing agents is likely to remain attractive as agentic AI adoption accelerates. The future of agentic security will likely involve agents watching agents.",
+      "raw_text": "kirill_makarov - stock.adobe.com\nWhy AI agents cannot be trusted to secure agentic AI yet\nThe idea of using AI agents to secure AI agents seems compelling, but in doing so, we risk unnecessarily expanding our attack surface.\nArtificial intelligence (AI) agents are quickly moving from experimental tools to active participants in enterprise workflows. For chief information security officers (CISOs), the immediate priority should be gaining visibility of agents and establishing deterministic controls over what existing agents can access and do.\nUnlike traditional generative AI applications that primarily produce content, agentic AI systems can interact with tools, call application programming interfaces (APIs), retrieve corporate information, and make changes to enterprise systems. This creates significant opportunities for automation, but it also means AI-generated decisions can translate directly into real-world impacts.\nIn response, a compelling cyber security proposition has emerged: use AI agents to secure other AI agents.\nThe idea has understandable appeal. If enterprises deploy autonomous systems at a scale and speed human security teams cannot match, an equally autonomous defensive layer may appear to be the logical answer. However, this may actually risk unnecessarily expanding one\u2019s attack surface.\nWhy the concept of \u201cagents securing agents\u201d remains largely aspirational right now\nLarge language models (LLMs) are probabilistic systems. Their responses are based on statistical predictions rather than consistently repeatable rules, in contrast with deterministic systems.\nThis characteristic is acceptable, and beneficial, for many tasks. But it becomes problematic when an AI agent is responsible for enforcing a security boundary or taking automated remediation action. You cannot use a probabilistic model for deterministic ends.\nA security agent could incorrectly allow a harmful action or wrongly block a legitimate, business-critical process. In serious cases, an enterprise AI agent might be permitted to delete information, alter digital assets or interrupt operational systems based on an incorrect judgement.\nThis exposes a fundamental limitation in the agent-securing-agent proposition. But this does not mean AI has no role in securing AI agents; models can help interpret ambiguous behaviour and investigate activity that would be difficult to assess through static rules alone.\nMore agents risk creating more problems\nDeploying additional AI agents to monitor a growing population of enterprise agents could repeat familiar mistakes from earlier generations of cyber security.\nOrganisations have previously responded to emerging risks by adding more endpoint clients, tools and management layers. Over time, this created overlapping functionality, operational complexity and higher costs.\nAgent sprawl could produce a similar outcome. Each additional agent may consume more tokens, introduce latency, require access permissions, and create another component that must be monitored and secured.\nLayering probabilistic systems also risks abstracting the underlying risk. If a defensive agent interprets the actions of an enterprise agent, security teams still need to understand how both systems reached their decisions and which control ultimately permitted or prevented an action.\nSecurity begins with visibility and identity\nBefore organisations can control AI agents, they need to know where those agents are operating. Security teams need visibility of sanctioned agents, their business owners, the systems they can access, and the actions they can perform.\nHowever, an inventory of approved agents will not provide the complete picture. Employees and business teams are likely to adopt unsanctioned AI assistants, embedded software-as-a-service agents, and other AI-enabled tools.\nAttempting to prevent this through blanket bans may simply drive usage outside established governance processes. CISOs should plan to discover and manage shadow AI; prioritising agents that handle sensitive information, connect to enterprise systems, or have the ability to modify data and resources.\nRegardless of the technical approach, the principle remains the same: every agent needs a verifiable identity, clear ownership, and no more authority than necessary.\nControl what agents can actually do\nFor CISOs, the most important place to intervene is where an agent turns model output into action. Prompt filtering may help identify malicious or inappropriate inputs, but it cannot determine whether an agent should be allowed to query a database, alter a customer record or invoke an external tool.\nAs agents connect to more enterprise resources through tools, APIs and standards such as the Model Context Protocol (MCP), organisations need strict containment around these interactions. Every tool or function available to an agent should be governed by deterministic runtime controls defining when it can be invoked, which parameters are permitted, and which resources it can access.\nAn agent might be authorised to retrieve a customer record, for example, but not modify it. It might access records associated with one approved account ID, rather than the entire database. Allow lists, parameter constraints, identity-aware authorisation, and runtime policy checks can prevent prompt manipulation or malformed calls from expanding an agent\u2019s privileges.\nAdditionally, CISOs should not attempt to secure every agent interaction at once. Start with the flows capable of producing the greatest business impact: those involving sensitive data, external communications, financial transactions or changes to critical systems. Basic guardrails, including static classifiers, regular expressions and similarity-based controls, can then provide predictable boundaries around inputs and outputs, detect prompt injection attempts, enforce topic restrictions, and apply data loss prevention.\nThese controls should sit within a broader programme of operational discipline. Agent installations must be hardened according to vendor guidance and included in patching processes. Static secrets should never be stored within an agent\u2019s context. Access through MCP, agent-to-agent connections and APIs should instead be restricted to approved endpoints and granted only when needed.\nFinally, CISOs need comprehensive audit trails covering agent activity before and after execution, alongside backups of any system an agent is authorised to access, to mitigate the risk of data loss from unintended autonomous actions. Corporate policies must clearly define where agents may be used, what information they may access and who can approve them.\nRead more about agentic AI\n- A string of mishaps is making sandboxing a priority for organisations deploying AI agents, but Gartner\u2019s Manjunath Bhat warns that sandboxes are just one layer of defence.\n- Getting tech infrastructure right is just one piece of a complex puzzle that needs to be solved to deploy AI safely in business.\n- There is little doubt that enterprises will be deploying agentic AI. As such, technology firms are looking at various ways to secure these systems.\nSecure the action, not just the agent\nThe promise of agents securing agents is likely to remain attractive as agentic AI adoption accelerates. But adding more autonomy cannot compensate for weak foundations. Without clear identities, constrained access, protected tools, and enforceable runtime policies, another agent simply adds another layer of uncertainty.\nCISOs should therefore resist the temptation to prioritise only autonomous defence as a shortcut, while disregarding cybersecurity fundamentals. The priority today is to know which agents are operating, limit what they can access and place deterministic controls around the actions that could create material harm. AI can then be layered in where its ability to interpret complex or ambiguous behaviour adds genuine value.\nThe future of agentic security will likely involve agents watching agents. For now, however, the safest agent is not the one monitored by the smartest model. It is the one whose authority has been deliberately limited from the start.\nGartner analysts will further explore the evolving economics of AI agents, including strategies for value realisation, governance and cost optimisation at the Gartner IT Symposium/Xpo in Barcelona, from 9\u201312 November 2026.\nCraig Porter is director analyst at Gartner.",
+      "type": "news"
+    },
+    {
+      "title": "Hackers Use Autonomous AI Agents to Launch Mass Credential Theft Attacks in Under 6 Hours",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0X1lRckgyelRxZGNZWm9mWEVDNk4yTnB4MnVOdXE5WHBSQ0l4bVg1eVg5bjVrMUUtaDdNOGJsQUZRQUYxYmIwSFlGRG80bWJqeUdvREp6NmtnbFRBUEYwdNIBZkFVX3lxTFBwM1drd0NIVEhJbjJ4eGVDODU2QzJyYVZJdWYtX3g5dm1ob05Ra0xmZHl2TlBudm9XcV9OYXJZSVRkYzFZRksxcDRVcVJRX21jb3VHZXdkVjE0RXFJUUR1V0NRZmRJUQ?oc=5",
+      "published": "Wed, 09 Sep 2026 12:50:08 GMT",
+      "summary": "A single exposed access token can give attackers a trusted path into cloud services, source code repositories, automation pipelines, and sensitive business data. Organizations should treat AI tool configurations, developer tokens, and cloud API keys as sensitive credentials.",
+      "raw_text": "Cybercriminals are using autonomous AI agents to turn compromised cloud systems into fast-moving credential theft platforms.\nIn one recent case, attackers planned, built, and launched a large-scale campaign in less than six hours, stealing thousands of third-party credentials.\nThe operation shows how attackers can combine AI coding tools, automated scanning, and cloud resources to work at a speed that previously required a larger team and far more time.\nRather than manually checking systems and fixing errors, the agents handled much of the work themselves. Analysts from Google Cloud identified the activity while tracking the growing use of AI-driven automation in real-world intrusions.\nGoogle Cloud said in a report shared with Cyber Security News (CSN) that the attackers used an AI coding chatbot, a prompt, and preconfigured instructions to carry out the campaign.\nThe incident is part of a broader shift in cybercrime. Attackers are increasingly using AI to scan for weaknesses, create phishing content, write malicious code, steal secrets, and maintain access after an initial break-in. This trend makes rapid detection and strong cloud security more important than ever.\nHackers Use Autonomous AI Agents\nThe financially motivated attackers first compromised an organization\u2019s cloud infrastructure, then used it as the launch point for their operation.\nWorking from a trusted cloud environment helped their traffic appear more legitimate and made it harder for defenders to quickly separate malicious activity from normal services.\nThe AI-driven framework used written instruction files as operating playbooks. These instructions guided the agents through vulnerability scanning, credential collection, troubleshooting, and IP address rotation without requiring constant human decisions.\nThe result was a campaign that harvested credentials at a scale normally associated with much larger criminal groups.\nThis differs from traditional information stealers, which usually wait for a victim to run malicious software and then collect data from that device.\nIn this case, the agents actively searched server-side systems, identified weaknesses, and carried out targeted actions against online infrastructure.\nThe campaign highlights the risks outlined in recent reporting on AI agents breach company networks, where automated agents can map services, locate exposed tokens, and move toward valuable administrative access.\nOnce valid credentials are collected, criminals can reuse them for cloud access, fraud, espionage, extortion, or additional attacks.\nResearchers also found an exposed command-and-control server hosting a separate automated reconnaissance and credential management framework called Recon.\nIts dashboard was designed to organize, validate, and manage more than 23,800 stolen secrets in real time, including API keys connected to cloud and AI services.\nThe source report illustrates how attackers combined compromised cloud resources, AI-generated instructions, automated scanning, and credential harvesting into a single accelerated operation.\nCloud and Developer Systems Face Growing Risk\nThe attack demonstrates why cloud credentials and developer environments have become high-value targets. A single exposed access token can give attackers a trusted path into cloud services, source code repositories, automation pipelines, and sensitive business data.\nThe risks are similar to those described in stolen cloud credentials attacks, where valid keys can let intruders enter as approved users.\nAI coding environments can create additional openings when developers download unsafe packages, clone altered repositories, or allow tools to process untrusted workspace files.\nIn related activity, the UNC6780 group used compromised developer accounts to distribute trojanized resources and targeted CI/CD environments for authentication tokens.\nThe DUSTMAKER credential stealer was also observed hiding files inside common AI coding workspace directories.\nIt could use malicious configuration files to influence an assistant into running scripts during routine development work, while fake pipeline tasks disguised as AI utilities searched for extra tokens and keys.\nOrganizations should treat AI tool configurations, developer tokens, and cloud API keys as sensitive credentials.\nSecurity teams should rotate exposed keys quickly, apply least-privilege permissions, protect CI/CD runners, review third-party dependencies, and investigate unexpected automation tasks or workspace configuration changes.\nTeams should also monitor cloud activity for unusual API calls, unfamiliar service accounts, unexpected public services, and suspicious outbound scanning.\nGuidance from coverage of typosquatted npm package theft shows why dependency checks and secret scanning remain essential for development teams.\nThe findings do not mean autonomous exploitation is now common across every intrusion. However, they show that AI agents can reduce the delay between compromise and credential theft.\nDefenders need controls that can detect abuse at the same pace, especially as attackers continue combining AI automation with familiar methods such as stolen credentials, exposed services, and malicious packages.\nIndicators of compromise (IoCs):-\n| Type | Indicator | Description | \n|---|---|---|\n| Package name | tiktoken_mcp | Trojanized fork of a legitimate MCP server published to PyPI by UNC6780. | \n| Repository name | azure-functions-mcp-extension | Official organizational GitHub repository reportedly targeted for malicious code injection. | \n| Directory | .claude/ | Hidden AI coding workspace directory abused by DUSTMAKER. | \n| Directory | .vscode/ | Hidden IDE workspace directory abused by DUSTMAKER. | \n| Directory | .cursor/ | Hidden AI coding workspace directory abused by DUSTMAKER. | \n| File name | setup.mjs | Script referenced as capable of being executed through malicious workspace configuration. | \n| File name | _index.js | JavaScript loader file containing prompt-injection comments intended to disrupt LLM security analysis. | \n| File name | AGENTS.md | Agentic configuration file exposed on the Recon command-and-control server. | \n| File name | KNOWLEDGE.md | Knowledge file exposed on the Recon command-and-control server. | \n| File name | agentic_vuln_research.md | Vulnerability-research instruction file exposed on the Recon server. | \n| Directory | .openclaw/ | Modular framework directory observed on the exposed Recon server. | \n| Directory | memory/ | Framework directory observed on the exposed Recon server. | \n| File name | secrets.json | Cline configuration file targeted by ACRSTEALER for potential plaintext API keys. | \n| File name | config.yaml | Continue AI configuration file targeted by ACRSTEALER for API keys and model-routing endpoints. | \nNote:\u00a0IP addresses and domains are intentionally defanged (e.g.,\u00a0[.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM.\nKeep your SOC up to date on active malware & phishing within 24h of their emergence. Try ANYRUN to prevent incidents with early detection.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "GuardBreaker: Derailing AI-assisted malware analysis with a code comment",
+      "source": "WeLiveSecurity",
+      "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPbDhXRkxxU3NTR0J1QmtvRkRWSWgwMXpJNDJ1LUUwWXE1TXhuVFNJd3l0VGFoMTQyUFpyT0dBbGcyQUtQZXJGckVDYzdiZU1NU1RVSjI5NjFnZ2xuU0ZaeVM3Qk9ZRW9TOXM3ekw0amFhZ3RIVXBYTmEtaXkzaWFCYXdwMDlXSkRLck51YzRMSmYyemRsYndXX1NkZlZlX3JYUXB2elBObGZFakM1MkFoeVNyUi1NMS00?oc=5",
+      "published": "Thu, 10 Sep 2026 09:43:13 GMT",
+      "summary": "ESET researchers recently spotted one such attempt in a VBScript that the Russia-aligned group UAC-0099 used in the early stages of an attack against a target in Ukraine.",
+      "raw_text": "Malware developers have long adapted their code and tactics to the defenses and scrutiny that are likely to stand in their way. Using various evasion and anti-analysis methods, they routinely attempt to hinder code analysis or prevent their malware from revealing its true behavior while under inspection. Other tools \u2013 notably, EDR killers, documented extensively by ESET researchers \u2013 go straight after security solutions themselves.\nAs LLM-based tools increasingly assist with various security tasks, including code triage and analysis, it was only a matter of time before threat actors began to look for practical ways to subvert them, too. Alongside conventional evasion techniques, some are taking a different tack: the adversarial input that\u2019s intended to frustrate analysis is left in plain sight.\nESET researchers recently spotted one such attempt in a VBScript that the Russia-aligned group UAC-0099 used in the early stages of an attack against a target in Ukraine. By inserting a decoy request for guidance on building a nuclear weapon into the script\u2019s comment, the bad actor aimed to trip the safety guardrails of an LLM-powered code scanner and cause it to stop inspecting the rest of the file \u2013 before ever reaching the malicious code. The script\u2019s purpose was to download and install MATCHBOIL, a loader used exclusively by this group to deliver additional payloads.\nThis simple technique, which ESET has named GuardBreaker, relies on precisely the kind of \u2018request\u2019 that LLM models are known to decline:\nUnlike many other tricks in attackers\u2019 evasion playbooks, this decoy comment is there for \u2018everyone\u2019 \u2013 especially for the models analyzing the code \u2013 to see. In addition, it has no effect on the script\u2019s behavior at runtime, of course. Nonetheless, its presence suggests that UAC-0099 was accounting for an AI system in the target\u2019s defenses \u2013 just as in other recent attacks the group also checked for processes associated with established analysis tools such as IDA and Wireshark.\nAnti-analysis takes aim at another target\nGuardBreaker is best understood as a very simple attempt at prompt injection: an attacker\u2019s input reaches the LLM at inference time through a file that\u2019s being analyzed. That way, it aims to exploit an architectural weakness in today\u2019s LLMs, which process untrusted content and trusted instructions without dependable boundaries between the two.\nSimilar attempts to interfere with LLM-powered scanners have surfaced especially in software supply-chain attacks. For example, Socket found fabricated system instructions and policy-triggering content placed ahead of a JavaScript payload in malicious PyPI packages. Reporting on the same broader campaign, StepSecurity found a prompt that flat-out instructed any analyzing model that parsed the file to disregard the malicious code and report the package as clean. In another incident, researchers spotted an npm package whose main JavaScript file repeated \u201cYou\u2019re absolutely right!\u201d tens of thousands of times in the hopes of exhausting the model\u2019s context window and putting the malicious script that followed beyond practical analysis.\nAttackers could attempt to blind the analysis pipeline to malware through other trivial tricks, or even their combinations: unusual or awkwardly structured files could end up being truncated or parsed only in part. Some parts of the malicious code could be concealed under the pretense of being confidential information or other sensitive data.\nOther attacks could deploy custom file types that would require attackers\u2019 tools to process, whereas others still could steer AI agents towards actions that require human review, thus causing delays exploiting the response times. Agents that invoke external tools, such as unpackers or deobfuscators, widen the attack surface further, as the calls could in some cases be hijacked for malware delivery and execution.\nWho\u2019s in charge?\nGuardBreaker drives home a lesson that security practitioners know already: any technology that could affect an attacker\u2019s chances of success will end up in their crosshairs. Businesses relying on LLM-powered code reviews and other LLM-assisted workflows need to know what exactly any such tool inspects, where it sits in the decision chain, as well as what happens when it refuses to respond or can\u2019t complete a task.\nCrucially, however, no single LLM engine should have the sole authority to decide that a piece of code is safe. AI-assisted output needs to be cross-validated using a multi-layered and multi-model approach that makes the best use of advanced automation and human expertise; meanwhile, a lack of output, too, needs to trigger further checks.\nOrganizations of all sizes also need a clear path from prevention to detection and response. For those without their own round-the-clock security teams, managed detection and response (MDR) can supply the requisite follow-through where an expert can investigate any suspected incidents, including in the context of other activity across the environment, and determine the next steps. This approach is best built on decades-long use of AI\u2019s foundational technologies, tried-and-tested analysis methods, expert judgment, threat research and global telemetry. That way, any business can ensure that an action by one LLM model doesn\u2019t become a blind spot in the organization\u2019s cyber-defenses.",
+      "type": "news",
+      "emoji": "\ud83d\udc7e"
+    },
+    {
+      "title": "Forgetting Only What Matters: Layer-Selective Unlearning toward Robust LLMs",
+      "authors": [
+        "Ravi Ranjan",
+        "Olivera Kotevska",
+        "Agoritsa Polyzou"
+      ],
+      "abstract": "Large Language Models (LLMs) can memorize and reproduce sensitive, copyrighted, or otherwise undesirable training content, creating privacy, safety, and regulatory concerns. Machine unlearning offers a practical alternative to full retraining, but many existing methods apply broad or fixed parameter updates that can degrade utility and remain brittle under deployment changes such as post-training quantization, where forgotten knowledge may partially re-emerge. We propose Forgetting Only What Matters via Unlearning Layers (FOM-UL), a layer-level unlearning framework that selects transformer layers using a forget-to-retain significance score. This score identifies layers with high influence on the forget set and low sensitivity to the retain set, allowing FOM-UL to concentrate updates where they are most effective while leaving most of the model unchanged. This targeted update strategy improves the forgetting-utility trade-off and provides an empirical path toward quantization-resilient unlearning by reducing the chance that small, diffuse updates are erased by low-bit rounding. Across TOFU, KnowUnDo, and MUSE-style evaluations, FOM-UL reduces residual memorization compared with strong GA, NPO, KLD, SURE, ReLearn, and LUNAR-based baselines while preserving retain-set utility close to the vanilla model. Under 8-bit and 4-bit post-training quantization, FOM-UL maintains stronger memorization suppression and utility preservation than competing methods, and adversarial prompt evaluations show lower recovery of forgotten content. Overall, FOM-UL provides an efficient unlearning strategy that improves targeted forgetting, utility preservation, and deployment robustness without claiming formal guarantees of erasure.",
+      "link": "https://arxiv.org/pdf/2609.10439v1",
+      "published": "2026-09-09",
+      "arxiv_id": "2609.10439v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Large Language Models (LLMs) can memorize and reproduce sensitive, copyrighted, or otherwise undesirable training content, creating privacy, safety, and regulatory concerns. Machine unlearning offers a practical alternative to full retraining, but many existing methods apply broad or fixed parameter updates that can degrade utility and remain brittle under deployment changes such as post-training quantization, where forgotten knowledge may partially re-emerge. We propose Forgetting Only What Matters via Unlearning Layers (FOM-UL), a layer-level unlearning framework that selects transformer layers using a forget-to-retain significance score. This score identifies layers with high influence on the forget set and low sensitivity to the retain set, allowing FOM-UL to concentrate updates where they are most effective while leaving most of the model unchanged. This targeted update strategy improves the forgetting-utility trade-off and provides an empirical path toward quantization-resilient unlearning by reducing the chance that small, diffuse updates are erased by low-bit rounding. Across TOFU, KnowUnDo, and MUSE-style evaluations, FOM-UL reduces residual memorization compared with strong GA, NPO, KLD, SURE, ReLearn, and LUNAR-based baselines while preserving retain-set utility close to the vanilla model. Under 8-bit and 4-bit post-training quantization, FOM-UL maintains stronger memorization suppression and utility preservation than competing methods, and adversarial prompt evaluations show lower recovery of forgotten content. Overall, FOM-UL provides an efficient unlearning strategy that improves targeted forgetting, utility preservation, and deployment robustness without claiming formal guarantees of erasure.",
+      "summary": "This score identifies layers with high influence on the forget set and low sensitivity to the retain set, allowing FOM-UL to concentrate updates where they are most effective while leaving most of the model unchanged.",
+      "type": "paper"
+    },
+    {
+      "title": "Show-Harness: Just a VLM Agent Can Play Robots",
+      "authors": [
+        "Yanzhe Chen",
+        "Zechen Bai",
+        "Zhijun Cao",
+        "Wenzheng Zeng",
+        "Kevin Qinghong Lin"
+      ],
+      "abstract": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.",
+      "link": "https://arxiv.org/pdf/2609.10522v1",
+      "published": "2026-09-09",
+      "arxiv_id": "2609.10522v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present Show-Harness, an Embodied Harness that enables VLMs to \"play\" robots through a compact semantic interface linking intent to action. Show-Harness exposes discrete semantic action units that VLMs can naturally reason over, while embodiment-specific interpreters deterministically ground them into local robot actions, keeping the VLM directly responsible for fine-grained physical decisions. Through the same interface, Show-Harness demonstrates the feasibility of (1) directly unlocking closed-source frontier VLMs for zero-shot robot control, and (2) adapting small-scale open-source VLMs for low-cost deployment with just a few GPU-hours of fine-tuning. We further develop GUMI (GUI Manipulation Interface), which extends the same semantic action space to GUI-based demonstration collection, allowing humans and agents to \"play\" robots across embodiments without specialized teleoperation hardware. Extensive experiments show that Show-Harness-equipped VLM agents generalize robustly across tasks, embodiments, and environments, outperforming representative agentic and VLA paradigms. These results suggest that the right interface can unlock substantial embodied capability from foundation VLMs, without requiring additional model capacity or costly embodiment-specific pretraining.",
+      "summary": "Foundation vision-language models (VLMs) exhibit broad intelligence about the world, yet translating this intelligence into robot control remains challenging. We present <strong>Show</strong>-<strong>Harness</strong>, an Embodied <strong>Harness</strong> that enables VLMs to \"<strong>play</strong>\" robots through a compact semantic interface linking intent to action.",
+      "type": "paper"
+    },
+    {
+      "title": "Deep Learning-Based Detection of Electrical Faults and Power Quality Disturbances in Aerospace Power Systems",
+      "authors": [
+        "Ian C. Guzm\u00e1n",
+        "Radu Babiceanu",
+        "Berker Pek\u00f6z"
+      ],
+      "abstract": "More Electric Aircraft require fast and reliable monitoring of high-frequency electrical networks, yet most power quality disturbance and fault diagnosis methods are developed for conventional 50 or 60 Hz grids. This work presents a hardware-aware deep learning framework for multiclass detection of electrical faults and power quality disturbances in a 400 Hz aerospace power system. A high-fidelity simulation model inspired by the Boeing 787 electrical architecture generates voltage and current waveforms for 21 normal, disturbance, switching, open-circuit, and short-circuit conditions. Two datasets, each containing 73,500 samples, are formed from one-dimensional time-series signals and short-time Fourier transform time-frequency representations. Signal-processing augmentation, domain randomization, and class-specific generative adversarial networks increase waveform diversity, and the time-series dataset is released through IEEE DataPort. We compare 1D and 2D convolutional neural networks, long short-term memory networks, CNN-LSTM hybrids, ResNet, MobileNet, and VGG models under common training conditions. A compact ResNet provides the best accuracy-complexity tradeoff, achieving 96.94 percent software test accuracy with 175,685 parameters. After 8-bit quantization and deployment on a Xilinx Zynq UltraScale Plus MPSoC ZCU102, the model achieves 95.87 percent accuracy and a measured mean neural-network accelerator latency of 6.90 ms per input record. The results establish simulation-based, accelerator-level feasibility for embedded edge AI in aircraft electrical health monitoring and motivate future end-to-end data acquisition and experimental validation.",
+      "link": "https://arxiv.org/pdf/2609.10479v1",
+      "published": "2026-09-09",
+      "arxiv_id": "2609.10479v1",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "More Electric Aircraft require fast and reliable monitoring of high-frequency electrical networks, yet most power quality disturbance and fault diagnosis methods are developed for conventional 50 or 60 Hz grids. This work presents a hardware-aware deep learning framework for multiclass detection of electrical faults and power quality disturbances in a 400 Hz aerospace power system. A high-fidelity simulation model inspired by the Boeing 787 electrical architecture generates voltage and current waveforms for 21 normal, disturbance, switching, open-circuit, and short-circuit conditions. Two datasets, each containing 73,500 samples, are formed from one-dimensional time-series signals and short-time Fourier transform time-frequency representations. Signal-processing augmentation, domain randomization, and class-specific generative adversarial networks increase waveform diversity, and the time-series dataset is released through IEEE DataPort. We compare 1D and 2D convolutional neural networks, long short-term memory networks, CNN-LSTM hybrids, ResNet, MobileNet, and VGG models under common training conditions. A compact ResNet provides the best accuracy-complexity tradeoff, achieving 96.94 percent software test accuracy with 175,685 parameters. After 8-bit quantization and deployment on a Xilinx Zynq UltraScale Plus MPSoC ZCU102, the model achieves 95.87 percent accuracy and a measured mean neural-network accelerator latency of 6.90 ms per input record. The results establish simulation-based, accelerator-level feasibility for embedded edge AI in aircraft electrical health monitoring and motivate future end-to-end data acquisition and experimental validation.",
+      "summary": "More Electric Aircraft require fast and reliable monitoring of high-frequency electrical networks, yet most power quality disturbance and fault diagnosis methods are developed for conventional 50 or 60 Hz grids.",
+      "type": "paper"
+    },
+    {
+      "title": "SAEScientist-Bench: Can AI Agents Conduct Autonomous SAE Interpretability Research?",
+      "authors": [
+        "Yuqiao Tan",
+        "Shizhu He",
+        "Jun Zhao",
+        "Kang Liu"
+      ],
+      "abstract": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanistic discovery. Given a target concept, an agent designs contrastive probes and navigates a Gemma Scope dictionary of 131K+ features in Gemma-2-9B-IT to discover the optimal feature, evaluated against curated expert reference features anchored on Neuronpedia across activation rank, concept selectivity on contrastive texts, and causal steering. Across 10 agent configurations and 20 tasks, frontier agents demonstrate genuine discovery capabilities and lead different evaluation dimensions, but remain well behind the expert baseline, approaching expert levels on separating target concepts from contrastive controls while lagging substantially in causal generation steering. Further analysis reveals that although agents can design contrasts to rule out spurious candidates, they frequently misinterpret experimental measurements. These results establish experimental model understanding as a measurable capability for closed-loop autonomous AI R&D. Our code is available at https://github.com/Trae1ounG/SAEScientist.",
+      "link": "https://huggingface.co/papers/2609.09113",
+      "published": "2026-09-08",
+      "arxiv_id": "2609.09113",
+      "citation_count": null,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": null,
+      "raw_text": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment. Mechanistic interpretability tools are essential to bridge this gap, among which Sparse Autoencoders (SAEs) serve as a cornerstone by isolating interpretable features for model inspection and steering. In this paper, we introduce SAEScientist-Bench to evaluate whether AI agents can act as scientists utilizing SAE tools for autonomous mechanistic discovery. Given a target concept, an agent designs contrastive probes and navigates a Gemma Scope dictionary of 131K+ features in Gemma-2-9B-IT to discover the optimal feature, evaluated against curated expert reference features anchored on Neuronpedia across activation rank, concept selectivity on contrastive texts, and causal steering. Across 10 agent configurations and 20 tasks, frontier agents demonstrate genuine discovery capabilities and lead different evaluation dimensions, but remain well behind the expert baseline, approaching expert levels on separating target concepts from contrastive controls while lagging substantially in causal generation steering. Further analysis reveals that although agents can design contrasts to rule out spurious candidates, they frequently misinterpret experimental measurements. These results establish experimental model understanding as a measurable capability for closed-loop autonomous AI R&D. Our code is available at https://github.com/Trae1ounG/SAEScientist.",
+      "summary": "While research on recursive self-improvement (RSI) has predominantly automated model training pipelines, reliable autonomous development demands a missing pillar: post-hoc monitoring and auditing to understand what models learn and ensure safe alignment.",
+      "type": "paper",
+      "emoji": "\ud83e\udd16"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and ai-powered malware.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "88\u00b0F",
+        "detail": "55% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-08-29"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Heat",
+        "detail": "Hydrate"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "4 papers",
+        "detail": "Sep 9"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "5",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 2,108 cases this week \u2014 43% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 1,
+    "youtube_count": 5,
+    "ai_security_count": 8
+  }
+}
