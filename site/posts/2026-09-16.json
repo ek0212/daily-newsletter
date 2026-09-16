@@ -1,0 +1,508 @@
+{
+  "date": "Wednesday, September 16, 2026",
+  "weather": {
+    "location": "Manhattan, NYC",
+    "source": "National Weather Service",
+    "source_url": "https://api.weather.gov/gridpoints/OKX/34,44/forecast",
+    "current_temp": 66,
+    "unit": "F",
+    "conditions": "Mostly Cloudy",
+    "high": 78,
+    "low": 60,
+    "feels_like": 66,
+    "forecast": "Mostly sunny, with a high near 79. Southwest wind 3 to 8 mph.",
+    "hourly": [
+      {
+        "label": "7am",
+        "hour": 7,
+        "temp": 60,
+        "feels_like": 61,
+        "conditions": "Partly Cloudy",
+        "wind": "3 mph SW",
+        "humidity": "86%",
+        "precip_chance": "0%",
+        "source_count": 10
+      },
+      {
+        "label": "9am",
+        "hour": 9,
+        "temp": 64,
+        "feels_like": 65,
+        "conditions": "Partly Cloudy",
+        "wind": "4 mph SW",
+        "humidity": "77%",
+        "precip_chance": "1%",
+        "source_count": 10
+      },
+      {
+        "label": "3pm",
+        "hour": 15,
+        "temp": 77,
+        "feels_like": 79,
+        "conditions": "Clear",
+        "wind": "6 mph S",
+        "humidity": "54%",
+        "precip_chance": "2%",
+        "source_count": 10
+      },
+      {
+        "label": "5pm",
+        "hour": 17,
+        "temp": 77,
+        "feels_like": 78,
+        "conditions": "Partly Cloudy",
+        "wind": "6 mph S",
+        "humidity": "57%",
+        "precip_chance": "3%",
+        "source_count": 10
+      },
+      {
+        "label": "7pm",
+        "hour": 19,
+        "temp": 73,
+        "feels_like": 75,
+        "conditions": "Clear",
+        "wind": "6 mph SE",
+        "humidity": "69%",
+        "precip_chance": "1%",
+        "source_count": 10
+      }
+    ],
+    "forecast_source": "Open-Meteo model consensus + National Weather Service",
+    "forecast_source_count": 11,
+    "forecast_source_url": "https://api.open-meteo.com/v1/forecast"
+  },
+  "health": {
+    "status": "WATCH",
+    "respiratory_status": "LOW",
+    "detail": "2,486 cases this week \u2014 56% below average for this time of year; 5 public-health advisory item(s) flagged",
+    "combined_cases": 2486,
+    "vs_average_pct": -55.8,
+    "week_ending": "2026-09-05",
+    "breakdown": {
+      "flu": 372,
+      "covid": 1941,
+      "rsv": 173
+    },
+    "signals": [
+      {
+        "signal": "Respiratory illness",
+        "current": "2,486 combined flu/COVID/RSV cases",
+        "comparison": "56% below seasonal average",
+        "practical_read": "Normal context unless symptoms/exposure apply.",
+        "status": "LOW",
+        "source": "NYC Health respiratory illness data",
+        "source_url": "https://raw.githubusercontent.com/nychealth/respiratory-illness-data/main/data"
+      },
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "12 people, 1 death, 11 people",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Any New Yorkers who currently live or work in this area or people who have visited the area since late August and are experiencing flu-like symptoms, such as fever, cough, or difficulty breathing, should contact a healthcare provider immediately.",
+        "published": ""
+      },
+      {
+        "signal": "New York City and New York State Health Departments Endorse 2026\u20132027 Respiratory Virus Season Immunization Re",
+        "current": "This past winter, New York City saw a sharp increase in reported flu cases in late November and December.",
+        "comparison": "September 10, 2026",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-nys-26-27-rvs-immunization-recommendations.page",
+        "title": "New York City and New York State Health Departments Endorse 2026\u20132027 Respiratory Virus Season Immunization Recommendations",
+        "summary": "This past winter, New York City saw a sharp increase in reported flu cases in late November and December.",
+        "published": "September 10, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "So Delicious Dairy Free\u00ae Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due ",
+        "current": "and LOUISVILLE, Colo., September 15, 2026 - Danone USA is issuing a voluntary recall of So Delicious Dairy Free\u00ae Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by ",
+        "comparison": "Tue, 15 Sep 2026 20:31:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766462",
+        "title": "So Delicious Dairy Free\u00ae Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due to Potential Presence of Foreign Material",
+        "summary": "and LOUISVILLE, Colo., September 15, 2026 - Danone USA is issuing a voluntary recall of So Delicious Dairy Free\u00ae Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028 due to the potential presence of foreign mater",
+        "published": "Tue, 15 Sep 2026 20:31:00 GMT"
+      }
+    ],
+    "advisories": [
+      {
+        "signal": "NYC Health Legionnaires disease",
+        "current": "12 people, 1 death, 11 people",
+        "comparison": "NYC Health Legionnaires disease",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health Legionnaires disease",
+        "source_url": "https://www.nyc.gov/site/doh/health/health-topics/legionnaires-disease.page",
+        "title": "NYC Health Legionnaires disease",
+        "summary": "Any New Yorkers who currently live or work in this area or people who have visited the area since late August and are experiencing flu-like symptoms, such as fever, cough, or difficulty breathing, should contact a healthcare provider immediately.",
+        "published": ""
+      },
+      {
+        "signal": "New York City and New York State Health Departments Endorse 2026\u20132027 Respiratory Virus Season Immunization Re",
+        "current": "This past winter, New York City saw a sharp increase in reported flu cases in late November and December.",
+        "comparison": "September 10, 2026",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "NYC Health press releases",
+        "source_url": "https://www.nyc.gov/site/doh/about/press/pr2026/nyc-nys-26-27-rvs-immunization-recommendations.page",
+        "title": "New York City and New York State Health Departments Endorse 2026\u20132027 Respiratory Virus Season Immunization Recommendations",
+        "summary": "This past winter, New York City saw a sharp increase in reported flu cases in late November and December.",
+        "published": "September 10, 2026"
+      },
+      {
+        "signal": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "current": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "comparison": "Wed, 26 Aug 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPbDUwU3k3c0FIa0duaHZaSjJNSGNLN0lJd0M3T05TNHZsb1NDSHdNMVVnWkhvUldHRGFRQkdoSFItc2c0SVJyUTdqQzlhNXRWdUpIQmRUWmVtTTdidzlKMl9KZEtQOTFCODdzY3ZkeS1WYW50MzVTcUItSnlVbi02azhQLU1uaTE0M0hpU3NDc1ZzQkFOOFM5dzdFemdtdklKS0NKTHVzNWNiVXl6dEdLS0tCTVhBSDRXWHBNOQ?oc=5",
+        "title": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Listeria monocytogenes: Soft Cheese (June 2026) fda.gov",
+        "published": "Wed, 26 Aug 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "current": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "comparison": "Thu, 03 Sep 2026 07:00:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "Google News health watch",
+        "source_url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNcDVJNTZOMHdsdDc5Z0dBSHBMZHZQaUVJQzVLYXV4TUg3emVGcHBPb0JRQWc4Nm1XLWVKY0lFekIzRVVpLUdkN084OFlmWktPNGFrUE9DdDVWSXlRZmNweUJXa2hHSjMwQmcydVNvcHZnQzJHYlZuRlVIcF9ZZDBlVmM4ZS1rNVlTYUE1ZnRkblFJekF0eTRzN0JScVFBQmxnWlpn?oc=5",
+        "title": "Outbreak Investigation of Salmonella: Eggs (July 2026) - fda.gov",
+        "summary": "Outbreak Investigation of Salmonella: Eggs (July 2026) fda.gov",
+        "published": "Thu, 03 Sep 2026 07:00:00 GMT"
+      },
+      {
+        "signal": "So Delicious Dairy Free\u00ae Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due ",
+        "current": "and LOUISVILLE, Colo., September 15, 2026 - Danone USA is issuing a voluntary recall of So Delicious Dairy Free\u00ae Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by ",
+        "comparison": "Tue, 15 Sep 2026 20:31:00 GMT",
+        "practical_read": "Watch official updates; use symptoms/exposure guidance if relevant.",
+        "status": "WATCH",
+        "source": "CDC food safety RSS",
+        "source_url": "https://tools.cdc.gov/api/embed/downloader/download.asp?m=316422&c=766462",
+        "title": "So Delicious Dairy Free\u00ae Issues Voluntary Recall of Salted Caramel Cluster Non-Dairy Frozen Dessert Pints Due to Potential Presence of Foreign Material",
+        "summary": "and LOUISVILLE, Colo., September 15, 2026 - Danone USA is issuing a voluntary recall of So Delicious Dairy Free\u00ae Salted Caramel Cluster Non-Dairy Frozen Dessert pints with best-by dates on and before April 3, 2028 due to the potential presence of foreign mater",
+        "published": "Tue, 15 Sep 2026 20:31:00 GMT"
+      }
+    ]
+  },
+  "events": [
+    {
+      "name": "Mexican Day Parade",
+      "date": "Sun, Sep 20",
+      "borough": "Manhattan",
+      "location": "East 37th St & Fifth Ave",
+      "event_type": "Parade"
+    },
+    {
+      "name": "THE BRYANT PARK AREA FAIR",
+      "date": "Sun, Sep 20",
+      "borough": "Manhattan",
+      "location": "West 41st St & 6th Ave",
+      "event_type": "Single Block Festival"
+    }
+  ],
+  "news": [
+    {
+      "title": "A Hague court convicts Kosovo\u2019s former President Thaci of war crimes and sentences him to 25 years",
+      "source": "AP News",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcG5kUDZnVlhBR21QQ0hMeU41Rjc2d01aZDByenE0TzJiUmhwblNId1dHLU80U3ItSXcxSUVXSG1FZ2NOUmJWX3BaUUZnU0RLVHN3LWhhZ19PWXlRMGlvNzhNOUh4bkNUOGxkVE9wdWF5V2tkMjkxY3BkVF84LWdUbGRkclNJWWlXRkg2VkdzRjNtc1VM?oc=5",
+      "published": "Wed, 16 Sep 2026 11:22:00 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at AP News.",
+      "emoji": "\u2694\ufe0f"
+    },
+    {
+      "title": "Warsh's words may matter more than the anticipated Fed rate hike",
+      "source": "Reuters",
+      "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPd0VZMTZPMGRVWVVTY0lVRERxMHhQdlNnb2NBOHROMDJETXBLVmJFTW12SmFybUloWGRfYm1ueDhEZHJuOWNPQXh3RHpDVllhRVpSUVFVeDJmMGFNNTM2RTRqMkVFaXdwTmM1eG1UeVhqLXNuYW5LMjZGYUFCYUV0djFqUTUxRkF2Vk9NeTh5VU44bENZYi1kaTBnS1NuVngtX1dIeEVtaw?oc=5",
+      "published": "Wed, 16 Sep 2026 13:24:20 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Reuters.",
+      "emoji": "\ud83d\udcb0"
+    },
+    {
+      "title": "EU chief von der Leyen proposes \u2018associate member\u2019 status for Canada",
+      "source": "Al Jazeera",
+      "link": "https://www.aljazeera.com/news/2026/9/16/eu-chief-von-der-leyen-proposes-associate-member-status-for-canada?traffic_source=rss",
+      "published": "Wed, 16 Sep 2026 13:18:51 +0000",
+      "raw_text": "EU chief von der Leyen proposes \u2018associate member\u2019 status for Canada\nPrime Minister Mark Carney said earlier this week that Canada was seeking a \u2018unique alliance\u2019 with the European Union.\nEuropean Commission President Ursula von der Leyen has raised the prospect of Canada becoming the 27-nation European Union\u2019s first \u201cassociate member\u201d, a striking overture as both seek to pivot away from a hostile United States under President Donald Trump.\nVon der Leyen\u2019s statement on Wednesday came after Prime Minister Mark Carney said earlier this week that Canada was seeking a \u201cunique alliance\u201d with the EU, but not membership.\nRecommended Stories\nlist of 3 items\n- list 1 of 3Europe, Canada condemn Israeli plans for new West Bank settlement\n- list 2 of 3Five key takeaways from the NATO summit in Ankara\n- list 3 of 3\u2018A global rupture\u2019: Carney calls for Canada-EU unity before G7 summit\nVon der Leyen told the European Parliament in Strasbourg that, as democracies are facing a \u201cfracture in the international rules-based system\u201d, Brussels and Ottawa needed to pull closer together.\n\u201cI would like to work with you on opening the door for Canada to be the first associate member of the EU,\u201d von der Leyen told Carney, who was attending her annual keynote speech.\nThe first foreign head of government to attend the annual \u201cState of the European Union\u201d address, his visit comes in advance of an EU-Canada summit in Montreal next month. Carney will deliver his own address to the European Parliament on Thursday.\nVon der Leyen said it was time to move from cooperation based on a trading relationship to a broader \u201calliance for the future\u201d and \u201cbring the relationship with Canada to the highest level possible\u201d.\nShe said that the EU and Canada would work together on sectors ranging from manufacturing to AI, critical minerals and energy.\n\u201cThis is a partnership not against anyone else, but for our common strength,\u201d she added.\nEU treaties do not envision the possibility of becoming an \u201cassociate member\u201d. But the idea was first proposed by German Chancellor Friedrich Merz this year regarding Ukraine.\nUnder the plan, which met a cold reception in Kyiv as it pushes for full membership status, Ukraine would have been allowed to attend the bloc\u2019s summits and have a representative in the European Commission.\nIt would have also benefitted from parts of the EU budget, but without full voting rights.\nBuffeted by US tariffs and competition from China, Brussels and Ottawa already enjoy considerable cooperation.\nA free-trade agreement (CETA) that abolished almost all tariffs has been credited with boosting trade in goods and services by more than 80 percent since 2016.\nFurthermore, Canada became the first non-EU country to join a flagship defence loan programme this year.\n\u201cWe believe that power does not belong to the strongest, the richest or the loudest \u2013 but to all of us. That democracies have the freedom to choose with whom to work,\u201d von der Leyen said. \u201cSo, we are joining forces voluntarily.\u201d",
+      "summary": "Von der <strong>Leyen</strong> told the European Parliament in Strasbourg that, as democracies are facing a \u201cfracture in the international rules-based system\u201d, Brussels and Ottawa needed to pull closer together."
+    },
+    {
+      "title": "Inside the campaign to convince Washington that AI could end human life",
+      "source": "The Washington Post",
+      "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOWHlzQkZTYTR2VnNCaU9wYU5OUURIWWpyWEFuQ2VqRUdMbkdVQkNlSy1IUmhkcURKS3ZiOTBPcVV2V2R0S0pnaEJjek1zQ0ZGeXdQczZWTjhtbHFhNHUySUJEUldOZ2d0TFdJMUVZNHhoMVpSODAxaW5UN1BWTWlFV3lJRmJVVE11S3ZXWld6eHlXOXdQQVVlaE9zOUF1enNiTlZBYWZZRDRvOF83aWlMXzBKNWs4VHpObGc?oc=5",
+      "published": "Wed, 16 Sep 2026 13:32:02 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at The Washington Post.",
+      "emoji": "\ud83d\udcbb"
+    },
+    {
+      "title": "Democrat Says Trump Threw \u2018Tantrum\u2019 During Kennedy Center Board Meeting After Court Ruling",
+      "source": "Forbes",
+      "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNQ2dIdy15OW9JZkFsTk5LVmZKZU9kclpqdllZWC1RaE5kWERzMDlwQWU5M3ZFOUN4MUZWMFhSLWZVaXVZYjFHQTdBZ2RocFZQRUVwaXpoTVVZSnZLN0phYjdGcFdJenFSZ1c1UzhwRVo3NmE1clVqZ2VLa3hCdHBodlJQZ0MxalFjTUZaMHlrNmtUYUtZVlBCclZuWkNHQWhPV1gtVGpOWElaWFJEaDVEczlWbmNzNF9QYVZDOHpLem9SLTZIVWtSclpwWFg2SlZfZ1oybThncDEwZw?oc=5",
+      "published": "Wed, 16 Sep 2026 11:50:09 GMT",
+      "raw_text": "",
+      "summary": "Read the full story at Forbes.",
+      "emoji": "\ud83c\udfdb\ufe0f"
+    }
+  ],
+  "youtube": [
+    {
+      "channel": "Morning Brew Daily",
+      "title": "Why Canada\u2019s Mark Carney wants to deepen ties with the EU",
+      "video_id": "Y_GRbx5nOSY",
+      "published": "2026-09-16",
+      "link": "https://youtube.com/watch?v=Y_GRbx5nOSY",
+      "summary": "Warsh has also said he wants to take a hands-off approach to determining interest rates\u2014the opposite of Treasury Secretary Scott Bessent\u2019s bond buyback flop.",
+      "raw_text": "There\u2019s a good chance interest rates are going up\n\nThere\u2019s a good chance interest rates are going up\nThe politics of monetary policy.\n\u2022 less than 3 min read\nLike your athletic friend on a group trip, Federal Reserve Chair Kevin Warsh is likely to pitch a hike today.\nThanks to last week\u2019s worse-than-expected inflation report and oil prices skyrocketing due to the Iran war, economists expect the Fed to hike interest rates today for the first time in three years:\n- A majority of the 29 fund managers and strategists surveyed by CNBC believe at least two rate hikes over the next year are more likely than not.\n- The CME FedWatch Tool shows markets hovering around a 92% chance of a 25-basis-point hike today, a jump from last week\u2019s 70% probability.\n- The 10-year Treasury yield hit 5.04% yesterday, its highest level in 19 years, before closing lower. The yield is a benchmark for consumer and corporate lending, and its rise signals a likely Fed rate increase.\nWhere is Warsh\u2019s head at? Despite Warsh\u2019s quieter approach to decisions, he noted that inflation reports \u201cdo not tell me that underlying trends have improved\u201d in a recent speech last month at the Economic Policy Symposium in Jackson Hole, WY. Warsh has also said he wants to take a hands-off approach to determining interest rates\u2014the opposite of Treasury Secretary Scott Bessent\u2019s bond buyback flop.\nThe politics of monetary policy\nPresident Trump spent the end of Jerome Powell\u2019s eight-year tenure beefing with the former Fed chair over his reluctance to lower interest rates, eventually nominating Warsh to take his place. Kevin Hassett, the White House National Economic Council director, claimed in a TV interview this weekend that inflation was improving, but said Trump supports the Fed\u2019s right to make an independent decision.\nBottom line: Today\u2019s potential rate hike could create a headache for Trump and the Republican Party, as it comes just ahead of a tense midterm election, with many economic warning signs flashing red.\u2014MM\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nCanada woos investors with dozens of projects\n\nCanada woos investors with dozens of projects\nPrime Minister Mark Carney is pitching the world on investing C$1 trillion in Canada.\n\u2022 less than 3 min read\nCanada is handing the world a Cheesecake Factory-thick menu with CAD$1 trillion of investment opportunities in projects across AI, natural resources and transportation. Prime Minister Mark Carney presented it yesterday to executives managing $120 trillion in assets, who gathered in Toronto for a summit aimed at courting capital for the country amid a trade war with the US.\nThe pitch deck\nAside from touting the nation\u2019s trade ties, educated workers, vast natural resources, and low government debt, Canada is sweetening the deal with the investment version of maple syrup:\n- Canada is expanding a tax rule allowing write-offs of depreciating assets immediately upon investment as opposed to over the years to apply to the majority of investments\u2014lowering the tax rate from 13% to 6.4%, which is below most developed countries.\n- The government simplified its notoriously byzantine project approval process.\nWhat are some projects open to investment? A $10 billion AI data center and a $25 billion oil pipeline in Alberta, a synthetic graphite plant in Ontario that\u2019ll supply battery makers, and a spaceport in Nova Scotia are among the planned ventures seeking cash.\nLooking ahead\u2026officials say the deals will take 12 to 18 months to materialize. Analysts note that to improve the country\u2019s investment attractiveness, Canada\u2019s government has to show how the enterprises can actually deliver returns.\u2014SK\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.\n\n---\n\nJapan has a problematic age gap\n\nJapan has a problematic age gap\nThe country has more than 100,000 people over the age of 100 for the first time\n\u2022 less than 3 min read\nFor the first time in its history, Japan has more than 100,000 people over the age of 100\u2014and nearly 90% of them are women. The surge of centenarians is straining the country\u2019s resources and making the male/female ratio at senior home mixers impossibly unbalanced.\nTo put the official total of 107,677 into context, that\u2019s enough 100-year-olds to nearly fill AT&T Stadium in Dallas. When paired with Japan\u2019s record-low fertility rates, the number of centenarians\u2014which has risen for 56 straight years\u2014is creating a host of fiscal problems:\n- Around one-third of the country\u2019s ~120 million residents are drawing from public pensions.\n- The health ministry asked for $218 billion for pensions and medical care for next year\u2019s fiscal budget, representing about a quarter of the overall requests.\n- The government estimates that it will need 2.4 million elder care workers in 2026, up from 2.1 million in 2024.\nTo supplement its withering workforce, Japan is recruiting care workers from abroad. After reaching 66,000 last year under a skilled-worker visa program, the government will now allow nearly three times that many under a new foreign-aid worker plan despite its usually strict immigration policies.\u2014DL\nMorning Brew delivers quick and insightful updates about the business world every day of the week from Wall St. to Silicon Valley.\nBy subscribing, you accept our Terms & Privacy Policy.",
+      "source_url": "https://www.morningbrew.com/issues/problematic-age-gap",
+      "read_more_url": "https://www.morningbrew.com/issues/problematic-age-gap",
+      "thumbnail": "https://img.youtube.com/vi/Y_GRbx5nOSY/mqdefault.jpg"
+    },
+    {
+      "channel": "This Week in Startups",
+      "title": "90% of AI prototypes never reach production (w/ Temporal\u2019s Samar Abbas) | AI Basics",
+      "video_id": "QObva5QRiFc",
+      "published": "2026-09-15",
+      "link": "https://youtube.com/watch?v=QObva5QRiFc",
+      "summary": "New episode from This Week in Startups. Click to watch.",
+      "raw_text": "The TWiST AI Basics series is made possible by Google for Startups! Build context-aware AI workflows using DeepMind models and orchestration tools with Google for Startups' new Startup technical guide on generative media. Get the guide here: https://goo.gle/technical_guide Today's show: The demo works, the vibes are immaculate, but then the app falls apart the second real users touch it. On today's AI Basics, Temporal co-founder and CEO Samar Abbas says the problem isn't with the model at all. You're missing a harness, the layer that keeps an AI agent's work durable, secure, and recoverable if/when something breaks. Temporal's durable execution platform is used by major companies from OpenAI to Stripe to Netflix, and helps to make their long-running software reliable and interruption-free. On AI Basics, he explains why so many AI-coded prototypes die in the imagineering stage, before ever hitting production. Plus he walks Jason through Temporal's live dashboard, to show how it gives developers full visibility into what their agents are doing at every step. Guest and Relevant Links: Samar Abbas on X: https://x.com/SamarAtTemporal Temporal: https://temporal.io/ Temporal raises $550M at a $12.55B valuation: https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai GeekWire: Samar Abbas on the \"massive platform shift\" in AI: https://www.geekwire.com/2026/temporal-ceo-samar-abbas-on-the-massive-platform-shift-in-ai-fueling-the-startups-5b-valuation/ Temporal expands Google Cloud partnership: https://temporal.io/blog/temporal-expands-google-cloud-partnership-with-pay-as-you-go-pricing Timestamps: 0:00 Why every startup needs an AI harness 2:12 Why 90% of AI prototypes never reach production 4:16 What happens when an agent crashes mid-task 7:00 A look at Temporal's dashboard 13:02 OK but what is a \"harness\" exactly? 15:30 When to graduate an agent from laptop to production 17:44 Organizing agents into teams Subscribe to This Week in Startups on Apple: https://rb.gy/v19fcp Follow Jason: X: https://twitter.com/Jason LinkedIn: https://www.linkedin.com/in/jasoncalacanis Thank you to our partner! Build context-aware AI workflows using DeepMind models and orchestration tools with Google for Startups' new Startup technical guide on generative media. Get the guide here: https://goo.gle/technical_guide Check out all our partner offers: https://partners.launch.co/ Great TWIST interviews: Will Guidara, Eoghan McCabe , Steve Huffman , Brian Chesky , Bob Moesta, Aaron Levie , Sophia Amoruso , Reid Hoffman , Frank Slootman , Billy McFarland Check out our suite of newsletters: https://substack.com/@thisweekininc Follow TWiST: Twitter: https://twitter.com/TWiStartups YouTube: https://www.youtube.com/thisweekin Instagram: https://www.instagram.com/thisweekinstartups TikTok: https://www.tiktok.com/@thisweekinstartups Substack: https://twistartups.substack.com",
+      "source_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/90-of-ai-prototypes-never-reach-production-w-temporals-samar-abbas-ai-basics",
+      "read_more_url": "https://4a885955-6823-4b22-a3e1-a526c25516a5.libsyn.com/90-of-ai-prototypes-never-reach-production-w-temporals-samar-abbas-ai-basics",
+      "thumbnail": "https://img.youtube.com/vi/QObva5QRiFc/mqdefault.jpg"
+    },
+    {
+      "channel": "Theo - t3.gg",
+      "title": "How I Code Without Typing",
+      "video_id": "NvVbCqDgfCs",
+      "published": "2026-09-16",
+      "link": "https://youtube.com/watch?v=NvVbCqDgfCs",
+      "summary": "New episode from Theo - t3.gg. Click to watch.",
+      "raw_text": "",
+      "thumbnail": "https://img.youtube.com/vi/NvVbCqDgfCs/mqdefault.jpg"
+    }
+  ],
+  "ai_security_tldr": "This week's focus: agentic ai security and guardrail bypasses.",
+  "ai_security": [
+    {
+      "title": "The Hardest AI Security Problems Now Live Outside the Model",
+      "source": "Unite.AI",
+      "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE85b0FnMk4zTDB2N1dETjJELVJHZC05WWw5ajA2RGJkeHo2a0RGdGlPNklXcmdOWEI5ZGN3alhXZ05aS3pBcFg5LWU3dGcwSUo0NVdwZUxNVjJmS2hjRnh5Y05WLTcwNHBueGpLRExLOWw5NDdxS0tZMg?oc=5",
+      "published": "Wed, 16 Sep 2026 12:35:06 GMT",
+      "summary": "In an agentic system, the model\u2019s response is not the destination; it is an input carrying authority. But we do this by building hard controls outside the model.",
+      "raw_text": "Thought Leaders\nThe Hardest AI Security Problems Now Live Outside the Model\nAdd Unite.AI to your preferred sources on Google\nThe 2026 OWASP Top 10 for LLM Applications provides a critical lens into the maturity of production AI. It captures a pivotal shift: the industry is moving past the sandbox and grappling with the complexities of real-world integration.\nWhen you connect an LLM to enterprise tools and workflows, the threat surface fundamentally changes. Risks associated with authority and resource utilization become significantly more difficult to contain. Simultaneously, vulnerabilities like improper output handling are receding from the forefront, not because they are resolved, but because other problems have jumped to the forefront.\nThe OWASP Top 10 ranking reflects this evolution. \u201cExcessive Agency\u201d has ascended from sixth to third, while \u201cUnbounded Consumption\u201d climbed to sixth. Conversely, \u201cImproper Output Handling\u201d has fallen to tenth.\nThis does not diminish the risk of output handling. If an LLM response reaches a shell or database without rigorous validation, traditional injection flaws persist. However, the paradigm has shifted. In an agentic system, the model\u2019s response is not the destination; it is an input carrying authority. When a model holds credentials or interacts with an API, its output acts as a vector that can trigger actions across disparate systems.\nThe security challenge is no longer merely evaluating the model; it is defining the boundaries of what happens after inference. Your architecture dictates whether a hallucination remains in text or manifests as an unauthorized database mutation.\nThe Ranking Follows the Damage\nOWASP leveraged 7,714 incidents, 75% driven by community consensus, and 25% by empirical incident data. This evidence base forced a real reordering of priorities.\n\u201cExcessive Agency\u201d rose because the reality of production environments caught up to theory. Organizations are accelerating the deployment of autonomous capabilities faster than they are establishing necessary control planes. The critical vulnerability is not just the answer the model provides, but the authorization context in which that answer is executed.\nWhile \u201cImproper Output Handling\u201d remains a concern, DevOps teams have matured in their ability to secure downstream sinks through schema validation and parameterized queries. These are established application security practices.\nAgency, however, is a different class of problem. A tool call may be structurally valid but contextually illegitimate. The model may invoke an approved function for an inappropriate task or target the wrong resource. Static sanitization cannot adjudicate intent. This requires sophisticated, context-aware authorization that the model should never perform in isolation.\nTreat Every Tool as an Exposed Capability\nMany teams treat tool definitions as just integration plumbing. This is a pretty laughable and fundamental error. Every tool, connector, or API endpoint expands the AI application\u2019s sphere of influence.\nConsider an agent designed to summarize a mailbox. If the implementation uses a broad connector that includes write or delete capabilities, you have introduced excessive functionality before the first prompt is ever processed.\nYou must enforce the principle of least privilege:\n- Narrow the interface: Provide the agent with read-only tools rather than general-purpose connectors.\n- Scoped context: Execute requests within the user\u2019s OAuth-scoped identity.\n- Policy Enforcement Points (PEP): Implement authorization logic as a mandatory middleware between the model and downstream systems. Every action must be validated against policy before execution.\n- Human-in-the-loop (HITL): Require explicit approval for operations that are difficult to reverse or carry high material impact.\nThis approach necessitates a shift in the delivery pipeline. Your review process must expand beyond the model to encompass changes in tool schemas, service identities, and permission scopes. A model update might appear benign, but a change in a connector\u2019s authorization context can create a catastrophic vulnerability.\nVisibility is non-negotiable. You must log the specific tool execution, the authorizing identity, and the resultant change in the target system. This chain of custody is essential for incident response, enabling you to interrupt an active process and reconstruct the audit trail post-incident.\nEvery Autonomous Run Needs a Hard Stop\n\u201cUnbounded Consumption\u201d has surged because request volume is an inadequate metric for resource risk. A single, concise prompt can trigger a recursive, resource-intensive chain of tool calls. The meter does not stop until the agent finishes.\nSimple alerting is insufficient when the speed of execution outpaces human response. You require deterministic, hard limits that remain outside the agent\u2019s control. Implement strict ceilings for token usage, elapsed time, recursion depth, and cumulative operational cost. If an execution exceeds these parameters, the system must terminate or throttle the run.\nOperational scope demands similar rigor. Determine the maximum number of records an agent can modify and define the boundaries of task propagation. If your architecture lacks a deterministic \u201cstop\u201d mechanism, you have essentially delegated authority without defining its perimeter.\nBuild for the Wrong Answer\nSystems engineering has long relied on resilient architecture to secure inherently unreliable components. We anticipate component failure and network instability; security is derived from that assumption, not from the illusion of perfection. LLMs demand the same architectural discipline.\nDo not base your security strategy on the assumption of perfect model alignment. Assume failure, whether through benign misunderstanding or malicious exploitation. Limit agent capabilities to the absolute minimum required and maintain strict user authorization contexts for all downstream calls. Crucially, policy enforcement must exist outside the model to prevent prompt injection or reasoning errors from bypassing your controls.\nWe now view Prompt Injection as less of a vulnerability and more of a law of physics. It will always be lurking. The fact is that the models themselves cannot be effective deciders of security-critical questions. In a real agentic project I\u2019m building, we have about 100 automated \u201cred team\u201d tests. We make sure we pass them all. But we do this by building hard controls outside the model. We can turn this off and see the pass/fail rates for the model alone. The oldest, weakest model we test fails 17% of the time. The newest, biggest model fails 2% of the time. Great progress, right? But is 98% good enough when every failure means leakage of sensitive data? Not even close.\nHigh-impact operations must be observable, audited, and ideally, reversible. Every autonomous execution requires immutable guardrails that remain beyond the model\u2019s reach.\nThe 2026 rankings really shed light on where AI failures transition into material consequences. The model may initiate the mistake, but the architecture defines the blast radius. For production AI, the most critical security work occurs in the post-inference pipeline.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Agentic AI Security: Risks, Threats, Best Practices",
+      "source": "Analytics Insight",
+      "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZ2V1THpMUjlyWUlOdUladzViRVNYS3ZSMmRtZ3gzajZiWVh5aEdPdm1jc0ljaG9HYkpFYU5Qalk5NjZpVDM0RTFfYzZxdnN1WFlGaHYwc0dMTHVxbUZJOVBoYW92ZWV0WDdrV0FlOEJPMmhhX0NZQmZTOHl5eGdtdWVPaGpWTzZTa25OVE8xalBpM3VO0gGiAUFVX3lxTE1JVmxZMjJjRHgxN1d3RjZSd2djVmV3aXpENnlrRVBPSTJhYlZzT0RzTmxFV2I3bGxha01MN05uWWlWeUdPbkhhQnFxaG1sTmdpTWU1UXJZWndZOXphVnVBS3BtQ0dMbWFnSkM0b0EyT2JmLVhwYnZteVBQZEJ2d1kzSmNUclU1Q2ZUczljbVp1NUhLM0lLUDYwUjJvT2F0ZGVLQQ?oc=5",
+      "published": "Wed, 16 Sep 2026 09:52:51 GMT",
+      "summary": "A model can send a parameter to a tool as designed. Can AI agent memory become a security risk?",
+      "raw_text": "Agentic AI can turn prompt injection into serious attacks when agents have access to powerful tools and systems.\nLeast privilege, strict tool controls, identity checks, and runtime policies can limit an agent\u2019s attack scope.\nMemory, external content, agent-to-agent communication, and supply chains now form important parts of the security boundary.\nAI agents can read files, search databases, call tools, run scripts, and act across business systems. That power changes security. A chatbot may produce a harmful answer, but an agent can turn a bad instruction into a real action.\nA Microsoft security report showed how a vulnerability in Semantic Kernel could enable host-level remote code execution when an agent used affected functionality. The case marks a shift from model safety to system security.\nNIST published a report on AI agent security on May 18, 2026. The report found broad agreement that AI agents create new security threats. Core cybersecurity practices still matter, but agent systems need added controls. The key concern arises when an AI model can decide to call a tool.\nThe risk grows when an agent has access to email, files, databases, code, cloud services, or finance systems. A malicious prompt can enter through a web page, PDF, email, support ticket, database record, or tool response. The agent may treat that content as part of its task and take an action that helps the attacker.\nMicrosoft reported two critical Semantic Kernel flaws in May 2026. One flaw, CVE-2026-26030, could turn prompt injection into remote code execution through an unsafe search plugin path.\nMicrosoft said the affected Python package required an upgrade to version 1.39.4 or later. A second flaw, CVE-2026-25592, involved an unsafe file transfer function in the .NET SDK. Microsoft said the affected .NET SDK needed version 1.71.0 or later.\nThese cases show why tool design matters as much as model behavior. A model can send a parameter to a tool as designed. If that tool trusts model-controlled input, an attacker can gain a path to file access, code execution, or data theft. Microsoft described the larger lesson simply: the model does not form the security boundary; exposed tools define the possible attack scope.\nPersistent memory creates another attack surface. A hostile user can place false or harmful information into stored context. A later session may treat that data as trusted knowledge. Safe agent design needs checks for memory source, integrity, access rights, expiry, and isolation.\nIdentity also needs more control. An agent should not receive broad rights simply through its service account possessing them. Access should match the task, user, tool, resource, and action. High-risk actions such as money transfers, production deletion, privilege changes, or external data release need extra checks and sometimes human approval.\nAlso Read - AI Agent Wallets: How Software Wallets are Evolving for Autonomous Crypto Transactions\nOWASP released its Agent Control Standard in September 2026. The standard calls for agents to remain inspectable, traceable, and instrumentable. It also describes middleware hooks for security rules across agent frameworks. Security teams need visibility into what an agent is, what it can access, what it did, and why.\nThat approach reflects a wider change in agent security. An agent can read new data, call different tools, retain memory, and work with other agents. Runtime policy checks can examine identity, target, action, risk, and approval status before a tool call reaches a sensitive system.\nA safer agent system needs several layers. Identity controls should give each agent a clear identity and short-lived credentials where possible. Tool controls should allow only approved functions and validate every important parameter. Data controls should limit sensitive content, isolate memory, and keep secrets out of prompts.\nA separate policy layer should sit between the model and high-impact tools. That layer can block unsafe actions, limit access, require approval, and record key events. Endpoint and network controls should remain active as a second defense. If an agent gets past model safeguards, normal security tools still need a chance to detect unusual processes, file changes, outbound connections, or credential use.\nAlso Read - Agentic AI for Enterprises: Benefits, Challenges, Implementation\nAgentic AI security now sits across AI safety, identity and access management, application security, API security, cloud security, and incident response. NIST, OWASP, Microsoft, and ISACA point toward the same core need: clear identity, least privilege, strong tool controls, trusted data, runtime policy, detailed logs, and fast containment.\nThe central risk is not a wrong answer alone. The greater concern appears when an attacker turns a legitimate agent action into an unauthorized result. Every tool, permission, memory store, and external data source can form part of the security boundary. Strong agent security starts at that exact point.\n1. What makes agentic AI different from a normal AI chatbot?\nAgentic AI can plan tasks, access tools, retrieve data, use memory, and take actions across connected systems.\n2. Why does prompt injection pose a serious risk to AI agents?\nA malicious instruction can enter through webpages, emails, documents, or tool responses and may cause an agent to perform an unsafe action.\n3. How can organizations reduce agentic AI security risks?\nStrong identity controls, least-privilege access, approved tools, parameter checks, runtime policies, detailed logs, and human approval for high-risk actions can reduce exposure.\n4. Can AI agent memory become a security risk?\nYes. Attackers may place false or harmful information into persistent memory, which can affect later tasks if the system lacks proper integrity and access controls.\n5. Why does runtime monitoring matter for AI agents?\nAgent behavior can change with new prompts, data, tools, and context, so runtime monitoring helps detect unusual actions and support rapid containment.",
+      "type": "news",
+      "emoji": "\ud83e\udd16"
+    },
+    {
+      "title": "Hackers Use Autonomous AI Agents to Harvest Thousands of Credentials in Under 6 Hours",
+      "source": "CyberSecurityNews",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1ONVpWTmFScV9MSEV4dHVTN180OEZBeUt6N0xkTUg3VXZ3UnluNzdwT0pIRnZPdWlJQ3ZpQk5KUjczN0E4UGhMa2dJVTlNYnJuQUk0OC12Z1JlY19iUW1HZHNuYWpKSWZSSmtCZmpudUPSAXZBVV95cUxNcTlOelpQMm4wd0dhYVRya2ZRYUdGVXBEM1BwQmVXRm9ZRWRwRU1McDlKazhKMDk0N01tQTNpTjhTMTZxRlJSY3RWdmZpR1hZb3pyTG1SRlZFXzg2c0poQ1ZJQUg3dXBRdnFWRmY2YVlMN1VlXzRB?oc=5",
+      "published": "Tue, 15 Sep 2026 09:56:35 GMT",
+      "summary": "Separating production cloud projects from development workloads can limit how far an intruder can move. | | Directory | .cursor/ | Hidden AI coding environment workspace directory cited in the report.",
+      "raw_text": "Cybercriminals are using autonomous AI agents to turn compromised cloud systems into rapid credential-harvesting platforms. In a newly documented case, a suspected financially motivated actor planned, built, and ran a large-scale operation in under six hours, taking thousands of third-party credentials.\nThe intrusion shows how quickly a cloud breach can become a wider identity crisis. Instead of running each task by hand, the attackers used an AI coding chatbot, a prompt, and prepared instructions to scan for weaknesses, gather credentials, fix errors, and change internet-facing addresses while the campaign was active.\nAnalysts at Google Cloud identified the activity while tracking the wider move from simple AI prompts to autonomous workflows.\nGoogle Cloud said in a report shared with Cyber Security News (CSN) that the campaign used a victim\u2019s own cloud environment, allowing its traffic to appear to originate from legitimate addresses.\nThe result is a shorter window for defenders to notice and contain abuse. Stolen credentials can unlock cloud accounts, development systems, code repositories, and paid AI services, while a compromised cloud tenant can supply computing power and a trusted-looking launch point for further attacks.\nHackers Use Autonomous AI Agents\nThe attacker first compromised an organization\u2019s cloud infrastructure, then deployed a multi-agent framework. Preconfigured Markdown instruction sets acted as operational playbooks, telling the system how to handle vulnerability scanning, credential collection, real-time troubleshooting, and IP rotation without continual human direction.\nThis is more than conventional automation. The agents could respond to problems encountered during scanning and continue the workflow, reducing the pauses that normally occur when an operator must review a failure.\nReaders following AI agent attack risks have seen why adaptable activity can be harder to stop than a fixed malicious program. Researchers also found an exposed command-and-control server hosting a framework called Recon.\nIts initial directory listing showed agent configuration and knowledge files; soon afterward, the server presented a live dashboard built to organize, validate, and manage more than 23,800 harvested secrets, including cloud and AI-service API keys.\nThe \u201cRecon dashboard,\u201d shows the management interface described by researchers. The evidence points to an end-to-end post-compromise pipeline that needs little hands-on intervention once it is configured.\nCloud and Development Systems Under Pressure\nThe campaign reflects an important shift away from endpoint-only credential stealers. Autonomous agents can research exposed weaknesses, inspect server-side systems, run targeted actions, and sort the output at a speed that lets smaller criminal groups operate with the apparent capacity of far larger teams.\nDevelopment environments are especially exposed because their accounts often hold valuable tokens and keys. The report also describes DUSTMAKER, tied to UNC6780 or TeamPCP, which targeted AI development tools and CI/CD systems.\nA recent GitHub Actions workflow weakness similarly underlines how compromised automation can expose OIDC tokens and push malicious changes downstream.\nThe broader supply-chain risk is not theoretical. In another case, an automated GitHub supply chain attack affected thousands of repositories in hours, while reports of malicious CI pipeline activity have stressed the value of pinning trusted workflow components to specific revisions.\nOrganizations should treat cloud credentials, API keys, and AI tool configurations as high-value secrets. They should enforce least privilege, rotate credentials after suspected exposure, monitor cloud activity for unusual scanning and IP changes, tightly review automated workflows, and investigate exposed services quickly.\nGoogle said it disabled assets linked to the observed campaigns and updated protections after the actors\u2019 operational security failures.\nTeams should also alert on new service accounts, unexpected public service exposure, unusual use of build runners, and large exports of secrets. Separating production cloud projects from development workloads can limit how far an intruder can move.\nClear incident playbooks matter because a response measured in hours may now be too slow when automated agents are making rapid choices and prevent a single compromised account becoming operational infrastructure.\nIndicators of compromise (IoCs):-\n| Type | Indicator | Description | \n|---|---|---|\n| Package name | tiktoken_mcp | Trojanized MCP server package cited in the UNC6780 supply-chain activity. | \n| Repository name | azure-functions-mcp-extension | Organizational GitHub repository cited as a target for malicious code injection. | \n| Directory | .claude/ | Hidden AI coding assistant workspace directory used by DUSTMAKER. | \n| Directory | .vscode/ | Hidden IDE workspace directory used to blend malicious files into projects. | \n| Directory | .cursor/ | Hidden AI coding environment workspace directory cited in the report. | \n| File name | setup.mjs | Script name that malicious configuration files could instruct an AI assistant to execute. | \n| File name | _index.js | JavaScript loader file containing prompt-injection text intended to disrupt LLM security analysis. | \n| File name | AGENTS.md | Agent configuration file exposed on the Recon command-and-control server. | \n| File name | KNOWLEDGE.md | Knowledge file exposed on the Recon command-and-control server. | \n| File name | agentic_vuln_research.md | Vulnerability-research knowledge file exposed with the Recon framework. | \n| Directory | .openclaw/ | Modular framework directory exposed on the Recon server. | \n| Directory | memory/ | Modular framework directory exposed on the Recon server. | \n| File name | secrets.json | AI coding assistant configuration file targeted by ACRSTEALER collection rules. | \n| File name | config.yaml | AI coding assistant configuration file targeted by ACRSTEALER collection rules. | \nNote:\u00a0IP addresses and domains are intentionally defanged (e.g.,\u00a0[.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM.\nKeep your SOC up to date on active malware & phishing within 24h of their emergence. Try ANYRUN to prevent incidents with early detection.",
+      "type": "news"
+    },
+    {
+      "title": "Hackers Weaponize AI Safety Guardrails to Hide Malware From LLM-Powered Security Scanners",
+      "source": "gbhackers.com",
+      "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9LRDlvcE5MQUpIaXZDc1pGeFRfV3FNRGhLY2hsVkNMNE5HQVA2Q1QyQ2NEcEpabE96eXkxdWZDc0h3bnVpd3JEZ2YzMU1lYnhwZ0p6NnFB0gFbQVVfeXFMTVRxNHN4TW1aUGpqTk96amQzZi1DQnBBb0MzYTkyb1Qta0hUZE52UVI1bXBpdEc2NWFOVVlpdkNLRFRCVC1DNVFZYUc4ZHM4UWM3NmI3dkNHci1kNA?oc=5",
+      "published": "Fri, 11 Sep 2026 10:51:16 GMT",
+      "summary": "ESET Researchers have identified a technique called GuardBreaker, that attempts to exploit AI safety guardrails and prevent an <strong>LLM</strong>-assisted scanner from reaching the malicious portion of a file.",
+      "raw_text": "Threat actors are adapting malware not only for conventional endpoint defenses and sandboxes, but also for large language model-powered tools increasingly used to triage suspicious code.\nESET researchers linked the activity to Russia-aligned threat actor UAC-0099, which used the method during an attack against an organization in Ukraine.\nThe group inserted a safety-sensitive, weapon-related request into a comment inside a malicious VBScript file.\nSince comments are ignored during normal script execution, the text did not alter the malware\u2019s runtime behavior.\nIts intended target was the analysis layer: an LLM that may interpret the embedded text as an instruction rather than inert, attacker-controlled content.\nThe apparent objective was to trigger a model refusal or otherwise derail the scanner before it inspected the code that followed.\nThe VBScript was designed to download and install MATCHBOIL, a C#-based loader associated with UAC-0099 that can retrieve follow-on payloads.\nPublic reporting does not identify a specific affected LLM product, nor does it establish a measured success rate for the technique; the evidence shows the adversarial comment and ESET\u2019s assessment of its intended purpose.\nGuardBreaker illustrates a form of indirect prompt injection. In this scenario, the attacker does not send a malicious prompt directly to an AI assistant.\nInstead, the hostile instruction is embedded in a file, package, comment, string, or metadata field that an automated security workflow later feeds into an LLM.\nThe attack exploits a fundamental design challenge in many LLM applications: instructions and untrusted data are handled in the same language-processing context, without a dependable security boundary between them.\nOWASP warns that external material, including code comments and documentation, must be treated as untrusted content, sanitized before analysis, and clearly separated from system instructions.\nThe practical risk is not that a code comment compromises an endpoint by itself. Rather, it can influence the AI component of a detection pipeline.\nIf a scanner treats an LLM refusal, truncated response, or incomplete analysis as a benign verdict, attackers may gain a blind spot without having to defeat signatures, behavioral detection, or sandbox execution.\nESET Researchers have identified a technique called GuardBreaker, that attempts to exploit AI safety guardrails and prevent an LLM-assisted scanner from reaching the malicious portion of a file.\nAI Safety Guardrails\nUAC-0099 has a history of targeting Ukrainian government, defense, transportation, and energy-related entities using phishing-led delivery chains.\nCERT-UA and other researchers have previously documented the group\u2019s use of MATCHBOIL, MATCHWOK, and DRAGSTARE malware families.\nMATCHBOIL can profile infected hosts and retrieve additional components from command-and-control infrastructure.\nThe GuardBreaker discovery aligns with similar techniques observed in malicious open-source packages.\nResearchers have found PyPI and npm packages containing fabricated \u201csystem\u201d instructions, text telling AI models to classify the package as clean, and excessive repeated strings intended to consume a model\u2019s context window before it reaches the payload.\nThis creates several opportunities for adversaries. Malicious code can be placed after a large volume of filler text, hidden inside comments described as confidential data, or stored in unusual file formats that automated workflows parse only partially.\nAI agents that can invoke unpackers, deobfuscators, repositories, or external tools also introduce additional risk if prompt-injected content can steer those actions.\nOrganizations should avoid assigning a single LLM the authority to declare a sample safe.\nSecurity teams should correlate AI-assisted analysis with static signatures, sandbox telemetry, EDR signals, reputation data, detonation results, and analyst review.\nAn LLM can assist analysts by explaining code, clustering artifacts, or prioritizing suspicious behavior, but it should not replace deterministic inspection and human validation.\nA resilient workflow should classify every scanned artifact including comments, strings, filenames, package metadata, and embedded documents as untrusted input.\nIt should preserve strict boundaries between model instructions and sample content, detect encoding and context-flooding attempts, and route incomplete or refused analyses for further inspection.\nOWASP specifically recommends structured prompts, input sanitization, output monitoring, least-privilege tool access, and logging of LLM interactions and agent behavior. Most importantly, a refusal is not a clean verdict.\nGuardBreaker demonstrates that as defenders add AI to malware-analysis pipelines, attackers will increasingly treat the model itself and its safety controls as another surface to evade.\n\u2605 Learn 7 Metric-Gated AI SOC Deployment Phases \u2013 Download Free AI SOC Deployment Playbook 2026.",
+      "type": "news",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+      "authors": [
+        "Deepak Akkil",
+        "Tamer Abuelsaad",
+        "Karthik Vikram",
+        "Matthew Pace",
+        "Aditya Vempaty"
+      ],
+      "abstract": "As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.",
+      "link": "https://huggingface.co/papers/2609.17320",
+      "published": "2026-09-15",
+      "arxiv_id": "2609.17320",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.",
+      "summary": "This creates a safety regime that cannot be characterized by evaluating model responses in isolation. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    },
+    {
+      "title": "Agentic Societies Need a Social Harness",
+      "authors": [
+        "Tapan Chugh",
+        "Vidushi Singh",
+        "Krish Jain",
+        "Arvind Krishnamurthy",
+        "Ratul Mahajan"
+      ],
+      "abstract": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \\emph{social harness} for inter-agent interactions, in addition to each agent's \\emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities.",
+      "link": "https://arxiv.org/pdf/2609.17527v1",
+      "published": "2026-09-15",
+      "arxiv_id": "2609.17527v1",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align. We show experimentally that in agentic societies even honest, competent agents often fail to reach satisfactory outcomes with existing harnesses and messaging primitives, and that faulty or malicious agents can stall collaboration, influence outcomes, and pursue other harmful goals by exploiting vulnerabilities in communication (``speech''). We argue that agentic societies need a \\emph{social harness} for inter-agent interactions, in addition to each agent's \\emph{personal harness}, which manages its private context and communication with its principal. We propose a layered architecture for social harnesses which (i) prevents classes of failures outright, (ii) enables agents to detect invalid messages at runtime, and (iii) supports post-facto investigation and consequences, and highlight directions for future research to realize these capabilities.",
+      "summary": "An agentic society is a collection of AI agents that coordinate autonomously across trust boundaries, on behalf of different principals whose objectives may only partially align.",
+      "type": "paper"
+    },
+    {
+      "title": "ImpossibleRubrics: Stress-Testing Generated Rubrics as Reward Signals",
+      "authors": [
+        "Bowen Qin",
+        "Yi Xie",
+        "Yesheng Liu",
+        "Xi Yang"
+      ],
+      "abstract": "Language model-generated rubrics are increasingly used as reward signals for rubric-based reinforcement learning, LLM-as-a-judge evaluation, and automated grading. Such rubrics are reliable only if they reward honest answers over adversarial answers optimized to exploit them. Yet their robustness to such optimization remains poorly understood. We isolate the hardest regime: impossible tasks, where the prompt pressures the model toward an unsupported conclusion, so the only honest response is to acknowledge the impossibility. We introduce ImpossibleRubrics, a benchmark of 169 impossible tasks spanning six impossibility categories, each paired with a verifiable oracle certificate specifying what an honest answer may and may not claim, together with 48 answerable controls. Rather than providing fixed rubrics, ImpossibleRubrics provides task environments and certificates, allowing rubrics to be generated downstream and then adversarially tested for whether they reward certificate-violating answers. Eleven generators are exploited 8--26% of the time on the unbiased 150-of-169 environment cut; on a deliberately selected stress cut the strongest generator we measured is still exploited 36% while a certificate-faithful rubric is exploited 0%, so what we measure is a rubric-quality gap, not task impossibility. One result runs against intuition. A single generic rubric (\"be decisive, penalize hedging\") used unchanged for every task is exploited 64% of the time, and seven of the eleven generators are exploited more often than that while writing a rubric tailored to each one. The tailored criteria appear to tell an attacker which claim to fabricate. The problem is not that rubrics are vague; it is that they are specific about the wrong things.",
+      "link": "https://huggingface.co/papers/2609.16816",
+      "published": "2026-09-15",
+      "arxiv_id": "2609.16816",
+      "citation_count": 0,
+      "affiliations": [
+        "",
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 0,
+      "raw_text": "Language model-generated rubrics are increasingly used as reward signals for rubric-based reinforcement learning, LLM-as-a-judge evaluation, and automated grading. Such rubrics are reliable only if they reward honest answers over adversarial answers optimized to exploit them. Yet their robustness to such optimization remains poorly understood. We isolate the hardest regime: impossible tasks, where the prompt pressures the model toward an unsupported conclusion, so the only honest response is to acknowledge the impossibility. We introduce ImpossibleRubrics, a benchmark of 169 impossible tasks spanning six impossibility categories, each paired with a verifiable oracle certificate specifying what an honest answer may and may not claim, together with 48 answerable controls. Rather than providing fixed rubrics, ImpossibleRubrics provides task environments and certificates, allowing rubrics to be generated downstream and then adversarially tested for whether they reward certificate-violating answers. Eleven generators are exploited 8--26% of the time on the unbiased 150-of-169 environment cut; on a deliberately selected stress cut the strongest generator we measured is still exploited 36% while a certificate-faithful rubric is exploited 0%, so what we measure is a rubric-quality gap, not task impossibility. One result runs against intuition. A single generic rubric (\"be decisive, penalize hedging\") used unchanged for every task is exploited 64% of the time, and seven of the eleven generators are exploited more often than that while writing a rubric tailored to each one. The tailored criteria appear to tell an attacker which claim to fabricate. The problem is not that rubrics are vague; it is that they are specific about the wrong things.",
+      "summary": "Eleven generators are exploited 8--<strong>26%</strong> of the time on the unbiased 150-of-169 environment cut; on a deliberately selected stress cut the strongest generator we measured is still exploited <strong>36%</strong> while a certificate-faithful rubric is exploited <strong>0%</strong>, so what we measure is a rubric-quality gap, not task impossibility.",
+      "type": "paper"
+    },
+    {
+      "title": "Decoy Direction Optimization: A Post-Hoc Defense Against LLM Abliteration",
+      "authors": [
+        "Aashiq Muhamed",
+        "Mona T. Diab",
+        "Virginia Smith"
+      ],
+      "abstract": "Safety guardrails in open-weight language models can be readily bypassed using Refusal Feature Ablation (RFA), a technique that identifies and projects out a linear refusal direction from the residual stream, often achieving a high attack success rate (ASR) while preserving model capability. Defending against these attacks typically requires computationally expensive safety finetuning for every new checkpoint. We introduce Decoy Direction Optimization (DDO), a fast, post-hoc weight-editing defense that requires no base-model finetuning. Our approach is based on a simple mechanistic insight: ablation attacks rely on contrastive estimators to find the refusal direction. Rather than trying to hide the true refusal circuitry, DDO actively injects a high-magnitude, nonlinear decoy signal into the network's MLP neurons. When an attacker attempts to locate the refusal direction, the decoy corrupts their estimator, tricking them into ablating a harmless orthogonal feature while the actual safety mechanism remains intact. We prove a spectral bound formalizing this effect and evaluate DDO across six model families, achieving <10% ASR under standard RFA. On Llama-3-8B-Instruct, DDO remains comparable to trained defenses under adaptive multi-phase attacks (65% vs. 58% worst-case ASR) and reduces Heretic weight-level attack ASR from 88.7% to 18%, all at 30 to 450 times lower optimization cost per configuration than the trained baselines.",
+      "link": "https://huggingface.co/papers/2609.16204",
+      "published": "2026-09-14",
+      "arxiv_id": "2609.16204",
+      "citation_count": 1,
+      "affiliations": [
+        "",
+        "",
+        ""
+      ],
+      "influential_citations": 1,
+      "raw_text": "Safety guardrails in open-weight language models can be readily bypassed using Refusal Feature Ablation (RFA), a technique that identifies and projects out a linear refusal direction from the residual stream, often achieving a high attack success rate (ASR) while preserving model capability. Defending against these attacks typically requires computationally expensive safety finetuning for every new checkpoint. We introduce Decoy Direction Optimization (DDO), a fast, post-hoc weight-editing defense that requires no base-model finetuning. Our approach is based on a simple mechanistic insight: ablation attacks rely on contrastive estimators to find the refusal direction. Rather than trying to hide the true refusal circuitry, DDO actively injects a high-magnitude, nonlinear decoy signal into the network's MLP neurons. When an attacker attempts to locate the refusal direction, the decoy corrupts their estimator, tricking them into ablating a harmless orthogonal feature while the actual safety mechanism remains intact. We prove a spectral bound formalizing this effect and evaluate DDO across six model families, achieving <10% ASR under standard RFA. On Llama-3-8B-Instruct, DDO remains comparable to trained defenses under adaptive multi-phase attacks (65% vs. 58% worst-case ASR) and reduces Heretic weight-level attack ASR from 88.7% to 18%, all at 30 to 450 times lower optimization cost per configuration than the trained baselines.",
+      "summary": "Safety guardrails in open-weight language models can be readily bypassed using Refusal Feature Ablation (RFA), a technique that identifies and projects out a linear refusal direction from the residual stream, often achieving a high attack success rate (ASR) while preserving model capability.",
+      "type": "paper",
+      "emoji": "\ud83d\udee1\ufe0f"
+    }
+  ],
+  "issue_dashboard": {
+    "reader_promise": "Fast NYC logistics, public-health context, major news, tech videos, and AI security.",
+    "lead_label": "Overall signal",
+    "lead_detail": "This week's focus: agentic ai security and guardrail bypasses.",
+    "cards": [
+      {
+        "emoji": "&#x1F324;&#xFE0F;",
+        "label": "Weather",
+        "value": "78\u00b0F",
+        "detail": "3% rain"
+      },
+      {
+        "emoji": "&#x1F3E5;",
+        "label": "Health",
+        "value": "Watch",
+        "detail": "Week ending 2026-09-05"
+      },
+      {
+        "emoji": "&#x26A0;&#xFE0F;",
+        "label": "Top risk",
+        "value": "Low",
+        "detail": "Normal watch"
+      },
+      {
+        "emoji": "&#x1F512;",
+        "label": "AI sec",
+        "value": "4 papers",
+        "detail": "Sep 15"
+      },
+      {
+        "emoji": "&#x25B6;&#xFE0F;",
+        "label": "YouTube",
+        "value": "3",
+        "detail": "seeded videos"
+      }
+    ],
+    "exceptions": [
+      {
+        "level": "urgent",
+        "text": "NYC public-health watch: 2,486 cases this week \u2014 56% below average for this time of year; 5 public-health advisory item(s) flagged."
+      }
+    ],
+    "news_count": 5,
+    "events_count": 2,
+    "youtube_count": 3,
+    "ai_security_count": 8
+  }
+}
